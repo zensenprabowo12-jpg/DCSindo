@@ -1,0 +1,174 @@
+Buat sebuah website e-commerce profesional untuk brand DCS.
+
+1. Referensi Wajib
+
+Gunakan https://www.thefuturestore.co/collections/ubiquiti
+ sebagai referensi utama untuk:
+
+Layout
+
+UI
+
+UX
+
+Alur toko
+
+Grid produk
+
+Filtering
+
+Struktur halaman
+
+Hirarki konten
+
+Hasil akhir HARUS sangat menyerupai Futurestore secara struktur dan pengalaman pengguna.
+
+Jangan melakukan redesign atau improvisasi layout.
+
+2. Branding & Font
+
+Ganti seluruh nama dan branding menjadi DCS.
+
+Jangan gunakan nama atau logo Futurestore.
+
+Gunakan font Lato untuk seluruh website.
+
+3. Sumber Data Produk
+
+Gunakan store.ui.com dan https://techspecs.ui.com/unifi
+ sebagai sumber data produk.
+
+Gunakan nama produk, kategori, dan spesifikasi teknis UniFi.
+
+WAJIB memasukkan SEMUA produk yang tersedia di techspecs.ui.com/unifi.
+
+4. Homepage
+
+Buat hero section full screen (100vh).
+
+Gunakan background video autoplay, muted, dan loop.
+
+Video background WAJIB menggunakan:
+https://youtu.be/69g3O3Ltygw
+
+Gaya visual mengikuti https://ui.com/
+.
+
+Tambahkan teks overlay minimal dengan branding DCS.
+
+5. Kategori Produk di Homepage
+
+Cloud Gateways
+
+Switching
+
+WiFi
+
+Camera Security
+
+Door Access
+
+Others
+
+Gunakan gambar produk UniFi dari https://techspecs.ui.com/unifi
+.
+
+6. Halaman Koleksi Produk (All Products)
+
+Layout HARUS sama seperti:
+https://www.thefuturestore.co/collections/ubiquiti
+
+Gunakan grid produk dengan ukuran kartu dan spacing yang sama.
+
+Posisi filtering dan sorting HARUS mengikuti Futurestore.
+
+Setiap kartu produk menampilkan:
+
+Gambar produk
+
+Nama produk
+
+Harga (boleh dummy)
+
+Tombol view / add to cart
+
+7. Halaman Kategori Produk
+
+Setiap kategori memiliki halaman sendiri.
+
+Layout WAJIB mengikuti:
+https://www.thefuturestore.co/collections/cloud-gateways
+
+Urutan konten TIDAK BOLEH diubah:
+
+Judul kategori
+
+Deskripsi singkat
+
+Grid produk
+
+Filtering
+
+Masukkan SEMUA produk UniFi ke kategori yang sesuai.
+
+8. Pembagian Kategori Produk
+
+Cloud Gateways
+
+Switching
+
+WiFi
+
+Camera Security
+
+Door Access
+
+Others
+
+9. Halaman Detail Produk
+
+Layout harus fokus ke spesifikasi dan keterbacaan.
+
+Tampilkan:
+
+Gambar produk resolusi tinggi
+
+Nama produk
+
+Deskripsi singkat
+
+Spesifikasi teknis lengkap dari techspecs UniFi
+
+10. Support Page
+
+Buat halaman Support dengan layout sederhana dan profesional.
+
+Tambahkan FAQ dengan topik:
+
+Top Services
+
+Office and Service Operational (Open Hours)
+
+Aftersales Information
+
+Tambahkan form support berisi:
+
+Email
+
+Nomor handphone
+
+Subject (Pertanyaan / Kritik / Saran)
+
+Dropdown pilihan produk (mengambil dari seluruh produk UniFi)
+
+Tombol submit
+
+11. Standar Teknis
+
+Website harus fully responsive (desktop, tablet, mobile).
+
+Struktur HTML SEO-friendly.
+
+Tampilan clean dan enterprise.
+
+Prioritaskan kemiripan layout dan UX dibanding kreativitas desain.
