@@ -42,7 +42,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Categories Grid */}
       <section className="py-24 bg-secondary">
         <div className="container mx-auto px-4">
@@ -78,7 +77,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Featured Product Banner */}
       <section className="py-32 bg-white border-y border-gray-100">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
@@ -91,7 +89,7 @@ export default function Home() {
             <ul className="space-y-4 mb-8">
               <li className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full" />
-                <span className="font-medium">6 GHz Support</span>
+                <span className="font-medium text-[13px]">6 GHz Support</span>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full" />
