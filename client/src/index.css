@@ -80,6 +80,24 @@
   --radius: 0px;
 }
 
+.dark {
+  --background: 220 15% 5%;
+  --foreground: 0 0% 100%;
+  --card: 220 15% 10%;
+  --card-foreground: 0 0% 100%;
+  --primary: 210 100% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 15% 10%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 220 15% 15%;
+  --muted-foreground: 220 10% 65%;
+  --accent: 210 100% 50%;
+  --accent-foreground: 0 0% 100%;
+  --border: 220 15% 15%;
+  --input: 220 15% 15%;
+  --ring: 210 100% 50%;
+}
+
 @layer base {
   * {
     @apply border-border;
