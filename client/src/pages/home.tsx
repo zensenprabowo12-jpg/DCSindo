@@ -31,12 +31,12 @@ export default function Home() {
           <div className="flex gap-4 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
             <Link href="/collections/all">
               <Button size="lg" className="bg-white text-black hover:bg-gray-200 text-lg px-8 py-6 rounded-none font-bold">
-                Shop Store
+                All Products
               </Button>
             </Link>
             <Link href="/collections/cloud-gateways">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6 rounded-none font-bold">
-                Learn More
+                Contact Us
               </Button>
             </Link>
           </div>
@@ -57,7 +57,7 @@ export default function Home() {
                     <div className="absolute inset-0 p-8 flex flex-col justify-between z-10">
                       <div>
                         <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">{category}</h3>
-                        <p className="text-gray-500 text-sm">View Collection</p>
+                        <p className="text-gray-500 text-sm"></p>
                       </div>
                       <div className="self-end opacity-0 group-hover:opacity-100 transition-opacity -translate-x-4 group-hover:translate-x-0 duration-300">
                         <ArrowRight className="w-6 h-6 text-primary" />
@@ -77,6 +77,75 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* DCS Infrastructure Section - Inspired by Reference */}
+      <section className="bg-black text-white py-32">
+        <div className="container mx-auto px-4 text-center mb-24">
+          <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6">UniFi Full-Stack Platform Ecosystem</h2>
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg mb-8">
+            Building the Future of IT. License Free.
+          </p>
+          <Button variant="outline" className="border-white text-white hover:bg-white/10 rounded-full px-8">
+            Talk to an Expert
+          </Button>
+        </div>
+
+        <div className="container mx-auto px-4 space-y-32">
+          {/* DCS Protect */}
+          <div className="flex flex-col md:flex-row items-center gap-16 lg:gap-32">
+            <div className="flex-1 flex justify-center order-2 md:order-1">
+              <div className="relative w-full max-w-md aspect-square rounded-full overflow-hidden border-8 border-white/5 bg-gradient-to-br from-blue-900/20 to-black">
+                <img src="/images/dcs-protect.png" alt="DCS Protect" className="w-full h-full object-cover opacity-90" />
+              </div>
+            </div>
+            <div className="flex-1 space-y-6 order-1 md:order-2 text-center md:text-left">
+              <h3 className="text-3xl font-bold">UniFi Physical Security</h3>
+              <p className="text-gray-400 text-lg leading-relaxed">
+                A License-Free enterprise-grade security platform powered by an AI detection engine and built to support UL 294 compliance. It delivers intelligent monitoring, accurate event detection, and centralized management in a single unified system, providing reliable & scalable protection for modern businesses, campuses, and smart environments.
+              </p>
+              <Button variant="outline" className="border-white text-white hover:bg-white/10 rounded-full px-8 group">
+                Explore Here! <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+          </div>
+
+          {/* DCS Network */}
+          <div className="flex flex-col md:flex-row items-center gap-16 lg:gap-32">
+            <div className="flex-1 space-y-6 text-center md:text-left">
+              <h3 className="text-3xl font-bold">UniFi Network</h3>
+              <p className="text-gray-400 text-lg leading-relaxed">
+                Powered by UniFi Cloud Gateways, UniFi Network enables centralized management of WiFi and switching with local processing at each site. Gain instant visibility into traffic, topology, and performance while maintaining high availability and operational simplicity.
+              </p>
+              <Button variant="outline" className="border-white text-white hover:bg-white/10 rounded-full px-8 group">
+                Explore Here! <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <div className="relative w-full max-w-md aspect-square rounded-full overflow-hidden border-8 border-white/5 bg-gradient-to-br from-blue-900/20 to-black">
+                <img src="/images/dcs-network.png" alt="DCS Network" className="w-full h-full object-cover opacity-90" />
+              </div>
+            </div>
+          </div>
+
+          {/* DCS Access */}
+          <div className="flex flex-col md:flex-row items-center gap-16 lg:gap-32 pb-16">
+            <div className="flex-1 flex justify-center order-2 md:order-1">
+              <div className="relative w-full max-w-md aspect-square rounded-full overflow-hidden border-8 border-white/5 bg-gradient-to-br from-blue-900/20 to-black">
+                <img src="/images/dcs-access.png" alt="DCS Access" className="w-full h-full object-cover opacity-90" />
+              </div>
+            </div>
+            <div className="flex-1 space-y-6 order-1 md:order-2 text-center md:text-left">
+              <h3 className="text-3xl font-bold">UniFi Integrations</h3>
+              <p className="text-gray-400 text-lg leading-relaxed">
+                Seamlessly connect UniFi with third-party systems and services through secure APIs and native integrations. This unified approach enables automation, centralized visibility, and streamlined workflows, helping organizations build smarter operations and maximize the value of their UniFi infrastructure.
+              </p>
+              <Button variant="outline" className="border-white text-white hover:bg-white/10 rounded-full px-8 group">
+                Explore Here! <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Featured Product Banner */}
       <section className="py-32 bg-white border-y border-gray-100">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
