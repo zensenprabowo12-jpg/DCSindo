@@ -4,20 +4,24 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
-import Home from "@/pages/home";
+import Home from "@/pages/home-ubiquiti";
 import Collection from "@/pages/collection";
 import ProductDetail from "@/pages/product";
 import Support from "@/pages/support";
 import Cart from "@/pages/cart";
 
+import ComingSoon from "@/pages/coming-soon";
+
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/home-ubiquiti" component={Home} />
       <Route path="/collections/:category" component={Collection} />
       <Route path="/products/:id" component={ProductDetail} />
       <Route path="/support" component={Support} />
       <Route path="/cart" component={Cart} />
+      <Route path="/coming-soon" component={ComingSoon} />
       <Route component={NotFound} />
     </Switch>
   );
