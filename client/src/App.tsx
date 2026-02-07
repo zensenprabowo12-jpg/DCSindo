@@ -8,6 +8,7 @@ import Home from "@/pages/home";
 import Collection from "@/pages/collection";
 import ProductDetail from "@/pages/product";
 import Support from "@/pages/support";
+import Cart from "@/pages/cart";
 
 function Router() {
   return (
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/collections/:category" component={Collection} />
       <Route path="/products/:id" component={ProductDetail} />
       <Route path="/support" component={Support} />
+      <Route path="/cart" component={Cart} />
       <Route component={NotFound} />
     </Switch>
   );

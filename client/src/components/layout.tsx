@@ -12,6 +12,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import SearchModal from "./search-modal";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
@@ -19,6 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState(
     () => localStorage.getItem("theme") || "light",
   );
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,6 +47,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans flex flex-col">
+      <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+      
       {/* Navbar - Fixed & Transparent-to-Solid transition */}
       <header
         className={cn(
@@ -120,7 +124,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               size="icon"
               onClick={toggleTheme}
               className={cn(
-                "hover:bg-white/10",
+                "hover:bg-white/10 rounded-full",
                 scrolled || !isHome
                   ? "text-foreground hover:bg-black/5"
                   : "text-white",
@@ -135,8 +139,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Button
               variant="ghost"
               size="icon"
+              onClick={() => setIsSearchOpen(true)}
               className={cn(
-                "hover:bg-white/10",
+                "hover:bg-white/10 rounded-full",
                 scrolled || !isHome
                   ? "text-foreground hover:bg-black/5"
                   : "text-white",
@@ -144,18 +149,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             >
               <Search className="w-5 h-5" />
             </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className={cn(
-                "hover:bg-white/10",
-                scrolled || !isHome
-                  ? "text-foreground hover:bg-black/5"
-                  : "text-white",
-              )}
-            >
-              <ShoppingCart className="w-5 h-5" />
-            </Button>
+            <Link href="/cart">
+              <Button
+                variant="ghost"
+                size="icon"
+                className={cn(
+                  "hover:bg-white/10 rounded-full",
+                  scrolled || !isHome
+                    ? "text-foreground hover:bg-black/5"
+                    : "text-white",
+                )}
+              >
+                <ShoppingCart className="w-5 h-5" />
+              </Button>
+            </Link>
 
             {/* Mobile Menu */}
             <Sheet>
