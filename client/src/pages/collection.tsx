@@ -96,26 +96,26 @@ export default function Collection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProducts.map(product => (
               <Link key={product.id} href={`/products/${product.id}`}>
-                <a className="group block bg-white border border-border transition-all duration-300 hover:shadow-lg">
+                <a className="group block bg-white dark:bg-card border border-border transition-all duration-300 hover:shadow-2xl rounded-[var(--radius)] overflow-hidden">
                   {/* Image Container */}
-                  <div className="aspect-square relative p-8 bg-gray-50 flex items-center justify-center overflow-hidden">
+                  <div className="aspect-square relative p-8 bg-gray-50/50 dark:bg-gray-900/50 flex items-center justify-center overflow-hidden">
                     {product.isNew && (
-                      <span className="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-2 py-1 uppercase tracking-wider">
+                      <span className="absolute top-4 left-4 bg-primary text-white text-[10px] font-black px-3 py-1 uppercase tracking-widest rounded-full z-20">
                         New
                       </span>
                     )}
                     <img 
                       src={product.image} 
                       alt={product.name} 
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                   {/* Content */}
                   <div className="p-6">
                     <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors">{product.name}</h3>
                     <div className="flex justify-between items-center">
-                      <span className="text-gray-500 text-sm font-medium">${product.price}</span>
-                      <Button size="sm" variant="secondary" className="opacity-0 group-hover:opacity-100 transition-opacity">
+                      <span className="text-muted-foreground text-sm font-medium">${product.price}</span>
+                      <Button size="sm" variant="secondary" className="opacity-0 group-hover:opacity-100 transition-all rounded-full px-4">
                         View
                       </Button>
                     </div>
