@@ -1,0 +1,126 @@
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { products } from "@/lib/data";
+import { ProductCard } from "@/components/product-card";
+import { Badge } from "@/components/ui/badge";
+
+export default function Home() {
+  const featuredProducts = products.slice(0, 4);
+
+  return (
+    <div className="animate-in fade-in duration-500">
+      {/* Hero Section */}
+      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-secondary/50 to-background">
+        <div className="absolute inset-0 z-0 opacity-30">
+          <img 
+            src="/images/product-mesh.png" 
+            alt="Hero background" 
+            className="w-full h-full object-cover object-center scale-110 blur-3xl"
+          />
+        </div>
+        
+        <div className="container relative z-10 px-4 md:px-6 text-center max-w-4xl mx-auto">
+          <Badge className="mb-6 px-4 py-1.5 text-sm font-normal bg-white/80 backdrop-blur text-primary border-primary/10 shadow-sm animate-in slide-in-from-bottom-5 fade-in duration-700 delay-100">
+            The New Standard in Connectivity
+          </Badge>
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/80 to-primary/60 animate-in slide-in-from-bottom-5 fade-in duration-700 delay-200">
+            Build Your Perfect <br className="hidden md:block"/> Network Ecosystem.
+          </h1>
+          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-in slide-in-from-bottom-5 fade-in duration-700 delay-300">
+            Professional grade hardware designed for the modern home and office. Simple to set up, beautiful to look at, and powerful to use.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in slide-in-from-bottom-5 fade-in duration-700 delay-400">
+            <Link href="/collections/all">
+              <Button size="lg" className="rounded-full px-8 h-12 text-base shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                Shop Collection
+              </Button>
+            </Link>
+            <Link href="/collections/wifi">
+              <Button size="lg" variant="outline" className="rounded-full px-8 h-12 text-base bg-background/50 backdrop-blur hover:bg-background transition-all">
+                Explore WiFi 6
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Products */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight mb-2">Featured Hardware</h2>
+              <p className="text-muted-foreground">The foundation of a connected life.</p>
+            </div>
+            <Link href="/collections/all">
+              <Button variant="ghost" className="group">
+                View all products
+                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {featuredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Categories Grid */}
+      <section className="py-24 border-t border-secondary">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-[600px]">
+            <Link href="/collections/wifi">
+              <div className="group relative h-full w-full rounded-2xl overflow-hidden cursor-pointer">
+                <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors z-10" />
+                <img 
+                  src="/images/product-ap.png" 
+                  alt="WiFi" 
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 left-0 p-8 z-20 w-full bg-gradient-to-t from-black/60 to-transparent">
+                  <h3 className="text-3xl font-bold text-white mb-2">WiFi Systems</h3>
+                  <p className="text-white/80 font-medium">Blazing fast wireless coverage for any space.</p>
+                </div>
+              </div>
+            </Link>
+            <div className="grid grid-rows-2 gap-4 h-full">
+               <Link href="/collections/cameras">
+                <div className="group relative h-full w-full rounded-2xl overflow-hidden cursor-pointer">
+                  <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors z-10" />
+                  <img 
+                    src="/images/product-camera.png" 
+                    alt="Cameras" 
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute bottom-0 left-0 p-6 z-20 w-full bg-gradient-to-t from-black/60 to-transparent">
+                    <h3 className="text-2xl font-bold text-white mb-1">Security</h3>
+                    <p className="text-white/80 text-sm font-medium">Protect what matters.</p>
+                  </div>
+                </div>
+              </Link>
+               <Link href="/collections/switching">
+                <div className="group relative h-full w-full rounded-2xl overflow-hidden cursor-pointer">
+                  <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors z-10" />
+                  <img 
+                    src="/images/product-switch.png" 
+                    alt="Switching" 
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute bottom-0 left-0 p-6 z-20 w-full bg-gradient-to-t from-black/60 to-transparent">
+                    <h3 className="text-2xl font-bold text-white mb-1">Switching</h3>
+                    <p className="text-white/80 text-sm font-medium">The backbone of your network.</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
