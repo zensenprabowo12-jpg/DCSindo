@@ -85,26 +85,34 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 All Products
               </a>
             </Link>
-            <Link href="/collections/cloud-gateways">
-              <a
+            
+            <div className="relative group py-2">
+              <button
                 className={cn(
-                  "text-sm font-medium hover:opacity-70 transition-opacity",
+                  "text-sm font-medium hover:opacity-70 transition-opacity flex items-center gap-1",
                   scrolled || !isHome ? "text-foreground" : "text-white",
                 )}
               >
-                Cloud Gateways
-              </a>
-            </Link>
-            <Link href="/collections/wifi">
-              <a
-                className={cn(
-                  "text-sm font-medium hover:opacity-70 transition-opacity",
-                  scrolled || !isHome ? "text-foreground" : "text-white",
-                )}
-              >
-                WiFi
-              </a>
-            </Link>
+                Our Brands
+                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+              </button>
+              
+              {/* Mega Dropdown / Pop-up slide down */}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-[60]">
+                <div className="bg-background border border-border rounded-[var(--radius)] shadow-2xl min-w-[200px] overflow-hidden p-2">
+                  <div className="flex flex-col">
+                    {["Ubiquiti", "Mikrotik", "ALGcom", "V-SOL"].map((brand) => (
+                      <Link key={brand} href={`/collections/${brand.toLowerCase()}`}>
+                        <a className="px-6 py-3 text-sm font-bold text-foreground hover:bg-secondary/50 rounded-lg transition-colors text-center">
+                          {brand}
+                        </a>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <Link href="/support">
               <a
                 className={cn(
@@ -187,21 +195,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                       All Products
                     </a>
                   </Link>
-                  <Link href="/collections/cloud-gateways">
-                    <a className="text-lg font-medium hover:text-primary">
-                      Cloud Gateways
-                    </a>
-                  </Link>
-                  <Link href="/collections/wifi">
-                    <a className="text-lg font-medium hover:text-primary">
-                      WiFi
-                    </a>
-                  </Link>
-                  <Link href="/collections/camera-security">
-                    <a className="text-lg font-medium hover:text-primary">
-                      Cameras
-                    </a>
-                  </Link>
+                  <div className="flex flex-col gap-2">
+                    <span className="text-lg font-medium text-muted-foreground uppercase tracking-widest text-xs">Our Brands</span>
+                    <div className="grid grid-cols-2 gap-2 pl-4">
+                      {["Ubiquiti", "Mikrotik", "ALGcom", "V-SOL"].map((brand) => (
+                        <Link key={brand} href={`/collections/${brand.toLowerCase()}`}>
+                          <a className="text-base font-medium hover:text-primary">
+                            {brand}
+                          </a>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                   <Link href="/support">
                     <a className="text-lg font-medium hover:text-primary">
                       Support
