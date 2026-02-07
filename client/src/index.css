@@ -77,7 +77,7 @@
   --input: 220 10% 90%;
   --ring: 220 50% 20%;
 
-  --radius: 0px;
+  --radius: 1.5rem;
 }
 
 .dark {
