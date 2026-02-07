@@ -272,20 +272,49 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="space-y-6">
               <h4 className="font-bold mb-4">Newsletter</h4>
               <p className="text-gray-400 text-sm mb-4">
                 Subscribe to receive updates on new products.
               </p>
-              <div className="flex gap-2">
+              <div className="flex gap-2 mb-6">
                 <input
                   type="email"
                   placeholder="Email address"
                   className="bg-white/10 border-none text-white placeholder:text-gray-500 rounded-sm px-3 py-2 text-sm w-full focus:ring-1 focus:ring-white"
                 />
-                <Button variant="secondary" size="sm">
+                <Button variant="secondary" size="sm" className="rounded-sm">
                   Subscribe
                 </Button>
+              </div>
+              <div className="flex gap-4 items-center">
+                <a 
+                  href="https://wa.me/your-number" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"
+                  title="WhatsApp"
+                >
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" className="w-5 h-5" alt="WhatsApp" />
+                </a>
+                <a 
+                  href="mailto:support@dcs.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"
+                  title="Email"
+                >
+                  <img src="https://www.svgrepo.com/show/303161/gmail-icon-logo.svg" className="w-5 h-5" alt="Email" />
+                </a>
+                <a 
+                  href="https://www.tokopedia.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"
+                  title="Tokopedia"
+                >
+                  <img src="https://images.tokopedia.net/img/ak_logo.png" className="w-5 h-5 object-contain" alt="Tokopedia" />
+                </a>
               </div>
             </div>
           </div>
