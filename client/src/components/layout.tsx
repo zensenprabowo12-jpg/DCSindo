@@ -55,7 +55,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       )}>
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           <Link href="/">
-            <a className="text-2xl font-bold tracking-tighter hover:opacity-80 transition-opacity flex items-center gap-2">
+            <a 
+              className="text-2xl font-bold tracking-tighter hover:opacity-80 transition-opacity flex items-center gap-2"
+              onClick={() => setCurrentBrand("Our Brands")}
+            >
               <span className={cn("text-3xl font-black italic", (scrolled || !isHome) ? "text-primary" : "text-white")}>DCS</span>
             </a>
           </Link>
