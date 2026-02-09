@@ -9,16 +9,18 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative h-screen w-full overflow-hidden bg-black">
+      <section className="relative h-screen min-h-[600px] w-full overflow-hidden bg-black">
         {/* Video Background */}
-        <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <div className="absolute inset-0 bg-black/40 z-10" />
-          <iframe
-            src="https://www.youtube.com/embed/69g3O3Ltygw?autoplay=1&mute=1&loop=1&playlist=69g3O3Ltygw&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3"
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full min-w-[100vw] min-h-[56.25vw] object-cover opacity-80"
-            allow="autoplay; encrypted-media"
-            title="DCS Hero Video"
-          />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vh] min-w-[177.77vh] min-h-[56.25vw]">
+            <iframe
+              src="https://www.youtube.com/embed/69g3O3Ltygw?autoplay=1&mute=1&loop=1&playlist=69g3O3Ltygw&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3"
+              className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-80"
+              allow="autoplay; encrypted-media"
+              title="DCS Hero Video"
+            />
+          </div>
         </div>
 
         {/* Hero Content */}
@@ -246,7 +248,7 @@ export default function Home() {
       <section className="py-40 bg-white dark:bg-background relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-24 ml-[0px] mr-[0px] pl-[50px] pr-[50px]">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24 px-4 md:px-12">
             <div className="flex-1 space-y-10">
               <div className="inline-flex items-center gap-3 px-6 py-2 bg-primary/10 text-primary rounded-full text-sm font-black uppercase tracking-widest">
                 <span className="relative flex h-3 w-3">
@@ -255,7 +257,7 @@ export default function Home() {
                 </span>
                 State of the Art
               </div>
-              <h2 className="text-7xl md:text-8xl font-black tracking-tighter leading-none uppercase italic">
+              <h2 className="text-5xl md:text-8xl font-black tracking-tighter leading-none uppercase italic">
                 U7 Pro <br /><span className="text-primary">WiFi 7</span>
               </h2>
               <p className="text-2xl text-muted-foreground max-w-lg leading-snug font-medium">

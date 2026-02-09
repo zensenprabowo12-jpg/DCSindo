@@ -9,16 +9,18 @@ export default function HomeUtama() {
   return (
     <Layout>
       {/* Hero Section - Updated with Video */}
-      <section className="relative h-[80vh] w-full overflow-hidden flex items-center justify-center bg-white dark:bg-black transition-colors duration-500">
+      <section className="relative h-screen min-h-[600px] w-full overflow-hidden flex items-center justify-center bg-white dark:bg-black transition-colors duration-500">
         {/* YouTube Video Background */}
-        <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <div className="absolute inset-0 bg-white/30 dark:bg-black/60 z-10 transition-colors duration-500" />
-          <iframe
-            src="https://www.youtube.com/embed/FWV0QNojAG8?autoplay=1&mute=1&loop=1&playlist=FWV0QNojAG8&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3"
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full min-w-[100vw] min-h-[56.25vw] object-cover opacity-90 dark:opacity-70 transition-opacity duration-500"
-            allow="autoplay; encrypted-media"
-            title="DCS Master Hero Video"
-          />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vh] min-w-[177.77vh] min-h-[56.25vw]">
+            <iframe
+              src="https://www.youtube.com/embed/FWV0QNojAG8?autoplay=1&mute=1&loop=1&playlist=FWV0QNojAG8&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3"
+              className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-90 dark:opacity-70 transition-opacity duration-500"
+              allow="autoplay; encrypted-media"
+              title="DCS Master Hero Video"
+            />
+          </div>
         </div>
 
         <div className="container mx-auto px-4 relative z-20 text-center">
