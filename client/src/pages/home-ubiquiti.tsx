@@ -43,7 +43,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* 🔹 Reimagined Ecosystem Section - Aesthetic Masonry Layout */}
       <section className="py-24 bg-secondary/30">
         <div className="container mx-auto px-4">
@@ -158,7 +157,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Reimagined Infrastructure Showcase */}
       <section className="bg-black text-white py-32 overflow-hidden">
         <div className="container mx-auto px-4 text-center mb-24">
@@ -248,12 +246,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* New Release - Aesthetic Dark Minimalist */}
       <section className="py-40 bg-white dark:bg-background relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-24">
+          <div className="flex flex-col lg:flex-row items-center gap-24 ml-[0px] mr-[0px] pl-[50px] pr-[50px]">
             <div className="flex-1 space-y-10">
               <div className="inline-flex items-center gap-3 px-6 py-2 bg-primary/10 text-primary rounded-full text-sm font-black uppercase tracking-widest">
                 <span className="relative flex h-3 w-3">
