@@ -57,48 +57,44 @@ export default function HomeUtama() {
             {[
               { 
                 name: "Ubiquiti", 
-                logo: "https://cdn.worldvectorlogo.com/logos/ubiquiti-networks.svg", 
+                image: "/attached_assets/chatgpt_ubiquiti_1770612894088.png", 
                 path: "/home-ubiquiti",
-                shape: "rounded-[3rem] rotate-2",
                 bg: "bg-blue-50/50 dark:bg-blue-900/10"
               },
               { 
                 name: "MikroTik", 
-                logo: "https://cdn.worldvectorlogo.com/logos/mikrotik.svg", 
+                image: "/attached_assets/chatgpt_mikrotik_1770612894087.png", 
                 path: "/coming-soon",
-                shape: "rounded-[4rem] rounded-tl-none -rotate-1",
                 bg: "bg-slate-50/50 dark:bg-slate-900/10"
               },
               { 
                 name: "ALGcom", 
-                logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Logo_ALGcom.png", 
+                image: "/attached_assets/chatgpt_algcom_1770612894086.png", 
                 path: "/coming-soon",
-                shape: "rounded-[2rem] rounded-br-[5rem] rotate-1",
                 bg: "bg-gray-50/50 dark:bg-gray-900/10"
               },
               { 
                 name: "V-SOL", 
-                logo: "https://www.vsolcn.com/wp-content/uploads/2021/04/logo.png", 
+                image: "/attached_assets/chatgpt_vsol_1770612894089.png", 
                 path: "/coming-soon",
-                shape: "rounded-full -rotate-2",
                 bg: "bg-zinc-50/50 dark:bg-zinc-900/10"
               }
             ].map((brand, i) => (
               <Link key={i} href={brand.path}>
                 <motion.div 
-                  whileHover={{ scale: 1.02, rotate: 0 }}
+                  whileHover={{ scale: 1.02 }}
                   className={cn(
-                    "relative aspect-[4/5] border border-gray-100 dark:border-white/5 overflow-hidden group cursor-pointer transition-all duration-500 shadow-sm hover:shadow-2xl",
-                    brand.shape,
+                    "relative aspect-[4/5] border border-gray-100 dark:border-white/5 overflow-hidden group cursor-pointer transition-all duration-500 shadow-sm hover:shadow-2xl rounded-[2.5rem]",
                     brand.bg
                   )}
                 >
                   <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
-                  <div className="absolute inset-0 flex items-center justify-center p-12 transition-transform duration-700 group-hover:scale-110">
-                    <img src={brand.logo} alt={brand.name} className="max-w-[80%] max-h-[80%] object-contain filter brightness-90 contrast-125 dark:invert opacity-80 group-hover:opacity-100 transition-all" />
+                  <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
+                    <img src={brand.image} alt={brand.name} className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
                   <div className="absolute bottom-10 left-0 right-0 text-center z-20 opacity-0 group-hover:opacity-100 transition-all transform translate-y-4 group-hover:translate-y-0">
-                    <p className="text-black dark:text-white font-black uppercase italic tracking-tighter text-xl">{brand.name}</p>
+                    <p className="text-white font-black uppercase italic tracking-tighter text-2xl drop-shadow-lg">{brand.name}</p>
                   </div>
                 </motion.div>
               </Link>
