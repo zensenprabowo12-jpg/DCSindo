@@ -57,16 +57,23 @@ export default function Home() {
             <Link href="/collections/wifi" className="md:col-span-8 md:row-span-2">
               <motion.a 
                 whileHover={{ scale: 0.99 }}
-                className="group relative h-full min-h-[400px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
+                className="group relative h-full min-h-[400px] overflow-hidden bg-black shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
               >
-                <div className="absolute inset-0 p-10 z-20 flex flex-col justify-end bg-gradient-to-t from-black/60 via-black/20 to-transparent">
+                <div className="absolute inset-0 p-10 z-20 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                   <h3 className="text-3xl font-bold text-white mb-2">WiFi Systems</h3>
                   <p className="text-white/80 max-w-sm">Blazing fast wireless coverage for any space with WiFi 7 technology.</p>
                 </div>
+                
+                {/* 🔹 Highlight Accent Blue Overlay */}
+                <div className="absolute inset-0 z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full bg-blue-500/20 blur-[120px]" />
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] rounded-full border border-blue-400/30 blur-sm" />
+                </div>
+
                 <img 
                   src="/images/wifi-banner.png" 
                   alt="WiFi" 
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </motion.a>
             </Link>
