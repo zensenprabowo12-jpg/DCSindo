@@ -172,9 +172,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     <ArrowRight className="w-5 h-5" />
                   </Button>
                 </div>
-                <div className="flex justify-center gap-6 pt-2">
-                  <button className="text-gray-400 hover:text-primary transition-colors"><HelpCircle className="w-5 h-5" /></button>
-                  <button className="text-gray-400 hover:text-primary transition-colors"><Share2 className="w-5 h-5" /></button>
+                <div className="flex justify-center gap-8 pt-4">
+                  <a href="https://help.ui.com" target="_blank" rel="noreferrer" className="w-12 h-12 bg-gray-50 dark:bg-white/5 rounded-2xl flex items-center justify-center text-gray-400 hover:text-primary hover:bg-primary/10 transition-all duration-300">
+                    <HelpCircle className="w-6 h-6" />
+                  </a>
+                  <a href="https://wa.me/yournumber" target="_blank" rel="noreferrer" className="w-12 h-12 bg-gray-50 dark:bg-white/5 rounded-2xl flex items-center justify-center text-gray-400 hover:text-[#25D366] hover:bg-[#25D366]/10 transition-all duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" className="w-6 h-6 opacity-60 group-hover:opacity-100" style={{ filter: theme === 'dark' ? 'invert(1)' : 'none' }} />
+                  </a>
+                  <a href="https://instagram.com/yourprofile" target="_blank" rel="noreferrer" className="w-12 h-12 bg-gray-50 dark:bg-white/5 rounded-2xl flex items-center justify-center text-gray-400 hover:text-[#E4405F] hover:bg-[#E4405F]/10 transition-all duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" className="w-6 h-6 opacity-60" />
+                  </a>
+                  <a href="mailto:support@dcs.com" target="_blank" rel="noreferrer" className="w-12 h-12 bg-gray-50 dark:bg-white/5 rounded-2xl flex items-center justify-center text-gray-400 hover:text-primary hover:bg-primary/10 transition-all duration-300">
+                    <img src="https://www.svgrepo.com/show/303161/gmail-icon-logo.svg" className="w-6 h-6 opacity-60" />
+                  </a>
                 </div>
               </div>
             </motion.div>
