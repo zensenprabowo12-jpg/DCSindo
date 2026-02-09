@@ -54,12 +54,12 @@ export default function HomeUtama() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
             {[
-              { name: "Ubiquiti", logo: "https://logos-world.net/wp-content/uploads/2021/02/Ubiquiti-Logo.png", path: "/home-ubiquiti", active: true },
-              { name: "MikroTik", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/MikroTik_logo.svg/1280px-MikroTik_logo.svg.png", path: "/coming-soon", active: true },
+              { name: "Ubiquiti", logo: "https://www.vectorlogo.zone/logos/ubnt/ubnt-ar21.svg", path: "/home-ubiquiti", active: true },
+              { name: "MikroTik", logo: "https://www.vectorlogo.zone/logos/mikrotik/mikrotik-ar21.svg", path: "/coming-soon", active: true },
               { name: "ALGcom", logo: "https://yt3.googleusercontent.com/ytc/AIdro_k6ZREm9I0O_yQ5O2YpY7_z-Z6x1m_G_x7ZJ8v3=s900-c-k-c0x00ffffff-no-rj", path: "/coming-soon", active: true },
               { name: "V-SOL", logo: "https://www.vsolcn.com/wp-content/uploads/2021/04/logo.png", path: "/coming-soon", active: true },
-              { name: "Cisco", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1200px-Cisco_logo_blue_2016.svg.png", path: "/coming-soon", active: true },
-              { name: "Aruba", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Aruba_Networks_logo.svg/2560px-Aruba_Networks_logo.svg.png", path: "/coming-soon", active: true },
+              { name: "Cisco", logo: "https://www.vectorlogo.zone/logos/cisco/cisco-ar21.svg", path: "/coming-soon", active: true },
+              { name: "Aruba", logo: "https://www.vectorlogo.zone/logos/arubanetworks/arubanetworks-ar21.svg", path: "/coming-soon", active: true },
               { name: "Coming Soon", logo: "", path: "/coming-soon", active: false },
               { name: "Coming Soon", logo: "", path: "/coming-soon", active: false },
               { name: "Coming Soon", logo: "", path: "/coming-soon", active: false }
@@ -115,7 +115,7 @@ export default function HomeUtama() {
             <div className="lg:w-1/2 relative group">
               <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/30 transition-all duration-700" />
               <img 
-                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop" 
+                src="/images/infrastructure-highres.jpg" 
                 alt="Infrastructure" 
                 className="relative z-10 rounded-[40px] border-8 border-black/5 shadow-2xl transition-all duration-700 group-hover:scale-[1.02]"
               />
