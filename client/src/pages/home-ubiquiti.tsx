@@ -64,13 +64,10 @@ export default function Home() {
                   <p className="text-white/80 max-w-sm">Blazing fast wireless coverage for any space with WiFi 7 technology.</p>
                 </div>
                 
-                {/* 🔹 Highlight Accent Blue Overlay */}
-                <div className="absolute inset-0 z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full bg-blue-500/20 blur-[120px]" />
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] rounded-full border border-blue-400/30 blur-sm" />
-                </div>
-
-                <img 
+                {/* 🔹 Enhanced Blue Highlight Accent */}
+                <div className="absolute inset-0 bg-primary/20 blur-[120px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
+                <div className="absolute inset-0 border-[4px] border-primary shadow-[0_0_40px_rgba(59,130,246,0.8)] rounded-full z-20 pointer-events-none group-hover:scale-105 transition-transform duration-700" />
+                <img
                   src="/images/wifi-banner.png" 
                   alt="WiFi" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
