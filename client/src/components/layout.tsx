@@ -113,42 +113,68 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <AnimatePresence>
           {isChatOpen && (
             <motion.div 
-              initial={{ opacity: 0, scale: 0.9, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="bg-background border border-border rounded-3xl shadow-2xl w-80 mb-4 overflow-hidden"
+              initial={{ opacity: 0, scale: 0.9, y: 20, x: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20, x: 20 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              className="bg-white dark:bg-[#111] border border-gray-200 dark:border-white/10 rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] w-80 mb-6 overflow-hidden origin-bottom-right"
             >
-              <div className="bg-primary p-6 text-white text-center">
-                <h3 className="text-xl font-black italic uppercase tracking-widest">DCS Connect</h3>
-                <p className="text-white/70 text-sm mt-1">Enterprise Support Engine</p>
+              <div className="bg-primary p-6 text-white text-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent pointer-events-none" />
+                <h3 className="text-xl font-black italic uppercase tracking-widest relative z-10">DCS Connect</h3>
+                <p className="text-white/70 text-sm mt-1 relative z-10">Enterprise Support Engine</p>
               </div>
-              <div className="p-6 space-y-6">
-                <div className="flex justify-around items-center">
+              <div className="p-8 space-y-8">
+                <div className="grid grid-cols-4 gap-3">
                   {["Ubiquiti", "Mikrotik", "ALGcom", "V-SOL"].map(b => (
-                    <div key={b} className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-[10px] font-black cursor-pointer hover:bg-primary/20 transition-colors">
+                    <div key={b} className="aspect-square bg-gray-50 dark:bg-white/5 rounded-2xl flex items-center justify-center text-[10px] font-black cursor-pointer hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110">
                       {b[0]}
                     </div>
                   ))}
                 </div>
-                <div className="space-y-3">
-                  <Button variant="outline" className="w-full rounded-xl justify-start h-12 gap-3">
-                    <HelpCircle className="w-5 h-5" /> FAQ & Documentation
+                <div className="space-y-4">
+                  <Button variant="outline" className="w-full rounded-2xl justify-start h-14 gap-4 border-gray-100 dark:border-white/5 hover:bg-primary hover:text-white transition-all group">
+                    <HelpCircle className="w-6 h-6 group-hover:rotate-12 transition-transform" /> 
+                    <span className="font-bold uppercase tracking-widest text-[10px]">Documentation</span>
                   </Button>
-                  <Button variant="outline" className="w-full rounded-xl justify-start h-12 gap-3">
-                    <Share2 className="w-5 h-5" /> Social Media Links
+                  <Button variant="outline" className="w-full rounded-2xl justify-start h-14 gap-4 border-gray-100 dark:border-white/5 hover:bg-primary hover:text-white transition-all group">
+                    <Share2 className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+                    <span className="font-bold uppercase tracking-widest text-[10px]">Social Links</span>
                   </Button>
                 </div>
               </div>
             </motion.div>
           )}
         </AnimatePresence>
-        <Button 
-          size="lg" 
-          className="w-16 h-16 rounded-full shadow-2xl shadow-primary/40 p-0"
-          onClick={() => setIsChatOpen(!isChatOpen)}
-        >
-          {isChatOpen ? <X className="w-8 h-8" /> : <MessageCircle className="w-8 h-8" />}
-        </Button>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Button 
+            size="lg" 
+            className="w-20 h-20 rounded-[2rem] shadow-2xl shadow-primary/40 p-0 transition-all duration-500 bg-primary hover:bg-primary/90"
+            onClick={() => setIsChatOpen(!isChatOpen)}
+          >
+            <AnimatePresence mode="wait">
+              {isChatOpen ? (
+                <motion.div
+                  key="close"
+                  initial={{ rotate: -90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: 90, opacity: 0 }}
+                >
+                  <X className="w-10 h-10" />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="chat"
+                  initial={{ rotate: 90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: -90, opacity: 0 }}
+                >
+                  <MessageCircle className="w-10 h-10" />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </Button>
+        </motion.div>
       </div>
 
       <footer className="bg-[#0f1115] text-white py-24 border-t border-white/5">
