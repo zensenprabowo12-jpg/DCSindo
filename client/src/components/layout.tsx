@@ -25,6 +25,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "light");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
   const [currentBrand, setCurrentBrand] = useState("Our Brands");
 
   useEffect(() => {
@@ -155,7 +156,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <div className="p-6 bg-white dark:bg-[#111] border-t border-gray-100 dark:border-white/5 space-y-4">
                 <div className="grid grid-cols-4 gap-2 mb-2">
                   {["Ubiquiti", "Mikrotik", "ALGcom", "V-SOL"].map(b => (
-                    <button key={b} className="py-2 bg-gray-50 dark:bg-white/5 rounded-xl text-[9px] font-black uppercase tracking-tighter hover:bg-primary hover:text-white transition-all">
+                    <button 
+                      key={b} 
+                      onClick={() => setSelectedBrand(b === selectedBrand ? null : b)}
+                      className={cn(
+                        "py-2 rounded-xl text-[9px] font-black uppercase tracking-tighter transition-all duration-300",
+                        selectedBrand === b 
+                          ? "bg-primary text-white shadow-lg shadow-primary/30" 
+                          : "bg-gray-50 dark:bg-white/5 text-gray-400 hover:bg-primary hover:text-white"
+                      )}
+                    >
                       {b}
                     </button>
                   ))}
@@ -172,10 +182,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     <ArrowRight className="w-5 h-5" />
                   </Button>
                 </div>
-                <div className="flex justify-center gap-8 pt-4">
-                  <a href="https://help.ui.com" target="_blank" rel="noreferrer" className="w-12 h-12 bg-gray-50 dark:bg-white/5 rounded-2xl flex items-center justify-center text-gray-400 hover:text-primary hover:bg-primary/10 transition-all duration-300">
-                    <HelpCircle className="w-6 h-6" />
-                  </a>
+                <div className="flex justify-center gap-6 pt-2">
                   <a href="https://wa.me/yournumber" target="_blank" rel="noreferrer" className="w-12 h-12 bg-gray-50 dark:bg-white/5 rounded-2xl flex items-center justify-center text-gray-400 hover:text-[#25D366] hover:bg-[#25D366]/10 transition-all duration-300">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" className="w-6 h-6 opacity-60 group-hover:opacity-100" style={{ filter: theme === 'dark' ? 'invert(1)' : 'none' }} />
                   </a>

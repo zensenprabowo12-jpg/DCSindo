@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function HomeUtama() {
   return (
@@ -52,35 +53,52 @@ export default function HomeUtama() {
             <p className="text-primary font-bold uppercase tracking-widest mt-2">Shop the DCS Enterprise Store</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { name: "Ubiquiti", logo: "https://www.vectorlogo.zone/logos/ubnt/ubnt-ar21.svg", path: "/home-ubiquiti", active: true },
-              { name: "MikroTik", logo: "https://www.vectorlogo.zone/logos/mikrotik/mikrotik-ar21.svg", path: "/coming-soon", active: true },
-              { name: "ALGcom", logo: "https://yt3.googleusercontent.com/ytc/AIdro_k6ZREm9I0O_yQ5O2YpY7_z-Z6x1m_G_x7ZJ8v3=s900-c-k-c0x00ffffff-no-rj", path: "/coming-soon", active: true },
-              { name: "V-SOL", logo: "https://www.vsolcn.com/wp-content/uploads/2021/04/logo.png", path: "/coming-soon", active: true },
-              { name: "Cisco", logo: "https://www.vectorlogo.zone/logos/cisco/cisco-ar21.svg", path: "/coming-soon", active: true },
-              { name: "Aruba", logo: "https://www.vectorlogo.zone/logos/arubanetworks/arubanetworks-ar21.svg", path: "/coming-soon", active: true },
-              { name: "Coming Soon", logo: "", path: "/coming-soon", active: false },
-              { name: "Coming Soon", logo: "", path: "/coming-soon", active: false },
-              { name: "Coming Soon", logo: "", path: "/coming-soon", active: false }
+              { 
+                name: "Ubiquiti", 
+                logo: "https://www.vectorlogo.zone/logos/ubnt/ubnt-ar21.svg", 
+                path: "/home-ubiquiti",
+                shape: "rounded-[3rem] rotate-2",
+                bg: "bg-blue-50/50 dark:bg-blue-900/10"
+              },
+              { 
+                name: "MikroTik", 
+                logo: "https://www.vectorlogo.zone/logos/mikrotik/mikrotik-ar21.svg", 
+                path: "/coming-soon",
+                shape: "rounded-[4rem] rounded-tl-none -rotate-1",
+                bg: "bg-slate-50/50 dark:bg-slate-900/10"
+              },
+              { 
+                name: "ALGcom", 
+                logo: "https://yt3.googleusercontent.com/ytc/AIdro_k6ZREm9I0O_yQ5O2YpY7_z-Z6x1m_G_x7ZJ8v3=s900-c-k-c0x00ffffff-no-rj", 
+                path: "/coming-soon",
+                shape: "rounded-[2rem] rounded-br-[5rem] rotate-1",
+                bg: "bg-gray-50/50 dark:bg-gray-900/10"
+              },
+              { 
+                name: "V-SOL", 
+                logo: "https://www.vsolcn.com/wp-content/uploads/2021/04/logo.png", 
+                path: "/coming-soon",
+                shape: "rounded-full -rotate-2",
+                bg: "bg-zinc-50/50 dark:bg-zinc-900/10"
+              }
             ].map((brand, i) => (
               <Link key={i} href={brand.path}>
                 <motion.div 
-                  whileHover={{ scale: 0.985 }}
-                  className="relative aspect-square bg-gray-50 dark:bg-[#111] border border-gray-100 dark:border-white/5 overflow-hidden group cursor-pointer rounded-2xl transition-colors duration-500"
+                  whileHover={{ scale: 1.02, rotate: 0 }}
+                  className={cn(
+                    "relative aspect-[4/5] border border-gray-100 dark:border-white/5 overflow-hidden group cursor-pointer transition-all duration-500 shadow-sm hover:shadow-2xl",
+                    brand.shape,
+                    brand.bg
+                  )}
                 >
                   <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
-                  {brand.logo ? (
-                    <div className="absolute inset-0 flex items-center justify-center p-16 transition-transform duration-700 group-hover:scale-105">
-                      <img src={brand.logo} alt={brand.name} className="max-w-full max-h-full object-contain filter brightness-90 contrast-125 dark:invert opacity-70 group-hover:opacity-100 transition-all" />
-                    </div>
-                  ) : (
-                    <div className="absolute inset-0 flex items-center justify-center text-gray-300 dark:text-white/20 font-bold uppercase tracking-widest text-xs">
-                      Coming Soon
-                    </div>
-                  )}
-                  <div className="absolute bottom-6 left-6 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <p className="text-black dark:text-white font-black uppercase italic tracking-tighter text-lg">{brand.name}</p>
+                  <div className="absolute inset-0 flex items-center justify-center p-12 transition-transform duration-700 group-hover:scale-110">
+                    <img src={brand.logo} alt={brand.name} className="max-w-[80%] max-h-[80%] object-contain filter brightness-90 contrast-125 dark:invert opacity-80 group-hover:opacity-100 transition-all" />
+                  </div>
+                  <div className="absolute bottom-10 left-0 right-0 text-center z-20 opacity-0 group-hover:opacity-100 transition-all transform translate-y-4 group-hover:translate-y-0">
+                    <p className="text-black dark:text-white font-black uppercase italic tracking-tighter text-xl">{brand.name}</p>
                   </div>
                 </motion.div>
               </Link>
