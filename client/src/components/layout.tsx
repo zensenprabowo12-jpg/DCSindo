@@ -180,7 +180,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </motion.div>
           )}
         </AnimatePresence>
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+        <motion.div 
+          className="flex flex-col items-end"
+          whileHover={{ scale: 1.05 }} 
+          whileTap={{ scale: 0.95 }}
+        >
           <Button 
             size="lg" 
             className="w-20 h-20 rounded-[2rem] shadow-2xl shadow-primary/40 p-0 transition-all duration-500 bg-primary hover:bg-primary/90"
