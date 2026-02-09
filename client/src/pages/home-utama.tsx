@@ -57,21 +57,21 @@ export default function HomeUtama() {
             {[
               { 
                 name: "Ubiquiti", 
-                logo: "https://www.vectorlogo.zone/logos/ubnt/ubnt-ar21.svg", 
+                logo: "https://cdn.worldvectorlogo.com/logos/ubiquiti-networks.svg", 
                 path: "/home-ubiquiti",
                 shape: "rounded-[3rem] rotate-2",
                 bg: "bg-blue-50/50 dark:bg-blue-900/10"
               },
               { 
                 name: "MikroTik", 
-                logo: "https://www.vectorlogo.zone/logos/mikrotik/mikrotik-ar21.svg", 
+                logo: "https://cdn.worldvectorlogo.com/logos/mikrotik.svg", 
                 path: "/coming-soon",
                 shape: "rounded-[4rem] rounded-tl-none -rotate-1",
                 bg: "bg-slate-50/50 dark:bg-slate-900/10"
               },
               { 
                 name: "ALGcom", 
-                logo: "https://yt3.googleusercontent.com/ytc/AIdro_k6ZREm9I0O_yQ5O2YpY7_z-Z6x1m_G_x7ZJ8v3=s900-c-k-c0x00ffffff-no-rj", 
+                logo: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Logo_ALGcom.png", 
                 path: "/coming-soon",
                 shape: "rounded-[2rem] rounded-br-[5rem] rotate-1",
                 bg: "bg-gray-50/50 dark:bg-gray-900/10"
