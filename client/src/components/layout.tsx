@@ -9,7 +9,8 @@ import {
   Moon,
   MessageCircle,
   HelpCircle,
-  Share2
+  Share2,
+  ArrowRight
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -117,30 +118,63 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20, x: 20 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="bg-white dark:bg-[#111] border border-gray-200 dark:border-white/10 rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] w-80 mb-6 overflow-hidden origin-bottom-right"
+              className="bg-white dark:bg-[#111] border border-gray-200 dark:border-white/10 rounded-[2.5rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] w-[24rem] mb-6 overflow-hidden origin-bottom-right flex flex-col h-[32rem]"
             >
-              <div className="bg-primary p-6 text-white text-center relative overflow-hidden">
+              {/* Header - Fueler Style */}
+              <div className="bg-primary p-6 text-white relative overflow-hidden flex-shrink-0">
                 <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent pointer-events-none" />
-                <h3 className="text-xl font-black italic uppercase tracking-widest relative z-10">DCS Connect</h3>
-                <p className="text-white/70 text-sm mt-1 relative z-10">Enterprise Support Engine</p>
-              </div>
-              <div className="p-8 space-y-8">
-                <div className="grid grid-cols-4 gap-3">
-                  {["Ubiquiti", "Mikrotik", "ALGcom", "V-SOL"].map(b => (
-                    <div key={b} className="aspect-square bg-gray-50 dark:bg-white/5 rounded-2xl flex items-center justify-center text-[10px] font-black cursor-pointer hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110">
-                      {b[0]}
+                <div className="relative z-10 flex items-center gap-4">
+                  <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-md">
+                    <span className="text-xl font-black italic">DCS</span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-black uppercase tracking-widest leading-tight">DCS Connect</h3>
+                    <div className="flex items-center gap-2 mt-1">
+                      <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                      <span className="text-white/70 text-[10px] font-bold uppercase tracking-widest">Active Support</span>
                     </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Chat Area - Scrollable */}
+              <div className="flex-1 overflow-y-auto p-6 space-y-4 bg-gray-50/50 dark:bg-black/20">
+                <div className="flex gap-3">
+                  <div className="w-8 h-8 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-[10px] font-black text-primary">D</span>
+                  </div>
+                  <div className="bg-white dark:bg-[#1a1a1a] p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 dark:border-white/5 max-w-[80%]">
+                    <p className="text-sm font-medium leading-relaxed">
+                      Hi! How can we help you build your enterprise network today?
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Input Area - Fueler Style */}
+              <div className="p-6 bg-white dark:bg-[#111] border-t border-gray-100 dark:border-white/5 space-y-4">
+                <div className="grid grid-cols-4 gap-2 mb-2">
+                  {["Ubiquiti", "Mikrotik", "ALGcom", "V-SOL"].map(b => (
+                    <button key={b} className="py-2 bg-gray-50 dark:bg-white/5 rounded-xl text-[9px] font-black uppercase tracking-tighter hover:bg-primary hover:text-white transition-all">
+                      {b}
+                    </button>
                   ))}
                 </div>
-                <div className="space-y-4">
-                  <Button variant="outline" className="w-full rounded-2xl justify-start h-14 gap-4 border-gray-100 dark:border-white/5 hover:bg-primary hover:text-white transition-all group">
-                    <HelpCircle className="w-6 h-6 group-hover:rotate-12 transition-transform" /> 
-                    <span className="font-bold uppercase tracking-widest text-[10px]">Documentation</span>
+                <div className="relative">
+                  <textarea 
+                    placeholder="Type your message..." 
+                    className="w-full bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 rounded-2xl p-4 pr-14 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all min-h-[80px]"
+                  />
+                  <Button 
+                    className="absolute bottom-3 right-3 w-10 h-10 rounded-xl p-0 shadow-lg shadow-primary/20"
+                    size="icon"
+                  >
+                    <ArrowRight className="w-5 h-5" />
                   </Button>
-                  <Button variant="outline" className="w-full rounded-2xl justify-start h-14 gap-4 border-gray-100 dark:border-white/5 hover:bg-primary hover:text-white transition-all group">
-                    <Share2 className="w-6 h-6 group-hover:rotate-12 transition-transform" />
-                    <span className="font-bold uppercase tracking-widest text-[10px]">Social Links</span>
-                  </Button>
+                </div>
+                <div className="flex justify-center gap-6 pt-2">
+                  <button className="text-gray-400 hover:text-primary transition-colors"><HelpCircle className="w-5 h-5" /></button>
+                  <button className="text-gray-400 hover:text-primary transition-colors"><Share2 className="w-5 h-5" /></button>
                 </div>
               </div>
             </motion.div>
