@@ -14,7 +14,7 @@ import { Separator } from "@/components/ui/separator";
 
 const formSchema = z.object({
   email: z.string().email(),
-  phone: z.string().min(5),
+  phone: z.string().min(8),
   subject: z.string().min(1),
   product: z.string().optional(),
   message: z.string().min(10),
@@ -77,7 +77,7 @@ export default function Support() {
                     <FormItem>
                       <FormLabel className="font-black uppercase tracking-widest text-xs">Phone Number</FormLabel>
                       <FormControl>
-                        <Input placeholder="+1 (555) 000-0000" {...field} className="rounded-full bg-secondary/50 h-12 border-none px-6" />
+                        <Input placeholder="+62 " {...field} className="rounded-full bg-secondary/50 h-12 border-none px-6" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -114,11 +114,11 @@ export default function Support() {
                     name="product"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="font-black uppercase tracking-widest text-xs">Related Product</FormLabel>
+                        <FormLabel className="font-black uppercase tracking-widest text-xs">Related Brand</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
                             <SelectTrigger className="rounded-full bg-secondary/50 h-12 border-none px-6">
-                              <SelectValue placeholder="Select product" />
+                              <SelectValue placeholder="Select Brand" />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent className="rounded-[var(--radius)]">

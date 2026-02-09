@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
-  const [currentBrand, setCurrentBrand] = useState("Our Brands");
+  const [currentBrand, setCurrentBrand] = useState("OUR BRANDS");
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -59,7 +59,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Link href="/">
             <a 
               className="text-2xl font-bold tracking-tighter hover:opacity-80 transition-opacity flex items-center gap-2"
-              onClick={() => setCurrentBrand("Our Brands")}
+              onClick={() => setCurrentBrand("OUR BRANDS")}
             >
               <span className={cn("text-3xl font-black italic", (scrolled || !isHome) ? "text-primary" : "text-white")}>DCS</span>
             </a>
