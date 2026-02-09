@@ -179,11 +179,13 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
             <div className="flex-1 order-2 lg:order-1">
               <div className="relative group cursor-pointer">
-                <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full group-hover:bg-primary/30 transition-all duration-700" />
+                {/* 🔹 Enhanced Blue Highlight Accent */}
+                <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
+                <div className="absolute inset-0 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-105 transition-transform duration-700" />
                 <img
                   src="/images/dcs-protect.png"
                   alt="DCS Protect"
-                  className="relative z-10 w-full max-w-xl mx-auto rounded-full border-8 border-white/5 shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2"
+                  className="relative z-10 w-full max-w-xl mx-auto rounded-full border-4 border-white/10 shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2"
                 />
               </div>
             </div>
@@ -211,11 +213,13 @@ export default function Home() {
             </div>
             <div className="flex-1">
               <div className="relative group cursor-pointer">
-                <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full group-hover:bg-primary/30 transition-all duration-700" />
+                {/* 🔹 Enhanced Blue Highlight Accent */}
+                <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
+                <div className="absolute inset-0 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-105 transition-transform duration-700" />
                 <img
                   src="/images/dcs-network.png"
                   alt="DCS Network"
-                  className="relative z-10 w-full max-w-xl mx-auto rounded-full border-8 border-white/5 shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:-rotate-2"
+                  className="relative z-10 w-full max-w-xl mx-auto rounded-full border-4 border-white/10 shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:-rotate-2"
                 />
               </div>
             </div>
@@ -225,11 +229,13 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32 pb-16">
             <div className="flex-1 order-2 lg:order-1">
               <div className="relative group cursor-pointer">
-                <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full group-hover:bg-primary/30 transition-all duration-700" />
+                {/* 🔹 Enhanced Blue Highlight Accent */}
+                <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
+                <div className="absolute inset-0 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-105 transition-transform duration-700" />
                 <img
                   src="/images/dcs-access.png"
                   alt="DCS Access"
-                  className="relative z-10 w-full max-w-xl mx-auto rounded-full border-8 border-white/5 shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2"
+                  className="relative z-10 w-full max-w-xl mx-auto rounded-full border-4 border-white/10 shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2"
                 />
               </div>
             </div>
