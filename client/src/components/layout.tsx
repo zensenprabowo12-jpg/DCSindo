@@ -53,7 +53,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       
       <header className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-transparent",
-        (scrolled || !isHome) ? "bg-background/95 backdrop-blur-md border-border py-4 shadow-lg" : "bg-transparent py-4 text-black"
+        (scrolled || !isHome) ? "bg-background/90 backdrop-blur-md border-border py-3 shadow-sm supports-[backdrop-filter]:bg-background/60" : "bg-transparent py-6 text-white"
       )}>
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           <Link href="/">
@@ -62,14 +62,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 onClick={() => setCurrentBrand("Our Brands")}
               >
                 <img
-                  src= { theme === "dark" 
-                  ? "/public/DCS-Logo-putih.png" 
-                  : "/public/DCS-Logo-hitam.png"
+                  src={
+                    (scrolled || !isHome) 
+                      ? (theme === "dark" ? "/DCS-Logo-putih.png" : "/DCS-Logo-hitam.png")
+                      : "/DCS-Logo-putih.png"
                   }
-                  
-                  alt="DCS-Logo-putih-hitam.png"
+                  alt="DCS Logo"
                   className={cn(
-                    "h-12 w-auto transition-all duration-300", (scrolled || !isHome) && "scale-90 "
+                    "h-10 w-auto transition-all duration-300", 
+                    (scrolled || !isHome) && "scale-90"
                   )}
                 />
               </a>
@@ -77,11 +78,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <nav className="hidden md:flex items-center gap-10 text-sm font-black tracking-widest">
             <Link href="/collections/all">
-              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-black")}>All products</a>
+              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>All products</a>
             </Link>
             
             <div className="relative group py-2">
-              <button className={cn("flex items-center gap-2 hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-black")}>
+              <button className={cn("flex items-center gap-2 hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>
                 {currentBrand} <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
               </button>
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
@@ -98,11 +99,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
 
             <Link href="/support">
-              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-black")}>Support</a>
+              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>Support</a>
             </Link>
             {/* About Us Link */}
             <Link href="/support">
-              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-black")}>Contact Us</a>
+              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>Contact Us</a>
             </Link>
             
           </nav>
@@ -110,10 +111,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           
 
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="icon" onClick={toggleTheme} className={cn("rounded-full", (scrolled || !isHome) ? "text-foreground" : "text-black")}>
+            <Button variant="ghost" size="icon" onClick={toggleTheme} className={cn("rounded-full hover:bg-white/10", (scrolled || !isHome) ? "text-foreground hover:bg-accent" : "text-white")}>
               {theme === "light" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </Button>
-            <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className={cn("rounded-full", (scrolled || !isHome) ? "text-foreground" : "text-black")}>
+            <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className={cn("rounded-full hover:bg-white/10", (scrolled || !isHome) ? "text-foreground hover:bg-accent" : "text-white")}>
               <Search className="w-5 h-5" />
             </Button>
           </div>
@@ -127,11 +128,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-auto">
             <div className="space-y-2 mb-auto">
               <img
-                src= "/public/DCS-Logo-hitam.png" 
-                alt="DCS-Logo-putih-hitam.png"
-                className={cn(
-                  "h-13 w-auto transition-all duration-300 ", (scrolled || !isHome) && "scale-95 invert"
-                )}
+                src="/DCS-Logo-putih.png"
+                alt="DCS Logo"
+                className="h-10 w-auto transition-all duration-300"
               />
               <p className="text-gray-400 text-sm leading-relaxed">Professional network solutions for enterprise and home.</p>
                 <p className="text-gray-400 text-sm leading-relaxed"> No subscriptions, just performance.</p>
