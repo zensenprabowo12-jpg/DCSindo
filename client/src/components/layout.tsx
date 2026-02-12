@@ -50,6 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans flex flex-col relative pt-16 md:pt-20">
       <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+      
       <header className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-transparent",
         (scrolled || !isHome) ? "bg-background/95 backdrop-blur-md border-border py-4 shadow-lg" : "bg-transparent py-4 text-black"
@@ -67,7 +68,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   }
                   
                   alt="DCS-Logo-putih-hitam.png"
-                  className="h-12 w-auto transition-all duration-300 pl-[0px] pr-[0px] ml-[10px] mr-[10px]"
+                  className={cn(
+                    "h-12 w-auto transition-all duration-300", (scrolled || !isHome) && "scale-90 "
+                  )}
                 />
               </a>
           </Link>
@@ -107,16 +110,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           
 
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="icon" onClick={toggleTheme} className={cn("rounded-full", (scrolled || !isHome) ? "text-foreground" : "text-white")}>
+            <Button variant="ghost" size="icon" onClick={toggleTheme} className={cn("rounded-full", (scrolled || !isHome) ? "text-foreground" : "text-black")}>
               {theme === "light" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </Button>
-            <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className={cn("rounded-full", (scrolled || !isHome) ? "text-foreground" : "text-white")}>
+            <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className={cn("rounded-full", (scrolled || !isHome) ? "text-foreground" : "text-black")}>
               <Search className="w-5 h-5" />
             </Button>
           </div>
         </div>
       </header>
+
       <main className="flex-1">{children}</main>
+
       <footer className="bg-[#0f1115] text-white py-24 border-t border-white/5">
         <div className="container mx-auto px-4 md-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-auto">

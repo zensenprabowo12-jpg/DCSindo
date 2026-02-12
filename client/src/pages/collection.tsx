@@ -23,14 +23,14 @@ export default function Collection() {
 
   return (
     <Layout>
-      <div className="bg-secondary/20 border-b border-border py-24">
+      <div className="bg-secondary/20 border-b border-border py-12 md:py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-7xl font-black tracking-tighter italic uppercase mb-4">{categoryParam === 'all' ? 'All Products' : categoryParam}</h1>
-          <p className="text-xl text-muted-foreground font-medium uppercase tracking-widest italic">The Ecosystem of Power</p>
+          <h1 className="text-4xl md:text-6xl font-black tracking-tighter italic uppercase mb-2">{categoryParam === 'all' ? 'All Products' : categoryParam}</h1>
+          <p className="text-sm md:text-base text-muted-foreground font-medium uppercase tracking-widest italic">The Ecosystem of Power</p>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-24 flex flex-col md:flex-row gap-20">
+      <div className="container mx-auto px-4 py-12 md:py-16 flex flex-col md:flex-row gap-12 md:gap-20">
         <aside className="w-full md:w-72 shrink-0 space-y-12">
           <div>
             <h3 className="text-xs font-black uppercase tracking-[0.3em] mb-8 text-primary">Our Brands</h3>
