@@ -81,8 +81,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <header className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled 
-          ? "bg-background/70 backdrop-blur-md border-b border-border py-3" 
-          : "bg-transparent py-6"
+          ? "bg-background/70 backdrop-blur-md border-b border-border py-2" 
+          : "bg-transparent py-4"
       )}>
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between relative">
           
@@ -92,9 +92,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               variant="ghost" 
               size="icon" 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-foreground hover:bg-accent"
+              className="text-foreground hover:bg-accent h-8 w-8"
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </Button>
           </div>
 
@@ -105,19 +105,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <img
                   src={theme === "dark" ? "/DCS-Logo-putih.png" : "/DCS-Logo-hitam.png"}
                   alt="DCS Logo"
-                  className="h-8 md:h-9 w-auto"
+                  className="h-6 md:h-7 w-auto"
                 />
               </a>
             </Link>
           </div>
 
           {/* Right: Theme Toggle & Search */}
-          <div className="flex-1 flex justify-end gap-2">
-            <Button variant="ghost" size="icon" onClick={toggleTheme} className="text-foreground hover:bg-accent rounded-full">
-              {theme === "light" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          <div className="flex-1 flex justify-end gap-1">
+            <Button variant="ghost" size="icon" onClick={toggleTheme} className="text-foreground hover:bg-accent rounded-full h-8 w-8">
+              {theme === "light" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </Button>
-            <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className="text-foreground hover:bg-accent rounded-full">
-              <Search className="w-5 h-5" />
+            <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className="text-foreground hover:bg-accent rounded-full h-8 w-8">
+              <Search className="w-4 h-4" />
             </Button>
           </div>
 
