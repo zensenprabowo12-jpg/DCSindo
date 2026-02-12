@@ -50,11 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans flex flex-col relative pt-16 md:pt-20">
       <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
-      
-      <header className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-transparent",
-        (scrolled || !isHome) ? "bg-background/90 backdrop-blur-md border-border py-3 shadow-sm supports-[backdrop-filter]:bg-background/60" : "bg-transparent py-6 text-white"
-      )}>
+      <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-transparent py-6 text-white bg-[#000000]">
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           <Link href="/">
               <a
@@ -120,9 +116,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </header>
-
       <main className="flex-1">{children}</main>
-
       <footer className="bg-[#0f1115] text-white py-24 border-t border-white/5">
         <div className="container mx-auto px-4 md-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-auto">
