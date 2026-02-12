@@ -25,37 +25,40 @@ export default function Home() {
 
         {/* Hero Content */}
         <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white">
-          <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
-            THE FUTURE OF <br /> NETWORKING
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-2xl mb-8 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
-            Enterprise-grade performance. Beautifully designed. <br /> Simply scalable.
+          
+          {/* Slogan */}
+          <p className="mb-6 text-sm md:text-[15px] font-black tracking-[0.35em] uppercase text-gray-300 animate-in fade-in slide-in-from-bottom-6 duration-1000">
+            Building The Future of IT
           </p>
-          <div className="flex gap-4 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
-            <Link href="/collections/all">
-              <Button size="lg" className="bg-white text-black hover:bg-gray-200 text-lg px-8 py-6 rounded-full font-bold transition-all hover:scale-105">
-                All Products
-              </Button>
-            </Link>
-            <Link href="/support">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6 rounded-full font-bold transition-all hover:scale-105">
-                Contact Us
-              </Button>
-            </Link>
-          </div>
+          
+          {/* Logo UniFi */} 
+          <img
+            src="/UniFi-Light.png"
+            alt="UniFi-Light"
+            className="w-48 md:w-64 lg:w-100 mb-4 animate-in fade-in slide-in-from-bottom-4 duration-1000"
+          />
+
+          {/* Deskripsi */}
+          <p className="max-w-2xl text-base md:text-[20px] text-gray-200 leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
+            Best-in-class IT products unified through an intuitive software interface, powered by scalable, license-free cloud management.
+          </p>
+          
         </div>
       </section>
       {/* 🔹 Reimagined Ecosystem Section - Aesthetic Masonry Layout */}
       <section className="py-24 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Our Ecosystem</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Integrated solutions for every environment, built to scale.</p>
+            <h2 className="text-[16px] md:text-[60px] font-black tracking-tight mb-2">Industry Leading Hardware</h2>
+            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Engineered with obsessive attention to detail-built to perform, built to last. 
+            </p>
+            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Rapid EdgeAI advancements across networking and physical security.
+            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[900px]">
             {/* WiFi Systems - Large Main Card */}
-            <Link href="/collections/wifi" className="md:col-span-8 md:row-span-2">
+            <Link href="/collections/ubiquiti" className="md:col-span-8 md:row-span-2">
               <motion.a 
                 whileHover={{ scale: 0.99 }}
                 className="group relative h-full min-h-[400px] overflow-hidden bg-black shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
@@ -72,8 +75,61 @@ export default function Home() {
               </motion.a>
             </Link>
 
-            {/* Switching - Side Card */}
-            <Link href="/collections/switching" className="md:col-span-4 md:row-span-1">
+            {/* Secutiry - Side Card */}
+            <Link href="/collections/ubiquiti" className="md:col-span-4 md:row-span-1">
+              <motion.a 
+                whileHover={{ scale: 0.98 }}
+                className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
+              >
+                <div className="absolute inset-0 p-8 z-20 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
+                  <h3 className="text-2xl font-bold text-white">Security</h3>
+                  <p className="text-white/70 text-sm">Protect what matters with AI-driven surveillance.</p>
+                </div>
+                <img 
+                  src="/images/Home-Camera-Security.png" 
+                  alt="Home-Camera-Security" 
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </motion.a>
+            </Link>
+            
+
+            {/* Door Access - Side Card */}
+            <Link href="/collections/ubiquiti" className="md:col-span-4 md:row-span-1">
+              <motion.a 
+                whileHover={{ scale: 0.98 }}
+                className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
+              >
+                <div className="absolute inset-0 p-8 z-20 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
+                  <h3 className="text-xl font-bold text-white">Door Access</h3>
+                </div>
+                <img 
+                  src="/images/Home-Door-Access.png" 
+                  alt="Home-Door-Access" 
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </motion.a>
+            </Link>
+
+            {/* Cloud Gateways - Bottom Grid */}
+            <Link href="/collections/ubiquiti" className="md:col-span-4 md:row-span-1">
+              <motion.a 
+                whileHover={{ scale: 0.98 }}
+                className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
+              >
+                <div className="absolute inset-0 p-8 z-20 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
+                  <h3 className="text-xl font-bold text-white">Cloud Gateways</h3>
+                </div>
+                <img 
+                  src="/images/home-Cloud-Gateways.png" 
+                  alt="Home-Cloud-Gateways" 
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </motion.a>
+            </Link>
+
+            {/* Switching - Bottom Grid */}
+            <Link href="/collections/ubiquiti" className="md:col-span-4 md:row-span-1">
               <motion.a 
                 whileHover={{ scale: 0.98 }}
                 className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
@@ -90,65 +146,13 @@ export default function Home() {
               </motion.a>
             </Link>
 
-            {/* Security - Side Card */}
-            <Link href="/collections/camera-security" className="md:col-span-4 md:row-span-1">
-              <motion.a 
-                whileHover={{ scale: 0.98 }}
-                className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
-              >
-                <div className="absolute inset-0 p-8 z-20 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
-                  <h3 className="text-2xl font-bold text-white">Security</h3>
-                  <p className="text-white/70 text-sm">Protect what matters with AI-driven surveillance.</p>
-                </div>
-                <img 
-                  src="/images/Home-Camera-Security.png" 
-                  alt="Home-Camera-Security" 
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </motion.a>
-            </Link>
-
-            {/* Cloud Gateways - Bottom Grid */}
-            <Link href="/collections/cloud-gateways" className="md:col-span-4 md:row-span-1">
-              <motion.a 
-                whileHover={{ scale: 0.98 }}
-                className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
-              >
-                <div className="absolute inset-0 p-8 z-20 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
-                  <h3 className="text-xl font-bold text-white">Cloud Gateways</h3>
-                </div>
-                <img 
-                  src="/images/home-Cloud-Gateways.png" 
-                  alt="Home-Cloud-Gateways" 
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </motion.a>
-            </Link>
-
-            {/* Door Access - Bottom Grid */}
-            <Link href="/collections/door-access" className="md:col-span-4 md:row-span-1">
-              <motion.a 
-                whileHover={{ scale: 0.98 }}
-                className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
-              >
-                <div className="absolute inset-0 p-8 z-20 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
-                  <h3 className="text-xl font-bold text-white">Door Access</h3>
-                </div>
-                <img 
-                  src="/images/Home-Door-Access.png" 
-                  alt="Home-Door-Access" 
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </motion.a>
-            </Link>
-
             {/* Others - Bottom Grid */}
-            <Link href="/collections/others" className="md:col-span-4 md:row-span-1">
+            <Link href="/collections/ubiquiti" className="md:col-span-4 md:row-span-1">
               <motion.a 
                 whileHover={{ scale: 0.98 }}
                 className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)] flex flex-col items-center justify-center p-8 text-center"
               >
-                <h3 className="text-2xl font-black mb-4 group-hover:text-primary transition-colors uppercase italic">View All</h3>
+                <h3 className="text-2xl font-black mb-4 group-hover:text-primary transition-colors uppercase italic">Explore UniFi</h3>
                 <ArrowRight className="w-12 h-12 text-primary group-hover:translate-x-4 transition-transform duration-500" />
               </motion.a>
             </Link>
@@ -158,13 +162,16 @@ export default function Home() {
       {/* Reimagined Infrastructure Showcase */}
       <section className="bg-black text-white py-32 overflow-hidden">
         <div className="container mx-auto px-4 text-center mb-24">
-          <h2 className="text-5xl md:text-7xl font-black tracking-tighter mb-6">UNIFY YOUR WORLD</h2>
+          <h2 className="text-5xl md:text-7xl font-black tracking-tighter mb-6">Rethinking IT</h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-xl mb-12">
             Professional-grade software meets enterprise-grade hardware. No subscriptions.
           </p>
-          <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
-            Talk to an Expert
-          </Button>
+          <Link href="/support">
+            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
+              Talk to an Expert
+            </Button>
+          </Link>
+          
         </div>
 
         <div className="container mx-auto px-4 space-y-48">

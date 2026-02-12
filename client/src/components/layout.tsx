@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
-  const [currentBrand, setCurrentBrand] = useState("OUR BRANDS");
+  const [currentBrand, setCurrentBrand] = useState("Our Brands");
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -48,26 +48,36 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   ];
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans flex flex-col relative">
+    <div className="min-h-screen bg-background text-foreground font-sans flex flex-col relative pt-16 md:pt-20">
       <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
       
       <header className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-transparent",
-        (scrolled || !isHome) ? "bg-background/95 backdrop-blur-md border-border py-3 shadow-lg" : "bg-transparent py-6 text-white"
+        (scrolled || !isHome) ? "bg-background/95 backdrop-blur-md border-border py-2 shadow-lg" : "bg-transparent py-4 text-white"
       )}>
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           <Link href="/">
-            <a 
-              className="text-2xl font-bold tracking-tighter hover:opacity-80 transition-opacity flex items-center gap-2"
-              onClick={() => setCurrentBrand("OUR BRANDS")}
-            >
-              <span className={cn("text-3xl font-black italic", (scrolled || !isHome) ? "text-primary" : "text-white")}>DCS</span>
-            </a>
+              <a
+                className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+                onClick={() => setCurrentBrand("Our Brands")}
+              >
+                <img
+                  src= { theme === "dark" 
+                  ? "/public/DCS-Logo-hitam.png" 
+                  : "/public/DCS-Logo-putih.png"
+                  }
+                  
+                  alt="DCS-Logo-putih-hitam.png"
+                  className={cn(
+                    "h-10 w-auto transition-all duration-300", (scrolled || !isHome) && "scale-90 invert"
+                  )}
+                />
+              </a>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-10 text-sm font-black uppercase tracking-widest">
+          <nav className="hidden md:flex items-center gap-10 text-sm font-black tracking-widest">
             <Link href="/collections/all">
-              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>All Products</a>
+              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>All products</a>
             </Link>
             
             <div className="relative group py-2">
@@ -75,10 +85,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 {currentBrand} <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
               </button>
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div className="bg-background border border-border rounded-2xl shadow-2xl min-w-[220px] overflow-hidden p-2 backdrop-blur-xl bg-opacity-95">
+                <div className="bg-background border border-border rounded-[12px] shadow-2xl min-w-[220px] overflow-hidden p-2 backdrop-blur-xl bg-opacity-95">
                   {brands.map((brand) => (
                     <Link key={brand.name} href={brand.path} onClick={() => setCurrentBrand(brand.name)}>
-                      <a className="block px-6 py-4 hover:bg-primary/10 rounded-xl transition-all font-black text-foreground">
+                      <a className="block px-6 py-4 hover:bg-primary/10 rounded-[8px] transition-all font-black text-foreground">
                         {brand.name}
                       </a>
                     </Link>
@@ -90,154 +100,41 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Link href="/support">
               <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>Support</a>
             </Link>
+            {/* About Us Link */}
+            <Link href="/support">
+              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>Contact Us</a>
+            </Link>
+            
           </nav>
+          
+          
 
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="icon" onClick={toggleTheme} className={cn("rounded-full", (scrolled || !isHome) ? "text-foreground" : "text-white")}>
-              {theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+              {theme === "light" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </Button>
             <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className={cn("rounded-full", (scrolled || !isHome) ? "text-foreground" : "text-white")}>
               <Search className="w-5 h-5" />
             </Button>
-            <Link href="/cart">
-              <Button variant="ghost" size="icon" className={cn("rounded-full", (scrolled || !isHome) ? "text-foreground" : "text-white")}>
-                <ShoppingCart className="w-5 h-5" />
-              </Button>
-            </Link>
           </div>
         </div>
       </header>
 
       <main className="flex-1">{children}</main>
 
-      {/* Floating Chat Button */}
-      <div className="fixed bottom-8 right-8 z-[100]">
-        <AnimatePresence>
-          {isChatOpen && (
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9, y: 20, x: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
-              exit={{ opacity: 0, scale: 0.9, y: 20, x: 20 }}
-              transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="bg-white dark:bg-[#111] border border-gray-200 dark:border-white/10 rounded-[2.5rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] w-[24rem] mb-6 overflow-hidden origin-bottom-right flex flex-col h-[32rem]"
-            >
-              {/* Header - Fueler Style */}
-              <div className="bg-primary p-6 text-white relative overflow-hidden flex-shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent pointer-events-none" />
-                <div className="relative z-10 flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-md">
-                    <span className="text-xl font-black italic">DCS</span>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-black uppercase tracking-widest leading-tight">DCS Connect</h3>
-                    <div className="flex items-center gap-2 mt-1">
-                      <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                      <span className="text-white/70 text-[10px] font-bold uppercase tracking-widest">Active Support</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Chat Area - Scrollable */}
-              <div className="flex-1 overflow-y-auto p-6 space-y-4 bg-gray-50/50 dark:bg-black/20">
-                <div className="flex gap-3">
-                  <div className="w-8 h-8 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-[10px] font-black text-primary">D</span>
-                  </div>
-                  <div className="bg-white dark:bg-[#1a1a1a] p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 dark:border-white/5 max-w-[80%]">
-                    <p className="text-sm font-medium leading-relaxed">
-                      Hi! How can we help you build your enterprise network today?
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Input Area - Fueler Style */}
-              <div className="p-6 bg-white dark:bg-[#111] border-t border-gray-100 dark:border-white/5 space-y-4">
-                <div className="grid grid-cols-4 gap-2 mb-2">
-                  {["Ubiquiti", "Mikrotik", "ALGcom", "V-SOL"].map(b => (
-                    <button 
-                      key={b} 
-                      onClick={() => setSelectedBrand(b === selectedBrand ? null : b)}
-                      className={cn(
-                        "py-2 rounded-xl text-[9px] font-black uppercase tracking-tighter transition-all duration-300",
-                        selectedBrand === b 
-                          ? "bg-primary text-white shadow-lg shadow-primary/30" 
-                          : "bg-gray-50 dark:bg-white/5 text-gray-400 hover:bg-primary hover:text-white"
-                      )}
-                    >
-                      {b}
-                    </button>
-                  ))}
-                </div>
-                <div className="relative">
-                  <textarea 
-                    placeholder="Type your message..." 
-                    className="w-full bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 rounded-2xl p-4 pr-14 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all min-h-[80px]"
-                  />
-                  <Button 
-                    className="absolute bottom-3 right-3 w-10 h-10 rounded-xl p-0 shadow-lg shadow-primary/20"
-                    size="icon"
-                  >
-                    <ArrowRight className="w-5 h-5" />
-                  </Button>
-                </div>
-                <div className="flex justify-center gap-6 pt-2">
-                  <a href="https://wa.me/yournumber" target="_blank" rel="noreferrer" className="w-12 h-12 bg-gray-50 dark:bg-white/5 rounded-2xl flex items-center justify-center text-gray-400 hover:text-[#25D366] hover:bg-[#25D366]/10 transition-all duration-300">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" className="w-6 h-6 opacity-60 group-hover:opacity-100" style={{ filter: theme === 'dark' ? 'invert(1)' : 'none' }} />
-                  </a>
-                  <a href="https://instagram.com/yourprofile" target="_blank" rel="noreferrer" className="w-12 h-12 bg-gray-50 dark:bg-white/5 rounded-2xl flex items-center justify-center text-gray-400 hover:text-[#E4405F] hover:bg-[#E4405F]/10 transition-all duration-300">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" className="w-6 h-6 opacity-60" />
-                  </a>
-                  <a href="mailto:support@dcs.com" target="_blank" rel="noreferrer" className="w-12 h-12 bg-gray-50 dark:bg-white/5 rounded-2xl flex items-center justify-center text-gray-400 hover:text-primary hover:bg-primary/10 transition-all duration-300">
-                    <img src="https://www.svgrepo.com/show/303161/gmail-icon-logo.svg" className="w-6 h-6 opacity-60" />
-                  </a>
-                </div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-        <motion.div 
-          className="flex flex-col items-end"
-          whileHover={{ scale: 1.05 }} 
-          whileTap={{ scale: 0.95 }}
-        >
-          <Button 
-            size="lg" 
-            className="w-20 h-20 rounded-[2rem] shadow-2xl shadow-primary/40 p-0 transition-all duration-500 bg-primary hover:bg-primary/90"
-            onClick={() => setIsChatOpen(!isChatOpen)}
-          >
-            <AnimatePresence mode="wait">
-              {isChatOpen ? (
-                <motion.div
-                  key="close"
-                  initial={{ rotate: -90, opacity: 0 }}
-                  animate={{ rotate: 0, opacity: 1 }}
-                  exit={{ rotate: 90, opacity: 0 }}
-                >
-                  <X className="w-10 h-10" />
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="chat"
-                  initial={{ rotate: 90, opacity: 0 }}
-                  animate={{ rotate: 0, opacity: 1 }}
-                  exit={{ rotate: -90, opacity: 0 }}
-                >
-                  <MessageCircle className="w-10 h-10" />
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </Button>
-        </motion.div>
-      </div>
-
       <footer className="bg-[#0f1115] text-white py-24 border-t border-white/5">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
-            <div className="space-y-6">
-              <h3 className="text-3xl font-black italic uppercase text-primary tracking-tighter">DCS</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Professional network solutions for enterprise and home. No subscriptions, just performance.</p>
+        <div className="container mx-auto px-4 md-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-auto">
+            <div className="space-y-2 mb-auto">
+              <img
+                src= "/public/DCS-Logo-hitam.png" 
+                alt="DCS-Logo-putih-hitam.png"
+                className={cn(
+                  "h-13 w-auto transition-all duration-300 ", (scrolled || !isHome) && "scale-95 invert"
+                )}
+              />
+              <p className="text-gray-400 text-sm leading-relaxed">Professional network solutions for enterprise and home.</p>
+                <p className="text-gray-400 text-sm leading-relaxed"> No subscriptions, just performance.</p>
             </div>
             <div>
               <h4 className="text-xs font-black uppercase tracking-[0.3em] mb-8 text-white/50">Ecosystem</h4>
