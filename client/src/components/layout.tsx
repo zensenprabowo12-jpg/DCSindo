@@ -50,10 +50,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans flex flex-col relative pt-16 md:pt-20">
       <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
-      
       <header className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-transparent",
-        (scrolled || !isHome) ? "bg-background/95 backdrop-blur-md border-border py-2 shadow-lg" : "bg-transparent py-4 text-white"
+        (scrolled || !isHome) ? "bg-background/95 backdrop-blur-md border-border py-4 shadow-lg" : "bg-transparent py-4 text-black"
       )}>
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           <Link href="/">
@@ -63,25 +62,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               >
                 <img
                   src= { theme === "dark" 
-                  ? "/public/DCS-Logo-hitam.png" 
-                  : "/public/DCS-Logo-putih.png"
+                  ? "/public/DCS-Logo-putih.png" 
+                  : "/public/DCS-Logo-hitam.png"
                   }
                   
                   alt="DCS-Logo-putih-hitam.png"
-                  className={cn(
-                    "h-10 w-auto transition-all duration-300", (scrolled || !isHome) && "scale-90 invert"
-                  )}
+                  className="h-12 w-auto transition-all duration-300 pl-[0px] pr-[0px] ml-[10px] mr-[10px]"
                 />
               </a>
           </Link>
 
           <nav className="hidden md:flex items-center gap-10 text-sm font-black tracking-widest">
             <Link href="/collections/all">
-              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>All products</a>
+              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-black")}>All products</a>
             </Link>
             
             <div className="relative group py-2">
-              <button className={cn("flex items-center gap-2 hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>
+              <button className={cn("flex items-center gap-2 hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-black")}>
                 {currentBrand} <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
               </button>
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
@@ -98,11 +95,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
 
             <Link href="/support">
-              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>Support</a>
+              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-black")}>Support</a>
             </Link>
             {/* About Us Link */}
             <Link href="/support">
-              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>Contact Us</a>
+              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-black")}>Contact Us</a>
             </Link>
             
           </nav>
@@ -119,9 +116,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </header>
-
       <main className="flex-1">{children}</main>
-
       <footer className="bg-[#0f1115] text-white py-24 border-t border-white/5">
         <div className="container mx-auto px-4 md-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-auto">
