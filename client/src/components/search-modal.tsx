@@ -1,8 +1,6 @@
-import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { useState } from "react";
-import { Search, X, Loader2 } from "lucide-react";
+import { Search, X } from "lucide-react";
 import { products } from "@/lib/data";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
@@ -29,7 +27,7 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
             initial={{ scale: 0.95, opacity: 0, y: -20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.95, opacity: 0, y: -20 }}
-            className="w-full max-w-2xl bg-background rounded-[var(--radius)] shadow-2xl overflow-hidden border border-border"
+            className="w-full max-w-2xl bg-background/80 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden border border-border"
             onClick={e => e.stopPropagation()}
           >
             <div className="p-6 border-b border-border flex items-center gap-4">
@@ -37,11 +35,11 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
               <input 
                 autoFocus
                 placeholder="Search products, categories..." 
-                className="flex-1 bg-transparent border-none outline-none text-xl font-medium placeholder:text-muted-foreground"
+                className="flex-1 bg-transparent border-none outline-none text-xl font-medium placeholder:text-muted-foreground text-foreground"
                 value={query}
                 onChange={e => setQuery(e.target.value)}
               />
-              <Button variant="ghost" size="icon" onClick={onClose} className="rounded-full">
+              <Button variant="ghost" size="icon" onClick={onClose} className="rounded-full hover:bg-white/10">
                 <X className="w-6 h-6" />
               </Button>
             </div>
@@ -51,9 +49,9 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
                 <div className="grid gap-2">
                   {filtered.map(p => (
                     <Link key={p.id} href={`/products/${p.id}`} onClick={onClose}>
-                      <a className="flex items-center gap-4 p-4 hover:bg-secondary/50 rounded-[var(--radius)] transition-colors group">
-                        <div className="w-16 h-16 bg-secondary/30 rounded-lg p-2">
-                          <img src={p.image} alt={p.name} className="w-full h-full object-contain" />
+                      <a className="flex items-center gap-4 p-4 hover:bg-accent rounded-xl transition-colors group">
+                        <div className="w-16 h-16 bg-secondary/30 rounded-lg p-2 flex items-center justify-center">
+                          <img src={p.image} alt={p.name} className="max-w-full max-h-full object-contain" />
                         </div>
                         <div>
                           <div className="font-bold group-hover:text-primary transition-colors">{p.name}</div>

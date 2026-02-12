@@ -18,7 +18,7 @@ export default function ComingSoon() {
         </p>
         <Link href="/">
           <Button size="lg" className="rounded-full px-12 h-20 text-xl font-black uppercase tracking-widest shadow-2xl shadow-primary/30">
-            <ArrowLeft className="mr-3 w-6 h-6" /> Back to Base
+            <ArrowLeft className="mr-3 w-6 h-6" /> Back to Home
           </Button>
         </Link>
       </div>

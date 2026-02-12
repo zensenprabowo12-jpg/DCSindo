@@ -58,7 +58,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[900px]">
             {/* WiFi Systems - Large Main Card */}
-            <Link href="/collections/ubiquiti" className="md:col-span-8 md:row-span-2">
+            <Link href="/collections/wifi" className="md:col-span-8 md:row-span-2">
               <motion.a 
                 whileHover={{ scale: 0.99 }}
                 className="group relative h-full min-h-[400px] overflow-hidden bg-black shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
@@ -75,8 +75,8 @@ export default function Home() {
               </motion.a>
             </Link>
 
-            {/* Secutiry - Side Card */}
-            <Link href="/collections/ubiquiti" className="md:col-span-4 md:row-span-1">
+            {/* Security - Side Card */}
+            <Link href="/collections/camera-security" className="md:col-span-4 md:row-span-1">
               <motion.a 
                 whileHover={{ scale: 0.98 }}
                 className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
@@ -95,7 +95,7 @@ export default function Home() {
             
 
             {/* Door Access - Side Card */}
-            <Link href="/collections/ubiquiti" className="md:col-span-4 md:row-span-1">
+            <Link href="/collections/door-access" className="md:col-span-4 md:row-span-1">
               <motion.a 
                 whileHover={{ scale: 0.98 }}
                 className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
@@ -129,7 +129,7 @@ export default function Home() {
             </Link>
 
             {/* Switching - Bottom Grid */}
-            <Link href="/collections/ubiquiti" className="md:col-span-4 md:row-span-1">
+            <Link href="/collections/switching" className="md:col-span-4 md:row-span-1">
               <motion.a 
                 whileHover={{ scale: 0.98 }}
                 className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
@@ -147,7 +147,7 @@ export default function Home() {
             </Link>
 
             {/* Others - Bottom Grid */}
-            <Link href="/collections/ubiquiti" className="md:col-span-4 md:row-span-1">
+            <Link href="/collections/accessories" className="md:col-span-4 md:row-span-1">
               <motion.a 
                 whileHover={{ scale: 0.98 }}
                 className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)] flex flex-col items-center justify-center p-8 text-center"
@@ -194,9 +194,11 @@ export default function Home() {
               <p className="text-gray-400 text-xl leading-relaxed">
                 A License-Free enterprise-grade security platform powered by an AI detection engine. It delivers intelligent monitoring and centralized management in a single unified system.
               </p>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-10 h-14 text-lg group">
-                Explore Protect <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />
-              </Button>
+              <Link href="/collections/camera-security">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
+                  Explore Protect
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -207,9 +209,11 @@ export default function Home() {
               <p className="text-gray-400 text-xl leading-relaxed">
                 Centralized management of WiFi and switching with local processing at each site. Gain instant visibility into traffic, topology, and performance.
               </p>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-10 h-14 text-lg group">
-                Explore Network <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />
-              </Button>
+              <Link href="/collections/wifi">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
+                  Explore Network
+                </Button>
+              </Link>
             </div>
             <div className="flex-1">
               <div className="relative group cursor-pointer">
@@ -244,9 +248,11 @@ export default function Home() {
               <p className="text-gray-400 text-xl leading-relaxed">
                 Seamlessly connect with third-party systems through secure APIs. Build smarter operations and maximize the value of your infrastructure.
               </p>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-10 h-14 text-lg group">
-                Explore Access <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />
-              </Button>
+              <Link href="/collections/door-access">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
+                  Explore Access
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

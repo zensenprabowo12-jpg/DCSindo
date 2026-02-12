@@ -1,14 +1,13 @@
 import { Link, useLocation } from "wouter";
 import {
   Search,
-  ChevronDown,
+  Menu,
   Sun,
   Moon,
-  
+  X
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import SearchModal from "./search-modal";
 import { motion, AnimatePresence } from "framer-motion";
@@ -18,7 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [scrolled, setScrolled] = useState(false);
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "light");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [currentBrand, setCurrentBrand] = useState("Our Brands");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -30,110 +29,101 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   }, [theme]);
 
   const toggleTheme = () => setTheme(prev => prev === "light" ? "dark" : "light");
-  const isHome = location === "/" || location === "/home-ubiquiti";
 
-  const brands = [
+  const menuItems = [
+    { name: "HOME", path: "/" },
     { name: "Ubiquiti", path: "/home-ubiquiti" },
     { name: "Mikrotik", path: "/home-Mikrotik" },
     { name: "ALGcom", path: "/home-ALGcom" },
-    { name: "V-SOL", path: "/home-V-SOL" }
+    { name: "V-SOL", path: "/home-V-SOL" },
+    { name: "Contact Us", path: "/support" }
   ];
-
-  useEffect(() => {
-    const activeBrand = brands.find((brand) => brand.path === location);
-
-    if (activeBrand) {
-      setCurrentBrand(activeBrand.name);
-    } else {
-      setCurrentBrand("Our Brands");
-    }
-  }, [location]);
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans flex flex-col relative pt-16 md:pt-20">
       <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
-      <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-transparent py-6 text-white bg-[#000000]">
-        <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-          <Link href="/">
-              <a
-                className="flex items-center gap-3 hover:opacity-80 text-[#0080ff] transition-opacity"
-                onClick={() => setCurrentBrand("Our Brands")}
-              >
+      
+      {/* Hamburger Menu Dropdown */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <>
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-[49] bg-black/20 backdrop-blur-sm"
+              onClick={() => setIsMenuOpen(false)}
+            />
+            <motion.div
+              initial={{ opacity: 0, y: -20, x: "-50%" }}
+              animate={{ opacity: 1, y: 0, x: "-50%" }}
+              exit={{ opacity: 0, y: -10, x: "-50%" }}
+              transition={{ duration: 0.25 }}
+              className="fixed top-24 left-1/2 z-[51] w-[90%] max-w-[600px] bg-background/80 backdrop-blur-xl border border-border rounded-2xl shadow-2xl p-6 overflow-hidden"
+            >
+               <div className="flex flex-col gap-2">
+                 {menuItems.map((item) => (
+                   <Link key={item.path} href={item.path}>
+                     <a 
+                       className="block px-4 py-3 rounded-lg text-foreground hover:bg-accent transition-all font-medium"
+                       onClick={() => setIsMenuOpen(false)}
+                     >
+                       {item.name}
+                     </a>
+                   </Link>
+                 ))}
+               </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+
+      <header className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        scrolled 
+          ? "bg-background/70 backdrop-blur-md border-b border-border py-3" 
+          : "bg-transparent py-6"
+      )}>
+        <div className="container mx-auto px-4 md:px-6 flex items-center justify-between relative">
+          
+          {/* Left: Hamburger Menu */}
+          <div className="flex-1 flex justify-start">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-foreground hover:bg-accent"
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </Button>
+          </div>
+
+          {/* Center: Logo */}
+          <div className="flex-1 flex justify-center">
+             <Link href="/">
+              <a className="hover:opacity-80 transition-opacity">
                 <img
-                  src={
-                    (scrolled || !isHome) 
-                      ? (theme === "dark" ? "/DCS-Logo-putih.png" : "/DCS-Logo-hitam.png")
-                      : "/DCS-Logo-putih.png"
-                  }
+                  src={theme === "dark" ? "/DCS-Logo-putih.png" : "/DCS-Logo-hitam.png"}
                   alt="DCS Logo"
-                  className={cn(
-                    "h-10 w-auto transition-all duration-300", 
-                    (scrolled || !isHome) && "scale-90"
-                  )}
+                  className="h-8 md:h-9 w-auto"
                 />
               </a>
-          </Link>
+            </Link>
+          </div>
 
-          <nav className="hidden md:flex items-center gap-10 text-sm font-black tracking-widest">
-            
-            {/* All Products Link */}
-            <Link href="/collections/all">
-              <a className="hover:text-primary transition-colors text-[#0080ff]">All Products</a>
-            </Link>
-            
-            <div className="relative group py-2">
-              <button className={cn("flex items-center gap-2 text-[#0080ff] hover:text-primary transition-colors ")}>
-                {currentBrand} <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-              </button>
-              {/* Dropdown Menu */}
-              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div className="bg-background border border-border rounded-[12px] shadow-2xl min-w-[220px] overflow-hidden p-2 backdrop-blur-xl bg-opacity-95">
-                  {brands.map((brand) => (
-                    <Link key={brand.name} href={brand.path}>
-                      <a 
-                        className="block px-6 py-4 hover:bg-primary/10 rounded-[8px] transition-all font-black text-foreground">
-                        {brand.name}
-                      </a>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-            
-            {/* Support Link */}
-            <Link href="/support">
-              <a className="hover:text-primary transition-colors text-[#0080ff]">Support</a>
-            </Link>
-            
-            {/* Contact Us Link */}
-            <Link href="/support">
-              <a className="hover:text-primary transition-colors text-[#0080ff]">Contact Us</a>
-            </Link>
-            
-          </nav>
-          
-          
-
-          <div className="flex items-center gap-3">
-            <Button variant="ghost" size="icon" onClick={toggleTheme} className={cn(
-              "rounded-full hover:bg-white/10 transition-colors", 
-              (scrolled || !isHome) 
-                ? (theme === "light" ? "text-black hover:bg-black/5 hover:text-[#0080ff]" : "text-[#0080ff] hover:bg-white/10 hover:text-white")
-                : "text-white hover:text-primary"
-            )}>
+          {/* Right: Theme Toggle & Search */}
+          <div className="flex-1 flex justify-end gap-2">
+            <Button variant="ghost" size="icon" onClick={toggleTheme} className="text-foreground hover:bg-accent rounded-full">
               {theme === "light" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </Button>
-            <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className={cn(
-              "rounded-full hover:bg-white/10 transition-colors", 
-              (scrolled || !isHome) 
-                ? (theme === "light" ? "text-black hover:bg-black/5 hover:text-[#0080ff]" : "text-[#0080ff] hover:bg-white/10 hover:text-white")
-                : "text-white hover:text-primary"
-            )}>
+            <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className="text-foreground hover:bg-accent rounded-full">
               <Search className="w-5 h-5" />
             </Button>
           </div>
+
         </div>
       </header>
+      
       <main className="flex-1">{children}</main>
       <footer className="bg-[#0f1115] text-white py-24 border-t border-white/5">
         <div className="container mx-auto px-4 md-auto">
@@ -147,14 +137,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <p className="text-gray-400 text-sm leading-relaxed">Professional network solutions for enterprise and home.</p>
                 <p className="text-gray-400 text-sm leading-relaxed"> No subscriptions, just performance.</p>
             </div>
+
+            {/* Footer Ecosystem Section */}
             <div>
               <h4 className="text-xs font-black uppercase tracking-[0.3em] mb-8 text-white/50">Ecosystem</h4>
               <ul className="space-y-4 text-sm font-bold">
-                <li><Link href="/collections/all"><a className="text-gray-400 hover:text-white transition-colors">All Hardware</a></Link></li>
-                <li><Link href="/collections/cloud-gateways"><a className="text-gray-400 hover:text-white transition-colors">Gateways</a></Link></li>
-                <li><Link href="/collections/wifi"><a className="text-gray-400 hover:text-white transition-colors">Wireless</a></Link></li>
+                <li><Link href="/home-ubiquiti"><a className="text-gray-400 hover:text-white transition-colors">Ubiquiti</a></Link></li>
+                <li><Link href="/home-Mikrotik"><a className="text-gray-400 hover:text-white transition-colors">Mikrotik</a></Link></li>
+                <li><Link href="/home-ALGcom"><a className="text-gray-400 hover:text-white transition-colors">ALGcom</a></Link></li>
+                <li><Link href="/home-V-SOL"><a className="text-gray-400 hover:text-white transition-colors">V-SOL</a></Link></li>
+                
               </ul>
             </div>
+
+            {/* Footer Services Section */}
             <div>
               <h4 className="text-xs font-black uppercase tracking-[0.3em] mb-8 text-white/50">Services</h4>
               <ul className="space-y-4 text-sm font-bold">
