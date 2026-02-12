@@ -74,7 +74,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <nav className="hidden md:flex items-center gap-10 text-sm font-black tracking-widest">
             <Link href="/collections/all">
-              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>All products</a>
+              <a className="hover:text-primary transition-colors text-[#0080ff]">All Products</a>
             </Link>
             
             <div className="relative group py-2">
