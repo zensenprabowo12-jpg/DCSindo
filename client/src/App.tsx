@@ -18,6 +18,9 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/home-ubiquiti" component={HomeUbiquiti} />
+      <Route path="/home-Mikrotik" component={ComingSoon} />
+      <Route path="/home-ALGcom" component={ComingSoon} />
+      <Route path="/home-V-SOL" component={ComingSoon} />
       <Route path="/collections/:category" component={Collection} />
       <Route path="/products/:id" component={ProductDetail} />
       <Route path="/support" component={Support} />

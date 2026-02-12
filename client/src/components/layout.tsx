@@ -1,16 +1,10 @@
 import { Link, useLocation } from "wouter";
 import {
   Search,
-  ShoppingCart,
-  Menu,
-  X,
   ChevronDown,
   Sun,
   Moon,
-  MessageCircle,
-  HelpCircle,
-  Share2,
-  ArrowRight
+  
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -24,8 +18,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [scrolled, setScrolled] = useState(false);
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "light");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isChatOpen, setIsChatOpen] = useState(false);
-  const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
   const [currentBrand, setCurrentBrand] = useState("Our Brands");
 
   useEffect(() => {
@@ -42,10 +34,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const brands = [
     { name: "Ubiquiti", path: "/home-ubiquiti" },
-    { name: "Mikrotik", path: "/coming-soon" },
-    { name: "ALGcom", path: "/coming-soon" },
-    { name: "V-SOL", path: "/coming-soon" }
+    { name: "Mikrotik", path: "/home-Mikrotik" },
+    { name: "ALGcom", path: "/home-ALGcom" },
+    { name: "V-SOL", path: "/home-V-SOL" }
   ];
+
+  useEffect(() => {
+    const activeBrand = brands.find((brand) => brand.path === location);
+
+    if (activeBrand) {
+      setCurrentBrand(activeBrand.name);
+    } else {
+      setCurrentBrand("Our Brands");
+    }
+  }, [location]);
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans flex flex-col relative pt-16 md:pt-20">
@@ -54,7 +56,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           <Link href="/">
               <a
-                className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+                className="flex items-center gap-3 hover:opacity-80 text-[#0080ff] transition-opacity"
                 onClick={() => setCurrentBrand("Our Brands")}
               >
                 <img
@@ -73,19 +75,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </Link>
 
           <nav className="hidden md:flex items-center gap-10 text-sm font-black tracking-widest">
+            
+            {/* All Products Link */}
             <Link href="/collections/all">
               <a className="hover:text-primary transition-colors text-[#0080ff]">All Products</a>
             </Link>
             
             <div className="relative group py-2">
-              <button className={cn("flex items-center gap-2 hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>
+              <button className={cn("flex items-center gap-2 text-[#0080ff] hover:text-primary transition-colors ")}>
                 {currentBrand} <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
               </button>
+              {/* Dropdown Menu */}
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="bg-background border border-border rounded-[12px] shadow-2xl min-w-[220px] overflow-hidden p-2 backdrop-blur-xl bg-opacity-95">
                   {brands.map((brand) => (
-                    <Link key={brand.name} href={brand.path} onClick={() => setCurrentBrand(brand.name)}>
-                      <a className="block px-6 py-4 hover:bg-primary/10 rounded-[8px] transition-all font-black text-foreground">
+                    <Link key={brand.name} href={brand.path}>
+                      <a 
+                        className="block px-6 py-4 hover:bg-primary/10 rounded-[8px] transition-all font-black text-foreground">
                         {brand.name}
                       </a>
                     </Link>
@@ -93,13 +99,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               </div>
             </div>
-
+            
+            {/* Support Link */}
             <Link href="/support">
-              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>Support</a>
+              <a className="hover:text-primary transition-colors text-[#0080ff]">Support</a>
             </Link>
-            {/* About Us Link */}
+            
+            {/* Contact Us Link */}
             <Link href="/support">
-              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>Contact Us</a>
+              <a className="hover:text-primary transition-colors text-[#0080ff]">Contact Us</a>
             </Link>
             
           </nav>
@@ -108,18 +116,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="icon" onClick={toggleTheme} className={cn(
-              "rounded-full hover:bg-white/10", 
+              "rounded-full hover:bg-white/10 transition-colors", 
               (scrolled || !isHome) 
-                ? "text-foreground hover:bg-accent" 
-                : "text-white"
+                ? (theme === "light" ? "text-black hover:bg-black/5 hover:text-[#0080ff]" : "text-[#0080ff] hover:bg-white/10 hover:text-white")
+                : "text-white hover:text-primary"
             )}>
               {theme === "light" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </Button>
             <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className={cn(
-              "rounded-full hover:bg-white/10", 
+              "rounded-full hover:bg-white/10 transition-colors", 
               (scrolled || !isHome) 
-                ? "text-foreground hover:bg-accent" 
-                : "text-white"
+                ? (theme === "light" ? "text-black hover:bg-black/5 hover:text-[#0080ff]" : "text-[#0080ff] hover:bg-white/10 hover:text-white")
+                : "text-white hover:text-primary"
             )}>
               <Search className="w-5 h-5" />
             </Button>
