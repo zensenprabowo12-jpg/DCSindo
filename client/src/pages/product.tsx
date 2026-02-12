@@ -6,10 +6,37 @@ import { ShoppingCart, Check, Shield, ChevronLeft, ChevronRight, Maximize2, X, P
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "wouter";
+import { cn } from "@/lib/utils";
 
 export default function ProductDetail() {
   const [match, params] = useRoute("/products/:id");
-  const product = products.find(p => p.id === params?.id);
+  
+  // Try to find static product, or generate dynamic one
+  let product = products.find(p => p.id === params?.id);
+  
+  if (!product && params?.id) {
+    // Generate dummy product from ID
+    const parts = params.id.split('-');
+    const category = parts[0];
+    const index = parts[parts.length - 1];
+    
+    product = {
+        id: params.id,
+        name: `Item (${category}) ${index}`,
+        price: 299 + (parseInt(index) * 50),
+        description: "Experience enterprise-grade performance with this cutting-edge solution.",
+        shortDescription: "Experience the pinnacle of networking performance.",
+        image: "/images/placeholder-product.png",
+        category: category,
+        specs: [
+            { label: "Throughput", value: "10 Gbps" },
+            { label: "Ports", value: "24x 1GbE, 2x 10G SFP+" },
+            { label: "Processor", value: "Quad-Core ARM" },
+            { label: "Memory", value: "4 GB DDR4" }
+        ]
+    } as any;
+  }
+
   const [isZoomOpen, setIsZoomOpen] = useState(false);
   const [currentImg, setCurrentImg] = useState(0);
   const [activeTab, setActiveTab] = useState("overview");
@@ -73,9 +100,16 @@ export default function ProductDetail() {
 
           <div className="flex-1 space-y-12">
             <div className="space-y-4">
-              <div className="text-primary font-black text-xs tracking-[0.3em] uppercase">Enterprise Grade Hardware</div>
+              <div className="text-primary font-black text-xs tracking-[0.3em] uppercase mb-4">Enterprise Grade Hardware</div>
+              
+              {/* Added Metadata Fields */}
+              <div className="grid grid-cols-2 gap-4 text-xs font-bold text-muted-foreground uppercase tracking-widest mb-6">
+                 <div>SKU: <span className="text-foreground">SKU-{Math.floor(Math.random() * 10000)}</span></div>
+                 <div>Category: <span className="text-foreground capitalize">{product?.category || "Networking"}</span></div>
+              </div>
+
               <h1 className="text-6xl font-black tracking-tighter italic uppercase leading-tight">{product.name}</h1>
-              <p className="text-2xl text-muted-foreground font-medium leading-relaxed italic">{product.shortDescription}</p>
+              <p className="text-2xl text-muted-foreground font-medium leading-relaxed italic">{product.shortDescription || "Experience the pinnacle of networking performance with this enterprise-grade solution."}</p>
             </div>
             
             <div className="text-5xl font-black text-primary tracking-tighter">${product.price}</div>
@@ -123,7 +157,10 @@ export default function ProductDetail() {
                 <div className="space-y-8">
                   <h4 className="text-xs font-black uppercase tracking-[0.3em] text-primary">Hardware</h4>
                   <dl className="space-y-6">
-                    {product.specs.map((s, i) => (
+                    {(product.specs || [
+                        { label: "Throughput", value: "10 Gbps" },
+                        { label: "Ports", value: "24x 1GbE, 2x 10G SFP+" }
+                    ]).map((s: any, i: number) => (
                       <div key={i} className="flex justify-between border-b border-border pb-4 group">
                         <dt className="text-[10px] font-black uppercase tracking-widest text-muted-foreground group-hover:text-primary transition-colors">{s.label}</dt>
                         <dd className="font-bold">{s.value}</dd>
@@ -168,4 +205,3 @@ export default function ProductDetail() {
     </Layout>
   );
 }
-import { cn } from "@/lib/utils";
