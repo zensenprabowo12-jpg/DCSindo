@@ -108,18 +108,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="icon" onClick={toggleTheme} className={cn(
-              "rounded-full hover:bg-white/10 transition-colors", 
+              "rounded-full hover:bg-white/10", 
               (scrolled || !isHome) 
-                ? (theme === "light" ? "text-black hover:bg-black/5 hover:text-[#0080ff]" : "text-[#0080ff] hover:bg-white/10 hover:text-white")
-                : "text-white hover:text-primary"
+                ? "text-foreground hover:bg-accent" 
+                : "text-white"
             )}>
               {theme === "light" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </Button>
             <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className={cn(
-              "rounded-full hover:bg-white/10 transition-colors", 
+              "rounded-full hover:bg-white/10", 
               (scrolled || !isHome) 
-                ? (theme === "light" ? "text-black hover:bg-black/5 hover:text-[#0080ff]" : "text-[#0080ff] hover:bg-white/10 hover:text-white")
-                : "text-white hover:text-primary"
+                ? "text-foreground hover:bg-accent" 
+                : "text-white"
             )}>
               <Search className="w-5 h-5" />
             </Button>
