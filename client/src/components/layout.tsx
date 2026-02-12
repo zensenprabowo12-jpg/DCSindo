@@ -50,12 +50,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans flex flex-col relative pt-16 md:pt-20">
       <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
-      <header className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-transparent py-4",
-        (scrolled || !isHome) 
-          ? "bg-white/90 dark:bg-black/90 backdrop-blur-md border-border shadow-sm supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-black/60" 
-          : "bg-transparent text-white"
-      )}>
+      <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-transparent py-6 text-white bg-[#000000]">
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           <Link href="/">
               <a
@@ -79,21 +74,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <nav className="hidden md:flex items-center gap-10 text-sm font-black tracking-widest">
             <Link href="/collections/all">
-              <a className={cn(
-                "transition-colors", 
-                (scrolled || !isHome) 
-                  ? (theme === "light" ? "text-black hover:text-[#0080ff]" : "text-[#0080ff] hover:text-white")
-                  : "text-white hover:text-primary"
-              )}>All products</a>
+              <a className="hover:text-primary transition-colors text-[#0080ff]">All Products</a>
             </Link>
             
             <div className="relative group py-2">
-              <button className={cn(
-                "flex items-center gap-2 transition-colors", 
-                (scrolled || !isHome) 
-                  ? (theme === "light" ? "text-black hover:text-[#0080ff]" : "text-[#0080ff] hover:text-white")
-                  : "text-white hover:text-primary"
-              )}>
+              <button className={cn("flex items-center gap-2 hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>
                 {currentBrand} <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
               </button>
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
@@ -110,21 +95,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
 
             <Link href="/support">
-              <a className={cn(
-                "transition-colors", 
-                (scrolled || !isHome) 
-                  ? (theme === "light" ? "text-black hover:text-[#0080ff]" : "text-[#0080ff] hover:text-white")
-                  : "text-white hover:text-primary"
-              )}>Support</a>
+              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>Support</a>
             </Link>
             {/* About Us Link */}
             <Link href="/support">
-              <a className={cn(
-                "transition-colors", 
-                (scrolled || !isHome) 
-                  ? (theme === "light" ? "text-black hover:text-[#0080ff]" : "text-[#0080ff] hover:text-white")
-                  : "text-white hover:text-primary"
-              )}>Contact Us</a>
+              <a className={cn("hover:text-primary transition-colors", (scrolled || !isHome) ? "text-foreground" : "text-white")}>Contact Us</a>
             </Link>
             
           </nav>
@@ -133,18 +108,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="icon" onClick={toggleTheme} className={cn(
-              "rounded-full hover:bg-white/10", 
+              "rounded-full hover:bg-white/10 transition-colors", 
               (scrolled || !isHome) 
-                ? (theme === "light" ? "text-black hover:bg-black/5" : "text-[#0080ff] hover:bg-white/10")
-                : "text-white"
+                ? (theme === "light" ? "text-black hover:bg-black/5 hover:text-[#0080ff]" : "text-[#0080ff] hover:bg-white/10 hover:text-white")
+                : "text-white hover:text-primary"
             )}>
               {theme === "light" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </Button>
             <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)} className={cn(
-              "rounded-full hover:bg-white/10", 
+              "rounded-full hover:bg-white/10 transition-colors", 
               (scrolled || !isHome) 
-                ? (theme === "light" ? "text-black hover:bg-black/5" : "text-[#0080ff] hover:bg-white/10")
-                : "text-white"
+                ? (theme === "light" ? "text-black hover:bg-black/5 hover:text-[#0080ff]" : "text-[#0080ff] hover:bg-white/10 hover:text-white")
+                : "text-white hover:text-primary"
             )}>
               <Search className="w-5 h-5" />
             </Button>
