@@ -39,9 +39,14 @@ export default function Home() {
           />
 
           {/* Deskripsi */}
-          <p className="max-w-2xl text-base md:text-[20px] text-gray-200 leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
+          <p className="max-w-2xl text-base mb-5 md:text-[20px] text-gray-200 leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
             Best-in-class IT products unified through an intuitive software interface, powered by scalable, license-free cloud management.
           </p>
+          <Link href="/collections/cloud-gateways">
+            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
+              Explore Products!
+            </Button>
+          </Link>
           
         </div>
       </section>
@@ -119,6 +124,7 @@ export default function Home() {
               >
                 <div className="absolute inset-0 p-8 z-20 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
                   <h3 className="text-xl font-bold text-white">Cloud Gateways</h3>
+                  <p className="text-white/70 text-sm">The backbone of your network infrastructure.</p>
                 </div>
                 <img 
                   src="/images/home-Cloud-Gateways.png" 
@@ -163,8 +169,11 @@ export default function Home() {
       <section className="bg-black text-white py-32 overflow-hidden">
         <div className="container mx-auto px-4 text-center mb-24">
           <h2 className="text-5xl md:text-7xl font-black tracking-tighter mb-6">Rethinking IT</h2>
+          <p className="text-gray-400 max-w-2xl mx-auto text-xl mb-0">
+            Professional-grade software meets enterprise-grade hardware.
+          </p>
           <p className="text-gray-400 max-w-2xl mx-auto text-xl mb-12">
-            Professional-grade software meets enterprise-grade hardware. No subscriptions.
+            No subscriptions, just performance.
           </p>
           <Link href="/support">
             <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
@@ -245,8 +254,11 @@ export default function Home() {
             </div>
             <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
               <h3 className="text-4xl md:text-5xl font-black italic uppercase">DCS Access</h3>
+              <p className="text-gray-400 text-xl leading-relaxed mb-0">
+                Seamlessly connect with third-party systems through secure APIs.
+              </p>
               <p className="text-gray-400 text-xl leading-relaxed">
-                Seamlessly connect with third-party systems through secure APIs. Build smarter operations and maximize the value of your infrastructure.
+                Manage access control, video intercoms, and more from a single platform.
               </p>
               <Link href="/collections/door-access">
                 <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
