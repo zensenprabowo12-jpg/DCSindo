@@ -9,6 +9,10 @@ import HomeUbiquiti from "@/pages/home-ubiquiti";
 import Collection from "@/pages/collection";
 import ProductDetail from "@/pages/product";
 import Support from "@/pages/support";
+import UbiquitiSupport from "@/pages/support/Ubiquiti";
+import MikrotikSupport from "@/pages/support/Mikrotik";
+import AlgcomSupport from "@/pages/support/Algcom";
+import VsolSupport from "@/pages/support/Vsol";
 import Cart from "@/pages/cart";
 
 import ComingSoon from "@/pages/coming-soon";
@@ -24,6 +28,10 @@ function Router() {
       <Route path="/collections/:category" component={Collection} />
       <Route path="/products/:id" component={ProductDetail} />
       <Route path="/support" component={Support} />
+      <Route path="/support/ubiquiti" component={UbiquitiSupport} />
+      <Route path="/support/mikrotik" component={MikrotikSupport} />
+      <Route path="/support/algcom" component={AlgcomSupport} />
+      <Route path="/support/vsol" component={VsolSupport} />
       <Route path="/cart" component={Cart} />
       <Route path="/coming-soon" component={ComingSoon} />
       <Route component={NotFound} />
