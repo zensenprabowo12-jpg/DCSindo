@@ -39,7 +39,14 @@ export default function ProductDetail() {
 
   const [isZoomOpen, setIsZoomOpen] = useState(false);
   const [currentImg, setCurrentImg] = useState(0);
+  const [selectedAddon, setSelectedAddon] = useState<any>(null);
   const [activeTab, setActiveTab] = useState("overview");
+
+  const addOns = [
+    { id: 1, name: "Mounting Kit", image: "/images/dcs-box.png", specs: ["Compatible with 19\" racks", "Steel construction", "Easy installation"] },
+    { id: 2, name: "Power Cable", image: "/images/dcs-box.png", specs: ["2m Length", "High durability", "Standard fit"] },
+    { id: 3, name: "SFP+ Module", image: "/images/dcs-box.png", specs: ["10Gbps support", "Multi-mode fiber", "Hot-swappable"] },
+  ];
 
   if (!product) return null;
 
@@ -112,13 +119,33 @@ export default function ProductDetail() {
 
               <h1 className="text-6xl font-black tracking-tighter italic uppercase leading-tight">{product.name}</h1>
               <p className="text-2xl text-muted-foreground font-medium leading-relaxed italic">{product.shortDescription || "Experience the pinnacle of networking performance."}</p>
-              <p className="text-sm text-muted-foreground font-medium leading-relaxed">Experience the pinnacle of networking performance.</p>
+              
+              <ul className="space-y-2 mt-4 text-sm text-muted-foreground font-medium leading-relaxed">
+                {[
+                  "25G cloud gateways with 500+ UniFi Device",
+                  "5000+ client support",
+                  "12.5gbps ips routing",
+                  "complete high availability"
+                ].map((point, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="block w-1.5 h-1.5 rounded-full bg-primary mt-2" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </div>
             
+            <div className="flex gap-6">
+              <Link href="/support">
+                 <Button size="lg" className="w-full rounded-full h-14 text-lg font-black uppercase tracking-widest shadow-xl shadow-primary/20 group hover:scale-[1.02] transition-all">
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
 
             <div className="grid grid-cols-2 gap-8 text-xs font-black uppercase tracking-widest text-muted-foreground">
               <div className="flex items-center gap-4"><div className="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)] animate-pulse" /> In Stock</div>
-              <div className="flex items-center gap-4"><Shield className="w-6 h-6 text-primary" /> 2 Year Warranty</div>
+              <div className="flex items-center gap-4"><Shield className="w-6 h-6 text-primary" /> 1 Year Warranty</div>
             </div>
 
             <div className="pt-8 border-t border-border">
@@ -143,17 +170,17 @@ export default function ProductDetail() {
 
         {/* Brand Inspired Horizontal Tabs */}
         <div className="space-y-16">
-          <div className="flex border-b border-border gap-12 sticky top-24 bg-background/80 backdrop-blur-xl z-40 py-2">
-            {["overview", "technical", "box"].map((tab) => (
+          <div className="flex border-b border-border gap-12 sticky top-24 bg-background/80 backdrop-blur-xl z-40 py-2 overflow-x-auto">
+            {["overview", "technical", "box", "addons"].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
                 className={cn(
-                  "text-sm font-black uppercase tracking-widest py-4 transition-all relative",
+                  "text-sm font-black uppercase tracking-widest py-4 transition-all relative whitespace-nowrap",
                   activeTab === tab ? "text-primary" : "text-muted-foreground hover:text-foreground"
                 )}
               >
-                {tab === "box" ? "In The Box" : tab}
+                {tab === "box" ? "In The Box" : tab === "addons" ? "Add Ons" : tab}
                 {activeTab === tab && <motion.div layoutId="activeTab" className="absolute bottom-0 left-0 right-0 h-1 bg-primary rounded-full" />}
               </button>
             ))}
@@ -200,9 +227,72 @@ export default function ProductDetail() {
                 </div>
               </motion.div>
             )}
+             {activeTab === "addons" && (
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {addOns.map((addon) => (
+                  <div 
+                    key={addon.id} 
+                    className="group relative rounded-3xl border border-border bg-card p-8 hover:border-primary/50 transition-all cursor-pointer"
+                    onClick={() => setSelectedAddon(addon)}
+                  >
+                    <div className="aspect-square rounded-2xl bg-secondary/20 mb-6 p-8 flex items-center justify-center">
+                      <img src={addon.image} className="w-full h-full object-contain group-hover:scale-105 transition-transform" />
+                    </div>
+                    <h3 className="text-xl font-bold mb-2">{addon.name}</h3>
+                    <p className="text-sm text-muted-foreground">Click for details</p>
+                  </div>
+                ))}
+              </motion.div>
+            )}
           </div>
         </div>
       </div>
+
+      <AnimatePresence>
+        {selectedAddon && (
+           <motion.div 
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+            onClick={() => setSelectedAddon(null)}
+          >
+            <motion.div 
+              initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }}
+              className="bg-background rounded-3xl p-8 max-w-2xl w-full shadow-2xl relative overflow-hidden"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Button variant="ghost" size="icon" className="absolute top-4 right-4 z-10" onClick={() => setSelectedAddon(null)}>
+                <X className="w-6 h-6" />
+              </Button>
+              
+              <div className="flex flex-col md:flex-row gap-8">
+                <div className="w-full md:w-1/2 bg-secondary/20 rounded-2xl p-8 flex items-center justify-center">
+                   <img src={selectedAddon.image} className="w-full object-contain" />
+                </div>
+                <div className="w-full md:w-1/2 space-y-6">
+                  <h2 className="text-3xl font-black uppercase italic tracking-tighter">{selectedAddon.name}</h2>
+                  
+                  <div className="space-y-4">
+                    <h4 className="text-xs font-black uppercase tracking-widest text-primary">Technical Specs</h4>
+                    <ul className="space-y-2">
+                      {selectedAddon.specs.map((spec: string, i: number) => (
+                        <li key={i} className="flex items-center gap-2 text-sm font-medium">
+                          <Check className="w-4 h-4 text-green-500" /> {spec}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="pt-6">
+                    <Button className="w-full rounded-full font-bold">
+                      View Detail Specification
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <AnimatePresence>
         {isZoomOpen && (
