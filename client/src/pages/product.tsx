@@ -100,22 +100,23 @@ export default function ProductDetail() {
 
           <div className="flex-1 space-y-12">
             <div className="space-y-4">
-              <div className="text-primary font-black text-xs tracking-[0.3em] uppercase mb-4">Enterprise Grade Hardware</div>
+              <Link href="/" className="inline-block text-primary font-black text-xs tracking-[0.3em] uppercase mb-4 hover:underline">
+                Dinamika Cipta Solusi
+              </Link>
               
               {/* Added Metadata Fields */}
               <div className="grid grid-cols-2 gap-4 text-xs font-bold text-muted-foreground uppercase tracking-widest mb-6">
-                 <div>SKU: <span className="text-foreground">SKU-{Math.floor(Math.random() * 10000)}</span></div>
-                 <div>Category: <span className="text-foreground capitalize">{product?.category || "Networking"}</span></div>
+                 <div><span className="text-foreground">SKU-{Math.floor(Math.random() * 10000)}</span></div>
+                 <div><span className="text-foreground capitalize">{product?.category || "Networking"}</span></div>
               </div>
 
               <h1 className="text-6xl font-black tracking-tighter italic uppercase leading-tight">{product.name}</h1>
-              <p className="text-2xl text-muted-foreground font-medium leading-relaxed italic">{product.shortDescription || "Experience the pinnacle of networking performance with this enterprise-grade solution."}</p>
+              <p className="text-2xl text-muted-foreground font-medium leading-relaxed italic">{product.shortDescription || "Experience the pinnacle of networking performance."}</p>
+              <p className="text-sm text-muted-foreground font-medium leading-relaxed">Experience the pinnacle of networking performance.</p>
             </div>
             
-            <div className="text-5xl font-black text-primary tracking-tighter">${product.price}</div>
-
             <div className="flex gap-6">
-              <Button size="lg" className="flex-1 rounded-full h-20 text-xl font-black uppercase tracking-widest shadow-2xl shadow-primary/30 group">
+              <Button size="lg" className="flex-1 rounded-full h-14 text-lg font-black uppercase tracking-widest shadow-xl shadow-primary/20 group hover:scale-[1.02] transition-all">
                 Add to Cart
               </Button>
             </div>
