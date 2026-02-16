@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
+import Layout from "@/components/layout";
 
 export default function MikrotikSupport() {
   return (
-    <div className="min-h-screen bg-background text-foreground pt-16">
+    <Layout>
       <section className="relative bg-[#202020] text-white py-32 px-4 overflow-hidden">
         <div className="container mx-auto relative z-10 text-center max-w-3xl">
           <motion.h1 
@@ -26,6 +27,6 @@ export default function MikrotikSupport() {
           </div>
         </div>
       </section>
-    </div>
+    </Layout>
   );
 }
