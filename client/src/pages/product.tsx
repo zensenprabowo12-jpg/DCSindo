@@ -115,11 +115,6 @@ export default function ProductDetail() {
               <p className="text-sm text-muted-foreground font-medium leading-relaxed">Experience the pinnacle of networking performance.</p>
             </div>
             
-            <div className="flex gap-6">
-              <Button size="lg" className="flex-1 rounded-full h-14 text-lg font-black uppercase tracking-widest shadow-xl shadow-primary/20 group hover:scale-[1.02] transition-all">
-                Add to Cart
-              </Button>
-            </div>
 
             <div className="grid grid-cols-2 gap-8 text-xs font-black uppercase tracking-widest text-muted-foreground">
               <div className="flex items-center gap-4"><div className="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)] animate-pulse" /> In Stock</div>
