@@ -20,13 +20,27 @@ export default function ProductDetail() {
     const category = parts[0];
     const index = parts[parts.length - 1];
     
+    // Map category to icon filename
+    const iconMap: Record<string, string> = {
+      "accessories": "icon-accessories.svg",
+      "camera-security": "icon-camera-security.svg",
+      "cloud-gateways": "icon-cloud-gateways.svg",
+      "cloud-keys-gateways": "icon-cloud-keys-gateways.svg",
+      "door-access": "icon-door-access.svg",
+      "new-integrations": "icon-new-integrations.svg",
+      "switching": "icon-switching.svg",
+      "wifi": "icon-wifi.svg"
+    };
+
+    const iconName = iconMap[category] || "icon-wifi.svg"; // Fallback
+
     product = {
         id: params.id,
         name: `Item (${category}) ${index}`,
         price: 299 + (parseInt(index) * 50),
         description: "Experience enterprise-grade performance with this cutting-edge solution.",
         shortDescription: "Experience the pinnacle of networking performance.",
-        image: "/images/placeholder-product.png",
+        image: `/icon svg/${iconName}`,
         category: category,
         specs: [
             { label: "Throughput", value: "10 Gbps" },
@@ -43,7 +57,7 @@ export default function ProductDetail() {
 
   if (!product) return null;
 
-  const images = [product.image, "/images/dcs-overview-1.png", "/images/dcs-overview-2.png"];
+  const images = [product.image];
 
   const nextImg = () => setCurrentImg((prev) => (prev + 1) % images.length);
   const prevImg = () => setCurrentImg((prev) => (prev - 1 + images.length) % images.length);
@@ -53,24 +67,9 @@ export default function ProductDetail() {
       <div className="container mx-auto px-4 py-32">
         <div className="flex flex-col lg:flex-row gap-20 mb-40">
           <div className="flex-1 flex gap-8">
-            <div className="hidden md:flex flex-col gap-4">
-              {images.map((img, i) => (
-                <div 
-                  key={i} 
-                  className={cn(
-                    "w-20 h-20 rounded-2xl border bg-secondary/30 p-2 cursor-pointer transition-all",
-                    currentImg === i ? "border-primary ring-2 ring-primary/20 scale-105" : "border-border hover:border-primary/50"
-                  )}
-                  onClick={() => setCurrentImg(i)}
-                >
-                  <img src={img} className="w-full h-full object-contain" />
-                </div>
-              ))}
-            </div>
-            <div className="flex-1 relative group rounded-3xl overflow-hidden border border-border bg-card shadow-2xl">
+            <div className="flex-1 relative group rounded-3xl overflow-hidden border border-border bg-card shadow-2xl flex items-center justify-center p-12">
               <div 
-                className="aspect-square p-12 flex items-center justify-center cursor-zoom-in"
-                onClick={() => setIsZoomOpen(true)}
+                className="w-full h-full flex items-center justify-center"
               >
                 <motion.img 
                   key={currentImg}
@@ -78,22 +77,8 @@ export default function ProductDetail() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
                   src={images[currentImg]} 
-                  className="w-full h-full object-contain max-h-[600px]"
+                  className="w-full h-full object-contain max-h-[600px] p-8"
                 />
-                
-                <div className="absolute inset-y-0 left-0 flex items-center px-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                   <Button variant="ghost" size="icon" className="rounded-full bg-background/80 backdrop-blur-md shadow-xl" onClick={(e) => { e.stopPropagation(); prevImg(); }}>
-                      <ChevronLeft className="w-8 h-8" />
-                   </Button>
-                </div>
-                <div className="absolute inset-y-0 right-0 flex items-center px-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                   <Button variant="ghost" size="icon" className="rounded-full bg-background/80 backdrop-blur-md shadow-xl" onClick={(e) => { e.stopPropagation(); nextImg(); }}>
-                      <ChevronRight className="w-8 h-8" />
-                   </Button>
-                </div>
-                <Button variant="secondary" size="icon" className="absolute top-6 right-6 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
-                  <Maximize2 className="w-5 h-5" />
-                </Button>
               </div>
             </div>
           </div>
