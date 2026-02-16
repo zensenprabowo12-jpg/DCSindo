@@ -93,15 +93,19 @@ export default function ProductDetail() {
     {
       title: "Overview",
       items: [
-         { label: "Form Factor", value: "1U Rackmount" },
-         { label: "Enclosure Material", value: "Aluminum Alloy" }
-      ]
-    },
-    {
-      title: "Performance",
-      items: [
-         { label: "Routing", value: "3.5 Gbps with IDS/IPS" },
-         { label: "IDS/IPS Throughput", value: "3.5 Gbps" }
+         { label: "Dimensions", value: "442.4 x 43.7 x 325 mm (17.4 x 1.7 x 12.8\")" },
+         { label: "Network", value: "✓", isCheck: true },
+         { label: "Managed UniFi Devices", value: "500+" },
+         { label: "Simultaneous Users Connected", value: "5,000+" },
+         { label: "Max. WAN Port Count", value: "5" },
+         { label: "Default WAN Ports", value: "(1) 25G SFP28, (1) 2.5 GbE RJ45" },
+         { label: "Port Layout", value: "2x 2.5 GbE RJ45, 2x 10G SFP+, 2x 25G SFP28", isList: true },
+         { label: "IDS/IPS Throughput", value: "12.5 Gbps" },
+         { label: "SSL/TLS Inspection Concurrent Sessions", value: "10,000" },
+         { label: "Concurrent Sessions", value: "1 Million" },
+         { label: "New Sessions / Second", value: "71,000" },
+         { label: "Form Factor", value: "Rack mount (1U)" },
+         { label: "Redundancy", value: "Shadow Mode (VRRP) Gateway Failover, (2) Hot-Swappable PSUs" }
       ]
     },
     {
@@ -123,13 +127,6 @@ export default function ProductDetail() {
         items: [
             { label: "Interfaces", value: "(1) 10G SFP+ WAN, (1) 2.5GbE RJ45 WAN" },
             { label: "Switching", value: "(8) GbE RJ45 LAN" }
-        ]
-    },
-    {
-        title: "Integrated WiFi",
-        items: [
-            { label: "WiFi Standard", value: "-" },
-            { label: "Antennas", value: "-" }
         ]
     },
     {
@@ -321,11 +318,17 @@ export default function ProductDetail() {
                                             exit={{ height: 0, opacity: 0 }}
                                             className="overflow-hidden"
                                         >
-                                            <div className="pb-8 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
-                                                {section.items.map((item, idx) => (
-                                                    <div key={idx} className="flex justify-between border-b border-border/50 pb-2">
+                                            <div className="pb-8 grid grid-cols-1 gap-y-6">
+                                                {section.items.map((item: any, idx) => (
+                                                    <div key={idx} className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 border-b border-border/50 pb-4">
                                                         <span className="text-sm font-medium text-muted-foreground">{item.label}</span>
-                                                        <span className="text-sm font-bold text-right">{item.value}</span>
+                                                        <div className="text-sm font-medium">
+                                                            {item.isCheck ? (
+                                                                <Check className="w-4 h-4 text-primary" />
+                                                            ) : (
+                                                                item.value
+                                                            )}
+                                                        </div>
                                                     </div>
                                                 ))}
                                             </div>
