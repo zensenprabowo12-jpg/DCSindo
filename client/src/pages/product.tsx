@@ -2,7 +2,7 @@ import Layout from "@/components/layout";
 import { products } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { useRoute } from "wouter";
-import { ShoppingCart, Check, Shield, ChevronLeft, ChevronRight, Maximize2, X, Package, Settings, Info, ArrowRight } from "lucide-react";
+import { ShoppingCart, Check, Shield, ChevronLeft, ChevronRight, Maximize2, X, Package, Settings, Info, ArrowRight, Instagram, Facebook, Mail } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "wouter";
@@ -124,6 +124,24 @@ export default function ProductDetail() {
             <div className="grid grid-cols-2 gap-8 text-xs font-black uppercase tracking-widest text-muted-foreground">
               <div className="flex items-center gap-4"><div className="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)] animate-pulse" /> In Stock</div>
               <div className="flex items-center gap-4"><Shield className="w-6 h-6 text-primary" /> 2 Year Warranty</div>
+            </div>
+
+            <div className="pt-8 border-t border-border">
+              <div className="text-xs font-black uppercase tracking-widest text-muted-foreground mb-4">Share</div>
+              <div className="flex gap-4">
+                <a href="#" className="p-2 rounded-full bg-secondary hover:bg-primary hover:text-white transition-colors">
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a href="#" className="p-2 rounded-full bg-secondary hover:bg-primary hover:text-white transition-colors">
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a href="#" className="p-2 rounded-full bg-secondary hover:bg-primary hover:text-white transition-colors">
+                  <Mail className="w-5 h-5" />
+                </a>
+                 <a href="#" className="p-2 rounded-full bg-secondary hover:bg-primary hover:text-white transition-colors">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" className="w-5 h-5 filter dark:invert" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
