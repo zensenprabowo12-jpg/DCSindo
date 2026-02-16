@@ -31,7 +31,7 @@ export default function HomeUtama() {
             className="space-y-6"
           >
             <h1 className="text-6xl md:text-9xl font-black tracking-tighter text-black dark:text-white uppercase italic leading-none transition-colors duration-500">
-              DCS <span className="text-primary">ENTERPRISE</span>
+              Dinamika Cipta Solusi
             </h1>
             <p className="text-xl md:text-3xl text-gray-800 dark:text-gray-200 font-medium max-w-3xl mx-auto uppercase tracking-widest drop-shadow-sm transition-colors duration-500">
               The Next Generation of Networking Infrastructure
@@ -52,7 +52,7 @@ export default function HomeUtama() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black uppercase italic tracking-tighter text-black dark:text-white transition-colors duration-500">Get Started Here</h2>
-            <p className="text-primary font-bold uppercase tracking-widest mt-2">Shop the DCS Enterprise Store</p>
+            <p className="text-primary font-bold uppercase tracking-widest mt-2">Shop the DCS Store</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

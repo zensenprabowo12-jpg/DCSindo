@@ -142,7 +142,6 @@ export default function Collection() {
 
   return (
     <Layout>
-
       {/* HEADER */}
       <div className="bg-secondary/20 border-b border-border py-16 text-center">
         <div className="container mx-auto px-4 flex flex-col items-center">
@@ -164,13 +163,12 @@ export default function Collection() {
             />
           </div>
 
-          <p className="text-sm md:text-base text-muted-foreground font-medium uppercase tracking-widest italic">
-            The Ecosystem of Power
+          <p className="md:text-base font-medium text-px6 tracking-widest bold text-[25px] text-center">
+            Rethinking IT
           </p>
 
         </div>
       </div>
-
       {/* CONTENT */}
       <div className="container mx-auto px-4 py-8">
 

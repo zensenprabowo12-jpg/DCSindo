@@ -1,12 +1,9 @@
-import { useState } from "react";
-import { Search, ArrowRight, FileText, CheckCircle, Shield } from "lucide-react";
+import { ArrowRight, FileText, CheckCircle, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Layout from "@/components/layout";
 
 export default function UbiquitiSupport() {
-  const [searchQuery, setSearchQuery] = useState("");
-
   const trendingArticles = [
     "UniFi - How to set up a Dream Machine",
     "Troubleshooting UniFi Access Point adoption",
@@ -17,19 +14,19 @@ export default function UbiquitiSupport() {
   ];
 
   const categories = [
+    "UniFi Consoles",
     "UniFi Network",
+    "UniFi Gateway & Routing",
     "UniFi Protect",
-    "UniFi Access",
-    "UniFi Talk",
-    "UniFi Connect",
-    "UniFi ID",
-    "UISP",
-    "EdgeMAX",
-    "AirMAX",
-    "AirFiber",
-    "UFiber",
-    "SunMAX",
-    "Accessories"
+    "UniFi Door Access",
+    "UniFi Drive",
+    "People & Role Management",
+    "Talk",
+    "Connect",
+    "Mobility",
+    "Play",
+    "Other 1",
+    "Other 2"
   ];
 
   return (
@@ -39,18 +36,18 @@ export default function UbiquitiSupport() {
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl font-bold mb-8"
+          className="text-4xl md:text-5xl font-bold mb-10"
         >
           Ubiquiti Support Center
         </motion.h1>
 
-        <div className="max-w-xl mx-auto relative">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-          <input
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search for answers..."
-            className="w-full h-14 pl-12 pr-4 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm text-white focus:outline-none focus:bg-white/20 transition"
+        {/* 🔥 UniFi GPT Embed (Replace Search Bar) */}
+        <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+          <iframe
+            src= "https://gpt.distributor.ui-apps.com/?distributor=PTDINAMIKACIPTASOLUSI"
+            width="100%"
+            height="560"
+            className="border-0 bg-white"
           />
         </div>
       </section>
@@ -72,7 +69,9 @@ export default function UbiquitiSupport() {
                 className="block p-6 rounded-2xl bg-card border border-border hover:shadow-lg transition group"
               >
                 <FileText className="w-6 h-6 mb-3 text-primary group-hover:scale-110 transition-transform" />
-                <h3 className="font-semibold group-hover:text-primary transition-colors">{item}</h3>
+                <h3 className="font-semibold group-hover:text-primary transition-colors">
+                  {item}
+                </h3>
               </a>
             ))}
           </div>
@@ -96,7 +95,9 @@ export default function UbiquitiSupport() {
                 className="p-6 rounded-2xl bg-card border border-border text-center hover:shadow-md transition group hover:border-primary/50"
               >
                 <Shield className="w-8 h-8 mx-auto mb-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                <h3 className="font-bold group-hover:text-primary transition-colors">{cat}</h3>
+                <h3 className="font-bold group-hover:text-primary transition-colors">
+                  {cat}
+                </h3>
               </a>
             ))}
           </div>
