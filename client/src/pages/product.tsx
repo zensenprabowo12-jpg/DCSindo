@@ -41,12 +41,118 @@ export default function ProductDetail() {
   const [currentImg, setCurrentImg] = useState(0);
   const [selectedAddon, setSelectedAddon] = useState<any>(null);
   const [activeTab, setActiveTab] = useState("overview");
+  const [isAddonSpecOpen, setIsAddonSpecOpen] = useState(false);
+  
+  // Reset addon spec state when opening new addon
+  const openAddon = (addon: any) => {
+    setSelectedAddon(addon);
+    setIsAddonSpecOpen(false);
+  };
 
   const addOns = [
-    { id: 1, name: "Mounting Kit", image: "/images/dcs-box.png", specs: ["Compatible with 19\" racks", "Steel construction", "Easy installation"] },
-    { id: 2, name: "Power Cable", image: "/images/dcs-box.png", specs: ["2m Length", "High durability", "Standard fit"] },
-    { id: 3, name: "SFP+ Module", image: "/images/dcs-box.png", specs: ["10Gbps support", "Multi-mode fiber", "Hot-swappable"] },
+    { 
+        id: 1, 
+        name: "Mounting Kit", 
+        image: "/images/dcs-box.png", 
+        specs: ["Compatible with 19\" racks", "Steel construction", "Easy installation"],
+        detailedSpecs: [
+            { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+            { label: "Weight", value: "1.2 kg" },
+            { label: "Material", value: "SGCC Steel" },
+            { label: "Mounting", value: "1U Rack Mount" }
+        ]
+    },
+    { 
+        id: 2, 
+        name: "Power Cable", 
+        image: "/images/dcs-box.png", 
+        specs: ["2m Length", "High durability", "Standard fit"],
+        detailedSpecs: [
+            { label: "Length", value: "2.0 m" },
+            { label: "Conductor", value: "Copper" },
+            { label: "Rating", value: "10A / 250V" },
+            { label: "Jacket", value: "PVC" }
+        ]
+    },
+    { 
+        id: 3, 
+        name: "SFP+ Module", 
+        image: "/images/dcs-box.png", 
+        specs: ["10Gbps support", "Multi-mode fiber", "Hot-swappable"],
+        detailedSpecs: [
+            { label: "Data Rate", value: "10 Gbps" },
+            { label: "Connector", value: "LC Duplex" },
+            { label: "Wavelength", value: "850 nm" },
+            { label: "Max Distance", value: "300 m" }
+        ]
+    },
   ];
+
+  // Technical Sections Data for Cloud Gateways
+  const cloudGatewayTechSpecs = [
+    {
+      title: "Overview",
+      items: [
+         { label: "Form Factor", value: "1U Rackmount" },
+         { label: "Enclosure Material", value: "Aluminum Alloy" }
+      ]
+    },
+    {
+      title: "Performance",
+      items: [
+         { label: "Routing", value: "3.5 Gbps with IDS/IPS" },
+         { label: "IDS/IPS Throughput", value: "3.5 Gbps" }
+      ]
+    },
+    {
+      title: "Security",
+      items: [
+         { label: "Firewall", value: "Enterprise-class Application-aware Firewall" },
+         { label: "Threat Management", value: "Signature-based IPS/IDS" }
+      ]
+    },
+    {
+       title: "VPN & SD-WAN",
+       items: [
+           { label: "Site-to-Site VPN", value: "OpenVPN, IPsec" },
+           { label: "Remote User VPN", value: "L2TP, OpenVPN, WireGuard" }
+       ]
+    },
+    {
+        title: "Networking",
+        items: [
+            { label: "Interfaces", value: "(1) 10G SFP+ WAN, (1) 2.5GbE RJ45 WAN" },
+            { label: "Switching", value: "(8) GbE RJ45 LAN" }
+        ]
+    },
+    {
+        title: "Integrated WiFi",
+        items: [
+            { label: "WiFi Standard", value: "-" },
+            { label: "Antennas", value: "-" }
+        ]
+    },
+    {
+        title: "Hardware",
+        items: [
+            { label: "Processor", value: "Quad-Core ARM Cortex-A57 at 1.7 GHz" },
+            { label: "Memory", value: "4 GB DDR4" }
+        ]
+    },
+    {
+        title: "Software",
+        items: [
+            { label: "Management", value: "UniFi Network" },
+            { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+        ]
+    }
+  ];
+
+  const [expandedTechSection, setExpandedTechSection] = useState<string | null>("Overview");
+  
+  const toggleTechSection = (title: string) => {
+    setExpandedTechSection(expandedTechSection === title ? null : title);
+  };
 
   if (!product) return null;
 
@@ -114,10 +220,10 @@ export default function ProductDetail() {
               {/* Added Metadata Fields */}
               <div className="grid grid-cols-2 gap-4 text-xs font-bold text-muted-foreground uppercase tracking-widest mb-6">
                  <div><span className="text-foreground">SKU-{Math.floor(Math.random() * 10000)}</span></div>
-                 <div><span className="text-foreground capitalize">{product?.category || "Networking"}</span></div>
+                 <div><span className="text-foreground capitalize">Category: {product?.category || "Networking"}</span></div>
               </div>
 
-              <h1 className="text-6xl font-black tracking-tighter italic uppercase leading-tight">{product.name}</h1>
+              <h1 className="text-6xl font-black tracking-tighter italic uppercase leading-tight underline decoration-primary decoration-4 underline-offset-8">{product.name}</h1>
               <p className="text-2xl text-muted-foreground font-medium leading-relaxed italic">{product.shortDescription || "Experience the pinnacle of networking performance."}</p>
               
               <ul className="space-y-2 mt-4 text-sm text-muted-foreground font-medium leading-relaxed">
@@ -170,7 +276,7 @@ export default function ProductDetail() {
 
         {/* Brand Inspired Horizontal Tabs */}
         <div className="space-y-16">
-          <div className="flex border-b border-border gap-12 sticky top-24 bg-background/80 backdrop-blur-xl z-40 py-2 overflow-x-auto">
+          <div className="flex justify-center border-b border-border gap-12 sticky top-24 bg-background/80 backdrop-blur-xl z-40 py-2 overflow-x-auto">
             {["overview", "technical", "box", "addons"].map((tab) => (
               <button
                 key={tab}
@@ -194,29 +300,68 @@ export default function ProductDetail() {
               </motion.div>
             )}
             {activeTab === "technical" && (
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-1 md:grid-cols-3 gap-20">
-                <div className="space-y-8">
-                  <h4 className="text-xs font-black uppercase tracking-[0.3em] text-primary">Hardware</h4>
-                  <dl className="space-y-6">
-                    {(product.specs || [
-                        { label: "Throughput", value: "10 Gbps" },
-                        { label: "Ports", value: "24x 1GbE, 2x 10G SFP+" }
-                    ]).map((s: any, i: number) => (
-                      <div key={i} className="flex justify-between border-b border-border pb-4 group">
-                        <dt className="text-[10px] font-black uppercase tracking-widest text-muted-foreground group-hover:text-primary transition-colors">{s.label}</dt>
-                        <dd className="font-bold">{s.value}</dd>
-                      </div>
-                    ))}
-                  </dl>
-                </div>
-                <div className="space-y-8">
-                  <h4 className="text-xs font-black uppercase tracking-[0.3em] text-primary">Capabilities</h4>
-                  <ul className="space-y-4 font-bold text-sm">
-                    {["10G SFP+ Support", "Enterprise Firewall", "AI Detection Engine", "Scalable Management"].map(t => (
-                      <li key={t} className="flex items-center gap-3"><Check className="w-5 h-5 text-green-500" /> {t}</li>
-                    ))}
-                  </ul>
-                </div>
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-4xl mx-auto">
+                 {/* Dynamic Technical Specs */}
+                 {product.category === "Cloud Gateways" ? (
+                    <div className="space-y-1">
+                        {cloudGatewayTechSpecs.map((section) => (
+                            <div key={section.title} className="border-b border-border">
+                                <button 
+                                    onClick={() => toggleTechSection(section.title)}
+                                    className="w-full flex items-center justify-between py-6 group hover:text-primary transition-colors"
+                                >
+                                    <span className="text-lg font-bold uppercase tracking-wide">{section.title}</span>
+                                    <ChevronRight className={cn("w-5 h-5 transition-transform duration-300", expandedTechSection === section.title ? "rotate-90" : "")} />
+                                </button>
+                                <AnimatePresence>
+                                    {expandedTechSection === section.title && (
+                                        <motion.div 
+                                            initial={{ height: 0, opacity: 0 }}
+                                            animate={{ height: "auto", opacity: 1 }}
+                                            exit={{ height: 0, opacity: 0 }}
+                                            className="overflow-hidden"
+                                        >
+                                            <div className="pb-8 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+                                                {section.items.map((item, idx) => (
+                                                    <div key={idx} className="flex justify-between border-b border-border/50 pb-2">
+                                                        <span className="text-sm font-medium text-muted-foreground">{item.label}</span>
+                                                        <span className="text-sm font-bold text-right">{item.value}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </div>
+                        ))}
+                    </div>
+                 ) : (
+                    // Fallback for other categories (keep existing simple view)
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
+                        <div className="space-y-8">
+                        <h4 className="text-xs font-black uppercase tracking-[0.3em] text-primary">Hardware</h4>
+                        <dl className="space-y-6">
+                            {(product.specs || [
+                                { label: "Throughput", value: "10 Gbps" },
+                                { label: "Ports", value: "24x 1GbE, 2x 10G SFP+" }
+                            ]).map((s: any, i: number) => (
+                            <div key={i} className="flex justify-between border-b border-border pb-4 group">
+                                <dt className="text-[10px] font-black uppercase tracking-widest text-muted-foreground group-hover:text-primary transition-colors">{s.label}</dt>
+                                <dd className="font-bold">{s.value}</dd>
+                            </div>
+                            ))}
+                        </dl>
+                        </div>
+                        <div className="space-y-8">
+                        <h4 className="text-xs font-black uppercase tracking-[0.3em] text-primary">Capabilities</h4>
+                        <ul className="space-y-4 font-bold text-sm">
+                            {["10G SFP+ Support", "Enterprise Firewall", "AI Detection Engine", "Scalable Management"].map(t => (
+                            <li key={t} className="flex items-center gap-3"><Check className="w-5 h-5 text-green-500" /> {t}</li>
+                            ))}
+                        </ul>
+                        </div>
+                    </div>
+                 )}
               </motion.div>
             )}
             {activeTab === "box" && (
@@ -233,7 +378,7 @@ export default function ProductDetail() {
                   <div 
                     key={addon.id} 
                     className="group relative rounded-3xl border border-border bg-card p-8 hover:border-primary/50 transition-all cursor-pointer"
-                    onClick={() => setSelectedAddon(addon)}
+                    onClick={() => openAddon(addon)}
                   >
                     <div className="aspect-square rounded-2xl bg-secondary/20 mb-6 p-8 flex items-center justify-center">
                       <img src={addon.image} className="w-full h-full object-contain group-hover:scale-105 transition-transform" />
@@ -257,35 +402,76 @@ export default function ProductDetail() {
           >
             <motion.div 
               initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-background rounded-3xl p-8 max-w-2xl w-full shadow-2xl relative overflow-hidden"
+              className="bg-background rounded-3xl p-8 max-w-5xl w-full shadow-2xl relative overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
-              <Button variant="ghost" size="icon" className="absolute top-4 right-4 z-10" onClick={() => setSelectedAddon(null)}>
+              <Button variant="ghost" size="icon" className="absolute top-6 right-6 z-10" onClick={() => setSelectedAddon(null)}>
                 <X className="w-6 h-6" />
               </Button>
               
-              <div className="flex flex-col md:flex-row gap-8">
-                <div className="w-full md:w-1/2 bg-secondary/20 rounded-2xl p-8 flex items-center justify-center">
-                   <img src={selectedAddon.image} className="w-full object-contain" />
+              <div className="flex flex-col md:flex-row gap-12">
+                <div className="w-full md:w-1/2 bg-secondary/20 rounded-2xl p-12 flex items-center justify-center min-h-[400px]">
+                   <img src={selectedAddon.image} className="w-full object-contain max-h-[300px]" />
                 </div>
-                <div className="w-full md:w-1/2 space-y-6">
-                  <h2 className="text-3xl font-black uppercase italic tracking-tighter">{selectedAddon.name}</h2>
+                <div className="w-full md:w-1/2 flex flex-col justify-center space-y-8">
+                  <div>
+                    <h2 className="text-4xl font-black uppercase italic tracking-tighter mb-2">{selectedAddon.name}</h2>
+                    <p className="text-xl text-muted-foreground font-medium">$299.00</p>
+                  </div>
                   
                   <div className="space-y-4">
-                    <h4 className="text-xs font-black uppercase tracking-widest text-primary">Technical Specs</h4>
-                    <ul className="space-y-2">
+                    <p className="text-muted-foreground leading-relaxed">
+                        Compact, stackable, and toolless design. Perfect for your rack-mount devices.
+                    </p>
+                    <ul className="space-y-3">
                       {selectedAddon.specs.map((spec: string, i: number) => (
-                        <li key={i} className="flex items-center gap-2 text-sm font-medium">
-                          <Check className="w-4 h-4 text-green-500" /> {spec}
+                        <li key={i} className="flex items-center gap-3 text-sm font-bold">
+                          <Check className="w-5 h-5 text-green-500" /> {spec}
                         </li>
                       ))}
                     </ul>
                   </div>
+                  
+                  {/* Collapsible Tech Specs */}
+                  <div className="border-t border-border pt-4">
+                      <button 
+                        onClick={() => setIsAddonSpecOpen(!isAddonSpecOpen)}
+                        className="flex items-center justify-between w-full py-2 hover:text-primary transition-colors"
+                      >
+                         <span className="text-sm font-black uppercase tracking-widest">Tech Specs</span>
+                         <ChevronRight className={cn("w-4 h-4 transition-transform", isAddonSpecOpen ? "rotate-90" : "")} />
+                      </button>
+                      
+                      <AnimatePresence>
+                        {isAddonSpecOpen && (
+                            <motion.div 
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: "auto", opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                className="overflow-hidden"
+                            >
+                                <dl className="space-y-3 pt-4 pb-2">
+                                    {selectedAddon.detailedSpecs?.map((spec: any, idx: number) => (
+                                        <div key={idx} className="flex justify-between text-sm">
+                                            <dt className="text-muted-foreground font-medium">{spec.label}</dt>
+                                            <dd className="font-bold">{spec.value}</dd>
+                                        </div>
+                                    ))}
+                                </dl>
+                            </motion.div>
+                        )}
+                      </AnimatePresence>
+                  </div>
 
-                  <div className="pt-6">
-                    <Button className="w-full rounded-full font-bold">
-                      View Detail Specification
-                    </Button>
+                  <div className="pt-4 flex gap-4">
+                     <div className="flex items-center border border-border rounded-lg px-4 h-12">
+                        <button className="px-2 text-lg hover:text-primary">-</button>
+                        <span className="px-4 font-bold">1</span>
+                        <button className="px-2 text-lg hover:text-primary">+</button>
+                     </div>
+                     <Button className="flex-1 rounded-lg h-12 font-bold text-base">
+                        Add to Cart
+                     </Button>
                   </div>
                 </div>
               </div>
