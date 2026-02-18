@@ -44,6 +44,7 @@ export default function ProductDetail() {
   const [selectedAddon, setSelectedAddon] = useState<any>(null);
   const [activeTab, setActiveTab] = useState("overview");
   const [isAddonSpecOpen, setIsAddonSpecOpen] = useState(false);
+  const [showAllImages, setShowAllImages] = useState(false);
   
   // Reset addon spec state when opening new addon
   const openAddon = (addon: any) => {
