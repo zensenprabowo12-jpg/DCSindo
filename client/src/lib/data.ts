@@ -2,9 +2,8 @@ export interface Product {
   id: string;
   name: string;
   category: "Cloud Gateways" | "Switching" | "WiFi" | "Camera Security" | "Door Access" | "Others";
-  price: number;
+  Category: string;
   image: string;
-  images?: string[];
   shortDescription: string;
   specs: { label: string; value: string }[];
   isNew?: boolean;
@@ -13,11 +12,11 @@ export interface Product {
 export const products: Product[] = [
   // Cloud Gateways
   {
-    id: "udm-pro-max",
-    name: "Dream Machine Pro Max",
+    id: "Enterprise Fortress Gateway",
+    name: "Enterprise Fortress Gateway",
     category: "Cloud Gateways",
-    price: 599,
-    image: "/images/Enterprise-Fortress-Gateway.png", // Placeholder
+    Category: "Cloud Gateways",
+    image: "/images/Product-Enterprise-Fortress-Gateway.png", // Placeholder
     shortDescription: "Enterprise-grade cloud gateway with 10 Gbps IPS routing and NVR storage.",
     specs: [
       { label: "Throughput", value: "10 Gbps IPS" },
@@ -31,7 +30,7 @@ export const products: Product[] = [
     id: "udm-pro-max",
     name: "lalala",
     category: "Cloud Gateways",
-    price: 599,
+    Category: "Cloud Gateways",
     image: "/images/Enterprise-Fortress-Gateway.png", // Placeholder
     shortDescription: "lalalalala",
     specs: [

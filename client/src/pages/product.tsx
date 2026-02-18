@@ -22,7 +22,7 @@ export default function ProductDetail() {
     
     product = {
         id: params.id,
-        name: `Item (${category}) ${index}`,
+        name: `Item (${category}) {index}`,
         price: 299 + (parseInt(index) * 50),
         description: "Experience enterprise-grade performance with this cutting-edge solution.",
         shortDescription: "Experience the pinnacle of networking performance.",
@@ -196,7 +196,7 @@ export default function ProductDetail() {
             </div>
             <div className="flex-1 relative group rounded-3xl overflow-hidden border border-border bg-card shadow-2xl">
               <div 
-                className="aspect-square p-12 flex items-center justify-center cursor-zoom-in"
+                className="aspect-square p-10 flex items-center justify-center cursor-zoom-in"
                 onClick={() => setIsZoomOpen(true)}
               >
                 <motion.img 

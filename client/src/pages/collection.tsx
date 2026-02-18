@@ -162,38 +162,51 @@ export default function Collection() {
   // If we have static products, use them. Otherwise fallback to dummy generation for categories not yet fully populated
   let displayProducts = categoryProducts;
   
-  // If no static products found for this category (or specific subfilter logic needed), generate placeholders
-  // Ideally, we'd filter staticProducts by subfilter too, but for now let's just show them if "All" is selected
-  // or if we want to mix them.
-  
-  if (displayProducts.length === 0) {
-      displayProducts = Array.from({
-        length: SUBFILTERS[activeCategory]?.find(s => s.name === activeSubfilter)?.count || 0,
-      }).map((_, i) => ({
-        id: `${activeCategory}-${i}`,
-        name: `Item (${activeSubfilter}) ${i + 1}`,
-        price: 299 + i * 50,
-        category: activeCategory,
-        image: "/images/placeholder-product.png",
-        shortDescription: "Generated product",
-        specs: []
-      })) as any;
-  } else if (displayProducts.length < (SUBFILTERS[activeCategory]?.find(s => s.name === "All")?.count || 0)) {
-      // If we have some static products but need more to fill the count, append generated ones
-      // This helps transitioning
-      const remainingCount = (SUBFILTERS[activeCategory]?.find(s => s.name === "All")?.count || 0) - displayProducts.length;
-      if (remainingCount > 0) {
-          const generated = Array.from({ length: remainingCount }).map((_, i) => ({
-            id: `${activeCategory}-${displayProducts.length + i}`,
-            name: `Item (${activeSubfilter}) ${displayProducts.length + i + 1}`,
-            price: 299 + (displayProducts.length + i) * 50,
-            category: activeCategory,
-            image: "/images/placeholder-product.png",
-            shortDescription: "Generated product",
-            specs: []
-          })) as any;
-          displayProducts = [...displayProducts, ...generated];
-      }
+  // Apply subfilter logic: use the count defined in SUBFILTERS
+  const currentSubfilterData = SUBFILTERS[activeCategory]?.find(s => s.name === activeSubfilter);
+  const targetCount = currentSubfilterData?.count || 0;
+
+  if (activeSubfilter !== "All") {
+    // For subfilters, we generate the exact number of items specified in SUBFILTERS
+    displayProducts = Array.from({ length: targetCount }).map((_, i) => ({
+      id: `${activeCategory}-${activeSubfilter.toLowerCase().replace(/\s+/g, '-')}-${i}`,
+      name: `${activeSubfilter === "Enterprise Scale" ? "Enterprise" : activeSubfilter} ${activeCategory === 'cloud-gateways' ? 'Gateway' : 'Product'} ${i + 1}`,
+      price: 299 + i * 150,
+      category: activeCategory,
+      Category: activeCategory.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
+      image: activeCategory === "cloud-gateways" ? "/images/Enterprise-Fortress-Gateway.png" : "/images/placeholder-product.png",
+      shortDescription: `High-performance ${activeSubfilter} solution for your network.`,
+      specs: []
+    })) as any;
+  } else {
+    // If "All" is selected, we show static products and fill up to the "All" count if needed
+    if (displayProducts.length === 0) {
+        displayProducts = Array.from({
+          length: targetCount,
+        }).map((_, i) => ({
+          id: `${activeCategory}-${i}`,
+          name: `Item ${i + 1}`,
+          price: 299 + i * 50,
+          category: activeCategory,
+          Category: activeCategory.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
+          image: "/images/placeholder-product.png",
+          shortDescription: "Generated product",
+          specs: []
+        })) as any;
+    } else if (displayProducts.length < targetCount) {
+        const remainingCount = targetCount - displayProducts.length;
+        const generated = Array.from({ length: remainingCount }).map((_, i) => ({
+          id: `${activeCategory}-extra-${i}`,
+          name: `Item ${displayProducts.length + i + 1}`,
+          price: 299 + (displayProducts.length + i) * 50,
+          category: activeCategory,
+          Category: activeCategory.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
+          image: "/images/placeholder-product.png",
+          shortDescription: "Generated product",
+          specs: []
+        })) as any;
+        displayProducts = [...displayProducts, ...generated];
+    }
   }
 
   return (
@@ -269,7 +282,7 @@ export default function Collection() {
 
                   <div className="flex justify-between items-center">
                     <span className="text-xs font-bold text-muted-foreground">
-                      ${product.price}
+                      {product.Category}
                     </span>
 
                     <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
