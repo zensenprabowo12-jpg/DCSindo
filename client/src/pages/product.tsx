@@ -178,6 +178,16 @@ export default function ProductDetail() {
                   <img src={img} className="w-full h-full object-contain" />
                 </div>
               ))}
+              
+              {remainingImagesCount > 0 && (
+                  <button 
+                    onClick={() => setShowAllImages(true)}
+                    className="w-20 h-20 rounded-2xl border border-border bg-secondary/50 flex flex-col items-center justify-center text-xs font-bold text-muted-foreground hover:bg-secondary hover:text-foreground transition-colors"
+                  >
+                      <span className="text-lg mb-1">+{remainingImagesCount}</span>
+                      <span>more</span>
+                  </button>
+              )}
             </div>
             <div className="flex-1 relative group rounded-3xl overflow-hidden border border-border bg-card shadow-2xl">
               <div 
@@ -185,7 +195,7 @@ export default function ProductDetail() {
                 onClick={() => setIsZoomOpen(true)}
               >
                 <motion.img 
-                  key={currentImg}
+                  key={images[currentImg]}
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
@@ -209,6 +219,39 @@ export default function ProductDetail() {
               </div>
             </div>
           </div>
+          
+          <AnimatePresence>
+            {showAllImages && (
+              <motion.div 
+                initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-8"
+                onClick={() => setShowAllImages(false)}
+              >
+                 <div className="bg-background rounded-3xl p-8 max-w-6xl w-full max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
+                    <div className="flex justify-between items-center mb-8">
+                        <h2 className="text-2xl font-black uppercase tracking-tighter">Product Gallery</h2>
+                        <Button variant="ghost" size="icon" onClick={() => setShowAllImages(false)}>
+                            <X className="w-6 h-6" />
+                        </Button>
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {images.map((img, i) => (
+                            <div 
+                                key={i} 
+                                className="aspect-square rounded-2xl border border-border bg-secondary/10 p-4 hover:border-primary transition-colors cursor-pointer"
+                                onClick={() => {
+                                    setCurrentImg(i);
+                                    setShowAllImages(false);
+                                }}
+                            >
+                                <img src={img} className="w-full h-full object-contain" />
+                            </div>
+                        ))}
+                    </div>
+                 </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           <div className="flex-1 space-y-12">
             <div className="space-y-4">
