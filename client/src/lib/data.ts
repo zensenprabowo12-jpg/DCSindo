@@ -2,8 +2,10 @@ export interface Product {
   id: string;
   name: string;
   category: "Cloud Gateways" | "Switching" | "WiFi" | "Camera Security" | "Door Access" | "Others";
-  subfilter: string;
+  Category: string; // Display category
+  subfilter: string; // The subfilter it belongs to (e.g. "Enterprise Scale")
   image: string;
+  images?: string[]; // Multiple images support
   shortDescription: string;
   specs: { label: string; value: string }[];
   isNew?: boolean;
@@ -12,11 +14,13 @@ export interface Product {
 export const products: Product[] = [
   // Cloud Gateways
   {
-    id: "efg",
+    id: "Enterprise Fortress Gateway",
     name: "Enterprise Fortress Gateway",
     category: "Cloud Gateways",
+    Category: "Cloud Gateways",
     subfilter: "Enterprise Scale",
-    image: "/images/Product-Enterprise-Fortress-Gateway.png", // Placeholder
+    image: "/images/Product-Enterprise-Fortress-Gateway.png",
+    images: ["/images/Product-Enterprise-Fortress-Gateway.png", "/images/Product-Dimensity-EFG.jpg", "/images/Product-Specification-EFG.png", "/images/Product-Deployment-EFG.png", "/images/Product-MKT-EFG1.png", "/images/Product-MKT-EFG2.png", "/images/Product-MKT-EFG3.png", "/images/Product-MKT-EFG4.png", "/images/Product-MKT-EFG5.png"],
     shortDescription: "Enterprise-grade cloud gateway with 10 Gbps IPS routing and NVR storage.",
     specs: [
       { label: "Throughput", value: "10 Gbps IPS" },
@@ -28,11 +32,13 @@ export const products: Product[] = [
   },
   {
     id: "udm-pro-max",
-    name: "Dream Machine Pro Max ",
+    name: "UniFi Dream Machine Pro Max",
     category: "Cloud Gateways",
+    Category: "Cloud Gateways",
     subfilter: "Large Scale",
-    image: "/images/Product-Dream-Machine-Pro-Max.png", // Placeholder
-    shortDescription: "lalalalala",
+    image: "/images/Enterprise-Fortress-Gateway.png",
+    images: ["/images/Enterprise-Fortress-Gateway.png", "/images/dcs-overview-1.png", "/images/dcs-overview-2.png"],
+    shortDescription: "Dual-WAN cloud gateway with 10 Gbps IPS throughput and complete high availability.",
     specs: [
       { label: "Throughput", value: "10 Gbps IPS" },
       { label: "Ports", value: "8x GbE RJ45, 1x 10G SFP+" },
@@ -42,25 +48,12 @@ export const products: Product[] = [
     isNew: true
   },
   {
-    id: "udm-pro",
-    name: "Dream Machine Pro",
-    category: "Cloud Gateways",
-    subfilter: "Large Scale",
-    image: "/images/Product-Dream-Machine-Pro.png",
-    shortDescription: "All-in-one enterprise security gateway and network appliance.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" }
-    ]
-  },
-  {
     id: "udm-se",
     name: "Dream Machine Special Edition",
     category: "Cloud Gateways",
+    Category: "Cloud Gateways",
     subfilter: "Large Scale",
-    image: "/images/Product-Dream-Machine-Special-Edition.png",
+    image: "/images/switch.jpg",
     shortDescription: "All-in-one enterprise security gateway and network appliance.",
     specs: [
       { label: "Throughput", value: "3.5 Gbps IPS" },
@@ -70,217 +63,83 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "ucg-fiber",
-    name: "Cloud Gateways Fiber",
+    id: "udm-pro",
+    name: "Dream Machine Pro",
     category: "Cloud Gateways",
-    subfilter: "Compact",
-    image: "/images/Product-UCG-Fiber.png",
-    shortDescription: "All-in-one enterprise security gateway and network appliance.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" }
-    ]
-  },
-  {
-    id: "ucg-max",
-    name: "Cloud Gateways Max",
-    category: "Cloud Gateways",
-    subfilter: "Compact",
-    image: "/images/Product-UCG-Max.png",
-    shortDescription: "All-in-one enterprise security gateway and network appliance.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" }
-    ]
+    Category: "Cloud Gateways",
+    subfilter: "Large Scale",
+    image: "/images/switch.jpg",
+    shortDescription: "Enterprise-grade security gateway with 8-port switch and dual-WAN support.",
+    specs: []
   },
   {
     id: "ucg-ultra",
-    name: "Cloud Gateways Ultra",
+    name: "Cloud Gateway Ultra",
     category: "Cloud Gateways",
+    Category: "Cloud Gateways",
     subfilter: "Compact",
-    image: "/images/Product-UCG-Ultra.png",
-    shortDescription: "All-in-one enterprise security gateway and network appliance.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" }
-    ]
+    image: "/images/placeholder-product.png",
+    shortDescription: "Powerful and compact UniFi Cloud Gateway.",
+    specs: []
   },
   {
-    id: "udr-7",
-    name: "Dream Router 7",
+    id: "ucg-max",
+    name: "Cloud Gateway Max",
     category: "Cloud Gateways",
-    subfilter: "WiFi Integrated",
-    image: "/images/Product-UDR-7.png",
-    shortDescription: "All-in-one enterprise security gateway and network appliance.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" }
-    ]
+    Category: "Cloud Gateways",
+    subfilter: "Compact",
+    image: "/images/placeholder-product.png",
+    shortDescription: "Compact Cloud Gateway with high-performance networking.",
+    specs: []
   },
   {
-    id: "ux-7",
-    name: "UniFi Express 7",
+    id: "uxg-lite",
+    name: "Next-Generation Gateway Lite",
     category: "Cloud Gateways",
-    subfilter: "WiFi Integrated",
-    image: "/images/Product-UX-7.png",
-    shortDescription: "All-in-one enterprise security gateway and network appliance.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" }
-    ]
+    Category: "Cloud Gateways",
+    subfilter: "Compact",
+    image: "/images/placeholder-product.png",
+    shortDescription: "Compact and powerful gateway.",
+    specs: []
   },
   {
-    id: "udr-5g-max",
-    name: "Dream Router 5G Max",
+    id: "udr",
+    name: "UniFi Dream Router",
     category: "Cloud Gateways",
+    Category: "Cloud Gateways",
     subfilter: "WiFi Integrated",
-    image: "/images/Product-UDR-5G-Max.png",
-    shortDescription: "All-in-one enterprise security gateway and network appliance.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" }
-    ]
+    image: "/images/placeholder-product.png",
+    shortDescription: "Complete UniFi solution with integrated WiFi 6.",
+    specs: []
   },
   {
-    id: "UDW",
-    name: "Dream Wall",
+    id: "u-dw",
+    name: "UniFi Dream Wall",
     category: "Cloud Gateways",
+    Category: "Cloud Gateways",
     subfilter: "WiFi Integrated",
-    image: "/images/Product-UDW.png",
-    shortDescription: "All-in-one enterprise security gateway and network appliance.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" }
-    ]
-  },
-  
-  // Switching
-  {
-    id: "pro-max-24-poe",
-    name: "Pro Max 24 PoE",
-    category: "Switching",
-    subfilter: "Switching",
-    image: "/images/switch.jpg",
-    shortDescription: "Layer 3 Etherlighting™ switch with 2.5 GbE and PoE++ output.",
-    specs: [
-      { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
-      { label: "PoE Budget", value: "400W" },
-      { label: "Uplink", value: "2x 10G SFP+" },
-      { label: "Layer", value: "Layer 3 Switching" }
-    ],
-    isNew: true
+    image: "/images/placeholder-product.png",
+    shortDescription: "Wall-mounted all-in-one networking solution.",
+    specs: []
   },
   {
-    id: "pro-max-24-poe",
-    name: "Pro Max 24 PoE",
-    category: "Switching",
-    subfilter: "Switching",
-    image: "/images/switch.jpg",
-    shortDescription: "Layer 3 Etherlighting™ switch with 2.5 GbE and PoE++ output.",
-    specs: [
-      { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
-      { label: "PoE Budget", value: "400W" },
-      { label: "Uplink", value: "2x 10G SFP+" },
-      { label: "Layer", value: "Layer 3 Switching" }
-    ],
-    isNew: true
-  },
-  
-  // WiFi
-  {
-    id: "udr-5g-max",
-    name: "Dream Router 5G Max",
-    category: "WiFi",
+    id: "udm",
+    name: "UniFi Dream Machine",
+    category: "Cloud Gateways",
+    Category: "Cloud Gateways",
     subfilter: "WiFi Integrated",
-    image: "/images/Product-UDR-5G-Max.png",
-    shortDescription: "All-in-one enterprise security gateway and network appliance.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" }
-    ]
+    image: "/images/placeholder-product.png",
+    shortDescription: "The all-in-one device for home networking.",
+    specs: []
   },
   {
-    id: "u6-enterprise",
-    name: "UniFi U6 Enterprise",
-    category: "WiFi",
-    price: 279,
-    image: "/images/wifi-ap.jpg",
-    shortDescription: "High-performance WiFi 6E access point for high-density environments.",
-    specs: [
-      { label: "Standard", value: "WiFi 6E" },
-      { label: "Throughput", value: "10.2 Gbps Aggregate" },
-      { label: "Client Capacity", value: "600+" },
-      { label: "Uplink", value: "2.5 GbE" }
-    ]
-  },
-  
-  // Camera Security
-  {
-    id: "g5-pro",
-    name: "G5 Professional",
-    category: "Camera Security",
-    price: 379,
-    image: "/images/camera.jpg",
-    shortDescription: "4K indoor/outdoor PoE camera with exceptional low-light performance.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" }
-    ]
-  },
-  {
-    id: "ai-theta",
-    name: "AI Theta",
-    category: "Camera Security",
-    price: 299,
-    image: "/images/camera.jpg",
-    shortDescription: "Discreet panoramic camera system with AI analytics.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Form Factor", value: "In-wall / Ceiling" },
-      { label: "AI", value: "People Detection" },
-      { label: "View", value: "360° Panoramic" }
-    ]
-  },
-  // Door Access
-  {
-    id: "g2-reader-pro",
-    name: "Access Reader G2 Professional",
-    category: "Door Access",
-    price: 399,
-    image: "/images/door-access.jpg",
-    shortDescription: "Advanced NFC card reader and intercom with touchscreen.",
-    specs: [
-      { label: "Unlock", value: "NFC, PIN, Mobile" },
-      { label: "Camera", value: "12MP with Night Vision" },
-      { label: "Display", value: "Touchscreen" },
-      { label: "Durability", value: "IP55 Weather Resistant" }
-    ]
+    id: "ux",
+    name: "UniFi Express",
+    category: "Cloud Gateways",
+    Category: "Cloud Gateways",
+    subfilter: "WiFi Integrated",
+    image: "/images/placeholder-product.png",
+    shortDescription: "Powerfully compact UniFi Cloud Gateway.",
+    specs: []
   }
 ];
-
-export const CATEGORIES = [
-  "Cloud Gateways",
-  "Switching",
-  "WiFi",
-  "Camera Security",
-  "Door Access",
-  "Others"
-] as const;
