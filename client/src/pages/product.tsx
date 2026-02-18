@@ -156,7 +156,11 @@ export default function ProductDetail() {
 
   if (!product) return null;
 
-  const images = [product.image, "/images/dcs-overview-1.png", "/images/dcs-overview-2.png"];
+  const images = product.images || [product.image, "/images/dcs-overview-1.png", "/images/dcs-overview-2.png"];
+  
+  // Display only first 3 images in the list, or more if needed
+  const displayImages = images.slice(0, 3);
+  const remainingImagesCount = images.length - 3;
 
   const nextImg = () => setCurrentImg((prev) => (prev + 1) % images.length);
   const prevImg = () => setCurrentImg((prev) => (prev - 1 + images.length) % images.length);
@@ -167,7 +171,7 @@ export default function ProductDetail() {
         <div className="flex flex-col lg:flex-row gap-20 mb-40">
           <div className="flex-1 flex gap-8">
             <div className="hidden md:flex flex-col gap-4">
-              {images.map((img, i) => (
+              {displayImages.map((img, i) => (
                 <div 
                   key={i} 
                   className={cn(
