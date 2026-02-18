@@ -26,7 +26,9 @@ export default function ProductDetail() {
         price: 299 + (parseInt(index) * 50),
         description: "Experience enterprise-grade performance with this cutting-edge solution.",
         shortDescription: "Experience the pinnacle of networking performance.",
-        image: "/images/placeholder-product.png",
+        image: category === "cloud" || category === "Cloud Gateways" || category === "cloud-gateways" 
+            ? "/images/Enterprise-Fortress-Gateway.png" 
+            : "/images/placeholder-product.png",
         category: category,
         specs: [
             { label: "Throughput", value: "10 Gbps" },

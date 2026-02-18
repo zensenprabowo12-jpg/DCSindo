@@ -16,7 +16,7 @@ export const products: Product[] = [
     name: "Dream Machine Pro Max",
     category: "Cloud Gateways",
     price: 599,
-    image: "/images/switch.jpg", // Placeholder
+    image: "/images/Enterprise-Fortress-Gateway.png", // Placeholder
     shortDescription: "Enterprise-grade cloud gateway with 10 Gbps IPS routing and NVR storage.",
     specs: [
       { label: "Throughput", value: "10 Gbps IPS" },
