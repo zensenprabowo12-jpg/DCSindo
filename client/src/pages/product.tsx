@@ -156,32 +156,18 @@ export default function ProductDetail() {
 
   if (!product) return null;
 
-  const images = product.images && product.images.length > 0 
-    ? product.images 
-    : [product.image, "/images/dcs-overview-1.png", "/images/dcs-overview-2.png"];
-
-  const displayImages = images.slice(0, 4);
-  const remainingImagesCount = Math.max(0, images.length - 4);
+  const images = product.images || [product.image, "/images/dcs-overview-1.png", "/images/dcs-overview-2.png"];
+  
+  // Display only first 3 images in the list, or more if needed
+  const displayImages = images.slice(0, 3);
+  const remainingImagesCount = images.length - 3;
 
   const nextImg = () => setCurrentImg((prev) => (prev + 1) % images.length);
   const prevImg = () => setCurrentImg((prev) => (prev - 1 + images.length) % images.length);
 
   return (
     <Layout>
-      <div className="container mx-auto px-4 py-32 relative">
-        {/* Fixed Back Button */}
-        <div className="fixed top-32 left-4 md:left-8 z-50">
-          <Button 
-            variant="ghost" 
-            size="sm" 
-            onClick={() => window.history.back()}
-            className="flex items-center gap-2 font-black uppercase tracking-widest text-xs bg-background/80 hover:bg-background backdrop-blur-md rounded-full px-4 py-2 border border-border/50 shadow-sm transition-all hover:scale-105 active:scale-95"
-          >
-            <ChevronLeft className="w-4 h-4" />
-            Back
-          </Button>
-        </div>
-
+      <div className="container mx-auto px-4 py-32">
         <div className="flex flex-col lg:flex-row gap-20 mb-40">
           <div className="flex-1 flex gap-8">
             <div className="hidden md:flex flex-col gap-4">
@@ -208,9 +194,9 @@ export default function ProductDetail() {
                   </button>
               )}
             </div>
-            <div className="flex-1 relative group rounded-3xl overflow-hidden border border-border bg-card shadow-2xl">
+            <div className="flex-1 relative group rounded-3xl overflow-hidden border border-border bg-card shadow-2xl flex flex-col">
               <div 
-                className="aspect-square p-10 flex items-center justify-center cursor-zoom-in"
+                className="flex-1 p-10 flex items-center justify-center cursor-zoom-in min-h-[500px]"
                 onClick={() => setIsZoomOpen(true)}
               >
                 <motion.img 
@@ -219,7 +205,7 @@ export default function ProductDetail() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
                   src={images[currentImg]} 
-                  className="w-full h-full rounded-2xl object-contain max-h-[600px]"
+                  className="w-full h-full max-h-[500px] rounded-2xl object-contain"
                 />
                 
                 <div className="absolute inset-y-0 left-0 flex items-center px-4 opacity-0 group-hover:opacity-100 transition-opacity">

@@ -262,7 +262,7 @@ export default function Collection() {
                   />
                 </div>
 
-                <div className="p-7">
+                <div className="p-6">
                   <h3 className="font-black text-sm uppercase group-hover:text-primary transition-colors mb-3">
                     {product.name}
                   </h3>

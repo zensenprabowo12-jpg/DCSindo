@@ -26,7 +26,7 @@ export function ProductCard({ product }: ProductCardProps) {
         {/* Content */}
         <div className="p-6 text-center">
           <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors">{product.name}</h3>
-          <p className="text-muted-foreground text-sm font-medium">${product.subfilter}</p>
+          <p className="text-muted-foreground text-sm font-medium">${product.price}</p>
         </div>
       </a>
     </Link>
