@@ -126,6 +126,8 @@ const SUBFILTERS: Record<string, { name: string; count: number }[]> = {
   ],
 };
 
+import { products as staticProducts } from "@/lib/data";
+
 export default function Collection() {
   const [match, params] = useRoute("/collections/:category");
   const [, setLocation] = useLocation();
@@ -149,14 +151,50 @@ export default function Collection() {
     setLocation(`/collections/${catId}`);
   };
 
-  const products = Array.from({
-    length:
-      SUBFILTERS[activeCategory]?.find(s => s.name === activeSubfilter)?.count || 0,
-  }).map((_, i) => ({
-    id: `${activeCategory}-${i}`,
-    name: `Item (${activeSubfilter}) ${i + 1}`,
-    price: 299 + i * 50,
-  }));
+  // Get products based on category and subfilter
+  // First try to find static products from data.ts
+  const categoryProducts = staticProducts.filter(p => {
+      // Normalize category checking
+      const pCat = p.category.toLowerCase().replace(/\s+/g, '-');
+      return pCat === activeCategory || (activeCategory === "cloud-gateways" && p.category === "Cloud Gateways");
+  });
+
+  // If we have static products, use them. Otherwise fallback to dummy generation for categories not yet fully populated
+  let displayProducts = categoryProducts;
+  
+  // If no static products found for this category (or specific subfilter logic needed), generate placeholders
+  // Ideally, we'd filter staticProducts by subfilter too, but for now let's just show them if "All" is selected
+  // or if we want to mix them.
+  
+  if (displayProducts.length === 0) {
+      displayProducts = Array.from({
+        length: SUBFILTERS[activeCategory]?.find(s => s.name === activeSubfilter)?.count || 0,
+      }).map((_, i) => ({
+        id: `${activeCategory}-${i}`,
+        name: `Item (${activeSubfilter}) ${i + 1}`,
+        price: 299 + i * 50,
+        category: activeCategory,
+        image: "/images/placeholder-product.png",
+        shortDescription: "Generated product",
+        specs: []
+      })) as any;
+  } else if (displayProducts.length < (SUBFILTERS[activeCategory]?.find(s => s.name === "All")?.count || 0)) {
+      // If we have some static products but need more to fill the count, append generated ones
+      // This helps transitioning
+      const remainingCount = (SUBFILTERS[activeCategory]?.find(s => s.name === "All")?.count || 0) - displayProducts.length;
+      if (remainingCount > 0) {
+          const generated = Array.from({ length: remainingCount }).map((_, i) => ({
+            id: `${activeCategory}-${displayProducts.length + i}`,
+            name: `Item (${activeSubfilter}) ${displayProducts.length + i + 1}`,
+            price: 299 + (displayProducts.length + i) * 50,
+            category: activeCategory,
+            image: "/images/placeholder-product.png",
+            shortDescription: "Generated product",
+            specs: []
+          })) as any;
+          displayProducts = [...displayProducts, ...generated];
+      }
+  }
 
   return (
     <Layout>
@@ -212,13 +250,16 @@ export default function Collection() {
 
         {/* PRODUCT GRID */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {products.map((product) => (
+          {displayProducts.map((product) => (
             <Link key={product.id} href={`/products/${product.id}`}>
               <a className="group block bg-card border border-border rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
-                <div className="aspect-square bg-secondary/10 flex items-center justify-center">
-                  <div className="text-4xl font-black text-muted-foreground/20">
-                    DCS
-                  </div>
+
+                <div className="aspect-square bg-secondary/10 flex items-center justify-center p-6">
+                  <img
+                    src={product.image || "/images/placeholder-product.png"}
+                    alt={product.name}
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
 
                 <div className="p-6">
@@ -236,6 +277,7 @@ export default function Collection() {
                     </div>
                   </div>
                 </div>
+
               </a>
             </Link>
           ))}

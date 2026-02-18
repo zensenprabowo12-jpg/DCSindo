@@ -12,26 +12,40 @@ export interface Product {
 export const products: Product[] = [
   // Cloud Gateways
   {
-    id: "udm-pro-max",
+    id: "cloud-gateways-0",
+    name: "Enterprise Fortress Gateway",
+    category: "Cloud Gateways",
+    price: 1999,
+    image: "/images/Enterprise-Fortress-Gateway.png",
+    shortDescription: "Flagship cloud gateway with 25 Gbps routing and enterprise-grade security.",
+    specs: [
+      { label: "Throughput", value: "25 Gbps" },
+      { label: "Ports", value: "2x 25G SFP28, 2x 10G SFP+, 2x 2.5GbE" },
+      { label: "Clients", value: "5000+" },
+      { label: "Processor", value: "Quad-Core ARM Cortex-A57" }
+    ],
+    isNew: true
+  },
+  {
+    id: "cloud-gateways-1",
     name: "Dream Machine Pro Max",
     category: "Cloud Gateways",
     price: 599,
-    image: "/images/Enterprise-Fortress-Gateway.png", // Placeholder
+    image: "/images/placeholder-product.png", // Reverted to generic/icon usage if needed, or specific image
     shortDescription: "Enterprise-grade cloud gateway with 10 Gbps IPS routing and NVR storage.",
     specs: [
       { label: "Throughput", value: "10 Gbps IPS" },
       { label: "Ports", value: "8x GbE RJ45, 1x 10G SFP+" },
       { label: "Storage", value: "2x 3.5\" HDD Bays" },
       { label: "Processor", value: "Quad-Core ARM Cortex-A57" }
-    ],
-    isNew: true
+    ]
   },
   {
-    id: "udm-se",
+    id: "cloud-gateways-2",
     name: "Dream Machine Special Edition",
     category: "Cloud Gateways",
     price: 499,
-    image: "/images/switch.jpg",
+    image: "/images/placeholder-product.png",
     shortDescription: "All-in-one enterprise security gateway and network appliance.",
     specs: [
       { label: "Throughput", value: "3.5 Gbps IPS" },
