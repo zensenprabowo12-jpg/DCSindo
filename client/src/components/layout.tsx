@@ -4,7 +4,13 @@ import {
   Menu,
   Sun,
   Moon,
-  X
+  X,
+  MapPin,
+  Mail,
+  Instagram,
+  Facebook,
+  Linkedin,
+  Twitter
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
@@ -196,6 +202,72 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       <main className="flex-1">{children}</main>
+
+      {/* ================= FOOTER ================= */}
+      <footer className="bg-foreground text-background py-16">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+            <div className="max-w-md">
+              <h2 className="text-4xl md:text-5xl font-black tracking-tighter leading-tight mb-6">
+                Building the Future of Connectivity.
+              </h2>
+              <p className="text-muted-foreground/80 text-lg">
+                Your trusted partner for enterprise networking solutions and infrastructure.
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              <div className="flex gap-4 items-start">
+                <MapPin className="w-6 h-6 mt-1 flex-shrink-0" />
+                <a 
+                  href="https://maps.app.goo.gl/vGyYVsLHyPvKSqqz6" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary/80 transition-colors text-lg"
+                >
+                  Jl. Gunung Sahari Raya No.34,<br />
+                  Kota Jakarta Pusat 10720, INDONESIA
+                </a>
+              </div>
+
+              <div className="flex gap-4 items-center">
+                <Mail className="w-6 h-6 flex-shrink-0" />
+                <a 
+                  href="mailto:info@dcsindo.com"
+                  className="hover:text-primary/80 transition-colors text-lg"
+                >
+                  info@dcsindo.com
+                </a>
+              </div>
+
+              <div className="flex gap-6 pt-2">
+                <a href="#" className="hover:text-primary/80 transition-colors"><Instagram className="w-6 h-6" /></a>
+                <a href="#" className="hover:text-primary/80 transition-colors"><Facebook className="w-6 h-6" /></a>
+                <a href="#" className="hover:text-primary/80 transition-colors"><Linkedin className="w-6 h-6" /></a>
+                <a href="#" className="hover:text-primary/80 transition-colors"><Twitter className="w-6 h-6" /></a>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-px bg-white/10 w-full mb-12" />
+
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div className="flex flex-wrap justify-center md:justify-start gap-8">
+              {brands.map((brand) => (
+                <Link key={brand.path} href={brand.path}>
+                  <a className="text-sm font-black uppercase tracking-widest hover:text-primary transition-colors">
+                    {brand.name}
+                  </a>
+                </Link>
+              ))}
+            </div>
+            
+            <div className="text-sm text-muted-foreground/60">
+              &copy; {new Date().getFullYear()} Dinamika Cipta Solusi. All Rights Reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
