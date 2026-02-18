@@ -467,14 +467,11 @@ export default function ProductDetail() {
                   </div>
 
                   <div className="pt-4 flex gap-4">
-                     <div className="flex items-center border border-border rounded-lg px-4 h-12">
-                        <button className="px-2 text-lg hover:text-primary">-</button>
-                        <span className="px-4 font-bold">1</span>
-                        <button className="px-2 text-lg hover:text-primary">+</button>
-                     </div>
-                     <Button className="flex-1 rounded-lg h-12 font-bold text-base">
-                        Add to Cart
-                     </Button>
+                    <Link href="/support">
+                       <Button size="lg" className="w-full rounded-full h-14 text-lg font-black uppercase tracking-widest shadow-xl shadow-primary/20 group hover:scale-[1.02] transition-all">
+                        Contact Us!
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
