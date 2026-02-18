@@ -156,19 +156,45 @@ export default function Collection() {
   const categoryProducts = staticProducts.filter(p => {
       // Normalize category checking
       const pCat = p.category.toLowerCase().replace(/\s+/g, '-');
-      const categoryMatch = pCat === activeCategory || (activeCategory === "cloud-gateways" && p.category === "Cloud Gateways");
-      
-      if (!categoryMatch) return false;
-      
-      // If "All" is selected, return all products in this category
-      if (activeSubfilter === "All") return true;
-      
-      // If a specific subfilter is selected, check if product's Category matches it
-      // Note: In data.ts, we use 'Category' for subfilter grouping
-      return p.subfilter === activeSubfilter;
+      return pCat === activeCategory || (activeCategory === "cloud-gateways" && p.category === "Cloud Gateways");
   });
 
-  const displayProducts = categoryProducts;
+  // If we have static products, use them. Otherwise fallback to dummy generation for categories not yet fully populated
+  let displayProducts = categoryProducts;
+  
+  // If no static products found for this category (or specific subfilter logic needed), generate placeholders
+  // Ideally, we'd filter staticProducts by subfilter too, but for now let's just show them if "All" is selected
+  // or if we want to mix them.
+  
+  if (displayProducts.length === 0) {
+      displayProducts = Array.from({
+        length: SUBFILTERS[activeCategory]?.find(s => s.name === activeSubfilter)?.count || 0,
+      }).map((_, i) => ({
+        id: `${activeCategory}-${i}`,
+        name: `Item (${activeSubfilter}) ${i + 1}`,
+        price: 299 + i * 50,
+        category: activeCategory,
+        image: "/images/placeholder-product.png",
+        shortDescription: "Generated product",
+        specs: []
+      })) as any;
+  } else if (displayProducts.length < (SUBFILTERS[activeCategory]?.find(s => s.name === "All")?.count || 0)) {
+      // If we have some static products but need more to fill the count, append generated ones
+      // This helps transitioning
+      const remainingCount = (SUBFILTERS[activeCategory]?.find(s => s.name === "All")?.count || 0) - displayProducts.length;
+      if (remainingCount > 0) {
+          const generated = Array.from({ length: remainingCount }).map((_, i) => ({
+            id: `${activeCategory}-${displayProducts.length + i}`,
+            name: `Item (${activeSubfilter}) ${displayProducts.length + i + 1}`,
+            price: 299 + (displayProducts.length + i) * 50,
+            category: activeCategory,
+            image: "/images/placeholder-product.png",
+            shortDescription: "Generated product",
+            specs: []
+          })) as any;
+          displayProducts = [...displayProducts, ...generated];
+      }
+  }
 
   return (
     <Layout>
@@ -226,13 +252,13 @@ export default function Collection() {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {displayProducts.map((product) => (
             <Link key={product.id} href={`/products/${product.id}`}>
-              <a className="group block bg-card border border-border rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+              <a className="group block bg-card border border-border rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
 
                 <div className="aspect-square bg-secondary/10 flex items-center justify-center p-6">
                   <img
                     src={product.image || "/images/placeholder-product.png"}
                     alt={product.name}
-                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 rounded-2xl transition-transform duration-500"
                   />
                 </div>
 

@@ -194,9 +194,9 @@ export default function ProductDetail() {
                   </button>
               )}
             </div>
-            <div className="flex-1 relative group rounded-3xl overflow-hidden border border-border bg-card shadow-2xl">
+            <div className="flex-1 relative group rounded-3xl overflow-hidden border border-border bg-card shadow-2xl flex flex-col">
               <div 
-                className="aspect-square p-10 flex items-center justify-center cursor-zoom-in"
+                className="flex-1 p-10 flex items-center justify-center cursor-zoom-in min-h-[500px]"
                 onClick={() => setIsZoomOpen(true)}
               >
                 <motion.img 
@@ -205,7 +205,7 @@ export default function ProductDetail() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
                   src={images[currentImg]} 
-                  className="w-full h-full object-contain max-h-[600px]"
+                  className="w-full h-full max-h-[500px] rounded-2xl object-contain"
                 />
                 
                 <div className="absolute inset-y-0 left-0 flex items-center px-4 opacity-0 group-hover:opacity-100 transition-opacity">
