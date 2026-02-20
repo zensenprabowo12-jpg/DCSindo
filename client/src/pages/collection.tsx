@@ -159,9 +159,12 @@ export default function Collection() {
 
   // Get products based on category and subfilter
   const categoryProducts = staticProducts.filter(p => {
-      // Normalize category checking
-      const pCat = p.category.toLowerCase().replace(/\s+/g, '-');
-      const categoryMatch = pCat === activeCategory || (activeCategory === "cloud-gateways" && p.category === "Cloud Gateways");
+      // Normalize both category strings for comparison
+      const normalizedProductCategory = p.category.toLowerCase().replace(/\s+/g, '-');
+      const normalizedActiveCategory = activeCategory.toLowerCase().replace(/\s+/g, '-');
+      
+      // Check if categories match
+      const categoryMatch = normalizedProductCategory === normalizedActiveCategory;
 
       if (!categoryMatch) return false;
 
