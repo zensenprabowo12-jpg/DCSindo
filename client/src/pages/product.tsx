@@ -1,5 +1,5 @@
 import Layout from "@/components/layout";
-import { products } from "@/lib/data";
+import { products, type Product, type TechSpecSection, type InTheBoxItem, type ProductAddon } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { useRoute } from "wouter";
 import { ShoppingCart, Check, Shield, ChevronLeft, ChevronRight, Maximize2, X, Package, Settings, Info, ArrowRight, Instagram, Facebook, Mail } from "lucide-react";
@@ -7,6 +7,233 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "wouter";
 import { cn } from "@/lib/utils";
+
+// ===== HELPER FUNCTIONS UNTUK GENERATE DEFAULT VALUES =====
+
+// Generate default bullet points berdasarkan kategori
+function getDefaultBulletPoints(product: Product): string[] {
+  const categoryDefaults: Record<string, string[]> = {
+    "Cloud Gateways": [
+      `High-performance ${product.name} solution`,
+      "Enterprise-grade security and reliability",
+      "Advanced routing and firewall capabilities",
+      "Scalable network management"
+    ],
+    "Switching": [
+      `Professional ${product.name} switch`,
+      "High-speed connectivity and PoE support",
+      "Layer 2/3 switching capabilities",
+      "Rack-mountable design"
+    ],
+    "WiFi": [
+      `Advanced ${product.name} access point`,
+      "High-speed wireless connectivity",
+      "Multi-band support with seamless roaming",
+      "Enterprise-grade security"
+    ],
+    "Camera Security": [
+      `Professional ${product.name} camera`,
+      "High-resolution video recording",
+      "AI-powered detection and analytics",
+      "Weather-resistant design"
+    ],
+    "Door Access": [
+      `Secure ${product.name} solution`,
+      "Advanced access control features",
+      "Multi-factor authentication support",
+      "Integration with UniFi ecosystem"
+    ],
+    "Integrations": [
+      `Seamless ${product.name} integration`,
+      "Compatible with UniFi ecosystem",
+      "Easy setup and configuration",
+      "Reliable performance"
+    ],
+    "Advanced Hosting": [
+      `Enterprise ${product.name} hosting`,
+      "High-performance storage solution",
+      "Redundant and scalable architecture",
+      "24/7 reliability"
+    ],
+    "Accessories": [
+      `Essential ${product.name} accessory`,
+      "High-quality construction",
+      "Easy installation",
+      "Compatible with UniFi products"
+    ]
+  };
+
+  return categoryDefaults[product.category] || [
+    `Professional ${product.name}`,
+    "Enterprise-grade quality",
+    "Easy to deploy and manage",
+    "Reliable performance"
+  ];
+}
+
+// Generate default technical specs berdasarkan kategori
+function getDefaultTechnicalSpecs(product: Product): TechSpecSection[] {
+  const sku = product.sku || product.id.toUpperCase();
+  
+  const categorySpecs: Record<string, TechSpecSection[]> = {
+    "Cloud Gateways": [
+      {
+        title: "Overview",
+        items: [
+          { label: "Product Name", value: product.name },
+          { label: "Model", value: sku },
+          { label: "Category", value: product.category },
+          { label: "Form Factor", value: "Rack Mount / Desktop" }
+        ]
+      },
+      {
+        title: "Networking",
+        items: [
+          { label: "Routing", value: "Advanced Layer 3" },
+          { label: "Firewall", value: "Stateful Firewall" },
+          { label: "VPN Support", value: "IPsec, OpenVPN, WireGuard" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Processor", value: "Multi-Core ARM/x86" },
+          { label: "Memory", value: "DDR4 RAM" },
+          { label: "Storage", value: "SSD/HDD" }
+        ]
+      }
+    ],
+    "Switching": [
+      {
+        title: "Overview",
+        items: [
+          { label: "Product Name", value: product.name },
+          { label: "Model", value: sku },
+          { label: "Switching Capacity", value: "High-Speed" },
+          { label: "PoE Support", value: "✓", isCheck: true }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Form Factor", value: "Rack Mount" },
+          { label: "Cooling", value: "Fanless / Active" },
+          { label: "Power", value: "AC Input" }
+        ]
+      }
+    ],
+    "WiFi": [
+      {
+        title: "Overview",
+        items: [
+          { label: "Product Name", value: product.name },
+          { label: "Model", value: sku },
+          { label: "WiFi Standard", value: "802.11ax/be" },
+          { label: "Bands", value: "2.4 GHz, 5 GHz, 6 GHz" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Mounting", value: "Ceiling / Wall" },
+          { label: "Power", value: "PoE / PoE+" },
+          { label: "Antennas", value: "Internal" }
+        ]
+      }
+    ],
+    "Camera Security": [
+      {
+        title: "Overview",
+        items: [
+          { label: "Product Name", value: product.name },
+          { label: "Model", value: sku },
+          { label: "Resolution", value: "4K / 1080p" },
+          { label: "AI Detection", value: "✓", isCheck: true }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Sensor", value: "CMOS" },
+          { label: "Night Vision", value: "IR LEDs" },
+          { label: "Weather Rating", value: "IP67" }
+        ]
+      }
+    ]
+  };
+
+  return categorySpecs[product.category] || [
+    {
+      title: "Overview",
+      items: [
+        { label: "Product Name", value: product.name },
+        { label: "Model", value: sku },
+        { label: "Category", value: product.category }
+      ]
+    },
+    {
+      title: "Hardware",
+      items: [
+        { label: "Form Factor", value: "Standard" },
+        { label: "Power", value: "AC/DC" }
+      ]
+    }
+  ];
+}
+
+// Generate default in the box items
+function getDefaultInTheBox(product: Product): InTheBoxItem[] {
+  return [
+    { name: "Device", image: "/images/dcs-box.png" },
+    { name: "Mounting Kit", image: "/images/dcs-box.png" },
+    { name: "Power Cable", image: "/images/dcs-box.png" },
+    { name: "Quick Start", image: "/images/dcs-box.png" }
+  ];
+}
+
+// Generate default addons
+function getDefaultAddons(product: Product): ProductAddon[] {
+  return [
+    {
+      id: 1,
+      name: "Mounting Kit",
+      image: "/images/dcs-box.png",
+      price: 299,
+      description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+      specs: [
+        "Compatible with 19\" racks",
+        "Steel construction",
+        "Easy installation"
+      ],
+      detailedSpecs: [
+        { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+        { label: "Weight", value: "1.2 kg" },
+        { label: "Material", value: "SGCC Steel" },
+        { label: "Mounting", value: "1U Rack Mount" }
+      ],
+      productLink: "/products/mounting-kit"
+    },
+    {
+      id: 2,
+      name: "Power Cable",
+      image: "/images/dcs-box.png",
+      price: 299,
+      description: "High-quality power cable with durable construction.",
+      specs: [
+        "2m Length",
+        "High durability",
+        "Standard fit"
+      ],
+      detailedSpecs: [
+        { label: "Length", value: "2.0 m" },
+        { label: "Conductor", value: "Copper" },
+        { label: "Rating", value: "10A / 250V" },
+        { label: "Jacket", value: "PVC" }
+      ],
+      productLink: "/products/power-cable"
+    }
+  ];
+}
 
 export default function ProductDetail() {
   const [match, params] = useRoute("/products/:id");
@@ -52,101 +279,21 @@ export default function ProductDetail() {
     setIsAddonSpecOpen(false);
   };
 
-  const addOns = [
-    { 
-        id: 1, 
-        name: "Mounting Kit", 
-        image: "/images/dcs-box.png", 
-        specs: ["Compatible with 19\" racks", "Steel construction", "Easy installation"],
-        detailedSpecs: [
-            { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-            { label: "Weight", value: "1.2 kg" },
-            { label: "Material", value: "SGCC Steel" },
-            { label: "Mounting", value: "1U Rack Mount" }
-        ]
-    },
-    { 
-        id: 2, 
-        name: "Power Cable", 
-        image: "/images/dcs-box.png", 
-        specs: ["2m Length", "High durability", "Standard fit"],
-        detailedSpecs: [
-            { label: "Length", value: "2.0 m" },
-            { label: "Conductor", value: "Copper" },
-            { label: "Rating", value: "10A / 250V" },
-            { label: "Jacket", value: "PVC" }
-        ]
-    },
-    { 
-        id: 3, 
-        name: "SFP+ Module", 
-        image: "/images/dcs-box.png", 
-        specs: ["10Gbps support", "Multi-mode fiber", "Hot-swappable"],
-        detailedSpecs: [
-            { label: "Data Rate", value: "10 Gbps" },
-            { label: "Connector", value: "LC Duplex" },
-            { label: "Wavelength", value: "850 nm" },
-            { label: "Max Distance", value: "300 m" }
-        ]
-    },
-  ];
+  // ===== GUNAKAN HELPER FUNCTIONS UNTUK GENERATE DEFAULT VALUES =====
+  // Ambil addons dari data produk, atau gunakan default dari helper function
+  const addOns = product.addons || getDefaultAddons(product);
 
-  // Technical Sections Data for Cloud Gateways
-  const cloudGatewayTechSpecs = [
-    {
-      title: "Overview",
-      items: [
-         { label: "Dimensions", value: "442.4 x 43.7 x 325 mm (17.4 x 1.7 x 12.8\")" },
-         { label: "Network", value: "✓", isCheck: true },
-         { label: "Managed UniFi Devices", value: "500+" },
-         { label: "Simultaneous Users Connected", value: "5,000+" },
-         { label: "Max. WAN Port Count", value: "5" },
-         { label: "Default WAN Ports", value: "(1) 25G SFP28, (1) 2.5 GbE RJ45" },
-         { label: "Port Layout", value: "2x 2.5 GbE RJ45, 2x 10G SFP+, 2x 25G SFP28", isList: true },
-         { label: "IDS/IPS Throughput", value: "12.5 Gbps" },
-         { label: "SSL/TLS Inspection Concurrent Sessions", value: "10,000" },
-         { label: "Concurrent Sessions", value: "1 Million" },
-         { label: "New Sessions / Second", value: "71,000" },
-         { label: "Form Factor", value: "Rack mount (1U)" },
-         { label: "Redundancy", value: "Shadow Mode (VRRP) Gateway Failover, (2) Hot-Swappable PSUs" }
-      ]
-    },
-    {
-      title: "Security",
-      items: [
-         { label: "Firewall", value: "Enterprise-class Application-aware Firewall" },
-         { label: "Threat Management", value: "Signature-based IPS/IDS" }
-      ]
-    },
-    {
-       title: "VPN & SD-WAN",
-       items: [
-           { label: "Site-to-Site VPN", value: "OpenVPN, IPsec" },
-           { label: "Remote User VPN", value: "L2TP, OpenVPN, WireGuard" }
-       ]
-    },
-    {
-        title: "Networking",
-        items: [
-            { label: "Interfaces", value: "(1) 10G SFP+ WAN, (1) 2.5GbE RJ45 WAN" },
-            { label: "Switching", value: "(8) GbE RJ45 LAN" }
-        ]
-    },
-    {
-        title: "Hardware",
-        items: [
-            { label: "Processor", value: "Quad-Core ARM Cortex-A57 at 1.7 GHz" },
-            { label: "Memory", value: "4 GB DDR4" }
-        ]
-    },
-    {
-        title: "Software",
-        items: [
-            { label: "Management", value: "UniFi Network" },
-            { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-    }
-  ];
+  // Ambil technical specs dari data produk, atau gunakan default dari helper function
+  const technicalSpecs = product.technicalSpecs || getDefaultTechnicalSpecs(product);
+  
+  // Ambil bullet points dari data produk, atau gunakan default dari helper function
+  const bulletPoints = product.bulletPoints || getDefaultBulletPoints(product);
+  
+  // Ambil in the box items dari data produk, atau gunakan default dari helper function
+  const inTheBoxItems = product.inTheBox || getDefaultInTheBox(product);
+  
+  // Ambil overview images dari data produk, atau gunakan default
+  const overviewImages = product.overviewImages || ["/images/dcs-overview-1.png", "/images/dcs-overview-2.png"];
 
   const [expandedTechSection, setExpandedTechSection] = useState<string | null>("Overview");
   
@@ -264,22 +411,18 @@ export default function ProductDetail() {
                 Dinamika Cipta Solusi
               </Link>
               
-              {/* Added Metadata Fields */}
+              {/* Metadata Fields - SKU dan Category dari data.ts */}
               <div className="grid grid-cols-2 gap-4 text-xs font-bold text-muted-foreground uppercase tracking-widest mb-6">
-                 <div><span className="text-foreground">SKU-{Math.floor(Math.random() * 10000)}</span></div>
+                 <div><span className="text-foreground">SKU-{product.sku || Math.floor(Math.random() * 10000)}</span></div>
                  <div><span className="text-foreground capitalize">Category: {product?.category || "Networking"}</span></div>
               </div>
 
               <h1 className="text-6xl font-black tracking-tighter italic uppercase leading-tight underline decoration-primary decoration-4 underline-offset-8">{product.name}</h1>
               <p className="text-2xl text-muted-foreground font-medium leading-relaxed italic">{product.shortDescription || "Experience the pinnacle of networking performance."}</p>
               
+              {/* Bullet Points dari data.ts atau auto-generated dari helper function */}
               <ul className="space-y-2 mt-4 text-sm text-muted-foreground font-medium leading-relaxed">
-                {[
-                  "25G cloud gateways with 500+ UniFi Device",
-                  "5000+ client support",
-                  "12.5gbps ips routing",
-                  "complete high availability"
-                ].map((point, i) => (
+                {bulletPoints.map((point, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="block w-1.5 h-1.5 rounded-full bg-primary mt-2" />
                     {point}
@@ -342,18 +485,20 @@ export default function ProductDetail() {
           <div className="py-12">
             {activeTab === "overview" && (
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <img src="/images/dcs-overview-1.png" className="rounded-3xl shadow-2xl w-full aspect-video object-cover" />
-                <img src="/images/dcs-overview-2.png" className="rounded-3xl shadow-2xl w-full aspect-video object-cover" />
+                {/* Gambar overview dari data.ts atau auto-generated dari helper function */}
+                {overviewImages.map((img, idx) => (
+                  <img key={idx} src={img} className="rounded-3xl shadow-2xl w-full aspect-video object-cover" />
+                ))}
               </motion.div>
             )}
             {activeTab === "technical" && (
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-4xl mx-auto">
-                 {/* Dynamic Technical Specs */}
-                 {product.category === "Cloud Gateways" ? (
+                 {/* Technical Specs dari data.ts - Sekarang berlaku untuk semua kategori */}
+                 {technicalSpecs && technicalSpecs.length > 0 ? (
                     <div className="space-y-1">
-                        {cloudGatewayTechSpecs.map((section) => (
+                        {technicalSpecs.map((section) => (
                             <div key={section.title} className="border-b border-border">
-                                <button 
+                                <button
                                     onClick={() => toggleTechSection(section.title)}
                                     className="w-full flex items-center justify-between py-6 group hover:text-primary transition-colors"
                                 >
@@ -362,7 +507,7 @@ export default function ProductDetail() {
                                 </button>
                                 <AnimatePresence>
                                     {expandedTechSection === section.title && (
-                                        <motion.div 
+                                        <motion.div
                                             initial={{ height: 0, opacity: 0 }}
                                             animate={{ height: "auto", opacity: 1 }}
                                             exit={{ height: 0, opacity: 0 }}
@@ -389,7 +534,7 @@ export default function ProductDetail() {
                         ))}
                     </div>
                  ) : (
-                    // Fallback for other categories (keep existing simple view)
+                    // Fallback jika tidak ada technical specs di data.ts
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
                         <div className="space-y-8">
                         <h4 className="text-xs font-black uppercase tracking-[0.3em] text-primary">Hardware</h4>
@@ -418,26 +563,32 @@ export default function ProductDetail() {
               </motion.div>
             )}
             {activeTab === "box" && (
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl mx-auto space-y-12 text-center">
-                <img src="/images/dcs-box.png" className="rounded-[4rem] shadow-2xl w-full bg-secondary/20 p-20" />
-                <div className="grid grid-cols-4 gap-12 text-[10px] font-black uppercase tracking-[0.2em]">
-                  {["Device", "Mounting Kit", "Power Cable", "Quick Start"].map(item => <div key={item}>{item}</div>)}
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl mx-auto space-y-12">
+                {/* In The Box items dari data.ts atau auto-generated dari helper function - hanya gambar tanpa text */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                  {inTheBoxItems.map((item, idx) => (
+                    <div key={idx} className="rounded-3xl shadow-2xl bg-secondary/20 p-8 flex items-center justify-center">
+                      <img src={item.image} className="w-full h-full object-contain" alt={item.name} />
+                    </div>
+                  ))}
                 </div>
               </motion.div>
             )}
              {activeTab === "addons" && (
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {/* Addons dengan preview lebih kecil */}
                 {addOns.map((addon) => (
-                  <div 
-                    key={addon.id} 
-                    className="group relative rounded-3xl border border-border bg-card p-8 hover:border-primary/50 transition-all cursor-pointer"
+                  <div
+                    key={addon.id}
+                    className="group relative rounded-2xl border border-border bg-card p-4 hover:border-primary/50 transition-all cursor-pointer"
                     onClick={() => openAddon(addon)}
                   >
-                    <div className="aspect-square rounded-2xl bg-secondary/20 mb-6 p-8 flex items-center justify-center">
+                    {/* Preview image lebih kecil */}
+                    <div className="aspect-square rounded-xl bg-secondary/20 mb-3 p-4 flex items-center justify-center">
                       <img src={addon.image} className="w-full h-full object-contain group-hover:scale-105 transition-transform" />
                     </div>
-                    <h3 className="text-xl font-bold mb-2">{addon.name}</h3>
-                    <p className="text-sm text-muted-foreground">Click for details</p>
+                    <h3 className="text-sm font-bold mb-1">{addon.name}</h3>
+                    <p className="text-xs text-muted-foreground">Click for details</p>
                   </div>
                 ))}
               </motion.div>
@@ -469,12 +620,16 @@ export default function ProductDetail() {
                 <div className="w-full md:w-1/2 flex flex-col justify-center space-y-8">
                   <div>
                     <h2 className="text-4xl font-black uppercase italic tracking-tighter mb-2">{selectedAddon.name}</h2>
-                    <p className="text-xl text-muted-foreground font-medium">$299.00</p>
+                    {/* Harga dari data.ts */}
+                    {selectedAddon.price && (
+                      <p className="text-xl text-muted-foreground font-medium">${selectedAddon.price}.00</p>
+                    )}
                   </div>
                   
                   <div className="space-y-4">
+                    {/* Deskripsi dari data.ts */}
                     <p className="text-muted-foreground leading-relaxed">
-                        Compact, stackable, and toolless design. Perfect for your rack-mount devices.
+                        {selectedAddon.description || "Compact, stackable, and toolless design. Perfect for your rack-mount devices."}
                     </p>
                     <ul className="space-y-3">
                       {selectedAddon.specs.map((spec: string, i: number) => (
@@ -516,12 +671,26 @@ export default function ProductDetail() {
                       </AnimatePresence>
                   </div>
 
+                  {/* Tombol Contact Us dan More */}
                   <div className="pt-4 flex gap-4">
-                    <Link href="/support">
+                    <Link href="/support" className="flex-1">
                        <Button size="lg" className="w-full rounded-full h-14 text-lg font-black uppercase tracking-widest shadow-xl shadow-primary/20 group hover:scale-[1.02] transition-all">
                         Contact Us!
                       </Button>
                     </Link>
+                    
+                    {/* Tombol More - link ke halaman produk addon jika ada */}
+                    {selectedAddon.productLink && (
+                      <Link href={selectedAddon.productLink} className="flex-1">
+                        <Button
+                          size="lg"
+                          variant="outline"
+                          className="w-full rounded-full h-14 text-lg font-black uppercase tracking-widest group hover:scale-[1.02] transition-all"
+                        >
+                          More <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>

@@ -6,3 +6,8 @@ vite.config.ts.*
 *.tar.gz
 attached_assets/
 client/public/
+
+# Backup files
+*.backup
+*.backup-*
+*.bak
