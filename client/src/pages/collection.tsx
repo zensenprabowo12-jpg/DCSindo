@@ -162,12 +162,12 @@ export default function Collection() {
       // Normalize category checking
       const pCat = p.category.toLowerCase().replace(/\s+/g, '-');
       const categoryMatch = pCat === activeCategory || (activeCategory === "cloud-gateways" && p.category === "Cloud Gateways");
-      
+
       if (!categoryMatch) return false;
-      
+
       // If "All" is selected, return all products in this category
       if (activeSubfilter === "All") return true;
-      
+
       // If a specific subfilter is selected, check if product's subfilter matches it
       return p.subfilter === activeSubfilter;
   });
