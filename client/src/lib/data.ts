@@ -4607,21 +4607,7 @@ export const products: Product[] = [
       { label: "Audio", value: "Two-way Audio" },
     ],
   },
-  {
-    id: "CK-Enterprise",
-    name: "CloudKey Enterprise",
-    category: "Advanced Hosting",
-    subfilter: "",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "A UniFi Console designed for managing massive-scale UniFi Networks.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-  },
+  
 ];
 
 export const CATEGORIES = [

@@ -135,34 +135,39 @@ export default function Collection() {
   const [activeCategory, setActiveCategory] = useState("cloud-gateways");
   const [activeSubfilter, setActiveSubfilter] = useState("All");
 
+  // Reset subfilter when category changes via URL
   useEffect(() => {
     if (params?.category) {
       const found = CATEGORIES.find(c => c.id === params.category);
       if (found) {
         setActiveCategory(found.id);
+        // Always reset subfilter when category changes
         setActiveSubfilter(found.id === "accessories" ? "RJ45 & Copper" : "All");
       }
     }
   }, [params?.category]);
 
+  // Reset subfilter when activeCategory changes
+  useEffect(() => {
+    setActiveSubfilter(activeCategory === "accessories" ? "RJ45 & Copper" : "All");
+  }, [activeCategory]);
+
   const handleCategoryChange = (catId: string) => {
     setActiveCategory(catId);
-    setActiveSubfilter(catId === "accessories" ? "RJ45 & Copper" : "All");
     setLocation(`/collections/${catId}`);
   };
 
   // Get products based on category and subfilter
-  // First try to find static products from data.ts
   const categoryProducts = staticProducts.filter(p => {
       // Normalize category checking
       const pCat = p.category.toLowerCase().replace(/\s+/g, '-');
       const categoryMatch = pCat === activeCategory || (activeCategory === "cloud-gateways" && p.category === "Cloud Gateways");
-      
+
       if (!categoryMatch) return false;
-      
+
       // If "All" is selected, return all products in this category
       if (activeSubfilter === "All") return true;
-      
+
       // If a specific subfilter is selected, check if product's subfilter matches it
       return p.subfilter === activeSubfilter;
   });
