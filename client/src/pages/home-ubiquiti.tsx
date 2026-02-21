@@ -33,7 +33,7 @@ export default function Home() {
           
           {/* Logo UniFi */} 
           <img
-            src="/UniFi-Light.png"
+            src="/images/logos/UniFi-Light.png"
             alt="UniFi-Light"
             className="w-48 md:w-64 lg:w-100 mb-4 animate-in fade-in slide-in-from-bottom-4 duration-1000"
           />
@@ -73,7 +73,7 @@ export default function Home() {
                   <p className="text-white/80 max-w-sm">Blazing fast wireless coverage for any space with WiFi 7 technology.</p>
                 </div>
                 <img
-                  src="/images/Home-WiFi.png" 
+                  src="/images/banners/Home-WiFi.png"
                   alt="Home-WiFi" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -90,8 +90,8 @@ export default function Home() {
                   <h3 className="text-2xl font-bold text-white">Security</h3>
                   <p className="text-white/70 text-sm">Protect what matters with AI-driven surveillance.</p>
                 </div>
-                <img 
-                  src="/images/Home-Camera-Security.png" 
+                <img
+                  src="/images/banners/Home-Camera-Security.png"
                   alt="Home-Camera-Security" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -108,8 +108,8 @@ export default function Home() {
                 <div className="absolute inset-0 p-8 z-20 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
                   <h3 className="text-xl font-bold text-white">Door Access</h3>
                 </div>
-                <img 
-                  src="/images/Home-Door-Access.png" 
+                <img
+                  src="/images/banners/Home-Door-Access.png"
                   alt="Home-Door-Access" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -126,8 +126,8 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-white">Cloud Gateways</h3>
                   <p className="text-white/70 text-sm">The backbone of your network infrastructure.</p>
                 </div>
-                <img 
-                  src="/images/home-Cloud-Gateways.png" 
+                <img
+                  src="/images/banners/home-Cloud-Gateways.png"
                   alt="Home-Cloud-Gateways" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -144,8 +144,8 @@ export default function Home() {
                   <h3 className="text-2xl font-bold text-white">Switching</h3>
                   <p className="text-white/70 text-sm">The backbone of your network infrastructure.</p>
                 </div>
-                <img 
-                  src="/images/Home-Switching.png" 
+                <img
+                  src="/images/banners/Home-Switching.png"
                   alt="Home-Switching" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -192,7 +192,7 @@ export default function Home() {
                 <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
                 <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
                 <img
-                  src="/images/dcs-protect.png"
+                  src="/images/banners/dcs-protect.png"
                   alt="DCS Protect"
                   className="relative z-10 w-full aspect-square object-cover mx-auto rounded-full border-4 border-white/10 shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2"
                 />
@@ -230,7 +230,7 @@ export default function Home() {
                 <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
                 <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
                 <img
-                  src="/images/dcs-network.png"
+                  src="/images/banners/dcs-network.png"
                   alt="DCS Network"
                   className="relative z-10 w-full aspect-square object-cover mx-auto rounded-full border-4 border-white/10 shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:-rotate-2"
                 />
@@ -246,7 +246,7 @@ export default function Home() {
                 <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
                 <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
                 <img
-                  src="/images/dcs-access.png"
+                  src="/images/banners/dcs-access.png"
                   alt="DCS Access"
                   className="relative z-10 w-full aspect-square object-cover mx-auto rounded-full border-4 border-white/10 shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2"
                 />

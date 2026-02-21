@@ -59,25 +59,25 @@ export default function HomeUtama() {
             {[
               { 
                 name: "Ubiquiti", 
-                image: "/images/chatgpt_ubiquiti_1770612894088.png", 
+                image: "/images/brands/chatgpt_ubiquiti_1770612894088.png", 
                 path: "/home-ubiquiti",
                 bg: "bg-blue-50/50 dark:bg-blue-900/10"
               },
               { 
                 name: "MikroTik", 
-                image: "/images/chatgpt_mikrotik_1770612894087.png", 
+                image: "/images/brands/chatgpt_mikrotik_1770612894087.png", 
                 path: "/coming-soon",
                 bg: "bg-slate-50/50 dark:bg-slate-900/10"
               },
               { 
                 name: "ALGcom", 
-                image: "/images/chatgpt_algcom_1770612894086.png", 
+                image: "/images/brands/chatgpt_algcom_1770612894086.png", 
                 path: "/coming-soon",
                 bg: "bg-gray-50/50 dark:bg-gray-900/10"
               },
               { 
                 name: "V-SOL", 
-                image: "/images/chatgpt_vsol_1770612894089.png", 
+                image: "/images/brands/chatgpt_vsol_1770612894089.png", 
                 path: "/coming-soon",
                 bg: "bg-zinc-50/50 dark:bg-zinc-900/10"
               }

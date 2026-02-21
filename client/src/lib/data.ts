@@ -73,7 +73,7 @@ export const products: Product[] = [
     name: "Enterprise Fortress Gateway",
     category: "Cloud Gateways",
     subfilter: "Enterprise Scale",
-    image: "/images/Product-Enterprise-Fortress-Gateway.png",
+    image: "/images/products/Product-Enterprise-Fortress-Gateway.png",
     shortDescription:
       "25G Cloud Gateway with 500+ UniFi device / 5,000+ client support, 12.5 Gbps IPS routing, and complete high availability.",
     specs: [
@@ -87,17 +87,17 @@ export const products: Product[] = [
     // SKU produk
     sku: "EFG-999",
     
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama  )
     images: [
-      "/images/Product-Enterprise-Fortress-Gateway.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Enterprise-Fortress-Gateway.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -242,7 +242,7 @@ export const products: Product[] = [
     name: "Dream Machine Pro Max ",
     category: "Cloud Gateways",
     subfilter: "Large Scale",
-    image: "/images/Product-Dream-Machine-Pro-Max.png",
+    image: "/images/products/Product-Dream-Machine-Pro-Max.png",
     shortDescription:
       "10G CLoud Gateway with 200+ UniFi device / 2,000+ client support, 5 Gbps IPS routing, and redunant NVR storage.",
     specs: [
@@ -260,15 +260,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Dream-Machine-Pro-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Dream-Machine-Pro-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -409,7 +409,7 @@ export const products: Product[] = [
     name: "Dream Machine Pro",
     category: "Cloud Gateways",
     subfilter: "Large Scale",
-    image: "/images/Product-Dream-Machine-Pro.png",
+    image: "/images/products/Product-Dream-Machine-Pro.png",
     shortDescription:
       "10G Cloud Gateway with 100+ UniFi device / 1,000+ client support and 3.5 Gbps IPS routing.",
     specs: [
@@ -422,13 +422,13 @@ export const products: Product[] = [
     // ===== FIELD BARU =====
     sku: "UDM-PRO",
     images: [
-      "/images/Product-Dream-Machine-Pro.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Dream-Machine-Pro.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     bulletPoints: [
       "10G Cloud Gateway with 100+ UniFi device",
@@ -499,7 +499,7 @@ export const products: Product[] = [
     name: "Dream Machine Special Edition",
     category: "Cloud Gateways",
     subfilter: "Large Scale",
-    image: "/images/Product-Dream-Machine-Special-Edition.png",
+    image: "/images/products/Product-Dream-Machine-Special-Edition.png",
     shortDescription:
       "10G Cloud Gateway with 100+ UniFi device / 1,000+ client support, 3.5 Gbps IPS routing, and built-in PoE switching.",
     specs: [
@@ -513,15 +513,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Enterprise-Fortress-Gateway.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Enterprise-Fortress-Gateway.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -666,7 +666,7 @@ export const products: Product[] = [
     name: "Cloud Gateways Fiber",
     category: "Cloud Gateways",
     subfilter: "Compact",
-    image: "/images/Product-UCG-Fiber.png",
+    image: "/images/products/Product-UCG-Fiber.png",
     shortDescription:
       "Desktop 10G Cloud Gateway with integrated 4-port 2.5 GbE switch, selectable NVR storage, and full UniFi application support.",
     specs: [
@@ -681,15 +681,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UCG-Fiber.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UCG-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -804,7 +804,7 @@ export const products: Product[] = [
     name: "Cloud Gateways Max",
     category: "Cloud Gateways",
     subfilter: "Compact",
-    image: "/images/Product-UCG-Max.png",
+    image: "/images/products/Product-UCG-Max.png",
     shortDescription:
       "Compact 2.5G Cloud Gateway with 30+ UniFi device / 300+ client support, 2.3 Gbps IPS routing, and selectable NVR storage.",
     specs: [
@@ -819,15 +819,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UCG-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UCG-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -942,7 +942,7 @@ export const products: Product[] = [
     name: "Cloud Gateways Ultra",
     category: "Cloud Gateways",
     subfilter: "Compact",
-    image: "/images/Product-UCG-Ultra.png",
+    image: "/images/products/Product-UCG-Ultra.png",
     shortDescription:
       "Compact CLoud Gateway with 30+ UniFi device / 300+ client support, 1 Gbps IPS routing, and multi-WAN load balancing",
     specs: [
@@ -957,15 +957,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UCG-Ultra.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UCG-Ultra.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1082,7 +1082,7 @@ export const products: Product[] = [
     name: "Dream Router 7",
     category: "Cloud Gateways",
     subfilter: "WiFi Integrated",
-    image: "/images/Product-UDR-7.png",
+    image: "/images/products/Product-UDR-7.png",
     shortDescription:
       "Desktop 10G Cloud Gateway with integrated WiFi 7, PoE switch, microSD storage, and full UniFi application support",
     specs: [
@@ -1098,15 +1098,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-7.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-7.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1221,7 +1221,7 @@ export const products: Product[] = [
     name: "UniFi Express 7",
     category: "Cloud Gateways",
     subfilter: "WiFi Integrated",
-    image: "/images/Product-UX-7.png",
+    image: "/images/products/Product-UX-7.png",
     shortDescription:
       "Mesh-scalable, super-compact 10G Cloud Gateway with integrated WiFI 7.",
     specs: [
@@ -1236,15 +1236,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UniFi-Express-7.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UniFi-Express-7.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1355,7 +1355,7 @@ export const products: Product[] = [
     name: "Dream Router 5G Max",
     category: "Cloud Gateways",
     subfilter: "WiFi Integrated",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Desktop Cloud Gateway with full-performance 5G up to 3.4 Gbps, WiFi 7, 10G SFP+, 4-port 2.5 GbE switch with (1) PoE port, and SD card storage.",
     specs: [
@@ -1370,15 +1370,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1493,7 +1493,7 @@ export const products: Product[] = [
     name: "Dream Wall",
     category: "Cloud Gateways",
     subfilter: "WiFi Integrated",
-    image: "/images/Product-UDW.png",
+    image: "/images/products/Product-UDW.png",
     shortDescription:
       "Wall-mounted 10G Cloud Gateway with integrated WiFi 6, high-power PoE switching, and full Unifi application support.",
     specs: [
@@ -1508,15 +1508,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDW.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDW.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1651,14 +1651,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1789,15 +1789,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Pro-XG-Aggregation.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Pro-XG-Aggregation.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1925,14 +1925,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2064,14 +2064,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2206,14 +2206,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2344,15 +2344,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Enterprise-Campus-24-PoE.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Enterprise-Campus-24-PoE.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2480,14 +2480,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2619,14 +2619,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2758,14 +2758,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2900,14 +2900,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3038,15 +3038,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Pro-Max-24-PoE.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Pro-Max-24-PoE.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3174,14 +3174,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3313,14 +3313,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3452,14 +3452,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3591,14 +3591,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3730,14 +3730,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3869,14 +3869,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4008,14 +4008,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4147,14 +4147,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4285,14 +4285,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4423,14 +4423,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4562,14 +4562,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4704,14 +4704,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4842,15 +4842,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Pro-24-PoE.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Pro-24-PoE.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4978,14 +4978,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -5117,14 +5117,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -5255,14 +5255,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -5393,14 +5393,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -5532,14 +5532,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -5674,14 +5674,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -5812,15 +5812,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Standard-24-PoE.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Standard-24-PoE.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -5948,14 +5948,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -6087,14 +6087,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -6226,14 +6226,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -6368,14 +6368,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -6506,15 +6506,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-WAN-Switch-RJ45.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-WAN-Switch-RJ45.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -6644,14 +6644,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -6782,15 +6782,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Lite-8-PoE.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Lite-8-PoE.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -6918,14 +6918,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7056,14 +7056,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7194,14 +7194,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7333,14 +7333,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7472,14 +7472,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7611,14 +7611,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7750,14 +7750,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7889,14 +7889,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8028,14 +8028,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8167,14 +8167,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8306,14 +8306,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8445,14 +8445,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8584,14 +8584,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8723,14 +8723,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/switch.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8848,7 +8848,7 @@ export const products: Product[] = [
     name: "E7",
     category: "WiFi",
     subfilter: "Enterprise",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Enterprise-grade indoor access point with 10-stream WiFi 7 performance, a 10 GbE uplink, and a redundant GbE port for high availability.",
     specs: [
@@ -8864,15 +8864,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -9002,15 +9002,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-E7-Campus.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-E7-Campus.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -9121,7 +9121,7 @@ export const products: Product[] = [
     name: "E7 Audience",
     category: "WiFi",
     subfilter: "Enterprise",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Enterprise-grade, indoor/outdoor access point designed for high-density environments with 12-stream 5 GHz and 6 GHz WiFi 7 performance, a 10 GbE uplink, and a redundant GbE port for high availability.",
     specs: [
@@ -9136,15 +9136,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -9261,7 +9261,7 @@ export const products: Product[] = [
     name: "U7 Pro XGS",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Ceiling-mounted 8-stream WiFi 7 AP with dedicated spectral scanning radio and 10/5/2.5/1 GbE support.",
     specs: [
@@ -9277,15 +9277,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -9401,7 +9401,7 @@ export const products: Product[] = [
     name: "U7 Pro XGS",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Ceiling-mounted 6-stream WiFi 7 AP with 10/5/2.5/1 GbE support.",
     specs: [
@@ -9416,15 +9416,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-U7-Pro-XGS.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-U7-Pro-XGS.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -9535,7 +9535,7 @@ export const products: Product[] = [
     name: "U7 Pro Max",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Ceiling-mounted WiFi 7 AP with 8 spatial streams, 6 GHz support, and a dedicated spectral scanning engine for interference-free WiFi in demanding, large-scale environments.",
     specs: [
@@ -9550,15 +9550,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -9673,7 +9673,7 @@ export const products: Product[] = [
     name: "U7 Pro",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Ceiling-mounted WiFi 7 AP with 6 spatial streams, 6 GHz support for interference-free WiFi in demanding, large-scale environments.",
     specs: [
@@ -9688,15 +9688,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -9811,7 +9811,7 @@ export const products: Product[] = [
     name: "U7 Long Range",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Compact, ceiling-mount WiFi 7 AP with 5 spatial streams and extended signal range.",
     specs: [
@@ -9826,15 +9826,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -9949,7 +9949,7 @@ export const products: Product[] = [
     name: "U7 Lite",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Compact, ceiling-mount WiFi 7 AP with 4 spatial streams and 2.5 GbE uplink.",
     specs: [
@@ -9964,15 +9964,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -10087,7 +10087,7 @@ export const products: Product[] = [
     name: "U6 Enterprise",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Ceiling-mounted WiFI 6E AP with 10 spatial streams and 6 GHz support to provide seamless, multi-band coverage within high client density environments.",
     specs: [
@@ -10102,15 +10102,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -10225,7 +10225,7 @@ export const products: Product[] = [
     name: "U6 Pro",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Ceiling-mounted WiFi 6 AP with 6 spatial streams designed for large offices.",
     specs: [
@@ -10240,15 +10240,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -10363,7 +10363,7 @@ export const products: Product[] = [
     name: "U6+",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Compact, ceiling-mounted WiFi 6 AP with 4 spatial streams that improves upon the U6 Lite with higher performance and dual-band WiFi 6 support. Ideal for small and medium-sized businesses.",
     specs: [
@@ -10378,15 +10378,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -10501,7 +10501,7 @@ export const products: Product[] = [
     name: "AC Pro",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Ceiling-mounted WiFi 5 AP with 6 spatial streams designed for large offices.",
     specs: [
@@ -10516,15 +10516,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -10641,7 +10641,7 @@ export const products: Product[] = [
     name: "U7 Pro XG Wall",
     category: "WiFi",
     subfilter: "Wall",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Wall-mounted 6 GHz-ready WiFi 7 AP with 1/2.5/10 GbE support.",
     specs: [
@@ -10657,15 +10657,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -10780,7 +10780,7 @@ export const products: Product[] = [
     name: "U7 Pro Wall",
     category: "WiFi",
     subfilter: "Wall",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Wall-mounted WiFi 7 AP with 6 spatial streams and 6 GHz support tailored for home builders with seamless installation options.",
     specs: [
@@ -10795,15 +10795,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-U7-Pro-Wall.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-U7-Pro-Wall.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -10914,7 +10914,7 @@ export const products: Product[] = [
     name: "U7 In-Wall",
     category: "WiFi",
     subfilter: "Wall",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Wall-mounted WiFi 7 AP with 4 spatial streams and an integrated 2.5 GbE PoE switch designed for hospitality environments.",
     specs: [
@@ -10929,15 +10929,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -11052,7 +11052,7 @@ export const products: Product[] = [
     name: "U6 Enterprise In-Wall",
     category: "WiFi",
     subfilter: "Wall",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Wall-mounted WiFi 6E AP with 10 spatial streams, 6 GHz support, and a built-in 4-port switch. Designed for high-density office networks.",
     specs: [
@@ -11067,15 +11067,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -11190,7 +11190,7 @@ export const products: Product[] = [
     name: "U6 In-Wall",
     category: "WiFi",
     subfilter: "Wall",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Wall-mounted WiFi 6 AP with 6 spatial streams and a built-in 4‑port switch ideal for single-room coverage in hospitality environments.",
     specs: [
@@ -11205,15 +11205,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -11328,7 +11328,7 @@ export const products: Product[] = [
     name: "U6 Extender",
     category: "WiFi",
     subfilter: "Wall",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Easy-to-deploy WiFi 6 coverage extender that fits a standard wall outlet.",
     specs: [
@@ -11343,15 +11343,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -11468,7 +11468,7 @@ export const products: Product[] = [
     name: "U7 Pro Outdoor",
     category: "WiFi",
     subfilter: "Outdoor",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "All-weather IP67 WiFi 7 AP with 6 spatial streams, extended-range AFC 6 GHz support, integrated directional super antenna, and articulation mounting bracket.",
     specs: [
@@ -11484,15 +11484,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -11607,7 +11607,7 @@ export const products: Product[] = [
     name: "U7 Outdoor",
     category: "WiFi",
     subfilter: "Outdoor",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "All-weather IP67 WiFi 7 AP with 4 spatial streams, an integrated directional super antenna, and versatile mounting options",
     specs: [
@@ -11622,15 +11622,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-U7-Outdoor.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-U7-Outdoor.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -11741,7 +11741,7 @@ export const products: Product[] = [
     name: "U6 Mesh",
     category: "WiFi",
     subfilter: "Outdoor",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Sleek, indoor/outdoor WiFi 6 AP with 6 spatial streams designed for mesh applications",
     specs: [
@@ -11756,15 +11756,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -11879,7 +11879,7 @@ export const products: Product[] = [
     name: "U6 Mesh Pro",
     category: "WiFi",
     subfilter: "Outdoor",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Sleek, indoor/outdoor WiFi 6 AP with 4 spatial streams , an integrated super antenna, and a gigabit passthrough port.",
     specs: [
@@ -11894,15 +11894,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -12017,7 +12017,7 @@ export const products: Product[] = [
     name: "UAP-AC-M",
     category: "WiFi",
     subfilter: "Outdoor",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Compact, indoor/outdoor WiFi 5 AP with 4 spatial streams and optional external antenna support for directional coverage.",
     specs: [
@@ -12032,15 +12032,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -12155,7 +12155,7 @@ export const products: Product[] = [
     name: "Swiss Army Knife",
     category: "WiFi",
     subfilter: "Outdoor",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Incredibly compact, indoor/outdoor AP with versatile mounting options and long-range external antenna support.",
     specs: [
@@ -12170,15 +12170,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -12295,7 +12295,7 @@ export const products: Product[] = [
     name: "E7 Audience",
     category: "WiFi",
     subfilter: "Mega Capacity",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Enterprise-grade, indoor/outdoor access point designed for high-density environments with 12-stream 5 GHz and 6 GHz WiFi 7 performance, a 10 GbE uplink, and a redundant GbE port for high availability.",
     specs: [
@@ -12311,15 +12311,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -12434,7 +12434,7 @@ export const products: Product[] = [
     name: "WiFI BaseStation XG",
     category: "WiFi",
     subfilter: "Mega Capacity",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Tri-radio WiFi 5 AP with 12 spatial streams and a selectable beamforming antenna, designed for high-density applications at large venue.",
     specs: [
@@ -12449,15 +12449,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-WiFI-BaseStation-XG.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-WiFI-BaseStation-XG.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -12570,7 +12570,7 @@ export const products: Product[] = [
     name: "Device Bridge Pro Sector",
     category: "WiFi",
     subfilter: "Bridging",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "5 GHz point-to-multipoint access point that wirelessly bridges 50+ Device Bridge Pro clients at 5+ km distances.",
     specs: [
@@ -12586,15 +12586,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -12709,7 +12709,7 @@ export const products: Product[] = [
     name: "Device Bridge Pro ",
     category: "WiFi",
     subfilter: "Bridging",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "5 GHz wireless bridge with PoE output that connects at 5+ km distance or seamlessly uplinks to UniFI WiFI.",
     specs: [
@@ -12724,15 +12724,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Device-Bridge-Pro-.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Device-Bridge-Pro-.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -12844,7 +12844,7 @@ export const products: Product[] = [
     name: "Device Bridge",
     category: "WiFi",
     subfilter: "Bridging",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Plug-and-play, wireless bridging PoE adapter with integrated UniFI WiFI Auto-Link.",
     specs: [
@@ -12859,15 +12859,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -12983,7 +12983,7 @@ export const products: Product[] = [
     name: "Building Bridge",
     category: "WiFi",
     subfilter: "Bridging",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "60 GHz wireless point-to-point bridge with a 5 GHz backup radio.",
     specs: [
@@ -12998,15 +12998,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -13122,7 +13122,7 @@ export const products: Product[] = [
     name: "Device Bridge Switch",
     category: "WiFi",
     subfilter: "Bridging",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Compact PoE+ switch* with (1) 10 GbE port, (7) 2.5 GbE ports, and 6 GHz-ready WiFi 7 bridging integration for seamless, high-capacity wireless uplink to UniFi WiFi..",
     specs: [
@@ -13137,15 +13137,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -13261,7 +13261,7 @@ export const products: Product[] = [
     name: "Device Bridge XG",
     category: "WiFi",
     subfilter: "Bridging",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "60 GHz wireless point-to-point bridge with a 10G SFP+ uplink for maximum performance and a 5 GHz backup radio.",
     specs: [
@@ -13276,15 +13276,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -13399,7 +13399,7 @@ export const products: Product[] = [
     name: "Device Bridge IoT",
     category: "WiFi",
     subfilter: "Bridging",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "Ultra-compact wireless bridge for IoT devices with integrated UniFi WiFi Auto-Link, versatile mounting options, and powered by USB Type-C or 4-pin DC socket.",
     specs: [
@@ -13414,15 +13414,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -13539,7 +13539,7 @@ export const products: Product[] = [
     name: "UniFI Travel Router",
     category: "WiFi",
     subfilter: "Bridging",
-    image: "/images/Product-UDR-5G-Max.png",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "An ultra-slim travel router that instantly extends your UniFi Network wherever you are, bringing secure, familiar connectivity to remote locations..",
     specs: [
@@ -13555,15 +13555,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UDR-5G-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UDR-5G-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -13700,15 +13700,15 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
 
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
 
     
@@ -13839,14 +13839,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -13977,14 +13977,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -14115,14 +14115,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -14253,14 +14253,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -14391,14 +14391,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -14529,14 +14529,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -14667,14 +14667,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -14805,14 +14805,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -14946,14 +14946,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -15084,14 +15084,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -15222,14 +15222,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -15360,14 +15360,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -15498,14 +15498,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -15636,14 +15636,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -15774,14 +15774,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -15912,14 +15912,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -16050,14 +16050,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -16189,14 +16189,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -16328,14 +16328,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -16467,14 +16467,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -16606,14 +16606,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -16747,14 +16747,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -16886,14 +16886,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -17025,14 +17025,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -17164,14 +17164,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -17303,14 +17303,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -17442,14 +17442,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -17580,14 +17580,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -17721,14 +17721,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -17860,14 +17860,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -17999,14 +17999,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -18138,14 +18138,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -18276,14 +18276,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -18415,14 +18415,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -18556,14 +18556,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -18695,14 +18695,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -18834,14 +18834,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -18973,14 +18973,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -19114,14 +19114,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -19253,14 +19253,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -19392,14 +19392,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -19531,14 +19531,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -19669,14 +19669,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -19810,14 +19810,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -19948,15 +19948,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Entry-Sensor.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Entry-Sensor.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -20084,14 +20084,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -20223,14 +20223,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -20362,14 +20362,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -20501,14 +20501,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -20640,14 +20640,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -20779,14 +20779,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -20918,14 +20918,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -21059,14 +21059,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -21197,14 +21197,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -21336,14 +21336,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -21475,14 +21475,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -21614,14 +21614,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -21753,14 +21753,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -21892,14 +21892,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -22031,14 +22031,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -22170,14 +22170,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -22309,14 +22309,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -22448,14 +22448,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -22587,14 +22587,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -22726,14 +22726,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -22864,14 +22864,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -23003,14 +23003,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -23142,14 +23142,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -23281,14 +23281,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -23420,14 +23420,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -23559,14 +23559,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -23698,14 +23698,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -23837,14 +23837,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -23976,14 +23976,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -24115,14 +24115,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -24254,14 +24254,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -24393,14 +24393,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -24532,14 +24532,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -24670,14 +24670,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -24808,14 +24808,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -24946,14 +24946,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -25085,14 +25085,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -25223,14 +25223,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -25362,14 +25362,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -25501,14 +25501,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -25640,14 +25640,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -25779,14 +25779,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -25918,14 +25918,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -26057,14 +26057,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -26196,14 +26196,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -26334,14 +26334,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -26477,14 +26477,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -26615,15 +26615,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-G6-Entry.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-G6-Entry.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -26751,14 +26751,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -26890,14 +26890,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -27029,14 +27029,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -27168,14 +27168,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -27306,14 +27306,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -27445,14 +27445,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -27584,14 +27584,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -27723,14 +27723,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -27862,14 +27862,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -28001,14 +28001,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -28140,14 +28140,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -28279,14 +28279,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -28418,14 +28418,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -28557,14 +28557,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -28698,14 +28698,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -28837,14 +28837,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -28976,14 +28976,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -29114,14 +29114,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -29253,14 +29253,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -29392,14 +29392,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -29533,14 +29533,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -29672,14 +29672,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -29811,14 +29811,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -29950,14 +29950,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -30089,14 +30089,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -30228,14 +30228,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -30367,14 +30367,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -30508,14 +30508,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -30647,14 +30647,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -30786,14 +30786,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -30927,14 +30927,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -31066,14 +31066,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -31205,14 +31205,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -31344,14 +31344,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -31483,14 +31483,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -31624,14 +31624,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -31763,14 +31763,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -31902,14 +31902,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -32041,14 +32041,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -32180,14 +32180,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -32318,14 +32318,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -32456,14 +32456,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -32594,14 +32594,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -32733,14 +32733,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -32871,14 +32871,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -33010,14 +33010,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -33148,14 +33148,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -33286,14 +33286,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -33424,14 +33424,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -33562,14 +33562,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -33700,14 +33700,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -33838,14 +33838,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -33976,14 +33976,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -34114,14 +34114,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -34252,14 +34252,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -34390,14 +34390,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -34527,14 +34527,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -34669,14 +34669,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -34809,15 +34809,15 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
 
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
 
     
@@ -34948,14 +34948,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -35086,14 +35086,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -35224,14 +35224,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -35365,14 +35365,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -35502,15 +35502,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UniFi-UPS-Tower.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UniFi-UPS-Tower.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -35638,14 +35638,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -35776,14 +35776,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -35914,14 +35914,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -36052,14 +36052,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -36193,14 +36193,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -36330,15 +36330,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UniFi-5G-Max-Outdoor.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UniFi-5G-Max-Outdoor.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -36465,14 +36465,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -36603,14 +36603,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -36741,14 +36741,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -36879,14 +36879,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -37017,14 +37017,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -37158,14 +37158,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -37296,14 +37296,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -37434,14 +37434,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -37571,15 +37571,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-G2-Touch-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-G2-Touch-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -37707,14 +37707,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -37846,14 +37846,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -37984,14 +37984,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -38125,14 +38125,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -38263,15 +38263,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-EV-Station-Lite.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-EV-Station-Lite.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -38399,14 +38399,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -38538,14 +38538,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -38677,14 +38677,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -38816,14 +38816,14 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -38955,15 +38955,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Official-UniFi-Hosting.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Official-UniFi-Hosting.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -39090,15 +39090,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-UXG-Enterprise.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-UXG-Enterprise.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -39228,15 +39228,15 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
 
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
 
     
@@ -39367,15 +39367,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Gateway-Fiber.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -39502,15 +39502,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Gateway-Lite.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Gateway-Lite.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -39637,15 +39637,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Gateway-Max.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Gateway-Max.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -39771,15 +39771,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-Gateway-Pro.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-Gateway-Pro.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -39908,15 +39908,15 @@ export const products: Product[] = [
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
 
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
 
     
@@ -40046,15 +40046,15 @@ export const products: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/Product-CloudKey-Enterprise.png",
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/products/Product-CloudKey-Enterprise.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dcs-overview-1.png",
-      "/images/dcs-overview-2.png"
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
     ],
     
     // Bullet points untuk deskripsi produk

@@ -89,8 +89,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <a>
               <img
                 src={theme === "dark"
-                  ? "/DCS-Logo-putih.png"
-                  : "/DCS-Logo-hitam.png"}
+                  ? "/images/logos/DCS-Logo-putih.png"
+                  : "/images/logos/DCS-Logo-hitam.png"}
                 className="h-8 md:h-14 w-auto transition-all"
               />
             </a>

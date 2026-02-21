@@ -184,10 +184,10 @@ function getDefaultTechnicalSpecs(product: Product): TechSpecSection[] {
 // Generate default in the box items
 function getDefaultInTheBox(product: Product): InTheBoxItem[] {
   return [
-    { name: "Device", image: "/images/dcs-box.png" },
-    { name: "Mounting Kit", image: "/images/dcs-box.png" },
-    { name: "Power Cable", image: "/images/dcs-box.png" },
-    { name: "Quick Start", image: "/images/dcs-box.png" }
+    { name: "Device", image: "/images/banners/dcs-box.png" },
+    { name: "Mounting Kit", image: "/images/banners/dcs-box.png" },
+    { name: "Power Cable", image: "/images/banners/dcs-box.png" },
+    { name: "Quick Start", image: "/images/banners/dcs-box.png" }
   ];
 }
 
@@ -197,7 +197,7 @@ function getDefaultAddons(product: Product): ProductAddon[] {
     {
       id: 1,
       name: "Mounting Kit",
-      image: "/images/dcs-box.png",
+      image: "/images/banners/dcs-box.png",
       price: 299,
       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
       specs: [
@@ -216,7 +216,7 @@ function getDefaultAddons(product: Product): ProductAddon[] {
     {
       id: 2,
       name: "Power Cable",
-      image: "/images/dcs-box.png",
+      image: "/images/banners/dcs-box.png",
       price: 299,
       description: "High-quality power cable with durable construction.",
       specs: [
@@ -293,7 +293,7 @@ export default function ProductDetail() {
   const inTheBoxItems = product.inTheBox || getDefaultInTheBox(product);
   
   // Ambil overview images dari data produk, atau gunakan default
-  const overviewImages = product.overviewImages || ["/images/dcs-overview-1.png", "/images/dcs-overview-2.png"];
+  const overviewImages = product.overviewImages || ["/images/banners/dcs-overview-1.png", "/images/banners/dcs-overview-2.png"];
 
   const [expandedTechSection, setExpandedTechSection] = useState<string | null>("Overview");
   
@@ -303,7 +303,7 @@ export default function ProductDetail() {
 
   if (!product) return null;
 
-  const images = product.images || [product.image, "/images/dcs-overview-1.png", "/images/dcs-overview-2.png"];
+  const images = product.images || [product.image, "/images/banners/dcs-overview-1.png", "/images/banners/dcs-overview-2.png"];
   
   // Display only first 3 images in the list, or more if needed
   const displayImages = images.slice(0, 3);
