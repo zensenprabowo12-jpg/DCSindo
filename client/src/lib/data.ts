@@ -15478,7 +15478,7 @@ export const products: Product[] = [
     ]
   },
   {
-    id: "UVC-G6-Pro-360-B/W",
+    id: "UVC-G6-Pro-360-  ",
     name: "G6 Pro 360",
     category: "Camera Security",
     subfilter: "Dome & Turret",
