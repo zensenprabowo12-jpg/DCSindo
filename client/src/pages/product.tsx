@@ -7,6 +7,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "wouter";
 import { cn } from "@/lib/utils";
+import { ColorSelector } from "@/components/ColorSelector";
+import { getProductColors, type ProductColor } from "@/lib/productColors";
 
 // ===== HELPER FUNCTIONS UNTUK GENERATE DEFAULT VALUES =====
 
@@ -272,12 +274,19 @@ export default function ProductDetail() {
   const [activeTab, setActiveTab] = useState("overview");
   const [isAddonSpecOpen, setIsAddonSpecOpen] = useState(false);
   const [showAllImages, setShowAllImages] = useState(false);
+  const [expandedTechSection, setExpandedTechSection] = useState<string | null>("Overview");
   
   // Reset addon spec state when opening new addon
   const openAddon = (addon: any) => {
     setSelectedAddon(addon);
     setIsAddonSpecOpen(false);
   };
+  
+  const toggleTechSection = (title: string) => {
+    setExpandedTechSection(expandedTechSection === title ? null : title);
+  };
+
+  if (!product) return null;
 
   // ===== GUNAKAN HELPER FUNCTIONS UNTUK GENERATE DEFAULT VALUES =====
   // Ambil addons dari data produk, atau gunakan default dari helper function
@@ -295,15 +304,18 @@ export default function ProductDetail() {
   // Ambil overview images dari data produk, atau gunakan default
   const overviewImages = product.overviewImages || ["/images/banners/dcs-overview-1.png", "/images/banners/dcs-overview-2.png"];
 
-  const [expandedTechSection, setExpandedTechSection] = useState<string | null>("Overview");
+  // Color selector state - after product check
+  const colorVariant = getProductColors(product.id);
+  const [selectedProductImage, setSelectedProductImage] = useState<string>(product.image);
   
-  const toggleTechSection = (title: string) => {
-    setExpandedTechSection(expandedTechSection === title ? null : title);
+  // Handle color change
+  const handleColorChange = (color: ProductColor) => {
+    setSelectedProductImage(color.image);
+    setCurrentImg(0); // Reset to first image when color changes
   };
 
-  if (!product) return null;
-
-  const images = product.images || [product.image, "/images/banners/dcs-overview-1.png", "/images/banners/dcs-overview-2.png"];
+  // Use selected color image if available, otherwise use default product images
+  const images = product.images || [selectedProductImage, "/images/banners/dcs-overview-1.png", "/images/banners/dcs-overview-2.png"];
   
   // Display only first 3 images in the list, or more if needed
   const displayImages = images.slice(0, 3);
@@ -429,6 +441,16 @@ export default function ProductDetail() {
                   </li>
                 ))}
               </ul>
+
+              {/* Color Selector - Tampil jika produk punya varian warna */}
+              {colorVariant && (
+                <ColorSelector
+                  colors={colorVariant.colors}
+                  defaultColor={colorVariant.defaultColor}
+                  onColorChange={handleColorChange}
+                  className="mt-6"
+                />
+              )}
             </div>
             
             <div className="flex gap-6">
