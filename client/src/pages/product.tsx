@@ -1,5 +1,5 @@
 import Layout from "@/components/layout";
-import { products, type Product, type TechSpecSection, type InTheBoxItem, type ProductAddon } from "@/lib/data";
+import { products, type Product, type TechSpecSection, type InTheBoxItem, type ProductAddon } from "@/lib/products";
 import { Button } from "@/components/ui/button";
 import { useRoute } from "wouter";
 import { ShoppingCart, Check, Shield, ChevronLeft, ChevronRight, Maximize2, X, Package, Settings, Info, ArrowRight, Instagram, Facebook, Mail } from "lucide-react";

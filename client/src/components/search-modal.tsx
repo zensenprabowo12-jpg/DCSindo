@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Search, X } from "lucide-react";
-import { products } from "@/lib/data";
+import { products } from "@/lib/products";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 
