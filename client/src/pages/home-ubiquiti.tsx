@@ -1,6 +1,6 @@
 import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
-import { products, CATEGORIES } from "@/lib/data";
+import { products, CATEGORIES } from "@/lib/products";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";

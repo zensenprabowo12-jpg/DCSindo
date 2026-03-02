@@ -11,3 +11,9 @@ client/public/
 *.backup
 *.backup-*
 *.bak
+*.backup-before-split
+
+# Split scripts (temporary)
+split-products-*.js
+split-products-*.cjs
+split-products-*.py

@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Product } from "@/lib/data";
+import { Product } from "@/lib/products";
 
 interface ProductCardProps {
   product: Product;
