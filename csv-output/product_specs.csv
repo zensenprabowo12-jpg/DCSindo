@@ -1,0 +1,1133 @@
+product_id,label,value,sort_order
+U-Cable-Patch-RJ45-Indoor,Resolution,4K (8MP),0
+U-Cable-Patch-RJ45-Indoor,Night Vision,25m (82ft) IR,1
+U-Cable-Patch-RJ45-Indoor,Zoom,3x Optical,2
+U-Cable-Patch-RJ45-Indoor,Audio,Two-way Audio,3
+U-Cable-Patch-RJ45-Outdoor,Resolution,4K (8MP),0
+U-Cable-Patch-RJ45-Outdoor,Night Vision,25m (82ft) IR,1
+U-Cable-Patch-RJ45-Outdoor,Zoom,3x Optical,2
+U-Cable-Patch-RJ45-Outdoor,Audio,Two-way Audio,3
+UACC-Cable-Patch-EL-0.15M-W,Resolution,4K (8MP),0
+UACC-Cable-Patch-EL-0.15M-W,Night Vision,25m (82ft) IR,1
+UACC-Cable-Patch-EL-0.15M-W,Zoom,3x Optical,2
+UACC-Cable-Patch-EL-0.15M-W,Audio,Two-way Audio,3
+ENVR,Resolution,4K (8MP),0
+ENVR,Night Vision,25m (82ft) IR,1
+ENVR,Zoom,3x Optical,2
+ENVR,Audio,Two-way Audio,3
+UNVR-Pro,Resolution,4K (8MP),0
+UNVR-Pro,Night Vision,25m (82ft) IR,1
+UNVR-Pro,Zoom,3x Optical,2
+UNVR-Pro,Audio,Two-way Audio,3
+UNVR,Resolution,4K (8MP),0
+UNVR,Night Vision,25m (82ft) IR,1
+UNVR,Zoom,3x Optical,2
+UNVR,Audio,Two-way Audio,3
+UNVR-Instant,Resolution,4K (8MP),0
+UNVR-Instant,Night Vision,25m (82ft) IR,1
+UNVR-Instant,Zoom,3x Optical,2
+UNVR-Instant,Audio,Two-way Audio,3
+UNVR-Instant-Kit,Resolution,4K (8MP),0
+UNVR-Instant-Kit,Night Vision,25m (82ft) IR,1
+UNVR-Instant-Kit,Zoom,3x Optical,2
+UNVR-Instant-Kit,Audio,Two-way Audio,3
+AI-Key,Resolution,4K (8MP),0
+AI-Key,Night Vision,25m (82ft) IR,1
+AI-Key,Zoom,3x Optical,2
+AI-Key,Audio,Two-way Audio,3
+UP-AI-Port,Resolution,4K (8MP),0
+UP-AI-Port,Night Vision,25m (82ft) IR,1
+UP-AI-Port,Zoom,3x Optical,2
+UP-AI-Port,Audio,Two-way Audio,3
+UP-Viewport,Resolution,4K (8MP),0
+UP-Viewport,Night Vision,25m (82ft) IR,1
+UP-Viewport,Zoom,3x Optical,2
+UP-Viewport,Audio,Two-way Audio,3
+UCK-G2-SSD,Resolution,4K (8MP),0
+UCK-G2-SSD,Night Vision,25m (82ft) IR,1
+UCK-G2-SSD,Zoom,3x Optical,2
+UCK-G2-SSD,Audio,Two-way Audio,3
+UVC-G6-Pro-Turret,Resolution,4K (8MP),0
+UVC-G6-Pro-Turret,Night Vision,25m (82ft) IR,1
+UVC-G6-Pro-Turret,Zoom,3x Optical,2
+UVC-G6-Pro-Turret,Audio,Two-way Audio,3
+UVC-G6-Pro-Dome,Resolution,4K (8MP),0
+UVC-G6-Pro-Dome,Night Vision,25m (82ft) IR,1
+UVC-G6-Pro-Dome,Zoom,3x Optical,2
+UVC-G6-Pro-Dome,Audio,Two-way Audio,3
+UVC-G6-Turret,Resolution,4K (8MP),0
+UVC-G6-Turret,Night Vision,25m (82ft) IR,1
+UVC-G6-Turret,Zoom,3x Optical,2
+UVC-G6-Turret,Audio,Two-way Audio,3
+UVC-G6-Dome,Resolution,4K (8MP),0
+UVC-G6-Dome,Night Vision,25m (82ft) IR,1
+UVC-G6-Dome,Zoom,3x Optical,2
+UVC-G6-Dome,Audio,Two-way Audio,3
+UVC-G6-Pro-360-  ,Resolution,4K (8MP),0
+UVC-G6-Pro-360-  ,Night Vision,25m (82ft) IR,1
+UVC-G6-Pro-360-  ,Zoom,3x Optical,2
+UVC-G6-Pro-360-  ,Audio,Two-way Audio,3
+UVC-G6-180-B/W,Resolution,4K (8MP),0
+UVC-G6-180-B/W,Night Vision,25m (82ft) IR,1
+UVC-G6-180-B/W,Zoom,3x Optical,2
+UVC-G6-180-B/W,Audio,Two-way Audio,3
+UVC-G5-Turret-Ultra-B/W,Resolution,4K (8MP),0
+UVC-G5-Turret-Ultra-B/W,Night Vision,25m (82ft) IR,1
+UVC-G5-Turret-Ultra-B/W,Zoom,3x Optical,2
+UVC-G5-Turret-Ultra-B/W,Audio,Two-way Audio,3
+UVC-AI-Turret-B/W,Resolution,4K (8MP),0
+UVC-AI-Turret-B/W,Night Vision,25m (82ft) IR,1
+UVC-AI-Turret-B/W,Zoom,3x Optical,2
+UVC-AI-Turret-B/W,Audio,Two-way Audio,3
+UVC-AI-Dome-B/W,Resolution,4K (8MP),0
+UVC-AI-Dome-B/W,Night Vision,25m (82ft) IR,1
+UVC-AI-Dome-B/W,Zoom,3x Optical,2
+UVC-AI-Dome-B/W,Audio,Two-way Audio,3
+UVC-AI-360-B/W,Resolution,4K (8MP),0
+UVC-AI-360-B/W,Night Vision,25m (82ft) IR,1
+UVC-AI-360-B/W,Zoom,3x Optical,2
+UVC-AI-360-B/W,Audio,Two-way Audio,3
+UVC-G5-Dome,Resolution,4K (8MP),0
+UVC-G5-Dome,Night Vision,25m (82ft) IR,1
+UVC-G5-Dome,Zoom,3x Optical,2
+UVC-G5-Dome,Audio,Two-way Audio,3
+UVC-G5-Dome-Ultra-B/W,Resolution,4K (8MP),0
+UVC-G5-Dome-Ultra-B/W,Night Vision,25m (82ft) IR,1
+UVC-G5-Dome-Ultra-B/W,Zoom,3x Optical,2
+UVC-G5-Dome-Ultra-B/W,Audio,Two-way Audio,3
+UVC-AI-MS-4-B/W,Resolution,4K (8MP),0
+UVC-AI-MS-4-B/W,Night Vision,25m (82ft) IR,1
+UVC-AI-MS-4-B/W,Zoom,3x Optical,2
+UVC-AI-MS-4-B/W,Audio,Two-way Audio,3
+UVC-G6-Pro-Bullet-B/W,Resolution,4K (8MP),0
+UVC-G6-Pro-Bullet-B/W,Night Vision,25m (82ft) IR,1
+UVC-G6-Pro-Bullet-B/W,Zoom,3x Optical,2
+UVC-G6-Pro-Bullet-B/W,Audio,Two-way Audio,3
+UVC-G6-Bullet-B/W,Resolution,4K (8MP),0
+UVC-G6-Bullet-B/W,Night Vision,25m (82ft) IR,1
+UVC-G6-Bullet-B/W,Zoom,3x Optical,2
+UVC-G6-Bullet-B/W,Audio,Two-way Audio,3
+UVC-AI-LPR-B/W,Resolution,4K (8MP),0
+UVC-AI-LPR-B/W,Night Vision,25m (82ft) IR,1
+UVC-AI-LPR-B/W,Zoom,3x Optical,2
+UVC-AI-LPR-B/W,Audio,Two-way Audio,3
+UVC-AI-DSLR-B/W,Resolution,4K (8MP),0
+UVC-AI-DSLR-B/W,Night Vision,25m (82ft) IR,1
+UVC-AI-DSLR-B/W,Zoom,3x Optical,2
+UVC-AI-DSLR-B/W,Audio,Two-way Audio,3
+UVC-AI-Pro-B/W,Resolution,4K (8MP),0
+UVC-AI-Pro-B/W,Night Vision,25m (82ft) IR,1
+UVC-AI-Pro-B/W,Zoom,3x Optical,2
+UVC-AI-Pro-B/W,Audio,Two-way Audio,3
+UVC-G5-Pro,Resolution,4K (8MP),0
+UVC-G5-Pro,Night Vision,25m (82ft) IR,1
+UVC-G5-Pro,Zoom,3x Optical,2
+UVC-G5-Pro,Audio,Two-way Audio,3
+UVC-G5-Bullet,Resolution,4K (8MP),0
+UVC-G5-Bullet,Night Vision,25m (82ft) IR,1
+UVC-G5-Bullet,Zoom,3x Optical,2
+UVC-G5-Bullet,Audio,Two-way Audio,3
+UVC-G6-INS-W,Resolution,4K (8MP),0
+UVC-G6-INS-W,Night Vision,25m (82ft) IR,1
+UVC-G6-INS-W,Zoom,3x Optical,2
+UVC-G6-INS-W,Audio,Two-way Audio,3
+UVC-AI-Theta-Pro-W,Resolution,4K (8MP),0
+UVC-AI-Theta-Pro-W,Night Vision,25m (82ft) IR,1
+UVC-AI-Theta-Pro-W,Zoom,3x Optical,2
+UVC-AI-Theta-Pro-W,Audio,Two-way Audio,3
+UVC-G5-Flex,Resolution,4K (8MP),0
+UVC-G5-Flex,Night Vision,25m (82ft) IR,1
+UVC-G5-Flex,Zoom,3x Optical,2
+UVC-G5-Flex,Audio,Two-way Audio,3
+UVC-G4-INS,Resolution,4K (8MP),0
+UVC-G4-INS,Night Vision,25m (82ft) IR,1
+UVC-G4-INS,Zoom,3x Optical,2
+UVC-G4-INS,Audio,Two-way Audio,3
+UVC-AI-Theta-Audio,Resolution,4K (8MP),0
+UVC-AI-Theta-Audio,Night Vision,25m (82ft) IR,1
+UVC-AI-Theta-Audio,Zoom,3x Optical,2
+UVC-AI-Theta-Audio,Audio,Two-way Audio,3
+UVC-AI-Theta-ProLens50,Resolution,4K (8MP),0
+UVC-AI-Theta-ProLens50,Night Vision,25m (82ft) IR,1
+UVC-AI-Theta-ProLens50,Zoom,3x Optical,2
+UVC-AI-Theta-ProLens50,Audio,Two-way Audio,3
+UVC-G6-PTZ-B/W,Resolution,4K (8MP),0
+UVC-G6-PTZ-B/W,Night Vision,25m (82ft) IR,1
+UVC-G6-PTZ-B/W,Zoom,3x Optical,2
+UVC-G6-PTZ-B/W,Audio,Two-way Audio,3
+UVC-AI-PTZ-B/W,Resolution,4K (8MP),0
+UVC-AI-PTZ-B/W,Night Vision,25m (82ft) IR,1
+UVC-AI-PTZ-B/W,Zoom,3x Optical,2
+UVC-AI-PTZ-B/W,Audio,Two-way Audio,3
+UVC-AI-PTZ-Precision-B/W,Resolution,4K (8MP),0
+UVC-AI-PTZ-Precision-B/W,Night Vision,25m (82ft) IR,1
+UVC-AI-PTZ-Precision-B/W,Zoom,3x Optical,2
+UVC-AI-PTZ-Precision-B/W,Audio,Two-way Audio,3
+UVC-G5-PTZ-B/W,Resolution,4K (8MP),0
+UVC-G5-PTZ-B/W,Night Vision,25m (82ft) IR,1
+UVC-G5-PTZ-B/W,Zoom,3x Optical,2
+UVC-G5-PTZ-B/W,Audio,Two-way Audio,3
+UVC-4-Doorbell-Pro-PoE-Kit-B/W,Resolution,4K (8MP),0
+UVC-4-Doorbell-Pro-PoE-Kit-B/W,Night Vision,25m (82ft) IR,1
+UVC-4-Doorbell-Pro-PoE-Kit-B/W,Zoom,3x Optical,2
+UVC-4-Doorbell-Pro-PoE-Kit-B/W,Audio,Two-way Audio,3
+UVC-4-Doorbell-Pro-B/W,Resolution,4K (8MP),0
+UVC-4-Doorbell-Pro-B/W,Night Vision,25m (82ft) IR,1
+UVC-4-Doorbell-Pro-B/W,Zoom,3x Optical,2
+UVC-4-Doorbell-Pro-B/W,Audio,Two-way Audio,3
+UVC-Doorbell-B/W,Resolution,4K (8MP),0
+UVC-Doorbell-B/W,Night Vision,25m (82ft) IR,1
+UVC-Doorbell-B/W,Zoom,3x Optical,2
+UVC-Doorbell-B/W,Audio,Two-way Audio,3
+UVC-Chime-PoE,Resolution,4K (8MP),0
+UVC-Chime-PoE,Night Vision,25m (82ft) IR,1
+UVC-Chime-PoE,Zoom,3x Optical,2
+UVC-Chime-PoE,Audio,Two-way Audio,3
+UVC-Chime,Resolution,4K (8MP),0
+UVC-Chime,Night Vision,25m (82ft) IR,1
+UVC-Chime,Zoom,3x Optical,2
+UVC-Chime,Audio,Two-way Audio,3
+USL-Gateway,Resolution,4K (8MP),0
+USL-Gateway,Night Vision,25m (82ft) IR,1
+USL-Gateway,Zoom,3x Optical,2
+USL-Gateway,Audio,Two-way Audio,3
+USL-Entry,Resolution,4K (8MP),0
+USL-Entry,Night Vision,25m (82ft) IR,1
+USL-Entry,Zoom,3x Optical,2
+USL-Entry,Audio,Two-way Audio,3
+USL-Motion,Resolution,4K (8MP),0
+USL-Motion,Night Vision,25m (82ft) IR,1
+USL-Motion,Zoom,3x Optical,2
+USL-Motion,Audio,Two-way Audio,3
+USL-Siren,Resolution,4K (8MP),0
+USL-Siren,Night Vision,25m (82ft) IR,1
+USL-Siren,Zoom,3x Optical,2
+USL-Siren,Audio,Two-way Audio,3
+USL-Siren-PoE,Resolution,4K (8MP),0
+USL-Siren-PoE,Night Vision,25m (82ft) IR,1
+USL-Siren-PoE,Zoom,3x Optical,2
+USL-Siren-PoE,Audio,Two-way Audio,3
+USL-Environmental,Resolution,4K (8MP),0
+USL-Environmental,Night Vision,25m (82ft) IR,1
+USL-Environmental,Zoom,3x Optical,2
+USL-Environmental,Audio,Two-way Audio,3
+UP-Sense,Resolution,4K (8MP),0
+UP-Sense,Night Vision,25m (82ft) IR,1
+UP-Sense,Zoom,3x Optical,2
+UP-Sense,Audio,Two-way Audio,3
+USL-GlassBreak,Resolution,4K (8MP),0
+USL-GlassBreak,Night Vision,25m (82ft) IR,1
+USL-GlassBreak,Zoom,3x Optical,2
+USL-GlassBreak,Audio,Two-way Audio,3
+UACC-USL-ANT-HG,Resolution,4K (8MP),0
+UACC-USL-ANT-HG,Night Vision,25m (82ft) IR,1
+UACC-USL-ANT-HG,Zoom,3x Optical,2
+UACC-USL-ANT-HG,Audio,Two-way Audio,3
+UP-AI-Horn-Speaker-B/W,Resolution,4K (8MP),0
+UP-AI-Horn-Speaker-B/W,Night Vision,25m (82ft) IR,1
+UP-AI-Horn-Speaker-B/W,Zoom,3x Optical,2
+UP-AI-Horn-Speaker-B/W,Audio,Two-way Audio,3
+UP-FloodLight,Resolution,4K (8MP),0
+UP-FloodLight,Night Vision,25m (82ft) IR,1
+UP-FloodLight,Zoom,3x Optical,2
+UP-FloodLight,Audio,Two-way Audio,3
+UACC-Adapter-PoE-USBC,Resolution,4K (8MP),0
+UACC-Adapter-PoE-USBC,Night Vision,25m (82ft) IR,1
+UACC-Adapter-PoE-USBC,Zoom,3x Optical,2
+UACC-Adapter-PoE-USBC,Audio,Two-way Audio,3
+UACC-Camera-CJB-B/W,Resolution,4K (8MP),0
+UACC-Camera-CJB-B/W,Night Vision,25m (82ft) IR,1
+UACC-Camera-CJB-B/W,Zoom,3x Optical,2
+UACC-Camera-CJB-B/W,Audio,Two-way Audio,3
+UACC-Camera-CJB-B/W,Resolution,4K (8MP),0
+UACC-Camera-CJB-B/W,Night Vision,25m (82ft) IR,1
+UACC-Camera-CJB-B/W,Zoom,3x Optical,2
+UACC-Camera-CJB-B/W,Audio,Two-way Audio,3
+UACC-Camera-JB-B/W,Resolution,4K (8MP),0
+UACC-Camera-JB-B/W,Night Vision,25m (82ft) IR,1
+UACC-Camera-JB-B/W,Zoom,3x Optical,2
+UACC-Camera-JB-B/W,Audio,Two-way Audio,3
+UACC-AI-JB-B/W,Resolution,4K (8MP),0
+UACC-AI-JB-B/W,Night Vision,25m (82ft) IR,1
+UACC-AI-JB-B/W,Zoom,3x Optical,2
+UACC-AI-JB-B/W,Audio,Two-way Audio,3
+UACC-G4-Dome-Arm-Mount,Resolution,4K (8MP),0
+UACC-G4-Dome-Arm-Mount,Night Vision,25m (82ft) IR,1
+UACC-G4-Dome-Arm-Mount,Zoom,3x Optical,2
+UACC-G4-Dome-Arm-Mount,Audio,Two-way Audio,3
+UACC-Camera-AM-B,Resolution,4K (8MP),0
+UACC-Camera-AM-B,Night Vision,25m (82ft) IR,1
+UACC-Camera-AM-B,Zoom,3x Optical,2
+UACC-Camera-AM-B,Audio,Two-way Audio,3
+UACC-Bullet-AB-B,Resolution,4K (8MP),0
+UACC-Bullet-AB-B,Night Vision,25m (82ft) IR,1
+UACC-Bullet-AB-B,Zoom,3x Optical,2
+UACC-Bullet-AB-B,Audio,Two-way Audio,3
+UACC-Pro-Bullet-Enhancer-B/W,Resolution,4K (8MP),0
+UACC-Pro-Bullet-Enhancer-B/W,Night Vision,25m (82ft) IR,1
+UACC-Pro-Bullet-Enhancer-B/W,Zoom,3x Optical,2
+UACC-Pro-Bullet-Enhancer-B/W,Audio,Two-way Audio,3
+UACC-AI-Pro-Enhancer-B/W,Resolution,4K (8MP),0
+UACC-AI-Pro-Enhancer-B/W,Night Vision,25m (82ft) IR,1
+UACC-AI-Pro-Enhancer-B/W,Zoom,3x Optical,2
+UACC-AI-Pro-Enhancer-B/W,Audio,Two-way Audio,3
+UACC-G5-Enhancer,Resolution,4K (8MP),0
+UACC-G5-Enhancer,Night Vision,25m (82ft) IR,1
+UACC-G5-Enhancer,Zoom,3x Optical,2
+UACC-G5-Enhancer,Audio,Two-way Audio,3
+UVC-G4-IRExtender,Resolution,4K (8MP),0
+UVC-G4-IRExtender,Night Vision,25m (82ft) IR,1
+UVC-G4-IRExtender,Zoom,3x Optical,2
+UVC-G4-IRExtender,Audio,Two-way Audio,3
+UACC-Camera-DM-B/W,Resolution,4K (8MP),0
+UACC-Camera-DM-B/W,Night Vision,25m (82ft) IR,1
+UACC-Camera-DM-B/W,Zoom,3x Optical,2
+UACC-Camera-DM-B/W,Audio,Two-way Audio,3
+UACC-GB-Plate-B/W,Resolution,4K (8MP),0
+UACC-GB-Plate-B/W,Night Vision,25m (82ft) IR,1
+UACC-GB-Plate-B/W,Zoom,3x Optical,2
+UACC-GB-Plate-B/W,Audio,Two-way Audio,3
+UACC-Dome-FM-B/W,Resolution,4K (8MP),0
+UACC-Dome-FM-B/W,Night Vision,25m (82ft) IR,1
+UACC-Dome-FM-B/W,Zoom,3x Optical,2
+UACC-Dome-FM-B/W,Audio,Two-way Audio,3
+UACC-G6-Pro-360-FM-B/W,Resolution,4K (8MP),0
+UACC-G6-Pro-360-FM-B/W,Night Vision,25m (82ft) IR,1
+UACC-G6-Pro-360-FM-B/W,Zoom,3x Optical,2
+UACC-G6-Pro-360-FM-B/W,Audio,Two-way Audio,3
+UACC-G6-Dome-FM-B/W,Resolution,4K (8MP),0
+UACC-G6-Dome-FM-B/W,Night Vision,25m (82ft) IR,1
+UACC-G6-Dome-FM-B/W,Zoom,3x Optical,2
+UACC-G6-Dome-FM-B/W,Audio,Two-way Audio,3
+UACC-G6-Dome-FMS-B/W,Resolution,4K (8MP),0
+UACC-G6-Dome-FMS-B/W,Night Vision,25m (82ft) IR,1
+UACC-G6-Dome-FMS-B/W,Zoom,3x Optical,2
+UACC-G6-Dome-FMS-B/W,Audio,Two-way Audio,3
+UACC-G5-Dome-Ultra-FM-B/W,Resolution,4K (8MP),0
+UACC-G5-Dome-Ultra-FM-B/W,Night Vision,25m (82ft) IR,1
+UACC-G5-Dome-Ultra-FM-B/W,Zoom,3x Optical,2
+UACC-G5-Dome-Ultra-FM-B/W,Audio,Two-way Audio,3
+UACC-G5-Dome-Ultra-FM-SB-B/W,Resolution,4K (8MP),0
+UACC-G5-Dome-Ultra-FM-SB-B/W,Night Vision,25m (82ft) IR,1
+UACC-G5-Dome-Ultra-FM-SB-B/W,Zoom,3x Optical,2
+UACC-G5-Dome-Ultra-FM-SB-B/W,Audio,Two-way Audio,3
+UACC-G6-Dome-WS-B/W,Resolution,4K (8MP),0
+UACC-G6-Dome-WS-B/W,Night Vision,25m (82ft) IR,1
+UACC-G6-Dome-WS-B/W,Zoom,3x Optical,2
+UACC-G6-Dome-WS-B/W,Audio,Two-way Audio,3
+UACC-Dome-WS-B/W,Resolution,4K (8MP),0
+UACC-Dome-WS-B/W,Night Vision,25m (82ft) IR,1
+UACC-Dome-WS-B/W,Zoom,3x Optical,2
+UACC-Dome-WS-B/W,Audio,Two-way Audio,3
+UACC-G6-180-FM-B/W,Resolution,4K (8MP),0
+UACC-G6-180-FM-B/W,Night Vision,25m (82ft) IR,1
+UACC-G6-180-FM-B/W,Zoom,3x Optical,2
+UACC-G6-180-FM-B/W,Audio,Two-way Audio,3
+UACC-G6-180-PM-B/W,Resolution,4K (8MP),0
+UACC-G6-180-PM-B/W,Night Vision,25m (82ft) IR,1
+UACC-G6-180-PM-B/W,Zoom,3x Optical,2
+UACC-G6-180-PM-B/W,Audio,Two-way Audio,3
+UACC-G5-PTZ-CM-B/W,Resolution,4K (8MP),0
+UACC-G5-PTZ-CM-B/W,Night Vision,25m (82ft) IR,1
+UACC-G5-PTZ-CM-B/W,Zoom,3x Optical,2
+UACC-G5-PTZ-CM-B/W,Audio,Two-way Audio,3
+UACC-G5-PTZ-PM-B/W,Resolution,4K (8MP),0
+UACC-G5-PTZ-PM-B/W,Night Vision,25m (82ft) IR,1
+UACC-G5-PTZ-PM-B/W,Zoom,3x Optical,2
+UACC-G5-PTZ-PM-B/W,Audio,Two-way Audio,3
+UACC-G5-PTZ-SM-B/W,Resolution,4K (8MP),0
+UACC-G5-PTZ-SM-B/W,Night Vision,25m (82ft) IR,1
+UACC-G5-PTZ-SM-B/W,Zoom,3x Optical,2
+UACC-G5-PTZ-SM-B/W,Audio,Two-way Audio,3
+UACC-G5-PTZ-ICM-SB-B/W,Resolution,4K (8MP),0
+UACC-G5-PTZ-ICM-SB-B/W,Night Vision,25m (82ft) IR,1
+UACC-G5-PTZ-ICM-SB-B/W,Zoom,3x Optical,2
+UACC-G5-PTZ-ICM-SB-B/W,Audio,Two-way Audio,3
+UACC-G6-PTZ-ICM-B/W,Resolution,4K (8MP),0
+UACC-G6-PTZ-ICM-B/W,Night Vision,25m (82ft) IR,1
+UACC-G6-PTZ-ICM-B/W,Zoom,3x Optical,2
+UACC-G6-PTZ-ICM-B/W,Audio,Two-way Audio,3
+UACC-G5-PTZ-CA-B/W,Resolution,4K (8MP),0
+UACC-G5-PTZ-CA-B/W,Night Vision,25m (82ft) IR,1
+UACC-G5-PTZ-CA-B/W,Zoom,3x Optical,2
+UACC-G5-PTZ-CA-B/W,Audio,Two-way Audio,3
+UACC-Flex-Cam-PWM-B/W,Resolution,4K (8MP),0
+UACC-Flex-Cam-PWM-B/W,Night Vision,25m (82ft) IR,1
+UACC-Flex-Cam-PWM-B/W,Zoom,3x Optical,2
+UACC-Flex-Cam-PWM-B/W,Audio,Two-way Audio,3
+UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Resolution,4K (8MP),0
+UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Night Vision,25m (82ft) IR,1
+UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Zoom,3x Optical,2
+UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Audio,Two-way Audio,3
+UACC-G4-DBP-Cable-USB-7M,Resolution,4K (8MP),0
+UACC-G4-DBP-Cable-USB-7M,Night Vision,25m (82ft) IR,1
+UACC-G4-DBP-Cable-USB-7M,Zoom,3x Optical,2
+UACC-G4-DBP-Cable-USB-7M,Audio,Two-way Audio,3
+UACC-G4-INS-Cable-USB-4.5M,Resolution,4K (8MP),0
+UACC-G4-INS-Cable-USB-4.5M,Night Vision,25m (82ft) IR,1
+UACC-G4-INS-Cable-USB-4.5M,Zoom,3x Optical,2
+UACC-G4-INS-Cable-USB-4.5M,Audio,Two-way Audio,3
+UACC-G4-INS-Cover-DG/G/LG,Resolution,4K (8MP),0
+UACC-G4-INS-Cover-DG/G/LG,Night Vision,25m (82ft) IR,1
+UACC-G4-INS-Cover-DG/G/LG,Zoom,3x Optical,2
+UACC-G4-INS-Cover-DG/G/LG,Audio,Two-way Audio,3
+UACC-AI-Theta-Audio-Cable-1M,Resolution,4K (8MP),0
+UACC-AI-Theta-Audio-Cable-1M,Night Vision,25m (82ft) IR,1
+UACC-AI-Theta-Audio-Cable-1M,Zoom,3x Optical,2
+UACC-AI-Theta-Audio-Cable-1M,Audio,Two-way Audio,3
+UACC-AI-Theta-Audio-Cable-Ext-10M,Resolution,4K (8MP),0
+UACC-AI-Theta-Audio-Cable-Ext-10M,Night Vision,25m (82ft) IR,1
+UACC-AI-Theta-Audio-Cable-Ext-10M,Zoom,3x Optical,2
+UACC-AI-Theta-Audio-Cable-Ext-10M,Audio,Two-way Audio,3
+efg,Throughput,10 Gbps IPS,0
+efg,Ports,"8x GbE RJ45, 1x 10G SFP+",1
+efg,Storage,"2x 3.5"" HDD Bays",2
+efg,Processor,Quad-Core ARM Cortex-A57,3
+udm-pro-max,Throughput,10 Gbps IPS,0
+udm-pro-max,Ports,"8x GbE RJ45, 1x 10G SFP+",1
+udm-pro-max,Storage,"2x 3.5"" HDD Bays",2
+udm-pro-max,Processor,Quad-Core ARM Cortex-A57,3
+udm-pro,Throughput,3.5 Gbps IPS,0
+udm-pro,PoE,"2x PoE+, 6x PoE",1
+udm-pro,WAN,2.5 GbE RJ45,2
+udm-pro,Storage,128GB SSD Integrated,3
+udm-se,Throughput,3.5 Gbps IPS,0
+udm-se,PoE,"2x PoE+, 6x PoE",1
+udm-se,WAN,2.5 GbE RJ45,2
+udm-se,Storage,128GB SSD Integrated,3
+ucg-fiber,Throughput,3.5 Gbps IPS,0
+ucg-fiber,PoE,"2x PoE+, 6x PoE",1
+ucg-fiber,WAN,2.5 GbE RJ45,2
+ucg-fiber,Storage,128GB SSD Integrated,3
+ucg-max,Throughput,3.5 Gbps IPS,0
+ucg-max,PoE,"2x PoE+, 6x PoE",1
+ucg-max,WAN,2.5 GbE RJ45,2
+ucg-max,Storage,128GB SSD Integrated,3
+ucg-ultra,Throughput,3.5 Gbps IPS,0
+ucg-ultra,PoE,"2x PoE+, 6x PoE",1
+ucg-ultra,WAN,2.5 GbE RJ45,2
+ucg-ultra,Storage,128GB SSD Integrated,3
+udr-7,Throughput,3.5 Gbps IPS,0
+udr-7,PoE,"2x PoE+, 6x PoE",1
+udr-7,WAN,2.5 GbE RJ45,2
+udr-7,Storage,128GB SSD Integrated,3
+ux-7,Throughput,3.5 Gbps IPS,0
+ux-7,PoE,"2x PoE+, 6x PoE",1
+ux-7,WAN,2.5 GbE RJ45,2
+ux-7,Storage,128GB SSD Integrated,3
+udr-5g-max,Throughput,3.5 Gbps IPS,0
+udr-5g-max,PoE,"2x PoE+, 6x PoE",1
+udr-5g-max,WAN,2.5 GbE RJ45,2
+udr-5g-max,Storage,128GB SSD Integrated,3
+UDW,Throughput,3.5 Gbps IPS,0
+UDW,PoE,"2x PoE+, 6x PoE",1
+UDW,WAN,2.5 GbE RJ45,2
+UDW,Storage,128GB SSD Integrated,3
+UVC-G6-Pro-Entry,Resolution,4K (8MP),0
+UVC-G6-Pro-Entry,Night Vision,25m (82ft) IR,1
+UVC-G6-Pro-Entry,Zoom,3x Optical,2
+UVC-G6-Pro-Entry,Audio,Two-way Audio,3
+UVC-G6-Entry,Resolution,4K (8MP),0
+UVC-G6-Entry,Night Vision,25m (82ft) IR,1
+UVC-G6-Entry,Zoom,3x Optical,2
+UVC-G6-Entry,Audio,Two-way Audio,3
+UA-G3-Pro-B/W,Resolution,4K (8MP),0
+UA-G3-Pro-B/W,Night Vision,25m (82ft) IR,1
+UA-G3-Pro-B/W,Zoom,3x Optical,2
+UA-G3-Pro-B/W,Audio,Two-way Audio,3
+UA-G2-Pro-B/W,Resolution,4K (8MP),0
+UA-G2-Pro-B/W,Night Vision,25m (82ft) IR,1
+UA-G2-Pro-B/W,Zoom,3x Optical,2
+UA-G2-Pro-B/W,Audio,Two-way Audio,3
+UA-G3-Flex-B/W,Resolution,4K (8MP),0
+UA-G3-Flex-B/W,Night Vision,25m (82ft) IR,1
+UA-G3-Flex-B/W,Zoom,3x Optical,2
+UA-G3-Flex-B/W,Audio,Two-way Audio,3
+UA-G3-B/W,Resolution,4K (8MP),0
+UA-G3-B/W,Night Vision,25m (82ft) IR,1
+UA-G3-B/W,Zoom,3x Optical,2
+UA-G3-B/W,Audio,Two-way Audio,3
+UA-G2-B/W,Resolution,4K (8MP),0
+UA-G2-B/W,Night Vision,25m (82ft) IR,1
+UA-G2-B/W,Zoom,3x Optical,2
+UA-G2-B/W,Audio,Two-way Audio,3
+UA-Retrofit-Reader-B/W,Resolution,4K (8MP),0
+UA-Retrofit-Reader-B/W,Night Vision,25m (82ft) IR,1
+UA-Retrofit-Reader-B/W,Zoom,3x Optical,2
+UA-Retrofit-Reader-B/W,Audio,Two-way Audio,3
+UA-G3-Intercom,Resolution,4K (8MP),0
+UA-G3-Intercom,Night Vision,25m (82ft) IR,1
+UA-G3-Intercom,Zoom,3x Optical,2
+UA-G3-Intercom,Audio,Two-way Audio,3
+UA-G2-Intercom,Resolution,4K (8MP),0
+UA-G2-Intercom,Night Vision,25m (82ft) IR,1
+UA-G2-Intercom,Zoom,3x Optical,2
+UA-G2-Intercom,Audio,Two-way Audio,3
+UA-Ultra,Resolution,4K (8MP),0
+UA-Ultra,Night Vision,25m (82ft) IR,1
+UA-Ultra,Zoom,3x Optical,2
+UA-Ultra,Audio,Two-way Audio,3
+UA-G3-Intercom,Resolution,4K (8MP),0
+UA-G3-Intercom,Night Vision,25m (82ft) IR,1
+UA-G3-Intercom,Zoom,3x Optical,2
+UA-G3-Intercom,Audio,Two-way Audio,3
+UA-G2-Intercom,Resolution,4K (8MP),0
+UA-G2-Intercom,Night Vision,25m (82ft) IR,1
+UA-G2-Intercom,Zoom,3x Optical,2
+UA-G2-Intercom,Audio,Two-way Audio,3
+UA-G2-Intercom,Resolution,4K (8MP),0
+UA-G2-Intercom,Night Vision,25m (82ft) IR,1
+UA-G2-Intercom,Zoom,3x Optical,2
+UA-G2-Intercom,Audio,Two-way Audio,3
+UVC-G6-Pro-Entry,Resolution,4K (8MP),0
+UVC-G6-Pro-Entry,Night Vision,25m (82ft) IR,1
+UVC-G6-Pro-Entry,Zoom,3x Optical,2
+UVC-G6-Pro-Entry,Audio,Two-way Audio,3
+UVC-G6-Entry,Resolution,4K (8MP),0
+UVC-G6-Entry,Night Vision,25m (82ft) IR,1
+UVC-G6-Entry,Zoom,3x Optical,2
+UVC-G6-Entry,Audio,Two-way Audio,3
+EAH-8,Resolution,4K (8MP),0
+EAH-8,Night Vision,25m (82ft) IR,1
+EAH-8,Zoom,3x Optical,2
+EAH-8,Audio,Two-way Audio,3
+UA-Retrofit-Hub-2,Resolution,4K (8MP),0
+UA-Retrofit-Hub-2,Night Vision,25m (82ft) IR,1
+UA-Retrofit-Hub-2,Zoom,3x Optical,2
+UA-Retrofit-Hub-2,Audio,Two-way Audio,3
+UA-Hub-Door,Resolution,4K (8MP),0
+UA-Hub-Door,Night Vision,25m (82ft) IR,1
+UA-Hub-Door,Zoom,3x Optical,2
+UA-Hub-Door,Audio,Two-way Audio,3
+UA-Hub-Door-Mini,Resolution,4K (8MP),0
+UA-Hub-Door-Mini,Night Vision,25m (82ft) IR,1
+UA-Hub-Door-Mini,Zoom,3x Optical,2
+UA-Hub-Door-Mini,Audio,Two-way Audio,3
+UA-Hub-Gate,Resolution,4K (8MP),0
+UA-Hub-Gate,Night Vision,25m (82ft) IR,1
+UA-Hub-Gate,Zoom,3x Optical,2
+UA-Hub-Gate,Audio,Two-way Audio,3
+UA-Ultra,Resolution,4K (8MP),0
+UA-Ultra,Night Vision,25m (82ft) IR,1
+UA-Ultra,Zoom,3x Optical,2
+UA-Ultra,Audio,Two-way Audio,3
+UA-G3-SK-Pro,Resolution,4K (8MP),0
+UA-G3-SK-Pro,Night Vision,25m (82ft) IR,1
+UA-G3-SK-Pro,Zoom,3x Optical,2
+UA-G3-SK-Pro,Audio,Two-way Audio,3
+UA-G2-SK-Pro,Resolution,4K (8MP),0
+UA-G2-SK-Pro,Night Vision,25m (82ft) IR,1
+UA-G2-SK-Pro,Zoom,3x Optical,2
+UA-G2-SK-Pro,Audio,Two-way Audio,3
+UA-G3-SK,Resolution,4K (8MP),0
+UA-G3-SK,Night Vision,25m (82ft) IR,1
+UA-G3-SK,Zoom,3x Optical,2
+UA-G3-SK,Audio,Two-way Audio,3
+UA-G2-SK,Resolution,4K (8MP),0
+UA-G2-SK,Night Vision,25m (82ft) IR,1
+UA-G2-SK,Zoom,3x Optical,2
+UA-G2-SK,Audio,Two-way Audio,3
+UA-G3-SK-Gate,Resolution,4K (8MP),0
+UA-G3-SK-Gate,Night Vision,25m (82ft) IR,1
+UA-G3-SK-Gate,Zoom,3x Optical,2
+UA-G3-SK-Gate,Audio,Two-way Audio,3
+UA-G2-SK-Gate,Resolution,4K (8MP),0
+UA-G2-SK-Gate,Night Vision,25m (82ft) IR,1
+UA-G2-SK-Gate,Zoom,3x Optical,2
+UA-G2-SK-Gate,Audio,Two-way Audio,3
+UA-SK-Elevator,Resolution,4K (8MP),0
+UA-SK-Elevator,Night Vision,25m (82ft) IR,1
+UA-SK-Elevator,Zoom,3x Optical,2
+UA-SK-Elevator,Audio,Two-way Audio,3
+UA-G3-Intercom,Resolution,4K (8MP),0
+UA-G3-Intercom,Night Vision,25m (82ft) IR,1
+UA-G3-Intercom,Zoom,3x Optical,2
+UA-G3-Intercom,Audio,Two-way Audio,3
+UA-G2-Intercom,Resolution,4K (8MP),0
+UA-G2-Intercom,Night Vision,25m (82ft) IR,1
+UA-G2-Intercom,Zoom,3x Optical,2
+UA-G2-Intercom,Audio,Two-way Audio,3
+UA-Intercom-Viewer,Resolution,4K (8MP),0
+UA-Intercom-Viewer,Night Vision,25m (82ft) IR,1
+UA-Intercom-Viewer,Zoom,3x Optical,2
+UA-Intercom-Viewer,Audio,Two-way Audio,3
+ENVR,Resolution,4K (8MP),0
+ENVR,Night Vision,25m (82ft) IR,1
+ENVR,Zoom,3x Optical,2
+ENVR,Audio,Two-way Audio,3
+UNVR-pro,Resolution,4K (8MP),0
+UNVR-pro,Night Vision,25m (82ft) IR,1
+UNVR-pro,Zoom,3x Optical,2
+UNVR-pro,Audio,Two-way Audio,3
+UNVR,Resolution,4K (8MP),0
+UNVR,Night Vision,25m (82ft) IR,1
+UNVR,Zoom,3x Optical,2
+UNVR,Audio,Two-way Audio,3
+UNVR-Instant,Resolution,4K (8MP),0
+UNVR-Instant,Night Vision,25m (82ft) IR,1
+UNVR-Instant,Zoom,3x Optical,2
+UNVR-Instant,Audio,Two-way Audio,3
+UNVR-Instant-Kit,Resolution,4K (8MP),0
+UNVR-Instant-Kit,Night Vision,25m (82ft) IR,1
+UNVR-Instant-Kit,Zoom,3x Optical,2
+UNVR-Instant-Kit,Audio,Two-way Audio,3
+UA-Card-10-B/W,Resolution,4K (8MP),0
+UA-Card-10-B/W,Night Vision,25m (82ft) IR,1
+UA-Card-10-B/W,Zoom,3x Optical,2
+UA-Card-10-B/W,Audio,Two-way Audio,3
+UACC-Retrofit-PoE-2Wire,Resolution,4K (8MP),0
+UACC-Retrofit-PoE-2Wire,Night Vision,25m (82ft) IR,1
+UACC-Retrofit-PoE-2Wire,Zoom,3x Optical,2
+UACC-Retrofit-PoE-2Wire,Audio,Two-way Audio,3
+UACC-Reader-JB-B/W,Resolution,4K (8MP),0
+UACC-Reader-JB-B/W,Night Vision,25m (82ft) IR,1
+UACC-Reader-JB-B/W,Zoom,3x Optical,2
+UACC-Reader-JB-B/W,Audio,Two-way Audio,3
+UACC-Reader-Pro-JB-B/W,Resolution,4K (8MP),0
+UACC-Reader-Pro-JB-B/W,Night Vision,25m (82ft) IR,1
+UACC-Reader-Pro-JB-B/W,Zoom,3x Optical,2
+UACC-Reader-Pro-JB-B/W,Audio,Two-way Audio,3
+UACC-Reader-Pro-AM-B/W,Resolution,4K (8MP),0
+UACC-Reader-Pro-AM-B/W,Night Vision,25m (82ft) IR,1
+UACC-Reader-Pro-AM-B/W,Zoom,3x Optical,2
+UACC-Reader-Pro-AM-B/W,Audio,Two-way Audio,3
+UACC-Intercom-SAM,Resolution,4K (8MP),0
+UACC-Intercom-SAM,Night Vision,25m (82ft) IR,1
+UACC-Intercom-SAM,Zoom,3x Optical,2
+UACC-Intercom-SAM,Audio,Two-way Audio,3
+UACC-Intercom-FM,Resolution,4K (8MP),0
+UACC-Intercom-FM,Night Vision,25m (82ft) IR,1
+UACC-Intercom-FM,Zoom,3x Optical,2
+UACC-Intercom-FM,Audio,Two-way Audio,3
+UACC-Intercom-Sunshield,Resolution,4K (8MP),0
+UACC-Intercom-Sunshield,Night Vision,25m (82ft) IR,1
+UACC-Intercom-Sunshield,Zoom,3x Optical,2
+UACC-Intercom-Sunshield,Audio,Two-way Audio,3
+UACC-Intercom-WM,Resolution,4K (8MP),0
+UACC-Intercom-WM,Night Vision,25m (82ft) IR,1
+UACC-Intercom-WM,Zoom,3x Optical,2
+UACC-Intercom-WM,Audio,Two-way Audio,3
+UACC-Intercom-Viewer-TS,Resolution,4K (8MP),0
+UACC-Intercom-Viewer-TS,Night Vision,25m (82ft) IR,1
+UACC-Intercom-Viewer-TS,Zoom,3x Optical,2
+UACC-Intercom-Viewer-TS,Audio,Two-way Audio,3
+UACC-Junction-Utility,Resolution,4K (8MP),0
+UACC-Junction-Utility,Night Vision,25m (82ft) IR,1
+UACC-Junction-Utility,Zoom,3x Optical,2
+UACC-Junction-Utility,Audio,Two-way Audio,3
+UACC-Retrofit-PSU-12V,Resolution,4K (8MP),0
+UACC-Retrofit-PSU-12V,Night Vision,25m (82ft) IR,1
+UACC-Retrofit-PSU-12V,Zoom,3x Optical,2
+UACC-Retrofit-PSU-12V,Audio,Two-way Audio,3
+UA-Button,Resolution,4K (8MP),0
+UA-Button,Night Vision,25m (82ft) IR,1
+UA-Button,Zoom,3x Optical,2
+UA-Button,Audio,Two-way Audio,3
+UACC-DoorCloser,Resolution,4K (8MP),0
+UACC-DoorCloser,Night Vision,25m (82ft) IR,1
+UACC-DoorCloser,Zoom,3x Optical,2
+UACC-DoorCloser,Audio,Two-way Audio,3
+UACC-PanicBar,Resolution,4K (8MP),0
+UACC-PanicBar,Night Vision,25m (82ft) IR,1
+UACC-PanicBar,Zoom,3x Optical,2
+UACC-PanicBar,Audio,Two-way Audio,3
+UA-Lock-Magnetic-270kg,Resolution,4K (8MP),0
+UA-Lock-Magnetic-270kg,Night Vision,25m (82ft) IR,1
+UA-Lock-Magnetic-270kg,Zoom,3x Optical,2
+UA-Lock-Magnetic-270kg,Audio,Two-way Audio,3
+UACC-Lock-Strike-Secure-15mm,Resolution,4K (8MP),0
+UACC-Lock-Strike-Secure-15mm,Night Vision,25m (82ft) IR,1
+UACC-Lock-Strike-Secure-15mm,Zoom,3x Optical,2
+UACC-Lock-Strike-Secure-15mm,Audio,Two-way Audio,3
+UACC-Lock-Strike-Safe-15mm,Resolution,4K (8MP),0
+UACC-Lock-Strike-Safe-15mm,Night Vision,25m (82ft) IR,1
+UACC-Lock-Strike-Safe-15mm,Zoom,3x Optical,2
+UACC-Lock-Strike-Safe-15mm,Audio,Two-way Audio,3
+UACC-Cable-DoorLockRelay-1P,Resolution,4K (8MP),0
+UACC-Cable-DoorLockRelay-1P,Night Vision,25m (82ft) IR,1
+UACC-Cable-DoorLockRelay-1P,Zoom,3x Optical,2
+UACC-Cable-DoorLockRelay-1P,Audio,Two-way Audio,3
+UACC-Cable-DoorLockRelay-2P,Resolution,4K (8MP),0
+UACC-Cable-DoorLockRelay-2P,Night Vision,25m (82ft) IR,1
+UACC-Cable-DoorLockRelay-2P,Zoom,3x Optical,2
+UACC-Cable-DoorLockRelay-2P,Audio,Two-way Audio,3
+UA-Pocket,Resolution,4K (8MP),0
+UA-Pocket,Night Vision,25m (82ft) IR,1
+UA-Pocket,Zoom,3x Optical,2
+UA-Pocket,Audio,Two-way Audio,3
+UA-Rescue,Resolution,4K (8MP),0
+UA-Rescue,Night Vision,25m (82ft) IR,1
+UA-Rescue,Zoom,3x Optical,2
+UA-Rescue,Audio,Two-way Audio,3
+UNAS-Pro-8,Resolution,4K (8MP),0
+UNAS-Pro-8,Night Vision,25m (82ft) IR,1
+UNAS-Pro-8,Zoom,3x Optical,2
+UNAS-Pro-8,Audio,Two-way Audio,3
+UNAS-Pro-4,Resolution,4K (8MP),0
+UNAS-Pro-4,Night Vision,25m (82ft) IR,1
+UNAS-Pro-4,Zoom,3x Optical,2
+UNAS-Pro-4,Audio,Two-way Audio,3
+UNAS-Pro,Resolution,4K (8MP),0
+UNAS-Pro,Night Vision,25m (82ft) IR,1
+UNAS-Pro,Zoom,3x Optical,2
+UNAS-Pro,Audio,Two-way Audio,3
+UNAS-2-B/W,Resolution,4K (8MP),0
+UNAS-2-B/W,Night Vision,25m (82ft) IR,1
+UNAS-2-B/W,Zoom,3x Optical,2
+UNAS-2-B/W,Audio,Two-way Audio,3
+UNAS-4-B/W,Resolution,4K (8MP),0
+UNAS-4-B/W,Night Vision,25m (82ft) IR,1
+UNAS-4-B/W,Zoom,3x Optical,2
+UNAS-4-B/W,Audio,Two-way Audio,3
+UPS-2U,Resolution,4K (8MP),0
+UPS-2U,Night Vision,25m (82ft) IR,1
+UPS-2U,Zoom,3x Optical,2
+UPS-2U,Audio,Two-way Audio,3
+UPS-Tower,Resolution,4K (8MP),0
+UPS-Tower,Night Vision,25m (82ft) IR,1
+UPS-Tower,Zoom,3x Optical,2
+UPS-Tower,Audio,Two-way Audio,3
+USW-Mission-Critical(120W),Resolution,4K (8MP),0
+USW-Mission-Critical(120W),Night Vision,25m (82ft) IR,1
+USW-Mission-Critical(120W),Zoom,3x Optical,2
+USW-Mission-Critical(120W),Audio,Two-way Audio,3
+USP-RPS,Resolution,4K (8MP),0
+USP-RPS,Night Vision,25m (82ft) IR,1
+USP-RPS,Zoom,3x Optical,2
+USP-RPS,Audio,Two-way Audio,3
+USP-PDU-Pro,Resolution,4K (8MP),0
+USP-PDU-Pro,Night Vision,25m (82ft) IR,1
+USP-PDU-Pro,Zoom,3x Optical,2
+USP-PDU-Pro,Audio,Two-way Audio,3
+USP-PDU-HD,Resolution,4K (8MP),0
+USP-PDU-HD,Night Vision,25m (82ft) IR,1
+USP-PDU-HD,Zoom,3x Optical,2
+USP-PDU-HD,Audio,Two-way Audio,3
+U5G-Max,Resolution,4K (8MP),0
+U5G-Max,Night Vision,25m (82ft) IR,1
+U5G-Max,Zoom,3x Optical,2
+U5G-Max,Audio,Two-way Audio,3
+U5G-Max-Outdoor,Resolution,4K (8MP),0
+U5G-Max-Outdoor,Night Vision,25m (82ft) IR,1
+U5G-Max-Outdoor,Zoom,3x Optical,2
+U5G-Max-Outdoor,Audio,Two-way Audio,3
+UMR-Industrial,Resolution,4K (8MP),0
+UMR-Industrial,Night Vision,25m (82ft) IR,1
+UMR-Industrial,Zoom,3x Optical,2
+UMR-Industrial,Audio,Two-way Audio,3
+UMR-Ultra,Resolution,4K (8MP),0
+UMR-Ultra,Night Vision,25m (82ft) IR,1
+UMR-Ultra,Zoom,3x Optical,2
+UMR-Ultra,Audio,Two-way Audio,3
+UMR,Resolution,4K (8MP),0
+UMR,Night Vision,25m (82ft) IR,1
+UMR,Zoom,3x Optical,2
+UMR,Audio,Two-way Audio,3
+U-LTE,Resolution,4K (8MP),0
+U-LTE,Night Vision,25m (82ft) IR,1
+U-LTE,Zoom,3x Optical,2
+U-LTE,Audio,Two-way Audio,3
+U-LTE-Backup Pro,Resolution,4K (8MP),0
+U-LTE-Backup Pro,Night Vision,25m (82ft) IR,1
+U-LTE-Backup Pro,Zoom,3x Optical,2
+U-LTE-Backup Pro,Audio,Two-way Audio,3
+UTP-G3-Touch-Enterprise,Resolution,4K (8MP),0
+UTP-G3-Touch-Enterprise,Night Vision,25m (82ft) IR,1
+UTP-G3-Touch-Enterprise,Zoom,3x Optical,2
+UTP-G3-Touch-Enterprise,Audio,Two-way Audio,3
+UTP-G3-Touch-Pro,Resolution,4K (8MP),0
+UTP-G3-Touch-Pro,Night Vision,25m (82ft) IR,1
+UTP-G3-Touch-Pro,Zoom,3x Optical,2
+UTP-G3-Touch-Pro,Audio,Two-way Audio,3
+UTP-G3-Touch-Wall,Resolution,4K (8MP),0
+UTP-G3-Touch-Wall,Night Vision,25m (82ft) IR,1
+UTP-G3-Touch-Wall,Zoom,3x Optical,2
+UTP-G3-Touch-Wall,Audio,Two-way Audio,3
+UTP-TouchMax-B/W,Resolution,4K (8MP),0
+UTP-TouchMax-B/W,Night Vision,25m (82ft) IR,1
+UTP-TouchMax-B/W,Zoom,3x Optical,2
+UTP-TouchMax-B/W,Audio,Two-way Audio,3
+UTP-Touch-B/W,Resolution,4K (8MP),0
+UTP-Touch-B/W,Night Vision,25m (82ft) IR,1
+UTP-Touch-B/W,Zoom,3x Optical,2
+UTP-Touch-B/W,Audio,Two-way Audio,3
+UT-G3-Handset,Resolution,4K (8MP),0
+UT-G3-Handset,Night Vision,25m (82ft) IR,1
+UT-G3-Handset,Zoom,3x Optical,2
+UT-G3-Handset,Audio,Two-way Audio,3
+UT-ATA,Resolution,4K (8MP),0
+UT-ATA,Night Vision,25m (82ft) IR,1
+UT-ATA,Zoom,3x Optical,2
+UT-ATA,Audio,Two-way Audio,3
+UC-EV-Station-Pro,Resolution,4K (8MP),0
+UC-EV-Station-Pro,Night Vision,25m (82ft) IR,1
+UC-EV-Station-Pro,Zoom,3x Optical,2
+UC-EV-Station-Pro,Audio,Two-way Audio,3
+UC-EV-Station-Lite,Resolution,4K (8MP),0
+UC-EV-Station-Lite,Night Vision,25m (82ft) IR,1
+UC-EV-Station-Lite,Zoom,3x Optical,2
+UC-EV-Station-Lite,Audio,Two-way Audio,3
+UPL-Amp-B/W,Resolution,4K (8MP),0
+UPL-Amp-B/W,Night Vision,25m (82ft) IR,1
+UPL-Amp-B/W,Zoom,3x Optical,2
+UPL-Amp-B/W,Audio,Two-way Audio,3
+UPL-Port-B/W,Resolution,4K (8MP),0
+UPL-Port-B/W,Night Vision,25m (82ft) IR,1
+UPL-Port-B/W,Zoom,3x Optical,2
+UPL-Port-B/W,Audio,Two-way Audio,3
+UC-Cast-Pro,Resolution,4K (8MP),0
+UC-Cast-Pro,Night Vision,25m (82ft) IR,1
+UC-Cast-Pro,Zoom,3x Optical,2
+UC-Cast-Pro,Audio,Two-way Audio,3
+UC-Cast-Lite,Resolution,4K (8MP),0
+UC-Cast-Lite,Night Vision,25m (82ft) IR,1
+UC-Cast-Lite,Zoom,3x Optical,2
+UC-Cast-Lite,Audio,Two-way Audio,3
+ECS-Aggregation,Ports,"8x 2.5GbE, 16x GbE",0
+ECS-Aggregation,PoE Budget,400W,1
+ECS-Aggregation,Uplink,2x 10G SFP+,2
+ECS-Aggregation,Layer,Layer 3 Switching,3
+USW-Pro-XG-Aggregation,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-XG-Aggregation,PoE Budget,400W,1
+USW-Pro-XG-Aggregation,Uplink,2x 10G SFP+,2
+USW-Pro-XG-Aggregation,Layer,Layer 3 Switching,3
+USW-Pro-Aggregation,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-Aggregation,PoE Budget,400W,1
+USW-Pro-Aggregation,Uplink,2x 10G SFP+,2
+USW-Pro-Aggregation,Layer,Layer 3 Switching,3
+USW-Aggregation,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Aggregation,PoE Budget,400W,1
+USW-Aggregation,Uplink,2x 10G SFP+,2
+USW-Aggregation,Layer,Layer 3 Switching,3
+ECS-48-PoE(2150W),Ports,"8x 2.5GbE, 16x GbE",0
+ECS-48-PoE(2150W),PoE Budget,400W,1
+ECS-48-PoE(2150W),Uplink,2x 10G SFP+,2
+ECS-48-PoE(2150W),Layer,Layer 3 Switching,3
+ECS-24-PoE(1050W),Ports,"8x 2.5GbE, 16x GbE",0
+ECS-24-PoE(1050W),PoE Budget,400W,1
+ECS-24-PoE(1050W),Uplink,2x 10G SFP+,2
+ECS-24-PoE(1050W),Layer,Layer 3 Switching,3
+ECS-48S-PoE(2150W),Ports,"8x 2.5GbE, 16x GbE",0
+ECS-48S-PoE(2150W),PoE Budget,400W,1
+ECS-48S-PoE(2150W),Uplink,2x 10G SFP+,2
+ECS-48S-PoE(2150W),Layer,Layer 3 Switching,3
+ECS-24S-PoE(1050W),Ports,"8x 2.5GbE, 16x GbE",0
+ECS-24S-PoE(1050W),PoE Budget,400W,1
+ECS-24S-PoE(1050W),Uplink,2x 10G SFP+,2
+ECS-24S-PoE(1050W),Layer,Layer 3 Switching,3
+ECS-Aggregation,Ports,"8x 2.5GbE, 16x GbE",0
+ECS-Aggregation,PoE Budget,400W,1
+ECS-Aggregation,Uplink,2x 10G SFP+,2
+ECS-Aggregation,Layer,Layer 3 Switching,3
+USW-Pro-Max-48-PoE(720W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-Max-48-PoE(720W),PoE Budget,400W,1
+USW-Pro-Max-48-PoE(720W),Uplink,2x 10G SFP+,2
+USW-Pro-Max-48-PoE(720W),Layer,Layer 3 Switching,3
+USW-Pro-Max-24-PoE(400W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-Max-24-PoE(400W),PoE Budget,400W,1
+USW-Pro-Max-24-PoE(400W),Uplink,2x 10G SFP+,2
+USW-Pro-Max-24-PoE(400W),Layer,Layer 3 Switching,3
+USW-Pro-XG-48-PoE(1080),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-XG-48-PoE(1080),PoE Budget,400W,1
+USW-Pro-XG-48-PoE(1080),Uplink,2x 10G SFP+,2
+USW-Pro-XG-48-PoE(1080),Layer,Layer 3 Switching,3
+USW-Pro-XG-24-PoE(720W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-XG-24-PoE(720W),PoE Budget,400W,1
+USW-Pro-XG-24-PoE(720W),Uplink,2x 10G SFP+,2
+USW-Pro-XG-24-PoE(720W),Layer,Layer 3 Switching,3
+USW-Pro-HD-24-PoE(600W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-HD-24-PoE(600W),PoE Budget,400W,1
+USW-Pro-HD-24-PoE(600W),Uplink,2x 10G SFP+,2
+USW-Pro-HD-24-PoE(600W),Layer,Layer 3 Switching,3
+USW-Pro-XG-48,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-XG-48,PoE Budget,400W,1
+USW-Pro-XG-48,Uplink,2x 10G SFP+,2
+USW-Pro-XG-48,Layer,Layer 3 Switching,3
+USW-Pro-XG-24,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-XG-24,PoE Budget,400W,1
+USW-Pro-XG-24,Uplink,2x 10G SFP+,2
+USW-Pro-XG-24,Layer,Layer 3 Switching,3
+USW-Pro-XG-10-PoE(400W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-XG-10-PoE(400W),PoE Budget,400W,1
+USW-Pro-XG-10-PoE(400W),Uplink,2x 10G SFP+,2
+USW-Pro-XG-10-PoE(400W),Layer,Layer 3 Switching,3
+USW-Pro-Max-16-PoE(180W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-Max-16-PoE(180W),PoE Budget,400W,1
+USW-Pro-Max-16-PoE(180W),Uplink,2x 10G SFP+,2
+USW-Pro-Max-16-PoE(180W),Layer,Layer 3 Switching,3
+USW-Pro-HD-24,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-HD-24,PoE Budget,400W,1
+USW-Pro-HD-24,Uplink,2x 10G SFP+,2
+USW-Pro-HD-24,Layer,Layer 3 Switching,3
+USW-Pro-Max-48,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-Max-48,PoE Budget,400W,1
+USW-Pro-Max-48,Uplink,2x 10G SFP+,2
+USW-Pro-Max-48,Layer,Layer 3 Switching,3
+USW-Pro-Max-24,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-Max-24,PoE Budget,400W,1
+USW-Pro-Max-24,Uplink,2x 10G SFP+,2
+USW-Pro-Max-24,Layer,Layer 3 Switching,3
+USW-Pro-Max-16,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-Max-16,PoE Budget,400W,1
+USW-Pro-Max-16,Uplink,2x 10G SFP+,2
+USW-Pro-Max-16,Layer,Layer 3 Switching,3
+USW-Pro-48-PoE(600W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-48-PoE(600W),PoE Budget,400W,1
+USW-Pro-48-PoE(600W),Uplink,2x 10G SFP+,2
+USW-Pro-48-PoE(600W),Layer,Layer 3 Switching,3
+USW-Pro-24-PoE(400W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-24-PoE(400W),PoE Budget,400W,1
+USW-Pro-24-PoE(400W),Uplink,2x 10G SFP+,2
+USW-Pro-24-PoE(400W),Layer,Layer 3 Switching,3
+USW-Pro-48,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-48,PoE Budget,400W,1
+USW-Pro-48,Uplink,2x 10G SFP+,2
+USW-Pro-48,Layer,Layer 3 Switching,3
+USW-Pro-24,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-24,PoE Budget,400W,1
+USW-Pro-24,Uplink,2x 10G SFP+,2
+USW-Pro-24,Layer,Layer 3 Switching,3
+USW-Enterprise-48-PoE(720W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Enterprise-48-PoE(720W),PoE Budget,400W,1
+USW-Enterprise-48-PoE(720W),Uplink,2x 10G SFP+,2
+USW-Enterprise-48-PoE(720W),Layer,Layer 3 Switching,3
+USW-Enterprise-24-PoE(400W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Enterprise-24-PoE(400W),PoE Budget,400W,1
+USW-Enterprise-24-PoE(400W),Uplink,2x 10G SFP+,2
+USW-Enterprise-24-PoE(400W),Layer,Layer 3 Switching,3
+USW-Mission-Critical-(120W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Mission-Critical-(120W),PoE Budget,400W,1
+USW-Mission-Critical-(120W),Uplink,2x 10G SFP+,2
+USW-Mission-Critical-(120W),Layer,Layer 3 Switching,3
+USW-48-PoE(195W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-48-PoE(195W),PoE Budget,400W,1
+USW-48-PoE(195W),Uplink,2x 10G SFP+,2
+USW-48-PoE(195W),Layer,Layer 3 Switching,3
+USW-24-PoE(95W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-24-PoE(95W),PoE Budget,400W,1
+USW-24-PoE(95W),Uplink,2x 10G SFP+,2
+USW-24-PoE(95W),Layer,Layer 3 Switching,3
+USW-16-PoE(42W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-16-PoE(42W),PoE Budget,400W,1
+USW-16-PoE(42W),Uplink,2x 10G SFP+,2
+USW-16-PoE(42W),Layer,Layer 3 Switching,3
+USW-48,Ports,"8x 2.5GbE, 16x GbE",0
+USW-48,PoE Budget,400W,1
+USW-48,Uplink,2x 10G SFP+,2
+USW-48,Layer,Layer 3 Switching,3
+USW-24,Ports,"8x 2.5GbE, 16x GbE",0
+USW-24,PoE Budget,400W,1
+USW-24,Uplink,2x 10G SFP+,2
+USW-24,Layer,Layer 3 Switching,3
+USW-WAN,Ports,"8x 2.5GbE, 16x GbE",0
+USW-WAN,PoE Budget,400W,1
+USW-WAN,Uplink,2x 10G SFP+,2
+USW-WAN,Layer,Layer 3 Switching,3
+USW-WAN-RJ45,Ports,"8x 2.5GbE, 16x GbE",0
+USW-WAN-RJ45,PoE Budget,400W,1
+USW-WAN-RJ45,Uplink,2x 10G SFP+,2
+USW-WAN-RJ45,Layer,Layer 3 Switching,3
+USW-Lite-16-PoE(45W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Lite-16-PoE(45W),PoE Budget,400W,1
+USW-Lite-16-PoE(45W),Uplink,2x 10G SFP+,2
+USW-Lite-16-PoE(45W),Layer,Layer 3 Switching,3
+USW-Lite-8-PoE(52W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Lite-8-PoE(52W),PoE Budget,400W,1
+USW-Lite-8-PoE(52W),Uplink,2x 10G SFP+,2
+USW-Lite-8-PoE(52W),Layer,Layer 3 Switching,3
+USW-Pro-XG-8-PoE(155W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-XG-8-PoE(155W),PoE Budget,400W,1
+USW-Pro-XG-8-PoE(155W),Uplink,2x 10G SFP+,2
+USW-Pro-XG-8-PoE(155W),Layer,Layer 3 Switching,3
+USW-Enterprise-8-PoE(120W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Enterprise-8-PoE(120W),PoE Budget,400W,1
+USW-Enterprise-8-PoE(120W),Uplink,2x 10G SFP+,2
+USW-Enterprise-8-PoE(120W),Layer,Layer 3 Switching,3
+USW-Pro-8-PoE(120W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Pro-8-PoE(120W),PoE Budget,400W,1
+USW-Pro-8-PoE(120W),Uplink,2x 10G SFP+,2
+USW-Pro-8-PoE(120W),Layer,Layer 3 Switching,3
+USW-Ultra-210W(202W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Ultra-210W(202W),PoE Budget,400W,1
+USW-Ultra-210W(202W),Uplink,2x 10G SFP+,2
+USW-Ultra-210W(202W),Layer,Layer 3 Switching,3
+USW-Ultra-60W(52W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Ultra-60W(52W),PoE Budget,400W,1
+USW-Ultra-60W(52W),Uplink,2x 10G SFP+,2
+USW-Ultra-60W(52W),Layer,Layer 3 Switching,3
+USW-Ultra(42W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Ultra(42W),PoE Budget,400W,1
+USW-Ultra(42W),Uplink,2x 10G SFP+,2
+USW-Ultra(42W),Layer,Layer 3 Switching,3
+USW-Flex-2.5G-8-PoE(196W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Flex-2.5G-8-PoE(196W),PoE Budget,400W,1
+USW-Flex-2.5G-8-PoE(196W),Uplink,2x 10G SFP+,2
+USW-Flex-2.5G-8-PoE(196W),Layer,Layer 3 Switching,3
+USW-Flex-2.5G-8,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Flex-2.5G-8,PoE Budget,400W,1
+USW-Flex-2.5G-8,Uplink,2x 10G SFP+,2
+USW-Flex-2.5G-8,Layer,Layer 3 Switching,3
+USW-Flex-2.5G-5,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Flex-2.5G-5,PoE Budget,400W,1
+USW-Flex-2.5G-5,Uplink,2x 10G SFP+,2
+USW-Flex-2.5G-5,Layer,Layer 3 Switching,3
+USW-Flex-Mini,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Flex-Mini,PoE Budget,400W,1
+USW-Flex-Mini,Uplink,2x 10G SFP+,2
+USW-Flex-Mini,Layer,Layer 3 Switching,3
+USW-Flex(46W),Ports,"8x 2.5GbE, 16x GbE",0
+USW-Flex(46W),PoE Budget,400W,1
+USW-Flex(46W),Uplink,2x 10G SFP+,2
+USW-Flex(46W),Layer,Layer 3 Switching,3
+USW-Flex-Utility,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Flex-Utility,PoE Budget,400W,1
+USW-Flex-Utility,Uplink,2x 10G SFP+,2
+USW-Flex-Utility,Layer,Layer 3 Switching,3
+UACC-Flex-Utility-Pro,Ports,"8x 2.5GbE, 16x GbE",0
+UACC-Flex-Utility-Pro,PoE Budget,400W,1
+UACC-Flex-Utility-Pro,Uplink,2x 10G SFP+,2
+UACC-Flex-Utility-Pro,Layer,Layer 3 Switching,3
+USW-Flex-XG,Ports,"8x 2.5GbE, 16x GbE",0
+USW-Flex-XG,PoE Budget,400W,1
+USW-Flex-XG,Uplink,2x 10G SFP+,2
+USW-Flex-XG,Layer,Layer 3 Switching,3
+E7,Throughput,3.5 Gbps IPS,0
+E7,PoE,"2x PoE+, 6x PoE",1
+E7,WAN,2.5 GbE RJ45,2
+E7,Storage,128GB SSD Integrated,3
+E7-Campus,Standard,WiFi 6E,0
+E7-Campus,Throughput,10.2 Gbps Aggregate,1
+E7-Campus,Client Capacity,600+,2
+E7-Campus,Uplink,2.5 GbE,3
+E7-Audience,Throughput,3.5 Gbps IPS,0
+E7-Audience,PoE,"2x PoE+, 6x PoE",1
+E7-Audience,WAN,2.5 GbE RJ45,2
+E7-Audience,Storage,128GB SSD Integrated,3
+U7-Pro-XGS,Throughput,3.5 Gbps IPS,0
+U7-Pro-XGS,PoE,"2x PoE+, 6x PoE",1
+U7-Pro-XGS,WAN,2.5 GbE RJ45,2
+U7-Pro-XGS,Storage,128GB SSD Integrated,3
+U7-Pro-XG,Throughput,3.5 Gbps IPS,0
+U7-Pro-XG,PoE,"2x PoE+, 6x PoE",1
+U7-Pro-XG,WAN,2.5 GbE RJ45,2
+U7-Pro-XG,Storage,128GB SSD Integrated,3
+U7-Pro-Max,Throughput,3.5 Gbps IPS,0
+U7-Pro-Max,PoE,"2x PoE+, 6x PoE",1
+U7-Pro-Max,WAN,2.5 GbE RJ45,2
+U7-Pro-Max,Storage,128GB SSD Integrated,3
+U7-Pr0,Throughput,3.5 Gbps IPS,0
+U7-Pr0,PoE,"2x PoE+, 6x PoE",1
+U7-Pr0,WAN,2.5 GbE RJ45,2
+U7-Pr0,Storage,128GB SSD Integrated,3
+U7-LR,Throughput,3.5 Gbps IPS,0
+U7-LR,PoE,"2x PoE+, 6x PoE",1
+U7-LR,WAN,2.5 GbE RJ45,2
+U7-LR,Storage,128GB SSD Integrated,3
+U7-Lite,Throughput,3.5 Gbps IPS,0
+U7-Lite,PoE,"2x PoE+, 6x PoE",1
+U7-Lite,WAN,2.5 GbE RJ45,2
+U7-Lite,Storage,128GB SSD Integrated,3
+U6-Enterprise,Throughput,3.5 Gbps IPS,0
+U6-Enterprise,PoE,"2x PoE+, 6x PoE",1
+U6-Enterprise,WAN,2.5 GbE RJ45,2
+U6-Enterprise,Storage,128GB SSD Integrated,3
+U6-Pro,Throughput,3.5 Gbps IPS,0
+U6-Pro,PoE,"2x PoE+, 6x PoE",1
+U6-Pro,WAN,2.5 GbE RJ45,2
+U6-Pro,Storage,128GB SSD Integrated,3
+U6-PLUS,Throughput,3.5 Gbps IPS,0
+U6-PLUS,PoE,"2x PoE+, 6x PoE",1
+U6-PLUS,WAN,2.5 GbE RJ45,2
+U6-PLUS,Storage,128GB SSD Integrated,3
+UAP-AC-PRO,Throughput,3.5 Gbps IPS,0
+UAP-AC-PRO,PoE,"2x PoE+, 6x PoE",1
+UAP-AC-PRO,WAN,2.5 GbE RJ45,2
+UAP-AC-PRO,Storage,128GB SSD Integrated,3
+U7-Pro-XG-Wall,Throughput,3.5 Gbps IPS,0
+U7-Pro-XG-Wall,PoE,"2x PoE+, 6x PoE",1
+U7-Pro-XG-Wall,WAN,2.5 GbE RJ45,2
+U7-Pro-XG-Wall,Storage,128GB SSD Integrated,3
+U7-Pro-Wall,Throughput,3.5 Gbps IPS,0
+U7-Pro-Wall,PoE,"2x PoE+, 6x PoE",1
+U7-Pro-Wall,WAN,2.5 GbE RJ45,2
+U7-Pro-Wall,Storage,128GB SSD Integrated,3
+U7-IW,Throughput,3.5 Gbps IPS,0
+U7-IW,PoE,"2x PoE+, 6x PoE",1
+U7-IW,WAN,2.5 GbE RJ45,2
+U7-IW,Storage,128GB SSD Integrated,3
+U6-Enterprise-IW,Throughput,3.5 Gbps IPS,0
+U6-Enterprise-IW,PoE,"2x PoE+, 6x PoE",1
+U6-Enterprise-IW,WAN,2.5 GbE RJ45,2
+U6-Enterprise-IW,Storage,128GB SSD Integrated,3
+U6-IW,Throughput,3.5 Gbps IPS,0
+U6-IW,PoE,"2x PoE+, 6x PoE",1
+U6-IW,WAN,2.5 GbE RJ45,2
+U6-IW,Storage,128GB SSD Integrated,3
+U6-Extender,Throughput,3.5 Gbps IPS,0
+U6-Extender,PoE,"2x PoE+, 6x PoE",1
+U6-Extender,WAN,2.5 GbE RJ45,2
+U6-Extender,Storage,128GB SSD Integrated,3
+U7-Pro-Outdoor,Throughput,3.5 Gbps IPS,0
+U7-Pro-Outdoor,PoE,"2x PoE+, 6x PoE",1
+U7-Pro-Outdoor,WAN,2.5 GbE RJ45,2
+U7-Pro-Outdoor,Storage,128GB SSD Integrated,3
+U7-Outdoor,Throughput,3.5 Gbps IPS,0
+U7-Outdoor,PoE,"2x PoE+, 6x PoE",1
+U7-Outdoor,WAN,2.5 GbE RJ45,2
+U7-Outdoor,Storage,128GB SSD Integrated,3
+U6-Mesh,Throughput,3.5 Gbps IPS,0
+U6-Mesh,PoE,"2x PoE+, 6x PoE",1
+U6-Mesh,WAN,2.5 GbE RJ45,2
+U6-Mesh,Storage,128GB SSD Integrated,3
+U6-Mesh-Pro,Throughput,3.5 Gbps IPS,0
+U6-Mesh-Pro,PoE,"2x PoE+, 6x PoE",1
+U6-Mesh-Pro,WAN,2.5 GbE RJ45,2
+U6-Mesh-Pro,Storage,128GB SSD Integrated,3
+AC Mesh,Throughput,3.5 Gbps IPS,0
+AC Mesh,PoE,"2x PoE+, 6x PoE",1
+AC Mesh,WAN,2.5 GbE RJ45,2
+AC Mesh,Storage,128GB SSD Integrated,3
+UK-Ultra,Throughput,3.5 Gbps IPS,0
+UK-Ultra,PoE,"2x PoE+, 6x PoE",1
+UK-Ultra,WAN,2.5 GbE RJ45,2
+UK-Ultra,Storage,128GB SSD Integrated,3
+Product Collection,Throughput,3.5 Gbps IPS,0
+Product Collection,PoE,"2x PoE+, 6x PoE",1
+Product Collection,WAN,2.5 GbE RJ45,2
+Product Collection,Storage,128GB SSD Integrated,3
+UWB-XG,Throughput,3.5 Gbps IPS,0
+UWB-XG,PoE,"2x PoE+, 6x PoE",1
+UWB-XG,WAN,2.5 GbE RJ45,2
+UWB-XG,Storage,128GB SSD Integrated,3
+UDB-Pro-Sector,Throughput,3.5 Gbps IPS,0
+UDB-Pro-Sector,PoE,"2x PoE+, 6x PoE",1
+UDB-Pro-Sector,WAN,2.5 GbE RJ45,2
+UDB-Pro-Sector,Storage,128GB SSD Integrated,3
+UDB-Pro,Throughput,3.5 Gbps IPS,0
+UDB-Pro,PoE,"2x PoE+, 6x PoE",1
+UDB-Pro,WAN,2.5 GbE RJ45,2
+UDB-Pro,Storage,128GB SSD Integrated,3
+UDB,Throughput,3.5 Gbps IPS,0
+UDB,PoE,"2x PoE+, 6x PoE",1
+UDB,WAN,2.5 GbE RJ45,2
+UDB,Storage,128GB SSD Integrated,3
+UBB,Throughput,3.5 Gbps IPS,0
+UBB,PoE,"2x PoE+, 6x PoE",1
+UBB,WAN,2.5 GbE RJ45,2
+UBB,Storage,128GB SSD Integrated,3
+UDB-Switch(35W),Throughput,3.5 Gbps IPS,0
+UDB-Switch(35W),PoE,"2x PoE+, 6x PoE",1
+UDB-Switch(35W),WAN,2.5 GbE RJ45,2
+UDB-Switch(35W),Storage,128GB SSD Integrated,3
+UBB-XG,Throughput,3.5 Gbps IPS,0
+UBB-XG,PoE,"2x PoE+, 6x PoE",1
+UBB-XG,WAN,2.5 GbE RJ45,2
+UBB-XG,Storage,128GB SSD Integrated,3
+UDB-IoT,Throughput,3.5 Gbps IPS,0
+UDB-IoT,PoE,"2x PoE+, 6x PoE",1
+UDB-IoT,WAN,2.5 GbE RJ45,2
+UDB-IoT,Storage,128GB SSD Integrated,3
+UTR,Throughput,3.5 Gbps IPS,0
+UTR,PoE,"2x PoE+, 6x PoE",1
+UTR,WAN,2.5 GbE RJ45,2
+UTR,Storage,128GB SSD Integrated,3

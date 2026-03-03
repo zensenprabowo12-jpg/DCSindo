@@ -1,0 +1,1132 @@
+product_id,bullet_point,sort_order
+U-Cable-Patch-RJ45-Indoor,Bendable booted RJ45,0
+U-Cable-Patch-RJ45-Indoor,3 mm outer diameter,1
+U-Cable-Patch-RJ45-Indoor,Cable length: 0.1 to 8m,2
+U-Cable-Patch-RJ45-Outdoor,Shielded RJ45,0
+U-Cable-Patch-RJ45-Outdoor,"Insulated, weatherpoof jacket",1
+U-Cable-Patch-RJ45-Outdoor,Internal foil shielding and drain wire for increased ESD damage protection,2
+U-Cable-Patch-RJ45-Outdoor,Cable Lenghth: 1 to 8 m,3
+UACC-Cable-Patch-EL-0.15M-W,Translucent booted RJ45 for optimal Etherlighting™ brightness,0
+UACC-Cable-Patch-EL-0.15M-W,— 2.5 mm outer diameter for 0.15-8 m lengths,1
+UACC-Cable-Patch-EL-0.15M-W,— 2.9 mm outer diameter for 12-15 m lengths,2
+UACC-Cable-Patch-EL-0.15M-W,Length: 0.15 to 15 m,3
+ENVR,Professional Enterprise NVR camera,0
+ENVR,High-resolution video recording,1
+ENVR,AI-powered detection and analytics,2
+ENVR,Weather-resistant design,3
+UNVR-Pro,A 2U-sized video recorder with (7) 2,0
+UNVR-Pro,5' HDD bays that can provide up to 60 days of storage for (24) 4K cameras or (70) Full HD cameras,1
+UNVR-Pro,Easy to deploy and manage,2
+UNVR-Pro,Reliable performance,3
+UNVR,A video recorder with (4) 2,0
+UNVR,5' HDD bays that can support up to 30 days of storage for (18) 4k cameras or (60) Full HD cameras,1
+UNVR,Easy to deploy and manage,2
+UNVR,Reliable performance,3
+UNVR-Instant,Compact UniFi Protect NVR with 3,0
+UNVR-Instant,5' HDD support,1
+UNVR-Instant,featuring an integrated 6-port PoE switch,2
+UNVR-Instant,integrated HDMI View Port,3
+UNVR-Instant-Kit,Compact UniFi Protect NVR Kit,0
+UNVR-Instant-Kit,includes (1) UniFi Protect NVR Instant with (4) G5 Turret Ultra cameras and (1) 1TB HDD,1
+UNVR-Instant-Kit,delivering an all-in-one solution for fast and effortless setup,2
+UNVR-Instant-Kit,Reliable performance,3
+AI-Key,Edge AI appliance that enhances any UniFi Protect deployment with proactive,0
+AI-Key,AI-driven threat detection and alerting,1
+AI-Key,capable of analyzing up to 1,2
+AI-Key,800 smart detection events per hour,3
+UP-AI-Port,AI appliance that enhances any UniFI or third-party camera with AI detection,0
+UP-AI-Port,classification,1
+UP-AI-Port,and recognition capabilites,2
+UP-AI-Port,Reliable performance,3
+UP-Viewport,Easy-to-use hub for viewing Protect camera feeds on an HDMI display,0
+UP-Viewport,Enterprise-grade quality,1
+UP-Viewport,Easy to deploy and manage,2
+UP-Viewport,Reliable performance,3
+UCK-G2-SSD,Compact UniFi Console that connects directly to the Site Manager at unifi,0
+UCK-G2-SSD,com for powerful,1
+UCK-G2-SSD,multi-application site management,2
+UCK-G2-SSD,Reliable performance,3
+UVC-G6-Pro-Turret,All-weather tamper-resistant 4K PoE+ camera with a Multi-TOPS AI engine,0
+UVC-G6-Pro-Turret,36x optizal zoom,1
+UVC-G6-Pro-Turret,and a large 1/1,2
+UVC-G6-Pro-Turret,2' CMOS sensor for exceptional low-light clarity and long-range IR night vision,3
+UVC-G6-Pro-Dome,All-weather vandal-proof 4K PoE+ camera with a Multi-TOPS AI engine,0
+UVC-G6-Pro-Dome,36x optical zoom,1
+UVC-G6-Pro-Dome,and a large 1/1,2
+UVC-G6-Pro-Dome,2' CMOS sensor for exceptional low-light clarity and long-range IR night vision,3
+UVC-G6-Turret,All-weather,0
+UVC-G6-Turret,tamper-resistant 4K PoE camera with a 1/1,1
+UVC-G6-Turret,8' 8MP image sensor,2
+UVC-G6-Turret,Multi-TOPS AI Engine,3
+UVC-G6-Dome,All-weather,0
+UVC-G6-Dome,vandal-proof 4K PoE camera with a 1/1,1
+UVC-G6-Dome,8' 8MP image sensor,2
+UVC-G6-Dome,Multi-TOPS AI Engine,3
+UVC-G6-Pro-360-  ,All-weather,0
+UVC-G6-Pro-360-  ,vandal-resistant 12MP PoE camera with panoramic 360° coverage,1
+UVC-G6-Pro-360-  ,digital pan-tilt-zoom functionality,2
+UVC-G6-Pro-360-  ,and smart IR functionality,3
+UVC-G6-180-B/W,Indoor/outdoor dual sensor 16MP 20 FPS PoE+ camera,0
+UVC-G6-180-B/W,with a Multi-TOPS AI Engine and panoramic 180° coverage,1
+UVC-G6-180-B/W,Easy to deploy and manage,2
+UVC-G6-180-B/W,Reliable performance,3
+UVC-G5-Turret-Ultra-B/W,Ultra-compact,0
+UVC-G5-Turret-Ultra-B/W,tamper-resistant,1
+UVC-G5-Turret-Ultra-B/W,and weatherproof 2K HD PoE camera with long-range night vision,2
+UVC-G5-Turret-Ultra-B/W,Reliable performance,3
+UVC-AI-Turret-B/W,All-weather,0
+UVC-AI-Turret-B/W,vandal-proof 4K PoE+ turret camera with enhanced AI capabilities and IR and visible LEDs for night vision,1
+UVC-AI-Turret-B/W,Easy to deploy and manage,2
+UVC-AI-Turret-B/W,Reliable performance,3
+UVC-AI-Dome-B/W,All-weather,0
+UVC-AI-Dome-B/W,vandal-proof 4K PoE dome camera with enhanced AI capabilities and long-range IR night vision,1
+UVC-AI-Dome-B/W,Easy to deploy and manage,2
+UVC-AI-Dome-B/W,Reliable performance,3
+UVC-AI-360-B/W,Indoor/outdoor 2K PoE camera with pan-tilt-zoom functionality that offers full 360° surveillance,0
+UVC-AI-360-B/W,Enterprise-grade quality,1
+UVC-AI-360-B/W,Easy to deploy and manage,2
+UVC-AI-360-B/W,Reliable performance,3
+UVC-G5-Dome,Next-gen 2K HD PoE ceiling camera with enhanced dynamic range and low-light performance,0
+UVC-G5-Dome,Enterprise-grade quality,1
+UVC-G5-Dome,Easy to deploy and manage,2
+UVC-G5-Dome,Reliable performance,3
+UVC-G5-Dome-Ultra-B/W,Ultra-compact and tamper-resistant 2K HD PoE camera with night vision designed for low-profile indoor security,0
+UVC-G5-Dome-Ultra-B/W,Enterprise-grade quality,1
+UVC-G5-Dome-Ultra-B/W,Easy to deploy and manage,2
+UVC-G5-Dome-Ultra-B/W,Reliable performance,3
+UVC-AI-MS-4-B/W,All-weather PoE++ 32MP multi-sensor camera featuring a Multi-TOPS AI engine,0
+UVC-AI-MS-4-B/W,33× optical zoom,1
+UVC-AI-MS-4-B/W,360° IR coverage,2
+UVC-AI-MS-4-B/W,and four independently adjustable lenses for seamless wide-area and close-up monitoring,3
+UVC-G6-Pro-Bullet-B/W,All-weather 4K PoE+ camera with a Multi-TOPS AI engine,0
+UVC-G6-Pro-Bullet-B/W,36x optical zoom,1
+UVC-G6-Pro-Bullet-B/W,and a large 1/1,2
+UVC-G6-Pro-Bullet-B/W,2' CMOS sensor for exceptional low-light clarity and long-range IR night vision,3
+UVC-G6-Bullet-B/W,All-weather 4K PoE camera with a 1/1,0
+UVC-G6-Bullet-B/W,8' 8MP image sensor,1
+UVC-G6-Bullet-B/W,Multi-TOPS AI Engine,2
+UVC-G6-Bullet-B/W,and long-range IR night vision,3
+UVC-AI-LPR-B/W,Specialized 4K camera with 3x optical zoom and long-range IR night vision optimized for recognizing license plates on vehicles moving up to 90 km/h,0
+UVC-AI-LPR-B/W,Enterprise-grade quality,1
+UVC-AI-LPR-B/W,Easy to deploy and manage,2
+UVC-AI-LPR-B/W,Reliable performance,3
+UVC-AI-DSLR-B/W,Indoor/outdoor 4K PoE camera with exceptional image quality and impressive low-light performance,0
+UVC-AI-DSLR-B/W,Enterprise-grade quality,1
+UVC-AI-DSLR-B/W,Easy to deploy and manage,2
+UVC-AI-DSLR-B/W,Reliable performance,3
+UVC-AI-Pro-B/W,Indoor/outdoor 4K PoE camera with 3x optical zoom,0
+UVC-AI-Pro-B/W,long-range IR night vision,1
+UVC-AI-Pro-B/W,and enhanced AI detection capabilities,2
+UVC-AI-Pro-B/W,Reliable performance,3
+UVC-G5-Pro,Next-gen indoor/outdoor 4K PoE camera with exceptional image performance,0
+UVC-G5-Pro,long-range IR night vision,1
+UVC-G5-Pro,and 3x optical zoom,2
+UVC-G5-Pro,Reliable performance,3
+UVC-G5-Bullet,Next-gen indoor/outdoor 2K HD PoE Camera,0
+UVC-G5-Bullet,Enterprise-grade quality,1
+UVC-G5-Bullet,Easy to deploy and manage,2
+UVC-G5-Bullet,Reliable performance,3
+UVC-G6-INS-W,Plug-and-play,0
+UVC-G6-INS-W,4K WiFi-connected camera with a 1/1,1
+UVC-G6-INS-W,8' 8MP image sensor,2
+UVC-G6-INS-W,Multi-TOPS AI Engine,3
+UVC-AI-Theta-Pro-W,A complete ceiling 360° AI Theta system designed to discreetly provide a panoramic view of large,0
+UVC-AI-Theta-Pro-W,busy spaces,1
+UVC-AI-Theta-Pro-W,Easy to deploy and manage,2
+UVC-AI-Theta-Pro-W,Reliable performance,3
+UVC-G5-Flex,easy-to-deploy 2K HD PoE camera that can be staged indoors or outside,0
+UVC-G5-Flex,Enterprise-grade quality,1
+UVC-G5-Flex,Easy to deploy and manage,2
+UVC-G5-Flex,Reliable performance,3
+UVC-G4-INS,WiFi-connected camera with two-way audio,0
+UVC-G4-INS,Enterprise-grade quality,1
+UVC-G4-INS,Easy to deploy and manage,2
+UVC-G4-INS,Reliable performance,3
+UVC-AI-Theta-Audio,Two-way audio module that connects to an AI Theta Hub,0
+UVC-AI-Theta-Audio,Enterprise-grade quality,1
+UVC-AI-Theta-Audio,Easy to deploy and manage,2
+UVC-AI-Theta-Audio,Reliable performance,3
+UVC-AI-Theta-ProLens50,Long-distance lens with enhanced low-light performance and dynamic range that connects to an AI Theta Hub,0
+UVC-AI-Theta-ProLens50,Enterprise-grade quality,1
+UVC-AI-Theta-ProLens50,Easy to deploy and manage,2
+UVC-AI-Theta-ProLens50,Reliable performance,3
+UVC-G6-PTZ-B/W,All-weather,0
+UVC-G6-PTZ-B/W,4K dual-lens camera with 10x hybrid zoom,1
+UVC-G6-PTZ-B/W,8' 8MP image sensor,2
+UVC-G6-PTZ-B/W,Multi-TOPS AI Engine,3
+UVC-AI-PTZ-B/W,Industrial-grade 4K PoE++ PTZ camera with enhanced AI capabilities,0
+UVC-AI-PTZ-B/W,22x optical zoom,1
+UVC-AI-PTZ-B/W,and long-range adaptive IR LED night vision,2
+UVC-AI-PTZ-B/W,Reliable performance,3
+UVC-AI-PTZ-Precision-B/W,Industrial-grade 4K PTZ camera with enhanced AI capabilities,0
+UVC-AI-PTZ-Precision-B/W,31× optical zoom,1
+UVC-AI-PTZ-Precision-B/W,adaptive IR LED night vision,2
+UVC-AI-PTZ-Precision-B/W,and LiDAR technology for faster autofocus,3
+UVC-G5-PTZ-B/W,all-weather camera with ultra-low latency pan-tilt-zoom control and versatile mounting options,0
+UVC-G5-PTZ-B/W,Enterprise-grade quality,1
+UVC-G5-PTZ-B/W,Easy to deploy and manage,2
+UVC-G5-PTZ-B/W,Reliable performance,3
+UVC-4-Doorbell-Pro-PoE-Kit-B/W,Premium UniFi doorbell with integrated PoE and included PoE chime for plug-and-play installation,0
+UVC-4-Doorbell-Pro-PoE-Kit-B/W,Enterprise-grade quality,1
+UVC-4-Doorbell-Pro-PoE-Kit-B/W,Easy to deploy and manage,2
+UVC-4-Doorbell-Pro-PoE-Kit-B/W,Reliable performance,3
+UVC-4-Doorbell-Pro-B/W,Premium UniFi doorbell with an enhanced package detection camera and integrated display,0
+UVC-4-Doorbell-Pro-B/W,Enterprise-grade quality,1
+UVC-4-Doorbell-Pro-B/W,Easy to deploy and manage,2
+UVC-4-Doorbell-Pro-B/W,Reliable performance,3
+UVC-Doorbell-B/W,Compact PoE video doorbell with two-way audio and versatile mounting options,0
+UVC-Doorbell-B/W,Enterprise-grade quality,1
+UVC-Doorbell-B/W,Easy to deploy and manage,2
+UVC-Doorbell-B/W,Reliable performance,3
+UVC-Chime-PoE,PoE plug-and-play notification device,0
+UVC-Chime-PoE,designed to pair with a UniFi doorbell or door access hub,1
+UVC-Chime-PoE,Easy to deploy and manage,2
+UVC-Chime-PoE,Reliable performance,3
+UVC-Chime,Plug-in chime designed to pair with a UniFi doorbell,0
+UVC-Chime,Enterprise-grade quality,1
+UVC-Chime,Easy to deploy and manage,2
+UVC-Chime,Reliable performance,3
+USL-Gateway,Proprietary super long-range,0
+USL-Gateway,low-latency wireless gateway for UniFi Protect Sensors,1
+USL-Gateway,Easy to deploy and manage,2
+USL-Gateway,Reliable performance,3
+USL-Entry,High-performance networking solution,0
+USL-Entry,Enterprise-grade reliability,1
+USL-Entry,Easy management and monitoring,2
+USL-Entry,Scalable architecture,3
+USL-Motion,SuperLink motion sensor designed for versatile installation,0
+USL-Motion,delivering up to 6 years of battery life,1
+USL-Motion,Easy to deploy and manage,2
+USL-Motion,Reliable performance,3
+USL-Siren,All-weather SuperLink siren delivering 110 dB alarm and emergency LED lighting powered using battery or DC input,0
+USL-Siren,Enterprise-grade quality,1
+USL-Siren,Easy to deploy and manage,2
+USL-Siren,Reliable performance,3
+USL-Siren-PoE,All-weather siren delivering 110 dB alarm and emergency LED lighting powered using PoE input,0
+USL-Siren-PoE,Enterprise-grade quality,1
+USL-Siren-PoE,Easy to deploy and manage,2
+USL-Siren-PoE,Reliable performance,3
+USL-Environmental,Battery-powered SuperLink sensor that detects water leaks,0
+USL-Environmental,temperature,1
+USL-Environmental,and ambient light,2
+USL-Environmental,Reliable performance,3
+UP-Sense,A battery-powered smart sensor capable of detecting motion,0
+UP-Sense,and environmental changes,1
+UP-Sense,Easy to deploy and manage,2
+UP-Sense,Reliable performance,3
+USL-GlassBreak,Battery-powered SuperLink sensor featuring advanced glass break detection and motion sensing,0
+USL-GlassBreak,Enterprise-grade quality,1
+USL-GlassBreak,Easy to deploy and manage,2
+USL-GlassBreak,Reliable performance,3
+UACC-USL-ANT-HG,omnidirectional antenna with an IP67-rated outdoor enclosure,0
+UACC-USL-ANT-HG,built to extend SuperLink range in all weather conditions,1
+UACC-USL-ANT-HG,Easy to deploy and manage,2
+UACC-USL-ANT-HG,Reliable performance,3
+UP-AI-Horn-Speaker-B/W,All-weather PoE 120 dB horn speaker with advanced AI alert functionality and versatile wall,0
+UP-AI-Horn-Speaker-B/W,and pole mounting options,1
+UP-AI-Horn-Speaker-B/W,Easy to deploy and manage,2
+UP-AI-Horn-Speaker-B/W,Reliable performance,3
+UP-FloodLight,motion-triggered light,0
+UP-FloodLight,Enterprise-grade quality,1
+UP-FloodLight,Easy to deploy and manage,2
+UP-FloodLight,Reliable performance,3
+UACC-Adapter-PoE-USBC,Versatile adapter that provides power and connectivity to USB-C devices,0
+UACC-Adapter-PoE-USBC,including compatible Protect WiFi cameras,1
+UACC-Adapter-PoE-USBC,Easy to deploy and manage,2
+UACC-Adapter-PoE-USBC,Reliable performance,3
+UACC-Camera-CJB-B/W,Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability,0
+UACC-Camera-CJB-B/W,and ease of maintenance,1
+UACC-Camera-CJB-B/W,Easy to deploy and manage,2
+UACC-Camera-CJB-B/W,Reliable performance,3
+UACC-Camera-CJB-B/W,Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability,0
+UACC-Camera-CJB-B/W,and ease of maintenance,1
+UACC-Camera-CJB-B/W,Easy to deploy and manage,2
+UACC-Camera-CJB-B/W,Reliable performance,3
+UACC-Camera-JB-B/W,Tamper-resistant junction box for UniFi Bullet,0
+UACC-Camera-JB-B/W,and Turret cameras that enhances mounting durability,1
+UACC-Camera-JB-B/W,and ease of maintenance,2
+UACC-Camera-JB-B/W,Reliable performance,3
+UACC-AI-JB-B/W,Tamper-resistant junction box for the AI 360 that enhances mounting durability and ease of maintenance,0
+UACC-AI-JB-B/W,Enterprise-grade quality,1
+UACC-AI-JB-B/W,Easy to deploy and manage,2
+UACC-AI-JB-B/W,Reliable performance,3
+UACC-G4-Dome-Arm-Mount,Arm mount accessory that attaches the G4 or G5 Dome camera to a wall,0
+UACC-G4-Dome-Arm-Mount,Enterprise-grade quality,1
+UACC-G4-Dome-Arm-Mount,Easy to deploy and manage,2
+UACC-G4-Dome-Arm-Mount,Reliable performance,3
+UACC-Camera-AM-B,Arm mount accessory that attaches the UniFi Turret cameras to a wall,0
+UACC-Camera-AM-B,Enterprise-grade quality,1
+UACC-Camera-AM-B,Easy to deploy and manage,2
+UACC-Camera-AM-B,Reliable performance,3
+UACC-Bullet-AB-B,Bullet camera mounting accessory that enhances tilt angle by 22° to achieve an unrestricted viewing angle,0
+UACC-Bullet-AB-B,Enterprise-grade quality,1
+UACC-Bullet-AB-B,Easy to deploy and manage,2
+UACC-Bullet-AB-B,Reliable performance,3
+UACC-Pro-Bullet-Enhancer-B/W,Long-range IR LED,0
+UACC-Pro-Bullet-Enhancer-B/W,and radar detection accessory for the G6 Pro Bullet and AI Pro,1
+UACC-Pro-Bullet-Enhancer-B/W,Easy to deploy and manage,2
+UACC-Pro-Bullet-Enhancer-B/W,Reliable performance,3
+UACC-AI-Pro-Enhancer-B/W,Long-range IR LED,0
+UACC-AI-Pro-Enhancer-B/W,and radar detection accessory for the AI Pro,1
+UACC-AI-Pro-Enhancer-B/W,Easy to deploy and manage,2
+UACC-AI-Pro-Enhancer-B/W,Reliable performance,3
+UACC-G5-Enhancer,Long-range IR LED and floodlight accessory for the G5 Pro,0
+UACC-G5-Enhancer,Enterprise-grade quality,1
+UACC-G5-Enhancer,Easy to deploy and manage,2
+UACC-G5-Enhancer,Reliable performance,3
+UVC-G4-IRExtender,Long-range IR LED accessory for the G4 Bullet,0
+UVC-G4-IRExtender,Enterprise-grade quality,1
+UVC-G4-IRExtender,Easy to deploy and manage,2
+UVC-G4-IRExtender,Reliable performance,3
+UACC-Camera-DM-B/W,Tamper-resistant,0
+UACC-Camera-DM-B/W,back-to-back mount for two UniFi Bullet,1
+UACC-Camera-DM-B/W,or Turret cameras that supports flat surface installation and attachment to 1 1/2' NPS threaded conduit,2
+UACC-Camera-DM-B/W,Reliable performance,3
+UACC-GB-Plate-B/W,A mounting plate designed to interface UniFi Protect cameras with multiple types of Gang Boxes and Junction Boxes,0
+UACC-GB-Plate-B/W,Enterprise-grade quality,1
+UACC-GB-Plate-B/W,Easy to deploy and manage,2
+UACC-GB-Plate-B/W,Reliable performance,3
+UACC-Dome-FM-B/W,Dome camera mounting accessory for recessed installation into a wall or ceiling,0
+UACC-Dome-FM-B/W,Enterprise-grade quality,1
+UACC-Dome-FM-B/W,Easy to deploy and manage,2
+UACC-Dome-FM-B/W,Reliable performance,3
+UACC-G6-Pro-360-FM-B/W,G6 Pro 360 camera mounting accessory for recessed installation into a wall or ceiling,0
+UACC-G6-Pro-360-FM-B/W,Enterprise-grade quality,1
+UACC-G6-Pro-360-FM-B/W,Easy to deploy and manage,2
+UACC-G6-Pro-360-FM-B/W,Reliable performance,3
+UACC-G6-Dome-FM-B/W,G6/G6 Pro Dome camera mounting accessory for recessed installation into a wall or ceiling,0
+UACC-G6-Dome-FM-B/W,Enterprise-grade quality,1
+UACC-G6-Dome-FM-B/W,Easy to deploy and manage,2
+UACC-G6-Dome-FM-B/W,Reliable performance,3
+UACC-G6-Dome-FMS-B/W,G6 Dome camera mounting accessory for recessed installation into a wall or ceiling,0
+UACC-G6-Dome-FMS-B/W,Enterprise-grade quality,1
+UACC-G6-Dome-FMS-B/W,Easy to deploy and manage,2
+UACC-G6-Dome-FMS-B/W,Reliable performance,3
+UACC-G5-Dome-Ultra-FM-B/W,Dome camera mounting accessory for recessed installation into a wall or ceiling,0
+UACC-G5-Dome-Ultra-FM-B/W,Enterprise-grade quality,1
+UACC-G5-Dome-Ultra-FM-B/W,Easy to deploy and manage,2
+UACC-G5-Dome-Ultra-FM-B/W,Reliable performance,3
+UACC-G5-Dome-Ultra-FM-SB-B/W,Dome camera mounting accessory for recessed installation into a wall or ceiling with a smoked bubble for enhanced discretion,0
+UACC-G5-Dome-Ultra-FM-SB-B/W,Enterprise-grade quality,1
+UACC-G5-Dome-Ultra-FM-SB-B/W,Easy to deploy and manage,2
+UACC-G5-Dome-Ultra-FM-SB-B/W,Reliable performance,3
+UACC-G6-Dome-WS-B/W,G6 Dome camera accessory for optimal image quality and protection from the elements when installed outdoors on a wall or pole,0
+UACC-G6-Dome-WS-B/W,Enterprise-grade quality,1
+UACC-G6-Dome-WS-B/W,Easy to deploy and manage,2
+UACC-G6-Dome-WS-B/W,Reliable performance,3
+UACC-Dome-WS-B/W,Dome camera accessory for optimal image quality and protection from the elements when installed outdoors on a wall or pole,0
+UACC-Dome-WS-B/W,Enterprise-grade quality,1
+UACC-Dome-WS-B/W,Easy to deploy and manage,2
+UACC-Dome-WS-B/W,Reliable performance,3
+UACC-G6-180-FM-B/W,G6 180 camera mounting accessory for recessed ceiling installation,0
+UACC-G6-180-FM-B/W,Enterprise-grade quality,1
+UACC-G6-180-FM-B/W,Easy to deploy and manage,2
+UACC-G6-180-FM-B/W,Reliable performance,3
+UACC-G6-180-PM-B/W,Pendant mount for suspending the G6 180 Camera from ceilings or overhead structures,0
+UACC-G6-180-PM-B/W,Enterprise-grade quality,1
+UACC-G6-180-PM-B/W,Easy to deploy and manage,2
+UACC-G6-180-PM-B/W,Reliable performance,3
+UACC-G5-PTZ-CM-B/W,Corner mount accessory for G6/G5 PTZ,0
+UACC-G5-PTZ-CM-B/W,Enterprise-grade quality,1
+UACC-G5-PTZ-CM-B/W,Easy to deploy and manage,2
+UACC-G5-PTZ-CM-B/W,Reliable performance,3
+UACC-G5-PTZ-PM-B/W,Pendant mount accessory for G6/G5 PTZ,0
+UACC-G5-PTZ-PM-B/W,Enterprise-grade quality,1
+UACC-G5-PTZ-PM-B/W,Easy to deploy and manage,2
+UACC-G5-PTZ-PM-B/W,Reliable performance,3
+UACC-G5-PTZ-SM-B/W,Ceiling surface mount accessory for G5 PTZ,0
+UACC-G5-PTZ-SM-B/W,Enterprise-grade quality,1
+UACC-G5-PTZ-SM-B/W,Easy to deploy and manage,2
+UACC-G5-PTZ-SM-B/W,Reliable performance,3
+UACC-G5-PTZ-ICM-SB-B/W,In-ceiling mount accessory or smoked bubble cover for G5 PTZ,0
+UACC-G5-PTZ-ICM-SB-B/W,Enterprise-grade quality,1
+UACC-G5-PTZ-ICM-SB-B/W,Easy to deploy and manage,2
+UACC-G5-PTZ-ICM-SB-B/W,Reliable performance,3
+UACC-G6-PTZ-ICM-B/W,In-ceiling mount accessory for G6 PTZ,0
+UACC-G6-PTZ-ICM-B/W,Enterprise-grade quality,1
+UACC-G6-PTZ-ICM-B/W,Easy to deploy and manage,2
+UACC-G6-PTZ-ICM-B/W,Reliable performance,3
+UACC-G5-PTZ-CA-B/W,3/4' conduit adapter for wall-mounted G6/G5 PTZ installations,0
+UACC-G5-PTZ-CA-B/W,Enterprise-grade quality,1
+UACC-G5-PTZ-CA-B/W,Easy to deploy and manage,2
+UACC-G5-PTZ-CA-B/W,Reliable performance,3
+UACC-Flex-Cam-PWM-B/W,Versatile weatherproof wall or pole mount for G3 and G5 Flex cameras,0
+UACC-Flex-Cam-PWM-B/W,Enterprise-grade quality,1
+UACC-Flex-Cam-PWM-B/W,Easy to deploy and manage,2
+UACC-Flex-Cam-PWM-B/W,Reliable performance,3
+UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,flat or angled mounting plate for installing the G4 Doorbell Pro PoE over a standard single-gang box,0
+UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Enterprise-grade quality,1
+UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Easy to deploy and manage,2
+UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Reliable performance,3
+UACC-G4-DBP-Cable-USB-7M,Sever-meter USB cable that connects a G4 Doorbell Pro to a PoE source,0
+UACC-G4-DBP-Cable-USB-7M,Enterprise-grade quality,1
+UACC-G4-DBP-Cable-USB-7M,Easy to deploy and manage,2
+UACC-G4-DBP-Cable-USB-7M,Reliable performance,3
+UACC-G4-INS-Cable-USB-4.5M,Four-and-a-half-meter USB cable that connects a Camera G4/G6 Instant to a PoE source,0
+UACC-G4-INS-Cable-USB-4.5M,Enterprise-grade quality,1
+UACC-G4-INS-Cable-USB-4.5M,Easy to deploy and manage,2
+UACC-G4-INS-Cable-USB-4.5M,Reliable performance,3
+UACC-G4-INS-Cover-DG/G/LG,Custom cover for the G4 Instant camera available in multiple colors,0
+UACC-G4-INS-Cover-DG/G/LG,Enterprise-grade quality,1
+UACC-G4-INS-Cover-DG/G/LG,Easy to deploy and manage,2
+UACC-G4-INS-Cover-DG/G/LG,Reliable performance,3
+UACC-AI-Theta-Audio-Cable-1M,Replacement cable that connects AI Theta Audio to an AI Theta Hub,0
+UACC-AI-Theta-Audio-Cable-1M,Enterprise-grade quality,1
+UACC-AI-Theta-Audio-Cable-1M,Easy to deploy and manage,2
+UACC-AI-Theta-Audio-Cable-1M,Reliable performance,3
+UACC-AI-Theta-Audio-Cable-Ext-10M,Ten-meter audio cable to extend AI Theta Lenses,0
+UACC-AI-Theta-Audio-Cable-Ext-10M,Enterprise-grade quality,1
+UACC-AI-Theta-Audio-Cable-Ext-10M,Easy to deploy and manage,2
+UACC-AI-Theta-Audio-Cable-Ext-10M,Reliable performance,3
+efg,25F cloud gateways with 500+ UniFi Device,0
+efg,5000+ client support,1
+efg,12.5gbps ips routing,2
+efg,complete high availability,3
+udm-pro-max,10G cloud gateway with 200+ UniFi Device,0
+udm-pro-max,2000+ client support,1
+udm-pro-max,5 Gbps IPS routing,2
+udm-pro-max,Redundant NVR storage,3
+udm-pro,10G Cloud Gateway with 100+ UniFi device,0
+udm-pro,"1,000+ client support",1
+udm-pro,3.5 Gbps IPS routing,2
+udm-pro,Professional networking solution,3
+udm-se,25F cloud gateways with 500+ UniFi Device,0
+udm-se,5000+ client support,1
+udm-se,12.5gbps ips routing,2
+udm-se,complete high availability,3
+ucg-fiber,Desktop 10G Cloud Gateway with integrated 4-port 2,0
+ucg-fiber,5 GbE switch,1
+ucg-fiber,selectable NVR storage,2
+ucg-fiber,and full UniFi application support,3
+ucg-max,5G Cloud Gateway with 30+ UniFi device / 300+ client support,0
+ucg-max,3 Gbps IPS routing,1
+ucg-max,and selectable NVR storage,2
+ucg-max,Reliable performance,3
+ucg-ultra,Compact CLoud Gateway with 30+ UniFi device / 300+ client support,0
+ucg-ultra,1 Gbps IPS routing,1
+ucg-ultra,and multi-WAN load balancing,2
+ucg-ultra,Reliable performance,3
+udr-7,Desktop 10G Cloud Gateway with integrated WiFi 7,0
+udr-7,microSD storage,1
+udr-7,and full UniFi application support,2
+udr-7,Reliable performance,3
+ux-7,High-performance networking solution,0
+ux-7,Enterprise-grade reliability,1
+ux-7,Easy management and monitoring,2
+ux-7,Scalable architecture,3
+udr-5g-max,Desktop Cloud Gateway with full-performance 5G up to 3,0
+udr-5g-max,5 GbE switch with (1) PoE port,1
+udr-5g-max,and SD card storage,2
+udr-5g-max,Reliable performance,3
+UDW,Wall-mounted 10G Cloud Gateway with integrated WiFi 6,0
+UDW,high-power PoE switching,1
+UDW,and full Unifi application support,2
+UDW,Reliable performance,3
+UVC-G6-Pro-Entry,An intelligent door entry system with native UniFi Protect and UniFi Access integration with a 12MP camera,0
+UVC-G6-Pro-Entry,two-way audio,1
+UVC-G6-Pro-Entry,and a 3' touch display,2
+UVC-G6-Pro-Entry,Reliable performance,3
+UVC-G6-Entry,High-performance networking solution,0
+UVC-G6-Entry,Enterprise-grade reliability,1
+UVC-G6-Entry,Easy management and monitoring,2
+UVC-G6-Entry,Scalable architecture,3
+UA-G3-Pro-B/W,Third-generation,0
+UA-G3-Pro-B/W,indoor/outdoor NFC reader and intercom with Touch Pass support,1
+UA-G3-Pro-B/W,Easy to deploy and manage,2
+UA-G3-Pro-B/W,Reliable performance,3
+UA-G2-Pro-B/W,Second generation,0
+UA-G2-Pro-B/W,indoor/outdoor NFC reader and intercom,1
+UA-G2-Pro-B/W,Easy to deploy and manage,2
+UA-G2-Pro-B/W,Reliable performance,3
+UA-G3-Flex-B/W,Third-generation NFC card reader with a keypad and Touch Pass support,0
+UA-G3-Flex-B/W,Enterprise-grade quality,1
+UA-G3-Flex-B/W,Easy to deploy and manage,2
+UA-G3-Flex-B/W,Reliable performance,3
+UA-G3-B/W,Compact third-generation access with Tpuch Pass support,0
+UA-G3-B/W,Enterprise-grade quality,1
+UA-G3-B/W,Easy to deploy and manage,2
+UA-G3-B/W,Reliable performance,3
+UA-G2-B/W,Compact second-generation access reader,0
+UA-G2-B/W,Enterprise-grade quality,1
+UA-G2-B/W,Easy to deploy and manage,2
+UA-G2-B/W,Reliable performance,3
+UA-Retrofit-Reader-B/W,Indoor/outdoor OSDP reader with NFC Card and Touch Pass support,0
+UA-Retrofit-Reader-B/W,compatible with the UniFi Retrofit Hub using existing cabling,1
+UA-Retrofit-Reader-B/W,Easy to deploy and manage,2
+UA-Retrofit-Reader-B/W,Reliable performance,3
+UA-G3-Intercom,Indoor/outdoor intercom terminal for managing residential and commercial building entry requests with Touch Pass support,0
+UA-G3-Intercom,Enterprise-grade quality,1
+UA-G3-Intercom,Easy to deploy and manage,2
+UA-G3-Intercom,Reliable performance,3
+UA-G2-Intercom,Indoor/outdoor intercom terminal for managing residential and commercial building entry requests,0
+UA-G2-Intercom,Enterprise-grade quality,1
+UA-G2-Intercom,Easy to deploy and manage,2
+UA-G2-Intercom,Reliable performance,3
+UA-Ultra,An access reader with a built-in hub for complete,0
+UA-Ultra,single-door entry control from one device,1
+UA-Ultra,Easy to deploy and manage,2
+UA-Ultra,Reliable performance,3
+UA-G3-Intercom,Indoor/outdoor intercom terminal for managing residential and commercial building entry requests with Touch Pass support,0
+UA-G3-Intercom,Enterprise-grade quality,1
+UA-G3-Intercom,Easy to deploy and manage,2
+UA-G3-Intercom,Reliable performance,3
+UA-G2-Intercom,Indoor/outdoor intercom terminal for managing residential and commercial building entry requests,0
+UA-G2-Intercom,Enterprise-grade quality,1
+UA-G2-Intercom,Easy to deploy and manage,2
+UA-G2-Intercom,Reliable performance,3
+UA-G2-Intercom,Indoor/outdoor intercom terminal for managing residential and commercial building entry requests,0
+UA-G2-Intercom,Enterprise-grade quality,1
+UA-G2-Intercom,Easy to deploy and manage,2
+UA-G2-Intercom,Reliable performance,3
+UVC-G6-Pro-Entry,An intelligent door entry system with native UniFi Protect and UniFi Access integration with a 12MP camera,0
+UVC-G6-Pro-Entry,two-way audio,1
+UVC-G6-Pro-Entry,and a 3' touch display,2
+UVC-G6-Pro-Entry,Reliable performance,3
+UVC-G6-Entry,An intelligent door entry system with native UniFi Protect and UniFi Access integration,0
+UVC-G6-Entry,Enterprise-grade quality,1
+UVC-G6-Entry,Easy to deploy and manage,2
+UVC-G6-Entry,Reliable performance,3
+EAH-8,Enterprise-grade access hub with entry and exit control up to eight doors and battery backup support,0
+EAH-8,Enterprise-grade quality,1
+EAH-8,Easy to deploy and manage,2
+EAH-8,Reliable performance,3
+UA-Retrofit-Hub-2,DC-powered hub that supports Wiegand and OSDP readers and provides entry and exit control for up to two doors,0
+UA-Retrofit-Hub-2,Enterprise-grade quality,1
+UA-Retrofit-Hub-2,Easy to deploy and manage,2
+UA-Retrofit-Hub-2,Reliable performance,3
+UA-Hub-Door,A single-door mechanism that provides complete entry and exit control via connected Access Readers,0
+UA-Hub-Door,Enterprise-grade quality,1
+UA-Hub-Door,Easy to deploy and manage,2
+UA-Hub-Door,Reliable performance,3
+UA-Hub-Door-Mini,Compact Access Control Hub for a single door,0
+UA-Hub-Door-Mini,Enterprise-grade quality,1
+UA-Hub-Door-Mini,Easy to deploy and manage,2
+UA-Hub-Door-Mini,Reliable performance,3
+UA-Hub-Gate,An advanced Gate Hub enabling seamless gate access control via connected Access readers or Intercom,0
+UA-Hub-Gate,Enterprise-grade quality,1
+UA-Hub-Gate,Easy to deploy and manage,2
+UA-Hub-Gate,Reliable performance,3
+UA-Ultra,An access reader with a built-in hub for complete,0
+UA-Ultra,single-door entry control from one device,1
+UA-Ultra,Easy to deploy and manage,2
+UA-Ultra,Reliable performance,3
+UA-G3-SK-Pro,Starter kit that provides complete entry and exit control fo a single door with two readers and Touch Pass support,0
+UA-G3-SK-Pro,Enterprise-grade quality,1
+UA-G3-SK-Pro,Easy to deploy and manage,2
+UA-G3-SK-Pro,Reliable performance,3
+UA-G2-SK-Pro,Starter kit that provides complete entry and exit control for a single door with two readers,0
+UA-G2-SK-Pro,Enterprise-grade quality,1
+UA-G2-SK-Pro,Easy to deploy and manage,2
+UA-G2-SK-Pro,Reliable performance,3
+UA-G3-SK,all-in-one kit for UniFi Access,0
+UA-G3-SK,designed to manage a single door with one reader,1
+UA-G3-SK,Supports seamless setup and Touch Pass for modern,2
+UA-G3-SK,secure access control,3
+UA-G2-SK,all-in-one kit for UniFi Access,0
+UA-G2-SK,designed to manage a single door with one reader,1
+UA-G2-SK,Supports seamless setup for modern,2
+UA-G2-SK,secure access control,3
+UA-G3-SK-Gate,Starter kit with a Gate Hub,0
+UA-G3-SK-Gate,G3 Intercom,1
+UA-G3-SK-Gate,PoE++ adapter,2
+UA-G3-SK-Gate,and PoE++ over twisted pair extender for access control at a single gate with Touch Pass support,3
+UA-G2-SK-Gate,Control a vehicle gate using the connected Intercom and authorize gate access with License Plate Unlock when paired with a compatible Protect AI camera,0
+UA-G2-SK-Gate,Enterprise-grade quality,1
+UA-G2-SK-Gate,Easy to deploy and manage,2
+UA-G2-SK-Gate,Reliable performance,3
+UA-SK-Elevator,Connects to in-elevator readers with PoE to authorize floor selection,0
+UA-SK-Elevator,Supports up to 18 floors with digital inputs for elevator car status and emergency,1
+UA-SK-Elevator,Easy to deploy and manage,2
+UA-SK-Elevator,Reliable performance,3
+UA-G3-Intercom,Indoor/outdoor intercom terminal for managing residential and commercial building entry request with Touch Pass support,0
+UA-G3-Intercom,Enterprise-grade quality,1
+UA-G3-Intercom,Easy to deploy and manage,2
+UA-G3-Intercom,Reliable performance,3
+UA-G2-Intercom,Indoor/outdoor intercom terminal for managing residential and commercial building entry request,0
+UA-G2-Intercom,Enterprise-grade quality,1
+UA-G2-Intercom,Easy to deploy and manage,2
+UA-G2-Intercom,Reliable performance,3
+UA-Intercom-Viewer,Indoor/outdoor intercom terminal for managing residential and commercial building entry request with Touch Pass support,0
+UA-Intercom-Viewer,Enterprise-grade quality,1
+UA-Intercom-Viewer,Easy to deploy and manage,2
+UA-Intercom-Viewer,Reliable performance,3
+ENVR,3U NVR with (16) 2,0
+ENVR,5' drive bays,1
+ENVR,supporting up to (70) 4K cameras or (210) Full HD cameras,2
+ENVR,Reliable performance,3
+UNVR-pro,A 2U-sized video recorder with (7) 2,0
+UNVR-pro,5 HDD bays that can provide up to 60 days of storage for (24) 4K cameras or (70) Full HD cameras,1
+UNVR-pro,Easy to deploy and manage,2
+UNVR-pro,Reliable performance,3
+UNVR,A video recorder with (4) 2,0
+UNVR,5' HDD bays that can support up to 30 days of storage for (18) 4K cameras or (60) Full HD cameras,1
+UNVR,Easy to deploy and manage,2
+UNVR,Reliable performance,3
+UNVR-Instant,Compact UniFi Protect NVR with 3,0
+UNVR-Instant,5 HDD support,1
+UNVR-Instant,featuring an integrated 6-port PoE switch,2
+UNVR-Instant,integrated HDMI View Port,3
+UNVR-Instant-Kit,Compact UniFi Protect NVR Kit,0
+UNVR-Instant-Kit,includes (1) UniFi Protect NVR Instant with (4) G5 Turret Ultra cameras and (1) 1TB HDD,1
+UNVR-Instant-Kit,delivering an all-in-one solution for fast and effortless setup,2
+UNVR-Instant-Kit,Reliable performance,3
+UA-Card-10-B/W,A pack of highly-secure NFC cards used for access control within UniFi,0
+UA-Card-10-B/W,Enterprise-grade quality,1
+UA-Card-10-B/W,Easy to deploy and manage,2
+UA-Card-10-B/W,Reliable performance,3
+UACC-Retrofit-PoE-2Wire,A pair of extenders that extends PoE over twisted-pair or coaxial cables,0
+UACC-Retrofit-PoE-2Wire,ideal for retrofit scenarios,1
+UACC-Retrofit-PoE-2Wire,Easy to deploy and manage,2
+UACC-Retrofit-PoE-2Wire,Reliable performance,3
+UACC-Reader-JB-B/W,Junction box for UniFi Access Readers and Intercom Viewers that support flat surface mounting and attachment to 3/4' conduit,0
+UACC-Reader-JB-B/W,Enterprise-grade quality,1
+UACC-Reader-JB-B/W,Easy to deploy and manage,2
+UACC-Reader-JB-B/W,Reliable performance,3
+UACC-Reader-Pro-JB-B/W,Junction box for UniFi Professional Access Readers and Doorbells that supports flat surface mounting and attachment to 3/4' conduit,0
+UACC-Reader-Pro-JB-B/W,Enterprise-grade quality,1
+UACC-Reader-Pro-JB-B/W,Easy to deploy and manage,2
+UACC-Reader-Pro-JB-B/W,Reliable performance,3
+UACC-Reader-Pro-AM-B/W,Angled mounting accessory for UniFi Professional Access Readers,0
+UACC-Reader-Pro-AM-B/W,Enterprise-grade quality,1
+UACC-Reader-Pro-AM-B/W,Easy to deploy and manage,2
+UACC-Reader-Pro-AM-B/W,Reliable performance,3
+UACC-Intercom-SAM,UniFI Access Intercom surface angle mount accessory,0
+UACC-Intercom-SAM,Enterprise-grade quality,1
+UACC-Intercom-SAM,Easy to deploy and manage,2
+UACC-Intercom-SAM,Reliable performance,3
+UACC-Intercom-FM,UniFI Access Intercom flush mount accessory,0
+UACC-Intercom-FM,Enterprise-grade quality,1
+UACC-Intercom-FM,Easy to deploy and manage,2
+UACC-Intercom-FM,Reliable performance,3
+UACC-Intercom-Sunshield,UniFI Access Intercom sunshield accessory,0
+UACC-Intercom-Sunshield,Enterprise-grade quality,1
+UACC-Intercom-Sunshield,Easy to deploy and manage,2
+UACC-Intercom-Sunshield,Reliable performance,3
+UACC-Intercom-WM,A pack of highly-secure NFC cards used for access control within UniFi,0
+UACC-Intercom-WM,Enterprise-grade quality,1
+UACC-Intercom-WM,Easy to deploy and manage,2
+UACC-Intercom-WM,Reliable performance,3
+UACC-Intercom-Viewer-TS,Metal table stand for Intercom Viewer,0
+UACC-Intercom-Viewer-TS,Enterprise-grade quality,1
+UACC-Intercom-Viewer-TS,Easy to deploy and manage,2
+UACC-Intercom-Viewer-TS,Reliable performance,3
+UACC-Junction-Utility,An indoor/outdoor enclosure designed for UniFi Access Hubs,0
+UACC-Junction-Utility,and accessories,1
+UACC-Junction-Utility,Easy to deploy and manage,2
+UACC-Junction-Utility,Reliable performance,3
+UACC-Retrofit-PSU-12V,12V power supply with optional SLA backup battery support,0
+UACC-Retrofit-PSU-12V,compatible with the UniFi Retrofit Hub,1
+UACC-Retrofit-PSU-12V,Easy to deploy and manage,2
+UACC-Retrofit-PSU-12V,Reliable performance,3
+UA-Button,Push-to-exit button designed for UniFi Access Hubs,0
+UA-Button,Enterprise-grade quality,1
+UA-Button,Easy to deploy and manage,2
+UA-Button,Reliable performance,3
+UACC-DoorCloser,A mechanical door closer that ensures controlled closure for safety and convenience,0
+UACC-DoorCloser,Enterprise-grade quality,1
+UACC-DoorCloser,Easy to deploy and manage,2
+UACC-DoorCloser,Reliable performance,3
+UACC-PanicBar,A single-latched bar installed on emergency exit doors,0
+UACC-PanicBar,allowing quick and easy egress by pushing the bar to open the door during emergencies,1
+UACC-PanicBar,Easy to deploy and manage,2
+UACC-PanicBar,Reliable performance,3
+UA-Lock-Magnetic-270kg,Fail-safe magnetic lock for inswing and outswing doors that connects to a UniFI Access Hub,0
+UA-Lock-Magnetic-270kg,Enterprise-grade quality,1
+UA-Lock-Magnetic-270kg,Easy to deploy and manage,2
+UA-Lock-Magnetic-270kg,Reliable performance,3
+UACC-Lock-Strike-Secure-15mm,Fail-secure electric strike lock that connects to a UniFi Access Hub,0
+UACC-Lock-Strike-Secure-15mm,Enterprise-grade quality,1
+UACC-Lock-Strike-Secure-15mm,Easy to deploy and manage,2
+UACC-Lock-Strike-Secure-15mm,Reliable performance,3
+UACC-Lock-Strike-Safe-15mm,Fail-Safe electric strike lock that connects to a UniFi Access Hub,0
+UACC-Lock-Strike-Safe-15mm,Enterprise-grade quality,1
+UACC-Lock-Strike-Safe-15mm,Easy to deploy and manage,2
+UACC-Lock-Strike-Safe-15mm,Reliable performance,3
+UACC-Cable-DoorLockRelay-1P,A 500-foot (152,0
+UACC-Cable-DoorLockRelay-1P,4m) spool of one or two pair,1
+UACC-Cable-DoorLockRelay-1P,low voltage cable,2
+UACC-Cable-DoorLockRelay-1P,Reliable performance,3
+UACC-Cable-DoorLockRelay-2P,A 500-foot (152,0
+UACC-Cable-DoorLockRelay-2P,4m) spool of one or two pair,1
+UACC-Cable-DoorLockRelay-2P,low voltage cable,2
+UACC-Cable-DoorLockRelay-2P,Reliable performance,3
+UA-Pocket,A pack of (10) highly-secure NFC keyfobs used for access control within UniFi,0
+UA-Pocket,Enterprise-grade quality,1
+UA-Pocket,Easy to deploy and manage,2
+UA-Pocket,Reliable performance,3
+UA-Rescue,Keyed emergency override for your Access Hub,0
+UA-Rescue,Enterprise-grade quality,1
+UA-Rescue,Easy to deploy and manage,2
+UA-Rescue,Reliable performance,3
+UNAS-Pro-8,2U rack-mount NAS with (8) 2,0
+UNAS-Pro-8,5' HDD bays and (2) M,1
+UNAS-Pro-8,2 NVMe SSD cache slots,2
+UNAS-Pro-8,delivering faster access,3
+UNAS-Pro-4,Professional UNAS Pro 4,0
+UNAS-Pro-4,Enterprise-grade quality,1
+UNAS-Pro-4,Easy to deploy and manage,2
+UNAS-Pro-4,Reliable performance,3
+UNAS-Pro,2U rack-mount NAS with (7) 2,0
+UNAS-Pro,5' drive bays and 10 Gbps performance designed for large-scale file storage and sharing,1
+UNAS-Pro,Easy to deploy and manage,2
+UNAS-Pro,Reliable performance,3
+UNAS-2-B/W,UniFi Network Attached Storage with (2) 3,0
+UNAS-2-B/W,5' HDD bays,1
+UNAS-2-B/W,5 GbE networking,2
+UNAS-2-B/W,USB-C connectivity,3
+UNAS-4-B/W,UniFi Network Attached Storage with (4) 2,0
+UNAS-4-B/W,5' HDD bays,1
+UNAS-4-B/W,2 NVMe SSD cache slots,2
+UNAS-4-B/W,5 GbE networking,3
+UPS-2U,UniFi managed 1,0
+UPS-2U,44kVA rackmount uninterruptible power supply with 4 backup outlets,1
+UPS-2U,4 surge outlets,2
+UPS-2U,and a field replaceable battery,3
+UPS-Tower,High-performance networking solution,0
+UPS-Tower,Enterprise-grade reliability,1
+UPS-Tower,Easy management and monitoring,2
+UPS-Tower,Scalable architecture,3
+USW-Mission-Critical(120W),A switch with an integrated 368Wh lithium-ion battery capable of providing uninterruptible PoE to 8 devices,0
+USW-Mission-Critical(120W),Enterprise-grade quality,1
+USW-Mission-Critical(120W),Easy to deploy and manage,2
+USW-Mission-Critical(120W),Reliable performance,3
+USP-RPS,950W redundant power supply for rack-mounted UniFi devices,0
+USP-RPS,Enterprise-grade quality,1
+USP-RPS,Easy to deploy and manage,2
+USP-RPS,Reliable performance,3
+USP-PDU-Pro,Designed to supply power to an entire rack-mounted UniFi system and remotely manage each connection,0
+USP-PDU-Pro,Enterprise-grade quality,1
+USP-PDU-Pro,Easy to deploy and manage,2
+USP-PDU-Pro,Reliable performance,3
+USP-PDU-HD,Designed to supply power to an entire rack-mounted UniFi system and remotely manage each connection,0
+USP-PDU-HD,Enterprise-grade quality,1
+USP-PDU-HD,Easy to deploy and manage,2
+USP-PDU-HD,Reliable performance,3
+U5G-Max,A high-performance 5G (3,0
+U5G-Max,4 Gbps) modem for any UniFi deployment,1
+U5G-Max,Instantly adopt through any UniFi PoE port,2
+U5G-Max,it delivers automatic setup,3
+U5G-Max-Outdoor,High-performance networking solution,0
+U5G-Max-Outdoor,Enterprise-grade reliability,1
+U5G-Max-Outdoor,Easy management and monitoring,2
+U5G-Max-Outdoor,Scalable architecture,3
+UMR-Industrial,and carrier unlocked LTE Cat 4 mobile WiFi router designed for indoor/outdoor IoT applications,0
+UMR-Industrial,Enterprise-grade quality,1
+UMR-Industrial,Easy to deploy and manage,2
+UMR-Industrial,Reliable performance,3
+UMR-Ultra,Ultra-compact managed LTE mobile router for IoT applications with integrated LTE,0
+UMR-Ultra,automatic failover,1
+UMR-Ultra,and DC power input support,2
+UMR-Ultra,Reliable performance,3
+UMR,Managed mobile WiFi router that brings plug-and-play connectivity to any environment,0
+UMR,Use the pre-installed AT&T nano-SIM with three data plan options for LTE data,1
+UMR,or bring your own AT&T nano-SIM,2
+UMR,Reliable performance,3
+U-LTE,Seamless internet failover for UniFi gateways,0
+U-LTE,Includes an AT&T SIM and data plan for plug-and-play deployment,1
+U-LTE,Easy to deploy and manage,2
+U-LTE,Reliable performance,3
+U-LTE-Backup Pro,Seamless internet failover for UniFi gateways,0
+U-LTE-Backup Pro,Bring your own AT&T nano-SIM for LTE data,1
+U-LTE-Backup Pro,Easy to deploy and manage,2
+U-LTE-Backup Pro,Reliable performance,3
+UTP-G3-Touch-Enterprise,Next-generation premium desktop smartphone for UniFi Talk,0
+UTP-G3-Touch-Enterprise,featuring a 7' touch display and seamless integration with UniFi applications,1
+UTP-G3-Touch-Enterprise,Easy to deploy and manage,2
+UTP-G3-Touch-Enterprise,Reliable performance,3
+UTP-G3-Touch-Pro,Next-generation desktop smartphone for UniFi Talk,0
+UTP-G3-Touch-Pro,featuring a 5' touch display and seamless integration with UniFi applications,1
+UTP-G3-Touch-Pro,Easy to deploy and manage,2
+UTP-G3-Touch-Pro,Reliable performance,3
+UTP-G3-Touch-Wall,Next-generation wall-mountable smartphone for UniFi Talk,0
+UTP-G3-Touch-Wall,featuring a 7' touch display and seamless integration with UniFi applications,1
+UTP-G3-Touch-Wall,Easy to deploy and manage,2
+UTP-G3-Touch-Wall,Reliable performance,3
+UTP-TouchMax-B/W,High-performance networking solution,0
+UTP-TouchMax-B/W,Enterprise-grade reliability,1
+UTP-TouchMax-B/W,Easy management and monitoring,2
+UTP-TouchMax-B/W,Scalable architecture,3
+UTP-Touch-B/W,Versatile desktop smartphone that eliminates the learning curve,0
+UTP-Touch-B/W,Enterprise-grade quality,1
+UTP-Touch-B/W,Easy to deploy and manage,2
+UTP-Touch-B/W,Reliable performance,3
+UT-G3-Handset,Wireless handset which supports clear,0
+UT-G3-Handset,high-quality audio for G3 Touch Phones,1
+UT-G3-Handset,Easy to deploy and manage,2
+UT-G3-Handset,Reliable performance,3
+UT-ATA,Easy-to-deploy adapter for managing analog telephones and fax machines with UniFi Talk,0
+UT-ATA,Enterprise-grade quality,1
+UT-ATA,Easy to deploy and manage,2
+UT-ATA,Reliable performance,3
+UC-EV-Station-Pro,Weatherproof,0
+UC-EV-Station-Pro,11 kW Level 2 electric vehicle charging station with an ultra-bright 10,1
+UC-EV-Station-Pro,1' touch display,2
+UC-EV-Station-Pro,flexible access control,3
+UC-EV-Station-Lite,High-performance networking solution,0
+UC-EV-Station-Lite,Enterprise-grade reliability,1
+UC-EV-Station-Lite,Easy management and monitoring,2
+UC-EV-Station-Lite,Scalable architecture,3
+UPL-Amp-B/W,Premium speaker amplifier designed for high-fidelity multi-zone audio streaming and immersive spatial sound experiences,0
+UPL-Amp-B/W,Enterprise-grade quality,1
+UPL-Amp-B/W,Easy to deploy and manage,2
+UPL-Amp-B/W,Reliable performance,3
+UPL-Port-B/W,A digital audio streamer with an ultra-compact,0
+UPL-Port-B/W,versatile design and an intuitive control system,1
+UPL-Port-B/W,supporting multiple music streaming services and scalable multi-zone installations,2
+UPL-Port-B/W,Reliable performance,3
+UC-Cast-Pro,Managed digital signage player for HMI display with media content playback,0
+UC-Cast-Pro,and USB-C peripheral support,1
+UC-Cast-Pro,Easy to deploy and manage,2
+UC-Cast-Pro,Reliable performance,3
+UC-Cast-Lite,Digital signage player designed for media playback on HDMI displays,0
+UC-Cast-Lite,Enterprise-grade quality,1
+UC-Cast-Lite,Easy to deploy and manage,2
+UC-Cast-Lite,Reliable performance,3
+ECS-Aggregation,8 Tbps high-density 100G/25G Layer 3 Etherlighting™ aggregation switch with MC-LAG support for high availability system design,0
+ECS-Aggregation,Enterprise-grade quality,1
+ECS-Aggregation,Easy to deploy and manage,2
+ECS-Aggregation,Reliable performance,3
+USW-Pro-XG-Aggregation,High-performance networking solution,0
+USW-Pro-XG-Aggregation,Enterprise-grade reliability,1
+USW-Pro-XG-Aggregation,Easy management and monitoring,2
+USW-Pro-XG-Aggregation,Scalable architecture,3
+USW-Pro-Aggregation,Layer 3 switch made for high-capacity 10G SFP+ and 25G SFP28 connections,0
+USW-Pro-Aggregation,Enterprise-grade quality,1
+USW-Pro-Aggregation,Easy to deploy and manage,2
+USW-Pro-Aggregation,Reliable performance,3
+USW-Aggregation,Layer 2 switch made for 10G SFP+ connections,0
+USW-Aggregation,Enterprise-grade quality,1
+USW-Aggregation,Easy to deploy and manage,2
+USW-Aggregation,Reliable performance,3
+ECS-48-PoE(2150W),Enterprise-grade 48-port,0
+ECS-48-PoE(2150W),Layer 3 Etherlighting™ PoE+++ switch with high-capacity 10 GbE RJ45 and 25G SFP28 connections for high availability system design,1
+ECS-48-PoE(2150W),Easy to deploy and manage,2
+ECS-48-PoE(2150W),Reliable performance,3
+ECS-24-PoE(1050W),High-performance networking solution,0
+ECS-24-PoE(1050W),Enterprise-grade reliability,1
+ECS-24-PoE(1050W),Easy management and monitoring,2
+ECS-24-PoE(1050W),Scalable architecture,3
+ECS-48S-PoE(2150W),Enterprise-grade 48-port,0
+ECS-48S-PoE(2150W),Layer 3 Etherlighting™ PoE+++ switch with Stacking support and high-capacity 10 GbE RJ45 and 25G SFP28 connections for high availability system design,1
+ECS-48S-PoE(2150W),Easy to deploy and manage,2
+ECS-48S-PoE(2150W),Reliable performance,3
+ECS-24S-PoE(1050W),Enterprise-grade 24-port,0
+ECS-24S-PoE(1050W),Layer 3 Etherlighting™ PoE+++ switch with Stacking support and high-capacity 10 GbE RJ45 and 25G SFP28 connections for high availability system design,1
+ECS-24S-PoE(1050W),Easy to deploy and manage,2
+ECS-24S-PoE(1050W),Reliable performance,3
+ECS-Aggregation,8 Tbps high-density 100G/25G Layer 3 Etherlighting™ aggregation switch with MC-LAG support for high availability system design,0
+ECS-Aggregation,Enterprise-grade quality,1
+ECS-Aggregation,Easy to deploy and manage,2
+ECS-Aggregation,Reliable performance,3
+USW-Pro-Max-48-PoE(720W),Layer 3 Etherlighting™ switch with 2,0
+USW-Pro-Max-48-PoE(720W),5 GbE and PoE++ output,1
+USW-Pro-Max-48-PoE(720W),Easy to deploy and manage,2
+USW-Pro-Max-48-PoE(720W),Reliable performance,3
+USW-Pro-Max-24-PoE(400W),High-performance networking solution,0
+USW-Pro-Max-24-PoE(400W),Enterprise-grade reliability,1
+USW-Pro-Max-24-PoE(400W),Easy management and monitoring,2
+USW-Pro-Max-24-PoE(400W),Scalable architecture,3
+USW-Pro-XG-48-PoE(1080),Professional-grade,0
+USW-Pro-XG-48-PoE(1080),48-port Layer 3 Etherlighting™ PoE+++ switch with (32) 10 GbE,1
+USW-Pro-XG-48-PoE(1080),and (4) 25G SFP28 ports,2
+USW-Pro-XG-48-PoE(1080),Reliable performance,3
+USW-Pro-XG-24-PoE(720W),Professional-grade,0
+USW-Pro-XG-24-PoE(720W),24-port Layer 3 Etherlighting™ PoE+++ switch with (16) 10 GbE,1
+USW-Pro-XG-24-PoE(720W),and (2) 25G SFP28 ports,2
+USW-Pro-XG-24-PoE(720W),Reliable performance,3
+USW-Pro-HD-24-PoE(600W),Professional-grade,0
+USW-Pro-HD-24-PoE(600W),Layer 3 Etherlighting™ switch with (2) 10 GbE PoE++,1
+USW-Pro-HD-24-PoE(600W),5 GbE PoE++,2
+USW-Pro-HD-24-PoE(600W),and (4) 10G SFP+ ports,3
+USW-Pro-XG-48,Professional-grade,0
+USW-Pro-XG-48,48-port Layer 3 Etherlighting™ switch with (32) 10 GbE,1
+USW-Pro-XG-48,and (4) 25G SFP28 ports,2
+USW-Pro-XG-48,Reliable performance,3
+USW-Pro-XG-24,Professional-grade,0
+USW-Pro-XG-24,24-port Layer 3 Etherlighting™ switch with (16) 10 GbE,1
+USW-Pro-XG-24,and (2) 25G SFP28 ports,2
+USW-Pro-XG-24,Reliable performance,3
+USW-Pro-XG-10-PoE(400W),professional-grade 10-port,0
+USW-Pro-XG-10-PoE(400W),Layer 3 Etherlighting™ PoE+++ switch with (10) 10 GbE and (2) 10G SFP+ ports,1
+USW-Pro-XG-10-PoE(400W),Easy to deploy and manage,2
+USW-Pro-XG-10-PoE(400W),Reliable performance,3
+USW-Pro-Max-16-PoE(180W),Layer 3 Etherlighting™ switch with 2,0
+USW-Pro-Max-16-PoE(180W),PoE++ output,1
+USW-Pro-Max-16-PoE(180W),and versatile mounting options,2
+USW-Pro-Max-16-PoE(180W),Reliable performance,3
+USW-Pro-HD-24,Proffesional-grade,0
+USW-Pro-HD-24,Layer 3 Etherlighting™ switch with (2) 10 GbE,1
+USW-Pro-HD-24,and (4) 10G SFP+ ports,2
+USW-Pro-HD-24,Reliable performance,3
+USW-Pro-Max-48,Layer 3 Etherlighting™ switch with 2,0
+USW-Pro-Max-48,Enterprise-grade quality,1
+USW-Pro-Max-48,Easy to deploy and manage,2
+USW-Pro-Max-48,Reliable performance,3
+USW-Pro-Max-24,Layer 3 Etherlighting™ switch with 2,0
+USW-Pro-Max-24,Enterprise-grade quality,1
+USW-Pro-Max-24,Easy to deploy and manage,2
+USW-Pro-Max-24,Reliable performance,3
+USW-Pro-Max-16,Layer 3 Etherlighting™ switch 2,0
+USW-Pro-Max-16,5 GbE and versatile mounting options,1
+USW-Pro-Max-16,Easy to deploy and manage,2
+USW-Pro-Max-16,Reliable performance,3
+USW-Pro-48-PoE(600W),Layer 3 switch capable of high-power PoE++ output,0
+USW-Pro-48-PoE(600W),Enterprise-grade quality,1
+USW-Pro-48-PoE(600W),Easy to deploy and manage,2
+USW-Pro-48-PoE(600W),Reliable performance,3
+USW-Pro-24-PoE(400W),High-performance networking solution,0
+USW-Pro-24-PoE(400W),Enterprise-grade reliability,1
+USW-Pro-24-PoE(400W),Easy management and monitoring,2
+USW-Pro-24-PoE(400W),Scalable architecture,3
+USW-Pro-48,Layer 3 switch supporting 10G SFP+ connections with fanless cooling,0
+USW-Pro-48,Enterprise-grade quality,1
+USW-Pro-48,Easy to deploy and manage,2
+USW-Pro-48,Reliable performance,3
+USW-Pro-24,Layer 3 switch supporting 10G SFP+ connections with fanless cooling,0
+USW-Pro-24,Enterprise-grade quality,1
+USW-Pro-24,Easy to deploy and manage,2
+USW-Pro-24,Reliable performance,3
+USW-Enterprise-48-PoE(720W),Layer 3 switch with 2,0
+USW-Enterprise-48-PoE(720W),5 GbE PoE+ output,1
+USW-Enterprise-48-PoE(720W),Easy to deploy and manage,2
+USW-Enterprise-48-PoE(720W),Reliable performance,3
+USW-Enterprise-24-PoE(400W),Layer 3 switch with 2,0
+USW-Enterprise-24-PoE(400W),5 GbE PoE+ output,1
+USW-Enterprise-24-PoE(400W),Easy to deploy and manage,2
+USW-Enterprise-24-PoE(400W),Reliable performance,3
+USW-Mission-Critical-(120W),A switch with an integrated 368Wh lithium-ion battery capable of providing un interruptible PoE to 8 devices,0
+USW-Mission-Critical-(120W),Enterprise-grade quality,1
+USW-Mission-Critical-(120W),Easy to deploy and manage,2
+USW-Mission-Critical-(120W),Reliable performance,3
+USW-48-PoE(195W),Layer 2 PoE switch with a silent,0
+USW-48-PoE(195W),fanless cooling system,1
+USW-48-PoE(195W),Easy to deploy and manage,2
+USW-48-PoE(195W),Reliable performance,3
+USW-24-PoE(95W),High-performance networking solution,0
+USW-24-PoE(95W),Enterprise-grade reliability,1
+USW-24-PoE(95W),Easy management and monitoring,2
+USW-24-PoE(95W),Scalable architecture,3
+USW-16-PoE(42W),Layer 2 PoE switch with a silent,0
+USW-16-PoE(42W),fanless cooling system,1
+USW-16-PoE(42W),Easy to deploy and manage,2
+USW-16-PoE(42W),Reliable performance,3
+USW-48,Layer 2 switch with a silent,0
+USW-48,fanless cooling system,1
+USW-48,Easy to deploy and manage,2
+USW-48,Reliable performance,3
+USW-24,Layer 2 switch with a silent,0
+USW-24,fanless cooling system,1
+USW-24,Easy to deploy and manage,2
+USW-24,Reliable performance,3
+USW-WAN,10G SFP+ WAN Switch linking two Shadow Mode High Availability UniFi Gateways to a single ISP,0
+USW-WAN,Enterprise-grade quality,1
+USW-WAN,Easy to deploy and manage,2
+USW-WAN,Reliable performance,3
+USW-WAN-RJ45,High-performance networking solution,0
+USW-WAN-RJ45,Enterprise-grade reliability,1
+USW-WAN-RJ45,Easy management and monitoring,2
+USW-WAN-RJ45,Scalable architecture,3
+USW-Lite-16-PoE(45W),A wall-mounteable,0
+USW-Lite-16-PoE(45W),Layer 2 PoE switch with a fanless cooling system,1
+USW-Lite-16-PoE(45W),Easy to deploy and manage,2
+USW-Lite-16-PoE(45W),Reliable performance,3
+USW-Lite-8-PoE(52W),High-performance networking solution,0
+USW-Lite-8-PoE(52W),Enterprise-grade reliability,1
+USW-Lite-8-PoE(52W),Easy management and monitoring,2
+USW-Lite-8-PoE(52W),Scalable architecture,3
+USW-Pro-XG-8-PoE(155W),Compact desktop/wall-mountable,0
+USW-Pro-XG-8-PoE(155W),professional-grade 8-port,1
+USW-Pro-XG-8-PoE(155W),Layer 3 Etherlighting™ PoE++ switch with (8) 10 GbE and (2) 10G SFP+ ports,2
+USW-Pro-XG-8-PoE(155W),Reliable performance,3
+USW-Enterprise-8-PoE(120W),Layer 3 switch with 2,0
+USW-Enterprise-8-PoE(120W),5 GbE PoE+ output,1
+USW-Enterprise-8-PoE(120W),Easy to deploy and manage,2
+USW-Enterprise-8-PoE(120W),Reliable performance,3
+USW-Pro-8-PoE(120W),Layer 3 switch with PoE+ and PoE++ output,0
+USW-Pro-8-PoE(120W),Enterprise-grade quality,1
+USW-Pro-8-PoE(120W),Easy to deploy and manage,2
+USW-Pro-8-PoE(120W),Reliable performance,3
+USW-Ultra-210W(202W),8-port GbE PoE switch with versatile mounting options,0
+USW-Ultra-210W(202W),Enterprise-grade quality,1
+USW-Ultra-210W(202W),Easy to deploy and manage,2
+USW-Ultra-210W(202W),Reliable performance,3
+USW-Ultra-60W(52W),8-port GbE PoE switch with versatile mounting options,0
+USW-Ultra-60W(52W),Enterprise-grade quality,1
+USW-Ultra-60W(52W),Easy to deploy and manage,2
+USW-Ultra-60W(52W),Reliable performance,3
+USW-Ultra(42W),8-port GbE PoE switch with versatile mounting options,0
+USW-Ultra(42W),Enterprise-grade quality,1
+USW-Ultra(42W),Easy to deploy and manage,2
+USW-Ultra(42W),Reliable performance,3
+USW-Flex-2.5G-8-PoE(196W),5 GbE PoE++ switch with a 10 GbE RJ45/SFP+ combination uplink port that can be powered with PoE+++ or an AC power adapter,0
+USW-Flex-2.5G-8-PoE(196W),Enterprise-grade quality,1
+USW-Flex-2.5G-8-PoE(196W),Easy to deploy and manage,2
+USW-Flex-2.5G-8-PoE(196W),Reliable performance,3
+USW-Flex-2.5G-8,5 GbE switch with a 10 GbE RJ45/SFP+ combination uplink port that can be powered with a USB-C or PoE+ adapter,0
+USW-Flex-2.5G-8,Enterprise-grade quality,1
+USW-Flex-2.5G-8,Easy to deploy and manage,2
+USW-Flex-2.5G-8,Reliable performance,3
+USW-Flex-2.5G-5,5G switch that can be powered with PoE or a USB-C adapter,0
+USW-Flex-2.5G-5,Enterprise-grade quality,1
+USW-Flex-2.5G-5,Easy to deploy and manage,2
+USW-Flex-2.5G-5,Reliable performance,3
+USW-Flex-Mini,Layer 2 switch that can be powered with PoE or a 5V USB-C adapter,0
+USW-Flex-Mini,Enterprise-grade quality,1
+USW-Flex-Mini,Easy to deploy and manage,2
+USW-Flex-Mini,Reliable performance,3
+USW-Flex(46W),Flexible 5-port,0
+USW-Flex(46W),Layer 2 PoE switch for indoor and outdoor use,1
+USW-Flex(46W),that can be powered with PoE++,2
+USW-Flex(46W),Reliable performance,3
+USW-Flex-Utility,The Switch Flex Utility is an outdoor weatherproof enclosure designed for use with the Switch Flex,0
+USW-Flex-Utility,Enterprise-grade quality,1
+USW-Flex-Utility,Easy to deploy and manage,2
+USW-Flex-Utility,Reliable performance,3
+UACC-Flex-Utility-Pro,A universal outdoor weatherproof enclosure,0
+UACC-Flex-Utility-Pro,Protect your networking gear in any environment with this versatile,1
+UACC-Flex-Utility-Pro,durable enclosure,2
+UACC-Flex-Utility-Pro,designed for both wall and pole mounting,3
+USW-Flex-XG,Layer 2 Switch that supports 10 GbE speeds and can be powered with PoE or a 5V USB-C adapter,0
+USW-Flex-XG,Enterprise-grade quality,1
+USW-Flex-XG,Easy to deploy and manage,2
+USW-Flex-XG,Reliable performance,3
+E7,Enterprise-grade indoor access point with 10-stream WiFi 7 performance,0
+E7,a 10 GbE uplink,1
+E7,and a redundant GbE port for high availability,2
+E7,Reliable performance,3
+E7-Campus,High-performance networking solution,0
+E7-Campus,Enterprise-grade reliability,1
+E7-Campus,Easy management and monitoring,2
+E7-Campus,Scalable architecture,3
+E7-Audience,Enterprise-grade,0
+E7-Audience,indoor/outdoor access point designed for high-density environments with 12-stream 5 GHz and 6 GHz WiFi 7 performance,1
+E7-Audience,a 10 GbE uplink,2
+E7-Audience,and a redundant GbE port for high availability,3
+U7-Pro-XGS,Ceiling-mounted 8-stream WiFi 7 AP with dedicated spectral scanning radio and 10/5/2,0
+U7-Pro-XGS,5/1 GbE support,1
+U7-Pro-XGS,Easy to deploy and manage,2
+U7-Pro-XGS,Reliable performance,3
+U7-Pro-XG,High-performance networking solution,0
+U7-Pro-XG,Enterprise-grade reliability,1
+U7-Pro-XG,Easy management and monitoring,2
+U7-Pro-XG,Scalable architecture,3
+U7-Pro-Max,Ceiling-mounted WiFi 7 AP with 8 spatial streams,0
+U7-Pro-Max,6 GHz support,1
+U7-Pro-Max,and a dedicated spectral scanning engine for interference-free WiFi in demanding,2
+U7-Pro-Max,large-scale environments,3
+U7-Pr0,Ceiling-mounted WiFi 7 AP with 6 spatial streams,0
+U7-Pr0,6 GHz support for interference-free WiFi in demanding,1
+U7-Pr0,large-scale environments,2
+U7-Pr0,Reliable performance,3
+U7-LR,ceiling-mount WiFi 7 AP with 5 spatial streams and extended signal range,0
+U7-LR,Enterprise-grade quality,1
+U7-LR,Easy to deploy and manage,2
+U7-LR,Reliable performance,3
+U7-Lite,ceiling-mount WiFi 7 AP with 4 spatial streams and 2,0
+U7-Lite,5 GbE uplink,1
+U7-Lite,Easy to deploy and manage,2
+U7-Lite,Reliable performance,3
+U6-Enterprise,Ceiling-mounted WiFI 6E AP with 10 spatial streams and 6 GHz support to provide seamless,0
+U6-Enterprise,multi-band coverage within high client density environments,1
+U6-Enterprise,Easy to deploy and manage,2
+U6-Enterprise,Reliable performance,3
+U6-Pro,Ceiling-mounted WiFi 6 AP with 6 spatial streams designed for large offices,0
+U6-Pro,Enterprise-grade quality,1
+U6-Pro,Easy to deploy and manage,2
+U6-Pro,Reliable performance,3
+U6-PLUS,ceiling-mounted WiFi 6 AP with 4 spatial streams that improves upon the U6 Lite with higher performance and dual-band WiFi 6 support,0
+U6-PLUS,Ideal for small and medium-sized businesses,1
+U6-PLUS,Easy to deploy and manage,2
+U6-PLUS,Reliable performance,3
+UAP-AC-PRO,Ceiling-mounted WiFi 5 AP with 6 spatial streams designed for large offices,0
+UAP-AC-PRO,Enterprise-grade quality,1
+UAP-AC-PRO,Easy to deploy and manage,2
+UAP-AC-PRO,Reliable performance,3
+U7-Pro-XG-Wall,Wall-mounted 6 GHz-ready WiFi 7 AP with 1/2,0
+U7-Pro-XG-Wall,5/10 GbE support,1
+U7-Pro-XG-Wall,Easy to deploy and manage,2
+U7-Pro-XG-Wall,Reliable performance,3
+U7-Pro-Wall,High-performance networking solution,0
+U7-Pro-Wall,Enterprise-grade reliability,1
+U7-Pro-Wall,Easy management and monitoring,2
+U7-Pro-Wall,Scalable architecture,3
+U7-IW,Wall-mounted WiFi 7 AP with 4 spatial streams and an integrated 2,0
+U7-IW,5 GbE PoE switch designed for hospitality environments,1
+U7-IW,Easy to deploy and manage,2
+U7-IW,Reliable performance,3
+U6-Enterprise-IW,Wall-mounted WiFi 6E AP with 10 spatial streams,0
+U6-Enterprise-IW,6 GHz support,1
+U6-Enterprise-IW,and a built-in 4-port switch,2
+U6-Enterprise-IW,Designed for high-density office networks,3
+U6-IW,Wall-mounted WiFi 6 AP with 6 spatial streams and a built-in 4‑port switch ideal for single-room coverage in hospitality environments,0
+U6-IW,Enterprise-grade quality,1
+U6-IW,Easy to deploy and manage,2
+U6-IW,Reliable performance,3
+U6-Extender,Easy-to-deploy WiFi 6 coverage extender that fits a standard wall outlet,0
+U6-Extender,Enterprise-grade quality,1
+U6-Extender,Easy to deploy and manage,2
+U6-Extender,Reliable performance,3
+U7-Pro-Outdoor,All-weather IP67 WiFi 7 AP with 6 spatial streams,0
+U7-Pro-Outdoor,extended-range AFC 6 GHz support,1
+U7-Pro-Outdoor,integrated directional super antenna,2
+U7-Pro-Outdoor,and articulation mounting bracket,3
+U7-Outdoor,High-performance networking solution,0
+U7-Outdoor,Enterprise-grade reliability,1
+U7-Outdoor,Easy management and monitoring,2
+U7-Outdoor,Scalable architecture,3
+U6-Mesh,indoor/outdoor WiFi 6 AP with 6 spatial streams designed for mesh applications,0
+U6-Mesh,Enterprise-grade quality,1
+U6-Mesh,Easy to deploy and manage,2
+U6-Mesh,Reliable performance,3
+U6-Mesh-Pro,indoor/outdoor WiFi 6 AP with 4 spatial streams,0
+U6-Mesh-Pro,an integrated super antenna,1
+U6-Mesh-Pro,and a gigabit passthrough port,2
+U6-Mesh-Pro,Reliable performance,3
+AC Mesh,indoor/outdoor WiFi 5 AP with 4 spatial streams and optional external antenna support for directional coverage,0
+AC Mesh,Enterprise-grade quality,1
+AC Mesh,Easy to deploy and manage,2
+AC Mesh,Reliable performance,3
+UK-Ultra,Incredibly compact,0
+UK-Ultra,indoor/outdoor AP with versatile mounting options and long-range external antenna support,1
+UK-Ultra,Easy to deploy and manage,2
+UK-Ultra,Reliable performance,3
+Product Collection,Enterprise-grade,0
+Product Collection,indoor/outdoor access point designed for high-density environments with 12-stream 5 GHz and 6 GHz WiFi 7 performance,1
+Product Collection,a 10 GbE uplink,2
+Product Collection,and a redundant GbE port for high availability,3
+UWB-XG,High-performance networking solution,0
+UWB-XG,Enterprise-grade reliability,1
+UWB-XG,Easy management and monitoring,2
+UWB-XG,Scalable architecture,3
+UDB-Pro-Sector,5 GHz point-to-multipoint access point that wirelessly bridges 50+ Device Bridge Pro clients at 5+ km distances,0
+UDB-Pro-Sector,Enterprise-grade quality,1
+UDB-Pro-Sector,Easy to deploy and manage,2
+UDB-Pro-Sector,Reliable performance,3
+UDB-Pro,High-performance networking solution,0
+UDB-Pro,Enterprise-grade reliability,1
+UDB-Pro,Easy management and monitoring,2
+UDB-Pro,Scalable architecture,3
+UDB,Plug-and-play,0
+UDB,wireless bridging PoE adapter with integrated UniFI WiFI Auto-Link,1
+UDB,Easy to deploy and manage,2
+UDB,Reliable performance,3
+UBB,60 GHz wireless point-to-point bridge with a 5 GHz backup radio,0
+UBB,Enterprise-grade quality,1
+UBB,Easy to deploy and manage,2
+UBB,Reliable performance,3
+UDB-Switch(35W),Compact PoE+ switch* with (1) 10 GbE port,0
+UDB-Switch(35W),5 GbE ports,1
+UDB-Switch(35W),and 6 GHz-ready WiFi 7 bridging integration for seamless,2
+UDB-Switch(35W),high-capacity wireless uplink to UniFi WiFi,3
+UBB-XG,60 GHz wireless point-to-point bridge with a 10G SFP+ uplink for maximum performance and a 5 GHz backup radio,0
+UBB-XG,Enterprise-grade quality,1
+UBB-XG,Easy to deploy and manage,2
+UBB-XG,Reliable performance,3
+UDB-IoT,Ultra-compact wireless bridge for IoT devices with integrated UniFi WiFi Auto-Link,0
+UDB-IoT,versatile mounting options,1
+UDB-IoT,and powered by USB Type-C or 4-pin DC socket,2
+UDB-IoT,Reliable performance,3
+UTR,An ultra-slim travel router that instantly extends your UniFi Network wherever you are,0
+UTR,bringing secure,1
+UTR,familiar connectivity to remote locations,2
+UTR,Reliable performance,3
