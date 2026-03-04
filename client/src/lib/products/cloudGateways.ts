@@ -84,7 +84,7 @@ export const cloudGatewaysProducts: Product[] = [
     isNew: true,
     
     // SKU produk
-    sku: "EFG-999",
+    sku: "EFG",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama  )
     images: [
