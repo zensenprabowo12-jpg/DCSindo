@@ -1,0 +1,840 @@
+id,product_id,name,image,price,description,product_link
+1,ENVR,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,ENVR,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,ENVR,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNVR-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-unvr-pro
+2,UNVR-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-unvr-pro
+3,UNVR-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNVR,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-unvr
+2,UNVR,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-unvr
+3,UNVR,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNVR-Instant,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-unvr-instant
+2,UNVR-Instant,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-unvr-instant
+3,UNVR-Instant,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNVR-Instant-Kit,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-unvr-instant-kit
+2,UNVR-Instant-Kit,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-unvr-instant-kit
+3,UNVR-Instant-Kit,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,AI-Key,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ai-key
+2,AI-Key,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ai-key
+3,AI-Key,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UP-AI-Port,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-up-ai-port
+2,UP-AI-Port,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-up-ai-port
+3,UP-AI-Port,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UP-Viewport,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-up-viewport
+2,UP-Viewport,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-up-viewport
+3,UP-Viewport,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UCK-G2-SSD,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uck-g2-ssd
+2,UCK-G2-SSD,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uck-g2-ssd
+3,UCK-G2-SSD,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-Pro-Turret,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-pro-turret
+2,UVC-G6-Pro-Turret,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-pro-turret
+3,UVC-G6-Pro-Turret,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-Pro-Dome,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-pro-dome
+2,UVC-G6-Pro-Dome,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-pro-dome
+3,UVC-G6-Pro-Dome,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-Turret,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-turret
+2,UVC-G6-Turret,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-turret
+3,UVC-G6-Turret,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-Dome,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-dome
+2,UVC-G6-Dome,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-dome
+3,UVC-G6-Dome,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-Pro-360-  ,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-pro-360-b/w
+2,UVC-G6-Pro-360-  ,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-pro-360-b/w
+3,UVC-G6-Pro-360-  ,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-180-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-180-b/w
+2,UVC-G6-180-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-180-b/w
+3,UVC-G6-180-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G5-Turret-Ultra-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g5-turret-ultra-b/w
+2,UVC-G5-Turret-Ultra-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g5-turret-ultra-b/w
+3,UVC-G5-Turret-Ultra-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-AI-Turret-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-ai-turret-b/w
+2,UVC-AI-Turret-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-ai-turret-b/w
+3,UVC-AI-Turret-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-AI-Dome-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-ai-dome-b/w
+2,UVC-AI-Dome-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-ai-dome-b/w
+3,UVC-AI-Dome-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-AI-360-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-ai-360-b/w
+2,UVC-AI-360-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-ai-360-b/w
+3,UVC-AI-360-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G5-Dome,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g5-dome
+2,UVC-G5-Dome,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g5-dome
+3,UVC-G5-Dome,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G5-Dome-Ultra-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g5-dome-ultra-b/w
+2,UVC-G5-Dome-Ultra-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g5-dome-ultra-b/w
+3,UVC-G5-Dome-Ultra-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-AI-MS-4-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-ai-ms-4-b/w
+2,UVC-AI-MS-4-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-ai-ms-4-b/w
+3,UVC-AI-MS-4-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-Pro-Bullet-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-pro-bullet-b/w
+2,UVC-G6-Pro-Bullet-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-pro-bullet-b/w
+3,UVC-G6-Pro-Bullet-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-Bullet-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-bullet-b/w
+2,UVC-G6-Bullet-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-bullet-b/w
+3,UVC-G6-Bullet-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-AI-LPR-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-ai-lpr-b/w
+2,UVC-AI-LPR-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-ai-lpr-b/w
+3,UVC-AI-LPR-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-AI-DSLR-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-ai-dslr-b/w
+2,UVC-AI-DSLR-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-ai-dslr-b/w
+3,UVC-AI-DSLR-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-AI-Pro-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-ai-pro-b/w
+2,UVC-AI-Pro-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-ai-pro-b/w
+3,UVC-AI-Pro-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G5-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g5-pro
+2,UVC-G5-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g5-pro
+3,UVC-G5-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G5-Bullet,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g5-bullet
+2,UVC-G5-Bullet,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g5-bullet
+3,UVC-G5-Bullet,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-INS-W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-ins-w
+2,UVC-G6-INS-W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-ins-w
+3,UVC-G6-INS-W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-AI-Theta-Pro-W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-ai-theta-pro-w
+2,UVC-AI-Theta-Pro-W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-ai-theta-pro-w
+3,UVC-AI-Theta-Pro-W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G5-Flex,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g5-flex
+2,UVC-G5-Flex,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g5-flex
+3,UVC-G5-Flex,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G4-INS,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g4-ins
+2,UVC-G4-INS,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g4-ins
+3,UVC-G4-INS,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-AI-Theta-Audio,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-ai-theta-audio
+2,UVC-AI-Theta-Audio,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-ai-theta-audio
+3,UVC-AI-Theta-Audio,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-AI-Theta-ProLens50,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-ai-theta-prolens50
+2,UVC-AI-Theta-ProLens50,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-ai-theta-prolens50
+3,UVC-AI-Theta-ProLens50,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-PTZ-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-ptz-b/w
+2,UVC-G6-PTZ-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-ptz-b/w
+3,UVC-G6-PTZ-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-AI-PTZ-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-ai-ptz-b/w
+2,UVC-AI-PTZ-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-ai-ptz-b/w
+3,UVC-AI-PTZ-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-AI-PTZ-Precision-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-ai-ptz-precision-b/w
+2,UVC-AI-PTZ-Precision-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-ai-ptz-precision-b/w
+3,UVC-AI-PTZ-Precision-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G5-PTZ-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g5-ptz-b/w
+2,UVC-G5-PTZ-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g5-ptz-b/w
+3,UVC-G5-PTZ-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-4-doorbell-pro-poe-kit-b/w
+2,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-4-doorbell-pro-poe-kit-b/w
+3,UVC-4-Doorbell-Pro-PoE-Kit-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-4-Doorbell-Pro-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-4-doorbell-pro-b/w
+2,UVC-4-Doorbell-Pro-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-4-doorbell-pro-b/w
+3,UVC-4-Doorbell-Pro-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-Doorbell-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-doorbell-b/w
+2,UVC-Doorbell-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-doorbell-b/w
+3,UVC-Doorbell-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-Chime-PoE,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-chime-poe
+2,UVC-Chime-PoE,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-chime-poe
+3,UVC-Chime-PoE,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-Chime,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-chime
+2,UVC-Chime,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-chime
+3,UVC-Chime,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USL-Gateway,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usl-gateway
+2,USL-Gateway,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usl-gateway
+3,USL-Gateway,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USL-Entry,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,USL-Entry,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,USL-Entry,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USL-Motion,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usl-motion
+2,USL-Motion,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usl-motion
+3,USL-Motion,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USL-Siren,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usl-siren
+2,USL-Siren,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usl-siren
+3,USL-Siren,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USL-Siren-PoE,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usl-siren-poe
+2,USL-Siren-PoE,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usl-siren-poe
+3,USL-Siren-PoE,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USL-Environmental,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usl-environmental
+2,USL-Environmental,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usl-environmental
+3,USL-Environmental,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UP-Sense,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-up-sense
+2,UP-Sense,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-up-sense
+3,UP-Sense,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USL-GlassBreak,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usl-glassbreak
+2,USL-GlassBreak,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usl-glassbreak
+3,USL-GlassBreak,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-USL-ANT-HG,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-usl-ant-hg
+2,UACC-USL-ANT-HG,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-usl-ant-hg
+3,UACC-USL-ANT-HG,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UP-AI-Horn-Speaker-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-up-ai-horn-speaker-b/w
+2,UP-AI-Horn-Speaker-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-up-ai-horn-speaker-b/w
+3,UP-AI-Horn-Speaker-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UP-FloodLight,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-up-floodlight
+2,UP-FloodLight,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-up-floodlight
+3,UP-FloodLight,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Adapter-PoE-USBC,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-adapter-poe-usbc
+2,UACC-Adapter-PoE-USBC,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-adapter-poe-usbc
+3,UACC-Adapter-PoE-USBC,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Camera-CJB-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-camera-cjb-b/w
+2,UACC-Camera-CJB-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-camera-cjb-b/w
+3,UACC-Camera-CJB-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Camera-CJB-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-camera-cjb-b/w
+2,UACC-Camera-CJB-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-camera-cjb-b/w
+3,UACC-Camera-CJB-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Camera-JB-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-camera-jb-b/w
+2,UACC-Camera-JB-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-camera-jb-b/w
+3,UACC-Camera-JB-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-AI-JB-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-ai-jb-b/w
+2,UACC-AI-JB-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-ai-jb-b/w
+3,UACC-AI-JB-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G4-Dome-Arm-Mount,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g4-dome-arm-mount
+2,UACC-G4-Dome-Arm-Mount,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g4-dome-arm-mount
+3,UACC-G4-Dome-Arm-Mount,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Camera-AM-B,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-camera-am-b
+2,UACC-Camera-AM-B,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-camera-am-b
+3,UACC-Camera-AM-B,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Bullet-AB-B,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-bullet-ab-b
+2,UACC-Bullet-AB-B,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-bullet-ab-b
+3,UACC-Bullet-AB-B,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Pro-Bullet-Enhancer-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-pro-bullet-enhancer-b/w
+2,UACC-Pro-Bullet-Enhancer-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-pro-bullet-enhancer-b/w
+3,UACC-Pro-Bullet-Enhancer-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-AI-Pro-Enhancer-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-ai-pro-enhancer-b/w
+2,UACC-AI-Pro-Enhancer-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-ai-pro-enhancer-b/w
+3,UACC-AI-Pro-Enhancer-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G5-Enhancer,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g5-enhancer
+2,UACC-G5-Enhancer,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g5-enhancer
+3,UACC-G5-Enhancer,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G4-IRExtender,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g4-irextender
+2,UVC-G4-IRExtender,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g4-irextender
+3,UVC-G4-IRExtender,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Camera-DM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-camera-dm-b/w
+2,UACC-Camera-DM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-camera-dm-b/w
+3,UACC-Camera-DM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-GB-Plate-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-gb-plate-b/w
+2,UACC-GB-Plate-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-gb-plate-b/w
+3,UACC-GB-Plate-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Dome-FM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-dome-fm-b/w
+2,UACC-Dome-FM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-dome-fm-b/w
+3,UACC-Dome-FM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G6-Pro-360-FM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g6-pro-360-fm-b/w
+2,UACC-G6-Pro-360-FM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g6-pro-360-fm-b/w
+3,UACC-G6-Pro-360-FM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G6-Dome-FM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g6-dome-fm-b/w
+2,UACC-G6-Dome-FM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g6-dome-fm-b/w
+3,UACC-G6-Dome-FM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G6-Dome-FMS-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g6-dome-fms-b/w
+2,UACC-G6-Dome-FMS-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g6-dome-fms-b/w
+3,UACC-G6-Dome-FMS-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G5-Dome-Ultra-FM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g5-dome-ultra-fm-b/w
+2,UACC-G5-Dome-Ultra-FM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g5-dome-ultra-fm-b/w
+3,UACC-G5-Dome-Ultra-FM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G5-Dome-Ultra-FM-SB-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g5-dome-ultra-fm-sb-b/w
+2,UACC-G5-Dome-Ultra-FM-SB-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g5-dome-ultra-fm-sb-b/w
+3,UACC-G5-Dome-Ultra-FM-SB-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G6-Dome-WS-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g6-dome-ws-b/w
+2,UACC-G6-Dome-WS-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g6-dome-ws-b/w
+3,UACC-G6-Dome-WS-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Dome-WS-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-dome-ws-b/w
+2,UACC-Dome-WS-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-dome-ws-b/w
+3,UACC-Dome-WS-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G6-180-FM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g6-180-fm-b/w
+2,UACC-G6-180-FM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g6-180-fm-b/w
+3,UACC-G6-180-FM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G6-180-PM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g6-180-pm-b/w
+2,UACC-G6-180-PM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g6-180-pm-b/w
+3,UACC-G6-180-PM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G5-PTZ-CM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g5-ptz-cm-b/w
+2,UACC-G5-PTZ-CM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g5-ptz-cm-b/w
+3,UACC-G5-PTZ-CM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G5-PTZ-PM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g5-ptz-pm-b/w
+2,UACC-G5-PTZ-PM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g5-ptz-pm-b/w
+3,UACC-G5-PTZ-PM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G5-PTZ-SM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g5-ptz-sm-b/w
+2,UACC-G5-PTZ-SM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g5-ptz-sm-b/w
+3,UACC-G5-PTZ-SM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G5-PTZ-ICM-SB-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g5-ptz-icm-sb-b/w
+2,UACC-G5-PTZ-ICM-SB-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g5-ptz-icm-sb-b/w
+3,UACC-G5-PTZ-ICM-SB-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G6-PTZ-ICM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g6-ptz-icm-b/w
+2,UACC-G6-PTZ-ICM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g6-ptz-icm-b/w
+3,UACC-G6-PTZ-ICM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G5-PTZ-CA-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g5-ptz-ca-b/w
+2,UACC-G5-PTZ-CA-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g5-ptz-ca-b/w
+3,UACC-G5-PTZ-CA-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Flex-Cam-PWM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-flex-cam-pwm-b/w
+2,UACC-Flex-Cam-PWM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-flex-cam-pwm-b/w
+3,UACC-Flex-Cam-PWM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g4 doorbell pro poe-gang box-white-b/w
+2,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g4 doorbell pro poe-gang box-white-b/w
+3,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G4-DBP-Cable-USB-7M,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g4-dbp-cable-usb-7m
+2,UACC-G4-DBP-Cable-USB-7M,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g4-dbp-cable-usb-7m
+3,UACC-G4-DBP-Cable-USB-7M,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G4-INS-Cable-USB-4.5M,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g4-ins-cable-usb-4.5m
+2,UACC-G4-INS-Cable-USB-4.5M,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g4-ins-cable-usb-4.5m
+3,UACC-G4-INS-Cable-USB-4.5M,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-G4-INS-Cover-DG/G/LG,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-g4-ins-cover-dg/g/lg
+2,UACC-G4-INS-Cover-DG/G/LG,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-g4-ins-cover-dg/g/lg
+3,UACC-G4-INS-Cover-DG/G/LG,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-AI-Theta-Audio-Cable-1M,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-ai-theta-audio-cable-1m
+2,UACC-AI-Theta-Audio-Cable-1M,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-ai-theta-audio-cable-1m
+3,UACC-AI-Theta-Audio-Cable-1M,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-AI-Theta-Audio-Cable-Ext-10M,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-ai-theta-audio-cable-ext-10m
+2,UACC-AI-Theta-Audio-Cable-Ext-10M,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-ai-theta-audio-cable-ext-10m
+3,UACC-AI-Theta-Audio-Cable-Ext-10M,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,efg,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-efg
+2,efg,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-efg
+3,efg,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,udm-pro-max,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,udm-pro-max,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,udm-pro-max,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,udm-pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design.",/products/mounting-kit
+2,udm-pro,Power Cable,/images/dcs-box.png,299,High-quality power cable.,/products/power-cable
+1,udm-se,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-efg
+2,udm-se,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-efg
+3,udm-se,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,ucg-fiber,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ucg-fiber
+2,ucg-fiber,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ucg-fiber
+3,ucg-fiber,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,ucg-max,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ucg-max
+2,ucg-max,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ucg-max
+3,ucg-max,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,ucg-ultra,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ucg-ultra
+2,ucg-ultra,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ucg-ultra
+3,ucg-ultra,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,udr-7,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-udr-7
+2,udr-7,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-udr-7
+3,udr-7,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,ux-7,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,ux-7,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,ux-7,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,udr-5g-max,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-udr-5g-max
+2,udr-5g-max,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-udr-5g-max
+3,udr-5g-max,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UDW,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-udw
+2,UDW,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-udw
+3,UDW,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-Pro-Entry,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-pro-entry
+2,UVC-G6-Pro-Entry,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-pro-entry
+3,UVC-G6-Pro-Entry,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-Entry,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,UVC-G6-Entry,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,UVC-G6-Entry,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G3-Pro-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g3-pro-b/w
+2,UA-G3-Pro-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g3-pro-b/w
+3,UA-G3-Pro-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G2-Pro-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g2-pro-b/w
+2,UA-G2-Pro-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g2-pro-b/w
+3,UA-G2-Pro-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G3-Flex-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g3-flex-b/w
+2,UA-G3-Flex-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g3-flex-b/w
+3,UA-G3-Flex-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G3-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g3-b/w
+2,UA-G3-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g3-b/w
+3,UA-G3-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G2-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g2-b/w
+2,UA-G2-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g2-b/w
+3,UA-G2-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Retrofit-Reader-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-retrofit-reader-b/w
+2,UA-Retrofit-Reader-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-retrofit-reader-b/w
+3,UA-Retrofit-Reader-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G3-Intercom,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g3-intercom
+2,UA-G3-Intercom,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g3-intercom
+3,UA-G3-Intercom,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G2-Intercom,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g2-intercom
+2,UA-G2-Intercom,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g2-intercom
+3,UA-G2-Intercom,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Ultra,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-ultra
+2,UA-Ultra,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-ultra
+3,UA-Ultra,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G3-Intercom,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g3-intercom
+2,UA-G3-Intercom,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g3-intercom
+3,UA-G3-Intercom,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G2-Intercom,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g2-intercom
+2,UA-G2-Intercom,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g2-intercom
+3,UA-G2-Intercom,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G2-Intercom,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g2-intercom
+2,UA-G2-Intercom,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g2-intercom
+3,UA-G2-Intercom,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-Pro-Entry,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-pro-entry
+2,UVC-G6-Pro-Entry,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-pro-entry
+3,UVC-G6-Pro-Entry,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UVC-G6-Entry,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uvc-g6-entry
+2,UVC-G6-Entry,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uvc-g6-entry
+3,UVC-G6-Entry,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,EAH-8,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-eah-8
+2,EAH-8,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-eah-8
+3,EAH-8,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Retrofit-Hub-2,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-retrofit-hub-2
+2,UA-Retrofit-Hub-2,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-retrofit-hub-2
+3,UA-Retrofit-Hub-2,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Hub-Door,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-hub-door
+2,UA-Hub-Door,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-hub-door
+3,UA-Hub-Door,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Hub-Door-Mini,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-hub-door-mini
+2,UA-Hub-Door-Mini,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-hub-door-mini
+3,UA-Hub-Door-Mini,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Hub-Gate,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-hub-gate
+2,UA-Hub-Gate,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-hub-gate
+3,UA-Hub-Gate,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Ultra,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-ultra
+2,UA-Ultra,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-ultra
+3,UA-Ultra,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G3-SK-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g3-sk-pro
+2,UA-G3-SK-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g3-sk-pro
+3,UA-G3-SK-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G2-SK-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g2-sk-pro
+2,UA-G2-SK-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g2-sk-pro
+3,UA-G2-SK-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G3-SK,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g3-sk
+2,UA-G3-SK,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g3-sk
+3,UA-G3-SK,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G2-SK,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g2-sk
+2,UA-G2-SK,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g2-sk
+3,UA-G2-SK,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G3-SK-Gate,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g3-sk-gate
+2,UA-G3-SK-Gate,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g3-sk-gate
+3,UA-G3-SK-Gate,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G2-SK-Gate,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g2-sk-gate
+2,UA-G2-SK-Gate,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g2-sk-gate
+3,UA-G2-SK-Gate,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-SK-Elevator,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-sk-elevator
+2,UA-SK-Elevator,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-sk-elevator
+3,UA-SK-Elevator,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G3-Intercom,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g3-intercom
+2,UA-G3-Intercom,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g3-intercom
+3,UA-G3-Intercom,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-G2-Intercom,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-g2-intercom
+2,UA-G2-Intercom,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-g2-intercom
+3,UA-G2-Intercom,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Intercom-Viewer,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-intercom-viewer
+2,UA-Intercom-Viewer,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-intercom-viewer
+3,UA-Intercom-Viewer,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,ENVR,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-envr
+2,ENVR,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-envr
+3,ENVR,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNVR-pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-unvr-pro
+2,UNVR-pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-unvr-pro
+3,UNVR-pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNVR,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-unvr
+2,UNVR,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-unvr
+3,UNVR,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNVR-Instant,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-unvr-instant
+2,UNVR-Instant,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-unvr-instant
+3,UNVR-Instant,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNVR-Instant-Kit,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-unvr-instant-kit
+2,UNVR-Instant-Kit,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-unvr-instant-kit
+3,UNVR-Instant-Kit,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Card-10-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-card-10-b/w
+2,UA-Card-10-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-card-10-b/w
+3,UA-Card-10-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Retrofit-PoE-2Wire,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-retrofit-poe-2wire
+2,UACC-Retrofit-PoE-2Wire,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-retrofit-poe-2wire
+3,UACC-Retrofit-PoE-2Wire,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Reader-JB-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-reader-jb-b/w
+2,UACC-Reader-JB-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-reader-jb-b/w
+3,UACC-Reader-JB-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Reader-Pro-JB-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-reader-pro-jb-b/w
+2,UACC-Reader-Pro-JB-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-reader-pro-jb-b/w
+3,UACC-Reader-Pro-JB-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Reader-Pro-AM-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-reader-pro-am-b/w
+2,UACC-Reader-Pro-AM-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-reader-pro-am-b/w
+3,UACC-Reader-Pro-AM-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Intercom-SAM,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-intercom-sam
+2,UACC-Intercom-SAM,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-intercom-sam
+3,UACC-Intercom-SAM,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Intercom-FM,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-intercom-fm
+2,UACC-Intercom-FM,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-intercom-fm
+3,UACC-Intercom-FM,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Intercom-Sunshield,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-intercom-sunshield
+2,UACC-Intercom-Sunshield,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-intercom-sunshield
+3,UACC-Intercom-Sunshield,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Intercom-WM,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-intercom-wm
+2,UACC-Intercom-WM,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-intercom-wm
+3,UACC-Intercom-WM,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Intercom-Viewer-TS,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-intercom-viewer-ts
+2,UACC-Intercom-Viewer-TS,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-intercom-viewer-ts
+3,UACC-Intercom-Viewer-TS,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Junction-Utility,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-junction-utility
+2,UACC-Junction-Utility,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-junction-utility
+3,UACC-Junction-Utility,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Retrofit-PSU-12V,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-retrofit-psu-12v
+2,UACC-Retrofit-PSU-12V,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-retrofit-psu-12v
+3,UACC-Retrofit-PSU-12V,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Button,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-button
+2,UA-Button,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-button
+3,UA-Button,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-DoorCloser,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-doorcloser
+2,UACC-DoorCloser,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-doorcloser
+3,UACC-DoorCloser,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-PanicBar,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-panicbar
+2,UACC-PanicBar,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-panicbar
+3,UACC-PanicBar,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Lock-Magnetic-270kg,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-lock-magnetic-270kg
+2,UA-Lock-Magnetic-270kg,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-lock-magnetic-270kg
+3,UA-Lock-Magnetic-270kg,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Lock-Strike-Secure-15mm,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-lock-strike-secure-15mm
+2,UACC-Lock-Strike-Secure-15mm,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-lock-strike-secure-15mm
+3,UACC-Lock-Strike-Secure-15mm,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Lock-Strike-Safe-15mm,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-lock-strike-safe-15mm
+2,UACC-Lock-Strike-Safe-15mm,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-lock-strike-safe-15mm
+3,UACC-Lock-Strike-Safe-15mm,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Cable-DoorLockRelay-1P,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-cable-doorlockrelay-1p
+2,UACC-Cable-DoorLockRelay-1P,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-cable-doorlockrelay-1p
+3,UACC-Cable-DoorLockRelay-1P,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Cable-DoorLockRelay-2P,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-cable-doorlockrelay-2p
+2,UACC-Cable-DoorLockRelay-2P,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-cable-doorlockrelay-2p
+3,UACC-Cable-DoorLockRelay-2P,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Pocket,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-pocket
+2,UA-Pocket,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-pocket
+3,UA-Pocket,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UA-Rescue,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ua-rescue
+2,UA-Rescue,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ua-rescue
+3,UA-Rescue,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNAS-Pro-8,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-unas-pro-8
+2,UNAS-Pro-8,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-unas-pro-8
+3,UNAS-Pro-8,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNAS-Pro-4,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,UNAS-Pro-4,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,UNAS-Pro-4,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNAS-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-unas-pro
+2,UNAS-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-unas-pro
+3,UNAS-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNAS-2-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-unas-2-b/w
+2,UNAS-2-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-unas-2-b/w
+3,UNAS-2-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UNAS-4-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-unas-4-b/w
+2,UNAS-4-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-unas-4-b/w
+3,UNAS-4-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UPS-2U,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ups-2u
+2,UPS-2U,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ups-2u
+3,UPS-2U,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UPS-Tower,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,UPS-Tower,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,UPS-Tower,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Mission-Critical(120W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-mission-critical(120w)
+2,USW-Mission-Critical(120W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-mission-critical(120w)
+3,USW-Mission-Critical(120W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USP-RPS,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usp-rps
+2,USP-RPS,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usp-rps
+3,USP-RPS,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USP-PDU-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usp-pdu-pro
+2,USP-PDU-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usp-pdu-pro
+3,USP-PDU-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USP-PDU-HD,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usp-pdu-hd
+2,USP-PDU-HD,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usp-pdu-hd
+3,USP-PDU-HD,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U5G-Max,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u5g-max
+2,U5G-Max,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u5g-max
+3,U5G-Max,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U5G-Max-Outdoor,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,U5G-Max-Outdoor,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,U5G-Max-Outdoor,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UMR-Industrial,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-umr-industrial
+2,UMR-Industrial,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-umr-industrial
+3,UMR-Industrial,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UMR-Ultra,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-umr-ultra
+2,UMR-Ultra,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-umr-ultra
+3,UMR-Ultra,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UMR,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-umr
+2,UMR,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-umr
+3,UMR,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U-LTE,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u-lte
+2,U-LTE,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u-lte
+3,U-LTE,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U-LTE-Backup Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u-lte-backup pro
+2,U-LTE-Backup Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u-lte-backup pro
+3,U-LTE-Backup Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UTP-G3-Touch-Enterprise,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-utp-g3-touch-enterprise
+2,UTP-G3-Touch-Enterprise,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-utp-g3-touch-enterprise
+3,UTP-G3-Touch-Enterprise,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UTP-G3-Touch-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-utp-g3-touch-pro
+2,UTP-G3-Touch-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-utp-g3-touch-pro
+3,UTP-G3-Touch-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UTP-G3-Touch-Wall,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-utp-g3-touch-wall
+2,UTP-G3-Touch-Wall,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-utp-g3-touch-wall
+3,UTP-G3-Touch-Wall,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UTP-TouchMax-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,UTP-TouchMax-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,UTP-TouchMax-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UTP-Touch-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-utp-touch-b/w
+2,UTP-Touch-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-utp-touch-b/w
+3,UTP-Touch-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UT-G3-Handset,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ut-g3-handset
+2,UT-G3-Handset,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ut-g3-handset
+3,UT-G3-Handset,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UT-ATA,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ut-ata
+2,UT-ATA,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ut-ata
+3,UT-ATA,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UC-EV-Station-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uc-ev-station-pro
+2,UC-EV-Station-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uc-ev-station-pro
+3,UC-EV-Station-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UC-EV-Station-Lite,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,UC-EV-Station-Lite,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,UC-EV-Station-Lite,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UPL-Amp-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-upl-amp-b/w
+2,UPL-Amp-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-upl-amp-b/w
+3,UPL-Amp-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UPL-Port-B/W,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-upl-port-b/w
+2,UPL-Port-B/W,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-upl-port-b/w
+3,UPL-Port-B/W,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UC-Cast-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uc-cast-pro
+2,UC-Cast-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uc-cast-pro
+3,UC-Cast-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UC-Cast-Lite,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uc-cast-lite
+2,UC-Cast-Lite,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uc-cast-lite
+3,UC-Cast-Lite,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,ECS-Aggregation,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ecs-aggregation
+2,ECS-Aggregation,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ecs-aggregation
+3,ECS-Aggregation,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-XG-Aggregation,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,USW-Pro-XG-Aggregation,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,USW-Pro-XG-Aggregation,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-Aggregation,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-aggregation
+2,USW-Pro-Aggregation,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-aggregation
+3,USW-Pro-Aggregation,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Aggregation,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-aggregation
+2,USW-Aggregation,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-aggregation
+3,USW-Aggregation,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,ECS-48-PoE(2150W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ecs-48-poe(2150w)
+2,ECS-48-PoE(2150W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ecs-48-poe(2150w)
+3,ECS-48-PoE(2150W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,ECS-24-PoE(1050W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,ECS-24-PoE(1050W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,ECS-24-PoE(1050W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,ECS-48S-PoE(2150W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ecs-48s-poe(2150w)
+2,ECS-48S-PoE(2150W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ecs-48s-poe(2150w)
+3,ECS-48S-PoE(2150W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,ECS-24S-PoE(1050W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ecs-24s-poe(1050w)
+2,ECS-24S-PoE(1050W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ecs-24s-poe(1050w)
+3,ECS-24S-PoE(1050W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,ECS-Aggregation,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ecs-aggregation
+2,ECS-Aggregation,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ecs-aggregation
+3,ECS-Aggregation,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-Max-48-PoE(720W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-max-48-poe(720w)
+2,USW-Pro-Max-48-PoE(720W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-max-48-poe(720w)
+3,USW-Pro-Max-48-PoE(720W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-Max-24-PoE(400W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,USW-Pro-Max-24-PoE(400W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,USW-Pro-Max-24-PoE(400W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-XG-48-PoE(1080),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-xg-48-poe(1080)
+2,USW-Pro-XG-48-PoE(1080),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-xg-48-poe(1080)
+3,USW-Pro-XG-48-PoE(1080),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-XG-24-PoE(720W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-xg-24-poe(720w)
+2,USW-Pro-XG-24-PoE(720W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-xg-24-poe(720w)
+3,USW-Pro-XG-24-PoE(720W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-HD-24-PoE(600W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-hd-24-poe(600w)
+2,USW-Pro-HD-24-PoE(600W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-hd-24-poe(600w)
+3,USW-Pro-HD-24-PoE(600W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-XG-48,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-xg-48
+2,USW-Pro-XG-48,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-xg-48
+3,USW-Pro-XG-48,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-XG-24,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-xg-24
+2,USW-Pro-XG-24,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-xg-24
+3,USW-Pro-XG-24,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-XG-10-PoE(400W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-xg-10-poe(400w)
+2,USW-Pro-XG-10-PoE(400W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-xg-10-poe(400w)
+3,USW-Pro-XG-10-PoE(400W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-Max-16-PoE(180W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-max-16-poe(180w)
+2,USW-Pro-Max-16-PoE(180W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-max-16-poe(180w)
+3,USW-Pro-Max-16-PoE(180W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-HD-24,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-hd-24
+2,USW-Pro-HD-24,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-hd-24
+3,USW-Pro-HD-24,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-Max-48,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-max-48
+2,USW-Pro-Max-48,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-max-48
+3,USW-Pro-Max-48,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-Max-24,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-max-24
+2,USW-Pro-Max-24,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-max-24
+3,USW-Pro-Max-24,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-Max-16,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-max-16
+2,USW-Pro-Max-16,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-max-16
+3,USW-Pro-Max-16,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-48-PoE(600W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-48-poe(600w)
+2,USW-Pro-48-PoE(600W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-48-poe(600w)
+3,USW-Pro-48-PoE(600W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-24-PoE(400W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,USW-Pro-24-PoE(400W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,USW-Pro-24-PoE(400W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-48,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-48
+2,USW-Pro-48,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-48
+3,USW-Pro-48,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-24,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-24
+2,USW-Pro-24,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-24
+3,USW-Pro-24,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Enterprise-48-PoE(720W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-enterprise-48-poe(720w)
+2,USW-Enterprise-48-PoE(720W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-enterprise-48-poe(720w)
+3,USW-Enterprise-48-PoE(720W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Enterprise-24-PoE(400W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-enterprise-24-poe(400w)
+2,USW-Enterprise-24-PoE(400W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-enterprise-24-poe(400w)
+3,USW-Enterprise-24-PoE(400W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Mission-Critical-(120W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-mission-critical-(120w)
+2,USW-Mission-Critical-(120W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-mission-critical-(120w)
+3,USW-Mission-Critical-(120W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-48-PoE(195W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-48-poe(195w)
+2,USW-48-PoE(195W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-48-poe(195w)
+3,USW-48-PoE(195W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-24-PoE(95W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,USW-24-PoE(95W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,USW-24-PoE(95W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-16-PoE(42W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-16-poe(42w)
+2,USW-16-PoE(42W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-16-poe(42w)
+3,USW-16-PoE(42W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-48,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-48
+2,USW-48,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-48
+3,USW-48,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-24,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-24
+2,USW-24,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-24
+3,USW-24,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-WAN,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-wan
+2,USW-WAN,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-wan
+3,USW-WAN,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-WAN-RJ45,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,USW-WAN-RJ45,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,USW-WAN-RJ45,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Lite-16-PoE(45W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-lite-16-poe(45w)
+2,USW-Lite-16-PoE(45W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-lite-16-poe(45w)
+3,USW-Lite-16-PoE(45W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Lite-8-PoE(52W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,USW-Lite-8-PoE(52W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,USW-Lite-8-PoE(52W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-XG-8-PoE(155W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-xg-8-poe(155w)
+2,USW-Pro-XG-8-PoE(155W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-xg-8-poe(155w)
+3,USW-Pro-XG-8-PoE(155W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Enterprise-8-PoE(120W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-enterprise-8-poe(120w)
+2,USW-Enterprise-8-PoE(120W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-enterprise-8-poe(120w)
+3,USW-Enterprise-8-PoE(120W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Pro-8-PoE(120W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-pro-8-poe(120w)
+2,USW-Pro-8-PoE(120W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-pro-8-poe(120w)
+3,USW-Pro-8-PoE(120W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Ultra-210W(202W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-ultra-210w(202w)
+2,USW-Ultra-210W(202W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-ultra-210w(202w)
+3,USW-Ultra-210W(202W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Ultra-60W(52W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-ultra-60w(52w)
+2,USW-Ultra-60W(52W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-ultra-60w(52w)
+3,USW-Ultra-60W(52W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Ultra(42W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-ultra(42w)
+2,USW-Ultra(42W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-ultra(42w)
+3,USW-Ultra(42W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Flex-2.5G-8-PoE(196W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-flex-2.5g-8-poe(196w)
+2,USW-Flex-2.5G-8-PoE(196W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-flex-2.5g-8-poe(196w)
+3,USW-Flex-2.5G-8-PoE(196W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Flex-2.5G-8,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-flex-2.5g-8
+2,USW-Flex-2.5G-8,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-flex-2.5g-8
+3,USW-Flex-2.5G-8,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Flex-2.5G-5,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-flex-2.5g-5
+2,USW-Flex-2.5G-5,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-flex-2.5g-5
+3,USW-Flex-2.5G-5,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Flex-Mini,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-flex-mini
+2,USW-Flex-Mini,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-flex-mini
+3,USW-Flex-Mini,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Flex(46W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-flex(46w)
+2,USW-Flex(46W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-flex(46w)
+3,USW-Flex(46W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Flex-Utility,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-flex-utility
+2,USW-Flex-Utility,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-flex-utility
+3,USW-Flex-Utility,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UACC-Flex-Utility-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uacc-flex-utility-pro
+2,UACC-Flex-Utility-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uacc-flex-utility-pro
+3,UACC-Flex-Utility-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,USW-Flex-XG,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-usw-flex-xg
+2,USW-Flex-XG,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-usw-flex-xg
+3,USW-Flex-XG,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,E7,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-e7
+2,E7,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-e7
+3,E7,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,E7-Campus,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,E7-Campus,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,E7-Campus,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,E7-Audience,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-e7-audience
+2,E7-Audience,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-e7-audience
+3,E7-Audience,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U7-Pro-XGS,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u7-pro-xgs
+2,U7-Pro-XGS,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u7-pro-xgs
+3,U7-Pro-XGS,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U7-Pro-XG,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,U7-Pro-XG,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,U7-Pro-XG,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U7-Pro-Max,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u7-pro-max
+2,U7-Pro-Max,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u7-pro-max
+3,U7-Pro-Max,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U7-Pr0,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u7-pr0
+2,U7-Pr0,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u7-pr0
+3,U7-Pr0,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U7-LR,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u7-lr
+2,U7-LR,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u7-lr
+3,U7-LR,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U7-Lite,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u7-lite
+2,U7-Lite,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u7-lite
+3,U7-Lite,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U6-Enterprise,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u6-enterprise
+2,U6-Enterprise,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u6-enterprise
+3,U6-Enterprise,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U6-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u6-pro
+2,U6-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u6-pro
+3,U6-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U6-PLUS,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u6-plus
+2,U6-PLUS,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u6-plus
+3,U6-PLUS,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UAP-AC-PRO,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uap-ac-pro
+2,UAP-AC-PRO,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uap-ac-pro
+3,UAP-AC-PRO,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U7-Pro-XG-Wall,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u7-pro-xg-wall
+2,U7-Pro-XG-Wall,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u7-pro-xg-wall
+3,U7-Pro-XG-Wall,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U7-Pro-Wall,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,U7-Pro-Wall,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,U7-Pro-Wall,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U7-IW,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u7-iw
+2,U7-IW,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u7-iw
+3,U7-IW,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U6-Enterprise-IW,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u6-enterprise-iw
+2,U6-Enterprise-IW,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u6-enterprise-iw
+3,U6-Enterprise-IW,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U6-IW,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u6-iw
+2,U6-IW,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u6-iw
+3,U6-IW,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U6-Extender,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u6-extender
+2,U6-Extender,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u6-extender
+3,U6-Extender,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U7-Pro-Outdoor,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u7-pro-outdoor
+2,U7-Pro-Outdoor,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u7-pro-outdoor
+3,U7-Pro-Outdoor,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U7-Outdoor,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,U7-Outdoor,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,U7-Outdoor,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U6-Mesh,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u6-mesh
+2,U6-Mesh,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u6-mesh
+3,U6-Mesh,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,U6-Mesh-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-u6-mesh-pro
+2,U6-Mesh-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-u6-mesh-pro
+3,U6-Mesh-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,AC Mesh,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ac mesh
+2,AC Mesh,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ac mesh
+3,AC Mesh,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UK-Ultra,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-uk-ultra
+2,UK-Ultra,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-uk-ultra
+3,UK-Ultra,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,Product Collection,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-product collection
+2,Product Collection,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-product collection
+3,Product Collection,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UWB-XG,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,UWB-XG,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,UWB-XG,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UDB-Pro-Sector,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-udb-pro-sector
+2,UDB-Pro-Sector,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-udb-pro-sector
+3,UDB-Pro-Sector,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UDB-Pro,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit
+2,UDB-Pro,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable
+3,UDB-Pro,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UDB,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-udb
+2,UDB,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-udb
+3,UDB,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UBB,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ubb
+2,UBB,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ubb
+3,UBB,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UDB-Switch(35W),Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-udb-switch(35w)
+2,UDB-Switch(35W),Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-udb-switch(35w)
+3,UDB-Switch(35W),SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UBB-XG,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-ubb-xg
+2,UBB-XG,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-ubb-xg
+3,UBB-XG,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UDB-IoT,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-udb-iot
+2,UDB-IoT,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-udb-iot
+3,UDB-IoT,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
+1,UTR,Mounting Kit,/images/dcs-box.png,299,"Compact, stackable, and toolless design. Perfect for your rack-mount devices.",/products/mounting-kit-utr
+2,UTR,Power Cable,/images/dcs-box.png,299,High-quality power cable with durable construction.,/products/power-cable-utr
+3,UTR,SFP+ Module,/images/dcs-box.png,299,High-speed 10Gbps SFP+ module for fiber connectivity.,/products/sfp-module-10g
