@@ -5585,4 +5585,116 @@ export const accessoriesProducts: Product[] = [
     ],
   },
 
+  //Produk Kesepuluh dari Accessories, SF Storage
+  {
+    id: "UACC-SSD-2.5-1TB",
+    name: "2.5' SSD, 1 TB",
+    category: "Accessories",
+    subfilter: "Storage",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "2.5' SATA solid-state drive designed for local storage of CloudKey+.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-SSD-2.5-1TB",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "100.1 x 69.9 x 7 mm (3.9 x 2.8 x 0.3')" },
+          { label: "Weight", value: "45 g (1.6 oz)" },
+          { label: "Form Factor", value: "2.5-inch SSD" },
+          { label: "Capacity", value: "1 TB" },
+          { label: "Management Interface", value: "SATA 3, 6 Gb/s" },
+          { label: "Speed Class", value: "Read: 550 MB/s Write: 515 MB/s" },
+          { label: "Mean Time Between Failure (MTBF)", value: "1,500,000 h" },
+          { label: "Endurance (TBW)", value: "640 TBW" },
+          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 85% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, CE, UL, RCM, KC, BSMI" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Pertama dari Accessories, SF Rack Mount
+  {
+    id: "UACC-SSD-2.5-1TB",
+    name: "2.5' SSD, 1 TB",
+    category: "Accessories",
+    subfilter: "Storage",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "2.5' SATA solid-state drive designed for local storage of CloudKey+.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-SSD-2.5-1TB",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "With handle and caster:519 x 460 x 485 mm (20.43 x 18.11 x 19.09') Without handle and caster: 519 x 460 x 351 mm (20.43 x 18.11 x 13.82')" },
+          { label: "Weight", value: "10.3 kg (22.7 lb)" },
+          { label: "Max. Weight Capacity", value: "Double Toolless Mini Racks with Stacking Kit Static: 70 kg (154 lb) Rolling: 35 kg (77 lb)" },
+          { label: "Enclosure Material ", value: "Frame/Bracket: SPCC steel Handle: Stainless steel" },
+          { label: "Color", value: "Silver" },
+          { label: "Treatment", value: "Liquid Coating" },
+          { label: "Pack Options", value: "(1) Flat pack box" },
+          { label: "Rack Features U Height", value: "6U" },
+          { label: "Rack Features Rack Type", value: "Open Frame" },
+          { label: "Rack Features Mounting", value: "Floor Stand" },
+          { label: "Rack Features Lockable Casters", value: "✓" },
+          { label: "Incompatible Devices", value: "UniFi Switch (Gen1), US-24-250W US-24-500W US-48-500W US-48-750W USG USG-Pro-4 EdgeSwitch ES-24-250W ES-24-500W ES-48-500W ES-48-750W EdgeRouter ER-8 Others CKG2-RM ER-RMKIT UACC-Pro-Max-16-RM" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+
 ]; // paling trakhir
