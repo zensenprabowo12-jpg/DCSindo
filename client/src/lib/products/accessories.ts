@@ -5645,7 +5645,7 @@ export const accessoriesProducts: Product[] = [
     id: "UACC-SSD-2.5-1TB",
     name: "2.5' SSD, 1 TB",
     category: "Accessories",
-    subfilter: "Storage",
+    subfilter: "Rack Mount",
     image: "/images/camera.jpg",
     shortDescription:
       "2.5' SATA solid-state drive designed for local storage of CloudKey+.",
@@ -5691,6 +5691,157 @@ export const accessoriesProducts: Product[] = [
           { label: "Rack Features Lockable Casters", value: "✓" },
           { label: "Incompatible Devices", value: "UniFi Switch (Gen1), US-24-250W US-24-500W US-48-500W US-48-750W USG USG-Pro-4 EdgeSwitch ES-24-250W ES-24-500W ES-48-500W ES-48-750W EdgeRouter ER-8 Others CKG2-RM ER-RMKIT UACC-Pro-Max-16-RM" },
           { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-Shelf-TL",
+    name: "Toolless Mini Rack Shelf",
+    category: "Accessories",
+    subfilter: "Raack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fixed shelf accessory for installing non-rack-mountable devices in the toolless mini rack.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Shelf-TL",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "453.8 x 460 x 27.4 mm  (17.9 x 18.1 x 1.1')" },
+          { label: "Weight", value: "2.8 kg (6.2 lb)" },
+          { label: "Enclosure Material ", value: "Cold rolled carbon steel (SPCC)" },
+          { label: "Color", value: "Silver" },
+          { label: "Rack Features Max. Weight Capacity", value: "20 kg (44 lb)" },
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-Shelf-TL-SD",
+    name: "Toolless Mini Rack Shelf",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Sliding shelf accessory for installing non-rack-mountable devices in the toolless mini rack.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Shelf-TL-SD",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "453.8 x 230 x 27.4 mm (17.9 x 9.1 x 1.1')" },
+          { label: "Weight", value: "1.75 kg (3.9 lb)" },
+          { label: "Enclosure Material ", value: "Cold rolled carbon steel (SPCC)" },
+          { label: "Color", value: "Silver" },
+          { label: "Rack Features Max. Weight Capacity", value: "20 kg (44 lb)" },
+        ]
+      },
+    ],
+  },
+
+  //Produk Keempat dari Accessories, SF Rack Mount
+   {
+    id: "UACC-Keystone-Jack-C6",
+    name: "Cat6 Keystone Jack, 12-Pack",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Toolless keystone for terminating a Cat6 Ethernet jack without the use of a punch-down or crimping tool.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Keystone-Jack-C6",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+      "Easy snap-in installation on a blank patch panel",
+      "(12) Keystone Jacks per pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "34.8 x 14.5 x 16.1 mm (1.4 x 0.6 x 0.6')" },
+          { label: "Weight", value: "7.3 g (0.3 oz)" },
+          { label: "Type ", value: "Category 6" },
+          { label: "Standard", value: "TIA-568A and 568B wiring compatible" },
+          { label: "Material", value: "Polycarbonate" },
+          { label: "Mounting", value: "Flush Mount Installations" },
+          { label: "Suggested Cable Gauge", value: "23-26AWG" },
+          { label: "Pack Options", value: "12-Pack" }
         ]
       },
     ],
