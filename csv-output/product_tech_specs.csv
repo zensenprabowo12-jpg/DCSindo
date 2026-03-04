@@ -1,0 +1,3082 @@
+id,product_id,section_title,section_order,label,value,is_check,is_list,item_order
+1,U-Cable-Patch-RJ45-Indoor,Overview,0,Available Lengths,"0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)",0,0,0
+2,U-Cable-Patch-RJ45-Indoor,Overview,0,Available Colors,"White, Blue, Black",0,0,1
+3,U-Cable-Patch-RJ45-Indoor,Overview,0,Pack Options,Single Unit 50-pack (0.1 m),0,0,2
+4,U-Cable-Patch-RJ45-Indoor,Overview,0,Supported Data Rate,GbE,0,0,3
+5,U-Cable-Patch-RJ45-Indoor,Overview,0,Supported PoE type,Up to PoE+++,0,0,4
+6,U-Cable-Patch-RJ45-Indoor,Overview,0,Connector,(2) Bendable booted RJ45,0,0,5
+7,U-Cable-Patch-RJ45-Indoor,Overview,0,Operating Environment,Indoor,0,0,6
+8,U-Cable-Patch-RJ45-Indoor,Overview,0,Cable Jacket Diameter,3 mm (0.1'),0,0,7
+9,U-Cable-Patch-RJ45-Indoor,Overview,0,Cable Jacket Material,Thermoplastic elastomer (TPE),0,0,8
+10,U-Cable-Patch-RJ45-Indoor,Overview,0,Cable Shielding Type,UTP,0,0,9
+11,U-Cable-Patch-RJ45-Indoor,Overview,0,Cable Conductor Type,Stranded copper,0,0,10
+12,U-Cable-Patch-RJ45-Indoor,Overview,0,Cable Conductor Wire Gage,30 AWG,0,0,11
+13,U-Cable-Patch-RJ45-Indoor,Overview,0,Cable Bend Radius,Min. 24 mm ( (0.94''),0,0,12
+14,U-Cable-Patch-RJ45-Indoor,Overview,0,Flame Rating,FT-2(UL1581),0,0,13
+15,U-Cable-Patch-RJ45-Indoor,Overview,0,Standars,TIA/EIA-568-B.2 ISO/IEC 11801,0,0,14
+16,U-Cable-Patch-RJ45-Indoor,Overview,0,Installion Temperature,0 to 60°C (32 to 140°F),0,0,15
+17,U-Cable-Patch-RJ45-Indoor,Overview,0,Ambient Storage Temperature,-20 to 80°C (-4 to 176°F),0,0,16
+18,U-Cable-Patch-RJ45-Indoor,Overview,0,Ambient Operating Temperature,-10 to 75°C (14 to 167°F),0,0,17
+19,U-Cable-Patch-RJ45-Outdoor,Overview,0,Available Lengths,"1, 2, 3, 5, 8 m(3.3, 6.6, 9.8, 16.4, 26.3 ft)",0,0,0
+20,U-Cable-Patch-RJ45-Outdoor,Overview,0,Available Colors,"White, Black",0,0,1
+21,U-Cable-Patch-RJ45-Outdoor,Overview,0,Pack Options,Single Unit,0,0,2
+22,U-Cable-Patch-RJ45-Outdoor,Overview,0,Supported Data Rate,GbE,0,0,3
+23,U-Cable-Patch-RJ45-Outdoor,Overview,0,Supported PoE type,Up to PoE+++,0,0,4
+24,U-Cable-Patch-RJ45-Outdoor,Overview,0,Connector,(2) Shielding RJ45,0,0,5
+25,U-Cable-Patch-RJ45-Outdoor,Overview,0,Operating Environment,Outdoor,0,0,6
+26,U-Cable-Patch-RJ45-Outdoor,Overview,0,Cable Jacket Diameter,6.3 mm (0.25'),0,0,7
+27,U-Cable-Patch-RJ45-Outdoor,Overview,0,Cable Jacket Material,Thermoplastic elastomer (TPE),0,0,8
+28,U-Cable-Patch-RJ45-Outdoor,Overview,0,Cable Shielding Type,S/FTP,0,0,9
+29,U-Cable-Patch-RJ45-Outdoor,Overview,0,Cable Conductor Type,Stranded copper,0,0,10
+30,U-Cable-Patch-RJ45-Outdoor,Overview,0,Cable Conductor Wire Gage,24 AWG,0,0,11
+31,U-Cable-Patch-RJ45-Outdoor,Overview,0,Cable Bend Radius,Min. 50.4 mm ( (1.98''),0,0,12
+32,U-Cable-Patch-RJ45-Outdoor,Overview,0,UV Resistance,ASTM G 151/154,0,0,13
+33,U-Cable-Patch-RJ45-Outdoor,Overview,0,Flame Rating,VW-1 (UL1581),0,0,14
+34,U-Cable-Patch-RJ45-Outdoor,Overview,0,Standars,TIA/EIA-568-B.2 ISO/IEC 11801,0,0,15
+35,U-Cable-Patch-RJ45-Outdoor,Overview,0,Installion Temperature,-20 to 60°C (-4 to 140°F),0,0,16
+36,U-Cable-Patch-RJ45-Outdoor,Overview,0,Ambient Storage Temperature,-40 to 80°C (-40 to 176°F),0,0,17
+37,U-Cable-Patch-RJ45-Outdoor,Overview,0,Ambient Operating Temperature,-30 to 75°C (-22 to 167°F),0,0,18
+38,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Available Lengths,"End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)",0,0,0
+39,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Available Colors,White,0,0,1
+40,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Pack Options,Single Unit 24-pack (0.15 m),0,0,2
+41,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Supported Data Rate,10G,0,0,3
+42,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Supported PoE type,Up to PoE+++,0,0,4
+43,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Connector,(2) Translucent booted RJ45,0,0,5
+44,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Operating Environment,Indoor,0,0,6
+45,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Cable Jacket Diameter,0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11'),0,0,7
+46,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Cable Jacket Material,Thermoplastic elastomer (TPE),0,0,8
+47,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Cable Shielding Type,UTP,0,0,9
+48,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Cable Conductor Type,Stranded copper,0,0,10
+49,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Cable Conductor Wire Gage,1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG,0,0,11
+50,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Cable Bend Radius,Min. 24 mm  (0.94''),0,0,12
+51,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Flame Rating,FT-2(UL1581),0,0,13
+52,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Standars,TIA/EIA-568-B.2 ISO/IEC 11801,0,0,14
+53,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Installion Temperature,0 to 60°C (32 to 140°F),0,0,15
+54,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Ambient Storage Temperature,-20 to 80°C (-4 to 176°F),0,0,16
+55,UACC-Cable-Patch-EL-0.15M-W,Overview,0,Ambient Operating Temperature,-10 to 75°C (14 to 167°F),0,0,17
+56,ENVR,Overview,0,Product Name,Enterprise NVR,0,0,0
+57,ENVR,Overview,0,Model,ENVR,0,0,1
+58,ENVR,Overview,0,Category,Camera Security,0,0,2
+59,ENVR,Hardware,1,Form Factor,Standard,0,0,0
+60,ENVR,Hardware,1,Power Supply,AC/DC,0,0,1
+61,ENVR,Software,2,Management,UniFi Network,0,0,0
+62,ENVR,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+63,UNVR-Pro,Overview,0,Product Name,Network Video Recorder Pro,0,0,0
+64,UNVR-Pro,Overview,0,Model,UNVR-PRO,0,0,1
+65,UNVR-Pro,Overview,0,Category,UniFi Product,0,0,2
+66,UNVR-Pro,Overview,0,Resolution,4K (8MP),0,0,3
+67,UNVR-Pro,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+68,UNVR-Pro,Overview,0,Zoom,3x Optical,0,0,5
+69,UNVR-Pro,Overview,0,Audio,Two-way Audio,0,0,6
+70,UNVR-Pro,Hardware,1,Form Factor,Standard,0,0,0
+71,UNVR-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+72,UNVR-Pro,Software,2,Management,UniFi Network,0,0,0
+73,UNVR-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+74,UNVR,Overview,0,Product Name,Network Video Recorder ,0,0,0
+75,UNVR,Overview,0,Model,UNVR,0,0,1
+76,UNVR,Overview,0,Category,UniFi Product,0,0,2
+77,UNVR,Overview,0,Resolution,4K (8MP),0,0,3
+78,UNVR,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+79,UNVR,Overview,0,Zoom,3x Optical,0,0,5
+80,UNVR,Overview,0,Audio,Two-way Audio,0,0,6
+81,UNVR,Hardware,1,Form Factor,Standard,0,0,0
+82,UNVR,Hardware,1,Power Supply,AC/DC,0,0,1
+83,UNVR,Software,2,Management,UniFi Network,0,0,0
+84,UNVR,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+85,UNVR-Instant,Overview,0,Product Name,Network Video Recorder Instant,0,0,0
+86,UNVR-Instant,Overview,0,Model,UNVR-INSTANT,0,0,1
+87,UNVR-Instant,Overview,0,Category,UniFi Product,0,0,2
+88,UNVR-Instant,Overview,0,Resolution,4K (8MP),0,0,3
+89,UNVR-Instant,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+90,UNVR-Instant,Overview,0,Zoom,3x Optical,0,0,5
+91,UNVR-Instant,Overview,0,Audio,Two-way Audio,0,0,6
+92,UNVR-Instant,Hardware,1,Form Factor,Standard,0,0,0
+93,UNVR-Instant,Hardware,1,Power Supply,AC/DC,0,0,1
+94,UNVR-Instant,Software,2,Management,UniFi Network,0,0,0
+95,UNVR-Instant,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+96,UNVR-Instant-Kit,Overview,0,Product Name,Network Video Recorder Instant Kit,0,0,0
+97,UNVR-Instant-Kit,Overview,0,Model,UNVR-INSTANT-KIT,0,0,1
+98,UNVR-Instant-Kit,Overview,0,Category,UniFi Product,0,0,2
+99,UNVR-Instant-Kit,Overview,0,Resolution,4K (8MP),0,0,3
+100,UNVR-Instant-Kit,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+101,UNVR-Instant-Kit,Overview,0,Zoom,3x Optical,0,0,5
+102,UNVR-Instant-Kit,Overview,0,Audio,Two-way Audio,0,0,6
+103,UNVR-Instant-Kit,Hardware,1,Form Factor,Standard,0,0,0
+104,UNVR-Instant-Kit,Hardware,1,Power Supply,AC/DC,0,0,1
+105,UNVR-Instant-Kit,Software,2,Management,UniFi Network,0,0,0
+106,UNVR-Instant-Kit,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+107,AI-Key,Overview,0,Product Name,AI Key,0,0,0
+108,AI-Key,Overview,0,Model,AI-KEY,0,0,1
+109,AI-Key,Overview,0,Category,UniFi Product,0,0,2
+110,AI-Key,Overview,0,Resolution,4K (8MP),0,0,3
+111,AI-Key,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+112,AI-Key,Overview,0,Zoom,3x Optical,0,0,5
+113,AI-Key,Overview,0,Audio,Two-way Audio,0,0,6
+114,AI-Key,Hardware,1,Form Factor,Standard,0,0,0
+115,AI-Key,Hardware,1,Power Supply,AC/DC,0,0,1
+116,AI-Key,Software,2,Management,UniFi Network,0,0,0
+117,AI-Key,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+118,UP-AI-Port,Overview,0,Product Name,AI Port,0,0,0
+119,UP-AI-Port,Overview,0,Model,UP-AI-PORT,0,0,1
+120,UP-AI-Port,Overview,0,Category,UniFi Product,0,0,2
+121,UP-AI-Port,Overview,0,Resolution,4K (8MP),0,0,3
+122,UP-AI-Port,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+123,UP-AI-Port,Overview,0,Zoom,3x Optical,0,0,5
+124,UP-AI-Port,Overview,0,Audio,Two-way Audio,0,0,6
+125,UP-AI-Port,Hardware,1,Form Factor,Standard,0,0,0
+126,UP-AI-Port,Hardware,1,Power Supply,AC/DC,0,0,1
+127,UP-AI-Port,Software,2,Management,UniFi Network,0,0,0
+128,UP-AI-Port,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+129,UP-Viewport,Overview,0,Product Name,Protect Viewport,0,0,0
+130,UP-Viewport,Overview,0,Model,UP-VIEWPORT,0,0,1
+131,UP-Viewport,Overview,0,Category,UniFi Product,0,0,2
+132,UP-Viewport,Overview,0,Resolution,4K (8MP),0,0,3
+133,UP-Viewport,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+134,UP-Viewport,Overview,0,Zoom,3x Optical,0,0,5
+135,UP-Viewport,Overview,0,Audio,Two-way Audio,0,0,6
+136,UP-Viewport,Hardware,1,Form Factor,Standard,0,0,0
+137,UP-Viewport,Hardware,1,Power Supply,AC/DC,0,0,1
+138,UP-Viewport,Software,2,Management,UniFi Network,0,0,0
+139,UP-Viewport,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+140,UCK-G2-SSD,Overview,0,Product Name,CloudKey+,0,0,0
+141,UCK-G2-SSD,Overview,0,Model,UCK-G2-SSD,0,0,1
+142,UCK-G2-SSD,Overview,0,Category,UniFi Product,0,0,2
+143,UCK-G2-SSD,Overview,0,Resolution,4K (8MP),0,0,3
+144,UCK-G2-SSD,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+145,UCK-G2-SSD,Overview,0,Zoom,3x Optical,0,0,5
+146,UCK-G2-SSD,Overview,0,Audio,Two-way Audio,0,0,6
+147,UCK-G2-SSD,Hardware,1,Form Factor,Standard,0,0,0
+148,UCK-G2-SSD,Hardware,1,Power Supply,AC/DC,0,0,1
+149,UCK-G2-SSD,Software,2,Management,UniFi Network,0,0,0
+150,UCK-G2-SSD,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+151,UVC-G6-Pro-Turret,Overview,0,Product Name,G6 Pro Turret,0,0,0
+152,UVC-G6-Pro-Turret,Overview,0,Model,UVC-G6-PRO-TURRET,0,0,1
+153,UVC-G6-Pro-Turret,Overview,0,Category,UniFi Product,0,0,2
+154,UVC-G6-Pro-Turret,Overview,0,Resolution,4K (8MP),0,0,3
+155,UVC-G6-Pro-Turret,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+156,UVC-G6-Pro-Turret,Overview,0,Zoom,3x Optical,0,0,5
+157,UVC-G6-Pro-Turret,Overview,0,Audio,Two-way Audio,0,0,6
+158,UVC-G6-Pro-Turret,Hardware,1,Form Factor,Standard,0,0,0
+159,UVC-G6-Pro-Turret,Hardware,1,Power Supply,AC/DC,0,0,1
+160,UVC-G6-Pro-Turret,Software,2,Management,UniFi Network,0,0,0
+161,UVC-G6-Pro-Turret,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+162,UVC-G6-Pro-Dome,Overview,0,Product Name,G6 Pro DOme,0,0,0
+163,UVC-G6-Pro-Dome,Overview,0,Model,UVC-G6-PRO-DOME,0,0,1
+164,UVC-G6-Pro-Dome,Overview,0,Category,UniFi Product,0,0,2
+165,UVC-G6-Pro-Dome,Overview,0,Resolution,4K (8MP),0,0,3
+166,UVC-G6-Pro-Dome,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+167,UVC-G6-Pro-Dome,Overview,0,Zoom,3x Optical,0,0,5
+168,UVC-G6-Pro-Dome,Overview,0,Audio,Two-way Audio,0,0,6
+169,UVC-G6-Pro-Dome,Hardware,1,Form Factor,Standard,0,0,0
+170,UVC-G6-Pro-Dome,Hardware,1,Power Supply,AC/DC,0,0,1
+171,UVC-G6-Pro-Dome,Software,2,Management,UniFi Network,0,0,0
+172,UVC-G6-Pro-Dome,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+173,UVC-G6-Turret,Overview,0,Product Name,G6 Turret,0,0,0
+174,UVC-G6-Turret,Overview,0,Model,UVC-G6-TURRET,0,0,1
+175,UVC-G6-Turret,Overview,0,Category,UniFi Product,0,0,2
+176,UVC-G6-Turret,Overview,0,Resolution,4K (8MP),0,0,3
+177,UVC-G6-Turret,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+178,UVC-G6-Turret,Overview,0,Zoom,3x Optical,0,0,5
+179,UVC-G6-Turret,Overview,0,Audio,Two-way Audio,0,0,6
+180,UVC-G6-Turret,Hardware,1,Form Factor,Standard,0,0,0
+181,UVC-G6-Turret,Hardware,1,Power Supply,AC/DC,0,0,1
+182,UVC-G6-Turret,Software,2,Management,UniFi Network,0,0,0
+183,UVC-G6-Turret,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+184,UVC-G6-Dome,Overview,0,Product Name,G6 Dome,0,0,0
+185,UVC-G6-Dome,Overview,0,Model,UVC-G6-DOME,0,0,1
+186,UVC-G6-Dome,Overview,0,Category,UniFi Product,0,0,2
+187,UVC-G6-Dome,Overview,0,Resolution,4K (8MP),0,0,3
+188,UVC-G6-Dome,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+189,UVC-G6-Dome,Overview,0,Zoom,3x Optical,0,0,5
+190,UVC-G6-Dome,Overview,0,Audio,Two-way Audio,0,0,6
+191,UVC-G6-Dome,Hardware,1,Form Factor,Standard,0,0,0
+192,UVC-G6-Dome,Hardware,1,Power Supply,AC/DC,0,0,1
+193,UVC-G6-Dome,Software,2,Management,UniFi Network,0,0,0
+194,UVC-G6-Dome,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+195,UVC-G6-Pro-360-  ,Overview,0,Product Name,G6 Pro 360,0,0,0
+196,UVC-G6-Pro-360-  ,Overview,0,Model,UVC-G6-PRO-360-B-W,0,0,1
+197,UVC-G6-Pro-360-  ,Overview,0,Category,UniFi Product,0,0,2
+198,UVC-G6-Pro-360-  ,Overview,0,Resolution,4K (8MP),0,0,3
+199,UVC-G6-Pro-360-  ,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+200,UVC-G6-Pro-360-  ,Overview,0,Zoom,3x Optical,0,0,5
+201,UVC-G6-Pro-360-  ,Overview,0,Audio,Two-way Audio,0,0,6
+202,UVC-G6-Pro-360-  ,Hardware,1,Form Factor,Standard,0,0,0
+203,UVC-G6-Pro-360-  ,Hardware,1,Power Supply,AC/DC,0,0,1
+204,UVC-G6-Pro-360-  ,Software,2,Management,UniFi Network,0,0,0
+205,UVC-G6-Pro-360-  ,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+206,UVC-G6-180-B/W,Overview,0,Product Name,G6 180,0,0,0
+207,UVC-G6-180-B/W,Overview,0,Model,UVC-G6-180-B-W,0,0,1
+208,UVC-G6-180-B/W,Overview,0,Category,UniFi Product,0,0,2
+209,UVC-G6-180-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+210,UVC-G6-180-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+211,UVC-G6-180-B/W,Overview,0,Zoom,3x Optical,0,0,5
+212,UVC-G6-180-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+213,UVC-G6-180-B/W,Hardware,1,Form Factor,Standard,0,0,0
+214,UVC-G6-180-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+215,UVC-G6-180-B/W,Software,2,Management,UniFi Network,0,0,0
+216,UVC-G6-180-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+217,UVC-G5-Turret-Ultra-B/W,Overview,0,Product Name,G5 Turret Ultra,0,0,0
+218,UVC-G5-Turret-Ultra-B/W,Overview,0,Model,UVC-G5-TURRET-ULTRA-B-W,0,0,1
+219,UVC-G5-Turret-Ultra-B/W,Overview,0,Category,UniFi Product,0,0,2
+220,UVC-G5-Turret-Ultra-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+221,UVC-G5-Turret-Ultra-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+222,UVC-G5-Turret-Ultra-B/W,Overview,0,Zoom,3x Optical,0,0,5
+223,UVC-G5-Turret-Ultra-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+224,UVC-G5-Turret-Ultra-B/W,Hardware,1,Form Factor,Standard,0,0,0
+225,UVC-G5-Turret-Ultra-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+226,UVC-G5-Turret-Ultra-B/W,Software,2,Management,UniFi Network,0,0,0
+227,UVC-G5-Turret-Ultra-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+228,UVC-AI-Turret-B/W,Overview,0,Product Name,AI Turret,0,0,0
+229,UVC-AI-Turret-B/W,Overview,0,Model,UVC-AI-TURRET-B-W,0,0,1
+230,UVC-AI-Turret-B/W,Overview,0,Category,UniFi Product,0,0,2
+231,UVC-AI-Turret-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+232,UVC-AI-Turret-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+233,UVC-AI-Turret-B/W,Overview,0,Zoom,3x Optical,0,0,5
+234,UVC-AI-Turret-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+235,UVC-AI-Turret-B/W,Hardware,1,Form Factor,Standard,0,0,0
+236,UVC-AI-Turret-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+237,UVC-AI-Turret-B/W,Software,2,Management,UniFi Network,0,0,0
+238,UVC-AI-Turret-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+239,UVC-AI-Dome-B/W,Overview,0,Product Name,AI Dome,0,0,0
+240,UVC-AI-Dome-B/W,Overview,0,Model,UVC-AI-DOME-B-W,0,0,1
+241,UVC-AI-Dome-B/W,Overview,0,Category,UniFi Product,0,0,2
+242,UVC-AI-Dome-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+243,UVC-AI-Dome-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+244,UVC-AI-Dome-B/W,Overview,0,Zoom,3x Optical,0,0,5
+245,UVC-AI-Dome-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+246,UVC-AI-Dome-B/W,Hardware,1,Form Factor,Standard,0,0,0
+247,UVC-AI-Dome-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+248,UVC-AI-Dome-B/W,Software,2,Management,UniFi Network,0,0,0
+249,UVC-AI-Dome-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+250,UVC-AI-360-B/W,Overview,0,Product Name,AI 360,0,0,0
+251,UVC-AI-360-B/W,Overview,0,Model,UVC-AI-360-B-W,0,0,1
+252,UVC-AI-360-B/W,Overview,0,Category,UniFi Product,0,0,2
+253,UVC-AI-360-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+254,UVC-AI-360-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+255,UVC-AI-360-B/W,Overview,0,Zoom,3x Optical,0,0,5
+256,UVC-AI-360-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+257,UVC-AI-360-B/W,Hardware,1,Form Factor,Standard,0,0,0
+258,UVC-AI-360-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+259,UVC-AI-360-B/W,Software,2,Management,UniFi Network,0,0,0
+260,UVC-AI-360-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+261,UVC-G5-Dome,Overview,0,Product Name,G5 Dome,0,0,0
+262,UVC-G5-Dome,Overview,0,Model,UVC-G5-DOME,0,0,1
+263,UVC-G5-Dome,Overview,0,Category,UniFi Product,0,0,2
+264,UVC-G5-Dome,Overview,0,Resolution,4K (8MP),0,0,3
+265,UVC-G5-Dome,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+266,UVC-G5-Dome,Overview,0,Zoom,3x Optical,0,0,5
+267,UVC-G5-Dome,Overview,0,Audio,Two-way Audio,0,0,6
+268,UVC-G5-Dome,Hardware,1,Form Factor,Standard,0,0,0
+269,UVC-G5-Dome,Hardware,1,Power Supply,AC/DC,0,0,1
+270,UVC-G5-Dome,Software,2,Management,UniFi Network,0,0,0
+271,UVC-G5-Dome,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+272,UVC-G5-Dome-Ultra-B/W,Overview,0,Product Name,G5 Dome Ultra,0,0,0
+273,UVC-G5-Dome-Ultra-B/W,Overview,0,Model,UVC-G5-DOME-ULTRA-B-W,0,0,1
+274,UVC-G5-Dome-Ultra-B/W,Overview,0,Category,UniFi Product,0,0,2
+275,UVC-G5-Dome-Ultra-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+276,UVC-G5-Dome-Ultra-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+277,UVC-G5-Dome-Ultra-B/W,Overview,0,Zoom,3x Optical,0,0,5
+278,UVC-G5-Dome-Ultra-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+279,UVC-G5-Dome-Ultra-B/W,Hardware,1,Form Factor,Standard,0,0,0
+280,UVC-G5-Dome-Ultra-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+281,UVC-G5-Dome-Ultra-B/W,Software,2,Management,UniFi Network,0,0,0
+282,UVC-G5-Dome-Ultra-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+283,UVC-AI-MS-4-B/W,Overview,0,Product Name,AI Multi Sensor 4,0,0,0
+284,UVC-AI-MS-4-B/W,Overview,0,Model,UVC-AI-MS-4-B-W,0,0,1
+285,UVC-AI-MS-4-B/W,Overview,0,Category,UniFi Product,0,0,2
+286,UVC-AI-MS-4-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+287,UVC-AI-MS-4-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+288,UVC-AI-MS-4-B/W,Overview,0,Zoom,3x Optical,0,0,5
+289,UVC-AI-MS-4-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+290,UVC-AI-MS-4-B/W,Hardware,1,Form Factor,Standard,0,0,0
+291,UVC-AI-MS-4-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+292,UVC-AI-MS-4-B/W,Software,2,Management,UniFi Network,0,0,0
+293,UVC-AI-MS-4-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+294,UVC-G6-Pro-Bullet-B/W,Overview,0,Product Name,G6 Pro Bullet,0,0,0
+295,UVC-G6-Pro-Bullet-B/W,Overview,0,Model,UVC-G6-PRO-BULLET-B-W,0,0,1
+296,UVC-G6-Pro-Bullet-B/W,Overview,0,Category,UniFi Product,0,0,2
+297,UVC-G6-Pro-Bullet-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+298,UVC-G6-Pro-Bullet-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+299,UVC-G6-Pro-Bullet-B/W,Overview,0,Zoom,3x Optical,0,0,5
+300,UVC-G6-Pro-Bullet-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+301,UVC-G6-Pro-Bullet-B/W,Hardware,1,Form Factor,Standard,0,0,0
+302,UVC-G6-Pro-Bullet-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+303,UVC-G6-Pro-Bullet-B/W,Software,2,Management,UniFi Network,0,0,0
+304,UVC-G6-Pro-Bullet-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+305,UVC-G6-Bullet-B/W,Overview,0,Product Name,G6 Bullet,0,0,0
+306,UVC-G6-Bullet-B/W,Overview,0,Model,UVC-G6-BULLET-B-W,0,0,1
+307,UVC-G6-Bullet-B/W,Overview,0,Category,UniFi Product,0,0,2
+308,UVC-G6-Bullet-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+309,UVC-G6-Bullet-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+310,UVC-G6-Bullet-B/W,Overview,0,Zoom,3x Optical,0,0,5
+311,UVC-G6-Bullet-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+312,UVC-G6-Bullet-B/W,Hardware,1,Form Factor,Standard,0,0,0
+313,UVC-G6-Bullet-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+314,UVC-G6-Bullet-B/W,Software,2,Management,UniFi Network,0,0,0
+315,UVC-G6-Bullet-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+316,UVC-AI-LPR-B/W,Overview,0,Product Name,AI LPR,0,0,0
+317,UVC-AI-LPR-B/W,Overview,0,Model,UVC-AI-LPR-B-W,0,0,1
+318,UVC-AI-LPR-B/W,Overview,0,Category,UniFi Product,0,0,2
+319,UVC-AI-LPR-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+320,UVC-AI-LPR-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+321,UVC-AI-LPR-B/W,Overview,0,Zoom,3x Optical,0,0,5
+322,UVC-AI-LPR-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+323,UVC-AI-LPR-B/W,Hardware,1,Form Factor,Standard,0,0,0
+324,UVC-AI-LPR-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+325,UVC-AI-LPR-B/W,Software,2,Management,UniFi Network,0,0,0
+326,UVC-AI-LPR-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+327,UVC-AI-DSLR-B/W,Overview,0,Product Name,AI DSLR,0,0,0
+328,UVC-AI-DSLR-B/W,Overview,0,Model,UVC-AI-DSLR-B-W,0,0,1
+329,UVC-AI-DSLR-B/W,Overview,0,Category,UniFi Product,0,0,2
+330,UVC-AI-DSLR-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+331,UVC-AI-DSLR-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+332,UVC-AI-DSLR-B/W,Overview,0,Zoom,3x Optical,0,0,5
+333,UVC-AI-DSLR-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+334,UVC-AI-DSLR-B/W,Hardware,1,Form Factor,Standard,0,0,0
+335,UVC-AI-DSLR-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+336,UVC-AI-DSLR-B/W,Software,2,Management,UniFi Network,0,0,0
+337,UVC-AI-DSLR-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+338,UVC-AI-Pro-B/W,Overview,0,Product Name,AI Pro,0,0,0
+339,UVC-AI-Pro-B/W,Overview,0,Model,UVC-AI-PRO-B-W,0,0,1
+340,UVC-AI-Pro-B/W,Overview,0,Category,UniFi Product,0,0,2
+341,UVC-AI-Pro-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+342,UVC-AI-Pro-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+343,UVC-AI-Pro-B/W,Overview,0,Zoom,3x Optical,0,0,5
+344,UVC-AI-Pro-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+345,UVC-AI-Pro-B/W,Hardware,1,Form Factor,Standard,0,0,0
+346,UVC-AI-Pro-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+347,UVC-AI-Pro-B/W,Software,2,Management,UniFi Network,0,0,0
+348,UVC-AI-Pro-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+349,UVC-G5-Pro,Overview,0,Product Name,G5 Pro,0,0,0
+350,UVC-G5-Pro,Overview,0,Model,UVC-G5-PRO,0,0,1
+351,UVC-G5-Pro,Overview,0,Category,UniFi Product,0,0,2
+352,UVC-G5-Pro,Overview,0,Resolution,4K (8MP),0,0,3
+353,UVC-G5-Pro,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+354,UVC-G5-Pro,Overview,0,Zoom,3x Optical,0,0,5
+355,UVC-G5-Pro,Overview,0,Audio,Two-way Audio,0,0,6
+356,UVC-G5-Pro,Hardware,1,Form Factor,Standard,0,0,0
+357,UVC-G5-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+358,UVC-G5-Pro,Software,2,Management,UniFi Network,0,0,0
+359,UVC-G5-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+360,UVC-G5-Bullet,Overview,0,Product Name,G5 Bullet,0,0,0
+361,UVC-G5-Bullet,Overview,0,Model,UVC-G5-BULLET,0,0,1
+362,UVC-G5-Bullet,Overview,0,Category,UniFi Product,0,0,2
+363,UVC-G5-Bullet,Overview,0,Resolution,4K (8MP),0,0,3
+364,UVC-G5-Bullet,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+365,UVC-G5-Bullet,Overview,0,Zoom,3x Optical,0,0,5
+366,UVC-G5-Bullet,Overview,0,Audio,Two-way Audio,0,0,6
+367,UVC-G5-Bullet,Hardware,1,Form Factor,Standard,0,0,0
+368,UVC-G5-Bullet,Hardware,1,Power Supply,AC/DC,0,0,1
+369,UVC-G5-Bullet,Software,2,Management,UniFi Network,0,0,0
+370,UVC-G5-Bullet,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+371,UVC-G6-INS-W,Overview,0,Product Name,G6 Instant,0,0,0
+372,UVC-G6-INS-W,Overview,0,Model,UVC-G6-INS-W,0,0,1
+373,UVC-G6-INS-W,Overview,0,Category,UniFi Product,0,0,2
+374,UVC-G6-INS-W,Overview,0,Resolution,4K (8MP),0,0,3
+375,UVC-G6-INS-W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+376,UVC-G6-INS-W,Overview,0,Zoom,3x Optical,0,0,5
+377,UVC-G6-INS-W,Overview,0,Audio,Two-way Audio,0,0,6
+378,UVC-G6-INS-W,Hardware,1,Form Factor,Standard,0,0,0
+379,UVC-G6-INS-W,Hardware,1,Power Supply,AC/DC,0,0,1
+380,UVC-G6-INS-W,Software,2,Management,UniFi Network,0,0,0
+381,UVC-G6-INS-W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+382,UVC-AI-Theta-Pro-W,Overview,0,Product Name,Camera AI Theta Pro,0,0,0
+383,UVC-AI-Theta-Pro-W,Overview,0,Model,UVC-AI-THETA-PRO-W,0,0,1
+384,UVC-AI-Theta-Pro-W,Overview,0,Category,UniFi Product,0,0,2
+385,UVC-AI-Theta-Pro-W,Overview,0,Resolution,4K (8MP),0,0,3
+386,UVC-AI-Theta-Pro-W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+387,UVC-AI-Theta-Pro-W,Overview,0,Zoom,3x Optical,0,0,5
+388,UVC-AI-Theta-Pro-W,Overview,0,Audio,Two-way Audio,0,0,6
+389,UVC-AI-Theta-Pro-W,Hardware,1,Form Factor,Standard,0,0,0
+390,UVC-AI-Theta-Pro-W,Hardware,1,Power Supply,AC/DC,0,0,1
+391,UVC-AI-Theta-Pro-W,Software,2,Management,UniFi Network,0,0,0
+392,UVC-AI-Theta-Pro-W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+393,UVC-G5-Flex,Overview,0,Product Name,G5 Flex,0,0,0
+394,UVC-G5-Flex,Overview,0,Model,UVC-G5-FLEX,0,0,1
+395,UVC-G5-Flex,Overview,0,Category,UniFi Product,0,0,2
+396,UVC-G5-Flex,Overview,0,Resolution,4K (8MP),0,0,3
+397,UVC-G5-Flex,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+398,UVC-G5-Flex,Overview,0,Zoom,3x Optical,0,0,5
+399,UVC-G5-Flex,Overview,0,Audio,Two-way Audio,0,0,6
+400,UVC-G5-Flex,Hardware,1,Form Factor,Standard,0,0,0
+401,UVC-G5-Flex,Hardware,1,Power Supply,AC/DC,0,0,1
+402,UVC-G5-Flex,Software,2,Management,UniFi Network,0,0,0
+403,UVC-G5-Flex,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+404,UVC-G4-INS,Overview,0,Product Name,G4 Instant,0,0,0
+405,UVC-G4-INS,Overview,0,Model,UVC-G4-INS,0,0,1
+406,UVC-G4-INS,Overview,0,Category,UniFi Product,0,0,2
+407,UVC-G4-INS,Overview,0,Resolution,4K (8MP),0,0,3
+408,UVC-G4-INS,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+409,UVC-G4-INS,Overview,0,Zoom,3x Optical,0,0,5
+410,UVC-G4-INS,Overview,0,Audio,Two-way Audio,0,0,6
+411,UVC-G4-INS,Hardware,1,Form Factor,Standard,0,0,0
+412,UVC-G4-INS,Hardware,1,Power Supply,AC/DC,0,0,1
+413,UVC-G4-INS,Software,2,Management,UniFi Network,0,0,0
+414,UVC-G4-INS,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+415,UVC-AI-Theta-Audio,Overview,0,Product Name,AI Theta Audio,0,0,0
+416,UVC-AI-Theta-Audio,Overview,0,Model,UVC-AI-THETA-AUDIO,0,0,1
+417,UVC-AI-Theta-Audio,Overview,0,Category,UniFi Product,0,0,2
+418,UVC-AI-Theta-Audio,Overview,0,Resolution,4K (8MP),0,0,3
+419,UVC-AI-Theta-Audio,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+420,UVC-AI-Theta-Audio,Overview,0,Zoom,3x Optical,0,0,5
+421,UVC-AI-Theta-Audio,Overview,0,Audio,Two-way Audio,0,0,6
+422,UVC-AI-Theta-Audio,Hardware,1,Form Factor,Standard,0,0,0
+423,UVC-AI-Theta-Audio,Hardware,1,Power Supply,AC/DC,0,0,1
+424,UVC-AI-Theta-Audio,Software,2,Management,UniFi Network,0,0,0
+425,UVC-AI-Theta-Audio,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+426,UVC-AI-Theta-ProLens50,Overview,0,Product Name,AI Theta Pro Long-Distance Lens,0,0,0
+427,UVC-AI-Theta-ProLens50,Overview,0,Model,UVC-AI-THETA-PROLENS50,0,0,1
+428,UVC-AI-Theta-ProLens50,Overview,0,Category,UniFi Product,0,0,2
+429,UVC-AI-Theta-ProLens50,Overview,0,Resolution,4K (8MP),0,0,3
+430,UVC-AI-Theta-ProLens50,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+431,UVC-AI-Theta-ProLens50,Overview,0,Zoom,3x Optical,0,0,5
+432,UVC-AI-Theta-ProLens50,Overview,0,Audio,Two-way Audio,0,0,6
+433,UVC-AI-Theta-ProLens50,Hardware,1,Form Factor,Standard,0,0,0
+434,UVC-AI-Theta-ProLens50,Hardware,1,Power Supply,AC/DC,0,0,1
+435,UVC-AI-Theta-ProLens50,Software,2,Management,UniFi Network,0,0,0
+436,UVC-AI-Theta-ProLens50,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+437,UVC-G6-PTZ-B/W,Overview,0,Product Name,G6 PTZ,0,0,0
+438,UVC-G6-PTZ-B/W,Overview,0,Model,UVC-G6-PTZ-B-W,0,0,1
+439,UVC-G6-PTZ-B/W,Overview,0,Category,UniFi Product,0,0,2
+440,UVC-G6-PTZ-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+441,UVC-G6-PTZ-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+442,UVC-G6-PTZ-B/W,Overview,0,Zoom,3x Optical,0,0,5
+443,UVC-G6-PTZ-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+444,UVC-G6-PTZ-B/W,Hardware,1,Form Factor,Standard,0,0,0
+445,UVC-G6-PTZ-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+446,UVC-G6-PTZ-B/W,Software,2,Management,UniFi Network,0,0,0
+447,UVC-G6-PTZ-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+448,UVC-AI-PTZ-B/W,Overview,0,Product Name,AI PTZ Industrial,0,0,0
+449,UVC-AI-PTZ-B/W,Overview,0,Model,UVC-AI-PTZ-B-W,0,0,1
+450,UVC-AI-PTZ-B/W,Overview,0,Category,UniFi Product,0,0,2
+451,UVC-AI-PTZ-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+452,UVC-AI-PTZ-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+453,UVC-AI-PTZ-B/W,Overview,0,Zoom,3x Optical,0,0,5
+454,UVC-AI-PTZ-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+455,UVC-AI-PTZ-B/W,Hardware,1,Form Factor,Standard,0,0,0
+456,UVC-AI-PTZ-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+457,UVC-AI-PTZ-B/W,Software,2,Management,UniFi Network,0,0,0
+458,UVC-AI-PTZ-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+459,UVC-AI-PTZ-Precision-B/W,Overview,0,Product Name,AI PTZ Precision,0,0,0
+460,UVC-AI-PTZ-Precision-B/W,Overview,0,Model,UVC-AI-PTZ-PRECISION-B-W,0,0,1
+461,UVC-AI-PTZ-Precision-B/W,Overview,0,Category,UniFi Product,0,0,2
+462,UVC-AI-PTZ-Precision-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+463,UVC-AI-PTZ-Precision-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+464,UVC-AI-PTZ-Precision-B/W,Overview,0,Zoom,3x Optical,0,0,5
+465,UVC-AI-PTZ-Precision-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+466,UVC-AI-PTZ-Precision-B/W,Hardware,1,Form Factor,Standard,0,0,0
+467,UVC-AI-PTZ-Precision-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+468,UVC-AI-PTZ-Precision-B/W,Software,2,Management,UniFi Network,0,0,0
+469,UVC-AI-PTZ-Precision-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+470,UVC-G5-PTZ-B/W,Overview,0,Product Name,G5 PTZ ,0,0,0
+471,UVC-G5-PTZ-B/W,Overview,0,Model,UVC-G5-PTZ-B-W,0,0,1
+472,UVC-G5-PTZ-B/W,Overview,0,Category,UniFi Product,0,0,2
+473,UVC-G5-PTZ-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+474,UVC-G5-PTZ-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+475,UVC-G5-PTZ-B/W,Overview,0,Zoom,3x Optical,0,0,5
+476,UVC-G5-PTZ-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+477,UVC-G5-PTZ-B/W,Hardware,1,Form Factor,Standard,0,0,0
+478,UVC-G5-PTZ-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+479,UVC-G5-PTZ-B/W,Software,2,Management,UniFi Network,0,0,0
+480,UVC-G5-PTZ-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+481,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Overview,0,Product Name,G4 Doorbell Pro PoE Kit,0,0,0
+482,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Overview,0,Model,UVC-4-DOORBELL-PRO-POE-KIT-B-W,0,0,1
+483,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Overview,0,Category,UniFi Product,0,0,2
+484,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+485,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+486,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Overview,0,Zoom,3x Optical,0,0,5
+487,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+488,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Hardware,1,Form Factor,Standard,0,0,0
+489,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+490,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Software,2,Management,UniFi Network,0,0,0
+491,UVC-4-Doorbell-Pro-PoE-Kit-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+492,UVC-4-Doorbell-Pro-B/W,Overview,0,Product Name,G4 Doorbell Pro,0,0,0
+493,UVC-4-Doorbell-Pro-B/W,Overview,0,Model,UVC-4-DOORBELL-PRO-B-W,0,0,1
+494,UVC-4-Doorbell-Pro-B/W,Overview,0,Category,UniFi Product,0,0,2
+495,UVC-4-Doorbell-Pro-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+496,UVC-4-Doorbell-Pro-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+497,UVC-4-Doorbell-Pro-B/W,Overview,0,Zoom,3x Optical,0,0,5
+498,UVC-4-Doorbell-Pro-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+499,UVC-4-Doorbell-Pro-B/W,Hardware,1,Form Factor,Standard,0,0,0
+500,UVC-4-Doorbell-Pro-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+501,UVC-4-Doorbell-Pro-B/W,Software,2,Management,UniFi Network,0,0,0
+502,UVC-4-Doorbell-Pro-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+503,UVC-Doorbell-B/W,Overview,0,Product Name,Doorbell Lite,0,0,0
+504,UVC-Doorbell-B/W,Overview,0,Model,UVC-DOORBELL-B-W,0,0,1
+505,UVC-Doorbell-B/W,Overview,0,Category,UniFi Product,0,0,2
+506,UVC-Doorbell-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+507,UVC-Doorbell-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+508,UVC-Doorbell-B/W,Overview,0,Zoom,3x Optical,0,0,5
+509,UVC-Doorbell-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+510,UVC-Doorbell-B/W,Hardware,1,Form Factor,Standard,0,0,0
+511,UVC-Doorbell-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+512,UVC-Doorbell-B/W,Software,2,Management,UniFi Network,0,0,0
+513,UVC-Doorbell-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+514,UVC-Chime-PoE,Overview,0,Product Name,PoE Smart Chime,0,0,0
+515,UVC-Chime-PoE,Overview,0,Model,UVC-CHIME-POE,0,0,1
+516,UVC-Chime-PoE,Overview,0,Category,UniFi Product,0,0,2
+517,UVC-Chime-PoE,Overview,0,Resolution,4K (8MP),0,0,3
+518,UVC-Chime-PoE,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+519,UVC-Chime-PoE,Overview,0,Zoom,3x Optical,0,0,5
+520,UVC-Chime-PoE,Overview,0,Audio,Two-way Audio,0,0,6
+521,UVC-Chime-PoE,Hardware,1,Form Factor,Standard,0,0,0
+522,UVC-Chime-PoE,Hardware,1,Power Supply,AC/DC,0,0,1
+523,UVC-Chime-PoE,Software,2,Management,UniFi Network,0,0,0
+524,UVC-Chime-PoE,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+525,UVC-Chime,Overview,0,Product Name,WiFi Smart Chime,0,0,0
+526,UVC-Chime,Overview,0,Model,UVC-CHIME,0,0,1
+527,UVC-Chime,Overview,0,Category,UniFi Product,0,0,2
+528,UVC-Chime,Overview,0,Resolution,4K (8MP),0,0,3
+529,UVC-Chime,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+530,UVC-Chime,Overview,0,Zoom,3x Optical,0,0,5
+531,UVC-Chime,Overview,0,Audio,Two-way Audio,0,0,6
+532,UVC-Chime,Hardware,1,Form Factor,Standard,0,0,0
+533,UVC-Chime,Hardware,1,Power Supply,AC/DC,0,0,1
+534,UVC-Chime,Software,2,Management,UniFi Network,0,0,0
+535,UVC-Chime,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+536,USL-Gateway,Overview,0,Product Name,SuperLink Gateway,0,0,0
+537,USL-Gateway,Overview,0,Model,USL-GATEWAY,0,0,1
+538,USL-Gateway,Overview,0,Category,Camera Security,0,0,2
+539,USL-Gateway,Overview,0,Resolution,4K (8MP),0,0,3
+540,USL-Gateway,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+541,USL-Gateway,Overview,0,Zoom,3x Optical,0,0,5
+542,USL-Gateway,Overview,0,Audio,Two-way Audio,0,0,6
+543,USL-Gateway,Hardware,1,Form Factor,Standard,0,0,0
+544,USL-Gateway,Hardware,1,Power Supply,AC/DC,0,0,1
+545,USL-Gateway,Software,2,Management,UniFi Network,0,0,0
+546,USL-Gateway,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+547,USL-Entry,Overview,0,Product Name,Entry Sensor,0,0,0
+548,USL-Entry,Overview,0,Model,USL-ENTRY,0,0,1
+549,USL-Entry,Overview,0,Category,UniFi Product,0,0,2
+550,USL-Entry,Hardware,1,Form Factor,Standard,0,0,0
+551,USL-Entry,Hardware,1,Power Supply,AC/DC,0,0,1
+552,USL-Entry,Software,2,Management,UniFi Network,0,0,0
+553,USL-Entry,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+554,USL-Motion,Overview,0,Product Name,Motion Sensor,0,0,0
+555,USL-Motion,Overview,0,Model,USL-MOTION,0,0,1
+556,USL-Motion,Overview,0,Category,UniFi Product,0,0,2
+557,USL-Motion,Overview,0,Resolution,4K (8MP),0,0,3
+558,USL-Motion,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+559,USL-Motion,Overview,0,Zoom,3x Optical,0,0,5
+560,USL-Motion,Overview,0,Audio,Two-way Audio,0,0,6
+561,USL-Motion,Hardware,1,Form Factor,Standard,0,0,0
+562,USL-Motion,Hardware,1,Power Supply,AC/DC,0,0,1
+563,USL-Motion,Software,2,Management,UniFi Network,0,0,0
+564,USL-Motion,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+565,USL-Siren,Overview,0,Product Name,Siren,0,0,0
+566,USL-Siren,Overview,0,Model,USL-SIREN,0,0,1
+567,USL-Siren,Overview,0,Category,UniFi Product,0,0,2
+568,USL-Siren,Overview,0,Resolution,4K (8MP),0,0,3
+569,USL-Siren,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+570,USL-Siren,Overview,0,Zoom,3x Optical,0,0,5
+571,USL-Siren,Overview,0,Audio,Two-way Audio,0,0,6
+572,USL-Siren,Hardware,1,Form Factor,Standard,0,0,0
+573,USL-Siren,Hardware,1,Power Supply,AC/DC,0,0,1
+574,USL-Siren,Software,2,Management,UniFi Network,0,0,0
+575,USL-Siren,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+576,USL-Siren-PoE,Overview,0,Product Name,Siren PoE,0,0,0
+577,USL-Siren-PoE,Overview,0,Model,USL-SIREN-POE,0,0,1
+578,USL-Siren-PoE,Overview,0,Category,UniFi Product,0,0,2
+579,USL-Siren-PoE,Overview,0,Resolution,4K (8MP),0,0,3
+580,USL-Siren-PoE,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+581,USL-Siren-PoE,Overview,0,Zoom,3x Optical,0,0,5
+582,USL-Siren-PoE,Overview,0,Audio,Two-way Audio,0,0,6
+583,USL-Siren-PoE,Hardware,1,Form Factor,Standard,0,0,0
+584,USL-Siren-PoE,Hardware,1,Power Supply,AC/DC,0,0,1
+585,USL-Siren-PoE,Software,2,Management,UniFi Network,0,0,0
+586,USL-Siren-PoE,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+587,USL-Environmental,Overview,0,Product Name,Environmental Sensor,0,0,0
+588,USL-Environmental,Overview,0,Model,USL-ENVIRONMENTAL,0,0,1
+589,USL-Environmental,Overview,0,Category,UniFi Product,0,0,2
+590,USL-Environmental,Overview,0,Resolution,4K (8MP),0,0,3
+591,USL-Environmental,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+592,USL-Environmental,Overview,0,Zoom,3x Optical,0,0,5
+593,USL-Environmental,Overview,0,Audio,Two-way Audio,0,0,6
+594,USL-Environmental,Hardware,1,Form Factor,Standard,0,0,0
+595,USL-Environmental,Hardware,1,Power Supply,AC/DC,0,0,1
+596,USL-Environmental,Software,2,Management,UniFi Network,0,0,0
+597,USL-Environmental,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+598,UP-Sense,Overview,0,Product Name,All-In-One Sensor,0,0,0
+599,UP-Sense,Overview,0,Model,UP-SENSE,0,0,1
+600,UP-Sense,Overview,0,Category,UniFi Product,0,0,2
+601,UP-Sense,Overview,0,Resolution,4K (8MP),0,0,3
+602,UP-Sense,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+603,UP-Sense,Overview,0,Zoom,3x Optical,0,0,5
+604,UP-Sense,Overview,0,Audio,Two-way Audio,0,0,6
+605,UP-Sense,Hardware,1,Form Factor,Standard,0,0,0
+606,UP-Sense,Hardware,1,Power Supply,AC/DC,0,0,1
+607,UP-Sense,Software,2,Management,UniFi Network,0,0,0
+608,UP-Sense,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+609,USL-GlassBreak,Overview,0,Product Name,Glass Break Sensor,0,0,0
+610,USL-GlassBreak,Overview,0,Model,USL-GLASSBREAK,0,0,1
+611,USL-GlassBreak,Overview,0,Category,UniFi Product,0,0,2
+612,USL-GlassBreak,Overview,0,Resolution,4K (8MP),0,0,3
+613,USL-GlassBreak,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+614,USL-GlassBreak,Overview,0,Zoom,3x Optical,0,0,5
+615,USL-GlassBreak,Overview,0,Audio,Two-way Audio,0,0,6
+616,USL-GlassBreak,Hardware,1,Form Factor,Standard,0,0,0
+617,USL-GlassBreak,Hardware,1,Power Supply,AC/DC,0,0,1
+618,USL-GlassBreak,Software,2,Management,UniFi Network,0,0,0
+619,USL-GlassBreak,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+620,UACC-USL-ANT-HG,Overview,0,Product Name,SuperLink High-Gain Antenna,0,0,0
+621,UACC-USL-ANT-HG,Overview,0,Model,UACC-USL-ANT-HG,0,0,1
+622,UACC-USL-ANT-HG,Overview,0,Category,UniFi Product,0,0,2
+623,UACC-USL-ANT-HG,Overview,0,Resolution,4K (8MP),0,0,3
+624,UACC-USL-ANT-HG,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+625,UACC-USL-ANT-HG,Overview,0,Zoom,3x Optical,0,0,5
+626,UACC-USL-ANT-HG,Overview,0,Audio,Two-way Audio,0,0,6
+627,UACC-USL-ANT-HG,Hardware,1,Form Factor,Standard,0,0,0
+628,UACC-USL-ANT-HG,Hardware,1,Power Supply,AC/DC,0,0,1
+629,UACC-USL-ANT-HG,Software,2,Management,UniFi Network,0,0,0
+630,UACC-USL-ANT-HG,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+631,UP-AI-Horn-Speaker-B/W,Overview,0,Product Name,AI Horn Speaker,0,0,0
+632,UP-AI-Horn-Speaker-B/W,Overview,0,Model,UP-AI-HORN-SPEAKER-B-W,0,0,1
+633,UP-AI-Horn-Speaker-B/W,Overview,0,Category,UniFi Product,0,0,2
+634,UP-AI-Horn-Speaker-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+635,UP-AI-Horn-Speaker-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+636,UP-AI-Horn-Speaker-B/W,Overview,0,Zoom,3x Optical,0,0,5
+637,UP-AI-Horn-Speaker-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+638,UP-AI-Horn-Speaker-B/W,Hardware,1,Form Factor,Standard,0,0,0
+639,UP-AI-Horn-Speaker-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+640,UP-AI-Horn-Speaker-B/W,Software,2,Management,UniFi Network,0,0,0
+641,UP-AI-Horn-Speaker-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+642,UP-FloodLight,Overview,0,Product Name,Floodlight,0,0,0
+643,UP-FloodLight,Overview,0,Model,UP-FLOODLIGHT,0,0,1
+644,UP-FloodLight,Overview,0,Category,UniFi Product,0,0,2
+645,UP-FloodLight,Overview,0,Resolution,4K (8MP),0,0,3
+646,UP-FloodLight,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+647,UP-FloodLight,Overview,0,Zoom,3x Optical,0,0,5
+648,UP-FloodLight,Overview,0,Audio,Two-way Audio,0,0,6
+649,UP-FloodLight,Hardware,1,Form Factor,Standard,0,0,0
+650,UP-FloodLight,Hardware,1,Power Supply,AC/DC,0,0,1
+651,UP-FloodLight,Software,2,Management,UniFi Network,0,0,0
+652,UP-FloodLight,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+653,UACC-Adapter-PoE-USBC,Overview,0,Product Name,PoE to USB-C Adapter,0,0,0
+654,UACC-Adapter-PoE-USBC,Overview,0,Model,UACC-ADAPTER-POE-USBC,0,0,1
+655,UACC-Adapter-PoE-USBC,Overview,0,Category,UniFi Product,0,0,2
+656,UACC-Adapter-PoE-USBC,Overview,0,Resolution,4K (8MP),0,0,3
+657,UACC-Adapter-PoE-USBC,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+658,UACC-Adapter-PoE-USBC,Overview,0,Zoom,3x Optical,0,0,5
+659,UACC-Adapter-PoE-USBC,Overview,0,Audio,Two-way Audio,0,0,6
+660,UACC-Adapter-PoE-USBC,Hardware,1,Form Factor,Standard,0,0,0
+661,UACC-Adapter-PoE-USBC,Hardware,1,Power Supply,AC/DC,0,0,1
+662,UACC-Adapter-PoE-USBC,Software,2,Management,UniFi Network,0,0,0
+663,UACC-Adapter-PoE-USBC,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+664,UACC-Camera-CJB-B/W,Overview,0,Product Name,Camera Compact Junction Box,0,0,0
+665,UACC-Camera-CJB-B/W,Overview,0,Model,UACC-CAMERA-CJB-B-W,0,0,1
+666,UACC-Camera-CJB-B/W,Overview,0,Category,UniFi Product,0,0,2
+667,UACC-Camera-CJB-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+668,UACC-Camera-CJB-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+669,UACC-Camera-CJB-B/W,Overview,0,Zoom,3x Optical,0,0,5
+670,UACC-Camera-CJB-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+671,UACC-Camera-CJB-B/W,Hardware,1,Form Factor,Standard,0,0,0
+672,UACC-Camera-CJB-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+673,UACC-Camera-CJB-B/W,Software,2,Management,UniFi Network,0,0,0
+674,UACC-Camera-CJB-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+675,UACC-Camera-CJB-B/W,Overview,0,Product Name,Camera Compact Junction Box,0,0,0
+676,UACC-Camera-CJB-B/W,Overview,0,Model,UACC-CAMERA-CJB-B-W,0,0,1
+677,UACC-Camera-CJB-B/W,Overview,0,Category,UniFi Product,0,0,2
+678,UACC-Camera-CJB-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+679,UACC-Camera-CJB-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+680,UACC-Camera-CJB-B/W,Overview,0,Zoom,3x Optical,0,0,5
+681,UACC-Camera-CJB-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+682,UACC-Camera-CJB-B/W,Hardware,1,Form Factor,Standard,0,0,0
+683,UACC-Camera-CJB-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+684,UACC-Camera-CJB-B/W,Software,2,Management,UniFi Network,0,0,0
+685,UACC-Camera-CJB-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+686,UACC-Camera-JB-B/W,Overview,0,Product Name,Camera Junction Box,0,0,0
+687,UACC-Camera-JB-B/W,Overview,0,Model,UACC-CAMERA-JB-B-W,0,0,1
+688,UACC-Camera-JB-B/W,Overview,0,Category,UniFi Product,0,0,2
+689,UACC-Camera-JB-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+690,UACC-Camera-JB-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+691,UACC-Camera-JB-B/W,Overview,0,Zoom,3x Optical,0,0,5
+692,UACC-Camera-JB-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+693,UACC-Camera-JB-B/W,Hardware,1,Form Factor,Standard,0,0,0
+694,UACC-Camera-JB-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+695,UACC-Camera-JB-B/W,Software,2,Management,UniFi Network,0,0,0
+696,UACC-Camera-JB-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+697,UACC-AI-JB-B/W,Overview,0,Product Name,AI 360 Junction Box,0,0,0
+698,UACC-AI-JB-B/W,Overview,0,Model,UACC-AI-JB-B-W,0,0,1
+699,UACC-AI-JB-B/W,Overview,0,Category,UniFi Product,0,0,2
+700,UACC-AI-JB-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+701,UACC-AI-JB-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+702,UACC-AI-JB-B/W,Overview,0,Zoom,3x Optical,0,0,5
+703,UACC-AI-JB-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+704,UACC-AI-JB-B/W,Hardware,1,Form Factor,Standard,0,0,0
+705,UACC-AI-JB-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+706,UACC-AI-JB-B/W,Software,2,Management,UniFi Network,0,0,0
+707,UACC-AI-JB-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+708,UACC-G4-Dome-Arm-Mount,Overview,0,Product Name,Dome Camera Arm Mount,0,0,0
+709,UACC-G4-Dome-Arm-Mount,Overview,0,Model,UACC-G4-DOME-ARM-MOUNT,0,0,1
+710,UACC-G4-Dome-Arm-Mount,Overview,0,Category,UniFi Product,0,0,2
+711,UACC-G4-Dome-Arm-Mount,Overview,0,Resolution,4K (8MP),0,0,3
+712,UACC-G4-Dome-Arm-Mount,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+713,UACC-G4-Dome-Arm-Mount,Overview,0,Zoom,3x Optical,0,0,5
+714,UACC-G4-Dome-Arm-Mount,Overview,0,Audio,Two-way Audio,0,0,6
+715,UACC-G4-Dome-Arm-Mount,Hardware,1,Form Factor,Standard,0,0,0
+716,UACC-G4-Dome-Arm-Mount,Hardware,1,Power Supply,AC/DC,0,0,1
+717,UACC-G4-Dome-Arm-Mount,Software,2,Management,UniFi Network,0,0,0
+718,UACC-G4-Dome-Arm-Mount,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+719,UACC-Camera-AM-B,Overview,0,Product Name,Camera Arm Mount,0,0,0
+720,UACC-Camera-AM-B,Overview,0,Model,UACC-CAMERA-AM-B,0,0,1
+721,UACC-Camera-AM-B,Overview,0,Category,UniFi Product,0,0,2
+722,UACC-Camera-AM-B,Overview,0,Resolution,4K (8MP),0,0,3
+723,UACC-Camera-AM-B,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+724,UACC-Camera-AM-B,Overview,0,Zoom,3x Optical,0,0,5
+725,UACC-Camera-AM-B,Overview,0,Audio,Two-way Audio,0,0,6
+726,UACC-Camera-AM-B,Hardware,1,Form Factor,Standard,0,0,0
+727,UACC-Camera-AM-B,Hardware,1,Power Supply,AC/DC,0,0,1
+728,UACC-Camera-AM-B,Software,2,Management,UniFi Network,0,0,0
+729,UACC-Camera-AM-B,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+730,UACC-Bullet-AB-B,Overview,0,Product Name,Bullet Camera Angled Base,0,0,0
+731,UACC-Bullet-AB-B,Overview,0,Model,UACC-BULLET-AB-B,0,0,1
+732,UACC-Bullet-AB-B,Overview,0,Category,UniFi Product,0,0,2
+733,UACC-Bullet-AB-B,Overview,0,Resolution,4K (8MP),0,0,3
+734,UACC-Bullet-AB-B,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+735,UACC-Bullet-AB-B,Overview,0,Zoom,3x Optical,0,0,5
+736,UACC-Bullet-AB-B,Overview,0,Audio,Two-way Audio,0,0,6
+737,UACC-Bullet-AB-B,Hardware,1,Form Factor,Standard,0,0,0
+738,UACC-Bullet-AB-B,Hardware,1,Power Supply,AC/DC,0,0,1
+739,UACC-Bullet-AB-B,Software,2,Management,UniFi Network,0,0,0
+740,UACC-Bullet-AB-B,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+741,UACC-Pro-Bullet-Enhancer-B/W,Overview,0,Product Name,Pro Bullect Enhancer,0,0,0
+742,UACC-Pro-Bullet-Enhancer-B/W,Overview,0,Model,UACC-PRO-BULLET-ENHANCER-B-W,0,0,1
+743,UACC-Pro-Bullet-Enhancer-B/W,Overview,0,Category,UniFi Product,0,0,2
+744,UACC-Pro-Bullet-Enhancer-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+745,UACC-Pro-Bullet-Enhancer-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+746,UACC-Pro-Bullet-Enhancer-B/W,Overview,0,Zoom,3x Optical,0,0,5
+747,UACC-Pro-Bullet-Enhancer-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+748,UACC-Pro-Bullet-Enhancer-B/W,Hardware,1,Form Factor,Standard,0,0,0
+749,UACC-Pro-Bullet-Enhancer-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+750,UACC-Pro-Bullet-Enhancer-B/W,Software,2,Management,UniFi Network,0,0,0
+751,UACC-Pro-Bullet-Enhancer-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+752,UACC-AI-Pro-Enhancer-B/W,Overview,0,Product Name,AI Enhancer,0,0,0
+753,UACC-AI-Pro-Enhancer-B/W,Overview,0,Model,UACC-AI-PRO-ENHANCER-B-W,0,0,1
+754,UACC-AI-Pro-Enhancer-B/W,Overview,0,Category,UniFi Product,0,0,2
+755,UACC-AI-Pro-Enhancer-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+756,UACC-AI-Pro-Enhancer-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+757,UACC-AI-Pro-Enhancer-B/W,Overview,0,Zoom,3x Optical,0,0,5
+758,UACC-AI-Pro-Enhancer-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+759,UACC-AI-Pro-Enhancer-B/W,Hardware,1,Form Factor,Standard,0,0,0
+760,UACC-AI-Pro-Enhancer-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+761,UACC-AI-Pro-Enhancer-B/W,Software,2,Management,UniFi Network,0,0,0
+762,UACC-AI-Pro-Enhancer-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+763,UACC-G5-Enhancer,Overview,0,Product Name,G5 Pro Enhancer,0,0,0
+764,UACC-G5-Enhancer,Overview,0,Model,UACC-G5-ENHANCER,0,0,1
+765,UACC-G5-Enhancer,Overview,0,Category,UniFi Product,0,0,2
+766,UACC-G5-Enhancer,Overview,0,Resolution,4K (8MP),0,0,3
+767,UACC-G5-Enhancer,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+768,UACC-G5-Enhancer,Overview,0,Zoom,3x Optical,0,0,5
+769,UACC-G5-Enhancer,Overview,0,Audio,Two-way Audio,0,0,6
+770,UACC-G5-Enhancer,Hardware,1,Form Factor,Standard,0,0,0
+771,UACC-G5-Enhancer,Hardware,1,Power Supply,AC/DC,0,0,1
+772,UACC-G5-Enhancer,Software,2,Management,UniFi Network,0,0,0
+773,UACC-G5-Enhancer,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+774,UVC-G4-IRExtender,Overview,0,Product Name,G4 Bullet IR Enhancer,0,0,0
+775,UVC-G4-IRExtender,Overview,0,Model,UVC-G4-IREXTENDER,0,0,1
+776,UVC-G4-IRExtender,Overview,0,Category,UniFi Product,0,0,2
+777,UVC-G4-IRExtender,Overview,0,Resolution,4K (8MP),0,0,3
+778,UVC-G4-IRExtender,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+779,UVC-G4-IRExtender,Overview,0,Zoom,3x Optical,0,0,5
+780,UVC-G4-IRExtender,Overview,0,Audio,Two-way Audio,0,0,6
+781,UVC-G4-IRExtender,Hardware,1,Form Factor,Standard,0,0,0
+782,UVC-G4-IRExtender,Hardware,1,Power Supply,AC/DC,0,0,1
+783,UVC-G4-IRExtender,Software,2,Management,UniFi Network,0,0,0
+784,UVC-G4-IRExtender,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+785,UACC-Camera-DM-B/W,Overview,0,Product Name,Camera Dual Mount,0,0,0
+786,UACC-Camera-DM-B/W,Overview,0,Model,UACC-CAMERA-DM-B-W,0,0,1
+787,UACC-Camera-DM-B/W,Overview,0,Category,UniFi Product,0,0,2
+788,UACC-Camera-DM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+789,UACC-Camera-DM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+790,UACC-Camera-DM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+791,UACC-Camera-DM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+792,UACC-Camera-DM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+793,UACC-Camera-DM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+794,UACC-Camera-DM-B/W,Software,2,Management,UniFi Network,0,0,0
+795,UACC-Camera-DM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+796,UACC-GB-Plate-B/W,Overview,0,Product Name,Gang Box Mounting Plate,0,0,0
+797,UACC-GB-Plate-B/W,Overview,0,Model,UACC-GB-PLATE-B-W,0,0,1
+798,UACC-GB-Plate-B/W,Overview,0,Category,UniFi Product,0,0,2
+799,UACC-GB-Plate-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+800,UACC-GB-Plate-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+801,UACC-GB-Plate-B/W,Overview,0,Zoom,3x Optical,0,0,5
+802,UACC-GB-Plate-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+803,UACC-GB-Plate-B/W,Hardware,1,Form Factor,Standard,0,0,0
+804,UACC-GB-Plate-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+805,UACC-GB-Plate-B/W,Software,2,Management,UniFi Network,0,0,0
+806,UACC-GB-Plate-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+807,UACC-Dome-FM-B/W,Overview,0,Product Name,AI Dome Camera Flush Mount,0,0,0
+808,UACC-Dome-FM-B/W,Overview,0,Model,UACC-DOME-FM-B-W,0,0,1
+809,UACC-Dome-FM-B/W,Overview,0,Category,UniFi Product,0,0,2
+810,UACC-Dome-FM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+811,UACC-Dome-FM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+812,UACC-Dome-FM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+813,UACC-Dome-FM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+814,UACC-Dome-FM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+815,UACC-Dome-FM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+816,UACC-Dome-FM-B/W,Software,2,Management,UniFi Network,0,0,0
+817,UACC-Dome-FM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+818,UACC-G6-Pro-360-FM-B/W,Overview,0,Product Name,G6 Pro 360 Flush Mount,0,0,0
+819,UACC-G6-Pro-360-FM-B/W,Overview,0,Model,UACC-G6-PRO-360-FM-B-W,0,0,1
+820,UACC-G6-Pro-360-FM-B/W,Overview,0,Category,UniFi Product,0,0,2
+821,UACC-G6-Pro-360-FM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+822,UACC-G6-Pro-360-FM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+823,UACC-G6-Pro-360-FM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+824,UACC-G6-Pro-360-FM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+825,UACC-G6-Pro-360-FM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+826,UACC-G6-Pro-360-FM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+827,UACC-G6-Pro-360-FM-B/W,Software,2,Management,UniFi Network,0,0,0
+828,UACC-G6-Pro-360-FM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+829,UACC-G6-Dome-FM-B/W,Overview,0,Product Name,G6 Dome Camera Flush Mount,0,0,0
+830,UACC-G6-Dome-FM-B/W,Overview,0,Model,UACC-G6-DOME-FM-B-W,0,0,1
+831,UACC-G6-Dome-FM-B/W,Overview,0,Category,UniFi Product,0,0,2
+832,UACC-G6-Dome-FM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+833,UACC-G6-Dome-FM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+834,UACC-G6-Dome-FM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+835,UACC-G6-Dome-FM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+836,UACC-G6-Dome-FM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+837,UACC-G6-Dome-FM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+838,UACC-G6-Dome-FM-B/W,Software,2,Management,UniFi Network,0,0,0
+839,UACC-G6-Dome-FM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+840,UACC-G6-Dome-FMS-B/W,Overview,0,Product Name,G6 Dome Camera Flush Mount,0,0,0
+841,UACC-G6-Dome-FMS-B/W,Overview,0,Model,UACC-G6-DOME-FMS-B-W,0,0,1
+842,UACC-G6-Dome-FMS-B/W,Overview,0,Category,UniFi Product,0,0,2
+843,UACC-G6-Dome-FMS-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+844,UACC-G6-Dome-FMS-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+845,UACC-G6-Dome-FMS-B/W,Overview,0,Zoom,3x Optical,0,0,5
+846,UACC-G6-Dome-FMS-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+847,UACC-G6-Dome-FMS-B/W,Hardware,1,Form Factor,Standard,0,0,0
+848,UACC-G6-Dome-FMS-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+849,UACC-G6-Dome-FMS-B/W,Software,2,Management,UniFi Network,0,0,0
+850,UACC-G6-Dome-FMS-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+851,UACC-G5-Dome-Ultra-FM-B/W,Overview,0,Product Name,G6 Dome Camera Flush Mount,0,0,0
+852,UACC-G5-Dome-Ultra-FM-B/W,Overview,0,Model,UACC-G5-DOME-ULTRA-FM-B-W,0,0,1
+853,UACC-G5-Dome-Ultra-FM-B/W,Overview,0,Category,UniFi Product,0,0,2
+854,UACC-G5-Dome-Ultra-FM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+855,UACC-G5-Dome-Ultra-FM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+856,UACC-G5-Dome-Ultra-FM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+857,UACC-G5-Dome-Ultra-FM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+858,UACC-G5-Dome-Ultra-FM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+859,UACC-G5-Dome-Ultra-FM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+860,UACC-G5-Dome-Ultra-FM-B/W,Software,2,Management,UniFi Network,0,0,0
+861,UACC-G5-Dome-Ultra-FM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+862,UACC-G5-Dome-Ultra-FM-SB-B/W,Overview,0,Product Name,G6 Dome Camera Flush Mount,0,0,0
+863,UACC-G5-Dome-Ultra-FM-SB-B/W,Overview,0,Model,UACC-G5-DOME-ULTRA-FM-SB-B-W,0,0,1
+864,UACC-G5-Dome-Ultra-FM-SB-B/W,Overview,0,Category,UniFi Product,0,0,2
+865,UACC-G5-Dome-Ultra-FM-SB-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+866,UACC-G5-Dome-Ultra-FM-SB-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+867,UACC-G5-Dome-Ultra-FM-SB-B/W,Overview,0,Zoom,3x Optical,0,0,5
+868,UACC-G5-Dome-Ultra-FM-SB-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+869,UACC-G5-Dome-Ultra-FM-SB-B/W,Hardware,1,Form Factor,Standard,0,0,0
+870,UACC-G5-Dome-Ultra-FM-SB-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+871,UACC-G5-Dome-Ultra-FM-SB-B/W,Software,2,Management,UniFi Network,0,0,0
+872,UACC-G5-Dome-Ultra-FM-SB-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+873,UACC-G6-Dome-WS-B/W,Overview,0,Product Name,G6 Dome Camera Weather Shield,0,0,0
+874,UACC-G6-Dome-WS-B/W,Overview,0,Model,UACC-G6-DOME-WS-B-W,0,0,1
+875,UACC-G6-Dome-WS-B/W,Overview,0,Category,UniFi Product,0,0,2
+876,UACC-G6-Dome-WS-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+877,UACC-G6-Dome-WS-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+878,UACC-G6-Dome-WS-B/W,Overview,0,Zoom,3x Optical,0,0,5
+879,UACC-G6-Dome-WS-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+880,UACC-G6-Dome-WS-B/W,Hardware,1,Form Factor,Standard,0,0,0
+881,UACC-G6-Dome-WS-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+882,UACC-G6-Dome-WS-B/W,Software,2,Management,UniFi Network,0,0,0
+883,UACC-G6-Dome-WS-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+884,UACC-Dome-WS-B/W,Overview,0,Product Name,Dome Camera Weather Shield,0,0,0
+885,UACC-Dome-WS-B/W,Overview,0,Model,UACC-DOME-WS-B-W,0,0,1
+886,UACC-Dome-WS-B/W,Overview,0,Category,UniFi Product,0,0,2
+887,UACC-Dome-WS-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+888,UACC-Dome-WS-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+889,UACC-Dome-WS-B/W,Overview,0,Zoom,3x Optical,0,0,5
+890,UACC-Dome-WS-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+891,UACC-Dome-WS-B/W,Hardware,1,Form Factor,Standard,0,0,0
+892,UACC-Dome-WS-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+893,UACC-Dome-WS-B/W,Software,2,Management,UniFi Network,0,0,0
+894,UACC-Dome-WS-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+895,UACC-G6-180-FM-B/W,Overview,0,Product Name,G6 180 Camera Flush Mount,0,0,0
+896,UACC-G6-180-FM-B/W,Overview,0,Model,UACC-G6-180-FM-B-W,0,0,1
+897,UACC-G6-180-FM-B/W,Overview,0,Category,UniFi Product,0,0,2
+898,UACC-G6-180-FM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+899,UACC-G6-180-FM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+900,UACC-G6-180-FM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+901,UACC-G6-180-FM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+902,UACC-G6-180-FM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+903,UACC-G6-180-FM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+904,UACC-G6-180-FM-B/W,Software,2,Management,UniFi Network,0,0,0
+905,UACC-G6-180-FM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+906,UACC-G6-180-PM-B/W,Overview,0,Product Name,G6 180 Camera Pendant Mount,0,0,0
+907,UACC-G6-180-PM-B/W,Overview,0,Model,UACC-G6-180-PM-B-W,0,0,1
+908,UACC-G6-180-PM-B/W,Overview,0,Category,UniFi Product,0,0,2
+909,UACC-G6-180-PM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+910,UACC-G6-180-PM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+911,UACC-G6-180-PM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+912,UACC-G6-180-PM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+913,UACC-G6-180-PM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+914,UACC-G6-180-PM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+915,UACC-G6-180-PM-B/W,Software,2,Management,UniFi Network,0,0,0
+916,UACC-G6-180-PM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+917,UACC-G5-PTZ-CM-B/W,Overview,0,Product Name,G6/G5 PTZ Corner Mount,0,0,0
+918,UACC-G5-PTZ-CM-B/W,Overview,0,Model,UACC-G5-PTZ-CM-B-W,0,0,1
+919,UACC-G5-PTZ-CM-B/W,Overview,0,Category,UniFi Product,0,0,2
+920,UACC-G5-PTZ-CM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+921,UACC-G5-PTZ-CM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+922,UACC-G5-PTZ-CM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+923,UACC-G5-PTZ-CM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+924,UACC-G5-PTZ-CM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+925,UACC-G5-PTZ-CM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+926,UACC-G5-PTZ-CM-B/W,Software,2,Management,UniFi Network,0,0,0
+927,UACC-G5-PTZ-CM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+928,UACC-G5-PTZ-PM-B/W,Overview,0,Product Name,G6/G5 PTZ Pendant Mount,0,0,0
+929,UACC-G5-PTZ-PM-B/W,Overview,0,Model,UACC-G5-PTZ-PM-B-W,0,0,1
+930,UACC-G5-PTZ-PM-B/W,Overview,0,Category,UniFi Product,0,0,2
+931,UACC-G5-PTZ-PM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+932,UACC-G5-PTZ-PM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+933,UACC-G5-PTZ-PM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+934,UACC-G5-PTZ-PM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+935,UACC-G5-PTZ-PM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+936,UACC-G5-PTZ-PM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+937,UACC-G5-PTZ-PM-B/W,Software,2,Management,UniFi Network,0,0,0
+938,UACC-G5-PTZ-PM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+939,UACC-G5-PTZ-SM-B/W,Overview,0,Product Name,G6/G5 PTZ Surface Mount,0,0,0
+940,UACC-G5-PTZ-SM-B/W,Overview,0,Model,UACC-G5-PTZ-SM-B-W,0,0,1
+941,UACC-G5-PTZ-SM-B/W,Overview,0,Category,UniFi Product,0,0,2
+942,UACC-G5-PTZ-SM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+943,UACC-G5-PTZ-SM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+944,UACC-G5-PTZ-SM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+945,UACC-G5-PTZ-SM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+946,UACC-G5-PTZ-SM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+947,UACC-G5-PTZ-SM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+948,UACC-G5-PTZ-SM-B/W,Software,2,Management,UniFi Network,0,0,0
+949,UACC-G5-PTZ-SM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+950,UACC-G5-PTZ-ICM-SB-B/W,Overview,0,Product Name,G5 PTZ In-Ceiling Mount,0,0,0
+951,UACC-G5-PTZ-ICM-SB-B/W,Overview,0,Model,UACC-G5-PTZ-ICM-SB-B-W,0,0,1
+952,UACC-G5-PTZ-ICM-SB-B/W,Overview,0,Category,UniFi Product,0,0,2
+953,UACC-G5-PTZ-ICM-SB-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+954,UACC-G5-PTZ-ICM-SB-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+955,UACC-G5-PTZ-ICM-SB-B/W,Overview,0,Zoom,3x Optical,0,0,5
+956,UACC-G5-PTZ-ICM-SB-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+957,UACC-G5-PTZ-ICM-SB-B/W,Hardware,1,Form Factor,Standard,0,0,0
+958,UACC-G5-PTZ-ICM-SB-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+959,UACC-G5-PTZ-ICM-SB-B/W,Software,2,Management,UniFi Network,0,0,0
+960,UACC-G5-PTZ-ICM-SB-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+961,UACC-G6-PTZ-ICM-B/W,Overview,0,Product Name,G6 PTZ In-Ceiling Mount,0,0,0
+962,UACC-G6-PTZ-ICM-B/W,Overview,0,Model,UACC-G6-PTZ-ICM-B-W,0,0,1
+963,UACC-G6-PTZ-ICM-B/W,Overview,0,Category,UniFi Product,0,0,2
+964,UACC-G6-PTZ-ICM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+965,UACC-G6-PTZ-ICM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+966,UACC-G6-PTZ-ICM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+967,UACC-G6-PTZ-ICM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+968,UACC-G6-PTZ-ICM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+969,UACC-G6-PTZ-ICM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+970,UACC-G6-PTZ-ICM-B/W,Software,2,Management,UniFi Network,0,0,0
+971,UACC-G6-PTZ-ICM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+972,UACC-G5-PTZ-CA-B/W,Overview,0,Product Name,G6/G5 PTZ Conduit Adapter,0,0,0
+973,UACC-G5-PTZ-CA-B/W,Overview,0,Model,UACC-G5-PTZ-CA-B-W,0,0,1
+974,UACC-G5-PTZ-CA-B/W,Overview,0,Category,UniFi Product,0,0,2
+975,UACC-G5-PTZ-CA-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+976,UACC-G5-PTZ-CA-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+977,UACC-G5-PTZ-CA-B/W,Overview,0,Zoom,3x Optical,0,0,5
+978,UACC-G5-PTZ-CA-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+979,UACC-G5-PTZ-CA-B/W,Hardware,1,Form Factor,Standard,0,0,0
+980,UACC-G5-PTZ-CA-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+981,UACC-G5-PTZ-CA-B/W,Software,2,Management,UniFi Network,0,0,0
+982,UACC-G5-PTZ-CA-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+983,UACC-Flex-Cam-PWM-B/W,Overview,0,Product Name,Flex Pro Mount,0,0,0
+984,UACC-Flex-Cam-PWM-B/W,Overview,0,Model,UACC-FLEX-CAM-PWM-B-W,0,0,1
+985,UACC-Flex-Cam-PWM-B/W,Overview,0,Category,UniFi Product,0,0,2
+986,UACC-Flex-Cam-PWM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+987,UACC-Flex-Cam-PWM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+988,UACC-Flex-Cam-PWM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+989,UACC-Flex-Cam-PWM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+990,UACC-Flex-Cam-PWM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+991,UACC-Flex-Cam-PWM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+992,UACC-Flex-Cam-PWM-B/W,Software,2,Management,UniFi Network,0,0,0
+993,UACC-Flex-Cam-PWM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+994,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Overview,0,Product Name,G4 Doorbell Pro PoE Gang Box Mount,0,0,0
+995,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Overview,0,Model,UACC-G4-DOORBELL-PRO-POE-GANG-BOX-WHITE-B-W,0,0,1
+996,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Overview,0,Category,UniFi Product,0,0,2
+997,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+998,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+999,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1000,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1001,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1002,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1003,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Software,2,Management,UniFi Network,0,0,0
+1004,UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1005,UACC-G4-DBP-Cable-USB-7M,Overview,0,Product Name,G4 Doorbell Pro PoE to USB-C Cable,0,0,0
+1006,UACC-G4-DBP-Cable-USB-7M,Overview,0,Model,UACC-G4-DBP-CABLE-USB-7M,0,0,1
+1007,UACC-G4-DBP-Cable-USB-7M,Overview,0,Category,UniFi Product,0,0,2
+1008,UACC-G4-DBP-Cable-USB-7M,Overview,0,Resolution,4K (8MP),0,0,3
+1009,UACC-G4-DBP-Cable-USB-7M,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1010,UACC-G4-DBP-Cable-USB-7M,Overview,0,Zoom,3x Optical,0,0,5
+1011,UACC-G4-DBP-Cable-USB-7M,Overview,0,Audio,Two-way Audio,0,0,6
+1012,UACC-G4-DBP-Cable-USB-7M,Hardware,1,Form Factor,Standard,0,0,0
+1013,UACC-G4-DBP-Cable-USB-7M,Hardware,1,Power Supply,AC/DC,0,0,1
+1014,UACC-G4-DBP-Cable-USB-7M,Software,2,Management,UniFi Network,0,0,0
+1015,UACC-G4-DBP-Cable-USB-7M,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1016,UACC-G4-INS-Cable-USB-4.5M,Overview,0,Product Name,Instant Camera PoE to USB-C Cable,0,0,0
+1017,UACC-G4-INS-Cable-USB-4.5M,Overview,0,Model,UACC-G4-INS-CABLE-USB-4-5M,0,0,1
+1018,UACC-G4-INS-Cable-USB-4.5M,Overview,0,Category,UniFi Product,0,0,2
+1019,UACC-G4-INS-Cable-USB-4.5M,Overview,0,Resolution,4K (8MP),0,0,3
+1020,UACC-G4-INS-Cable-USB-4.5M,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1021,UACC-G4-INS-Cable-USB-4.5M,Overview,0,Zoom,3x Optical,0,0,5
+1022,UACC-G4-INS-Cable-USB-4.5M,Overview,0,Audio,Two-way Audio,0,0,6
+1023,UACC-G4-INS-Cable-USB-4.5M,Hardware,1,Form Factor,Standard,0,0,0
+1024,UACC-G4-INS-Cable-USB-4.5M,Hardware,1,Power Supply,AC/DC,0,0,1
+1025,UACC-G4-INS-Cable-USB-4.5M,Software,2,Management,UniFi Network,0,0,0
+1026,UACC-G4-INS-Cable-USB-4.5M,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1027,UACC-G4-INS-Cover-DG/G/LG,Overview,0,Product Name,G4 Instant Cover,0,0,0
+1028,UACC-G4-INS-Cover-DG/G/LG,Overview,0,Model,UACC-G4-INS-COVER-DG-G-LG,0,0,1
+1029,UACC-G4-INS-Cover-DG/G/LG,Overview,0,Category,UniFi Product,0,0,2
+1030,UACC-G4-INS-Cover-DG/G/LG,Overview,0,Resolution,4K (8MP),0,0,3
+1031,UACC-G4-INS-Cover-DG/G/LG,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1032,UACC-G4-INS-Cover-DG/G/LG,Overview,0,Zoom,3x Optical,0,0,5
+1033,UACC-G4-INS-Cover-DG/G/LG,Overview,0,Audio,Two-way Audio,0,0,6
+1034,UACC-G4-INS-Cover-DG/G/LG,Hardware,1,Form Factor,Standard,0,0,0
+1035,UACC-G4-INS-Cover-DG/G/LG,Hardware,1,Power Supply,AC/DC,0,0,1
+1036,UACC-G4-INS-Cover-DG/G/LG,Software,2,Management,UniFi Network,0,0,0
+1037,UACC-G4-INS-Cover-DG/G/LG,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1038,UACC-AI-Theta-Audio-Cable-1M,Overview,0,Product Name,AI Theta Audio Cable,0,0,0
+1039,UACC-AI-Theta-Audio-Cable-1M,Overview,0,Model,UACC-AI-THETA-AUDIO-CABLE-1M,0,0,1
+1040,UACC-AI-Theta-Audio-Cable-1M,Overview,0,Category,UniFi Product,0,0,2
+1041,UACC-AI-Theta-Audio-Cable-1M,Overview,0,Resolution,4K (8MP),0,0,3
+1042,UACC-AI-Theta-Audio-Cable-1M,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1043,UACC-AI-Theta-Audio-Cable-1M,Overview,0,Zoom,3x Optical,0,0,5
+1044,UACC-AI-Theta-Audio-Cable-1M,Overview,0,Audio,Two-way Audio,0,0,6
+1045,UACC-AI-Theta-Audio-Cable-1M,Hardware,1,Form Factor,Standard,0,0,0
+1046,UACC-AI-Theta-Audio-Cable-1M,Hardware,1,Power Supply,AC/DC,0,0,1
+1047,UACC-AI-Theta-Audio-Cable-1M,Software,2,Management,UniFi Network,0,0,0
+1048,UACC-AI-Theta-Audio-Cable-1M,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1049,UACC-AI-Theta-Audio-Cable-Ext-10M,Overview,0,Product Name,AI Theta Audio Cable Extension Cable,0,0,0
+1050,UACC-AI-Theta-Audio-Cable-Ext-10M,Overview,0,Model,UACC-AI-THETA-AUDIO-CABLE-EXT-10M,0,0,1
+1051,UACC-AI-Theta-Audio-Cable-Ext-10M,Overview,0,Category,UniFi Product,0,0,2
+1052,UACC-AI-Theta-Audio-Cable-Ext-10M,Overview,0,Resolution,4K (8MP),0,0,3
+1053,UACC-AI-Theta-Audio-Cable-Ext-10M,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1054,UACC-AI-Theta-Audio-Cable-Ext-10M,Overview,0,Zoom,3x Optical,0,0,5
+1055,UACC-AI-Theta-Audio-Cable-Ext-10M,Overview,0,Audio,Two-way Audio,0,0,6
+1056,UACC-AI-Theta-Audio-Cable-Ext-10M,Hardware,1,Form Factor,Standard,0,0,0
+1057,UACC-AI-Theta-Audio-Cable-Ext-10M,Hardware,1,Power Supply,AC/DC,0,0,1
+1058,UACC-AI-Theta-Audio-Cable-Ext-10M,Software,2,Management,UniFi Network,0,0,0
+1059,UACC-AI-Theta-Audio-Cable-Ext-10M,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1060,efg,Overview,0,Dimensions,"442.4 x 43.7 x 325 mm (17.4 x 1.7 x 12.8"")",0,0,0
+1061,efg,Overview,0,Network,✓,1,0,1
+1062,efg,Overview,0,Managed UniFi Devices,500+,0,0,2
+1063,efg,Overview,0,Simultaneous Users Connected,"5,000+",0,0,3
+1064,efg,Overview,0,Max. WAN Port Count,5,0,0,4
+1065,efg,Overview,0,Default WAN Ports,"(1) 25G SFP28, (1) 2.5 GbE RJ45",0,0,5
+1066,efg,Overview,0,Port Layout,"2x 2.5 GbE RJ45, 2x 10G SFP+, 2x 25G SFP28",0,1,6
+1067,efg,Overview,0,IDS/IPS Throughput,12.5 Gbps,0,0,7
+1068,efg,Overview,0,SSL/TLS Inspection Concurrent Sessions,"10,000",0,0,8
+1069,efg,Overview,0,Concurrent Sessions,1 Million,0,0,9
+1070,efg,Overview,0,New Sessions / Second,"71,000",0,0,10
+1071,efg,Overview,0,Form Factor,Rack mount (1U),0,0,11
+1072,efg,Overview,0,Redundancy,"Shadow Mode (VRRP) Gateway Failover, (2) Hot-Swappable PSUs",0,0,12
+1073,efg,Security,1,Firewall,Enterprise-class Application-aware Firewall,0,0,0
+1074,efg,Security,1,Threat Management,Signature-based IPS/IDS,0,0,1
+1075,efg,VPN & SD-WAN,2,Site-to-Site VPN,"OpenVPN, IPsec",0,0,0
+1076,efg,VPN & SD-WAN,2,Remote User VPN,"L2TP, OpenVPN, WireGuard",0,0,1
+1077,efg,Networking,3,Interfaces,"(1) 10G SFP+ WAN, (1) 2.5GbE RJ45 WAN",0,0,0
+1078,efg,Networking,3,Switching,(8) GbE RJ45 LAN,0,0,1
+1079,efg,Hardware,4,Processor,Quad-Core ARM Cortex-A57 at 1.7 GHz,0,0,0
+1080,efg,Hardware,4,Memory,4 GB DDR4,0,0,1
+1081,efg,Software,5,Management,UniFi Network,0,0,0
+1082,efg,Software,5,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1083,udm-pro-max,Overview,0,Dimensions,"442.4 x 43.7 x 325 mm (17.4 x 1.7 x 12.8"")",0,0,0
+1084,udm-pro-max,Overview,0,Network,✓,1,0,1
+1085,udm-pro-max,Overview,0,Managed UniFi Devices,200+,0,0,2
+1086,udm-pro-max,Overview,0,Simultaneous Users Connected,"2,000+",0,0,3
+1087,udm-pro-max,Overview,0,Max. WAN Port Count,3,0,0,4
+1088,udm-pro-max,Overview,0,Default WAN Ports,"(1) 10G SFP+, (1) 2.5 GbE RJ45",0,0,5
+1089,udm-pro-max,Overview,0,Port Layout,"8x GbE RJ45, 1x 10G SFP+, 1x 2.5 GbE RJ45",0,0,6
+1090,udm-pro-max,Overview,0,IDS/IPS Throughput,5 Gbps,0,0,7
+1091,udm-pro-max,Overview,0,Concurrent Sessions,"500,000",0,0,8
+1092,udm-pro-max,Overview,0,Form Factor,Rack mount (1U),0,0,9
+1093,udm-pro-max,Overview,0,Storage,"2x 3.5"" HDD Bays for NVR",0,0,10
+1094,udm-pro-max,Security,1,Firewall,Enterprise-class Application-aware Firewall,0,0,0
+1095,udm-pro-max,Security,1,Threat Management,Signature-based IPS/IDS,0,0,1
+1096,udm-pro-max,VPN & SD-WAN,2,Site-to-Site VPN,"OpenVPN, IPsec",0,0,0
+1097,udm-pro-max,VPN & SD-WAN,2,Remote User VPN,"L2TP, OpenVPN, WireGuard",0,0,1
+1098,udm-pro-max,Networking,3,Interfaces,"(1) 10G SFP+ WAN, (1) 2.5GbE RJ45 WAN",0,0,0
+1099,udm-pro-max,Networking,3,Switching,(8) GbE RJ45 LAN,0,0,1
+1100,udm-pro-max,Hardware,4,Processor,Quad-Core ARM Cortex-A57 at 1.7 GHz,0,0,0
+1101,udm-pro-max,Hardware,4,Memory,4 GB DDR4,0,0,1
+1102,udm-pro-max,Hardware,4,Storage,"2x 3.5"" HDD Bays",0,0,2
+1103,udm-pro-max,Software,5,Management,UniFi Network,0,0,0
+1104,udm-pro-max,Software,5,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1105,udm-pro,Overview,0,Product Name,Dream Machine Pro,0,0,0
+1106,udm-pro,Overview,0,Model,UDM-PRO,0,0,1
+1107,udm-pro,Overview,0,Managed UniFi Devices,100+,0,0,2
+1108,udm-pro,Overview,0,Simultaneous Users Connected,"1,000+",0,0,3
+1109,udm-pro,Overview,0,IDS/IPS Throughput,3.5 Gbps,0,0,4
+1110,udm-pro,Overview,0,Form Factor,Rack mount (1U),0,0,5
+1111,udm-pro,Hardware,1,Throughput,3.5 Gbps IPS,0,0,0
+1112,udm-pro,Hardware,1,PoE,"2x PoE+, 6x PoE",0,0,1
+1113,udm-pro,Hardware,1,WAN,2.5 GbE RJ45,0,0,2
+1114,udm-pro,Hardware,1,Storage,128GB SSD Integrated,0,0,3
+1115,udm-se,Overview,0,Dimensions,"442.4 x 43.7 x 325 mm (17.4 x 1.7 x 12.8"")",0,0,0
+1116,udm-se,Overview,0,Network,✓,1,0,1
+1117,udm-se,Overview,0,Managed UniFi Devices,500+,0,0,2
+1118,udm-se,Overview,0,Simultaneous Users Connected,"5,000+",0,0,3
+1119,udm-se,Overview,0,Max. WAN Port Count,5,0,0,4
+1120,udm-se,Overview,0,Default WAN Ports,"(1) 25G SFP28, (1) 2.5 GbE RJ45",0,0,5
+1121,udm-se,Overview,0,Port Layout,"2x 2.5 GbE RJ45, 2x 10G SFP+, 2x 25G SFP28",0,1,6
+1122,udm-se,Overview,0,IDS/IPS Throughput,12.5 Gbps,0,0,7
+1123,udm-se,Overview,0,SSL/TLS Inspection Concurrent Sessions,"10,000",0,0,8
+1124,udm-se,Overview,0,Concurrent Sessions,1 Million,0,0,9
+1125,udm-se,Overview,0,New Sessions / Second,"71,000",0,0,10
+1126,udm-se,Overview,0,Form Factor,Rack mount (1U),0,0,11
+1127,udm-se,Overview,0,Redundancy,"Shadow Mode (VRRP) Gateway Failover, (2) Hot-Swappable PSUs",0,0,12
+1128,udm-se,Security,1,Firewall,Enterprise-class Application-aware Firewall,0,0,0
+1129,udm-se,Security,1,Threat Management,Signature-based IPS/IDS,0,0,1
+1130,udm-se,VPN & SD-WAN,2,Site-to-Site VPN,"OpenVPN, IPsec",0,0,0
+1131,udm-se,VPN & SD-WAN,2,Remote User VPN,"L2TP, OpenVPN, WireGuard",0,0,1
+1132,udm-se,Networking,3,Interfaces,"(1) 10G SFP+ WAN, (1) 2.5GbE RJ45 WAN",0,0,0
+1133,udm-se,Networking,3,Switching,(8) GbE RJ45 LAN,0,0,1
+1134,udm-se,Hardware,4,Processor,Quad-Core ARM Cortex-A57 at 1.7 GHz,0,0,0
+1135,udm-se,Hardware,4,Memory,4 GB DDR4,0,0,1
+1136,udm-se,Software,5,Management,UniFi Network,0,0,0
+1137,udm-se,Software,5,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1138,ucg-fiber,Overview,0,Product Name,Cloud Gateways Fiber,0,0,0
+1139,ucg-fiber,Overview,0,Model,UCG-FIBER,0,0,1
+1140,ucg-fiber,Overview,0,Category,UniFi Product,0,0,2
+1141,ucg-fiber,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+1142,ucg-fiber,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+1143,ucg-fiber,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+1144,ucg-fiber,Overview,0,Storage,128GB SSD Integrated,0,0,6
+1145,ucg-fiber,Hardware,1,Form Factor,Standard,0,0,0
+1146,ucg-fiber,Hardware,1,Power Supply,AC/DC,0,0,1
+1147,ucg-fiber,Software,2,Management,UniFi Network,0,0,0
+1148,ucg-fiber,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1149,ucg-max,Overview,0,Product Name,Cloud Gateways Max,0,0,0
+1150,ucg-max,Overview,0,Model,UCG-MAX,0,0,1
+1151,ucg-max,Overview,0,Category,UniFi Product,0,0,2
+1152,ucg-max,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+1153,ucg-max,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+1154,ucg-max,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+1155,ucg-max,Overview,0,Storage,128GB SSD Integrated,0,0,6
+1156,ucg-max,Hardware,1,Form Factor,Standard,0,0,0
+1157,ucg-max,Hardware,1,Power Supply,AC/DC,0,0,1
+1158,ucg-max,Software,2,Management,UniFi Network,0,0,0
+1159,ucg-max,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1160,ucg-ultra,Overview,0,Product Name,Cloud Gateways Ultra,0,0,0
+1161,ucg-ultra,Overview,0,Model,UCG-ULTRA,0,0,1
+1162,ucg-ultra,Overview,0,Category,UniFi Product,0,0,2
+1163,ucg-ultra,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+1164,ucg-ultra,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+1165,ucg-ultra,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+1166,ucg-ultra,Overview,0,Storage,128GB SSD Integrated,0,0,6
+1167,ucg-ultra,Hardware,1,Form Factor,Standard,0,0,0
+1168,ucg-ultra,Hardware,1,Power Supply,AC/DC,0,0,1
+1169,ucg-ultra,Software,2,Management,UniFi Network,0,0,0
+1170,ucg-ultra,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1171,udr-7,Overview,0,Product Name,Dream Router 7,0,0,0
+1172,udr-7,Overview,0,Model,UDR-7,0,0,1
+1173,udr-7,Overview,0,Category,Cloud Gateways,0,0,2
+1174,udr-7,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+1175,udr-7,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+1176,udr-7,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+1177,udr-7,Overview,0,Storage,128GB SSD Integrated,0,0,6
+1178,udr-7,Hardware,1,Form Factor,Standard,0,0,0
+1179,udr-7,Hardware,1,Power Supply,AC/DC,0,0,1
+1180,udr-7,Software,2,Management,UniFi Network,0,0,0
+1181,udr-7,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1182,ux-7,Overview,0,Product Name,UniFi Express 7,0,0,0
+1183,ux-7,Overview,0,Model,UX-7,0,0,1
+1184,ux-7,Overview,0,Category,UniFi Product,0,0,2
+1185,ux-7,Hardware,1,Form Factor,Standard,0,0,0
+1186,ux-7,Hardware,1,Power Supply,AC/DC,0,0,1
+1187,ux-7,Software,2,Management,UniFi Network,0,0,0
+1188,ux-7,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1189,udr-5g-max,Overview,0,Product Name,Dream Router 5G Max,0,0,0
+1190,udr-5g-max,Overview,0,Model,UDR-5G-MAX,0,0,1
+1191,udr-5g-max,Overview,0,Category,UniFi Product,0,0,2
+1192,udr-5g-max,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+1193,udr-5g-max,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+1194,udr-5g-max,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+1195,udr-5g-max,Overview,0,Storage,128GB SSD Integrated,0,0,6
+1196,udr-5g-max,Hardware,1,Form Factor,Standard,0,0,0
+1197,udr-5g-max,Hardware,1,Power Supply,AC/DC,0,0,1
+1198,udr-5g-max,Software,2,Management,UniFi Network,0,0,0
+1199,udr-5g-max,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1200,UDW,Overview,0,Product Name,Dream Wall,0,0,0
+1201,UDW,Overview,0,Model,UDW,0,0,1
+1202,UDW,Overview,0,Category,UniFi Product,0,0,2
+1203,UDW,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+1204,UDW,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+1205,UDW,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+1206,UDW,Overview,0,Storage,128GB SSD Integrated,0,0,6
+1207,UDW,Hardware,1,Form Factor,Standard,0,0,0
+1208,UDW,Hardware,1,Power Supply,AC/DC,0,0,1
+1209,UDW,Software,2,Management,UniFi Network,0,0,0
+1210,UDW,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1211,UVC-G6-Pro-Entry,Overview,0,Product Name,G6 Pro Entry,0,0,0
+1212,UVC-G6-Pro-Entry,Overview,0,Model,UVC-G6-PRO-ENTRY,0,0,1
+1213,UVC-G6-Pro-Entry,Overview,0,Category,Door Access,0,0,2
+1214,UVC-G6-Pro-Entry,Overview,0,Resolution,4K (8MP),0,0,3
+1215,UVC-G6-Pro-Entry,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1216,UVC-G6-Pro-Entry,Overview,0,Zoom,3x Optical,0,0,5
+1217,UVC-G6-Pro-Entry,Overview,0,Audio,Two-way Audio,0,0,6
+1218,UVC-G6-Pro-Entry,Hardware,1,Form Factor,Standard,0,0,0
+1219,UVC-G6-Pro-Entry,Hardware,1,Power Supply,AC/DC,0,0,1
+1220,UVC-G6-Pro-Entry,Software,2,Management,UniFi Network,0,0,0
+1221,UVC-G6-Pro-Entry,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1222,UVC-G6-Entry,Overview,0,Product Name,G6 Entry,0,0,0
+1223,UVC-G6-Entry,Overview,0,Model,UVC-G6-ENTRY,0,0,1
+1224,UVC-G6-Entry,Overview,0,Category,UniFi Product,0,0,2
+1225,UVC-G6-Entry,Hardware,1,Form Factor,Standard,0,0,0
+1226,UVC-G6-Entry,Hardware,1,Power Supply,AC/DC,0,0,1
+1227,UVC-G6-Entry,Software,2,Management,UniFi Network,0,0,0
+1228,UVC-G6-Entry,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1229,UA-G3-Pro-B/W,Overview,0,Product Name,G3 Reader Pro,0,0,0
+1230,UA-G3-Pro-B/W,Overview,0,Model,UA-G3-PRO-B-W,0,0,1
+1231,UA-G3-Pro-B/W,Overview,0,Category,UniFi Product,0,0,2
+1232,UA-G3-Pro-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+1233,UA-G3-Pro-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1234,UA-G3-Pro-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1235,UA-G3-Pro-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1236,UA-G3-Pro-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1237,UA-G3-Pro-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1238,UA-G3-Pro-B/W,Software,2,Management,UniFi Network,0,0,0
+1239,UA-G3-Pro-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1240,UA-G2-Pro-B/W,Overview,0,Product Name,G2 Reader Pro,0,0,0
+1241,UA-G2-Pro-B/W,Overview,0,Model,UA-G2-PRO-B-W,0,0,1
+1242,UA-G2-Pro-B/W,Overview,0,Category,UniFi Product,0,0,2
+1243,UA-G2-Pro-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+1244,UA-G2-Pro-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1245,UA-G2-Pro-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1246,UA-G2-Pro-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1247,UA-G2-Pro-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1248,UA-G2-Pro-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1249,UA-G2-Pro-B/W,Software,2,Management,UniFi Network,0,0,0
+1250,UA-G2-Pro-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1251,UA-G3-Flex-B/W,Overview,0,Product Name,Reader Flex,0,0,0
+1252,UA-G3-Flex-B/W,Overview,0,Model,UA-G3-FLEX-B-W,0,0,1
+1253,UA-G3-Flex-B/W,Overview,0,Category,UniFi Product,0,0,2
+1254,UA-G3-Flex-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+1255,UA-G3-Flex-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1256,UA-G3-Flex-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1257,UA-G3-Flex-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1258,UA-G3-Flex-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1259,UA-G3-Flex-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1260,UA-G3-Flex-B/W,Software,2,Management,UniFi Network,0,0,0
+1261,UA-G3-Flex-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1262,UA-G3-B/W,Overview,0,Product Name,G3 Reader,0,0,0
+1263,UA-G3-B/W,Overview,0,Model,UA-G3-B-W,0,0,1
+1264,UA-G3-B/W,Overview,0,Category,UniFi Product,0,0,2
+1265,UA-G3-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+1266,UA-G3-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1267,UA-G3-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1268,UA-G3-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1269,UA-G3-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1270,UA-G3-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1271,UA-G3-B/W,Software,2,Management,UniFi Network,0,0,0
+1272,UA-G3-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1273,UA-G2-B/W,Overview,0,Product Name,G2 Reader,0,0,0
+1274,UA-G2-B/W,Overview,0,Model,UA-G2-B-W,0,0,1
+1275,UA-G2-B/W,Overview,0,Category,UniFi Product,0,0,2
+1276,UA-G2-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+1277,UA-G2-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1278,UA-G2-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1279,UA-G2-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1280,UA-G2-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1281,UA-G2-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1282,UA-G2-B/W,Software,2,Management,UniFi Network,0,0,0
+1283,UA-G2-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1284,UA-Retrofit-Reader-B/W,Overview,0,Product Name,Retrofit Reader,0,0,0
+1285,UA-Retrofit-Reader-B/W,Overview,0,Model,UA-RETROFIT-READER-B-W,0,0,1
+1286,UA-Retrofit-Reader-B/W,Overview,0,Category,UniFi Product,0,0,2
+1287,UA-Retrofit-Reader-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+1288,UA-Retrofit-Reader-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1289,UA-Retrofit-Reader-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1290,UA-Retrofit-Reader-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1291,UA-Retrofit-Reader-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1292,UA-Retrofit-Reader-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1293,UA-Retrofit-Reader-B/W,Software,2,Management,UniFi Network,0,0,0
+1294,UA-Retrofit-Reader-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1295,UA-G3-Intercom,Overview,0,Product Name,G3 Intercom,0,0,0
+1296,UA-G3-Intercom,Overview,0,Model,UA-G3-INTERCOM,0,0,1
+1297,UA-G3-Intercom,Overview,0,Category,UniFi Product,0,0,2
+1298,UA-G3-Intercom,Overview,0,Resolution,4K (8MP),0,0,3
+1299,UA-G3-Intercom,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1300,UA-G3-Intercom,Overview,0,Zoom,3x Optical,0,0,5
+1301,UA-G3-Intercom,Overview,0,Audio,Two-way Audio,0,0,6
+1302,UA-G3-Intercom,Hardware,1,Form Factor,Standard,0,0,0
+1303,UA-G3-Intercom,Hardware,1,Power Supply,AC/DC,0,0,1
+1304,UA-G3-Intercom,Software,2,Management,UniFi Network,0,0,0
+1305,UA-G3-Intercom,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1306,UA-G2-Intercom,Overview,0,Product Name,G2 Intercom,0,0,0
+1307,UA-G2-Intercom,Overview,0,Model,UA-G2-INTERCOM,0,0,1
+1308,UA-G2-Intercom,Overview,0,Category,UniFi Product,0,0,2
+1309,UA-G2-Intercom,Overview,0,Resolution,4K (8MP),0,0,3
+1310,UA-G2-Intercom,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1311,UA-G2-Intercom,Overview,0,Zoom,3x Optical,0,0,5
+1312,UA-G2-Intercom,Overview,0,Audio,Two-way Audio,0,0,6
+1313,UA-G2-Intercom,Hardware,1,Form Factor,Standard,0,0,0
+1314,UA-G2-Intercom,Hardware,1,Power Supply,AC/DC,0,0,1
+1315,UA-G2-Intercom,Software,2,Management,UniFi Network,0,0,0
+1316,UA-G2-Intercom,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1317,UA-Ultra,Overview,0,Product Name,Access Ultra,0,0,0
+1318,UA-Ultra,Overview,0,Model,UA-ULTRA,0,0,1
+1319,UA-Ultra,Overview,0,Category,UniFi Product,0,0,2
+1320,UA-Ultra,Overview,0,Resolution,4K (8MP),0,0,3
+1321,UA-Ultra,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1322,UA-Ultra,Overview,0,Zoom,3x Optical,0,0,5
+1323,UA-Ultra,Overview,0,Audio,Two-way Audio,0,0,6
+1324,UA-Ultra,Hardware,1,Form Factor,Standard,0,0,0
+1325,UA-Ultra,Hardware,1,Power Supply,AC/DC,0,0,1
+1326,UA-Ultra,Software,2,Management,UniFi Network,0,0,0
+1327,UA-Ultra,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1328,UA-G3-Intercom,Overview,0,Product Name,G3 Intercom,0,0,0
+1329,UA-G3-Intercom,Overview,0,Model,UA-G3-INTERCOM,0,0,1
+1330,UA-G3-Intercom,Overview,0,Category,UniFi Product,0,0,2
+1331,UA-G3-Intercom,Overview,0,Resolution,4K (8MP),0,0,3
+1332,UA-G3-Intercom,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1333,UA-G3-Intercom,Overview,0,Zoom,3x Optical,0,0,5
+1334,UA-G3-Intercom,Overview,0,Audio,Two-way Audio,0,0,6
+1335,UA-G3-Intercom,Hardware,1,Form Factor,Standard,0,0,0
+1336,UA-G3-Intercom,Hardware,1,Power Supply,AC/DC,0,0,1
+1337,UA-G3-Intercom,Software,2,Management,UniFi Network,0,0,0
+1338,UA-G3-Intercom,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1339,UA-G2-Intercom,Overview,0,Product Name,G2 Intercom,0,0,0
+1340,UA-G2-Intercom,Overview,0,Model,UA-G2-INTERCOM,0,0,1
+1341,UA-G2-Intercom,Overview,0,Category,UniFi Product,0,0,2
+1342,UA-G2-Intercom,Overview,0,Resolution,4K (8MP),0,0,3
+1343,UA-G2-Intercom,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1344,UA-G2-Intercom,Overview,0,Zoom,3x Optical,0,0,5
+1345,UA-G2-Intercom,Overview,0,Audio,Two-way Audio,0,0,6
+1346,UA-G2-Intercom,Hardware,1,Form Factor,Standard,0,0,0
+1347,UA-G2-Intercom,Hardware,1,Power Supply,AC/DC,0,0,1
+1348,UA-G2-Intercom,Software,2,Management,UniFi Network,0,0,0
+1349,UA-G2-Intercom,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1350,UA-G2-Intercom,Overview,0,Product Name,G2 Intercom,0,0,0
+1351,UA-G2-Intercom,Overview,0,Model,UA-G2-INTERCOM,0,0,1
+1352,UA-G2-Intercom,Overview,0,Category,UniFi Product,0,0,2
+1353,UA-G2-Intercom,Overview,0,Resolution,4K (8MP),0,0,3
+1354,UA-G2-Intercom,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1355,UA-G2-Intercom,Overview,0,Zoom,3x Optical,0,0,5
+1356,UA-G2-Intercom,Overview,0,Audio,Two-way Audio,0,0,6
+1357,UA-G2-Intercom,Hardware,1,Form Factor,Standard,0,0,0
+1358,UA-G2-Intercom,Hardware,1,Power Supply,AC/DC,0,0,1
+1359,UA-G2-Intercom,Software,2,Management,UniFi Network,0,0,0
+1360,UA-G2-Intercom,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1361,UVC-G6-Pro-Entry,Overview,0,Product Name,G6 Pro Entry,0,0,0
+1362,UVC-G6-Pro-Entry,Overview,0,Model,UVC-G6-PRO-ENTRY,0,0,1
+1363,UVC-G6-Pro-Entry,Overview,0,Category,UniFi Product,0,0,2
+1364,UVC-G6-Pro-Entry,Overview,0,Resolution,4K (8MP),0,0,3
+1365,UVC-G6-Pro-Entry,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1366,UVC-G6-Pro-Entry,Overview,0,Zoom,3x Optical,0,0,5
+1367,UVC-G6-Pro-Entry,Overview,0,Audio,Two-way Audio,0,0,6
+1368,UVC-G6-Pro-Entry,Hardware,1,Form Factor,Standard,0,0,0
+1369,UVC-G6-Pro-Entry,Hardware,1,Power Supply,AC/DC,0,0,1
+1370,UVC-G6-Pro-Entry,Software,2,Management,UniFi Network,0,0,0
+1371,UVC-G6-Pro-Entry,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1372,UVC-G6-Entry,Overview,0,Product Name,G6 Entry,0,0,0
+1373,UVC-G6-Entry,Overview,0,Model,UVC-G6-ENTRY,0,0,1
+1374,UVC-G6-Entry,Overview,0,Category,UniFi Product,0,0,2
+1375,UVC-G6-Entry,Overview,0,Resolution,4K (8MP),0,0,3
+1376,UVC-G6-Entry,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1377,UVC-G6-Entry,Overview,0,Zoom,3x Optical,0,0,5
+1378,UVC-G6-Entry,Overview,0,Audio,Two-way Audio,0,0,6
+1379,UVC-G6-Entry,Hardware,1,Form Factor,Standard,0,0,0
+1380,UVC-G6-Entry,Hardware,1,Power Supply,AC/DC,0,0,1
+1381,UVC-G6-Entry,Software,2,Management,UniFi Network,0,0,0
+1382,UVC-G6-Entry,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1383,EAH-8,Overview,0,Product Name,Enterprise Access Hub,0,0,0
+1384,EAH-8,Overview,0,Model,EAH-8,0,0,1
+1385,EAH-8,Overview,0,Category,UniFi Product,0,0,2
+1386,EAH-8,Overview,0,Resolution,4K (8MP),0,0,3
+1387,EAH-8,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1388,EAH-8,Overview,0,Zoom,3x Optical,0,0,5
+1389,EAH-8,Overview,0,Audio,Two-way Audio,0,0,6
+1390,EAH-8,Hardware,1,Form Factor,Standard,0,0,0
+1391,EAH-8,Hardware,1,Power Supply,AC/DC,0,0,1
+1392,EAH-8,Software,2,Management,UniFi Network,0,0,0
+1393,EAH-8,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1394,UA-Retrofit-Hub-2,Overview,0,Product Name,Enterprise Access Hub,0,0,0
+1395,UA-Retrofit-Hub-2,Overview,0,Model,UA-RETROFIT-HUB-2,0,0,1
+1396,UA-Retrofit-Hub-2,Overview,0,Category,UniFi Product,0,0,2
+1397,UA-Retrofit-Hub-2,Overview,0,Resolution,4K (8MP),0,0,3
+1398,UA-Retrofit-Hub-2,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1399,UA-Retrofit-Hub-2,Overview,0,Zoom,3x Optical,0,0,5
+1400,UA-Retrofit-Hub-2,Overview,0,Audio,Two-way Audio,0,0,6
+1401,UA-Retrofit-Hub-2,Hardware,1,Form Factor,Standard,0,0,0
+1402,UA-Retrofit-Hub-2,Hardware,1,Power Supply,AC/DC,0,0,1
+1403,UA-Retrofit-Hub-2,Software,2,Management,UniFi Network,0,0,0
+1404,UA-Retrofit-Hub-2,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1405,UA-Hub-Door,Overview,0,Product Name,Door Hub,0,0,0
+1406,UA-Hub-Door,Overview,0,Model,UA-HUB-DOOR,0,0,1
+1407,UA-Hub-Door,Overview,0,Category,UniFi Product,0,0,2
+1408,UA-Hub-Door,Overview,0,Resolution,4K (8MP),0,0,3
+1409,UA-Hub-Door,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1410,UA-Hub-Door,Overview,0,Zoom,3x Optical,0,0,5
+1411,UA-Hub-Door,Overview,0,Audio,Two-way Audio,0,0,6
+1412,UA-Hub-Door,Hardware,1,Form Factor,Standard,0,0,0
+1413,UA-Hub-Door,Hardware,1,Power Supply,AC/DC,0,0,1
+1414,UA-Hub-Door,Software,2,Management,UniFi Network,0,0,0
+1415,UA-Hub-Door,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1416,UA-Hub-Door-Mini,Overview,0,Product Name,Door Hub Mini,0,0,0
+1417,UA-Hub-Door-Mini,Overview,0,Model,UA-HUB-DOOR-MINI,0,0,1
+1418,UA-Hub-Door-Mini,Overview,0,Category,UniFi Product,0,0,2
+1419,UA-Hub-Door-Mini,Overview,0,Resolution,4K (8MP),0,0,3
+1420,UA-Hub-Door-Mini,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1421,UA-Hub-Door-Mini,Overview,0,Zoom,3x Optical,0,0,5
+1422,UA-Hub-Door-Mini,Overview,0,Audio,Two-way Audio,0,0,6
+1423,UA-Hub-Door-Mini,Hardware,1,Form Factor,Standard,0,0,0
+1424,UA-Hub-Door-Mini,Hardware,1,Power Supply,AC/DC,0,0,1
+1425,UA-Hub-Door-Mini,Software,2,Management,UniFi Network,0,0,0
+1426,UA-Hub-Door-Mini,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1427,UA-Hub-Gate,Overview,0,Product Name,Gate Hub,0,0,0
+1428,UA-Hub-Gate,Overview,0,Model,UA-HUB-GATE,0,0,1
+1429,UA-Hub-Gate,Overview,0,Category,UniFi Product,0,0,2
+1430,UA-Hub-Gate,Overview,0,Resolution,4K (8MP),0,0,3
+1431,UA-Hub-Gate,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1432,UA-Hub-Gate,Overview,0,Zoom,3x Optical,0,0,5
+1433,UA-Hub-Gate,Overview,0,Audio,Two-way Audio,0,0,6
+1434,UA-Hub-Gate,Hardware,1,Form Factor,Standard,0,0,0
+1435,UA-Hub-Gate,Hardware,1,Power Supply,AC/DC,0,0,1
+1436,UA-Hub-Gate,Software,2,Management,UniFi Network,0,0,0
+1437,UA-Hub-Gate,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1438,UA-Ultra,Overview,0,Product Name,Access Ultra,0,0,0
+1439,UA-Ultra,Overview,0,Model,UA-ULTRA,0,0,1
+1440,UA-Ultra,Overview,0,Category,UniFi Product,0,0,2
+1441,UA-Ultra,Overview,0,Resolution,4K (8MP),0,0,3
+1442,UA-Ultra,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1443,UA-Ultra,Overview,0,Zoom,3x Optical,0,0,5
+1444,UA-Ultra,Overview,0,Audio,Two-way Audio,0,0,6
+1445,UA-Ultra,Hardware,1,Form Factor,Standard,0,0,0
+1446,UA-Ultra,Hardware,1,Power Supply,AC/DC,0,0,1
+1447,UA-Ultra,Software,2,Management,UniFi Network,0,0,0
+1448,UA-Ultra,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1449,UA-G3-SK-Pro,Overview,0,Product Name,G3 Starter Kit Pro,0,0,0
+1450,UA-G3-SK-Pro,Overview,0,Model,UA-G3-SK-PRO,0,0,1
+1451,UA-G3-SK-Pro,Overview,0,Category,UniFi Product,0,0,2
+1452,UA-G3-SK-Pro,Overview,0,Resolution,4K (8MP),0,0,3
+1453,UA-G3-SK-Pro,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1454,UA-G3-SK-Pro,Overview,0,Zoom,3x Optical,0,0,5
+1455,UA-G3-SK-Pro,Overview,0,Audio,Two-way Audio,0,0,6
+1456,UA-G3-SK-Pro,Hardware,1,Form Factor,Standard,0,0,0
+1457,UA-G3-SK-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+1458,UA-G3-SK-Pro,Software,2,Management,UniFi Network,0,0,0
+1459,UA-G3-SK-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1460,UA-G2-SK-Pro,Overview,0,Product Name,G2 Starter Kit Pro,0,0,0
+1461,UA-G2-SK-Pro,Overview,0,Model,UA-G2-SK-PRO,0,0,1
+1462,UA-G2-SK-Pro,Overview,0,Category,UniFi Product,0,0,2
+1463,UA-G2-SK-Pro,Overview,0,Resolution,4K (8MP),0,0,3
+1464,UA-G2-SK-Pro,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1465,UA-G2-SK-Pro,Overview,0,Zoom,3x Optical,0,0,5
+1466,UA-G2-SK-Pro,Overview,0,Audio,Two-way Audio,0,0,6
+1467,UA-G2-SK-Pro,Hardware,1,Form Factor,Standard,0,0,0
+1468,UA-G2-SK-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+1469,UA-G2-SK-Pro,Software,2,Management,UniFi Network,0,0,0
+1470,UA-G2-SK-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1471,UA-G3-SK,Overview,0,Product Name,G3 Starter Kit,0,0,0
+1472,UA-G3-SK,Overview,0,Model,UA-G3-SK,0,0,1
+1473,UA-G3-SK,Overview,0,Category,UniFi Product,0,0,2
+1474,UA-G3-SK,Overview,0,Resolution,4K (8MP),0,0,3
+1475,UA-G3-SK,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1476,UA-G3-SK,Overview,0,Zoom,3x Optical,0,0,5
+1477,UA-G3-SK,Overview,0,Audio,Two-way Audio,0,0,6
+1478,UA-G3-SK,Hardware,1,Form Factor,Standard,0,0,0
+1479,UA-G3-SK,Hardware,1,Power Supply,AC/DC,0,0,1
+1480,UA-G3-SK,Software,2,Management,UniFi Network,0,0,0
+1481,UA-G3-SK,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1482,UA-G2-SK,Overview,0,Product Name,G2 Starter Kit,0,0,0
+1483,UA-G2-SK,Overview,0,Model,UA-G2-SK,0,0,1
+1484,UA-G2-SK,Overview,0,Category,UniFi Product,0,0,2
+1485,UA-G2-SK,Overview,0,Resolution,4K (8MP),0,0,3
+1486,UA-G2-SK,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1487,UA-G2-SK,Overview,0,Zoom,3x Optical,0,0,5
+1488,UA-G2-SK,Overview,0,Audio,Two-way Audio,0,0,6
+1489,UA-G2-SK,Hardware,1,Form Factor,Standard,0,0,0
+1490,UA-G2-SK,Hardware,1,Power Supply,AC/DC,0,0,1
+1491,UA-G2-SK,Software,2,Management,UniFi Network,0,0,0
+1492,UA-G2-SK,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1493,UA-G3-SK-Gate,Overview,0,Product Name,G3 Gate Starter Kit,0,0,0
+1494,UA-G3-SK-Gate,Overview,0,Model,UA-G3-SK-GATE,0,0,1
+1495,UA-G3-SK-Gate,Overview,0,Category,UniFi Product,0,0,2
+1496,UA-G3-SK-Gate,Overview,0,Resolution,4K (8MP),0,0,3
+1497,UA-G3-SK-Gate,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1498,UA-G3-SK-Gate,Overview,0,Zoom,3x Optical,0,0,5
+1499,UA-G3-SK-Gate,Overview,0,Audio,Two-way Audio,0,0,6
+1500,UA-G3-SK-Gate,Hardware,1,Form Factor,Standard,0,0,0
+1501,UA-G3-SK-Gate,Hardware,1,Power Supply,AC/DC,0,0,1
+1502,UA-G3-SK-Gate,Software,2,Management,UniFi Network,0,0,0
+1503,UA-G3-SK-Gate,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1504,UA-G2-SK-Gate,Overview,0,Product Name,Gate Starter Kit,0,0,0
+1505,UA-G2-SK-Gate,Overview,0,Model,UA-G2-SK-GATE,0,0,1
+1506,UA-G2-SK-Gate,Overview,0,Category,UniFi Product,0,0,2
+1507,UA-G2-SK-Gate,Overview,0,Resolution,4K (8MP),0,0,3
+1508,UA-G2-SK-Gate,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1509,UA-G2-SK-Gate,Overview,0,Zoom,3x Optical,0,0,5
+1510,UA-G2-SK-Gate,Overview,0,Audio,Two-way Audio,0,0,6
+1511,UA-G2-SK-Gate,Hardware,1,Form Factor,Standard,0,0,0
+1512,UA-G2-SK-Gate,Hardware,1,Power Supply,AC/DC,0,0,1
+1513,UA-G2-SK-Gate,Software,2,Management,UniFi Network,0,0,0
+1514,UA-G2-SK-Gate,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1515,UA-SK-Elevator,Overview,0,Product Name,Elevator Starter Kit,0,0,0
+1516,UA-SK-Elevator,Overview,0,Model,UA-SK-ELEVATOR,0,0,1
+1517,UA-SK-Elevator,Overview,0,Category,UniFi Product,0,0,2
+1518,UA-SK-Elevator,Overview,0,Resolution,4K (8MP),0,0,3
+1519,UA-SK-Elevator,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1520,UA-SK-Elevator,Overview,0,Zoom,3x Optical,0,0,5
+1521,UA-SK-Elevator,Overview,0,Audio,Two-way Audio,0,0,6
+1522,UA-SK-Elevator,Hardware,1,Form Factor,Standard,0,0,0
+1523,UA-SK-Elevator,Hardware,1,Power Supply,AC/DC,0,0,1
+1524,UA-SK-Elevator,Software,2,Management,UniFi Network,0,0,0
+1525,UA-SK-Elevator,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1526,UA-G3-Intercom,Overview,0,Product Name,G3 Intercom,0,0,0
+1527,UA-G3-Intercom,Overview,0,Model,UA-G3-INTERCOM,0,0,1
+1528,UA-G3-Intercom,Overview,0,Category,UniFi Product,0,0,2
+1529,UA-G3-Intercom,Overview,0,Resolution,4K (8MP),0,0,3
+1530,UA-G3-Intercom,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1531,UA-G3-Intercom,Overview,0,Zoom,3x Optical,0,0,5
+1532,UA-G3-Intercom,Overview,0,Audio,Two-way Audio,0,0,6
+1533,UA-G3-Intercom,Hardware,1,Form Factor,Standard,0,0,0
+1534,UA-G3-Intercom,Hardware,1,Power Supply,AC/DC,0,0,1
+1535,UA-G3-Intercom,Software,2,Management,UniFi Network,0,0,0
+1536,UA-G3-Intercom,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1537,UA-G2-Intercom,Overview,0,Product Name,Intercom,0,0,0
+1538,UA-G2-Intercom,Overview,0,Model,UA-G2-INTERCOM,0,0,1
+1539,UA-G2-Intercom,Overview,0,Category,UniFi Product,0,0,2
+1540,UA-G2-Intercom,Overview,0,Resolution,4K (8MP),0,0,3
+1541,UA-G2-Intercom,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1542,UA-G2-Intercom,Overview,0,Zoom,3x Optical,0,0,5
+1543,UA-G2-Intercom,Overview,0,Audio,Two-way Audio,0,0,6
+1544,UA-G2-Intercom,Hardware,1,Form Factor,Standard,0,0,0
+1545,UA-G2-Intercom,Hardware,1,Power Supply,AC/DC,0,0,1
+1546,UA-G2-Intercom,Software,2,Management,UniFi Network,0,0,0
+1547,UA-G2-Intercom,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1548,UA-Intercom-Viewer,Overview,0,Product Name,Intercom Viewer,0,0,0
+1549,UA-Intercom-Viewer,Overview,0,Model,UA-INTERCOM-VIEWER,0,0,1
+1550,UA-Intercom-Viewer,Overview,0,Category,UniFi Product,0,0,2
+1551,UA-Intercom-Viewer,Overview,0,Resolution,4K (8MP),0,0,3
+1552,UA-Intercom-Viewer,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1553,UA-Intercom-Viewer,Overview,0,Zoom,3x Optical,0,0,5
+1554,UA-Intercom-Viewer,Overview,0,Audio,Two-way Audio,0,0,6
+1555,UA-Intercom-Viewer,Hardware,1,Form Factor,Standard,0,0,0
+1556,UA-Intercom-Viewer,Hardware,1,Power Supply,AC/DC,0,0,1
+1557,UA-Intercom-Viewer,Software,2,Management,UniFi Network,0,0,0
+1558,UA-Intercom-Viewer,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1559,ENVR,Overview,0,Product Name,Enterprise NVR,0,0,0
+1560,ENVR,Overview,0,Model,ENVR,0,0,1
+1561,ENVR,Overview,0,Category,UniFi Product,0,0,2
+1562,ENVR,Overview,0,Resolution,4K (8MP),0,0,3
+1563,ENVR,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1564,ENVR,Overview,0,Zoom,3x Optical,0,0,5
+1565,ENVR,Overview,0,Audio,Two-way Audio,0,0,6
+1566,ENVR,Hardware,1,Form Factor,Standard,0,0,0
+1567,ENVR,Hardware,1,Power Supply,AC/DC,0,0,1
+1568,ENVR,Software,2,Management,UniFi Network,0,0,0
+1569,ENVR,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1570,UNVR-pro,Overview,0,Product Name,Network Video Recorder Pro,0,0,0
+1571,UNVR-pro,Overview,0,Model,UNVR-PRO,0,0,1
+1572,UNVR-pro,Overview,0,Category,UniFi Product,0,0,2
+1573,UNVR-pro,Overview,0,Resolution,4K (8MP),0,0,3
+1574,UNVR-pro,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1575,UNVR-pro,Overview,0,Zoom,3x Optical,0,0,5
+1576,UNVR-pro,Overview,0,Audio,Two-way Audio,0,0,6
+1577,UNVR-pro,Hardware,1,Form Factor,Standard,0,0,0
+1578,UNVR-pro,Hardware,1,Power Supply,AC/DC,0,0,1
+1579,UNVR-pro,Software,2,Management,UniFi Network,0,0,0
+1580,UNVR-pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1581,UNVR,Overview,0,Product Name,Network Video Recorder,0,0,0
+1582,UNVR,Overview,0,Model,UNVR,0,0,1
+1583,UNVR,Overview,0,Category,UniFi Product,0,0,2
+1584,UNVR,Overview,0,Resolution,4K (8MP),0,0,3
+1585,UNVR,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1586,UNVR,Overview,0,Zoom,3x Optical,0,0,5
+1587,UNVR,Overview,0,Audio,Two-way Audio,0,0,6
+1588,UNVR,Hardware,1,Form Factor,Standard,0,0,0
+1589,UNVR,Hardware,1,Power Supply,AC/DC,0,0,1
+1590,UNVR,Software,2,Management,UniFi Network,0,0,0
+1591,UNVR,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1592,UNVR-Instant,Overview,0,Product Name,Network Video Recorder Instant,0,0,0
+1593,UNVR-Instant,Overview,0,Model,UNVR-INSTANT,0,0,1
+1594,UNVR-Instant,Overview,0,Category,UniFi Product,0,0,2
+1595,UNVR-Instant,Overview,0,Resolution,4K (8MP),0,0,3
+1596,UNVR-Instant,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1597,UNVR-Instant,Overview,0,Zoom,3x Optical,0,0,5
+1598,UNVR-Instant,Overview,0,Audio,Two-way Audio,0,0,6
+1599,UNVR-Instant,Hardware,1,Form Factor,Standard,0,0,0
+1600,UNVR-Instant,Hardware,1,Power Supply,AC/DC,0,0,1
+1601,UNVR-Instant,Software,2,Management,UniFi Network,0,0,0
+1602,UNVR-Instant,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1603,UNVR-Instant-Kit,Overview,0,Product Name,Network Video Recorder Instant Kit,0,0,0
+1604,UNVR-Instant-Kit,Overview,0,Model,UNVR-INSTANT-KIT,0,0,1
+1605,UNVR-Instant-Kit,Overview,0,Category,UniFi Product,0,0,2
+1606,UNVR-Instant-Kit,Overview,0,Resolution,4K (8MP),0,0,3
+1607,UNVR-Instant-Kit,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1608,UNVR-Instant-Kit,Overview,0,Zoom,3x Optical,0,0,5
+1609,UNVR-Instant-Kit,Overview,0,Audio,Two-way Audio,0,0,6
+1610,UNVR-Instant-Kit,Hardware,1,Form Factor,Standard,0,0,0
+1611,UNVR-Instant-Kit,Hardware,1,Power Supply,AC/DC,0,0,1
+1612,UNVR-Instant-Kit,Software,2,Management,UniFi Network,0,0,0
+1613,UNVR-Instant-Kit,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1614,UA-Card-10-B/W,Overview,0,Product Name,Access Card,0,0,0
+1615,UA-Card-10-B/W,Overview,0,Model,UA-CARD-10-B-W,0,0,1
+1616,UA-Card-10-B/W,Overview,0,Category,UniFi Product,0,0,2
+1617,UA-Card-10-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+1618,UA-Card-10-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1619,UA-Card-10-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1620,UA-Card-10-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1621,UA-Card-10-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1622,UA-Card-10-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1623,UA-Card-10-B/W,Software,2,Management,UniFi Network,0,0,0
+1624,UA-Card-10-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1625,UACC-Retrofit-PoE-2Wire,Overview,0,Product Name,PoE Over 2-Wire Retrofit Extender,0,0,0
+1626,UACC-Retrofit-PoE-2Wire,Overview,0,Model,UACC-RETROFIT-POE-2WIRE,0,0,1
+1627,UACC-Retrofit-PoE-2Wire,Overview,0,Category,UniFi Product,0,0,2
+1628,UACC-Retrofit-PoE-2Wire,Overview,0,Resolution,4K (8MP),0,0,3
+1629,UACC-Retrofit-PoE-2Wire,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1630,UACC-Retrofit-PoE-2Wire,Overview,0,Zoom,3x Optical,0,0,5
+1631,UACC-Retrofit-PoE-2Wire,Overview,0,Audio,Two-way Audio,0,0,6
+1632,UACC-Retrofit-PoE-2Wire,Hardware,1,Form Factor,Standard,0,0,0
+1633,UACC-Retrofit-PoE-2Wire,Hardware,1,Power Supply,AC/DC,0,0,1
+1634,UACC-Retrofit-PoE-2Wire,Software,2,Management,UniFi Network,0,0,0
+1635,UACC-Retrofit-PoE-2Wire,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1636,UACC-Reader-JB-B/W,Overview,0,Product Name,Reader Junction Box,0,0,0
+1637,UACC-Reader-JB-B/W,Overview,0,Model,UACC-READER-JB-B-W,0,0,1
+1638,UACC-Reader-JB-B/W,Overview,0,Category,UniFi Product,0,0,2
+1639,UACC-Reader-JB-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+1640,UACC-Reader-JB-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1641,UACC-Reader-JB-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1642,UACC-Reader-JB-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1643,UACC-Reader-JB-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1644,UACC-Reader-JB-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1645,UACC-Reader-JB-B/W,Software,2,Management,UniFi Network,0,0,0
+1646,UACC-Reader-JB-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1647,UACC-Reader-Pro-JB-B/W,Overview,0,Product Name,Reader Pro Junction Box,0,0,0
+1648,UACC-Reader-Pro-JB-B/W,Overview,0,Model,UACC-READER-PRO-JB-B-W,0,0,1
+1649,UACC-Reader-Pro-JB-B/W,Overview,0,Category,UniFi Product,0,0,2
+1650,UACC-Reader-Pro-JB-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+1651,UACC-Reader-Pro-JB-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1652,UACC-Reader-Pro-JB-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1653,UACC-Reader-Pro-JB-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1654,UACC-Reader-Pro-JB-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1655,UACC-Reader-Pro-JB-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1656,UACC-Reader-Pro-JB-B/W,Software,2,Management,UniFi Network,0,0,0
+1657,UACC-Reader-Pro-JB-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1658,UACC-Reader-Pro-AM-B/W,Overview,0,Product Name,Reader Pro Angle Mount,0,0,0
+1659,UACC-Reader-Pro-AM-B/W,Overview,0,Model,UACC-READER-PRO-AM-B-W,0,0,1
+1660,UACC-Reader-Pro-AM-B/W,Overview,0,Category,UniFi Product,0,0,2
+1661,UACC-Reader-Pro-AM-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+1662,UACC-Reader-Pro-AM-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1663,UACC-Reader-Pro-AM-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1664,UACC-Reader-Pro-AM-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1665,UACC-Reader-Pro-AM-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1666,UACC-Reader-Pro-AM-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1667,UACC-Reader-Pro-AM-B/W,Software,2,Management,UniFi Network,0,0,0
+1668,UACC-Reader-Pro-AM-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1669,UACC-Intercom-SAM,Overview,0,Product Name,Intercom Surface Angle Mount,0,0,0
+1670,UACC-Intercom-SAM,Overview,0,Model,UACC-INTERCOM-SAM,0,0,1
+1671,UACC-Intercom-SAM,Overview,0,Category,UniFi Product,0,0,2
+1672,UACC-Intercom-SAM,Overview,0,Resolution,4K (8MP),0,0,3
+1673,UACC-Intercom-SAM,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1674,UACC-Intercom-SAM,Overview,0,Zoom,3x Optical,0,0,5
+1675,UACC-Intercom-SAM,Overview,0,Audio,Two-way Audio,0,0,6
+1676,UACC-Intercom-SAM,Hardware,1,Form Factor,Standard,0,0,0
+1677,UACC-Intercom-SAM,Hardware,1,Power Supply,AC/DC,0,0,1
+1678,UACC-Intercom-SAM,Software,2,Management,UniFi Network,0,0,0
+1679,UACC-Intercom-SAM,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1680,UACC-Intercom-FM,Overview,0,Product Name,Intercom Flush Mount,0,0,0
+1681,UACC-Intercom-FM,Overview,0,Model,UACC-INTERCOM-FM,0,0,1
+1682,UACC-Intercom-FM,Overview,0,Category,UniFi Product,0,0,2
+1683,UACC-Intercom-FM,Overview,0,Resolution,4K (8MP),0,0,3
+1684,UACC-Intercom-FM,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1685,UACC-Intercom-FM,Overview,0,Zoom,3x Optical,0,0,5
+1686,UACC-Intercom-FM,Overview,0,Audio,Two-way Audio,0,0,6
+1687,UACC-Intercom-FM,Hardware,1,Form Factor,Standard,0,0,0
+1688,UACC-Intercom-FM,Hardware,1,Power Supply,AC/DC,0,0,1
+1689,UACC-Intercom-FM,Software,2,Management,UniFi Network,0,0,0
+1690,UACC-Intercom-FM,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1691,UACC-Intercom-Sunshield,Overview,0,Product Name,Intercom Sunshield,0,0,0
+1692,UACC-Intercom-Sunshield,Overview,0,Model,UACC-INTERCOM-SUNSHIELD,0,0,1
+1693,UACC-Intercom-Sunshield,Overview,0,Category,UniFi Product,0,0,2
+1694,UACC-Intercom-Sunshield,Overview,0,Resolution,4K (8MP),0,0,3
+1695,UACC-Intercom-Sunshield,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1696,UACC-Intercom-Sunshield,Overview,0,Zoom,3x Optical,0,0,5
+1697,UACC-Intercom-Sunshield,Overview,0,Audio,Two-way Audio,0,0,6
+1698,UACC-Intercom-Sunshield,Hardware,1,Form Factor,Standard,0,0,0
+1699,UACC-Intercom-Sunshield,Hardware,1,Power Supply,AC/DC,0,0,1
+1700,UACC-Intercom-Sunshield,Software,2,Management,UniFi Network,0,0,0
+1701,UACC-Intercom-Sunshield,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1702,UACC-Intercom-WM,Overview,0,Product Name,Intercom Wedge Mount,0,0,0
+1703,UACC-Intercom-WM,Overview,0,Model,UACC-INTERCOM-WM,0,0,1
+1704,UACC-Intercom-WM,Overview,0,Category,UniFi Product,0,0,2
+1705,UACC-Intercom-WM,Overview,0,Resolution,4K (8MP),0,0,3
+1706,UACC-Intercom-WM,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1707,UACC-Intercom-WM,Overview,0,Zoom,3x Optical,0,0,5
+1708,UACC-Intercom-WM,Overview,0,Audio,Two-way Audio,0,0,6
+1709,UACC-Intercom-WM,Hardware,1,Form Factor,Standard,0,0,0
+1710,UACC-Intercom-WM,Hardware,1,Power Supply,AC/DC,0,0,1
+1711,UACC-Intercom-WM,Software,2,Management,UniFi Network,0,0,0
+1712,UACC-Intercom-WM,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1713,UACC-Intercom-Viewer-TS,Overview,0,Product Name,Intercom Viewer Table Stand,0,0,0
+1714,UACC-Intercom-Viewer-TS,Overview,0,Model,UACC-INTERCOM-VIEWER-TS,0,0,1
+1715,UACC-Intercom-Viewer-TS,Overview,0,Category,UniFi Product,0,0,2
+1716,UACC-Intercom-Viewer-TS,Overview,0,Resolution,4K (8MP),0,0,3
+1717,UACC-Intercom-Viewer-TS,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1718,UACC-Intercom-Viewer-TS,Overview,0,Zoom,3x Optical,0,0,5
+1719,UACC-Intercom-Viewer-TS,Overview,0,Audio,Two-way Audio,0,0,6
+1720,UACC-Intercom-Viewer-TS,Hardware,1,Form Factor,Standard,0,0,0
+1721,UACC-Intercom-Viewer-TS,Hardware,1,Power Supply,AC/DC,0,0,1
+1722,UACC-Intercom-Viewer-TS,Software,2,Management,UniFi Network,0,0,0
+1723,UACC-Intercom-Viewer-TS,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1724,UACC-Junction-Utility,Overview,0,Product Name,Junction Utility,0,0,0
+1725,UACC-Junction-Utility,Overview,0,Model,UACC-JUNCTION-UTILITY,0,0,1
+1726,UACC-Junction-Utility,Overview,0,Category,UniFi Product,0,0,2
+1727,UACC-Junction-Utility,Overview,0,Resolution,4K (8MP),0,0,3
+1728,UACC-Junction-Utility,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1729,UACC-Junction-Utility,Overview,0,Zoom,3x Optical,0,0,5
+1730,UACC-Junction-Utility,Overview,0,Audio,Two-way Audio,0,0,6
+1731,UACC-Junction-Utility,Hardware,1,Form Factor,Standard,0,0,0
+1732,UACC-Junction-Utility,Hardware,1,Power Supply,AC/DC,0,0,1
+1733,UACC-Junction-Utility,Software,2,Management,UniFi Network,0,0,0
+1734,UACC-Junction-Utility,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1735,UACC-Retrofit-PSU-12V,Overview,0,Product Name,Retrofit PSU 12V,0,0,0
+1736,UACC-Retrofit-PSU-12V,Overview,0,Model,UACC-RETROFIT-PSU-12V,0,0,1
+1737,UACC-Retrofit-PSU-12V,Overview,0,Category,UniFi Product,0,0,2
+1738,UACC-Retrofit-PSU-12V,Overview,0,Resolution,4K (8MP),0,0,3
+1739,UACC-Retrofit-PSU-12V,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1740,UACC-Retrofit-PSU-12V,Overview,0,Zoom,3x Optical,0,0,5
+1741,UACC-Retrofit-PSU-12V,Overview,0,Audio,Two-way Audio,0,0,6
+1742,UACC-Retrofit-PSU-12V,Hardware,1,Form Factor,Standard,0,0,0
+1743,UACC-Retrofit-PSU-12V,Hardware,1,Power Supply,AC/DC,0,0,1
+1744,UACC-Retrofit-PSU-12V,Software,2,Management,UniFi Network,0,0,0
+1745,UACC-Retrofit-PSU-12V,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1746,UA-Button,Overview,0,Product Name,Access Button,0,0,0
+1747,UA-Button,Overview,0,Model,UA-BUTTON,0,0,1
+1748,UA-Button,Overview,0,Category,UniFi Product,0,0,2
+1749,UA-Button,Overview,0,Resolution,4K (8MP),0,0,3
+1750,UA-Button,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1751,UA-Button,Overview,0,Zoom,3x Optical,0,0,5
+1752,UA-Button,Overview,0,Audio,Two-way Audio,0,0,6
+1753,UA-Button,Hardware,1,Form Factor,Standard,0,0,0
+1754,UA-Button,Hardware,1,Power Supply,AC/DC,0,0,1
+1755,UA-Button,Software,2,Management,UniFi Network,0,0,0
+1756,UA-Button,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1757,UACC-DoorCloser,Overview,0,Product Name,Door Closer,0,0,0
+1758,UACC-DoorCloser,Overview,0,Model,UACC-DOORCLOSER,0,0,1
+1759,UACC-DoorCloser,Overview,0,Category,UniFi Product,0,0,2
+1760,UACC-DoorCloser,Overview,0,Resolution,4K (8MP),0,0,3
+1761,UACC-DoorCloser,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1762,UACC-DoorCloser,Overview,0,Zoom,3x Optical,0,0,5
+1763,UACC-DoorCloser,Overview,0,Audio,Two-way Audio,0,0,6
+1764,UACC-DoorCloser,Hardware,1,Form Factor,Standard,0,0,0
+1765,UACC-DoorCloser,Hardware,1,Power Supply,AC/DC,0,0,1
+1766,UACC-DoorCloser,Software,2,Management,UniFi Network,0,0,0
+1767,UACC-DoorCloser,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1768,UACC-PanicBar,Overview,0,Product Name,Panic Bar,0,0,0
+1769,UACC-PanicBar,Overview,0,Model,UACC-PANICBAR,0,0,1
+1770,UACC-PanicBar,Overview,0,Category,UniFi Product,0,0,2
+1771,UACC-PanicBar,Overview,0,Resolution,4K (8MP),0,0,3
+1772,UACC-PanicBar,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1773,UACC-PanicBar,Overview,0,Zoom,3x Optical,0,0,5
+1774,UACC-PanicBar,Overview,0,Audio,Two-way Audio,0,0,6
+1775,UACC-PanicBar,Hardware,1,Form Factor,Standard,0,0,0
+1776,UACC-PanicBar,Hardware,1,Power Supply,AC/DC,0,0,1
+1777,UACC-PanicBar,Software,2,Management,UniFi Network,0,0,0
+1778,UACC-PanicBar,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1779,UA-Lock-Magnetic-270kg,Overview,0,Product Name,Magnetic Lock,0,0,0
+1780,UA-Lock-Magnetic-270kg,Overview,0,Model,UA-LOCK-MAGNETIC-270KG,0,0,1
+1781,UA-Lock-Magnetic-270kg,Overview,0,Category,UniFi Product,0,0,2
+1782,UA-Lock-Magnetic-270kg,Overview,0,Resolution,4K (8MP),0,0,3
+1783,UA-Lock-Magnetic-270kg,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1784,UA-Lock-Magnetic-270kg,Overview,0,Zoom,3x Optical,0,0,5
+1785,UA-Lock-Magnetic-270kg,Overview,0,Audio,Two-way Audio,0,0,6
+1786,UA-Lock-Magnetic-270kg,Hardware,1,Form Factor,Standard,0,0,0
+1787,UA-Lock-Magnetic-270kg,Hardware,1,Power Supply,AC/DC,0,0,1
+1788,UA-Lock-Magnetic-270kg,Software,2,Management,UniFi Network,0,0,0
+1789,UA-Lock-Magnetic-270kg,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1790,UACC-Lock-Strike-Secure-15mm,Overview,0,Product Name,Fail-Secure Strike Lock,0,0,0
+1791,UACC-Lock-Strike-Secure-15mm,Overview,0,Model,UACC-LOCK-STRIKE-SECURE-15MM,0,0,1
+1792,UACC-Lock-Strike-Secure-15mm,Overview,0,Category,UniFi Product,0,0,2
+1793,UACC-Lock-Strike-Secure-15mm,Overview,0,Resolution,4K (8MP),0,0,3
+1794,UACC-Lock-Strike-Secure-15mm,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1795,UACC-Lock-Strike-Secure-15mm,Overview,0,Zoom,3x Optical,0,0,5
+1796,UACC-Lock-Strike-Secure-15mm,Overview,0,Audio,Two-way Audio,0,0,6
+1797,UACC-Lock-Strike-Secure-15mm,Hardware,1,Form Factor,Standard,0,0,0
+1798,UACC-Lock-Strike-Secure-15mm,Hardware,1,Power Supply,AC/DC,0,0,1
+1799,UACC-Lock-Strike-Secure-15mm,Software,2,Management,UniFi Network,0,0,0
+1800,UACC-Lock-Strike-Secure-15mm,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1801,UACC-Lock-Strike-Safe-15mm,Overview,0,Product Name,Fail-Safe Strike Lock,0,0,0
+1802,UACC-Lock-Strike-Safe-15mm,Overview,0,Model,UACC-LOCK-STRIKE-SAFE-15MM,0,0,1
+1803,UACC-Lock-Strike-Safe-15mm,Overview,0,Category,UniFi Product,0,0,2
+1804,UACC-Lock-Strike-Safe-15mm,Overview,0,Resolution,4K (8MP),0,0,3
+1805,UACC-Lock-Strike-Safe-15mm,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1806,UACC-Lock-Strike-Safe-15mm,Overview,0,Zoom,3x Optical,0,0,5
+1807,UACC-Lock-Strike-Safe-15mm,Overview,0,Audio,Two-way Audio,0,0,6
+1808,UACC-Lock-Strike-Safe-15mm,Hardware,1,Form Factor,Standard,0,0,0
+1809,UACC-Lock-Strike-Safe-15mm,Hardware,1,Power Supply,AC/DC,0,0,1
+1810,UACC-Lock-Strike-Safe-15mm,Software,2,Management,UniFi Network,0,0,0
+1811,UACC-Lock-Strike-Safe-15mm,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1812,UACC-Cable-DoorLockRelay-1P,Overview,0,Product Name,Door Lock Relay Cable,0,0,0
+1813,UACC-Cable-DoorLockRelay-1P,Overview,0,Model,UACC-CABLE-DOORLOCKRELAY-1P,0,0,1
+1814,UACC-Cable-DoorLockRelay-1P,Overview,0,Category,UniFi Product,0,0,2
+1815,UACC-Cable-DoorLockRelay-1P,Overview,0,Resolution,4K (8MP),0,0,3
+1816,UACC-Cable-DoorLockRelay-1P,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1817,UACC-Cable-DoorLockRelay-1P,Overview,0,Zoom,3x Optical,0,0,5
+1818,UACC-Cable-DoorLockRelay-1P,Overview,0,Audio,Two-way Audio,0,0,6
+1819,UACC-Cable-DoorLockRelay-1P,Hardware,1,Form Factor,Standard,0,0,0
+1820,UACC-Cable-DoorLockRelay-1P,Hardware,1,Power Supply,AC/DC,0,0,1
+1821,UACC-Cable-DoorLockRelay-1P,Software,2,Management,UniFi Network,0,0,0
+1822,UACC-Cable-DoorLockRelay-1P,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1823,UACC-Cable-DoorLockRelay-2P,Overview,0,Product Name,Door Lock Relay Cable,0,0,0
+1824,UACC-Cable-DoorLockRelay-2P,Overview,0,Model,UACC-CABLE-DOORLOCKRELAY-2P,0,0,1
+1825,UACC-Cable-DoorLockRelay-2P,Overview,0,Category,UniFi Product,0,0,2
+1826,UACC-Cable-DoorLockRelay-2P,Overview,0,Resolution,4K (8MP),0,0,3
+1827,UACC-Cable-DoorLockRelay-2P,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1828,UACC-Cable-DoorLockRelay-2P,Overview,0,Zoom,3x Optical,0,0,5
+1829,UACC-Cable-DoorLockRelay-2P,Overview,0,Audio,Two-way Audio,0,0,6
+1830,UACC-Cable-DoorLockRelay-2P,Hardware,1,Form Factor,Standard,0,0,0
+1831,UACC-Cable-DoorLockRelay-2P,Hardware,1,Power Supply,AC/DC,0,0,1
+1832,UACC-Cable-DoorLockRelay-2P,Software,2,Management,UniFi Network,0,0,0
+1833,UACC-Cable-DoorLockRelay-2P,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1834,UA-Pocket,Overview,0,Product Name,"Pocket Keyfob, 10-Pack",0,0,0
+1835,UA-Pocket,Overview,0,Model,UA-POCKET,0,0,1
+1836,UA-Pocket,Overview,0,Category,UniFi Product,0,0,2
+1837,UA-Pocket,Overview,0,Resolution,4K (8MP),0,0,3
+1838,UA-Pocket,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1839,UA-Pocket,Overview,0,Zoom,3x Optical,0,0,5
+1840,UA-Pocket,Overview,0,Audio,Two-way Audio,0,0,6
+1841,UA-Pocket,Hardware,1,Form Factor,Standard,0,0,0
+1842,UA-Pocket,Hardware,1,Power Supply,AC/DC,0,0,1
+1843,UA-Pocket,Software,2,Management,UniFi Network,0,0,0
+1844,UA-Pocket,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1845,UA-Rescue,Overview,0,Product Name,Access Rescue KeySwitch,0,0,0
+1846,UA-Rescue,Overview,0,Model,UA-RESCUE,0,0,1
+1847,UA-Rescue,Overview,0,Category,UniFi Product,0,0,2
+1848,UA-Rescue,Overview,0,Resolution,4K (8MP),0,0,3
+1849,UA-Rescue,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1850,UA-Rescue,Overview,0,Zoom,3x Optical,0,0,5
+1851,UA-Rescue,Overview,0,Audio,Two-way Audio,0,0,6
+1852,UA-Rescue,Hardware,1,Form Factor,Standard,0,0,0
+1853,UA-Rescue,Hardware,1,Power Supply,AC/DC,0,0,1
+1854,UA-Rescue,Software,2,Management,UniFi Network,0,0,0
+1855,UA-Rescue,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1856,UNAS-Pro-8,Overview,0,Product Name,UNAS Pro 8,0,0,0
+1857,UNAS-Pro-8,Overview,0,Model,UNAS-PRO-8,0,0,1
+1858,UNAS-Pro-8,Overview,0,Category,Integrations,0,0,2
+1859,UNAS-Pro-8,Overview,0,Resolution,4K (8MP),0,0,3
+1860,UNAS-Pro-8,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1861,UNAS-Pro-8,Overview,0,Zoom,3x Optical,0,0,5
+1862,UNAS-Pro-8,Overview,0,Audio,Two-way Audio,0,0,6
+1863,UNAS-Pro-8,Hardware,1,Form Factor,Standard,0,0,0
+1864,UNAS-Pro-8,Hardware,1,Power Supply,AC/DC,0,0,1
+1865,UNAS-Pro-8,Software,2,Management,UniFi Network,0,0,0
+1866,UNAS-Pro-8,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1867,UNAS-Pro-4,Overview,0,Product Name,UNAS Pro 4,0,0,0
+1868,UNAS-Pro-4,Overview,0,Model,UNAS-PRO-4,0,0,1
+1869,UNAS-Pro-4,Overview,0,Category,Integrations,0,0,2
+1870,UNAS-Pro-4,Hardware,1,Form Factor,Standard,0,0,0
+1871,UNAS-Pro-4,Hardware,1,Power Supply,AC/DC,0,0,1
+1872,UNAS-Pro-4,Software,2,Management,UniFi Network,0,0,0
+1873,UNAS-Pro-4,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1874,UNAS-Pro,Overview,0,Product Name,UNAS Pro,0,0,0
+1875,UNAS-Pro,Overview,0,Model,UNAS-PRO,0,0,1
+1876,UNAS-Pro,Overview,0,Category,UniFi Product,0,0,2
+1877,UNAS-Pro,Overview,0,Resolution,4K (8MP),0,0,3
+1878,UNAS-Pro,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1879,UNAS-Pro,Overview,0,Zoom,3x Optical,0,0,5
+1880,UNAS-Pro,Overview,0,Audio,Two-way Audio,0,0,6
+1881,UNAS-Pro,Hardware,1,Form Factor,Standard,0,0,0
+1882,UNAS-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+1883,UNAS-Pro,Software,2,Management,UniFi Network,0,0,0
+1884,UNAS-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1885,UNAS-2-B/W,Overview,0,Product Name,UNAS 2,0,0,0
+1886,UNAS-2-B/W,Overview,0,Model,UNAS-2-B-W,0,0,1
+1887,UNAS-2-B/W,Overview,0,Category,UniFi Product,0,0,2
+1888,UNAS-2-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+1889,UNAS-2-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1890,UNAS-2-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1891,UNAS-2-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1892,UNAS-2-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1893,UNAS-2-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1894,UNAS-2-B/W,Software,2,Management,UniFi Network,0,0,0
+1895,UNAS-2-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1896,UNAS-4-B/W,Overview,0,Product Name,UNAS 4,0,0,0
+1897,UNAS-4-B/W,Overview,0,Model,UNAS-4-B-W,0,0,1
+1898,UNAS-4-B/W,Overview,0,Category,UniFi Product,0,0,2
+1899,UNAS-4-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+1900,UNAS-4-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1901,UNAS-4-B/W,Overview,0,Zoom,3x Optical,0,0,5
+1902,UNAS-4-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+1903,UNAS-4-B/W,Hardware,1,Form Factor,Standard,0,0,0
+1904,UNAS-4-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+1905,UNAS-4-B/W,Software,2,Management,UniFi Network,0,0,0
+1906,UNAS-4-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1907,UPS-2U,Overview,0,Product Name,UniFi UPS 2U,0,0,0
+1908,UPS-2U,Overview,0,Model,UPS-2U,0,0,1
+1909,UPS-2U,Overview,0,Category,Integrations,0,0,2
+1910,UPS-2U,Overview,0,Resolution,4K (8MP),0,0,3
+1911,UPS-2U,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1912,UPS-2U,Overview,0,Zoom,3x Optical,0,0,5
+1913,UPS-2U,Overview,0,Audio,Two-way Audio,0,0,6
+1914,UPS-2U,Hardware,1,Form Factor,Standard,0,0,0
+1915,UPS-2U,Hardware,1,Power Supply,AC/DC,0,0,1
+1916,UPS-2U,Software,2,Management,UniFi Network,0,0,0
+1917,UPS-2U,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1918,UPS-Tower,Overview,0,Product Name,UniFi UPS Tower,0,0,0
+1919,UPS-Tower,Overview,0,Model,UPS-TOWER,0,0,1
+1920,UPS-Tower,Overview,0,Category,UniFi Product,0,0,2
+1921,UPS-Tower,Hardware,1,Form Factor,Standard,0,0,0
+1922,UPS-Tower,Hardware,1,Power Supply,AC/DC,0,0,1
+1923,UPS-Tower,Software,2,Management,UniFi Network,0,0,0
+1924,UPS-Tower,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1925,USW-Mission-Critical(120W),Overview,0,Product Name,UPS PoE Switch,0,0,0
+1926,USW-Mission-Critical(120W),Overview,0,Model,USW-MISSION-CRITICAL-120W-,0,0,1
+1927,USW-Mission-Critical(120W),Overview,0,Category,UniFi Product,0,0,2
+1928,USW-Mission-Critical(120W),Overview,0,Resolution,4K (8MP),0,0,3
+1929,USW-Mission-Critical(120W),Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1930,USW-Mission-Critical(120W),Overview,0,Zoom,3x Optical,0,0,5
+1931,USW-Mission-Critical(120W),Overview,0,Audio,Two-way Audio,0,0,6
+1932,USW-Mission-Critical(120W),Hardware,1,Form Factor,Standard,0,0,0
+1933,USW-Mission-Critical(120W),Hardware,1,Power Supply,AC/DC,0,0,1
+1934,USW-Mission-Critical(120W),Software,2,Management,UniFi Network,0,0,0
+1935,USW-Mission-Critical(120W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1936,USP-RPS,Overview,0,Product Name,Redundant Power,0,0,0
+1937,USP-RPS,Overview,0,Model,USP-RPS,0,0,1
+1938,USP-RPS,Overview,0,Category,UniFi Product,0,0,2
+1939,USP-RPS,Overview,0,Resolution,4K (8MP),0,0,3
+1940,USP-RPS,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1941,USP-RPS,Overview,0,Zoom,3x Optical,0,0,5
+1942,USP-RPS,Overview,0,Audio,Two-way Audio,0,0,6
+1943,USP-RPS,Hardware,1,Form Factor,Standard,0,0,0
+1944,USP-RPS,Hardware,1,Power Supply,AC/DC,0,0,1
+1945,USP-RPS,Software,2,Management,UniFi Network,0,0,0
+1946,USP-RPS,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1947,USP-PDU-Pro,Overview,0,Product Name,Power Distribution Pro,0,0,0
+1948,USP-PDU-Pro,Overview,0,Model,USP-PDU-PRO,0,0,1
+1949,USP-PDU-Pro,Overview,0,Category,UniFi Product,0,0,2
+1950,USP-PDU-Pro,Overview,0,Resolution,4K (8MP),0,0,3
+1951,USP-PDU-Pro,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1952,USP-PDU-Pro,Overview,0,Zoom,3x Optical,0,0,5
+1953,USP-PDU-Pro,Overview,0,Audio,Two-way Audio,0,0,6
+1954,USP-PDU-Pro,Hardware,1,Form Factor,Standard,0,0,0
+1955,USP-PDU-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+1956,USP-PDU-Pro,Software,2,Management,UniFi Network,0,0,0
+1957,USP-PDU-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1958,USP-PDU-HD,Overview,0,Product Name,Power Distribution Hi-Density,0,0,0
+1959,USP-PDU-HD,Overview,0,Model,USP-PDU-HD,0,0,1
+1960,USP-PDU-HD,Overview,0,Category,UniFi Product,0,0,2
+1961,USP-PDU-HD,Overview,0,Resolution,4K (8MP),0,0,3
+1962,USP-PDU-HD,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1963,USP-PDU-HD,Overview,0,Zoom,3x Optical,0,0,5
+1964,USP-PDU-HD,Overview,0,Audio,Two-way Audio,0,0,6
+1965,USP-PDU-HD,Hardware,1,Form Factor,Standard,0,0,0
+1966,USP-PDU-HD,Hardware,1,Power Supply,AC/DC,0,0,1
+1967,USP-PDU-HD,Software,2,Management,UniFi Network,0,0,0
+1968,USP-PDU-HD,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1969,U5G-Max,Overview,0,Product Name,UniFi 5G Max,0,0,0
+1970,U5G-Max,Overview,0,Model,U5G-MAX,0,0,1
+1971,U5G-Max,Overview,0,Category,Integrations,0,0,2
+1972,U5G-Max,Overview,0,Resolution,4K (8MP),0,0,3
+1973,U5G-Max,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1974,U5G-Max,Overview,0,Zoom,3x Optical,0,0,5
+1975,U5G-Max,Overview,0,Audio,Two-way Audio,0,0,6
+1976,U5G-Max,Hardware,1,Form Factor,Standard,0,0,0
+1977,U5G-Max,Hardware,1,Power Supply,AC/DC,0,0,1
+1978,U5G-Max,Software,2,Management,UniFi Network,0,0,0
+1979,U5G-Max,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1980,U5G-Max-Outdoor,Overview,0,Product Name,UniFi 5G Max Outdoor,0,0,0
+1981,U5G-Max-Outdoor,Overview,0,Model,U5G-MAX-OUTDOOR,0,0,1
+1982,U5G-Max-Outdoor,Overview,0,Category,UniFi Product,0,0,2
+1983,U5G-Max-Outdoor,Hardware,1,Form Factor,Standard,0,0,0
+1984,U5G-Max-Outdoor,Hardware,1,Power Supply,AC/DC,0,0,1
+1985,U5G-Max-Outdoor,Software,2,Management,UniFi Network,0,0,0
+1986,U5G-Max-Outdoor,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1987,UMR-Industrial,Overview,0,Product Name,Mobile Router Industrial,0,0,0
+1988,UMR-Industrial,Overview,0,Model,UMR-INDUSTRIAL,0,0,1
+1989,UMR-Industrial,Overview,0,Category,UniFi Product,0,0,2
+1990,UMR-Industrial,Overview,0,Resolution,4K (8MP),0,0,3
+1991,UMR-Industrial,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+1992,UMR-Industrial,Overview,0,Zoom,3x Optical,0,0,5
+1993,UMR-Industrial,Overview,0,Audio,Two-way Audio,0,0,6
+1994,UMR-Industrial,Hardware,1,Form Factor,Standard,0,0,0
+1995,UMR-Industrial,Hardware,1,Power Supply,AC/DC,0,0,1
+1996,UMR-Industrial,Software,2,Management,UniFi Network,0,0,0
+1997,UMR-Industrial,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+1998,UMR-Ultra,Overview,0,Product Name,Mobile Router Ultra,0,0,0
+1999,UMR-Ultra,Overview,0,Model,UMR-ULTRA,0,0,1
+2000,UMR-Ultra,Overview,0,Category,UniFi Product,0,0,2
+2001,UMR-Ultra,Overview,0,Resolution,4K (8MP),0,0,3
+2002,UMR-Ultra,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2003,UMR-Ultra,Overview,0,Zoom,3x Optical,0,0,5
+2004,UMR-Ultra,Overview,0,Audio,Two-way Audio,0,0,6
+2005,UMR-Ultra,Hardware,1,Form Factor,Standard,0,0,0
+2006,UMR-Ultra,Hardware,1,Power Supply,AC/DC,0,0,1
+2007,UMR-Ultra,Software,2,Management,UniFi Network,0,0,0
+2008,UMR-Ultra,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2009,UMR,Overview,0,Product Name,Mobile Router,0,0,0
+2010,UMR,Overview,0,Model,UMR,0,0,1
+2011,UMR,Overview,0,Category,UniFi Product,0,0,2
+2012,UMR,Overview,0,Resolution,4K (8MP),0,0,3
+2013,UMR,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2014,UMR,Overview,0,Zoom,3x Optical,0,0,5
+2015,UMR,Overview,0,Audio,Two-way Audio,0,0,6
+2016,UMR,Hardware,1,Form Factor,Standard,0,0,0
+2017,UMR,Hardware,1,Power Supply,AC/DC,0,0,1
+2018,UMR,Software,2,Management,UniFi Network,0,0,0
+2019,UMR,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2020,U-LTE,Overview,0,Product Name,LTE Backup,0,0,0
+2021,U-LTE,Overview,0,Model,U-LTE,0,0,1
+2022,U-LTE,Overview,0,Category,UniFi Product,0,0,2
+2023,U-LTE,Overview,0,Resolution,4K (8MP),0,0,3
+2024,U-LTE,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2025,U-LTE,Overview,0,Zoom,3x Optical,0,0,5
+2026,U-LTE,Overview,0,Audio,Two-way Audio,0,0,6
+2027,U-LTE,Hardware,1,Form Factor,Standard,0,0,0
+2028,U-LTE,Hardware,1,Power Supply,AC/DC,0,0,1
+2029,U-LTE,Software,2,Management,UniFi Network,0,0,0
+2030,U-LTE,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2031,U-LTE-Backup Pro,Overview,0,Product Name,LTE Backup Pro,0,0,0
+2032,U-LTE-Backup Pro,Overview,0,Model,U-LTE-BACKUP-PRO,0,0,1
+2033,U-LTE-Backup Pro,Overview,0,Category,UniFi Product,0,0,2
+2034,U-LTE-Backup Pro,Overview,0,Resolution,4K (8MP),0,0,3
+2035,U-LTE-Backup Pro,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2036,U-LTE-Backup Pro,Overview,0,Zoom,3x Optical,0,0,5
+2037,U-LTE-Backup Pro,Overview,0,Audio,Two-way Audio,0,0,6
+2038,U-LTE-Backup Pro,Hardware,1,Form Factor,Standard,0,0,0
+2039,U-LTE-Backup Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+2040,U-LTE-Backup Pro,Software,2,Management,UniFi Network,0,0,0
+2041,U-LTE-Backup Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2042,UTP-G3-Touch-Enterprise,Overview,0,Product Name,G3 Touch Enterprise,0,0,0
+2043,UTP-G3-Touch-Enterprise,Overview,0,Model,UTP-G3-TOUCH-ENTERPRISE,0,0,1
+2044,UTP-G3-Touch-Enterprise,Overview,0,Category,UniFi Product,0,0,2
+2045,UTP-G3-Touch-Enterprise,Overview,0,Resolution,4K (8MP),0,0,3
+2046,UTP-G3-Touch-Enterprise,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2047,UTP-G3-Touch-Enterprise,Overview,0,Zoom,3x Optical,0,0,5
+2048,UTP-G3-Touch-Enterprise,Overview,0,Audio,Two-way Audio,0,0,6
+2049,UTP-G3-Touch-Enterprise,Hardware,1,Form Factor,Standard,0,0,0
+2050,UTP-G3-Touch-Enterprise,Hardware,1,Power Supply,AC/DC,0,0,1
+2051,UTP-G3-Touch-Enterprise,Software,2,Management,UniFi Network,0,0,0
+2052,UTP-G3-Touch-Enterprise,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2053,UTP-G3-Touch-Pro,Overview,0,Product Name,G3 Touch Pro,0,0,0
+2054,UTP-G3-Touch-Pro,Overview,0,Model,UTP-G3-TOUCH-PRO,0,0,1
+2055,UTP-G3-Touch-Pro,Overview,0,Category,UniFi Product,0,0,2
+2056,UTP-G3-Touch-Pro,Overview,0,Resolution,4K (8MP),0,0,3
+2057,UTP-G3-Touch-Pro,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2058,UTP-G3-Touch-Pro,Overview,0,Zoom,3x Optical,0,0,5
+2059,UTP-G3-Touch-Pro,Overview,0,Audio,Two-way Audio,0,0,6
+2060,UTP-G3-Touch-Pro,Hardware,1,Form Factor,Standard,0,0,0
+2061,UTP-G3-Touch-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+2062,UTP-G3-Touch-Pro,Software,2,Management,UniFi Network,0,0,0
+2063,UTP-G3-Touch-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2064,UTP-G3-Touch-Wall,Overview,0,Product Name,G3 Touch Wall,0,0,0
+2065,UTP-G3-Touch-Wall,Overview,0,Model,UTP-G3-TOUCH-WALL,0,0,1
+2066,UTP-G3-Touch-Wall,Overview,0,Category,UniFi Product,0,0,2
+2067,UTP-G3-Touch-Wall,Overview,0,Resolution,4K (8MP),0,0,3
+2068,UTP-G3-Touch-Wall,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2069,UTP-G3-Touch-Wall,Overview,0,Zoom,3x Optical,0,0,5
+2070,UTP-G3-Touch-Wall,Overview,0,Audio,Two-way Audio,0,0,6
+2071,UTP-G3-Touch-Wall,Hardware,1,Form Factor,Standard,0,0,0
+2072,UTP-G3-Touch-Wall,Hardware,1,Power Supply,AC/DC,0,0,1
+2073,UTP-G3-Touch-Wall,Software,2,Management,UniFi Network,0,0,0
+2074,UTP-G3-Touch-Wall,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2075,UTP-TouchMax-B/W,Overview,0,Product Name,G2 Touch Max,0,0,0
+2076,UTP-TouchMax-B/W,Overview,0,Model,UTP-TOUCHMAX-B/W,0,0,1
+2077,UTP-TouchMax-B/W,Overview,0,Category,UniFi Product,0,0,2
+2078,UTP-TouchMax-B/W,Hardware,1,Form Factor,Standard,0,0,0
+2079,UTP-TouchMax-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+2080,UTP-TouchMax-B/W,Software,2,Management,UniFi Network,0,0,0
+2081,UTP-TouchMax-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2082,UTP-Touch-B/W,Overview,0,Product Name,G2 Touch,0,0,0
+2083,UTP-Touch-B/W,Overview,0,Model,UTP-TOUCH-B-W,0,0,1
+2084,UTP-Touch-B/W,Overview,0,Category,UniFi Product,0,0,2
+2085,UTP-Touch-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+2086,UTP-Touch-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2087,UTP-Touch-B/W,Overview,0,Zoom,3x Optical,0,0,5
+2088,UTP-Touch-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+2089,UTP-Touch-B/W,Hardware,1,Form Factor,Standard,0,0,0
+2090,UTP-Touch-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+2091,UTP-Touch-B/W,Software,2,Management,UniFi Network,0,0,0
+2092,UTP-Touch-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2093,UT-G3-Handset,Overview,0,Product Name,G3 Wireless Handset,0,0,0
+2094,UT-G3-Handset,Overview,0,Model,UT-G3-HANDSET,0,0,1
+2095,UT-G3-Handset,Overview,0,Category,UniFi Product,0,0,2
+2096,UT-G3-Handset,Overview,0,Resolution,4K (8MP),0,0,3
+2097,UT-G3-Handset,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2098,UT-G3-Handset,Overview,0,Zoom,3x Optical,0,0,5
+2099,UT-G3-Handset,Overview,0,Audio,Two-way Audio,0,0,6
+2100,UT-G3-Handset,Hardware,1,Form Factor,Standard,0,0,0
+2101,UT-G3-Handset,Hardware,1,Power Supply,AC/DC,0,0,1
+2102,UT-G3-Handset,Software,2,Management,UniFi Network,0,0,0
+2103,UT-G3-Handset,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2104,UT-ATA,Overview,0,Product Name,Analog Telephone Adapter,0,0,0
+2105,UT-ATA,Overview,0,Model,UT-ATA,0,0,1
+2106,UT-ATA,Overview,0,Category,UniFi Product,0,0,2
+2107,UT-ATA,Overview,0,Resolution,4K (8MP),0,0,3
+2108,UT-ATA,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2109,UT-ATA,Overview,0,Zoom,3x Optical,0,0,5
+2110,UT-ATA,Overview,0,Audio,Two-way Audio,0,0,6
+2111,UT-ATA,Hardware,1,Form Factor,Standard,0,0,0
+2112,UT-ATA,Hardware,1,Power Supply,AC/DC,0,0,1
+2113,UT-ATA,Software,2,Management,UniFi Network,0,0,0
+2114,UT-ATA,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2115,UC-EV-Station-Pro,Overview,0,Product Name,EV Station Pro,0,0,0
+2116,UC-EV-Station-Pro,Overview,0,Model,UC-EV-STATION-PRO,0,0,1
+2117,UC-EV-Station-Pro,Overview,0,Category,Integrations,0,0,2
+2118,UC-EV-Station-Pro,Overview,0,Resolution,4K (8MP),0,0,3
+2119,UC-EV-Station-Pro,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2120,UC-EV-Station-Pro,Overview,0,Zoom,3x Optical,0,0,5
+2121,UC-EV-Station-Pro,Overview,0,Audio,Two-way Audio,0,0,6
+2122,UC-EV-Station-Pro,Hardware,1,Form Factor,Standard,0,0,0
+2123,UC-EV-Station-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+2124,UC-EV-Station-Pro,Software,2,Management,UniFi Network,0,0,0
+2125,UC-EV-Station-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2126,UC-EV-Station-Lite,Overview,0,Product Name,EV Station Lite,0,0,0
+2127,UC-EV-Station-Lite,Overview,0,Model,UC-EV-STATION-LITE,0,0,1
+2128,UC-EV-Station-Lite,Overview,0,Category,UniFi Product,0,0,2
+2129,UC-EV-Station-Lite,Hardware,1,Form Factor,Standard,0,0,0
+2130,UC-EV-Station-Lite,Hardware,1,Power Supply,AC/DC,0,0,1
+2131,UC-EV-Station-Lite,Software,2,Management,UniFi Network,0,0,0
+2132,UC-EV-Station-Lite,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2133,UPL-Amp-B/W,Overview,0,Product Name,PowerAmp,0,0,0
+2134,UPL-Amp-B/W,Overview,0,Model,UPL-AMP-B-W,0,0,1
+2135,UPL-Amp-B/W,Overview,0,Category,UniFi Product,0,0,2
+2136,UPL-Amp-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+2137,UPL-Amp-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2138,UPL-Amp-B/W,Overview,0,Zoom,3x Optical,0,0,5
+2139,UPL-Amp-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+2140,UPL-Amp-B/W,Hardware,1,Form Factor,Standard,0,0,0
+2141,UPL-Amp-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+2142,UPL-Amp-B/W,Software,2,Management,UniFi Network,0,0,0
+2143,UPL-Amp-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2144,UPL-Port-B/W,Overview,0,Product Name,PoE Audio Port,0,0,0
+2145,UPL-Port-B/W,Overview,0,Model,UPL-PORT-B-W,0,0,1
+2146,UPL-Port-B/W,Overview,0,Category,UniFi Product,0,0,2
+2147,UPL-Port-B/W,Overview,0,Resolution,4K (8MP),0,0,3
+2148,UPL-Port-B/W,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2149,UPL-Port-B/W,Overview,0,Zoom,3x Optical,0,0,5
+2150,UPL-Port-B/W,Overview,0,Audio,Two-way Audio,0,0,6
+2151,UPL-Port-B/W,Hardware,1,Form Factor,Standard,0,0,0
+2152,UPL-Port-B/W,Hardware,1,Power Supply,AC/DC,0,0,1
+2153,UPL-Port-B/W,Software,2,Management,UniFi Network,0,0,0
+2154,UPL-Port-B/W,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2155,UC-Cast-Pro,Overview,0,Product Name,Display Cast Pro,0,0,0
+2156,UC-Cast-Pro,Overview,0,Model,UC-CAST-PRO,0,0,1
+2157,UC-Cast-Pro,Overview,0,Category,UniFi Product,0,0,2
+2158,UC-Cast-Pro,Overview,0,Resolution,4K (8MP),0,0,3
+2159,UC-Cast-Pro,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2160,UC-Cast-Pro,Overview,0,Zoom,3x Optical,0,0,5
+2161,UC-Cast-Pro,Overview,0,Audio,Two-way Audio,0,0,6
+2162,UC-Cast-Pro,Hardware,1,Form Factor,Standard,0,0,0
+2163,UC-Cast-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+2164,UC-Cast-Pro,Software,2,Management,UniFi Network,0,0,0
+2165,UC-Cast-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2166,UC-Cast-Lite,Overview,0,Product Name,Display Cast Lite,0,0,0
+2167,UC-Cast-Lite,Overview,0,Model,UC-CAST-LITE,0,0,1
+2168,UC-Cast-Lite,Overview,0,Category,UniFi Product,0,0,2
+2169,UC-Cast-Lite,Overview,0,Resolution,4K (8MP),0,0,3
+2170,UC-Cast-Lite,Overview,0,Night Vision,25m (82ft) IR,0,0,4
+2171,UC-Cast-Lite,Overview,0,Zoom,3x Optical,0,0,5
+2172,UC-Cast-Lite,Overview,0,Audio,Two-way Audio,0,0,6
+2173,UC-Cast-Lite,Hardware,1,Form Factor,Standard,0,0,0
+2174,UC-Cast-Lite,Hardware,1,Power Supply,AC/DC,0,0,1
+2175,UC-Cast-Lite,Software,2,Management,UniFi Network,0,0,0
+2176,UC-Cast-Lite,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2177,ECS-Aggregation,Overview,0,Product Name,Enterprise Campus Aggregation,0,0,0
+2178,ECS-Aggregation,Overview,0,Model,ECS-AGGREGATION,0,0,1
+2179,ECS-Aggregation,Overview,0,Category,Switching,0,0,2
+2180,ECS-Aggregation,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2181,ECS-Aggregation,Overview,0,PoE Budget,400W,0,0,4
+2182,ECS-Aggregation,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2183,ECS-Aggregation,Overview,0,Layer,Layer 3 Switching,0,0,6
+2184,ECS-Aggregation,Hardware,1,Form Factor,Standard,0,0,0
+2185,ECS-Aggregation,Hardware,1,Power Supply,AC/DC,0,0,1
+2186,ECS-Aggregation,Software,2,Management,UniFi Network,0,0,0
+2187,ECS-Aggregation,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2188,USW-Pro-XG-Aggregation,Overview,0,Product Name,Pro XG Aggregation,0,0,0
+2189,USW-Pro-XG-Aggregation,Overview,0,Model,USW-PRO-XG-AGGREGATION,0,0,1
+2190,USW-Pro-XG-Aggregation,Overview,0,Category,UniFi Product,0,0,2
+2191,USW-Pro-XG-Aggregation,Hardware,1,Form Factor,Standard,0,0,0
+2192,USW-Pro-XG-Aggregation,Hardware,1,Power Supply,AC/DC,0,0,1
+2193,USW-Pro-XG-Aggregation,Software,2,Management,UniFi Network,0,0,0
+2194,USW-Pro-XG-Aggregation,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2195,USW-Pro-Aggregation,Overview,0,Product Name,Hi-Capacity Aggregation,0,0,0
+2196,USW-Pro-Aggregation,Overview,0,Model,USW-PRO-AGGREGATION,0,0,1
+2197,USW-Pro-Aggregation,Overview,0,Category,UniFi Product,0,0,2
+2198,USW-Pro-Aggregation,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2199,USW-Pro-Aggregation,Overview,0,PoE Budget,400W,0,0,4
+2200,USW-Pro-Aggregation,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2201,USW-Pro-Aggregation,Overview,0,Layer,Layer 3 Switching,0,0,6
+2202,USW-Pro-Aggregation,Hardware,1,Form Factor,Standard,0,0,0
+2203,USW-Pro-Aggregation,Hardware,1,Power Supply,AC/DC,0,0,1
+2204,USW-Pro-Aggregation,Software,2,Management,UniFi Network,0,0,0
+2205,USW-Pro-Aggregation,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2206,USW-Aggregation,Overview,0,Product Name,Aggregation,0,0,0
+2207,USW-Aggregation,Overview,0,Model,USW-AGGREGATION,0,0,1
+2208,USW-Aggregation,Overview,0,Category,UniFi Product,0,0,2
+2209,USW-Aggregation,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2210,USW-Aggregation,Overview,0,PoE Budget,400W,0,0,4
+2211,USW-Aggregation,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2212,USW-Aggregation,Overview,0,Layer,Layer 3 Switching,0,0,6
+2213,USW-Aggregation,Hardware,1,Form Factor,Standard,0,0,0
+2214,USW-Aggregation,Hardware,1,Power Supply,AC/DC,0,0,1
+2215,USW-Aggregation,Software,2,Management,UniFi Network,0,0,0
+2216,USW-Aggregation,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2217,ECS-48-PoE(2150W),Overview,0,Product Name,Enterprise Campus 48 PoE,0,0,0
+2218,ECS-48-PoE(2150W),Overview,0,Model,ECS-48-POE-2150W-,0,0,1
+2219,ECS-48-PoE(2150W),Overview,0,Category,Switching,0,0,2
+2220,ECS-48-PoE(2150W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2221,ECS-48-PoE(2150W),Overview,0,PoE Budget,400W,0,0,4
+2222,ECS-48-PoE(2150W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2223,ECS-48-PoE(2150W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2224,ECS-48-PoE(2150W),Hardware,1,Form Factor,Standard,0,0,0
+2225,ECS-48-PoE(2150W),Hardware,1,Power Supply,AC/DC,0,0,1
+2226,ECS-48-PoE(2150W),Software,2,Management,UniFi Network,0,0,0
+2227,ECS-48-PoE(2150W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2228,ECS-24-PoE(1050W),Overview,0,Product Name,Enterprise Campus 24 PoE,0,0,0
+2229,ECS-24-PoE(1050W),Overview,0,Model,ECS-24-POE(1050W),0,0,1
+2230,ECS-24-PoE(1050W),Overview,0,Category,UniFi Product,0,0,2
+2231,ECS-24-PoE(1050W),Hardware,1,Form Factor,Standard,0,0,0
+2232,ECS-24-PoE(1050W),Hardware,1,Power Supply,AC/DC,0,0,1
+2233,ECS-24-PoE(1050W),Software,2,Management,UniFi Network,0,0,0
+2234,ECS-24-PoE(1050W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2235,ECS-48S-PoE(2150W),Overview,0,Product Name,Enterprise Campus 48S PoE,0,0,0
+2236,ECS-48S-PoE(2150W),Overview,0,Model,ECS-48S-POE-2150W-,0,0,1
+2237,ECS-48S-PoE(2150W),Overview,0,Category,UniFi Product,0,0,2
+2238,ECS-48S-PoE(2150W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2239,ECS-48S-PoE(2150W),Overview,0,PoE Budget,400W,0,0,4
+2240,ECS-48S-PoE(2150W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2241,ECS-48S-PoE(2150W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2242,ECS-48S-PoE(2150W),Hardware,1,Form Factor,Standard,0,0,0
+2243,ECS-48S-PoE(2150W),Hardware,1,Power Supply,AC/DC,0,0,1
+2244,ECS-48S-PoE(2150W),Software,2,Management,UniFi Network,0,0,0
+2245,ECS-48S-PoE(2150W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2246,ECS-24S-PoE(1050W),Overview,0,Product Name,Enterprise Campus 24S PoE,0,0,0
+2247,ECS-24S-PoE(1050W),Overview,0,Model,ECS-24S-POE-1050W-,0,0,1
+2248,ECS-24S-PoE(1050W),Overview,0,Category,UniFi Product,0,0,2
+2249,ECS-24S-PoE(1050W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2250,ECS-24S-PoE(1050W),Overview,0,PoE Budget,400W,0,0,4
+2251,ECS-24S-PoE(1050W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2252,ECS-24S-PoE(1050W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2253,ECS-24S-PoE(1050W),Hardware,1,Form Factor,Standard,0,0,0
+2254,ECS-24S-PoE(1050W),Hardware,1,Power Supply,AC/DC,0,0,1
+2255,ECS-24S-PoE(1050W),Software,2,Management,UniFi Network,0,0,0
+2256,ECS-24S-PoE(1050W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2257,ECS-Aggregation,Overview,0,Product Name,Enterprise Campus Aggregation,0,0,0
+2258,ECS-Aggregation,Overview,0,Model,ECS-AGGREGATION,0,0,1
+2259,ECS-Aggregation,Overview,0,Category,UniFi Product,0,0,2
+2260,ECS-Aggregation,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2261,ECS-Aggregation,Overview,0,PoE Budget,400W,0,0,4
+2262,ECS-Aggregation,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2263,ECS-Aggregation,Overview,0,Layer,Layer 3 Switching,0,0,6
+2264,ECS-Aggregation,Hardware,1,Form Factor,Standard,0,0,0
+2265,ECS-Aggregation,Hardware,1,Power Supply,AC/DC,0,0,1
+2266,ECS-Aggregation,Software,2,Management,UniFi Network,0,0,0
+2267,ECS-Aggregation,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2268,USW-Pro-Max-48-PoE(720W),Overview,0,Product Name,Pro Max 48 PoE,0,0,0
+2269,USW-Pro-Max-48-PoE(720W),Overview,0,Model,USW-PRO-MAX-48-POE-720W-,0,0,1
+2270,USW-Pro-Max-48-PoE(720W),Overview,0,Category,Switching,0,0,2
+2271,USW-Pro-Max-48-PoE(720W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2272,USW-Pro-Max-48-PoE(720W),Overview,0,PoE Budget,400W,0,0,4
+2273,USW-Pro-Max-48-PoE(720W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2274,USW-Pro-Max-48-PoE(720W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2275,USW-Pro-Max-48-PoE(720W),Hardware,1,Form Factor,Standard,0,0,0
+2276,USW-Pro-Max-48-PoE(720W),Hardware,1,Power Supply,AC/DC,0,0,1
+2277,USW-Pro-Max-48-PoE(720W),Software,2,Management,UniFi Network,0,0,0
+2278,USW-Pro-Max-48-PoE(720W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2279,USW-Pro-Max-24-PoE(400W),Overview,0,Product Name,Pro Max 24 PoE,0,0,0
+2280,USW-Pro-Max-24-PoE(400W),Overview,0,Model,USW-PRO-MAX-24-POE(400W),0,0,1
+2281,USW-Pro-Max-24-PoE(400W),Overview,0,Category,UniFi Product,0,0,2
+2282,USW-Pro-Max-24-PoE(400W),Hardware,1,Form Factor,Standard,0,0,0
+2283,USW-Pro-Max-24-PoE(400W),Hardware,1,Power Supply,AC/DC,0,0,1
+2284,USW-Pro-Max-24-PoE(400W),Software,2,Management,UniFi Network,0,0,0
+2285,USW-Pro-Max-24-PoE(400W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2286,USW-Pro-XG-48-PoE(1080),Overview,0,Product Name,Pro XG 48 PoE,0,0,0
+2287,USW-Pro-XG-48-PoE(1080),Overview,0,Model,USW-PRO-XG-48-POE-1080-,0,0,1
+2288,USW-Pro-XG-48-PoE(1080),Overview,0,Category,UniFi Product,0,0,2
+2289,USW-Pro-XG-48-PoE(1080),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2290,USW-Pro-XG-48-PoE(1080),Overview,0,PoE Budget,400W,0,0,4
+2291,USW-Pro-XG-48-PoE(1080),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2292,USW-Pro-XG-48-PoE(1080),Overview,0,Layer,Layer 3 Switching,0,0,6
+2293,USW-Pro-XG-48-PoE(1080),Hardware,1,Form Factor,Standard,0,0,0
+2294,USW-Pro-XG-48-PoE(1080),Hardware,1,Power Supply,AC/DC,0,0,1
+2295,USW-Pro-XG-48-PoE(1080),Software,2,Management,UniFi Network,0,0,0
+2296,USW-Pro-XG-48-PoE(1080),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2297,USW-Pro-XG-24-PoE(720W),Overview,0,Product Name,Pro XG 24 PoE,0,0,0
+2298,USW-Pro-XG-24-PoE(720W),Overview,0,Model,USW-PRO-XG-24-POE-720W-,0,0,1
+2299,USW-Pro-XG-24-PoE(720W),Overview,0,Category,UniFi Product,0,0,2
+2300,USW-Pro-XG-24-PoE(720W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2301,USW-Pro-XG-24-PoE(720W),Overview,0,PoE Budget,400W,0,0,4
+2302,USW-Pro-XG-24-PoE(720W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2303,USW-Pro-XG-24-PoE(720W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2304,USW-Pro-XG-24-PoE(720W),Hardware,1,Form Factor,Standard,0,0,0
+2305,USW-Pro-XG-24-PoE(720W),Hardware,1,Power Supply,AC/DC,0,0,1
+2306,USW-Pro-XG-24-PoE(720W),Software,2,Management,UniFi Network,0,0,0
+2307,USW-Pro-XG-24-PoE(720W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2308,USW-Pro-HD-24-PoE(600W),Overview,0,Product Name,Pro HD 24 PoE,0,0,0
+2309,USW-Pro-HD-24-PoE(600W),Overview,0,Model,USW-PRO-HD-24-POE-600W-,0,0,1
+2310,USW-Pro-HD-24-PoE(600W),Overview,0,Category,UniFi Product,0,0,2
+2311,USW-Pro-HD-24-PoE(600W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2312,USW-Pro-HD-24-PoE(600W),Overview,0,PoE Budget,400W,0,0,4
+2313,USW-Pro-HD-24-PoE(600W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2314,USW-Pro-HD-24-PoE(600W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2315,USW-Pro-HD-24-PoE(600W),Hardware,1,Form Factor,Standard,0,0,0
+2316,USW-Pro-HD-24-PoE(600W),Hardware,1,Power Supply,AC/DC,0,0,1
+2317,USW-Pro-HD-24-PoE(600W),Software,2,Management,UniFi Network,0,0,0
+2318,USW-Pro-HD-24-PoE(600W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2319,USW-Pro-XG-48,Overview,0,Product Name,Pro XG 48,0,0,0
+2320,USW-Pro-XG-48,Overview,0,Model,USW-PRO-XG-48,0,0,1
+2321,USW-Pro-XG-48,Overview,0,Category,UniFi Product,0,0,2
+2322,USW-Pro-XG-48,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2323,USW-Pro-XG-48,Overview,0,PoE Budget,400W,0,0,4
+2324,USW-Pro-XG-48,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2325,USW-Pro-XG-48,Overview,0,Layer,Layer 3 Switching,0,0,6
+2326,USW-Pro-XG-48,Hardware,1,Form Factor,Standard,0,0,0
+2327,USW-Pro-XG-48,Hardware,1,Power Supply,AC/DC,0,0,1
+2328,USW-Pro-XG-48,Software,2,Management,UniFi Network,0,0,0
+2329,USW-Pro-XG-48,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2330,USW-Pro-XG-24,Overview,0,Product Name,Pro XG 24,0,0,0
+2331,USW-Pro-XG-24,Overview,0,Model,USW-PRO-XG-24,0,0,1
+2332,USW-Pro-XG-24,Overview,0,Category,UniFi Product,0,0,2
+2333,USW-Pro-XG-24,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2334,USW-Pro-XG-24,Overview,0,PoE Budget,400W,0,0,4
+2335,USW-Pro-XG-24,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2336,USW-Pro-XG-24,Overview,0,Layer,Layer 3 Switching,0,0,6
+2337,USW-Pro-XG-24,Hardware,1,Form Factor,Standard,0,0,0
+2338,USW-Pro-XG-24,Hardware,1,Power Supply,AC/DC,0,0,1
+2339,USW-Pro-XG-24,Software,2,Management,UniFi Network,0,0,0
+2340,USW-Pro-XG-24,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2341,USW-Pro-XG-10-PoE(400W),Overview,0,Product Name,Pro XG 10 PoE,0,0,0
+2342,USW-Pro-XG-10-PoE(400W),Overview,0,Model,USW-PRO-XG-10-POE-400W-,0,0,1
+2343,USW-Pro-XG-10-PoE(400W),Overview,0,Category,UniFi Product,0,0,2
+2344,USW-Pro-XG-10-PoE(400W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2345,USW-Pro-XG-10-PoE(400W),Overview,0,PoE Budget,400W,0,0,4
+2346,USW-Pro-XG-10-PoE(400W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2347,USW-Pro-XG-10-PoE(400W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2348,USW-Pro-XG-10-PoE(400W),Hardware,1,Form Factor,Standard,0,0,0
+2349,USW-Pro-XG-10-PoE(400W),Hardware,1,Power Supply,AC/DC,0,0,1
+2350,USW-Pro-XG-10-PoE(400W),Software,2,Management,UniFi Network,0,0,0
+2351,USW-Pro-XG-10-PoE(400W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2352,USW-Pro-Max-16-PoE(180W),Overview,0,Product Name,Pro Max 16 PoE,0,0,0
+2353,USW-Pro-Max-16-PoE(180W),Overview,0,Model,USW-PRO-MAX-16-POE-180W-,0,0,1
+2354,USW-Pro-Max-16-PoE(180W),Overview,0,Category,UniFi Product,0,0,2
+2355,USW-Pro-Max-16-PoE(180W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2356,USW-Pro-Max-16-PoE(180W),Overview,0,PoE Budget,400W,0,0,4
+2357,USW-Pro-Max-16-PoE(180W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2358,USW-Pro-Max-16-PoE(180W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2359,USW-Pro-Max-16-PoE(180W),Hardware,1,Form Factor,Standard,0,0,0
+2360,USW-Pro-Max-16-PoE(180W),Hardware,1,Power Supply,AC/DC,0,0,1
+2361,USW-Pro-Max-16-PoE(180W),Software,2,Management,UniFi Network,0,0,0
+2362,USW-Pro-Max-16-PoE(180W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2363,USW-Pro-HD-24,Overview,0,Product Name,Pro HD 24,0,0,0
+2364,USW-Pro-HD-24,Overview,0,Model,USW-PRO-HD-24,0,0,1
+2365,USW-Pro-HD-24,Overview,0,Category,UniFi Product,0,0,2
+2366,USW-Pro-HD-24,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2367,USW-Pro-HD-24,Overview,0,PoE Budget,400W,0,0,4
+2368,USW-Pro-HD-24,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2369,USW-Pro-HD-24,Overview,0,Layer,Layer 3 Switching,0,0,6
+2370,USW-Pro-HD-24,Hardware,1,Form Factor,Standard,0,0,0
+2371,USW-Pro-HD-24,Hardware,1,Power Supply,AC/DC,0,0,1
+2372,USW-Pro-HD-24,Software,2,Management,UniFi Network,0,0,0
+2373,USW-Pro-HD-24,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2374,USW-Pro-Max-48,Overview,0,Product Name,Pro Max 48,0,0,0
+2375,USW-Pro-Max-48,Overview,0,Model,USW-PRO-MAX-48,0,0,1
+2376,USW-Pro-Max-48,Overview,0,Category,UniFi Product,0,0,2
+2377,USW-Pro-Max-48,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2378,USW-Pro-Max-48,Overview,0,PoE Budget,400W,0,0,4
+2379,USW-Pro-Max-48,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2380,USW-Pro-Max-48,Overview,0,Layer,Layer 3 Switching,0,0,6
+2381,USW-Pro-Max-48,Hardware,1,Form Factor,Standard,0,0,0
+2382,USW-Pro-Max-48,Hardware,1,Power Supply,AC/DC,0,0,1
+2383,USW-Pro-Max-48,Software,2,Management,UniFi Network,0,0,0
+2384,USW-Pro-Max-48,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2385,USW-Pro-Max-24,Overview,0,Product Name,Pro Max 24,0,0,0
+2386,USW-Pro-Max-24,Overview,0,Model,USW-PRO-MAX-24,0,0,1
+2387,USW-Pro-Max-24,Overview,0,Category,UniFi Product,0,0,2
+2388,USW-Pro-Max-24,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2389,USW-Pro-Max-24,Overview,0,PoE Budget,400W,0,0,4
+2390,USW-Pro-Max-24,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2391,USW-Pro-Max-24,Overview,0,Layer,Layer 3 Switching,0,0,6
+2392,USW-Pro-Max-24,Hardware,1,Form Factor,Standard,0,0,0
+2393,USW-Pro-Max-24,Hardware,1,Power Supply,AC/DC,0,0,1
+2394,USW-Pro-Max-24,Software,2,Management,UniFi Network,0,0,0
+2395,USW-Pro-Max-24,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2396,USW-Pro-Max-16,Overview,0,Product Name,Pro Max 16,0,0,0
+2397,USW-Pro-Max-16,Overview,0,Model,USW-PRO-MAX-16,0,0,1
+2398,USW-Pro-Max-16,Overview,0,Category,UniFi Product,0,0,2
+2399,USW-Pro-Max-16,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2400,USW-Pro-Max-16,Overview,0,PoE Budget,400W,0,0,4
+2401,USW-Pro-Max-16,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2402,USW-Pro-Max-16,Overview,0,Layer,Layer 3 Switching,0,0,6
+2403,USW-Pro-Max-16,Hardware,1,Form Factor,Standard,0,0,0
+2404,USW-Pro-Max-16,Hardware,1,Power Supply,AC/DC,0,0,1
+2405,USW-Pro-Max-16,Software,2,Management,UniFi Network,0,0,0
+2406,USW-Pro-Max-16,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2407,USW-Pro-48-PoE(600W),Overview,0,Product Name,Pro 48 PoE,0,0,0
+2408,USW-Pro-48-PoE(600W),Overview,0,Model,USW-PRO-48-POE-600W-,0,0,1
+2409,USW-Pro-48-PoE(600W),Overview,0,Category,Switching,0,0,2
+2410,USW-Pro-48-PoE(600W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2411,USW-Pro-48-PoE(600W),Overview,0,PoE Budget,400W,0,0,4
+2412,USW-Pro-48-PoE(600W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2413,USW-Pro-48-PoE(600W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2414,USW-Pro-48-PoE(600W),Hardware,1,Form Factor,Standard,0,0,0
+2415,USW-Pro-48-PoE(600W),Hardware,1,Power Supply,AC/DC,0,0,1
+2416,USW-Pro-48-PoE(600W),Software,2,Management,UniFi Network,0,0,0
+2417,USW-Pro-48-PoE(600W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2418,USW-Pro-24-PoE(400W),Overview,0,Product Name,Pro 24 PoE,0,0,0
+2419,USW-Pro-24-PoE(400W),Overview,0,Model,USW-PRO-24-POE(400W),0,0,1
+2420,USW-Pro-24-PoE(400W),Overview,0,Category,UniFi Product,0,0,2
+2421,USW-Pro-24-PoE(400W),Hardware,1,Form Factor,Standard,0,0,0
+2422,USW-Pro-24-PoE(400W),Hardware,1,Power Supply,AC/DC,0,0,1
+2423,USW-Pro-24-PoE(400W),Software,2,Management,UniFi Network,0,0,0
+2424,USW-Pro-24-PoE(400W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2425,USW-Pro-48,Overview,0,Product Name,Pro 48,0,0,0
+2426,USW-Pro-48,Overview,0,Model,USW-PRO-48,0,0,1
+2427,USW-Pro-48,Overview,0,Category,UniFi Product,0,0,2
+2428,USW-Pro-48,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2429,USW-Pro-48,Overview,0,PoE Budget,400W,0,0,4
+2430,USW-Pro-48,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2431,USW-Pro-48,Overview,0,Layer,Layer 3 Switching,0,0,6
+2432,USW-Pro-48,Hardware,1,Form Factor,Standard,0,0,0
+2433,USW-Pro-48,Hardware,1,Power Supply,AC/DC,0,0,1
+2434,USW-Pro-48,Software,2,Management,UniFi Network,0,0,0
+2435,USW-Pro-48,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2436,USW-Pro-24,Overview,0,Product Name,Pro 24,0,0,0
+2437,USW-Pro-24,Overview,0,Model,USW-PRO-24,0,0,1
+2438,USW-Pro-24,Overview,0,Category,UniFi Product,0,0,2
+2439,USW-Pro-24,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2440,USW-Pro-24,Overview,0,PoE Budget,400W,0,0,4
+2441,USW-Pro-24,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2442,USW-Pro-24,Overview,0,Layer,Layer 3 Switching,0,0,6
+2443,USW-Pro-24,Hardware,1,Form Factor,Standard,0,0,0
+2444,USW-Pro-24,Hardware,1,Power Supply,AC/DC,0,0,1
+2445,USW-Pro-24,Software,2,Management,UniFi Network,0,0,0
+2446,USW-Pro-24,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2447,USW-Enterprise-48-PoE(720W),Overview,0,Product Name,Enterprise 48 PoE (Vintage),0,0,0
+2448,USW-Enterprise-48-PoE(720W),Overview,0,Model,USW-ENTERPRISE-48-POE-720W-,0,0,1
+2449,USW-Enterprise-48-PoE(720W),Overview,0,Category,UniFi Product,0,0,2
+2450,USW-Enterprise-48-PoE(720W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2451,USW-Enterprise-48-PoE(720W),Overview,0,PoE Budget,400W,0,0,4
+2452,USW-Enterprise-48-PoE(720W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2453,USW-Enterprise-48-PoE(720W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2454,USW-Enterprise-48-PoE(720W),Hardware,1,Form Factor,Standard,0,0,0
+2455,USW-Enterprise-48-PoE(720W),Hardware,1,Power Supply,AC/DC,0,0,1
+2456,USW-Enterprise-48-PoE(720W),Software,2,Management,UniFi Network,0,0,0
+2457,USW-Enterprise-48-PoE(720W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2458,USW-Enterprise-24-PoE(400W),Overview,0,Product Name,Enterprise 24 PoE (Vintage),0,0,0
+2459,USW-Enterprise-24-PoE(400W),Overview,0,Model,USW-ENTERPRISE-24-POE-400W-,0,0,1
+2460,USW-Enterprise-24-PoE(400W),Overview,0,Category,UniFi Product,0,0,2
+2461,USW-Enterprise-24-PoE(400W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2462,USW-Enterprise-24-PoE(400W),Overview,0,PoE Budget,400W,0,0,4
+2463,USW-Enterprise-24-PoE(400W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2464,USW-Enterprise-24-PoE(400W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2465,USW-Enterprise-24-PoE(400W),Hardware,1,Form Factor,Standard,0,0,0
+2466,USW-Enterprise-24-PoE(400W),Hardware,1,Power Supply,AC/DC,0,0,1
+2467,USW-Enterprise-24-PoE(400W),Software,2,Management,UniFi Network,0,0,0
+2468,USW-Enterprise-24-PoE(400W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2469,USW-Mission-Critical-(120W),Overview,0,Product Name,UPS PoE Switch,0,0,0
+2470,USW-Mission-Critical-(120W),Overview,0,Model,USW-MISSION-CRITICAL--120W-,0,0,1
+2471,USW-Mission-Critical-(120W),Overview,0,Category,UniFi Product,0,0,2
+2472,USW-Mission-Critical-(120W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2473,USW-Mission-Critical-(120W),Overview,0,PoE Budget,400W,0,0,4
+2474,USW-Mission-Critical-(120W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2475,USW-Mission-Critical-(120W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2476,USW-Mission-Critical-(120W),Hardware,1,Form Factor,Standard,0,0,0
+2477,USW-Mission-Critical-(120W),Hardware,1,Power Supply,AC/DC,0,0,1
+2478,USW-Mission-Critical-(120W),Software,2,Management,UniFi Network,0,0,0
+2479,USW-Mission-Critical-(120W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2480,USW-48-PoE(195W),Overview,0,Product Name,Standard 48 PoE,0,0,0
+2481,USW-48-PoE(195W),Overview,0,Model,USW-48-POE-195W-,0,0,1
+2482,USW-48-PoE(195W),Overview,0,Category,Switching,0,0,2
+2483,USW-48-PoE(195W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2484,USW-48-PoE(195W),Overview,0,PoE Budget,400W,0,0,4
+2485,USW-48-PoE(195W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2486,USW-48-PoE(195W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2487,USW-48-PoE(195W),Hardware,1,Form Factor,Standard,0,0,0
+2488,USW-48-PoE(195W),Hardware,1,Power Supply,AC/DC,0,0,1
+2489,USW-48-PoE(195W),Software,2,Management,UniFi Network,0,0,0
+2490,USW-48-PoE(195W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2491,USW-24-PoE(95W),Overview,0,Product Name,Standard 24 PoE,0,0,0
+2492,USW-24-PoE(95W),Overview,0,Model,USW-24-POE(95W),0,0,1
+2493,USW-24-PoE(95W),Overview,0,Category,UniFi Product,0,0,2
+2494,USW-24-PoE(95W),Hardware,1,Form Factor,Standard,0,0,0
+2495,USW-24-PoE(95W),Hardware,1,Power Supply,AC/DC,0,0,1
+2496,USW-24-PoE(95W),Software,2,Management,UniFi Network,0,0,0
+2497,USW-24-PoE(95W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2498,USW-16-PoE(42W),Overview,0,Product Name,Standard 16 PoE,0,0,0
+2499,USW-16-PoE(42W),Overview,0,Model,USW-16-POE-42W-,0,0,1
+2500,USW-16-PoE(42W),Overview,0,Category,UniFi Product,0,0,2
+2501,USW-16-PoE(42W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2502,USW-16-PoE(42W),Overview,0,PoE Budget,400W,0,0,4
+2503,USW-16-PoE(42W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2504,USW-16-PoE(42W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2505,USW-16-PoE(42W),Hardware,1,Form Factor,Standard,0,0,0
+2506,USW-16-PoE(42W),Hardware,1,Power Supply,AC/DC,0,0,1
+2507,USW-16-PoE(42W),Software,2,Management,UniFi Network,0,0,0
+2508,USW-16-PoE(42W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2509,USW-48,Overview,0,Product Name,Standard 48,0,0,0
+2510,USW-48,Overview,0,Model,USW-48,0,0,1
+2511,USW-48,Overview,0,Category,UniFi Product,0,0,2
+2512,USW-48,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2513,USW-48,Overview,0,PoE Budget,400W,0,0,4
+2514,USW-48,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2515,USW-48,Overview,0,Layer,Layer 3 Switching,0,0,6
+2516,USW-48,Hardware,1,Form Factor,Standard,0,0,0
+2517,USW-48,Hardware,1,Power Supply,AC/DC,0,0,1
+2518,USW-48,Software,2,Management,UniFi Network,0,0,0
+2519,USW-48,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2520,USW-24,Overview,0,Product Name,Standard 24,0,0,0
+2521,USW-24,Overview,0,Model,USW-24,0,0,1
+2522,USW-24,Overview,0,Category,UniFi Product,0,0,2
+2523,USW-24,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2524,USW-24,Overview,0,PoE Budget,400W,0,0,4
+2525,USW-24,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2526,USW-24,Overview,0,Layer,Layer 3 Switching,0,0,6
+2527,USW-24,Hardware,1,Form Factor,Standard,0,0,0
+2528,USW-24,Hardware,1,Power Supply,AC/DC,0,0,1
+2529,USW-24,Software,2,Management,UniFi Network,0,0,0
+2530,USW-24,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2531,USW-WAN,Overview,0,Product Name,WAN Switch,0,0,0
+2532,USW-WAN,Overview,0,Model,USW-WAN,0,0,1
+2533,USW-WAN,Overview,0,Category,Switching,0,0,2
+2534,USW-WAN,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2535,USW-WAN,Overview,0,PoE Budget,400W,0,0,4
+2536,USW-WAN,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2537,USW-WAN,Overview,0,Layer,Layer 3 Switching,0,0,6
+2538,USW-WAN,Hardware,1,Form Factor,Standard,0,0,0
+2539,USW-WAN,Hardware,1,Power Supply,AC/DC,0,0,1
+2540,USW-WAN,Software,2,Management,UniFi Network,0,0,0
+2541,USW-WAN,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2542,USW-WAN-RJ45,Overview,0,Product Name,WAN Switch RJ45,0,0,0
+2543,USW-WAN-RJ45,Overview,0,Model,USW-WAN-RJ45,0,0,1
+2544,USW-WAN-RJ45,Overview,0,Category,UniFi Product,0,0,2
+2545,USW-WAN-RJ45,Hardware,1,Form Factor,Standard,0,0,0
+2546,USW-WAN-RJ45,Hardware,1,Power Supply,AC/DC,0,0,1
+2547,USW-WAN-RJ45,Software,2,Management,UniFi Network,0,0,0
+2548,USW-WAN-RJ45,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2549,USW-Lite-16-PoE(45W),Overview,0,Product Name,Lite 16 PoE,0,0,0
+2550,USW-Lite-16-PoE(45W),Overview,0,Model,USW-LITE-16-POE-45W-,0,0,1
+2551,USW-Lite-16-PoE(45W),Overview,0,Category,Switching,0,0,2
+2552,USW-Lite-16-PoE(45W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2553,USW-Lite-16-PoE(45W),Overview,0,PoE Budget,400W,0,0,4
+2554,USW-Lite-16-PoE(45W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2555,USW-Lite-16-PoE(45W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2556,USW-Lite-16-PoE(45W),Hardware,1,Form Factor,Standard,0,0,0
+2557,USW-Lite-16-PoE(45W),Hardware,1,Power Supply,AC/DC,0,0,1
+2558,USW-Lite-16-PoE(45W),Software,2,Management,UniFi Network,0,0,0
+2559,USW-Lite-16-PoE(45W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2560,USW-Lite-8-PoE(52W),Overview,0,Product Name,Lite 8 PoE,0,0,0
+2561,USW-Lite-8-PoE(52W),Overview,0,Model,USW-LITE-8-POE(52W),0,0,1
+2562,USW-Lite-8-PoE(52W),Overview,0,Category,UniFi Product,0,0,2
+2563,USW-Lite-8-PoE(52W),Hardware,1,Form Factor,Standard,0,0,0
+2564,USW-Lite-8-PoE(52W),Hardware,1,Power Supply,AC/DC,0,0,1
+2565,USW-Lite-8-PoE(52W),Software,2,Management,UniFi Network,0,0,0
+2566,USW-Lite-8-PoE(52W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2567,USW-Pro-XG-8-PoE(155W),Overview,0,Product Name,Pro XG 8 PoE,0,0,0
+2568,USW-Pro-XG-8-PoE(155W),Overview,0,Model,USW-PRO-XG-8-POE-155W-,0,0,1
+2569,USW-Pro-XG-8-PoE(155W),Overview,0,Category,UniFi Product,0,0,2
+2570,USW-Pro-XG-8-PoE(155W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2571,USW-Pro-XG-8-PoE(155W),Overview,0,PoE Budget,400W,0,0,4
+2572,USW-Pro-XG-8-PoE(155W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2573,USW-Pro-XG-8-PoE(155W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2574,USW-Pro-XG-8-PoE(155W),Hardware,1,Form Factor,Standard,0,0,0
+2575,USW-Pro-XG-8-PoE(155W),Hardware,1,Power Supply,AC/DC,0,0,1
+2576,USW-Pro-XG-8-PoE(155W),Software,2,Management,UniFi Network,0,0,0
+2577,USW-Pro-XG-8-PoE(155W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2578,USW-Enterprise-8-PoE(120W),Overview,0,Product Name,Enterprise 8 PoE (vintage),0,0,0
+2579,USW-Enterprise-8-PoE(120W),Overview,0,Model,USW-ENTERPRISE-8-POE-120W-,0,0,1
+2580,USW-Enterprise-8-PoE(120W),Overview,0,Category,UniFi Product,0,0,2
+2581,USW-Enterprise-8-PoE(120W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2582,USW-Enterprise-8-PoE(120W),Overview,0,PoE Budget,400W,0,0,4
+2583,USW-Enterprise-8-PoE(120W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2584,USW-Enterprise-8-PoE(120W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2585,USW-Enterprise-8-PoE(120W),Hardware,1,Form Factor,Standard,0,0,0
+2586,USW-Enterprise-8-PoE(120W),Hardware,1,Power Supply,AC/DC,0,0,1
+2587,USW-Enterprise-8-PoE(120W),Software,2,Management,UniFi Network,0,0,0
+2588,USW-Enterprise-8-PoE(120W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2589,USW-Pro-8-PoE(120W),Overview,0,Product Name,Pro 8 PoE,0,0,0
+2590,USW-Pro-8-PoE(120W),Overview,0,Model,USW-PRO-8-POE-120W-,0,0,1
+2591,USW-Pro-8-PoE(120W),Overview,0,Category,UniFi Product,0,0,2
+2592,USW-Pro-8-PoE(120W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2593,USW-Pro-8-PoE(120W),Overview,0,PoE Budget,400W,0,0,4
+2594,USW-Pro-8-PoE(120W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2595,USW-Pro-8-PoE(120W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2596,USW-Pro-8-PoE(120W),Hardware,1,Form Factor,Standard,0,0,0
+2597,USW-Pro-8-PoE(120W),Hardware,1,Power Supply,AC/DC,0,0,1
+2598,USW-Pro-8-PoE(120W),Software,2,Management,UniFi Network,0,0,0
+2599,USW-Pro-8-PoE(120W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2600,USW-Ultra-210W(202W),Overview,0,Product Name,Ultra 210W,0,0,0
+2601,USW-Ultra-210W(202W),Overview,0,Model,USW-ULTRA-210W-202W-,0,0,1
+2602,USW-Ultra-210W(202W),Overview,0,Category,UniFi Product,0,0,2
+2603,USW-Ultra-210W(202W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2604,USW-Ultra-210W(202W),Overview,0,PoE Budget,400W,0,0,4
+2605,USW-Ultra-210W(202W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2606,USW-Ultra-210W(202W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2607,USW-Ultra-210W(202W),Hardware,1,Form Factor,Standard,0,0,0
+2608,USW-Ultra-210W(202W),Hardware,1,Power Supply,AC/DC,0,0,1
+2609,USW-Ultra-210W(202W),Software,2,Management,UniFi Network,0,0,0
+2610,USW-Ultra-210W(202W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2611,USW-Ultra-60W(52W),Overview,0,Product Name,Ultra 60W,0,0,0
+2612,USW-Ultra-60W(52W),Overview,0,Model,USW-ULTRA-60W-52W-,0,0,1
+2613,USW-Ultra-60W(52W),Overview,0,Category,UniFi Product,0,0,2
+2614,USW-Ultra-60W(52W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2615,USW-Ultra-60W(52W),Overview,0,PoE Budget,400W,0,0,4
+2616,USW-Ultra-60W(52W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2617,USW-Ultra-60W(52W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2618,USW-Ultra-60W(52W),Hardware,1,Form Factor,Standard,0,0,0
+2619,USW-Ultra-60W(52W),Hardware,1,Power Supply,AC/DC,0,0,1
+2620,USW-Ultra-60W(52W),Software,2,Management,UniFi Network,0,0,0
+2621,USW-Ultra-60W(52W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2622,USW-Ultra(42W),Overview,0,Product Name,Ultra,0,0,0
+2623,USW-Ultra(42W),Overview,0,Model,USW-ULTRA-42W-,0,0,1
+2624,USW-Ultra(42W),Overview,0,Category,UniFi Product,0,0,2
+2625,USW-Ultra(42W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2626,USW-Ultra(42W),Overview,0,PoE Budget,400W,0,0,4
+2627,USW-Ultra(42W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2628,USW-Ultra(42W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2629,USW-Ultra(42W),Hardware,1,Form Factor,Standard,0,0,0
+2630,USW-Ultra(42W),Hardware,1,Power Supply,AC/DC,0,0,1
+2631,USW-Ultra(42W),Software,2,Management,UniFi Network,0,0,0
+2632,USW-Ultra(42W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2633,USW-Flex-2.5G-8-PoE(196W),Overview,0,Product Name,Flex 2.5G PoE,0,0,0
+2634,USW-Flex-2.5G-8-PoE(196W),Overview,0,Model,USW-FLEX-2-5G-8-POE-196W-,0,0,1
+2635,USW-Flex-2.5G-8-PoE(196W),Overview,0,Category,UniFi Product,0,0,2
+2636,USW-Flex-2.5G-8-PoE(196W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2637,USW-Flex-2.5G-8-PoE(196W),Overview,0,PoE Budget,400W,0,0,4
+2638,USW-Flex-2.5G-8-PoE(196W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2639,USW-Flex-2.5G-8-PoE(196W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2640,USW-Flex-2.5G-8-PoE(196W),Hardware,1,Form Factor,Standard,0,0,0
+2641,USW-Flex-2.5G-8-PoE(196W),Hardware,1,Power Supply,AC/DC,0,0,1
+2642,USW-Flex-2.5G-8-PoE(196W),Software,2,Management,UniFi Network,0,0,0
+2643,USW-Flex-2.5G-8-PoE(196W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2644,USW-Flex-2.5G-8,Overview,0,Product Name,Flex 2.5G,0,0,0
+2645,USW-Flex-2.5G-8,Overview,0,Model,USW-FLEX-2-5G-8,0,0,1
+2646,USW-Flex-2.5G-8,Overview,0,Category,UniFi Product,0,0,2
+2647,USW-Flex-2.5G-8,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2648,USW-Flex-2.5G-8,Overview,0,PoE Budget,400W,0,0,4
+2649,USW-Flex-2.5G-8,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2650,USW-Flex-2.5G-8,Overview,0,Layer,Layer 3 Switching,0,0,6
+2651,USW-Flex-2.5G-8,Hardware,1,Form Factor,Standard,0,0,0
+2652,USW-Flex-2.5G-8,Hardware,1,Power Supply,AC/DC,0,0,1
+2653,USW-Flex-2.5G-8,Software,2,Management,UniFi Network,0,0,0
+2654,USW-Flex-2.5G-8,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2655,USW-Flex-2.5G-5,Overview,0,Product Name,Flex Mini 2.5G,0,0,0
+2656,USW-Flex-2.5G-5,Overview,0,Model,USW-FLEX-2-5G-5,0,0,1
+2657,USW-Flex-2.5G-5,Overview,0,Category,UniFi Product,0,0,2
+2658,USW-Flex-2.5G-5,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2659,USW-Flex-2.5G-5,Overview,0,PoE Budget,400W,0,0,4
+2660,USW-Flex-2.5G-5,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2661,USW-Flex-2.5G-5,Overview,0,Layer,Layer 3 Switching,0,0,6
+2662,USW-Flex-2.5G-5,Hardware,1,Form Factor,Standard,0,0,0
+2663,USW-Flex-2.5G-5,Hardware,1,Power Supply,AC/DC,0,0,1
+2664,USW-Flex-2.5G-5,Software,2,Management,UniFi Network,0,0,0
+2665,USW-Flex-2.5G-5,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2666,USW-Flex-Mini,Overview,0,Product Name,Flex Mini,0,0,0
+2667,USW-Flex-Mini,Overview,0,Model,USW-FLEX-MINI,0,0,1
+2668,USW-Flex-Mini,Overview,0,Category,UniFi Product,0,0,2
+2669,USW-Flex-Mini,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2670,USW-Flex-Mini,Overview,0,PoE Budget,400W,0,0,4
+2671,USW-Flex-Mini,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2672,USW-Flex-Mini,Overview,0,Layer,Layer 3 Switching,0,0,6
+2673,USW-Flex-Mini,Hardware,1,Form Factor,Standard,0,0,0
+2674,USW-Flex-Mini,Hardware,1,Power Supply,AC/DC,0,0,1
+2675,USW-Flex-Mini,Software,2,Management,UniFi Network,0,0,0
+2676,USW-Flex-Mini,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2677,USW-Flex(46W),Overview,0,Product Name,Flex,0,0,0
+2678,USW-Flex(46W),Overview,0,Model,USW-FLEX-46W-,0,0,1
+2679,USW-Flex(46W),Overview,0,Category,UniFi Product,0,0,2
+2680,USW-Flex(46W),Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2681,USW-Flex(46W),Overview,0,PoE Budget,400W,0,0,4
+2682,USW-Flex(46W),Overview,0,Uplink,2x 10G SFP+,0,0,5
+2683,USW-Flex(46W),Overview,0,Layer,Layer 3 Switching,0,0,6
+2684,USW-Flex(46W),Hardware,1,Form Factor,Standard,0,0,0
+2685,USW-Flex(46W),Hardware,1,Power Supply,AC/DC,0,0,1
+2686,USW-Flex(46W),Software,2,Management,UniFi Network,0,0,0
+2687,USW-Flex(46W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2688,USW-Flex-Utility,Overview,0,Product Name,Flex Utility,0,0,0
+2689,USW-Flex-Utility,Overview,0,Model,USW-FLEX-UTILITY,0,0,1
+2690,USW-Flex-Utility,Overview,0,Category,UniFi Product,0,0,2
+2691,USW-Flex-Utility,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2692,USW-Flex-Utility,Overview,0,PoE Budget,400W,0,0,4
+2693,USW-Flex-Utility,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2694,USW-Flex-Utility,Overview,0,Layer,Layer 3 Switching,0,0,6
+2695,USW-Flex-Utility,Hardware,1,Form Factor,Standard,0,0,0
+2696,USW-Flex-Utility,Hardware,1,Power Supply,AC/DC,0,0,1
+2697,USW-Flex-Utility,Software,2,Management,UniFi Network,0,0,0
+2698,USW-Flex-Utility,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2699,UACC-Flex-Utility-Pro,Overview,0,Product Name,Flex Utility Pro,0,0,0
+2700,UACC-Flex-Utility-Pro,Overview,0,Model,UACC-FLEX-UTILITY-PRO,0,0,1
+2701,UACC-Flex-Utility-Pro,Overview,0,Category,UniFi Product,0,0,2
+2702,UACC-Flex-Utility-Pro,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2703,UACC-Flex-Utility-Pro,Overview,0,PoE Budget,400W,0,0,4
+2704,UACC-Flex-Utility-Pro,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2705,UACC-Flex-Utility-Pro,Overview,0,Layer,Layer 3 Switching,0,0,6
+2706,UACC-Flex-Utility-Pro,Hardware,1,Form Factor,Standard,0,0,0
+2707,UACC-Flex-Utility-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+2708,UACC-Flex-Utility-Pro,Software,2,Management,UniFi Network,0,0,0
+2709,UACC-Flex-Utility-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2710,USW-Flex-XG,Overview,0,Product Name,Flex 10 GbE,0,0,0
+2711,USW-Flex-XG,Overview,0,Model,USW-FLEX-XG,0,0,1
+2712,USW-Flex-XG,Overview,0,Category,UniFi Product,0,0,2
+2713,USW-Flex-XG,Overview,0,Ports,"8x 2.5GbE, 16x GbE",0,0,3
+2714,USW-Flex-XG,Overview,0,PoE Budget,400W,0,0,4
+2715,USW-Flex-XG,Overview,0,Uplink,2x 10G SFP+,0,0,5
+2716,USW-Flex-XG,Overview,0,Layer,Layer 3 Switching,0,0,6
+2717,USW-Flex-XG,Hardware,1,Form Factor,Standard,0,0,0
+2718,USW-Flex-XG,Hardware,1,Power Supply,AC/DC,0,0,1
+2719,USW-Flex-XG,Software,2,Management,UniFi Network,0,0,0
+2720,USW-Flex-XG,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2721,E7,Overview,0,Product Name,E7,0,0,0
+2722,E7,Overview,0,Model,E7,0,0,1
+2723,E7,Overview,0,Category,WiFi,0,0,2
+2724,E7,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2725,E7,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2726,E7,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2727,E7,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2728,E7,Hardware,1,Form Factor,Standard,0,0,0
+2729,E7,Hardware,1,Power Supply,AC/DC,0,0,1
+2730,E7,Software,2,Management,UniFi Network,0,0,0
+2731,E7,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2732,E7-Campus,Overview,0,Product Name,E7 Campus,0,0,0
+2733,E7-Campus,Overview,0,Model,E7-CAMPUS,0,0,1
+2734,E7-Campus,Overview,0,Category,UniFi Product,0,0,2
+2735,E7-Campus,Hardware,1,Form Factor,Standard,0,0,0
+2736,E7-Campus,Hardware,1,Power Supply,AC/DC,0,0,1
+2737,E7-Campus,Software,2,Management,UniFi Network,0,0,0
+2738,E7-Campus,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2739,E7-Audience,Overview,0,Product Name,E7 Audience,0,0,0
+2740,E7-Audience,Overview,0,Model,E7-AUDIENCE,0,0,1
+2741,E7-Audience,Overview,0,Category,UniFi Product,0,0,2
+2742,E7-Audience,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2743,E7-Audience,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2744,E7-Audience,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2745,E7-Audience,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2746,E7-Audience,Hardware,1,Form Factor,Standard,0,0,0
+2747,E7-Audience,Hardware,1,Power Supply,AC/DC,0,0,1
+2748,E7-Audience,Software,2,Management,UniFi Network,0,0,0
+2749,E7-Audience,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2750,U7-Pro-XGS,Overview,0,Product Name,U7 Pro XGS,0,0,0
+2751,U7-Pro-XGS,Overview,0,Model,U7-PRO-XGS,0,0,1
+2752,U7-Pro-XGS,Overview,0,Category,WiFi,0,0,2
+2753,U7-Pro-XGS,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2754,U7-Pro-XGS,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2755,U7-Pro-XGS,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2756,U7-Pro-XGS,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2757,U7-Pro-XGS,Hardware,1,Form Factor,Standard,0,0,0
+2758,U7-Pro-XGS,Hardware,1,Power Supply,AC/DC,0,0,1
+2759,U7-Pro-XGS,Software,2,Management,UniFi Network,0,0,0
+2760,U7-Pro-XGS,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2761,U7-Pro-XG,Overview,0,Product Name,U7 Pro XGS,0,0,0
+2762,U7-Pro-XG,Overview,0,Model,U7-PRO-XG,0,0,1
+2763,U7-Pro-XG,Overview,0,Category,UniFi Product,0,0,2
+2764,U7-Pro-XG,Hardware,1,Form Factor,Standard,0,0,0
+2765,U7-Pro-XG,Hardware,1,Power Supply,AC/DC,0,0,1
+2766,U7-Pro-XG,Software,2,Management,UniFi Network,0,0,0
+2767,U7-Pro-XG,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2768,U7-Pro-Max,Overview,0,Product Name,U7 Pro Max,0,0,0
+2769,U7-Pro-Max,Overview,0,Model,U7-PRO-MAX,0,0,1
+2770,U7-Pro-Max,Overview,0,Category,UniFi Product,0,0,2
+2771,U7-Pro-Max,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2772,U7-Pro-Max,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2773,U7-Pro-Max,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2774,U7-Pro-Max,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2775,U7-Pro-Max,Hardware,1,Form Factor,Standard,0,0,0
+2776,U7-Pro-Max,Hardware,1,Power Supply,AC/DC,0,0,1
+2777,U7-Pro-Max,Software,2,Management,UniFi Network,0,0,0
+2778,U7-Pro-Max,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2779,U7-Pr0,Overview,0,Product Name,U7 Pro,0,0,0
+2780,U7-Pr0,Overview,0,Model,U7-PR0,0,0,1
+2781,U7-Pr0,Overview,0,Category,UniFi Product,0,0,2
+2782,U7-Pr0,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2783,U7-Pr0,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2784,U7-Pr0,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2785,U7-Pr0,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2786,U7-Pr0,Hardware,1,Form Factor,Standard,0,0,0
+2787,U7-Pr0,Hardware,1,Power Supply,AC/DC,0,0,1
+2788,U7-Pr0,Software,2,Management,UniFi Network,0,0,0
+2789,U7-Pr0,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2790,U7-LR,Overview,0,Product Name,U7 Long Range,0,0,0
+2791,U7-LR,Overview,0,Model,U7-LR,0,0,1
+2792,U7-LR,Overview,0,Category,UniFi Product,0,0,2
+2793,U7-LR,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2794,U7-LR,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2795,U7-LR,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2796,U7-LR,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2797,U7-LR,Hardware,1,Form Factor,Standard,0,0,0
+2798,U7-LR,Hardware,1,Power Supply,AC/DC,0,0,1
+2799,U7-LR,Software,2,Management,UniFi Network,0,0,0
+2800,U7-LR,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2801,U7-Lite,Overview,0,Product Name,U7 Lite,0,0,0
+2802,U7-Lite,Overview,0,Model,U7-LITE,0,0,1
+2803,U7-Lite,Overview,0,Category,UniFi Product,0,0,2
+2804,U7-Lite,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2805,U7-Lite,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2806,U7-Lite,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2807,U7-Lite,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2808,U7-Lite,Hardware,1,Form Factor,Standard,0,0,0
+2809,U7-Lite,Hardware,1,Power Supply,AC/DC,0,0,1
+2810,U7-Lite,Software,2,Management,UniFi Network,0,0,0
+2811,U7-Lite,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2812,U6-Enterprise,Overview,0,Product Name,U6 Enterprise,0,0,0
+2813,U6-Enterprise,Overview,0,Model,U6-ENTERPRISE,0,0,1
+2814,U6-Enterprise,Overview,0,Category,UniFi Product,0,0,2
+2815,U6-Enterprise,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2816,U6-Enterprise,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2817,U6-Enterprise,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2818,U6-Enterprise,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2819,U6-Enterprise,Hardware,1,Form Factor,Standard,0,0,0
+2820,U6-Enterprise,Hardware,1,Power Supply,AC/DC,0,0,1
+2821,U6-Enterprise,Software,2,Management,UniFi Network,0,0,0
+2822,U6-Enterprise,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2823,U6-Pro,Overview,0,Product Name,U6 Pro,0,0,0
+2824,U6-Pro,Overview,0,Model,U6-PRO,0,0,1
+2825,U6-Pro,Overview,0,Category,UniFi Product,0,0,2
+2826,U6-Pro,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2827,U6-Pro,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2828,U6-Pro,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2829,U6-Pro,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2830,U6-Pro,Hardware,1,Form Factor,Standard,0,0,0
+2831,U6-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+2832,U6-Pro,Software,2,Management,UniFi Network,0,0,0
+2833,U6-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2834,U6-PLUS,Overview,0,Product Name,U6+,0,0,0
+2835,U6-PLUS,Overview,0,Model,U6-PLUS,0,0,1
+2836,U6-PLUS,Overview,0,Category,UniFi Product,0,0,2
+2837,U6-PLUS,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2838,U6-PLUS,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2839,U6-PLUS,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2840,U6-PLUS,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2841,U6-PLUS,Hardware,1,Form Factor,Standard,0,0,0
+2842,U6-PLUS,Hardware,1,Power Supply,AC/DC,0,0,1
+2843,U6-PLUS,Software,2,Management,UniFi Network,0,0,0
+2844,U6-PLUS,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2845,UAP-AC-PRO,Overview,0,Product Name,AC Pro,0,0,0
+2846,UAP-AC-PRO,Overview,0,Model,UAP-AC-PRO,0,0,1
+2847,UAP-AC-PRO,Overview,0,Category,UniFi Product,0,0,2
+2848,UAP-AC-PRO,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2849,UAP-AC-PRO,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2850,UAP-AC-PRO,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2851,UAP-AC-PRO,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2852,UAP-AC-PRO,Hardware,1,Form Factor,Standard,0,0,0
+2853,UAP-AC-PRO,Hardware,1,Power Supply,AC/DC,0,0,1
+2854,UAP-AC-PRO,Software,2,Management,UniFi Network,0,0,0
+2855,UAP-AC-PRO,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2856,U7-Pro-XG-Wall,Overview,0,Product Name,U7 Pro XG Wall,0,0,0
+2857,U7-Pro-XG-Wall,Overview,0,Model,U7-PRO-XG-WALL,0,0,1
+2858,U7-Pro-XG-Wall,Overview,0,Category,WiFi,0,0,2
+2859,U7-Pro-XG-Wall,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2860,U7-Pro-XG-Wall,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2861,U7-Pro-XG-Wall,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2862,U7-Pro-XG-Wall,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2863,U7-Pro-XG-Wall,Hardware,1,Form Factor,Standard,0,0,0
+2864,U7-Pro-XG-Wall,Hardware,1,Power Supply,AC/DC,0,0,1
+2865,U7-Pro-XG-Wall,Software,2,Management,UniFi Network,0,0,0
+2866,U7-Pro-XG-Wall,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2867,U7-Pro-Wall,Overview,0,Product Name,U7 Pro Wall,0,0,0
+2868,U7-Pro-Wall,Overview,0,Model,U7-PRO-WALL,0,0,1
+2869,U7-Pro-Wall,Overview,0,Category,UniFi Product,0,0,2
+2870,U7-Pro-Wall,Hardware,1,Form Factor,Standard,0,0,0
+2871,U7-Pro-Wall,Hardware,1,Power Supply,AC/DC,0,0,1
+2872,U7-Pro-Wall,Software,2,Management,UniFi Network,0,0,0
+2873,U7-Pro-Wall,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2874,U7-IW,Overview,0,Product Name,U7 In-Wall,0,0,0
+2875,U7-IW,Overview,0,Model,U7-IW,0,0,1
+2876,U7-IW,Overview,0,Category,UniFi Product,0,0,2
+2877,U7-IW,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2878,U7-IW,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2879,U7-IW,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2880,U7-IW,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2881,U7-IW,Hardware,1,Form Factor,Standard,0,0,0
+2882,U7-IW,Hardware,1,Power Supply,AC/DC,0,0,1
+2883,U7-IW,Software,2,Management,UniFi Network,0,0,0
+2884,U7-IW,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2885,U6-Enterprise-IW,Overview,0,Product Name,U6 Enterprise In-Wall,0,0,0
+2886,U6-Enterprise-IW,Overview,0,Model,U6-ENTERPRISE-IW,0,0,1
+2887,U6-Enterprise-IW,Overview,0,Category,UniFi Product,0,0,2
+2888,U6-Enterprise-IW,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2889,U6-Enterprise-IW,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2890,U6-Enterprise-IW,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2891,U6-Enterprise-IW,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2892,U6-Enterprise-IW,Hardware,1,Form Factor,Standard,0,0,0
+2893,U6-Enterprise-IW,Hardware,1,Power Supply,AC/DC,0,0,1
+2894,U6-Enterprise-IW,Software,2,Management,UniFi Network,0,0,0
+2895,U6-Enterprise-IW,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2896,U6-IW,Overview,0,Product Name,U6 In-Wall,0,0,0
+2897,U6-IW,Overview,0,Model,U6-IW,0,0,1
+2898,U6-IW,Overview,0,Category,UniFi Product,0,0,2
+2899,U6-IW,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2900,U6-IW,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2901,U6-IW,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2902,U6-IW,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2903,U6-IW,Hardware,1,Form Factor,Standard,0,0,0
+2904,U6-IW,Hardware,1,Power Supply,AC/DC,0,0,1
+2905,U6-IW,Software,2,Management,UniFi Network,0,0,0
+2906,U6-IW,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2907,U6-Extender,Overview,0,Product Name,U6 Extender,0,0,0
+2908,U6-Extender,Overview,0,Model,U6-EXTENDER,0,0,1
+2909,U6-Extender,Overview,0,Category,UniFi Product,0,0,2
+2910,U6-Extender,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2911,U6-Extender,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2912,U6-Extender,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2913,U6-Extender,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2914,U6-Extender,Hardware,1,Form Factor,Standard,0,0,0
+2915,U6-Extender,Hardware,1,Power Supply,AC/DC,0,0,1
+2916,U6-Extender,Software,2,Management,UniFi Network,0,0,0
+2917,U6-Extender,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2918,U7-Pro-Outdoor,Overview,0,Product Name,U7 Pro Outdoor,0,0,0
+2919,U7-Pro-Outdoor,Overview,0,Model,U7-PRO-OUTDOOR,0,0,1
+2920,U7-Pro-Outdoor,Overview,0,Category,WiFi,0,0,2
+2921,U7-Pro-Outdoor,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2922,U7-Pro-Outdoor,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2923,U7-Pro-Outdoor,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2924,U7-Pro-Outdoor,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2925,U7-Pro-Outdoor,Hardware,1,Form Factor,Standard,0,0,0
+2926,U7-Pro-Outdoor,Hardware,1,Power Supply,AC/DC,0,0,1
+2927,U7-Pro-Outdoor,Software,2,Management,UniFi Network,0,0,0
+2928,U7-Pro-Outdoor,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2929,U7-Outdoor,Overview,0,Product Name,U7 Outdoor,0,0,0
+2930,U7-Outdoor,Overview,0,Model,U7-OUTDOOR,0,0,1
+2931,U7-Outdoor,Overview,0,Category,UniFi Product,0,0,2
+2932,U7-Outdoor,Hardware,1,Form Factor,Standard,0,0,0
+2933,U7-Outdoor,Hardware,1,Power Supply,AC/DC,0,0,1
+2934,U7-Outdoor,Software,2,Management,UniFi Network,0,0,0
+2935,U7-Outdoor,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2936,U6-Mesh,Overview,0,Product Name,U6 Mesh,0,0,0
+2937,U6-Mesh,Overview,0,Model,U6-MESH,0,0,1
+2938,U6-Mesh,Overview,0,Category,UniFi Product,0,0,2
+2939,U6-Mesh,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2940,U6-Mesh,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2941,U6-Mesh,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2942,U6-Mesh,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2943,U6-Mesh,Hardware,1,Form Factor,Standard,0,0,0
+2944,U6-Mesh,Hardware,1,Power Supply,AC/DC,0,0,1
+2945,U6-Mesh,Software,2,Management,UniFi Network,0,0,0
+2946,U6-Mesh,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2947,U6-Mesh-Pro,Overview,0,Product Name,U6 Mesh Pro,0,0,0
+2948,U6-Mesh-Pro,Overview,0,Model,U6-MESH-PRO,0,0,1
+2949,U6-Mesh-Pro,Overview,0,Category,UniFi Product,0,0,2
+2950,U6-Mesh-Pro,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2951,U6-Mesh-Pro,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2952,U6-Mesh-Pro,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2953,U6-Mesh-Pro,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2954,U6-Mesh-Pro,Hardware,1,Form Factor,Standard,0,0,0
+2955,U6-Mesh-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+2956,U6-Mesh-Pro,Software,2,Management,UniFi Network,0,0,0
+2957,U6-Mesh-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2958,AC Mesh,Overview,0,Product Name,UAP-AC-M,0,0,0
+2959,AC Mesh,Overview,0,Model,AC-MESH,0,0,1
+2960,AC Mesh,Overview,0,Category,UniFi Product,0,0,2
+2961,AC Mesh,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2962,AC Mesh,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2963,AC Mesh,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2964,AC Mesh,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2965,AC Mesh,Hardware,1,Form Factor,Standard,0,0,0
+2966,AC Mesh,Hardware,1,Power Supply,AC/DC,0,0,1
+2967,AC Mesh,Software,2,Management,UniFi Network,0,0,0
+2968,AC Mesh,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2969,UK-Ultra,Overview,0,Product Name,Swiss Army Knife,0,0,0
+2970,UK-Ultra,Overview,0,Model,UK-ULTRA,0,0,1
+2971,UK-Ultra,Overview,0,Category,UniFi Product,0,0,2
+2972,UK-Ultra,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2973,UK-Ultra,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2974,UK-Ultra,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2975,UK-Ultra,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2976,UK-Ultra,Hardware,1,Form Factor,Standard,0,0,0
+2977,UK-Ultra,Hardware,1,Power Supply,AC/DC,0,0,1
+2978,UK-Ultra,Software,2,Management,UniFi Network,0,0,0
+2979,UK-Ultra,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2980,Product Collection,Overview,0,Product Name,E7 Audience,0,0,0
+2981,Product Collection,Overview,0,Model,PRODUCT-COLLECTION,0,0,1
+2982,Product Collection,Overview,0,Category,WiFi,0,0,2
+2983,Product Collection,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+2984,Product Collection,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+2985,Product Collection,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+2986,Product Collection,Overview,0,Storage,128GB SSD Integrated,0,0,6
+2987,Product Collection,Hardware,1,Form Factor,Standard,0,0,0
+2988,Product Collection,Hardware,1,Power Supply,AC/DC,0,0,1
+2989,Product Collection,Software,2,Management,UniFi Network,0,0,0
+2990,Product Collection,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2991,UWB-XG,Overview,0,Product Name,WiFI BaseStation XG,0,0,0
+2992,UWB-XG,Overview,0,Model,UWB-XG,0,0,1
+2993,UWB-XG,Overview,0,Category,UniFi Product,0,0,2
+2994,UWB-XG,Hardware,1,Form Factor,Standard,0,0,0
+2995,UWB-XG,Hardware,1,Power Supply,AC/DC,0,0,1
+2996,UWB-XG,Software,2,Management,UniFi Network,0,0,0
+2997,UWB-XG,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+2998,UDB-Pro-Sector,Overview,0,Product Name,Device Bridge Pro Sector,0,0,0
+2999,UDB-Pro-Sector,Overview,0,Model,UDB-PRO-SECTOR,0,0,1
+3000,UDB-Pro-Sector,Overview,0,Category,WiFi,0,0,2
+3001,UDB-Pro-Sector,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+3002,UDB-Pro-Sector,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+3003,UDB-Pro-Sector,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+3004,UDB-Pro-Sector,Overview,0,Storage,128GB SSD Integrated,0,0,6
+3005,UDB-Pro-Sector,Hardware,1,Form Factor,Standard,0,0,0
+3006,UDB-Pro-Sector,Hardware,1,Power Supply,AC/DC,0,0,1
+3007,UDB-Pro-Sector,Software,2,Management,UniFi Network,0,0,0
+3008,UDB-Pro-Sector,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+3009,UDB-Pro,Overview,0,Product Name,Device Bridge Pro ,0,0,0
+3010,UDB-Pro,Overview,0,Model,UDB-PRO,0,0,1
+3011,UDB-Pro,Overview,0,Category,UniFi Product,0,0,2
+3012,UDB-Pro,Hardware,1,Form Factor,Standard,0,0,0
+3013,UDB-Pro,Hardware,1,Power Supply,AC/DC,0,0,1
+3014,UDB-Pro,Software,2,Management,UniFi Network,0,0,0
+3015,UDB-Pro,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+3016,UDB,Overview,0,Product Name,Device Bridge,0,0,0
+3017,UDB,Overview,0,Model,UDB,0,0,1
+3018,UDB,Overview,0,Category,UniFi Product,0,0,2
+3019,UDB,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+3020,UDB,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+3021,UDB,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+3022,UDB,Overview,0,Storage,128GB SSD Integrated,0,0,6
+3023,UDB,Hardware,1,Form Factor,Standard,0,0,0
+3024,UDB,Hardware,1,Power Supply,AC/DC,0,0,1
+3025,UDB,Software,2,Management,UniFi Network,0,0,0
+3026,UDB,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+3027,UBB,Overview,0,Product Name,Building Bridge,0,0,0
+3028,UBB,Overview,0,Model,UBB,0,0,1
+3029,UBB,Overview,0,Category,UniFi Product,0,0,2
+3030,UBB,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+3031,UBB,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+3032,UBB,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+3033,UBB,Overview,0,Storage,128GB SSD Integrated,0,0,6
+3034,UBB,Hardware,1,Form Factor,Standard,0,0,0
+3035,UBB,Hardware,1,Power Supply,AC/DC,0,0,1
+3036,UBB,Software,2,Management,UniFi Network,0,0,0
+3037,UBB,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+3038,UDB-Switch(35W),Overview,0,Product Name,Device Bridge Switch,0,0,0
+3039,UDB-Switch(35W),Overview,0,Model,UDB-SWITCH-35W-,0,0,1
+3040,UDB-Switch(35W),Overview,0,Category,UniFi Product,0,0,2
+3041,UDB-Switch(35W),Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+3042,UDB-Switch(35W),Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+3043,UDB-Switch(35W),Overview,0,WAN,2.5 GbE RJ45,0,0,5
+3044,UDB-Switch(35W),Overview,0,Storage,128GB SSD Integrated,0,0,6
+3045,UDB-Switch(35W),Hardware,1,Form Factor,Standard,0,0,0
+3046,UDB-Switch(35W),Hardware,1,Power Supply,AC/DC,0,0,1
+3047,UDB-Switch(35W),Software,2,Management,UniFi Network,0,0,0
+3048,UDB-Switch(35W),Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+3049,UBB-XG,Overview,0,Product Name,Device Bridge XG,0,0,0
+3050,UBB-XG,Overview,0,Model,UBB-XG,0,0,1
+3051,UBB-XG,Overview,0,Category,UniFi Product,0,0,2
+3052,UBB-XG,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+3053,UBB-XG,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+3054,UBB-XG,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+3055,UBB-XG,Overview,0,Storage,128GB SSD Integrated,0,0,6
+3056,UBB-XG,Hardware,1,Form Factor,Standard,0,0,0
+3057,UBB-XG,Hardware,1,Power Supply,AC/DC,0,0,1
+3058,UBB-XG,Software,2,Management,UniFi Network,0,0,0
+3059,UBB-XG,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+3060,UDB-IoT,Overview,0,Product Name,Device Bridge IoT,0,0,0
+3061,UDB-IoT,Overview,0,Model,UDB-IOT,0,0,1
+3062,UDB-IoT,Overview,0,Category,UniFi Product,0,0,2
+3063,UDB-IoT,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+3064,UDB-IoT,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+3065,UDB-IoT,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+3066,UDB-IoT,Overview,0,Storage,128GB SSD Integrated,0,0,6
+3067,UDB-IoT,Hardware,1,Form Factor,Standard,0,0,0
+3068,UDB-IoT,Hardware,1,Power Supply,AC/DC,0,0,1
+3069,UDB-IoT,Software,2,Management,UniFi Network,0,0,0
+3070,UDB-IoT,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
+3071,UTR,Overview,0,Product Name,UniFI Travel Router,0,0,0
+3072,UTR,Overview,0,Model,UTR,0,0,1
+3073,UTR,Overview,0,Category,WiFi,0,0,2
+3074,UTR,Overview,0,Throughput,3.5 Gbps IPS,0,0,3
+3075,UTR,Overview,0,PoE,"2x PoE+, 6x PoE",0,0,4
+3076,UTR,Overview,0,WAN,2.5 GbE RJ45,0,0,5
+3077,UTR,Overview,0,Storage,128GB SSD Integrated,0,0,6
+3078,UTR,Hardware,1,Form Factor,Standard,0,0,0
+3079,UTR,Hardware,1,Power Supply,AC/DC,0,0,1
+3080,UTR,Software,2,Management,UniFi Network,0,0,0
+3081,UTR,Software,2,Minimum Software Requirements,Web Browser: Google Chrome,0,0,1
