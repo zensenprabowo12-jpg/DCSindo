@@ -3556,7 +3556,7 @@ export const accessoriesProducts: Product[] = [
     id: "F-POE-G2",
     name: "Optical Data Transport",
     category: "Accessories",
-    subfilter: "RJ45 & Copper",
+    subfilter: "SFP & Fiber",
     image: "/images/camera.jpg",
     shortDescription:
       "Connects remote PoE devices and provides data and power using fiber and DC cabling.",
@@ -3621,7 +3621,7 @@ export const accessoriesProducts: Product[] = [
     id: "UACC-SFP-Wizard",
     name: "SFP Wizard",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "Instantly reprogram, test, and unlock universal compatibility for every optical module — with full diagnostics and OTA updates built in.",
@@ -4131,12 +4131,12 @@ export const accessoriesProducts: Product[] = [
     ]
   },
 
-//Produk Kedua dari Accessories, SF Liberation Day
+  //Produk Kedua dari Accessories, SF Liberation Day
   {
     id: "UACC-OM-MM-10G-D",
     name: "10G Multi-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "SFP+ transceiver that supports 10G connections up to 300 m using multi-mode fiber with a duplex LC UPC connector.",
@@ -4193,11 +4193,11 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Ketiga dari Accessories, SF Liberation Day
-   {
+  {
     id: "UACC-OM-MM-10G-D-2",
     name: "10G Multi-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "SFP+ transceiver that supports 10G connections up to 300 m using multi-mode fiber with a duplex LC UPC connector.",
@@ -4254,11 +4254,11 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Keempat dari Accessories, SF Liberation Day
-   {
+  {
     id: "UACC-OM-MM-10G-D-20",
     name: "10G Multi-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "SFP+ transceiver that supports 10G connections up to 300 m using multi-mode fiber with a duplex LC UPC connector.",
@@ -4319,7 +4319,7 @@ export const accessoriesProducts: Product[] = [
     id: "UACC-OM-MM-1G-D-20",
     name: "1G Multi-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "SFP transceiver that supports 1G connections up to 550 m using multi-mode fiber with a duplex LC UPC connector.",
@@ -4376,11 +4376,11 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Keenam dari Accessories, SF Liberation Day
-   {
+  {
     id: "UACC-OM-MM-1G-D-2",
     name: "1G Multi-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "SFP transceiver that supports 1G connections up to 550 m using multi-mode fiber with a duplex LC UPC connector.",
@@ -4437,11 +4437,11 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Ketujuh dari Accessories, SF Liberation Day
-   {
+  {
     id: "UACC-OM-MM-1G-D-20",
     name: "1G Multi-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "SFP transceiver that supports 1G connections up to 550 m using multi-mode fiber with a duplex LC UPC connector.",
@@ -4502,7 +4502,7 @@ export const accessoriesProducts: Product[] = [
     id: "UACC-OM-SFP28-SR",
     name: "25G Multi-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "SFP28 transceiver that supports 25G connections up to 100 m using multi-mode fiber with a duplex LC UPC connector.",
@@ -4559,11 +4559,11 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Kesembilan dari Accessories, SF Liberation Day
-   {
+  {
     id: "UACC-OM-QSFP28-SR4",
     name: "100G SR4 Multi-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "QSFP28 transceiver that supports 100G connections up to 100 m using multi-mode fiber with an MPO-12 Type B UPC connector.",
@@ -4619,12 +4619,12 @@ export const accessoriesProducts: Product[] = [
     ],
   },
 
-  //Produk Kesepuluh dari Accessories, SF Liberations Day
+  //Produk Kesepuluh dari Accessories, SF Liberation Day
   {
     id: "UACC-OM-QSFP28-PSM4",
     name: "100G PSM4 Single-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "QSFP28 transceiver that supports 100G connections up to 2 km using single-mode fiber with an MPO-12 APC connector.",
@@ -4685,7 +4685,7 @@ export const accessoriesProducts: Product[] = [
     id: "UACC-OM-QSFP28-LR4",
     name: "100G LR4 Single-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "QSFP28 transceiver that supports 100G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
@@ -4741,12 +4741,12 @@ export const accessoriesProducts: Product[] = [
     ],
   },
 
-  //Produk Kedua Belas dari Accessories, SF Liberations Day
+  //Produk Kedua Belas dari Accessories, SF Liberation Day
   {
     id: "UACC-OM-SM-10G-D-2",
     name: "10G Single-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "SFP+ transceiver that supports 10G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
@@ -4802,12 +4802,12 @@ export const accessoriesProducts: Product[] = [
     ],
   },
 
-  //Produk Ketiga Belas dari Accessories, SF Liberation day
-   {
+  //Produk Ketiga Belas dari Accessories, SF Liberation Day
+  {
     id: "UACC-OM-SM-10G-D-20",
     name: "10G Single-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "SFP+ transceiver that supports 10G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
@@ -4864,11 +4864,11 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Keempat Belas dari Accessories, SF Liberation Day
-   {
+  {
     id: "UACC-OM-SM-1G-S-2",
     name: "1G Bidirectional Single-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "SFP transceiver that supports 1G connections up to 3 km using single-mode fiber with a simplex LC UPC connector.",
@@ -4930,7 +4930,7 @@ export const accessoriesProducts: Product[] = [
     id: "UACC-OM-SM-1G-S-20",
     name: "1G Bidirectional Single-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "SFP transceiver that supports 1G connections up to 3 km using single-mode fiber with a simplex LC UPC connector.",
@@ -4992,7 +4992,7 @@ export const accessoriesProducts: Product[] = [
     id: "UACC-OM-SFP28-LR",
     name: "25G Single-Mode Optical Module",
     category: "Accessories",
-    subfilter: "SFP & Fiber",
+    subfilter: "SFP Liberation Day",
     image: "/images/camera.jpg",
     shortDescription:
       "SFP28 transceiver that supports 25G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
@@ -5049,7 +5049,7 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Pertama dari Accessories, SF Storage
-   {
+  {
     id: "UACC-HDD-E-24TB",
     name: "Enterprise 3.5' HDD, 24 TB",
     category: "Accessories",
@@ -5109,8 +5109,8 @@ export const accessoriesProducts: Product[] = [
     ],
   },
 
-  //Produk Kedua dari Accessories, SF 
-   {
+  //Produk Kedua dari Accessories, SF Storage
+  {
     id: "UACC-HDD-E-16TB",
     name: "Enterprise 3.5' HDD, 16 TB",
     category: "Accessories",
@@ -5232,7 +5232,7 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Keempat dari Accessories, SF Storage
-   {
+  {
     id: "UACC-HDD-S-4TB",
     name: "Basic Capacity 3.5' HDD, 4 TB",
     category: "Accessories",
@@ -5354,7 +5354,7 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk keenam dari Accessories, SF Storage
-   {
+  {
     id: "MSD-128GB",
     name: "microSD Card",
     category: "Accessories",
@@ -5528,7 +5528,7 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Kesembilan dari Accessories, SF Storage
-   {
+  {
     id: "UACC-MSD-1TB",
     name: "microSD Card",
     category: "Accessories",
@@ -5642,13 +5642,13 @@ export const accessoriesProducts: Product[] = [
 
   //Produk Pertama dari Accessories, SF Rack Mount
   {
-    id: "UACC-SSD-2.5-1TB",
-    name: "2.5' SSD, 1 TB",
+    id: "U-Rack-6U-TL",
+    name: "Toolless Mini Rack",
     category: "Accessories",
     subfilter: "Rack Mount",
     image: "/images/camera.jpg",
     shortDescription:
-      "2.5' SATA solid-state drive designed for local storage of CloudKey+.",
+      "Compact, stackable, and toolless 6U open-frame rack designed for UniFi rack-mount devices.*",
     specs: [
       { label: "Resolution", value: "4K (8MP)" },
       { label: "Night Vision", value: "25m (82ft) IR" },
@@ -5657,7 +5657,7 @@ export const accessoriesProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UACC-SSD-2.5-1TB",
+    sku: "U-Rack-6U-TL",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -5672,25 +5672,32 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "6U-sized device rack",
+      "Combine two Mini Racks into a 12U rack with a Stacking Kit",
+      "Toolless assembly and device mounting",
+      "Lockable casters"
+    ],
+
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Dimensions", value: "With handle and caster:519 x 460 x 485 mm (20.43 x 18.11 x 19.09') Without handle and caster: 519 x 460 x 351 mm (20.43 x 18.11 x 13.82')" },
+          { label: "Dimensions", value: "With handle and caster: 519 x 460 x 485 mm (20.43 x 18.11 x 19.09') Without handle and caster: 519 x 460 x 351 mm (20.43 x 18.11 x 13.82')" },
           { label: "Weight", value: "10.3 kg (22.7 lb)" },
-          { label: "Max. Weight Capacity", value: "Double Toolless Mini Racks with Stacking Kit Static: 70 kg (154 lb) Rolling: 35 kg (77 lb)" },
+          { label: "Max. Weight Capacity", value: "Single Toolless Mini Rack Static: 80 kg (176 lb) Rolling: 45 kg (99 lb) Double Toolless Mini Racks with Stacking Kit Static: 70 kg (154 lb) Rolling: 35 kg (77 lb)" },
           { label: "Enclosure Material ", value: "Frame/Bracket: SPCC steel Handle: Stainless steel" },
           { label: "Color", value: "Silver" },
           { label: "Treatment", value: "Liquid Coating" },
-          { label: "Pack Options", value: "(1) Flat pack box" },
+          { label: "Pack Option", value: "(1) Flat pack box" },
           { label: "Rack Features U Height", value: "6U" },
           { label: "Rack Features Rack Type", value: "Open Frame" },
           { label: "Rack Features Mounting", value: "Floor Stand" },
           { label: "Rack Features Lockable Casters", value: "✓" },
           { label: "Incompatible Devices", value: "UniFi Switch (Gen1), US-24-250W US-24-500W US-48-500W US-48-750W USG USG-Pro-4 EdgeSwitch ES-24-250W ES-24-500W ES-48-500W ES-48-750W EdgeRouter ER-8 Others CKG2-RM ER-RMKIT UACC-Pro-Max-16-RM" },
-          { label: "NDAA Compliant", value: "✓" }
+          { label: "NDA Compliant", value: "✓" },
         ]
       },
     ],
@@ -5701,7 +5708,7 @@ export const accessoriesProducts: Product[] = [
     id: "UACC-Rack-Shelf-TL",
     name: "Toolless Mini Rack Shelf",
     category: "Accessories",
-    subfilter: "Raack Mount",
+    subfilter: "Rack Mount",
     image: "/images/camera.jpg",
     shortDescription:
       "Fixed shelf accessory for installing non-rack-mountable devices in the toolless mini rack.",
@@ -5793,7 +5800,7 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Keempat dari Accessories, SF Rack Mount
-   {
+  {
     id: "UACC-Keystone-Jack-C6",
     name: "Cat6 Keystone Jack, 12-Pack",
     category: "Accessories",
@@ -5847,5 +5854,2142 @@ export const accessoriesProducts: Product[] = [
     ],
   },
 
+  //Produk Kelima dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Keystone-Coupler-C6",
+    name: "Cat6 Keystone Jack, 12-Pack",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Pass-through Cat6 keystone coupler for connecting pre-terminated Ethernet cables seamlessly.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Keystone-Coupler-C6",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+      "Easy snap-in installation on a blank patch panel",
+      "(12) Keystone Couplers per pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "31.6 x 16 x 16.1 mm (1.2 x 0.6 x 0.6')" },
+          { label: "Weight", value: "4.9 g (0.2 oz)" },
+          { label: "Type ", value: "Category 6" },
+          { label: "Material", value: "Polycarbonate" },
+          { label: "Mounting", value: "Flush Mount Installations" },
+          { label: "Pack Options", value: "12-Pack" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Keenam dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Keystone-Jack-C6A",
+    name: "Cat6A Keystone Jack, 12-Pack",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Toolless keystone for terminating a Cat6A Ethernet jack without the use of a punch-down or crimping tool",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Keystone-Jack-C6A",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+      "Easy snap-in installation on a blank patch panel",
+      "(12) Keystone Jacks per pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "37.8 x 14.5 x 16.1 mm (1.5 x 0.6 x 0.6')" },
+          { label: "Weight", value: "22.5 g (0.8 oz)" },
+          { label: "Type ", value: "Category 6A" },
+          { label: "Standard", value: "TIA-568A and 568B wiring compatible" },
+          { label: "Material", value: "Zinc Alloy" },
+          { label: "Mounting", value: "Flush Mount Installations" },
+          { label: "Suggested Cable Gauge", value: "23-26 AWG" },
+          { label: "Pack Options", value: "12-Pack" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketujuh dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Keystone-Coupler-C6A",
+    name: "Cat6A Keystone Jack, 12-Pack",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Pass-through Cat6A keystone coupler for connecting pre-terminated Ethernet cables seamlessly.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Keystone-Coupler-C6A",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+      "Easy snap-in installation on a blank patch panel",
+      "(12) Keystone Coupler per pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "31.2 x 16 x 16 mm (1.2 x 0.6 x 0.6')" },
+          { label: "Weight", value: "7.5 g (0.3 oz)" },
+          { label: "Type ", value: "Category 6A" },
+          { label: "Material", value: "Stainless Steel" },
+          { label: "Mounting", value: "Flush Mount Installations" },
+          { label: "Pack Options", value: "12-Pack" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedelapan dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Keystone-Blank-Insert",
+    name: "Keystone Blank Insert, 24-Pack",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "24-pack of snap-in inserts that cover unused ports on the UniFi 24-Port Blank Keystone Patch Panel while maintaining its aesthetic.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Keystone-Blank-Insert",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+      "Easy snap-in installation",
+      "Uniform aesthetic with 24-Port Blank Keystone Patch Panel",
+      "(24) Keystone Blank Inserts per pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "16.3 x 14.6 x 18 mm (0.64 x 0.57 x 0.7')" },
+          { label: "Weight", value: "1.8 g (0.06 oz)" },
+          { label: "Material", value: "Flame retardant ABS" },
+          { label: "Treatment", value: "Painting" },
+          { label: "Pack Options", value: "24-Pack" }
+        ]
+      },
+    ],
+  },
+
+
+  //Produk Kesembilan dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Keystone-Blank-Insert-TH",
+    name: "Keystone Blank Insert Pass-Through, 12-Pack",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Snap-in inserts designed to cover unused ports on a blank keystone patch panel while maintaining a clean and aesthetic appearance.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Keystone-Blank-Insert-TH ",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+      "Easy snap-in installation",
+      "Uniform aesthetic with 24-Port Blank Keystone Patch Panel",
+      "Through-hole designed for cable pass-through and management flexibility",
+      "(12) Keystone Blank Inserts per pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "6.3 x 14.6 x 18 mm (0.64 x 0.57 x 0.7')" },
+          { label: "Weight", value: "1.8 g (0.06 oz)" },
+          { label: "Material", value: "Flame retardant PC" },
+          { label: "Treatment", value: "Painting" },
+          { label: "Pack Options", value: "12-Pack" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kesepuluh dari Accessories, SF Rack Mount
+  {
+    id: "UACC-RJ45-Cover",
+    name: "RJ45 Dust Cover, 24-Pack",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "24-pack of protective inserts that keep dust and debris out of unused RJ45 ports.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-RJ45-Cover",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+      "Easy installation and removal",
+      "Keeps unused Ethernet ports safe from dust and debris",
+      "Uniform aesthetic with UniFi rack-mount equipment",
+      "(24) RJ45 Dust Covers per pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "15.8 x 13.8 x 10.6 mm (0.6 x 0.5 x 0.4')" },
+          { label: "Weight", value: "0.6 g (0.02 oz)" },
+          { label: "Material", value: "Polycarbonate" },
+          { label: "Treatment", value: "Painting" },
+          { label: "Pack Options", value: "24-Pack" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kesebelas dari Accessories, SF Rack Mount
+  {
+    id: "UACC-RJ45-Cover",
+    name: "RJ45 Dust Cover, 24-Pack",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "24-pack of protective inserts that keep dust and debris out of unused RJ45 ports.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-RJ45-Cover",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+      "Easy installation and removal",
+      "Keeps unused Ethernet ports safe from dust and debris",
+      "Uniform aesthetic with UniFi rack-mount equipment",
+      "(24) RJ45 Dust Covers per pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "42.7 x 15.5 x 8.7 mm (1.7 x 0.6 x 0.34')" },
+          { label: "Weight", value: "4 g (0.03 oz)" },
+          { label: "Material", value: "Thermoplastic (PA66)" },
+          { label: "Treatment", value: "Texture" },
+          { label: "Rack Rail Thickness", value: "Up to 2.2 mm (0.08')" },
+          { label: "Screw", value: "#10-32" },
+          { label: "Strength", value: "SnapMount rack inserts have been tested and qualified with the following shear forces: 1U: Supports devices with a depth of up to 400 mm and a maximum weight of 10 kg. 2U: Supports devices with a depth of up to 325 mm and a maximum weight of 20 kg. It is recommended to support installed devices from the rear if depth exceeds 400 mm for 1U or 325 mm for 2U." },
+          { label: "Pack Options", value: "20-Pack (for 10U installation)" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Belas dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-Ear-1U",
+    name: "Rack Ear Kit",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Replacement rack ears for UniFi 1U or 2U rack-mount devices with included Precision Rack Mount inserts and screws.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Ear-1U",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "UACC-Rack-Ear-1U metal ear: 50 x 42.8 x 19.5 mm (2 x 1.7 x 0.8') UACC-Rack-Ear-2U metal ear: 87.4 x 42.8 x 19.5 mm (3.4 x 1.7 x 0.8') Plastic kit: 42.7 x 15.5 x 8.7 mm (1.7 x 0.6 x 0.3')" },
+          { label: "Weight", value: "UACC-Rack-Ear-1U metal ear: 50 g (1.8 oz) UACC-Rack-Ear-2U metal ear: 105 g (3.7 oz) Plastic kit: 4 g (0.1 oz)" },
+          { label: "Material", value: "Metal ear: galvanized steel (SGCC) Plastic kit: thermoplastics (PA66)" },
+          { label: "Treatment", value: "Texture" },
+          { label: "Screw", value: "#10-32, M4" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga Belas dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-Ear-2U",
+    name: "Rack Ear Kit",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Replacement rack ears for UniFi 1U or 2U rack-mount devices with included Precision Rack Mount inserts and screws.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Ear-2U",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "UACC-Rack-Ear-1U metal ear: 50 x 42.8 x 19.5 mm (2 x 1.7 x 0.8') UACC-Rack-Ear-2U metal ear: 87.4 x 42.8 x 19.5 mm (3.4 x 1.7 x 0.8') Plastic kit: 42.7 x 15.5 x 8.7 mm (1.7 x 0.6 x 0.3')" },
+          { label: "Weight", value: "UACC-Rack-Ear-1U metal ear: 50 g (1.8 oz) UACC-Rack-Ear-2U metal ear: 105 g (3.7 oz) Plastic kit: 4 g (0.1 oz)" },
+          { label: "Material", value: "Metal ear: galvanized steel (SGCC) Plastic kit: thermoplastics (PA66)" },
+          { label: "Treatment", value: "Texture" },
+          { label: "Screw", value: "#10-32, M4" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Keempat Belas dari Accessories, SF Rack Mount
+  {
+    id: "CKG2-RM",
+    name: "CloudKey Rack Mount",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Mount your CloudKey or CloudKey+ into a 19' rack.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "CKG2-RM",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+      "Mounts into a 19' rack",
+      "Front-panel ethernet port for a clean installation"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "481.5 x 43.7 x 47 mm (19 x 1.7 x 1.9')" },
+          { label: "Weight", value: "600 g (1.3 lb)" },
+          { label: "Enclosure Material", value: "PC, aluminum alloy, SGCC steel" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
+          { label: "Power Method", value: "PoE, 5V DC, 1A USB-C 5V, Min. 1A" },
+          { label: "Max. Power Consumption", value: "12.95W (PoE)" },
+          { label: "Buttons", value: "(1) Reset (1) Power" },
+          { label: "Ambient Operating Temperature", value: "0 to 35° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 80% noncondensing" },
+          { label: "Certifications", value: "CE, FCC, IC" }
+        ]
+      },
+    ],
+  },
+
+  //produk Kelima Belas dari Accessories, SF Rack Mount
+  {
+    id: "UACC-AI-Port-RM",
+    name: "AI Port Rack Mount",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "1U rack-mount accessory that supports up to six AI Ports.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-AI-Port-RM",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "442.4 x 158.5 x 42.8 mm (17.4 x 6.2 x 1.7')" },
+          { label: "Weight", value: "650 g (1.4 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel, polycarbonate" },
+          { label: "Mounting", value: "Mini rack / rack" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 90% noncondensing" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Keenam Belas dari Accessories, SF Rack Mount
+  {
+    id: "UACC-UCG-Industrial-RM",
+    name: "Cloud Gateway Industrial Rack Mount",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Rack mount for the Cloud Gateway Industrial.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-UCG-Industrial-RM",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Left hanger: 203.5 x 71 x 43.8 mm (8 x 2.8 x 1.7') Right hanger: 203.5 x 202.2 x 43.8 mm (8 x 8 x 1.7')" },
+          { label: "U Weight", value: "1U" },
+          { label: "Weight", value: "1.5 kg (3.3 lb)" },
+          { label: "Enclosure Material", value: "Polycarbonate, galvanized steel" },
+          { label: "Color", value: "Black" },
+          { label: "Treatment", value: "Power coating, liquid coating" },
+          { label: "Buttons", value: "(2) Release buttons" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50 °C (-22 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketujuh Belas dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-Stacking-Kit",
+    name: "Toolless Mini Rack Stacking Kit",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Easy-to-install accessory set that connects two Toolless Mini Racks to create a 12U network rack.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Stacking-Kit",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+
+      "Toolless assembly",
+      "Easy installation"
+
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Stacking kit: 500 x 68.2 x 21.7 mm (19.7 x 2.7 x 0.9') Stacking 2x Tooless Mini Racks (with handle and caster): 460 x 525.5 x 838 mm (18.1 x 20.7 x 33')" },
+          { label: "Weight", value: "Stacking kit: 589 g (1.3 lb) Stacking 2x Tooless Mini Racks (with handle and caster): 21.9 kg (48.3 lb)" },
+          { label: "Enclosure Material", value: "Cold rolled carbon steel (SPCC)" },
+          { label: "Treatment", value: "Liquid painting" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedepalapan Belas dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-Panel-Blank-1U",
+    name: "Rack Mount OCD Panels",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Standalone insert that can be easily installed into an existing network equipment rack to create a clean, uniform aesthetic.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Panel-Blank-1U",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+
+      "1U or 2U-sized standalone insert",
+      "Uniform aesthetic with UI rack mount gears"
+
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "UACC-Rack-Panel-Blank-1U Dimensions", value: "442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7')" },
+          { label: "UACC-Rack-Panel-Blank-1U Weight", value: "250g (8.8 oz)" },
+          { label: "UACC-Rack-Panel-Blank-1U Enclosure Material", value: "Cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Blank-1U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Blank-2U Dimensions", value: "442.4 x 63.5 x 87.4 mm (17.4 x 2.5 x 3.4')" },
+          { label: "UACC-Rack-Panel-Blank-2U Weight", value: "446 g (15.7 oz)" },
+          { label: "UACC-Rack-Panel-Blank-2U Enclosure Material", value: "Cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Blank-2U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Vented-1U Dimensions", value: "442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7')" },
+          { label: "UACC-Rack-Panel-Vented-1U Weight", value: "420 g (14.8 oz)" },
+          { label: "UACC-Rack-Panel-Vented-1U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Vented-1U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Vented-2U Dimensions", value: "442.4 x 63.5 x 87.4 mm (17.4 x 2.5 x 3.4')" },
+          { label: "UACC-Rack-Panel-Vented-2U Weight", value: "627 g (22.1 oz)" },
+          { label: "UACC-Rack-Panel-Vented-2U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Vented-2U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Brush-1U Dimensions", value: "Panel: 442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7') Opening: 400 x 24 mm (15.75 x 0.94')" },
+          { label: "UACC-Rack-Panel-Brush-1U Weight", value: "420 g (14.8 oz)" },
+          { label: "UACC-Rack-Panel-Brush-1U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC), polypropylene (PP)" },
+          { label: "UACC-Rack-Panel-Brush-1U Treatment", value: "Painting" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kesembilan Belas dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-Panel-Blank-2U",
+    name: "Rack Mount OCD Panels",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Standalone insert that can be easily installed into an existing network equipment rack to create a clean, uniform aesthetic.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Panel-Blank-2U",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+
+      "1U or 2U-sized standalone insert",
+      "Uniform aesthetic with UI rack mount gears"
+
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "UACC-Rack-Panel-Blank-1U Dimensions", value: "442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7')" },
+          { label: "UACC-Rack-Panel-Blank-1U Weight", value: "250g (8.8 oz)" },
+          { label: "UACC-Rack-Panel-Blank-1U Enclosure Material", value: "Cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Blank-1U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Blank-2U Dimensions", value: "442.4 x 63.5 x 87.4 mm (17.4 x 2.5 x 3.4')" },
+          { label: "UACC-Rack-Panel-Blank-2U Weight", value: "446 g (15.7 oz)" },
+          { label: "UACC-Rack-Panel-Blank-2U Enclosure Material", value: "Cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Blank-2U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Vented-1U Dimensions", value: "442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7')" },
+          { label: "UACC-Rack-Panel-Vented-1U Weight", value: "420 g (14.8 oz)" },
+          { label: "UACC-Rack-Panel-Vented-1U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Vented-1U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Vented-2U Dimensions", value: "442.4 x 63.5 x 87.4 mm (17.4 x 2.5 x 3.4')" },
+          { label: "UACC-Rack-Panel-Vented-2U Weight", value: "627 g (22.1 oz)" },
+          { label: "UACC-Rack-Panel-Vented-2U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Vented-2U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Brush-1U Dimensions", value: "Panel: 442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7') Opening: 400 x 24 mm (15.75 x 0.94')" },
+          { label: "UACC-Rack-Panel-Brush-1U Weight", value: "420 g (14.8 oz)" },
+          { label: "UACC-Rack-Panel-Brush-1U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC), polypropylene (PP)" },
+          { label: "UACC-Rack-Panel-Brush-1U Treatment", value: "Painting" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Puluh dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-Panel-Vented-1U",
+    name: "Rack Mount OCD Panels",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Standalone insert that can be easily installed into an existing network equipment rack to create a clean, uniform aesthetic.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Panel-Vented-1U",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+
+      "1U or 2U-sized standalone insert",
+      "Uniform aesthetic with UI rack mount gears"
+
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "UACC-Rack-Panel-Blank-1U Dimensions", value: "442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7')" },
+          { label: "UACC-Rack-Panel-Blank-1U Weight", value: "250g (8.8 oz)" },
+          { label: "UACC-Rack-Panel-Blank-1U Enclosure Material", value: "Cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Blank-1U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Blank-2U Dimensions", value: "442.4 x 63.5 x 87.4 mm (17.4 x 2.5 x 3.4')" },
+          { label: "UACC-Rack-Panel-Blank-2U Weight", value: "446 g (15.7 oz)" },
+          { label: "UACC-Rack-Panel-Blank-2U Enclosure Material", value: "Cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Blank-2U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Vented-1U Dimensions", value: "442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7')" },
+          { label: "UACC-Rack-Panel-Vented-1U Weight", value: "420 g (14.8 oz)" },
+          { label: "UACC-Rack-Panel-Vented-1U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Vented-1U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Vented-2U Dimensions", value: "442.4 x 63.5 x 87.4 mm (17.4 x 2.5 x 3.4')" },
+          { label: "UACC-Rack-Panel-Vented-2U Weight", value: "627 g (22.1 oz)" },
+          { label: "UACC-Rack-Panel-Vented-2U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Vented-2U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Brush-1U Dimensions", value: "Panel: 442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7') Opening: 400 x 24 mm (15.75 x 0.94')" },
+          { label: "UACC-Rack-Panel-Brush-1U Weight", value: "420 g (14.8 oz)" },
+          { label: "UACC-Rack-Panel-Brush-1U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC), polypropylene (PP)" },
+          { label: "UACC-Rack-Panel-Brush-1U Treatment", value: "Painting" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Puluh Satu dari Accessories SF Rack MOunt
+  {
+    id: "UACC-Rack-Panel-Vented-2U",
+    name: "Rack Mount OCD Panels",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Standalone insert that can be easily installed into an existing network equipment rack to create a clean, uniform aesthetic.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Panel-Vented-2U",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+
+      "1U or 2U-sized standalone insert",
+      "Uniform aesthetic with UI rack mount gears"
+
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "UACC-Rack-Panel-Blank-1U Dimensions", value: "442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7')" },
+          { label: "UACC-Rack-Panel-Blank-1U Weight", value: "250g (8.8 oz)" },
+          { label: "UACC-Rack-Panel-Blank-1U Enclosure Material", value: "Cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Blank-1U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Blank-2U Dimensions", value: "442.4 x 63.5 x 87.4 mm (17.4 x 2.5 x 3.4')" },
+          { label: "UACC-Rack-Panel-Blank-2U Weight", value: "446 g (15.7 oz)" },
+          { label: "UACC-Rack-Panel-Blank-2U Enclosure Material", value: "Cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Blank-2U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Vented-1U Dimensions", value: "442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7')" },
+          { label: "UACC-Rack-Panel-Vented-1U Weight", value: "420 g (14.8 oz)" },
+          { label: "UACC-Rack-Panel-Vented-1U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Vented-1U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Vented-2U Dimensions", value: "442.4 x 63.5 x 87.4 mm (17.4 x 2.5 x 3.4')" },
+          { label: "UACC-Rack-Panel-Vented-2U Weight", value: "627 g (22.1 oz)" },
+          { label: "UACC-Rack-Panel-Vented-2U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Vented-2U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Brush-1U Dimensions", value: "Panel: 442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7') Opening: 400 x 24 mm (15.75 x 0.94')" },
+          { label: "UACC-Rack-Panel-Brush-1U Weight", value: "420 g (14.8 oz)" },
+          { label: "UACC-Rack-Panel-Brush-1U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC), polypropylene (PP)" },
+          { label: "UACC-Rack-Panel-Brush-1U Treatment", value: "Painting" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Puluh Dua dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-Panel-Brush-1U",
+    name: "Rack Mount OCD Panels",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Standalone insert that can be easily installed into an existing network equipment rack to create a clean, uniform aesthetic.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Panel-Brush-1U",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+
+      "1U or 2U-sized standalone insert",
+      "Uniform aesthetic with UI rack mount gears"
+
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "UACC-Rack-Panel-Blank-1U Dimensions", value: "442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7')" },
+          { label: "UACC-Rack-Panel-Blank-1U Weight", value: "250g (8.8 oz)" },
+          { label: "UACC-Rack-Panel-Blank-1U Enclosure Material", value: "Cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Blank-1U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Blank-2U Dimensions", value: "442.4 x 63.5 x 87.4 mm (17.4 x 2.5 x 3.4')" },
+          { label: "UACC-Rack-Panel-Blank-2U Weight", value: "446 g (15.7 oz)" },
+          { label: "UACC-Rack-Panel-Blank-2U Enclosure Material", value: "Cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Blank-2U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Vented-1U Dimensions", value: "442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7')" },
+          { label: "UACC-Rack-Panel-Vented-1U Weight", value: "420 g (14.8 oz)" },
+          { label: "UACC-Rack-Panel-Vented-1U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Vented-1U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Vented-2U Dimensions", value: "442.4 x 63.5 x 87.4 mm (17.4 x 2.5 x 3.4')" },
+          { label: "UACC-Rack-Panel-Vented-2U Weight", value: "627 g (22.1 oz)" },
+          { label: "UACC-Rack-Panel-Vented-2U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC)" },
+          { label: "UACC-Rack-Panel-Vented-2U Treatment", value: "Painting" },
+
+          { label: "UACC-Rack-Panel-Brush-1U Dimensions", value: "Panel: 442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7') Opening: 400 x 24 mm (15.75 x 0.94')" },
+          { label: "UACC-Rack-Panel-Brush-1U Weight", value: "420 g (14.8 oz)" },
+          { label: "UACC-Rack-Panel-Brush-1U Enclosure Material", value: "Aluminum alloy, cold-rolled carbon steel (SPCC), polypropylene (PP)" },
+          { label: "UACC-Rack-Panel-Brush-1U Treatment", value: "Painting" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Puluh Tiga dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-Panel-Patch-Blank-24",
+    name: "24-Port Blank Keystone Patch Panel",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Standalone insert that can be easily installed into an existing network equipment rack to create a clean, uniform aesthetic.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Panel-Patch-Blank-24",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+
+      "1U 24-port blank patch panel with cable management bar",
+      "Ideal for keystone module installation",
+      "Uniform aesthetic with UniFi rack-mount equipment"
+
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Standalone insert: 442.4 x 63.5 x 43.7 mm (17.4 x 2.5 x 1.7') Management bar: 433.8 x 71.5 x 17 mm (17.1 x 2.8 x 0.7')" },
+          { label: "Weight", value: "Standalone insert: 260 g (9.17 oz) Management bar: 390 g (13.8 oz)" },
+          { label: "Material", value: "Front panel housing: Cold rolled carbon steel (SPCC) Inner module: Polycarbonate Management bar: Cold rolled carbon steel (SPCC" },
+          { label: "Treatment", value: "Painting" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Puluh Empat dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-42U-800-G",
+    name: "42U Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled floor rack with built-in fans, removable panels, and lockable casters, engineered for optimal airflow, heavy-duty stability, and easy equipment access.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-42U-800-G",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 740 x 965 x 2,223 mm  (29.1 x 38 x 87.5') Rack with caster: 600 x 800 x 2,050 mm  (23.6 x 31.5 x 80.7') Rack without caster: 600 x 800 x 1,966 mm (23.6 x 31.5 x 77.4')" },
+          { label: "Weight", value: "Packaging: 118.6 kg (261.5 lb) Rack: 92.4 kg (203.7 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1 mm (0.04') Posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "42U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 607.2 mm (23.9') Max. 682.2 mm (26.9') Adjustable pitch 15 mm (0.6')" },
+          { label: "Rack Features Max. Weight Capacity", value: "Static 800 kg (1764 lb) Rolling 320 kg (705 lb)" },
+          { label: "Rack Features Front Door", value: "Tempered glass Default left-hand outswing, reversible" },
+          { label: "Rack Features Rear Door", value: "Solid Default left-hand outswing, reversible" },
+          { label: "Rack Features Side Panels", value: "(4) Solid, removable and lockable" },
+          { label: "Rack Features Mounting", value: "Floor stand" },
+          { label: "Rack Features Lockable Casters", value: "✓" },
+          { label: "Rack Features Leveling Stands", value: "✓" },
+          { label: "Rack Features Cabinet Interconnect", value: "✓" },
+          { label: "Rack Features Floor Anchor", value: "✓" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "(2) Top: 335 x 52.5 mm (13.2 x 2.1') (2) Bottom: 335 x 52.5 mm (13.2 x 2.1')" },
+          { label: "Rack Features Security", value: "(1) Front door lock (1) Rear door lock (8) Side panel locks (3) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Keduapuluh Lima dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-42U-800-P",
+    name: "42U Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled floor rack with built-in fans, removable panels, and lockable casters, engineered for optimal airflow, heavy-duty stability, and easy equipment access.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-42U-800-P",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 740 x 965 x 2,223 mm  (29.1 x 38 x 87.') Rack with caster: 600 x 800 x 2,050 mm  (23.6 x 31.5 x 80.7') Rack without caster: 600 x 800 x 1,966 mm (23.6 x 31.5 x 77.4')" },
+          { label: "Weight", value: "Packaging: 110.4 kg (243.4 lb) Rack: 84.6 kg(186.5 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1 mm (0.04') Posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "42U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 607.2 mm (23.9') Max. 682.2 mm (26.9') Adjustable pitch 15 mm (0.6')" },
+          { label: "Rack Features Max. Weight Capacity", value: "Static 800 kg (1764 lb) Rolling 320 kg (705 lb)" },
+          { label: "Rack Features Front Door", value: "Perforated Default left-hand outswing, reversible" },
+          { label: "Rack Features Rear Door", value: "Perforated Default left-hand outswing, reversible" },
+          { label: "Rack Features Side Panels", value: "(4) Solid, removable and lockable" },
+          { label: "Rack Features Mounting", value: "Floor stand" },
+          { label: "Rack Features Lockable Casters", value: "✓" },
+          { label: "Rack Features Leveling Stands", value: "✓" },
+          { label: "Rack Features Cabinet Interconnect", value: "✓" },
+          { label: "Rack Features Floor Anchor", value: "✓" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "(2) Top: 335 x 52.5 mm (13.2 x 2.1') (2) Bottom: 335 x 52.5 mm (13.2 x 2.1')" },
+          { label: "Rack Features Security", value: "(1) Front door lock (1) Rear door lock (8) Side panel locks (3) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Puluh Tujuh dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-42U-1000-G",
+    name: "42U Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled floor rack with built-in fans, removable panels, and lockable casters, engineered for optimal airflow, heavy-duty stability, and easy equipment access.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-42U-1000-G",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 740 x 1,165 x 2,223 mm (29.1 x 45.9 x 87.5') Rack with caster: 600 x 1,000 x 2,050 mm (23.6 x 39.4 x 80.7') Rack without caster: 600 x 1,000 x 1,966 mm (23.6 x 39.4 x 77.4')" },
+          { label: "Weight", value: "Packaging: 120.6 kg (265.9 lb) Rack: 92.4 kg (203.7 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1 mm (0.04') Posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "42U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 652.3 mm (25.7') Max. 877.3 mm (34.5') Adjustable pitch 15 mm (0.6')" },
+          { label: "Rack Features Max. Weight Capacity", value: "Static 800 kg (1764 lb) Rolling 320 kg (705 lb)" },
+          { label: "Rack Features Front Door", value: "Tempered glass Default left-hand outswing, reversible" },
+          { label: "Rack Features Rear Door", value: "Solid Default left-hand outswing, reversible" },
+          { label: "Rack Features Side Panels", value: "(4) Solid, removable and lockable" },
+          { label: "Rack Features Mounting", value: "Floor stand" },
+          { label: "Rack Features Lockable Casters", value: "✓" },
+          { label: "Rack Features Leveling Stands", value: "✓" },
+          { label: "Rack Features Cabinet Interconnect", value: "✓" },
+          { label: "Rack Features Floor Anchor", value: "✓" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "(2) Top: 335 x 52.5 mm (13.2 x 2.1') (2) Bottom: 335 x 52.5 mm (13.2 x 2.1')" },
+          { label: "Rack Features Security", value: "(1) Front door lock (1) Rear door lock (8) Side panel locks (3) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Puluh Delapan dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-42U-1000-P",
+    name: "42U Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled floor rack with built-in fans, removable panels, and lockable casters, engineered for optimal airflow, heavy-duty stability, and easy equipment access.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-42U-1000-P",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 740 x 1,165 x 2,223 mm (29.1 x 45.9 x 87.5') Rack with caster: 600 x 1,000 x 2,050 mm (23.6 x 39.4 x 80.7') Rack without caster: 600 x 1,000 x 1,966 mm (23.6 x 39.4 x 77.4')" },
+          { label: "Weight", value: "Packaging: 112.4 kg (247.8 lb) Rack: 84.2 kg (185.6 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1 mm (0.04') Posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "42U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 652.3 mm (25.7') Max. 877.3 mm (34.5') Adjustable pitch 15 mm (0.6')" },
+          { label: "Rack Features Max. Weight Capacity", value: "Static 800 kg (1764 lb) Rolling 320 kg (705 lb)" },
+          { label: "Rack Features Front Door", value: "Perforated Default left-hand outswing, reversible" },
+          { label: "Rack Features Rear Door", value: "Perforated Default left-hand outswing, reversible" },
+          { label: "Rack Features Side Panels", value: "(4) Solid, removable and lockable" },
+          { label: "Rack Features Mounting", value: "Floor stand" },
+          { label: "Rack Features Lockable Casters", value: "✓" },
+          { label: "Rack Features Leveling Stands", value: "✓" },
+          { label: "Rack Features Cabinet Interconnect", value: "✓" },
+          { label: "Rack Features Floor Anchor", value: "✓" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "(2) Top: 335 x 52.5 mm (13.2 x 2.1') (2) Bottom: 335 x 52.5 mm (13.2 x 2.1')" },
+          { label: "Rack Features Security", value: "(1) Front door lock (1) Rear door lock (8) Side panel locks (3) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Puluh Sembilan dari accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-42U",
+    name: "42U Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled floor rack with built-in fans, removable panels, and lockable casters, engineered for optimal airflow, heavy-duty stability, and easy equipment access.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-42U",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 850 x 1,200 x 2,320 mm  (33.5 x 47.2 x 91.3') Rack with caster: 600 x 1,000 x 2,135 mm  (23.6 x 39.8 x 84') Rack without caster: 600 x 1,000 x 2,000 mm  (23.6 x 39.8 x 78.7')" },
+          { label: "Weight", value: "Packaging: 209 kg (460 lb) Rack: 164 kg  (361 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Doors/side panels; 1.2 mm (0.05') Main body/posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "42U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 658 mm (25.9') Max. 838 mm (33') Min. 138 mm (5.4')" },
+          { label: "Rack Features Max. Weight Capacity", value: "Static 1,500 kg (3,307 lb) Rolling 1,000 kg (2,200 lb)" },
+          { label: "Rack Features Front Door", value: "Tempered glass Default left-hand outswing, reversible" },
+          { label: "Rack Features Rear Door", value: "Perforated Default left-hand outswing, reversible" },
+          { label: "Rack Features Side Panels", value: "(2) Solid, removable" },
+          { label: "Rack Features Mounting", value: "Floor stand" },
+          { label: "Rack Features Lockable Casters", value: "✓" },
+          { label: "Rack Features Leveling Stands", value: "✓" },
+          { label: "Rack Features Cabinet Interconnect", value: "✓" },
+          { label: "Rack Features Floor Anchor", value: "✓" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Thermal Sensor Switch", value: "Sensor OFF (Switch Pop-Up) The fan module operates continuously when the power cable is connected. Sensor ON (Switch Drop-Down) The fan module activates automatically when the internal cabinet temperature exceeds 35°C (95°F)." },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "Top: 320 x 55 mm (12.6 x 2.2') Bottom: 320 x 55 mm (12.6 x 2.2')" },
+          { label: "Rack Features Security", value: "(1) Front door lock (1) Rear door lock (3) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga Puluh dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-12U-Wall-450-G",
+    name: "12U Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled wall-mount rack with built-in fans and removable panels, engineered for easy equipment access and space-efficient small-scale deployments.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-12U-Wall-450-G",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 580 x 675 x 735 mm (22.8 x 26.6 x 28.9') Rack: 550 x 450 x 635 mm (21.7 x 17.7 x 25')" },
+          { label: "Weight", value: "Packaging: 23.2 kg (51.1 lb) Rack: 19 kg (41.9 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Door/side panels: 0.8 mm (0.03') Main body: 0.8 mm (0.03') Posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "12U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 283 mm (11.1') Max. 305 mm (12') Adjustable pitch 22 mm (0.09')" },
+          { label: "Rack Features Max. Weight Capacity", value: "50 kg (110 lb)" },
+          { label: "Rack Features Front Door", value: "Tempered glass Default left-hand outswing, reversible" },
+          { label: "Rack Features Side Panels", value: "(2) Solid, removable and lockable" },
+          { label: "Rack Features Mounting", value: "Wall Mount" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Acoustic Noise", value: "≤ 50 dB(A) sound pressure level" },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "(1) Rear wall: 350 x 100 mm (13.8 x 3.9') (1) Top: 336.5 x 52.5 mm (13.2 x 2.1') (1) Bottom: 336.5 x 52.5 mm (13.2 x 2.1')" },
+          { label: "Rack Features Security", value: "(1) Front door lock (4) Side panel locks (2) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "Supported Devices", value: "Compatible with Ubiquiti rack-mount devices up to 325 mm in depth. Note: 325 mm devices can be installed when the mounting depth is set to 305 mm (max), but DC power backup is not supported due to limited rear-side clearance." },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga Puluh Satu dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-12U-Wall-450-P",
+    name: "12U Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled wall-mount rack with built-in fans and removable panels, engineered for easy equipment access and space-efficient small-scale deployments.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-12U-Wall-450-P",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 580 x 675 x 735 mm (22.8 x 26.6 x 28.9') Rack: 550 x 450 x 635 mm (21.7 x 17.7 x 25')" },
+          { label: "Weight", value: "Packaging: 22 kg (48.5 lb) Rack: 17.8 kg (39.2 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Door/side panels: 0.8 mm (0.03') Main body: 0.8 mm (0.03') Posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "12U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 283 mm (11.1') Max. 305 mm (12') Adjustable pitch 22 mm (0.09')" },
+          { label: "Rack Features Max. Weight Capacity", value: "50 kg (110 lb)" },
+          { label: "Rack Features Front Door", value: "Perforated Default left-hand outswing, reversible" },
+          { label: "Rack Features Side Panels", value: "(2) Solid, removable and lockable" },
+          { label: "Rack Features Mounting", value: "Wall Mount" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Acoustic Noise", value: "≤ 50 dB(A) sound pressure level" },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "(1) Rear wall: 350 x 100 mm (13.8 x 3.9') (1) Top: 336.5 x 52.5 mm (13.2 x 2.1') (1) Bottom: 336.5 x 52.5 mm (13.2 x 2.1')" },
+          { label: "Rack Features Security", value: "(1) Front door lock (4) Side panel locks (2) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "Supported Devices", value: "Compatible with Ubiquiti rack-mount devices up to 325 mm in depth. Note: 325 mm devices can be installed when the mounting depth is set to 305 mm (max), but DC power backup is not supported due to limited rear-side clearance." },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga Puluh Tiga dari Acceessories, SF Rack Mount
+  {
+    id: "UACC-Rack-12U-Wall-600-G",
+    name: "12U Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled wall-mount rack with built-in fans and removable panels, engineered for easy equipment access and space-efficient small-scale deployments.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-12U-Wall-600-G",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 740 x 730 x 735 mm (29.1 x 28.7 x 28.9') Rack: 598 x 600 x 639 mm (23.5 x 23.6 x 25.2')" },
+          { label: "Weight", value: "Packaging: 33.6 kg (74.1 lb) Rack: 28.2 kg (62.2 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1.2 mm (0.05') Posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "12U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 448 mm (17.6') Max. 508 mm (20') Adjustable pitch 20 mm (0.08')" },
+          { label: "Rack Features Max. Weight Capacity", value: "80 kg (176 lb)" },
+          { label: "Rack Features Front Door", value: "Tempered glass Default left-hand outswing, reversible" },
+          { label: "Rack Features Side Panels", value: "(2) Solid, removable and lockable" },
+          { label: "Rack Features Mounting", value: "Wall Mount" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Acoustic Noise", value: "≤ 50 dB(A) sound pressure level" },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "(1) Rear wall: 350 x 100 mm (13.8 x 3.9') (1) Top: 336.5 x 52.5 mm (13.2 x 2.1') (1) Bottom: 336.5 x 52.5 mm (13.2 x 2.1')" },
+          { label: "Rack Features Security", value: "(1) Front door lock (4) Side panel locks (2) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "Supported Devices", value: "Compatible with Ubiquiti rack-mount devices up to 325 mm in depth. Note: 325 mm devices can be installed when the mounting depth is set to 305 mm (max), but DC power backup is not supported due to limited rear-side clearance." },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga Puluh Empat dari Accessories< SF Rack Mount
+  {
+    id: "UACC-Rack-12U-Wall-600-P",
+    name: "12U Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled wall-mount rack with built-in fans and removable panels, engineered for easy equipment access and space-efficient small-scale deployments.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-12U-Wall-600-P",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 740 x 730 x 735 mm (29.1 x 28.7 x 28.9') Rack: 598 x 600 x 639 mm (23.5 x 23.6 x 25.2')" },
+          { label: "Weight", value: "Packaging: 33.6 kg (74.1 lb) Rack: 28.2 kg (62.2 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1.2 mm (0.05') Posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "12U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 448 mm (17.6') Max. 508 mm (20') Adjustable pitch 20 mm (0.08')" },
+          { label: "Rack Features Max. Weight Capacity", value: "80 kg (176 lb)" },
+          { label: "Rack Features Front Door", value: "Perforated Default left-hand outswing, reversible" },
+          { label: "Rack Features Side Panels", value: "(2) Solid, removable and lockable" },
+          { label: "Rack Features Mounting", value: "Wall Mount" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Acoustic Noise", value: "≤ 50 dB(A) sound pressure level" },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "(1) Rear wall: 350 x 100 mm (13.8 x 3.9') (1) Top: 336.5 x 52.5 mm (13.2 x 2.1') (1) Bottom: 336.5 x 52.5 mm (13.2 x 2.1')" },
+          { label: "Rack Features Security", value: "(1) Front door lock (4) Side panel locks (2) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "Supported Devices", value: "Compatible with Ubiquiti rack-mount devices up to 325 mm in depth. Note: 325 mm devices can be installed when the mounting depth is set to 305 mm (max), but DC power backup is not supported due to limited rear-side clearance." },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga Puluh Lima dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-12U-Wall-Slim",
+    name: "12U Slim Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled wall-mount rack with built-in fans and removable panels, engineered for easy equipment access and space-efficient small-scale deployments.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-12U-Wall-Slim",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 800 x 755 x 815 mm  (31.5 x 29.7 x 32.1') Rack: 600 x 560 x 650 mm  (23.6 x 22 x 25.6')" },
+          { label: "Weight", value: "Packaging: 41 kg  (90.4 lb) Rack: 32 kg (71 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1.5 mm (0.06') Posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "12U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 446 mm (17.6') Max. 469 mm (18.5') Min. 78 mm (3.1')" },
+          { label: "Rack Features Max. Weight Capacity", value: "100 kg (220 lb)" },
+          { label: "Rack Features Front Door", value: "Tempered glass Default left-hand outswing, reversible" },
+          { label: "Rack Features Rear Door", value: "Solid Swing-out" },
+          { label: "Rack Features Side Panels", value: "(2) Solid, removable and lockable" },
+          { label: "Rack Features Mounting", value: "Wall Mount" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Thermal Sensor Switch", value: "Sensor OFF (Switch Pop-Up) The fan module operates continuously when the power cable is connected. Sensor ON (Switch Drop-Down) The fan module activates automatically when the internal cabinet temperature exceeds 35°C (95°F)." },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "Rear wall: 300 x 60 mm (11.8 x 2.4') Bottom: 318 x 53.5 mm (12.5 x 2.1')" },
+          { label: "Rack Features Security", value: "(1) Front door lock (2) Side panel locks (3) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "Supported Devices", value: "Compatible with Ubiquiti rack-mount devices up to 325 mm in depth. Note: 325 mm devices can be installed when the mounting depth is set to 305 mm (max), but DC power backup is not supported due to limited rear-side clearance." },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+
+  //Produk Ketiga Puluh Enam dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-12U-Wall-SW-G",
+    name: "12U Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled wall-mount rack with built-in fans and removable panels, engineered for easy equipment access and space-efficient small-scale deployments.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-12U-Wall-SW-G",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 725 x 840 x 735 mm (28.5 x 33.1 x 28.9') Rack: 600 x 703 x 639 mm (23.6 x 27.7 x 25.2')" },
+          { label: "Weight", value: "Packaging: 35.3 kg (77.8 lb) Rack: 29.4 kg (64.8 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1.2 mm (0.05') Posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "12U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 434 mm (17.1') Max. 559 mm (22') Adjustable pitch 25 mm (1')" },
+          { label: "Rack Features Max. Weight Capacity", value: "80 kg (176 lb)" },
+          { label: "Rack Features Front Door", value: "Tempered glass Default left-hand outswing, reversible" },
+          { label: "Rack Features Rear Door", value: "Solid Swing-out" },
+          { label: "Rack Features Side Panels", value: "(2) Solid, removable and lockable" },
+          { label: "Rack Features Mounting", value: "Wall Mount" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Thermal Sensor Switch", value: "≤ 50 dB(A) sound pressure level" },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "(1) Rear wall: 350 x 100 mm (13.8 x 3.9') (2) Top: 235 x 62 mm (9.3 x 2.4') (4) Top knockout: 35 mm (1.4') (1) Bottom: 235 x 62 mm (9.3 x 2.4') (4) Bottom knockout: 35 mm (1.4')" },
+          { label: "Rack Features Security", value: "(1) Front door lock(1) Swing out door lock (4) Side panel locks (2) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "Supported Devices", value: "Compatible with Ubiquiti rack-mount devices up to 325 mm in depth. Note: 325 mm devices can be installed when the mounting depth is set to 305 mm (max), but DC power backup is not supported due to limited rear-side clearance." },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga Puluh Tujuh dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-12U-Wall-SW-P",
+    name: "12U Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled wall-mount rack with built-in fans and removable panels, engineered for easy equipment access and space-efficient small-scale deployments.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-12U-Wall-SW-P",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 725 x 840 x 735 mm (28.5 x 33.1 x 28.9') Rack: 600 x 703 x 639 mm (23.6 x 27.7 x 25.2')" },
+          { label: "Weight", value: "Packaging: 35.3 kg (77.8 lb) Rack: 29.4 kg (64.8 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1.2 mm (0.05') Posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "12U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 434 mm (17.1') Max. 559 mm (22') Adjustable pitch 25 mm (1')" },
+          { label: "Rack Features Max. Weight Capacity", value: "80 kg (176 lb)" },
+          { label: "Rack Features Front Door", value: "Perforated Default left-hand outswing, reversible" },
+          { label: "Rack Features Rear Door", value: "Solid Swing-out" },
+          { label: "Rack Features Side Panels", value: "(2) Solid, removable and lockable" },
+          { label: "Rack Features Mounting", value: "Wall Mount" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Thermal Sensor Switch", value: "≤ 50 dB(A) sound pressure level" },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "(1) Rear wall: 350 x 100 mm (13.8 x 3.9') (2) Top: 235 x 62 mm (9.3 x 2.4') (4) Top knockout: 35 mm (1.4') (1) Bottom: 235 x 62 mm (9.3 x 2.4') (4) Bottom knockout: 35 mm (1.4')" },
+          { label: "Rack Features Security", value: "(1) Front door lock(1) Swing out door lock (4) Side panel locks (2) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "Supported Devices", value: "Compatible with Ubiquiti rack-mount devices up to 325 mm in depth. Note: 325 mm devices can be installed when the mounting depth is set to 305 mm (max), but DC power backup is not supported due to limited rear-side clearance." },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga Puluh Delapan dari Accessories, SF Rack Mount 
+  {
+    id: "UACC-Rack-12U-Wall-Slim",
+    name: "12U Rack Cabinet",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fully assembled, compact and wall-mount rack cabinet with glass front, dual fans, and removable side panels.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-12U-Wall",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Packaging: 720 x 735 x 840 mm (28.3 x 28.9 x 33.1') Rack: 600 x 720 x 650 mm (23.6 x 28.3 x 25.6')" },
+          { label: "Weight", value: "Packaging: 45.5 kg (103.3 lb) Rack: 38 kg (84 lb)" },
+          { label: "Enclosure Material ", value: "SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1.5 mm (0.06') Posts: 2 mm (0.08')" },
+          { label: "Color", value: "White" },
+          { label: "Treatment", value: "Powder Coating" },
+          { label: "Rack Features U Height", value: "12U" },
+          { label: "Rack Features Rack Type", value: "4 post, enclosed cabinet" },
+          { label: "Rack Features Mounting", value: "Square" },
+          { label: "Rack Features Adjustable Mounting Depth", value: "Default 452 mm (17.8') Max. 532 mm (20.9') Min. 72 mm (2.8')" },
+          { label: "Rack Features Max. Weight Capacity", value: "100 kg (220 lb)" },
+          { label: "Rack Features Front Door", value: "Tempered glass Default left-hand outswing, reversible" },
+          { label: "Rack Features Rear Door", value: "Solid Swing-out" },
+          { label: "Rack Features Side Panels", value: "(2) Solid, removable and lockable" },
+          { label: "Rack Features Mounting", value: "Wall Mount" },
+          { label: "Rack Features Fan Module", value: "✓" },
+          { label: "Rack Features Thermal Sensor Switch", value: "Sensor OFF (Switch Pop-Up) The fan module operates continuously when the power cable is connected. Sensor ON (Switch Drop-Down) The fan module activates automatically when the internal cabinet temperature exceeds 35°C (95°F)." },
+          { label: "Rack Features Grounding Lugs", value: "✓" },
+          { label: "Rack Features Cable Entry Opening", value: "Rear wall: 394 x 82 mm (15.5 x 3.2') Top: 350 x 50 mm (13.8 x 2') Bottom: 350 x 50 mm (13.8 x 2')" },
+          { label: "Rack Features Security", value: "(1) Front door lock (1) Rear door lock (2) Side panel locks (3) Keys" },
+          { label: "Rack Features  Standard", value: "CE; EIA/ECA-310-E; RoHS" },
+          { label: "Supported Devices", value: "Compatible with Ubiquiti rack-mount devices up to 325 mm in depth. Note: 325 mm devices can be installed when the mounting depth is set to 305 mm (max), but DC power backup is not supported due to limited rear-side clearance." },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga Puluh Sembilan dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-Shelf-CLV",
+    name: "Fixed Rack Shelf",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "1U fixed cantilever shelf for mounting non-rackmount devices in standard 19' racks.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Shelf-CLV",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "481.4 x 250 x 44 mm (19 x 9.8 x 1.7')" },
+          { label: "Weight", value: "2.5 kg (5.5 lb)" },
+          { label: "Material", value: "Cold rolled carbon steel (SPCC)" },
+          { label: "Max. Weight Capacity", value: "20 kg (44 lb)" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga Empat Puluh dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Rack-Rails-Slide",
+    name: "UniFi Sliding Rack Rails",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Adjustable sliding rails for UniFi rack-mount gear, designed for smooth sliding and flexible fit in 4-post racks.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Rack-Rails-Slide",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "625 x 43 x 21 mm (24.6 x 1.7 x 0.8')" },
+          { label: "Weight", value: "2.5 kg (5.5 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Max. Weight Capacity", value: "45 kg (99 lb)" },
+          { label: "Sliding Mechanism", value: "Ball-bearing" },
+          { label: "Supported Rack Depth", value: "600—1066 mm (23.6—42')" },
+          { label: "Supported Rack Type", value: "4-post" },
+          { label: "Supported Mounting Hole Type", value: "Square" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Keempat Puluh Satu dari Accessories, SF Rack Mount
+  {
+    id: "UACC-Pro-Max-16-RM",
+    name: "Pro Max 16 Rack Mount",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "1U rack-mount accessory for Pro Max 16 switches.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Pro-Max-16-RM",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    bulletPoints: [
+      "Power cable management and adapter storage for a clean installation",
+      "Uniform aesthetic with UniFi rack-mount equipment"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "280.9 x 115.1 x 42.8 mm (11.1 x 4.5 x 1.7')" },
+          { label: "Weight", value: "1.1 kg (2.4 lb" },
+          { label: "Enclosure Material", value: "SGCC steel, polycarbonate" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Keempat Puluh Dua dari Accessories, SF Rack Mount
+  {
+    id: "UACC-AI-Key-RM",
+    name: "AI Key Rack Mount",
+    category: "Accessories",
+    subfilter: "Rack Mount",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "1U rack-mount accessory that supports up to three AI Keys.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-AI-Key-RM",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "464.4 x 56 x 43.7 mm (18.3 x 2.2 x 1.7')" },
+          { label: "Weight", value: "430 g (0.9 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy" }
+        ]
+      },
+    ],
+  },
 
 ]; // paling trakhir
