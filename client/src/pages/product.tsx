@@ -317,9 +317,9 @@ export default function ProductDetail() {
   // Use selected color image if available, otherwise use default product images
   const images = product.images || [selectedProductImage, "/images/banners/dcs-overview-1.png", "/images/banners/dcs-overview-2.png"];
   
-  // Display only first 3 images in the list, or more if needed
-  const displayImages = images.slice(0, 3);
-  const remainingImagesCount = images.length - 3;
+  // Display only first 4 images in the list, or more if needed
+  const displayImages = images.slice(0, 4);
+  const remainingImagesCount = images.length - 4;
 
   const nextImg = () => setCurrentImg((prev) => (prev + 1) % images.length);
   const prevImg = () => setCurrentImg((prev) => (prev - 1 + images.length) % images.length);
