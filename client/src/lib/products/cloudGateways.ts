@@ -1551,7 +1551,7 @@ export const cloudGatewaysProducts: Product[] = [
     name: "Dream Router 5G Max",
     category: "Cloud Gateways",
     subfilter: "WiFi Integrated",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/cloudgateways/11.udr5gm/1.p-utama-udr5gm.png",
     shortDescription:
       "Desktop Cloud Gateway with full-performance 5G up to 3.4 Gbps, WiFi 7, 10G SFP+, 4-port 2.5 GbE switch with (1) PoE port, and SD card storage.",
     specs: [
@@ -1566,15 +1566,25 @@ export const cloudGatewaysProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/cloudgateways/11.udr5gm/1.p-utama-udr5gm.png",
+      "/images/cloudgateways/11.udr5gm/2.p-dimensi-udr5gm.png",
+      "/images/cloudgateways/11.udr5gm/3.p-spec-udr5gm.png",
+      "/images/cloudgateways/11.udr5gm/4.p-development-udr5gm.png",
+      "/images/cloudgateways/11.udr5gm/p-itb-udr5gm.png",
+      "/images/cloudgateways/11.udr5gm/p-mkt0-udr5gm.png",
+      "/images/cloudgateways/11.udr5gm/p-mkt1-udr5gm.jpg",
+      "/images/cloudgateways/11.udr5gm/p-mkt2-udr5gm.png",
+      "/images/cloudgateways/11.udr5gm/p-mkt3-udr5gm.png",
+      "/images/cloudgateways/11.udr5gm/p-mkt4-udr5gm.png",
+      "/images/cloudgateways/11.udr5gm/p-mkt5-udr5gm.png",
+      "/images/cloudgateways/11.udr5gm/p-ov1-udr5gm.png",
+      "/images/cloudgateways/11.udr5gm/p-ov2-udr5gm.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/cloudgateways/11.udr5gm/p-ov1-udr5gm.png",
+      "/images/cloudgateways/11.udr5gm/p-ov2-udr5gm.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1617,10 +1627,7 @@ export const cloudGatewaysProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/cloudgateways/11.udr5gm/p-itb-udr5gm.png", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1689,7 +1696,7 @@ export const cloudGatewaysProducts: Product[] = [
     name: "Dream Wall",
     category: "Cloud Gateways",
     subfilter: "WiFi Integrated",
-    image: "/images/products/Product-UDW.png",
+    image: "/images/cloudgateways/12.udw/1.p-utama-udw.png",
     shortDescription:
       "Wall-mounted 10G Cloud Gateway with integrated WiFi 6, high-power PoE switching, and full Unifi application support.",
     specs: [
@@ -1704,15 +1711,25 @@ export const cloudGatewaysProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDW.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/cloudgateways/12.udw/1.p-utama-udw.png",
+      "/images/cloudgateways/12.udw/2.p-dimensi-udw.png",
+      "/images/cloudgateways/12.udw/3.p-spec-udw.png",
+      "/images/cloudgateways/12.udw/4.p-development-udw.png",
+      "/images/cloudgateways/12.udw/p-itb-udw.png",
+      "/images/cloudgateways/12.udw/p-mkt0-udw.png",
+      "/images/cloudgateways/12.udw/p-mkt1-udw.png",
+      "/images/cloudgateways/12.udw/p-mkt2-udw.png",
+      "/images/cloudgateways/12.udw/p-mkt3-udw.png",
+      "/images/cloudgateways/12.udw/p-mkt4-udw.png",
+      "/images/cloudgateways/12.udw/p-mkt5-udw.jpg",
+      "/images/cloudgateways/12.udw/p-ov1-udw.png",
+      "/images/cloudgateways/12.udw/p-ov2-udw.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/cloudgateways/12.udw/p-ov1-udw.png",
+      "/images/cloudgateways/12.udw/p-ov2-udw.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1755,10 +1772,7 @@ export const cloudGatewaysProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/cloudgateways/12.udw/p-itb-udw.png"},
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
