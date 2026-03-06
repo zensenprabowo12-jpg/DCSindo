@@ -290,7 +290,7 @@ export default function ProductDetail() {
 
   // ===== GUNAKAN HELPER FUNCTIONS UNTUK GENERATE DEFAULT VALUES =====
   // Ambil addons dari data produk, atau gunakan default dari helper function
-  const addOns = product.addons || getDefaultAddons(product);
+  const addOns = product.addons || [];
 
   // Ambil technical specs dari data produk, atau gunakan default dari helper function
   const technicalSpecs = product.technicalSpecs || getDefaultTechnicalSpecs(product);
@@ -299,7 +299,7 @@ export default function ProductDetail() {
   const bulletPoints = product.bulletPoints || getDefaultBulletPoints(product);
   
   // Ambil in the box items dari data produk, atau gunakan default dari helper function
-  const inTheBoxItems = product.inTheBox || getDefaultInTheBox(product);
+  const inTheBoxItems = product.inTheBox || [];
   
   // Ambil overview images dari data produk, atau gunakan default
   const overviewImages = product.overviewImages || ["/images/banners/dcs-overview-1.png", "/images/banners/dcs-overview-2.png"];
@@ -489,10 +489,15 @@ export default function ProductDetail() {
         {/* Brand Inspired Horizontal Tabs */}
         <div className="space-y-16">
           <div className="flex justify-center border-b border-border gap-12 sticky top-24 bg-background/80 backdrop-blur-xl z-40 py-2 overflow-x-auto">
-            {["overview", "technical", "box", "addons"].map((tab) => (
+            {[
+               "overview",
+                "technical",
+                inTheBoxItems?.length ? "box" : null,
+                addOns?.length ? "addons" : null
+              ].filter(Boolean).map((tab) => (
               <button
                 key={tab}
-                onClick={() => setActiveTab(tab)}
+                onClick={() => setActiveTab(tab as string)}
                 className={cn(
                   "text-sm font-black uppercase tracking-widest py-4 transition-all relative whitespace-nowrap",
                   activeTab === tab ? "text-primary" : "text-muted-foreground hover:text-foreground"

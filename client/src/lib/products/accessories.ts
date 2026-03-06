@@ -95,10 +95,10 @@ export const accessoriesProducts: Product[] = [
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
+    /* overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
-    ],
+    ], */
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
@@ -591,10 +591,8 @@ export const accessoriesProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Category 5e cable",
-      "Insulated, weatherproof jacket",
-      "Internal foil shielding and drain wire for increased ESD damage protection",
-      "Cable length 305 m"
+      "Polycarbonate, aluminum alloy",
+      "LAN Activity Indicator ✓"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -713,10 +711,7 @@ export const accessoriesProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Category 5e cable",
-      "Insulated, weatherproof jacket",
-      "Internal foil shielding and drain wire for increased ESD damage protection",
-      "Cable length 305 m"
+      "Material Stainless steel",
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -767,10 +762,7 @@ export const accessoriesProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Category 5e cable",
-      "Insulated, weatherproof jacket",
-      "Internal foil shielding and drain wire for increased ESD damage protection",
-      "Cable length 305 m"
+      "Material Polycarbonate",
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -823,10 +815,8 @@ export const accessoriesProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Category 5e cable",
-      "Insulated, weatherproof jacket",
-      "Internal foil shielding and drain wire for increased ESD damage protection",
-      "Cable length 305 m"
+      "Cable Jacket Material Thermoplastic elastomer (TPE)",
+      "Weatherproofing IPX6 (Waterproof cap end)"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -5617,6 +5607,9 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Management Interface SATA 3, 6 Gb/s"
+    ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
@@ -5735,6 +5728,9 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Enclosure Material Cold rolled carbon steel (SPCC)"
+    ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
@@ -5783,6 +5779,9 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Rack Features Max. Weight Capacity 20 kg (44 lb)"
+    ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
@@ -6179,13 +6178,13 @@ export const accessoriesProducts: Product[] = [
 
   //Produk Kesebelas dari Accessories, SF Rack Mount
   {
-    id: "UACC-RJ45-Cover",
-    name: "RJ45 Dust Cover, 24-Pack",
+    id: "UACC-Rack-PM-Kit",
+    name: "Precision Rack Mount Kit, 20-Pack",
     category: "Accessories",
     subfilter: "Rack Mount",
     image: "/images/camera.jpg",
     shortDescription:
-      "24-pack of protective inserts that keep dust and debris out of unused RJ45 ports.",
+      "1U snap-in inserts with two vertically aligned cage nuts designed to ensure uniform rack installations.",
     specs: [
       { label: "Resolution", value: "4K (8MP)" },
       { label: "Night Vision", value: "25m (82ft) IR" },
@@ -6194,7 +6193,7 @@ export const accessoriesProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UACC-RJ45-Cover",
+    sku: "UACC-Rack-PM-Kit",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -6211,9 +6210,8 @@ export const accessoriesProducts: Product[] = [
 
     bulletPoints: [
       "Easy installation and removal",
-      "Keeps unused Ethernet ports safe from dust and debris",
-      "Uniform aesthetic with UniFi rack-mount equipment",
-      "(24) RJ45 Dust Covers per pack"
+      "Pair multiple inserts to mount larger devices",
+      "(20) Precision Rack Mount inserts per kit"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -6266,6 +6264,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Material Metal ear: galvanized steel (SGCC) Plastic kit: thermoplastics (PA66)"
+    ],
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -6278,6 +6280,12 @@ export const accessoriesProducts: Product[] = [
           { label: "Screw", value: "#10-32, M4" }
         ]
       },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
   },
 
@@ -6313,6 +6321,9 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Material Metal ear: galvanized steel (SGCC) Plastic kit: thermoplastics (PA66)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -6325,6 +6336,12 @@ export const accessoriesProducts: Product[] = [
           { label: "Screw", value: "#10-32, M4" }
         ]
       },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
   },
 
@@ -6417,6 +6434,11 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Mounting Mini rack / rack",
+      "Enclosure Material SGCC steel, polycarbonate"
+    ],
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -6465,6 +6487,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Treatment Power coating, liquid coating"
+    ],
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -6481,6 +6507,12 @@ export const accessoriesProducts: Product[] = [
           { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" }
         ]
       },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
   },
 
@@ -6993,6 +7025,12 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+
+      "Rack Features Cabinet Interconnect ✓",
+      "Rack Features Lockable Casters ✓"
+    ],
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7024,6 +7062,12 @@ export const accessoriesProducts: Product[] = [
           { label: "NDAA Compliant", value: "✓" }
         ]
       },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
   },
 
@@ -7059,6 +7103,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Enclosure Material SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1 mm (0.04') Posts: 2 mm (0.08')",
+      "Rack Features Max. Weight Capacity Static 800 kg (1764 lb) Rolling 320 kg (705 lb)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7090,6 +7138,12 @@ export const accessoriesProducts: Product[] = [
           { label: "NDAA Compliant", value: "✓" }
         ]
       },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
   },
 
@@ -7125,6 +7179,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Enclosure Material SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1 mm (0.04') Posts: 2 mm (0.08')",
+      "Rack Features Max. Weight Capacity Static 800 kg (1764 lb) Rolling 320 kg (705 lb)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7156,6 +7214,12 @@ export const accessoriesProducts: Product[] = [
           { label: "NDAA Compliant", value: "✓" }
         ]
       },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
   },
 
@@ -7191,6 +7255,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Enclosure Material SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1 mm (0.04') Posts: 2 mm (0.08')",
+      "Rack Features Max. Weight Capacity Static 800 kg (1764 lb) Rolling 320 kg (705 lb)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7222,6 +7290,12 @@ export const accessoriesProducts: Product[] = [
           { label: "NDAA Compliant", value: "✓" }
         ]
       },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
   },
 
@@ -7257,6 +7331,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Enclosure Material SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1 mm (0.04') Posts: 2 mm (0.08')",
+      "Rack Features Max. Weight Capacity Static 800 kg (1764 lb) Rolling 320 kg (705 lb)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7289,6 +7367,12 @@ export const accessoriesProducts: Product[] = [
           { label: "NDAA Compliant", value: "✓" }
         ]
       },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
   },
 
@@ -7323,7 +7407,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-
+    bulletPoints: [
+      "Enclosure Material SPCC steel Door/side panels: 0.8 mm (0.03') Main body: 0.8 mm (0.03') Posts: 2 mm (0.08')",
+      "Rack Features Max. Weight Capacity Static 50 kg (110 lb)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7386,7 +7473,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-
+    bulletPoints: [
+      "Enclosure Material SPCC steel Door/side panels: 0.8 mm (0.03') Main body: 0.8 mm (0.03') Posts: 2 mm (0.08')",
+      "Rack Features Max. Weight Capacity Static 50 kg (110 lb)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7449,7 +7539,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-
+    bulletPoints: [
+      "Enclosure Material SPCC steel Door/side panels: 0.8 mm (0.03') Main body: 0.8 mm (0.03') Posts: 2 mm (0.08')",
+      "Rack Features Max. Weight Capacity Static 50 kg (110 lb)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7512,7 +7605,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-
+    bulletPoints: [
+      "Enclosure Material SPCC steel Door/side panels: 0.8 mm (0.03') Main body: 0.8 mm (0.03') Posts: 2 mm (0.08')",
+      "Rack Features Max. Weight Capacity Static 50 kg (110 lb)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7575,7 +7671,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-
+    bulletPoints: [
+      "Enclosure Material SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1.5 mm (0.06') Posts: 2 mm (0.08')",
+      "Rack Features Max. Weight Capacity Static 100 kg (220 lb)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7640,7 +7739,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-
+    bulletPoints: [
+      "Enclosure Material SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1.2 mm (0.05') Posts: 2 mm (0.08')",
+      "Rack Features Max. Weight Capacity Static 80 kg (176 lb)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7704,7 +7806,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-
+    bulletPoints: [
+      "Enclosure Material SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1.2 mm (0.05') Posts: 2 mm (0.08')",
+      "Rack Features Max. Weight Capacity Static 80 kg (176 lb)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7768,7 +7873,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-
+    bulletPoints: [
+      "Enclosure Material SPCC steel Door/side panels: 1.2 mm (0.05') Main body: 1.2 mm (0.05') Posts: 2 mm (0.08')",
+      "Rack Features Max. Weight Capacity Static 80 kg (176 lb)"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7833,6 +7941,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Material Cold rolled carbon steel (SPCC)"
+    ],
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7879,6 +7991,10 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Max. Weight Capacity 45 kg (99 lb)",
+      "Sliding Mechanism Ball-bearing"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7979,6 +8095,9 @@ export const accessoriesProducts: Product[] = [
       "/images/banners/dcs-overview-2.png"
     ],
 
+    bulletPoints: [
+      "Enclosure Material Aluminum alloy"
+    ],
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7990,6 +8109,625 @@ export const accessoriesProducts: Product[] = [
         ]
       },
     ],
+  },
+
+  //Produk Pertama dari Accessories, SF PoE & Power
+  {
+    id: "UPS-Power-Kit",
+    name: "UniFi Power Kit",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "A complete rack power solution with per-port power control, combining the UniFi UPS 2U Rackmount and Power Distribution Pro. Designed for continuous, managed power — ensuring uptime, remote outlet control, and graceful shutdown during power events.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UPS-Power-Kit",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "High-performance networking solution",
+      "Enterprise-grade reliability",
+      "Easy management and monitoring",
+      "Scalable architecture"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "442.4 x 300 x 87.4 mm (17.4 x 11.8 x 3.4')" },
+          { label: "Weight", value: "14 kg (30.9 lb)" },
+          { label: "Enclosure Material", value: "Galvanized steel" },
+          { label: "Form Factor", value: "Rack mount (2U)" },
+          { label: "Weatherproofing", value: "IP20" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Management", value: "Ethernet" },
+          { label: "Networking Interface", value: "(1) 100/10 MbE port for network connection (2) GbE ports for surge in/out" },
+          { label: "Power", value: "Standard" },
+          { label: "Form Factor", value: "(1) OVC II AC in: NEMA 5‑15P, 1.8 m (5.9 ft) non-removable power cord (4) Battery backup/surge protection: NEMA 5‑15R (4) Surge protection: NEMA 5‑15R" },
+          { label: "Capacity", value: "1,440VA/1,000W" },
+          { label: "Type", value: "Line interactive" },
+          { label: "Input Voltage Range", value: "89-145V AC" },
+          { label: "Power Method", value: "(1) TN system, 120V AC, 12A Max., 50/60 Hz" },
+          { label: "Nominal Input Voltage", value: "120V AC" },
+          { label: "Output Voltage", value: "120V AC" },
+          { label: "Frequency Range", value: "AC mode: 50/60 Hz ±5 Hz (Auto sensing) Battery mode: 60 Hz ±1 Hz" },
+          { label: "AC Voltage Regulation", value: "±10% (Battery mode)" },
+          { label: "Transfer Time", value: "6 ms typical; 10 ms max. (Battery mode)" },
+          { label: "Wave Form", value: "Simulated sine wave (Battery mode)" },
+          { label: "Battery Type", value: "(2) Lead Acid 12V, 9Ah" },
+          { label: "Runtimer", value: "Full load: 2.3 min Half load: 8 min" },
+          { label: "Battery Charging Time", value: "6-8 hours recovery to 90% capacity" },
+          { label: "Overload at On-Line Mode", value: "110% 5 min go to fault 120% go to fault immediately" },
+          { label: "Overload at Battery Mode", value: "110% shutdown in 5 sec 120% shutdown immediately" },
+          { label: "Short Circuit Protection at On-Line Mode", value: "Breaker, 250V AC, 15A" },
+          { label: "Output Short-Circuit Current", value: "Ipeak 348.0A Irms 115.1A" },
+          { label: "Buttons", value: "(1) Power (1) Factory reset" },
+          { label: "LEDs Status", value: "Off: device not turned on Flashing white: initializing / factory default Steady white: waiting for adoption Steady blue: device adoption and working Flashing blue: battery mode Alternating white/blue: firmware upgrading Rapid flashing blue: locate Steady red: warning Flashing red: low battery" },
+          { label: "Operating Altitude", value: "3,000 m (1.9 mi)" },
+          { label: "Operating Environment", value: "Pollution Degree 2" },
+          { label: "Ambient Storage Temperature", value: "-20 to 50° C (-4 to 122° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, UL 1778, CSA C22.2 No. 107.3" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Kedua dari Accessories, SF PoE & Power 
+  {
+    id: "UPS-2U",
+    name: "UniFi UPS 2U",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "UniFi managed 1.44kVA rackmount uninterruptible power supply with 4 backup outlets, 4 surge outlets, and a field replaceable battery, 216Wh, half load (500W) runtime of 8 minutes. Supports Graceful Shutdown for UNVR and UNAS, and includes NUT compatibility for third-party devices.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UPS-2U",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "High-performance networking solution",
+      "Enterprise-grade reliability",
+      "Easy management and monitoring",
+      "Scalable architecture"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "442.4 x 300 x 87.4 mm (17.4 x 11.8 x 3.4')" },
+          { label: "Weight", value: "14 kg (30.9 lb)" },
+          { label: "Enclosure Material", value: "Galvanized steel" },
+          { label: "Form Factor", value: "Rack mount (2U)" },
+          { label: "Weatherproofing", value: "IP20" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Management", value: "Ethernet" },
+          { label: "Networking Interface", value: "(1) 100/10 MbE port for network connection (2) GbE ports for surge in/out" },
+          { label: "Power", value: "Standard" },
+          { label: "Form Factor", value: "(1) OVC II AC in: NEMA 5-15P, 1.8 m (5.9 ft) non-removable power cord (4) Battery backup/surge protection: NEMA 5‑15R (4) Surge protection: NEMA 5‑15R" },
+          { label: "Capacity", value: "1,440VA/1,000W" },
+          { label: "Type", value: "Line interactive" },
+          { label: "Input Voltage Range", value: "89-145V AC" },
+          { label: "Power Method", value: "(1) TN system, 120V AC, 12A Max., 50/60 Hz" },
+          { label: "Nominal Input Voltage", value: "120V AC" },
+          { label: "Output Voltage", value: "120V AC" },
+          { label: "Frequency Range", value: "AC mode: 50/60 Hz ±5 Hz (Auto sensing) Battery mode: 60 Hz ±1 Hz" },
+          { label: "AC Voltage Regulation", value: "±10% (Battery mode)" },
+          { label: "Transfer Time", value: "6 ms typical; 10 ms max. (Battery mode)" },
+          { label: "Wave Form", value: "Simulated sine wave (Battery mode)" },
+          { label: "Battery Type", value: "(2) Lead Acid 12V, 9Ah" },
+          { label: "Runtimer", value: "Full load: 2.3 min Half load: 8 min" },
+          { label: "Battery Charging Time", value: "6-8 hours recovery to 90% capacity" },
+          { label: "Overload at On-Line Mode", value: "110% 5 min go to fault 120% go to fault immediately" },
+          { label: "Overload at Battery Mode", value: "110% shutdown in 5 sec 120% shutdown immediately" },
+          { label: "Short Circuit Protection at On-Line Mode", value: "Breaker, 250V AC, 15A" },
+          { label: "Output Short-Circuit Current", value: "Ipeak 348.0A Irms 115.1A" },
+          { label: "Buttons", value: "(1) Power (1) Factory reset" },
+          { label: "LEDs Status", value: "Off: device not turned on Flashing white: initializing / factory default Steady white: waiting for adoption Steady blue: device adoption and working Flashing blue: battery mode Alternating white/blue: firmware upgrading Rapid flashing blue: locate Steady red: warning Flashing red: low battery" },
+          { label: "Operating Altitude", value: "3,000 m (1.9 mi)" },
+          { label: "Operating Environment", value: "Pollution Degree 2" },
+          { label: "Ambient Storage Temperature", value: "-20 to 50° C (-4 to 122° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, UL 1778, CSA C22.2 No. 107.3" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Ketiga dari Accessories, SF PoE & Power
+  {
+    id: "UPS-Tower",
+    name: "UniFi UPS Tower",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "UniFi managed 1kVA uninterruptible power supply with 5 backup outlets 5 surge outlets and hot swappable battery, 108Wh, half load (300W) runtime of 7 minutes. Supports Graceful Shutdown for UNVR and UNAS, and includes NUT compatibility for third-party devices.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UPS-Tower",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "High-performance networking solution",
+      "Enterprise-grade reliability",
+      "Easy management and monitoring",
+      "Scalable architecture"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "288 x 99 x 280.5 mm (11.3 x 3.9 x 11')" },
+          { label: "Weight", value: "8.17 kg (18 lb)" },
+          { label: "Enclosure Material", value: "Polycarbonate and acrylonitrile butadiene styrene blend" },
+          { label: "Form Factor", value: "Desktop" },
+          { label: "Weatherproofing", value: "IP20" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Management", value: "Ethernet" },
+          { label: "Networking Interface", value: "(1) 100/10 MbE port for network connection (2) GbE ports for surge in/out" },
+          { label: "Power", value: "Standard" },
+          { label: "Form Factor", value: "(1) OVC II AC in: NEMA 5-15P, 1.8 m (5.9 ft) non-removable power cord (4) Battery backup/surge protection: NEMA 5‑15R (4) Surge protection: NEMA 5‑15R" },
+          { label: "Capacity", value: "1,000VA/600W" },
+          { label: "Type", value: "Line interactive" },
+          { label: "Input Voltage Range", value: "89-145V AC" },
+          { label: "Power Method", value: "(1) TN system, 120V AC, 12A Max., 50/60 Hz" },
+          { label: "Nominal Input Voltage", value: "120V AC" },
+          { label: "Output Voltage", value: "120V AC" },
+          { label: "Frequency Range", value: "AC mode: 50/60 Hz ±5 Hz (Auto sensing) Battery mode: 60 Hz ±1 Hz" },
+          { label: "AC Voltage Regulation", value: "±10% (Battery mode)" },
+          { label: "Transfer Time", value: "6 ms typical; 10 ms max. (Battery mode)" },
+          { label: "Wave Form", value: "Simulated sine wave (Battery mode)" },
+          { label: "Battery Type", value: "(1) Lead Acid 12V, 9Ah" },
+          { label: "Runtimer", value: "ull load: 2 min Half load: 7 min" },
+          { label: "Battery Charging Time", value: "6-8 hours recovery to 90% capacity" },
+          { label: "Overload at On-Line Mode", value: "110% 5 min go to fault 120% go to fault immediately" },
+          { label: "Overload at Battery Mode", value: "110% shutdown in 5 sec 120% shutdown immediately" },
+          { label: "Short Circuit Protection at On-Line Mode", value: "Breaker, 250V AC, 15A" },
+          { label: "Output Short-Circuit Current", value: "Ipeak 334.8A Irms 68.2A" },
+          { label: "Buttons", value: "(1) Power (1) Factory reset" },
+          { label: "LEDs Status", value: "Off: device not turned on Flashing white: initializing / factory default Steady white: waiting for adoption Steady blue: device adoption and working Flashing blue: battery mode Alternating white/blue: firmware upgrading Rapid flashing blue: locate Steady red: warning Flashing red: low battery" },
+          { label: "LEDs Indicator", value: "All off: 0% (1) Steady blue: battery 1–19% (2) Steady blue: battery 20–39% (3) Steady blue: battery 40–59% (4) Steady blue: battery 60–79% (5) Steady blue: battery 80–100%" },
+          { label: "Operating Altitude", value: "3,000 m (1.9 mi)" },
+          { label: "Operating Environment", value: "Pollution Degree 2" },
+          { label: "Ambient Storage Temperature", value: "-20 to 50° C (-4 to 122° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, UL 1778, CSA C22.2 No. 107.3" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  {
+    id: "USW-Mission-Critical (120W)",
+    name: "UPS PoE Switch ",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "A switch with an integrated 368Wh lithium-ion battery capable of providing uninterruptible PoE to 8 devices.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "USW-Mission-Critical (120W)",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "(4) GbE PoE+, (4) GbE PoE++ ports",
+      "(1) GbE port",
+      "(2) 110V AC outputs; 120W total PoE available",
+      "Battery backup power system",
+      "Internal battery 368Wh"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "288 x 99 x 280.5 mm (11.3 x 3.9 x 11')" },
+          { label: "Port Layout 1 GbE RJ45", value: "9 (4 PoE+; 4 PoE++) (1G/100M/10M)" },
+          { label: "Max. PoE Output", value: "Up to PoE++" },
+          { label: "Total PoE Availability", value: "120W" },
+          { label: "Redundancy", value: "Battery Power Backup" },
+          { label: "Layer 3", value: "✓" },
+          { label: "Form Factor", value: "Rack mount (1U)" }
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Switching Capacity", value: "18 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "9 Gbps" },
+          { label: "Forwarding Rate", value: "13 Mpps" },
+          { label: "Supported VLANs", value: "1,000" },
+          { label: "Packet Buffer Size", value: "0.5 MB" },
+          { label: "Access Lists IPv4", value: "128" },
+          { label: "Access Lists MAC", value: "128" },
+          { label: "MAC Address Table Size", value: "8,000" },
+        ]
+      },
+      {
+        title: "Layer 2 Feature",
+        items: [
+          { label: "LACP Port Aggregation", value: "✓" },
+          { label: "STP & RSTP", value: "✓" },
+          { label: "Advanced IGMP Configuration (Querier, Fast Leave, Router Port)", value: "✓" },
+          { label: "IGMP Snooping", value: "✓" },
+          { label: "802.1X Control", value: "✓" },
+          { label: "MAC-Based ACLs & Device Isolation", value: "✓" },
+          { label: "DHCP Snooping & Guarding", value: "✓" },
+          { label: "Egress Rate Limit", value: "✓" },
+          { label: "Flow Control", value: "✓" },
+          { label: "Storm Control", value: "✓" },
+          { label: "Multicast & Broadcast Rate Limiting", value: "✓" },
+          { label: "MAC Address Blocking", value: "✓" },
+          { label: "IP-Based ACLs & Network Isolation", value: "✓" },
+          { label: "MAC-Based Port Restriction", value: "✓" },
+          { label: "Port Isolation", value: "✓" },
+          { label: "Port Mirroring", value: "✓" },
+          { label: "Jumbo Frames", value: "✓" },
+          { label: "LLDP-MED", value: "✓" },
+          { label: "Voice VLAN", value: "✓" },
+          { label: "Loop Protection", value: "✓" },
+          { label: "Virtual Network Override", value: "✓" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "PoE Ports PoE+", value: "4" },
+          { label: "PoE Ports PoE++", value: "4" },
+          { label: "Max. PoE Wattage per Port by PSE PoE++", value: "32W" },
+          { label: "Max. PoE Wattage per Port by PSE PoE++", value: "64W" },
+          { label: "Max. Power Consumption", value: "50W (Excluding PoE Output) 240W (Including PoE Output and AC Output)" },
+          { label: "Power Method", value: "Universal input, 100-240V AC, 50/60 Hz External battery input, 48V DC" },
+          { label: "Power Input Method", value: "AC input DC input (Backup)" },
+          { label: "Power Supply", value: "AC/DC, internal, 240W" },
+          { label: "Supported Voltage Range", value: "100-240V AC" },
+          { label: "Management", value: "Ethernet AR" },
+          { label: "Heat Dissipation", value: "170.6 BTU/hr (Excluding PoE Output)" },
+          { label: "Weight", value: "Without mount: 9 kg (19.9 lb) With mount: 9.2 kg (20.3 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Mount Material", value: "SGCC steel" },
+          { label: "Supported Rack Depth", value: "482.6 mm (19') four-post racks Posts depths ranging from 700 to 1,000 mm (27.6–39.4”)" },
+          { label: "LCM Display", value: "1.3' touchscreen" },
+          { label: "ESD Protection", value: "Air/contact: ± 24kV" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)V " },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 06679-25-08356" }
+        ]
+      },
+      {
+        title: "Software,",
+        items: [
+          { label: "Application Requirements UniFi Network", value: "Version 6.2.26 and later" },
+        ]
+      }
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+
+    addons: [
+      {
+        id: 1,
+        name: "UniFi Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "QSFP28 transceiver that supports 100G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
+        specs: [
+          "Shielded RJ45",
+          "Insulated, weatherpoof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "Cable Lenghth: 1 to 8 m"
+
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 2,
+        name: "G3 Gate Starter Kit",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Starter kit with a Gate Hub, G3 Intercom, PoE++ adapter, and PoE++ over twisted pair extender for access control at a single gate with Touch Pass support.",
+        specs: [
+          "(1) Gate Hub",
+          "(1) G3 Intercom",
+          "(1) PoE++ adapter",
+          "(2) 2 - wire PoE extenders"
+
+        ],
+        detailedSpecs: [
+          { label: "In the Box", value: "(1) Gate Hub (1) G3 Intercom (1) PoE++ adapter (2) 2-wire Retrofit Extenders" },
+          { label: "Touch Pass", value: "10 free 1-year Touch Passes included " },
+          { label: "Gate Hub", value: "" },
+
+          { label: "Dimensions", value: "175 x 126 x 26 mm (6.9 x 5 x 1')" },
+          { label: "Supported Doors", value: "1 gate, 1 side door" },
+          { label: "Maximum User Count", value: "6,000" },
+          { label: "Input Terminals", value: "(1) Gate exit request (1) Gate position (1) Side door exit (1) Side door position (1) Emergency" },
+          { label: "Power Method", value: "PoE++ UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mounting", value: "DIN-rail (Included)" },
+          { label: "Weight", value: "460 g (1 lb)" },
+          { label: "Indoor and Outdoor Use", value: "Indoor only: device itself Outdoor: with waterproof junction box" },
+          { label: "NDAA Compliant", value: "✓" },
+
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Networking Interface", value: "(5) 10/100/1000 Base-T" },
+          { label: "PoE Interface", value: "(1) PoE++ input, 50V DC, 1A (4) PoE outputs, 50V DC, 30W per port (Max 55W aggregated)" },
+          { label: "Max. Power Consumption", value: "22W (Without PoE output) 60W (With PoE output)" },
+          { label: "Digital Input", value: "Gate exit request, gate position, side door exit request, side door position, emergency" },
+          { label: "Dry Output Relay", value: "(2) Operator: rated 30V DC, up to 1A (1) Aux: rated 30V DC, up to 1A" },
+          { label: "Powered Output Relay", value: "Side door lock: 12V DC, up to 1A" },
+          { label: "LEDs", value: "W/B " },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Recommend Max. Cable Length UA-Lock-Electric (400mA)", value: "24 AWG length: 25 m (82 ft) 22 AWG length: 42 m (138 ft) 20 AWG length: 66 m (217 ft) 18 UACC-Cable-DoorLockRelay length: 100 m (328 ft)" },
+          { label: "Recommend Max. Cable Length UA-Lock-Magnetic-540kg (500mA)", value: "24 AWG length: 20 m (66 ft) 22 AWG length: 32 m (105 ft) 20 AWG length: 51 m (167 ft) 18 UACC-Cable-DoorLockRelay length: 80 m (262 ft)" },
+          { label: "Recommend Max. Cable Length UA-Lock-Magnetic-270kg (800mA)", value: "24 AWG length: 12 m (29 ft) 22 AWG length: 20 m (66 ft) 20 AWG length: 30 m (98 ft) 18 UACC-Cable-DoorLockRelay length: 46 m (151 ft) " },
+          { label: "Recommend Max. Cable Length Other locks (1A)", value: "24 AWG length: 9 m (30 ft) 22 AWG length: 15 m (49 ft) 20 AWG length: 24 m (79 ft) 18 UACC-Cable-DoorLockRelay length: 36 m (118 ft)" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: I" },
+          { label: "Certifications", value: "CE, FCC, IC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-Hub-Gate, V01" },
+          { label: "Software Information", value: "The software version can be checked at https://unifi.ui.com" },
+          { label: "G3 Intercom", value: "" },
+          { label: "Dimensions", value: "324.8 x 113.7 x 28.3 mm (12.8 x 4.5 x 1.1')" },
+          { label: "Integrated Camera", value: "✓" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "PIN Access", value: "✓" },
+          { label: "Apple/Google Wallet", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Face Unlock", value: "✓" },
+          { label: "Two-Way Intercom & Doorbell Access", value: "✓" },
+          { label: "Weatherproofing", value: "IP65" },
+          { label: "NDAA Compliant", value: "✓" },
+
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Weight", value: "Device: 965 g (2.1 lb) Bracket: 445 g (1 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, UV-stabilized polycarbonate, glass" },
+          { label: "Mount Material", value: "Powder-coated stainless steel" },
+          { label: "Mounting", value: "Wall mount, adapter to the gooseneck pedestal (Included) Surface angle, flush mount, sunshield kit (Optional)" },
+          { label: "Indoor and Outdoor Use", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "Device: -30 to 60° C (-22 to 140° F) Display: -25 to 60° C (-13 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
+          { label: "Connectivity", value: "BLE 4.2 NFC" },
+          { label: "Power Method", value: "PoE UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Max. Power Consumption", value: "13W" },
+          { label: "Supported Voltage Range", value: "48V DC" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "VIdeo Resolution", value: "2MP 1200 x 1600 (3:4)" },
+          { label: "Optics Resolution", value: "8 MP (2448 x 3264" },
+          { label: "Optic Field of View", value: "H: 79.4°, V: 97.5°, D: 118.2°" },
+          { label: "Sensors", value: "Proximity sensor ALS sensor" },
+          { label: "Display Luminance", value: "Max. 1000 nits (Typical)" },
+          { label: "Display Resolution", value: "1024 x 600 px" },
+          { label: "Display Screen Technology", value: "Capacitive multi-touch" },
+          { label: "Display Size", value: "177 mm (7') diagonal" },
+          { label: "Microphone", value: "(1) Yes, 2W" },
+          { label: "Speaker", value: "13.56 MHz" },
+          { label: "NFC Frequency", value: "< 30 mm (1.18'')" },
+          { label: "NFC Read Range", value: "ISO/IEC 14443A / 14443B / 15693 / 18092 (Ecma 340) MIFARE Classic / MIFARE DESFIRE Sony FeliCa™ (ID only) NFC Forum tags T1T, T2T, T3T, T4T and T5T ECP 2.0" },
+          { label: "NFC Technology", value: "Amber" },
+          { label: "LEDs", value: "(1) Factory reset" },
+          { label: "Buttons", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "PoE Cabling Requirements", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+
+          { label: "UL 294 Statement", value: "Grade assignment: I" },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "CE, FCC, IC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Certifications", value: "UA-G3-Intercom, V01" },
+          { label: "Document number, and issue date and/or revision level", value: "The software version can be checked at " },
+          { label: "Software Information", value: "The software version can be checked at" },
+          { label: "Retrofit Extender", value: "" },
+          { label: "Dimensions", value: "PoE in/out: 40 x 105 x 25 mm (1.6 x 4.1 x 1') Adapter: 43.5 x 138 x 30 mm (1.7 x 5.4 x 1.2')" },
+          { label: "Weight", value: "PoE in: 77 g (2.7 oz) PoE out: 79 g (2.8 oz) Adapter: 140 g (4.9 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Coaxial Connector", value: "BNC female" },
+          { label: "Networking Interface", value: "(1) 10/100 MbE (1) Homeplug AV" },
+          { label: "Power Method", value: "PoE++" },
+          { label: "PoE Interface", value: "PoE in: (1) PoE++, 50V DC, 1.2A PoE out: (1) PoE+, 48V DC, 0.6A" },
+          { label: "Max. Power Consumption", value: "3W (Without PoE output)" },
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+          { label: "LEDs", value: "White" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+          { label: "PoE++ Adapter", value: "" },
+          { label: "Model", value: "U-PoE++" },
+          { label: "Dimensions", value: "106 x 63 x 34 mm  (4.2 x 2.5 x 1.3')" },
+          { label: "Weight", value: "210 g (7.4 oz)" },
+          { label: "Output Voltage", value: "48V DC @ 1.25A" },
+          { label: "Gigabit LAN Port", value: "100–240V AC at 50/60Hz" },
+          { label: "Rated Voltage", value: "100–240V AC at 50/60Hz" },
+          { label: "Input Current", value: "1.3A @ 120V AC 0.75A @ 230V AC" },
+          { label: "Inrush Current", value: "<100A peak @ 120V AC <200A peak @ 230V AC" },
+          { label: "Efficiency", value: "85+%" },
+          { label: "Output Ripple", value: "1% max." },
+          { label: "Switching Frequency", value: "65 kHz" },
+          { label: "Line Regulation", value: "≤ 1%" },
+          { label: "Load Regulation", value: "≤ 3%." },
+          { label: "4-pair Powering", value: "Pins 1, 2, 4, 5 (+) and 3, 6, 7, 8 (-)" },
+          { label: "AC Connector", value: "IEC-320 C6" },
+          { label: "Data In / PoE", value: "RJ45 shielded socket" },
+          { label: "Surge Protection", value: "Difference and common mode" },
+          { label: "Clamping Protection", value: "11V data, 60V power" },
+          { label: "Max. Surge Discharge", value: "1500A (8/20 μs) power" },
+          { label: "Peak Pulse Current", value: "36A (10/1000 μs) data" },
+          { label: "Shunt Capacitance", value: "<5 pF data" },
+          { label: "Response Time", value: "<1 ns" },
+          { label: "Power Method", value: "Universal AC input, 100–240V AC, 50/60 Hz" },
+          { label: "Power Supply", value: "AC/DC" },
+          { label: "Supported Voltage Range", value: "100–240V AC" },
+          { label: "Max. PoE+ Wattage per Port by PSE", value: "60W" },
+          { label: "Ambient Storage Temperature", value: "-30 to 70°C (-22 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "CE, FCC, IC, UL, UKCA, KC, CCC, KC, RoHS" },
+          { label: "Certifications", value: "10 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+        ],
+        productLink: "/products/mounting-kit"
+      },
+    ]
   },
 
 ]; // paling trakhir
