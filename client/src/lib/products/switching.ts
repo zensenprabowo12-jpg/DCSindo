@@ -212,7 +212,7 @@ export const switchingProducts: Product[] = [
     name: "Pro XG Aggregation",
     category: "Switching",
     subfilter: "Aggregation",
-    image: "/images/switch.jpg",
+    image: "/images/switching/2.uswproxgagg/1.p-utama-uswproxgagg.jpg",
     shortDescription:
       "Professional-grade 32-port, Layer 3 Etherlighting™ switch for high-capacity 25G SFP28 connections.",
     specs: [
@@ -228,15 +228,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Pro-XG-Aggregation.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/2.uswproxgagg/1.p-utama-uswproxgagg.jpg",
+      "/images/switching/2.uswproxgagg/2.p-dimensi-uswproxgagg.jpg",
+      "/images/switching/2.uswproxgagg/3.p-spec-uswproxgagg.jpg",
+      "/images/switching/2.uswproxgagg/4.p-development-uswproxgagg.jpg",
+      "/images/switching/2.uswproxgagg/p-itb-uswproxgagg.jpg",
+      "/images/switching/2.uswproxgagg/p-mkt0-uswproxgagg.jpg",
+      "/images/switching/2.uswproxgagg/p-mkt1-uswproxgagg.jpg",
+      "/images/switching/2.uswproxgagg/p-mkt2-uswproxgagg.jpg",
+      "/images/switching/2.uswproxgagg/p-mkt3-uswproxgagg.jpg",
+      "/images/switching/2.uswproxgagg/p-mkt4-uswproxgagg.jpg",
+      "/images/switching/2.uswproxgagg/p-ov1-uswproxgagg.png",
+      "/images/switching/2.uswproxgagg/p-ov2-uswproxgagg.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/2.uswproxgagg/p-ov1-uswproxgagg.png",
+      "/images/switching/2.uswproxgagg/p-ov2-uswproxgagg.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -275,10 +284,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/2.uswproxgagg/p-itb-uswproxgagg.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -347,7 +353,7 @@ export const switchingProducts: Product[] = [
     name: "Hi-Capacity Aggregation",
     category: "Switching",
     subfilter: "Aggregation",
-    image: "/images/switch.jpg",
+    image: "/images/switching/3.uswproagg/1.p-utama-uswproagg.jpg",
     shortDescription:
       "A 32-port, Layer 3 switch made for high-capacity 10G SFP+ and 25G SFP28 connections.",
     specs: [
@@ -363,15 +369,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/3.uswproagg/1.p-utama-uswproagg.jpg",
+      "/images/switching/3.uswproagg/2.p-dimensi-uswproagg.jpg",
+      "/images/switching/3.uswproagg/3.p-development-uswproagg.jpg",
+      "/images/switching/3.uswproagg/p-itb-uswproagg.jpg",
+      "/images/switching/3.uswproagg/p-mkt0-uswproagg.jpg",
+      "/images/switching/3.uswproagg/p-mkt1-uswproagg.jpg",
+      "/images/switching/3.uswproagg/p-mkt2-uswproagg.jpg",
+      "/images/switching/3.uswproagg/p-mkt3-uswproagg.jpg",
+      "/images/switching/3.uswproagg/p-mkt4-uswproagg.jpg",
+      "/images/switching/3.uswproagg/p-ov1-uswproagg.png",
+      "/images/switching/3.uswproagg/p-ov2-uswproagg.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/3.uswproagg/p-ov1-uswproagg.png",
+      "/images/switching/3.uswproagg/p-ov2-uswproagg.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -414,10 +428,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/3.uswproagg/p-itb-uswproagg.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -486,7 +497,7 @@ export const switchingProducts: Product[] = [
     name: "Aggregation",
     category: "Switching",
     subfilter: "Aggregation",
-    image: "/images/switch.jpg",
+    image: "/images/switching/4.uswagg/1.p-utama-uswagg.jpg",
     shortDescription:
       "An 8-port, Layer 2 switch made for 10G SFP+ connections.",
     specs: [
@@ -502,15 +513,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/4.uswagg/1.p-utama-uswagg.jpg",
+      "/images/switching/4.uswagg/2.p-dimensi-uswagg.jpg",
+      "/images/switching/4.uswagg/3.p-spec-uswagg.jpg",
+      "/images/switching/4.uswagg/4.p-development-uswagg.jpg",
+      "/images/switching/4.uswagg/p-itb-uswagg.jpg",
+      "/images/switching/4.uswagg/p-mkt0-uswagg.jpg",
+      "/images/switching/4.uswagg/p-mkt1-uswagg.jpg",
+      "/images/switching/4.uswagg/p-mkt2-uswagg.jpg",
+      "/images/switching/4.uswagg/p-mkt3-uswagg.jpg",
+      "/images/switching/4.uswagg/p-ov1-uswagg.png",
+      "/images/switching/4.uswagg/p-ov2-uswagg.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/4.uswagg/p-ov1-uswagg.png",
+      "/images/switching/4.uswagg/p-ov2-uswagg.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -553,10 +572,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/4.uswagg/p-itb-uswagg.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -625,7 +641,7 @@ export const switchingProducts: Product[] = [
     name: "Enterprise Campus 48 PoE",
     category: "Switching",
     subfilter: "Enterprise",
-    image: "/images/switch.jpg",
+    image: "/images/switching/5.ecs48poe/1.p-utama-ecs48poe.jpg",
     shortDescription:
       "Enterprise-grade 48-port, Layer 3 Etherlighting™ PoE+++ switch with high-capacity 10 GbE RJ45 and 25G SFP28 connections for high availability system design.",
     specs: [
@@ -642,15 +658,22 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/5.ecs48poe/1.p-utama-ecs48poe.jpg",
+      "/images/switching/5.ecs48poe/2.p-dimensi-ecs48poe.jpg",
+      "/images/switching/5.ecs48poe/3.p-spec-ecs48poe.jpg",
+      "/images/switching/5.ecs48poe/p-itb-ecs48poe.jpg",
+      "/images/switching/5.ecs48poe/p-mkt0-ecs48poe.jpg",
+      "/images/switching/5.ecs48poe/p-mkt1-ecs48poe.jpg",
+      "/images/switching/5.ecs48poe/p-mkt2-ecs48poe.jpg",
+      "/images/switching/5.ecs48poe/p-mkt3-ecs48poe.jpg",
+      "/images/switching/5.ecs48poe/p-mkt4-ecs48poe.jpg",
+      "/images/switching/5.ecs48poe/p-mkt5-ecs48poe.jpg",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/5.ecs48poe/p-mkt0-ecs48poe.jpg",
+      "/images/switching/5.ecs48poe/p-mkt2-ecs48poe.jpg",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -693,10 +716,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/5.ecs48poe/p-itb-ecs48poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -765,7 +785,7 @@ export const switchingProducts: Product[] = [
     name: "Enterprise Campus 24 PoE",
     category: "Switching",
     subfilter: "Enterprise",
-    image: "/images/switch.jpg",
+    image: "/images/switching/6.ecs24poe/1.p-utama-ecs24poe.jpg",
     shortDescription:
       "Enterprise-grade 24-port, Layer 3 Etherlighting™ PoE+++ switch with high-capacity 10 GbE RJ45 and 25G SFP28 connections for high availability system design.",
     specs: [
@@ -781,15 +801,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Enterprise-Campus-24-PoE.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/6.ecs24poe/1.p-utama-ecs24poe.jpg",
+      "/images/switching/6.ecs24poe/2.p-dimensi-ecs24poe.jpg",
+      "/images/switching/6.ecs24poe/3.p-spec-ecs24poe.jpg",
+      "/images/switching/6.ecs24poe/p-itb-ecs24poe.jpg",
+      "/images/switching/6.ecs24poe/p-mkt0-ecs24poe.jpg",
+      "/images/switching/6.ecs24poe/p-mkt1-ecs24poe.jpg",
+      "/images/switching/6.ecs24poe/p-mkt2-ecs24poe.jpg",
+      "/images/switching/6.ecs24poe/p-mkt3-ecs24poe.jpg",
+      "/images/switching/6.ecs24poe/p-mkt4-ecs24poe.jpg",
+      "/images/switching/6.ecs24poe/p-mkt5-ecs24poe.jpg",
+      "/images/switching/6.ecs24poe/p-mkt6-ecs24poe.jpg",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/6.ecs24poe/p-mkt0-ecs24poe.jpg",
+      "/images/switching/6.ecs24poe/p-mkt6-ecs24poe.jpg",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -828,10 +856,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/6.ecs24poe/p-itb-ecs24poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -900,7 +925,7 @@ export const switchingProducts: Product[] = [
     name: "Enterprise Campus 48S PoE",
     category: "Switching",
     subfilter: "Enterprise",
-    image: "/images/switch.jpg",
+    image: "/images/switching/7.ecs48spoe/1.p-utama-ecs48spoe.jpg",
     shortDescription:
       "Enterprise-grade 48-port, Layer 3 Etherlighting™ PoE+++ switch with Stacking support and high-capacity 10 GbE RJ45 and 25G SFP28 connections for high availability system design.",
     specs: [
@@ -916,15 +941,22 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/7.ecs48spoe/1.p-utama-ecs48spoe.jpg",
+      "/images/switching/7.ecs48spoe/2.p-dimensi-ecs48spoe.jpg",
+      "/images/switching/7.ecs48spoe/3.p-spec-ecs48spoe.jpg",
+      "/images/switching/7.ecs48spoe/p-mkt0-ecs48spoe.jpg",
+      "/images/switching/7.ecs48spoe/p-mkt1-ecs48spoe.jpg",
+      "/images/switching/7.ecs48spoe/p-mkt2-ecs48spoe.jpg",
+      "/images/switching/7.ecs48spoe/p-mkt3-ecs48spoe.jpg",
+      "/images/switching/7.ecs48spoe/p-mkt4-ecs48spoe.jpg",
+      "/images/switching/7.ecs48spoe/p-mkt5-ecs48spoe.jpg",
+      "/images/switching/7.ecs48spoe/p-mkt6-ecs48spoe.jpg",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/7.ecs48spoe/p-mkt0-ecs48spoe.jpg",
+      "/images/switching/7.ecs48spoe/p-mkt6-ecs48spoe.jpg",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1039,7 +1071,7 @@ export const switchingProducts: Product[] = [
     name: "Enterprise Campus 24S PoE",
     category: "Switching",
     subfilter: "Enterprise",
-    image: "/images/switch.jpg",
+    image: "/images/switching/8.ecs24spoe/1.p-utama-ecs24spoe.jpg",
     shortDescription:
       "Enterprise-grade 24-port, Layer 3 Etherlighting™ PoE+++ switch with Stacking support and high-capacity 10 GbE RJ45 and 25G SFP28 connections for high availability system design.",
     specs: [
@@ -1055,15 +1087,21 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/8.ecs24spoe/1.p-utama-ecs24spoe.jpg",
+      "/images/switching/8.ecs24spoe/2.p-dimensi-ecs24spoe.jpg",
+      "/images/switching/8.ecs24spoe/3.p-spec-ecs24spoe.jpg",
+      "/images/switching/8.ecs24spoe/p-mkt0-ecs24spoe.jpg",
+      "/images/switching/8.ecs24spoe/p-mkt1-ecs24spoe.jpg",
+      "/images/switching/8.ecs24spoe/p-mkt2-ecs24spoe.jpg",
+      "/images/switching/8.ecs24spoe/p-mkt3-ecs24spoe.jpg",
+      "/images/switching/8.ecs24spoe/p-mkt4-ecs24spoe.jpg",
+      "/images/switching/8.ecs24spoe/p-mkt5-ecs24spoe.jpg",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/8.ecs24spoe/p-mkt0-ecs24spoe.jpg",
+      "/images/switching/8.ecs24spoe/p-mkt5-ecs24spoe.jpg",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1317,7 +1355,7 @@ export const switchingProducts: Product[] = [
     name: "Pro Max 48 PoE",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/10.uswpromax48poe/1.p-utama-uswpromax48poe.jpg",
     shortDescription:
       "A 48-port, Layer 3 Etherlighting™ switch with 2.5 GbE and PoE++ output.",
     specs: [
@@ -1334,15 +1372,25 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/10.uswpromax48poe/1.p-utama-uswpromax48poe.jpg",
+      "/images/switching/10.uswpromax48poe/2.p-dimensi-uswpromax48poe.jpg",
+      "/images/switching/10.uswpromax48poe/3.p-spec-uswpromax48poe.jpg",
+      "/images/switching/10.uswpromax48poe/4.p-development-uswpromax48poe.jpg",
+      "/images/switching/10.uswpromax48poe/p-itb-uswpromax48poe.jpg",
+      "/images/switching/10.uswpromax48poe/p-mkt0-uswpromax48poe.jpg",
+      "/images/switching/10.uswpromax48poe/p-mkt1-uswpromax48poe.jpg",
+      "/images/switching/10.uswpromax48poe/p-mkt2-uswpromax48poe.jpg",
+      "/images/switching/10.uswpromax48poe/p-mkt3-uswpromax48poe.jpg",
+      "/images/switching/10.uswpromax48poe/p-mkt4-uswpromax48poe.jpg",
+      "/images/switching/10.uswpromax48poe/p-ov1-uswpromax48poe.png",
+      "/images/switching/10.uswpromax48poe/p-ov2-uswpromax48poe.png",
+
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/10.uswpromax48poe/p-ov1-uswpromax48poe.png",
+      "/images/switching/10.uswpromax48poe/p-ov2-uswpromax48poe.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1385,10 +1433,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/10.uswpromax48poe/p-itb-uswpromax48poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1457,7 +1502,7 @@ export const switchingProducts: Product[] = [
     name: "Pro Max 24 PoE",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/11.uswpromax24poe/1.p-utama-uswpromax24poe.jpg",
     shortDescription:
       "A 24-port, Layer 3 Etherlighting™ switch capable of high-power PoE++ output.",
     specs: [
@@ -1473,15 +1518,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Pro-Max-24-PoE.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/11.uswpromax24poe/1.p-utama-uswpromax24poe.jpg",
+      "/images/switching/11.uswpromax24poe/2.p-dimensi-uswpromax24poe.jpg",
+      "/images/switching/11.uswpromax24poe/3.p-spec-uswpromax24poe.jpg",
+      "/images/switching/11.uswpromax24poe/4.p-development-uswpromax24poe.jpg",
+      "/images/switching/11.uswpromax24poe/p-itb-uswpromax24poe.jpg",
+      "/images/switching/11.uswpromax24poe/p-mkt0-uswpromax24poe.jpg",
+      "/images/switching/11.uswpromax24poe/p-mkt1-uswpromax24poe.jpg",
+      "/images/switching/11.uswpromax24poe/p-mkt2-uswpromax24poe.jpg",
+      "/images/switching/11.uswpromax24poe/p-mkt3-uswpromax24poe.jpg",
+      "/images/switching/11.uswpromax24poe/p-mkt4-uswpromax24poe.jpg",
+      "/images/switching/11.uswpromax24poe/p-ov1-uswpromax24poe.png",
+      "/images/switching/11.uswpromax24poe/p-ov2-uswpromax24poe.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/11.uswpromax24poe/p-ov1-uswpromax24poe.png",
+      "/images/switching/11.uswpromax24poe/p-ov2-uswpromax24poe.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1520,10 +1574,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/11.uswpromax24poe/p-itb-uswpromax24poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1592,7 +1643,7 @@ export const switchingProducts: Product[] = [
     name: "Pro XG 48 PoE",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/12.uswproxg48poe/1.p-utama-uswproxg48poe.jpg",
     shortDescription:
       "Professional-grade, 48-port Layer 3 Etherlighting™ PoE+++ switch with (32) 10 GbE, (16) 2.5 GbE PoE, and (4) 25G SFP28 ports.",
     specs: [
@@ -1608,15 +1659,26 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/12.uswproxg48poe/1.p-utama-uswproxg48poe.jpg",
+      "/images/switching/12.uswproxg48poe/2.p-dimensi-uswproxg48poe.jpg",
+      "/images/switching/12.uswproxg48poe/3.p-spec-uswproxg48poe.jpg",
+      "/images/switching/12.uswproxg48poe/4.p-development-uswproxg48poe.jpg",
+      "/images/switching/12.uswproxg48poe/p-itb-uswproxg48poe.jpg",
+      "/images/switching/12.uswproxg48poe/p-mkt0-uswproxg48poe.jpg",
+      "/images/switching/12.uswproxg48poe/p-mkt1-uswproxg48poe.jpg",
+      "/images/switching/12.uswproxg48poe/p-mkt2-uswproxg48poe.jpg",
+      "/images/switching/12.uswproxg48poe/p-mkt3-uswproxg48poe.jpg",
+      "/images/switching/12.uswproxg48poe/p-mkt4-uswproxg48poe.jpg",
+      "/images/switching/12.uswproxg48poe/p-mkt5-uswproxg48poe.jpg",
+      "/images/switching/12.uswproxg48poe/p-ov1-uswproxg48poe.png",
+      "/images/switching/12.uswproxg48poe/p-ov2-uswproxg48poe.png",
+
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/12.uswproxg48poe/p-ov1-uswproxg48poe.png",
+      "/images/switching/12.uswproxg48poe/p-ov2-uswproxg48poe.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1659,10 +1721,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/12.uswproxg48poe/p-itb-uswproxg48poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1731,7 +1790,7 @@ export const switchingProducts: Product[] = [
     name: "Pro XG 24 PoE",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/13.uswproxg24poe/1.p-utama-uswproxg24poe.jpg",
     shortDescription:
       "Professional-grade, 24-port Layer 3 Etherlighting™ PoE+++ switch with (16) 10 GbE, (8) 2.5 GbE, and (2) 25G SFP28 ports.",
     specs: [
@@ -1747,15 +1806,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/13.uswproxg24poe/1.p-utama-uswproxg24poe.jpg",
+      "/images/switching/13.uswproxg24poe/2.p-dimensi-uswproxg24poe.jpg",
+      "/images/switching/13.uswproxg24poe/3.p-spec-uswproxg24poe.jpg",
+      "/images/switching/13.uswproxg24poe/4.p-development-uswproxg24poe.jpg",
+      "/images/switching/13.uswproxg24poe/p-itb-uswproxg24poe.jpg",
+      "/images/switching/13.uswproxg24poe/p-mkt0-uswproxg24poe.jpg",
+      "/images/switching/13.uswproxg24poe/p-mkt1-uswproxg24poe.jpg",
+      "/images/switching/13.uswproxg24poe/p-mkt2-uswproxg24poe.jpg",
+      "/images/switching/13.uswproxg24poe/p-mkt3-uswproxg24poe.jpg",
+      "/images/switching/13.uswproxg24poe/p-mkt4-uswproxg24poe.jpg",
+      "/images/switching/13.uswproxg24poe/p-ov1-uswproxg24poe.png",
+      "/images/switching/13.uswproxg24poe/p-ov2-uswproxg24poe.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+       "/images/switching/13.uswproxg24poe/p-ov1-uswproxg24poe.png",
+      "/images/switching/13.uswproxg24poe/p-ov2-uswproxg24poe.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1798,10 +1866,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/13.uswproxg24poe/p-itb-uswproxg24poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1870,7 +1935,7 @@ export const switchingProducts: Product[] = [
     name: "Pro HD 24 PoE",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/14.uswprohd24poe/1.p-utama-uswprohd24poe.jpg",
     shortDescription:
       "Professional-grade, Layer 3 Etherlighting™ switch with (2) 10 GbE PoE++, (22) 2.5 GbE PoE++, and (4) 10G SFP+ ports.",
     specs: [
@@ -1886,15 +1951,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/14.uswprohd24poe/1.p-utama-uswprohd24poe.jpg",
+      "/images/switching/14.uswprohd24poe/2.p-dimensi-uswprohd24poe.jpg",
+      "/images/switching/14.uswprohd24poe/3.p-spec-uswprohd24poe.jpg",
+      "/images/switching/14.uswprohd24poe/4.p-development-uswprohd24poe.jpg",
+      "/images/switching/14.uswprohd24poe/p-itb-uswprohd24poe.jpg",
+      "/images/switching/14.uswprohd24poe/p-mkt0-uswprohd24poe.jpg",
+      "/images/switching/14.uswprohd24poe/p-mkt1-uswprohd24poe.jpg",
+      "/images/switching/14.uswprohd24poe/p-mkt2-uswprohd24poe.jpg",
+      "/images/switching/14.uswprohd24poe/p-mkt3-uswprohd24poe.jpg",
+      "/images/switching/14.uswprohd24poe/p-mkt4-uswprohd24poe.jpg",
+      "/images/switching/14.uswprohd24poe/p-ov1-uswprohd24poe.png",
+      "/images/switching/14.uswprohd24poe/p-ov2-uswprohd24poe.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/14.uswprohd24poe/p-ov1-uswprohd24poe.png",
+      "/images/switching/14.uswprohd24poe/p-ov2-uswprohd24poe.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1937,10 +2011,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/14.uswprohd24poe/p-itb-uswprohd24poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2009,7 +2080,7 @@ export const switchingProducts: Product[] = [
     name: "Pro XG 48",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/15.uswproxg48/1.p-utama-uswproxg48.jpg",
     shortDescription:
       "Professional-grade, 48-port Layer 3 Etherlighting™ switch with (32) 10 GbE, (16) 2.5 GbE, and (4) 25G SFP28 ports.",
     specs: [
@@ -2025,15 +2096,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/15.uswproxg48/1.p-utama-uswproxg48.jpg",
+      "/images/switching/15.uswproxg48/2.p-dimensi-uswproxg48.jpg",
+      "/images/switching/15.uswproxg48/3.p-spec-uswproxg48.jpg",
+      "/images/switching/15.uswproxg48/4.p-development-uswproxg48.jpg",
+      "/images/switching/15.uswproxg48/p-mkt0-uswproxg48.jpg",
+      "/images/switching/15.uswproxg48/p-mkt1-uswproxg48.jpg",
+      "/images/switching/15.uswproxg48/p-mkt2-uswproxg48.jpg",
+      "/images/switching/15.uswproxg48/p-mkt3-uswproxg48.jpg",
+      "/images/switching/15.uswproxg48/p-mkt4-uswproxg48.jpg",
+      "/images/switching/15.uswproxg48/p-mkt5-uswproxg48.jpg",
+      "/images/switching/15.uswproxg48/p-ov1-uswproxg48.png",
+      "/images/switching/15.uswproxg48/p-ov2-uswproxg48.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/15.uswproxg48/p-ov1-uswproxg48.png",
+      "/images/switching/15.uswproxg48/p-ov2-uswproxg48.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2148,7 +2228,7 @@ export const switchingProducts: Product[] = [
     name: "Pro XG 24",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/16.uswproxg24/1.p-utama-uswproxg24.jpg",
     shortDescription:
       "Professional-grade, 24-port Layer 3 Etherlighting™ switch with (16) 10 GbE, (8) 2.5 GbE, and (2) 25G SFP28 ports.",
     specs: [
@@ -2164,15 +2244,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/16.uswproxg24/1.p-utama-uswproxg24.jpg",
+      "/images/switching/16.uswproxg24/2.p-dimensi-uswproxg24.jpg",
+      "/images/switching/16.uswproxg24/3.p-spec-uswproxg24.jpg",
+      "/images/switching/16.uswproxg24/4.p-development-uswproxg24.jpg",
+      "/images/switching/16.uswproxg24/p-itb-uswproxg24.jpg",
+      "/images/switching/16.uswproxg24/p-mkt0-uswproxg24.jpg",
+      "/images/switching/16.uswproxg24/p-mkt1-uswproxg24.jpg",
+      "/images/switching/16.uswproxg24/p-mkt2-uswproxg24.jpg",
+      "/images/switching/16.uswproxg24/p-mkt3-uswproxg24.jpg",
+      "/images/switching/16.uswproxg24/p-mkt4-uswproxg24.jpg",
+      "/images/switching/16.uswproxg24/p-ov1-uswproxg24.png",
+      "/images/switching/16.uswproxg24/p-ov2-uswproxg24.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/16.uswproxg24/p-ov1-uswproxg24.png",
+      "/images/switching/16.uswproxg24/p-ov2-uswproxg24.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2215,10 +2304,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/16.uswproxg24/p-itb-uswproxg24.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2287,7 +2373,7 @@ export const switchingProducts: Product[] = [
     name: "Pro XG 10 PoE",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/17.uswproxg10poe/1.p-utama-uswproxg10poe.jpg",
     shortDescription:
       "1U, professional-grade 10-port, Layer 3 Etherlighting™ PoE+++ switch with (10) 10 GbE and (2) 10G SFP+ ports.",
     specs: [
@@ -2303,15 +2389,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/17.uswproxg10poe/1.p-utama-uswproxg10poe.jpg",
+      "/images/switching/17.uswproxg10poe/2.p-dimensi-uswproxg10poe.jpg",
+      "/images/switching/17.uswproxg10poe/3.p-spec-uswproxg10poe.jpg",
+      "/images/switching/17.uswproxg10poe/4.p-development-uswproxg10poe.jpg",
+      "/images/switching/17.uswproxg10poe/p-itb-uswproxg10poe.jpg",
+      "/images/switching/17.uswproxg10poe/p-mkt0-uswproxg10poe.jpg",
+      "/images/switching/17.uswproxg10poe/p-mkt1-uswproxg10poe.jpg",
+      "/images/switching/17.uswproxg10poe/p-mkt2-uswproxg10poe.jpg",
+      "/images/switching/17.uswproxg10poe/p-mkt3-uswproxg10poe.jpg",
+      "/images/switching/17.uswproxg10poe/p-mkt4-uswproxg10poe.jpg",
+      "/images/switching/17.uswproxg10poe/p-ov1-uswproxg10poe.png",
+      "/images/switching/17.uswproxg10poe/p-ov2-uswproxg10poe.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/17.uswproxg10poe/p-ov1-uswproxg10poe.png",
+      "/images/switching/17.uswproxg10poe/p-ov2-uswproxg10poe.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2354,10 +2449,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/17.uswproxg10poe/p-itb-uswproxg10poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2426,7 +2518,7 @@ export const switchingProducts: Product[] = [
     name: "Pro Max 16 PoE",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/18.uswpromax16poe/1.p-utama-uswpromax16poe.jpg",
     shortDescription:
       "A 16-port, Layer 3 Etherlighting™ switch with 2.5 GbE, PoE++ output, and versatile mounting options.",
     specs: [
@@ -2442,15 +2534,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/18.uswpromax16poe/1.p-utama-uswpromax16poe.jpg",
+      "/images/switching/18.uswpromax16poe/2.p-dimensi-uswpromax16poe.jpg",
+      "/images/switching/18.uswpromax16poe/3.p-spec-uswpromax16poe.jpg",
+      "/images/switching/18.uswpromax16poe/4.p-development-uswpromax16poe.jpg",
+      "/images/switching/18.uswpromax16poe/p-itb-uswpromax16poe.jpg",
+      "/images/switching/18.uswpromax16poe/p-mkt0-uswpromax16poe.jpg",
+      "/images/switching/18.uswpromax16poe/p-mkt1-uswpromax16poe.jpg",
+      "/images/switching/18.uswpromax16poe/p-mkt2-uswpromax16poe.jpg",
+      "/images/switching/18.uswpromax16poe/p-mkt3-uswpromax16poe.jpg",
+      "/images/switching/18.uswpromax16poe/p-mkt4-uswpromax16poe.jpg",
+      "/images/switching/18.uswpromax16poe/p-ov1-uswpromax16poe.png",
+      "/images/switching/18.uswpromax16poe/p-ov2-uswpromax16poe.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/18.uswpromax16poe/p-ov1-uswpromax16poe.png",
+      "/images/switching/18.uswpromax16poe/p-ov2-uswpromax16poe.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2493,10 +2594,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/18.uswpromax16poe/p-itb-uswpromax16poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2565,7 +2663,7 @@ export const switchingProducts: Product[] = [
     name: "Pro HD 24",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/19.uswprohd24/1.p-utama-uswprohd24.jpg",
     shortDescription:
       "Proffesional-grade, Layer 3 Etherlighting™ switch with (2) 10 GbE, (22) 2.5 GbE, and (4) 10G SFP+ ports.",
     specs: [
@@ -2581,15 +2679,25 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/19.uswprohd24/1.p-utama-uswprohd24.jpg",
+      "/images/switching/19.uswprohd24/2.p-dimensi-uswprohd24.jpg",
+      "/images/switching/19.uswprohd24/3.p-spec-uswprohd24.jpg",
+      "/images/switching/19.uswprohd24/4.p-development-uswprohd24.jpg",
+      "/images/switching/19.uswprohd24/p-itb-uswprohd24.jpg",
+      "/images/switching/19.uswprohd24/p-mkt0-uswprohd24.jpg",
+      "/images/switching/19.uswprohd24/p-mkt1-uswprohd24.jpg",
+      "/images/switching/19.uswprohd24/p-mkt2-uswprohd24.jpg",
+      "/images/switching/19.uswprohd24/p-mkt3-uswprohd24.jpg",
+      "/images/switching/19.uswprohd24/p-mkt4-uswprohd24.jpg",
+      "/images/switching/19.uswprohd24/p-ov1-uswprohd24.png",
+      "/images/switching/19.uswprohd24/p-ov2-uswprohd24.png",
+
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/19.uswprohd24/p-ov1-uswprohd24.png",
+      "/images/switching/19.uswprohd24/p-ov2-uswprohd24.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2632,10 +2740,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/19.uswprohd24/p-itb-uswprohd24.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2704,7 +2809,7 @@ export const switchingProducts: Product[] = [
     name: "Pro Max 48",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/20.uswpromax48/1.p-utama-uswpromax48.jpg",
     shortDescription: "A 48-port, Layer 3 Etherlighting™ switch with 2.5 GbE.",
     specs: [
       { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
@@ -2719,15 +2824,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/20.uswpromax48/1.p-utama-uswpromax48.jpg",
+      "/images/switching/20.uswpromax48/2.p-dimensi-uswpromax48.jpg",
+      "/images/switching/20.uswpromax48/3.p-spec-uswpromax48.jpg",
+      "/images/switching/20.uswpromax48/4.p-development-uswpromax48.jpg",
+      "/images/switching/20.uswpromax48/p-itb-uswpromax48.jpg",
+      "/images/switching/20.uswpromax48/p-mkt0-uswpromax48.jpg",
+      "/images/switching/20.uswpromax48/p-mkt1-uswpromax48.jpg",
+      "/images/switching/20.uswpromax48/p-mkt2-uswpromax48.jpg",
+      "/images/switching/20.uswpromax48/p-mkt3-uswpromax48.jpg",
+      "/images/switching/20.uswpromax48/p-mkt4-uswpromax48.jpg",
+      "/images/switching/20.uswpromax48/p-ov1-uswpromax48.png",
+      "/images/switching/20.uswpromax48/p-ov2-uswpromax48.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/20.uswpromax48/p-ov1-uswpromax48.png",
+      "/images/switching/20.uswpromax48/p-ov2-uswpromax48.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2770,10 +2884,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/20.uswpromax48/p-itb-uswpromax48.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2842,7 +2953,7 @@ export const switchingProducts: Product[] = [
     name: "Pro Max 24",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/21.uswpromax24/1.p-utama-uswpromax24.jpg",
     shortDescription: "A 24-port, Layer 3 Etherlighting™ switch with 2.5 GbE.",
     specs: [
       { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
@@ -2857,15 +2968,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/21.uswpromax24/1.p-utama-uswpromax24.jpg",
+      "/images/switching/21.uswpromax24/2.p-dimensi-uswpromax24.jpg",
+      "/images/switching/21.uswpromax24/3.p-spec-uswpromax24.jpg",
+      "/images/switching/21.uswpromax24/4.p-development-uswpromax24.jpg",
+      "/images/switching/21.uswpromax24/p-itb-uswpromax24.jpg",
+      "/images/switching/21.uswpromax24/p-mkt0-uswpromax24.jpg",
+      "/images/switching/21.uswpromax24/p-mkt1-uswpromax24.jpg",
+      "/images/switching/21.uswpromax24/p-mkt2-uswpromax24.jpg",
+      "/images/switching/21.uswpromax24/p-mkt3-uswpromax24.jpg",
+      "/images/switching/21.uswpromax24/p-mkt4-uswpromax24.jpg",
+      "/images/switching/21.uswpromax24/p-ov1-uswpromax24.png",
+      "/images/switching/21.uswpromax24/p-ov2-uswpromax24.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/21.uswpromax24/p-ov1-uswpromax24.png",
+      "/images/switching/21.uswpromax24/p-ov2-uswpromax24.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -2908,10 +3028,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/21.uswpromax24/p-itb-uswpromax24.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2980,7 +3097,7 @@ export const switchingProducts: Product[] = [
     name: "Pro Max 16",
     category: "Switching",
     subfilter: "Professional Max & XG",
-    image: "/images/switch.jpg",
+    image: "/images/switching/22.uswpromax16/1.p-utama-uswpromax16.jpg",
     shortDescription:
       "A 16-port, Layer 3 Etherlighting™ switch 2.5 GbE and versatile mounting options.",
     specs: [
@@ -2996,15 +3113,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/22.uswpromax16/1.p-utama-uswpromax16.jpg",
+      "/images/switching/22.uswpromax16/2.p-dimensi-uswpromax16.jpg",
+      "/images/switching/22.uswpromax16/3.p-spec-uswpromax16.jpg",
+      "/images/switching/22.uswpromax16/4.p-development-uswpromax16.jpg",
+      "/images/switching/22.uswpromax16/p-itb-uswpromax16.jpg",
+      "/images/switching/22.uswpromax16/p-mkt0-uswpromax16.jpg",
+      "/images/switching/22.uswpromax16/p-mkt1-uswpromax16.jpg",
+      "/images/switching/22.uswpromax16/p-mkt2-uswpromax16.jpg",
+      "/images/switching/22.uswpromax16/p-mkt3-uswpromax16.jpg",
+      "/images/switching/22.uswpromax16/p-mkt4-uswpromax16.jpg",
+      "/images/switching/22.uswpromax16/p-ov1-uswpromax16.png",
+      "/images/switching/22.uswpromax16/p-ov2-uswpromax16.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/22.uswpromax16/p-ov1-uswpromax16.png",
+      "/images/switching/22.uswpromax16/p-ov2-uswpromax16.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3047,10 +3173,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/22.uswpromax16/p-itb-uswpromax16.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
