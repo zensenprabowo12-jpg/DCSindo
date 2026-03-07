@@ -85,7 +85,7 @@ export const switchingProducts: Product[] = [
 
     
     // SKU produk
-    sku: "ECS-AGGREGATION",
+    sku: "ECS-Aggregation",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -224,7 +224,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
     
     // SKU produk
-    sku: "USW-PRO-XG-AGGREGATION",
+    sku: "USW-Pro-XG-Aggregation",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -365,7 +365,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-AGGREGATION",
+    sku: "USW-Pro-Aggregation",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -509,7 +509,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-AGGREGATION",
+    sku: "USW-Aggregation",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -654,7 +654,7 @@ export const switchingProducts: Product[] = [
 
     
     // SKU produk
-    sku: "ECS-48-POE-2150W-",
+    sku: "ECS-48-PoE(2150W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -797,7 +797,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
     
     // SKU produk
-    sku: "ECS-24-POE-1050W-",
+    sku: "ECS-24-PoE(1050W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -937,7 +937,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "ECS-48S-POE-2150W-",
+    sku: "ECS-48S-PoE(2150W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -1083,7 +1083,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "ECS-24S-POE-1050W-",
+    sku: "ECS-24S-PoE(1050W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -1228,7 +1228,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "ECS-AGGREGATION",
+    sku: "ECS-Aggregation",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -1368,7 +1368,7 @@ export const switchingProducts: Product[] = [
 
     
     // SKU produk
-    sku: "USW-PRO-MAX-48-POE-720W-",
+    sku: "USW-Pro-Max-48-PoE(720W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -1514,7 +1514,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
     
     // SKU produk
-    sku: "USW-PRO-MAX-24-POE-400W-",
+    sku: "USW-Pro-Max-24-PoE(400W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -1655,7 +1655,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-XG-48-POE-1080-",
+    sku: "USW-Pro-XG-48-PoE(1080)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -1802,7 +1802,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-XG-24-POE-720W-",
+    sku: "USW-Pro-XG-24-PoE(720W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -1947,7 +1947,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-HD-24-POE-600W-",
+    sku: "USW-PRO-HD-24-PoE(600W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -2092,7 +2092,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-XG-48",
+    sku: "USW-Pro-XG-48",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -2240,7 +2240,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-XG-24",
+    sku: "USW-Pro-XG-24",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -2385,7 +2385,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-XG-10-POE-400W-",
+    sku: "USW-Pro-XG-10-PoE(400W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -2530,7 +2530,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-MAX-16-POE-180W-",
+    sku: "USW-Pro-Max-16-PoE(180W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -2675,7 +2675,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-HD-24",
+    sku: "USW-Pro-HD-24",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -2820,7 +2820,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-MAX-48",
+    sku: "USW-Pro-Max-48",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -2964,7 +2964,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-MAX-24",
+    sku: "USW-Pro-Max-24",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -3109,7 +3109,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-MAX-16",
+    sku: "USW-Pro-Max-16",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -3242,7 +3242,7 @@ export const switchingProducts: Product[] = [
     name: "Pro 48 PoE",
     category: "Switching",
     subfilter: "Professional",
-    image: "/images/switch.jpg",
+    image: "/images/switching/23.uswpro48poe/1.p-utama-uswpro48poe.jpg",
     shortDescription:
       "A 48-port, Layer 3 switch capable of high-power PoE++ output",
     specs: [
@@ -3255,19 +3255,28 @@ export const switchingProducts: Product[] = [
 
     
     // SKU produk
-    sku: "USW-PRO-48-POE-600W-",
+    sku: "USW-Pro-48-PoE(600W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/23.uswpro48poe/1.p-utama-uswpro48poe.jpg",
+      "/images/switching/23.uswpro48poe/2.p-dimensi-uswpro48poe.jpg",
+      "/images/switching/23.uswpro48poe/3.p-spec-uswpro48poe.jpg",
+      "/images/switching/23.uswpro48poe/4.p-development-uswpro48poe.jpg",
+      "/images/switching/23.uswpro48poe/p-itb-uswpro48poe.jpg",
+      "/images/switching/23.uswpro48poe/p-mkt0-uswpro48poe.jpg",
+      "/images/switching/23.uswpro48poe/p-mkt1-uswpro48poe.jpg",
+      "/images/switching/23.uswpro48poe/p-mkt2-uswpro48poe.jpg",
+      "/images/switching/23.uswpro48poe/p-mkt3-uswpro48poe.jpg",
+      "/images/switching/23.uswpro48poe/p-mkt4-uswpro48poe.jpg",
+      "/images/switching/23.uswpro48poe/p-ov1-uswpro48poe.png",
+      "/images/switching/23.uswpro48poe/p-ov2-uswpro48poe.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/23.uswpro48poe/p-ov1-uswpro48poe.png",
+      "/images/switching/23.uswpro48poe/p-ov2-uswpro48poe.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3310,10 +3319,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/23.uswpro48poe/p-itb-uswpro48poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3382,7 +3388,7 @@ export const switchingProducts: Product[] = [
     name: "Pro 24 PoE",
     category: "Switching",
     subfilter: "Professional",
-    image: "/images/switch.jpg",
+    image: "/images/switching/24.uswpro24poe/1.p-utama-uswpro24poe.jpg",
     shortDescription:
       "A 24-port, Layer 3 switch capable of high-power PoE++ output.",
     specs: [
@@ -3394,19 +3400,28 @@ export const switchingProducts: Product[] = [
     isNew: true,
     
     // SKU produk
-    sku: "USW-PRO-24-POE-400W-",
+    sku: "USW-Pro-24-PoE(400W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Pro-24-PoE.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/24.uswpro24poe/1.p-utama-uswpro24poe.jpg",
+      "/images/switching/24.uswpro24poe/2.p-dimensi-uswpro24poe.jpg",
+      "/images/switching/24.uswpro24poe/3.p-spec-uswpro24poe.jpg",
+      "/images/switching/24.uswpro24poe/4.p-development-uswpro24poe.jpg",
+      "/images/switching/24.uswpro24poe/p-itb-uswpro24poe.jpg",
+      "/images/switching/24.uswpro24poe/p-mkt0-uswpro24poe.jpg",
+      "/images/switching/24.uswpro24poe/p-mkt1-uswpro24poe.jpg",
+      "/images/switching/24.uswpro24poe/p-mkt2-uswpro24poe.jpg",
+      "/images/switching/24.uswpro24poe/p-mkt3-uswpro24poe.jpg",
+      "/images/switching/24.uswpro24poe/p-mkt4-uswpro24poe.jpg",
+      "/images/switching/24.uswpro24poe/p-ov1-uswpro24poe.png",
+      "/images/switching/24.uswpro24poe/p-ov2-uswpro24poe.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/24.uswpro24poe/p-ov1-uswpro24poe.png",
+      "/images/switching/24.uswpro24poe/p-ov2-uswpro24poe.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3445,10 +3460,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/24.uswpro24poe/p-itb-uswpro24poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3517,7 +3529,7 @@ export const switchingProducts: Product[] = [
     name: "Pro 48",
     category: "Switching",
     subfilter: "Professional",
-    image: "/images/switch.jpg",
+    image: "/images/switching/25.uswpro48/1.p-utama-uswpro48.jpg",
     shortDescription:
       "A 48-port, Layer 3 switch supporting 10G SFP+ connections with fanless cooling.",
     specs: [
@@ -3529,19 +3541,28 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-48",
+    sku: "USW-Pro-48",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/25.uswpro48/1.p-utama-uswpro48.jpg",
+      "/images/switching/25.uswpro48/2.p-dimensi-uswpro48.jpg",
+      "/images/switching/25.uswpro48/3.p-spec-uswpro48.jpg",
+      "/images/switching/25.uswpro48/4.p-development-uswpro48.jpg",
+      "/images/switching/25.uswpro48/p-itb-uswpro48.jpg",
+      "/images/switching/25.uswpro48/p-mkt0-uswpro48.jpg",
+      "/images/switching/25.uswpro48/p-mkt1-uswpro48.jpg",
+      "/images/switching/25.uswpro48/p-mkt2-uswpro48.jpg",
+      "/images/switching/25.uswpro48/p-mkt3-uswpro48.jpg",
+      "/images/switching/25.uswpro48/p-mkt4-uswpro48.jpg",
+      "/images/switching/25.uswpro48/p-ov1-uswpro48.png",
+      "/images/switching/25.uswpro48/p-ov2-uswpro48.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/25.uswpro48/p-ov1-uswpro48.png",
+      "/images/switching/25.uswpro48/p-ov2-uswpro48.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3584,10 +3605,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/25.uswpro48/p-itb-uswpro48.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3656,7 +3674,7 @@ export const switchingProducts: Product[] = [
     name: "Pro 24",
     category: "Switching",
     subfilter: "Professional",
-    image: "/images/switch.jpg",
+    image: "/images/switching/26.uswpro24/1.p-utama-uswpro24.jpg",
     shortDescription:
       "A 24-port, Layer 3 switch supporting 10G SFP+ connections with fanless cooling.",
     specs: [
@@ -3668,19 +3686,28 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-PRO-24",
+    sku: "USW-Pro-24",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/26.uswpro24/1.p-utama-uswpro24.jpg",
+      "/images/switching/26.uswpro24/2.p-dimensi-uswpro24.jpg",
+      "/images/switching/26.uswpro24/3.p-spec-uswpro24.jpg",
+      "/images/switching/26.uswpro24/4.p-development-uswpro24.jpg",
+      "/images/switching/26.uswpro24/p-itb-uswpro24.jpg",
+      "/images/switching/26.uswpro24/p-mkt0-uswpro24.jpg",
+      "/images/switching/26.uswpro24/p-mkt1-uswpro24.jpg",
+      "/images/switching/26.uswpro24/p-mkt2-uswpro24.jpg",
+      "/images/switching/26.uswpro24/p-mkt3-uswpro24.jpg",
+      "/images/switching/26.uswpro24/p-mkt4-uswpro24.jpg",
+      "/images/switching/26.uswpro24/p-ov1-uswpro24.png",
+      "/images/switching/26.uswpro24/p-ov2-uswpro24.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/26.uswpro24/p-ov1-uswpro24.png",
+      "/images/switching/26.uswpro24/p-ov2-uswpro24.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3723,10 +3750,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/26.uswpro24/p-itb-uswpro24.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3795,7 +3819,7 @@ export const switchingProducts: Product[] = [
     name: "Enterprise 48 PoE (Vintage)",
     category: "Switching",
     subfilter: "Professional",
-    image: "/images/switch.jpg",
+    image: "/images/switching/27.uswe48poe/1.p-utama-uswe48poe.jpg",
     shortDescription: "A 48-Port, Layer 3 switch with 2.5 GbE PoE+ output.",
     specs: [
       { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
@@ -3806,19 +3830,26 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-ENTERPRISE-48-POE-720W-",
+    sku: "USW-Enterprise-48-PoE(720W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/27.uswe48poe/1.p-utama-uswe48poe.jpg",
+      "/images/switching/27.uswe48poe/2.p-dimensi-uswe48poe.jpg",
+      "/images/switching/27.uswe48poe/3.p-spec-uswe48poe.jpg",
+      "/images/switching/27.uswe48poe/4.p-development-uswe48poe.jpg",
+      "/images/switching/27.uswe48poe/p-itb-uswe48poe.jpg",
+      "/images/switching/27.uswe48poe/p-mkt0-uswe48poe.jpg",
+      "/images/switching/27.uswe48poe/p-mkt1-uswe48poe.jpg",
+      "/images/switching/27.uswe48poe/p-mkt2-uswe48poe.jpg",
+      "/images/switching/27.uswe48poe/p-mkt3-uswe48poe.jpg",
+      "/images/switching/27.uswe48poe/p-mkt4-uswe48poe.jpg",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/27.uswe48poe/p-mkt0-uswe48poe.jpg",
+      "/images/switching/27.uswe48poe/p-itb-uswe48poe.jpg",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3861,10 +3892,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/27.uswe48poe/p-itb-uswe48poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3933,7 +3961,7 @@ export const switchingProducts: Product[] = [
     name: "Enterprise 24 PoE (Vintage)",
     category: "Switching",
     subfilter: "Professional",
-    image: "/images/switch.jpg",
+    image: "/images/switching/28.uswe24poe/1.p-utama-uswe24poe.jpg",
     shortDescription: "A 24-port, Layer 3 switch with 2.5 GbE PoE+ output.",
     specs: [
       { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
@@ -3944,19 +3972,26 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-ENTERPRISE-24-POE-400W-",
+    sku: "USW-Enterprise-24-PoE(400W)",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/28.uswe24poe/1.p-utama-uswe24poe.jpg",
+      "/images/switching/28.uswe24poe/2.p-dimensi-uswe24poe.jpg",
+      "/images/switching/28.uswe24poe/3.p-spec-uswe24poe.jpg",
+      "/images/switching/28.uswe24poe/4.p-development-uswe24poe.jpg",
+      "/images/switching/28.uswe24poe/p-itb-uswe24poe.jpg",
+      "/images/switching/28.uswe24poe/p-mkt0-uswe24poe.jpg",
+      "/images/switching/28.uswe24poe/p-mkt1-uswe24poe.jpg",
+      "/images/switching/28.uswe24poe/p-mkt2-uswe24poe.jpg",
+      "/images/switching/28.uswe24poe/p-mkt3-uswe24poe.jpg",
+      "/images/switching/28.uswe24poe/p-mkt4-uswe24poe.jpg",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/28.uswe24poe/p-mkt0-uswe24poe.jpg",
+      "/images/switching/28.uswe24poe/p-itb-uswe24poe.jpg",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -3999,10 +4034,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/28.uswe24poe/p-itb-uswe24poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -4071,7 +4103,7 @@ export const switchingProducts: Product[] = [
     name: "UPS PoE Switch",
     category: "Switching",
     subfilter: "Professional",
-    image: "/images/switch.jpg",
+    image: "/images/switching/29.uswmissioncritical/1.p-utama-uswmc.jpg",
     shortDescription:
       "A switch with an integrated 368Wh lithium-ion battery capable of providing un interruptible PoE to 8 devices.",
     specs: [
@@ -4087,15 +4119,22 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/29.uswmissioncritical/1.p-utama-uswmc.jpg",
+      "/images/switching/29.uswmissioncritical/2.p-dimensi-uswmc.jpg",
+      "/images/switching/29.uswmissioncritical/3.p-spec-uswmc.jpg",
+      "/images/switching/29.uswmissioncritical/4.p-development-uswmc.jpg",
+      "/images/switching/29.uswmissioncritical/p-itb-uswmc.jpg",
+      "/images/switching/29.uswmissioncritical/p-mkt0-uswmc.jpg",
+      "/images/switching/29.uswmissioncritical/p-mkt1-uswmc.jpg",
+      "/images/switching/29.uswmissioncritical/p-mkt2-uswmc.jpg",
+      "/images/switching/29.uswmissioncritical/p-mkt3-uswmc.jpg",
+      "/images/switching/29.uswmissioncritical/p-mkt4-uswmc.jpg",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/29.uswmissioncritical/p-mkt0-uswmc.jpg",
+      "/images/switching/29.uswmissioncritical/p-itb-uswmc.jpg",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4138,10 +4177,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/29.uswmissioncritical/p-itb-uswmc.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -4210,7 +4246,7 @@ export const switchingProducts: Product[] = [
     name: "Standard 48 PoE",
     category: "Switching",
     subfilter: "Standard",
-    image: "/images/switch.jpg",
+    image: "/images/switching/30.uswstd48poe/1.p-utama-uswstd48poe.jpg",
     shortDescription:
       "A 48-port, Layer 2 PoE switch with a silent, fanless cooling system.",
     specs: [
@@ -4227,15 +4263,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/30.uswstd48poe/1.p-utama-uswstd48poe.jpg",
+      "/images/switching/30.uswstd48poe/2.p-dimensi-uswstd48poe.jpg",
+      "/images/switching/30.uswstd48poe/3.p-spec-uswstd48poe.jpg",
+      "/images/switching/30.uswstd48poe/4.p-development-uswstd48poe.jpg",
+      "/images/switching/30.uswstd48poe/p-itb-uswstd48poe.jpg",
+      "/images/switching/30.uswstd48poe/p-mkt0-uswstd48poe.jpg",
+      "/images/switching/30.uswstd48poe/p-mkt1-uswstd48poe.jpg",
+      "/images/switching/30.uswstd48poe/p-mkt2-uswstd48poe.jpg",
+      "/images/switching/30.uswstd48poe/p-mkt3-uswstd48poe.jpg",
+      "/images/switching/30.uswstd48poe/p-mkt4-uswstd48poe.jpg",
+      "/images/switching/30.uswstd48poe/p-ov1-uswstd48poe.png",
+      "/images/switching/30.uswstd48poe/p-ov2-uswstd48poe.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/30.uswstd48poe/p-ov1-uswstd48poe.png",
+      "/images/switching/30.uswstd48poe/p-ov2-uswstd48poe.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4278,10 +4323,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/30.uswstd48poe/p-itb-uswstd48poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -4350,7 +4392,7 @@ export const switchingProducts: Product[] = [
     name: "Standard 24 PoE",
     category: "Switching",
     subfilter: "Standard",
-    image: "/images/switch.jpg",
+    image: "/images/switching/31.uswstd24poe/1.p-utama-uswstd24poe.jpg",
     shortDescription:
       "A 24-port, Layer 2 PoE switch with a fanless cooling system.",
     specs: [
@@ -4366,15 +4408,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Standard-24-PoE.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/31.uswstd24poe/1.p-utama-uswstd24poe.jpg",
+      "/images/switching/31.uswstd24poe/2.p-dimensi-uswstd24poe.jpg",
+      "/images/switching/31.uswstd24poe/3.p-spec-uswstd24poe.jpg",
+      "/images/switching/31.uswstd24poe/4.p-development-uswstd24poe.jpg",
+      "/images/switching/31.uswstd24poe/p-itb-uswstd24poe.jpg",
+      "/images/switching/31.uswstd24poe/p-mkt0-uswstd24poe.jpg",
+      "/images/switching/31.uswstd24poe/p-mkt1-uswstd24poe.jpg",
+      "/images/switching/31.uswstd24poe/p-mkt2-uswstd24poe.jpg",
+      "/images/switching/31.uswstd24poe/p-mkt3-uswstd24poe.jpg",
+      "/images/switching/31.uswstd24poe/p-mkt4-uswstd24poe.jpg",
+      "/images/switching/31.uswstd24poe/p-ov1-uswstd24poe.png",
+      "/images/switching/31.uswstd24poe/p-ov2-uswstd24poe.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/31.uswstd24poe/p-ov1-uswstd24poe.png",
+      "/images/switching/31.uswstd24poe/p-ov2-uswstd24poe.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4413,10 +4464,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/31.uswstd24poe/p-itb-uswstd24poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -4485,7 +4533,7 @@ export const switchingProducts: Product[] = [
     name: "Standard 16 PoE",
     category: "Switching",
     subfilter: "Standard",
-    image: "/images/switch.jpg",
+    image: "/images/switching/32.uswstd16poe/1.p-utama-uswstd16poe.jpg",
     shortDescription:
       "A 16-port, Layer 2 PoE switch with a silent, fanless cooling system.",
     specs: [
@@ -4501,15 +4549,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/32.uswstd16poe/1.p-utama-uswstd16poe.jpg",
+      "/images/switching/32.uswstd16poe/2.p-dimensi-uswstd16poe.jpg",
+      "/images/switching/32.uswstd16poe/3.p-spec-uswstd16poe.jpg",
+      "/images/switching/32.uswstd16poe/4.p-development-uswstd16poe.jpg",
+      "/images/switching/32.uswstd16poe/p-itb-uswstd16poe.jpg",
+      "/images/switching/32.uswstd16poe/p-mkt0-uswstd16poe.jpg",
+      "/images/switching/32.uswstd16poe/p-mkt1-uswstd16poe.jpg",
+      "/images/switching/32.uswstd16poe/p-mkt2-uswstd16poe.jpg",
+      "/images/switching/32.uswstd16poe/p-mkt3-uswstd16poe.jpg",
+      "/images/switching/32.uswstd16poe/p-mkt4-uswstd16poe.jpg",
+      "/images/switching/32.uswstd16poe/p-ov1-uswstd16poe.png",
+      "/images/switching/32.uswstd16poe/p-ov2-uswstd16poe.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/32.uswstd16poe/p-ov1-uswstd16poe.png",
+      "/images/switching/32.uswstd16poe/p-ov2-uswstd16poe.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4552,10 +4609,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/32.uswstd16poe/p-itb-uswstd16poe.jpg" },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -4624,7 +4678,7 @@ export const switchingProducts: Product[] = [
     name: "Standard 48",
     category: "Switching",
     subfilter: "Standard",
-    image: "/images/switch.jpg",
+    image: "/images/switching/33.uswstd48/1.p-utama-uswstd48.jpg",
     shortDescription:
       "A 48-port, Layer 2 switch with a silent, fanless cooling system.",
     specs: [
@@ -4640,15 +4694,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/33.uswstd48/1.p-utama-uswstd48.jpg",
+      "/images/switching/33.uswstd48/2.p-dimensi-uswstd48.jpg",
+      "/images/switching/33.uswstd48/3.p-spec-uswstd48.jpg",
+      "/images/switching/33.uswstd48/4.p-development-uswstd48.jpg",
+      "/images/switching/33.uswstd48/p-itb-uswstd48.jpg",
+      "/images/switching/33.uswstd48/p-mkt0-uswstd48.jpg",
+      "/images/switching/33.uswstd48/p-mkt1-uswstd48.jpg",
+      "/images/switching/33.uswstd48/p-mkt2-uswstd48.jpg",
+      "/images/switching/33.uswstd48/p-mkt3-uswstd48.jpg",
+      "/images/switching/33.uswstd48/p-mkt4-uswstd48.jpg",
+      "/images/switching/33.uswstd48/p-ov1-uswstd48.png",
+      "/images/switching/33.uswstd48/p-ov2-uswstd48.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/33.uswstd48/p-ov1-uswstd48.png",
+      "/images/switching/33.uswstd48/p-ov2-uswstd48.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4691,10 +4754,8 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/33.uswstd48/p-itb-uswstd48.jpg", },
+
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -4763,7 +4824,7 @@ export const switchingProducts: Product[] = [
     name: "Standard 24",
     category: "Switching",
     subfilter: "Standard",
-    image: "/images/switch.jpg",
+    image: "/images/switching/34.uswstd24/1.p-utama-uswstd24.jpg",
     shortDescription:
       "A 24-port, Layer 2 switch with a silent, fanless cooling system.",
     specs: [
@@ -4779,15 +4840,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/34.uswstd24/1.p-utama-uswstd24.jpg",
+      "/images/switching/34.uswstd24/2.p-dimensi-uswstd24.jpg",
+      "/images/switching/34.uswstd24/3.p-spec-uswstd24.jpg",
+      "/images/switching/34.uswstd24/4.p-development-uswstd24.jpg",
+      "/images/switching/34.uswstd24/p-itb-uswstd24.jpg",
+      "/images/switching/34.uswstd24/p-mkt0-uswstd24.jpg",
+      "/images/switching/34.uswstd24/p-mkt1-uswstd24.jpg",
+      "/images/switching/34.uswstd24/p-mkt2-uswstd24.jpg",
+      "/images/switching/34.uswstd24/p-mkt3-uswstd24.jpg",
+      "/images/switching/34.uswstd24/p-mkt4-uswstd24.jpg",
+      "/images/switching/34.uswstd24/p-ov1-uswstd24.png",
+      "/images/switching/34.uswstd24/p-ov2-uswstd24.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/34.uswstd24/p-ov1-uswstd24.png",
+      "/images/switching/34.uswstd24/p-ov2-uswstd24.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -4830,10 +4900,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/34.uswstd24/p-itb-uswstd24.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -5602,7 +5669,7 @@ export const switchingProducts: Product[] = [
     isNew: true,
 
     // SKU produk
-    sku: "USW-ENTERPRISE-8-POE-120W-",
+    sku: "USW-Enterprise-8-POE-120W-",
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
