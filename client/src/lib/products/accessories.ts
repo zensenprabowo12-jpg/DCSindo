@@ -8405,7 +8405,7 @@ export const accessoriesProducts: Product[] = [
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
   },
-
+  //Produk Keempat dari Accessories, SF PoE & Power
   {
     id: "USW-Mission-Critical (120W)",
     name: "UPS PoE Switch ",
@@ -8606,7 +8606,7 @@ export const accessoriesProducts: Product[] = [
           { label: "Indoor and Outdoor Use", value: "Indoor only: device itself Outdoor: with waterproof junction box" },
           { label: "NDAA Compliant", value: "✓" },
 
-          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          /* { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
           { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 104° F)" },
           { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
           { label: "Networking Interface", value: "(5) 10/100/1000 Base-T" },
@@ -8723,11 +8723,666 @@ export const accessoriesProducts: Product[] = [
           { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
           { label: "Ambient Operating Humidity", value: "CE, FCC, IC, UL, UKCA, KC, CCC, KC, RoHS" },
           { label: "Certifications", value: "10 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" }, */
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 3,
+        name: "Gate Starter Kit",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Control a vehicle gate using the connected Intercom and authorize gate access with License Plate Unlock when paired with a compatible Protect AI camera.",
+        specs: [
+          "(1) Gate Hub",
+          "(1) Intercom",
+          "(1) PoE++ adapter",
+          "(2) 2 - wire PoE extenders"
+
+        ],
+        detailedSpecs: [
+          { label: "In the Box", value: "(1) Gate Hub (1) Intercom (1) PoE++ adapter (2) 2-wire Retrofit Extenders" },
+          { label: "Gate Hub", value: "" },
+
+          { label: "Dimensions", value: "175 x 126 x 26 mm (6.9 x 5 x 1')" },
+          { label: "Supported Doors", value: "1 gate, 1 side door" },
+          { label: "Maximum User Count", value: "6,000" },
+          { label: "Input Terminals", value: "(1) Gate exit request (1) Gate position (1) Side door exit (1) Side door position (1) Emergency" },
+          { label: "Power Method", value: "PoE++ UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mounting", value: "DIN-rail (Included)" },
+          { label: "Weight", value: "460 g (1 lb)" },
+          { label: "Indoor and Outdoor Use", value: "Indoor only: device itself Outdoor: with waterproof junction box" },
           { label: "NDAA Compliant", value: "✓" },
+
+          /* { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Networking Interface", value: "(5) 10/100/1000 Base-T" },
+          { label: "PoE Interface", value: "(1) PoE++ input, 50V DC, 1A (4) PoE outputs, 50V DC, 30W per port (Max 55W aggregated)" },
+          { label: "Max. Power Consumption", value: "22W (Without PoE output) 60W (With PoE output)" },
+          { label: "Digital Input", value: "Gate exit request, gate position, side door exit request, side door position, emergency" },
+          { label: "Dry Output Relay", value: "(2) Operator: rated 30V DC, up to 1A (1) Aux: rated 30V DC, up to 1A" },
+          { label: "Powered Output Relay", value: "Side door lock: 12V DC, up to 1A" },
+          { label: "LEDs", value: "W/B " },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Recommend Max. Cable Length UA-Lock-Electric (400mA)", value: "24 AWG length: 25 m (82 ft) 22 AWG length: 42 m (138 ft) 20 AWG length: 66 m (217 ft) 18 UACC-Cable-DoorLockRelay length: 100 m (328 ft)" },
+          { label: "Recommend Max. Cable Length UA-Lock-Magnetic-540kg (500mA)", value: "24 AWG length: 20 m (66 ft) 22 AWG length: 32 m (105 ft) 20 AWG length: 51 m (167 ft) 18 UACC-Cable-DoorLockRelay length: 80 m (262 ft)" },
+          { label: "Recommend Max. Cable Length UA-Lock-Magnetic-270kg (800mA)", value: "24 AWG length: 12 m (29 ft) 22 AWG length: 20 m (66 ft) 20 AWG length: 30 m (98 ft) 18 UACC-Cable-DoorLockRelay length: 46 m (151 ft) " },
+          { label: "Recommend Max. Cable Length Other locks (1A)", value: "24 AWG length: 9 m (30 ft) 22 AWG length: 15 m (49 ft) 20 AWG length: 24 m (79 ft) 18 UACC-Cable-DoorLockRelay length: 36 m (118 ft)" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: I" },
+          { label: "Certifications", value: "CE, FCC, IC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-Hub-Gate, V01" },
+          { label: "Software Information", value: "The software version can be checked at https://unifi.ui.com" },
+          { label: "G3 Intercom", value: "" },
+          { label: "Dimensions", value: "324.8 x 113.7 x 28.3 mm (12.8 x 4.5 x 1.1')" },
+          { label: "Integrated Camera", value: "✓" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "PIN Access", value: "✓" },
+          { label: "Apple/Google Wallet", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Face Unlock", value: "✓" },
+          { label: "Two-Way Intercom & Doorbell Access", value: "✓" },
+          { label: "Weatherproofing", value: "IP65" },
+          { label: "NDAA Compliant", value: "✓" },
+
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Weight", value: "Device: 965 g (2.1 lb) Bracket: 445 g (1 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, UV-stabilized polycarbonate, glass" },
+          { label: "Mount Material", value: "Powder-coated stainless steel" },
+          { label: "Mounting", value: "Wall mount, adapter to the gooseneck pedestal (Included) Surface angle, flush mount, sunshield kit (Optional)" },
+          { label: "Indoor and Outdoor Use", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "Device: -30 to 60° C (-22 to 140° F) Display: -25 to 60° C (-13 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
+          { label: "Connectivity", value: "BLE 4.2 NFC" },
+          { label: "Power Method", value: "PoE UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Max. Power Consumption", value: "13W" },
+          { label: "Supported Voltage Range", value: "48V DC" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "VIdeo Resolution", value: "2MP 1200 x 1600 (3:4)" },
+          { label: "Optics Resolution", value: "8 MP (2448 x 3264" },
+          { label: "Optic Field of View", value: "H: 79.4°, V: 97.5°, D: 118.2°" },
+          { label: "Sensors", value: "Proximity sensor ALS sensor" },
+          { label: "Display Luminance", value: "Max. 1000 nits (Typical)" },
+          { label: "Display Resolution", value: "1024 x 600 px" },
+          { label: "Display Screen Technology", value: "Capacitive multi-touch" },
+          { label: "Display Size", value: "177 mm (7') diagonal" },
+          { label: "Microphone", value: "(1) Yes, 2W" },
+          { label: "Speaker", value: "13.56 MHz" },
+          { label: "NFC Frequency", value: "< 30 mm (1.18'')" },
+          { label: "NFC Read Range", value: "ISO/IEC 14443A / 14443B / 15693 / 18092 (Ecma 340) MIFARE Classic / MIFARE DESFIRE Sony FeliCa™ (ID only) NFC Forum tags T1T, T2T, T3T, T4T and T5T ECP 2.0" },
+          { label: "NFC Technology", value: "Amber" },
+          { label: "LEDs", value: "(1) Factory reset" },
+          { label: "Buttons", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "PoE Cabling Requirements", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+
+          { label: "UL 294 Statement", value: "Grade assignment: I" },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "CE, FCC, IC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Certifications", value: "UA-G3-Intercom, V01" },
+          { label: "Document number, and issue date and/or revision level", value: "The software version can be checked at " },
+          { label: "Software Information", value: "The software version can be checked at" },
+          { label: "Retrofit Extender", value: "" },
+          { label: "Dimensions", value: "PoE in/out: 40 x 105 x 25 mm (1.6 x 4.1 x 1') Adapter: 43.5 x 138 x 30 mm (1.7 x 5.4 x 1.2')" },
+          { label: "Weight", value: "PoE in: 77 g (2.7 oz) PoE out: 79 g (2.8 oz) Adapter: 140 g (4.9 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Coaxial Connector", value: "BNC female" },
+          { label: "Networking Interface", value: "(1) 10/100 MbE (1) Homeplug AV" },
+          { label: "Power Method", value: "PoE++" },
+          { label: "PoE Interface", value: "PoE in: (1) PoE++, 50V DC, 1.2A PoE out: (1) PoE+, 48V DC, 0.6A" },
+          { label: "Max. Power Consumption", value: "3W (Without PoE output)" },
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+          { label: "LEDs", value: "White" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+          { label: "PoE++ Adapter", value: "" },
+          { label: "Model", value: "U-PoE++" },
+          { label: "Dimensions", value: "106 x 63 x 34 mm  (4.2 x 2.5 x 1.3')" },
+          { label: "Weight", value: "210 g (7.4 oz)" },
+          { label: "Output Voltage", value: "48V DC @ 1.25A" },
+          { label: "Gigabit LAN Port", value: "100–240V AC at 50/60Hz" },
+          { label: "Rated Voltage", value: "100–240V AC at 50/60Hz" },
+          { label: "Input Current", value: "1.3A @ 120V AC 0.75A @ 230V AC" },
+          { label: "Inrush Current", value: "<100A peak @ 120V AC <200A peak @ 230V AC" },
+          { label: "Efficiency", value: "85+%" },
+          { label: "Output Ripple", value: "1% max." },
+          { label: "Switching Frequency", value: "65 kHz" },
+          { label: "Line Regulation", value: "≤ 1%" },
+          { label: "Load Regulation", value: "≤ 3%." },
+          { label: "4-pair Powering", value: "Pins 1, 2, 4, 5 (+) and 3, 6, 7, 8 (-)" },
+          { label: "AC Connector", value: "IEC-320 C6" },
+          { label: "Data In / PoE", value: "RJ45 shielded socket" },
+          { label: "Surge Protection", value: "Difference and common mode" },
+          { label: "Clamping Protection", value: "11V data, 60V power" },
+          { label: "Max. Surge Discharge", value: "1500A (8/20 μs) power" },
+          { label: "Peak Pulse Current", value: "36A (10/1000 μs) data" },
+          { label: "Shunt Capacitance", value: "<5 pF data" },
+          { label: "Response Time", value: "<1 ns" },
+          { label: "Power Method", value: "Universal AC input, 100–240V AC, 50/60 Hz" },
+          { label: "Power Supply", value: "AC/DC" },
+          { label: "Supported Voltage Range", value: "100–240V AC" },
+          { label: "Max. PoE+ Wattage per Port by PSE", value: "60W" },
+          { label: "Ambient Storage Temperature", value: "-30 to 70°C (-22 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "CE, FCC, IC, UL, UKCA, KC, CCC, KC, RoHS" },
+          { label: "Certifications", value: "10 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" }, */
         ],
         productLink: "/products/mounting-kit"
       },
     ]
+  },
+
+  //Produk Kelima dari Accessories, SF PoE & Power
+  {
+    id: "Redundant Power",
+    name: "USP-RPS",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "950W redundant power supply for rack-mounted UniFi devices.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UPS-Tower",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "950W DC power availability",
+      "(6) DC SmartPower ports",
+      "1.3' LCM touchscreen"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "442.4 x 325.6 x 43.7 mm (17.4 x 12.8 x 1.7')" },
+          { label: "Weight", value: "Without mount brackets : 5.5 kg (12.1 lb) With mount brackets: 5.6 kg (12.3 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Management", value: "Ethernet" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
+          { label: "Power Method", value: "(1) Universal AC input, 100-240V AC" },
+          { label: "Power Supply", value: "54V DC output: AC/DC, internal, 645W 12V DC output: AC/DC, internal, 350W" },
+          { label: "Supported Voltage Range", value: "100-240V AC" },
+          { label: "Max. Power Consumption", value: "995W" },
+          { label: "Power Output", value: "(6) RPS DC ports" },
+          { label: "Max. Power Output", value: "52V DC: 11.54A (600W) 11.5V DC: 30.44A (350W)" },
+          { label: "Wave Form", value: "Simulated sine wave (Battery mode)" },
+          { label: "Max. Output Power per RPS Port", value: "52V DC: 11.54A (600W) 11.5V DC: 30.44A (350W)" },
+          { label: "ESD/EMP Protection", value: "Air: ± 16kV, contact: ± 12kV" },
+          { label: "Display", value: "1.3' touchscreen" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "LEDs Sytem", value: "Status" },
+          { label: "LEDs USP RPS", value: "Activity" },
+          { label: "Ambient Operating Temperature", value: "-5 to 45° C (23 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Keenam dari Accessories, SF PoE & Power
+  {
+    id: "Power Distribution Pro",
+    name: "USP-PDU-Pro",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Designed to supply power to an entire rack-mounted UniFi system and remotely manage each connection.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "USP-PDU-Pro",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "(16) Remotely resettable outlets",
+      "(4) USB-C ports",
+      "1.3' LCM touchscreen",
+      "Virtual Router Redundancy*"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "442.4 x 87.4 x 106 mm (17.4 x 3.4 x 4.2')" },
+          { label: "Weight", value: "Without mount: 3.5 kg (7.6 lb) With mount: 3.7 kg (8.2 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Management", value: "Ethernet" },
+          { label: "Networking Interface", value: "(1) 100 MbE RJ45 port (3) GbE RJ45 ports" },
+          { label: "Power Method", value: "125V AC, 15A Max., 50/60 Hz" },
+          { label: "Power Supply", value: "AC/DC internal, 40W" },
+          { label: "Supported Voltage Range", value: "100-240V AC" },
+          { label: "Max. Power Output", value: "125V AC: 1,875W" },
+          { label: "Power Output", value: "(16) Power control outlets, 125V AC, 15A Max., 50/60Hz (1,875W Max. total) (4) USB-C ports, 2A Max. per port (4A/20W Max. total)" },
+          { label: "Display", value: "1.3' touchscreen" },
+          { label: "Buttons", value: "(1) Factory reset (1) Circuit breaker" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC" }
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Ketujuh dari Accessories, SF PoE & Power
+  {
+    id: "Power Distribution Hi-Density",
+    name: "USP-PDU-HD",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Power distribution unit designed to support large, rack-mounted UniFi hardware deployments.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "USP-PDU-HD",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "(24) Remote-reset outlets",
+      "(4) USB-C ports",
+      "3 m power cord with NEMA L5-30 plug",
+      "1.3' auto-rotating LCM touchscreen",
+      "Compatible with 36U racks and taller"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "1485 x 55 x 56 mm (58.5 x 2.17 x 2.2')" },
+          { label: "Weight", value: "6.3 kg (13.9 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Management", value: "Ethernet" },
+          { label: "Networking Interface", value: "(1) 10/100 MbE RJ45 port (3) GbE RJ45 ports for network redundancy" },
+          { label: "Power Method", value: "100-125V AC, 30A Max. (Derated to 24A), 50/60 Hz (NEMA L5-30P)" },
+          { label: "Power Output", value: "(24) Power control outlets: Per Bank (Bank1: port 1 to 12, Bank2: port 17 to 28): Rating output current: 12A at 125V AC (1500W) Max. output current: 15A at 125V AC (1875W) Total: Rating output current: 24A at 125V AC (3000W) Max. output current: 30A at 125V AC (3750W) (4) USB type C ports:5VDC 2A per port, total 20W Max. power" },
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+          { label: "Display", value: "1.3' touchscreen" },
+          { label: "Buttons", value: "(1) Factory reset (1) Circuit breaker" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC" }
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+            { label: "Application Requirements Mobile Apps", value: "UniFi iOS™ and 10.11.0 and later Android™ 10.11.0 and later" },
+            { label: "Application Requirements UniFi Netwrok", value: "Version 8.0.24 and later" }
+        ]
+      }
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Kedelapan dari Accessories, SF PoE & Power
+   {
+    id: "Power Distribution Hi-Density",
+    name: "U-PoE",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "An adapter that can power UniFi PoE devices, reduce dependency on PoE switch power, and provide a Gigabit LAN connection.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "U-PoE",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+     "Delivers up to 15W of PoE",
+     "Surge, peak pulse, and overcurrent protection",
+     "Contains RJ45 data input, AC cable with earth ground, and PoE output",
+     "LED indicator for status monitoring"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "86 x 46 x 33 mm (3.4 x 1.8 x 1.3')" },
+          { label: "Weight", value: "100 g (3.5 oz)" },
+          { label: "Output Voltage", value: "48V DC @ 0.32A" },
+          { label: "Rated Voltage", value: "100-240V AC at 50/60Hz" },
+          { label: "LAN Activity Indicator", value: "—" },
+          { label: "Gigabit LAN Port", value: "✓" },
+          { label: "Remote Reset Capability", value: "—" },
+          { label: "Reset Button", value: "_" },
+          { label: "2-pair Powering", value: "Pins 4, 5 (+) and 7, 8 (-)" },
+          { label: "AC Connector", value: "IEC-320 C6" },
+          { label: "Clamping Protection", value: "11V Data, 60V Power" },
+          { label: "Data In / PoE", value: "RJ45 Shielded Socket" },
+          { label: "Input Current", value: "500mA Max." },
+          { label: "Inrush Current", value: "<100A peak at 25°C" },
+          { label: "Efficiency", value: "84.25+%" },
+          { label: "Switching Frequency", value: "65 kHz" },
+          { label: "Output Ripple", value: "200mV pp" },
+          { label: "Line Regulation", value: "≤ 3%" },
+          { label: "Load Regulation", value: "≤ 5%" },
+          { label: "Max. Surge Discharge", value: "1500A (8/20 μs) power" },
+          { label: "Peak Pulse Current", value: "36A (10/1000 μs) data" },
+          { label: "Response Time", value: "<1 ns" },
+          { label: "Shunt Capacitance", value: "<5 pF data" },
+          { label: "Surge Protection", value: "Difference and common mode" },
+          { label: "Ambient Storage Temperature", value: "-30 to 70°C (-22 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, UL, CCC" }
+        ]
+      },
+    ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Kesembilan dari Accessories, SF PoE & Power
+  {
+    id: "PoE+ Adapter (30W)",
+    name: "U-PoE+",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "An adapter that can power UniFi PoE+ devices, reduce dependency on PoE switch power, and provide a Gigabit LAN connection.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "U-PoE+",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+     "Delivers up to 30W of PoE+",
+     "Surge, peak pulse, and overcurrent protection",
+     "Contains RJ45 data input, AC cable with earth ground, and PoE+ output",
+     "LED indicator for status monitoring"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "93 x 62 x 35 mm (3.7 x 2.4 x 1.4')" },
+          { label: "Weight", value: "156 g (5.5 oz)" },
+          { label: "Output Voltage", value: "48V DC @ 0.65A" },
+          { label: "Rated Voltage", value: "100-240V AC at 50/60Hz" },
+          { label: "LAN Activity Indicator", value: "—" },
+          { label: "Gigabit LAN Port", value: "✓" },
+          { label: "Remote Reset Capability", value: "—" },
+          { label: "Reset Button", value: "_" },
+          { label: "2-pair Powering", value: "Pins 4, 5 (+) and 7, 8 (-)" },
+          { label: "AC Connector", value: "IEC-320 C6" },
+          { label: "Clamping Protection", value: "11V Data, 60V Power" },
+          { label: "Data In / PoE", value: "RJ45 Shielded Socket" },
+          { label: "Input Current", value: "0.75A Max." },
+          { label: "Inrush Current", value: "<100A peak at 26°C" },
+          { label: "Efficiency", value: "87%" },
+          { label: "Switching Frequency", value: "70 kHz Max." },
+          { label: "Output Ripple", value: "1% Max." },
+          { label: "Line Regulation", value: "≤ 3%" },
+          { label: "Load Regulation", value: "≤ 5%" },
+          { label: "Max. Surge Discharge", value: "1500A (8/20 μs) power" },
+          { label: "Peak Pulse Current", value: "36A (10/1000 μs) data" },
+          { label: "Response Time", value: "<1 ns" },
+          { label: "Shunt Capacitance", value: "<5 pF data" },
+          { label: "Surge Protection", value: "Difference and common mode" },
+          { label: "Ambient Storage Temperature", value: "-30 to 70°C (-22 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, UL, CCC" }
+        ]
+      },
+    ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Kesepuluh dari Accessories, SF PoE & Power
+  {
+    id: "2.5G PoE+ Adapter (30W)",
+    name: "UACC-PoE+-2.5G",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "An adapter that can power UniFi PoE+ devices, reduce dependency on PoE switch power, and provide a Multi-Gigabit LAN connection.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-PoE+-2.5G",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+     "Delivers up to 30W of PoE+",
+     "Surge, peak pulse, and overcurrent protection",
+     "Contains RJ45 data input, AC cable with earth ground, and PoE+ output",
+     "LED indicator for status monitoring"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "93 x 62 x 35 mm (3.7 x 2.4 x 1.4')" },
+          { label: "Weight", value: "156 g (5.5 oz)" },
+          { label: "Output Voltage", value: "48V DC @ 0.65A" },
+          { label: "Rated Voltage", value: "100-240V AC at 50/60Hz" },
+          { label: "LAN Activity Indicator", value: "—" },
+          { label: "Gigabit LAN Port", value: "✓" },
+          { label: "Remote Reset Capability", value: "—" },
+          { label: "Reset Button", value: "_" },
+          { label: "2-pair Powering", value: "Pins 4, 5 (+) and 7, 8 (-)" },
+          { label: "AC Connector", value: "IEC-320 C6" },
+          { label: "Clamping Protection", value: "11V Data, 60V Power" },
+          { label: "Data In / PoE", value: "RJ45 Shielded Socket" },
+          { label: "Input Current", value: "0.75A Max." },
+          { label: "Inrush Current", value: "<150A peak @ 230V AC" },
+          { label: "Efficiency", value: ">87%" },
+          { label: "Switching Frequency", value: "65 kHz Max" },
+          { label: "Output Ripple", value: "1% Max." },
+          { label: "Line Regulation", value: "≤ 1%" },
+          { label: "Load Regulation", value: "≤ 3%" },
+          { label: "Max. Surge Discharge", value: "1500A (8/20 μs) power" },
+          { label: "Peak Pulse Current", value: "36A (10/1000 μs) data" },
+          { label: "Response Time", value: "<1 ns" },
+          { label: "Shunt Capacitance", value: "<5 pF data" },
+          { label: "Surge Protection", value: "Difference and common mode" },
+          { label: "Ambient Storage Temperature", value: "-30 to 70°C (-22 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, UL, UKCA, KC, CCC, RoHS" }
+        ]
+      },
+    ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
   },
 
 ]; // paling trakhir
