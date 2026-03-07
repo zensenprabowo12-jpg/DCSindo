@@ -8881,8 +8881,8 @@ export const accessoriesProducts: Product[] = [
 
   //Produk Kelima dari Accessories, SF PoE & Power
   {
-    id: "Redundant Power",
-    name: "USP-RPS",
+    id: "USP-RPS",
+    name: "Redundant Power",
     category: "Accessories",
     subfilter: "PoE & Power",
     image: "/images/camera.jpg",
@@ -8965,8 +8965,8 @@ export const accessoriesProducts: Product[] = [
 
   //Produk Keenam dari Accessories, SF PoE & Power
   {
-    id: "Power Distribution Pro",
-    name: "USP-PDU-Pro",
+    id: "USP-PDU-Pro",
+    name: "Power Distribution Pro",
     category: "Accessories",
     subfilter: "PoE & Power",
     image: "/images/camera.jpg",
@@ -9044,8 +9044,8 @@ export const accessoriesProducts: Product[] = [
 
   //Produk Ketujuh dari Accessories, SF PoE & Power
   {
-    id: "Power Distribution Hi-Density",
-    name: "USP-PDU-HD",
+    id: "USP-PDU-HD",
+    name: "Power Distribution Hi-Density",
     category: "Accessories",
     subfilter: "PoE & Power",
     image: "/images/camera.jpg",
@@ -9112,8 +9112,8 @@ export const accessoriesProducts: Product[] = [
       {
         title: "Software",
         items: [
-            { label: "Application Requirements Mobile Apps", value: "UniFi iOS™ and 10.11.0 and later Android™ 10.11.0 and later" },
-            { label: "Application Requirements UniFi Netwrok", value: "Version 8.0.24 and later" }
+          { label: "Application Requirements Mobile Apps", value: "UniFi iOS™ and 10.11.0 and later Android™ 10.11.0 and later" },
+          { label: "Application Requirements UniFi Netwrok", value: "Version 8.0.24 and later" }
         ]
       }
     ],
@@ -9128,9 +9128,9 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Kedelapan dari Accessories, SF PoE & Power
-   {
-    id: "Power Distribution Hi-Density",
-    name: "U-PoE",
+  {
+    id: "U-PoE",
+    name: "PoE Adapter (15W)",
     category: "Accessories",
     subfilter: "PoE & Power",
     image: "/images/camera.jpg",
@@ -9161,10 +9161,10 @@ export const accessoriesProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-     "Delivers up to 15W of PoE",
-     "Surge, peak pulse, and overcurrent protection",
-     "Contains RJ45 data input, AC cable with earth ground, and PoE output",
-     "LED indicator for status monitoring"
+      "Delivers up to 15W of PoE",
+      "Surge, peak pulse, and overcurrent protection",
+      "Contains RJ45 data input, AC cable with earth ground, and PoE output",
+      "LED indicator for status monitoring"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -9204,19 +9204,12 @@ export const accessoriesProducts: Product[] = [
         ]
       },
     ],
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
   },
 
   //Produk Kesembilan dari Accessories, SF PoE & Power
   {
-    id: "PoE+ Adapter (30W)",
-    name: "U-PoE+",
+    id: "U-PoE+",
+    name: "PoE+ Adapter (30W)",
     category: "Accessories",
     subfilter: "PoE & Power",
     image: "/images/camera.jpg",
@@ -9247,10 +9240,10 @@ export const accessoriesProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-     "Delivers up to 30W of PoE+",
-     "Surge, peak pulse, and overcurrent protection",
-     "Contains RJ45 data input, AC cable with earth ground, and PoE+ output",
-     "LED indicator for status monitoring"
+      "Delivers up to 30W of PoE+",
+      "Surge, peak pulse, and overcurrent protection",
+      "Contains RJ45 data input, AC cable with earth ground, and PoE+ output",
+      "LED indicator for status monitoring"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -9301,8 +9294,8 @@ export const accessoriesProducts: Product[] = [
 
   //Produk Kesepuluh dari Accessories, SF PoE & Power
   {
-    id: "2.5G PoE+ Adapter (30W)",
-    name: "UACC-PoE+-2.5G",
+    id: "UACC-PoE+-2.5G",
+    name: "2.5G PoE+ Adapter (30W)",
     category: "Accessories",
     subfilter: "PoE & Power",
     image: "/images/camera.jpg",
@@ -9333,10 +9326,10 @@ export const accessoriesProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-     "Delivers up to 30W of PoE+",
-     "Surge, peak pulse, and overcurrent protection",
-     "Contains RJ45 data input, AC cable with earth ground, and PoE+ output",
-     "LED indicator for status monitoring"
+      "Delivers up to 30W of PoE+",
+      "Surge, peak pulse, and overcurrent protection",
+      "Contains RJ45 data input, AC cable with earth ground, and PoE+ output",
+      "LED indicator for status monitoring"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -9376,12 +9369,590 @@ export const accessoriesProducts: Product[] = [
         ]
       },
     ],
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+  },
+
+  //Produk Kesebelas dari Accessories, SF PoE & Power
+  {
+    id: "U-PoE++",
+    name: "PoE++ Adapter (60W)",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "An adapter that can power UniFi PoE++ devices, reduce dependency on PoE switch power, and provide a Gigabit LAN connection.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "U-PoE++",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Delivers up to 60W of PoE++",
+      "Surge, peak pulse, and overcurrent protection",
+      "Contains RJ45 data input, AC cable with earth ground, and PoE++ output",
+      "LED indicator for status monitoring"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "106 x 63 x 34 mm (4.2 x 2.5 x 1.3')" },
+          { label: "Weight", value: "210 g (7.4 oz)" },
+          { label: "Output Voltage", value: "48V DC @ 0.65A" },
+          { label: "Rated Voltage", value: "100-240V AC at 50/60Hz" },
+          { label: "LAN Activity Indicator", value: "—" },
+          { label: "Gigabit LAN Port", value: "✓" },
+          { label: "Remote Reset Capability", value: "—" },
+          { label: "Reset Button", value: "_" },
+          { label: "2-pair Powering", value: "Pins 1, 2, 4, 5 (+) and 3, 6, 7, 8 (-)" },
+          { label: "AC Connector", value: "IEC-320 C6" },
+          { label: "Clamping Protection", value: "11V Data, 60V Power" },
+          { label: "Data In / PoE", value: "RJ45 Shielded Socket" },
+          { label: "Input Current", value: "1.3A @ 120V AC" },
+          { label: "Inrush Current", value: "<100A peak @ 120V AC <200A peak @ 230V AC" },
+          { label: "Efficiency", value: "85+%" },
+          { label: "Switching Frequency", value: "65 kHz Max" },
+          { label: "Output Ripple", value: "1% Max." },
+          { label: "Line Regulation", value: "≤ 1%" },
+          { label: "Load Regulation", value: "≤ 3%" },
+          { label: "Max. PoE+ Wattage per Port by PSE", value: "60W" },
+          { label: "Max. Surge Discharge", value: "1500A (8/20 μs) power" },
+          { label: "Peak Pulse Current", value: "36A (10/1000 μs) data" },
+          { label: "Power Method", value: "Universal AC input, 100–240V AC, 50/60 Hz" },
+          { label: "Power Supply", value: "AC/DC" },
+          { label: "Response Time", value: "<1 ns" },
+          { label: "Shunt Capacitance", value: "<5 pF data" },
+          { label: "Surge Protection", value: "Difference and common mode" },
+          { label: "Ambient Storage Temperature", value: "-30 to 70°C (-22 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, UL, UKCA, KC, CCC, RoHS" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Belas dari Accessories, SF PoE & Power
+  {
+    id: "UACC-PoE++-10G",
+    name: "10G PoE++ Adapter (60W)",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "An adapter that can power UniFi PoE++ devices, reduce dependency on PoE switch power, and provide a Multi-Gigabit LAN connection.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-PoE++-10G",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Delivers up to 60W of PoE++",
+      "Surge, peak pulse, and overcurrent protection",
+      "Contains RJ45 data input, AC cable with earth ground, and PoE++ output",
+      "LED indicator for status monitoring"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "106 x 63 x 34 mm (4.2 x 2.5 x 1.3')" },
+          { label: "Weight", value: "210 g (7.4 oz)" },
+          { label: "Output Voltage", value: "54V DC at 1.12A" },
+          { label: "Rated Voltage", value: "100-240V AC at 50/60Hz" },
+          { label: "LAN Activity Indicator", value: "—" },
+          { label: "Gigabit LAN Port", value: "✓" },
+          { label: "Remote Reset Capability", value: "—" },
+          { label: "Reset Button", value: "_" },
+          { label: "2-pair Powering", value: "Pins 1, 2, 4, 5 (+) and 3, 6, 7, 8 (-)" },
+          { label: "Clamping Protection", value: "11V Data, 60V Power" },
+          { label: "Data In / PoE", value: "RJ45 Shielded Socket" },
+          { label: "Input Current", value: "1.5A Max." },
+          { label: "Inrush Current", value: "<150A peak at 230V AC" },
+          { label: "Efficiency", value: ">88%" },
+          { label: "Switching Frequency", value: "65 kHz" },
+          { label: "Output Ripple", value: "1% Max." },
+          { label: "Line Regulation", value: "≤ 2%" },
+          { label: "Load Regulation", value: "≤ 5%" },
+          { label: "Max. PoE+ Wattage per Port by PSE", value: "60W" },
+          { label: "Max. Surge Discharge", value: "1500A (8/20 μs) power" },
+          { label: "Peak Pulse Current", value: "36A (10/1000 μs) data" },
+          { label: "Response Time", value: "<1 ns" },
+          { label: "Shunt Capacitance", value: "<5 pF data" },
+          { label: "Surge Protection", value: "Difference and common mode" },
+          { label: "Ambient Storage Temperature", value: "-30 to 70°C (-22 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, UL, UKCA, KC, CCC, RoHS" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga Belas dari Accessories, SF PoE & Power
+  {
+    id: "UACC-PoE+++-10G",
+    name: "10G PoE+++ Adapter (90W)",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "An adapter that can power UniFi PoE+++ devices, reduce dependency on PoE switch power, and provide a Multi-Gigabit LAN connection.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-PoE+++-10G",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Delivers up to 90W of PoE+++",
+      "Surge, peak pulse, and overcurrent protection",
+      "Contains RJ45 data input, AC cable with earth ground, and PoE+++ output",
+      "LED indicator for status monitoring",
+      "Supports wall mount, DIN rail and floating mount*"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "164.5 x 71 x 42 mm (6.5 x 2.8 x 1.7')" },
+          { label: "Weight", value: "372 g (13.1 oz)" },
+          { label: "Output Voltage", value: "54V DC at 1.12A" },
+          { label: "Rated Voltage", value: "100-240V AC at 50/60Hz" },
+          { label: "LAN Activity Indicator", value: "—" },
+          { label: "Gigabit LAN Port", value: "✓" },
+          { label: "Remote Reset Capability", value: "—" },
+          { label: "Reset Button", value: "_" },
+          { label: "2-pair Powering", value: "Pins 1, 2, 4, 5 (+) and 3, 6, 7, 8 (-)" },
+          { label: "Clamping Protection", value: "11V Data, 60V Power" },
+          { label: "Data In / PoE", value: "RJ45 Shielded Socket" },
+          { label: "Input Current", value: "1.5A Max." },
+          { label: "Inrush Current", value: "<120A peak @ 230V AC" },
+          { label: "Efficiency", value: ">88%" },
+          { label: "Switching Frequency", value: "65 kHz" },
+          { label: "Output Ripple", value: "1% Max." },
+          { label: "Line Regulation", value: "≤ 2%" },
+          { label: "Load Regulation", value: "≤ 5%" },
+          { label: "Max. PoE+ Wattage per Port by PSE", value: "90W" },
+          { label: "Max. Surge Discharge", value: "1500A (8/20 μs) power" },
+          { label: "Peak Pulse Current", value: "36A (10/1000 μs) data" },
+          { label: "Response Time", value: "<1 ns" },
+          { label: "Shunt Capacitance", value: "<5 pF data" },
+          { label: "Surge Protection", value: "Difference and common mode" },
+          { label: "Ambient Storage Temperature", value: "-30 to 70°C (-22 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, UL, UKCA, KC, CCC, RoHS" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Keempat Belas dari Accessories, SF PoE & Power
+  {
+    id: "UACC-ETH-SP-DIN",
+    name: "Ethernet Surge Protection",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Bidirectional protection for up to 10 GbE, PoE++, and 20kA surge discharge for indoor installation.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-ETH-SP-DIN",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Wall/DIN rail mount",
+      "Multiple grounding points"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "89 x 25.5 x 37.4 mm (3.5 x 1 x 1.5')" },
+          { label: "Weight", value: "74 g (2.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, SGCC steel" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "600V @ 1kV/µs" },
+          { label: "Discharge Current", value: "20kA" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 10 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-40° to +80° C (-40° to 176° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kelima Belas dari Accessories, SF PoE & Power
+  {
+    id: "UACC-ETH-SP-Panel-24",
+    name: "Ethernet Surge Protection",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Rack-mount indoor panel supports up to 10 GbE, PoE++, and 20kA surge discharge per port.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-ETH-SP-Panel-24",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "24-port integrated",
+      "1U rack-mount design"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "442.4 x 134 x 43.7 mm (17.4 x 5.3 x 1.7')" },
+          { label: "Weight", value: "2 kg (4.4 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Networking Interface", value: "(48) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "600V @ 1kV/µs" },
+          { label: "Discharge Current", value: "20kA" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 10 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-40° to +80° C (-40° to 176° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Keenam Belas dari Accessories, SF PoE & Power
+  {
+    id: "ETH-SP-G2",
+    name: "Ethernet Surge Protection Outdoor",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "ESD protection for outdoor high-speed networks.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "ETH-SP-G2",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Protects outdoor Ethernet devices",
+      "(2) Passive, surge-protected RJ45 connections",
+      "Quick and easy installation",
+      "Compatible with 2.5 GbE networks"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "91 x 61 x 32.5 mm (3.6 x 2.4 x 1.3')" },
+          { label: "Weight", value: "80 g (2.8 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Weatherproofing", value: "IPX5" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "700V @ 1kV/µs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 2.5 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketujuh Belas dari Accessories, SF PoE & Power
+   {
+    id: "UACC-ETH-SP-Pro",
+    name: "Ethernet Surge Protection Outdoor",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "ESD protection for outdoor high-speed networks.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-ETH-SP-Pro",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Protects outdoor Ethernet devices, up to 20kA discharge current.",
+      "(2) Passive, surge-protected RJ45 connections",
+      "Quick and easy installation",
+      "Compatible with 10 GbE networks"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "91 x 61 x 32.5 mm (3.6 x 2.4 x 1.3')" },
+          { label: "Weight", value: "95 g (3.35 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Weatherproofing", value: "IPX5" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "600V @ 1kV/µs" },
+          { label: "Discharge Current", value: "20kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 10 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
+        ]
+      },
+    ],
+  },
+
+  //Produk KeTujuh Belas dari Accessories SF PoE & Power
+   {
+    id: "UACC-PSU-12V-150W",
+    name: "Hot-Swappable Power Module (150W)",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Replacement hot-swappable power module for Enterprise Fortress Gateway and Gateway Enterprise.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-PSU-12V-150W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material SGCC steel",
+      "Surge, peak pulse, and overcurrent protection",
+      "Contains RJ45 data input, AC cable with earth ground, and PoE+++ output",
+      "LED indicator for status monitoring",
+      "Supports wall mount, DIN rail and floating mount*"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "185 x 73.5 x 40 mm (7.3 x 2.9 x 1.6')" },
+          { label: "Weight", value: "733 g (1.6 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Input Voltage Range", value: "100-240V AC" },
+          { label: "Input Frequency", value: "50/60 Hz" },
+          { label: "Output Voltage", value: "12V DC at 12.5A" },
+          { label: "Input Current", value: "7A Max. at 120V AC 3.6A Max. at 230V AC" },
+          { label: "Inrush Current", value: "<50A peak" },
+          { label: "Efficiency", value: "_" },
+          { label: "Total Output Power", value: "Full load >81%" },
+          { label: "Clamping Protection", value: "150W" },
+          { label: "Over Voltage Protection", value: "13.5V" },
+          { label: "Over Current Protection", value: "18.5-22.5A" },
+          { label: "Ambient Operating Temperature", value: "-5 to 50° C (23 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, UL, UKCA, KC, CCC, RoHS" }
+        ]
+      },
     ],
   },
 
