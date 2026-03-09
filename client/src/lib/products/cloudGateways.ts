@@ -121,7 +121,8 @@ export const cloudGatewaysProducts: Product[] = [
       "25F cloud gateways with 500+ UniFi Device",
       "5000+ client support",
       "12.5gbps ips routing",
-      "complete high availability"
+      "complete high availability", 
+      "Note. Shadow Mode High Availability with automatic failover (VRRP) requires UniFi OS 4.0 and later. Must be paired with another EFG."
     ],
     
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -203,7 +204,7 @@ export const cloudGatewaysProducts: Product[] = [
           { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
           { label: "Weight", value: "1.2 kg" },
           { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Mounting", value: "1U Rack Mount" },
         ],
         productLink: "/products/mounting-kit-efg" // Link ke halaman produk addon
       },
