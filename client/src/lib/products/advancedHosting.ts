@@ -539,14 +539,14 @@ export const advancedHostingProducts: Product[] = [
         ]
       }
     ],
-    
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
+        inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
       { name: "Mounting Kit", image: "/images/dcs-box.png" },
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+
     
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
