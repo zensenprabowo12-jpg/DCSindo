@@ -9818,7 +9818,7 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Ketujuh Belas dari Accessories, SF PoE & Power
-   {
+  {
     id: "UACC-ETH-SP-Pro",
     name: "Ethernet Surge Protection Outdoor",
     category: "Accessories",
@@ -9889,7 +9889,7 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk KeTujuh Belas dari Accessories SF PoE & Power
-   {
+  {
     id: "UACC-PSU-12V-150W",
     name: "Hot-Swappable Power Module (150W)",
     category: "Accessories",
@@ -9922,11 +9922,7 @@ export const accessoriesProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Enclosure Material SGCC steel",
-      "Surge, peak pulse, and overcurrent protection",
-      "Contains RJ45 data input, AC cable with earth ground, and PoE+++ output",
-      "LED indicator for status monitoring",
-      "Supports wall mount, DIN rail and floating mount*"
+      "150W (12V) AC-to-DC power supply"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -9953,6 +9949,2543 @@ export const accessoriesProducts: Product[] = [
           { label: "Certifications", value: "CE, FCC, IC, UL, UKCA, KC, CCC, RoHS" }
         ]
       },
+    ],
+  },
+
+  //Produk Kedelapan Belas dari Accessories, SF PoE & Power
+  {
+    id: "UACC-PSU-12V-550W",
+    name: "Hot-Swappable Power Module (550W)",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Replacement hot-swappable power module for CloudKey Enterprise, Enterprise Aggregation, Enterprise NVR and UNAS Pro 8.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-PSU-12V-550W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "550W (12V) AC-to-DC power supply",
+      "Included power cable"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "185 x 73.5 x 40 mm (7.3 x 2.9 x 1.6')" },
+          { label: "Weight", value: "744 g (1.6 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Input Connector", value: "C14" },
+          { label: "Input Voltage Range", value: "100-240V AC" },
+          { label: "Input Frequency", value: "50/60 Hz" },
+          { label: "Output Voltage", value: "12V DC" },
+          { label: "Output Current", value: "45A" },
+          { label: "Total Output Power", value: "550W" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" }
+        ]
+      },
+    ],
+  },
+
+  //Produl Kesembilan Belas dari Accessories, SF PoE & Power
+  {
+    id: "UACC-PSU-54V-600W",
+    name: "Hot-Swappable Power Module (600W)",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Replacement hot-swappable power module for CloudKey Enterprise, Enterprise Aggregation, Enterprise NVR and UNAS Pro 8.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-PSU-54V-600W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "600W (54V) AC-to-DC power supply",
+      "Included power cable"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "185 x 73.5 x 40 mm (7.3 x 2.9 x 1.6')" },
+          { label: "Weight", value: "750 g (1.65 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Input Connector", value: "C14" },
+          { label: "Input Voltage Range", value: "100-240V AC" },
+          { label: "Input Frequency", value: "50/60 Hz" },
+          { label: "Output Voltage", value: "54.5V" },
+          { label: "Output Current", value: "11A" },
+          { label: "Total Output Power", value: "60 0W" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Puluh dari Accessories, SF PoE & Power
+  {
+    id: "UACC-PSU-54V-1200W",
+    name: "Hot-Swappable Power Module (1,200W)",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Hot swappable AC/DC power module, 1,200W, 54V.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-PSU-54V-1200W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "1,200W (54V) AC-to-DC power supply",
+      "Included power cable"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "185 x 73.5 x 40 mm (7.3 x 2.9 x 1.6')" },
+          { label: "Weight", value: "750 g (1.65 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Input Connector", value: "C14" },
+          { label: "Input Voltage Range", value: "100-240V AC" },
+          { label: "Input Frequency", value: "50/60 Hz" },
+          { label: "Output Voltage", value: "54.5V" },
+          { label: "Output Current", value: "18.35A" },
+          { label: "Total Output Power", value: "200-240V AC: 1,200W 100-120V AC: 1,000W" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Puluh Satu dari Accessories, SF PoE & Power
+  {
+    id: "UACC-PSU-UDW",
+    name: "Power Module",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Provides optional power redundancy for Dream Wall.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-PSU-UDW",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "550W (54.8V) AC-to-DC auxiliary power module"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "252.8 x 87.4 x 43.3 mm (9.9 x 3.4 x 1.7')" },
+          { label: "Weight", value: "970 g (2.1 lb)" },
+          { label: "Enclosure Material", value: "Aluminium alloy, SGCC steel, polycarbonate" },
+          { label: "Input Connector", value: "JYP-M1207D-RT03R" },
+          { label: "Input Voltage Range", value: "100-240V AC" },
+          { label: "Input Frequency", value: "50/60 Hz" },
+          { label: "Output Voltage", value: "54.5V" },
+          { label: "Output Current", value: "10A" },
+          { label: "Total Output Power", value: "550W" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" }
+        ]
+      },
+    ],
+  },
+
+  //Produk KeduaPuluh Dua dari Accessories, SF PoE & Power
+  {
+    id: "UACC-PoE+-USBC",
+    name: "PoE Integrated AC Adapter",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "AC adapter with integrated PoE+ that powers a UniFi Cloud Gateway via USB-C while delivering up to 30W PoE+ to a connected device—ideal for adding PoE output or supporting a UniFi 5G backup, with flexible wall, DIN rail, or floating mount options.*",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-PoE+-USBC",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Delivers up to 90W of PoE+++",
+      "Surge, peak pulse, and overcurrent protection",
+      "Contains RJ45 data input, AC cable with earth ground, and PoE+++ output",
+      "LED indicator for status monitoring",
+      "Supports wall mount, DIN rail and floating mount*"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "146 x 62 x 42 mm (5.7 x 2.4 x 1.7')" },
+          { label: "Weight", value: "358 g (12.6 oz)" },
+          { label: "Length", value: "Cable: 150 cm (4.9 ft) total, including 30 cm split Type-C/Ethernet ends Power cord: 180 cm (5.9 ft)" },
+          { label: "Output Voltage", value: "Type-C: 5V@ 5A PoE+: 48V@ 0.65A" },
+          { label: "Rated Voltage", value: "100–240V AC at 50/60Hz" },
+          { label: "LAN Activity Indicator", value: "—" },
+          { label: "Gigabit LAN Port", value: "✓" },
+          { label: "Remote Reset Capability", value: "—" },
+          { label: "Reset Button", value: "_" },
+          { label: "4-pair Powering", value: "Pins 1, 2, 4, 5 (+) and 3, 6, 7, 8 (-)" },
+          { label: "Clamping Protection", value: "11V Data, 60V Power" },
+          { label: "Data In / PoE", value: "RJ45 Shielded Socket" },
+          { label: "Input Current", value: "1.5A Max." },
+          { label: "Inrush Current", value: "<120A" },
+          { label: "Efficiency", value: ">82%" },
+          { label: "Switching Frequency", value: "65 kHz" },
+          { label: "Output Ripple", value: "1% Max." },
+          { label: "Line Regulation", value: "≤ 5%" },
+          { label: "Load Regulation", value: "≤ 5%" },
+          { label: "Max. Surge Discharge", value: "1500A (8/20 μs) power" },
+          { label: "Peak Pulse Current", value: "36A (10/1000 μs) data" },
+          { label: "Response Time", value: "<1 ns" },
+          { label: "Shunt Capacitance", value: "<5 pF data" },
+          { label: "Surge Protection", value: "Difference and common mode" },
+          { label: "Ambient Storage Temperature", value: "-30 to 70°C (-22 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, UL, UKCA, KC, CCC, RoHS" }
+        ]
+      },
+    ],
+  },
+
+  //Produk keduaPuluh Tiga dari Accessories, SF PoE & Power
+  {
+    id: "UACC-Retrofit-PoE-2Wire",
+    name: "PoE Over 2-Wire Retrofit Extender",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "A pair of extenders that extends PoE over twisted-pair or coaxial cables, ideal for retrofit scenarios.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Retrofit-PoE-2Wire",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Transmitter (1) PoE++ input",
+      "Transmitter (1) 2-wire output",
+      "Transmitter (1) 2-wire to BNC adapter",
+      "Receiver (1) PoE/PoE+ output",
+      "Receiver (1) 2-wire input",
+      "Receiver (1) 2-wire to BNC adapter"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "	PoE in/out: 40 x 105 x 25 mm (1.6 x 4.1 x 1') Adapter: 43.5 x 138 x 30 mm (1.7 x 5.4 x 1.2')" },
+          { label: "Weight", value: "	PoE in: 77 g (2.7 oz) PoE out: 79 g (2.8 oz) Adapter: 140 g (4.9 oz)" },
+          { label: "Enclosure Material", value: "	Polycarbonate" },
+          { label: "Mounting material", value: "	Polycarbonate" },
+          { label: "Coaxial connector", value: "BNC female" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Networking Interface", value: "	(1) 10/100 MbE(1) Homeplug AV" },
+          { label: "Power Method", value: "	PoE++" },
+          { label: "PoE input", value: "(1) PoE++, 50V DC, 1.2A" },
+          { label: "PoE Output", value: "	(1) PoE+, 48V DC, 0.6A" },
+          { label: "Max. Power Consumptlon", value: "	3W (Without PoE output)" },
+          { label: "ESD/EMP protection", value: "	Air: ±8kV, contact: ±4kV" },
+          { label: "LED", value: "White" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "	5 to 90% noncondensing" },
+          { label: "Certifications", value: "	CE, FCC, IC, UL 62368-1, CSA C22.2 No. 62368-1" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+    addons: [
+      {
+        id: 1,
+        name: "G6 Pro Entry",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "An intelligent door entry system with native UniFi Protect and UniFi Access integration with a 12MP camera, two-way audio, and a 3' touch display.",
+        specs: [
+          "Max. Power Consumption 18W",
+          "Supported Voltage Range 42—57V DC",
+          "Power Method PoE+",
+          "Processor Quad-core Arm® Cortex®-A53 based chip"
+
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "220 x 49.3 x 29.6 mm (8.7 x 1.9 x 1.2')" },
+          { label: "IR Night Vision", value: "5 m (16 ft)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "Main camera: 12MP Package camera: 8MP" },
+          { label: "Field of View", value: "Main camera: H: 100°, V: 136.3°, D: 176.4° (12MP) H: 70.9°, V: 127.5°, D: 147.4° (8MP) Package camera: H: 66°, V: 51.7°, D: 78°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "Tamper Resistance", value: "IK07 LCM IK04" },
+          { label: "Mounting", value: "Wall mount, Gangbox mount plate, 20° wedge mount (Included) Junction box (Optional)" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "PIN Access", value: "✓" },
+          { label: "Apple/Google Wallet", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Two-Way Intercom & Doorbell Access", value: "✓" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+          { label: "UniFi Application Suite Access", value: "✓" },
+          { label: "Performance Networking Interface", value: "GbE RJ45 port" },
+          { label: "Performance Connectivity", value: "BLE 4.1 NFC" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate Main camera: 12MP, 20 FPS or 8", value: "Main camera: 12MP, 20 FPS or 8MP, 30 FPS Package camera: 3 FPS" },
+          { label: "Video Resolution", value: "Main camera: 12MP, 3024 x 4096 (3:4) or 8MP, 2160 x 3840 (9:16) Package camera: 8MP, 3264 x 2448 (4:3)" },
+          { label: "Optics Sensor", value: "Main camera: 12MP CMOS Package camera: 8MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "OpticsNight Mode", value: "Built-in IR LED illumination and IR cut filter" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 2,
+        name: "G6 Entry",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "An intelligent door entry system with native UniFi Protect and UniFi Access integration.",
+        specs: [
+          "Max. Power Consumption 16W",
+          "Supported Voltage Range 42—57V DC",
+          "Power Method PoE+",
+          "Processor Quad-core Arm® Cortex®-A53 based chip"
+
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "176 x 45 x 29.6 mm (6.9 x 1.8 x 1.2')" },
+          { label: "IR Night Vision", value: "5 m (16 ft)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "Main camera: 5MP Package camera: 8MP" },
+          { label: "Field of View", value: "Main camera: H: 100°, V: 135°, D: 180° Package camera: H: 66°, V: 51.7°, D: 78°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "Tamper Resistance", value: "  IK07" },
+          { label: "Mounting", value: "Wall mount, Gangbox mount plate, 20° wedge mount (Included) Junction box (Optional)" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "PIN Access", value: "✓" },
+          { label: "Apple/Google Wallet", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Two-Way Intercom & Doorbell Access", value: "✓" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+          { label: "UniFi Application Suite Access", value: "✓" },
+          { label: "Performance Networking Interface", value: "GbE RJ45 port" },
+          { label: "Performance Connectivity", value: "BLE 4.1 NFC" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate Main camera: 12MP, 20 FPS or 8", value: "Main camera: 30 FPSPackage camera: 3 FPS" },
+          { label: "Video Resolution", value: "Main camera: 5MP, 1920 x 2560 (3:4) Package camera: 8MP 3264 x 2448 (4:3)" },
+          { label: "Optics Sensor", value: "Main camera: 5MP CMOS Package camera: 8MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "OpticsNight Mode", value: "Built-in IR LED illumination and IR cut filter" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
+    ]
+  },
+
+  //Produk Kedua Puluh Empat dari Accessories, SF PoE & Power
+  {
+    id: "UACC-Adapter-AC-210W",
+    name: "AC Adapter 210W",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "An AC power adapter delivers 210W at 54V DC for a PoE switch.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Adapter-AC-210W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Wall-mountable"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "190 x 86 x 26 mm (7.5 x 3.4 x 1')" },
+          { label: "Weight", value: "1.2 kg (2.6 lb)" },
+          { label: "AC Connector", value: "C14 INLET (input)" },
+          { label: "Output Plug", value: "DC plug: 5.5 x 2.1 x 11.5 mm (0.2 x 0.08 x 0.5') DC cable: UL11353 16AWG 1.5 m (4.9 ft)" },
+          { label: "Supported Voltage Range", value: "Input: 100-240V AC Output: 54V DC" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+        ]
+      },
+    ],
+
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ]
+
+  },
+
+  //Produk Kedua Puluh Lima dari Accessories, SF PoE & Power
+  {
+    id: "UACC-Adapter-PoE-USBC",
+    name: "PoE to USB-C Adapter",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Versatile adapter that provides power and connectivity to USB-C devices, including compatible Protect WiFi cameras.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Adapter-PoE-USBC",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "(1) GbE PoE input",
+      "(1) USB-C output",
+      "Transforms the G4 Doorbell Pro* and G4/G6 Instant** into a wired PoE camera",
+      "Provide GbE connectivity*** to USB-C device, such as notebook"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "Without cable: ⌀30.4 x 95 mm (⌀1.2 x 3.7')" },
+          { label: "Weight", value: "85 g (3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Ports", value: "(1) Input: RJ45 (1) Output: USB Type-C" },
+          { label: "Networking Interface", value: "(1) Input: RJ45 (1) Output: USB Type-C" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Input Rating", value: "48V DC, 0.25A" },
+          { label: "Output Rating", value: "5V DC, 2A" },
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+          { label: "Compatibility", value: "Camera G4 Instant (UVC-G4-INS) G4 DoorBell Pro (UVC-G4-Doorbell-Pro)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Puluh Enam dari Accessories, SF PoE & Power
+  {
+    id: "USP-Cable",
+    name: "SmartPower Cable",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "A cable used to deliver redundant power from an associated SmartPower device.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "USP-Cable",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Supported UniFi SmartPower connect",
+      "Cable length 1.5 m"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Length", value: "1.5 m (4.9 ft)" },
+          { label: "Insulation", value: "Thickness: 0.35 mm (0.01') Diameter: 2 mm (0.08') Material: PVC" },
+          { label: "Conductor Wire Gauge", value: "(18) 16 AWG (6) 24 AWG" },
+          { label: "Cable Jacket Material", value: "PVC" },
+          { label: "Cable Jacket Outer Diameter", value: "9.5 x 23 mm (0.4 x 0.9')" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Puluh Tujuh dari Accessories, SF PoE & Power
+  {
+    id: "UACC-Cable-USB-100W-2M-BK",
+    name: "USB-C Cable with Charge Display",
+    category: "Accessories",
+    subfilter: "PoE & Power",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Braided power and data cable with a double-sided charge display.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Cable-USB-100W-2M-BK",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-CloudKey-Enterprise.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    /* overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ], */
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Integrated power meter",
+      "100W max power output",
+      "480 Mbps max data transfer rate (0.3 / 1 / 2 m length only)",
+      "Durable braided cable design"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Available Lengths", value: "0.3/1/2/4.5/7 m (1/3.3/6.6/13.1/23 ft)" },
+          { label: "Shielding Type", value: "Shielded twisted pair (STP)" },
+          { label: "Conductor Type", value: "Stranded tinned copper" },
+          { label: "Conductor Wire Gauge", value: "0.3/1/2: (3) 24AWG (2) 30AWG (2) 32AWG 4.5/7 m: (7) 23AWG (3) 32AWG" },
+          { label: "Cable Jacket Diameter", value: "0.3/1/2: 4.4 mm (0.17') 4.5/7 m: 5.3 mm (0.2')" },
+          { label: "Cable Jacket Material", value: "PP & PET braiding" },
+          { label: "Cable Jacket Color", value: "Black, cool gray" },
+          { label: "Cable Cable Connector Type", value: "USB Type-C" },
+          { label: "Bend Radius", value: "0.3/1/2 m: 15 mm (0.6') 4.5/7 m: 27 mm (1.1')" },
+          { label: "Power Output", value: "Max. 100W PD" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60° C (-4 to 140° F)" },
+          { label: "Ambient Operating Humadity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Pertama dari Accessories, SF For APs
+  {
+    id: "WM-W",
+    name: "WiFiMan Wizard",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "A portable spectrum analyzer designed for the WiFiMan iOS and Android mobile app.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "WM-W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "2.4 GHz and 5 GHz unlicensed band scanning",
+      "240 minutes continuous scanning battery life",
+      "BLE smartphone pairing with USB-C charging port",
+      "iPhone Magsafe attachable support*"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "78.5 x 50.5 x 7.9 mm (3.1 x 2 x 0.3')" },
+          { label: "Weight", value: "32 g (1.1 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Weatherproofing", value: "IP55" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Power Method", value: "Li-ion battery" },
+          { label: "Power Supply", value: "Rechargeable Li-ion battery, 3.7V DC, 300mAh" },
+          { label: "Supported Voltage Range", value: "USB-C: 5V DC/1A" },
+          { label: "Max. Power Consumption", value: "32.4mW" },
+          { label: "SSID Scan Frequency Range", value: "2.4 to 2.5 GHz 5.15 to 5.85 GHz" },
+          { label: "SSID Scan Amplitude Range", value: "-96 dBm to 0 dBm" },
+          { label: "SSID Scan Amplitude Resolution", value: "1 dBm" },
+          { label: "LEDs", value: "W/B/R" },
+          { label: "Buttons", value: "(1) Power (1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 10051-23-08356" },
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Application Requirements Mobile App", value: "UniFi WiFiman iOS™: Version 0.18.0 and later UniFi WiFiman Android™: Version 1.15.0 and later" },
+        ]
+      }
+    ],
+  },
+
+  //Produk Kedua dari Accessories, SF For APs
+  {
+    id: "UACC-UK-Ultra-Panel-Antenna",
+    name: "Panel Antenna",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Sleek, clip-on external antenna for the Swiss Army Knife that provides 90-degree directional, extended range coverage.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-UK-Ultra-Panel-Antenna",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "High-efficiency 90° directional radiation pattern",
+      "Optimized for dual-band, extended range coverage",
+      "Clip-on attachment with support for all Swiss Army Knife mounting methods",
+      "Weatherproof (outdoor exposed)"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "138 x 207 x 43 mm (5.4 x 8.1 x 1.7')" },
+          { label: "Weight", value: "450 g (1 lb)" },
+          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum" },
+          { label: "Mounting", value: "1~2' on pipe outer diameter Compatible with the UK-Ultra" },
+          { label: "Wind Survivability", value: "75 N at 200 km/h (16.7 lbf at 125 mph)" },
+          { label: "Weatherproofing", value: "IPX6" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Antenna Gain 5 GHz", value: "15 dBi" },
+          { label: "Antenna Gain 2.4 GHz", value: "10 dBi" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga dari Accessories, SF For APs 
+  {
+    id: "UMA-D",
+    name: "AC Mesh Dual-Band Antenna",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "An optional mesh antenna for AC Mesh.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UMA-D",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Outdoor weather-resistant enclosure",
+      "High-efficiency directional radiation pattern",
+      "Dual-band, dual-polarity optimized for 802.11ac",
+      "Ball joint 3-axis mount for precise aiming",
+      "Wall and pole mount included"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "201.3 x 128 x 32.5 mm (7.9 x 5 x 1.3')" },
+          { label: "Weight", value: "Without mount: 400 g (0.9 lb) With mount: 480 g (1.1 lb)" },
+          { label: "Enclosure Material", value: "Outdoor UV-stabilized plastic" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Supported Frequency Range", value: "2.4-2.5 GHz 5.1-5.9 GHz" },
+          { label: "RF Connections", value: "(2) RP-SMA" },
+          { label: "Gain 5 GHz", value: "15 dBi" },
+          { label: "Gain 2.4 GHz", value: "10 dBi" },
+          { label: "HPOL Beamwidth 5 GHz", value: "45°" },
+          { label: "HPOL Beamwidth 2.4 GHz", value: "90°" },
+          { label: "VPOL Beamwidth 5 GHz", value: "45°" },
+          { label: "VPOL Beamwidth 2.4 GHz", value: "90°" },
+          { label: "Elevation Beamwidth 5 GHz", value: "45°" },
+          { label: "Elevation Beamwidth 2.4 GHz", value: "90°" },
+          { label: "Max VSWR", value: "2:1" },
+          { label: "Polarization", value: "Dual-linear" },
+          { label: "Cross-Pol Isolation 5 GHz", value: "30 dB" },
+          { label: "Cross-Pol Isolation 2.4 GHz", value: "25 dB" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "Anatel: 06187-19-08356" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Keempat dari Accessories, SF For APs
+  {
+    id: "UACC-UK-Ultra-Omni-Antenna-AO",
+    name: "Swiss Army Knife Omni Antenna",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Antenna accessory that provides omnidirectional, extended range coverage for Swiss Army Knife Ultra.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-UK-Ultra-Omni-Antenna-AO",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "High-efficiency omnidirectional radiation pattern",
+      "Optimized for dual-band, extended range coverage",
+      "Weatherproof (outdoor exposed)",
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "154 x 15 x 15 mm (6.1 x 0.6 x 0.6')" },
+          { label: "Weight", value: "42 g (1.5 oz) a pair" },
+          { label: "Enclosure Material", value: "Thermoplastic polyester elastomer, polycarbonate, polybutylene terephthalate, polyoxymethylene" },
+          { label: "Weatherproofing", value: "IPX6" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Antenna Gain 5 GHz", value: "4 dBi" },
+          { label: "Antenna Gain 2.4 GHz", value: "3 dBi" }
+        ]
+      },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Kelima dari Accessories, SF For APs
+  {
+    id: "UACC-U7-Pro-Wall-FM",
+    name: "U7 Pro Wall Paintable Flush Mount",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Paintable mounting kit for the U7 Pro Wall that enables near-invisible, recessed installation.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-U7-Pro-Wall-FM",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Polycarbonate"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "190 x 142 x 49 mm (7.5 x 5.6 x 1.9')" },
+          { label: "Weight", value: "213 g (7.5 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+        ]
+      },
+    ],
+  },
+
+  //Produk Keenam dari Accessories, SF For APs
+  {
+    id: "UACC-U7-Pro-Wall-TS",
+    name: "U7 Pro Wall Table Stand",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Lightweight, aluminum table stand for the U7 Pro Wall.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-U7-Pro-Wall-TS",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Polycarbonate"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: " 92.1 x 80 x 183.6 mm (3.6 x 3.1 x 7.2')" },
+          { label: "Weight", value: "222 g (7.8 oz)" },
+          { label: "Enclosure Material", value: "Aluminum" },
+          { label: "Mounting Material", value: "Polycarbonate" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketujuh dari Accessories, SF For APs
+  {
+    id: "UACC-U7-Pro-XG-Wall-TS",
+    name: "U7 Pro XG Wall Table Stand",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Table stand accessory for U7 Pro XG Wall access points.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-U7-Pro-XG-Wall-TS",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Polycarbonate"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "181.9 x 83.8 x 77.5 mm (7.2 x 3.3 x 3.1')" },
+          { label: "Weight", value: "200 g (7.1 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy, silicone rubber" }
+        ]
+      },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Kedelapan dari Accessories, SF For APs
+  {
+    id: "UACC-U7-Cover",
+    name: "U7 Paintable Cover",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Protective cover for the U7 Pro and U7 Pro Max that can be painted for a custom appearance.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-U7-Cover",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Blends seamlessly into a variety of backgrounds",
+      "Sold as a single pack",
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀217.4 x 48.3 mm (⌀8.6 x 1.9')" },
+          { label: "Weight", value: "129 g (4.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Compatible Coloring Materials", value: "Spray can (Krylon/Telox) Acrylic color Poster color (Pentel) Coloring pen (Gel pen/Sharpie)" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kesembilan dari Accessories, SF For APs
+  {
+    id: "nHD-cover-Camo-3",
+    name: "U6+ Cover",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Customized encasing for U6+, U6 Lite and nanoHD.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "nHD-cover-Camo-3",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Blends seamlessly into a variety of backgrounds",
+      "Sold as a 3-pack",
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀169.3 x 34.2 mm  (⌀6.7 x 1.3')" },
+          { label: "Weight", value: "70 g (2.5 oz)" },
+          { label: "Enclosure Material", value: "Black/Camo/Concrete/Marble/Wood: Polycarbonate Fabric: Polycarbonate, acrylonitrile butadiene styrene, fabric" },
+          { label: "Available Colors", value: "Black Camo Concrete Fabric Marble Wood" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kesepuluh dari Accessories, SF For APs
+  {
+    id: "U-PRO-MP",
+    name: "Flagship AP Replacement Mounting System",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Professional mounting system for UniFi access points.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "U-PRO-MP",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Variety of mounting holes for different applications",
+      "Legend printed on the mounting plate for identifying the holes used for each AP"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "175.6 mm (6.9')" },
+          { label: "Weight", value: "139 g (4.9 oz)" },
+          { label: "Enclosure Material", value: "Stainless steel" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Keseblas dari Accessories, SF For APs
+  {
+    id: "UACC-AP-AM",
+    name: "AP Arm Mount",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Wall mount for full-size UniFi Flagship WiFi access points.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-AP-AM",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Polycarbonate"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "200.5 x 175.1 x 31.2 mm (7.9 x 6.9 x 1.2')" },
+          { label: "Weight", value: "160 g (5.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" }
+        ]
+      },
+    ],
+  },
+
+  //Produk KeduaBelas dari Accessories, SF For APs
+  {
+    id: "UACC-Lite-AP-AM",
+    name: "AP Lite Arm Mount",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Wall mount for full-size UniFi Flagship WiFi access points.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Lite-AP-AM",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Plastic"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "	149 x 89 x 29 mm (5.9 x 3.5 x 1.1 ')" },
+          { label: "Weight", value: "	45 g (1.59 oz)" },
+          { label: "Enclosure Material", value: "Plastic" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedua Belas dari Accessories, SF For APs
+  {
+    id: "nanoHD-RetroFit-3",
+    name: "Compact Flagship AP Retrofit Mount",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Retrofit mount for U6 Lite, U6+, and nanoHD.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "nanoHD-RetroFit-3",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Allows installation over existing UniFi AP mounting brackets",
+      "Sold as a 3-pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀187.8 x 16.7 mm (⌀7.4 x 0.7')" },
+          { label: "Weight", value: "105 g (3.7 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga Belas dari Accessories, SF For APs
+  {
+    id: "nanoHD-RCM-3",
+    name: "Compact Flagship AP Recessed Ceiling Mount",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Recessed ceiling mount for U6 Lite, U6+, AC Lite and nanoHD.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "nanoHD-RCM-3",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Low-profile mounting option to sit discreetly within your ceiling",
+      "Sold as a 3-pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀210 x 20.6 mm (⌀8.3 x 0.8')" },
+          { label: "Weight", value: "310 g (10.9 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, SGCC" }
+        ]
+      },
+    ],
+  },
+  //Produk Keempat Belas dari Accessories, SF For APs
+  {
+    id: "UACC-UK-Ultra-TS",
+    name: "Swiss Army Knife Table Stand",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Table stand accessory for Swiss Army Knife Ultra.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-UK-Ultra-TS",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Thermoplastic polyester elastomer, polycarbonate, polybutylene terephthalate, polyoxymethylene"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "92.7 x 41.8 x 58.8 mm (3.6 x 1.6 x 2.3')" },
+          { label: "Weight", value: "98 g (3.5 oz)" },
+          { label: "Enclosure Material", value: "Thermoplastic polyester elastomer, polycarbonate, polybutylene terephthalate, polyoxymethylene" }
+        ]
+      },
+    ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Kelima Belas dari Accessories, SF For APs
+  {
+    id: "FlexHD-CM-3",
+    name: "Mesh AP In-Ceiling Mount",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Recessed ceiling mount for U6 Mesh and FlexHD.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "FlexHD-CM-3",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Mounts to a drop ceiling tile, drywall* ceiling, or solid ceiling",
+      "Sliding retainer** with locking threads and a snap-in mechanism for the AP",
+      "Sold as a 3-pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀87.1 x 112 mm (⌀3.4 x 4.4')" },
+          { label: "Weight", value: "85 g (3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mounting", value: "Indoors only" },
+          { label: "Pack Options", value: "3-Pack" }
+        ]
+      },
+    ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Keenam Belas dari Accessories, SF For APs
+  {
+    id: "UACC-U7-Pro-XG-Wall-Cover",
+    name: "U7 Pro XG Wall Paintable Cover",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Cover for U7 Pro XG Wall that can be painted for a customized appearance.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-U7-Pro-XG-Wall-Cover",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Blends seamlessly into a variety of backgrounds",
+      "Sold as a single pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "112.7 x 159.7 x 37.1 mm (4.4 x 6.3 x 1.5')" },
+          { label: "Weight", value: "80 g (2.8 oz)" },
+          { label: "Treatment", value: "Painting" }
+        ]
+      },
+    ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Ketujuh Belas dari Accessories, SF For APs
+  {
+    id: "UACC-U7-Pro-Wall-Cover",
+    name: "U7 Pro Wall Paintable Cover",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Cover for U7 Pro Wall that can be painted for a customized appearance.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-U7-Pro-Wall-Cover",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Blends seamlessly into a variety of backgrounds",
+      "Sold as a single pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "157.8 x 110.8 x 39.5 mm (6.2 x 4.4 x 1.6')" },
+          { label: "Weight", value: "86 g (3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kedelapan Belas dari Accessories, SF For APs
+  {
+    id: "EXTD-cover-Black-3",
+    name: "U6 Extender Cover",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Customized encasing for U6 Extender and BeaconHD.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "EXTD-cover-Black-3",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Blends seamlessly into a variety of backgrounds",
+      "Sold as a 3-pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "172 x 113.6 x 32.7 mm (6.8 x 4.5 x 1.3')" },
+          { label: "Weight", value: "35 g (1.2 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Available Colors", value: "Black Concrete Wood" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Kesembilan Belas dari Accessories, SF For APs
+  {
+    id: "IW-HD-BK-3",
+    name: "In-Wall HD Cover",
+    category: "Accessories",
+    subfilter: "For APs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Customized encasing for In-Wall HD.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "IW-HD-BK-3",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Blends seamlessly into a variety of backgrounds",
+      "Sold as a 3-pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "145.6 x 93.6 x 27.7 mm  (5.7 x 3.7 x 1.1')" },
+          { label: "Weight", value: "56 g (2 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Available Colors", value: "Black Camo Concrete Marble Wood" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Pertama dari Accessories, SF For Cameras
+  {
+    id: "UP-AI-Horn-Speaker-B",
+    name: "AI Horn Speaker",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "All-weather PoE 120 dB horn speaker with advanced AI alert functionality and versatile wall, corner, and pole mounting options.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UP-AI-Horn-Speaker-B",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Blends seamlessly into a variety of backgrounds",
+      "Sold as a 3-pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Device: 267 x 189 x 247 mm (10.5 x 7.4 x 9.7') Articulating mount: ⌀104 x 149.4 mm  (⌀4.1 x 5.9')" },
+          { label: "Mounting", value: "Articulating mount for wall, pole mount (Included)" },
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "Device: 1.55 kg (2.4 lb) Articulating mount: 1.3 kg (2.9 lb)" },
+          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
+          { label: "Mounting Material", value: "Stainless steel, aluminum alloy" },
+          { label: "Pole Mount Diameter", value: "1—2.5' (25—63.5 mm)" },
+          { label: "Weatherproofing", value: "IP66" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Power Method", value: "PoE+" },
+          { label: "Max. Power Consumption", value: "14.3W" },
+          { label: "Speaker", value: "✓" },
+          { label: "Networking Interface", value: "(1) 100/10 MbE RJ45 port" },
+          { label: "LEDs System", value: "R/G/B/W" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Management Application UniFi Protect Web", value: "✓" },
+          { label: "Management Application UniFi Protect iOS™ and Android™", value: "✓" }
+        ]
+      },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  // Produk Kedua dari Accessories, SF For Cameras
+  {
+    id: "UP-FloodLight",
+    name: "Floodlight",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Bright, motion-triggered light.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UP-FloodLight",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Intense 550 lumens of LED light",
+      "Wall-mountable",
+      "Motion detection",
+      "Weatherproof (outdoor exposed)",
+      "Connect and power using PoE"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "135 x 65 x 50 mm (5.3 x 2.6 x 2')" },
+          { label: "Weight", value: "Without mount: 216 g (7.6 oz) With flat wall mount: 236 g (8.3 oz) With angle mount: 273 g (9.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
+          { label: "Mounting Material", value: "Angle Mount: Polycarbonate Flat Wall Mount: Polycarbonate" },
+          { label: "Weatherproofing", value: "IPX5" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Networking Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Power Method", value: "PoE, 48V DC, 0.22A Max." },
+          { label: "Max. Power Consumption", value: "12.95W" },
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 8kV" },
+          { label: "Radio Frequency", value: "Bluetooth 4.0" },
+          { label: "LEDs", value: "R/B/W" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-10 to 45° C (14 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 80% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE, Anatel: 08447-22-08356" },
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Ketiga dari Accessories, SF For Cameras
+  {
+    id: "UACC-Adapter-PoE-USBC",
+    name: "PoE to USB-C Adapter",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Versatile adapter that provides power and connectivity to USB-C devices, including compatible Protect WiFi cameras.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Adapter-PoE-USBC",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "(1) GbE PoE input",
+      "(1) USB-C output",
+      "Provide GbE connectivity*** to USB-C device, such as notebook *G4 Doorbell Pro PoE to USB-C Cable sold separately. **G4/G6 Instant PoE to USB-C Cable sold separately. ***Speed depends on USB-C cable max data transfer rate.",
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "Without cable: ⌀30.4 x 95 mm (⌀1.2 x 3.7')" },
+          { label: "Weight", value: "85 g (3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Ports", value: "(1) Input: RJ45 (1) Output: USB Type-C" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port (Data out)" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Input Rating", value: "48V DC, 0.25A" },
+          { label: "Output Rating", value: "5V DC, 2A" },
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+          { label: "Compatibility", value: "Camera G4 Instant (UVC-G4-INS) G4 DoorBell Pro (UVC-G4-Doorbell-Pro)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+        ]
+      },
+    ],
+  },
+
+  // Produk Keempat dari Accessories, SF For Cameras
+  {
+    id: "UACC-Camera-CJB-B",
+    name: "Camera Compact Junction Box",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability, aesthetics, and ease of maintenanc",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Camera-CJB-B",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Supports flat surface, pole and pendant mounting",
+      "Includes side and rear 3/4' conduit entrances"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Longer holder: 87 x 147 x 49 mm (3.4 x 5.8 x 1.9') Shorter cap:  87 x 110 x 49 mm (3.4 x 4.3 x 1.9')" },
+          { label: "Pole Mount Diameter", value: "1.5-2' (38-50 mm)" },
+          { label: "Weight", value: "Box: 270 g (9.5 oz) Longer holder: 125 g (4.4 oz) Shorter cap: 80 g (2.8 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mounting Material", value: "Aluminum alloy" },
+          { label: "Compatibility", value: "UVC-G5-Dome-Ultra UVC-G5-Turret-Ultra UVC-G6-Bullet" }
+        ]
+      },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  // Produk Kelima dari Accessories, SF For Cameras
+  {
+    id: "UACC-Camera-JB-B",
+    name: "Camera Junction Box",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Tamper-resistant junction box for UniFi Bullet, Dome, and Turret cameras that enhances mounting durability, aesthetics, and ease of maintenance.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Camera-JB-B",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Supports flat surface, pole and pendant mounting",
+      "Includes side and rear 3/4' conduit entrances"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀140.4 x 59.7 mm (⌀5.5 x 2.4')" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "Junction box: 470 g (16.6 oz) Mount Holder: 66 g (2.3 oz) Deco ring: 17g (0.6 oz) Pole mount: 62 g (2.2 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mounting Material", value: "G3/4''" },
+          { label: "Compatibility", value: "UVC-AI-Bullet UVC-AI-PRO UVC-AI-DSLR UVC-AI-Dome UVC-AI-Turret UVC-G6-Bullet UVC-G6-Turret UVC-G6-Pro-Turret UVC-G6-Dome UVC-G6-Pro-Dome UVC-G6-180 UVC-G5-Dome UVC-G5-Dome-Ultra UVC-G5-Turret-Ultra UVC-G5-Pro UVC-G5-Bullet UVC-G4-Pro UVC-G4-Bullet UVC-G4-Dome UVC-G3-Pro UVC-G3-Bullet" }
+        ]
+      },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+  // Produk Keenam dari Accessories, SF For Cameras
+  {
+    id: "UACC-AI-360-JB",
+    name: "AI 360 Junction Box",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Tamper-resistant junction box for the AI 360 that enhances mounting durability and ease of maintenance.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-AI-360-JB",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Supports flat surface, pole and pendant mounting",
+      "Includes side and rear 3/4' conduit entrances"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀173.2 x 76 mm (⌀6.8 x 3')" },
+          { label: "Weight", value: "720 g (1.6 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mounting Material", value: "Aluminum alloy" },
+          { label: "Weatherproofing", value: "IPX6" },
+          { label: "Resistance", value: "IK08" },
+          { label: "Threaded Outlets", value: "3/4''" },
+          { label: "Compatibility", value: "UVC-AI-360 UVC-G6-Pro-360" }
+        ]
+      },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  // Produk Ketujuh dari Accessories, SF For Cameras
+  {
+    id: "UACC-Camera-AM-B",
+    name: "Camera Arm Mount",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Arm mount accessory that attaches the UniFi Turret cameras to a wall, corner, or pole.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Camera-AM-B",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Supports 3/4” conduit",
+      "Weatherproof (outdoor exposed)"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "115 x 252 x 90 mm (4.5 x 9.9 x 3.5')" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "670 g (1.5 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mounting Material", value: "Aluminum alloy" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Compatibility", value: "UVC-AI-Dome UVC-AI-Turret UVC-G6-Turret UVC-G6-Pro-Turret UVC-G6-Dome UVC-G6-Pro-Dome UVC-G6-180 UVC-G6-Pro-360 UVC-G5-Turret-Ultra" }
+        ]
+      },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  // Produk Kedelapan dari Accessories, SF For Cameras
+  {
+    id: "UACC-G4-Dome-Arm Mount",
+    name: "Dome Camera Arm Mount",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Arm mount accessory that attaches the G4 or G5 Dome camera to a wall.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-G4-Dome-Arm Mount",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Allows to mount a Dome camera to the wall instead of the ceiling",
+      "Able to create focused camera sightlines",
+      "Wall mountable"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "123.8 x 114 x 31.5 mm (4.87 x 4.49 x 1.24')" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "73 g (2.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+        ]
+      },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Kesembilan dari Accessories, SF For Cameras
+   {
+    id: "UACC-Bullet-AB-W",
+    name: "Bullet Camera Angled Base",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Bullet camera mounting accessory that enhances tilt angle by 22° to achieve an unrestricted viewing angle.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Bullet-AB-W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Ideal for mounting under eaves",
+      "Supports G5 Pro Enhancer and AI DSLR Outdoor Case"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀62 x 55 mm (⌀2.4 x 2.2')" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "65 g (2.3 oz)" },
+          { label: "Available Colors", value: "Black White" },
+          { label: "Weatherproofing", value: "IPX5" },
+          { label: "Compatibility", value: "UACC-Bullet-AB-W: UVC-G4-Pro, UVC-G5-Pro, UVC-AI-Pro-W UACC-Bullet-AB-B: UVC-AI-Bullet, UVC-AI-Pro, UVC-AI-DSLR" }
+        ]
+      },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+   {
+    id: "UACC-AI-Pro-Enhancer-B/W",
+    name: "AI Enhancer",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Long-range IR LED, floodlight, and radar detection accessory for the AI Pro.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-AI-Pro-Enhancer",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Blends seamlessly into a variety of backgrounds",
+      "Sold as a 3-pack"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Device: 267 x 189 x 247 mm (10.5 x 7.4 x 9.7') Articulating mount: ⌀104 x 149.4 mm  (⌀4.1 x 5.9')" },
+          { label: "Mounting", value: "Articulating mount for wall, pole mount (Included)" },
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "Device: 1.55 kg (2.4 lb) Articulating mount: 1.3 kg (2.9 lb)" },
+          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
+          { label: "Mounting Material", value: "Stainless steel, aluminum alloy" },
+          { label: "Pole Mount Diameter", value: "1—2.5' (25—63.5 mm)" },
+          { label: "Weatherproofing", value: "IP66" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Power Method", value: "PoE+" },
+          { label: "Max. Power Consumption", value: "14.3W" },
+          { label: "Speaker", value: "✓" },
+          { label: "Networking Interface", value: "(1) 100/10 MbE RJ45 port" },
+          { label: "LEDs System", value: "R/G/B/W" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+          { label: "NDAA Compliant", value: "✓" }
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Management Application UniFi Protect Web", value: "✓" },
+          { label: "Management Application UniFi Protect iOS™ and Android™", value: "✓" }
+        ]
+      },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
   },
 
