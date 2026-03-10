@@ -41,20 +41,20 @@ export interface Product {
   id: string;
   name: string;
   category:
-    | "Cloud Gateways"
-    | "Switching"
-    | "WiFi"
-    | "Camera Security"
-    | "Door Access"
-    | "Integrations"
-    | "Advanced Hosting"
-    | "Accessories";
+  | "Cloud Gateways"
+  | "Switching"
+  | "WiFi"
+  | "Camera Security"
+  | "Door Access"
+  | "Integrations"
+  | "Advanced Hosting"
+  | "Accessories";
   subfilter: string;
   image: string;
   shortDescription: string;
   specs: { label: string; value: string }[];
   isNew?: boolean;
-  
+
   // Field baru untuk halaman detail produk
   images?: string[]; // Array gambar untuk gallery (termasuk gambar utama)
   overviewImages?: string[]; // Gambar untuk tab Overview
@@ -67,7 +67,9 @@ export interface Product {
 
 // WiFi Products
 export const wifiProducts: Product[] = [
-{
+
+  //Produk Pertama dari Accessoriesn, SF WiFi
+  {
     id: "E7",
     name: "E7",
     category: "WiFi",
@@ -82,23 +84,23 @@ export const wifiProducts: Product[] = [
       { label: "Storage", value: "128GB SSD Integrated" },
     ],
 
-    
+
     // SKU produk
     sku: "E7",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Enterprise-grade indoor access point with 10-stream WiFi 7 performance",
@@ -106,37 +108,94 @@ export const wifiProducts: Product[] = [
       "and a redundant GbE port for high availability",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "E7" },
-          { label: "Model", value: "E7" },
-          { label: "Category", value: "WiFi" },
-          { label: "Throughput", value: "3.5 Gbps IPS" },
-          { label: "PoE", value: "2x PoE+, 6x PoE" },
-          { label: "WAN", value: "2.5 GbE RJ45" },
-          { label: "Storage", value: "128GB SSD Integrated" }
+          { label: "Dimensions", value: "250 x 250 x 43.5 mm (9.8 x 9.8 x 1.7')" },
+          { label: "WiFi Standard", value: "WiFi 7" },
+          { label: "Spatial Streams", value: "10" },
+          { label: "Coverage Area", value: "185 m² (2,000 ft²)" },
+          { label: "Max. Client Count", value: "1000+" },
+          { label: "Uplink", value: "10 GbE 1 GbE" },
+          { label: "Mounting", value: "Ceiling, Wall, VESA (Pro Mount Included)" },
+          { label: "Power Method", value: "PoE++" }
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "MIMO 6 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
+          { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
+          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
+          { label: "Max. Data Rate 6 GHz", value: "11.5 Gbps (BW320)" },
+          { label: "Max. Data Rate 6 GHz", value: "8.6 Gbps (BW240)" },
+          { label: "Max. Data Rate 6 GHz", value: "688 Mbps (BW40)" },
+          { label: "Antenna Gain 6 GHz", value: "24 dBm / 30 dBm" },
+          { label: "Antenna Gain 5 GHz", value: "30 dBm" },
+          { label: "Antenna Gain 2.4 GHz", value: "23 dBm" },
+          { label: "Max. BSSIDs", value: "8 per Radio" },
+          { label: "Supported Data Rates 802.11be (WiFi 7)", value: "7.3 Mbps to 11.4 Gbps (MCS0 - MCS13 NSS1/2/3/4, EHT 20/40/80/160/240/320)" },
+          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 4.8 Gbps (MCS0 - MCS11 NSS1/2/3/4, HE 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 3.4 Gbps (MCS0 - MCS9 NSS1/2/3/4, VHT 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 600 Mbps (MCS0 - MCS31, HT 20/40)" }
+        ]
+      },
+      {
+        title: "Features",
+        items: [
+          { label: "Wireless Meshing", value: "✓" },
+          { label: "Band Steering", value: "✓" },
+          { label: "802.11v BSS Transition Management", value: "✓" },
+          { label: "802.11r Fast Roaming", value: "✓" },
+          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
+          { label: "Advanced Radio Management", value: "✓" },
+          { label: "Real-Time Spectral Analysis", value: "✓" },
+          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
+          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
+          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
+          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
+          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
+          { label: "WiFi Speed Limiting", value: "✓" },
+          { label: "Client Device Isolation", value: "✓" },
+          { label: "WiFi Schedules", value: "✓" },
+          { label: "RADIUS over TLS (RadSec)", value: "✓" },
+          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "43W" },
+          { label: "Supported Voltage Range", value: "42.5–57V DC" },
+          { label: "Networking Interface", value: "(1) 10 GbE RJ45 port (1) 1 GbE RJ45 port" },
+          { label: "Weight", value: "1.8 kg (4 lb)" },
+          { label: "Management", value: "Ethernet" },
+          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
+          { label: "Mount Material", value: "Stainless steel (SUS304), galvanized steel (SGCC)" },
+          { label: "LEDs System", value: "R/G/B" },
+          { label: "Channel Bandwidth", value: "HT 20/40, VHT 20/40/80/160, HE 20/40/80/160, EHT 20/40/80/160/240/320 (MHz)" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 06372-24-08356" },
+          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHzU-NII-5 to U-NII-8: 5925 - 7125 MHz  Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz 5925 - 7125 MHz" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50° C (-22 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
         ]
       },
       {
-        title: "Software",
+        title: " Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements UniFi Network", value: "Version 9.2.87 and later" },
+          { label: "Application Requirements Mobile App", value: "iOS™ version 10.24.1 and later Android™ version 10.25.2 and later" },
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -144,44 +203,71 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Pro HD 24 PoE",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Professional-grade, Layer 3 Etherlighting™ switch with (2) 10 GbE PoE++, (22) 2.5 GbE PoE++, and (4) 10G SFP+ ports.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Etherlighting™ ports that illuminate to indicate port location, speed/link, and native VLAN/network*",
+          "(22) 2.5 GbE, (2) 10 GbE PoE++ ports",
+          "(4) 10G SFP+ ports",
+          "DC power backup ready**",
+          "600W total PoE availability",
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "442 x 400 x 44 mm (17.4 x 15.7 x 1.7')" },
+          { label: "Port Layout 2.5 GbE RJ45", value: "22 (All PoE++) (2.5G/1G/100M/10M)" },
+          { label: "Port Layout 10 GbE RJ45", value: "2 (All PoE++) (10G/5G/2.5G/1G/100M)" },
+          { label: "Port Layou 10G SFP+t", value: "4 (10G/1G)" },
+          { label: "Switching Capacity", value: "230 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "115 Gbps" },
+          { label: "DHCP Server (Local Networks)", value: "✓" },
+          { label: "DHCP Relay", value: "✓" },
+          { label: "LACP Port Aggregation", value: "✓" },
+          { label: "STP & RSTP", value: "✓" },
+          { label: "Max. Power Consumption", value: "60W (Excluding PoE Output) 660W (Including PoE Output)" },
+          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
+          { label: "Application Requirements UniFi Network", value: "Version 9.0.114 and later" },
         ],
         productLink: "/products/mounting-kit-e7"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "UniFi Premium Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Ultra-thin braided patch cable, designed and optimized for 10 GbE networking.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 3 mm outer diameter for 0.15-8 m lengths",
+          "— 3.3 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
         ],
         productLink: "/products/power-cable-e7"
       },
@@ -197,16 +283,59 @@ export const wifiProducts: Product[] = [
           "Hot-swappable"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
+          { label: "Port Layout 1 GbE RJ45", value: "16 (8 PoE+; 8 PoE++) (1G/100M/10M)" },
+          { label: "Port Layout 2.5 GbE RJ45", value: "8 (All PoE++) (2.5G/1G/100M/10M)" },
+          { label: "Port Layou 10G SFP+", value: "2 (10G/1G" },
+          { label: "Switching Capacity", value: "112 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "56 Gbps" },
+          { label: "DHCP Server (Local Networks)", value: "✓" },
+          { label: "DHCP Relay", value: "✓" },
+          { label: "LACP Port Aggregation", value: "✓" },
+          { label: "STP & RSTP", value: "✓" },
+          { label: "Max. Power Consumption", value: "50W (Excluding PoE Output) 450W (Including PoE Output)" },
+          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
+          { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+      {
+        id: 4,
+        name: "UniFi Etherlighting Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
+        specs: [
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 2.5 mm outer diameter for 0.15-8 m lengths",
+          "— 2.9 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
         ],
         productLink: "/products/sfp-module-10g"
       }
     ]
-    },
-{
+  },
+  {
     id: "E7-Campus",
     name: "E7 Campus",
     category: "WiFi",
@@ -220,23 +349,23 @@ export const wifiProducts: Product[] = [
       { label: "Client Capacity", value: "600+" },
       { label: "Uplink", value: "2.5 GbE" },
     ],
-    
+
     // SKU produk
     sku: "E7-CAMPUS",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-E7-Campus.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "High-performance networking solution",
@@ -244,7 +373,7 @@ export const wifiProducts: Product[] = [
       "Easy management and monitoring",
       "Scalable architecture"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -270,7 +399,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -278,7 +407,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -340,7 +469,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "E7-Audience",
     name: "E7 Audience",
     category: "WiFi",
@@ -357,20 +486,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "E7-AUDIENCE",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Enterprise-grade",
@@ -378,7 +507,7 @@ export const wifiProducts: Product[] = [
       "a 10 GbE uplink",
       "and a redundant GbE port for high availability"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -408,7 +537,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -416,7 +545,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -478,7 +607,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U7-Pro-XGS",
     name: "U7 Pro XGS",
     category: "WiFi",
@@ -493,23 +622,23 @@ export const wifiProducts: Product[] = [
       { label: "Storage", value: "128GB SSD Integrated" },
     ],
 
-    
+
     // SKU produk
     sku: "U7-PRO-XGS",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Ceiling-mounted 8-stream WiFi 7 AP with dedicated spectral scanning radio and 10/5/2",
@@ -517,7 +646,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -547,7 +676,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -555,7 +684,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -616,8 +745,8 @@ export const wifiProducts: Product[] = [
         productLink: "/products/sfp-module-10g"
       }
     ]
-    },
-{
+  },
+  {
     id: "U7-Pro-XG",
     name: "U7 Pro XGS",
     category: "WiFi",
@@ -631,23 +760,23 @@ export const wifiProducts: Product[] = [
       { label: "WAN", value: "2.5 GbE RJ45" },
       { label: "Storage", value: "128GB SSD Integrated" },
     ],
-    
+
     // SKU produk
     sku: "U7-PRO-XG",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-U7-Pro-XGS.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "High-performance networking solution",
@@ -655,7 +784,7 @@ export const wifiProducts: Product[] = [
       "Easy management and monitoring",
       "Scalable architecture"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -681,7 +810,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -689,7 +818,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -751,7 +880,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U7-Pro-Max",
     name: "U7 Pro Max",
     category: "WiFi",
@@ -768,20 +897,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U7-PRO-MAX",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Ceiling-mounted WiFi 7 AP with 8 spatial streams",
@@ -789,7 +918,7 @@ export const wifiProducts: Product[] = [
       "and a dedicated spectral scanning engine for interference-free WiFi in demanding",
       "large-scale environments"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -819,7 +948,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -827,7 +956,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -889,7 +1018,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U7-Pr0",
     name: "U7 Pro",
     category: "WiFi",
@@ -906,20 +1035,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U7-PR0",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Ceiling-mounted WiFi 7 AP with 6 spatial streams",
@@ -927,7 +1056,7 @@ export const wifiProducts: Product[] = [
       "large-scale environments",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -957,7 +1086,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -965,7 +1094,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -1027,7 +1156,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U7-LR",
     name: "U7 Long Range",
     category: "WiFi",
@@ -1044,20 +1173,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U7-LR",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "ceiling-mount WiFi 7 AP with 5 spatial streams and extended signal range",
@@ -1065,7 +1194,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -1095,7 +1224,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1103,7 +1232,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -1165,7 +1294,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U7-Lite",
     name: "U7 Lite",
     category: "WiFi",
@@ -1182,20 +1311,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U7-LITE",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "ceiling-mount WiFi 7 AP with 4 spatial streams and 2",
@@ -1203,7 +1332,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -1233,7 +1362,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1241,7 +1370,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -1303,7 +1432,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U6-Enterprise",
     name: "U6 Enterprise",
     category: "WiFi",
@@ -1320,20 +1449,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U6-ENTERPRISE",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Ceiling-mounted WiFI 6E AP with 10 spatial streams and 6 GHz support to provide seamless",
@@ -1341,7 +1470,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -1371,7 +1500,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1379,7 +1508,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -1441,7 +1570,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U6-Pro",
     name: "U6 Pro",
     category: "WiFi",
@@ -1458,20 +1587,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U6-PRO",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Ceiling-mounted WiFi 6 AP with 6 spatial streams designed for large offices",
@@ -1479,7 +1608,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -1509,7 +1638,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1517,7 +1646,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -1579,7 +1708,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U6-PLUS",
     name: "U6+",
     category: "WiFi",
@@ -1596,20 +1725,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U6-PLUS",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "ceiling-mounted WiFi 6 AP with 4 spatial streams that improves upon the U6 Lite with higher performance and dual-band WiFi 6 support",
@@ -1617,7 +1746,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -1647,7 +1776,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1655,7 +1784,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -1717,7 +1846,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UAP-AC-PRO",
     name: "AC Pro",
     category: "WiFi",
@@ -1734,20 +1863,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "UAP-AC-PRO",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Ceiling-mounted WiFi 5 AP with 6 spatial streams designed for large offices",
@@ -1755,7 +1884,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -1785,7 +1914,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1793,7 +1922,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -1855,7 +1984,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U7-Pro-XG-Wall",
     name: "U7 Pro XG Wall",
     category: "WiFi",
@@ -1870,23 +1999,23 @@ export const wifiProducts: Product[] = [
       { label: "Storage", value: "128GB SSD Integrated" },
     ],
 
-    
+
     // SKU produk
     sku: "U7-PRO-XG-WALL",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Wall-mounted 6 GHz-ready WiFi 7 AP with 1/2",
@@ -1894,7 +2023,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -1924,7 +2053,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1932,7 +2061,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -1993,8 +2122,8 @@ export const wifiProducts: Product[] = [
         productLink: "/products/sfp-module-10g"
       }
     ]
-    },
-{
+  },
+  {
     id: "U7-Pro-Wall",
     name: "U7 Pro Wall",
     category: "WiFi",
@@ -2008,23 +2137,23 @@ export const wifiProducts: Product[] = [
       { label: "WAN", value: "2.5 GbE RJ45" },
       { label: "Storage", value: "128GB SSD Integrated" },
     ],
-    
+
     // SKU produk
     sku: "U7-PRO-WALL",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-U7-Pro-Wall.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "High-performance networking solution",
@@ -2032,7 +2161,7 @@ export const wifiProducts: Product[] = [
       "Easy management and monitoring",
       "Scalable architecture"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -2058,7 +2187,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2066,7 +2195,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -2128,7 +2257,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U7-IW",
     name: "U7 In-Wall",
     category: "WiFi",
@@ -2145,20 +2274,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U7-IW",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Wall-mounted WiFi 7 AP with 4 spatial streams and an integrated 2",
@@ -2166,7 +2295,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -2196,7 +2325,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2204,7 +2333,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -2266,7 +2395,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U6-Enterprise-IW",
     name: "U6 Enterprise In-Wall",
     category: "WiFi",
@@ -2283,20 +2412,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U6-ENTERPRISE-IW",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Wall-mounted WiFi 6E AP with 10 spatial streams",
@@ -2304,7 +2433,7 @@ export const wifiProducts: Product[] = [
       "and a built-in 4-port switch",
       "Designed for high-density office networks"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -2334,7 +2463,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2342,7 +2471,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -2404,7 +2533,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U6-IW",
     name: "U6 In-Wall",
     category: "WiFi",
@@ -2421,20 +2550,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U6-IW",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Wall-mounted WiFi 6 AP with 6 spatial streams and a built-in 4‑port switch ideal for single-room coverage in hospitality environments",
@@ -2442,7 +2571,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -2472,7 +2601,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2480,7 +2609,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -2542,7 +2671,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U6-Extender",
     name: "U6 Extender",
     category: "WiFi",
@@ -2559,20 +2688,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U6-EXTENDER",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Easy-to-deploy WiFi 6 coverage extender that fits a standard wall outlet",
@@ -2580,7 +2709,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -2610,7 +2739,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2618,7 +2747,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -2680,7 +2809,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U7-Pro-Outdoor",
     name: "U7 Pro Outdoor",
     category: "WiFi",
@@ -2695,23 +2824,23 @@ export const wifiProducts: Product[] = [
       { label: "Storage", value: "128GB SSD Integrated" },
     ],
 
-    
+
     // SKU produk
     sku: "U7-PRO-OUTDOOR",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "All-weather IP67 WiFi 7 AP with 6 spatial streams",
@@ -2719,7 +2848,7 @@ export const wifiProducts: Product[] = [
       "integrated directional super antenna",
       "and articulation mounting bracket"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -2749,7 +2878,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2757,7 +2886,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -2818,8 +2947,8 @@ export const wifiProducts: Product[] = [
         productLink: "/products/sfp-module-10g"
       }
     ]
-    },
-{
+  },
+  {
     id: "U7-Outdoor",
     name: "U7 Outdoor",
     category: "WiFi",
@@ -2833,23 +2962,23 @@ export const wifiProducts: Product[] = [
       { label: "WAN", value: "2.5 GbE RJ45" },
       { label: "Storage", value: "128GB SSD Integrated" },
     ],
-    
+
     // SKU produk
     sku: "U7-OUTDOOR",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-U7-Outdoor.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "High-performance networking solution",
@@ -2857,7 +2986,7 @@ export const wifiProducts: Product[] = [
       "Easy management and monitoring",
       "Scalable architecture"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -2883,7 +3012,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2891,7 +3020,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -2953,7 +3082,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U6-Mesh",
     name: "U6 Mesh",
     category: "WiFi",
@@ -2970,20 +3099,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U6-MESH",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "indoor/outdoor WiFi 6 AP with 6 spatial streams designed for mesh applications",
@@ -2991,7 +3120,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -3021,7 +3150,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3029,7 +3158,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -3091,7 +3220,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "U6-Mesh-Pro",
     name: "U6 Mesh Pro",
     category: "WiFi",
@@ -3108,20 +3237,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "U6-MESH-PRO",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "indoor/outdoor WiFi 6 AP with 4 spatial streams",
@@ -3129,7 +3258,7 @@ export const wifiProducts: Product[] = [
       "and a gigabit passthrough port",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -3159,7 +3288,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3167,7 +3296,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -3229,7 +3358,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "AC Mesh",
     name: "UAP-AC-M",
     category: "WiFi",
@@ -3246,20 +3375,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "AC-MESH",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "indoor/outdoor WiFi 5 AP with 4 spatial streams and optional external antenna support for directional coverage",
@@ -3267,7 +3396,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -3297,7 +3426,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3305,7 +3434,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -3367,7 +3496,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UK-Ultra",
     name: "Swiss Army Knife",
     category: "WiFi",
@@ -3384,20 +3513,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "UK-ULTRA",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Incredibly compact",
@@ -3405,7 +3534,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -3435,7 +3564,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3443,7 +3572,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -3505,7 +3634,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "Product Collection",
     name: "E7 Audience",
     category: "WiFi",
@@ -3520,23 +3649,23 @@ export const wifiProducts: Product[] = [
       { label: "Storage", value: "128GB SSD Integrated" },
     ],
 
-    
+
     // SKU produk
     sku: "PRODUCT-COLLECTION",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Enterprise-grade",
@@ -3544,7 +3673,7 @@ export const wifiProducts: Product[] = [
       "a 10 GbE uplink",
       "and a redundant GbE port for high availability"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -3574,7 +3703,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3582,7 +3711,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -3643,8 +3772,8 @@ export const wifiProducts: Product[] = [
         productLink: "/products/sfp-module-10g"
       }
     ]
-    },
-{
+  },
+  {
     id: "UWB-XG",
     name: "WiFI BaseStation XG",
     category: "WiFi",
@@ -3658,23 +3787,23 @@ export const wifiProducts: Product[] = [
       { label: "WAN", value: "2.5 GbE RJ45" },
       { label: "Storage", value: "128GB SSD Integrated" },
     ],
-    
+
     // SKU produk
     sku: "UWB-XG",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-WiFI-BaseStation-XG.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "High-performance networking solution",
@@ -3682,7 +3811,7 @@ export const wifiProducts: Product[] = [
       "Easy management and monitoring",
       "Scalable architecture"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -3708,7 +3837,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3716,7 +3845,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -3778,7 +3907,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UDB-Pro-Sector",
     name: "Device Bridge Pro Sector",
     category: "WiFi",
@@ -3793,23 +3922,23 @@ export const wifiProducts: Product[] = [
       { label: "Storage", value: "128GB SSD Integrated" },
     ],
 
-    
+
     // SKU produk
     sku: "UDB-PRO-SECTOR",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "5 GHz point-to-multipoint access point that wirelessly bridges 50+ Device Bridge Pro clients at 5+ km distances",
@@ -3817,7 +3946,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -3847,7 +3976,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3855,7 +3984,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -3916,8 +4045,8 @@ export const wifiProducts: Product[] = [
         productLink: "/products/sfp-module-10g"
       }
     ]
-    },
-{
+  },
+  {
     id: "UDB-Pro",
     name: "Device Bridge Pro ",
     category: "WiFi",
@@ -3931,23 +4060,23 @@ export const wifiProducts: Product[] = [
       { label: "WAN", value: "2.5 GbE RJ45" },
       { label: "Storage", value: "128GB SSD Integrated" },
     ],
-    
+
     // SKU produk
     sku: "UDB-PRO",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-Device-Bridge-Pro-.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "High-performance networking solution",
@@ -3955,7 +4084,7 @@ export const wifiProducts: Product[] = [
       "Easy management and monitoring",
       "Scalable architecture"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -3981,7 +4110,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3989,7 +4118,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4051,7 +4180,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UDB",
     name: "Device Bridge",
     category: "WiFi",
@@ -4068,20 +4197,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "UDB",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Plug-and-play",
@@ -4089,7 +4218,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4119,7 +4248,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4127,7 +4256,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4189,7 +4318,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UBB",
     name: "Building Bridge",
     category: "WiFi",
@@ -4206,20 +4335,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "UBB",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "60 GHz wireless point-to-point bridge with a 5 GHz backup radio",
@@ -4227,7 +4356,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4257,7 +4386,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4265,7 +4394,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4327,7 +4456,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UDB-Switch(35W)",
     name: "Device Bridge Switch",
     category: "WiFi",
@@ -4344,20 +4473,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "UDB-SWITCH-35W-",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Compact PoE+ switch* with (1) 10 GbE port",
@@ -4365,7 +4494,7 @@ export const wifiProducts: Product[] = [
       "and 6 GHz-ready WiFi 7 bridging integration for seamless",
       "high-capacity wireless uplink to UniFi WiFi"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4395,7 +4524,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4403,7 +4532,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4465,7 +4594,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UBB-XG",
     name: "Device Bridge XG",
     category: "WiFi",
@@ -4482,20 +4611,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "UBB-XG",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "60 GHz wireless point-to-point bridge with a 10G SFP+ uplink for maximum performance and a 5 GHz backup radio",
@@ -4503,7 +4632,7 @@ export const wifiProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4533,7 +4662,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4541,7 +4670,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4603,7 +4732,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UDB-IoT",
     name: "Device Bridge IoT",
     category: "WiFi",
@@ -4620,20 +4749,20 @@ export const wifiProducts: Product[] = [
 
     // SKU produk
     sku: "UDB-IOT",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Ultra-compact wireless bridge for IoT devices with integrated UniFi WiFi Auto-Link",
@@ -4641,7 +4770,7 @@ export const wifiProducts: Product[] = [
       "and powered by USB Type-C or 4-pin DC socket",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4671,7 +4800,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4679,7 +4808,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4741,7 +4870,7 @@ export const wifiProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UTR",
     name: "UniFI Travel Router",
     category: "WiFi",
@@ -4756,23 +4885,23 @@ export const wifiProducts: Product[] = [
       { label: "Storage", value: "128GB SSD Integrated" },
     ],
 
-    
+
     // SKU produk
     sku: "UTR",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "An ultra-slim travel router that instantly extends your UniFi Network wherever you are",
@@ -4780,7 +4909,7 @@ export const wifiProducts: Product[] = [
       "familiar connectivity to remote locations",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4810,7 +4939,7 @@ export const wifiProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4818,7 +4947,7 @@ export const wifiProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4879,5 +5008,5 @@ export const wifiProducts: Product[] = [
         productLink: "/products/sfp-module-10g"
       }
     ]
-    }
+  }
 ];
