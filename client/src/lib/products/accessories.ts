@@ -207,7 +207,7 @@ export const accessoriesProducts: Product[] = [
   //Produk Ketiga dari accessories, SF RJ45 & Copper
   {
     id: "UACC-Cable-Patch-EL-0.15M-W",
-    name: "UniFi etherlighting Patch Cable",
+    name: "UniFi Etherlighting Patch Cable",
     category: "Accessories",
     subfilter: "RJ45 & Copper",
     image: "/images/camera.jpg",
