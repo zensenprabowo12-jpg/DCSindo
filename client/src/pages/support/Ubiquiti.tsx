@@ -44,7 +44,7 @@ export default function UbiquitiSupport() {
         {/* UniFi GPT Embed (Replace Search Bar) */}
         <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/10">
           <iframe
-            src= "https://gpt.distributor.ui-apps.com/?distributor=PTDINAMIKACIPTA SOLUSI"
+            src= "https://gpt.distributor.ui-apps.com/?distributor=PTDINAMIKACIPTASOLUSI"
             width="100%"
             height="560"
             className="border-0 bg-white"
