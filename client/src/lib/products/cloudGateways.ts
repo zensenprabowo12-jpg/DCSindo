@@ -106,14 +106,12 @@ export const cloudGatewaysProducts: Product[] = [
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/cloudgateways/1.efg/p-ov1-efg.png",
-      "/images/cloudgateways/1.efg/p-ov2-efg.png",
+      "/images/cloudgateways/1.efg/p-ov2-efg.png"
     ],
 
     // Video untuk tab Overview (opsional, bisa diisi dengan link YouTube atau path video lokal)
     overviewVideos: [
-      "/videos/VP-efg-1.mp4",
-
-
+      "/video/VP-efg-1.mp4",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -147,36 +145,84 @@ export const cloudGatewaysProducts: Product[] = [
       {
         title: "Security",
         items: [
-          { label: "Firewall", value: "Enterprise-class Application-aware Firewall" },
-          { label: "Threat Management", value: "Signature-based IPS/IDS" }
+          { label: "Stateful Firewall", value: "✓", isCheck: true },
+          { label: "Application-Aware Firewall", value: "✓", isCheck: true },
+          { label: "SSL Inspection & URL Filtering", value: "✓", isCheck: true },
+          { label: "DPI & Traffic Identification", value: "✓", isCheck: true },
+          { label: "Zone-Based Firewall Advanced Filtering (Regions, Domains, Apps)", value: "✓", isCheck: true },
+          { label: "Content Filtering", value: "✓", isCheck: true },
+          { label: "Intrusion Prevention System (IPS/IDS)", value: "✓", isCheck: true },
+          { label: "Ad Blocking", value: "✓", isCheck: true },
+          { label: "IDS/IPS Signatures", value: "95.000) with CyberSecure Enterprise" },
+          { label: "VLAN/Subnet-based Traffic Segmentation ", value: "✓", isCheck: true },
         ]
       },
       {
         title: "VPN & SD-WAN",
         items: [
-          { label: "Site-to-Site VPN", value: "OpenVPN, IPsec" },
-          { label: "Remote User VPN", value: "L2TP, OpenVPN, WireGuard" }
+          { label: "Site-to-Site VPN License-Free SD-WAN", value: "✓", isCheck: true },
+          { label: "Site-to-Site VPN Site Magic", value: "✓ 1.1 Gbps"},
+          { label: "Site-to-Site VPN IPsec", value: "✓ 580 Mbps"},
+          { label: "Site-to-Site VPN OpenVPN", value: "✓ 120 Mbps" },
+        
+        { label: "VPN Server Identity Endpoint One-Click VPN", value: "✓ 1.2 Gbps" },
+        { label: "VPN Server Teleport Zero-Configuration VPN", value: "✓ 1.2 Gbps" },
+        { label: "VPN Server WireGuard", value: "✓ 1.2 Gbps"},
+        { label: "VPN Server OpenVPN", value: "✓ 210 Mbps" },
+        { label: "VPN Server L2TP", value: "✓ 280 Mbps " },
+
+        { label: "VPN Client OpenVPN", value: "✓ 980 Mbps" },
+        { label: "VPN Client WireGuard", value: "✓ 180 Mbps" }, 
+
         ]
       },
       {
         title: "Networking",
         items: [
-          { label: "Interfaces", value: "(1) 10G SFP+ WAN, (1) 2.5GbE RJ45 WAN" },
-          { label: "Switching", value: "(8) GbE RJ45 LAN" }
+          { label: "Multi-WAN Load Balancing", value: "✓", isCheck: true },
+          { label: "Shadow Mode (VRRP) High Availability", value: "✓", isCheck: true },
+          { label: "LACP Port Aggregation", value: "✓", isCheck: true },
+          { label: "Dynamic Routing OSPF & BGP", value: "✓", isCheck: true },
+          { label: "Advanced QoS", value: "✓", isCheck: true },
+          { label: "Advanced NAT (SNAT / DNAT / Masquerade / NAT Pooling / 1-to-1 NAT)", value: "✓", isCheck: true },
+          { label: "Integrated RADIUS Server", value: "✓", isCheck: true },
+          { label: "RADIUS over TLS (RadSec)", value: "✓", isCheck: true },
+          { label: "Additional Internet Failover with UniFi LTE Backup", value: "✓", isCheck: true },
+          { label: "Internet Quality and Outage Reporting", value: "✓", isCheck: true },
+          { label: "Policy-based WAN and VPN Routing", value: "✓", isCheck: true },
+          { label: "Customizable DHCP Server", value: "✓", isCheck: true },
+          { label: "IPv6 ISP Support", value: "✓", isCheck: true },
+          { label: "IGMP Proxy", value: "✓", isCheck: true },
+          { label: "All Traffic Flows", value: "✓", isCheck: true },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Processor", value: "Quad-Core ARM Cortex-A57 at 1.7 GHz" },
-          { label: "Memory", value: "4 GB DDR4" }
+          { label: "Max. Power Consumption", value: "82W" },
+          { label: "Power Method", value: "Universal AC input, 100–240V AC, 7A Max., 50/60 Hz" },
+          { label: "Power Supply", value: "(2) Hot-swappable 150W CRPS" },
+          { label: "Supported Voltage Range", value: "100–240V AC" },
+          { label: "Heat Dissipation", value: "280 BTU/hr" },
+          { label: "Processor", value: "18-core ARM® v8.2 at 2 GHz" },
+          { label: "Weight", value: "6.5 kg (14.3 lb)" },
+          { label: "Enclosure Material", value: "Aluminium CNC, SGCC steel" },
+          { label: "LCM Display", value: "'1.3' touchscreen" },
+          { label: "Management", value: "Ethernet Bluetooth" },
+          { label: "LEDs Ethernet & SFP+", value: "✓", isCheck: true },
+          { label: "Button", value: "(1) Factory Reset)" },
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓", isCheck: true },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 06375-24-08356, SRRC" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Mobile App IOS", value: "UniFi iOS™:Version 10.16.2 and later" },
+          { label: "Mobile App Android", value: "UniFi Android™: Version 10.17.2 and later" }
         ]
       }
     ],
@@ -190,14 +236,14 @@ export const cloudGatewaysProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Toolless Mini Rack",
         image: "/images/dcs-box.png",
         price: 299,
         description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "6U-sized device rack",
+          "Combine two Mini Racks into a 12U rack with a Stacking Kit",
+          "Toolless assembly and device mounting"
         ],
         detailedSpecs: [
           { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
@@ -209,39 +255,85 @@ export const cloudGatewaysProducts: Product[] = [
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "UniFi WAN Switch",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "10G SFP+ WAN Switch linking two Shadow Mode High Availability UniFi Gateways to a single ISP.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Combine with Shadow Mode High Availability to ensure uninterrupted connectivity",
+          "(1) 10G SFP+ ISP uplink and (2) 10G SFP+ downlink ports",
+          "(2) AC inputs for power redundancy",
+          "(1) GbE port for management with UniFi Network"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Max. Power Consumption", value: "13W" },
+          { label: "Power Method", value: "(2) Universal input, 100–240V AC, 50/60 Hz" },
+          { label: "Power Input Method", value: "AC input" },
+          { label: "Power Supply", value: "(2) AC/DC, internal, 36W" },
+          { label: "Supported Voltage Range", value: "100–240V AC" },
+          { label: "Management", value: "Ethernet" },
+          { label: "With / Without Mounting Brackets", value: "2.3 kg (5.1 lb) / 2.2 kg (4.85 lb)" },
+          { label: "Mount & Enclosure Material", value: "SGCC Steel" },
+          { label: "ESD Protection", value: "Air: ± 16kV, contact: ± 22kV" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "LED Ethernet, SFP+, System", value: "✓" },
+          { label: "Certification", value: "CE, FCC, IC, Anatel: 03715-25-08356" },
+          { label: "NDAA Compliant", value: "✓" },
         ],
         productLink: "/products/power-cable-efg"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "SFP+ to RJ45 10GbE",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "SFP+ to RJ45 transceiver module that supports 10G connections up to 100 m.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Supported data rates: 10 / 5 / 2.5 / 1 Gbps",
+          "Compatible with SFP+ and SFP interfaces",
+          "Supports connections up to 100 m*(*Ethernet cable is not included.)"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Form Factor", value: "SFP" },
+          { label: "Connector", value: "RJ45" },
+          { label: "Supported Media", value: "Copper" },
+          { label: "Supported Data Rate", value: "1 / 2.5 / 5 / 10 Gbps" },
+          { label: "Supported Cable Distance", value: "10 Gbps(Cat 6A): 100 m (328 ft)" },
+          { label: "Max. Power Consumption", value: "1.9W" },
+          { label: "Pack Options", value: "Single Unit" },
+          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+        
+        
+        
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+      {
+        id: 4,
+        name: "Hot-Swappable Power Module (150W)",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Replacement hot-swappable power module for Enterprise Fortress Gateway and Gateway Enterprise.",
+        specs: [
+          "150W (12V) AC-to-DC power supply",
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "185 x 73.5 x 40 mm (7.3 x 2.9 x 1.6 inches)" },
+          { label: "Weights", value: "733 g (1.6 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Input Voltage Range", value: "100–240V AC" },
+          { label: "Input Frequency", value: "50/60 Hz" },
+          { label: "Output Voltage", value: "12V DC at 12.5A" },
+          { label: "Input Current", value: "7A Max. at 120V AC, 3.6A Max. at 230V AC" },
+          { label: "Inrush Current", value: "<50A peak" },
+          { label: "Efficiency", value: "Full load >81%" },
+          { label: "Total Output Power", value: "150W" },
+          { label: "Over Voltage Protection", value: "13.5V" },
+          { label: "Over Current Protection", value: "18.5–22.5A" },
+          { label: "Ambient Operating Temperature", value: "-5 to 50° C (23 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, UKCA, KC, CCC, RoHS" },
         ],
         productLink: "/products/sfp-module-10g"
       }
@@ -292,10 +384,10 @@ export const cloudGatewaysProducts: Product[] = [
     
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "10G cloud gateway with 200+ UniFi Device",
-      "2000+ client support",
-      "5 Gbps IPS routing",
-      "Redundant NVR storage"
+      "Ad Blocking",
+      "Application-Aware Layer 7 Firewall",
+      "System Memory 8Gb",
+      "1.3\" touchscreen"
     ],
     
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -303,53 +395,111 @@ export const cloudGatewaysProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Dimensions", value: "442.4 x 43.7 x 325 mm (17.4 x 1.7 x 12.8\")" },
-          { label: "Network", value: "✓", isCheck: true },
+          { label: "Dimensions", value: "442.4 x 43.7 x 285.6 mm (17.4 x 1.7 x 11.2\")" },
+          { label: "UniFi App Network", value: "✓", isCheck: true },
+          { label: "UniFi App Protect", value: "✓", isCheck: true },
+          { label: "UniFi App Access", value: "✓", isCheck: true },
+          { label: "UniFi App Talk", value: "✓", isCheck: true },
+          { label: "UniFi App Connect", value: "✓", isCheck: true },
           { label: "Managed UniFi Devices", value: "200+" },
+          { label: "Managed Access Hubs", value: "150+" },
           { label: "Simultaneous Users Connected", value: "2,000+" },
-          { label: "Max. WAN Port Count", value: "3" },
+          { label: "Max. WAN Port Count", value: "8" },
           { label: "Default WAN Ports", value: "(1) 10G SFP+, (1) 2.5 GbE RJ45" },
           { label: "Port Layout", value: "8x GbE RJ45, 1x 10G SFP+, 1x 2.5 GbE RJ45" },
           { label: "IDS/IPS Throughput", value: "5 Gbps" },
           { label: "Concurrent Sessions", value: "500,000" },
           { label: "Form Factor", value: "Rack mount (1U)" },
-          { label: "Storage", value: "2x 3.5\" HDD Bays for NVR" }
+          { label: "Redundancy", value: "Shadow Mode (VRRP) Gateway Failover DC Power Backup" }
         ]
       },
       {
         title: "Security",
         items: [
-          { label: "Firewall", value: "Enterprise-class Application-aware Firewall" },
-          { label: "Threat Management", value: "Signature-based IPS/IDS" }
+          { label: "Stateful Network", value: "✓", isCheck: true },
+          { label: "Application-Aware Layer 7 Firewall", value: "✓", isCheck: true },
+          { label: "DPI & Traffic Identification", value: "✓", isCheck: true },
+          { label: "Zone-Based Firewall Advanced Filtering", value: "✓", isCheck: true },
+          { label: "Content Filtering", value: "✓", isCheck: true },
+          { label: "Intrusion Prevention (IPS/IDS)", value: "✓", isCheck: true },
+          { label: "Ad Blocking", value: "✓", isCheck: true },
+          { label: "IDS/IPS Signatures", value: "55.000+ With CyberSecure"},
+          { label: "VLAN/Subnet-based Traffic Segmentation", value: "✓", isCheck: true },
         ]
       },
       {
         title: "VPN & SD-WAN",
         items: [
-          { label: "Site-to-Site VPN", value: "OpenVPN, IPsec" },
-          { label: "Remote User VPN", value: "L2TP, OpenVPN, WireGuard" }
+          { label: "UniFi ", value: "✓", isCheck: true },
+          { label: "Site-to-Site VPN Site Magic", value: "✓",  },
+          { label: "Site-to-Site VPN IPsec ", value: "✓", isCheck: true },
+          { label: "Site-to-Site VPN OpenVPN", value: "✓", isCheck: true },
+          { label: "VPN Server Identity Endpoint One-Click VPN ", value: "✓", isCheck: true },
+          { label: "VPN Server Teleport Zero-Configuration VPN", value: "✓", isCheck: true },
+          { label: "VPN Server WireGuard ", value: "✓", isCheck: true },
+          { label: "VPN Server Open VPN ", value: "✓", isCheck: true },
+          { label: "VPN Server L2TP", value: "✓", isCheck: true },
+          { label: "VPN Client OpenVPN", value: "✓", isCheck: true },
+          { label: "VPN Client WireGuard", value: "✓", isCheck: true },
         ]
       },
       {
-        title: "Networking",
+        title: "Networking", 
         items: [
           { label: "Interfaces", value: "(1) 10G SFP+ WAN, (1) 2.5GbE RJ45 WAN" },
           { label: "Switching", value: "(8) GbE RJ45 LAN" }
         ]
       },
       {
-        title: "Hardware",
+        title: "Software",
         items: [
-          { label: "Processor", value: "Quad-Core ARM Cortex-A57 at 1.7 GHz" },
-          { label: "Memory", value: "4 GB DDR4" },
-          { label: "Storage", value: "2x 3.5\" HDD Bays" }
+          { label: "Multi-WAN Load Balancing", value: "✓", isCheck: true },
+          { label: "Shadow Mode (VRRP) High Availability", value: "✓", isCheck: true },
+          { label: "LACP Port Aggregation", value: "✓", isCheck: true },
+          { label: "Dynamic Routing OSPF", value: "✓", isCheck: true },
+          { label: "DYnamic ROuting BGP", value: "✓", isCheck: true },
+          { label: "Advanced QoS", value: "✓", isCheck: true },
+          { label: "Multicast DNS (mDNS)", value: "✓", isCheck: true },
+          { label: "Advanced NAT", value: "✓", isCheck: true },
+          { label: "Integrated RADIUS Server", value: "✓", isCheck: true },
+          { label: "RADIUS over TLS (RadSec)", value: "✓", isCheck: true },
+          { label: "Additional Internet Failover with UniFi LTE", value: "✓", isCheck: true },
+          { label: "Internet Quality and Outage Reporting", value: "✓", isCheck: true },
+          { label: "MAC Address Table Size", value: "✓", isCheck: true },
+          { label: "Policy-based WAN and VPN Routing", value: "✓", isCheck: true },
+          { label: "Customizable DHCP Server", value: "✓", isCheck: true },
+          { label: "IPv6 ISP Support", value: "✓", isCheck: true },
+          { label: "IGMP Proxy", value: "✓", isCheck: true },
+          { label: "Virtual Network Override", value: "✓", isCheck: true },
+          { label: "All Traffic Flows", value: "✓", isCheck: true },
+
         ]
       },
       {
-        title: "Software",
+        title: "Hardware",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "NVR Storage", value: "(2) 3.5\" NVR HDD bays Built-in 128 GB SSD for Faster Experience" },
+          { label: "Max. Power Consumption", value: "60W" },
+          { label: "Power Method", value: "(1) Universal AC input, 100–240V AC, 2A Max., 50/60 Hz, (1) USP-RPS DC input, 11.5V DC, 8.7A" },
+          { label: "Power Supply", value: "AC/DC, Internal, 100W" },
+          { label: "Supported Voltage Range", value: "100-240V AC" },
+          { label: "Heat Dissipation", value: "205 BTU/hr" },
+          { label: "Processor", value: "Quad-core ARM® Cortex®-A57 at 2.0 GHz" },
+          { label: "System Memory", value: "8 GB" },
+          { label: "On-board Storage", value: "32 GB eMMC, 128 GB SSD (Integrated)" },
+          { label: "Weight", value: "4.7 kg (19.4 lb)" },
+          { label: "Enclosure Material", value: "Aluminium CNC, SGCC steel" },
+          { label: "Mount Material", value: "SGCC steel" },
+          { label: "LCM Display", value: "1.3\" touchscreen" },
+          { label: "Management", value: "Ethernet, Bluetooth" },
+          { label: "LEDs ( Ethernet, SFP+, RPS, PSU, HDD", value: "✓", isCheck: true },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "ESD/EMP Protection", value: "Air: ± 15kV, contact: ± 8kV" },
+          { label: "Ambient Operating Temperature", value: "UniFi Network" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓", isCheck: true },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 06369-24-08356, SRRC" },
+        
         ]
       }
     ],
@@ -363,14 +513,14 @@ export const cloudGatewaysProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Toolless Mini Rack",
         image: "/images/dcs-box.png",
         price: 299,
         description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "6U-sized device rack",
+          "Combine two Mini Racks into a 12U rack with a Stacking Kit",
+          "Toolless assembly and device mounting"
         ],
         detailedSpecs: [
           { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
@@ -378,46 +528,68 @@ export const cloudGatewaysProducts: Product[] = [
           { label: "Material", value: "SGCC Steel" },
           { label: "Mounting", value: "1U Rack Mount" }
         ],
-        productLink: "/products/mounting-kit"
+        productLink: "/products/mounting-kit-efg" // Link ke halaman produk addon
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "UniFi WAN Switch",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "10G SFP+ WAN Switch linking two Shadow Mode High Availability UniFi Gateways to a single ISP.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Combine with Shadow Mode High Availability to ensure uninterrupted connectivity",
+          "(1) 10G SFP+ ISP uplink and (2) 10G SFP+ downlink ports",
+          "(2) AC inputs for power redundancy",
+          "(1) GbE port for management with UniFi Network"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Max. Power Consumption", value: "13W" },
+          { label: "Power Method", value: "(2) Universal input, 100–240V AC, 50/60 Hz" },
+          { label: "Power Input Method", value: "AC input" },
+          { label: "Power Supply", value: "(2) AC/DC, internal, 36W" },
+          { label: "Supported Voltage Range", value: "100–240V AC" },
+          { label: "Management", value: "Ethernet" },
+          { label: "With / Without Mounting Brackets", value: "2.3 kg (5.1 lb) / 2.2 kg (4.85 lb)" },
+          { label: "Mount & Enclosure Material", value: "SGCC Steel" },
+          { label: "ESD Protection", value: "Air: ± 16kV, contact: ± 22kV" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "LED Ethernet, SFP+, System", value: "✓" },
+          { label: "Certification", value: "CE, FCC, IC, Anatel: 03715-25-08356" },
+          { label: "NDAA Compliant", value: "✓" },
         ],
-        productLink: "/products/power-cable"
+        productLink: "/products/power-cable-efg"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "Redundant Power",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "950W redundant power supply for rack-mounted UniFi devices.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "950W DC power availability",
+          "(6) DC SmartPower ports",
+          "1.3\" LCM touchscreen"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Management", value: "Ethernet" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 Port" },
+          { label: "Power Method", value: "(1) Universal AC input, 100-240V AC)" },
+          { label: "Power Supply", value: "54V DC output: AC/DC, internal, 645W, 12V DC output: AC/DC, internal, 350W" },
+          { label: "Supported Voltage Range", value: "100–240V AC" },
+          { label: "Max. Power Consumption", value: "995W" },
+          { label: "Power Output", value: "(6) RPS DC Ports)" },
+          { label: "ESD/EMP Protection", value: "Air: 16kV, contact 12kV" },
+          { label: "Display", value: "1.3\" touchscreen" },
+          { label: "Buttons", value: "(1) Factory Reset)" },
+          { label: "LEDs System", value: "Status" },
+          { label: "LEDs ", value: "Activity" },
+          { label: "Certifications ", value: "CE, FCC, IC" },
+        
+        
         ],
         productLink: "/products/sfp-module-10g"
-      }
+      },
+      
     ]
   },
 {
@@ -456,32 +628,114 @@ export const cloudGatewaysProducts: Product[] = [
       "/images/cloudgateways/3.udmpro/p-ov2-udmpro.png"
     ],
     bulletPoints: [
-      "10G Cloud Gateway with 100+ UniFi device",
-      "1,000+ client support",
-      "3.5 Gbps IPS routing",
-      "Professional networking solution"
+      "Certifications : CE, FCC, IC, Anatel: 001136-20-08356, SRRC",
+      "Power Supply : AC/DC, Internal, 50W",
+      "Processor : Quad-core ARM® Cortex®-A57 at 1.7 GHz",
+      "System Memory : 4 GB"
     ],
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Dream Machine Pro" },
-          { label: "Model", value: "UDM-PRO" },
+          { label: "Dimensions", value: "442.4 x 43.7 x 285.6 mm (17.4 x 1.7 x 11.2\")" },
+          { label: "UniFi Application Suite Network", value: "✓" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+          { label: "UniFi Application Suite Access", value: "✓" },
+          { label: "UniFi Application Suite Talk", value: "✓" },
+          { label: "UniFi Application Suite Connect", value: "✓" },
           { label: "Managed UniFi Devices", value: "100+" },
-          { label: "Simultaneous Users Connected", value: "1,000+" },
+          { label: "Manages Access Hubs", value: "150" },
+          { label: "Simultaneous Users Connected", value: "1.000+" },
+          { label: "Max. WAN Port Count", value: "8" },
+          { label: "Default WAN Ports", value: "(1) 10G SFP+, (1) GbE RJ45" },
           { label: "IDS/IPS Throughput", value: "3.5 Gbps" },
-          { label: "Form Factor", value: "Rack mount (1U)" }
+          { label: "Form Factor", value: "Rack mount (1U)" },
+          { label: "Redundancy", value: "Shadow Mode (VRRP) Gateway Failover DC Power Backup" },
+          { label: "UniFi", value: "✓" },
+          
+        ]
+      },
+      {
+        title: "Security",
+        items: [
+          { label: "Stateful Firewall", value: "✓" },
+          { label: "Application-Aware Layer 7 Firewall", value: "✓" },
+          { label: "DPI & Traffic Identification", value: "✓" },
+          { label: "Zone-Based Firewall Advanced Filtering", value: "✓" },
+          { label: "Content Filtering", value: "✓" },
+          { label: "Intrusion Prevention (IPS/IDS)", value: "✓" },
+          { label: "Ad Blocking", value: "✓" },
+          { label: "IDS/IPS Signatures", value: "55.000+ with CyberSecure" },
+          { label: "VLAN/Subnet-based Traffic Segmentation", value: "✓" },
+
+        ]
+      },
+      {
+        title: "VPN & SD-WAN",
+        items: [
+          { label: "License-Free SD-WAN", value: "✓" },
+          { label: "Site-to-Site VPN Site Magic", value: "✓" },
+          { label: "Site-to-Site VPN IPsec", value: "✓" },
+          { label: "Site-to-Site VPN OpenVPN", value: "✓" },
+          { label: "VPN Server Identity Endpoint One-Click VPN", value: "✓" },
+          { label: "VPN Server Teleport Zero-Configuration VPN", value: "✓" },
+          { label: "VPN Server WireGuard", value: "✓" },
+          { label: "VPN Server OpenVPN", value: "✓" },
+          { label: "VPN Server L2TP", value: "✓" },
+          { label: "VPN Client OpenVPN", value: "✓" },
+          { label: "VPN Client WireGuard", value: "✓" },
+        ]
+      },
+      {
+        title: "Networking",
+        items: [
+          { label: "Multi-WAN Load Balancing", value: "✓" },
+          { label: "Shadow Mode (VRRP) High Availability", value: "✓" },
+          { label: "LACP Port Aggregation", value: "✓" },
+          { label: "Dynamic OSPF & BGP", value: "✓" },
+          { label: "Advanced QoS", value: "✓" },
+          { label: "Multicast DNS (mDNS)", value: "✓" },
+          { label: "Advanced NAT", value: "✓" },
+          { label: "Integrated RADIUS Server", value: "✓" },
+          { label: "Rdaius over TLS (RadSec)", value: "✓" },
+          { label: "Additional Internet Failover with UniFi LTE Backup", value: "✓" },
+          { label: "Internet Quality and Outage reporting", value: "✓" },
+          { label: "MAC Address Table Size", value: " 4.000"},
+          { label: "Policy-based WAN and VPN Routing", value: "✓"},
+          { label: "Customizable DHCP Server", value: "✓"},
+          { label: "IPv6 ISP Support", value: "✓"},
+          { label: "IGMP Proxy", value: "✓"},
+          {label: "Virtual Network Override", value: "✓"},
+          { label: "All Traffice Flows", value: "✓"}
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Throughput", value: "3.5 Gbps IPS" },
-          { label: "PoE", value: "2x PoE+, 6x PoE" },
-          { label: "WAN", value: "2.5 GbE RJ45" },
-          { label: "Storage", value: "128GB SSD Integrated" }
+          { label: "NVR Storage", value: "(1) 3.5\" NVR HDD bay" },
+          { label: "Max. Power Consumption", value: "33W" },
+          { label: "Power Supply", value: "AC/DC, Internal, 50W" },
+          { label: "Supported Voltage Range", value: "100-240V AC" },
+          { label: "Heat Dissipation", value: "112 BTU/hr" },
+          { label: "Processor", value: "Quad-core ARM® Cortex®-A57 at 1.7 GHz"},
+          { label: "System Memory", value: "4 GB" },
+          { label: "On-board Storage", value: "16 Gb" },
+          { label: "Weight", value: "3.9 kg (8.6 lb)" },
+          { label: "Enclosure Material", value: "Aluminium CNC, SGCC steel" },
+          { label: "Mount Material", value: "SGCC steel" },
+          { label: "LCM Display", value: "1.3\" touchscreen" },
+          { label: "Management", value: "Ethernet, Bluetooth" },
+          { label: "LEDs (Ethernet, SFP+, RPS, PSU, HDD)", value: "✓" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "ESD/EMP Protection", value: "Air: ± 15kV, contact: ± 8kV" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 001136-20-08356, SRRC" },
         ]
-      }
+      },
+
+
     ],
     inTheBox: [
       { name: "Device", image: "/images/cloudgateways/3.udmpro/p-itb-udmpro.png", },
