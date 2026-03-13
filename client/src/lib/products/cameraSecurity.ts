@@ -67,77 +67,88 @@ export interface Product {
 
 // Camera Security Products
 export const cameraSecurityProducts: Product[] = [
-{
+// Produk Pertama dari Camera Security, SF Enterprise NVR
+   {
     id: "ENVR",
     name: "Enterprise NVR",
     category: "Camera Security",
-    subfilter: "NVRs and Edge Devices",
-    image: "/images/camera.jpg",
+    subfilter: "Enterprise NVR",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
-      "3U NVR with (16) 2.5/3.5' drive bays, supporting up to (70) 4K cameras or (210) FUll HD cameras.",
+      "3U NVR with (16) 2.5/3.5” drive bays, supporting up to (70) 4K cameras or (210) Full HD cameras.",
     specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
+      { label: "Throughput", value: "3.5 Gbps IPS" },
+      { label: "PoE", value: "2x PoE+, 6x PoE" },
+      { label: "WAN", value: "2.5 GbE RJ45" },
+      { label: "Storage", value: "128GB SSD Integrated" },
     ],
 
-    
+
     // SKU produk
     sku: "ENVR",
 
-    
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
 
-    
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
 
-    
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Professional Enterprise NVR camera",
-      "High-resolution video recording",
-      "AI-powered detection and analytics",
-      "Weather-resistant design"
+      "Power Supply Hot-swappable 550W CRPS",
+      "Enclosure Material SGCC steel",
+      "Power Method (2) AC input, 100–240V, 7A Max., 50/60Hz (Redundant, hot-swappable)",
     ],
 
-    
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Enterprise NVR" },
-          { label: "Model", value: "ENVR" },
-          { label: "Category", value: "Camera Security" }
+          { label: "Dimensions", value: "481.4 x 480 x 132 mm (19 x 18.9 x 5.2')" },
+          { label: "Managed Cameras", value: "(210) HD (140) 2K (70) 4K" },
+          { label: "Managed Access Hub", value: "300" },
+          { label: "Storage Capacity", value: "(16) 3.5' drive bays" },
+          { label: "Data Protection", value: "✓" },
+          { label: "Vantage Point", value: "✓" },
+          { label: "Networking Interface", value: "(2) 10G SFP+ ports (1) 10 GbE RJ45 port" },
+          { label: "Power Redundancy", value: "✓" },
+          { label: "Form Factor", value: "Rack Mount (3U)" },
+          { label: "Door Access Support", value: "✓" },
+          { label: "Management Applications", value: "UniFi Protect UniFi Access" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Hard Drive Capacity", value: "(16) 2.5/3.5' HDD / SSD support" },
+          { label: "Max. Power Budget for Drives", value: "310W" },
+          { label: "Max. Power Consumption", value: "410W" },
+          { label: "Power Method", value: "(16) 2.5/3.5' HDD / SSD support" },
+          { label: "Power Supply", value: "Hot-Swappable 550W CRPS" },
+          { label: "Processor", value: "8-core ARM® at 2.5 GHz" },
+          { label: "Memory", value: "32 Gb" },
+          { label: "Management", value: "Ethernet" },
+          { label: "Display", value: "Bazel (Optional)" },
+          { label: "Weight", value: "Without rails: 16.6 kg (36.6 lb) With rails: 19.5 kg (43.0 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Mount Material", value: "Aluminum" },
+          { label: "Slide Rails", value: "482.6 mm (19') four-post racks Posts depths ranging from 650 to 1,000 mm (25.6–39.4”)" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
-    
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -145,138 +156,89 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+  // Produk Kedua dari Camera Security, SF Enterprise NVR
+   {
     id: "UNVR-Pro",
     name: "Network Video Recorder Pro",
     category: "Camera Security",
-    subfilter: "NVRs and Edge Devices",
-    image: "/images/camera.jpg",
+    subfilter: "Enterprise NVR",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "A 2U-sized video recorder with (7) 2.5/3.5' HDD bays that can provide up to 60 days of storage for (24) 4K cameras or (70) Full HD cameras.",
     specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
+      { label: "Throughput", value: "3.5 Gbps IPS" },
+      { label: "PoE", value: "2x PoE+, 6x PoE" },
+      { label: "WAN", value: "2.5 GbE RJ45" },
+      { label: "Storage", value: "128GB SSD Integrated" },
     ],
 
+
     // SKU produk
-    sku: "UNVR-PRO",
-    
+    sku: "UNVR-Pro",
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "A 2U-sized video recorder with (7) 2",
-      "5' HDD bays that can provide up to 60 days of storage for (24) 4K cameras or (70) Full HD cameras",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Power Method (1) Universal AC input, 100–240V AC, 3A Max., 50/60 Hz (1) USP-RPS DC input, 11.5V DC, 13.91A",
+      "Enclosure Material SGCC steel",
+      "Power Supply AC/DC, internal, 200W",
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Network Video Recorder Pro" },
-          { label: "Model", value: "UNVR-PRO" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "442 x 325 x 87 mm (17.4 x 12.8 x 3.4')" },
+          { label: "Managed Cameras", value: "(70) HD (35) 2K (24) 4K" },
+          { label: "Managed Access Hub", value: "150" },
+          { label: "Storage Capacity", value: "(7) 3.5' drive bays" },
+          { label: "Data Protection", value: "✓" },
+          { label: "Vantage Point", value: "✓" },
+          { label: "Networking Interface", value: "(1) 10G SFP+ port (1) GbE RJ45 port " },
+          { label: "Power Redundancy", value: "✓" },
+          { label: "Form Factor", value: "Rack Mount (2U)" },
+          { label: "Door Access Support", value: "✓" },
+          { label: "Management Applications", value: "UniFi Protect UniFi Access" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Hard Drive Capacity", value: "(7) 2.5/3.5' HDD / SSD support" },
+          { label: "Max. Power Budget for Drives", value: "135W" },
+          { label: "Max. Power Consumption", value: "160W" },
+          { label: "Power Method", value: "(1) Universal AC input, 100–240V AC, 3A Max., 50/60 Hz (1) USP-RPS DC input, 11.5V DC, 13.91A" },
+          { label: "Power Supply", value: "AC/DC, internal, 200W" },
+          { label: "Processor", value: "Quad ARM® Cortex®-A57 cores at 1.7GHz" },
+          { label: "Memory", value: "8 Gb" },
+          { label: "Management", value: "Ethernet" },
+          { label: "Display", value: "1.3' touchscreen" },
+          { label: "Weight", value: "Without mounting brackets: 9.2 kg (20.3 lb) With mounting brackets: 9.5 kg (20.8 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Mount Material", value: "SGCC steel" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 06697-21-08356" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -284,137 +246,89 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-unvr-pro"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-unvr-pro"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+  // Produk Ketiga dari Camera Security, SF Enterprise NVR
+   {
     id: "UNVR",
-    name: "Network Video Recorder ",
+    name: "Network Video Recorder",
     category: "Camera Security",
-    subfilter: "NVRs and Edge Devices",
-    image: "/images/camera.jpg",
+    subfilter: "Enterprise NVR",
+    image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
-      "A video recorder with (4) 2.5/3.5' HDD bays that can support up to 30 days of storage for (18) 4k cameras or (60) Full HD cameras.",
+      "A video recorder with (4) 2.5/3.5' HDD bays that can support up to 30 days of storage for (18) 4K cameras or (60) Full HD cameras.",
     specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
+      { label: "Throughput", value: "3.5 Gbps IPS" },
+      { label: "PoE", value: "2x PoE+, 6x PoE" },
+      { label: "WAN", value: "2.5 GbE RJ45" },
+      { label: "Storage", value: "128GB SSD Integrated" },
     ],
+
 
     // SKU produk
     sku: "UNVR",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-UDR-5G-Max.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "A video recorder with (4) 2",
-      "5' HDD bays that can support up to 30 days of storage for (18) 4k cameras or (60) Full HD cameras",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Power Method (1) Universal AC input, 100–240V AC, 2A Max., 50/60 Hz (1) USP-RPS DC input, 11.5V DC, 10.43A",
+      "Enclosure Material SGCC steel",
+      "Power Supply AC/DC, internal, 120W",
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Network Video Recorder " },
-          { label: "Model", value: "UNVR" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
+          { label: "Managed Cameras", value: "(60) HD (30) 2K (18) 4K" },
+          { label: "Managed Access Hub", value: "150" },
+          { label: "Storage Capacity", value: "(7) 3.5' drive bays" },
+          { label: "Data Protection", value: "✓" },
+          { label: "Vantage Point", value: "✓" },
+          { label: "Networking Interface", value: "(1) 10G SFP+ port (1) GbE RJ45 port " },
+          { label: "Power Redundancy", value: "✓" },
+          { label: "Form Factor", value: "Rack Mount (1U)" },
+          { label: "Door Access Support", value: "✓" },
+          { label: "Management Applications", value: "UniFi Protect UniFi Access" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Hard Drive Capacity", value: "(7) 2.5/3.5' HDD / SSD support" },
+          { label: "Max. Power Budget for Drives", value: "75W" },
+          { label: "Max. Power Consumption", value: "100W" },
+          { label: "Power Method", value: "(1) Universal AC input, 100–240V AC, 2A Max., 50/60 Hz (1) USP-RPS DC input, 11.5V DC, 10.43A " },
+          { label: "Power Supply", value: "AC/DC, internal, 120W" },
+          { label: "Processor", value: "Quad ARM® Cortex®-A57 cores at 1.7GHz" },
+          { label: "Memory", value: "4 Gb" },
+          { label: "Management", value: "Ethernet" },
+          { label: "Display", value: "1.3' touchscreen" },
+          { label: "Weight", value: "Without mounting brackets: 5.1 kg (11.3 lb) With mounting brackets: 5.2 kg (11.5 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Mount Material", value: "SGCC steel" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, SRRC, Anatel: 01924-21-08356" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -422,67 +336,6 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-unvr"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-unvr"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
 {
     id: "UNVR-Instant",
