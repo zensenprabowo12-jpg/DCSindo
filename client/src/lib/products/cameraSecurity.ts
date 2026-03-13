@@ -41,20 +41,20 @@ export interface Product {
   id: string;
   name: string;
   category:
-    | "Cloud Gateways"
-    | "Switching"
-    | "WiFi"
-    | "Camera Security"
-    | "Door Access"
-    | "Integrations"
-    | "Advanced Hosting"
-    | "Accessories";
+  | "Cloud Gateways"
+  | "Switching"
+  | "WiFi"
+  | "Camera Security"
+  | "Door Access"
+  | "Integrations"
+  | "Advanced Hosting"
+  | "Accessories";
   subfilter: string;
   image: string;
   shortDescription: string;
   specs: { label: string; value: string }[];
   isNew?: boolean;
-  
+
   // Field baru untuk halaman detail produk
   images?: string[]; // Array gambar untuk gallery (termasuk gambar utama)
   overviewImages?: string[]; // Gambar untuk tab Overview
@@ -67,12 +67,12 @@ export interface Product {
 
 // Camera Security Products
 export const cameraSecurityProducts: Product[] = [
-// Produk Pertama dari Camera Security, SF Enterprise NVR
-   {
+  // Produk Pertama dari Camera Security, SF NVRs and Edge Devices
+  {
     id: "ENVR",
     name: "Enterprise NVR",
     category: "Camera Security",
-    subfilter: "Enterprise NVR",
+    subfilter: "NVRs and Edge Devices",
     image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "3U NVR with (16) 2.5/3.5” drive bays, supporting up to (70) 4K cameras or (210) Full HD cameras.",
@@ -158,8 +158,8 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-  // Produk Kedua dari Camera Security, SF Enterprise NVR
-   {
+  // Produk Kedua dari Camera Security, SF NVRs and Edge Devices
+  {
     id: "UNVR-Pro",
     name: "Network Video Recorder Pro",
     category: "Camera Security",
@@ -248,12 +248,12 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-  // Produk Ketiga dari Camera Security, SF Enterprise NVR
-   {
+  // Produk Ketiga dari Camera Security, SF NVRs and Edge Devices
+  {
     id: "UNVR",
     name: "Network Video Recorder",
     category: "Camera Security",
-    subfilter: "Enterprise NVR",
+    subfilter: "NVRs and Edge Devices",
     image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "A video recorder with (4) 2.5/3.5' HDD bays that can support up to 30 days of storage for (18) 4K cameras or (60) Full HD cameras.",
@@ -337,7 +337,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
   },
-{
+
+  // Produk Keempat dari CameraSecurity, SF NVRs and Edge Devices
+  {
     id: "UNVR-Instant",
     name: "Network Video Recorder Instant",
     category: "Camera Security",
@@ -354,58 +356,74 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UNVR-INSTANT",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Compact UniFi Protect NVR with 3",
-      "5' HDD support",
-      "featuring an integrated 6-port PoE switch",
-      "integrated HDMI View Port"
+      "Enclosure Material Polycarbonate",
+      "Power Method Universal AC input, 100-240VAC, 1.5A Max, 50/60 Hz",
+      "Storage Capacity (1) 3.5' drive bay"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Network Video Recorder Instant" },
-          { label: "Model", value: "UNVR-INSTANT" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "220 x 220 x 47 mm (8.7 x 8.7 x 1.9')" },
+          { label: "Managed Cameras", value: "(15) HD (8) 2K (6) 4K" },
+          { label: "Managed Access Hub", value: "50" },
+          { label: "Storage Capacity", value: "(1) 3.5' drive bay" },
+          { label: "Data Protection", value: "✓" },
+          { label: "Vantage Point", value: "✓" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 uplink port (6) GbE PoE RJ45 downlink ports (1) HDMI port (Viewport)" },
+          { label: "Form Factor", value: "Compact Desktop" },
+          { label: "Mounting", value: "Wall, Din rail mount (Included)" },
+          { label: "Door Access Support", value: "✓" },
+          { label: "Management Applications", value: "UniFi Protect UniFi Access" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Hard Drive Capacity", value: "(1) 3.5' HDD support" },
+          { label: "Max. Power Budget for Drives", value: "11W" },
+          { label: "Max. Power Consumption", value: "9W" },
+          { label: "Power Method", value: "Universal AC input, 100-240VAC, 1.5A Max, 50/60 Hz" },
+          { label: "Power Supply", value: "AC/DC, Internal, 60W" },
+          { label: "PoE Budget", value: "40W" },
+          { label: "Max. PoE Wattage per Port by PSE PoE", value: "15.4W" },
+          { label: "Voltage Range PoE Mode", value: "44-57V" },
+          { label: "Processor", value: "Quad-core ARM® Cortex®-A55 at 1.7 GHz" },
+          { label: "Memory", value: "4 Gb" },
+          { label: "Management", value: "Ethernet Bluetooth" },
+          { label: "Display", value: "1.14' screen" },
+          { label: "Weight", value: "1.04 kg (2.3 lb)" },
+          { label: "", value: "SGCC steel" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "LEDs Ethernet", value: "✓" },
+          { label: "LEDs PoE", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE, Electrical Safety, SRRC, Anatel: 06781-25-08356" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -413,69 +431,116 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "UniFi Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Bendable booted RJ45",
+          "3 mm outer diameter",
+          "Cable length: 0.1 to 8m",
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
         ],
-        productLink: "/products/mounting-kit-unvr-instant"
+        productLink: "/products/mounting-kit-u6-plus"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "UniFi Premium Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Ultra-thin braided patch cable, designed and optimized for 10 GbE networking.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 3 mm outer diameter for 0.15-8 m lengths",
+          "— 3.3 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
         ],
-        productLink: "/products/power-cable-unvr-instant"
+        productLink: "/products/power-cable-e7"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "UniFi Etherlighting Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 2.5 mm outer diameter for 0.15-8 m lengths",
+          "— 2.9 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
         ],
         productLink: "/products/sfp-module-10g"
       }
     ]
   },
-{
+
+  //Produk Kelima dari Camera Security, SF NVRs and Edge Devices
+  {
     id: "UNVR-Instant-Kit",
     name: "Network Video Recorder Instant Kit",
     category: "Camera Security",
@@ -492,58 +557,127 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UNVR-INSTANT-KIT",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Compact UniFi Protect NVR Kit",
-      "includes (1) UniFi Protect NVR Instant with (4) G5 Turret Ultra cameras and (1) 1TB HDD",
-      "delivering an all-in-one solution for fast and effortless setup",
-      "Reliable performance"
+      "Storage Capacity (1) 3.5' drive bay",
+      "Networking Interface (1) GbE RJ45 uplink port (6) GbE PoE RJ45 downlink ports (1) HDMI port (Viewport)",
+      "Rotation Speed 5400 RPM"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Network Video Recorder Instant",
         items: [
-          { label: "Product Name", value: "Network Video Recorder Instant Kit" },
-          { label: "Model", value: "UNVR-INSTANT-KIT" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "220 x 220 x 47 mm (8.7 x 8.7 x 1.9')" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+          { label: "UniFi Application Suite Access", value: "✓" },
+          { label: "Managed Cameras", value: "(15) HD (8) 2K (6) 4K" },
+          { label: "Managed Access Hub", value: "50" },
+          { label: "Storage Capacity", value: "(1) 3.5' drive bay" },
+          { label: "Data Protection", value: "✓" },
+          { label: "Vantage Point", value: "✓" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 uplink port (6) GbE PoE RJ45 downlink ports (1) HDMI port (Viewport)" },
+          { label: "Form Factor", value: "Compact Desktop" },
+          { label: "Mounting", value: "Wall, Din rail mount (Included)" },
+          { label: "Door Access Support", value: "✓" },
+          { label: "Management Applications", value: "UniFi Protect UniFi Access" },
+          { label: "Hard Drive Capacity", value: "(1) 3.5' HDD support" },
+          { label: "Max. Power Budget for Drives", value: "11W" },
+          { label: "Max. Power Consumption", value: "9W" },
+          { label: "Power Method", value: "Universal AC input, 100-240VAC, 1.5A Max, 50/60 Hz" },
+          { label: "Power Supply", value: "AC/DC, Internal, 60W" },
+          { label: "PoE Budget", value: "40W" },
+          { label: "Max. PoE Wattage per Port by PSE PoE", value: "15.4W" },
+          { label: "Voltage Range PoE Mode", value: "44-57V" },
+          { label: "Processor", value: "Quad-core ARM® Cortex®-A55 at 1.7 GHz" },
+          { label: "Memory", value: "4 Gb" },
+          { label: "Management", value: "Ethernet Bluetooth" },
+          { label: "Display", value: "1.14' screen" },
+          { label: "Weight", value: "1.04 kg (2.3 lb)" },
+          { label: "", value: "SGCC steel" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "LEDs Ethernet", value: "✓" },
+          { label: "LEDs PoE", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE, Electrical Safety, SRRC, Anatel: 06781-25-08356" },
         ]
       },
       {
-        title: "Hardware",
+        title: "G5 Turret Ultra",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Dimensions", value: "⌀90 x 71.2 mm (⌀3.5 x 2.8')" },
+          { label: "IR Night Vision", value: "30 m (98 ft)" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "2K" },
+          { label: "Field of View", value: "H: 102.4°, V: 54.9°, D: 120.6°" },
+          { label: "Audio", value: "H: 102.4°, V: 54.9°, D: 120.6°" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall, ceiling mount (Included) Junction box, arm mount (Optional)" },
+          { label: "Networking Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "4MP 2688 x 1512 (16:9)" },
+          { label: "Optics Sensor", value: "1/2.4' CMOS" },
+          { label: "Optics Lens", value: "Fixed Focal Length" },
+          { label: "Optics Night Mode", value: "Built-in IR LED illumination and IR cut filter" },
+          { label: "Max. Power Consumption", value: "4W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Dual-core Arm® Cortex®-A7 based chip" },
+          { label: "Weight", value: "330 g (11.6 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, UV-stabilized polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Cable Cable Connector Type", value: "RJ45" },
+          { label: "Cable Cable Diameter", value: "5 mm (0.2')" },
+          { label: "Cable Cable Length", value: "30 cm (1 ft)" },
+          { label: "Cable Jacket Material", value: "Polycarbonate" },
+          { label: "Cable Jacket Enclosure Dimensions", value: "⌀20 x 70.6 mm (0.8 x 2.8')" },
+          { label: "Cable Jacket Enclosure Material", value: "Thermoplastic elastomer, polycarbonate, silicone rubber" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50° C (-22 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
       {
-        title: "Software",
+        title: "HDD",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Dimensions", value: "147 x 101.6 x 26.1 mm (5.75 x 4 x 1')" },
+          { label: "Hard Disk Form Factor", value: "30 m (98 ft)" },
+          { label: "Weight", value: "✓" },
+          { label: "Storage Capacity", value: "2K" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Management Interface", value: "SATA 6 Gb/s" },
+          { label: "Rotation Speed", value: "5400 RPM" },
+          { label: "Workload Rating", value: "180 TB/year" },
+          { label: "mean Time Between Fallure", value: "1,000,000 h" },
+          { label: "Ambient Operating Temperature", value: "0 to 65° C (32 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, CE, TUV, RCM, KC, BSMI" },
         ]
-      }
+      },
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -551,69 +685,116 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "UniFi Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Bendable booted RJ45",
+          "3 mm outer diameter",
+          "Cable length: 0.1 to 8m",
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
         ],
-        productLink: "/products/mounting-kit-unvr-instant-kit"
+        productLink: "/products/mounting-kit-u6-plus"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "UniFi Premium Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Ultra-thin braided patch cable, designed and optimized for 10 GbE networking.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 3 mm outer diameter for 0.15-8 m lengths",
+          "— 3.3 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
         ],
-        productLink: "/products/power-cable-unvr-instant-kit"
+        productLink: "/products/power-cable-e7"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "UniFi Etherlighting Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 2.5 mm outer diameter for 0.15-8 m lengths",
+          "— 2.9 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
         ],
         productLink: "/products/sfp-module-10g"
       }
     ]
   },
-{
+
+  // Produk Keenam dari Camera Security, SF NVRs and Edge Devices
+  {
     id: "AI-Key",
     name: "AI Key",
     category: "Camera Security",
@@ -630,58 +811,60 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "AI-KEY",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Edge AI appliance that enhances any UniFi Protect deployment with proactive",
-      "AI-driven threat detection and alerting",
-      "capable of analyzing up to 1",
-      "800 smart detection events per hour"
+      "Compute Capacity 1,800 smart detections / hour",
+      "Power Method PoE++",
+      "Enclosure Material Aluminium alloy"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI Key" },
-          { label: "Model", value: "AI-KEY" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "134.2 x 131.2 x 33.7 mm (5.3 x 5.2 x 1.3')" },
+          { label: "Weight", value: "635 g (1.4 lb)" },
+          { label: "Enclosure Material", value: "Aluminium alloy" },
+          { label: "Compare Capacity", value: "1,800 smart detections / hour" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
+          { label: "Max. Power Consumption", value: "45W" },
+          { label: "Power Method", value: "PoE++" },
+          { label: "Supported Volatage Range", value: "50–57V" },
+          { label: "Processor", value: "Arm® Cortex®-A78AE v8.2" },
+          { label: "System Memory", value: "16 GB LPDDR5" },
+          { label: "On Board Storage", value: "256 GB SSD" },
+          { label: "LCM Display", value: "(1) 1.3' touchscreen" },
+          { label: "Management", value: "Ethernet" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "ESD/EMP Protection", value: "Air: ± 12kV, contact: ± 8kV" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -689,69 +872,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-ai-key"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-ai-key"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+  // Produk Ketujuh dari Camera Security, SF NVRs and Edge Devices 
+  {
     id: "UP-AI-Port",
     name: "AI Port",
     category: "Camera Security",
@@ -768,58 +892,60 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UP-AI-PORT",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "AI appliance that enhances any UniFI or third-party camera with AI detection",
-      "classification",
-      "and recognition capabilites",
-      "Reliable performance"
+      "Enclosure Material Polycarbonate",
+      "Resolution Max. camera resolution: Width: 3840 pixels Height: 2160 pixels",
+      "Networking Interface (1) GbE RJ45 port"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI Port" },
-          { label: "Model", value: "UP-AI-PORT" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Without mount: 150 x 64 x 38.4 mm (5.9 x 2.5 x 1.5') With mount: 152.7 x 69 x 47.8 mm (6 x 2.7 x 1.9')" },
+          { label: "Resolution", value: "Max. camera resolution: Width: 3840 pixels Height: 2160 pixels" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Power Method", value: "PoE PoE+ input required for PoE output (12.95W) PoE++ input required for PoE+ output (25.5W)" },
+          { label: "Pole Mount Diameter", value: ">45 mm (1.8') on pipe outer diameter" },
+          { label: "Weight", value: "Without mount: 258.3 g (9.1 oz) With mount: 294 g (10.4 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements Web Application", value: "UniFi Protect: Version 5.1 and later" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
         ]
-      }
+      },
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -827,69 +953,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-up-ai-port"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-up-ai-port"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+  // Produk Kedelapan dari Camera Security, SF NVRs and Edge Devices
+  {
     id: "UP-Viewport",
     name: "Protect Viewport",
     category: "Camera Security",
@@ -906,58 +973,61 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UP-VIEWPORT",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Easy-to-use hub for viewing Protect camera feeds on an HDMI display",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Power Method PoE",
+      "Enclosure Material Polycarbonate",
+      "Mount Material Polycarbonate"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Protect Viewport" },
-          { label: "Model", value: "UP-VIEWPORT" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "157 x 52 x 37 mm (6.2 x 2.1 x 1.5')" },
+          { label: "Weight", value: "Without mount: 230 g (8.1 oz) With TV mount: 252 g (8.9 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Max. Power Consumption", value: "9.5W" },
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 80% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE, Anatel: 06681-25-08356" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
         ]
-      }
+      },
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -965,69 +1035,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-up-viewport"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-up-viewport"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+  // Produk Kesembilan dari Camera Security, SF NVRs and Edge Devices
+  {
     id: "UCK-G2-SSD",
     name: "CloudKey+",
     category: "Camera Security",
@@ -1044,20 +1055,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UCK-G2-SSD",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Compact UniFi Console that connects directly to the Site Manager at unifi",
@@ -1065,37 +1076,45 @@ export const cameraSecurityProducts: Product[] = [
       "multi-application site management",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "CloudKey+" },
-          { label: "Model", value: "UCK-G2-SSD" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "131.2 x 27.1 x 134.2 mm (5.2 x 1.1 x 5.3')" },
+          { label: "UniFi Application Suite", value: "✓" },
+          { label: "UniFi Application Suite", value: "✓" },
+          { label: "UniFi Application Suite", value: "✓" },
+          { label: "UniFi Application Suite", value: "✓" },
+          { label: "UniFi Application Suite", value: "✓" },
+          { label: "Managed Cameras", value: "(24) HD (14) 2K (8) 4K" },
+          { label: "Managed Access Hubs", value: "80" },
+          { label: "Networking Interface", value: "(1) GbE RJ45" },
+          { label: "Form Factor", value: "Compact Desktop" },
+          { label: "Door Access Support", value: "✓" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Hard Drive Capacity", value: "1 TB 2.5' SATA SSD  (User-upgradeable)" },
+          { label: "Max. Power Consumption", value: "9.6W" },
+          { label: "Power Method", value: "PoE USB-C power with Quick charge 2.0/3.0 power adapter, 9V DC, 2A (Optional)" },
+          { label: "Processor", value: "Octa-core Arm® Cortex®-A53 based chip" },
+          { label: "Memory", value: "32 GB eMMC 3 GB RAM" },
+          { label: "Management", value: "Ethernet Bluetooth" },
+          { label: "Display", value: "1.42' gray-scale OLED" },
+          { label: "Weight", value: "560 g (1.2 lb)" },
+          { label: "Enclosure Material", value: "Anodized Aluminum" },
+          { label: "Ambient Operating Temperature", value: "0 to 35° C (32 to 95° F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 80% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 05196-25-08356, SRRC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1103,69 +1122,112 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "UniFi Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Bendable booted RJ45",
+          "3 mm outer diameter",
+          "Cable length: 0.1 to 8m",
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
         ],
-        productLink: "/products/mounting-kit-uck-g2-ssd"
+        productLink: "/products/mounting-kit-u6-plus"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "2.5' SSD, 1 TB",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "2.5' SATA solid-state drive designed for local storage of CloudKey+.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Management Interface SATA 3, 6 Gb/s"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Dimensions", value: "100.1 x 69.9 x 7 mm (3.9 x 2.8 x 0.3')" },
+          { label: "Weight", value: "45 g (1.6 oz)" },
+          { label: "Form Factor", value: "2.5-inch SSD" },
+          { label: "Capacity", value: "1 TB" },
+          { label: "Management Interface", value: "SATA 3, 6 Gb/s" },
+          { label: "Speed Class", value: "Read: 550 MB/s Write: 515 MB/s" },
+          { label: "Mean Time Between Failure (MTBF)", value: "1,500,000 h" },
+          { label: "Endurance (TBW)", value: "640 TBW" },
+          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 85% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, CE, UL, RCM, KC, BSMI" }
         ],
         productLink: "/products/power-cable-uck-g2-ssd"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "CloudKey Rack Mount",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "Mount your CloudKey or CloudKey+ into a 19' rack.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Mounts into a 19' rack",
+          "Front-panel ethernet port for a clean installation"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Dimensions", value: "481.5 x 43.7 x 47 mm (19 x 1.7 x 1.9')" },
+          { label: "Weight", value: "600 g (1.3 lb)" },
+          { label: "Enclosure Material", value: "PC, aluminum alloy, SGCC steel" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
+          { label: "Power Method", value: "PoE, 5V DC, 1A USB-C 5V, Min. 1A" },
+          { label: "Max. Power Consumption", value: "12.95W (PoE)" },
+          { label: "Buttons", value: "(1) Reset (1) Power" },
+          { label: "Ambient Operating Temperature", value: "0 to 35° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 80% noncondensing" },
+          { label: "Certifications", value: "CE, FCC, IC" }
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+      {
+        id: 4,
+        name: "CloudKey+ Stand",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Sleek, metal stand for CloudKey+.",
+        specs: [
+          "Enclosure Material Aluminum alloy"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "134.2 x 71.7 x 43.2 mm (5.3 x 2.8 x 1.7')" },
+          { label: "Weight", value: "225 g (7.9 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy" },
         ],
         productLink: "/products/sfp-module-10g"
       }
     ]
   },
-{
+
+  // Produk Pertama dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-G6-Pro-Turret",
     name: "G6 Pro Turret",
     category: "Camera Security",
@@ -1182,58 +1244,84 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G6-PRO-TURRET",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "All-weather tamper-resistant 4K PoE+ camera with a Multi-TOPS AI engine",
-      "36x optizal zoom",
-      "and a large 1/1",
-      "2' CMOS sensor for exceptional low-light clarity and long-range IR night vision"
+      "Networking Interface GbE RJ45 port",
+      "Max. Power Consumption 15W",
+      "Power Method PoE+"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G6 Pro Turret" },
-          { label: "Model", value: "UVC-G6-PRO-TURRET" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀117.2 × 116.5 mm  (⌀4.61 × 4.59')" },
+          { label: "IR Night Vision", value: "40 m (131 ft)" },
+          { label: "Zoom Mode", value: "2.36x Optical" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Networking Interface", value: "GbE RJ45 port" },
+          { label: "Field of View", value: "Wide: H: 113.8°, V: 61.9°, D: 134° Tele: H: 45.5°, V: 25.8°, D: 52°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Ceiling, Wall mount (Included) Arm, Pendant mount, Junction box (Optional)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.2' 8MP" },
+          { label: "Optics Lens", value: "F 5.85-13.8 mm; ƒ/1.5-ƒ/2.9" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "15W" },
+          { label: "Supported Voltage Range", value: "42.5–57V DC" },
+          { label: "Power Method", value: "PoE+" },
+          { label: "Processor", value: "Quad core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "1.2 kg (2.6 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Expansion Slot", value: "MicroSD card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Cable Cable Connector Type", value: "RJ45" },
+          { label: "Cable Cable Diameter", value: "4.5 mm (0.2'')" },
+          { label: "Cable Cable Length", value: "30 cm (1 ft)" },
+          { label: "Cable Jacket Enclosure Dimensions", value: "⌀20 x 70.55 mm (⌀0.8 x 2.8')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer, polycarbonate, silicone Rubber" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50° C (-22 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1241,71 +1329,137 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Ethernet Surge Protection Outdoor-20kA",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "ESD protection for outdoor high-speed networks.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Protects outdoor Ethernet devices, up to 20kA discharge current.",
+          "(2) Passive, surge-protected RJ45 connections",
+          "Quick and easy installation",
+          "Compatible with 10 GbE networks"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "700V @ 1kV/µs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 2.5 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
         ],
-        productLink: "/products/mounting-kit-uvc-g6-pro-turret"
+        productLink: "/products/mounting-kit"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "UniFi Premium Patch Cable Outdoor-B/W",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Ultra-thin, rugged, shielded outdoor patch cable, designed and optimized to perform in the harshest environments for 10 GbE networking.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Shielded RJ45",
+          "Insulated, weatherproof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "— 3.5 mm outer diameter for 1-8 m lengths",
+          "— 3.9 mm outer diameter for 12-15 m lengths",
+          "Length: 1 to 15 m"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
         ],
-        productLink: "/products/power-cable-uvc-g6-pro-turret"
+        productLink: "/products/sfp-module-10g"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "Ethernet Surge Protection Outdoor-20kA",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "ESD protection for outdoor high-speed networks.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Protects outdoor Ethernet devices, up to 20kA discharge current.",
+          "(2) Passive, surge-protected RJ45 connections",
+          "Quick and easy installation",
+          "Compatible with 10 GbE networks"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "700V @ 1kV/µs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 2.5 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
         ],
-        productLink: "/products/sfp-module-10g"
-      }
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 4,
+        name: "Ethernet Surge Protection",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Bidirectional protection for up to 10 GbE, PoE++, and 20kA surge discharge for indoor installation.",
+        specs: [
+          "Wall/DIN rail mount",
+          "Multiple grounding points"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "89 x 25.5 x 37.4 mm (3.5 x 1 x 1.5')" },
+          { label: "Weight", value: "74 g (2.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, SGCC steel" },
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "600V @ 1kV/µs" },
+          { label: "Discharge Current", value: "20kA" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 10 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-40° to +80° C (-40° to 176° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
     ]
   },
-{
+
+  //Produk Kedua dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-G6-Pro-Dome",
-    name: "G6 Pro DOme",
+    name: "G6 Pro Dome",
     category: "Camera Security",
     subfilter: "Dome & Turret",
     image: "/images/camera.jpg",
@@ -1320,20 +1474,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G6-PRO-DOME",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "All-weather vandal-proof 4K PoE+ camera with a Multi-TOPS AI engine",
@@ -1341,37 +1495,59 @@ export const cameraSecurityProducts: Product[] = [
       "and a large 1/1",
       "2' CMOS sensor for exceptional low-light clarity and long-range IR night vision"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G6 Pro DOme" },
-          { label: "Model", value: "UVC-G6-PRO-DOME" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀163.8 × 108.8 mm (⌀6.45 × 4.28')" },
+          { label: "IR Night Vision", value: "40 m (131 ft)" },
+          { label: "Zoom Mode", value: "2.36x Optical" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "Wide: H: 113.8°, V: 61.9°, D: 134° Tele: H: 45.5°, V: 25.8°, D: 52°" },
+          { label: "Audio", value: "Microphone" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK10" },
+          { label: "Mounting", value: "Ceiling, Wall mount (Included) Gang Box Mounting Plate, Camera Dual Mount, Flush Mount, Weather Shield (Optional)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.2' 8MP" },
+          { label: "Optics Lens", value: "F 5.85-13.8 mm; ƒ/1.5-ƒ/2.9" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "15W" },
+          { label: "Supported Voltage Range", value: "42.5–57V DC" },
+          { label: "Power Method", value: "PoE+" },
+          { label: "Processor", value: "Quad core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "1.2 kg (2.6 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Stainless steel" },
+          { label: "Expansion Slot", value: "MicroSD card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 50º C (-4 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1379,69 +1555,132 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Ethernet Surge Protection Outdoor-20kA",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "ESD protection for outdoor high-speed networks.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Protects outdoor Ethernet devices, up to 20kA discharge current.",
+          "(2) Passive, surge-protected RJ45 connections",
+          "Quick and easy installation",
+          "Compatible with 10 GbE networks"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "700V @ 1kV/µs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 2.5 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
         ],
-        productLink: "/products/mounting-kit-uvc-g6-pro-dome"
+        productLink: "/products/mounting-kit"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "UniFi Premium Patch Cable Outdoor-B/W",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Ultra-thin, rugged, shielded outdoor patch cable, designed and optimized to perform in the harshest environments for 10 GbE networking.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Shielded RJ45",
+          "Insulated, weatherproof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "— 3.5 mm outer diameter for 1-8 m lengths",
+          "— 3.9 mm outer diameter for 12-15 m lengths",
+          "Length: 1 to 15 m"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
         ],
-        productLink: "/products/power-cable-uvc-g6-pro-dome"
+        productLink: "/products/sfp-module-10g"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "Ethernet Surge Protection Outdoor-20kA",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "ESD protection for outdoor high-speed networks.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Protects outdoor Ethernet devices, up to 20kA discharge current.",
+          "(2) Passive, surge-protected RJ45 connections",
+          "Quick and easy installation",
+          "Compatible with 10 GbE networks"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "700V @ 1kV/µs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 2.5 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
         ],
-        productLink: "/products/sfp-module-10g"
-      }
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 4,
+        name: "High Capacity microSD Card",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "A microSD card designed for ultra endurance, optimized for UniFi devices, providing local storage and edge recording capabilities.",
+        specs: [
+          "Compact form factor, microSDXC™",
+          "Note. Verified and optimized for UniFi device compatibility, may include microSDs from multiple brands."
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "15 x 11 x 1 mm (5.75 x 4 x 1')" },
+          { label: "Form Factor", value: "microSDXC™" },
+          { label: "Capacity", value: "128/256/512 GB/1 TB" },
+          { label: "Power Method", value: "5V/12V input" },
+          { label: "Management Interface", value: "SDA 6.0" },
+          { label: "Speed Class", value: "Class 10, UHS-I (U1), V10" },
+          { label: "Sequential Read Performance", value: "128 GB: 100 MB/s 256 GB: 100 MB/s 512 GB: 160 MB/s 1 TB: 160 MB/s" },
+          { label: "Endurance (TBW)", value: "128 GB: 64 256 GB: 128 512 GB: 500 1 TB: 1,000" },
+          { label: "Ambient Operating Temperature", value: "-25 to 85° C (-13 to 185° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
     ]
   },
-{
+
+  // Produk Ketiga dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-G6-Turret",
     name: "G6 Turret",
     category: "Camera Security",
@@ -1458,58 +1697,83 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G6-TURRET",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "All-weather",
-      "tamper-resistant 4K PoE camera with a 1/1",
-      "8' 8MP image sensor",
-      "Multi-TOPS AI Engine"
+      "IR Night Vision 30 m (98 ft)",
+      "Weatherproofing IP66",
+      "Tamper Resistance IK04"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G6 Turret" },
-          { label: "Model", value: "UVC-G6-TURRET" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀100 x 95 mm  (⌀3.9 x 3.7')" },
+          { label: "IR Night Vision", value: "30 m (98 ft)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "H: 109.9°, V: 56.7°, D: 134.1°" },
+          { label: "Audio", value: "Microphone" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Ceiling, Wall mount (Included) Gang Box Mounting Plate, Camera Dual Mount, Flush Mount, Weather Shield (Optional)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.8' 8MP" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "12.5W" },
+          { label: "Supported Voltage Range", value: "37–57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Quad core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "550 g (1.2 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Expansion Slot", value: "MicroSD card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Cable Cable Connector Type", value: "(1) Factory reset" },
+          { label: "Cable Cable Diameter", value: "(1) Factory reset" },
+          { label: "Cable Cable Length", value: "(1) Factory reset" },
+          { label: "Cable Jacket Material", value: "(1) Factory reset" },
+          { label: "Cable Jacket Enclosure Dimensions", value: "(1) Factory reset" },
+          { label: "Cable Jacket Enclosure Material", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "- 30 to 50º C (-22 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1517,69 +1781,39 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "High Capacity microSD Card",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "A microSD card designed for ultra endurance, optimized for UniFi devices, providing local storage and edge recording capabilities.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Compact form factor, microSDXC™",
+          "Note. Verified and optimized for UniFi device compatibility, may include microSDs from multiple brands.Easy installation"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "15 x 11 x 1 mm (5.75 x 4 x 1')" },
+          { label: "Form Factor", value: "microSDXC™" },
+          { label: "Capacity", value: "128/256/512 GB/1 TB" },
+          { label: "Power Method", value: "5V/12V input" },
+          { label: "Management Interface", value: "SDA 6.0" },
+          { label: "Speed Class", value: "Class 10, UHS-I (U1), V10" },
+          { label: "Sequential Read Performance", value: "128 GB: 100 MB/s 256 GB: 100 MB/s 512 GB: 160 MB/s 1 TB: 160 MB/s" },
+          { label: "Endurance (TBW)", value: "128 GB: 64 256 GB: 128 512 GB: 500 1 TB: 1,000" },
+          { label: "Ambient Operating Temperature", value: "-25 to 85° C (-13 to 185° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" }
         ],
         productLink: "/products/mounting-kit-uvc-g6-turret"
       },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g6-turret"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
     ]
   },
-{
+
+  // Produk Keempat dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-G6-Dome",
     name: "G6 Dome",
     category: "Camera Security",
@@ -1596,58 +1830,78 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G6-DOME",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "All-weather",
-      "vandal-proof 4K PoE camera with a 1/1",
-      "8' 8MP image sensor",
-      "Multi-TOPS AI Engine"
+      "Weatherproofing IP66",
+      "Networking Interface 10/100 MbE RJ45 port",
+      "Power Method PoE"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G6 Dome" },
-          { label: "Model", value: "UVC-G6-DOME" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀144.7x 96.3 mm (⌀5.7 x 3.8')" },
+          { label: "IR Night Vision", value: "30 m (98 ft)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Networking Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Field of View", value: "H: 109.9°, V: 56.7°, D: 134.1°" },
+          { label: "Audio", value: "Microphone" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK10" },
+          { label: "Mounting", value: "Ceiling, Wall mount (Included) Gang Box Mounting Plate, Camera Dual Mount, Flush Mount, Weather Shield (Optional)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.8' 8MP" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "9.25W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "820 g (1.8 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 50º C (-4 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1655,69 +1909,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g6-dome"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g6-dome"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+  // Produk Kelima dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-G6-Pro-360-  ",
     name: "G6 Pro 360",
     category: "Camera Security",
@@ -1734,58 +1929,78 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G6-PRO-360-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "All-weather",
-      "vandal-resistant 12MP PoE camera with panoramic 360° coverage",
-      "digital pan-tilt-zoom functionality",
-      "and smart IR functionality"
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Mount Material Polycarbonate",
+      "Expansion Slot MicroSD card"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G6 Pro 360" },
-          { label: "Model", value: "UVC-G6-PRO-360-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀147 x 65.5 (⌀5.8 x 2.6')" },
+          { label: "IR Night Vision", value: "15m (50 ft) Smart IR (4x controllable zones)" },
+          { label: "Face Recognition", value: "—" },
+          { label: "License Plate Recognition", value: "—" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "12MP" },
+          { label: "Field of View", value: "H: 180°, V: 180°, D: 180°" },
+          { label: "Audio", value: "Two-Way Audio" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK10" },
+          { label: "Mounting", value: "Surface Mount (Included) AI 360 Junction Box, Camera Dual Mount, Arm Mount (Optional)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "24 FPS" },
+          { label: "Video Resolution", value: "12MP 3504 x 3504 (1:1)" },
+          { label: "Optics Sensor", value: "1/1.6' 12MP" },
+          { label: "Optics Lens", value: "Fisheye lens" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "7.14W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE+" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "610 g (1.3 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Expansion Slot", value: "MicroSD card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50º C (-22 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1793,69 +2008,70 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Ethernet Surge Protection Outdoor-20kA",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "ESD protection for outdoor high-speed networks.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Protects outdoor Ethernet devices, up to 20kA discharge current.",
+          "(2) Passive, surge-protected RJ45 connections",
+          "Quick and easy installation",
+          "Compatible with 10 GbE networks"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "700V @ 1kV/µs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 2.5 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
         ],
-        productLink: "/products/mounting-kit-uvc-g6-pro-360-b/w"
+        productLink: "/products/mounting-kit"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Ethernet Surge Protection",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Bidirectional protection for up to 10 GbE, PoE++, and 20kA surge discharge for indoor installation.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Wall/DIN rail mount",
+          "Multiple grounding points"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Dimensions", value: "89 x 25.5 x 37.4 mm (3.5 x 1 x 1.5')" },
+          { label: "Weight", value: "74 g (2.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, SGCC steel" },
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "600V @ 1kV/µs" },
+          { label: "Discharge Current", value: "20kA" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 10 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-40° to +80° C (-40° to 176° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" }
         ],
-        productLink: "/products/power-cable-uvc-g6-pro-360-b/w"
+        productLink: "/products/mounting-kit"
       },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
     ]
   },
-{
+
+  //Produk Keenam dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-G6-180-B/W",
     name: "G6 180",
     category: "Camera Security",
@@ -1872,58 +2088,78 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G6-180-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Indoor/outdoor dual sensor 16MP 20 FPS PoE+ camera",
-      "with a Multi-TOPS AI Engine and panoramic 180° coverage",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Power Method PoE+",
+      "Weatherproofing IP66",
+      "Enclosure Material Aluminum alloy, polycarbonate"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G6 180" },
-          { label: "Model", value: "UVC-G6-180-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "136 x 64 x 92 mm (5.6 x 2.5 x 3.6')" },
+          { label: "IR Night Vision", value: "20 m (65 ft)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "Dual 4K" },
+          { label: "Field of View", value: "H: 180°, V: 56.7°" },
+          { label: "Audio", value: "Two-Way Audio" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Ceiling, Pole, Wedge Mount, Pan Adapter (Included) Camera Junction Box, Arm mount, Dual Mount, Gang Box Mounting Plate (Optional)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "20 FPS" },
+          { label: "Video Resolution", value: "16MP 7680 x 2160 (3.5:1)" },
+          { label: "Optics Sensor", value: "Dual 1/1.8' 8MP" },
+          { label: "Optics Lens", value: "(2) Fixed focal length" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "15W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE+" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "839 g (1.8 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate, stainless steel" },
+          { label: "Expansion Slot", value: "MicroSD card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 50º C (-4 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -1931,69 +2167,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g6-180-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g6-180-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+  // Produk Ketujuh dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-G5-Turret-Ultra-B/W",
     name: "G5 Turret Ultra",
     category: "Camera Security",
@@ -2010,58 +2187,81 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G5-TURRET-ULTRA-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Ultra-compact",
-      "tamper-resistant",
-      "and weatherproof 2K HD PoE camera with long-range night vision",
-      "Reliable performance"
+      "Weatherproofing IP66",
+      "IR Night Vision 30 m (98 ft)",
+      "Power Method PoE"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G5 Turret Ultra" },
-          { label: "Model", value: "UVC-G5-TURRET-ULTRA-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀90 x 71.2 mm (⌀3.5 x 2.8')" },
+          { label: "IR Night Vision", value: "30 m (98 ft)" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "2K" },
+          { label: "Field of View", value: "H: 102.4°, V: 54.9°, D: 120.6°" },
+          { label: "Audio", value: "Microphone" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall, ceiling mount (Included) Junction box, arm mount (Optional)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "4MP 2688 x 1512 (16:9)" },
+          { label: "Optics Sensor", value: "1/2.4' CMOS" },
+          { label: "Optics Lens", value: "(2) Fixed focal length" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "4W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "330 g (11.6 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, UV-stabilized polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Cable Cable Connector Type", value: "RJ45" },
+          { label: "Cable Cable Diameter", value: "5 mm (0.2')" },
+          { label: "Cable Cable Length", value: "30 cm (1 ft)" },
+          { label: "Cable Jacket Material", value: "Polycarbonate" },
+          { label: "Cable Jacket Enclosure Dimensions", value: "⌀20 x 70.6 mm (0.8 x 2.8')" },
+          { label: "Cable Jacket Enclosure Material", value: "Thermoplastic elastomer, polycarbonate, silicone rubber" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50° C (-22 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2069,69 +2269,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g5-turret-ultra-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g5-turret-ultra-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+  // Produk Kedelapan dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-AI-Turret-B/W",
     name: "AI Turret",
     category: "Camera Security",
@@ -2148,58 +2289,83 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-AI-TURRET-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "All-weather",
-      "vandal-proof 4K PoE+ turret camera with enhanced AI capabilities and IR and visible LEDs for night vision",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Processor Quad-core Arm® Cortex®-A53 based chip",
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Power Method PoE+"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI Turret" },
-          { label: "Model", value: "UVC-AI-TURRET-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀118 x 111 mm (⌀4.6 x 4.4')" },
+          { label: "IR Night Vision", value: "40 m (131 ft)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "2K" },
+          { label: "Field of View", value: "H: 109.9°, V: 56.7°, D: 134.1°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK08" },
+          { label: "Mounting", value: "Ceiling, arm, wall, pendant mount, junction box" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.8' 8MP" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "20W" },
+          { label: "Supported Voltage Range", value: "42.5–57V DC" },
+          { label: "Power Method", value: "PoE+" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "990 g (2.2 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, UV-stabilized polycarbonate" },
+          { label: "Expansion Slot", value: "MicroSD Card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Cable Cable Connector Type", value: "RJ45" },
+          { label: "Cable Cable Diameter", value: "4.5 mm (0.2')" },
+          { label: "Cable Cable Length", value: "30 cm (1 ft)" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer" },
+          { label: "Cable Jacket Enclosure Dimensions", value: "⌀20 x 70.6 mm (0.8 x 2.8')" },
+          { label: "Cable Jacket Enclosure Material", value: "Thermoplastic elastomer, polycarbonate, silicone rubber" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50° C (-22 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2207,69 +2373,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-turret-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-ai-turret-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+  // Produk Kesembilan dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-AI-Dome-B/W",
     name: "AI Dome",
     category: "Camera Security",
@@ -2286,58 +2393,83 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-AI-DOME-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "All-weather",
-      "vandal-proof 4K PoE dome camera with enhanced AI capabilities and long-range IR night vision",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Max. Power Consumption 10W",
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Expansion Slot MicroSD Card"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI Dome" },
-          { label: "Model", value: "UVC-AI-DOME-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀118 x 90.8 mm (⌀4.6 x 5.5')" },
+          { label: "IR Night Vision", value: "40 m (131 ft)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "H: 109.9°, V: 56.7°, D: 134.1°" },
+          { label: "Audio", value: "Microphone" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK10" },
+          { label: "Mounting", value: "Arm, ceiling , pendant, wall mount, junction box" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.8' 8MP" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "10W" },
+          { label: "Supported Voltage Range", value: "42.5–57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "700 g (1.5 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Surface mount: polycarbonate" },
+          { label: "Expansion Slot", value: "MicroSD Card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Cable Cable Connector Type", value: "RJ45" },
+          { label: "Cable Cable Diameter", value: "4.5 mm (0.2')" },
+          { label: "Cable Cable Length", value: "30 cm (1 ft)" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer" },
+          { label: "Cable Jacket Enclosure Dimensions", value: "⌀20 x 70.6 mm (0.8 x 2.8')" },
+          { label: "Cable Jacket Enclosure Material", value: "Thermoplastic elastomer, polycarbonate, silicone rubber" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50° C (-22 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2345,69 +2477,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-dome-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-ai-dome-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+  // Produk Kesepuluh dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-AI-360-B/W",
     name: "AI 360",
     category: "Camera Security",
@@ -2424,58 +2497,74 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-AI-360-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Indoor/outdoor 2K PoE camera with pan-tilt-zoom functionality that offers full 360° surveillance",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Enclosure Material Aluminum alloy, polycarbonate, hard-coated dome",
+      "Power Method PoE",
+      "Resolution 2K"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI 360" },
-          { label: "Model", value: "UVC-AI-360-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀147 x 49 mm (⌀5.8 x 1.9')" },
+          { label: "IR Night Vision", value: "9 m (30 ft)" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "2K" },
+          { label: "Field of View", value: "360°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IPX4 (While Covered)" },
+          { label: "Tamper Resistance", value: "IK08" },
+          { label: "Mounting", value: "Surface mount (Included) Junction box (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "4MP 1920 x 1920 (1:1)" },
+          { label: "Optics Sensor", value: "5MP CMOS" },
+          { label: "Optics Lens", value: "Fisheye lens" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "8.64W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "Without mount: 655 g (1.4 lb) With outdoor accessory: 685 g (1.5 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate, hard-coated dome" },
+          { label: "Mount Material", value: "Polycarbonate, stainless steel" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2483,69 +2572,49 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "UniFi Patch Cable Outdoor",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Rugged, outdoor patch cable designed to function in the harshest environments.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Shielded RJ45",
+          "Insulated, weatherpoof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "Cable Lenghth: 1 to 8 m"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-360-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-ai-360-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Available Lengths", value: "1, 2, 3, 5, 8 m(3.3, 6.6, 9.8, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Black" },
+          { label: "Pack Options", value: "Single Unit" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Shielding RJ45" },
+          { label: "Operating Environment", value: "Outdoor" },
+          { label: "Cable Jacket Diameter", value: "6.3 mm (0.25')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "S/FTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "24 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 50.4 mm ( (1.98'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 80°C (-40 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-30 to 75°C (-22 to 167°F)" },
         ],
         productLink: "/products/sfp-module-10g"
-      }
+      },
     ]
   },
-{
+
+  // Produk Kesebelas dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-G5-Dome",
     name: "G5 Dome",
     category: "Camera Security",
@@ -2562,58 +2631,74 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G5-DOME",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Next-gen 2K HD PoE ceiling camera with enhanced dynamic range and low-light performance",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Max. Power Consumption 5W",
+      "Enclosure Material Aluminum alloy, polycarbonate, hard-coated dome",
+      "Power Method PoE"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G5 Dome" },
-          { label: "Model", value: "UVC-G5-DOME" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀109.2 x 64.5 mm (⌀4.3 x 2.5')" },
+          { label: "IR Night Vision", value: "9 m (30 ft)" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "2K" },
+          { label: "Field of View", value: "H: 102.4°, V: 54.9°, D: 120.6°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IPX4 (While Covered)" },
+          { label: "Tamper Resistance", value: "IK08" },
+          { label: "Mounting", value: "Wall, ceiling mount (Included) Junction box, arm mount (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "4MP 2688 x 1512 (16:9)" },
+          { label: "Optics Sensor", value: "5MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "5W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Dual-core Arm® Cortex®-A7 based chip" },
+          { label: "Weight", value: "Without mount: 370 g (13.1 oz) With mount: 390 g (13.8 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate, hard-coated dome" },
+          { label: "Mount Material", value: "Polycarbonate, stainless steel" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2621,69 +2706,49 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "UniFi Patch Cable Outdoor",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Rugged, outdoor patch cable designed to function in the harshest environments.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Shielded RJ45",
+          "Insulated, weatherpoof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "Cable Lenghth: 1 to 8 m"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g5-dome"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g5-dome"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Available Lengths", value: "1, 2, 3, 5, 8 m(3.3, 6.6, 9.8, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Black" },
+          { label: "Pack Options", value: "Single Unit" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Shielding RJ45" },
+          { label: "Operating Environment", value: "Outdoor" },
+          { label: "Cable Jacket Diameter", value: "6.3 mm (0.25')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "S/FTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "24 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 50.4 mm ( (1.98'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 80°C (-40 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-30 to 75°C (-22 to 167°F)" },
         ],
         productLink: "/products/sfp-module-10g"
-      }
+      },
     ]
   },
-{
+
+  // Produk Kedua Belas dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-G5-Dome-Ultra-B/W",
     name: "G5 Dome Ultra",
     category: "Camera Security",
@@ -2700,58 +2765,72 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G5-DOME-ULTRA-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Ultra-compact and tamper-resistant 2K HD PoE camera with night vision designed for low-profile indoor security",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Tamper Resistance IK06",
+      "Max. Power Consumption 4.2W",
+      "Power Method PoE"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G5 Dome Ultra" },
-          { label: "Model", value: "UVC-G5-DOME-ULTRA-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀63.6 x 68.2 mm (⌀2.5 x 2.7')" },
+          { label: "IR Night Vision", value: "20 m (65 ft)" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "2K" },
+          { label: "Field of View", value: "H: 102.4°, V: 54.9°, D: 120.6°" },
+          { label: "Tamper Resistance", value: "IK06" },
+          { label: "Mounting", value: "Surface mount (Included) Junction box, Ultra Flush mount (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "4MP 2688 x 1512 (16:9)" },
+          { label: "Optics Sensor", value: "1/2.4' CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "4.2W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Dual-core Arm® Cortex®-A7 based chip" },
+          { label: "Weight", value: "175 g (6.2 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate, hard-coated dome" },
+          { label: "Mount Material", value: "Stainless steel" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2759,69 +2838,49 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "UniFi Patch Cable Outdoor",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Rugged, outdoor patch cable designed to function in the harshest environments.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Shielded RJ45",
+          "Insulated, weatherpoof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "Cable Lenghth: 1 to 8 m"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g5-dome-ultra-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g5-dome-ultra-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Available Lengths", value: "1, 2, 3, 5, 8 m(3.3, 6.6, 9.8, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Black" },
+          { label: "Pack Options", value: "Single Unit" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Shielding RJ45" },
+          { label: "Operating Environment", value: "Outdoor" },
+          { label: "Cable Jacket Diameter", value: "6.3 mm (0.25')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "S/FTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "24 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 50.4 mm ( (1.98'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 80°C (-40 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-30 to 75°C (-22 to 167°F)" },
         ],
         productLink: "/products/sfp-module-10g"
-      }
+      },
     ]
   },
-{
+
+  // Produk Ketiga Belas dari Camera Security, SF Dome & Turret
+  {
     id: "UVC-AI-MS-4-B/W",
     name: "AI Multi Sensor 4",
     category: "Camera Security",
@@ -2838,58 +2897,77 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-AI-MS-4-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "All-weather PoE++ 32MP multi-sensor camera featuring a Multi-TOPS AI engine",
-      "33× optical zoom",
-      "360° IR coverage",
-      "and four independently adjustable lenses for seamless wide-area and close-up monitoring"
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Power Method PoE++",
+      "Max. Power Consumption 34.6W"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI Multi Sensor 4" },
-          { label: "Model", value: "UVC-AI-MS-4-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀255 x 105 mm (⌀10.04 x 4.13')" },
+          { label: "IR Night Vision", value: "20 m (65 ft)" },
+          { label: "Zoom Mode", value: "2.33x Optical" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "32MP" },
+          { label: "Field of View", value: "Wide:  H: 108.8°, V: 57.6° , D: 130.8° Tele: H: 42.8°, V: 24.1° , D: 49.1°" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK10" },
+          { label: "Mounting", value: "Ceiling mount (Included) Pole, Corner, Arm, Pendant mount (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "(4) 8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/2.8' 8MP" },
+          { label: "Optics Lens", value: "(4) F 3.18-7.42 mm; ƒ/1.8-ƒ/2.8" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "34.6W" },
+          { label: "Supported Voltage Range", value: "42.5–57V DC" },
+          { label: "Power Method", value: "PoE++" },
+          { label: "Processor", value: "Dual-core Arm® Cortex®-A7 based chip" },
+          { label: "Weight", value: "2.4 kg (5.3 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Powder-coated aluminum alloy" },
+          { label: "Expansion Slot", value: "(2) MicroSD card (1) M.2. 2280 SATA SSD" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 50º C (-4 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -2897,69 +2975,107 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Ethernet Surge Protection Outdoor-20kA",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "ESD protection for outdoor high-speed networks.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Protects outdoor Ethernet devices, up to 20kA discharge current.",
+          "(2) Passive, surge-protected RJ45 connections",
+          "Quick and easy installation",
+          "Compatible with 10 GbE networks"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "700V @ 1kV/µs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 2.5 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
         ],
-        productLink: "/products/mounting-kit-uvc-ai-ms-4-b/w"
+        productLink: "/products/mounting-kit"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "UniFi Premium Patch Cable Outdoor-B/W",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Ultra-thin, rugged, shielded outdoor patch cable, designed and optimized to perform in the harshest environments for 10 GbE networking.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Shielded RJ45",
+          "Insulated, weatherproof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "— 3.5 mm outer diameter for 1-8 m lengths",
+          "— 3.9 mm outer diameter for 12-15 m lengths",
+          "Length: 1 to 15 m"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
         ],
-        productLink: "/products/power-cable-uvc-ai-ms-4-b/w"
+        productLink: "/products/sfp-module-10g"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "Ethernet Surge Protection",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "Bidirectional protection for up to 10 GbE, PoE++, and 20kA surge discharge for indoor installation.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Wall/DIN rail mount",
+          "Multiple grounding points"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Dimensions", value: "89 x 25.5 x 37.4 mm (3.5 x 1 x 1.5')" },
+          { label: "Weight", value: "74 g (2.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, SGCC steel" },
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "600V @ 1kV/µs" },
+          { label: "Discharge Current", value: "20kA" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 10 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-40° to +80° C (-40° to 176° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" }
         ],
-        productLink: "/products/sfp-module-10g"
-      }
+        productLink: "/products/mounting-kit"
+      },
     ]
   },
-{
+
+  // Produk Pertama dari Camera Security, SF Bullet
+  {
     id: "UVC-G6-Pro-Bullet-B/W",
     name: "G6 Pro Bullet",
     category: "Camera Security",
@@ -2976,20 +3092,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G6-PRO-BULLET-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "All-weather 4K PoE+ camera with a Multi-TOPS AI engine",
@@ -2997,37 +3113,60 @@ export const cameraSecurityProducts: Product[] = [
       "and a large 1/1",
       "2' CMOS sensor for exceptional low-light clarity and long-range IR night vision"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G6 Pro Bullet" },
-          { label: "Model", value: "UVC-G6-PRO-BULLET-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Without mount: ⌀85.8 x 106.2 mm (⌀3.4 x 4.2') With wall mount: ⌀85.8 x 210 mm (⌀3.4 x 8.3')" },
+          { label: "IR Night Vision", value: "40 m (131 ft) Up to 60 m (197 ft) with Vision Enhancer" },
+          { label: "Zoom Mode", value: "2.36x Optical" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "Wide: H: 113.8°, V: 61.9°, D: 134° Tele: H: 45.5°, V: 25.8°, D: 52°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall, Ceiling, Pole mount (Included) Junction Box, Angled Base (Optional)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.2' 8MP" },
+          { label: "Optics Lens", value: "F 5.9-13.8 mm; ƒ/1.5-ƒ/2.9" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "15W" },
+          { label: "Supported Voltage Range", value: "37–57V DC" },
+          { label: "Power Method", value: "PoE+" },
+          { label: "Processor", value: "Quad core Arm® Cortex®-A53 based chip" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "Without mount: 755 g (1.7 lb) With mount: 980 g (2.2 lb)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
+          { label: "Mount Material", value: "Wall mount: aluminum alloy, polycarbonate Pole mount: aluminum alloy" },
+          { label: "Expansion Slot", value: "MicroSD card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 50º C (-4 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3035,69 +3174,128 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
+
+    // Addon/aksesori yang tersedia untuk produk ini 
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Ethernet Surge Protection Outdoor-20kA",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "ESD protection for outdoor high-speed networks.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Protects outdoor Ethernet devices, up to 20kA discharge current.",
+          "(2) Passive, surge-protected RJ45 connections",
+          "Quick and easy installation",
+          "Compatible with 10 GbE networks"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "700V @ 1kV/µs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 2.5 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
         ],
-        productLink: "/products/mounting-kit-uvc-g6-pro-bullet-b/w"
+        productLink: "/products/mounting-kit"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Ethernet Surge Protection",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Bidirectional protection for up to 10 GbE, PoE++, and 20kA surge discharge for indoor installation.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Wall/DIN rail mount",
+          "Multiple grounding points"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Dimensions", value: "89 x 25.5 x 37.4 mm (3.5 x 1 x 1.5')" },
+          { label: "Weight", value: "74 g (2.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, SGCC steel" },
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "600V @ 1kV/µs" },
+          { label: "Discharge Current", value: "20kA" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 10 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-40° to +80° C (-40° to 176° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" }
         ],
-        productLink: "/products/power-cable-uvc-g6-pro-bullet-b/w"
+        productLink: "/products/mounting-kit"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "UniFi Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Bendable booted RJ45",
+          "3 mm outer diameter",
+          "Cable length: 0.1 to 8m",
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
         ],
-        productLink: "/products/sfp-module-10g"
-      }
+        productLink: "/products/mounting-kit-u6-plus"
+      },
+      {
+        id: 4,
+        name: "High Capacity microSD Card",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "A microSD card designed for ultra endurance, optimized for UniFi devices, providing local storage and edge recording capabilities.",
+        specs: [
+          "Compact form factor, microSDXC™",
+          "Note. Verified and optimized for UniFi device compatibility, may include microSDs from multiple brands."
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "15 x 11 x 1 mm (5.75 x 4 x 1')" },
+          { label: "Form Factor", value: "microSDXC™" },
+          { label: "Capacity", value: "128/256/512 GB/1 TB" },
+          { label: "Power Method", value: "5V/12V input" },
+          { label: "Management Interface", value: "SDA 6.0" },
+          { label: "Speed Class", value: "Class 10, UHS-I (U1), V10" },
+          { label: "Sequential Read Performance", value: "128 GB: 100 MB/s 256 GB: 100 MB/s 512 GB: 160 MB/s 1 TB: 160 MB/s" },
+          { label: "Endurance (TBW)", value: "128 GB: 64 256 GB: 128 512 GB: 500 1 TB: 1,000" },
+          { label: "Ambient Operating Temperature", value: "-25 to 85° C (-13 to 185° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
     ]
   },
-{
+
+// Produk Kedua dari Camera Security, SF Bullet
+  {
     id: "UVC-G6-Bullet-B/W",
     name: "G6 Bullet",
     category: "Camera Security",
@@ -3114,58 +3312,78 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G6-BULLET-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "All-weather 4K PoE camera with a 1/1",
-      "8' 8MP image sensor",
-      "Multi-TOPS AI Engine",
-      "and long-range IR night vision"
+      "Weatherproofing IP66",
+      "Enclosure Material Polycarbonate, aluminum alloy",
+      "Mount Material Wall mount: aluminum alloy, polycarbonate Pole mount: aluminum alloy"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
+       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G6 Bullet" },
-          { label: "Model", value: "UVC-G6-BULLET-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Without mount: ⌀82 x 88.8 mm (⌀3.2 x 3.5') With mount: ⌀82 x 153 mm (⌀3.2 x 6')" },
+          { label: "IR Night Vision", value: "30 m (98 ft)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "H: 109.9°, V: 56.7°, D: 134.1°" },
+          { label: "Audio", value: "Microphone" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall, Ceiling, Pole mount (Included) Junction Box, Angled Base (Optional)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.8” 8MP" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Optics Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "9.9W" },
+          { label: "Supported Voltage Range", value: "37–57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Quad core Arm® Cortex®-A53 based chip" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "Without mount: 587 g (1.3 lb) With mount: 737 g (1.6 lb)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
+          { label: "Mount Material", value: "Wall mount: aluminum alloy, polycarbonate Pole mount: aluminum alloy" },
+          { label: "Button", value: "(1) Factory reset" },  
+          { label: "Ambient Operating Temperature", value: "-20 to 50º C (-4 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3173,69 +3391,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g6-bullet-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g6-bullet-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+// Produk ketiga dari Camera Security, SF Bullet
+  {
     id: "UVC-AI-LPR-B/W",
     name: "AI LPR",
     category: "Camera Security",
@@ -3252,58 +3411,86 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-AI-LPR-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Specialized 4K camera with 3x optical zoom and long-range IR night vision optimized for recognizing license plates on vehicles moving up to 90 km/h",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Weatherproofing IP66",
+      "Max. Power Consumption 25.5W",
+      "Enclosure Material Aluminum alloy, polycarbonate"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
+     {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI LPR" },
-          { label: "Model", value: "UVC-AI-LPR-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "130 x 151.4 x 302.9 mm (5.1 x 6 x 11.9')" },
+          { label: "IR Night Vision", value: "15 m (50 ft)" },
+          { label: "Zoom Mode", value: "3x Optical" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "Wide: H 109.9°, V 60°, D 127.7° Tele: H 35°, V 19.8°, D 40°" },
+          { label: "Audio", value: "Microphone" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall, Ceiling, Pole mount (Included) Junction Box, Angled Base (Optional)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.8” 8MP" },
+          { label: "Optics Lens", value: "F 4.1–12.3 mm; ƒ/1.53–ƒ/3.3" },
+          { label: "Optics IR Capture Distance", value: "15 m (50 ft)" },
+          { label: "Optics LPR Night Mode", value: "LPR optimization filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "25.5W" },
+          { label: "Supported Voltage Range", value: "42.5–57V DC" },
+          { label: "Power Method", value: "PoE+" },
+          { label: "Processor", value: "Quad core Arm® Cortex®-A53 based chip" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "1.5 kg (3.3 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Aluminum Alloy" },
+          { label: "Expansion Slot", value: "Micro SD memory card" },  
+          { label: "Button", value: "(1) Factory reset" },  
+          { label: "Cable Cable Connector Type", value: "(1) Factory reset" },  
+          { label: "Cable Cable Diameter", value: "(1) Factory reset" },  
+          { label: "Cable Cable Length", value: "(1) Factory reset" },  
+          { label: "Cable Jacket Material", value: "(1) Factory reset" },  
+          { label: "Cable Jacket Enclosure Dimensions", value: "(1) Factory reset" },  
+          { label: "Cable Jacket Enclosure Material", value: "(1) Factory reset" },  
+          { label: "Ambient Operating Temperature", value: "-20 to 50º C (-4 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3311,69 +3498,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-lpr-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-ai-lpr-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+// Produk Keempat dari Camera Security, SF Bullet
+  {
     id: "UVC-AI-DSLR-B/W",
     name: "AI DSLR",
     category: "Camera Security",
@@ -3390,20 +3518,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-AI-DSLR-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Indoor/outdoor 4K PoE camera with exceptional image quality and impressive low-light performance",
@@ -3411,37 +3539,53 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
+     {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI DSLR" },
-          { label: "Model", value: "UVC-AI-DSLR-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Without mount: ⌀80 x 89 mm (⌀3.1 x 3.5') With mount: ⌀80 x 153 mm (⌀3.1 x 6') M. Zuiko Digital ED 17 mm PRO: ⌀68.2 x 87 mm (⌀2.7 x 3.4') M. Zuiko Digital ED 45 mm PRO: ⌀70 x 84.9 mm (⌀2.8 x 3.3') Outdoor case: ⌀91.6 x 196.3 mm (⌀3.6 x 7.7')" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "M. Zuiko Digital ED 17 mm PRO: H: 52°, V: 39°, D: 65° M. Zuiko Digital ED 45 mm PRO: H: 21.6°, V: 16.2°, D: 27°" },
+          { label: "Audio", value: "Two-Way Audio" },
+          { label: "Weatherproofing", value: "IPX5 (With the outdoor case)" },
+          { label: "Mounting", value: "Wall, pole mount (Included) Tripot mount (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "4/3' 10MP CMOS" },
+          { label: "Optics Lens", value: "M. Zuiko Digital ED 17 mm ƒ/1.2 PRO M. Zuiko Digital ED 45 mm ƒ/1.2 PRO" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "17.77W (With lens working)" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE+" },
+          { label: "Processor", value: "Quad core Arm® Cortex®-A53 based chip" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "Without mount: 660 g (1.5 lb) With mount: 820 g (1.8 lb) M. Zuiko Digital ED 17 mm PRO: 390 g (0.9 lb) M. Zuiko Digital ED 45 mm PRO: 410 g (0.9 lb) Outdoor case: 510 g (1.1 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Wall mount: aluminum alloy Pole mount: aluminum alloy" },
+          { label: "Button", value: "(1) Factory reset (1) Lens release rey" },  
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3449,69 +3593,106 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-dslr-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-ai-dslr-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+  // Produk Kelima dari Camera Security, SF Bullet
+ {
+    id: "UVC-AI-DSLR-LD-B/W",
+    name: "AI DSLR",
+    category: "Camera Security",
+    subfilter: "Bullet",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Indoor/outdoor 4K PoE camera with exceptional image quality and impressive low-light performance.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UVC-AI-DSLR-LD-B/W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Indoor/outdoor 4K PoE camera with exceptional image quality and impressive low-light performance",
+      "Enterprise-grade quality",
+      "Easy to deploy and manage",
+      "Reliable performance"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+     {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Without mount: ⌀80 x 89 mm (⌀3.1 x 3.5') With mount: ⌀80 x 153 mm (⌀3.1 x 6') M. Zuiko Digital ED 17 mm PRO: ⌀68.2 x 87 mm (⌀2.7 x 3.4') M. Zuiko Digital ED 45 mm PRO: ⌀70 x 84.9 mm (⌀2.8 x 3.3') Outdoor case: ⌀91.6 x 196.3 mm (⌀3.6 x 7.7')" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "M. Zuiko Digital ED 17 mm PRO: H: 52°, V: 39°, D: 65° M. Zuiko Digital ED 45 mm PRO: H: 21.6°, V: 16.2°, D: 27°" },
+          { label: "Audio", value: "Two-Way Audio" },
+          { label: "Weatherproofing", value: "IPX5 (With the outdoor case)" },
+          { label: "Mounting", value: "Wall, pole mount (Included) Tripot mount (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "4/3' 10MP CMOS" },
+          { label: "Optics Lens", value: "M. Zuiko Digital ED 17 mm ƒ/1.2 PRO M. Zuiko Digital ED 45 mm ƒ/1.2 PRO" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Max. Power Consumption", value: "17.77W (With lens working)" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE+" },
+          { label: "Processor", value: "Quad core Arm® Cortex®-A53 based chip" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "Without mount: 660 g (1.5 lb) With mount: 820 g (1.8 lb) M. Zuiko Digital ED 17 mm PRO: 390 g (0.9 lb) M. Zuiko Digital ED 45 mm PRO: 410 g (0.9 lb) Outdoor case: 510 g (1.1 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy" },
+          { label: "Mount Material", value: "Wall mount: aluminum alloy Pole mount: aluminum alloy" },
+          { label: "Button", value: "(1) Factory reset (1) Lens release rey" },  
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+// Produk Keenam dari Camera Security, SF Bullet
+  {
     id: "UVC-AI-Pro-B/W",
     name: "AI Pro",
     category: "Camera Security",
@@ -3528,58 +3709,78 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-AI-PRO-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Indoor/outdoor 4K PoE camera with 3x optical zoom",
-      "long-range IR night vision",
-      "and enhanced AI detection capabilities",
-      "Reliable performance"
+      "Power Method Device: PoE Device with Enhancer: PoE+",
+      "Pole Mount Diameter 1.5–2' (38–50 mm)",
+      "Enclosure Material Aluminum alloy, polycarbonate"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
+     {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI Pro" },
-          { label: "Model", value: "UVC-AI-PRO-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Without mount: ⌀86 x 112.6 mm (⌀3.4 x 4.4') With mount: ⌀86 x 175.3 mm (⌀3.4 x 6.9')" },
+          { label: "IR Night Vision", value: "25 m (82 ft) Up to 40 m (131 ft) with Vision Enhancer" },
+          { label: "Zoom Mode", value: "3x Optical" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "Wide: H: 109.9°, V: 59.9°, D: 127.7° Zoom: H: 34.9°, V: 19.7°, D: 40°" },
+          { label: "Audio", value: "Two-Way Audio" },
+          { label: "Weatherproofing", value: "IP65" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall, ceiling, pole mount (Included) Junction box, angled base (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.8' 8MP" },
+          { label: "Optics Lens", value: "F 4.1–12.3 mm; ƒ/1.53–ƒ/3.3" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and an IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "Device: 11W Device with Enhancer: 22W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "Device: PoE Device with Enhancer: PoE+" },
+          { label: "Processor", value: "Quad core Arm® Cortex®-A53 based chip" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "Without mount: 675 g (1.5 lb) With mount: 820 g (1.8 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Aluminum alloy" },
+          { label: "Button", value: "(1) Factory reset" },  
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3587,69 +3788,41 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Long-Range IR LED & Floodlight",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Go To Product Page Long-Range IR LED & Floodlight UACC-Pro-Bullet-Enhancer-B $179.00 Color: Black Black White Long-range IR LED, floodlight, and radar detection accessory for the G6 Pro Bullet and AI Pro.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Enclosure Material Aluminum alloy, polycarbonate",
+          "Mount Material Aluminum alloy",
+          "Power Method Camera G6 Pro Bullet, AI Pro"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Radar Recommended Mounting Height", value: "2–5 m (6.6–16.4 ft)" },
+          { label: "Radar Recommended Mounting Tilt", value: "0–30°" },
+          { label: "Radar Detection Range", value: "Person: 0.5–20 m (1.6–65.6 ft) Vehicle: 2–35 m (6.6–115 ft)" },
+          { label: "Radar Field of Detection", value: "H: 110°" },
+          { label: "Radar Distance Accuracy", value: "0.5 m (1.6 ft)" },
+          { label: "IR distance", value: "UVC-G6-Pro-Bullet: 60 m (197 ft) UVC_AI-Pro: 40 m (131 ft)" },
+          { label: "Lights", value: "5700K, 600 lm" },
+          { label: "Speaker", value: "✓" },
+          { label: "Power Method", value: "Camera G6 Pro Bullet, AI Pro" },
+          { label: "Power Supply", value: "5V DC, 3A" },
+          { label: "Max. Power Consumption", value: "15W" },
+          { label: "NDAA Compliant", value: "✓" },
         ],
         productLink: "/products/mounting-kit-uvc-ai-pro-b/w"
       },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-ai-pro-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
     ]
   },
-{
+
+  // Produk Ketujuh dari Camera Security, SF Bullet
+  {
     id: "UVC-G5-Pro",
     name: "G5 Pro",
     category: "Camera Security",
@@ -3666,58 +3839,76 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G5-PRO",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Next-gen indoor/outdoor 4K PoE camera with exceptional image performance",
-      "long-range IR night vision",
-      "and 3x optical zoom",
-      "Reliable performance"
+      "Enclosure Material UV stabilized polycarbonate, aluminum alloy",
+      "Power Method PoE",
+      "Resolution 4K"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
+     {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G5 Pro" },
-          { label: "Model", value: "UVC-G5-PRO" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀86 x 154.3 mm (⌀3.4 x 6.1')" },
+          { label: "IR Night Vision", value: "25 m (82 ft) up to 40 m (131 ft) (With Vision Enhancer)" },
+          { label: "Zoom Mode", value: "3x Optical" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "Wide: H 109.9°, V 60°, D 127.7° Zoom: H 35°, V 19.8°, D 40°" },
+          { label: "Audio", value: "Microphone" },
+          { label: "Weatherproofing", value: "IP65" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall, ceiling, pole mount (Included) Junction box, angled base (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/2' 8MP" },
+          { label: "Optics Lens", value: "F 4.1–12.3 mm; ƒ/1.53–ƒ/3.3" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and an IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "Device: 10W Device with Enhancer: 12.95W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Dual-core Arm® Cortex®-A53 based chip" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "650 g (1.4 lb)" },
+          { label: "Enclosure Material", value: "UV stabilized polycarbonate, aluminum alloy" },
+          { label: "Mount Material", value: "Aluminum alloy" },
+          { label: "Button", value: "(1) Factory reset" },  
+          { label: "Ambient Operating Temperature", value: "-20 to 50° C (-4 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3725,69 +3916,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g5-pro"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g5-pro"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+//Produk Kedelapan dari Camera Security, SF Bullet
+  {
     id: "UVC-G5-Bullet",
     name: "G5 Bullet",
     category: "Camera Security",
@@ -3803,58 +3935,75 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G5-BULLET",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Next-gen indoor/outdoor 2K HD PoE Camera",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Weatherproofing IP55",
+      "Power Method PoE",
+      "Enclosure MaterialPolycarbonate, aluminum alloy"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
+       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G5 Bullet" },
-          { label: "Model", value: "UVC-G5-BULLET" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Without mount: ⌀75.5 x 74.4 mm (⌀3 x 2.9') With mount: ⌀75.5 x 150 mm (⌀3 x 5.9')" },
+          { label: "IR Night Vision", value: "9 m (30 ft)" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "2K" },
+          { label: "Field of View", value: "H: 84.4°, V: 45.4°, D: 99.8°" },
+          { label: "Audio", value: "Microphone" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall, ceiling, pole mount (Included) Junction box, angled base (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "4MP 2688 x 1512 (16:9)" },
+          { label: "Optics Sensor", value: "5MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and an IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "4W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Dual-core Arm® Cortex®-A53 based chip" },
+          { label: "Pole Mount Diameter", value: "3/4' (19 mm)" },
+          { label: "Weight", value: "Without mount: 225 g (8 oz) With mount: 315 g (11.1 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
+          { label: "Mount Material", value: "Wall mount: aluminum alloy, polycarbonate Pole mount: aluminum alloy" },
+          { label: "Button", value: "(1) Factory reset" },  
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -3862,69 +4011,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g5-bullet"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g5-bullet"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+// Produk Pertama dari Camera Security, SF Compact
+  {
     id: "UVC-G6-INS-W",
     name: "G6 Instant",
     category: "Camera Security",
@@ -3941,58 +4031,81 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G6-INS-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Plug-and-play",
-      "4K WiFi-connected camera with a 1/1",
-      "8' 8MP image sensor",
-      "Multi-TOPS AI Engine"
+      "Enclosure Material Polycarbonate",
+      "Weatherproofing IPX5",
+      "Tamper Resistance IK04"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
+     {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G6 Instant" },
-          { label: "Model", value: "UVC-G6-INS-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "81.7 x 50.1 x 57.2 mm  (3.2 x 2 x 2.3')" },
+          { label: "IR Night Vision", value: "6 m (20 ft)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "H: 109.9°, V: 56.7°, D: 134.1°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall mount accessory (Included)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "802.11 a/b/g/n/ac WiFi Bluetooth" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.8” 8MP" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and an IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "7W" },
+          { label: "Supported Voltage Range", value: "5V DC, 2A" },
+          { label: "Power Method", value: "5V, 2A USB power adapter (Included) PoE to USB-C adapter (Not included)" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "180 g (6.3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Expansion Slot", value: "MicroSD card" },
+          { label: "Button", value: "(1) Factory reset" },  
+          { label: "Cable Cable Connector Type", value: "USB Type-C to USB Type-C" },  
+          { label: "Cable Cable Diameter", value: "3 mm (0.1')" },  
+          { label: "Cable Cable Length", value: "2 m (6.6 ft)" },  
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer" },  
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, SRRC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4000,69 +4113,10 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g6-ins-w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g6-ins-w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-{
+
+  
+  {
     id: "UVC-AI-Theta-Pro-W",
     name: "Camera AI Theta Pro",
     category: "Camera Security",
@@ -4079,20 +4133,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-AI-THETA-PRO-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "A complete ceiling 360° AI Theta system designed to discreetly provide a panoramic view of large",
@@ -4100,7 +4154,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4130,7 +4184,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4138,7 +4192,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4200,7 +4254,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-G5-Flex",
     name: "G5 Flex",
     category: "Camera Security",
@@ -4217,20 +4271,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G5-FLEX",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "easy-to-deploy 2K HD PoE camera that can be staged indoors or outside",
@@ -4238,7 +4292,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4268,7 +4322,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4276,7 +4330,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4338,7 +4392,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-G4-INS",
     name: "G4 Instant",
     category: "Camera Security",
@@ -4355,20 +4409,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G4-INS",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "WiFi-connected camera with two-way audio",
@@ -4376,7 +4430,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4406,7 +4460,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4414,7 +4468,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4476,7 +4530,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-AI-Theta-Audio",
     name: "AI Theta Audio",
     category: "Camera Security",
@@ -4492,20 +4546,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-AI-THETA-AUDIO",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Two-way audio module that connects to an AI Theta Hub",
@@ -4513,7 +4567,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4543,7 +4597,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4551,7 +4605,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4613,7 +4667,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-AI-Theta-ProLens50",
     name: "AI Theta Pro Long-Distance Lens",
     category: "Camera Security",
@@ -4630,20 +4684,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-AI-THETA-PROLENS50",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Long-distance lens with enhanced low-light performance and dynamic range that connects to an AI Theta Hub",
@@ -4651,7 +4705,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4681,7 +4735,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4689,7 +4743,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4751,7 +4805,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-G6-PTZ-B/W",
     name: "G6 PTZ",
     category: "Camera Security",
@@ -4768,20 +4822,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G6-PTZ-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "All-weather",
@@ -4789,7 +4843,7 @@ export const cameraSecurityProducts: Product[] = [
       "8' 8MP image sensor",
       "Multi-TOPS AI Engine"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4819,7 +4873,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4827,7 +4881,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -4889,7 +4943,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-AI-PTZ-B/W",
     name: "AI PTZ Industrial",
     category: "Camera Security",
@@ -4906,20 +4960,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-AI-PTZ-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Industrial-grade 4K PoE++ PTZ camera with enhanced AI capabilities",
@@ -4927,7 +4981,7 @@ export const cameraSecurityProducts: Product[] = [
       "and long-range adaptive IR LED night vision",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -4957,7 +5011,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -4965,7 +5019,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -5027,7 +5081,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-AI-PTZ-Precision-B/W",
     name: "AI PTZ Precision",
     category: "Camera Security",
@@ -5044,20 +5098,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-AI-PTZ-PRECISION-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Industrial-grade 4K PTZ camera with enhanced AI capabilities",
@@ -5065,7 +5119,7 @@ export const cameraSecurityProducts: Product[] = [
       "adaptive IR LED night vision",
       "and LiDAR technology for faster autofocus"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -5095,7 +5149,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -5103,7 +5157,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -5165,7 +5219,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-G5-PTZ-B/W",
     name: "G5 PTZ ",
     category: "Camera Security",
@@ -5182,20 +5236,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G5-PTZ-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "all-weather camera with ultra-low latency pan-tilt-zoom control and versatile mounting options",
@@ -5203,7 +5257,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -5233,7 +5287,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -5241,7 +5295,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -5303,7 +5357,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-4-Doorbell-Pro-PoE-Kit-B/W",
     name: "G4 Doorbell Pro PoE Kit",
     category: "Camera Security",
@@ -5320,20 +5374,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-4-DOORBELL-PRO-POE-KIT-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Premium UniFi doorbell with integrated PoE and included PoE chime for plug-and-play installation",
@@ -5341,7 +5395,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -5371,7 +5425,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -5379,7 +5433,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -5441,7 +5495,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-4-Doorbell-Pro-B/W",
     name: "G4 Doorbell Pro",
     category: "Camera Security",
@@ -5458,20 +5512,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-4-DOORBELL-PRO-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Premium UniFi doorbell with an enhanced package detection camera and integrated display",
@@ -5479,7 +5533,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -5509,7 +5563,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -5517,7 +5571,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -5579,7 +5633,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-Doorbell-B/W",
     name: "Doorbell Lite",
     category: "Camera Security",
@@ -5596,20 +5650,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-DOORBELL-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Compact PoE video doorbell with two-way audio and versatile mounting options",
@@ -5617,7 +5671,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -5647,7 +5701,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -5655,7 +5709,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -5717,7 +5771,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-Chime-PoE",
     name: "PoE Smart Chime",
     category: "Camera Security",
@@ -5734,20 +5788,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-CHIME-POE",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "PoE plug-and-play notification device",
@@ -5755,7 +5809,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -5785,7 +5839,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -5793,7 +5847,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -5855,7 +5909,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-Chime",
     name: "WiFi Smart Chime",
     category: "Camera Security",
@@ -5871,20 +5925,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-CHIME",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Plug-in chime designed to pair with a UniFi doorbell",
@@ -5892,7 +5946,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -5922,7 +5976,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -5930,7 +5984,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -5992,7 +6046,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "USL-Gateway",
     name: "SuperLink Gateway",
     category: "Camera Security",
@@ -6007,23 +6061,23 @@ export const cameraSecurityProducts: Product[] = [
       { label: "Audio", value: "Two-way Audio" },
     ],
 
-    
+
     // SKU produk
     sku: "USL-GATEWAY",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Proprietary super long-range",
@@ -6031,7 +6085,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -6061,7 +6115,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -6069,7 +6123,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -6130,8 +6184,8 @@ export const cameraSecurityProducts: Product[] = [
         productLink: "/products/sfp-module-10g"
       }
     ]
-    },
-{
+  },
+  {
     id: "USL-Entry",
     name: "Entry Sensor",
     category: "Camera Security",
@@ -6145,23 +6199,23 @@ export const cameraSecurityProducts: Product[] = [
       { label: "Zoom", value: "3x Optical" },
       { label: "Audio", value: "Two-way Audio" },
     ],
-    
+
     // SKU produk
     sku: "USL-ENTRY",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/products/Product-Entry-Sensor.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "High-performance networking solution",
@@ -6169,7 +6223,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy management and monitoring",
       "Scalable architecture"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -6195,7 +6249,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -6203,7 +6257,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -6265,7 +6319,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "USL-Motion",
     name: "Motion Sensor",
     category: "Camera Security",
@@ -6282,20 +6336,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "USL-MOTION",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "SuperLink motion sensor designed for versatile installation",
@@ -6303,7 +6357,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -6333,7 +6387,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -6341,7 +6395,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -6403,7 +6457,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "USL-Siren",
     name: "Siren",
     category: "Camera Security",
@@ -6420,20 +6474,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "USL-SIREN",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "All-weather SuperLink siren delivering 110 dB alarm and emergency LED lighting powered using battery or DC input",
@@ -6441,7 +6495,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -6471,7 +6525,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -6479,7 +6533,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -6541,7 +6595,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "USL-Siren-PoE",
     name: "Siren PoE",
     category: "Camera Security",
@@ -6558,20 +6612,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "USL-SIREN-POE",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "All-weather siren delivering 110 dB alarm and emergency LED lighting powered using PoE input",
@@ -6579,7 +6633,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -6609,7 +6663,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -6617,7 +6671,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -6679,7 +6733,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "USL-Environmental",
     name: "Environmental Sensor",
     category: "Camera Security",
@@ -6696,20 +6750,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "USL-ENVIRONMENTAL",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Battery-powered SuperLink sensor that detects water leaks",
@@ -6717,7 +6771,7 @@ export const cameraSecurityProducts: Product[] = [
       "and ambient light",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -6747,7 +6801,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -6755,7 +6809,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -6817,7 +6871,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UP-Sense",
     name: "All-In-One Sensor",
     category: "Camera Security",
@@ -6834,20 +6888,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UP-SENSE",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "A battery-powered smart sensor capable of detecting motion",
@@ -6855,7 +6909,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -6885,7 +6939,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -6893,7 +6947,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -6955,7 +7009,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "USL-GlassBreak",
     name: "Glass Break Sensor",
     category: "Camera Security",
@@ -6972,20 +7026,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "USL-GLASSBREAK",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Battery-powered SuperLink sensor featuring advanced glass break detection and motion sensing",
@@ -6993,7 +7047,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7023,7 +7077,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -7031,7 +7085,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -7093,7 +7147,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-USL-ANT-HG",
     name: "SuperLink High-Gain Antenna",
     category: "Camera Security",
@@ -7110,20 +7164,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-USL-ANT-HG",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "omnidirectional antenna with an IP67-rated outdoor enclosure",
@@ -7131,7 +7185,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7161,7 +7215,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -7169,7 +7223,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -7231,7 +7285,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UP-AI-Horn-Speaker-B/W",
     name: "AI Horn Speaker",
     category: "Camera Security",
@@ -7248,20 +7302,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UP-AI-HORN-SPEAKER-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "All-weather PoE 120 dB horn speaker with advanced AI alert functionality and versatile wall",
@@ -7269,7 +7323,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7299,7 +7353,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -7307,7 +7361,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -7369,7 +7423,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UP-FloodLight",
     name: "Floodlight",
     category: "Camera Security",
@@ -7385,20 +7439,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UP-FLOODLIGHT",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "motion-triggered light",
@@ -7406,7 +7460,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7436,7 +7490,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -7444,7 +7498,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -7506,7 +7560,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-Adapter-PoE-USBC",
     name: "PoE to USB-C Adapter",
     category: "Camera Security",
@@ -7523,20 +7577,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-ADAPTER-POE-USBC",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Versatile adapter that provides power and connectivity to USB-C devices",
@@ -7544,7 +7598,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7574,7 +7628,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -7582,7 +7636,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -7644,7 +7698,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-Camera-CJB-B/W",
     name: "Camera Compact Junction Box",
     category: "Camera Security",
@@ -7661,20 +7715,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-CAMERA-CJB-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability",
@@ -7682,7 +7736,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7712,7 +7766,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -7720,7 +7774,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -7782,7 +7836,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-Camera-CJB-B/W",
     name: "Camera Compact Junction Box",
     category: "Camera Security",
@@ -7799,20 +7853,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-CAMERA-CJB-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability",
@@ -7820,7 +7874,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7850,7 +7904,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -7858,7 +7912,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -7920,7 +7974,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-Camera-JB-B/W",
     name: "Camera Junction Box",
     category: "Camera Security",
@@ -7937,20 +7991,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-CAMERA-JB-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Tamper-resistant junction box for UniFi Bullet",
@@ -7958,7 +8012,7 @@ export const cameraSecurityProducts: Product[] = [
       "and ease of maintenance",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -7988,7 +8042,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -7996,7 +8050,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -8058,7 +8112,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-AI-JB-B/W",
     name: "AI 360 Junction Box",
     category: "Camera Security",
@@ -8075,20 +8129,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-AI-JB-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Tamper-resistant junction box for the AI 360 that enhances mounting durability and ease of maintenance",
@@ -8096,7 +8150,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -8126,7 +8180,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -8134,7 +8188,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -8196,7 +8250,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G4-Dome-Arm-Mount",
     name: "Dome Camera Arm Mount",
     category: "Camera Security",
@@ -8213,20 +8267,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G4-DOME-ARM-MOUNT",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Arm mount accessory that attaches the G4 or G5 Dome camera to a wall",
@@ -8234,7 +8288,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -8264,7 +8318,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -8272,7 +8326,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -8334,7 +8388,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-Camera-AM-B",
     name: "Camera Arm Mount",
     category: "Camera Security",
@@ -8351,20 +8405,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-CAMERA-AM-B",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Arm mount accessory that attaches the UniFi Turret cameras to a wall",
@@ -8372,7 +8426,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -8402,7 +8456,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -8410,7 +8464,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -8472,7 +8526,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-Bullet-AB-B",
     name: "Bullet Camera Angled Base",
     category: "Camera Security",
@@ -8489,20 +8543,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-BULLET-AB-B",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Bullet camera mounting accessory that enhances tilt angle by 22° to achieve an unrestricted viewing angle",
@@ -8510,7 +8564,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -8540,7 +8594,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -8548,7 +8602,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -8610,7 +8664,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-Pro-Bullet-Enhancer-B/W",
     name: "Pro Bullect Enhancer",
     category: "Camera Security",
@@ -8627,20 +8681,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-PRO-BULLET-ENHANCER-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Long-range IR LED",
@@ -8648,7 +8702,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -8678,7 +8732,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -8686,7 +8740,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -8748,7 +8802,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-AI-Pro-Enhancer-B/W",
     name: "AI Enhancer",
     category: "Camera Security",
@@ -8765,20 +8819,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-AI-PRO-ENHANCER-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Long-range IR LED",
@@ -8786,7 +8840,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -8816,7 +8870,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -8824,7 +8878,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -8886,7 +8940,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G5-Enhancer",
     name: "G5 Pro Enhancer",
     category: "Camera Security",
@@ -8903,20 +8957,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G5-ENHANCER",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Long-range IR LED and floodlight accessory for the G5 Pro",
@@ -8924,7 +8978,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -8954,7 +9008,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -8962,7 +9016,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -9024,7 +9078,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UVC-G4-IRExtender",
     name: "G4 Bullet IR Enhancer",
     category: "Camera Security",
@@ -9040,20 +9094,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UVC-G4-IREXTENDER",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Long-range IR LED accessory for the G4 Bullet",
@@ -9061,7 +9115,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -9091,7 +9145,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -9099,7 +9153,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -9161,7 +9215,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-Camera-DM-B/W",
     name: "Camera Dual Mount",
     category: "Camera Security",
@@ -9178,20 +9232,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-CAMERA-DM-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Tamper-resistant",
@@ -9199,7 +9253,7 @@ export const cameraSecurityProducts: Product[] = [
       "or Turret cameras that supports flat surface installation and attachment to 1 1/2' NPS threaded conduit",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -9229,7 +9283,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -9237,7 +9291,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -9299,7 +9353,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-GB-Plate-B/W",
     name: "Gang Box Mounting Plate",
     category: "Camera Security",
@@ -9316,20 +9370,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-GB-PLATE-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "A mounting plate designed to interface UniFi Protect cameras with multiple types of Gang Boxes and Junction Boxes",
@@ -9337,7 +9391,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -9367,7 +9421,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -9375,7 +9429,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -9437,7 +9491,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-Dome-FM-B/W",
     name: "AI Dome Camera Flush Mount",
     category: "Camera Security",
@@ -9454,20 +9508,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-DOME-FM-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Dome camera mounting accessory for recessed installation into a wall or ceiling",
@@ -9475,7 +9529,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -9505,7 +9559,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -9513,7 +9567,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -9575,7 +9629,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G6-Pro-360-FM-B/W",
     name: "G6 Pro 360 Flush Mount",
     category: "Camera Security",
@@ -9592,20 +9646,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G6-PRO-360-FM-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "G6 Pro 360 camera mounting accessory for recessed installation into a wall or ceiling",
@@ -9613,7 +9667,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -9643,7 +9697,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -9651,7 +9705,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -9713,7 +9767,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G6-Dome-FM-B/W",
     name: "G6 Dome Camera Flush Mount",
     category: "Camera Security",
@@ -9730,20 +9784,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G6-DOME-FM-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "G6/G6 Pro Dome camera mounting accessory for recessed installation into a wall or ceiling",
@@ -9751,7 +9805,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -9781,7 +9835,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -9789,7 +9843,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -9851,7 +9905,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G6-Dome-FMS-B/W",
     name: "G6 Dome Camera Flush Mount",
     category: "Camera Security",
@@ -9868,20 +9922,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G6-DOME-FMS-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "G6 Dome camera mounting accessory for recessed installation into a wall or ceiling",
@@ -9889,7 +9943,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -9919,7 +9973,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -9927,7 +9981,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -9989,7 +10043,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G5-Dome-Ultra-FM-B/W",
     name: "G6 Dome Camera Flush Mount",
     category: "Camera Security",
@@ -10006,20 +10060,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G5-DOME-ULTRA-FM-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Dome camera mounting accessory for recessed installation into a wall or ceiling",
@@ -10027,7 +10081,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -10057,7 +10111,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -10065,7 +10119,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -10127,7 +10181,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G5-Dome-Ultra-FM-SB-B/W",
     name: "G6 Dome Camera Flush Mount",
     category: "Camera Security",
@@ -10144,20 +10198,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G5-DOME-ULTRA-FM-SB-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Dome camera mounting accessory for recessed installation into a wall or ceiling with a smoked bubble for enhanced discretion",
@@ -10165,7 +10219,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -10195,7 +10249,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -10203,7 +10257,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -10265,7 +10319,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G6-Dome-WS-B/W",
     name: "G6 Dome Camera Weather Shield",
     category: "Camera Security",
@@ -10282,20 +10336,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G6-DOME-WS-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "G6 Dome camera accessory for optimal image quality and protection from the elements when installed outdoors on a wall or pole",
@@ -10303,7 +10357,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -10333,7 +10387,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -10341,7 +10395,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -10403,7 +10457,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-Dome-WS-B/W",
     name: "Dome Camera Weather Shield",
     category: "Camera Security",
@@ -10420,20 +10474,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-DOME-WS-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Dome camera accessory for optimal image quality and protection from the elements when installed outdoors on a wall or pole",
@@ -10441,7 +10495,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -10471,7 +10525,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -10479,7 +10533,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -10541,7 +10595,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G6-180-FM-B/W",
     name: "G6 180 Camera Flush Mount",
     category: "Camera Security",
@@ -10558,20 +10612,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G6-180-FM-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "G6 180 camera mounting accessory for recessed ceiling installation",
@@ -10579,7 +10633,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -10609,7 +10663,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -10617,7 +10671,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -10679,7 +10733,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G6-180-PM-B/W",
     name: "G6 180 Camera Pendant Mount",
     category: "Camera Security",
@@ -10696,20 +10750,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G6-180-PM-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Pendant mount for suspending the G6 180 Camera from ceilings or overhead structures",
@@ -10717,7 +10771,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -10747,7 +10801,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -10755,7 +10809,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -10817,7 +10871,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G5-PTZ-CM-B/W",
     name: "G6/G5 PTZ Corner Mount",
     category: "Camera Security",
@@ -10833,20 +10887,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G5-PTZ-CM-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Corner mount accessory for G6/G5 PTZ",
@@ -10854,7 +10908,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -10884,7 +10938,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -10892,7 +10946,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -10954,7 +11008,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G5-PTZ-PM-B/W",
     name: "G6/G5 PTZ Pendant Mount",
     category: "Camera Security",
@@ -10970,20 +11024,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G5-PTZ-PM-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Pendant mount accessory for G6/G5 PTZ",
@@ -10991,7 +11045,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -11021,7 +11075,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -11029,7 +11083,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -11091,7 +11145,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G5-PTZ-SM-B/W",
     name: "G6/G5 PTZ Surface Mount",
     category: "Camera Security",
@@ -11107,20 +11161,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G5-PTZ-SM-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Ceiling surface mount accessory for G5 PTZ",
@@ -11128,7 +11182,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -11158,7 +11212,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -11166,7 +11220,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -11228,7 +11282,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G5-PTZ-ICM-SB-B/W",
     name: "G5 PTZ In-Ceiling Mount",
     category: "Camera Security",
@@ -11245,20 +11299,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G5-PTZ-ICM-SB-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "In-ceiling mount accessory or smoked bubble cover for G5 PTZ",
@@ -11266,7 +11320,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -11296,7 +11350,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -11304,7 +11358,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -11366,7 +11420,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G6-PTZ-ICM-B/W",
     name: "G6 PTZ In-Ceiling Mount",
     category: "Camera Security",
@@ -11382,20 +11436,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G6-PTZ-ICM-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "In-ceiling mount accessory for G6 PTZ",
@@ -11403,7 +11457,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -11433,7 +11487,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -11441,7 +11495,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -11503,7 +11557,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G5-PTZ-CA-B/W",
     name: "G6/G5 PTZ Conduit Adapter",
     category: "Camera Security",
@@ -11520,20 +11574,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G5-PTZ-CA-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "3/4' conduit adapter for wall-mounted G6/G5 PTZ installations",
@@ -11541,7 +11595,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -11571,7 +11625,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -11579,7 +11633,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -11641,7 +11695,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-Flex-Cam-PWM-B/W",
     name: "Flex Pro Mount",
     category: "Camera Security",
@@ -11658,20 +11712,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-FLEX-CAM-PWM-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Versatile weatherproof wall or pole mount for G3 and G5 Flex cameras",
@@ -11679,7 +11733,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -11709,7 +11763,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -11717,7 +11771,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -11779,7 +11833,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W",
     name: "G4 Doorbell Pro PoE Gang Box Mount",
     category: "Camera Security",
@@ -11796,20 +11850,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G4-DOORBELL-PRO-POE-GANG-BOX-WHITE-B-W",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "flat or angled mounting plate for installing the G4 Doorbell Pro PoE over a standard single-gang box",
@@ -11817,7 +11871,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -11847,7 +11901,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -11855,7 +11909,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -11917,7 +11971,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G4-DBP-Cable-USB-7M",
     name: "G4 Doorbell Pro PoE to USB-C Cable",
     category: "Camera Security",
@@ -11934,20 +11988,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G4-DBP-CABLE-USB-7M",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Sever-meter USB cable that connects a G4 Doorbell Pro to a PoE source",
@@ -11955,7 +12009,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -11985,7 +12039,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -11993,7 +12047,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -12055,7 +12109,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G4-INS-Cable-USB-4.5M",
     name: "Instant Camera PoE to USB-C Cable",
     category: "Camera Security",
@@ -12072,20 +12126,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G4-INS-CABLE-USB-4-5M",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Four-and-a-half-meter USB cable that connects a Camera G4/G6 Instant to a PoE source",
@@ -12093,7 +12147,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -12123,7 +12177,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -12131,7 +12185,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -12193,7 +12247,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-G4-INS-Cover-DG/G/LG",
     name: "G4 Instant Cover",
     category: "Camera Security",
@@ -12210,20 +12264,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-G4-INS-COVER-DG-G-LG",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Custom cover for the G4 Instant camera available in multiple colors",
@@ -12231,7 +12285,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -12261,7 +12315,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -12269,7 +12323,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -12331,7 +12385,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-AI-Theta-Audio-Cable-1M",
     name: "AI Theta Audio Cable",
     category: "Camera Security",
@@ -12348,20 +12402,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-AI-THETA-AUDIO-CABLE-1M",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Replacement cable that connects AI Theta Audio to an AI Theta Hub",
@@ -12369,7 +12423,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -12399,7 +12453,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -12407,7 +12461,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -12469,7 +12523,7 @@ export const cameraSecurityProducts: Product[] = [
       }
     ]
   },
-{
+  {
     id: "UACC-AI-Theta-Audio-Cable-Ext-10M",
     name: "AI Theta Audio Cable Extension Cable",
     category: "Camera Security",
@@ -12485,20 +12539,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // SKU produk
     sku: "UACC-AI-THETA-AUDIO-CABLE-EXT-10M",
-    
+
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
       "/images/camera.jpg",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
-    
+
     // Bullet points untuk deskripsi produk
     bulletPoints: [
       "Ten-meter audio cable to extend AI Theta Lenses",
@@ -12506,7 +12560,7 @@ export const cameraSecurityProducts: Product[] = [
       "Easy to deploy and manage",
       "Reliable performance"
     ],
-    
+
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
@@ -12536,7 +12590,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       }
     ],
-    
+
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
@@ -12544,7 +12598,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-    
+
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
