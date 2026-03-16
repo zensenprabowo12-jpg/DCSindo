@@ -244,13 +244,22 @@ export const cloudGatewaysProducts: Product[] = [
         specs: [
           "6U-sized device rack",
           "Combine two Mini Racks into a 12U rack with a Stacking Kit",
-          "Toolless assembly and device mounting"
+          "Toolless assembly and device mounting",
+          "Lockable casters"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" },
+          { label: "Dimensions", value: "with handle and caster : 519 x 460 x 485 mm (20.43 x 18.11 x 19.09\")" },
+          { label: "Weight", value: "10.3 kg" },
+          { label: "Max. Weight Capacity (Single toolless mini rack) Static : 80 kg (176 lb)", value: "SGCC Steel" },
+          { label: "Max. Weight Capacity (Double toolless mini rack) Static : 70 kg (154 lb)", value: "SGCC Steel" },
+          { label: "Enclosure Material", value: "Frame/Bracket: SPCC steel, Handle: Stainless steel" },
+          { label: "Color", value: "Silver" },
+          { label: "Treatment", value: "Liquid Coating" },
+          { label: "U Height", value: "6U" },
+          { label: "Rack Type", value: "Open Frame" },
+          { label: "Mounting", value: "Floor Stand" },
+          { label: "Lockable Casters", value: "✓"},
+          { label: "NDAA Compliant", value: "✓" },
         ],
         productLink: "/products/mounting-kit-efg" // Link ke halaman produk addon
       },
@@ -521,13 +530,22 @@ export const cloudGatewaysProducts: Product[] = [
         specs: [
           "6U-sized device rack",
           "Combine two Mini Racks into a 12U rack with a Stacking Kit",
-          "Toolless assembly and device mounting"
+          "Toolless assembly and device mounting",
+          "Lockable casters"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "with handle and caster : 519 x 460 x 485 mm (20.43 x 18.11 x 19.09\")" },
+          { label: "Weight", value: "10.3 kg" },
+          { label: "Max. Weight Capacity (Single toolless mini rack) Static : 80 kg (176 lb)", value: "SGCC Steel" },
+          { label: "Max. Weight Capacity (Double toolless mini rack) Static : 70 kg (154 lb)", value: "SGCC Steel" },
+          { label: "Enclosure Material", value: "Frame/Bracket: SPCC steel, Handle: Stainless steel" },
+          { label: "Color", value: "Silver" },
+          { label: "Treatment", value: "Liquid Coating" },
+          { label: "U Height", value: "6U" },
+          { label: "Rack Type", value: "Open Frame" },
+          { label: "Mounting", value: "Floor Stand" },
+          { label: "Lockable Casters", value: "✓"},
+          { label: "NDAA Compliant", value: "✓" },
         ],
         productLink: "/products/mounting-kit-efg" // Link ke halaman produk addon
       },
@@ -751,13 +769,22 @@ export const cloudGatewaysProducts: Product[] = [
         specs: [
           "6U-sized device rack",
           "Combine two Mini Racks into a 12U rack with a Stacking Kit",
-          "Toolless assembly and device mounting"
+          "Toolless assembly and device mounting",
+          "Lockable casters"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" },
+          { label: "Dimensions", value: "with handle and caster : 519 x 460 x 485 mm (20.43 x 18.11 x 19.09\")" },
+          { label: "Weight", value: "10.3 kg" },
+          { label: "Max. Weight Capacity (Single toolless mini rack) Static : 80 kg (176 lb)", value: "SGCC Steel" },
+          { label: "Max. Weight Capacity (Double toolless mini rack) Static : 70 kg (154 lb)", value: "SGCC Steel" },
+          { label: "Enclosure Material", value: "Frame/Bracket: SPCC steel, Handle: Stainless steel" },
+          { label: "Color", value: "Silver" },
+          { label: "Treatment", value: "Liquid Coating" },
+          { label: "U Height", value: "6U" },
+          { label: "Rack Type", value: "Open Frame" },
+          { label: "Mounting", value: "Floor Stand" },
+          { label: "Lockable Casters", value: "✓"},
+          { label: "NDAA Compliant", value: "✓" },
         ],
         productLink: "/products/mounting-kit-efg" // Link ke halaman produk addon
       },
@@ -1024,13 +1051,22 @@ export const cloudGatewaysProducts: Product[] = [
         specs: [
           "6U-sized device rack",
           "Combine two Mini Racks into a 12U rack with a Stacking Kit",
-          "Toolless assembly and device mounting"
+          "Toolless assembly and device mounting",
+          "Lockable casters"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" },
+          { label: "Dimensions", value: "with handle and caster : 519 x 460 x 485 mm (20.43 x 18.11 x 19.09\")" },
+          { label: "Weight", value: "10.3 kg" },
+          { label: "Max. Weight Capacity (Single toolless mini rack) Static : 80 kg (176 lb)", value: "SGCC Steel" },
+          { label: "Max. Weight Capacity (Double toolless mini rack) Static : 70 kg (154 lb)", value: "SGCC Steel" },
+          { label: "Enclosure Material", value: "Frame/Bracket: SPCC steel, Handle: Stainless steel" },
+          { label: "Color", value: "Silver" },
+          { label: "Treatment", value: "Liquid Coating" },
+          { label: "U Height", value: "6U" },
+          { label: "Rack Type", value: "Open Frame" },
+          { label: "Mounting", value: "Floor Stand" },
+          { label: "Lockable Casters", value: "✓"},
+          { label: "NDAA Compliant", value: "✓" },
         ],
         productLink: "/products/mounting-kit-efg" // Link ke halaman produk addon
       },
@@ -2716,7 +2752,7 @@ export const cloudGatewaysProducts: Product[] = [
         ]
       },
       {
-        title: "Security",
+        title: "VPN & SD-WAN",
         items: [
           { label: "License-Free SD-WAN", value: "✓", isCheck: true},
           { label: "Site-to-Site VPN Site Magic", value: "✓", isCheck: true},
