@@ -2312,7 +2312,7 @@ export const cloudGatewaysProducts: Product[] = [
           { label: "System Memory", value: "3 GB"},
           { label: "Weight", value: "422 G (14.9 oz)"},
           { label: "Enclosure Material", value: "Polycarbonate"},
-          { label: "LCM Display", value: "0.96" status display/""},
+          { label: "LCM Display", value: "0.96\" status display"},
           { label: "Management", value: "Ethernet, Bluetooth"},
           { label: "LEDs Ethernet", value: "✓", isCheck: true},
           { label: "Button", value: "(1) Factory Reset)"},
