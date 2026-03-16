@@ -1,3 +1,6 @@
+import { Item } from "@radix-ui/react-accordion";
+import { title } from "process";
+
 // Interface untuk spesifikasi teknis item
 export interface TechSpecItem {
   label: string;
@@ -3294,7 +3297,7 @@ export const cameraSecurityProducts: Product[] = [
     ]
   },
 
-// Produk Kedua dari Camera Security, SF Bullet
+  // Produk Kedua dari Camera Security, SF Bullet
   {
     id: "UVC-G6-Bullet-B/W",
     name: "G6 Bullet",
@@ -3335,7 +3338,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-       {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "Without mount: ⌀82 x 88.8 mm (⌀3.2 x 3.5') With mount: ⌀82 x 153 mm (⌀3.2 x 6')" },
@@ -3375,7 +3378,7 @@ export const cameraSecurityProducts: Product[] = [
           { label: "Weight", value: "Without mount: 587 g (1.3 lb) With mount: 737 g (1.6 lb)" },
           { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
           { label: "Mount Material", value: "Wall mount: aluminum alloy, polycarbonate Pole mount: aluminum alloy" },
-          { label: "Button", value: "(1) Factory reset" },  
+          { label: "Button", value: "(1) Factory reset" },
           { label: "Ambient Operating Temperature", value: "-20 to 50º C (-4 to 122º F)" },
           { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
           { label: "NDAA Compliant", value: "✓" },
@@ -3393,7 +3396,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-// Produk ketiga dari Camera Security, SF Bullet
+  // Produk ketiga dari Camera Security, SF Bullet
   {
     id: "UVC-AI-LPR-B/W",
     name: "AI LPR",
@@ -3435,7 +3438,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-     {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "130 x 151.4 x 302.9 mm (5.1 x 6 x 11.9')" },
@@ -3476,14 +3479,14 @@ export const cameraSecurityProducts: Product[] = [
           { label: "Weight", value: "1.5 kg (3.3 lb)" },
           { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
           { label: "Mount Material", value: "Aluminum Alloy" },
-          { label: "Expansion Slot", value: "Micro SD memory card" },  
-          { label: "Button", value: "(1) Factory reset" },  
-          { label: "Cable Cable Connector Type", value: "(1) Factory reset" },  
-          { label: "Cable Cable Diameter", value: "(1) Factory reset" },  
-          { label: "Cable Cable Length", value: "(1) Factory reset" },  
-          { label: "Cable Jacket Material", value: "(1) Factory reset" },  
-          { label: "Cable Jacket Enclosure Dimensions", value: "(1) Factory reset" },  
-          { label: "Cable Jacket Enclosure Material", value: "(1) Factory reset" },  
+          { label: "Expansion Slot", value: "Micro SD memory card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Cable Cable Connector Type", value: "(1) Factory reset" },
+          { label: "Cable Cable Diameter", value: "(1) Factory reset" },
+          { label: "Cable Cable Length", value: "(1) Factory reset" },
+          { label: "Cable Jacket Material", value: "(1) Factory reset" },
+          { label: "Cable Jacket Enclosure Dimensions", value: "(1) Factory reset" },
+          { label: "Cable Jacket Enclosure Material", value: "(1) Factory reset" },
           { label: "Ambient Operating Temperature", value: "-20 to 50º C (-4 to 122º F)" },
           { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
           { label: "NDAA Compliant", value: "✓" },
@@ -3500,7 +3503,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-// Produk Keempat dari Camera Security, SF Bullet
+  // Produk Keempat dari Camera Security, SF Bullet
   {
     id: "UVC-AI-DSLR-B/W",
     name: "AI DSLR",
@@ -3542,7 +3545,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-     {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "Without mount: ⌀80 x 89 mm (⌀3.1 x 3.5') With mount: ⌀80 x 153 mm (⌀3.1 x 6') M. Zuiko Digital ED 17 mm PRO: ⌀68.2 x 87 mm (⌀2.7 x 3.4') M. Zuiko Digital ED 45 mm PRO: ⌀70 x 84.9 mm (⌀2.8 x 3.3') Outdoor case: ⌀91.6 x 196.3 mm (⌀3.6 x 7.7')" },
@@ -3577,7 +3580,7 @@ export const cameraSecurityProducts: Product[] = [
           { label: "Weight", value: "Without mount: 660 g (1.5 lb) With mount: 820 g (1.8 lb) M. Zuiko Digital ED 17 mm PRO: 390 g (0.9 lb) M. Zuiko Digital ED 45 mm PRO: 410 g (0.9 lb) Outdoor case: 510 g (1.1 lb)" },
           { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
           { label: "Mount Material", value: "Wall mount: aluminum alloy Pole mount: aluminum alloy" },
-          { label: "Button", value: "(1) Factory reset (1) Lens release rey" },  
+          { label: "Button", value: "(1) Factory reset (1) Lens release rey" },
           { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
           { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
           { label: "NDAA Compliant", value: "✓" },
@@ -3596,7 +3599,7 @@ export const cameraSecurityProducts: Product[] = [
   },
 
   // Produk Kelima dari Camera Security, SF Bullet
- {
+  {
     id: "UVC-AI-DSLR-LD-B/W",
     name: "AI DSLR",
     category: "Camera Security",
@@ -3637,7 +3640,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-     {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "Without mount: ⌀80 x 89 mm (⌀3.1 x 3.5') With mount: ⌀80 x 153 mm (⌀3.1 x 6') M. Zuiko Digital ED 17 mm PRO: ⌀68.2 x 87 mm (⌀2.7 x 3.4') M. Zuiko Digital ED 45 mm PRO: ⌀70 x 84.9 mm (⌀2.8 x 3.3') Outdoor case: ⌀91.6 x 196.3 mm (⌀3.6 x 7.7')" },
@@ -3673,7 +3676,7 @@ export const cameraSecurityProducts: Product[] = [
           { label: "Weight", value: "Without mount: 660 g (1.5 lb) With mount: 820 g (1.8 lb) M. Zuiko Digital ED 17 mm PRO: 390 g (0.9 lb) M. Zuiko Digital ED 45 mm PRO: 410 g (0.9 lb) Outdoor case: 510 g (1.1 lb)" },
           { label: "Enclosure Material", value: "Aluminum alloy" },
           { label: "Mount Material", value: "Wall mount: aluminum alloy Pole mount: aluminum alloy" },
-          { label: "Button", value: "(1) Factory reset (1) Lens release rey" },  
+          { label: "Button", value: "(1) Factory reset (1) Lens release rey" },
           { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
           { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
           { label: "NDAA Compliant", value: "✓" },
@@ -3691,7 +3694,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-// Produk Keenam dari Camera Security, SF Bullet
+  // Produk Keenam dari Camera Security, SF Bullet
   {
     id: "UVC-AI-Pro-B/W",
     name: "AI Pro",
@@ -3732,7 +3735,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-     {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "Without mount: ⌀86 x 112.6 mm (⌀3.4 x 4.4') With mount: ⌀86 x 175.3 mm (⌀3.4 x 6.9')" },
@@ -3772,7 +3775,7 @@ export const cameraSecurityProducts: Product[] = [
           { label: "Weight", value: "Without mount: 675 g (1.5 lb) With mount: 820 g (1.8 lb)" },
           { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
           { label: "Mount Material", value: "Aluminum alloy" },
-          { label: "Button", value: "(1) Factory reset" },  
+          { label: "Button", value: "(1) Factory reset" },
           { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
           { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
           { label: "NDAA Compliant", value: "✓" },
@@ -3862,7 +3865,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-     {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "⌀86 x 154.3 mm (⌀3.4 x 6.1')" },
@@ -3900,7 +3903,7 @@ export const cameraSecurityProducts: Product[] = [
           { label: "Weight", value: "650 g (1.4 lb)" },
           { label: "Enclosure Material", value: "UV stabilized polycarbonate, aluminum alloy" },
           { label: "Mount Material", value: "Aluminum alloy" },
-          { label: "Button", value: "(1) Factory reset" },  
+          { label: "Button", value: "(1) Factory reset" },
           { label: "Ambient Operating Temperature", value: "-20 to 50° C (-4 to 122° F)" },
           { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
           { label: "NDAA Compliant", value: "✓" },
@@ -3918,7 +3921,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-//Produk Kedelapan dari Camera Security, SF Bullet
+  //Produk Kedelapan dari Camera Security, SF Bullet
   {
     id: "UVC-G5-Bullet",
     name: "G5 Bullet",
@@ -3958,7 +3961,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-       {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "Without mount: ⌀75.5 x 74.4 mm (⌀3 x 2.9') With mount: ⌀75.5 x 150 mm (⌀3 x 5.9')" },
@@ -3995,7 +3998,7 @@ export const cameraSecurityProducts: Product[] = [
           { label: "Weight", value: "Without mount: 225 g (8 oz) With mount: 315 g (11.1 oz)" },
           { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
           { label: "Mount Material", value: "Wall mount: aluminum alloy, polycarbonate Pole mount: aluminum alloy" },
-          { label: "Button", value: "(1) Factory reset" },  
+          { label: "Button", value: "(1) Factory reset" },
           { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
           { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
           { label: "NDAA Compliant", value: "✓" },
@@ -4013,7 +4016,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-// Produk Pertama dari Camera Security, SF Compact
+  // Produk Pertama dari Camera Security, SF Compact
   {
     id: "UVC-G6-INS-W",
     name: "G6 Instant",
@@ -4054,7 +4057,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-     {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "81.7 x 50.1 x 57.2 mm  (3.2 x 2 x 2.3')" },
@@ -4093,11 +4096,11 @@ export const cameraSecurityProducts: Product[] = [
           { label: "Enclosure Material", value: "Polycarbonate" },
           { label: "Mount Material", value: "Polycarbonate" },
           { label: "Expansion Slot", value: "MicroSD card" },
-          { label: "Button", value: "(1) Factory reset" },  
-          { label: "Cable Cable Connector Type", value: "USB Type-C to USB Type-C" },  
-          { label: "Cable Cable Diameter", value: "3 mm (0.1')" },  
-          { label: "Cable Cable Length", value: "2 m (6.6 ft)" },  
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer" },  
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Cable Cable Connector Type", value: "USB Type-C to USB Type-C" },
+          { label: "Cable Cable Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Cable Length", value: "2 m (6.6 ft)" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer" },
           { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
           { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
           { label: "NDAA Compliant", value: "✓" },
@@ -4115,9 +4118,9 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-  
+  // Produk Kedua dari Camera Security, SF Compact
   {
-    id: "UVC-AI-Theta-Pro-W",
+    id: "UVC-AI-Theta-Pro",
     name: "Camera AI Theta Pro",
     category: "Camera Security",
     subfilter: "Compact",
@@ -4132,7 +4135,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UVC-AI-THETA-PRO-W",
+    sku: "UVC-AI-Theta-Pro",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -4149,10 +4152,10 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "A complete ceiling 360° AI Theta system designed to discreetly provide a panoramic view of large",
-      "busy spaces",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Max. Power Consumption 12.5W",
+      "Power Method PoE",
+      "Resolution 4k",
+      "Note. License plate recognition supported with Long-Distance and Wide-Angle lenses."
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -4160,29 +4163,44 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Camera AI Theta Pro" },
-          { label: "Model", value: "UVC-AI-THETA-PRO-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "UVC-AI-Theta-Hub: 140 x 70 x 38 mm (5.5 x 2.8 x 1.5”) UVC-AI-Theta-ProLens360: ⌀36.6 x 58.9 mm (⌀1.4 x 2.3”) UVC-AI-Theta-ProLens360 Flush mount: ⌀54.6 x 60.4 mm (⌀2.2 x 2.4”)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "H: 180°, V: 180°, D: 180°" },
+          { label: "Audio", value: "Two-way audio with optional AI Theta Audio" },
+          { label: "Mounting", value: "Wall, ceiling, flush mount (Included) Angle mount (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "24 FPS" },
+          { label: "Video Resolution", value: "4MP 2160 x 2160 (1:1)" },
+          { label: "Optics Sensor", value: "8MP 1/1.8' CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "12.5W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "UVC-AI-Theta-Hub: 330 g (11.6 oz) UVC-AI-Theta-Hub mount: 35 g (1.2 oz) UVC-AI-Theta-ProLens360: 58 g (2 oz) UVC-AI-Theta-ProLens360 Flush mount: 24 g (0.8 oz)" },
+          { label: "Enclosure Material", value: "UVC-AI-Theta-Hub: aluminum alloy UVC-AI-Theta-ProLens360: aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "UVC-AI-Theta-Hub: aluminum alloy UVC-AI-Theta-ProLens360 Flush mount: polycarbonate" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -4197,63 +4215,298 @@ export const cameraSecurityProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "AI Theta Audio",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Two-way audio module that connects to an AI Theta Hub.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Built-in microphone and speaker for two-way audio",
+          "Connects to an AI Theta Hub with the included cable",
+          "Includes flush mount for flat ceiling or wall mounting",
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "⌀61.5 x 39 mm (⌀2.4 x 1.5')" },
+        ],
+        productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
+      },
+    ]
+  },
+
+  // Produk Ketiga dari Camera Security, SF Compact
+  {
+    id: "UVC-AI-Theta-Hub",
+    name: "AI Theta Hub",
+    category: "Camera Security",
+    subfilter: "Compact",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Remote processing hub for any AI Theta deployment, compatible with any AI Theta Lens and AI Theta Audio.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UVC-AI-Theta-Hub",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Max. Power Consumption 12.5W",
+      "Power Method PoE",
+      "Resolution 4k",
+      "Note. License plate recognition supported with Long-Distance and Wide-Angle lenses."
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "140 x 70 x 38 mm (5.5 x 2.8 x 1.5”)" },
+          { label: "Mounting", value: "Wall, ceiling mount (Included)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port Theta audio port Theta lens port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Enclosure Material", value: "Aluminum alloy" },
+          { label: "Mounting Material", value: "Aluminum alloy" },
+          { label: "Weight", value: "UVC-AI-Theta-Hub: 330 g (11.6 oz) UVC-AI-Theta-Hub Mount: 35 g (1.2 oz)" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Supprorted Voltage Range", value: "37—57V DC" },
+          { label: "Max. Power Consumption", value: "12.5W" },
+          { label: "Power Output", value: "5V DC, 1A per port" },
+          { label: "LCM Display", value: "0.96' display" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+
+    // Addon/aksesori yang tersedia untuk produk ini
+    addons: [
+      {
+        id: 1,
+        name: "Flush Mount",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Enhanced flush mount for AI Theta Pro Lenses.",
+        specs: [
+          "Supports flush mounting without access to the rear of a ceiling or wall",
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "⌀73.6 x 73.7 mm (⌀2.9 x 2.9')" },
+          { label: "Weight", value: "100 g (3.5)" },
+          { label: "Enclosure Material", value: "Polycarbonate, zinc alloy" }
         ],
         productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Angle Mount",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Angled ceiling mount for AI Theta Pro Lenses.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Supports surface mounting with angle adjustment",
+          "Compatible with AI Theta Pro Lenses",
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Dimensions", value: "64.7 x 42.4 x 100.1 mm (2.5 x 1.7 x 3.9')" },
+          { label: "Weight", value: "Mount: 113 g (4 oz) Mount plate: 7 g (0.25 oz)" },
+          { label: "Material", value: "Aluminum alloy" },
+          { label: "Enclosure Material", value: "Aluminum alloy" },
+          { label: "Mounting Material", value: "Aluminum alloy, stainless steel" }
         ],
-        productLink: "/products/power-cable-uvc-ai-theta-pro-w"
+        productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "AI Theta Audio",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "Two-way audio module that connects to an AI Theta Hub.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Built-in microphone and speaker for two-way audio",
+          "Connects to an AI Theta Hub with the included cable",
+          "Includes flush mount for flat ceiling or wall mounting",
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Dimensions", value: "⌀61.5 x 39 mm (⌀2.4 x 1.5')" },
         ],
-        productLink: "/products/sfp-module-10g"
-      }
+        productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
+      },
     ]
   },
+
+  // Produk Keempat dari Camera Security, SF Compact
+  {
+    id: "UVC-AI-Theta",
+    name: "AI Theta",
+    category: "Camera Security",
+    subfilter: "Compact",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "A complete AI Theta system that discreetly secures any space while maintaining a warm and inviting atmosphere.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UVC-AI-Theta",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Max. Power Consumption 12.5W",
+      "Power Method PoE",
+      "Resolution 4k",
+      "Note. License plate recognition supported with Long-Distance and Wide-Angle lenses."
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "UVC-AI-Theta-Hub: 140 x 70 x 38 mm (5.5 x 2.8 x 1.5”) UVC-AI-Theta-Lens/360: ⌀22.8. x 43.5 mm  (⌀0.9 x 1.7”)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "H: 97.5°, V: 79.4°, D: 118.2°" },
+          { label: "Audio", value: "Two-way audio with optional AI Theta Audio" },
+          { label: "Mounting", value: "Wall, ceiling, flush mount (Included) Angle mount (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "UVC-AI-Theta-Lens: 24 FPS UVC-AI-Theta-Lens-360: 20 FPS" },
+          { label: "Resolution", value: "UVC-AI-Theta-Lens: 8MP 3264 x 2448 (4:3) UVC-AI-Theta-Lens-360: 6MP 2560 x 2560 (1:1)" },
+          { label: "Optics Sensor", value: "UVC-AI-Theta-Lens: 8MP CMOS UVC-AI-Theta-Lens-360: 12MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Max. Power Consumption", value: "12.5W" },
+          { label: "Supprorted Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "UVC-AI-Theta-Hub: 330 g (11.6 oz) UVC-AI-Theta-Hub mount: 35 g (1.2 oz) UVC-AI-Theta-Lens/360: 15 g (0.5 oz) UVC-AI-Theta-Lens/360 Flush mount: 12 g (0.4 oz)" },
+          { label: "Enclosure Material", value: " UVC-AI-Theta-Hub: aluminum alloy UVC-AI-Theta-Lens/360: aluminum alloy, polycarbonate UVC-AI-Theta-Lens/360 Flush mount: polycarbonate" },
+          { label: "Mount Material", value: "UVC-AI-Theta-Hub: aluminum alloy UVC-AI-Theta-Lens/360: aluminum alloy, polycarbonate UVC-AI-Theta-Lens/360 Flush mount: polycarbonate" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+
+    // Addon/aksesori yang tersedia untuk produk ini
+    addons: [
+      {
+        id: 1,
+        name: "Angle Mount",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Angled ceiling mount for AI Theta Pro Lenses.",
+        specs: [
+          "Supports surface mounting with angle adjustment",
+          "Compatible with AI Theta Pro Lenses",
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "64.7 x 42.4 x 100.1 mm (2.5 x 1.7 x 3.9')" },
+          { label: "Weight", value: "Mount: 113 g (4 oz) Mount plate: 7 g (0.25 oz)" },
+          { label: "Material", value: "Aluminum alloy" },
+          { label: "Enclosure Material", value: "Aluminum alloy" },
+          { label: "Mounting Material", value: "Aluminum alloy, stainless steel" }
+        ],
+        productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
+      },
+      {
+        id: 2,
+        name: "AI Theta Audio",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Two-way audio module that connects to an AI Theta Hub.",
+        specs: [
+          "Built-in microphone and speaker for two-way audio",
+          "Connects to an AI Theta Hub with the included cable",
+          "Includes flush mount for flat ceiling or wall mounting",
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "⌀61.5 x 39 mm (⌀2.4 x 1.5')" },
+        ],
+        productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
+      },
+    ]
+  },
+
+  // Produk Kelima dari Camera Security, SF Compact
   {
     id: "UVC-G5-Flex",
     name: "G5 Flex",
@@ -4287,10 +4540,9 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "easy-to-deploy 2K HD PoE camera that can be staged indoors or outside",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Max. Power Consumption 4W",
+      "Enclosure Material Polycarbonate",
+      "Power Method PoE"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -4298,29 +4550,47 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G5 Flex" },
-          { label: "Model", value: "UVC-G5-FLEX" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀48 x 107.5 mm (⌀1.9 x 4.2')" },
+          { label: "IR Night Vision", value: "6 m (20 ft)" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "2K" },
+          { label: "Field of View", value: "H: 102.4°, V: 54.9°, D: 120.6°" },
+          { label: "Audio", value: "Microphone" },
+          { label: "Weatherproofing", value: "IPX4 (While Covered)" },
+          { label: "Temper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Desktop, Wall, pole mount, hard-ceiling (Included) In-ceiling mount, pendant, Pro mount (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "4MP 2688 x 1512 (16:9)" },
+          { label: "Optics Sensor", value: "5MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "4W" },
+          { label: "Supprorted Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Dual-core Arm® Cortex®-A7 based chip" },
+          { label: "Pole Mount Diameter", value: "1–1.5' (25–38 mm)" },
+          { label: "Weight", value: "170 g (6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -4330,68 +4600,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g5-flex"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g5-flex"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Keenam dari Camera Security, SF Compact
   {
     id: "UVC-G4-INS",
     name: "G4 Instant",
@@ -4425,10 +4636,10 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "WiFi-connected camera with two-way audio",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Weatherproofing IPX5",
+      "Resolution 2K",
+      "Power Method 5V, 2A USB power adapter (Included) Instant PoE to USB adapter (Optional)",
+      "Note. Third-party WiFi configuration available during setup with the UniFi Protect mobile app. EU version comes with EU power plug only."
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -4436,29 +4647,50 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G4 Instant" },
-          { label: "Model", value: "UVC-G4-INS" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "81.6 x 50 x 47.2 mm (3.2 x 2 x 1.9')" },
+          { label: "IR Night Vision", value: "6 m (20 ft)" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "2K" },
+          { label: "Field of View", value: "H: 102.4°, V: 54.9°, D: 120.6°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IPX5" },
+          { label: "Temper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall mount accessory (Included)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "802.11 a/b/g/n/ac WiFi Bluetooth" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "4MP 2688 x 1512 (16:9)" },
+          { label: "Optics Sensor", value: "5MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length EFL 2.8 mm, ƒ/1.6" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "6W" },
+          { label: "Supprorted Voltage Range", value: "5V DC, 2A" },
+          { label: "Power Method", value: "5V, 2A USB power adapter (Included) Instant PoE to USB adapter (Optional)" },
+          { label: "Processor", value: "Dual-core Arm® Cortex®-A7 based chip" },
+          { label: "Weight", value: "Without mount: 125 g (4.4 oz) With mount: 163 g (5.8 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Cable Cable Connector Type", value: "USB Type-C to USB Type-C" },
+          { label: "Cable Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Length", value: "2 m (6.6 ft)" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 10585-22-08356" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -4468,68 +4700,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g4-ins"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g4-ins"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  //Produk Ketujuh dari Camera Security, SF Compact
   {
     id: "UVC-AI-Theta-Audio",
     name: "AI Theta Audio",
@@ -4562,10 +4735,9 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Two-way audio module that connects to an AI Theta Hub",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Built-in microphone and speaker for two-way audio",
+      "Connects to an AI Theta Hub with the included cable",
+      "Includes flush mount for flat ceiling or wall mounting",
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -4573,108 +4745,65 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI Theta Audio" },
-          { label: "Model", value: "UVC-AI-THETA-AUDIO" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "81.7 x 50.1 x 57.2 mm  (3.2 x 2 x 2.3')" },
+          { label: "IR Night Vision", value: "6 m (20 ft)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "H: 109.9°, V: 56.7°, D: 134.1°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall mount accessory (Included)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "802.11 a/b/g/n/ac WiFi Bluetooth" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.8” 8MP" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and an IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "7W" },
+          { label: "Supported Voltage Range", value: "5V DC, 2A" },
+          { label: "Power Method", value: "5V, 2A USB power adapter (Included) PoE to USB-C adapter (Not included)" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "180 g (6.3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Expansion Slot", value: "MicroSD card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Cable Cable Connector Type", value: "USB Type-C to USB Type-C" },
+          { label: "Cable Cable Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Cable Length", value: "2 m (6.6 ft)" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, SRRC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-theta-audio"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-ai-theta-audio"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Kedelapan dari Camera Security, SF Compact
   {
-    id: "UVC-AI-Theta-ProLens50",
-    name: "AI Theta Pro Long-Distance Lens",
+    id: "UVC-AI-Theta-Lens-LD",
+    name: "AI Theta Long-Distance Lens",
     category: "Camera Security",
     subfilter: "Compact",
     image: "/images/camera.jpg",
     shortDescription:
-      "Long-distance lens with enhanced low-light performance and dynamic range that connects to an AI Theta Hub.",
+      "Long-distance lens that connects to an AI Theta Hub.",
     specs: [
       { label: "Resolution", value: "4K (8MP)" },
       { label: "Night Vision", value: "25m (82ft) IR" },
@@ -4683,7 +4812,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UVC-AI-THETA-PROLENS50",
+    sku: "UVC-AI-Theta-Lens-LD",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
@@ -4700,10 +4829,9 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Long-distance lens with enhanced low-light performance and dynamic range that connects to an AI Theta Hub",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Power Method Theta proprietary",
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Resolution 4K"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -4711,100 +4839,431 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI Theta Pro Long-Distance Lens" },
-          { label: "Model", value: "UVC-AI-THETA-PROLENS50" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀22.8. x 43.5 mm (⌀0.9 x 1.7”)" },
+          { label: "Field of View", value: "H: 36.2°, V: 27.7°, D: 44.4°" },
+          { label: "Resolution", value: "4K" },
+          { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
+          { label: "Operating Environment", value: "Indoor Only" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "24 FPS" },
+          { label: "Video Resolution", value: "8MP 3264 x 2448 (4:3)" },
+          { label: "Optics Sensor", value: "8MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Weight", value: "15 g (0.5 oz)" },
+          { label: "Power Method", value: "Theta proprietary" },
+          { label: "Power Supply", value: "5V DC, 0.5A" },
+          { label: "Max. Power Consumption", value: "2.5W" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-theta-prolens50"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-ai-theta-prolens50"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Kesembilan dari Camera Security, SF Compact
+  {
+    id: "UVC-AI-Theta-ProLens50",
+    name: "AI Theta Pro Long-Distance Lens",
+    category: "Camera Security",
+    subfilter: "Compact",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Long-distance lens with enhanced low-light performance and dynamic range that connects to an AI Theta Hub.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UVC-AI-Theta-ProLens50",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Power Method Theta proprietary",
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Resolution 4K"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀36.6 x 58.9 mm (⌀1.4 x 2.3)" },
+          { label: "Field of View", value: "H: 53°, V: 31°, D: 60°" },
+          { label: "Resolution", value: "4K" },
+          { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
+          { label: "Operating Environment", value: "Indoor Only" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "24 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "8MP 1/1.8'" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Weight", value: "60 g (2.1 oz)" },
+          { label: "Power Method", value: "Theta proprietary" },
+          { label: "Power Supply", value: "5V DC, 0.5A" },
+          { label: "Max. Power Consumption", value: "2.5W" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+        ]
+      },
+    ],
+  },
+
+  // Produk Kesepuluh dari Camera Security, SF Compact
+  {
+    id: "UVC-AI-Theta-ProLens110",
+    name: "AI Theta Pro Wide-Angle Lens",
+    category: "Camera Security",
+    subfilter: "Compact",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Wide-angle lens with enhanced low-light performance and dynamic range that connects to an AI Theta Hub.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UVC-AI-Theta-ProLens110",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Power Method Theta proprietary",
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Resolution 4K"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀36.6 x 58.9 mm (⌀1.4 x 2.3)" },
+          { label: "Field of View", value: "H: 110.4°, V: 62.1°, D: 126.6°" },
+          { label: "Resolution", value: "4K" },
+          { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
+          { label: "Operating Environment", value: "Indoor Only" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "24 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "8MP 1/1.8'" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Weight", value: "50 g (1.8 oz)" },
+          { label: "Power Method", value: "Theta proprietary" },
+          { label: "Power Supply", value: "5V DC, 0.5A" },
+          { label: "Max. Power Consumption", value: "2.5W" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+        ]
+      },
+    ],
+  },
+
+  // Produk Kesebelas dari Camera Security, SF Compact
+  {
+    id: "UVC-AI-Theta-Lens",
+    name: "AI Theta Lens",
+    category: "Camera Security",
+    subfilter: "Compact",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Wide-angle lens that connects to an AI Theta Hub.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UVC-AI-Theta-Lens",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Power Method Theta proprietary",
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Resolution 4K"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀22.8. x 43.5 mm (⌀0.9 x 1.7”)" },
+          { label: "Field of View", value: "H: 97.5°, V: 79.4°, D: 118.2°" },
+          { label: "Resolution", value: "4K" },
+          { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
+          { label: "Operating Environment", value: "Indoor Only" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "24 FPS" },
+          { label: "Video Resolution", value: "8MP 3264 x 2448 (4:3)" },
+          { label: "Optics Sensor", value: "8MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Weight", value: "15 g (0.5 oz)" },
+          { label: "Power Method", value: "Theta proprietary" },
+          { label: "Power Supply", value: "5V DC, 0.5A" },
+          { label: "Max. Power Consumption", value: "2.5W" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+        ]
+      },
+    ],
+  },
+
+  //Produk Keduabelas dari Camera Security, SF Compact
+  {
+    id: "UVC-AI-Theta-ProLens360",
+    name: "AI Theta Pro 360 Lens",
+    category: "Camera Security",
+    subfilter: "Compact",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Ultra-wide 360° view lens with enhanced low-light performance and dynamic range that connects to an AI Theta Hub.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UVC-AI-Theta-ProLens360",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Power Method Theta proprietary",
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Resolution 4K"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀36.6 x 58.9 mm (⌀1.4 x 2.3)" },
+          { label: "Field of View", value: "H: 180°, V: 180°, D: 180°" },
+          { label: "Resolution", value: "4K" },
+          { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
+          { label: "Operating Environment", value: "Indoor Only" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "24 FPS" },
+          { label: "Video Resolution", value: "4MP 2160 x 2160 (1:1)" },
+          { label: "Optics Sensor", value: "8MP 1/1.8'" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Weight", value: "50 g (1.8 oz)" },
+          { label: "Power Method", value: "Theta proprietary" },
+          { label: "Power Supply", value: "5V DC, 0.5A" },
+          { label: "Max. Power Consumption", value: "2.5W" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+        ]
+      },
+    ],
+  },
+
+  // Produk KetigaBelas dari Camera Security, SF Compact
+  {
+    id: "UVC-AI-Theta-Lens-360",
+    name: "AI Theta 360 Lens",
+    category: "Camera Security",
+    subfilter: "Compact",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Ultra-wide 360° view lens that connects to an AI Theta Hub.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UVC-AI-Theta-Lens-360",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Power Method Theta proprietary",
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Resolution 4K"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀22.8. x 43.5 mm (⌀0.9 x 1.7”)" },
+          { label: "Field of View", value: "H: 180°, V: 180°, D: 180°" },
+          { label: "Resolution", value: "4K" },
+          { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
+          { label: "Operating Environment", value: "Indoor Only" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "20 FPS" },
+          { label: "Video Resolution", value: "4MP 2560 x 2560 (1:1)" },
+          { label: "Optics Sensor", value: "12MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Weight", value: "15 g (0.5 oz)" },
+          { label: "Power Method", value: "Theta proprietary" },
+          { label: "Power Supply", value: "5V DC, 0.5A" },
+          { label: "Max. Power Consumption", value: "2.5W" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+        ]
+      },
+    ],
+  },
+
+  //Produk Pertama dari Camera Security, SF PTZ
   {
     id: "UVC-G6-PTZ-B/W",
     name: "G6 PTZ",
@@ -4838,10 +5297,9 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "All-weather",
-      "4K dual-lens camera with 10x hybrid zoom",
-      "8' 8MP image sensor",
-      "Multi-TOPS AI Engine"
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Weatherproofing IP66",
+      "Zoom Mode 10x Hybrid",
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -4849,29 +5307,53 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G6 PTZ" },
-          { label: "Model", value: "UVC-G6-PTZ-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Without mount: ⌀107.2 x 104.5 x 203.2 mm (⌀4.2 x 4.1 x 8') With mount: ⌀107.2 x 111 x 230.2 mm (⌀4.2 x 4.8 x 9.1')" },
+          { label: "IR Night Vision", value: "30 m (98 ft)" },
+          { label: "Zoom Mode", value: "10x Hybrid" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "Wide:  H: 109.9°, V: 56.7°, D: 134.1° Tele: H: 26.6°, V: 15.1° , D: 30.4°" },
+          { label: "Pan-Tilt Range", value: "Pan: 350° Tilt: 100°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall, Surface, Ceiling, Pole mount (Included) Corner, In-Ceiling, Pendant mount, Conduit adapter (Optional)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "Wide: 1/1.8' 8MP Tele: 1/1.8' 8MP" },
+          { label: "Optics Lens", value: "Wide: F 4.46 mm; ƒ/1.65 Tele: F 16.3 mm; ƒ/2.4" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and an IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "24.5W" },
+          { label: "Supported Voltage Range", value: "42.5–57V DC" },
+          { label: "Power Method", value: "PoE+" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "Without arm mount: 1 kg (2.2 lb) With arm mount: 1.1 kg (2.4 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Arm mount: polycarbonate Pole mount: aluminum alloy" },
+          { label: "Expansion Slot", value: "MicroSD card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50° C (-22 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -4881,68 +5363,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g6-ptz-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g6-ptz-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Kedua dari Camera Security, SF PTZ
   {
     id: "UVC-AI-PTZ-B/W",
     name: "AI PTZ Industrial",
@@ -4976,10 +5399,10 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Industrial-grade 4K PoE++ PTZ camera with enhanced AI capabilities",
+      "Expansion Slot MicroSD card",
       "22x optical zoom",
-      "and long-range adaptive IR LED night vision",
-      "Reliable performance"
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Zoom Mode 22x Optical"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -4987,29 +5410,50 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI PTZ Industrial" },
-          { label: "Model", value: "UVC-AI-PTZ-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "207 x 223.7 x 341.3 mm (8.2 x 8.8 x 13.4')" },
+          { label: "IR Night Vision", value: "100 m (328 ft)" },
+          { label: "Zoom Mode", value: "22x Optical" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "Wide:  H: 59.8°, V: 44.4° , D: 70° Tele: H: 3°, V: 2.24° , D: 3.76°" },
+          { label: "Pan-Tilt Range", value: "Pan: 360° (Endless) Tilt: 120°" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Mounting", value: "Wall, Pole mount, Desk stand (Included)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.8' 8MP" },
+          { label: "Optics Lens", value: "F 6.36-138.5 mm; ƒ/1.5-ƒ/3.4" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and an IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "51W" },
+          { label: "Supported Voltage Range", value: "42.5–57V DC" },
+          { label: "Power Method", value: "PoE++" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "Without mount: 3.8 kg (8.4 lb) Wall mount (Pedant): 3 kg (6.6 lb) Table stand: 150 g (5.3 oz) Pole mount: 320 g (11.3 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Powder-coated aluminum alloy" },
+          { label: "Expansion Slot", value: "MicroSD card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-40 to 50º C (-40 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -5019,68 +5463,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-ptz-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-ai-ptz-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  //Produk Ketiga dari Camera Security, SF PTZ
   {
     id: "UVC-AI-PTZ-Precision-B/W",
     name: "AI PTZ Precision",
@@ -5114,10 +5499,10 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Industrial-grade 4K PTZ camera with enhanced AI capabilities",
-      "31× optical zoom",
-      "adaptive IR LED night vision",
-      "and LiDAR technology for faster autofocus"
+      "Power Method PoE++",
+      "31 × optical zoom",
+      "Networking InterfaceGbE RJ45 port",
+      "Mounting Wall, Pole mount, Desk stand (Included)"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -5125,29 +5510,52 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI PTZ Precision" },
-          { label: "Model", value: "UVC-AI-PTZ-PRECISION-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Without mount: ⌀241 x 349 mm (⌀9.5 x 13.7') With mount: 372 x 241 x 299 mm (14.7 x 9.5 x 11.8')" },
+          { label: "IR Night Vision", value: "100 m (328 ft)" },
+          { label: "Zoom Mode", value: "31x Optical" },
+          { label: "Lighting Zoom", value: "Coming Soon" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "Wide:  H: 59°, V: 34.1° , D: 67.1° Tele: H: 1.98°, V: 1.12° , D: 2.27°" },
+          { label: "Pan-Tilt Range", value: "Pan: 360° (Endless) Tilt: 120°" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Mounting", value: "Wall, Pole mount, Desk stand (Included)" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.8' 8MP" },
+          { label: "Optics Lens", value: "F 6.91-214.64 mm; ƒ/1.36-ƒ/4.6" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and an IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "51W" },
+          { label: "Supported Voltage Range", value: "42.5–57V DC" },
+          { label: "Power Method", value: "PoE++" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Pole Mount Diameter", value: "2–4' (50–100 mm) 4.5–6' (115–150 mm)" },
+          { label: "Weight", value: "Without mount: 5.5 kg (12.1 lb) Wall mount (Pendant):  2.6 kg (5.7 lb) Table stand: 200 g (7.1 oz) Pole mount: 300 g (10.6 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Powder-coated aluminum alloy" },
+          { label: "Expansion Slot", value: "MicroSD card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-40 to 50º C (-40 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -5162,63 +5570,92 @@ export const cameraSecurityProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Ethernet Surge Protection Outdoor-20kA",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "ESD protection for outdoor high-speed networks.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Protects outdoor Ethernet devices, up to 20kA discharge current.",
+          "(2) Passive, surge-protected RJ45 connections",
+          "Quick and easy installation",
+          "Compatible with 10 GbE networks"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "700V @ 1kV/µs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 2.5 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
         ],
-        productLink: "/products/mounting-kit-uvc-ai-ptz-precision-b/w"
+        productLink: "/products/mounting-kit"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Ethernet Surge Protection",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Bidirectional protection for up to 10 GbE, PoE++, and 20kA surge discharge for indoor installation.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Wall/DIN rail mount",
+          "Multiple grounding points"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Dimensions", value: "89 x 25.5 x 37.4 mm (3.5 x 1 x 1.5')" },
+          { label: "Weight", value: "74 g (2.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, SGCC steel" },
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "600V @ 1kV/µs" },
+          { label: "Discharge Current", value: "20kA" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 10 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-40° to +80° C (-40° to 176° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" }
         ],
-        productLink: "/products/power-cable-uvc-ai-ptz-precision-b/w"
+        productLink: "/products/mounting-kit"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "Ethernet Surge Protection Outdoor-10kA",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "ESD protection for outdoor high-speed networks.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Protects outdoor Ethernet devices",
+          "(2) Passive, surge-protected RJ45 connections",
+          "Quick and easy installation",
+          "Compatible with 2.5 GbE networks"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "700V @ 1kV/µs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 2.5 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
         ],
-        productLink: "/products/sfp-module-10g"
-      }
+        productLink: "/products/power-cable"
+      },
     ]
   },
+
+  // Produk Keempat dari Camera Security, SF PTZ
   {
     id: "UVC-G5-PTZ-B/W",
     name: "G5 PTZ ",
@@ -5252,10 +5689,10 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "all-weather camera with ultra-low latency pan-tilt-zoom control and versatile mounting options",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Mount Material Wall mount: polycarbonate Pole mount: aluminum alloy",
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Pole Mount Diameter 1.5–2' (38–50 mm)",
+      "Power Method PoE+"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -5263,29 +5700,47 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G5 PTZ " },
-          { label: "Model", value: "UVC-G5-PTZ-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Without mount: ⌀90 x 152.5 mm (⌀3.5 x 6') With mount: 90 x 94 x 179.5 mm (3.5 x 3.7 x 7')" },
+          { label: "IR Night Vision", value: "20 m (65 ft)" },
+          { label: "Zoom Mode", value: "2x Optical" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "2K" },
+          { label: "Field of View", value: "Wide: H: 99.7°, V: 51.9°, D: 121° Tele: H: 45.5°, V: 25.4°, D: 52.4°" },
+          { label: "Pan-Tilt Range", value: "Pan: 350° Tilt: 100°" },
+          { label: "Audio", value: "Microphone" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Temper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall mount, pole mount (Included) Conduit adapter, surface, in-ceiling, pendant, corner mount (Optional)" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "4MP 2688 x 1512 (16:9)" },
+          { label: "Optics Sensor", value: "5MP 1/2.7' CMOS" },
+          { label: "Optics Lens", value: "F 3.42–6.85 mm; ƒ/1.85–ƒ/2.4" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and an IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "14W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE+" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "Without mount: 580 g (1.3 lb) With mount: 650 g (1.4 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mount Material", value: "Wall mount: polycarbonate Pole mount: aluminum alloyPowder-coated aluminum alloy" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-30 to 45º C (-22 to 113º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -5295,68 +5750,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g5-ptz-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g5-ptz-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+//Produk Pertama dari Camera Security, SF DoorBells
   {
     id: "UVC-4-Doorbell-Pro-PoE-Kit-B/W",
     name: "G4 Doorbell Pro PoE Kit",
@@ -5390,10 +5786,10 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Premium UniFi doorbell with integrated PoE and included PoE chime for plug-and-play installation",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Mounting Wall, wedge (Included) Gang box, junction box (Optional)",
+      "Enclosure Material Polycarbonate, aluminum alloy",
+      "Power Method PoE",
+      "Resolution FHD"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -5401,29 +5797,73 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G4 Doorbell Pro PoE Kit" },
-          { label: "Model", value: "UVC-4-DOORBELL-PRO-POE-KIT-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Device: 160.6 x 51.7 x 35.1 mm (6.3 x 2 x 1.4') Wall mount: 159.3 x 50.3 x 17.5 mm (6.3 x 1.9 x 0.7') Wedge: 161.1 x 52.1 x 25.7 mm (6.3 x 2.1 x 1') On-wall mount: 161.1 x 52.1 x 25.75 mm (6.3 x 2.1 x 1')" },
+          { label: "IR Night Vision", value: "6 m (20 ft)" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "FHD" },
+          { label: "Field of View", value: "Main camera: H: 138°, V: 114°, D: 155° (LDC On) Main camera: H: 160°, V: 117°, D: 160° (LDC Off) Package camera: H: 97.5°, V: 79.4°, D: 118.2°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IPX4" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "Two-Way Intercom & Doorbell Access", value: "✓" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "Main camera: 2MP 1600 x 1200 (4:3) Package camera: 2MP 1600 x 1200 (4:3)" },
+          { label: "Optics Sensor", value: "Main camera: 5MP CMOS Package camera: 8MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and an IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "7W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "Device: 264 g (9.3 oz) Wall mount: 56 g (2 oz) Wedge: 33 g (1.2 oz) On-wall mount: 53 g (1.9 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
+          { label: "Mount Material", value: "Flat wall mount: aluminum alloy 20° wedge mount: polycarbonate" },
+          { label: "Button", value: "(1) Ring button (1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-30 to 40º C (-22 to 104º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, SRRC" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Mobile App", value: "UniFi Protect iOS™ and Android™" },
         ]
-      }
+      },
+      {
+        title: "Chime",
+        items: [
+          { label: "Dimensions", value: "Device: ⌀62 x 54 mm (⌀2.5 x 2.1') In-wall mount: ⌀89 x 63.1 mm (⌀3.5 x 2.5') On-wall Mount: ⌀62 x 20.2 mm (⌀2.5 x 0.'')" },
+          { label: "Weight", value: "Device: 158 g (5.6 oz) In-wall mount: 91 g (3.2 oz) On-wall mount: 28 g (1 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
+          { label: "Mount Material", value: "Polycarbonate, zinc alloy" },
+          { label: "Networking Interface", value: "10/100 MbE port" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Supported Voltage Range", value: "44–57V DC" },
+          { label: "Max. Power Consumption", value: "3W" },
+          { label: "LED", value: "R/G/B/W" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Speaker", value: "Yes" },
+          { label: "Buzzer", value: "Yes" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+          { label: "NDAA Compliant", value: "✓" },
+        ]
+      },
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -5433,68 +5873,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-4-doorbell-pro-poe-kit-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-4-doorbell-pro-poe-kit-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+
   {
     id: "UVC-4-Doorbell-Pro-B/W",
     name: "G4 Doorbell Pro",
@@ -5528,10 +5909,10 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Premium UniFi doorbell with an enhanced package detection camera and integrated display",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Networking Interface 802.11a/b/g/n/ac WiFi Bluetooth 5.0 GbE support (With UACC-Adapter-DBPOE)",
+      "Power Method 16–24V AC, 1.25A Max., 50/60 Hz USB-C power cable, 5V DC, 2A",
+      "Mount Material Flat wall mount: aluminum alloy 20° wedge mount: polycarbonate",
+      "Enclosure Material Polycarbonate, aluminum alloy"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -5539,29 +5920,50 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G4 Doorbell Pro" },
-          { label: "Model", value: "UVC-4-DOORBELL-PRO-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "160.6 x 51.7 x 28.7 mm (6.3 x 2 x 1.1')" },
+          { label: "IR Night Vision", value: "6 m (20 ft)" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "FHD" },
+          { label: "Field of View", value: "Main camera: H: 138°, V: 114°, D: 155° Package camera: H: 97.5°, V: 79.4°, D: 118.2°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IPX4" },
+          { label: "Mounting", value: "Flat wall, 20° wedge (Included)" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "Two-Way Intercom & Doorbell Access", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "802.11a/b/g/n/ac WiFi Bluetooth 5.0 GbE support (With UACC-Adapter-DBPOE)" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "Main camera: 2MP 1600 x 1200 (4:3) Package camera: 2MP 1600 x 1200 (4:3)" },
+          { label: "Optics Sensor", value: "Main camera: 5MP CMOS Package camera: 8MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and an IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "10W" },
+          { label: "Power Method", value: "16–24V AC, 1.25A Max., 50/60 Hz USB-C power cable, 5V DC, 2A" },
+          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+          { label: "Weight", value: "Device: 253 g (8.9 oz) With flat wall mount: 286 g (10.1 oz) With 20° wedge mount: 325 g (11.5 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
+          { label: "Mount Material", value: "Flat wall mount: aluminum alloy 20° wedge mount: polycarbonate" },
+          { label: "Button", value: "(1) Ring button (1) Factory reset" },
+          { label: "Compatible Chimes", value: "Mechanical Broan-NuTone: LA126WH, LA11WH, LA39WH Heath Zenith: SL-2735 Craftmade: CTPW-RG Newhouse Hardware: CHM3D DigitalBroan-NuTone: LA600WH IQ AMERICA: DW-2850, DW-2840" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+          { label: "Transformer Specifications Included in the box for EU version", value: "✓" },
+          { label: "Transformer Specifications Input Rating  (5, 6)", value: "230V, 50/60Hz" },
+          { label: "Transformer Specifications Input Rating  (1, 4)", value: "16V AC, 15VA" },
+          { label: "Transformer Specifications Ambient Operating Temperature", value: "-5 to 35° C (23 to 95° F)" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -5576,61 +5978,59 @@ export const cameraSecurityProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "PoE to USB-C Adapter",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Versatile adapter that provides power and connectivity to USB-C devices, including compatible Protect WiFi cameras.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "(1) GbE PoE input",
+          "(1) USB-C output",
+          "Provide GbE connectivity*** to USB-C device, such as notebook *G4 Doorbell Pro PoE to USB-C Cable sold separately. **G4/G6 Instant PoE to USB-C Cable sold separately. ***Speed depends on USB-C cable max data transfer rate.",
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+         { label: "Ports", value: "(1) Input: RJ45 (1) Output: USB Type-C" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port (Data out)" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Input Rating", value: "48V DC, 0.25A" },
+          { label: "Output Rating", value: "5V DC, 2A" },
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+          { label: "Compatibility", value: "Camera G4 Instant (UVC-G4-INS) G4 DoorBell Pro (UVC-G4-Doorbell-Pro)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ],
         productLink: "/products/mounting-kit-uvc-4-doorbell-pro-b/w"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "7M USB-C Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Seven-meter USB cable that connects a G4 Doorbell Pro to a PoE source.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Connects a G4 Doorbell Pro to a PoE source*",
+          "GbE connectivity",
+          "Cable length 7 m",
+          "*PoE to USB-C Adapter sold separately."
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Length", value: "7 m (22.96 ft)" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Conductor Type", value: "Stranded copper" },
+          { label: "Conductor Wire Gauge", value: "(2) 19 AWG + (3) 30 AWG" },
+          { label: "Weight", value: "326 g (11.5 oz)WG" },
+          { label: "Cable Jacket Diameter", value: "4.8 mm (0.19 in)" },
+          { label: "Cable Jacket Enclosure Diameter", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Jacket Color", value: "White" },
+          { label: "Cable Shielding Type", value: "Shielded twisted pair (STP)" },
+          { label: "Cable Bend Radius", value: "Min. 19.2 mm (0.76 in)" },
+          { label: "Anti-Crosstalk Divider", value: "—" },
+          { label: "Ambient Storage Temperature", value: "-40 to 85° C (-40 to 185° F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60° C (-4 to 140° F)" },
         ],
         productLink: "/products/power-cable-uvc-4-doorbell-pro-b/w"
       },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
     ]
   },
   {
