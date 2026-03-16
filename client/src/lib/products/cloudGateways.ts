@@ -2389,32 +2389,150 @@ export const cloudGatewaysProducts: Product[] = [
     
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
+      { //✓
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Dream Router 5G Max" },
-          { label: "Model", value: "UDR-5G-MAX" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Throughput", value: "3.5 Gbps IPS" },
-          { label: "PoE", value: "2x PoE+, 6x PoE" },
-          { label: "WAN", value: "2.5 GbE RJ45" },
-          { label: "Storage", value: "128GB SSD Integrated" }
+          { label: "Dimensions", value: "110 x 110 x 250 mm (4.3 x 4.3 x 9.8\")" },
+          { label: "UniFi Application Suite Network", value: "✓" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+          { label: "UniFi Application Suite Access", value: "✓" },
+          { label: "UniFi Application Suite Talk", value: "✓" },
+          { label: "UniFi Application Suite Connect", value: "✓" },
+          { label: "Managed UniFi Devices", value: "30+" },
+          { label: "Managed Cameras", value: "(5)HD, (2)2K, (1)4K" },
+          { label: "Simultaneous Users Connected", value: "300+" },
+          { label: "Max. WAN Port Count", value: "4" },
+          { label: "Default WAN Ports", value: "(1) 10G SFP+, (1) 2.5 GbE RJ45" },
+          { label: "Port Layout 2.5 GbE RJ45", value: "4 (1 PoE) (2.5G/1G/100M)" },
+          { label: "Port Layout 10G SFP+", value: "1(10G/1G)" },
+          { label: "IDS/IPS Throughput", value: "2.3 Gbps" },
+          { label: "Form Factor", value: "Desktop" },
+          { label: "Coverage Area", value: "160 m² (1,750 ft²)" },
         ]
       },
       {
+        title: "Security",
+        items: [
+          { label: "Stateful Firewall", value: "✓", isCheck: true},
+          { label: "Application-Aware Layer 7 Firewall", value: "✓", isCheck: true},
+          { label: "DPI & Traffic Identification", value: "✓", isCheck: true},
+          { label: "Zone-Based Firewall Advanced Filtering", value: "✓", isCheck: true},
+          { label: "Content Filtering", value: "✓", isCheck: true},
+          { label: "Intrusion Prevention (IPS/IDS)", value: "✓", isCheck: true},
+          { label: "Ad Blocking", value: "✓", isCheck: true},
+          { label: "IDS/IPS Signatures", value: "20.000+ with CyberSecure", isCheck: true},
+        ]
+      },
+      {
+        title: "VPN & SD-WAN",
+        items: [
+         { label: "License", value: "✓", isCheck: true},
+         { label: "Site-to-Site VPN Site Magic", value: "✓", isCheck: true},
+         { label: "Site-to-Site VPN IPsec", value: "✓", isCheck: true},
+         { label: "Site-to-Site VPN OpenVPN", value: "✓", isCheck: true},
+         { label: "VPN Server Identity Endpoint On-Click VPN", value: "✓", isCheck: true},
+         { label: "VPN Server Teleport Zero-Configuration VPN", value: "✓", isCheck: true},
+         { label: "VPN Server WireGuard", value: "✓", isCheck: true},
+         { label: "VPN Server Open VPN", value: "✓", isCheck: true},
+         { label: "VPN Server L2TP", value: "✓", isCheck: true},
+         { label: "VPN Client OpenVPN", value: "✓", isCheck: true},
+         { label: "VPN Client WireGuard", value: "✓", isCheck: true},
+         { label: "Site Magic VPN Single Tunnel Tunnel Throughput", value: "20"},
+         { label: "VPN Client WireGuard Single Tunnel Tunnel Throughput", value: "8"},
+         { label: "VPN Client OpenVPN Single Tunnel Tunnel Throughput", value: "8"},
+        ]
+      },
+      {
+        title: "Networking",
+        items: [
+          { label: "Multi-WAN Load Balancing", value: "✓", isCheck: true},
+          { label: "Dynamic Routing OSPF", value: "✓", isCheck: true},
+          { label: "Advanced QoS", value: "✓", isCheck: true},
+          { label: "Multicast DNS (mDNS)", value: "✓", isCheck: true},
+          { label: "Advanced NAT", value: "✓", isCheck: true},
+          { label: "Integrated RADIUS Server", value: "✓", isCheck: true},
+          { label: "RADIUS over TLS (RadSec)", value: "✓", isCheck: true},
+          { label: "Additional Internet Failover with UniFi LTE Backup", value: "✓", isCheck: true},
+          { label: "Internet Quality and Outage Reporting", value: "✓", isCheck: true},
+          { label: "MAC Address Table Size", value: "2.000"},
+          { label: "Virtual Network Override", value: "✓", isCheck: true},
+        
+        ]
+      },
+      {
+        title: "integrated WiFi",
+        items: [
+          { label: "WiFi Standard", value: "802.11a/b/g/n/ac/ax/be (WiFi 6/6E, WiFi 7)"},
+          { label: "Throughput 6 GHz", value: "5.7 Gbps"},
+          { label: "Throughput 5 GHz", value: "4.3 Gbps"},
+          { label: "Throughput 2.4GHz", value: "688 Mbps"},
+          { label: "MIMO 6 GHz", value: "2 x 2 (DL/UL MU-MIMO)"},
+          { label: "MIMO 5 GHz", value: "2 x 2 (DL/UL MU-MIMO)"},
+          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)"},
+          { label: "Antenna Gain 6 GHz", value: "8 dBi"},
+          { label: "Antenna Gain 5 GHz", value: "5 dBi"},
+          { label: "Antenna Gain 2.4 GHz", value: "4 dBi"},
+          { label: "Max. TX Power 6 GHz", value: "22 dBm"},
+          { label: "Max. TX Power 5 GHz", value: "26 dBm"},
+          { label: "Max. TX Power 2.4 GHz", value: "23 dBm"},
+          { label: "Wireless Security", value: "WPA-PSK, WPA-Enterprise (WPA/WPA2/WPA3/PPSK)"},
+          { label: "Max. BSSIDs", value: "4 per Radio (Gateway Mode)4 per Radio (AP Mode)"},
+          { label: "Supported Data Rates 802.11be (WiFi 7)", value: "7.3 Mbps to 5.7 Gbps (MCS0 - MCS13 NSS1/2, EHT 20/40/80/160/240/320)"},
+          { label: "Supported Data Rates 802.11ax (WiFi 6/6E)", value: "7.3 Mbps to 2.4 Gbps (MCS0 - MCS11 NSS1/2, HE 20/40/80/160)"},
+          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 1.7 Gbps (MCS0 - MCS9 NSS1/2, VHT 20/40/80/160)"},
+          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 300 Mbps (MCS0 - MCS15, HT 20/40)"},
+          { label: "Supported Data Rates 802.11g", value: "6, 9, 12, 18, 24, 36, 48, 54 Mbps"},
+          { label: "Supported Data Rates 802.11b", value: "1, 2, 5.5, 11 Mbps"},
+          { label: "Supported Data Rates 802.11a", value: "6, 9, 12, 18, 24, 36, 48, 54 Mbps"},
+          { label: "Wireless", value: "✓", isCheck: true},
+          
+        ]
+      },
+      {
+        title: "Cellular",
+        items: [
+          { label: "5G NR Category", value: "5G NR Sub-6"},
+          { label: "5G NR Frequency Bands", value: "n1, n2, n3, n5, n7, n8, n12, n13, n14, n18, n20, n25, n26, n28, n29, n30, n38, n40, n41, n48, n66, n70, n71, n75, n76, n77, n78, n79"},
+          { label: "5G NR Max. TX Power", value: "HPUE power class 2: 26 dBm"},
+          { label: "4G LTE Frequency Bands", value: "B1, B2, B3, B4, B5, B7, B8, B12, B13, B14, B18, B19, B20, B21, B25, B26, B28, B29, B30, B32, B34, B38, B39, B40, B41, B42, B43, B46, B48, B66, B71"},
+          { label: "4G LTE Max. TX Power", value: "HPUE power class 2: 25 dBm"},
+          { label: "3G UMTS Frequency Bands", value: "B1, B2, B4, B5, B8, B19"},
+          { label: "Peak Data Speed 5G NSA", value: "Downlink: 3.4 Gbps, Uplink: 560 Mbps"},
+          { label: "Peak Data Speed 5G SA", value: "Downlink: 1.8 Gbps, Uplink: 650 Mbps"},
+          { label: "Peak Data Speed 4G LTE", value: "Downlink: 1.6 Gbps, Uplink: 210 Mbps"},
+          { label: "Antenna Gain", value: "617-960 MHz: 3 dBi, 1710-2700 MHz: 7 dBi, 3300-5000 MHz: 8 dBi, 5150~5925 MHz: 8 dB"},
+          { label: "SIM", value: "(2) Nano SIM, (1) Nano-SIM or eSIM"},
+          
+        ]
+      },
+      { //{ label: "LEDs System", value: "✓", isCheck: true},
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "NVR Storage", value: "Pre-installed 64 GB microSD for NVR"},
+          { label: "Expansion Slot", value: "MicroSD Card"},
+          { label: "PoE Budget", value: "15.4W"},
+          { label: "Max. PoE Wattage per Port by PSE", value: "15.4W"},
+          { label: "Voltage Range PoE Mode", value: "44-57V"},
+          { label: "Max. Power Consumption", value: "34.5W (Excluding PoE output)"},
+          { label: "Power Method", value: "DC jack (54V DC/1.1A)"},
+          { label: "Power Supply", value: "54V DC/1.1A (Adapter Included)"},
+          { label: "Supported Voltage Range", value: "100-240V AC"},
+          { label: "Heat Dissipation", value: "115 BTU/hr (Excluding PoE output)"},
+          { label: "Processor", value: "Quad-core ARM® Cortex®-A53 at 1.5 GHz"},
+          { label: "System Memory", value: "3 GB"},
+          { label: "Weight", value: "1.4 kg (3.1 lbs)"},
+          { label: "Enclosure Material", value: "Polycarbonate"},
+          { label: "LCM Display", value: "4.7\" touchscreen"},
+          { label: "Management", value: "Ethernet, Bluetooth"},
+          { label: "LEDs Ethernet, SFP+, System", value: "✓", isCheck: true},
+          { label: "Button", value: "(1) Factory Reset)"},
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV"},
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (22 to 104° F)"},
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing"},
+          { label: "NDAA Compliant", value: "✓", isCheck: true},
+          { label: "Certifications", value: "FCC, IC, CE, GCF, PTCRB, AT&T, T-Mobile, Verizon, Wi-Fi Alliance®"},
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
     
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -2426,61 +2544,86 @@ export const cloudGatewaysProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "10G Bidirectional Single-Mode Optical Module",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "SFP+ transceiver that supports 10G connections up to 10 km using single-mode fiber with a simplex LC UPC connector.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Max data rate: 10 Gbps",
+          "Compatible with FSP+ and SFP interfaces",
+          "Simplex LC UPC connector",
+          "Supports single-mode fiber connections up to 10km*",
+          "*Fiber cable is not included"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Form Factor", value: "SFP" },
+          { label: "Connector", value: "Simplex LC UPC" },
+          { label: "Supported Media", value: "Single-Mode Fiber" },
+          { label: "BiDi", value: "✓" },
+          { label: "TX Wavelength", value: "1270 / 1330 nm" },
+          { label: "RX Wavelength", value: "1330 / 1270 nm" },
+          { label: "Supported Data Rate", value: "1 / 10 Gbps" },
+          { label: "Supported Cable Distance", value: "10 km (6.2 mi)" },
+          { label: "Max. Power Consumption", value: "1 W" },
+          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+          { label: "Warning", value: "CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014. Do not look into the ends of the fiber optic cable or SFP module while converters are powered." },
         ],
-        productLink: "/products/mounting-kit-udr-5g-max"
+        productLink: "/products/mounting-kit-udr-7"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "10G  Single-Mode Optical Module",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "SFP+ transceiver that supports 10G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Max data rate: 10 Gbps",
+          "Compatible with SFP+ and SFP interfaces",
+          "Duplex LC UPC connector",
+          "Supports single-mode fiber connections up to 10km*",
+          "*Fiber cable is not included"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Form Factor", value: "SFP" },
+          { label: "Connector", value: "Duplex LC UPC" },
+          { label: "Supported Media", value: "Single-Mode Fiber" },
+          { label: "TX Wavelength", value: "1310 nm" },
+          { label: "RX Wavelength", value: "1310 nm" },
+          { label: "Supported Data Rate", value: "1 / 10 Gbps" },
+          { label: "Supported Cable Distance", value: "10 km (6.2 mi)" },
+          { label: "Max. Power Consumption", value: "1 W" },
+          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+          { label: "Warning", value: "CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014. Do not look into the ends of the fiber optic cable or SFP module while converters are powered." },
         ],
-        productLink: "/products/power-cable-udr-5g-max"
+        productLink: "/products/mounting-kit-udr-7"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "10G  Multi-Mode Optical Module",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "SFP+ transceiver that supports 10G connections up to 10 km using multi-mode fiber with a duplex LC UPC connector.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Max data rate: 10 Gbps",
+          "Compatible with SFP+ and SFP interfaces",
+          "Duplex LC UPC connector",
+          "Supports multi-mode fiber connections up to 10km*",
+          "*Fiber cable is not included"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Form Factor", value: "SFP" },
+          { label: "Connector", value: "Duplex LC UPC" },
+          { label: "Supported Media", value: "Multi-Mode Fiber" },
+          { label: "TX Wavelength", value: "850 nm" },
+          { label: "RX Wavelength", value: "850 nm" },
+          { label: "Supported Data Rate", value: "1 / 10 Gbps" },
+          { label: "Supported Cable Distance", value: "300 m (984 ft)" },
+          { label: "Max. Power Consumption", value: "0.8 W" },
+          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+          { label: "Warning", value: "CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014. Do not look into the ends of the fiber optic cable or SFP module while converters are powered." },
         ],
-        productLink: "/products/sfp-module-10g"
-      }
+        productLink: "/products/mounting-kit-udr-7"
+      },
     ]
   },
 {
@@ -2537,27 +2680,138 @@ export const cloudGatewaysProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Dream Wall" },
-          { label: "Model", value: "UDW" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Throughput", value: "3.5 Gbps IPS" },
-          { label: "PoE", value: "2x PoE+, 6x PoE" },
-          { label: "WAN", value: "2.5 GbE RJ45" },
-          { label: "Storage", value: "128GB SSD Integrated" }
+          { label: "Dimensions", value: "549 x 342 x 62 mm (21.6 x 13.5 x 2.4\")" },
+          { label: "UniFi Application Suite Network", value: "✓", isCheck: true},
+          { label: "UniFi Application Suite Protect", value: "✓", isCheck: true},
+          { label: "UniFi Application Suite Access", value: "✓", isCheck: true},
+          { label: "UniFi Application Suite Talk", value: "✓", isCheck: true},
+          { label: "UniFi Application Suite Connect", value: "✓", isCheck: true },
+          { label: "Managed UniFi Devices", value: "100+" },
+          { label: "Managed Cameras", value: "(12)HD, (7)2K, (4)4K" },
+          { label: "Simultaneous Users Connected", value: "300+" },
+          { label: "Max. WAN Port Count", value: "8" },
+          { label: "Default WAN Ports", value: "(1) 2.5 GbE RJ45, (1) 10G SFP+" },
+          { label: "Port Layout 1GbE RJ45", value: "17 (4 PoE++; 4 PoE+; 4 PoE (1G/100M/10M)" },
+          { label: "Port Layout 2.5 GbE RJ45", value: "1 (2.5G/1G/100M)" },
+          { label: "Port Layout 10G SFP+", value: "2 (10G/1G)" },
+          { label: "IDS/IPS Throughput", value: "3.5 Gbps" },
+          { label: "Form Factor", value: "Wall-mounted" },
+          { label: "Redundancy", value: "(2) Hot-Swappable PSUs" },
+          { label: "Coverage Area", value: "140 m² (1,500 ft²)" },
+          { label: "Wireless", value: "✓", isCheck: true},
+        ]
+      },
+      {
+        title: "Security",
+        items: [
+          { label: "Stateful Firewall", value: "✓", isCheck: true},
+          { label: "Application-Aware Layer 7 Firewall", value: "✓", isCheck: true},
+          { label: "DPI & Traffic Identification", value: "✓", isCheck: true},
+          { label: "Zone-Based Firewall Advanced Filtering", value: "✓", isCheck: true},
+          { label: "Content Filtering", value: "✓", isCheck: true},
+          { label: "Intrusion Prevention (IPS/IDS)", value: "✓", isCheck: true},
+          { label: "Ad Blocking", value: "✓", isCheck: true},
+          { label: "IDS/IPS Signatures", value: "55.000+ with CyberSecure"},
+          { label: "VLAN/Subnet-based Traffic Segmentation", value: "✓", isCheck: true},
+        ]
+      },
+      {
+        title: "Security",
+        items: [
+          { label: "License-Free SD-WAN", value: "✓", isCheck: true},
+          { label: "Site-to-Site VPN Site Magic", value: "✓", isCheck: true},
+          { label: "Site-to-Site VPN IPsec", value: "✓", isCheck: true},
+          { label: "Site-to-Site VPN OpenVPN", value: "✓", isCheck: true},
+          { label: "VPN Server Identity Endpoint One-Click VPN", value: "✓", isCheck: true},
+          { label: "VPN Server Teleport Zero-Configuration VPN", value: "✓", isCheck: true},
+          { label: "VPN Server WireGuard", value: "✓", isCheck: true},
+          { label: "VPN Server OpenVPN", value: "✓", isCheck: true},
+          { label: "VPN Server L2TP", value: "✓", isCheck: true},
+          { label: "VPN Client OpenVPN", value: "✓", isCheck: true},
+          { label: "VPN Client WireGuard", value: "✓", isCheck: true},
+        ]
+      },
+      {
+        title: "Networking",
+        items: [
+          { label: "Multi-WAN Load Balancing", value: "✓", isCheck: true},
+          { label: "Dynamic Routing OSPF", value: "✓", isCheck: true},
+          { label: "Dynamic Routing BGP", value: "✓", isCheck: true},
+          { label: "Advanced QoS", value: "✓", isCheck: true},
+          { label: "Multicast DNS (mDNS)", value: "✓", isCheck: true},
+          { label: "Advanced NAT", value: "✓", isCheck: true},
+          { label: "Integrated RADIUS Server", value: "✓", isCheck: true},
+          { label: "RADIUS over TLS (RadSec)", value: "✓", isCheck: true},
+          { label: "Additional Internet Failover with UniFi LTE", value: "✓", isCheck: true},
+          { label: "Internet Quality and Outage Reporting", value: "✓", isCheck: true},
+          { label: "MAC Address Table Size", value: "8.000"},
+          { label: "Policy-based WAN and VPN Routing", value: "✓", isCheck: true},
+          { label: "Customizable DHCP Server", value: "✓", isCheck: true},
+          { label: "IPv6 ISP Support", value: "✓", isCheck: true},
+          { label: "IGMP Proxy", value: "✓", isCheck: true},
+          { label: "Virtual Network Override", value: "✓", isCheck: true},
+          { label: "All Traffic Flows", value: "✓", isCheck: true},
+        ]
+      },
+      {
+        title: "integrated WiFi",
+        items: [
+          { label: "WiFi Standard", value: "802.11a/b/g/n/ac/ax (WiFi 6)"},
+          { label: "Throughput 5 GHz", value: "2.4 Gbps"},
+          { label: "Throughput 2.4GHz", value: "300 Mbps"},
+          { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)"},
+          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)"},
+          { label: "Antenna Gain 5 GHz", value: "6 dBi"},
+          { label: "Antenna Gain 2.4 GHz", value: "5.9 dBi"},
+          { label: "Max. TX Power 5 GHz", value: "26 dBm"},
+          { label: "Max. TX Power 2.4 GHz", value: "23 dBm"},
+          { label: "Wireless Security", value: "WPA-PSK, WPA-Enterprise (WPA/WPA2/WPA3/PPSK)"},
+          { label: "Max. BSSIDs", value: "8 per Radio"},
+          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 2.4 Gbps (MCS0 - MCS11 NSS1/2, HE 20/40/80/160)"},
+          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 1.7 Gbps (MCS0 - MCS9 NSS1/2, VHT 20/40/80/160)"},
+          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 300 Mbps (MCS0 - MCS15, HT 20/40)"},
+          { label: "Supported Data Rates 802.11g", value: "6, 9, 12, 18, 24, 36, 48, 54 Mbps"},
+          { label: "Supported Data Rates 802.11b", value: "1, 2, 5.5, 11 Mbps"},
+          { label: "Supported Data Rates 802.11a", value: "6, 9, 12, 18, 24, 36, 48, 54 Mbps"},
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "NVR Storage", value: "Pre-installed 512 GB microSD for NVR, Built-in 128 GB SSD for detection recordings" },
+          { label: "Expansion Slot", value: "MicroSD Card" },
+          { label: "PoE Budget", value: "420W" },
+          { label: "Max. PoE Wattage per Port by PSE PoE", value: "15.4W" },
+          { label: "Max. PoE Wattage per Port by PSE PoE+", value: "30W" },
+          { label: "Max. PoE Wattage per Port by PSE PoE++", value: "60W" },
+          { label: "Voltage Range PoE Mode", value: "PoE: 44-57V, PoE+: 50-57V, PoE++: 50-57V" },
+          { label: "Max. Power Consumption", value: "532W (Including PoE Output)" },
+          { label: "Power Method ", value: "Universal AC input 100-240V AC, 7A max., 50/60 Hz" },
+          { label: "Power Supply", value: "(2) Hot-Swappable AC/DC 550W PSU, (1) Pre-installed PSU" },
+          { label: "Supported Voltage Range", value: "100-240V AC" },
+          { label: "Heat Dissipation", value: "382 BTU/hr (Excluding PoE Output)" },
+          { label: "Processor", value: "Quad-core ARM® Cortex®-A57 at 1.7 GHz" },
+          { label: "System Memory", value: "4 GB" },
+          { label: "On-board Storage", value: "16 GB eMMC, Integrated 128 GB SSD, Pre-installed 512 GB microSD card" },
+          { label: "Weight", value: "8.6 kg (19 lb)" },
+          { label: "Enclosure Material", value: "Ploycarbonate, galvanized steel, aluminum alloy" },
+          { label: "Mount Material", value: "Stainless steel" },
+          { label: "LCM Display", value: "4.7\" touchscreen" },
+          { label: "Management", value: "Ethernet, Bluetooth" },
+          { label: "LEDs Ethernet, SFP+", value: "✓", isCheck: true},
+          { label: "Button", value: "(1) Factory Reset" },
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓", isCheck: true},
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 18314-23-08356" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "VLAN", value: "802.1Q" },
+          { label: "Guest Traffic Isolation", value: "✓", isCheck: true},
         ]
       }
     ],
@@ -2567,65 +2821,5 @@ export const cloudGatewaysProducts: Product[] = [
       { name: "Device", image: "/images/cloudgateways/12.udw/p-itb-udw.png"},
     ],
     
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-udw"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-udw"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   }
 ];
