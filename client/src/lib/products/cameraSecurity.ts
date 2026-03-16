@@ -5752,7 +5752,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-//Produk Pertama dari Camera Security, SF DoorBells
+  //Produk Pertama dari Camera Security, SF DoorBells
   {
     id: "UVC-4-Doorbell-Pro-PoE-Kit-B/W",
     name: "G4 Doorbell Pro PoE Kit",
@@ -5875,7 +5875,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-
+  // Produk Kedua dari Camera Security, SF DoorBells
   {
     id: "UVC-4-Doorbell-Pro-B/W",
     name: "G4 Doorbell Pro",
@@ -5988,7 +5988,7 @@ export const cameraSecurityProducts: Product[] = [
           "Provide GbE connectivity*** to USB-C device, such as notebook *G4 Doorbell Pro PoE to USB-C Cable sold separately. **G4/G6 Instant PoE to USB-C Cable sold separately. ***Speed depends on USB-C cable max data transfer rate.",
         ],
         detailedSpecs: [
-         { label: "Ports", value: "(1) Input: RJ45 (1) Output: USB Type-C" },
+          { label: "Ports", value: "(1) Input: RJ45 (1) Output: USB Type-C" },
           { label: "Networking Interface", value: "(1) GbE RJ45 port (Data out)" },
           { label: "Power Method", value: "PoE" },
           { label: "Input Rating", value: "48V DC, 0.25A" },
@@ -6033,6 +6033,8 @@ export const cameraSecurityProducts: Product[] = [
       },
     ]
   },
+
+  // Produk Ketiga dari Camera Security, SF DoorBells
   {
     id: "UVC-Doorbell-B/W",
     name: "Doorbell Lite",
@@ -6066,10 +6068,10 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Compact PoE video doorbell with two-way audio and versatile mounting options",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Enclosure Material Polycarbonate, metal",
+      "IR Night Vision 5 m (16 ft)",
+      "Resolution 5MP",
+      "Weatherproofing IPX5"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -6077,29 +6079,46 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Doorbell Lite" },
-          { label: "Model", value: "UVC-DOORBELL-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "137 x 40 x 26.4 mm (5.4 x 1.6 x 1')" },
+          { label: "IR Night Vision", value: "5 m (16 ft)" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "5MP" },
+          { label: "Field of View", value: "H: 95.8°, V: 131.2°, D: 175.9°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IPX5" },
+          { label: "Mounting", value: "Wall, 20° wedge (Included) Gang box, junction box (Optional)" },
+          { label: "Two-Way Intercom & Doorbell Access", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "10/100 MbE port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay" },
+          { label: "Video Max. Frame Rate", value: "24 FPS" },
+          { label: "Video Resolution", value: "5MP 1920 x 2560 (3:4)" },
+          { label: "Optics Sensor", value: "1/2.7' 5MP" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "Night Mode", value: "Built-in IR LED illumination and an IR cut filter" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "8W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Dual-core Arm® Cortex®-A7 based chip" },
+          { label: "Weight", value: "Device: 253 g (8.9 oz) With flat wall mount: 286 g (10.1 oz) With 20° wedge mount: 325 g (11.5 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, metal" },
+          { label: "Mount Material", value: "Formed sheet metal" },
+          { label: "Button", value: "(1) Ring button (1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50° C (-22 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -6114,63 +6133,71 @@ export const cameraSecurityProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "PoE Over 2-Wire Retrofit Extender",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "A pair of extenders that extends PoE over twisted-pair or coaxial cables, ideal for retrofit scenarios.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Transmitter (1) PoE++ input",
+          "Transmitter (1) 2-wire output",
+          "Transmitter (1) 2-wire to BNC adapter",
+          "Receiver (1) PoE/PoE+ output",
+          "Receiver (1) 2-wire input",
+          "Receiver (1) 2-wire to BNC adapter"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Networking Interface", value: "(1) 10/100 MbE(1) Homeplug AV" },
+          { label: "Power Method", value: "PoE++" },
+          { label: "PoE input", value: "(1) PoE++, 50V DC, 1.2A" },
+          { label: "PoE Output", value: "	(1) PoE+, 48V DC, 0.6A" },
+          { label: "Max. Power Consumptlon", value: "	3W (Without PoE output)" },
+          { label: "ESD/EMP protection", value: "	Air: ±8kV, contact: ±4kV" },
+          { label: "LED", value: "White" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Certifications", value: "CE, FCC, IC, UL 62368-1, CSA C22.2 No. 62368-1" },
         ],
         productLink: "/products/mounting-kit-uvc-doorbell-b/w"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "UniFi Premium Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Ultra-thin braided patch cable, designed and optimized for 10 GbE networking.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 3 mm outer diameter for 0.15-8 m lengths",
+          "— 3.3 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
         ],
-        productLink: "/products/power-cable-uvc-doorbell-b/w"
+        productLink: "/products/power-cable-e7"
       },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
     ]
   },
+
+  // Produk Keempat dari Camera Security, SF DoorBells
   {
     id: "UVC-Chime-PoE",
     name: "PoE Smart Chime",
@@ -6204,40 +6231,48 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "PoE plug-and-play notification device",
-      "designed to pair with a UniFi doorbell or door access hub",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "ESD Protection Air: ± 8kV, contact: ± 4kV",
+      "Power Method PoE",
+      "Enclosure Material Polycarbonate, aluminum alloy",
+      "Mount Material Polycarbonate, zinc alloy"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Mechanical",
         items: [
-          { label: "Product Name", value: "PoE Smart Chime" },
-          { label: "Model", value: "UVC-CHIME-POE" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Device: ⌀62 x 54 mm (⌀2.5 x 2.1') In-wall mount: ⌀89 x 63.1 mm (⌀3.5 x 2.5') On-wall Mount: ⌀62 x 20.2 mm (⌀2.5 x 0.8')" },
+          { label: "Weight", value: "Device: 158 g (5.6 oz) In-wall mount: 91 g (3.2 oz) On-wall mount: 28 g (1 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
+          { label: "Mount Material", value: "Polycarbonate, zinc alloy" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Network Interface", value: "10/100 MbE port" },
+          { label: "Speaker", value: "✓" },
+          { label: "Buzzer", value: "✓" },
+          { label: "power Method", value: "PoE" },
+          { label: "Supported Voltage Range", value: "44–57V DC" },
+          { label: "Max. Power Consumption", value: "3W" },
+          { label: "ESD Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+          { label: "LEDs", value: "R/G/B/W" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements Web Application", value: "UniFi Protect UniFi Access" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
         ]
-      }
+      },
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -6247,68 +6282,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-chime-poe"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-chime-poe"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Kelima dari Camera Security, SF DoorBells
   {
     id: "UVC-Chime",
     name: "WiFi Smart Chime",
@@ -6344,108 +6320,48 @@ export const cameraSecurityProducts: Product[] = [
       "Plug-in chime designed to pair with a UniFi doorbell",
       "Enterprise-grade quality",
       "Easy to deploy and manage",
-      "Reliable performance"
+      "Note. Third-party WiFi configuration available during setup with the UniFi Protect mobile app."
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Mechanical",
         items: [
-          { label: "Product Name", value: "WiFi Smart Chime" },
-          { label: "Model", value: "UVC-CHIME" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀62 x 50.6 mm (⌀2.4 x 2') (Without prong)" },
+          { label: "Weight", value: "127 g (4.5 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, fabric" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Network Interface", value: "WiFi 802.11 b/g/n" },
+          { label: "Speaker", value: "✓" },
+          { label: "Buzzer", value: "✓" },
+          { label: "power Method", value: "AC" },
+          { label: "Supported Voltage Range", value: "100-240V, 50/60 Hz" },
+          { label: "Max. Power Consumption", value: "3.7W" },
+          { label: "ESD Protection", value: "Air: ± 16kV, contact: ± 8kV" },
+          { label: "LEDs", value: "(5) White" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements Web Application", value: "UniFi Protect: Version 2.0 and later" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™: Version 1.6.2 and later UniFi Protect Android™: Version 1.6.0 and later" },
         ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-chime"
       },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-chime"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
+    ],
   },
+
+  // Produk Pertama dari Camera Security, SF SuperLink
   {
     id: "USL-Gateway",
     name: "SuperLink Gateway",
@@ -6480,10 +6396,10 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Proprietary super long-range",
-      "low-latency wireless gateway for UniFi Protect Sensors",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Buttons (1) Factory reset",
+      "Enclosure Material Polycarbonate, aluminum alloy",
+      "Mounting Wall and DIN rail mount",
+      "Power Method PoE USB Type-C, 5V, 1A (Optional)"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -6491,27 +6407,49 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "SuperLink Gateway" },
-          { label: "Model", value: "USL-GATEWAY" },
-          { label: "Category", value: "Camera Security" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "With antenna: 159.3 x 81.9 x 26 mm (6.3 x 3.2 x 1') With DIN rail mount:  159.3 x 81.9 x 38.5 mm (6.3 x 3.2 x 1.5') With wall mount: 159.3 x 81.9 x 30.5 mm (6.3 x 3.2 x 1.2')" },
+          { label: "Mounting", value: "Wall and DIN rail mount" },
+          { label: "UniFi Application Suite", value: "Protect" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "(1) 10/100 MbE RJ45 port" },
+          { label: "Connectivity", value: "Bluetooth® 5.2 SuperLink (Proprietary)" },
+          { label: "Operating Frequency Bluetooth", value: "2400–2480 MHz" },
+          { label: "Operating Frequency Superlink", value: "US: 915.6–927.6 MHz EU: 865.1–869.5 MHz" },
+          { label: "Antenna Gain Bluetooth", value: "3 dBi" },
+          { label: "Antenna Gain Superlink", value: "2 dBi" },
+          { label: "Max. TX Power Bluetooth", value: "10 dBm" },
+          { label: "Max. TX Power Superlink", value: "27 dBm" },
+          { label: "Max. Range Bluetooth", value: "Up to 100 m (328 ft)" },
+          { label: "Max. Range Superlink", value: "2 km (1.2 mi)" },
+          { label: "Max. Client Count Bluetooth", value: "7" },
+          { label: "Max. Client Count Superlink", value: "96" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "3.4W" },
+          { label: "Power Method", value: "PoE USB Type-C, 5V, 1A (Optional)" },
+          { label: "Weight", value: "179 g (6.3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "LEDs", value: "(1) Status: B/W" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+          { label: "NDAA Compliant", value: "✓" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
         ]
       }
     ],
@@ -6523,68 +6461,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-usl-gateway"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-usl-gateway"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Kedua dari Camera Security, SF SuperLink
   {
     id: "USL-Entry",
     name: "Entry Sensor",
@@ -6618,10 +6497,10 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "High-performance networking solution",
-      "Enterprise-grade reliability",
-      "Easy management and monitoring",
-      "Scalable architecture"
+      "Battery Life Up to 6 years",
+      "LEDs (1) Status: R/B/W (1) Signal: B/R",
+      "Enclosure Material Polycarbonate",
+      "Power Method Lithium battery CR123A"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -6629,23 +6508,47 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Entry Sensor" },
-          { label: "Model", value: "USL-ENTRY" },
-          { label: "Category", value: "UniFi Product" }
+          { label: "Dimensions", value: "Device: 75.5 x 23.5x 22.5 mm (3 x 0.93 x 0.89') Magnet: 39 x 15.1 x 12.9 mm (1.5 x 0.6 x 0.5')" },
+          { label: "Mounting", value: "Adhesive and screw mount" },
+          { label: "UniFi Application Suite", value: "Protect" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "(1) 10/100 MbE RJ45 port" },
+          { label: "Connectivity", value: "SuperLink (Proprietary)" },
+          { label: "Operating Frequency US", value: "915.6–927.6 MHz" },
+          { label: "Operating Frequency EU", value: "865.1–869.5 MHz" },
+          { label: "Antenna Gain Superlink", value: "0 dBi" },
+          { label: "Max. TX Power Superlink", value: "14 dBm" },
+          { label: "Max. Range Superlink", value: "2 km (1.2 mi)" },
+          { label: "Sensor Features Reed Switch", value: "✓" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "27.7mW" },
+          { label: "Supported Volatge Range", value: "3V" },
+          { label: "Power Method", value: "Lithium battery CR123A" },
+          { label: "Battery Life", value: "Up to 6 years" },
+          { label: "Weight", value: "Device: 41 g (1.4 oz) Magnet: 22 g (0.8 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Button", value: "(1) Factory reset (1) Function button (1) Tamper switch" },
+          { label: "LEDs", value: "(1) Status: R/B/W (1) Signal: B/R" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+          { label: "NDAA Compliant", value: "✓" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
         ]
       }
     ],
@@ -6657,68 +6560,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Ketiga dari Camera Security, SF SuperLink
   {
     id: "USL-Motion",
     name: "Motion Sensor",
@@ -6752,10 +6596,9 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "SuperLink motion sensor designed for versatile installation",
-      "delivering up to 6 years of battery life",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Mounting Adhesive and screw mount",
+      "Enclosure Material Polycarbonate, high-density polyethylene (HDPE)",
+      "Battery Life Up to 6 years",
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -6763,27 +6606,47 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Motion Sensor" },
-          { label: "Model", value: "USL-MOTION" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Device with wall mount: 93.5 x 22.5 x  24.7 mm (3.7 x 0.89 x 0.97') Device with corner mount: 93.5 x 22.5 x  27.9 mm (3.7 x 0.89 x 1.1')" },
+          { label: "Mounting", value: "Adhesive and screw mount" },
+          { label: "UniFi Application Suite", value: "Protect" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Connectivity", value: "SuperLink (Proprietary)" },
+          { label: "Operating Frequency US", value: "915.6–927.6 MHz" },
+          { label: "Operating Frequency EU", value: "865.1–869.5 MHz" },
+          { label: "Antenna Gain Superlink", value: "1 dBi" },
+          { label: "Max. TX Power Superlink", value: "14 dBm" },
+          { label: "Max. Range Superlink", value: "2 km (1.2 mi)" },
+          { label: "Sensor Features Horizontal PIR Sensor", value: "Detection range up to 1.5 m (4.9 ft)" },
+          { label: "Sensor Features Vertical PIR Sensor", value: "Detection range up to 6 m (19.7 ft) with pet immunity" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "22.6mW" },
+          { label: "Supported Volatge Range", value: "3V" },
+          { label: "Power Method", value: "Lithium battery CR123A" },
+          { label: "Battery Life", value: "Up to 6 years" },
+          { label: "Weight", value: "45 g (1.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, high-density polyethylene (HDPE)" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Button", value: "(1) Factory reset (1) Function button (1) Tamper switch" },
+          { label: "LEDs", value: "(1) Status: R/B/W (1) Signal: B/R" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+          { label: "NDAA Compliant", value: "✓" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
         ]
       }
     ],
@@ -6795,68 +6658,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-usl-motion"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-usl-motion"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Keempat dari Camera Secruity, SF SuperLink
   {
     id: "USL-Siren",
     name: "Siren",
@@ -6890,10 +6694,9 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "All-weather SuperLink siren delivering 110 dB alarm and emergency LED lighting powered using battery or DC input",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Input Terminals (1) Power input (1) Signal input",
+      "Enclosure Material Aluminum alloy, polycarbonate",
+      "Power Method (4) CR123A batteries 12–24V DC"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -6901,27 +6704,47 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Siren" },
-          { label: "Model", value: "USL-SIREN" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "139.9 x 139.9 x 35 mm (5.5 x 5.5 x 1.4')" },
+          { label: "Mounting", value: "Wall, ceiling mounting plate (Included)" },
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "345 g (12.2 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Weatherpropfing", value: "IP56" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Power Method", value: "(4) CR123A batteries 12–24V DC" },
+          { label: "Max. Power Consumption", value: "5W" },
+          { label: "Power Method", value: "Lithium battery CR123A" },
+          { label: "input Terminals", value: "(1) Power input (1) Signal input" },
+          { label: "Connectivity", value: "SuperLink (Proprietary)" },
+          { label: "Buzzer", value: "✓" },
+          { label: "Antenna Gain SuperLink", value: "2 dBi" },
+          { label: "Max. TX Power SuperLink", value: "14 dBm" },
+          { label: "Operating Frequency US", value: "915.6–927.6 MHz" },
+          { label: "Operating Frequency EU", value: "865.1–869.5 MHz" },
+          { label: "Max. Range SuperLink", value: "2 km (1.2 mi)" },
+          { label: "LEDs System", value: "R/G/B/W" },
+          { label: "LEDs Status", value: "R/G/B" },
+          { label: "LEDs Light Ring", value: "R/G/B/W" },
+          { label: "Buttons", value: "(1) Power (1) Factory reset (1) Tamper switch" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50° C (-22 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+          { label: "NDAA Compliant", value: "✓" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements UniFi Protect Web", value: "✓" },
+          { label: "Application Requirements UniFi Protect iOS™ and Android™", value: "✓" },
         ]
       }
     ],
@@ -6933,68 +6756,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-usl-siren"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-usl-siren"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+// Produk Kelima dari Camera Security, SF SuperLink
   {
     id: "USL-Siren-PoE",
     name: "Siren PoE",
@@ -7028,10 +6792,9 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "All-weather siren delivering 110 dB alarm and emergency LED lighting powered using PoE input",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Power Method PoE",
+      "Mounting Wall, ceiling mounting plate (Included)",
+      "Enclosure Material Aluminum alloy, polycarbonate"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -7039,27 +6802,39 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Siren PoE" },
-          { label: "Model", value: "USL-SIREN-POE" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "139.9 x 139.9 x 35 mm (5.5 x 5.5 x 1.4')" },
+          { label: "Mounting", value: "Wall, ceiling mounting plate (Included)" },
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "308 g (10.9 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Weatherpropfing", value: "IP56" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Power Method", value: "PoE" },
+          { label: "Max. Power Consumption", value: "5W" },
+          { label: "Buzzer", value: "✓" },
+          { label: "networking Inteface", value: "(1) 10/100 MbE RJ45 port" },
+          { label: "LEDs System", value: "R/G/B/W" },
+          { label: "LEDs Light Ring", value: "R/G/B/W" },
+          { label: "Buttons", value: "(1) Factory reset (1) Tamper switch" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50° C (-22 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+          { label: "NDAA Compliant", value: "✓" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements UniFi Protect Web", value: "✓" },
+          { label: "Application Requirements UniFi Protect iOS™ and Android™", value: "✓" },
         ]
       }
     ],
@@ -7076,63 +6851,104 @@ export const cameraSecurityProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "UPS PoE Switch",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "A switch with an integrated 368Wh lithium-ion battery capable of providing uninterruptible PoE to 8 devices.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "(4) GbE PoE+, (4) GbE PoE++ ports",
+          "(1) GbE port",
+          "(2) 110V AC outputs; 120W total PoE available",
+          "Battery backup power system",
+          "Internal battery 368Wh"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "442 x 480 x 44 mm (17.4 x 18.9 x 1.7')" },
+          { label: "Weight", value: "Without mount: 9 kg (19.9 lb) With mount: 9.2 kg (20.3 lb)" },
+          { label: "Enclosure Material", value: "SGCC Steel" },
+          { label: "Mount Material", value: "SGCC steel" },
+          { label: "LACP Port Aggregation", value: "✓" },
+          { label: "STP & RSTP", value: "✓" },
+          { label: "Advanced IGMP Configuration (Querier, Fast Leave, Router Port)", value: "✓" },
+          { label: "Switching Capacity", value: "18 Gbps" },
+          { label: "Total PoE Availability", value: "120 W" },
+          { label: "Form Factor", value: "Rack mount (1U)" },
+          { label: "Dimensions", value: "442 x 480 x 44 mm (17.4 x 18.9 x 1.7')" },
         ],
         productLink: "/products/mounting-kit-usl-siren-poe"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "UniFi Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Bendable booted RJ45",
+          "3 mm outer diameter",
+          "Cable length: 0.1 to 8m",
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
         ],
-        productLink: "/products/power-cable-usl-siren-poe"
+        productLink: "/products/mounting-kit-u6-plus"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "UniFi Patch Cable Outdoor",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "Rugged, outdoor patch cable designed to function in the harshest environments.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Shielded RJ45",
+          "Insulated, weatherpoof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "Cable Lenghth: 1 to 8 m"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Available Lengths", value: "1, 2, 3, 5, 8 m(3.3, 6.6, 9.8, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Black" },
+          { label: "Pack Options", value: "Single Unit" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Shielding RJ45" },
+          { label: "Operating Environment", value: "Outdoor" },
+          { label: "Cable Jacket Diameter", value: "6.3 mm (0.25')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "S/FTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "24 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 50.4 mm ( (1.98'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 80°C (-40 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-30 to 75°C (-22 to 167°F)" },
         ],
         productLink: "/products/sfp-module-10g"
-      }
+      },
     ]
   },
+
+// Produk Keenam dari Camera Security, SF SuperLink
   {
     id: "USL-Environmental",
     name: "Environmental Sensor",
@@ -7166,38 +6982,61 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Battery-powered SuperLink sensor that detects water leaks",
-      "temperature",
-      "and ambient light",
-      "Reliable performance"
+      "Certifications FCC, IC, CE",
+      "LEDs (1) Status: R/B/W (1) Signal: B/R",
+      "Connectivity SuperLink (Proprietary)"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
+       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Environmental Sensor" },
-          { label: "Model", value: "USL-ENVIRONMENTAL" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Device: 53 x 49 x 23.5 mm (2.1 x 1.9 x 0.9') Mount: 41.3 x 36.6 x 3.1 mm (1.6 x 1.4 x 0.1')" },
+          { label: "Weatherproofing", value: "IPX5" },
+          { label: "Mounting", value: "Adhesive, magnet and screw mount" },
+          { label: "UniFi Application Suite", value: "Protect" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Connectivity", value: "SuperLink (Proprietary)" },
+          { label: "Operating Frequency US", value: "915.6–927.6 MHz" },
+          { label: "Operating Frequency EU", value: "865.1–869.5 MHz" },
+          { label: "Antenna Gain Superlink", value: "0 dBi" },
+          { label: "Max. TX Power Superlink", value: "14 dBm" },
+          { label: "Max. Range Superlink", value: "2 km (1.2 mi)" },
+          { label: "Sensor Features Temperature Sensor", value: "✓" },
+          { label: "Sensor Features Humidity Sensor", value: "✓" },
+          { label: "Sensor Features Ambient Light Sensor", value: "✓" },
+          { label: "Sensor Features Water Sensor", value: "✓" },
+          { label: "Sensor Features Other", value: "3.5 mm AUX jack (TRS or TS) for water leak probe" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "34.9mW" },
+          { label: "Supported Volatge Range", value: "3V" },
+          { label: "Power Method", value: "Lithium battery CR123A" },
+          { label: "Battery Life", value: "Up to 6 years" },
+          { label: "Weight", value: "Device: 47.8 g (1.7 oz) With mount: 70 g (2.5 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Galvanized steel" },
+          { label: "Button", value: "(1) Factory reset (1) Function button" },
+          { label: "LEDs", value: "(1) Status: R/B/W (1) Signal: B/R" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+          { label: "NDAA Compliant", value: "✓" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
         ]
       }
     ],
@@ -7209,68 +7048,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-usl-environmental"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-usl-environmental"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+// Produk Ketujuh dari Camera Security
   {
     id: "UP-Sense",
     name: "All-In-One Sensor",
@@ -7304,38 +7084,53 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "A battery-powered smart sensor capable of detecting motion",
-      "and environmental changes",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Networking Interface Bluetooth 5.0, BLE",
+      "Mount Material Flat wall mount: polycarbonate, adhesive Corner mount: polycarbonate, adhesive",
+      "Enclosure Material Polycarbonate",
+      "Note. Long-range BLE coverage is comparable to WiFi coverage."
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
+       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "All-In-One Sensor" },
-          { label: "Model", value: "UP-SENSE" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀24 x 83.5 mm (⌀0.9 x 3.3')" },
+          { label: "Weight", value: "50.2 g (1.8 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Flat wall mount: polycarbonate, adhesive Corner mount: polycarbonate, adhesive" },
+          { label: "Mounting", value: "Adhesive, magnet and screw mount" },
+          { label: "Additional Gear", value: "Magnet (1) Water sensor adapter (Only available in the 3-pack.)" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Networking Interface", value: "Bluetooth 5.0, BLE" },
+          { label: "Sensor Features Motion Sensor", value: "✓" },
+          { label: "Sensor Features Magnetic Entry Sensor for Door or Window Open/Close", value: "✓" },
+          { label: "Sensor Features Accelerometer for Garage Door Open/Close", value: "✓" },
+          { label: "Sensor Features Temperature Sensor", value: "✓" },
+          { label: "Sensor Features Humidity Sensor", value: "✓" },
+          { label: "Sensor Features Ambient Light Sensor", value: "✓" },
+          { label: "Sensor Features Alarm Sound Sensor", value: "✓" },
+          { label: "Sensor Features Water Sensor", value: "✓" },
+          { label: "Sensor Features BLE Connectivity from SuperLink or a UniFi Access Point in an Indoor Setting", value: "Must be connected to an up-to-date Bluetooth-supported UniFi access point." },
+
+          { label: "Antennas", value: "(1) 2.4GHz" },
+          { label: "LEDs", value: "R/B/W" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "0 to 45° C (32 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE, Anatel: 08492-22-08356" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
         ]
       }
     ],
@@ -7347,68 +7142,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-up-sense"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-up-sense"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+// Produk Kedelapan dari Camera Security, SF SuperLink
   {
     id: "USL-GlassBreak",
     name: "Glass Break Sensor",
@@ -7442,10 +7178,9 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Battery-powered SuperLink sensor featuring advanced glass break detection and motion sensing",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Power Method (2) Lithium battery CR123A",
+      "UniFi Application Suite Protect",
+      "Mounting Adhesive and screw mount"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -7453,27 +7188,48 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Glass Break Sensor" },
-          { label: "Model", value: "USL-GLASSBREAK" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Device with wall mount: 134.5 x 22.5 x 24.8 mm (5.3 x 0.9 x 1') Device with corner mount: 134.5 x 22.5 x 27.9 mm (5.3 x 0.9 x 1.1')" },
+          { label: "Microphone", value: "✓" },
+          { label: "Mounting", value: "Adhesive, magnet and screw mount" },
+          { label: "UniFi Application Suite", value: "Protect" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Connectivity", value: "SuperLink (Proprietary)" },
+          { label: "Operating Frequency US", value: "915.6–927.6 MHz" },
+          { label: "Operating Frequency EU", value: "865.1–869.5 MHz" },
+          { label: "Antenna Gain Superlink", value: "1 dBi" },
+          { label: "Max. TX Power Superlink", value: "14 dBm" },
+          { label: "Max. Range Superlink", value: "2 km (1.2 mi)" },
+          { label: "Sensor Features PIR Sensor", value: "✓" },
+          { label: "Detected Glass Type", value: "Plate, tempered, obscured, laminated, coated, wired Size: 280 x 356 mm (11 x 14') to 1067 x 1626 mm (42 x 64”) Thickness: 2.4 mm (3/32'), 4.8 mm (3/16'), 3.2 mm (1/8'), 6.4 mm (1/4')" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Max. Power Consumption", value: "0.2mW" },
+          { label: "Supported Volatge Range", value: "3V" },
+          { label: "Power Method", value: "(2) Lithium battery CR123A" },
+          { label: "Battery Life", value: "Up to 3 years" },
+          { label: "Weight", value: "With mount and batteries: 70 g (2.5 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Button", value: "(1) Function button (1) Factory reset (1) Tamper switch" },
+          { label: "LEDs", value: "(1) Status: R/B/W (1) Signal: B/R" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+          { label: "NDAA Compliant", value: "✓" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
         ]
       }
     ],
@@ -7485,68 +7241,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-usl-glassbreak"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-usl-glassbreak"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+// Produk Kesembilan dari Camera Security, SF SuperLink
   {
     id: "UACC-USL-ANT-HG",
     name: "SuperLink High-Gain Antenna",
@@ -7580,40 +7277,49 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "omnidirectional antenna with an IP67-rated outdoor enclosure",
-      "built to extend SuperLink range in all weather conditions",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Enclosure Material Polycarbonate, glass fiber",
+      "Wind Loading 25.4 N at 200 km/h (5.7 lbf at 125 mph)",
+      "Pole Mount Diameter 1–2.17' (25–55 mm)"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
+     {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "SuperLink High-Gain Antenna" },
-          { label: "Model", value: "UACC-USL-ANT-HG" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Device: 468.9 x 31.8 x 44.1 mm (18.5 x 1.3 x 1.7') With cable: 1458.4 x 31.8 x 44.1 mm (57.4 x 1.3 x 1.7') Cable: ⌀5.2 x 1000 mm (⌀0.2 x 39.4')" },
+          { label: "Weatherproofing", value: "IP67" },
+          { label: "Mounting", value: "Pole mount" },
+          { label: "Pole Mount Diameter", value: "1–2.17' (25–55 mm)" },
+          { label: "Wind Loading", value: "25.4 N at 200 km/h (5.7 lbf at 125 mph)" },
+          { label: "UniFi Application Suite", value: "Protect" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Operating Frequency US", value: "860–930 MHz" },
+          { label: "Operating Frequency EU", value: "860–930 MHz" },
+          { label: "Operating Frequency Bluetooth", value: "2400–2480 MHz" },
+          { label: "Antenna Gain Bluetooth", value: "4 dBi" },
+          { label: "Antenna Gain Superlink", value: "7 dBi" },
+          { label: "Max. Range Bluetooth", value: "Up to 100 m (328 ft)" },
+          { label: "Max. Range Superlink", value: "5 km (3.1 mi)" },
+          { label: "Sensor Features PIR Sensor", value: "✓" },
+          { label: "Detected Glass Type", value: "Plate, tempered, obscured, laminated, coated, wired Size: 280 x 356 mm (11 x 14') to 1067 x 1626 mm (42 x 64”) Thickness: 2.4 mm (3/32'), 4.8 mm (3/16'), 3.2 mm (1/8'), 6.4 mm (1/4')" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Weight", value: "Device: 275 g (9.7 oz) Cable: 65 g (2.3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, glass fiber" },
+          { label: "Mount Material", value: "Stainless steel" },
+          { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "CE" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -7623,68 +7329,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-usl-ant-hg"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-usl-ant-hg"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  
   {
     id: "UP-AI-Horn-Speaker-B/W",
     name: "AI Horn Speaker",
