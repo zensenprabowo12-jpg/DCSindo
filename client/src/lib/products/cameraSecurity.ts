@@ -7331,12 +7331,12 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-  
-  {
-    id: "UP-AI-Horn-Speaker-B/W",
+  // Produk Pertama dari Camera Security, SF Camera Accessories
+ {
+    id: "UP-AI-Horn-Speaker-B",
     name: "AI Horn Speaker",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
+    category: "Accessories",
+    subfilter: "For Cameras",
     image: "/images/camera.jpg",
     shortDescription:
       "All-weather PoE 120 dB horn speaker with advanced AI alert functionality and versatile wall, corner, and pole mounting options.",
@@ -7348,11 +7348,11 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UP-AI-HORN-SPEAKER-B-W",
+    sku: "UP-AI-Horn-Speaker-B",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-Gateway-Fiber.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
@@ -7365,10 +7365,8 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "All-weather PoE 120 dB horn speaker with advanced AI alert functionality and versatile wall",
-      "and pole mounting options",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Blends seamlessly into a variety of backgrounds",
+      "Sold as a 3-pack"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -7376,107 +7374,60 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI Horn Speaker" },
-          { label: "Model", value: "UP-AI-HORN-SPEAKER-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Device: 267 x 189 x 247 mm (10.5 x 7.4 x 9.7') Articulating mount: ⌀104 x 149.4 mm  (⌀4.1 x 5.9')" },
+          { label: "Mounting", value: "Articulating mount for wall, pole mount (Included)" },
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "Device: 1.55 kg (2.4 lb) Articulating mount: 1.3 kg (2.9 lb)" },
+          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
+          { label: "Mounting Material", value: "Stainless steel, aluminum alloy" },
+          { label: "Pole Mount Diameter", value: "1—2.5' (25—63.5 mm)" },
+          { label: "Weatherproofing", value: "IP66" }
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Power Method", value: "PoE+" },
+          { label: "Max. Power Consumption", value: "14.3W" },
+          { label: "Speaker", value: "✓" },
+          { label: "Networking Interface", value: "(1) 100/10 MbE RJ45 port" },
+          { label: "LEDs System", value: "R/G/B/W" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+          { label: "NDAA Compliant", value: "✓" }
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Management Application UniFi Protect Web", value: "✓" },
+          { label: "Management Application UniFi Protect iOS™ and Android™", value: "✓" }
         ]
-      }
+      },
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
       { name: "Mounting Kit", image: "/images/dcs-box.png" },
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-up-ai-horn-speaker-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-up-ai-horn-speaker-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+// Produk Kedua dari Camera Security,SF Camera Accessories 
   {
     id: "UP-FloodLight",
     name: "Floodlight",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
+    category: "Accessories",
+    subfilter: "For Cameras",
     image: "/images/camera.jpg",
-    shortDescription: "Bright, motion-triggered light.",
+    shortDescription:
+      "Bright, motion-triggered light.",
     specs: [
       { label: "Resolution", value: "4K (8MP)" },
       { label: "Night Vision", value: "25m (82ft) IR" },
@@ -7485,11 +7436,11 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UP-FLOODLIGHT",
+    sku: "UP-FloodLight",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-Gateway-Fiber.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
@@ -7502,116 +7453,56 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "motion-triggered light",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Intense 550 lumens of LED light",
+      "Wall-mountable",
+      "Motion detection",
+      "Weatherproof (outdoor exposed)",
+      "Connect and power using PoE"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Mechanical",
         items: [
-          { label: "Product Name", value: "Floodlight" },
-          { label: "Model", value: "UP-FLOODLIGHT" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "135 x 65 x 50 mm (5.3 x 2.6 x 2')" },
+          { label: "Weight", value: "Without mount: 216 g (7.6 oz) With flat wall mount: 236 g (8.3 oz) With angle mount: 273 g (9.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
+          { label: "Mounting Material", value: "Angle Mount: Polycarbonate Flat Wall Mount: Polycarbonate" },
+          { label: "Weatherproofing", value: "IPX5" }
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Networking Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Power Method", value: "PoE, 48V DC, 0.22A Max." },
+          { label: "Max. Power Consumption", value: "12.95W" },
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 8kV" },
+          { label: "Radio Frequency", value: "Bluetooth 4.0" },
+          { label: "LEDs", value: "R/B/W" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-10 to 45° C (14 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 80% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE, Anatel: 08447-22-08356" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" }
         ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-up-floodlight"
       },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-up-floodlight"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
+    ],
   },
-  {
+
+  // Produk Ketiga dari Camera Security, SF Camera Accessories 
+   {
     id: "UACC-Adapter-PoE-USBC",
     name: "PoE to USB-C Adapter",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
+    category: "Accessories",
+    subfilter: "PoE & Power",
     image: "/images/camera.jpg",
     shortDescription:
       "Versatile adapter that provides power and connectivity to USB-C devices, including compatible Protect WiFi cameras.",
@@ -7623,11 +7514,11 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UACC-ADAPTER-POE-USBC",
+    sku: "UACC-Adapter-PoE-USBC",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-Gateway-Fiber.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
@@ -7640,119 +7531,50 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Versatile adapter that provides power and connectivity to USB-C devices",
-      "including compatible Protect WiFi cameras",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "(1) GbE PoE input",
+      "(1) USB-C output",
+      "Transforms the G4 Doorbell Pro* and G4/G6 Instant** into a wired PoE camera",
+      "Provide GbE connectivity*** to USB-C device, such as notebook"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Mechanical",
         items: [
-          { label: "Product Name", value: "PoE to USB-C Adapter" },
-          { label: "Model", value: "UACC-ADAPTER-POE-USBC" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Without cable: ⌀30.4 x 95 mm (⌀1.2 x 3.7')" },
+          { label: "Weight", value: "85 g (3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" }
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Ports", value: "(1) Input: RJ45 (1) Output: USB Type-C" },
+          { label: "Networking Interface", value: "(1) Input: RJ45 (1) Output: USB Type-C" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Input Rating", value: "48V DC, 0.25A" },
+          { label: "Output Rating", value: "5V DC, 2A" },
+          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+          { label: "Compatibility", value: "Camera G4 Instant (UVC-G4-INS) G4 DoorBell Pro (UVC-G4-Doorbell-Pro)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-adapter-poe-usbc"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-adapter-poe-usbc"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-  {
-    id: "UACC-Camera-CJB-B/W",
+
+  // Produk Keempat dari Camera Security, SF Camera Accessories 
+   {
+    id: "UACC-Camera-CJB-B",
     name: "Camera Compact Junction Box",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
+    category: "Accessories",
+    subfilter: "For Cameras",
     image: "/images/camera.jpg",
     shortDescription:
-      "Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability, aesthetics, and ease of maintenance.",
+      "Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability, aesthetics, and ease of maintenanc",
     specs: [
       { label: "Resolution", value: "4K (8MP)" },
       { label: "Night Vision", value: "25m (82ft) IR" },
@@ -7761,11 +7583,11 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UACC-CAMERA-CJB-B-W",
+    sku: "UACC-Camera-CJB-B",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-Gateway-Fiber.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
@@ -7778,10 +7600,8 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability",
-      "and ease of maintenance",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Supports flat surface, pole and pendant mounting",
+      "Includes side and rear 3/4' conduit entrances"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -7789,243 +7609,29 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Camera Compact Junction Box" },
-          { label: "Model", value: "UACC-CAMERA-CJB-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Longer holder: 87 x 147 x 49 mm (3.4 x 5.8 x 1.9') Shorter cap:  87 x 110 x 49 mm (3.4 x 4.3 x 1.9')" },
+          { label: "Pole Mount Diameter", value: "1.5-2' (38-50 mm)" },
+          { label: "Weight", value: "Box: 270 g (9.5 oz) Longer holder: 125 g (4.4 oz) Shorter cap: 80 g (2.8 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mounting Material", value: "Aluminum alloy" },
+          { label: "Compatibility", value: "UVC-G5-Dome-Ultra UVC-G5-Turret-Ultra UVC-G6-Bullet" }
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
       { name: "Mounting Kit", image: "/images/dcs-box.png" },
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-camera-cjb-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-camera-cjb-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Kelima dari Camera Security, SF Camera Accessories
   {
-    id: "UACC-Camera-CJB-B/W",
-    name: "Camera Compact Junction Box",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability, aesthetics, and ease of maintenance.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-CAMERA-CJB-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability",
-      "and ease of maintenance",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Camera Compact Junction Box" },
-          { label: "Model", value: "UACC-CAMERA-CJB-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-camera-cjb-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-camera-cjb-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-Camera-JB-B/W",
+    id: "UACC-Camera-JB-B",
     name: "Camera Junction Box",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
+    category: "Accessories",
+    subfilter: "For Cameras",
     image: "/images/camera.jpg",
     shortDescription:
       "Tamper-resistant junction box for UniFi Bullet, Dome, and Turret cameras that enhances mounting durability, aesthetics, and ease of maintenance.",
@@ -8037,11 +7643,11 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UACC-CAMERA-JB-B-W",
+    sku: "UACC-Camera-JB-B",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-Gateway-Fiber.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
@@ -8054,10 +7660,8 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Tamper-resistant junction box for UniFi Bullet",
-      "and Turret cameras that enhances mounting durability",
-      "and ease of maintenance",
-      "Reliable performance"
+      "Supports flat surface, pole and pendant mounting",
+      "Includes side and rear 3/4' conduit entrances"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -8065,105 +7669,28 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Camera Junction Box" },
-          { label: "Model", value: "UACC-CAMERA-JB-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀140.4 x 59.7 mm (⌀5.5 x 2.4')" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "Junction box: 470 g (16.6 oz) Mount Holder: 66 g (2.3 oz) Deco ring: 17g (0.6 oz) Pole mount: 62 g (2.2 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mounting Material", value: "G3/4''" },
+          { label: "Compatibility", value: "UVC-AI-Bullet UVC-AI-PRO UVC-AI-DSLR UVC-AI-Dome UVC-AI-Turret UVC-G6-Bullet UVC-G6-Turret UVC-G6-Pro-Turret UVC-G6-Dome UVC-G6-Pro-Dome UVC-G6-180 UVC-G5-Dome UVC-G5-Dome-Ultra UVC-G5-Turret-Ultra UVC-G5-Pro UVC-G5-Bullet UVC-G4-Pro UVC-G4-Bullet UVC-G4-Dome UVC-G3-Pro UVC-G3-Bullet" }
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
       { name: "Mounting Kit", image: "/images/dcs-box.png" },
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-camera-jb-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-camera-jb-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+  // Produk Keenam dari Accessories, SF For Cameras
   {
-    id: "UACC-AI-JB-B/W",
+    id: "UACC-AI-360-JB",
     name: "AI 360 Junction Box",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
+    category: "Accessories",
+    subfilter: "For Cameras",
     image: "/images/camera.jpg",
     shortDescription:
       "Tamper-resistant junction box for the AI 360 that enhances mounting durability and ease of maintenance.",
@@ -8175,11 +7702,11 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UACC-AI-JB-B-W",
+    sku: "UACC-AI-360-JB",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-Gateway-Fiber.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
@@ -8192,10 +7719,8 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Tamper-resistant junction box for the AI 360 that enhances mounting durability and ease of maintenance",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Supports flat surface, pole and pendant mounting",
+      "Includes side and rear 3/4' conduit entrances"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -8203,105 +7728,93 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI 360 Junction Box" },
-          { label: "Model", value: "UACC-AI-JB-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀173.2 x 76 mm (⌀6.8 x 3')" },
+          { label: "Weight", value: "720 g (1.6 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mounting Material", value: "Aluminum alloy" },
+          { label: "Weatherproofing", value: "IPX6" },
+          { label: "Resistance", value: "IK08" },
+          { label: "Threaded Outlets", value: "3/4''" },
+          { label: "Compatibility", value: "UVC-AI-360 UVC-G6-Pro-360" }
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
       { name: "Mounting Kit", image: "/images/dcs-box.png" },
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-ai-jb-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-ai-jb-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Keenam dari Camera Security, SF Camera Accessories 
   {
-    id: "UACC-G4-Dome-Arm-Mount",
+    id: "UACC-AI-360-JB",
+    name: "AI 360 Junction Box",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Tamper-resistant junction box for the AI 360 that enhances mounting durability and ease of maintenance.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-AI-360-JB",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Supports flat surface, pole and pendant mounting",
+      "Includes side and rear 3/4' conduit entrances"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀173.2 x 76 mm (⌀6.8 x 3')" },
+          { label: "Weight", value: "720 g (1.6 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mounting Material", value: "Aluminum alloy" },
+          { label: "Weatherproofing", value: "IPX6" },
+          { label: "Resistance", value: "IK08" },
+          { label: "Threaded Outlets", value: "3/4''" },
+          { label: "Compatibility", value: "UVC-AI-360 UVC-G6-Pro-360" }
+        ]
+      },
+    ],
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+// Produk Ketujuh dari Camera Security, SF Camera Accessories
+  {
+    id: "UACC-G4-Dome-Arm Mount",
     name: "Dome Camera Arm Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
+    category: "Accessories",
+    subfilter: "For Cameras",
     image: "/images/camera.jpg",
     shortDescription:
       "Arm mount accessory that attaches the G4 or G5 Dome camera to a wall.",
@@ -8313,11 +7826,11 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UACC-G4-DOME-ARM-MOUNT",
+    sku: "UACC-G4-Dome-Arm Mount",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-Gateway-Fiber.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
@@ -8330,10 +7843,9 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Arm mount accessory that attaches the G4 or G5 Dome camera to a wall",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Allows to mount a Dome camera to the wall instead of the ceiling",
+      "Able to create focused camera sightlines",
+      "Wall mountable"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -8341,105 +7853,27 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Dome Camera Arm Mount" },
-          { label: "Model", value: "UACC-G4-DOME-ARM-MOUNT" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "123.8 x 114 x 31.5 mm (4.87 x 4.49 x 1.24')" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "73 g (2.6 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
       { name: "Mounting Kit", image: "/images/dcs-box.png" },
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g4-dome-arm-mount"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g4-dome-arm-mount"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-  {
+
+  // Produk Kedelapan dari Camera Security, SF Camera Accessories
+   {
     id: "UACC-Camera-AM-B",
     name: "Camera Arm Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
+    category: "Accessories",
+    subfilter: "For Cameras",
     image: "/images/camera.jpg",
     shortDescription:
       "Arm mount accessory that attaches the UniFi Turret cameras to a wall, corner, or pole.",
@@ -8451,11 +7885,11 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UACC-CAMERA-AM-B",
+    sku: "UACC-Camera-AM-B",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-Gateway-Fiber.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
@@ -8468,10 +7902,8 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Arm mount accessory that attaches the UniFi Turret cameras to a wall",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Supports 3/4” conduit",
+      "Weatherproof (outdoor exposed)"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -8479,105 +7911,30 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Camera Arm Mount" },
-          { label: "Model", value: "UACC-CAMERA-AM-B" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "115 x 252 x 90 mm (4.5 x 9.9 x 3.5')" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "670 g (1.5 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+          { label: "Mounting Material", value: "Aluminum alloy" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Compatibility", value: "UVC-AI-Dome UVC-AI-Turret UVC-G6-Turret UVC-G6-Pro-Turret UVC-G6-Dome UVC-G6-Pro-Dome UVC-G6-180 UVC-G6-Pro-360 UVC-G5-Turret-Ultra" }
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
       { name: "Mounting Kit", image: "/images/dcs-box.png" },
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-camera-am-b"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-camera-am-b"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-  {
-    id: "UACC-Bullet-AB-B",
+
+  // Produk Kesembilan dari Camera Security, SF Camera Accessories 
+   {
+    id: "UACC-Bullet-AB-W",
     name: "Bullet Camera Angled Base",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
+    category: "Accessories",
+    subfilter: "For Cameras",
     image: "/images/camera.jpg",
     shortDescription:
       "Bullet camera mounting accessory that enhances tilt angle by 22° to achieve an unrestricted viewing angle.",
@@ -8589,11 +7946,11 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UACC-BULLET-AB-B",
+    sku: "UACC-Bullet-AB-W",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-Gateway-Fiber.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
@@ -8606,10 +7963,8 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Bullet camera mounting accessory that enhances tilt angle by 22° to achieve an unrestricted viewing angle",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Ideal for mounting under eaves",
+      "Supports G5 Pro Enhancer and AI DSLR Outdoor Case"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -8617,243 +7972,29 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Bullet Camera Angled Base" },
-          { label: "Model", value: "UACC-BULLET-AB-B" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀62 x 55 mm (⌀2.4 x 2.2')" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "65 g (2.3 oz)" },
+          { label: "Available Colors", value: "Black White" },
+          { label: "Weatherproofing", value: "IPX5" },
+          { label: "Compatibility", value: "UACC-Bullet-AB-W: UVC-G4-Pro, UVC-G5-Pro, UVC-AI-Pro-W UACC-Bullet-AB-B: UVC-AI-Bullet, UVC-AI-Pro, UVC-AI-DSLR" }
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
       { name: "Mounting Kit", image: "/images/dcs-box.png" },
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-bullet-ab-b"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-bullet-ab-b"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-  {
-    id: "UACC-Pro-Bullet-Enhancer-B/W",
-    name: "Pro Bullect Enhancer",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Long-range IR LED, floodlight, and radar detection accessory for the G6 Pro Bullet and AI Pro.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
 
-    // SKU produk
-    sku: "UACC-PRO-BULLET-ENHANCER-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Long-range IR LED",
-      "and radar detection accessory for the G6 Pro Bullet and AI Pro",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Pro Bullect Enhancer" },
-          { label: "Model", value: "UACC-PRO-BULLET-ENHANCER-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-pro-bullet-enhancer-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-pro-bullet-enhancer-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
+  // Produk Kesepuluh dari Camera Security, SF Camera Accessories
   {
     id: "UACC-AI-Pro-Enhancer-B/W",
     name: "AI Enhancer",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
+    category: "Accessories",
+    subfilter: "For Cameras",
     image: "/images/camera.jpg",
     shortDescription:
       "Long-range IR LED, floodlight, and radar detection accessory for the AI Pro.",
@@ -8865,11 +8006,11 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UACC-AI-PRO-ENHANCER-B-W",
+    sku: "UACC-AI-Pro-Enhancer",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-Gateway-Fiber.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
@@ -8882,10 +8023,8 @@ export const cameraSecurityProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Long-range IR LED",
-      "and radar detection accessory for the AI Pro",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Blends seamlessly into a variety of backgrounds",
+      "Sold as a 3-pack"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -8893,3818 +8032,3820 @@ export const cameraSecurityProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "AI Enhancer" },
-          { label: "Model", value: "UACC-AI-PRO-ENHANCER-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Device: 267 x 189 x 247 mm (10.5 x 7.4 x 9.7') Articulating mount: ⌀104 x 149.4 mm  (⌀4.1 x 5.9')" },
+          { label: "Mounting", value: "Articulating mount for wall, pole mount (Included)" },
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "Device: 1.55 kg (2.4 lb) Articulating mount: 1.3 kg (2.9 lb)" },
+          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
+          { label: "Mounting Material", value: "Stainless steel, aluminum alloy" },
+          { label: "Pole Mount Diameter", value: "1—2.5' (25—63.5 mm)" },
+          { label: "Weatherproofing", value: "IP66" }
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Power Method", value: "PoE+" },
+          { label: "Max. Power Consumption", value: "14.3W" },
+          { label: "Speaker", value: "✓" },
+          { label: "Networking Interface", value: "(1) 100/10 MbE RJ45 port" },
+          { label: "LEDs System", value: "R/G/B/W" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+          { label: "NDAA Compliant", value: "✓" }
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Management Application UniFi Protect Web", value: "✓" },
+          { label: "Management Application UniFi Protect iOS™ and Android™", value: "✓" }
         ]
-      }
+      },
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
       { name: "Mounting Kit", image: "/images/dcs-box.png" },
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-ai-pro-enhancer-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-ai-pro-enhancer-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-  {
-    id: "UACC-G5-Enhancer",
-    name: "G5 Pro Enhancer",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Long-range IR LED and floodlight accessory for the G5 Pro.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G5-ENHANCER",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Long-range IR LED and floodlight accessory for the G5 Pro",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G5 Pro Enhancer" },
-          { label: "Model", value: "UACC-G5-ENHANCER" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g5-enhancer"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g5-enhancer"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UVC-G4-IRExtender",
-    name: "G4 Bullet IR Enhancer",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription: "Long-range IR LED accessory for the G4 Bullet.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UVC-G4-IREXTENDER",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Long-range IR LED accessory for the G4 Bullet",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G4 Bullet IR Enhancer" },
-          { label: "Model", value: "UVC-G4-IREXTENDER" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uvc-g4-irextender"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uvc-g4-irextender"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-Camera-DM-B/W",
-    name: "Camera Dual Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Tamper-resistant, back-to-back mount for two UniFi Bullet, Dome, or Turret cameras that supports flat surface installation and attachment to 1 1/2' NPS threaded conduit.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-CAMERA-DM-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Tamper-resistant",
-      "back-to-back mount for two UniFi Bullet",
-      "or Turret cameras that supports flat surface installation and attachment to 1 1/2' NPS threaded conduit",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Camera Dual Mount" },
-          { label: "Model", value: "UACC-CAMERA-DM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-camera-dm-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-camera-dm-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-GB-Plate-B/W",
-    name: "Gang Box Mounting Plate",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "A mounting plate designed to interface UniFi Protect cameras with multiple types of Gang Boxes and Junction Boxes.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-GB-PLATE-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "A mounting plate designed to interface UniFi Protect cameras with multiple types of Gang Boxes and Junction Boxes",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Gang Box Mounting Plate" },
-          { label: "Model", value: "UACC-GB-PLATE-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-gb-plate-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-gb-plate-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-Dome-FM-B/W",
-    name: "AI Dome Camera Flush Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Dome camera mounting accessory for recessed installation into a wall or ceiling.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-DOME-FM-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Dome camera mounting accessory for recessed installation into a wall or ceiling",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "AI Dome Camera Flush Mount" },
-          { label: "Model", value: "UACC-DOME-FM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-dome-fm-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-dome-fm-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G6-Pro-360-FM-B/W",
-    name: "G6 Pro 360 Flush Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "G6 Pro 360 camera mounting accessory for recessed installation into a wall or ceiling.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G6-PRO-360-FM-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "G6 Pro 360 camera mounting accessory for recessed installation into a wall or ceiling",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6 Pro 360 Flush Mount" },
-          { label: "Model", value: "UACC-G6-PRO-360-FM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g6-pro-360-fm-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g6-pro-360-fm-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G6-Dome-FM-B/W",
-    name: "G6 Dome Camera Flush Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "G6/G6 Pro Dome camera mounting accessory for recessed installation into a wall or ceiling.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G6-DOME-FM-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "G6/G6 Pro Dome camera mounting accessory for recessed installation into a wall or ceiling",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6 Dome Camera Flush Mount" },
-          { label: "Model", value: "UACC-G6-DOME-FM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g6-dome-fm-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g6-dome-fm-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G6-Dome-FMS-B/W",
-    name: "G6 Dome Camera Flush Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "G6 Dome camera mounting accessory for recessed installation into a wall or ceiling.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G6-DOME-FMS-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "G6 Dome camera mounting accessory for recessed installation into a wall or ceiling",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6 Dome Camera Flush Mount" },
-          { label: "Model", value: "UACC-G6-DOME-FMS-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g6-dome-fms-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g6-dome-fms-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G5-Dome-Ultra-FM-B/W",
-    name: "G6 Dome Camera Flush Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Dome camera mounting accessory for recessed installation into a wall or ceiling.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G5-DOME-ULTRA-FM-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Dome camera mounting accessory for recessed installation into a wall or ceiling",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6 Dome Camera Flush Mount" },
-          { label: "Model", value: "UACC-G5-DOME-ULTRA-FM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g5-dome-ultra-fm-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g5-dome-ultra-fm-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G5-Dome-Ultra-FM-SB-B/W",
-    name: "G6 Dome Camera Flush Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Dome camera mounting accessory for recessed installation into a wall or ceiling with a smoked bubble for enhanced discretion.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G5-DOME-ULTRA-FM-SB-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Dome camera mounting accessory for recessed installation into a wall or ceiling with a smoked bubble for enhanced discretion",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6 Dome Camera Flush Mount" },
-          { label: "Model", value: "UACC-G5-DOME-ULTRA-FM-SB-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g5-dome-ultra-fm-sb-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g5-dome-ultra-fm-sb-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G6-Dome-WS-B/W",
-    name: "G6 Dome Camera Weather Shield",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "G6 Dome camera accessory for optimal image quality and protection from the elements when installed outdoors on a wall or pole.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G6-DOME-WS-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "G6 Dome camera accessory for optimal image quality and protection from the elements when installed outdoors on a wall or pole",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6 Dome Camera Weather Shield" },
-          { label: "Model", value: "UACC-G6-DOME-WS-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g6-dome-ws-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g6-dome-ws-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-Dome-WS-B/W",
-    name: "Dome Camera Weather Shield",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Dome camera accessory for optimal image quality and protection from the elements when installed outdoors on a wall or pole.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-DOME-WS-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Dome camera accessory for optimal image quality and protection from the elements when installed outdoors on a wall or pole",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Dome Camera Weather Shield" },
-          { label: "Model", value: "UACC-DOME-WS-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-dome-ws-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-dome-ws-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G6-180-FM-B/W",
-    name: "G6 180 Camera Flush Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "G6 180 camera mounting accessory for recessed ceiling installation.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G6-180-FM-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "G6 180 camera mounting accessory for recessed ceiling installation",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6 180 Camera Flush Mount" },
-          { label: "Model", value: "UACC-G6-180-FM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g6-180-fm-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g6-180-fm-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G6-180-PM-B/W",
-    name: "G6 180 Camera Pendant Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Pendant mount for suspending the G6 180 Camera from ceilings or overhead structures.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G6-180-PM-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Pendant mount for suspending the G6 180 Camera from ceilings or overhead structures",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6 180 Camera Pendant Mount" },
-          { label: "Model", value: "UACC-G6-180-PM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g6-180-pm-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g6-180-pm-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G5-PTZ-CM-B/W",
-    name: "G6/G5 PTZ Corner Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription: "Corner mount accessory for G6/G5 PTZ.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G5-PTZ-CM-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Corner mount accessory for G6/G5 PTZ",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6/G5 PTZ Corner Mount" },
-          { label: "Model", value: "UACC-G5-PTZ-CM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g5-ptz-cm-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g5-ptz-cm-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G5-PTZ-PM-B/W",
-    name: "G6/G5 PTZ Pendant Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription: "Pendant mount accessory for G6/G5 PTZ.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G5-PTZ-PM-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Pendant mount accessory for G6/G5 PTZ",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6/G5 PTZ Pendant Mount" },
-          { label: "Model", value: "UACC-G5-PTZ-PM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g5-ptz-pm-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g5-ptz-pm-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G5-PTZ-SM-B/W",
-    name: "G6/G5 PTZ Surface Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription: "Ceiling surface mount accessory for G5 PTZ.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G5-PTZ-SM-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Ceiling surface mount accessory for G5 PTZ",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6/G5 PTZ Surface Mount" },
-          { label: "Model", value: "UACC-G5-PTZ-SM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g5-ptz-sm-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g5-ptz-sm-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G5-PTZ-ICM-SB-B/W",
-    name: "G5 PTZ In-Ceiling Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "In-ceiling mount accessory or smoked bubble cover for G5 PTZ.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G5-PTZ-ICM-SB-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "In-ceiling mount accessory or smoked bubble cover for G5 PTZ",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G5 PTZ In-Ceiling Mount" },
-          { label: "Model", value: "UACC-G5-PTZ-ICM-SB-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g5-ptz-icm-sb-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g5-ptz-icm-sb-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G6-PTZ-ICM-B/W",
-    name: "G6 PTZ In-Ceiling Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription: "In-ceiling mount accessory for G6 PTZ.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G6-PTZ-ICM-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "In-ceiling mount accessory for G6 PTZ",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6 PTZ In-Ceiling Mount" },
-          { label: "Model", value: "UACC-G6-PTZ-ICM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g6-ptz-icm-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g6-ptz-icm-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G5-PTZ-CA-B/W",
-    name: "G6/G5 PTZ Conduit Adapter",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "3/4' conduit adapter for wall-mounted G6/G5 PTZ installations.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G5-PTZ-CA-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "3/4' conduit adapter for wall-mounted G6/G5 PTZ installations",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G6/G5 PTZ Conduit Adapter" },
-          { label: "Model", value: "UACC-G5-PTZ-CA-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g5-ptz-ca-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g5-ptz-ca-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-Flex-Cam-PWM-B/W",
-    name: "Flex Pro Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Versatile weatherproof wall or pole mount for G3 and G5 Flex cameras.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-FLEX-CAM-PWM-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Versatile weatherproof wall or pole mount for G3 and G5 Flex cameras",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Flex Pro Mount" },
-          { label: "Model", value: "UACC-FLEX-CAM-PWM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-flex-cam-pwm-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-flex-cam-pwm-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W",
-    name: "G4 Doorbell Pro PoE Gang Box Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Secure, flat or angled mounting plate for installing the G4 Doorbell Pro PoE over a standard single-gang box.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G4-DOORBELL-PRO-POE-GANG-BOX-WHITE-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "flat or angled mounting plate for installing the G4 Doorbell Pro PoE over a standard single-gang box",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G4 Doorbell Pro PoE Gang Box Mount" },
-          { label: "Model", value: "UACC-G4-DOORBELL-PRO-POE-GANG-BOX-WHITE-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g4 doorbell pro poe-gang box-white-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g4 doorbell pro poe-gang box-white-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G4-DBP-Cable-USB-7M",
-    name: "G4 Doorbell Pro PoE to USB-C Cable",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Sever-meter USB cable that connects a G4 Doorbell Pro to a PoE source.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G4-DBP-CABLE-USB-7M",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Sever-meter USB cable that connects a G4 Doorbell Pro to a PoE source",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G4 Doorbell Pro PoE to USB-C Cable" },
-          { label: "Model", value: "UACC-G4-DBP-CABLE-USB-7M" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g4-dbp-cable-usb-7m"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g4-dbp-cable-usb-7m"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G4-INS-Cable-USB-4.5M",
-    name: "Instant Camera PoE to USB-C Cable",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Four-and-a-half-meter USB cable that connects a Camera G4/G6 Instant to a PoE source.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G4-INS-CABLE-USB-4-5M",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Four-and-a-half-meter USB cable that connects a Camera G4/G6 Instant to a PoE source",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Instant Camera PoE to USB-C Cable" },
-          { label: "Model", value: "UACC-G4-INS-CABLE-USB-4-5M" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g4-ins-cable-usb-4.5m"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g4-ins-cable-usb-4.5m"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-G4-INS-Cover-DG/G/LG",
-    name: "G4 Instant Cover",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Custom cover for the G4 Instant camera available in multiple colors.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G4-INS-COVER-DG-G-LG",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Custom cover for the G4 Instant camera available in multiple colors",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "G4 Instant Cover" },
-          { label: "Model", value: "UACC-G4-INS-COVER-DG-G-LG" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-g4-ins-cover-dg/g/lg"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-g4-ins-cover-dg/g/lg"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-AI-Theta-Audio-Cable-1M",
-    name: "AI Theta Audio Cable",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Replacement cable that connects AI Theta Audio to an AI Theta Hub, 1m (3.3 ft).",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-AI-THETA-AUDIO-CABLE-1M",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Replacement cable that connects AI Theta Audio to an AI Theta Hub",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "AI Theta Audio Cable" },
-          { label: "Model", value: "UACC-AI-THETA-AUDIO-CABLE-1M" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-ai-theta-audio-cable-1m"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-ai-theta-audio-cable-1m"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-AI-Theta-Audio-Cable-Ext-10M",
-    name: "AI Theta Audio Cable Extension Cable",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription: "Ten-meter audio cable to extend AI Theta Lenses.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-AI-THETA-AUDIO-CABLE-EXT-10M",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Ten-meter audio cable to extend AI Theta Lenses",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "AI Theta Audio Cable Extension Cable" },
-          { label: "Model", value: "UACC-AI-THETA-AUDIO-CABLE-EXT-10M" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-ai-theta-audio-cable-ext-10m"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-ai-theta-audio-cable-ext-10m"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  }
+
+  // {
+  //   id: "UACC-G5-Enhancer",
+  //   name: "G5 Pro Enhancer",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Long-range IR LED and floodlight accessory for the G5 Pro.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G5-ENHANCER",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Long-range IR LED and floodlight accessory for the G5 Pro",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G5 Pro Enhancer" },
+  //         { label: "Model", value: "UACC-G5-ENHANCER" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g5-enhancer"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g5-enhancer"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+  // {
+  //   id: "UVC-G4-IRExtender",
+  //   name: "G4 Bullet IR Enhancer",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription: "Long-range IR LED accessory for the G4 Bullet.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UVC-G4-IREXTENDER",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Long-range IR LED accessory for the G4 Bullet",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G4 Bullet IR Enhancer" },
+  //         { label: "Model", value: "UVC-G4-IREXTENDER" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uvc-g4-irextender"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uvc-g4-irextender"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+  // {
+  //   id: "UACC-Camera-DM-B/W",
+  //   name: "Camera Dual Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Tamper-resistant, back-to-back mount for two UniFi Bullet, Dome, or Turret cameras that supports flat surface installation and attachment to 1 1/2' NPS threaded conduit.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-CAMERA-DM-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Tamper-resistant",
+  //     "back-to-back mount for two UniFi Bullet",
+  //     "or Turret cameras that supports flat surface installation and attachment to 1 1/2' NPS threaded conduit",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "Camera Dual Mount" },
+  //         { label: "Model", value: "UACC-CAMERA-DM-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-camera-dm-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-camera-dm-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-GB-Plate-B/W",
+  //   name: "Gang Box Mounting Plate",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "A mounting plate designed to interface UniFi Protect cameras with multiple types of Gang Boxes and Junction Boxes.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-GB-PLATE-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "A mounting plate designed to interface UniFi Protect cameras with multiple types of Gang Boxes and Junction Boxes",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "Gang Box Mounting Plate" },
+  //         { label: "Model", value: "UACC-GB-PLATE-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-gb-plate-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-gb-plate-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-Dome-FM-B/W",
+  //   name: "AI Dome Camera Flush Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Dome camera mounting accessory for recessed installation into a wall or ceiling.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-DOME-FM-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Dome camera mounting accessory for recessed installation into a wall or ceiling",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "AI Dome Camera Flush Mount" },
+  //         { label: "Model", value: "UACC-DOME-FM-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-dome-fm-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-dome-fm-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G6-Pro-360-FM-B/W",
+  //   name: "G6 Pro 360 Flush Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "G6 Pro 360 camera mounting accessory for recessed installation into a wall or ceiling.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G6-PRO-360-FM-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "G6 Pro 360 camera mounting accessory for recessed installation into a wall or ceiling",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6 Pro 360 Flush Mount" },
+  //         { label: "Model", value: "UACC-G6-PRO-360-FM-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g6-pro-360-fm-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g6-pro-360-fm-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+  
+  // {
+  //   id: "UACC-G6-Dome-FM-B/W",
+  //   name: "G6 Dome Camera Flush Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "G6/G6 Pro Dome camera mounting accessory for recessed installation into a wall or ceiling.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G6-DOME-FM-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "G6/G6 Pro Dome camera mounting accessory for recessed installation into a wall or ceiling",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6 Dome Camera Flush Mount" },
+  //         { label: "Model", value: "UACC-G6-DOME-FM-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g6-dome-fm-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g6-dome-fm-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G6-Dome-FMS-B/W",
+  //   name: "G6 Dome Camera Flush Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "G6 Dome camera mounting accessory for recessed installation into a wall or ceiling.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G6-DOME-FMS-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "G6 Dome camera mounting accessory for recessed installation into a wall or ceiling",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6 Dome Camera Flush Mount" },
+  //         { label: "Model", value: "UACC-G6-DOME-FMS-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g6-dome-fms-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g6-dome-fms-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G5-Dome-Ultra-FM-B/W",
+  //   name: "G6 Dome Camera Flush Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Dome camera mounting accessory for recessed installation into a wall or ceiling.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G5-DOME-ULTRA-FM-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Dome camera mounting accessory for recessed installation into a wall or ceiling",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6 Dome Camera Flush Mount" },
+  //         { label: "Model", value: "UACC-G5-DOME-ULTRA-FM-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g5-dome-ultra-fm-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g5-dome-ultra-fm-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G5-Dome-Ultra-FM-SB-B/W",
+  //   name: "G6 Dome Camera Flush Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Dome camera mounting accessory for recessed installation into a wall or ceiling with a smoked bubble for enhanced discretion.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G5-DOME-ULTRA-FM-SB-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Dome camera mounting accessory for recessed installation into a wall or ceiling with a smoked bubble for enhanced discretion",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6 Dome Camera Flush Mount" },
+  //         { label: "Model", value: "UACC-G5-DOME-ULTRA-FM-SB-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g5-dome-ultra-fm-sb-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g5-dome-ultra-fm-sb-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G6-Dome-WS-B/W",
+  //   name: "G6 Dome Camera Weather Shield",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "G6 Dome camera accessory for optimal image quality and protection from the elements when installed outdoors on a wall or pole.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G6-DOME-WS-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "G6 Dome camera accessory for optimal image quality and protection from the elements when installed outdoors on a wall or pole",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6 Dome Camera Weather Shield" },
+  //         { label: "Model", value: "UACC-G6-DOME-WS-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g6-dome-ws-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g6-dome-ws-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-Dome-WS-B/W",
+  //   name: "Dome Camera Weather Shield",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Dome camera accessory for optimal image quality and protection from the elements when installed outdoors on a wall or pole.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-DOME-WS-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Dome camera accessory for optimal image quality and protection from the elements when installed outdoors on a wall or pole",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "Dome Camera Weather Shield" },
+  //         { label: "Model", value: "UACC-DOME-WS-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-dome-ws-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-dome-ws-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G6-180-FM-B/W",
+  //   name: "G6 180 Camera Flush Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "G6 180 camera mounting accessory for recessed ceiling installation.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G6-180-FM-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "G6 180 camera mounting accessory for recessed ceiling installation",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6 180 Camera Flush Mount" },
+  //         { label: "Model", value: "UACC-G6-180-FM-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g6-180-fm-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g6-180-fm-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G6-180-PM-B/W",
+  //   name: "G6 180 Camera Pendant Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Pendant mount for suspending the G6 180 Camera from ceilings or overhead structures.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G6-180-PM-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Pendant mount for suspending the G6 180 Camera from ceilings or overhead structures",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6 180 Camera Pendant Mount" },
+  //         { label: "Model", value: "UACC-G6-180-PM-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g6-180-pm-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g6-180-pm-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G5-PTZ-CM-B/W",
+  //   name: "G6/G5 PTZ Corner Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription: "Corner mount accessory for G6/G5 PTZ.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G5-PTZ-CM-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Corner mount accessory for G6/G5 PTZ",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6/G5 PTZ Corner Mount" },
+  //         { label: "Model", value: "UACC-G5-PTZ-CM-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g5-ptz-cm-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g5-ptz-cm-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+  
+  // {
+  //   id: "UACC-G5-PTZ-PM-B/W",
+  //   name: "G6/G5 PTZ Pendant Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription: "Pendant mount accessory for G6/G5 PTZ.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G5-PTZ-PM-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Pendant mount accessory for G6/G5 PTZ",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6/G5 PTZ Pendant Mount" },
+  //         { label: "Model", value: "UACC-G5-PTZ-PM-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g5-ptz-pm-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g5-ptz-pm-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+  
+  // {
+  //   id: "UACC-G5-PTZ-SM-B/W",
+  //   name: "G6/G5 PTZ Surface Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription: "Ceiling surface mount accessory for G5 PTZ.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G5-PTZ-SM-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Ceiling surface mount accessory for G5 PTZ",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6/G5 PTZ Surface Mount" },
+  //         { label: "Model", value: "UACC-G5-PTZ-SM-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g5-ptz-sm-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g5-ptz-sm-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G5-PTZ-ICM-SB-B/W",
+  //   name: "G5 PTZ In-Ceiling Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "In-ceiling mount accessory or smoked bubble cover for G5 PTZ.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G5-PTZ-ICM-SB-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "In-ceiling mount accessory or smoked bubble cover for G5 PTZ",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G5 PTZ In-Ceiling Mount" },
+  //         { label: "Model", value: "UACC-G5-PTZ-ICM-SB-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g5-ptz-icm-sb-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g5-ptz-icm-sb-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G6-PTZ-ICM-B/W",
+  //   name: "G6 PTZ In-Ceiling Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription: "In-ceiling mount accessory for G6 PTZ.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G6-PTZ-ICM-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "In-ceiling mount accessory for G6 PTZ",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6 PTZ In-Ceiling Mount" },
+  //         { label: "Model", value: "UACC-G6-PTZ-ICM-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g6-ptz-icm-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g6-ptz-icm-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G5-PTZ-CA-B/W",
+  //   name: "G6/G5 PTZ Conduit Adapter",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "3/4' conduit adapter for wall-mounted G6/G5 PTZ installations.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G5-PTZ-CA-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "3/4' conduit adapter for wall-mounted G6/G5 PTZ installations",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G6/G5 PTZ Conduit Adapter" },
+  //         { label: "Model", value: "UACC-G5-PTZ-CA-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g5-ptz-ca-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g5-ptz-ca-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-Flex-Cam-PWM-B/W",
+  //   name: "Flex Pro Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Versatile weatherproof wall or pole mount for G3 and G5 Flex cameras.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-FLEX-CAM-PWM-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Versatile weatherproof wall or pole mount for G3 and G5 Flex cameras",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "Flex Pro Mount" },
+  //         { label: "Model", value: "UACC-FLEX-CAM-PWM-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-flex-cam-pwm-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-flex-cam-pwm-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G4 Doorbell Pro PoE-Gang Box-White-B/W",
+  //   name: "G4 Doorbell Pro PoE Gang Box Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Secure, flat or angled mounting plate for installing the G4 Doorbell Pro PoE over a standard single-gang box.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G4-DOORBELL-PRO-POE-GANG-BOX-WHITE-B-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "flat or angled mounting plate for installing the G4 Doorbell Pro PoE over a standard single-gang box",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G4 Doorbell Pro PoE Gang Box Mount" },
+  //         { label: "Model", value: "UACC-G4-DOORBELL-PRO-POE-GANG-BOX-WHITE-B-W" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g4 doorbell pro poe-gang box-white-b/w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g4 doorbell pro poe-gang box-white-b/w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G4-DBP-Cable-USB-7M",
+  //   name: "G4 Doorbell Pro PoE to USB-C Cable",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Sever-meter USB cable that connects a G4 Doorbell Pro to a PoE source.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G4-DBP-CABLE-USB-7M",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Sever-meter USB cable that connects a G4 Doorbell Pro to a PoE source",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G4 Doorbell Pro PoE to USB-C Cable" },
+  //         { label: "Model", value: "UACC-G4-DBP-CABLE-USB-7M" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g4-dbp-cable-usb-7m"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g4-dbp-cable-usb-7m"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { labeInstant Camera PoE to USB-C Cablel: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-G4-INS-Cable-USB-4.5M",
+  //   name: "",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Four-and-a-half-meter USB cable that connects a Camera G4/G6 Instant to a PoE source.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G4-INS-CABLE-USB-4-5M",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Four-and-a-half-meter USB cable that connects a Camera G4/G6 Instant to a PoE source",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "Instant Camera PoE to USB-C Cable" },
+  //         { label: "Model", value: "UACC-G4-INS-CABLE-USB-4-5M" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g4-ins-cable-usb-4.5m"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g4-ins-cable-usb-4.5m"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+
+  // {
+  //   id: "UACC-G4-INS-Cover-DG/G/LG",
+  //   name: "G4 Instant Cover",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Custom cover for the G4 Instant camera available in multiple colors.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G4-INS-COVER-DG-G-LG",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Custom cover for the G4 Instant camera available in multiple colors",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "G4 Instant Cover" },
+  //         { label: "Model", value: "UACC-G4-INS-COVER-DG-G-LG" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-g4-ins-cover-dg/g/lg"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-g4-ins-cover-dg/g/lg"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-AI-Theta-Audio-Cable-1M",
+  //   name: "AI Theta Audio Cable",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Replacement cable that connects AI Theta Audio to an AI Theta Hub, 1m (3.3 ft).",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-AI-THETA-AUDIO-CABLE-1M",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Replacement cable that connects AI Theta Audio to an AI Theta Hub",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "AI Theta Audio Cable" },
+  //         { label: "Model", value: "UACC-AI-THETA-AUDIO-CABLE-1M" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-ai-theta-audio-cable-1m"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-ai-theta-audio-cable-1m"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
+
+
+  // {
+  //   id: "UACC-AI-Theta-Audio-Cable-Ext-10M",
+  //   name: "AI Theta Audio Cable Extension Cable",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription: "Ten-meter audio cable to extend AI Theta Lenses.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-AI-THETA-AUDIO-CABLE-EXT-10M",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Ten-meter audio cable to extend AI Theta Lenses",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Product Name", value: "AI Theta Audio Cable Extension Cable" },
+  //         { label: "Model", value: "UACC-AI-THETA-AUDIO-CABLE-EXT-10M" },
+  //         { label: "Category", value: "UniFi Product" },
+  //         { label: "Resolution", value: "4K (8MP)" },
+  //         { label: "Night Vision", value: "25m (82ft) IR" },
+  //         { label: "Zoom", value: "3x Optical" },
+  //         { label: "Audio", value: "Two-way Audio" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Form Factor", value: "Standard" },
+  //         { label: "Power Supply", value: "AC/DC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management", value: "UniFi Network" },
+  //         { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+  //       ]
+  //     }
+  //   ],
+
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Mounting Kit",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+  //       specs: [
+  //         "Compatible with 19\" racks",
+  //         "Steel construction",
+  //         "Easy installation"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
+  //         { label: "Weight", value: "1.2 kg" },
+  //         { label: "Material", value: "SGCC Steel" },
+  //         { label: "Mounting", value: "1U Rack Mount" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uacc-ai-theta-audio-cable-ext-10m"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Power Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-quality power cable with durable construction.",
+  //       specs: [
+  //         "2m Length",
+  //         "High durability",
+  //         "Standard fit"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Length", value: "2.0 m" },
+  //         { label: "Conductor", value: "Copper" },
+  //         { label: "Rating", value: "10A / 250V" },
+  //         { label: "Jacket", value: "PVC" }
+  //       ],
+  //       productLink: "/products/power-cable-uacc-ai-theta-audio-cable-ext-10m"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Data Rate", value: "10 Gbps" },
+  //         { label: "Connector", value: "LC Duplex" },
+  //         { label: "Wavelength", value: "850 nm" },
+  //         { label: "Max Distance", value: "300 m" }
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // }
 ];
