@@ -851,6 +851,7 @@ export const doorAccessProducts: Product[] = [
           { label: "NFC Card & Keyfob Access", value: "✓" },
           { label: "PIN Access", value: "✓" },
           { label: "Mobile Unlock", value: "✓" },
+          { label: "Face Unlock", value: "✓" },
           { label: "Two-Way Intercom & Doorbell Access", value: "✓" },
           { label: "NDAA Compliant", value: "✓" },
           { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
@@ -878,7 +879,7 @@ export const doorAccessProducts: Product[] = [
           { label: "ESD/EMP Protection", value: "Air: ± 15kV, contact: ± 8kV" },
 
           { label: "Video Max. Frame Rate", value: "30 FPS" },
-          { label: "Video Max. Frame Resolution", value: "2MP 1200 x 1600 (3:4)" },
+          { label: "Video Max. Resolution", value: "2MP 1200 x 1600 (3:4)" },
 
           { label: "Optics Resolution", value: "12 MP (3072 × 4096)" },
           { label: "Optics Field of View", value: "H: 98.6°, V: 125.7°, D: 157.8°" },
@@ -1376,7 +1377,6 @@ export const doorAccessProducts: Product[] = [
           { label: "Dimensions", value: "93 x 40 x 36.5 mm (3.7 x 1.6 x 1.4')" },
           { label: "NFC Card & Keyfob Access", value: "✓" },
           { label: "Apple/Google Wallet", value: "✓" },
-          { label: "PIN Access", value: "✓" },
           { label: "Mobile Unlock", value: "✓" },
           { label: "Handwave Request to Exit", value: "✓" },
           { label: "NDAA Compliant", value: "✓" },
@@ -1390,7 +1390,7 @@ export const doorAccessProducts: Product[] = [
           { label: "Weight", value: "82 g (2.9 oz)" },
           { label: "Enclosure Material", value: "Polycarbonate, glass" },
           { label: "Mount Material", value: "Aluminum alloy" },
-          { label: "Mounting", value: "Wall, gang-box mount (Included) Angle mount, junction box (Optional)" },
+          { label: "Mounting", value: "In-wall, gang box (Included) Junction box (Optional)" },
         ]
       },
       {
@@ -2269,7 +2269,7 @@ export const doorAccessProducts: Product[] = [
     ]
   },
 
-// Produk Kesepuluh dari DoorAccess, SF Readers
+  // Produk Kesepuluh dari DoorAccess, SF Readers
   {
     id: "UA-Intercom",
     name: "Intercom",
@@ -2391,7 +2391,6 @@ export const doorAccessProducts: Product[] = [
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
 
-    //mari
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
@@ -2580,7 +2579,7 @@ export const doorAccessProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-       {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "126 x 45 x 37.45 mm (4.9 x 1.8 x 4.5')" },
@@ -2646,7 +2645,7 @@ export const doorAccessProducts: Product[] = [
 
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
-        {
+      {
         id: 1,
         name: "WiFi Smart Chime",
         image: "/images/dcs-box.png",
@@ -2790,7 +2789,7 @@ export const doorAccessProducts: Product[] = [
     ]
   },
 
-// Produk Pertama dari DoorAccess, SF Hubs
+  // Produk Pertama dari DoorAccess, SF Hubs
   {
     id: "EAH-8",
     name: "Enterprise Access Hub",
@@ -2860,7 +2859,7 @@ export const doorAccessProducts: Product[] = [
           { label: "Dry Output Relay", value: "(8) Lock terminals (12V or Dry) (4) AUX terminals for advanced setup (Chime/Siren/Door opener)" },
           { label: "Power Output Relay", value: "Lock: 12V DC, 1A/ Dry Aux: Dry only" },
           { label: "Indoor and Outdoor Use", value: "Indoor only" },
-          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },  
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
           { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
           { label: "Networking Interface", value: "(10) 10/100/1000 Base-T" },
           { label: "PoE Interface", value: "(8) PoE+ outputs, 50V DC, 30W per port(Max 60W aggregated)" },
@@ -2899,7 +2898,7 @@ export const doorAccessProducts: Product[] = [
 
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
-     {
+      {
         id: 1,
         name: "WiFi Smart Chime",
         image: "/images/dcs-box.png",
@@ -3043,7 +3042,7 @@ export const doorAccessProducts: Product[] = [
     ]
   },
 
-// Produk kedua dari DoorAccess, SF Hubs
+  // Produk kedua dari DoorAccess, SF Hubs
   {
     id: "UA-Retrofit-Hub-2",
     name: "Enterprise Access Hub",
@@ -3084,7 +3083,7 @@ export const doorAccessProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-    {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "140 x 120 x 45 mm (5.5 x 4.7 x 1.8')" },
@@ -3111,7 +3110,7 @@ export const doorAccessProducts: Product[] = [
           { label: "Dry Output Relay", value: "Lock: rated 30V DC, up to 1A Aux: rated 30V DC, up to 1A" },
           { label: "Power Output Relay", value: "12V Lock: 12V DC, up to 1A 24V Lock: 24V DC, up to 0.5A" },
           { label: "Indoor and Outdoor Use", value: "Indoor only" },
-          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },  
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
           { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
           { label: "Networking Interface", value: "(2) 10/100 MbE RJ45 ports" },
           { label: "Power Supply", value: "DC 12/24V" },
@@ -3145,7 +3144,7 @@ export const doorAccessProducts: Product[] = [
 
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
-     {
+      {
         id: 1,
         name: "WiFi Smart Chime",
         image: "/images/dcs-box.png",
@@ -3289,7 +3288,7 @@ export const doorAccessProducts: Product[] = [
     ]
   },
 
-// Produk Ketiga dari DoorAccess, SF Hubs
+  // Produk Ketiga dari DoorAccess, SF Hubs
   {
     id: "UA-Hub-Door",
     name: "Door Hub",
@@ -3330,7 +3329,7 @@ export const doorAccessProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-    {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "174.9 x 126 x 32.9 mm (6.9 x 5 x 1.3')" },
@@ -3358,7 +3357,7 @@ export const doorAccessProducts: Product[] = [
           { label: "Dry Output Relay", value: "Lock: 30V DC, 1A Aux: 30V DC, 1A" },
           { label: "Power Output Relay", value: "Lock: 12V DC, 1A Aux: 12V DC, 0.33A 12V DC, 0.33A" },
           { label: "Indoor and Outdoor Use", value: "Indoor only" },
-          { label: "Ambient Operating Temperature", value: "0 to 40° C  (32 to 104° F)" },  
+          { label: "Ambient Operating Temperature", value: "0 to 40° C  (32 to 104° F)" },
           { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
           { label: "Networking Interface", value: "(5) 10/100/1000 Base-T" },
           { label: "PoE Interface", value: "(1) PoE++ input, 50V DC, 1A (4) PoE+ outputs, 50V DC, 30W per port (Max 45W aggregated)" },
@@ -3394,7 +3393,7 @@ export const doorAccessProducts: Product[] = [
     ],
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
-     {
+      {
         id: 1,
         name: "WiFi Smart Chime",
         image: "/images/dcs-box.png",
@@ -3538,7 +3537,7 @@ export const doorAccessProducts: Product[] = [
     ]
   },
 
-// Produk Keempat dari DoorAccess, SF Hubs
+  // Produk Keempat dari DoorAccess, SF Hubs
   {
     id: "UA-Hub-Door-Mini",
     name: "Door Hub Mini",
@@ -3578,7 +3577,7 @@ export const doorAccessProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-       {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "113 x 66 x 27.6 mm (4.4 x 2.6 x 1.1')" },
@@ -3604,7 +3603,7 @@ export const doorAccessProducts: Product[] = [
           { label: "Dry Output Relay", value: "30V DC, 1A" },
           { label: "Wet Output Relay", value: "12V DC, 1A" },
           { label: "Indoor and Outdoor Use", value: "Indoor only" },
-          { label: "Ambient Operating Temperature", value: "0 to 40° C  (32 to 104° F)" },  
+          { label: "Ambient Operating Temperature", value: "0 to 40° C  (32 to 104° F)" },
           { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
           { label: "Networking Interface", value: "(3) GbE RJ45 ports" },
           { label: "PoE Interface", value: "(1) PoE++ input, 50V DC, 1A (2) PoE+ outputs, 50V DC, 30W per port  (Max 45W aggregated)" },
@@ -3785,7 +3784,7 @@ export const doorAccessProducts: Product[] = [
     ]
   },
 
-// Produk Kelima dari DoorAccess, SF Hubs
+  // Produk Kelima dari DoorAccess, SF Hubs
   {
     id: "UA-Hub-Gate",
     name: "Gate Hub",
@@ -3827,7 +3826,7 @@ export const doorAccessProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-     {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "175 x 126 x 26 mm (6.9 x 5 x 1')" },
@@ -3854,7 +3853,7 @@ export const doorAccessProducts: Product[] = [
           { label: "Dry Output Relay", value: "(2) Operator: rated 30V DC, up to 1A (1) Aux: rated 30V DC, up to 1A" },
           { label: "Powered Output Relay", value: "Side door lock: 12V DC, up to 1A" },
           { label: "Indoor and Outdoor Use", value: "Indoor only: device itself Outdoor: with waterproof junction box" },
-          { label: "Ambient Operating Temperature", value: "-30 to 60° C  (-22 to 140° F)" },  
+          { label: "Ambient Operating Temperature", value: "-30 to 60° C  (-22 to 140° F)" },
           { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
           { label: "Networking Interface", value: "(5) 10/100/1000 Base-T" },
           { label: "PoE Interface", value: "(1) PoE++ input, 50V DC, 1A (4) PoE+ outputs, 50V DC, 30W per port (Max 55W aggregated)" },
@@ -4035,7 +4034,7 @@ export const doorAccessProducts: Product[] = [
     ]
   },
 
-//Produk Keenam dari DoorAccess, SF Hubs
+  //Produk Keenam dari DoorAccess, SF Hubs
   {
     id: "UA-Ultra",
     name: "Access Ultra",
@@ -4077,7 +4076,7 @@ export const doorAccessProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-       {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "126 x 45 x 37.45 mm (4.9 x 1.8 x 4.5')" },
@@ -4143,7 +4142,7 @@ export const doorAccessProducts: Product[] = [
 
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
-        {
+      {
         id: 1,
         name: "WiFi Smart Chime",
         image: "/images/dcs-box.png",
@@ -4287,7 +4286,8 @@ export const doorAccessProducts: Product[] = [
     ]
   },
 
-  
+
+  // Produk Pertama dari DoorAccess, SF Kits
   {
     id: "UA-G3-SK-Pro",
     name: "G3 Starter Kit Pro",
@@ -4321,10 +4321,10 @@ export const doorAccessProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Starter kit that provides complete entry and exit control fo a single door with two readers and Touch Pass support",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Maximum User Count 6,000",
+      "Supported Doors 1",
+      "Touch Pass 10 free 1-year Touch Passes included ",
+      "Note. 10 free 1-year Touch Passes included."
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -4332,27 +4332,151 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G3 Starter Kit Pro" },
-          { label: "Model", value: "UA-G3-SK-PRO" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "In the Box", value: "(1) Door Hub (1) G3 Reader Pro (1) G3 Reader (2) Pocket Keyfobs" },
+          { label: "Touch Pass", value: "10 free 1-year Touch Passes included " },
         ]
       },
       {
-        title: "Hardware",
+        title: "Door Hub",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Dimensions", value: "174.9 x 126 x 32.9 mm (6.9 x 5 x 1.3')" },
+          { label: "Supported Door", value: "1" },
+          { label: "Maximum User Count", value: "6,000" },
+          { label: "Input Terminal", value: "(2) Door exit request (1) Door position (1) Emergency" },
+          { label: "Power Method", value: "PoE++ UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Weight", value: "363 g (12.8 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Mounting", value: "DIN-rail (Included)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "Networking Interface", value: "(5) 10/100/1000 Base-T" },
+          { label: "PoE Interface", value: "(1) PoE++ input, 50V DC, 1A (4) PoE outputs, 50V DC, 30W per port (Max 45W aggregated)" },
+          { label: "Max. Power Consumption", value: "30W (Without PoE output) 50W (With PoE output)" },
+          { label: "Digital Input", value: "Request to exit, request to enter, remote release, door position sensor" },
+          { label: "Dry Output Relay", value: "Lock: 30V DC, 1A Aux: 30V DC, 1A" },
+          { label: "Powered Output Relay", value: "Lock: 12V DC, 1A Aux: 12V DC, 0.33A 12V DC, 0.33A" },
+          { label: "LEDs", value: "B/W" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Recommend Max. Cable Length UA-Lock-Electric (400mA)", value: "24 AWG length: 25 m (82 ft) 22 AWG length: 42 m (138 ft) 20 AWG length: 66 m (217 ft) 18 UACC-Cable-DoorLockRelay length: 100 m (328 ft)" },
+          { label: "Recommend Max. Cable Length UA-Lock-Magnetic-540kg (500mA)", value: "24 AWG length: 20 m (66 ft) 22 AWG length: 32 m (105 ft) 20 AWG length: 51 m (167 ft) 18 UACC-Cable-DoorLockRelay length: 80 m (262 ft)" },
+          { label: "Recommend Max. Cable Length UA-Lock-Magnetic-270kg (800mA)", value: "24 AWG length: 12 m (29 ft) 22 AWG length: 20 m (98 ft) 20 AWG length: 30 m (167 ft) 18 UACC-Cable-DoorLockRelay length: 46 m (151 ft)" },
+          { label: "Recommend Max. Cable Length Other locks (1A)", value: "24 AWG length: 9 m (30 ft) 22 AWG length: 15 m (49 ft) 20 AWG length: 24 m (79 ft) 18 UACC-Cable-DoorLockRelay length: 36 m (118 ft)" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 (at or af) specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: 1" },
+          { label: "Certifications", value: "CE, FCC, IC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-Hub-Door002, V01" },
+          { label: "Software Information", value: "The software version can be checked at " },
         ]
       },
       {
-        title: "Software",
+        title: "G3 Reader Pro",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Dimensions", value: "160 x 40.4 x 40.55 mm (6.3 x 1.59 x 1.6')" },
+          { label: "Integrated Camera", value: "✓" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "PIN Access", value: "✓" },
+          { label: "Apple/Google Wallet", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Face Unlock", value: "✓" },
+          { label: "Two-Way Intercom & Doorbell Access", value: "✓" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Weight", value: "136 g (4.8 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, glass" },
+          { label: "Mount Material", value: "Aluminum alloy" },
+          { label: "Mounting", value: "Wall, gang-box mount (Included) Angle mount, junction box (Optional)" },
+          { label: "Indoor and Outdoor Use", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "Device: -30 to 45° C (-22 to 113° F) Display: -10 to 45° C (14 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
+          { label: "Connectivity", value: "BLE 4.2 NFC" },
+          { label: "Power Method", value: "PoE UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Max. Power Consumption", value: "6W" },
+          { label: "Supported Voltage Range", value: "48V DC" },
+          { label: "ESD/EMP Protection", value: "Air: ±15kV, contact: ±8kV" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "2MP 1200 x 1600 (3:4)" },
+          { label: "Optics Resolution", value: "12 MP (3072 × 4096)" },
+          { label: "Optic Field of View", value: "H: 98.6°, V: 125.7°, D: 157.8°" },
+          { label: "Sensor", value: "Proximity sensor" },
+          { label: "Display Size", value: "Size120 mm (4.7') diagonal Screen Technology Capacitive touch" },
+          { label: "Display Screen Technology", value: "Capacitive touch" },
+          { label: "Display Screen Luminance", value: "480 nits (Typical)" },
+          { label: "Display Luminance", value: "Portrait" },
+          { label: "Display Screen Orientation", value: "Potrait" },
+          { label: "Display Resolution", value: "1280 x 286 px" },
+          { label: "Microphone", value: "✓" },
+          { label: "Speaker", value: "✓" },
+          { label: "LEDs", value: "R/G/B/W/Amber" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NFC Read Range", value: "< 30 mm (1.18'')" },
+          { label: "NFC Technology", value: "ISO/IEC 14443A / 14443B / 15693 / 18092 (Ecma 340) MIFARE Classic / MIFARE DESFIRE Sony FeliCa™ (ID only) NFC Forum tags T1T, T2T, T3T, T4T and T5T ECP 2.0" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: I" },
+          { label: "Certifications", value: "CE, FCC, IC, SRRC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-G3-Pro-W/UA-G3-Pro-B, V01" },
+          { label: "Software Information", value: "The software version can be checked at https://unifi.ui.com" },
+        ]
+      },
+      {
+        title: "G3 Reader",
+        items: [
+          { label: "Dimensions", value: "93 x 40 x 36.5 mm (3.7 x 1.6 x 1.4')" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "Apple/Google Wallet", value: "✓" },
+          { label: "PIN Access", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Handwave Request to Exit", value: "✓" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "Weight", value: "82 g (2.9 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, glass" },
+          { label: "Mount Material", value: "Aluminum alloy" },
+          { label: "Mounting", value: "In-wall, gang box (Included) Junction box (Optional)" },
+          { label: "Indoor and Outdoor Use", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "-30 to 45° C  (-22 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Networking Interface", value: "(1) 10/100 MbE RJ45 port" },
+          { label: "Connectivity", value: "BLE 4.1 NFC" },
+          { label: "Power Method", value: "PoE UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Max. Power Consumption", value: "5W" },
+          { label: "Supported Voltage Range", value: "48V DC" },
+          { label: "ESD/EMP Protection", value: "Air: ± 15kV, contact: ± 8kV" },
+          { label: "Sensors", value: "Proximity sensor" },
+          { label: "Speaker", value: "✓" },
+          { label: "LEDs", value: "R/G/B/W" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NFC Read Range", value: "< 30 mm (1.18'')" },
+          { label: "NFC Technology", value: "ISO/IEC 14443A / 14443B / 15693 / 18092 (Ecma 340) MIFARE Classic / MIFARE DESFIRE Sony FeliCa™ (ID only) NFC Forum tags T1T, T2T, T3T, T4T and T5T ECP 2.0" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: I" },
+          { label: "Certifications", value: "CE, FCC, IC, SRRC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-G3, V01" },
+          { label: "Software Information", value: "The software version can be checked at " },
+        ]
+      },
+      {
+        title: "Pocket Keyfob",
+        items: [
+          { label: "Dimensions", value: "84 x 39 x 7.4 mm (3.3 x 1.5 x 0.29')" },
+          { label: "Weight", value: "16 g (0.56 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, stainless steel, silicone rubber" },
+          { label: "Weatherproofing", value: "IP54" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "-10 to 45° C (14 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NFC Technology", value: "ISO/IEC 14443 Type A MIFARE DESFire EV3 4K UniFi Access Proprietary Security Protocol" },
+          { label: "Certifications", value: "CE" },
         ]
       }
     ],
@@ -4369,63 +4493,138 @@ export const doorAccessProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Access Card",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "A pack of highly-secure NFC cards used for access control within UniFi.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Multi-layer encryption to avoid malicious duplication",
+          "Assignable to users and visitors",
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "85.6 x 53.98 x 0.84 mm (3.37 x 2.13 x 0.03')" },
+          { label: "Weight", value: "5 g (0.18 oz)" },
+          { label: "Format", value: "ISO 7810 ID-1" },
+          { label: "NFC Technology", value: "MIFARE DESFire EV3 UniFi Access Proprietary Security Protocol" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "Anatel" },
         ],
-        productLink: "/products/mounting-kit-ua-g3-sk-pro"
+        productLink: "/products/power-cable-ua-retrofit-reader-b/w"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Fail-Secure Strike Lock",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Fail-secure electric strike lock with 8 mm lock slot depth support.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel",
+          "Lock Type Fail secure",
+          "Holding Force 227 kg (500 lb)"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Dimensions", value: "Lock body:112 x 21 x 28 mm (4.4 x 0.8 x 1.1') Short front plate:153 x 25 x 3 mm (6 x 0.9 x 0.1') Long front plate:250 x 25 x 3 mm (9.8 x 0.9 x 0.1')" },
+          { label: "Weight", value: "Lock body: 197 g (6.9 oz) Short front plate: 62 g (2.2 oz) Long front plate: 97 g (3.4 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "227 kg (500 lb)" },
+          { label: "Lock Features Current Power", value: "200mA ± 10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) DPS/- (white) (1) DPS/+ (orange" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ],
-        productLink: "/products/power-cable-ua-g3-sk-pro"
+        productLink: "/products/mounting-kit-ua-g3-pro-b/w"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "Fail-Safe Strike Lock",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "Fail-safe electric strike lock that connects to a UniFi Access Hub.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Door Status Contact Type Dry contact",
+          "Lock Features Lock Type Fail safe",
+          "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Dimensions", value: "Lock body: 80 x 40 x 35 mm (3.2 x 1.6 x 1.4') Short front plate: 124 x 32 x 3 mm (4.9 x 1.3 x 0.1') Long front plate: 202 x 36 x 3 mm (7.9 x 1.4 x 0.1')" },
+          { label: "Weight", value: "Lock body: 185 g (6.5 oz) Short front plate: 50 g (1.8 oz) Long front plate: 130 g (4.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail safe" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "1,200 kg (2,645 lb)" },
+          { label: "Lock Features Current Power", value: "400mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NC (red) (1) Lock 12V/COM (black)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+        ],
+        productLink: "/products/power-cable-ua-g3-pro-b/w"
+      },
+      {
+        id: 4,
+        name: "Fail-Secure Bolt Lock",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Fail-secure electric drop bolt lock.",
+        specs: [
+          "Lock Features Lock Type Fail secure",
+          "Door Status Contact Type Dry contact",
+          "Enclosure Material Lock body: aluminum alloy Door frame plate/Door plate: aluminum alloy"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "Lock body: 132 x 30 x 42 mm (5.2 x 1.2 x 1.7') Door frame plate: 82 x 32 x 3 mm (3.2 x 1.3 x 0.1') Door plate: plate: 204 x 33 x 3 mm (8 x 1.3 x 0.1')" },
+          { label: "Weight", value: "Lock body: 350 g (12.3 oz) Door frame plate: 22 g (0.7 oz) Door plate: 46 g (1.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: aluminum alloy Door frame plate/Door plate: aluminum alloy" },
+
+          { label: "Lock Features Lock Type", value: "Fail secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features DPS", value: "en/metal) DPS" },
+          { label: "Lock Features Current Power", value: "Standby: 12mA ±10% Dynamic: 600mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) Lock 12V/NC (blue) (1) DPS/- (white) (1) DPS/+ (orange)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+          { label: "Lock Features LED Indicator", value: "Red: locked Green: unlocked & power indicator" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.5A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ],
         productLink: "/products/sfp-module-10g"
       }
     ]
   },
+
+  // Produk Kedua dari DoorAccess, SF Kits
   {
     id: "UA-G2-SK-Pro",
     name: "G2 Starter Kit Pro",
@@ -4470,27 +4669,152 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G2 Starter Kit Pro" },
-          { label: "Model", value: "UA-G2-SK-PRO" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "In the Box", value: "(1) Door Hub (1) G2 Reader Pro (1) G2 Reader (2) Pocket Keyfobs" },
         ]
       },
       {
-        title: "Hardware",
+        title: "Door Hub",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Dimensions", value: "174.9 x 126 x 32.9 mm (6.9 x 5 x 1.3')" },
+          { label: "Supported Door", value: "1" },
+          { label: "Maximum User Count", value: "6,000" },
+          { label: "Input Terminal", value: "(2) Door exit request (1) Door position (1) Emergency" },
+          { label: "Power Method", value: "PoE++ UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Weight", value: "363 g (12.8 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Mounting", value: "DIN-rail (Included)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "Networking Interface", value: "(5) 10/100/1000 Base-T" },
+          { label: "PoE Interface", value: "(1) PoE++ input, 50V DC, 1A (4) PoE outputs, 50V DC, 30W per port (Max 45W aggregated)" },
+          { label: "Max. Power Consumption", value: "30W (Without PoE output) 50W (With PoE output)" },
+          { label: "Digital Input", value: "Request to exit, request to enter, remote release, door position sensor" },
+          { label: "Dry Output Relay", value: "Lock: 30V DC, 1A Aux: 30V DC, 1A" },
+          { label: "Powered Output Relay", value: "Lock: 12V DC, 1A Aux: 12V DC, 0.33A 12V DC, 0.33A" },
+          { label: "LEDs", value: "B/W" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Recommend Max. Cable Length UA-Lock-Electric (400mA)", value: "24 AWG length: 25 m (82 ft) 22 AWG length: 42 m (138 ft) 20 AWG length: 66 m (217 ft) 18 UACC-Cable-DoorLockRelay length: 100 m (328 ft)" },
+          { label: "Recommend Max. Cable Length UA-Lock-Magnetic-540kg (500mA)", value: "24 AWG length: 20 m (66 ft) 22 AWG length: 32 m (105 ft) 20 AWG length: 51 m (167 ft) 18 UACC-Cable-DoorLockRelay length: 80 m (262 ft)" },
+          { label: "Recommend Max. Cable Length UA-Lock-Magnetic-270kg (800mA)", value: "24 AWG length: 12 m (29 ft) 22 AWG length: 20 m (98 ft) 20 AWG length: 30 m (167 ft) 18 UACC-Cable-DoorLockRelay length: 46 m (151 ft)" },
+          { label: "Recommend Max. Cable Length Other locks (1A)", value: "24 AWG length: 9 m (30 ft) 22 AWG length: 15 m (49 ft) 20 AWG length: 24 m (79 ft) 18 UACC-Cable-DoorLockRelay length: 36 m (118 ft)" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 (at or af) specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: 1" },
+          { label: "Certifications", value: "CE, FCC, IC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-Hub-Door002, V01" },
+          { label: "Software Information", value: "The software version can be checked at " },
         ]
       },
       {
-        title: "Software",
+        title: "G2 Reader Pro",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Dimensions", value: "160 x 40.4 x 40.55 mm (6.3 x 1.59 x 1.6')" },
+          { label: "Integrated Camera", value: "✓" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "PIN Access", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Face Unlock", value: "✓" },
+          { label: "Two-Way Intercom & Doorbell Access", value: "✓" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Weight", value: "136 g (4.8 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, glass" },
+          { label: "Mount Material", value: "Aluminum alloy" },
+          { label: "Mounting", value: "Wall, gang-box mount (Included) Angle mount, junction box (Optional)" },
+          { label: "Indoor and Outdoor Use", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "Device: -30 to 45° C (-22 to 113° F) Display: -10 to 45° C (14 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
+          { label: "Connectivity", value: "BLE 4.2 NFC" },
+          { label: "Power Method", value: "PoE UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Max. Power Consumption", value: "6W" },
+          { label: "Supported Voltage Range", value: "48V DC" },
+          { label: "ESD/EMP Protection", value: "Air: ± 15kV, contact: ± 8kV" },
+
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Max. Resolution", value: "2MP 1200 x 1600 (3:4)" },
+
+          { label: "Optics Resolution", value: "12 MP (3072 × 4096)" },
+          { label: "Optics Field of View", value: "H: 98.6°, V: 125.7°, D: 157.8°" },
+
+          { label: "Sensors", value: "Proximity sensor" },
+
+          { label: "Display Luminance", value: "480 nits (Typical)" },
+          { label: "Display Screen Orientation", value: "Potrait" },
+          { label: "Display Resolution", value: "1280 x 286 px" },
+          { label: "Display Screen Technology", value: "Capacitive touch" },
+          { label: "Display Size", value: "120 mm (4.7') diagonal" },
+
+          { label: "Microphone", value: "✓" },
+          { label: "Speaker", value: "✓" },
+          { label: "LEDs", value: "R/G/B/W/Amber" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NFC Read Range", value: "< 30 mm (1.18'')" },
+          { label: "NFC Technology", value: "ISO/IEC 14443A / 14443B / 15693 / 18092 (Ecma 340) MIFARE Classic / MIFARE DESFIRE Sony FeliCa™ (ID only) NFC Forum tags T1T, T2T, T3T, T4T and T5T" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: I" },
+          { label: "Certifications", value: "CE, FCC, IC, SRRC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-G2-Pro/UA-G2-Pro-Black, V02" },
+          { label: "Software Information", value: "The software version can be checked at " },
+        ]
+      },
+      {
+        title: "G2 Reader",
+        items: [
+          { label: "Dimensions", value: "93 x 40 x 36.5 mm (3.7 x 1.6 x 1.4')" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Handwave Request to Exit", value: "✓" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Weight", value: "82 g (2.9 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, glass" },
+          { label: "Mount Material", value: "Aluminum alloy" },
+          { label: "Mounting", value: "In-wall, gang box (Included) Junction box (Optional)" },
+          { label: "Indoor and Outdoor Use", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "-30 to 45° C  (-22 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Networking Interface", value: "(1) 10/100 MbE RJ45 port" },
+          { label: "Connectivity", value: "BLE 4.1 NFC" },
+          { label: "Power Method", value: "PoE UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Max. Power Consumption", value: "5W" },
+          { label: "Supported Voltage Range", value: "48V DC" },
+          { label: "ESD/EMP Protection", value: "Air: ± 15kV, contact: ± 8kV" },
+          { label: "Sensors", value: "Proximity sensor" },
+          { label: "Speaker", value: "✓" },
+          { label: "LEDs", value: "R/G/B/W" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NFC Read Range", value: "< 30 mm (1.18'')" },
+          { label: "NFC Technology", value: "ISO/IEC 14443A / 14443B / 15693 / 18092 (Ecma 340) MIFARE Classic / MIFARE DESFIRE Sony FeliCa™ (ID only) NFC Forum tags T1T, T2T, T3T, T4T and T5T" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: I" },
+          { label: "Certifications", value: "CE, FCC, IC, SRRC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-G2/UA-G2-Black, V02" },
+          { label: "Software Information", value: "The software version can be checked at " },
+        ]
+      },
+      {
+        title: "Pocket Keyfob",
+        items: [
+          { label: "Dimensions", value: "84 x 39 x 7.4 mm (3.3 x 1.5 x 0.29')" },
+          { label: "Weight", value: "16 g (0.56 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, stainless steel, silicone rubber" },
+          { label: "Weatherproofing", value: "IP54" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "-10 to 45° C (14 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NFC Technology", value: "ISO/IEC 14443 Type A MIFARE DESFire EV3 4K UniFi Access Proprietary Security Protocol" },
+          { label: "Certifications", value: "CE" },
         ]
       }
     ],
@@ -4507,63 +4831,138 @@ export const doorAccessProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Access Card",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "A pack of highly-secure NFC cards used for access control within UniFi.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Multi-layer encryption to avoid malicious duplication",
+          "Assignable to users and visitors",
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "85.6 x 53.98 x 0.84 mm (3.37 x 2.13 x 0.03')" },
+          { label: "Weight", value: "5 g (0.18 oz)" },
+          { label: "Format", value: "ISO 7810 ID-1" },
+          { label: "NFC Technology", value: "MIFARE DESFire EV3 UniFi Access Proprietary Security Protocol" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "Anatel" },
         ],
-        productLink: "/products/mounting-kit-ua-g2-sk-pro"
+        productLink: "/products/power-cable-ua-retrofit-reader-b/w"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Fail-Secure Strike Lock",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Fail-secure electric strike lock with 8 mm lock slot depth support.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel",
+          "Lock Type Fail secure",
+          "Holding Force 227 kg (500 lb)"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Dimensions", value: "Lock body:112 x 21 x 28 mm (4.4 x 0.8 x 1.1') Short front plate:153 x 25 x 3 mm (6 x 0.9 x 0.1') Long front plate:250 x 25 x 3 mm (9.8 x 0.9 x 0.1')" },
+          { label: "Weight", value: "Lock body: 197 g (6.9 oz) Short front plate: 62 g (2.2 oz) Long front plate: 97 g (3.4 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "227 kg (500 lb)" },
+          { label: "Lock Features Current Power", value: "200mA ± 10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) DPS/- (white) (1) DPS/+ (orange" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ],
-        productLink: "/products/power-cable-ua-g2-sk-pro"
+        productLink: "/products/mounting-kit-ua-g3-pro-b/w"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "Fail-Safe Strike Lock",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "Fail-safe electric strike lock that connects to a UniFi Access Hub.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Door Status Contact Type Dry contact",
+          "Lock Features Lock Type Fail safe",
+          "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Dimensions", value: "Lock body: 80 x 40 x 35 mm (3.2 x 1.6 x 1.4') Short front plate: 124 x 32 x 3 mm (4.9 x 1.3 x 0.1') Long front plate: 202 x 36 x 3 mm (7.9 x 1.4 x 0.1')" },
+          { label: "Weight", value: "Lock body: 185 g (6.5 oz) Short front plate: 50 g (1.8 oz) Long front plate: 130 g (4.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail safe" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "1,200 kg (2,645 lb)" },
+          { label: "Lock Features Current Power", value: "400mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NC (red) (1) Lock 12V/COM (black)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+        ],
+        productLink: "/products/power-cable-ua-g3-pro-b/w"
+      },
+      {
+        id: 4,
+        name: "Fail-Secure Bolt Lock",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Fail-secure electric drop bolt lock.",
+        specs: [
+          "Lock Features Lock Type Fail secure",
+          "Door Status Contact Type Dry contact",
+          "Enclosure Material Lock body: aluminum alloy Door frame plate/Door plate: aluminum alloy"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "Lock body: 132 x 30 x 42 mm (5.2 x 1.2 x 1.7') Door frame plate: 82 x 32 x 3 mm (3.2 x 1.3 x 0.1') Door plate: plate: 204 x 33 x 3 mm (8 x 1.3 x 0.1')" },
+          { label: "Weight", value: "Lock body: 350 g (12.3 oz) Door frame plate: 22 g (0.7 oz) Door plate: 46 g (1.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: aluminum alloy Door frame plate/Door plate: aluminum alloy" },
+
+          { label: "Lock Features Lock Type", value: "Fail secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features DPS", value: "en/metal) DPS" },
+          { label: "Lock Features Current Power", value: "Standby: 12mA ±10% Dynamic: 600mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) Lock 12V/NC (blue) (1) DPS/- (white) (1) DPS/+ (orange)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+          { label: "Lock Features LED Indicator", value: "Red: locked Green: unlocked & power indicator" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.5A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ],
         productLink: "/products/sfp-module-10g"
       }
     ]
   },
+
+// Produk Ketiga dari DoorAccess, SF Kits
   {
     id: "UA-G3-SK",
     name: "G3 Starter Kit",
@@ -4606,29 +5005,100 @@ export const doorAccessProducts: Product[] = [
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Door Hub Mini",
         items: [
-          { label: "Product Name", value: "G3 Starter Kit" },
-          { label: "Model", value: "UA-G3-SK" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "113 x 66 x 27.6 mm (4.4 x 2.6 x 1.1')" },
+          { label: "Supported Door", value: "1" },
+          { label: "Maximum User Count", value: "3,000" },
+          { label: "Input Terminal", value: "(1) Door Exit Request (1) Door Position" },
+          { label: "Power Method", value: "PoE++ UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Weight", value: "190 g (6.7 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, metal" },
+          { label: "Mounting", value: "DIN-rail (Included)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Networking Interface", value: "(3) GbE RJ45 ports" },
+          { label: "PoE Interface", value: "(1) PoE++ input, 50V DC, 1A (2) PoE outputs, 50V DC, 30W per port (Max 45W aggregated)" },
+          { label: "Max. Power Consumption", value: "19W (Without PoE output) 50W (With PoE output)" },
+          { label: "Digital Input", value: "Request to exit, door position sensor" },
+          { label: "Dry Output Relay", value: "30V DC, 1A" },
+          { label: "Powered Output Relay", value: "12V DC, 1A" },
+          { label: "LEDs", value: "B/W" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Recommend Max. Cable Length UA-Lock-Electric (400mA)", value: "24 AWG length: 25 m (82 ft) 22 AWG length: 42 m (138 ft) 20 AWG length: 66 m (217 ft) 18 UACC-Cable-DoorLockRelay length: 100 m (328 ft)" },
+          { label: "Recommend Max. Cable Length UA-Lock-Magnetic-540kg (500mA)", value: "24 AWG length: 20 m (66 ft) 22 AWG length: 32 m (105 ft) 20 AWG length: 51 m (167 ft) 18 UACC-Cable-DoorLockRelay length: 80 m (262 ft)" },
+          { label: "Recommend Max. Cable Length UA-Lock-Magnetic-270kg (800mA)", value: "24 AWG length: 12 m (29 ft) 22 AWG length: 20 m (98 ft) 20 AWG length: 30 m (167 ft) 18 UACC-Cable-DoorLockRelay length: 46 m (151 ft)" },
+          { label: "Recommend Max. Cable Length Other locks (1A)", value: "24 AWG length: 9 m (30 ft) 22 AWG length: 15 m (49 ft) 20 AWG length: 24 m (79 ft) 18 UACC-Cable-DoorLockRelay length: 36 m (118 ft)" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site.The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: 1" },
+          { label: "Certifications", value: "CE, FCC, IC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-Hub-Door-Mini, V01" },
+          { label: "Software Information", value: "The software version can be checked at " },
         ]
       },
       {
-        title: "Hardware",
+        title: "G3 Reader",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Dimensions", value: "93 x 40 x 36.5 mm (3.7 x 1.6 x 1.4')" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "Apple/Google Wallet", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Handwave Request to Exit", value: "✓" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "Weight", value: "82 g (2.9 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, glass" },
+          { label: "Mount Material", value: "Aluminum alloy" },
+          { label: "Mounting", value: "In-wall, gang box (Included) Junction box (Optional)" },
+          { label: "Indoor and Outdoor Use", value: "Yes" },
+          { label: "Networking Interface", value: "(1) 10/100 MbE RJ45 port" },
+          { label: "Connectivity", value: "BLE 4.1 NFC" },
+          { label: "Power Method", value: "PoE UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Max. Power Consumption", value: "5W" },
+          { label: "Supported Voltage Range", value: "48V DC" },
+          { label: "ESD/EMP Protection", value: "Air: ± 15kV, contact: ± 8kV" },
+          { label: "Sensors", value: "Proximity sensor" },
+          { label: "Speaker", value: "✓" },
+          { label: "LEDs", value: "R/G/B/W" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NFC Read Range", value: "< 30 mm (1.18'')" },
+          { label: "NFC Technology", value: "ISO/IEC 14443A / 14443B / 15693 / 18092 (Ecma 340) MIFARE Classic / MIFARE DESFIRE Sony FeliCa™ (ID only) NFC Forum tags T1T, T2T, T3T, T4T and T5T ECP 2.0" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: I" },
+          { label: "Certifications", value: "CE, FCC, IC, SRRC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-G3, V01" },
+          { label: "Ambient Operating Temperature", value: "-30 to 45° C  (-22 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Software Information", value: "The software version can be checked at " },
+
         ]
       },
       {
-        title: "Software",
+        title: "G3 Reader Pro",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Optics Resolution", value: "12 MP (3072 × 4096)" },
+          { label: "Optic Field of View", value: "H: 98.6°, V: 125.7°, D: 157.8°" },
+        ]
+      },
+      {
+        title: "Pocket Keyfob",
+        items: [
+          { label: "Dimensions", value: "84 x 39 x 7.4 mm (3.3 x 1.5 x 0.29')" },
+          { label: "Weight", value: "16 g (0.56 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, stainless steel, silicone rubber" },
+          { label: "Weatherproofing", value: "IP54" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "-10 to 45° C (14 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NFC Technology", value: "ISO/IEC 14443 Type A MIFARE DESFire EV3 4K UniFi Access Proprietary Security Protocol" },
+          { label: "Certifications", value: "CE" },
         ]
       }
     ],
@@ -4643,60 +5113,133 @@ export const doorAccessProducts: Product[] = [
 
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
-      {
+     {
         id: 1,
-        name: "Mounting Kit",
+        name: "Access Card",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "A pack of highly-secure NFC cards used for access control within UniFi.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Multi-layer encryption to avoid malicious duplication",
+          "Assignable to users and visitors",
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "85.6 x 53.98 x 0.84 mm (3.37 x 2.13 x 0.03')" },
+          { label: "Weight", value: "5 g (0.18 oz)" },
+          { label: "Format", value: "ISO 7810 ID-1" },
+          { label: "NFC Technology", value: "MIFARE DESFire EV3 UniFi Access Proprietary Security Protocol" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "Anatel" },
         ],
-        productLink: "/products/mounting-kit-ua-g3-sk"
+        productLink: "/products/power-cable-ua-retrofit-reader-b/w"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Fail-Secure Strike Lock",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Fail-secure electric strike lock with 8 mm lock slot depth support.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel",
+          "Lock Type Fail secure",
+          "Holding Force 227 kg (500 lb)"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Dimensions", value: "Lock body:112 x 21 x 28 mm (4.4 x 0.8 x 1.1') Short front plate:153 x 25 x 3 mm (6 x 0.9 x 0.1') Long front plate:250 x 25 x 3 mm (9.8 x 0.9 x 0.1')" },
+          { label: "Weight", value: "Lock body: 197 g (6.9 oz) Short front plate: 62 g (2.2 oz) Long front plate: 97 g (3.4 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "227 kg (500 lb)" },
+          { label: "Lock Features Current Power", value: "200mA ± 10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) DPS/- (white) (1) DPS/+ (orange" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ],
-        productLink: "/products/power-cable-ua-g3-sk"
+        productLink: "/products/mounting-kit-ua-g3-pro-b/w"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "Fail-Safe Strike Lock",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "Fail-safe electric strike lock that connects to a UniFi Access Hub.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Door Status Contact Type Dry contact",
+          "Lock Features Lock Type Fail safe",
+          "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Dimensions", value: "Lock body: 80 x 40 x 35 mm (3.2 x 1.6 x 1.4') Short front plate: 124 x 32 x 3 mm (4.9 x 1.3 x 0.1') Long front plate: 202 x 36 x 3 mm (7.9 x 1.4 x 0.1')" },
+          { label: "Weight", value: "Lock body: 185 g (6.5 oz) Short front plate: 50 g (1.8 oz) Long front plate: 130 g (4.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail safe" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "1,200 kg (2,645 lb)" },
+          { label: "Lock Features Current Power", value: "400mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NC (red) (1) Lock 12V/COM (black)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+        ],
+        productLink: "/products/power-cable-ua-g3-pro-b/w"
+      },
+      {
+        id: 4,
+        name: "Fail-Secure Bolt Lock",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Fail-secure electric drop bolt lock.",
+        specs: [
+          "Lock Features Lock Type Fail secure",
+          "Door Status Contact Type Dry contact",
+          "Enclosure Material Lock body: aluminum alloy Door frame plate/Door plate: aluminum alloy"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "Lock body: 132 x 30 x 42 mm (5.2 x 1.2 x 1.7') Door frame plate: 82 x 32 x 3 mm (3.2 x 1.3 x 0.1') Door plate: plate: 204 x 33 x 3 mm (8 x 1.3 x 0.1')" },
+          { label: "Weight", value: "Lock body: 350 g (12.3 oz) Door frame plate: 22 g (0.7 oz) Door plate: 46 g (1.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: aluminum alloy Door frame plate/Door plate: aluminum alloy" },
+
+          { label: "Lock Features Lock Type", value: "Fail secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features DPS", value: "en/metal) DPS" },
+          { label: "Lock Features Current Power", value: "Standby: 12mA ±10% Dynamic: 600mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) Lock 12V/NC (blue) (1) DPS/- (white) (1) DPS/+ (orange)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+          { label: "Lock Features LED Indicator", value: "Red: locked Green: unlocked & power indicator" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.5A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ],
         productLink: "/products/sfp-module-10g"
       }
