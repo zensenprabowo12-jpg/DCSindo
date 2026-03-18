@@ -4391,29 +4391,99 @@ export const switchingProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Pro Max 16" },
-          { label: "Model", value: "USW-PRO-MAX-16" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
-          { label: "PoE Budget", value: "400W" },
-          { label: "Uplink", value: "2x 10G SFP+" },
-          { label: "Layer", value: "Layer 3 Switching" }
+          { label: "Dimensions", value: "325.1 x 160 x 43.7 mm, (12.8 x 6.3 x 1.7\")" },
+          { label: "Port Layout 1 GbE RJ45", value: "12 (1G/100M/10M)" },
+          { label: "Port Layout 2.5 GbE RJ45", value: "4 (2.5G/1G/100M/10M)" },
+          { label: "Port Layout 10G SFP+", value: "2 (10G/1G)" },
+          { label: "Redundancy", value: "DC Power Backup" },
+          { label: "Layer 3", value: "✓" },
+          { label: "Form Factor", value: "Rack mount (1U)"},
+          { label: "Etherlightning™", value: "✓" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Switching Capacity", value: "84 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "42 Gbps" },
+          { label: "Forwarding Rate", value: "62 Mpps" },
+          { label: "Supported VLANs", value: "1.000" },
+          { label: "MAC Address Table Size", value: "16.000" },
+          { label: "L3 Table Size ARP Entries", value: "6.000" },
+          { label: "L3 Table Size IPv4 Routes", value: "512" },
+          { label: "L3 Table Size IPv4 Static Routes", value: "256" },
+          { label: "Packet Buffer Size", value: "1.5 MB" },
+          { label: "Access Lists IPv4", value: "128" },
+          { label: "Access Lists MAC", value: "128" },
+        ]
+      },
+      {
+        title: "Layer 3 Features",
+        items: [
+          { label: "DHCP Server (Local Networks)", value: "✓", isCheck: true },
+          { label: "DHCP Relay", value: "✓", isCheck: true },
+          { label: "Inter-VLAN Routing (Local Networks)", value: "✓", isCheck: true },
+          { label: "Static Routing (Local Networks)", value: "✓", isCheck: true },
+        ]
+      },
+      {
+        title: "Layer 2 Features",
+        items: [
+         { label: "LACP Port Aggregation", value: "✓", isCheck: true },
+         { label: "STP & RSTP", value: "✓", isCheck: true },
+         { label: "QoS (DSCP)", value: "✓", isCheck: true },
+         { label: "Pro AV Profiles", value: "✓", isCheck: true },
+         { label: "Advanced IGMP Configuration", value: "✓", isCheck: true },
+         { label: "IGMP Snooping", value: "✓", isCheck: true },
+         { label: "802.1x Control", value: "✓", isCheck: true },
+         { label: "MAC-Based ACLs & Device Isolation", value: "✓", isCheck: true },
+         { label: "DHCP Snooping & Guarding", value: "✓", isCheck: true },
+         { label: "Egress Rate Limit", value: "✓", isCheck: true },
+         { label: "Flow control", value: "✓", isCheck: true },
+         { label: "Storm control", value: "✓", isCheck: true },
+         { label: "Multicast & Broadcast Rate Limiting", value: "✓", isCheck: true },
+         { label: "MAC Address Blocking", value: "✓", isCheck: true },
+         { label: "IP-Based ACLs & Network Isolation", value: "✓", isCheck: true },
+         { label: "MAC-Based Port Restriction", value: "✓", isCheck: true },
+         { label: "Port Isolation", value: "✓", isCheck: true },
+         { label: "Port Mirroring", value: "✓", isCheck: true },
+         { label: "Jumbo Frames", value: "✓", isCheck: true },
+         { label: "LLDP-MED", value: "✓", isCheck: true },
+         { label: "Voice VLAN", value: "✓", isCheck: true },
+         { label: "Loop Protection", value: "✓", isCheck: true },        
+         { label: "Virtual Network Override", value: "✓", isCheck: true },        
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+         { label: "Max. Power Consumption", value: "25W"},
+         { label: "Power Method", value: "AC/DC Adapter (included)"},
+         { label: "Power Input Method", value: "USB Type-C, 5V DC, 5A"},
+         { label: "Power Supply", value: "AC/DC, external, 25W"},
+         { label: "Supported Voltage Range", value: "4.8—5.2V DC/USB"},
+         { label: "Management", value: "Ethernet, AR"},
+         { label: "Heat Dissipation", value: "85.3 BTU/hr"},
+         { label: "Weight", value: "1.95 kg (4.3 lb)"},
+         { label: "Enclosure Material", value: "SGCC Steel"},
+         { label: "Mount Material", value: "SGCC Steel"},
+         { label: "Supported Rack Depth", value: "400~1200 mm (15.7-47.2\")"},
+         { label: "LCM Display", value: "1.3\" touchscreen"},
+         { label: "ESD Protection", value: "Air: ± 16kV, contact: ± 12kV"},
+         { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)"},
+         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing"},
+         { label: "Etherlighting™ Ethernet", value: "✓", isCheck: true },
+         { label: "Etherlighting™ SFP+", value: "✓", isCheck: true },
+         { label: "NDAA Compliant", value: "✓", isCheck: true },
+         { label: "Certifications", value: "CE, FCC, IC, Anatel: 06373-24-08356"},
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+         { label: "Application Req. UniFi Network", value: "Version 8.1.127 and later"},
         ]
-      }
+      },
     ],
     
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -4425,61 +4495,24 @@ export const switchingProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "AC Adapter 210W",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "An AC power adapter delivers 210W at 54V DC for a PoE switch",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Wall-mountable",
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "190 x 86 x 26 mm (7.5 x 3.4 x 1\")" },
+          { label: "Weight", value: "1.2 kg (2.6 lb)" },
+          { label: "AC Connector", value: "C14 INLET (input)" },
+          { label: "Output Plug", value: "DC plug: 5.5 x 2.1 x 11.5 mm (0.2 x 0.08 x 0.5\") DC cable: UL11353 16AWG 1.5 m (4.9 ft)" },
+          { label: "Supported Voltage Range", value: "Input: 100–240V AC, Output: 54V DC" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
         ],
         productLink: "/products/mounting-kit-usw-pro-max-16"
       },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-usw-pro-max-16"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
     ]
   },
 {
@@ -4537,29 +4570,104 @@ export const switchingProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Pro 48 PoE" },
-          { label: "Model", value: "USW-PRO-48-POE-600W-" },
-          { label: "Category", value: "Switching" },
-          { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
-          { label: "PoE Budget", value: "400W" },
-          { label: "Uplink", value: "2x 10G SFP+" },
-          { label: "Layer", value: "Layer 3 Switching" }
+          { label: "Dimensions", value: "442 x 400 x 44 mm (17.4 x 15.7 x 1.7\")" },
+          { label: "Port Layout 1 GbE RJ45", value: "48 (40 PoE+; 8 PoE++) (1G/100M/10M)" },
+          { label: "Port Layout 10G SFP+", value: "4 (10G/1G)" },
+          { label: "Max. PoE Output", value: "Up to PoE++" },
+          { label: "Total PoE Availability", value: "600W" },
+          { label: "Redundancy", value: "DC Power Backup" },
+          { label: "Layer 3", value: "✓" },
+          { label: "Form Factor", value: "Rack mount (1U)"},
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Switching Capacity", value: "176" },
+          { label: "Total Non-Blocking Throughput", value: "88 Gbps" },
+          { label: "Forwarding Rate", value: "131 Mpps" },
+          { label: "Supported VLANs", value: "1.000" },
+          { label: "MAC Address Table Size", value: "16.000" },
+          { label: "L3 Table Size ARP Entries", value: "4.000" },
+          { label: "L3 Table Size IPv4 Routes", value: "1.000" },
+          { label: "L3 Table Size IPv4 Static Routes", value: "256" },
+          { label: "Packet Buffer Size", value: "4 MB" },
+          { label: "Access Lists IPv4", value: "128" },
+          { label: "Access Lists MAC", value: "128" },
+        ]
+      },
+      {
+        title: "Layer 3 Features",
+        items: [
+          { label: "DHCP Server (Local Networks)", value: "✓", isCheck: true },
+          { label: "DHCP Relay", value: "✓", isCheck: true },
+          { label: "Inter-VLAN Routing (Local Networks)", value: "✓", isCheck: true },
+          { label: "Static Routing (Local Networks)", value: "✓", isCheck: true },
+        ]
+      },
+      {
+        title: "Layer 2 Features",
+        items: [
+         { label: "LACP Port Aggregation", value: "✓", isCheck: true },
+         { label: "STP & RSTP", value: "✓", isCheck: true },
+         { label: "QoS (DSCP)", value: "✓", isCheck: true },
+         { label: "Pro AV Profiles", value: "✓", isCheck: true },
+         { label: "Advanced IGMP Configuration", value: "✓", isCheck: true },
+         { label: "IGMP Snooping", value: "✓", isCheck: true },
+         { label: "802.1x Control", value: "✓", isCheck: true },
+         { label: "MAC-Based ACLs & Device Isolation", value: "✓", isCheck: true },
+         { label: "DHCP Snooping & Guarding", value: "✓", isCheck: true },
+         { label: "Egress Rate Limit", value: "✓", isCheck: true },
+         { label: "Flow control", value: "✓", isCheck: true },
+         { label: "Storm control", value: "✓", isCheck: true },
+         { label: "Multicast & Broadcast Rate Limiting", value: "✓", isCheck: true },
+         { label: "MAC Address Blocking", value: "✓", isCheck: true },
+         { label: "IP-Based ACLs & Network Isolation", value: "✓", isCheck: true },
+         { label: "MAC-Based Port Restriction", value: "✓", isCheck: true },
+         { label: "Port Isolation", value: "✓", isCheck: true },
+         { label: "Port Mirroring", value: "✓", isCheck: true },
+         { label: "Jumbo Frames", value: "✓", isCheck: true },
+         { label: "LLDP-MED", value: "✓", isCheck: true },
+         { label: "Voice VLAN", value: "✓", isCheck: true },
+         { label: "Loop Protection", value: "✓", isCheck: true },        
+         { label: "Virtual Network Override", value: "✓", isCheck: true },        
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+         { label: "PoE Ports, PoE+", value: "40"},
+         { label: "PoE Ports, PoE++", value: "8"},
+         { label: "Max. PoE Wattage per Port by PSE, PoE", value: "15.4W"},
+         { label: "Max. PoE Wattage per Port by PSE, PoE+", value: "32W"},
+         { label: "Max. PoE Wattage per Port by PSE, PoE++", value: "64W"},
+         { label: "Max. Power Consumption", value: "60W (Excluding PoE Output) 660W (Including PoE Output)"},
+         { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input"},
+         { label: "Power Input Method", value: "AC input"},
+         { label: "Power Supply", value: "AC/DC, internal, 660W"},
+         { label: "Supported Voltage Range", value: "100-240V AC"},
+         { label: "Management", value: "Ethernet, AR"},
+         { label: "Heat Dissipation", value: "204.7 BTU/hr (Excluding PoE Output)"},
+         { label: "Weight", value: "With / Withouth Mounting Brackets: 6.3 kg / 6.2 kg"},
+         { label: "Enclosure Material", value: "SGCC Steel"},
+         { label: "Mount Material", value: "SGCC Steel"},
+         { label: "Supported Rack Depth", value: "400~1200 mm (15.7-47.2\")"},
+         { label: "LCM Display", value: "1.3\" touchscreen"},
+         { label: "ESD Protection", value: "Air: ± 16kV, contact: ± 12kV"},
+         { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)"},
+         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing"},
+         { label: "Etherlighting™ Ethernet", value: "✓", isCheck: true },
+         { label: "Etherlighting™ SFP+", value: "✓", isCheck: true },
+         { label: "NDAA Compliant", value: "✓", isCheck: true },
+         { label: "Certifications", value: "CE, FCC, IC, Anatel: 13790-20-08356"},
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+         { label: "Application Req. UniFi Network", value: "Version 5.10.5 and later<"},
         ]
-      }
+      },
     ],
     
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -4571,61 +4679,82 @@ export const switchingProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Toolless Mini Rack",
         image: "/images/dcs-box.png",
         price: 299,
         description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "6U-sized device rack",
+          "Combine two Mini Racks into a 12U rack with a Stacking Kit",
+          "Toolless assembly and device mounting",
+          "Lockable casters"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "with handle and caster : 519 x 460 x 485 mm (20.43 x 18.11 x 19.09\")" },
+          { label: "Weight", value: "10.3 kg" },
+          { label: "Max. Weight Capacity (Single toolless mini rack) Static : 80 kg (176 lb)", value: "SGCC Steel" },
+          { label: "Max. Weight Capacity (Double toolless mini rack) Static : 70 kg (154 lb)", value: "SGCC Steel" },
+          { label: "Enclosure Material", value: "Frame/Bracket: SPCC steel, Handle: Stainless steel" },
+          { label: "Color", value: "Silver" },
+          { label: "Treatment", value: "Liquid Coating" },
+          { label: "U Height", value: "6U" },
+          { label: "Rack Type", value: "Open Frame" },
+          { label: "Mounting", value: "Floor Stand" },
+          { label: "Lockable Casters", value: "✓"},
+          { label: "NDAA Compliant", value: "✓" },
         ],
-        productLink: "/products/mounting-kit-usw-pro-48-poe(600w)"
+        productLink: "/products/mounting-kit-efg" // Link ke halaman produk addon
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Redundant Power",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "950W redundant power supply for rack-mounted UniFi devices.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "950W DC power availability",
+          "(6) DC SmartPower ports",
+          "1.3\" LCM touchscreen"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Management", value: "Ethernet" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 Port" },
+          { label: "Power Method", value: "(1) Universal AC input, 100-240V AC)" },
+          { label: "Power Supply", value: "54V DC output: AC/DC, internal, 645W, 12V DC output: AC/DC, internal, 350W" },
+          { label: "Supported Voltage Range", value: "100–240V AC" },
+          { label: "Max. Power Consumption", value: "995W" },
+          { label: "Power Output", value: "(6) RPS DC Ports)" },
+          { label: "ESD/EMP Protection", value: "Air: 16kV, contact 12kV" },
+          { label: "Display", value: "1.3\" touchscreen" },
+          { label: "Buttons", value: "(1) Factory Reset)" },
+          { label: "LEDs System", value: "Status" },
+          { label: "LEDs ", value: "Activity" },
+          { label: "Certifications ", value: "CE, FCC, IC" },
         ],
-        productLink: "/products/power-cable-usw-pro-48-poe(600w)"
+        productLink: "/products/sfp-module-10g"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "SmartPower Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "A cable used to deliver redundant power from an associated SmartPower device.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Supported UniFi SmartPower connect",
+          "Cable length 1.5 m",
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Length", value: "1.5 m (4.9 ft)" },
+          { label: "Insulation Thickness", value: "0.35 mm (0.01\")" },
+          { label: "Insulation Diameter", value: "2 mm (0.08\")" },
+          { label: "Insulation Material", value: "PVC" },
+          { label: "Conductor Wire Gauge", value: "(18) 16 AWG, (6) 24 AWG" },
+          { label: "Cable Jacket Material", value: "PVC" },
+          { label: "Cable Jacket Outer Diameter", value: "9.5 x 23 mm (0.4 x 0.9\")" },
+          { label: "NDAA Compliant", value: "✓" },
         ],
         productLink: "/products/sfp-module-10g"
-      }
+      },
     ]
     },
 {
@@ -4682,91 +4811,191 @@ export const switchingProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Pro 24 PoE" },
-          { label: "Model", value: "USW-PRO-24-POE(400W)" },
-          { label: "Category", value: "UniFi Product" }
+          { label: "Dimensions", value: "442 x 285 x 44 mm (17.4 x 15.7 x 1.7\")" },
+          { label: "Port Layout 1 GbE RJ45", value: "48 (40 PoE+; 8 PoE++) (1G/100M/10M)" },
+          { label: "Port Layout 10G SFP+", value: "4 (10G/1G)" },
+          { label: "Max. PoE Output", value: "Up to PoE++" },
+          { label: "Total PoE Availability", value: "400W" },
+          { label: "Redundancy", value: "DC Power Backup" },
+          { label: "Layer 3", value: "✓" },
+          { label: "Form Factor", value: "Rack mount (1U)"},
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Switching Capacity", value: "88 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "44 Gbps" },
+          { label: "Forwarding Rate", value: "65 Mpps" },
+          { label: "Supported VLANs", value: "1.000" },
+          { label: "MAC Address Table Size", value: "16.000" },
+          { label: "L3 Table Size ARP Entries", value: "768" },
+          { label: "L3 Table Size IPv4 Routes", value: "64" },
+          { label: "L3 Table Size IPv4 Static Routes", value: "2" },
+          { label: "Packet Buffer Size", value: "2 MB" },
+          { label: "Access Lists IPv4", value: "128" },
+          { label: "Access Lists MAC", value: "128" },
+        ]
+      },
+      {
+        title: "Layer 3 Features",
+        items: [
+          { label: "DHCP Server (Local Networks)", value: "✓", isCheck: true },
+          { label: "DHCP Relay", value: "✓", isCheck: true },
+          { label: "Inter-VLAN Routing (Local Networks)", value: "✓", isCheck: true },
+          { label: "Static Routing (Local Networks)", value: "✓", isCheck: true },
+        ]
+      },
+      {
+        title: "Layer 2 Features",
+        items: [
+         { label: "LACP Port Aggregation", value: "✓", isCheck: true },
+         { label: "STP & RSTP", value: "✓", isCheck: true },
+         { label: "QoS (DSCP)", value: "✓", isCheck: true },
+         { label: "Pro AV Profiles", value: "✓", isCheck: true },
+         { label: "Advanced IGMP Configuration", value: "✓", isCheck: true },
+         { label: "IGMP Snooping", value: "✓", isCheck: true },
+         { label: "802.1x Control", value: "✓", isCheck: true },
+         { label: "MAC-Based ACLs & Device Isolation", value: "✓", isCheck: true },
+         { label: "DHCP Snooping & Guarding", value: "✓", isCheck: true },
+         { label: "Egress Rate Limit", value: "✓", isCheck: true },
+         { label: "Flow control", value: "✓", isCheck: true },
+         { label: "Storm control", value: "✓", isCheck: true },
+         { label: "Multicast & Broadcast Rate Limiting", value: "✓", isCheck: true },
+         { label: "MAC Address Blocking", value: "✓", isCheck: true },
+         { label: "IP-Based ACLs & Network Isolation", value: "✓", isCheck: true },
+         { label: "MAC-Based Port Restriction", value: "✓", isCheck: true },
+         { label: "Port Isolation", value: "✓", isCheck: true },
+         { label: "Port Mirroring", value: "✓", isCheck: true },
+         { label: "Jumbo Frames", value: "✓", isCheck: true },
+         { label: "LLDP-MED", value: "✓", isCheck: true },
+         { label: "Voice VLAN", value: "✓", isCheck: true },
+         { label: "Loop Protection", value: "✓", isCheck: true },        
+         { label: "Virtual Network Override", value: "✓", isCheck: true },        
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+         { label: "PoE Ports, PoE+", value: "16"},
+         { label: "PoE Ports, PoE++", value: "8"},
+         { label: "Max. PoE Wattage per Port by PSE, PoE", value: "15.4W"},
+         { label: "Max. PoE Wattage per Port by PSE, PoE+", value: "30W"},
+         { label: "Max. PoE Wattage per Port by PSE, PoE++", value: "64W"},
+         { label: "Max. Power Consumption", value: "50W (Excluding PoE Output) 450W (Including PoE Output)"},
+         { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input"},
+         { label: "Power Input Method", value: "AC input"},
+         { label: "Power Supply", value: "AC/DC, internal, 450W"},
+         { label: "Supported Voltage Range", value: "100-240V AC"},
+         { label: "Management", value: "Ethernet, AR"},
+         { label: "Heat Dissipation", value: "170.6 BTU/hr (Excluding PoE Output)"},
+         { label: "Weight", value: "With / Withouth Mounting Brackets: 4.4 kg / 4.3 kg"},
+         { label: "Enclosure Material", value: "SGCC Steel"},
+         { label: "Mount Material", value: "SGCC Steel"},
+         { label: "Supported Rack Depth", value: "400~1200 mm (15.7-47.2\")"},
+         { label: "LCM Display", value: "1.3\" touchscreen"},
+         { label: "ESD Protection", value: "Air: ± 16kV, contact: ± 12kV"},
+         { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)"},
+         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing"},
+         { label: "Etherlighting™ Ethernet", value: "✓", isCheck: true },
+         { label: "Etherlighting™ SFP+", value: "✓", isCheck: true },
+         { label: "NDAA Compliant", value: "✓", isCheck: true },
+         { label: "Certifications", value: "CE, FCC, IC, Anatel: 13790-20-08356"},
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+         { label: "Application Req. UniFi Network", value: "Version 5.10.5 and later<"},
         ]
-      }
+      },
     ],
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/switching/24.uswpro24poe/p-itb-uswpro24poe.jpg", },
+      { name: "Device", image: "/images/switching/23.uswpro48poe/p-itb-uswpro48poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Toolless Mini Rack",
         image: "/images/dcs-box.png",
         price: 299,
         description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "6U-sized device rack",
+          "Combine two Mini Racks into a 12U rack with a Stacking Kit",
+          "Toolless assembly and device mounting",
+          "Lockable casters"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "with handle and caster : 519 x 460 x 485 mm (20.43 x 18.11 x 19.09\")" },
+          { label: "Weight", value: "10.3 kg" },
+          { label: "Max. Weight Capacity (Single toolless mini rack) Static : 80 kg (176 lb)", value: "SGCC Steel" },
+          { label: "Max. Weight Capacity (Double toolless mini rack) Static : 70 kg (154 lb)", value: "SGCC Steel" },
+          { label: "Enclosure Material", value: "Frame/Bracket: SPCC steel, Handle: Stainless steel" },
+          { label: "Color", value: "Silver" },
+          { label: "Treatment", value: "Liquid Coating" },
+          { label: "U Height", value: "6U" },
+          { label: "Rack Type", value: "Open Frame" },
+          { label: "Mounting", value: "Floor Stand" },
+          { label: "Lockable Casters", value: "✓"},
+          { label: "NDAA Compliant", value: "✓" },
         ],
-        productLink: "/products/mounting-kit"
+        productLink: "/products/mounting-kit-efg" // Link ke halaman produk addon
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Redundant Power",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "950W redundant power supply for rack-mounted UniFi devices.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "950W DC power availability",
+          "(6) DC SmartPower ports",
+          "1.3\" LCM touchscreen"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Management", value: "Ethernet" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 Port" },
+          { label: "Power Method", value: "(1) Universal AC input, 100-240V AC)" },
+          { label: "Power Supply", value: "54V DC output: AC/DC, internal, 645W, 12V DC output: AC/DC, internal, 350W" },
+          { label: "Supported Voltage Range", value: "100–240V AC" },
+          { label: "Max. Power Consumption", value: "995W" },
+          { label: "Power Output", value: "(6) RPS DC Ports)" },
+          { label: "ESD/EMP Protection", value: "Air: 16kV, contact 12kV" },
+          { label: "Display", value: "1.3\" touchscreen" },
+          { label: "Buttons", value: "(1) Factory Reset)" },
+          { label: "LEDs System", value: "Status" },
+          { label: "LEDs ", value: "Activity" },
+          { label: "Certifications ", value: "CE, FCC, IC" },
         ],
-        productLink: "/products/power-cable"
+        productLink: "/products/sfp-module-10g"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "SmartPower Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "A cable used to deliver redundant power from an associated SmartPower device.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Supported UniFi SmartPower connect",
+          "Cable length 1.5 m",
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Length", value: "1.5 m (4.9 ft)" },
+          { label: "Insulation Thickness", value: "0.35 mm (0.01\")" },
+          { label: "Insulation Diameter", value: "2 mm (0.08\")" },
+          { label: "Insulation Material", value: "PVC" },
+          { label: "Conductor Wire Gauge", value: "(18) 16 AWG, (6) 24 AWG" },
+          { label: "Cable Jacket Material", value: "PVC" },
+          { label: "Cable Jacket Outer Diameter", value: "9.5 x 23 mm (0.4 x 0.9\")" },
+          { label: "NDAA Compliant", value: "✓" },
         ],
         productLink: "/products/sfp-module-10g"
-      }
+      },
     ]
   },
 {
@@ -4823,95 +5052,182 @@ export const switchingProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Pro 48" },
-          { label: "Model", value: "USW-PRO-48" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
-          { label: "PoE Budget", value: "400W" },
-          { label: "Uplink", value: "2x 10G SFP+" },
-          { label: "Layer", value: "Layer 3 Switching" }
+          { label: "Dimensions", value: "442 x 285 x 44 mm (17.4 x 15.7 x 1.7\")" },
+          { label: "Port Layout 1 GbE RJ45", value: "48 (40 PoE+; 8 PoE++) (1G/100M/10M)" },
+          { label: "Port Layout 10G SFP+", value: "4 (10G/1G)" },
+          { label: "Redundancy", value: "DC Power Backup" },
+          { label: "Layer 3", value: "✓" },
+          { label: "Form Factor", value: "Rack mount (1U)"},
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Switching Capacity", value: "176 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "88 Gbps" },
+          { label: "Forwarding Rate", value: "131 Mpps" },
+          { label: "Supported VLANs", value: "1.000" },
+          { label: "MAC Address Table Size", value: "16.000" },
+          { label: "L3 Table Size ARP Entries", value: "4.000" },
+          { label: "L3 Table Size IPv4 Routes", value: "1.000" },
+          { label: "L3 Table Size IPv4 Static Routes", value: "256" },
+          { label: "Packet Buffer Size", value: "4 MB" },
+          { label: "Access Lists IPv4", value: "128" },
+          { label: "Access Lists MAC", value: "128" },
+        ]
+      },
+      {
+        title: "Layer 3 Features",
+        items: [
+          { label: "DHCP Server (Local Networks)", value: "✓", isCheck: true },
+          { label: "DHCP Relay", value: "✓", isCheck: true },
+          { label: "Inter-VLAN Routing (Local Networks)", value: "✓", isCheck: true },
+          { label: "Static Routing (Local Networks)", value: "✓", isCheck: true },
+        ]
+      },
+      {
+        title: "Layer 2 Features",
+        items: [
+         { label: "LACP Port Aggregation", value: "✓", isCheck: true },
+         { label: "STP & RSTP", value: "✓", isCheck: true },
+         { label: "QoS (DSCP)", value: "✓", isCheck: true },
+         { label: "Pro AV Profiles", value: "✓", isCheck: true },
+         { label: "Advanced IGMP Configuration", value: "✓", isCheck: true },
+         { label: "IGMP Snooping", value: "✓", isCheck: true },
+         { label: "802.1x Control", value: "✓", isCheck: true },
+         { label: "MAC-Based ACLs & Device Isolation", value: "✓", isCheck: true },
+         { label: "DHCP Snooping & Guarding", value: "✓", isCheck: true },
+         { label: "Egress Rate Limit", value: "✓", isCheck: true },
+         { label: "Flow control", value: "✓", isCheck: true },
+         { label: "Storm control", value: "✓", isCheck: true },
+         { label: "Multicast & Broadcast Rate Limiting", value: "✓", isCheck: true },
+         { label: "MAC Address Blocking", value: "✓", isCheck: true },
+         { label: "IP-Based ACLs & Network Isolation", value: "✓", isCheck: true },
+         { label: "MAC-Based Port Restriction", value: "✓", isCheck: true },
+         { label: "Port Isolation", value: "✓", isCheck: true },
+         { label: "Port Mirroring", value: "✓", isCheck: true },
+         { label: "Jumbo Frames", value: "✓", isCheck: true },
+         { label: "LLDP-MED", value: "✓", isCheck: true },
+         { label: "Voice VLAN", value: "✓", isCheck: true },
+         { label: "Loop Protection", value: "✓", isCheck: true },        
+         { label: "Virtual Network Override", value: "✓", isCheck: true },        
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+         { label: "Max. Power Consumption", value: "60W"},
+         { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input"},
+         { label: "Power Input Method", value: "AC input"},
+         { label: "Power Supply", value: "AC/DC, internal, 60W"},
+         { label: "Supported Voltage Range", value: "100-240V AC"},
+         { label: "Management", value: "Ethernet, AR"},
+         { label: "Heat Dissipation", value: "204.7 BTU/hr"},
+         { label: "Weight", value: "With / Withouth Mounting Brackets: 4.1 kg / 4 kg"},
+         { label: "Enclosure Material", value: "SGCC Steel"},
+         { label: "Mount Material", value: "SGCC Steel"},
+         { label: "Supported Rack Depth", value: "400~1200 mm (15.7-47.2\")"},
+         { label: "LCM Display", value: "1.3\" touchscreen"},
+         { label: "ESD Protection", value: "Air: ± 16kV, contact: ± 12kV"},
+         { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)"},
+         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing"},
+         { label: "NDAA Compliant", value: "✓", isCheck: true },
+         { label: "Certifications", value: "CE, FCC, IC, Anatel: 00469-21-08356"},
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+         { label: "Application Req. UniFi Network", value: "Version 5.12.11 and later"},
         ]
-      }
+      },
     ],
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/switching/25.uswpro48/p-itb-uswpro48.jpg", },
+      { name: "Device", image: "/images/switching/23.uswpro48poe/p-itb-uswpro48poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Toolless Mini Rack",
         image: "/images/dcs-box.png",
         price: 299,
         description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "6U-sized device rack",
+          "Combine two Mini Racks into a 12U rack with a Stacking Kit",
+          "Toolless assembly and device mounting",
+          "Lockable casters"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "with handle and caster : 519 x 460 x 485 mm (20.43 x 18.11 x 19.09\")" },
+          { label: "Weight", value: "10.3 kg" },
+          { label: "Max. Weight Capacity (Single toolless mini rack) Static : 80 kg (176 lb)", value: "SGCC Steel" },
+          { label: "Max. Weight Capacity (Double toolless mini rack) Static : 70 kg (154 lb)", value: "SGCC Steel" },
+          { label: "Enclosure Material", value: "Frame/Bracket: SPCC steel, Handle: Stainless steel" },
+          { label: "Color", value: "Silver" },
+          { label: "Treatment", value: "Liquid Coating" },
+          { label: "U Height", value: "6U" },
+          { label: "Rack Type", value: "Open Frame" },
+          { label: "Mounting", value: "Floor Stand" },
+          { label: "Lockable Casters", value: "✓"},
+          { label: "NDAA Compliant", value: "✓" },
         ],
-        productLink: "/products/mounting-kit-usw-pro-48"
+        productLink: "/products/mounting-kit-efg" // Link ke halaman produk addon
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Redundant Power",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "950W redundant power supply for rack-mounted UniFi devices.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "950W DC power availability",
+          "(6) DC SmartPower ports",
+          "1.3\" LCM touchscreen"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Management", value: "Ethernet" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 Port" },
+          { label: "Power Method", value: "(1) Universal AC input, 100-240V AC)" },
+          { label: "Power Supply", value: "54V DC output: AC/DC, internal, 645W, 12V DC output: AC/DC, internal, 350W" },
+          { label: "Supported Voltage Range", value: "100–240V AC" },
+          { label: "Max. Power Consumption", value: "995W" },
+          { label: "Power Output", value: "(6) RPS DC Ports)" },
+          { label: "ESD/EMP Protection", value: "Air: 16kV, contact 12kV" },
+          { label: "Display", value: "1.3\" touchscreen" },
+          { label: "Buttons", value: "(1) Factory Reset)" },
+          { label: "LEDs System", value: "Status" },
+          { label: "LEDs ", value: "Activity" },
+          { label: "Certifications ", value: "CE, FCC, IC" },
         ],
-        productLink: "/products/power-cable-usw-pro-48"
+        productLink: "/products/sfp-module-10g"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "SmartPower Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "A cable used to deliver redundant power from an associated SmartPower device.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Supported UniFi SmartPower connect",
+          "Cable length 1.5 m",
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Length", value: "1.5 m (4.9 ft)" },
+          { label: "Insulation Thickness", value: "0.35 mm (0.01\")" },
+          { label: "Insulation Diameter", value: "2 mm (0.08\")" },
+          { label: "Insulation Material", value: "PVC" },
+          { label: "Conductor Wire Gauge", value: "(18) 16 AWG, (6) 24 AWG" },
+          { label: "Cable Jacket Material", value: "PVC" },
+          { label: "Cable Jacket Outer Diameter", value: "9.5 x 23 mm (0.4 x 0.9\")" },
+          { label: "NDAA Compliant", value: "✓" },
         ],
         productLink: "/products/sfp-module-10g"
-      }
+      },
     ]
   },
 {
@@ -4968,95 +5284,182 @@ export const switchingProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Pro 24" },
-          { label: "Model", value: "USW-PRO-24" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
-          { label: "PoE Budget", value: "400W" },
-          { label: "Uplink", value: "2x 10G SFP+" },
-          { label: "Layer", value: "Layer 3 Switching" }
+          { label: "Dimensions", value: "442 x 285 x 44 mm (17.4 x 15.7 x 1.7\")" },
+          { label: "Port Layout 1 GbE RJ45", value: "48 (40 PoE+; 8 PoE++) (1G/100M/10M)" },
+          { label: "Port Layout 10G SFP+", value: "4 (10G/1G)" },
+          { label: "Redundancy", value: "DC Power Backup" },
+          { label: "Layer 3", value: "✓" },
+          { label: "Form Factor", value: "Rack mount (1U)"},
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Switching Capacity", value: "176 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "88 Gbps" },
+          { label: "Forwarding Rate", value: "131 Mpps" },
+          { label: "Supported VLANs", value: "1.000" },
+          { label: "MAC Address Table Size", value: "16.000" },
+          { label: "L3 Table Size ARP Entries", value: "4.000" },
+          { label: "L3 Table Size IPv4 Routes", value: "1.000" },
+          { label: "L3 Table Size IPv4 Static Routes", value: "256" },
+          { label: "Packet Buffer Size", value: "4 MB" },
+          { label: "Access Lists IPv4", value: "128" },
+          { label: "Access Lists MAC", value: "128" },
+        ]
+      },
+      {
+        title: "Layer 3 Features",
+        items: [
+          { label: "DHCP Server (Local Networks)", value: "✓", isCheck: true },
+          { label: "DHCP Relay", value: "✓", isCheck: true },
+          { label: "Inter-VLAN Routing (Local Networks)", value: "✓", isCheck: true },
+          { label: "Static Routing (Local Networks)", value: "✓", isCheck: true },
+        ]
+      },
+      {
+        title: "Layer 2 Features",
+        items: [
+         { label: "LACP Port Aggregation", value: "✓", isCheck: true },
+         { label: "STP & RSTP", value: "✓", isCheck: true },
+         { label: "QoS (DSCP)", value: "✓", isCheck: true },
+         { label: "Pro AV Profiles", value: "✓", isCheck: true },
+         { label: "Advanced IGMP Configuration", value: "✓", isCheck: true },
+         { label: "IGMP Snooping", value: "✓", isCheck: true },
+         { label: "802.1x Control", value: "✓", isCheck: true },
+         { label: "MAC-Based ACLs & Device Isolation", value: "✓", isCheck: true },
+         { label: "DHCP Snooping & Guarding", value: "✓", isCheck: true },
+         { label: "Egress Rate Limit", value: "✓", isCheck: true },
+         { label: "Flow control", value: "✓", isCheck: true },
+         { label: "Storm control", value: "✓", isCheck: true },
+         { label: "Multicast & Broadcast Rate Limiting", value: "✓", isCheck: true },
+         { label: "MAC Address Blocking", value: "✓", isCheck: true },
+         { label: "IP-Based ACLs & Network Isolation", value: "✓", isCheck: true },
+         { label: "MAC-Based Port Restriction", value: "✓", isCheck: true },
+         { label: "Port Isolation", value: "✓", isCheck: true },
+         { label: "Port Mirroring", value: "✓", isCheck: true },
+         { label: "Jumbo Frames", value: "✓", isCheck: true },
+         { label: "LLDP-MED", value: "✓", isCheck: true },
+         { label: "Voice VLAN", value: "✓", isCheck: true },
+         { label: "Loop Protection", value: "✓", isCheck: true },        
+         { label: "Virtual Network Override", value: "✓", isCheck: true },        
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+         { label: "Max. Power Consumption", value: "60W"},
+         { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input"},
+         { label: "Power Input Method", value: "AC input"},
+         { label: "Power Supply", value: "AC/DC, internal, 60W"},
+         { label: "Supported Voltage Range", value: "100-240V AC"},
+         { label: "Management", value: "Ethernet, AR"},
+         { label: "Heat Dissipation", value: "204.7 BTU/hr"},
+         { label: "Weight", value: "With / Withouth Mounting Brackets: 4.1 kg / 4 kg"},
+         { label: "Enclosure Material", value: "SGCC Steel"},
+         { label: "Mount Material", value: "SGCC Steel"},
+         { label: "Supported Rack Depth", value: "400~1200 mm (15.7-47.2\")"},
+         { label: "LCM Display", value: "1.3\" touchscreen"},
+         { label: "ESD Protection", value: "Air: ± 16kV, contact: ± 12kV"},
+         { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)"},
+         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing"},
+         { label: "NDAA Compliant", value: "✓", isCheck: true },
+         { label: "Certifications", value: "CE, FCC, IC, Anatel: 00469-21-08356"},
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+         { label: "Application Req. UniFi Network", value: "Version 5.12.11 and later"},
         ]
-      }
+      },
     ],
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/switching/26.uswpro24/p-itb-uswpro24.jpg", },
+      { name: "Device", image: "/images/switching/23.uswpro48poe/p-itb-uswpro48poe.jpg", },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Toolless Mini Rack",
         image: "/images/dcs-box.png",
         price: 299,
         description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "6U-sized device rack",
+          "Combine two Mini Racks into a 12U rack with a Stacking Kit",
+          "Toolless assembly and device mounting",
+          "Lockable casters"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "with handle and caster : 519 x 460 x 485 mm (20.43 x 18.11 x 19.09\")" },
+          { label: "Weight", value: "10.3 kg" },
+          { label: "Max. Weight Capacity (Single toolless mini rack) Static : 80 kg (176 lb)", value: "SGCC Steel" },
+          { label: "Max. Weight Capacity (Double toolless mini rack) Static : 70 kg (154 lb)", value: "SGCC Steel" },
+          { label: "Enclosure Material", value: "Frame/Bracket: SPCC steel, Handle: Stainless steel" },
+          { label: "Color", value: "Silver" },
+          { label: "Treatment", value: "Liquid Coating" },
+          { label: "U Height", value: "6U" },
+          { label: "Rack Type", value: "Open Frame" },
+          { label: "Mounting", value: "Floor Stand" },
+          { label: "Lockable Casters", value: "✓"},
+          { label: "NDAA Compliant", value: "✓" },
         ],
-        productLink: "/products/mounting-kit-usw-pro-24"
+        productLink: "/products/mounting-kit-efg" // Link ke halaman produk addon
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Redundant Power",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "950W redundant power supply for rack-mounted UniFi devices.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "950W DC power availability",
+          "(6) DC SmartPower ports",
+          "1.3\" LCM touchscreen"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Management", value: "Ethernet" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 Port" },
+          { label: "Power Method", value: "(1) Universal AC input, 100-240V AC)" },
+          { label: "Power Supply", value: "54V DC output: AC/DC, internal, 645W, 12V DC output: AC/DC, internal, 350W" },
+          { label: "Supported Voltage Range", value: "100–240V AC" },
+          { label: "Max. Power Consumption", value: "995W" },
+          { label: "Power Output", value: "(6) RPS DC Ports)" },
+          { label: "ESD/EMP Protection", value: "Air: 16kV, contact 12kV" },
+          { label: "Display", value: "1.3\" touchscreen" },
+          { label: "Buttons", value: "(1) Factory Reset)" },
+          { label: "LEDs System", value: "Status" },
+          { label: "LEDs ", value: "Activity" },
+          { label: "Certifications ", value: "CE, FCC, IC" },
         ],
-        productLink: "/products/power-cable-usw-pro-24"
+        productLink: "/products/sfp-module-10g"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "SmartPower Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "A cable used to deliver redundant power from an associated SmartPower device.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Supported UniFi SmartPower connect",
+          "Cable length 1.5 m",
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Length", value: "1.5 m (4.9 ft)" },
+          { label: "Insulation Thickness", value: "0.35 mm (0.01\")" },
+          { label: "Insulation Diameter", value: "2 mm (0.08\")" },
+          { label: "Insulation Material", value: "PVC" },
+          { label: "Conductor Wire Gauge", value: "(18) 16 AWG, (6) 24 AWG" },
+          { label: "Cable Jacket Material", value: "PVC" },
+          { label: "Cable Jacket Outer Diameter", value: "9.5 x 23 mm (0.4 x 0.9\")" },
+          { label: "NDAA Compliant", value: "✓" },
         ],
         productLink: "/products/sfp-module-10g"
-      }
+      },
     ]
   },
 {
