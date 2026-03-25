@@ -6291,7 +6291,7 @@ export const doorAccessProducts: Product[] = [
     ]
   },
 
-// Produk Ketujuh dari DoorAccess, SF Kits
+  // Produk Ketujuh dari DoorAccess, SF Kits
   {
     id: "UA-SK-Elevator",
     name: "Elevator Starter Kit",
@@ -6530,7 +6530,7 @@ export const doorAccessProducts: Product[] = [
     ]
   },
 
-
+  // Produk Pertama dari DoorAccess, SF Intercom
   {
     id: "UA-G3-Intercom",
     name: "G3 Intercom",
@@ -6575,27 +6575,68 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "G3 Intercom" },
-          { label: "Model", value: "UA-G3-INTERCOM" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "324.8 x 113.7 x 28.3 mm (12.8 x 4.5 x 1.1')" },
+          { label: "Integrated Camera", value: "✓" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "PIN Access", value: "✓" },
+          { label: "Apple/Google Wallet", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Face Unlock", value: "Two-way Audio" },
+          { label: "Two-Way Intercom & DoorBell Access", value: "✓" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Weatherproofing", value: "IP65" },
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "Device: 965 g (2.1 lb) Bracket: 445 g (1 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, UV-stabilized polycarbonate, glass" },
+          { label: "Mount Material", value: "Powder-coated stainless steel" },
+          { label: "Mounting", value: "Wall mount, adapter to the gooseneck pedestal (Included) Surface angle, flush mount, sunshield kit (Optional)" }
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Indoor and Outdoor Use", value: "Yes" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 portWeb Browser: Google Chrome" },
+          { label: "Connectivy", value: "BLE 4.2 NFC" },
+          { label: "Power Method", value: "PoE UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Max. Power Consumption", value: "13W" },
+          { label: "Supported Voltage Range", value: "48V DC" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "2MP 1200 x 1600 (3:4)" },
+          { label: "Optics Resolution", value: "8 MP (2448 × 3264)" },
+          { label: "Optics Field of View", value: "H: 79.4°, V: 97.5°, D: 118.2°" },
+          { label: "Sensor", value: "Proximity sensor ALS sensor" },
+          { label: "Display Size", value: "177 mm (7') diagonal" },
+          { label: "Display Screen Technology", value: "Capacitive multi-touch" },
+          { label: "Display Luminance", value: "Max. 1000 nits (Typical)" },
+          { label: "Display Screen Orientation", value: "Portrait" },
+          { label: "Display Screen Resolution", value: "1024 x 600 px" },
+          { label: "Microphone", value: "✓" },
+          { label: "Speaker", value: "✓" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NFC Read Range", value: "< 30 mm (1.18'')" },
+          { label: "NFC Technology", value: "ISO/IEC 14443A / 14443B / 15693 / 18092 (Ecma 340) MIFARE Classic / MIFARE DESFIRE Sony FeliCa™ (ID only) NFC Forum tags T1T, T2T, T3T, T4T and T5T ECP 2.0" },
+          { label: "LEDs", value: "Amber" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: I" },
+          { label: "Certifications", value: "CE, FCC, IC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-G3-Intercom, V01" },
+          { label: "Ambient Operating Temperature", value: "Device: -30 to 60° C (-22 to 140° F) Display: -25 to 60° C (-13 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Management Application", value: "Access" },
+          { label: "Software Information", value: "The software version can be checked at https://unifi.ui.com" },
         ]
       }
     ],
@@ -6612,63 +6653,139 @@ export const doorAccessProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Fail-Secure Bolt Lock",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Fail-secure electric drop bolt lock.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Lock Features Lock Type Fail secure",
+          "Door Status Contact Type Dry contact",
+          "Enclosure Material Lock body: aluminum alloy Door frame plate/Door plate: aluminum alloy"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "Lock body: 132 x 30 x 42 mm (5.2 x 1.2 x 1.7') Door frame plate: 82 x 32 x 3 mm (3.2 x 1.3 x 0.1') Door plate: plate: 204 x 33 x 3 mm (8 x 1.3 x 0.1')" },
+          { label: "Weight", value: "Lock body: 350 g (12.3 oz) Door frame plate: 22 g (0.7 oz) Door plate: 46 g (1.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: aluminum alloy Door frame plate/Door plate: aluminum alloy" },
+
+          { label: "Lock Features Lock Type", value: "Fail secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features DPS", value: "en/metal) DPS" },
+          { label: "Lock Features Current Power", value: "Standby: 12mA ±10% Dynamic: 600mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) Lock 12V/NC (blue) (1) DPS/- (white) (1) DPS/+ (orange)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+          { label: "Lock Features LED Indicator", value: "Red: locked Green: unlocked & power indicator" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.5A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ],
-        productLink: "/products/mounting-kit-ua-g3-intercom"
+        productLink: "/products/sfp-module-10g"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Fail-Safe Strike Lock",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Fail-safe electric strike lock that connects to a UniFi Access Hub.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Door Status Contact Type Dry contact",
+          "Lock Features Lock Type Fail safe",
+          "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Dimensions", value: "Lock body: 80 x 40 x 35 mm (3.2 x 1.6 x 1.4') Short front plate: 124 x 32 x 3 mm (4.9 x 1.3 x 0.1') Long front plate: 202 x 36 x 3 mm (7.9 x 1.4 x 0.1')" },
+          { label: "Weight", value: "Lock body: 185 g (6.5 oz) Short front plate: 50 g (1.8 oz) Long front plate: 130 g (4.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail safe" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "1,200 kg (2,645 lb)" },
+          { label: "Lock Features Current Power", value: "400mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NC (red) (1) Lock 12V/COM (black)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ],
-        productLink: "/products/power-cable-ua-g3-intercom"
+        productLink: "/products/power-cable-ua-g3-pro-b/w"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "Access Card",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "A pack of highly-secure NFC cards used for access control within UniFi.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Multi-layer encryption to avoid malicious duplication",
+          "Assignable to users and visitors",
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Dimensions", value: "85.6 x 53.98 x 0.84 mm (3.37 x 2.13 x 0.03')" },
+          { label: "Weight", value: "5 g (0.18 oz)" },
+          { label: "Format", value: "ISO 7810 ID-1" },
+          { label: "NFC Technology", value: "MIFARE DESFire EV3 UniFi Access Proprietary Security Protocol" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "Anatel" },
+        ],
+        productLink: "/products/power-cable-ua-retrofit-reader-b/w"
+      },
+      {
+        id: 4,
+        name: "Fail-Secure Bolt Lock",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Fail-secure electric drop bolt lock.",
+        specs: [
+          "Lock Features Lock Type Fail secure",
+          "Door Status Contact Type Dry contact",
+          "Enclosure Material Lock body: aluminum alloy Door frame plate/Door plate: aluminum alloy"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "Lock body: 132 x 30 x 42 mm (5.2 x 1.2 x 1.7') Door frame plate: 82 x 32 x 3 mm (3.2 x 1.3 x 0.1') Door plate: plate: 204 x 33 x 3 mm (8 x 1.3 x 0.1')" },
+          { label: "Weight", value: "Lock body: 350 g (12.3 oz) Door frame plate: 22 g (0.7 oz) Door plate: 46 g (1.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: aluminum alloy Door frame plate/Door plate: aluminum alloy" },
+
+          { label: "Lock Features Lock Type", value: "Fail secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features DPS", value: "en/metal) DPS" },
+          { label: "Lock Features Current Power", value: "Standby: 12mA ±10% Dynamic: 600mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) Lock 12V/NC (blue) (1) DPS/- (white) (1) DPS/+ (orange)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+          { label: "Lock Features LED Indicator", value: "Red: locked Green: unlocked & power indicator" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.5A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ],
         productLink: "/products/sfp-module-10g"
       }
     ]
   },
+
+  // Produk Kedua dari DoorAccess, SF Intercom
   {
     id: "UA-G2-Intercom",
     name: "Intercom",
@@ -6713,27 +6830,68 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Intercom" },
-          { label: "Model", value: "UA-G2-INTERCOM" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "324.8 x 113.7 x 28.3 mm (12.8 x 4.5 x 1.1')" },
+          { label: "Integrated Camera", value: "✓" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "PIN Access", value: "✓" },
+          { label: "Apple/Google Wallet", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Face Unlock", value: "Two-way Audio" },
+          { label: "Two-Way Intercom & DoorBell Access", value: "✓" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "Weatherproofing", value: "IP65" },
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "Device: 965 g (2.1 lb) Bracket: 445 g (1 lb)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, UV-stabilized polycarbonate, glass" },
+          { label: "Mount Material", value: "Powder-coated stainless steel" },
+          { label: "Mounting", value: "Wall mount, adapter to the gooseneck pedestal (Included) Surface angle, flush mount, sunshield kit (Optional)" }
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Indoor and Outdoor Use", value: "Yes" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
+          { label: "Connectivy", value: "BLE 4.2 NFC" },
+          { label: "Power Method", value: "PoE UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Max. Power Consumption", value: "13W" },
+          { label: "Supported Voltage Range", value: "48V DC" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "2MP 1200 x 1600 (3:4)" },
+          { label: "Optics Resolution", value: "8 MP (2448 × 3264)" },
+          { label: "Optics Field of View", value: "H: 79.4°, V: 97.5°, D: 118.2°" },
+          { label: "Sensor", value: "Proximity sensor ALS sensor" },
+          { label: "Display Size", value: "177 mm (7') diagonal" },
+          { label: "Display Screen Technology", value: "Capacitive multi-touch" },
+          { label: "Display Screen Luminance", value: "Max. 1000 nits (Typical)" },
+          { label: "Display Screen Orientation", value: "Portrait" },
+          { label: "Display Screen Resolution", value: "1024 x 600 px" },
+          { label: "Microphone", value: "✓" },
+          { label: "Speaker", value: "✓" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NFC Read Range", value: "< 30 mm (1.18'')" },
+          { label: "NFC Technology", value: "ISO/IEC 14443A / 14443B / 15693 / 18092 (Ecma 340) MIFARE Classic / MIFARE DESFIRE Sony FeliCa™ (ID only) NFC Forum tags T1T, T2T, T3T, T4T and T5T" },
+          { label: "LEDs", value: "Amber" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site. The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: I" },
+          { label: "Certifications", value: "CE, FCC, IC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-Intercom, V01" },
+          { label: "Ambient Operating Temperature", value: "Device: -30 to 60° C (-22 to 140° F) Display: -25 to 60° C (-13 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Management Application", value: "Access" },
+          { label: "Software Information", value: "The software version can be checked at https://unifi.ui.com" },
         ]
       }
     ],
@@ -6750,63 +6908,134 @@ export const doorAccessProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "WiFi Smart Chime",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Plug-in chime designed to pair with a UniFi doorbell.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Plug-in chime designed to pair with a UniFi doorbell",
+          "Enterprise-grade quality",
+          "Easy to deploy and manage",
+          "Note. Third-party WiFi configuration available during setup with the UniFi Protect mobile app."
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "⌀62 x 50.6 mm (⌀2.4 x 2') (Without prong)" },
+          { label: "Weight", value: "127 g (4.5 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, fabric" },
+          { label: "Network Interface", value: "WiFi 802.11 b/g/n" },
+          { label: "Speaker", value: "✓" },
+          { label: "Buzzer", value: "✓" },
+          { label: "power Method", value: "AC" },
+          { label: "Supported Voltage Range", value: "100-240V, 50/60 Hz" },
+          { label: "Max. Power Consumption", value: "3.7W" },
+          { label: "ESD Protection", value: "Air: ± 16kV, contact: ± 8kV" },
+          { label: "LEDs", value: "(5) White" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ],
-        productLink: "/products/mounting-kit-ua-g2-intercom"
+        productLink: "/products/mounting-kit-uvc-g6-pro-entry"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Fail-Safe Strike Lock",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Fail-safe electric strike lock that connects to a UniFi Access Hub.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Door Status Contact Type Dry contact",
+          "Lock Features Lock Type Fail safe",
+          "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Dimensions", value: "Lock body: 80 x 40 x 35 mm (3.2 x 1.6 x 1.4') Short front plate: 124 x 32 x 3 mm (4.9 x 1.3 x 0.1') Long front plate: 202 x 36 x 3 mm (7.9 x 1.4 x 0.1')" },
+          { label: "Weight", value: "Lock body: 185 g (6.5 oz) Short front plate: 50 g (1.8 oz) Long front plate: 130 g (4.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail safe" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "1,200 kg (2,645 lb)" },
+          { label: "Lock Features Current Power", value: "400mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NC (red) (1) Lock 12V/COM (black)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ],
-        productLink: "/products/power-cable-ua-g2-intercom"
+        productLink: "/products/power-cable-ua-g3-pro-b/w"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "Fail-Secure Bolt Lock",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "Fail-secure electric drop bolt lock.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Lock Features Lock Type Fail secure",
+          "Door Status Contact Type Dry contact",
+          "Enclosure Material Lock body: aluminum alloy Door frame plate/Door plate: aluminum alloy"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Dimensions", value: "Lock body: 132 x 30 x 42 mm (5.2 x 1.2 x 1.7') Door frame plate: 82 x 32 x 3 mm (3.2 x 1.3 x 0.1') Door plate: plate: 204 x 33 x 3 mm (8 x 1.3 x 0.1')" },
+          { label: "Weight", value: "Lock body: 350 g (12.3 oz) Door frame plate: 22 g (0.7 oz) Door plate: 46 g (1.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: aluminum alloy Door frame plate/Door plate: aluminum alloy" },
+
+          { label: "Lock Features Lock Type", value: "Fail secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features DPS", value: "en/metal) DPS" },
+          { label: "Lock Features Current Power", value: "Standby: 12mA ±10% Dynamic: 600mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) Lock 12V/NC (blue) (1) DPS/- (white) (1) DPS/+ (orange)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+          { label: "Lock Features LED Indicator", value: "Red: locked Green: unlocked & power indicator" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.5A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ],
         productLink: "/products/sfp-module-10g"
-      }
+      },
+      {
+        id: 4,
+        name: "Access Card",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "A pack of highly-secure NFC cards used for access control within UniFi.",
+        specs: [
+          "Multi-layer encryption to avoid malicious duplication",
+          "Assignable to users and visitors",
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "85.6 x 53.98 x 0.84 mm (3.37 x 2.13 x 0.03')" },
+          { label: "Weight", value: "5 g (0.18 oz)" },
+          { label: "Format", value: "ISO 7810 ID-1" },
+          { label: "NFC Technology", value: "MIFARE DESFire EV3 UniFi Access Proprietary Security Protocol" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "Anatel" },
+        ],
+        productLink: "/products/power-cable-ua-retrofit-reader-b/w"
+      },
     ]
   },
+
+  // Produk Ketiga dari DoorAccess, SF Intercom
   {
     id: "UA-Intercom-Viewer",
     name: "Intercom Viewer",
@@ -6851,27 +7080,51 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Intercom Viewer" },
-          { label: "Model", value: "UA-INTERCOM-VIEWER" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "135 x 185 x 32 mm (5.3 x 7.3 x 1.3')" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "168 g (5.9 oz)" },
+          { label: "Enclosure Material", value: "Glass, polycarbonate" },
+          { label: "Mount Material", value: "Aluminum alloy" },
+          { label: "Mounting", value: "Wall (Included) Gang box mount (Optional)" }
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Indoor and Outdoor Use", value: "Indoor Only" },
+          { label: "Networking Interface", value: "(1) 10/100 Mbps RJ45 port" },
+          { label: "Connectivy", value: "Ethernet" },
+          { label: "Power Method", value: "PoE UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Max. Power Consumption", value: "5W" },
+          { label: "Supported Voltage Range", value: "44–57V DC" },
+          { label: "Display Size", value: "127 mm (5') diagonal" },
+          { label: "Display Screen Luminance", value: "300 nits (Typical)" },
+          { label: "Display Screen Orientation", value: "Portrait" },
+          { label: "Display Screen Resolution", value: "1280 x 720 px" },
+          { label: "Microphone", value: "✓" },
+          { label: "Speaker", value: "✓" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "PoE Cabling Requirements", value: "Cat 5e cabling is the minimum performance category recommended. The performance category utilized should match the transmission speed required at the installation site.The minimal conductor gauge permitted to connect between the PSE or power injector and the PD shall be 26 AWG (0.13 mm² ) for patch cords; 24 AWG (0.21 mm² ) for horizontal or riser cable." },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 specifications was not verified as part of UL 294.The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: I" },
+          { label: "Certifications", value: "CE, FCC, IC, UL 294, CAN/ULC-60839-11-1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-Intercom-Viewer, V01" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Management Application", value: "Access" },
+          { label: "Software Information", value: "The software version can be checked at https://unifi.ui.com" },
         ]
       }
     ],
@@ -6888,63 +7141,54 @@ export const doorAccessProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Pocket Keyfob, 10-Pack",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "A pack of (10) highly-secure NFC keyfobs used for access control within UniFi.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Multi-layer encryption to avoid malicious duplication",
+          "Assignable to users and visitors",
+          "Weather-resistant, IP54-rated casing"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "84 x 39 x 7.4 mm (3.3 x 1.5 x 0.29')" },
+          { label: "Weight", value: "16 g (0.56 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, stainless steel, silicone rubber" },
+          { label: "NFC Technology", value: "ISO/IEC 14443 Type A MIFARE DESFire EV3 4K UniFi Access Proprietary Security Protocol" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "Weatherproofing", value: "IP54" },
+          { label: "Ambient Operating Temperature", value: "-10 to 45° C (14 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE" },
         ],
-        productLink: "/products/mounting-kit-ua-intercom-viewer"
+        productLink: "/products/mounting-kit-ua-retrofit-reader-b/w"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "Access Card",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "A pack of highly-secure NFC cards used for access control within UniFi.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Multi-layer encryption to avoid malicious duplication",
+          "Assignable to users and visitors",
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Dimensions", value: "85.6 x 53.98 x 0.84 mm (3.37 x 2.13 x 0.03')" },
+          { label: "Weight", value: "5 g (0.18 oz)" },
+          { label: "Format", value: "ISO 7810 ID-1" },
+          { label: "NFC Technology", value: "MIFARE DESFire EV3 UniFi Access Proprietary Security Protocol" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "Anatel" },
         ],
-        productLink: "/products/power-cable-ua-intercom-viewer"
+        productLink: "/products/power-cable-ua-retrofit-reader-b/w"
       },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
     ]
   },
+
+  // Produk Pertama dari DoorAccess, SF NVRs
   {
     id: "ENVR",
     name: "Enterprise NVR",
@@ -6989,29 +7233,41 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Enterprise NVR" },
-          { label: "Model", value: "ENVR" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimension", value: "481.4 x 480 x 132 mm (19 x 18.9 x 5.2')" },
+          { label: "Managed Cameras", value: "(210) HD (140) 2K (70) 4K" },
+          { label: "Managed Access Hub", value: "300" },
+          { label: "Storage Capacity", value: "(16) 3.5' drive bays" },
+          { label: "Data Protection", value: "✓" },
+          { label: "Vantage Point", value: "✓" },
+          { label: "Networking Interface", value: "(2) 10G SFP+ ports (1) 10 GbE RJ45 port" },
+          { label: "Power Redundancy", value: "✓" },
+          { label: "Form Factor", value: "Rack Mount (3U)" },
+          { label: "Door Access Support", value: "✓" },
+          { label: "Management Application", value: "UniFi Protect UniFi Access" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Hard Drive Capacity", value: "(16) 2.5/3.5' HDD / SSD support" },
+          { label: "Max. Power Budget for Drives", value: "310W" },
+          { label: "Max. Power Consumption", value: "410W" },
+          { label: "Power Method", value: "(2) AC input, 100–240V, 7A Max., 50/60Hz (Redundant, hot-swappable)" },
+          { label: "Power Supply", value: "Hot-swappable 550W CRPS" },
+          { label: "Proseccor", value: "8-core ARM® at 2.5 GHz" },
+          { label: "Memory", value: "32 GB" },
+          { label: "Management", value: "Ethernet" },
+          { label: "Display", value: "Bezel (Optional)" },
+          { label: "Weight", value: "Without rails: 16.6 kg (36.6 lb) With rails: 19.5 kg (43.0 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Mount Material", value: "Aluminum" },
+          { label: "Slide Rails", value: "482.6 mm (19') four-post racks Posts depths ranging from 650 to 1,000 mm (25.6–39.4”)" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -7026,63 +7282,35 @@ export const doorAccessProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Enterprise 3.5' HDD, 16 TB",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Enterprise-grade 3.5' SATA hard drive ideal for storage-intensive UniFi camera security and NAS systems.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Workload rating: 550 TB/year",
+          "Mean time between failure (MTBF): 2.5 million hours"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "147 x 101.9 x 26.1 mm (5.75 x 4 x 1')" },
+          { label: "Weight", value: "720 g (1.6 lb)" },
+          { label: "Form Factor", value: "3.5-inch HDD" },
+          { label: "Capacity", value: "16 TB" },
+          { label: "Power Method", value: "5V/12V input" },
+          { label: "Management Interface", value: "SATA 6 Gb/s" },
+          { label: "Rotation Speed", value: "7200 RPM" },
+          { label: "Workload Rating", value: "550 TB/year" },
+          { label: "Mean Time Between Failure (MTBF)", value: "2,500,000 h" },
+          { label: "Ambient Operating Temperature", value: "5 to 60° C (41 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" }
         ],
         productLink: "/products/mounting-kit-envr"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-envr"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
       }
     ]
   },
+
+  // Produk Kedua dari, DoorAccess, SF NVRs
   {
     id: "UNVR-pro",
     name: "Network Video Recorder Pro",
@@ -7127,29 +7355,40 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Network Video Recorder Pro" },
-          { label: "Model", value: "UNVR-PRO" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimension", value: "442 x 325 x 87 mm (17.4 x 12.8 x 3.4')" },
+          { label: "Managed Cameras", value: "(70) HD (35) 2K (24) 4K" },
+          { label: "Managed Access Hub", value: "150" },
+          { label: "Storage Capacity", value: "(7) 3.5' drive bays" },
+          { label: "Data Protection", value: "✓" },
+          { label: "Vantage Point", value: "✓" },
+          { label: "Networking Interface", value: "(1) 10G SFP+ port (1) GbE RJ45 port" },
+          { label: "Power Redundancy", value: "✓" },
+          { label: "Form Factor", value: "Rack Mount (2U)" },
+          { label: "Door Access Support", value: "✓" },
+          { label: "Management Application", value: "UniFi Protect UniFi Access" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Hard Drive Capacity", value: "(7) 2.5/3.5' HDD / SSD support" },
+          { label: "Max. Power Budget for Drives", value: "135W" },
+          { label: "Max. Power Consumption", value: "160W" },
+          { label: "Power Method", value: "(1) Universal AC input, 100–240V AC, 3A Max., 50/60 Hz (1) USP-RPS DC input, 11.5V DC, 13.91A" },
+          { label: "Power Supply", value: "AC/DC, internal, 200W" },
+          { label: "Proseccor", value: "Quad ARM® Cortex®-A57 cores at 1.7GHz" },
+          { label: "Memory", value: "8 GB" },
+          { label: "Management", value: "Ethernet" },
+          { label: "Display", value: "1.3' touchscreen" },
+          { label: "Weight", value: "Without mounting brackets: 9.2 kg (20.3 lb) With mounting brackets: 9.5 kg (20.8 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Mount Material", value: "SGCC steel" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 06697-21-08356" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -7164,63 +7403,35 @@ export const doorAccessProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Enterprise 3.5' HDD, 16 TB",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Enterprise-grade 3.5' SATA hard drive ideal for storage-intensive UniFi camera security and NAS systems.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Workload rating: 550 TB/year",
+          "Mean time between failure (MTBF): 2.5 million hours"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "147 x 101.9 x 26.1 mm (5.75 x 4 x 1')" },
+          { label: "Weight", value: "720 g (1.6 lb)" },
+          { label: "Form Factor", value: "3.5-inch HDD" },
+          { label: "Capacity", value: "16 TB" },
+          { label: "Power Method", value: "5V/12V input" },
+          { label: "Management Interface", value: "SATA 6 Gb/s" },
+          { label: "Rotation Speed", value: "7200 RPM" },
+          { label: "Workload Rating", value: "550 TB/year" },
+          { label: "Mean Time Between Failure (MTBF)", value: "2,500,000 h" },
+          { label: "Ambient Operating Temperature", value: "5 to 60° C (41 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" }
         ],
-        productLink: "/products/mounting-kit-unvr-pro"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-unvr-pro"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
+        productLink: "/products/mounting-kit-envr"
       }
     ]
   },
+
+  // Produk Ketiga dari DoorAccess, SF NVRs
   {
     id: "UNVR",
     name: "Network Video Recorder",
@@ -7265,29 +7476,40 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Network Video Recorder" },
-          { label: "Model", value: "UNVR" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimension", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
+          { label: "Managed Cameras", value: "(60) HD (30) 2K (18) 4K" },
+          { label: "Managed Access Hub", value: "150" },
+          { label: "Storage Capacity", value: "(4) 3.5' drive bays" },
+          { label: "Data Protection", value: "✓" },
+          { label: "Vantage Point", value: "✓" },
+          { label: "Networking Interface", value: "(1) 10G SFP+ port (1) GbE RJ45 port" },
+          { label: "Power Redundancy", value: "✓" },
+          { label: "Form Factor", value: "Rack Mount (1U)" },
+          { label: "Door Access Support", value: "✓" },
+          { label: "Management Application", value: "UniFi Protect UniFi Access" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Hard Drive Capacity", value: "(4) 2.5/3.5” HDD / SSD support" },
+          { label: "Max. Power Budget for Drives", value: "75W" },
+          { label: "Max. Power Consumption", value: "100W" },
+          { label: "Power Method", value: "(1) Universal AC input, 100–240V AC, 2A Max., 50/60 Hz (1) USP-RPS DC input, 11.5V DC, 10.43A" },
+          { label: "Power Supply", value: "AC/DC, internal, 120W" },
+          { label: "Proseccor", value: "Quad ARM® Cortex®-A57 cores at 1.7GHz" },
+          { label: "Memory", value: "4 GB" },
+          { label: "Management", value: "Ethernet" },
+          { label: "Display", value: "1.3' touchscreen" },
+          { label: "Weight", value: "Without mounting brackets: 5.1 kg (11.3 lb) With mounting brackets: 5.2 kg (11.5 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Mount Material", value: "SGCC steel" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, SRRC, Anatel: 01924-21-08356" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -7302,63 +7524,35 @@ export const doorAccessProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Enterprise 3.5' HDD, 16 TB",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Enterprise-grade 3.5' SATA hard drive ideal for storage-intensive UniFi camera security and NAS systems.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Workload rating: 550 TB/year",
+          "Mean time between failure (MTBF): 2.5 million hours"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "147 x 101.9 x 26.1 mm (5.75 x 4 x 1')" },
+          { label: "Weight", value: "720 g (1.6 lb)" },
+          { label: "Form Factor", value: "3.5-inch HDD" },
+          { label: "Capacity", value: "16 TB" },
+          { label: "Power Method", value: "5V/12V input" },
+          { label: "Management Interface", value: "SATA 6 Gb/s" },
+          { label: "Rotation Speed", value: "7200 RPM" },
+          { label: "Workload Rating", value: "550 TB/year" },
+          { label: "Mean Time Between Failure (MTBF)", value: "2,500,000 h" },
+          { label: "Ambient Operating Temperature", value: "5 to 60° C (41 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" }
         ],
-        productLink: "/products/mounting-kit-unvr"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-unvr"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
+        productLink: "/products/mounting-kit-envr"
       }
     ]
   },
+
+  // Produk Keempat dari DoorAccess, SF NVRs
   {
     id: "UNVR-Instant",
     name: "Network Video Recorder Instant",
@@ -7403,29 +7597,45 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Network Video Recorder Instant" },
-          { label: "Model", value: "UNVR-INSTANT" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimension", value: "220 x 220 x 47 mm (8.7 x 8.7 x 1.9')" },
+          { label: "Managed Cameras", value: "(15) HD (8) 2K (6) 4K" },
+          { label: "Managed Access Hub", value: "50" },
+          { label: "Storage Capacity", value: "(1) 3.5' drive bay" },
+          { label: "Data Protection", value: "✓" },
+          { label: "Vantage Point", value: "✓" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 uplink port (6) GbE PoE RJ45 downlink ports (1) HDMI port (Viewport)" },
+          { label: "Form Factor", value: "Compact Desktop" },
+          { label: "Mounting", value: "Wall, Din rail mount (Included)" },
+          { label: "Door Access Support", value: "✓" },
+          { label: "Management Application", value: "UniFi Protect UniFi Access" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Hard Drive Capacity", value: "(1) 3.5' HDD support" },
+          { label: "Max. Power Budget for Drives", value: "11W" },
+          { label: "Max. Power Consumption", value: "9W" },
+          { label: "Power Method", value: "Universal AC input, 100-240VAC, 1.5A Max, 50/60 Hz" },
+          { label: "Power Supply", value: "AC/DC, Internal, 60W" },
+          { label: "PoE Budget", value: "40W" },
+          { label: "Max. PoE Wattage per Port by PSE PoE", value: "15.4W" },
+          { label: "Voltage Range PoE Mode", value: "44–57V" },
+          { label: "Proseccor", value: "Quad ARM® Cortex®-A57 cores at 1.7GHz" },
+          { label: "Memory", value: "4 GB" },
+          { label: "Management", value: "Ethernet Bluetooth" },
+          { label: "Display", value: "1.14' screen" },
+          { label: "Weight", value: "1.04 kg (2.3 lb)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "LEDs Ethernet", value: "✓" },
+          { label: "LEDs PoE", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE, Electrical Safety, SRRC, Anatel: 06781-25-08356" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -7440,63 +7650,139 @@ export const doorAccessProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "UniFi Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "QSFP28 transceiver that supports 100G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Shielded RJ45",
+          "Insulated, weatherpoof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "Cable Lenghth: 1 to 8 m"
+
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
         ],
-        productLink: "/products/mounting-kit-unvr-instant"
+        productLink: "/products/mounting-kit"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "UniFi Premium Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "Ultra-thin braided patch cable, designed and optimized for 10 GbE networking.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 3 mm outer diameter for 0.15-8 m lengths",
+          "— 3.3 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
         ],
-        productLink: "/products/power-cable-unvr-instant"
+        productLink: "/products/power-cable-e7"
       },
       {
         id: 3,
-        name: "SFP+ Module",
+        name: "Enterprise 3.5' HDD, 16 TB",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "Enterprise-grade 3.5' SATA hard drive ideal for storage-intensive UniFi camera security and NAS systems.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Workload rating: 550 TB/year",
+          "Mean time between failure (MTBF): 2.5 million hours"
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Dimensions", value: "147 x 101.9 x 26.1 mm (5.75 x 4 x 1')" },
+          { label: "Weight", value: "720 g (1.6 lb)" },
+          { label: "Form Factor", value: "3.5-inch HDD" },
+          { label: "Capacity", value: "16 TB" },
+          { label: "Power Method", value: "5V/12V input" },
+          { label: "Management Interface", value: "SATA 6 Gb/s" },
+          { label: "Rotation Speed", value: "7200 RPM" },
+          { label: "Workload Rating", value: "550 TB/year" },
+          { label: "Mean Time Between Failure (MTBF)", value: "2,500,000 h" },
+          { label: "Ambient Operating Temperature", value: "5 to 60° C (41 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" }
+        ],
+        productLink: "/products/mounting-kit-envr"
+      },
+      {
+        id: 4,
+        name: "UniFi Etherlighting Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
+        specs: [
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 2.5 mm outer diameter for 0.15-8 m lengths",
+          "— 2.9 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
         ],
         productLink: "/products/sfp-module-10g"
       }
     ]
   },
+
+  // Produk Kelima dari DoorAccess, SF NVRs
   {
     id: "UNVR-Instant-Kit",
     name: "Network Video Recorder Instant Kit",
@@ -7539,31 +7825,101 @@ export const doorAccessProducts: Product[] = [
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Network Video Recorder Instant",
         items: [
-          { label: "Product Name", value: "Network Video Recorder Instant Kit" },
-          { label: "Model", value: "UNVR-INSTANT-KIT" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimension", value: "220 x 220 x 47 mm (8.7 x 8.7 x 1.9')" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+          { label: "UniFi Application Suite Access", value: "✓" },
+          { label: "Managed Cameras", value: "(15) HD (8) 2K (6) 4K" },
+          { label: "Managed Access Hub", value: "50" },
+          { label: "Storage Capacity", value: "(1) 3.5' drive bay" },
+          { label: "Data Protection", value: "✓" },
+          { label: "Vantage Point", value: "✓" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 uplink port (6) GbE PoE RJ45 downlink ports (1) HDMI port (Viewport)" },
+          { label: "Form Factor", value: "Compact Desktop" },
+          { label: "Mounting", value: "Wall, Din rail mount (Included)" },
+          { label: "Door Access Support", value: "✓" },
+          { label: "Management Application", value: "UniFi Protect UniFi Access" },
+          { label: "Hard Drive Capacity", value: "(1) 3.5' HDD support" },
+          { label: "Max. Power Budget for Drives", value: "11W" },
+          { label: "Max. Power Consumption", value: "9W" },
+          { label: "Power Method", value: "Universal AC input, 100-240VAC, 1.5A Max, 50/60 Hz" },
+          { label: "Power Supply", value: "AC/DC, Internal, 60W" },
+          { label: "PoE Budget", value: "40W" },
+          { label: "Max. PoE Wattage per Port by PSE PoE", value: "15.4W" },
+          { label: "Voltage Range PoE Mode", value: "44–57V" },
+          { label: "Proseccor", value: "Quad ARM® Cortex®-A57 cores at 1.7GHz" },
+          { label: "Memory", value: "4 GB" },
+          { label: "Management", value: "Ethernet Bluetooth" },
+          { label: "Display", value: "1.14' screen" },
+          { label: "Weight", value: "1.04 kg (2.3 lb)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "LEDs Ethernet", value: "✓" },
+          { label: "LEDs PoE", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE, Electrical Safety, SRRC, Anatel: 06781-25-08356" },
         ]
       },
       {
-        title: "Hardware",
+        title: "G5 Turret Ultra",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Dimensions", value: "⌀90 x 71.2 mm (⌀3.5 x 2.8')" },
+          { label: "IR Night Vision", value: "30 m (98 ft)" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "2K" },
+          { label: "Field of View", value: "H: 102.4°, V: 54.9°, D: 120.6°" },
+          { label: "Audio", value: "H: 102.4°, V: 54.9°, D: 120.6°" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall, ceiling mount (Included) Junction box, arm mount (Optional)" },
+          { label: "Networking Interface", value: "10/100 MbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "4MP 2688 x 1512 (16:9)" },
+          { label: "Optics Sensor", value: "1/2.4' CMOS" },
+          { label: "Optics Lens", value: "Fixed Focal Length" },
+          { label: "Optics Night Mode", value: "Built-in IR LED illumination and IR cut filter" },
+          { label: "Max. Power Consumption", value: "4W" },
+          { label: "Supported Voltage Range", value: "37—57V DC" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Processor", value: "Dual-core Arm® Cortex®-A7 based chip" },
+          { label: "Weight", value: "330 g (11.6 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, UV-stabilized polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Cable Cable Connector Type", value: "RJ45" },
+          { label: "Cable Cable Diameter", value: "5 mm (0.2')" },
+          { label: "Cable Cable Length", value: "30 cm (1 ft)" },
+          { label: "Cable Jacket Material", value: "Polycarbonate" },
+          { label: "Cable Jacket Enclosure Dimensions", value: "⌀20 x 70.6 mm (0.8 x 2.8')" },
+          { label: "Cable Jacket Enclosure Material", value: "Thermoplastic elastomer, polycarbonate, silicone rubber" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50° C (-22 to 122° F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
       {
-        title: "Software",
+        title: "HDD",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Dimensions", value: "147 x 101.6 x 26.1 mm (5.75 x 4 x 1')" },
+          { label: "Hard Disk Form Factor", value: "30 m (98 ft)" },
+          { label: "Weight", value: "✓" },
+          { label: "Storage Capacity", value: "2K" },
+          { label: "Power Method", value: "PoE" },
+          { label: "Management Interface", value: "SATA 6 Gb/s" },
+          { label: "Rotation Speed", value: "5400 RPM" },
+          { label: "Workload Rating", value: "180 TB/year" },
+          { label: "mean Time Between Fallure", value: "1,000,000 h" },
+          { label: "Ambient Operating Temperature", value: "0 to 65° C (32 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, CE, TUV, RCM, KC, BSMI" },
         ]
-      }
+      },
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -7578,33 +7934,253 @@ export const doorAccessProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "UniFi Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "QSFP28 transceiver that supports 100G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Shielded RJ45",
+          "Insulated, weatherpoof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "Cable Lenghth: 1 to 8 m"
+
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
         ],
-        productLink: "/products/mounting-kit-unvr-instant-kit"
+        productLink: "/products/mounting-kit"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "UniFi Premium Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Ultra-thin braided patch cable, designed and optimized for 10 GbE networking.",
+        specs: [
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 3 mm outer diameter for 0.15-8 m lengths",
+          "— 3.3 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+        ],
+        productLink: "/products/power-cable-e7"
+      },
+      {
+        id: 3,
+        name: "Enterprise 3.5' HDD, 16 TB",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Enterprise-grade 3.5' SATA hard drive ideal for storage-intensive UniFi camera security and NAS systems.",
+        specs: [
+          "Workload rating: 550 TB/year",
+          "Mean time between failure (MTBF): 2.5 million hours"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "147 x 101.9 x 26.1 mm (5.75 x 4 x 1')" },
+          { label: "Weight", value: "720 g (1.6 lb)" },
+          { label: "Form Factor", value: "3.5-inch HDD" },
+          { label: "Capacity", value: "16 TB" },
+          { label: "Power Method", value: "5V/12V input" },
+          { label: "Management Interface", value: "SATA 6 Gb/s" },
+          { label: "Rotation Speed", value: "7200 RPM" },
+          { label: "Workload Rating", value: "550 TB/year" },
+          { label: "Mean Time Between Failure (MTBF)", value: "2,500,000 h" },
+          { label: "Ambient Operating Temperature", value: "5 to 60° C (41 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" }
+        ],
+        productLink: "/products/mounting-kit-envr"
+      },
+      {
+        id: 4,
+        name: "UniFi Etherlighting Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
+        specs: [
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 2.5 mm outer diameter for 0.15-8 m lengths",
+          "— 2.9 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
+        ],
+        productLink: "/products/sfp-module-10g"
+      }
+    ]
+  },
+
+
+  {
+    id: "ENVR-Core",
+    name: "Enterprise NVR Core",
+    category: "Door Access",
+    subfilter: "NVRs",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "3U UniFi Protect NVR with 16-bay support for 2.5'/3.5' HDDs/SSDs, up to (300) 4K or (500) Full HD cameras, hot-swappable power supplies and optional 16-bay storage expansion units.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "ENVR-Core",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "(16) 3.5 drive bays",
+      "Rack Mount (3U)",
+      "64 GB",
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimension", value: "481.4 x 550 x 132 mm (19 x 21.7 x 5.2')" },
+          { label: "Managed Cameras", value: "(500) HD (400) 2K (300) 4K" },
+          { label: "Managed Access Hub", value: "300+" },
+          { label: "Storage Capacity", value: "(16) 3.5' drive bays" },
+          { label: "Data Protection", value: "✓" },
+          { label: "Vantage Point", value: "✓" },
+          { label: "Networking Interface", value: "(2) 25G SFP28 ports (25G/10G/1G) (1) GbE MGMT RJ45 port (1G/100M)" },
+          { label: "Expansion Port", value: "(2) SFF-8644 ports (24G)" },
+          { label: "Power Redundancy", value: "✓" },
+          { label: "Form Factor", value: "Rack Mount (3U)" },
+          { label: "Door Access Support", value: "✓" },
+          { label: "Management Application", value: "UniFi Protect UniFi Access" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Hard Drive Capacity", value: "(16) 2.5/3.5' HDD / SSD support (2) Expansion ports, support up to 48 total HDD/SSD" },
+          { label: "Max. Power Budget for Drives", value: "313W" },
+          { label: "Max. Power Consumption", value: "237W" },
+          { label: "Power Method", value: "(2) AC input, 100–240V, 7A Max., 50/60Hz (Redundant, hot-swappable)" },
+          { label: "Power Supply", value: "Hot-swappable 550W CRPS" },
+          { label: "Proseccor", value: "128-core Arm® v8.2 at 2.6 GHz" },
+          { label: "Memory", value: "64 GB" },
+          { label: "Management", value: "Ethernet Bluetooth" },
+          { label: "Display", value: "1.14' screen" },
+          { label: "Weight", value: "Without rails: 20.5 kg (45.2 lb) With rails: 23.4 kg (51.6 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Mount Material", value: "Aluminum" },
+          { label: "Slide Rails", value: "The rails support 482.6 mm (19') four-post racks with square holes (9.5 x 9.5 mm) and posts depths ranging from 600–1066 mm (23.6–42')" },
+          { label: "Faceplate", value: "Support UACC-3U-Bezel-Lite (Included)" },
+          { label: "LEDs SFP28", value: "✓" },
+          { label: "LEDs HDD", value: "✓" },
+          { label: "LEDs System", value: "✓" },
+          { label: "LEDs Expansion Port", value: "✓" },
+          { label: "LEDs CRPS", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "10 to 35° C (50 to 95° F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 90% noncondensing" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ version 3.3.0 and later UniFi Protect Android™ version 3.2.0 and later" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+
+    // Addon/aksesori yang tersedia untuk produk ini
+    addons: [
+      {
+        id: 1,
+        name: "25G Direct Attach Cable",
         image: "/images/dcs-box.png",
         price: 299,
         description: "High-quality power cable with durable construction.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Supported data rates: 25 / 10 / 1 Gbps",
+          "Compatible with SFP28, SFP+, and SFP interfaces",
+          "Cable length: 0.5 to 3 m"
+
         ],
         detailedSpecs: [
           { label: "Length", value: "2.0 m" },
@@ -7612,29 +8188,116 @@ export const doorAccessProducts: Product[] = [
           { label: "Rating", value: "10A / 250V" },
           { label: "Jacket", value: "PVC" }
         ],
-        productLink: "/products/power-cable-unvr-instant-kit"
+        productLink: "/products/power-cable"
       },
       {
-        id: 3,
-        name: "SFP+ Module",
+        id: 2,
+        name: "UniFi Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+        description: "QSFP28 transceiver that supports 100G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
         specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
+          "Shielded RJ45",
+          "Insulated, weatherpoof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "Cable Lenghth: 1 to 8 m"
+
         ],
         detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 2,
+        name: "UniFi Premium Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Ultra-thin braided patch cable, designed and optimized for 10 GbE networking.",
+        specs: [
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 3 mm outer diameter for 0.15-8 m lengths",
+          "— 3.3 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+        ],
+        productLink: "/products/power-cable-e7"
+      },
+      {
+        id: 4,
+        name: "UniFi Etherlighting Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
+        specs: [
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 2.5 mm outer diameter for 0.15-8 m lengths",
+          "— 2.9 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
         ],
         productLink: "/products/sfp-module-10g"
       }
     ]
   },
+
+  // Produk Pertama dari DoorAccess, SF Door Access Accessories
   {
     id: "UA-Card-10-B/W",
     name: "Access Card",
@@ -7677,107 +8340,31 @@ export const doorAccessProducts: Product[] = [
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Mechanical",
         items: [
-          { label: "Product Name", value: "Access Card" },
-          { label: "Model", value: "UA-CARD-10-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "85.6 x 53.98 x 0.84 mm (3.37 x 2.13 x 0.03')" },
+          { label: "Weight", value: "5 g (0.18 oz)" },
+          { label: "Format", value: "ISO 7810 ID-1" },
+          { label: "NFC Technology", value: "MIFARE DESFire EV3 UniFi Access Proprietary Security Protocol" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "Anatel" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-ua-card-10-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-ua-card-10-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Kedua dari DoorAccess, SF Door Access Accessories
   {
     id: "UACC-Retrofit-PoE-2Wire",
     name: "PoE Over 2-Wire Retrofit Extender",
-    category: "Door Access",
-    subfilter: "Door Access Accessories",
+    category: "Accessories",
+    subfilter: "PoE & Power",
     image: "/images/camera.jpg",
     shortDescription:
       "A pair of extenders that extends PoE over twisted-pair or coaxial cables, ideal for retrofit scenarios.",
@@ -7789,11 +8376,11 @@ export const doorAccessProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UACC-RETROFIT-POE-2WIRE",
+    sku: "UACC-Retrofit-PoE-2Wire",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
+      "/images/products/Product-Gateway-Fiber.png",
       "/images/banners/dcs-overview-1.png",
       "/images/banners/dcs-overview-2.png"
     ],
@@ -7806,40 +8393,41 @@ export const doorAccessProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "A pair of extenders that extends PoE over twisted-pair or coaxial cables",
-      "ideal for retrofit scenarios",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Transmitter (1) PoE++ input",
+      "Transmitter (1) 2-wire output",
+      "Transmitter (1) 2-wire to BNC adapter",
+      "Receiver (1) PoE/PoE+ output",
+      "Receiver (1) 2-wire input",
+      "Receiver (1) 2-wire to BNC adapter"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Mechanical",
         items: [
-          { label: "Product Name", value: "PoE Over 2-Wire Retrofit Extender" },
-          { label: "Model", value: "UACC-RETROFIT-POE-2WIRE" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "	PoE in/out: 40 x 105 x 25 mm (1.6 x 4.1 x 1') Adapter: 43.5 x 138 x 30 mm (1.7 x 5.4 x 1.2')" },
+          { label: "Weight", value: "	PoE in: 77 g (2.7 oz) PoE out: 79 g (2.8 oz) Adapter: 140 g (4.9 oz)" },
+          { label: "Enclosure Material", value: "	Polycarbonate" },
+          { label: "Mounting material", value: "	Polycarbonate" },
+          { label: "Coaxial connector", value: "BNC female" }
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Networking Interface", value: "	(1) 10/100 MbE(1) Homeplug AV" },
+          { label: "Power Method", value: "	PoE++" },
+          { label: "PoE input", value: "(1) PoE++, 50V DC, 1.2A" },
+          { label: "PoE Output", value: "	(1) PoE+, 48V DC, 0.6A" },
+          { label: "Max. Power Consumptlon", value: "	3W (Without PoE output)" },
+          { label: "ESD/EMP protection", value: "	Air: ±8kV, contact: ±4kV" },
+          { label: "LED", value: "White" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "	5 to 90% noncondensing" },
+          { label: "Certifications", value: "	CE, FCC, IC, UL 62368-1, CSA C22.2 No. 62368-1" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -7849,344 +8437,95 @@ export const doorAccessProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "G6 Pro Entry",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "An intelligent door entry system with native UniFi Protect and UniFi Access integration with a 12MP camera, two-way audio, and a 3' touch display.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Max. Power Consumption 18W",
+          "Supported Voltage Range 42—57V DC",
+          "Power Method PoE+",
+          "Processor Quad-core Arm® Cortex®-A53 based chip"
+
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "220 x 49.3 x 29.6 mm (8.7 x 1.9 x 1.2')" },
+          { label: "IR Night Vision", value: "5 m (16 ft)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "Main camera: 12MP Package camera: 8MP" },
+          { label: "Field of View", value: "Main camera: H: 100°, V: 136.3°, D: 176.4° (12MP) H: 70.9°, V: 127.5°, D: 147.4° (8MP) Package camera: H: 66°, V: 51.7°, D: 78°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "Tamper Resistance", value: "IK07 LCM IK04" },
+          { label: "Mounting", value: "Wall mount, Gangbox mount plate, 20° wedge mount (Included) Junction box (Optional)" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "PIN Access", value: "✓" },
+          { label: "Apple/Google Wallet", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Two-Way Intercom & Doorbell Access", value: "✓" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+          { label: "UniFi Application Suite Access", value: "✓" },
+          { label: "Performance Networking Interface", value: "GbE RJ45 port" },
+          { label: "Performance Connectivity", value: "BLE 4.1 NFC" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate Main camera: 12MP, 20 FPS or 8", value: "Main camera: 12MP, 20 FPS or 8MP, 30 FPS Package camera: 3 FPS" },
+          { label: "Video Resolution", value: "Main camera: 12MP, 3024 x 4096 (3:4) or 8MP, 2160 x 3840 (9:16) Package camera: 8MP, 3264 x 2448 (4:3)" },
+          { label: "Optics Sensor", value: "Main camera: 12MP CMOS Package camera: 8MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "OpticsNight Mode", value: "Built-in IR LED illumination and IR cut filter" }
         ],
-        productLink: "/products/mounting-kit-uacc-retrofit-poe-2wire"
+        productLink: "/products/mounting-kit"
       },
       {
         id: 2,
-        name: "Power Cable",
+        name: "G6 Entry",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "High-quality power cable with durable construction.",
+        description: "An intelligent door entry system with native UniFi Protect and UniFi Access integration.",
         specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
+          "Max. Power Consumption 16W",
+          "Supported Voltage Range 42—57V DC",
+          "Power Method PoE+",
+          "Processor Quad-core Arm® Cortex®-A53 based chip"
+
         ],
         detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
+          { label: "Dimensions", value: "176 x 45 x 29.6 mm (6.9 x 1.8 x 1.2')" },
+          { label: "IR Night Vision", value: "5 m (16 ft)" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "Main camera: 5MP Package camera: 8MP" },
+          { label: "Field of View", value: "Main camera: H: 100°, V: 135°, D: 180° Package camera: H: 66°, V: 51.7°, D: 78°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "Tamper Resistance", value: "  IK07" },
+          { label: "Mounting", value: "Wall mount, Gangbox mount plate, 20° wedge mount (Included) Junction box (Optional)" },
+          { label: "NFC Card & Keyfob Access", value: "✓" },
+          { label: "PIN Access", value: "✓" },
+          { label: "Apple/Google Wallet", value: "✓" },
+          { label: "Mobile Unlock", value: "✓" },
+          { label: "Two-Way Intercom & Doorbell Access", value: "✓" },
+          { label: "UniFi Application Suite Protect", value: "✓" },
+          { label: "UniFi Application Suite Access", value: "✓" },
+          { label: "Performance Networking Interface", value: "GbE RJ45 port" },
+          { label: "Performance Connectivity", value: "BLE 4.1 NFC" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate Main camera: 12MP, 20 FPS or 8", value: "Main camera: 30 FPSPackage camera: 3 FPS" },
+          { label: "Video Resolution", value: "Main camera: 5MP, 1920 x 2560 (3:4) Package camera: 8MP 3264 x 2448 (4:3)" },
+          { label: "Optics Sensor", value: "Main camera: 5MP CMOS Package camera: 8MP CMOS" },
+          { label: "Optics Lens", value: "Fixed focal length" },
+          { label: "OpticsNight Mode", value: "Built-in IR LED illumination and IR cut filter" }
         ],
-        productLink: "/products/power-cable-uacc-retrofit-poe-2wire"
+        productLink: "/products/mounting-kit"
       },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
     ]
   },
-  {
-    id: "UACC-Reader-JB-B/W",
-    name: "Reader Junction Box",
-    category: "Door Access",
-    subfilter: "Door Access Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Junction box for UniFi Access Readers and Intercom Viewers that support flat surface mounting and attachment to 3/4' conduit.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
 
-    // SKU produk
-    sku: "UACC-READER-JB-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Junction box for UniFi Access Readers and Intercom Viewers that support flat surface mounting and attachment to 3/4' conduit",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Reader Junction Box" },
-          { label: "Model", value: "UACC-READER-JB-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-reader-jb-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-reader-jb-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-Reader-Pro-JB-B/W",
-    name: "Reader Pro Junction Box",
-    category: "Door Access",
-    subfilter: "Door Access Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Junction box for UniFi Professional Access Readers and Doorbells that supports flat surface mounting and attachment to 3/4' conduit.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-READER-PRO-JB-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Junction box for UniFi Professional Access Readers and Doorbells that supports flat surface mounting and attachment to 3/4' conduit",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Reader Pro Junction Box" },
-          { label: "Model", value: "UACC-READER-PRO-JB-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-reader-pro-jb-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-reader-pro-jb-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
+  // Produk Ketiga dari DoorAccess, SF Door Access Accessories
   {
     id: "UACC-Reader-Pro-AM-B/W",
     name: "Reader Pro Angle Mount",
@@ -8220,10 +8559,9 @@ export const doorAccessProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Angled mounting accessory for UniFi Professional Access Readers",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Wall Compatible with UA-G2-Pro gang box mount",
+      "43 g (1.5 oz)",
+      "Polycarbonate"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -8231,100 +8569,16 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Reader Pro Angle Mount" },
-          { label: "Model", value: "UACC-READER-PRO-AM-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Dimensions", value: "160 x 40.4 x 31.1 mm (6.3 x 1.6 x 1.2')" },
+          { label: "Weight", value: "43 g (1.5 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mounting", value: "Wall Compatible with UA-G2-Pro gang box mount" },
         ]
       }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-reader-pro-am-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-reader-pro-am-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Keempat dari DoorAccess, SF Door Access Accessories
   {
     id: "UACC-Intercom-SAM",
     name: "Intercom Surface Angle Mount",
@@ -8357,10 +8611,9 @@ export const doorAccessProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "UniFI Access Intercom surface angle mount accessory",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "180 g (6.3 oz)",
+      "UV-stabilized polycarbonate with PU coating",
+      "-30 to 60° C (-22 to 140° F)"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -8368,237 +8621,17 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Intercom Surface Angle Mount" },
-          { label: "Model", value: "UACC-INTERCOM-SAM" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "324.8 x 113.7 x 34.9 mm (12.8 x 4.5 x 1.4')" },
+          { label: "Weight", value: "180 g (6.3 oz)" },
+          { label: "Enclosure Material", value: "UV-stabilized polycarbonate with PU coating" },
+          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" }
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-intercom-sam"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-intercom-sam"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-  {
-    id: "UACC-Intercom-FM",
-    name: "Intercom Flush Mount",
-    category: "Door Access",
-    subfilter: "Door Access Accessories",
-    image: "/images/camera.jpg",
-    shortDescription: "UniFI Access Intercom flush mount accessory.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
 
-    // SKU produk
-    sku: "UACC-INTERCOM-FM",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "UniFI Access Intercom flush mount accessory",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Intercom Flush Mount" },
-          { label: "Model", value: "UACC-INTERCOM-FM" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-intercom-fm"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-intercom-fm"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
+  // Produk Kelima dari DoorAccess, SF Door Access Accessories
   {
     id: "UACC-Intercom-Sunshield",
     name: "Intercom Sunshield",
@@ -8631,10 +8664,9 @@ export const doorAccessProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "UniFI Access Intercom sunshield accessory",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Powder-coated galvanized steel",
+      "560 g (1.2 lb)",
+      "-40 to 70° C (-40 to 158° F)"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -8642,238 +8674,18 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Intercom Sunshield" },
-          { label: "Model", value: "UACC-INTERCOM-SUNSHIELD" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "362.1 x 118.1 x 59.1 mm (14.3 x 4.6 x 2.3')" },
+          { label: "weight", value: "560 g (1.2 lb)" },
+          { label: "Enclosure Material", value: "Powder-coated galvanized steel" },
+          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 140° F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 70° C (-40 to 158° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-intercom-sunshield"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-intercom-sunshield"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-  {
-    id: "UACC-Intercom-WM",
-    name: "Intercom Wedge Mount",
-    category: "Door Access",
-    subfilter: "Door Access Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "A pack of highly-secure NFC cards used for access control within UniFi.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
 
-    // SKU produk
-    sku: "UACC-INTERCOM-WM",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "A pack of highly-secure NFC cards used for access control within UniFi",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Intercom Wedge Mount" },
-          { label: "Model", value: "UACC-INTERCOM-WM" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-intercom-wm"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-intercom-wm"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
+  // Produk Keenam dari DoorAccess, SF Door Access Accessories
   {
     id: "UACC-Intercom-Viewer-TS",
     name: "Intercom Viewer Table Stand",
@@ -8906,10 +8718,9 @@ export const doorAccessProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Metal table stand for Intercom Viewer",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Aluminum alloy, rubber, polycarbonate",
+      "186 g (6.6 oz)",
+      "123.6 x 78.8 x 72 mm (4.9 x 3.1 x 2.8')"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -8917,100 +8728,15 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Intercom Viewer Table Stand" },
-          { label: "Model", value: "UACC-INTERCOM-VIEWER-TS" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "123.6 x 78.8 x 72 mm (4.9 x 3.1 x 2.8')" },
+          { label: "Weight", value: "186 g (6.6 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, rubber, polycarbonate" },
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-intercom-viewer-ts"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-intercom-viewer-ts"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Ketujuh dari Door Access, SF Door Access Accessories
   {
     id: "UACC-Junction-Utility",
     name: "Junction Utility",
@@ -9044,10 +8770,9 @@ export const doorAccessProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "An indoor/outdoor enclosure designed for UniFi Access Hubs",
-      "and accessories",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "7 kg (15.4 lb)",
+      "Galvanized steel (SGCC)",
+      "Wall"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -9055,29 +8780,14 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Junction Utility" },
-          { label: "Model", value: "UACC-JUNCTION-UTILITY" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Product Name", value: "Enclosure: 400 x 350 x 152 mm (15.7 x 13.8 x 6') Inner mounting plate: 270 x 355 mm (10.6 x 14')" },
+          { label: "Weight", value: "7 kg (15.4 lb)" },
+          { label: "Enclosure Material", value: "Galvanized steel (SGCC)" },
+          { label: "Mounting", value: "Wall" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "Certifications", value: "UL 50E NEMA Type 3R Outdoor Enclosure certified" }
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -9087,206 +8797,9 @@ export const doorAccessProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-junction-utility"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-junction-utility"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-  {
-    id: "UACC-Retrofit-PSU-12V",
-    name: "Retrofit PSU 12V",
-    category: "Door Access",
-    subfilter: "Door Access Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "12V power supply with optional SLA backup battery support, compatible with the UniFi Retrofit Hub.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
 
-    // SKU produk
-    sku: "UACC-RETROFIT-PSU-12V",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "12V power supply with optional SLA backup battery support",
-      "compatible with the UniFi Retrofit Hub",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Retrofit PSU 12V" },
-          { label: "Model", value: "UACC-RETROFIT-PSU-12V" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-retrofit-psu-12v"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-retrofit-psu-12v"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
+  // Produk Kedelapan dari DoorAccess, SF Door Access Accessories
   {
     id: "UA-Button",
     name: "Access Button",
@@ -9328,31 +8841,34 @@ export const doorAccessProducts: Product[] = [
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Mechanical",
         items: [
-          { label: "Product Name", value: "Access Button" },
-          { label: "Model", value: "UA-BUTTON" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimension", value: "137 x 88 x 38.1 mm (5.4 x 3.5 x 1.5')" },
+          { label: "Weight", value: "180 g (6.3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate, SGCC steel" },
+          { label: "Available Color", value: "Black, white" },
+          { label: "Indoor and Outdoor Use", value: "Indoor only" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Mechanical Life", value: "1,000,000 clicks" },
+          { label: "Power Method", value: "UniFi Access Hubs UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Contact type", value: "(1) Normal open" },
+          { label: "Contact Rating", value: "30V DC, 2A" },
+          { label: "UL 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 (at or af) specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade assignment: 1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-Button, V01" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 70° C (-40 to 158° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, UL 294, CAN/ULC-60839-11-1" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -9362,344 +8878,9 @@ export const doorAccessProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-ua-button"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-ua-button"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
-  {
-    id: "UACC-DoorCloser",
-    name: "Door Closer",
-    category: "Door Access",
-    subfilter: "Door Access Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "A mechanical door closer that ensures controlled closure for safety and convenience.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
 
-    // SKU produk
-    sku: "UACC-DOORCLOSER",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "A mechanical door closer that ensures controlled closure for safety and convenience",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Door Closer" },
-          { label: "Model", value: "UACC-DOORCLOSER" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-doorcloser"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-doorcloser"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-PanicBar",
-    name: "Panic Bar",
-    category: "Door Access",
-    subfilter: "Door Access Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "A single-latched bar installed on emergency exit doors, allowing quick and easy egress by pushing the bar to open the door during emergencies.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-PANICBAR",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "A single-latched bar installed on emergency exit doors",
-      "allowing quick and easy egress by pushing the bar to open the door during emergencies",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Panic Bar" },
-          { label: "Model", value: "UACC-PANICBAR" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-panicbar"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-panicbar"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
+  // Produk Kesembilan dari Door Access, SF Door Access Accessories
   {
     id: "UA-Lock-Magnetic-270kg",
     name: "Magnetic Lock",
@@ -9744,100 +8925,58 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Magnetic Lock" },
-          { label: "Model", value: "UA-LOCK-MAGNETIC-270KG" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "UA-Lock-Magnetic-270kg Lock body: 250 x 42.5 x 26 mm(9.8 x 1.7 x 1' ) Install plate: 250 x 25x 5 mm (9.8 x 1 x 0.2' ) Armature: 185.5 x 38.5 x 11 mm (7.3 x 1.5 x 0.4') UA-Lock-Magnetic-540kg Lock body: 266 x 67.5 x 40 mm (10.5 x 2.7 x 1.6') Install plate: 266 x 40 x 6 mm (10.5 x 1.6 x 0.2') Armature: 185 x 61 x 16 mm (7.3 x 2.4 x 0.6')" },
+          { label: "Weight", value: "UA-Lock-Magnetic-270kg Lock body: 1 kg (2.2 lb) Install plate: 70 g (0.15 lb) Armature: 600 g (1.3 lb)  UA-Lock-Magnetic-540kg Lock body: 2.9 kg (6.4 lb) Install plate: 145 g (0.3 lb) Armature: 1.4 kg (3.1 lb)" },
+          { label: "Enclosure Material", value: "Device/brackets: aluminum Armature: steel" },
+          { label: "Lock Features Lock Type", value: "Fail Safe" },
+          { label: "Lock Features Lock Support Door Type", value: "UA-Lock-Magnetic-270kg: Single door (Wooden/metal/glass) UA-Lock-Magnetic-540kg: Single door (Wooden/metal)" },
+          { label: "Lock Features Lock DPS", value: "Embedded" },
+          { label: "Lock Features Lock Holding Face", value: "UA-Lock-Magnetic-270kg: 270 kg (600 lb) UA-Lock-Magnetic-540kg: 540 kg (1,200 lb)" },
+          { label: "Lock Features Lock Current Power", value: "500mA ±10%" },
+          { label: "Lock Features Lock Support Volatge Range", value: "12V DC ±10%" },
+          { label: "Lock Features Lock Wiring", value: "(1) Lock 12V/NC (red) (1) Lock 12V/COM (black) (1) DPS/+ (white) (1) DPS/- (yellow)" },
+          { label: "Lock Features Lock Mounting", value: "UA-Lock-Magnetic-270kg L bracket: for outward opening door thickness < 42 mm (< 1.7') Z bracket: for inward opening door, used with L bracket U bracket: for glass door thickness ≤ 17 mm (≤ 0.7') and door gap ≤ 5 mm (≤ 0.2')  UA-Lock-Magnetic-540kg L bracket: for outward opening door thickness < 42 mm (< 1.7')  Z bracket: for inward opening door, used with L bracket" },
+          { label: "Lock Features Lock LED Indicator", value: "Green: unlocked Red: locked)  Z bracket: for inward opening door, used with L bracket" },
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Access Rescue KeySwitch",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Keyed emergency override for your Access Hub.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Manual unlock port with two physical keys included",
+          "Backup entry for malfunctioning fail-safe or secure* lock systems",
+          "*Does not provide redundant power for fail-secure systems."
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "⌀60 x 74 mm (⌀2.4 x 2.9')" },
+          { label: "Weight", value: "94 g (3.3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Key Switch", value: "Brass internal wave key, 28V DC, 4A" },
+          { label: "Terminal Block", value: "COM/NO/NC 18-24 AWG" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 85° C (-40 to 185° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "Certification", value: "FCC, IC, CE" },
         ],
         productLink: "/products/mounting-kit-ua-lock-magnetic-270kg"
       },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-ua-lock-magnetic-270kg"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
     ]
   },
+
+  // Produk Kesepuluh dari DoorAccess, SF Door Access Accessories
   {
     id: "UACC-Lock-Strike-Secure-15mm",
     name: "Fail-Secure Strike Lock",
@@ -9882,29 +9021,29 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Fail-Secure Strike Lock" },
-          { label: "Model", value: "UACC-LOCK-STRIKE-SECURE-15MM" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Lock body:112 x 21 x 28 mm (4.4 x 0.8 x 1.1') Short front plate:153 x 25 x 3 mm (6 x 0.9 x 0.1') Long front plate:250 x 25 x 3 mm (9.8 x 0.9 x 0.1')" },
+          { label: "Weight", value: "Lock body: 197 g (6.9 oz) Short front plate: 62 g (2.2 oz) Long front plate: 97 g (3.4 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "227 kg (500 lb)" },
+          { label: "Lock Features Current Power", value: "200mA ± 10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) DPS/- (white) (1) DPS/+ (orange" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -9919,63 +9058,33 @@ export const doorAccessProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Access Rescue KeySwitch",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Keyed emergency override for your Access Hub.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Manual unlock port with two physical keys included",
+          "Backup entry for malfunctioning fail-safe or secure* lock systems",
+          "*Does not provide redundant power for fail-secure systems."
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "⌀60 x 74 mm (⌀2.4 x 2.9')" },
+          { label: "Weight", value: "94 g (3.3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Key Switch", value: "Brass internal wave key, 28V DC, 4A" },
+          { label: "Terminal Block", value: "COM/NO/NC 18-24 AWG" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 85° C (-40 to 185° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "Certification", value: "FCC, IC, CE" },
         ],
-        productLink: "/products/mounting-kit-uacc-lock-strike-secure-15mm"
+        productLink: "/products/mounting-kit-ua-lock-magnetic-270kg"
       },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-lock-strike-secure-15mm"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
     ]
   },
+
+// Produk Kesebelas dari DoorAccess, SF Door Access Accessories
   {
     id: "UACC-Lock-Strike-Safe-15mm",
     name: "Fail-Safe Strike Lock",
@@ -10020,29 +9129,29 @@ export const doorAccessProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Fail-Safe Strike Lock" },
-          { label: "Model", value: "UACC-LOCK-STRIKE-SAFE-15MM" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Lock body: 80 x 40 x 35 mm (3.2 x 1.6 x 1.4') Short front plate: 124 x 32 x 3 mm (4.9 x 1.3 x 0.1') Long front plate: 202 x 36 x 3 mm (7.9 x 1.4 x 0.1')" },
+          { label: "Weight", value: "Lock body: 185 g (6.5 oz) Short front plate: 50 g (1.8 oz) Long front plate: 130 g (4.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail safe" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "1,200 kg (2,645 lb)" },
+          { label: "Lock Features Current Power", value: "400mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NC (red) (1) Lock 12V/COM (black)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+
+          { label: "Door Status Contact Type", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -10057,339 +9166,33 @@ export const doorAccessProducts: Product[] = [
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "Access Rescue KeySwitch",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "Keyed emergency override for your Access Hub.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Manual unlock port with two physical keys included",
+          "Backup entry for malfunctioning fail-safe or secure* lock systems",
+          "*Does not provide redundant power for fail-secure systems."
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
+          { label: "Dimensions", value: "⌀60 x 74 mm (⌀2.4 x 2.9')" },
+          { label: "Weight", value: "94 g (3.3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Key Switch", value: "Brass internal wave key, 28V DC, 4A" },
+          { label: "Terminal Block", value: "COM/NO/NC 18-24 AWG" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 85° C (-40 to 185° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDA Compliant", value: "✓" },
+          { label: "Certification", value: "FCC, IC, CE" },
         ],
-        productLink: "/products/mounting-kit-uacc-lock-strike-safe-15mm"
+        productLink: "/products/mounting-kit-ua-lock-magnetic-270kg"
       },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-lock-strike-safe-15mm"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
     ]
   },
-  {
-    id: "UACC-Cable-DoorLockRelay-1P",
-    name: "Door Lock Relay Cable",
-    category: "Door Access",
-    subfilter: "Door Access Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "A 500-foot (152.4m) spool of one or two pair, low voltage cable.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
 
-    // SKU produk
-    sku: "UACC-CABLE-DOORLOCKRELAY-1P",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "A 500-foot (152",
-      "4m) spool of one or two pair",
-      "low voltage cable",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Door Lock Relay Cable" },
-          { label: "Model", value: "UACC-CABLE-DOORLOCKRELAY-1P" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-cable-doorlockrelay-1p"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-cable-doorlockrelay-1p"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-  {
-    id: "UACC-Cable-DoorLockRelay-2P",
-    name: "Door Lock Relay Cable",
-    category: "Door Access",
-    subfilter: "Door Access Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "A 500-foot (152.4m) spool of one or two pair, low voltage cable.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-CABLE-DOORLOCKRELAY-2P",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "A 500-foot (152",
-      "4m) spool of one or two pair",
-      "low voltage cable",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Product Name", value: "Door Lock Relay Cable" },
-          { label: "Model", value: "UACC-CABLE-DOORLOCKRELAY-2P" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-cable-doorlockrelay-2p"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-cable-doorlockrelay-2p"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
+// Produk Kedua Belas dari DoorAccess, SF Door Access Accessories
   {
     id: "UA-Pocket",
     name: "Pocket Keyfob, 10-Pack",
@@ -10432,102 +9235,29 @@ export const doorAccessProducts: Product[] = [
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Mechanical",
         items: [
-          { label: "Product Name", value: "Pocket Keyfob, 10-Pack" },
-          { label: "Model", value: "UA-POCKET" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "84 x 39 x 7.4 mm (3.3 x 1.5 x 0.29')" },
+          { label: "Weight", value: "16 g (0.56 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, stainless steel, silicone rubber" },
+          { label: "NFC Technology", value: "ISO/IEC 14443 Type A MIFARE DESFire EV3 4K UniFi Access Proprietary Security Protocol" },
+          { label: "NFC Frequency", value: "13.56 MHz" },
+          { label: "Weatherproofing", value: "IP54" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Ambient Operating Temperature", value: "-10 to 45° C (14 to 113° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-ua-pocket"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-ua-pocket"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+// Produk Ketiga Belas dari DoorAccess, SF Door Access Accessories
   {
     id: "UA-Rescue",
     name: "Access Rescue KeySwitch",
@@ -10568,101 +9298,26 @@ export const doorAccessProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
-        title: "Overview",
+       {
+        title: "Mechanical",
         items: [
-          { label: "Product Name", value: "Access Rescue KeySwitch" },
-          { label: "Model", value: "UA-RESCUE" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "⌀60 x 74 mm (⌀2.4 x 2.9')" },
+          { label: "Weight", value: "94 g (3.3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Key Switch", value: "Brass internal wave key, 28V DC, 4A" },
+          { label: "Terminal Block", value: "COM/NO/NC 18-24 AWG" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 85° C (-40 to 185° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ]
       },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-ua-rescue"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-ua-rescue"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   }
 ];
