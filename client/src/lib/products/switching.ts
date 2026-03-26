@@ -67,7 +67,9 @@ export interface Product {
 
 // Switching Products
 export const switchingProducts: Product[] = [
-{
+
+
+  {
     id: "ECS-Aggregation",
     name: "Enterprise Campus Aggregation",
     category: "Switching",
@@ -6964,7 +6966,8 @@ export const switchingProducts: Product[] = [
     name: "WAN Switch",
     category: "Switching",
     subfilter: "WAN",
-    image: "/images/switch.jpg",
+    image:"/images/switching/35.uswwan/1.p-utama-uswwan.jpg",
+
     shortDescription:
       "10G SFP+ WAN Switch linking two Shadow Mode High Availability UniFi Gateways to a single ISP.",
     specs: [
@@ -6981,15 +6984,25 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/35.uswwan/1.p-utama-uswwan.jpg",
+      "/images/switching/35.uswwan/2.p-dimensi-uswwan.jpg",
+      "/images/switching/35.uswwan/3.p-spec-uswwan.jpg",
+      "/images/switching/35.uswwan/4.p-development-uswwan.jpg",
+      "/images/switching/35.uswwan/p-itb-uswwan.jpg",
+      "/images/switching/35.uswwan/p-mkt0-uswwan.jpg",
+      "/images/switching/35.uswwan/p-mkt1-uswwan.jpg",
+      "/images/switching/35.uswwan/p-mkt2-uswwan.jpg",
+      "/images/switching/35.uswwan/p-mkt3-uswwan.jpg",
+      "/images/switching/35.uswwan/p-mkt4-uswwan.jpg",
+      "/images/switching/35.uswwan/p-ov1-uswwan.png",
+      "/images/switching/35.uswwan/p-ov2-uswwan.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/35.uswwan/p-ov1-uswwan.png",
+      "/images/switching/35.uswwan/p-ov2-uswwan.png",
+    
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7054,10 +7067,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/35.uswwan/p-itb-uswwan.jpg", },
     ],
   
     },
@@ -7066,7 +7076,7 @@ export const switchingProducts: Product[] = [
     name: "WAN Switch RJ45",
     category: "Switching",
     subfilter: "WAN",
-    image: "/images/switch.jpg",
+    image: "/images/switching/36.uswwanrj45/1.p-utama-uswwanrj45.jpg",
     shortDescription:
       "10 GbE WAN Switch linking two Shadow Mode High Availability UniFi Gateways to a single ISP.",
     specs: [
@@ -7082,15 +7092,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-WAN-Switch-RJ45.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/36.uswwanrj45/1.p-utama-uswwanrj45.jpg",
+      "/images/switching/36.uswwanrj45/2.p-dimensi-uswwanrj45.jpg",
+      "/images/switching/36.uswwanrj45/3.p-spec-uswwanrj45.jpg",
+      "/images/switching/36.uswwanrj45/4.p-development-uswwanrj45.jpg",
+      "/images/switching/36.uswwanrj45/p-itb-uswwanrj45.jpg",
+      "/images/switching/36.uswwanrj45/p-mkt0-uswwanrj45.jpg",
+      "/images/switching/36.uswwanrj45/p-mkt1-uswwanrj45.jpg",
+      "/images/switching/36.uswwanrj45/p-mkt2-uswwanrj45.jpg",
+      "/images/switching/36.uswwanrj45/p-mkt3-uswwanrj45.jpg",
+      "/images/switching/36.uswwanrj45/p-mkt4-uswwanrj45.jpg",
+      "/images/switching/36.uswwanrj45/p-ov1-uswwanrj45.png",
+      "/images/switching/36.uswwanrj45/p-ov2-uswwanrj45.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/36.uswwanrj45/p-ov1-uswwanrj45.png",
+      "/images/switching/36.uswwanrj45/p-ov2-uswwanrj45.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7154,10 +7173,8 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/36.uswwanrj45/p-itb-uswwanrj45.jpg",
+ },
     ],
     
    
@@ -7167,7 +7184,7 @@ export const switchingProducts: Product[] = [
     name: "Lite 16 PoE",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/1.p-utama-uswlite16poe.jpg",
     shortDescription:
       "A wall-mounteable, 16-port, Layer 2 PoE switch with a fanless cooling system",
     specs: [
@@ -7184,15 +7201,25 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/1.p-utama-uswlite16poe.jpg",
+      "/images/switching/2.p-dimensi-uswlite16poe.jpg",
+      "/images/switching/3.p-spec-uswlite16poe.jpg",
+      "/images/switching/4.p-development-uswlite16poe.jpg",
+      "/images/switching/p-itb-uswlite16poe.jpg",
+      "/images/switching/p-mkt0-uswlite16poe.jpg",
+      "/images/switching/p-mkt1-uswlite16poe.jpg",
+      "/images/switching/p-mkt2-uswlite16poe.jpg",
+      "/images/switching/p-mkt3-uswlite16poe.jpg",
+      "/images/switching/p-mkt4-uswlite16poe.jpg",
+      "/images/switching/p-ov1-uswlite16poe.jpg",
+      "/images/switching/p-ov2-uswlite16poe.jpg"
+
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/p-ov1-uswlite16poe.jpg",
+      "/images/switching/p-ov2-uswlite16poe.jpg"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7286,10 +7313,8 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/p-itb-uswlite16poe.jpg",
+ },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7324,9 +7349,9 @@ export const switchingProducts: Product[] = [
     name: "Lite 8 PoE",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/38.uswlite8poe/1.p-utama-uswlite8poe.jpg",
     shortDescription:
-      "An 8-port, Layer 2 PoE switch supporting silent fanless cooling.",
+    "An 8-port, Layer 2 PoE switch supporting silent fanless cooling.",
     specs: [
       { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
       { label: "PoE Budget", value: "400W" },
@@ -7340,15 +7365,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Lite-8-PoE.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/38.uswlite8poe/1.p-utama-uswlite8poe.jpg",
+      "/images/switching/38.uswlite8poe/2.p-dimensi-uswlite8poe.jpg",
+      "/images/switching/38.uswlite8poe/3.p-spec-uswlite8poe.jpg",
+      "/images/switching/38.uswlite8poe/4.p-development-uswlite8poe.jpg",
+      "/images/switching/38.uswlite8poe/p-itb-uswlite8poe.jpg",
+      "/images/switching/38.uswlite8poe/p-mkt0-uswlite8poe.jpg",
+      "/images/switching/38.uswlite8poe/p-mkt1-uswlite8poe.jpg",
+      "/images/switching/38.uswlite8poe/p-mkt2-uswlite8poe.jpg",
+      "/images/switching/38.uswlite8poe/p-mkt3-uswlite8poe.jpg",
+      "/images/switching/38.uswlite8poe/p-ov1-uswlite8poe.png",
+      "/images/switching/38.uswlite8poe/p-ov2-uswlite8poe.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/38.uswlite8poe/p-ov1-uswlite8poe.png",
+      "/images/switching/38.uswlite8poe/p-ov2-uswlite8poe.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7442,10 +7475,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/38.uswlite8poe/p-itb-uswlite8poe.jpg" },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7480,7 +7510,7 @@ export const switchingProducts: Product[] = [
     name: "Pro XG 8 PoE",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/39.uswproxg8poe/1.p-utama-uswproxg8poe.jpg",
     shortDescription:
       "Compact desktop/wall-mountable, professional-grade 8-port, Layer 3 Etherlighting™ PoE++ switch with (8) 10 GbE and (2) 10G SFP+ ports.",
     specs: [
@@ -7496,15 +7526,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/39.uswproxg8poe/1.p-utama-uswproxg8poe.jpg",
+      "/images/switching/39.uswproxg8poe/2.p-dimensi-uswproxg8poe.jpg",
+      "/images/switching/39.uswproxg8poe/3.p-spec-uswproxg8poe.jpg",
+      "/images/switching/39.uswproxg8poe/4.p-development-uswproxg8poe.jpg",
+      "/images/switching/39.uswproxg8poe/p-itb-uswproxg8poe.jpg",
+      "/images/switching/39.uswproxg8poe/p-mkt0-uswproxg8poe.jpg",
+      "/images/switching/39.uswproxg8poe/p-mkt1-uswproxg8poe.jpg",
+      "/images/switching/39.uswproxg8poe/p-mkt2-uswproxg8poe.jpg",
+      "/images/switching/39.uswproxg8poe/p-mkt3-uswproxg8poe.jpg",
+      "/images/switching/39.uswproxg8poe/p-ov1-uswproxg8poe.jpg",
+      "/images/switching/39.uswproxg8poe/p-ov2-uswproxg8poe.jpg"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/39.uswproxg8poe/p-ov1-uswproxg8poe.jpg",
+      "/images/switching/39.uswproxg8poe/p-ov2-uswproxg8poe.jpg"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7613,10 +7651,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/39.uswproxg8poe/p-itb-uswproxg8poe.jpg" },
     ],
     
   },
@@ -7625,7 +7660,7 @@ export const switchingProducts: Product[] = [
     name: "Enterprise 8 PoE (vintage)",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/40.uswe8poe/1.p-utama-uswe8poe.jpg",
     shortDescription: "An 8-port, Layer 3 switch with 2.5 GbE PoE+ output.",
     specs: [
       { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
@@ -7640,15 +7675,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/40.uswe8poe/1.p-utama-uswe8poe.jpg",
+      "/images/switching/40.uswe8poe/2.p-dimensi-uswe8poe.jpg",
+      "/images/switching/40.uswe8poe/3.p-spec-uswe8poe.jpg",
+      "/images/switching/40.uswe8poe/4.p-development-uswe8poe.jpg",
+      "/images/switching/40.uswe8poe/p-itb-uswe8poe.jpg",
+      "/images/switching/40.uswe8poe/p-mkt0-uswe8poe.jpg",
+      "/images/switching/40.uswe8poe/p-mkt1-uswe8poe.jpg",
+      "/images/switching/40.uswe8poe/p-mkt2-uswe8poe.jpg",
+      "/images/switching/40.uswe8poe/p-mkt3-uswe8poe.jpg",
+      "/images/switching/40.uswe8poe/p-mkt4-uswe8poe.jpg",
+      "/images/switching/40.uswe8poe/p-ov1-uswe8poe.jpg",
+      "/images/switching/40.uswe8poe/p-ov2-uswe8poe.jpg"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/40.uswe8poe/p-ov1-uswe8poe.jpg",
+      "/images/switching/40.uswe8poe/p-ov2-uswe8poe.jpg"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7761,10 +7805,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/40.uswe8poe/p-itb-uswe8poe.jpg"},
     ],
   },
 {
@@ -7772,7 +7813,7 @@ export const switchingProducts: Product[] = [
     name: "Pro 8 PoE",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/41.uswpro8poe/1.p-utama-uswpro8poe.jpg",
     shortDescription: "An 8-port, Layer 3 switch with PoE+ and PoE++ output.",
     specs: [
       { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
@@ -7787,15 +7828,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/41.uswpro8poe/1.p-utama-uswpro8poe.jpg",
+      "/images/switching/41.uswpro8poe/2.p-dimensi-uswpro8poe.jpg",
+      "/images/switching/41.uswpro8poe/3.p-spec-uswpro8poe.jpg",
+      "/images/switching/41.uswpro8poe/4.p-development-uswpro8poe.jpg",
+      "/images/switching/41.uswpro8poe/p-itb-uswpro8poe.jpg",
+      "/images/switching/41.uswpro8poe/p-mkt0-uswpro8poe.jpg",
+      "/images/switching/41.uswpro8poe/p-mkt1-uswpro8poe.jpg",
+      "/images/switching/41.uswpro8poe/p-mkt2-uswpro8poe.jpg",
+      "/images/switching/41.uswpro8poe/p-mkt3-uswpro8poe.jpg",
+      "/images/switching/41.uswpro8poe/p-ov1-uswpro8poe.jpg",
+      "/images/switching/41.uswpro8poe/p-ov2-uswpro8poe.jpg"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/41.uswpro8poe/p-ov1-uswpro8poe.jpg",
+      "/images/switching/41.uswpro8poe/p-ov2-uswpro8poe.jpg"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7908,10 +7957,8 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/41.uswpro8poe/p-itb-uswpro8poe.jpg",
+ },
     ],
   },
 {
@@ -7919,7 +7966,7 @@ export const switchingProducts: Product[] = [
     name: "Ultra 210W",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/42.uswultra210w/1.p-utama-uswultra210w.jpg",
     shortDescription:
       "A compact, Layer 2, 8-port GbE PoE switch with versatile mounting options.",
     specs: [
@@ -7935,15 +7982,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/42.uswultra210w/1.p-utama-uswultra210w.jpg",
+      "/images/switching/42.uswultra210w/2.p-dimensi-uswultra210w.jpg",
+      "/images/switching/42.uswultra210w/3.p-spec-uswultra210w.jpg",
+      "/images/switching/42.uswultra210w/4.p-development-uswultra210w.jpg",
+      "/images/switching/42.uswultra210w/p-itb-uswultra210w.jpg",
+      "/images/switching/42.uswultra210w/p-mkt0-uswultra210w.jpg",
+      "/images/switching/42.uswultra210w/p-mkt1-uswultra210w.jpg",
+      "/images/switching/42.uswultra210w/p-mkt2-uswultra210w.jpg",
+      "/images/switching/42.uswultra210w/p-mkt3-uswultra210w.jpg",
+      "/images/switching/42.uswultra210w/p-ov1-uswultra210w.jpg",
+      "/images/switching/42.uswultra210w/p-ov2-uswultra210w.jpg"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/42.uswultra210w/p-ov1-uswultra210w.jpg",
+      "/images/switching/42.uswultra210w/p-ov2-uswultra210w.jpg"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8028,10 +8083,8 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/42.uswultra210w/p-itb-uswultra210w.jpg",
+ },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -8063,7 +8116,7 @@ export const switchingProducts: Product[] = [
     name: "Ultra 60W",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/43.uswultra60w/1.p-utama-uswultra60w.jpg",
     shortDescription:
       "A compact, Layer 2, 8-port GbE PoE switch with versatile mounting options.",
     specs: [
@@ -8079,15 +8132,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/43.uswultra60w/1.p-utama-uswultra60w.jpg",
+      "/images/switching/43.uswultra60w/2.p-dimensi-uswultra60w.jpg",
+      "/images/switching/43.uswultra60w/3.p-spec-uswultra60w.jpg",
+      "/images/switching/43.uswultra60w/4.p-development-uswultra60w.jpg",
+      "/images/switching/43.uswultra60w/p-itb-uswultra60w.jpg",
+      "/images/switching/43.uswultra60w/p-mkt0-uswultra60w.jpg",
+      "/images/switching/43.uswultra60w/p-mkt1-uswultra60w.jpg",
+      "/images/switching/43.uswultra60w/p-mkt2-uswultra60w.jpg",
+      "/images/switching/43.uswultra60w/p-mkt3-uswultra60w.jpg",
+      "/images/switching/43.uswultra60w/p-ov1-uswultra60w.jpg",
+      "/images/switching/43.uswultra60w/p-ov2-uswultra60w.jpg"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/43.uswultra60w/p-ov1-uswultra60w.jpg",
+      "/images/switching/43.uswultra60w/p-ov2-uswultra60w.jpg"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8166,10 +8227,8 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/43.uswultra60w/p-itb-uswultra60w.jpg",
+ },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -8201,7 +8260,7 @@ export const switchingProducts: Product[] = [
     name: "Ultra",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/44.uswultra/1.p-utama-uswultra.jpg",
     shortDescription:
       "A compact, Layer 2, 8-port GbE PoE switch with versatile mounting options.",
     specs: [
@@ -8217,15 +8276,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/44.uswultra/1.p-utama-uswultra.jpg",
+      "/images/switching/44.uswultra/2.p-dimensi-uswultra.jpg",
+      "/images/switching/44.uswultra/3.p-spec-uswultra.jpg",
+      "/images/switching/44.uswultra/4.p-development-uswultra.jpg",
+      "/images/switching/44.uswultra/p-itb-uswultra.jpg",
+      "/images/switching/44.uswultra/p-mkt0-uswultra.jpg",
+      "/images/switching/44.uswultra/p-mkt1-uswultra.jpg",
+      "/images/switching/44.uswultra/p-mkt2-uswultra.jpg",
+      "/images/switching/44.uswultra/p-mkt3-uswultra.jpg",
+      "/images/switching/44.uswultra/p-ov1-uswultra.jpg",
+      "/images/switching/44.uswultra/p-ov2-uswultra.jpg"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/44.uswultra/p-ov1-uswultra.jpg",
+      "/images/switching/44.uswultra/p-ov2-uswultra.jpg"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8305,10 +8372,8 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/44.uswultra/p-itb-uswultra.jpg",
+ },
     ],
     
   },
@@ -8317,7 +8382,7 @@ export const switchingProducts: Product[] = [
     name: "Flex 2.5G PoE",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/45.uswflex2.5g8poe/1.p-utama-uswflex2.5g8poe.jpg",
     shortDescription:
       "Flexible, 8-port 2.5 GbE PoE++ switch with a 10 GbE RJ45/SFP+ combination uplink port that can be powered with PoE+++ or an AC power adapter.",
     specs: [
@@ -8333,15 +8398,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/45.uswflex2.5g8poe/1.p-utama-uswflex2.5g8poe.jpg",
+      "/images/switching/45.uswflex2.5g8poe/2.p-dimensi-uswflex2.5g8poe.jpg",
+      "/images/switching/45.uswflex2.5g8poe/3.p-spec-uswflex2.5g8poe.jpg",
+      "/images/switching/45.uswflex2.5g8poe/4.p-development-uswflex2.5g8poe.jpg",
+      "/images/switching/45.uswflex2.5g8poe/p-itb-uswflex2.5g8poe.jpg",
+      "/images/switching/45.uswflex2.5g8poe/p-mkt0-uswflex2.5g8poe.jpg",
+      "/images/switching/45.uswflex2.5g8poe/p-mkt1-uswflex2.5g8poe.jpg",
+      "/images/switching/45.uswflex2.5g8poe/p-mkt2-uswflex2.5g8poe.jpg",
+      "/images/switching/45.uswflex2.5g8poe/p-mkt3-uswflex2.5g8poe.jpg",
+      "/images/switching/45.uswflex2.5g8poe/p-ov1-uswflex2.5g8poe.png",
+      "/images/switching/45.uswflex2.5g8poe/p-ov2-uswflex2.5g8poe.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/45.uswflex2.5g8poe/p-ov1-uswflex2.5g8poe.jpg",
+      "/images/switching/45.uswflex2.5g8poe/p-ov2-uswflex2.5g8poe.jpg"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8422,10 +8495,8 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/45.uswflex2.5g8poe/p-itb-uswflex2.5g8poe.jpg",
+ },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -8466,7 +8537,7 @@ export const switchingProducts: Product[] = [
     name: "Flex 2.5G",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/46.uswflex2.5g8/1.p-utama-uswflex2.5g8.jpg",
     shortDescription:
       "Flexible, 8-port 2.5 GbE switch with a 10 GbE RJ45/SFP+ combination uplink port that can be powered with a USB-C or PoE+ adapter.",
     specs: [
@@ -8482,15 +8553,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/46.uswflex2.5g8/1.p-utama-uswflex2.5g8.jpg",
+      "/images/switching/46.uswflex2.5g8/2.p-dimensi-uswflex2.5g8.jpg",
+      "/images/switching/46.uswflex2.5g8/3.p-spec-uswflex2.5g8.jpg",
+      "/images/switching/46.uswflex2.5g8/4.p-development-uswflex2.5g8.jpg",
+      "/images/switching/46.uswflex2.5g8/p-itb-uswflex2.5g8.jpg",
+      "/images/switching/46.uswflex2.5g8/p-mkt0-uswflex2.5g8.jpg",
+      "/images/switching/46.uswflex2.5g8/p-mkt1-uswflex2.5g8.jpg",
+      "/images/switching/46.uswflex2.5g8/p-mkt2-uswflex2.5g8.jpg",
+      "/images/switching/46.uswflex2.5g8/p-mkt3-uswflex2.5g8.jpg",
+      "/images/switching/46.uswflex2.5g8/p-ov1-uswflex2.5g8.png",
+      "/images/switching/46.uswflex2.5g8/p-ov2-uswflex2.5g8.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/46.uswflex2.5g8/p-ov1-uswflex2.5g8.png",
+      "/images/switching/46.uswflex2.5g8/p-ov2-uswflex2.5g8.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8565,10 +8644,8 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/46.uswflex2.5g8/p-itb-uswflex2.5g8.jpg",
+ },
     ],
   },
 {
@@ -8576,7 +8653,7 @@ export const switchingProducts: Product[] = [
     name: "Flex Mini 2.5G",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/47.uswflex2.5g5/1.p-utama-uswflex2.5g5.jpg",
     shortDescription:
       "Compact, 5-port 2.5G switch that can be powered with PoE or a USB-C adapter.",
     specs: [
@@ -8592,15 +8669,22 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/47.uswflex2.5g5/1.p-utama-uswflex2.5g5.jpg",
+      "/images/switching/47.uswflex2.5g5/2.p-spec-uswflex2.5g5.jpg",
+      "/images/switching/47.uswflex2.5g5/3.p-development-uswflex2.5g5.jpg",
+      "/images/switching/47.uswflex2.5g5/p-itb-uswflex2.5g5.jpg",
+      "/images/switching/47.uswflex2.5g5/p-mkt0-uswflex2.5g5.jpg",
+      "/images/switching/47.uswflex2.5g5/p-mkt1-uswflex2.5g5.jpg",
+      "/images/switching/47.uswflex2.5g5/p-mkt2-uswflex2.5g5.jpg",
+      "/images/switching/47.uswflex2.5g5/p-mkt3-uswflex2.5g5.jpg",
+      "/images/switching/47.uswflex2.5g5/p-ov1-uswflex2.5g5.jpg",
+      "/images/switching/47.uswflex2.5g5/p-ov2-uswflex2.5g5.jpg"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/47.uswflex2.5g5/p-ov1-uswflex2.5g5.jpg",
+      "/images/switching/47.uswflex2.5g5/p-ov2-uswflex2.5g5.jpg"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8672,11 +8756,8 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
+      { name: "Device", image:"/images/switching/47.uswflex2.5g5/p-itb-uswflex2.5g5.jpg"},
+    ]
     
   },
 {
@@ -8684,7 +8765,7 @@ export const switchingProducts: Product[] = [
     name: "Flex Mini",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/48.uswflexmini/1.p-utama-uswflexmini.jpg",
     shortDescription:
       "A compact, 5-port, Layer 2 switch that can be powered with PoE or a 5V USB-C adapter.",
     specs: [
@@ -8700,15 +8781,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/48.uswflexmini/1.p-utama-uswflexmini.jpg",
+      "/images/switching/48.uswflexmini/2.p-dimensi-uswflexmini.jpg",
+      "/images/switching/48.uswflexmini/3.p-spec-uswflexmini.jpg",
+      "/images/switching/48.uswflexmini/4.p-development-uswflexmini.jpg",
+      "/images/switching/48.uswflexmini/p-itb-uswflexmini.jpg",
+      "/images/switching/48.uswflexmini/p-mkt0-uswflexmini.jpg",
+      "/images/switching/48.uswflexmini/p-mkt1-uswflexmini.jpg",
+      "/images/switching/48.uswflexmini/p-mkt2-uswflexmini.jpg",
+      "/images/switching/48.uswflexmini/p-mkt3-uswflexmini.jpg",
+      "/images/switching/48.uswflexmini/p-ov1-uswflexmini.png",
+      "/images/switching/48.uswflexmini/p-ov2-uswflexmini.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/48.uswflexmini/p-ov1-uswflexmini.png",
+      "/images/switching/48.uswflexmini/p-ov2-uswflexmini.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8724,106 +8813,72 @@ export const switchingProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Flex Mini" },
-          { label: "Model", value: "USW-FLEX-MINI" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
-          { label: "PoE Budget", value: "400W" },
-          { label: "Uplink", value: "2x 10G SFP+" },
-          { label: "Layer", value: "Layer 3 Switching" }
+          { label: "Dimensions", value: "107 x 70 x 21 mm (4.2 x 2.8 x 0.8\")" },
+          { label: "Port Layout 1 GbE RJ45", value: "5 (1G/100M/10M)" },
+          { label: "Form Factor", value: "Compact desktop"},
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Switching Capacity", value: "10 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "5 Gbps" },
+          { label: "Forwarding Rate", value: "7 Mpps" },
+          { label: "Supported VLANs", value: "1.000" },
+          { label: "MAC Address Table Size", value: "2.000" },
+        ]
+      },
+      {
+        title: "Layer 2 Features",
+        items: [
+         { label: "Egress Rate Limit", value: "✓", isCheck: true },
+         { label: "Flow control", value: "✓", isCheck: true },
+         { label: "Storm control", value: "✓", isCheck: true },
+         { label: "Multicast & Broadcast Rate Limiting", value: "✓", isCheck: true },
+         { label: "Port Isolation", value: "✓", isCheck: true },
+         { label: "Port Mirroring", value: "✓", isCheck: true },
+         { label: "Jumbo Frames", value: "✓", isCheck: true },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+         { label: "Max. Power Consumption", value: "2.5W"},
+         { label: "Power Method", value: "(1) USB Type-C, 5V DC, 1A, (1) PoE"},
+         { label: "Power Input Method", value: "USB Input PoE"},
+         { label: "Power Supply", value: "AC/DC, External, 5W"},
+         { label: "Supported Voltage Range", value: "4.8—5.2V DC/USB 44V—57V PoE"},
+         { label: "Management", value: "Ethernet"},
+         { label: "Heat Dissipation", value: "6.8 BTU/hr"},
+         { label: "Weight", value: "150 g (5.3 oz)"},
+         { label: "Enclosure Material", value: "Polycarbonate"},
+         { label: "Mount Material", value: "Polycarbonate"},
+         { label: "ESD Protection", value: "Air: ± 16kV, contact: ± 12kV"},
+         { label: "Ambient Operating Temperature", value: "-5 to 45° C (23 to 113° F)"},
+         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing"},
+         { label: "NDAA Compliant", value: "✓", isCheck: true },
+         { label: "Certifications", value: "CE, FCC, IC, Anatel: 14501-20-08356"},
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+         { label: "Application Req. UniFi Network", value: "Version 5.12.5 and later"},
         ]
-      }
+      },
     ],
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-usw-flex-mini"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-usw-flex-mini"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
+      { name: "Device", image:"/images/switching/48.uswflexmini/p-itb-uswflexmini.jpg"},
+              ]
   },
 {
     id: "USW-Flex(46W)",
     name: "Flex",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/49.uswflex/1.p-utama-uswflex.jpg",
     shortDescription:
       "Flexible 5-port, Layer 2 PoE switch for indoor and outdoor use, that can be powered with PoE++.",
     specs: [
@@ -8839,9 +8894,19 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/49.uswflex/1.p-utama-uswflex.jpg",
+      "/images/switching/49.uswflex/2.p-dimensi-uswflex.jpg",
+      "/images/switching/49.uswflex/3.p-spec-uswflex.jpg",
+      "/images/switching/49.uswflex/4.p-development-uswflex.jpg",
+      "/images/switching/49.uswflex/p-itb-uswflex.jpg",
+      "/images/switching/49.uswflex/p-mkt0-uswflex.jpg",
+      "/images/switching/49.uswflex/p-mkt1-uswflex.jpg",
+      "/images/switching/49.uswflex/p-mkt2-uswflex.jpg",
+      "/images/switching/49.uswflex/p-mkt3-uswflex.jpg",
+      "/images/switching/49.uswflex/p-mkt4-uswflex.jpg",
+      "/images/switching/49.uswflex/p-mkt5-uswflex.jpg",
+      "/images/switching/49.uswflex/p-ov1-uswflex.png",
+      "/images/switching/49.uswflex/p-ov2-uswflex.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
@@ -8863,98 +8928,95 @@ export const switchingProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Flex" },
-          { label: "Model", value: "USW-FLEX-46W-" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
-          { label: "PoE Budget", value: "400W" },
-          { label: "Uplink", value: "2x 10G SFP+" },
-          { label: "Layer", value: "Layer 3 Switching" }
+          { label: "Dimensions", value: "122.5 x 107.1 x 28 mm (4.8 x 4.2 x 1.1\")" },
+          { label: "Port Layout 1 GbE RJ45", value: "5 (4 PoE+; 1 PoE++) (1G/100M/10M)" },
+          { label: "Max. PoE Output ", value: "Up to PoE+"},
+          { label: "Total PoE Availability", value: "PoE++/60W PoE adapter input: 46W, PoE+ input: 20W, PoE input: 8W"},
+          { label: "Form Factor", value: "Compact desktop, Wall, Pole"},
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Switching Capacity", value: "10 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "5 Gbps" },
+          { label: "Forwarding Rate", value: "7 Mpps" },
+          { label: "Supported VLANs", value: "1.000" },
+          { label: "MAC Address Table Size", value: "2.000" },
+        ]
+      },
+      {
+        title: "Layer 2 Features",
+        items: [
+         { label: "Egress Rate Limit", value: "✓", isCheck: true },
+         { label: "Flow control", value: "✓", isCheck: true },
+         { label: "Port Isolation", value: "✓", isCheck: true },
+         { label: "Port Mirroring", value: "✓", isCheck: true },
+         { label: "Jumbo Frames", value: "✓", isCheck: true },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+         { label: "PoE Ports PoE+", value: "4"},
+         { label: "PoE Ports PoE++", value: "1"},
+         { label: "Max. PoE Wattage per Portsby PSE, PoE+", value: "25W"},
+         { label: "Max. Power Consumption", value: "5W (Excluding PoE Output), 51W (Including PoE Output)"},
+         { label: "Power Method", value: "PoE++"},
+         { label: "Power Input Method", value: "PoE"},
+         { label: "Supported Voltage Range", value: "50–57V PoE"},
+         { label: "Management", value: "Ethernet"},
+         { label: "Heat Dissipation", value: "17.1 BTU/hr (Excluding PoE Output)"},
+         { label: "Outdoor Ready", value: "✓", isCheck: true },
+         { label: "Weight", value: "230 g (8.1 oz)"},
+         { label: "Enclosure Material", value: "Polycarbonate"},
+         { label: "Mount Material", value: "Polycarbonate"},
+         { label: "ESD Protection", value: "Air/contact: ± 16kV"},
+         { label: "Ambient Operating Temperature", value: "46W PoE output: -40 to 55° C (-40 to 131° F), 25W PoE output: -40 to 65° C (-40 to 149° F)"},
+         { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing"},
+         { label: "NDAA Compliant", value: "✓", isCheck: true },
+         { label: "Certifications", value: "CE, FCC, IC, Anatel: 14502-20-08356"},
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+         { label: "Application Req. UniFi Network", value: "Version 5.10.3 and later"},
         ]
-      }
+      },
     ],
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/49.uswflex/p-itb-uswflex.jpg",
+},
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "SFP to RJ45 Adapter",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "SFP to RJ45 transceiver that supports 1G connections up to 100 m.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Supported data rates: 1000 / 100 / 10 Mbps",
+          "Compatible with SFP interfaces",
+          "Supports connections up to 100 m*",
+          "*Ethernet cable is not included"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-usw-flex(46w)"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-usw-flex(46w)"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Form Factor", value: "SFP" },
+          { label: "Connector", value: "RJ45" },
+          { label: "Supported Media", value: "Copper" },
+          { label: "Supported Data Rate", value: "10 / 100 / 1000 Mbps" },
+          { label: "Supported Cable Distance", value: "100 m (328 ft)" },
+          { label: "Max. Power Consumption", value: "1.2 W" },
+          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
         ],
         productLink: "/products/sfp-module-10g"
-      }
+      },
     ]
   },
 {
@@ -8962,7 +9024,7 @@ export const switchingProducts: Product[] = [
     name: "Flex Utility",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/50.uswflexutility/1.p-utama-flexutility.jpg",
     shortDescription:
       "The Switch Flex Utility is an outdoor weatherproof enclosure designed for use with the Switch Flex.",
     specs: [
@@ -8978,15 +9040,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/50.uswflexutility/1.p-utama-flexutility.jpg",
+      "/images/switching/50.uswflexutility/2.p-development-flexutility.jpg",
+      "/images/switching/50.uswflexutility/p-itb-flexutility.jpg",
+      "/images/switching/50.uswflexutility/p-mkt0-flexutility.jpg",
+      "/images/switching/50.uswflexutility/p-mkt1-flexutility.jpg",
+      "/images/switching/50.uswflexutility/p-mkt2-flexutility.jpg",
+      "/images/switching/50.uswflexutility/p-mkt3-flexutility.jpg",
+      "/images/switching/50.uswflexutility/p-mkt4-flexutility.jpg",
+      "/images/switching/50.uswflexutility/p-mkt5-flexutility.jpg",
+      "/images/switching/50.uswflexutility/p-mkt6-flexutility.jpg",
+      "/images/switching/50.uswflexutility/p-ov1-flexutility.png",
+      "/images/switching/50.uswflexutility/p-ov2-flexutility.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/50.uswflexutility/p-ov1-flexutility.png",
+      "/images/switching/50.uswflexutility/p-ov2-flexutility.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8999,109 +9070,43 @@ export const switchingProducts: Product[] = [
     
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-      {
+            {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Flex Utility" },
-          { label: "Model", value: "USW-FLEX-UTILITY" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
-          { label: "PoE Budget", value: "400W" },
-          { label: "Uplink", value: "2x 10G SFP+" },
-          { label: "Layer", value: "Layer 3 Switching" }
+          { label: "Dimensions Enclosure", value: "249 x 218 x 60 mm (9.8 x 8.6 x 2.4\")" },
+          { label: "Dimensions Adapter", value: "118.5 x 63 x 34.7 mm (4.7 x 2.5 x 1.4\")" },
+          { label: "Weight Enclosure / Adapter", value: "740 g (1.6 lb) / 206 g (7.3 oz)" },
+          { label: "Output Voltage ", value: "54V, 1.11A" },
+          { label: "Rated Voltage", value: "100–240V AC" },
+          { label: "4 Pair Powering", value: "Pins 1, 2, 4, 5 (+) and 3, 6, 7, 8 (-)" },
+          { label: "Input Current ", value: "1.5A Max" },
+          { label: "Efficiency", value: "86+%" },
+          { label: "Output Ripple ", value: "200mVpp" },
+          { label: "Line Regulation", value: "≤1%" },
+          { label: "Load Regulation", value: "≤3%" },
+          { label: "Power Supply", value: "AC/DC" },
+          { label: "Surge Protection ", value: "4kV difference and Common mode" },
+          { label: "Ambient Storage Temperature", value: "-30 to 70° C (-22 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60° C (-4 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90%, noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/50.uswflexutility/p-itb-flexutility.jpg"},
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-usw-flex-utility"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-usw-flex-utility"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
+   
   },
 {
     id: "UACC-Flex-Utility-Pro",
     name: "Flex Utility Pro",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/51.uaccflexutilitypro/1.p-utama-uaccflexutilitypro.jpg",
     shortDescription:
       "A universal outdoor weatherproof enclosure. Protect your networking gear in any environment with this versatile, durable enclosure, designed for both wall and pole mounting. The enclosure features ample internal space to house a power adapter or PoE injector.",
     specs: [
@@ -9117,15 +9122,27 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/51.uaccflexutilitypro/1.p-utama-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/2.p-dimensi-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/3.p-spec-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/4.p-development-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/p-itb-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/p-mkt0-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/p-mkt1-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/p-mkt2-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/p-mkt3-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/p-mkt4-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/p-mkt5-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/p-mkt6-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/p-mkt7-uaccflexutilitypro.jpg",
+      "/images/switching/51.uaccflexutilitypro/p-ov1-uaccflexutilitypro.png",
+      "/images/switching/51.uaccflexutilitypro/p-ov2-uaccflexutilitypro.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/51.uaccflexutilitypro/p-ov1-uaccflexutilitypro.png",
+      "/images/switching/51.uaccflexutilitypro/p-ov2-uaccflexutilitypro.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -9141,106 +9158,26 @@ export const switchingProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Flex Utility Pro" },
-          { label: "Model", value: "UACC-FLEX-UTILITY-PRO" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
-          { label: "PoE Budget", value: "400W" },
-          { label: "Uplink", value: "2x 10G SFP+" },
-          { label: "Layer", value: "Layer 3 Switching" }
+          { label: "Dimensions", value: "350 x 220 x 89 mm (13.8 x 8.7 x 3.5\")" },
+          { label: "Weight", value: "1.6 kg" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Weatherproofing", value: "IPX6" }
         ]
       },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
-        ]
-      }
     ],
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/51.uaccflexutilitypro/p-itb-uaccflexutilitypro.jpg",
+},
     ],
-    
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uacc-flex-utility-pro"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uacc-flex-utility-pro"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
 {
     id: "USW-Flex-XG",
     name: "Flex 10 GbE",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switch.jpg",
+    image: "/images/switching/52.uswflexxg/1.p-utama-uswflexxg.jpg",
     shortDescription:
       "A Compact, 5-Port, Layer 2 Switch that supports 10 GbE speeds and can be powered with PoE or a 5V USB-C adapter.",
     specs: [
@@ -9256,15 +9193,24 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/52.uswflexxg/1.p-utama-uswflexxg.jpg",
+      "/images/switching/52.uswflexxg/2.p-dimensi-uswflexxg.jpg",
+      "/images/switching/52.uswflexxg/3.p-spec-uswflexxg.jpg",
+      "/images/switching/52.uswflexxg/4.p-development-uswflexxg.jpg",
+      "/images/switching/52.uswflexxg/p-itb-uswflexxg.jpg",
+      "/images/switching/52.uswflexxg/p-mkt0-uswflexxg.jpg",
+      "/images/switching/52.uswflexxg/p-mkt1-uswflexxg.jpg",
+      "/images/switching/52.uswflexxg/p-mkt2-uswflexxg.jpg",
+      "/images/switching/52.uswflexxg/p-mkt3-uswflexxg.jpg",
+      "/images/switching/52.uswflexxg/p-mkt4-uswflexxg.jpg",
+      "/images/switching/52.uswflexxg/p-ov1-uswflexxg.png",
+      "/images/switching/52.uswflexxg/p-ov2-uswflexxg.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/52.uswflexxg/p-ov1-uswflexxg.png",
+      "/images/switching/52.uswflexxg/p-ov2-uswflexxg.png",
     ],
     
     // Bullet points untuk deskripsi produk
@@ -9280,98 +9226,109 @@ export const switchingProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Flex 10 GbE" },
-          { label: "Model", value: "USW-FLEX-XG" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Ports", value: "8x 2.5GbE, 16x GbE" },
-          { label: "PoE Budget", value: "400W" },
-          { label: "Uplink", value: "2x 10G SFP+" },
-          { label: "Layer", value: "Layer 3 Switching" }
+          { label: "Dimensions", value: "135 x 185 x 32 mm (5.3 x 7.3 x 1.3\")" },
+          { label: "Port Layout 1 GbE RJ45", value: "1 (1G/100M/10M)" },
+          { label: "Port Layout 10 GbE RJ45", value: "4" },
+          { label: "Form Factor", value: "Compact desktop, wall" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Switching Capacity", value: "82 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "41 Gbps" },
+          { label: "Forwarding Rate", value: "61 Mpps" },
+          { label: "Supported VLANs", value: "1.000" },
+          { label: "MAC Address Table Size", value: "16.000" },
+          { label: "Packet Buffer Size", value: "1.5 MB" },
+          { label: "Access Lists IPv4", value: "12" },
+          { label: "Access Lists MAC", value: "10" },
+        ]
+      },
+      {
+        title: "Layer 2 Features",
+        items: [
+         { label: "LACP Port Aggregation", value: "✓", isCheck: true },
+         { label: "STP & RSTP", value: "✓", isCheck: true },
+         { label: "Advanced IGMP Configuration (Querier, Fast Leave, Router Port)", value: "✓", isCheck: true },
+         { label: "IGMP Snooping", value: "✓", isCheck: true },
+         { label: "802.1X Control", value: "✓", isCheck: true },
+         { label: "MAC-Based ACLs & Device Isolation", value: "✓", isCheck: true },
+         { label: "DHCP Snooping & Guarding", value: "✓", isCheck: true },
+         { label: "Egress Rate Limit", value: "✓", isCheck: true },
+         { label: "Flow control", value: "✓", isCheck: true },
+         { label: "Storm control", value: "✓", isCheck: true },
+         { label: "Multicast & Broadcast Rate Limiting", value: "✓", isCheck: true },
+         { label: "MAC Address Blocking", value: "✓", isCheck: true },
+         { label: "IP-Based ACLs & Network Isolation", value: "✓", isCheck: true },
+         { label: "MAC-Based Port Restriction", value: "✓", isCheck: true },
+         { label: "Port Isolation", value: "✓", isCheck: true },
+         { label: "Port Mirroring", value: "✓", isCheck: true },
+         { label: "Jumbo Frames", value: "✓", isCheck: true },
+         { label: "LLDP-MED", value: "✓", isCheck: true },
+         { label: "Voice VLAN", value: "✓", isCheck: true },
+         { label: "Loop Protection", value: "✓", isCheck: true },
+         { label: "Virtual Network Override", value: "✓", isCheck: true },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+         { label: "Max. Power Consumption", value: "25W"},
+         { label: "Power Method", value: "(1) PoE+, (1) USB Type-C, 5V DC, 5A"},
+         { label: "Power Input Method", value: "USB input PoE"},
+         { label: "Power Supply", value: "AC/DC, external, 25W"},
+         { label: "Supported Voltage Range", value: "4.8—5.2V DC/USB 44V—57V PoE"},
+         { label: "Management", value: "Ethernet"},
+         { label: "Heat Dissipation", value: "85.3 BTU/hr"},
+         { label: "Weight", value: "1.2 kg (2.7 lb)"},
+         { label: "Enclosure Material", value: "Polycarbonate"},
+         { label: "ESD Protection", value: "Air/contact: ± 16kV"},
+         { label: "Ambient Operating Temperature", value: "46W PoE output: -40 to 55° C (-40 to 131° F), 25W PoE output: -40 to 65° C (-40 to 149° F)"},
+         { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing"},
+         { label: "NDAA Compliant", value: "✓", isCheck: true },
+         { label: "Certifications", value: "CE, FCC, IC, Anatel: 14502-20-08356"},
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+         { label: "Application Req. UniFi Network", value: "Version 6.1.67 and later"},
         ]
-      }
+      },
     ],
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/switching/52.uswflexxg/p-itb-uswflexxg.jpg",
+},
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
       {
         id: 1,
-        name: "Mounting Kit",
+        name: "SFP to RJ45 Adapter",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
+        description: "SFP to RJ45 transceiver that supports 1G connections up to 100 m.",
         specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
+          "Supported data rates: 1000 / 100 / 10 Mbps",
+          "Compatible with SFP interfaces",
+          "Supports connections up to 100 m*",
+          "*Ethernet cable is not included"
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-usw-flex-xg"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-usw-flex-xg"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
+          { label: "Form Factor", value: "SFP" },
+          { label: "Connector", value: "RJ45" },
+          { label: "Supported Media", value: "Copper" },
+          { label: "Supported Data Rate", value: "10 / 100 / 1000 Mbps" },
+          { label: "Supported Cable Distance", value: "100 m (328 ft)" },
+          { label: "Max. Power Consumption", value: "1.2 W" },
+          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
         ],
         productLink: "/products/sfp-module-10g"
-      }
+      },
     ]
   }
 ];
