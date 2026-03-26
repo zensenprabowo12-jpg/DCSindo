@@ -7184,7 +7184,7 @@ export const switchingProducts: Product[] = [
     name: "Lite 16 PoE",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switching/1.p-utama-uswlite16poe.jpg",
+    image: "/images/switching/37.uswlite16poe/1.p-utama-uswlite16poe.jpg",
     shortDescription:
       "A wall-mounteable, 16-port, Layer 2 PoE switch with a fanless cooling system",
     specs: [
@@ -7211,15 +7211,15 @@ export const switchingProducts: Product[] = [
       "/images/switching/p-mkt2-uswlite16poe.jpg",
       "/images/switching/p-mkt3-uswlite16poe.jpg",
       "/images/switching/p-mkt4-uswlite16poe.jpg",
-      "/images/switching/p-ov1-uswlite16poe.jpg",
-      "/images/switching/p-ov2-uswlite16poe.jpg"
+      "/images/switching/p-ov1-uswlite16poe.png",
+      "/images/switching/p-ov2-uswlite16poe.png"
 
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/switching/p-ov1-uswlite16poe.jpg",
-      "/images/switching/p-ov2-uswlite16poe.jpg"
+      "/images/switching/p-ov1-uswlite16poe.png",
+      "/images/switching/p-ov2-uswlite16poe.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7535,14 +7535,14 @@ export const switchingProducts: Product[] = [
       "/images/switching/39.uswproxg8poe/p-mkt1-uswproxg8poe.jpg",
       "/images/switching/39.uswproxg8poe/p-mkt2-uswproxg8poe.jpg",
       "/images/switching/39.uswproxg8poe/p-mkt3-uswproxg8poe.jpg",
-      "/images/switching/39.uswproxg8poe/p-ov1-uswproxg8poe.jpg",
-      "/images/switching/39.uswproxg8poe/p-ov2-uswproxg8poe.jpg"
+      "/images/switching/39.uswproxg8poe/p-ov1-uswproxg8poe.png",
+      "/images/switching/39.uswproxg8poe/p-ov2-uswproxg8poe.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/switching/39.uswproxg8poe/p-ov1-uswproxg8poe.jpg",
-      "/images/switching/39.uswproxg8poe/p-ov2-uswproxg8poe.jpg"
+      "/images/switching/39.uswproxg8poe/p-ov1-uswproxg8poe.png",
+      "/images/switching/39.uswproxg8poe/p-ov2-uswproxg8poe.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7685,14 +7685,14 @@ export const switchingProducts: Product[] = [
       "/images/switching/40.uswe8poe/p-mkt2-uswe8poe.jpg",
       "/images/switching/40.uswe8poe/p-mkt3-uswe8poe.jpg",
       "/images/switching/40.uswe8poe/p-mkt4-uswe8poe.jpg",
-      "/images/switching/40.uswe8poe/p-ov1-uswe8poe.jpg",
-      "/images/switching/40.uswe8poe/p-ov2-uswe8poe.jpg"
+      "/images/switching/40.uswe8poe/p-ov1-uswe8poe.png",
+      "/images/switching/40.uswe8poe/p-ov2-uswe8poe.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/switching/40.uswe8poe/p-ov1-uswe8poe.jpg",
-      "/images/switching/40.uswe8poe/p-ov2-uswe8poe.jpg"
+      "/images/switching/40.uswe8poe/p-ov1-uswe8poe.png",
+      "/images/switching/40.uswe8poe/p-ov2-uswe8poe.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7837,14 +7837,14 @@ export const switchingProducts: Product[] = [
       "/images/switching/41.uswpro8poe/p-mkt1-uswpro8poe.jpg",
       "/images/switching/41.uswpro8poe/p-mkt2-uswpro8poe.jpg",
       "/images/switching/41.uswpro8poe/p-mkt3-uswpro8poe.jpg",
-      "/images/switching/41.uswpro8poe/p-ov1-uswpro8poe.jpg",
-      "/images/switching/41.uswpro8poe/p-ov2-uswpro8poe.jpg"
+      "/images/switching/41.uswpro8poe/p-ov1-uswpro8poe.png",
+      "/images/switching/41.uswpro8poe/p-ov2-uswpro8poe.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/switching/41.uswpro8poe/p-ov1-uswpro8poe.jpg",
-      "/images/switching/41.uswpro8poe/p-ov2-uswpro8poe.jpg"
+      "/images/switching/41.uswpro8poe/p-ov1-uswpro8poe.png",
+      "/images/switching/41.uswpro8poe/p-ov2-uswpro8poe.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -7966,7 +7966,7 @@ export const switchingProducts: Product[] = [
     name: "Ultra 210W",
     category: "Switching",
     subfilter: "Utility",
-    image: "/images/switching/42.uswultra210w/1.p-utama-uswultra210w.jpg",
+    image: "/images/switching/42.uswultra210w/1.p-utama-uswultra120w.jpg",
     shortDescription:
       "A compact, Layer 2, 8-port GbE PoE switch with versatile mounting options.",
     specs: [
@@ -7982,23 +7982,23 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switching/42.uswultra210w/1.p-utama-uswultra210w.jpg",
-      "/images/switching/42.uswultra210w/2.p-dimensi-uswultra210w.jpg",
-      "/images/switching/42.uswultra210w/3.p-spec-uswultra210w.jpg",
-      "/images/switching/42.uswultra210w/4.p-development-uswultra210w.jpg",
-      "/images/switching/42.uswultra210w/p-itb-uswultra210w.jpg",
-      "/images/switching/42.uswultra210w/p-mkt0-uswultra210w.jpg",
-      "/images/switching/42.uswultra210w/p-mkt1-uswultra210w.jpg",
-      "/images/switching/42.uswultra210w/p-mkt2-uswultra210w.jpg",
-      "/images/switching/42.uswultra210w/p-mkt3-uswultra210w.jpg",
-      "/images/switching/42.uswultra210w/p-ov1-uswultra210w.jpg",
-      "/images/switching/42.uswultra210w/p-ov2-uswultra210w.jpg"
+      "/images/switching/42.uswultra210w/1.p-utama-uswultra120w.jpg",
+      "/images/switching/42.uswultra210w/2.p-dimensi-uswultra120w.jpg",
+      "/images/switching/42.uswultra210w/3.p-spec-uswultra120w.jpg",
+      "/images/switching/42.uswultra210w/4.p-development-uswultra120w.jpg",
+      "/images/switching/42.uswultra210w/p-itb-uswultra120w.jpg",
+      "/images/switching/42.uswultra210w/p-mkt0-uswultra120w.jpg",
+      "/images/switching/42.uswultra210w/p-mkt1-uswultra120w.jpg",
+      "/images/switching/42.uswultra210w/p-mkt2-uswultra120w.jpg",
+      "/images/switching/42.uswultra210w/p-mkt3-uswultra120w.jpg",
+      "/images/switching/42.uswultra210w/p-ov1-uswultra120w.png",
+      "/images/switching/42.uswultra210w/p-ov2-uswultra120w.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/switching/42.uswultra210w/p-ov1-uswultra210w.jpg",
-      "/images/switching/42.uswultra210w/p-ov2-uswultra210w.jpg"
+      "/images/switching/42.uswultra210w/p-ov1-uswultra120w.png",
+      "/images/switching/42.uswultra210w/p-ov2-uswultra120w.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8083,8 +8083,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image:"/images/switching/42.uswultra210w/p-itb-uswultra210w.jpg",
- },
+      { name: "Device", image:"/images/switching/42.uswultra210w/p-itb-uswultra120w.jpg" },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini
@@ -8141,14 +8140,14 @@ export const switchingProducts: Product[] = [
       "/images/switching/43.uswultra60w/p-mkt1-uswultra60w.jpg",
       "/images/switching/43.uswultra60w/p-mkt2-uswultra60w.jpg",
       "/images/switching/43.uswultra60w/p-mkt3-uswultra60w.jpg",
-      "/images/switching/43.uswultra60w/p-ov1-uswultra60w.jpg",
-      "/images/switching/43.uswultra60w/p-ov2-uswultra60w.jpg"
+      "/images/switching/43.uswultra60w/p-ov1-uswultra60w.png",
+      "/images/switching/43.uswultra60w/p-ov2-uswultra60w.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/switching/43.uswultra60w/p-ov1-uswultra60w.jpg",
-      "/images/switching/43.uswultra60w/p-ov2-uswultra60w.jpg"
+      "/images/switching/43.uswultra60w/p-ov1-uswultra60w.png",
+      "/images/switching/43.uswultra60w/p-ov2-uswultra60w.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8285,14 +8284,14 @@ export const switchingProducts: Product[] = [
       "/images/switching/44.uswultra/p-mkt1-uswultra.jpg",
       "/images/switching/44.uswultra/p-mkt2-uswultra.jpg",
       "/images/switching/44.uswultra/p-mkt3-uswultra.jpg",
-      "/images/switching/44.uswultra/p-ov1-uswultra.jpg",
-      "/images/switching/44.uswultra/p-ov2-uswultra.jpg"
+      "/images/switching/44.uswultra/p-ov1-uswultra.png",
+      "/images/switching/44.uswultra/p-ov2-uswultra.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/switching/44.uswultra/p-ov1-uswultra.jpg",
-      "/images/switching/44.uswultra/p-ov2-uswultra.jpg"
+      "/images/switching/44.uswultra/p-ov1-uswultra.png",
+      "/images/switching/44.uswultra/p-ov2-uswultra.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8413,8 +8412,8 @@ export const switchingProducts: Product[] = [
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/switching/45.uswflex2.5g8poe/p-ov1-uswflex2.5g8poe.jpg",
-      "/images/switching/45.uswflex2.5g8poe/p-ov2-uswflex2.5g8poe.jpg"
+      "/images/switching/45.uswflex2.5g8poe/p-ov1-uswflex2.5g8poe.png",
+      "/images/switching/45.uswflex2.5g8poe/p-ov2-uswflex2.5g8poe.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8677,14 +8676,14 @@ export const switchingProducts: Product[] = [
       "/images/switching/47.uswflex2.5g5/p-mkt1-uswflex2.5g5.jpg",
       "/images/switching/47.uswflex2.5g5/p-mkt2-uswflex2.5g5.jpg",
       "/images/switching/47.uswflex2.5g5/p-mkt3-uswflex2.5g5.jpg",
-      "/images/switching/47.uswflex2.5g5/p-ov1-uswflex2.5g5.jpg",
-      "/images/switching/47.uswflex2.5g5/p-ov2-uswflex2.5g5.jpg"
+      "/images/switching/47.uswflex2.5g5/p-ov1-uswflex2.5g5.png",
+      "/images/switching/47.uswflex2.5g5/p-ov2-uswflex2.5g5.png"
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/switching/47.uswflex2.5g5/p-ov1-uswflex2.5g5.jpg",
-      "/images/switching/47.uswflex2.5g5/p-ov2-uswflex2.5g5.jpg"
+      "/images/switching/47.uswflex2.5g5/p-ov1-uswflex2.5g5.png",
+      "/images/switching/47.uswflex2.5g5/p-ov2-uswflex2.5g5.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -8911,8 +8910,8 @@ export const switchingProducts: Product[] = [
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/49.uswflex/p-ov1-uswflex.png",
+      "/images/switching/49.uswflex/p-ov2-uswflex.png"
     ],
     
     // Bullet points untuk deskripsi produk
