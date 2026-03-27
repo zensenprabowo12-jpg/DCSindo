@@ -3840,7 +3840,7 @@ export const integrationsProducts: Product[] = [
     ],
   },
 
-  
+  // Produk Pertama dari Integrations, SF Premium IoT
   {
     id: "UC-EV-Station-Pro",
     name: "EV Station Pro",
@@ -3875,10 +3875,10 @@ export const integrationsProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Weatherproof",
-      "11 kW Level 2 electric vehicle charging station with an ultra-bright 10",
-      "1' touch display",
-      "flexible access control"
+      "Processor Octa-core Arm® Cortex®-A53, 2.2 GHz",
+      "Weight With wall mount/charging gun/power cord: 8.1 kg (17.9 lb)",
+      "Enclosure Material Front modules: Polycarbonate Middle module: Aluminum, Polycarbonate",
+      "Note. UniFi Access must be running on the same console as UniFi Connect with a Control Hub and Access Reader adopted for NFC card registration. Payment Terminal and UniFi WiFi Auto-Link supported with EV Station Pro version 1.2.25 and later. Third-party WiFi configuration is not supported."
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -3886,29 +3886,46 @@ export const integrationsProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "EV Station Pro" },
-          { label: "Model", value: "UC-EV-STATION-PRO" },
-          { label: "Category", value: "Integrations" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "280 x 178 x 143 mm (11 x 7 x 5.6”)" },
+          { label: "Mounting", value: "Wall Mount or Stand" },
+          { label: "Power Input", value: "200–240V ~ 50A, 50/60Hz, 1φ" },
+          { label: "Power Output", value: "200–240V ~ 50A, 50/60Hz, 1φ" },
+          { label: "Weatherproofing", value: "Type 3R" },
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "With wall mount/charging gun/power cord: 8.1 kg (17.9 lb)" },
+          { label: "Enclosure Material", value: "Front modules: Polycarbonate Middle module: Aluminum, Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Charging Cable Length", value: "7 m (23 ft)" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Display Size", value: "257 mm (10.1') Diagonal" },
+          { label: "Display Resolution", value: "800 x 1280 (10:16)" },
+          { label: "Display Luminance", value: "800 nits (typical)" },
+          { label: "Processor", value: "Octa-core Arm® Cortex®-A53, 2.2 GHz" },
+          { label: "Connectivity", value: "(1) GbE RJ45 port (1) USB-C port for payment terminal accessory Bluetooth® 4.2" },
+          { label: "Circuit Rating Max. load", value: "70A: 50A 60A: 48A 50A: 40A 40A: 32A 30A: 24A 20A: 16A" },
+          { label: "Circuit Rating Plug-in", value: "70A: No 60A: No 50A: Yes 40A: Yes 30A: Yes 20A: Yes" },
+          { label: "Circuit Rating Hardwired", value: "70A: Yes 60A: Yes 50A: Yes 40A: Yes 30A: Yes 20A: Yes" },
+          { label: "WiFi Standards", value: "802.11 a/b/g/n/ac" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Ambient Operating Temperature", value: "-40 to 50° C (-40 to 122° F)" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, UL" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Management Application", value: "UniFi Connect: Version 3.2.4 and later UniFi Connect iOS™ and Android™: Version 2.2.1 and later" },
         ]
-      }
+      },
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -3918,68 +3935,9 @@ export const integrationsProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uc-ev-station-pro"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uc-ev-station-pro"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Kedua dari Integrations, SF Premium IoT
   {
     id: "UC-EV-Station-Lite",
     name: "EV Station Lite",
@@ -4013,10 +3971,10 @@ export const integrationsProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "High-performance networking solution",
-      "Enterprise-grade reliability",
-      "Easy management and monitoring",
-      "Scalable architecture"
+      "Enclosure Material Polycarbonate",
+      "Processor Dual-core Arm® Cortex®-A53, 1 GHz",
+      "Weight 5.9 kg (13 lb)",
+      "Note. UniFi Access must be running on the same console as UniFi Connect for NFC card registration. Requires UniFi OS 4.0.6 and later for UniFi Identity Enterprise."
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -4024,25 +3982,43 @@ export const integrationsProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "EV Station Lite" },
-          { label: "Model", value: "UC-EV-STATION-LITE" },
-          { label: "Category", value: "UniFi Product" }
+          { label: "Dimensions", value: "254.7 x 192.7 x 85 mm (10 x 7.6 x 3.3”)" },
+          { label: "Mounting", value: "Wall Mount or Stand" },
+          { label: "Power Input", value: "200–240V ~ 50A, 50/60Hz, 1φ" },
+          { label: "Power Output", value: "200–240V ~ 50A, 50/60Hz, 1φ" },
+          { label: "Weatherproofing", value: "Type 3R" },
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "5.9 kg (13 lb)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Charging Cable Length", value: "7 m (23 ft)" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Display Size", value: "1.7' LCM display" },
+          { label: "Display Resolution", value: "240 x 240 (1:1)" },
+          { label: "Processor", value: "Dual-core Arm® Cortex®-A53, 1 GHz" },
+          { label: "Connectivity", value: "(1) GbE RJ45 port (1) USB-C port Bluetooth® 5.0 WiFi" },
+          { label: "Circuit Rating Max. load", value: "70A: 50A 60A: 48A 50A: 40A 40A: 32A 30A: 24A 20A: 16A" },
+          { label: "Circuit Rating Plug-in", value: "70A: No 60A: No 50A: Yes 40A: Yes 30A: Yes 20A: Yes" },
+          { label: "Circuit Rating Hardwired", value: "70A: Yes 60A: Yes 50A: Yes 40A: Yes 30A: Yes 20A: Yes" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "Ambient Operating Temperature", value: "-40 to 50° C (-40 to 122° F)" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, UL" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Management Application", value: "UniFi Connect: Version 3.14.4 and later. UniFi Connect iOS™ and Android™: Version 2.18 and later." },
         ]
-      }
+      },
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -4052,68 +4028,9 @@ export const integrationsProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Ketiga dari Integrations, SF Premium IoT
   {
     id: "UPL-Amp-B/W",
     name: "PowerAmp",
@@ -4147,40 +4064,59 @@ export const integrationsProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Premium speaker amplifier designed for high-fidelity multi-zone audio streaming and immersive spatial sound experiences",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Weight 2.4 kg (5.3 lb)",
+      "WiFi Standards 802.11 a/b/g/n/ac",
+      "Enclosure Material Chassis: Polycarbonate Knob: Aluminum",
+      "Note. EU version comes with EU power plug only."
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Mechanical",
         items: [
-          { label: "Product Name", value: "PowerAmp" },
-          { label: "Model", value: "UPL-AMP-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "With knob: 217 x 236.8 x 63.7 mm (8.5 x 9.3 x 2.5') Without knob: 217 x 217 x 63.7 mm (8.5 x 8.5 x 2.5')" },
+          { label: "Weight", value: "2.4 kg (5.3 lb)" },
+          { label: "Enclosure Material", value: "Chassis: Polycarbonate Knob: Aluminum" },
+          { label: "Mounting", value: "Compact Desktop" },
+          { label: "Available Colors", value: "Black White" },
+        ]
+      },
+      {
+        title: "Audio",
+        items: [
+          { label: "Per Channel Power (Continuous power)", value: "130 W, 8 Ω, 1 kHz, < 0.05% THD+N, EIA (CEA-490-A) 260 W, 4 Ω, 1 kHz, < 0.09% THD+N, EIA (CEA-490-A)" },
+          { label: "Amplifier Class", value: "Class D" },
+          { label: "Output", value: "Mono / Stereo sound" },
+          { label: "Surround Format", value: "Dolby Atmos, Dolby TrueHD, Dolby Atmos (True HD), Dolby Atmos (Dolby Digital Plus), Dolby Digital, Dolby Digital Plus, Stereo PCM, Multichannel PCM, Dolby Multichannel PCM" },
+          { label: "Zone", value: "Up to 32 PowerAmps" },
+          { label: "Audio Input", value: "(1) HDMI eARC input (2) RCA analog inputs L/R" },
+          { label: "Audio Output", value: "(1) RCA analog subwoofer output (2) Speaker terminal outputs with (2) banana plugs" },
+          { label: "Streaming", value: "AirPlay, Spotify Connect, Soundtrack Your Brand" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Networking Interface", value: "(2) GbE RJ45 ports" },
+          { label: "WiFi Standars", value: "802.11 a/b/g/n/ac" },
+          { label: "Connectivity", value: "WiFi 5G, BW 20/40/80 MHz WiFi 2.4G, BW 20/40 MHz" },
+          { label: "Power Method", value: "(1) Universal AC input, 100–240V AC, 2.5A Max., 50/60 Hz" },
+          { label: "Max. Power Consumption", value: "17W" },
+          { label: "LCM Display", value: "1.43' rotary knob with touchscreen" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Management Application", value: "UniFi Play iOS™ and Android™: Version 1.0.0 and later" },
         ]
-      }
+      },
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -4190,68 +4126,9 @@ export const integrationsProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-upl-amp-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-upl-amp-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Keempat dari Integrations, SF Premium IoT
   {
     id: "UPL-Port-B/W",
     name: "PoE Audio Port",
@@ -4285,40 +4162,56 @@ export const integrationsProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "A digital audio streamer with an ultra-compact",
-      "versatile design and an intuitive control system",
-      "supporting multiple music streaming services and scalable multi-zone installations",
-      "Reliable performance"
+      "Weight 250 g (8.5 oz)",
+      "WiFi Standards 802.11 a/b/g/n/ac/ax",
+      "Enclosure Material Polycarbonate",
+      "Note. EU version comes with EU power plug only."
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Mechanical",
         items: [
-          { label: "Product Name", value: "PoE Audio Port" },
-          { label: "Model", value: "UPL-PORT-B-W" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "109 x 109 x 40.5 mm (4.3 x 4.3 x 1.6')" },
+          { label: "Weight", value: "250 g (8.5 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mounting", value: "Compact Desktop" },
+          { label: "Available Colors", value: "Black White" },
+        ]
+      },
+      {
+        title: "Audio",
+        items: [
+          { label: "Output", value: "Mono / Stereo sound" },
+          { label: "Surround Format", value: "PCM" },
+          { label: "Zone", value: "Up to 32 PowerAmps and PoE Audio Ports" },
+          { label: "Audio Input", value: "(2) RCA analog inputs L/R (1) HDMI eARC input (1) Optical In (1) USB-C versatile port" },
+          { label: "Audio Output", value: "(2) RCA analog outputs L/R (1) Optical Out (1) USB-C versatile port" },
+          { label: "Streaming", value: "AirPlay, Google Cast, Spotify Connect, Soundtrack Your Brand" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Networking Interface", value: "(1) 10/100 MbE RJ45 port" },
+          { label: "WiFi Standars", value: "802.11 a/b/g/n/ac/ax" },
+          { label: "Connectivity", value: "WiFi 2.4G, BW 20/40 MHz WiFi 5G, BW 20/40/80 MHz" },
+          { label: "Power Method", value: "(1) AC/DC adapter, 12V DC (Included) (1) PoE" },
+          { label: "Max. Power Consumption", value: "10W" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE, Anatel: 07624-25-08356" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Management Application", value: "UniFi Play iOS™ and Android™: Version 2.0.0 and later" },
         ]
-      }
+      },
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -4328,68 +4221,9 @@ export const integrationsProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-upl-port-b/w"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-upl-port-b/w"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Kelima dari Integrations, SF Premium IoT
   {
     id: "UC-Cast-Pro",
     name: "Display Cast Pro",
@@ -4423,10 +4257,10 @@ export const integrationsProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Managed digital signage player for HMI display with media content playback",
-      "and USB-C peripheral support",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Weight Without mount: 240 g (5.8 oz) With mount: 260 g (9.2 oz)",
+      "WiFi Standards 802.11 a/b/g/n/ac/ax",
+      "Memory Storage: 32 GB RAM: 8 GB",
+      "Note. USB-C power adapter and HDMI cable not included. Does not support Protect camera streaming."
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -4434,29 +4268,42 @@ export const integrationsProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Display Cast Pro" },
-          { label: "Model", value: "UC-CAST-PRO" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Without mount: 123 x 52 x 31 mm (3.5 x 2.1 x 1.2') With mount: 125.1 x 56.3 x 40.8 mm (3.6 x 2.1 x 1.4')" },
+          { label: "Display Output", value: "(1) HDMI port" },
+          { label: "Video Content Support", value: "480p / 720p / 1080p / 4k" },
+          { label: "UniFi Application Suite Connect", value: "✓" }
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "Without mount: 240 g (5.8 oz) With mount: 260 g (9.2 oz)" },
+          { label: "Pole Mount Diameter", value: "1—2' (25—50 mm)" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Processor", value: "Octa-core CPU including (2) ARM® Cortex®-A78 and (6) ARM® Cortex®-A55 Integrated Mali-G57 GPU" },
+          { label: "Memory", value: "Storage: 32 GB RAM: 8 GB" },
+          { label: "Power Method", value: "(1) GbE RJ45 PoE 48V DC, 0.35A (1) USB Type-C 5V DC, 3A UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Connectivity", value: "WiFi 2.4G, BW 20/40 MHz WiFi 5G, BW 20/40/80 MHz" },
+          { label: "WiFi Standards", value: "802.11 a/b/g/n/ac/ax" },
+          { label: "LEDs", value: "White/blue" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Ambient Operating Humidity", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Temperature", value: "20 to 90% noncondensing" },
+          { label: "Certifications", value: "CE, FCC, IC, Wi-Fi CERTIFIED UL 62368-1, CSA C22.2 No. 62368-1, Anatel: 06981-25-08356" },
+          { label: "NDAA Compliant", value: "✓" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Management Application UniFi Connect Web", value: "Version 3.14.6 and later" },
+          { label: "Management Application UniFi Connect iOS™ and Android™", value: "Version 3.14.6 and later" },
         ]
-      }
+      },
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -4466,68 +4313,9 @@ export const integrationsProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uc-cast-pro"
-      },
-      {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uc-cast-pro"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
   },
+
+  // Produk Keenam dari Integrations, SF Premium IoT
   {
     id: "UC-Cast-Lite",
     name: "Display Cast Lite",
@@ -4561,10 +4349,10 @@ export const integrationsProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Digital signage player designed for media playback on HDMI displays",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
+      "Weight Without mount: 160 g (5.6 oz) With mount: 180 g (6.3 oz)",
+      "Memory Storage: 16 GB RAM: 2 GB",
+      "WiFi Standards 802.11 a/b/g/n/ac/ax",
+      "Note. HDMI cable not included. Protect camera streaming not supported. Use Protect Viewport to view camera feeds on an HDMI display."
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -4572,29 +4360,43 @@ export const integrationsProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Product Name", value: "Display Cast Lite" },
-          { label: "Model", value: "UC-CAST-LITE" },
-          { label: "Category", value: "UniFi Product" },
-          { label: "Resolution", value: "4K (8MP)" },
-          { label: "Night Vision", value: "25m (82ft) IR" },
-          { label: "Zoom", value: "3x Optical" },
-          { label: "Audio", value: "Two-way Audio" }
+          { label: "Dimensions", value: "Without mount: 90 x 52 x 31 mm (3.5 x 2.1 x 1.2') With mount: 92.1 x 56.3 x 40.8 mm (3.6 x 2.1 x 1.4')" },
+          { label: "Display Output", value: "(1) HDMI port" },
+          { label: "Video Content Support", value: "480p / 720p / 1080p" },
+          { label: "UniFi Application Suite Connect", value: "✓" }
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "Without mount: 160 g (5.6 oz) With mount: 180 g (6.3 oz)" },
+          { label: "Pole Mount Diameter", value: "1—2' (25—50 mm)" },
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Form Factor", value: "Standard" },
-          { label: "Power Supply", value: "AC/DC" }
+          { label: "Processor", value: "Quad-Core Arm® Cortex®-A55, 1.9 GHz" },
+          { label: "Memory", value: "Storage: 16 GB RAM: 2 GB" },
+          { label: "Power Method", value: "(1) USB Type-C 5V DC, 1A" },
+          { label: "Max. Power Consumption", value: "SW" },
+          { label: "Connectivity", value: "WiFi 2.4G, BW 20/40 MHz WiFi 5G, BW 20/40/80 MHz" },
+          { label: "WiFi Standards", value: "802.11 a/b/g/n/ac/ax" },
+          { label: "LEDs", value: "White/blue" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Ambient Operating Humidity", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Temperature", value: "20 to 90% noncondensing" },
+          { label: "Certifications", value: "CE, FCC, IC, Wi-Fi CERTIFIED UL 62368-1, CSA C22.2 No. 62368-1" },
+          { label: "NDAA Compliant", value: "✓" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Management", value: "UniFi Network" },
-          { label: "Minimum Software Requirements", value: "Web Browser: Google Chrome" }
+          { label: "Management Application UniFi Connect Web", value: "Version 3.17.0 and later" },
+          { label: "Management Application UniFi Connect iOS™ and Android™", value: "Version 2.26.0 and later" },
         ]
-      }
+      },
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
@@ -4604,66 +4406,100 @@ export const integrationsProducts: Product[] = [
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
+  },
 
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
+  // Produk Ketujuh dari Integrations, SF Premium IoT
+  {
+    id: "UC-Display",
+    name: "Connect Display",
+    category: "Integrations",
+    subfilter: "Premium IoT",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "21.5' Full HD PoE++ touchscreen designed for interactive digital signage applications.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UC-Display",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camera.jpg",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Memory Storage: 32 GB RAM: 3 GB",
+      "Processor Octa-core ARM® Cortex®-A53 at 2.2 GHz",
+      "Resolution 1920 x 1080 FHD (16:9)"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
       {
-        id: 1,
-        name: "Mounting Kit",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Compact, stackable, and toolless design. Perfect for your rack-mount devices.",
-        specs: [
-          "Compatible with 19\" racks",
-          "Steel construction",
-          "Easy installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 200 x 43.7 mm" },
-          { label: "Weight", value: "1.2 kg" },
-          { label: "Material", value: "SGCC Steel" },
-          { label: "Mounting", value: "1U Rack Mount" }
-        ],
-        productLink: "/products/mounting-kit-uc-cast-lite"
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "538.3 x 330 x 37 mm (21.2 x 13 x 1.5')" },
+          { label: "Mounting", value: "VESA mount adapter (Included) Table stand, surface, arm, flush mount (Optional)" },
+          { label: "Touch Screen Technology", value: "Capacitive multi-touch" },
+          { label: "UniFi Application Suite Connect", value: "✓" }
+        ]
       },
       {
-        id: 2,
-        name: "Power Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-quality power cable with durable construction.",
-        specs: [
-          "2m Length",
-          "High durability",
-          "Standard fit"
-        ],
-        detailedSpecs: [
-          { label: "Length", value: "2.0 m" },
-          { label: "Conductor", value: "Copper" },
-          { label: "Rating", value: "10A / 250V" },
-          { label: "Jacket", value: "PVC" }
-        ],
-        productLink: "/products/power-cable-uc-cast-lite"
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "4.9 kg (10.8 lb)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum" },
+        ]
       },
       {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Data Rate", value: "10 Gbps" },
-          { label: "Connector", value: "LC Duplex" },
-          { label: "Wavelength", value: "850 nm" },
-          { label: "Max Distance", value: "300 m" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
+        title: "Hardware",
+        items: [
+          { label: "Display Size", value: "546 mm (21.5') diagonal" },
+          { label: "Display Brightness", value: "250 nits (Typical)" },
+          { label: "Display Resolution", value: "1920 x 1080 FHD (16:9)" },
+          { label: "Processor", value: "Octa-core ARM® Cortex®-A53 at 2.2 GHz" },
+          { label: "Memory", value: "Storage: 32 GB RAM: 3 GB" },
+          { label: "Power Method", value: "PoE++" },
+          { label: "Max. Power Consumption", value: "27W" },
+          { label: "Connectivity", value: "(1) GbE RJ45 port (1) USB-C port (Reserved feature for future function update) Bluetooth® 4.2" },
+          { label: "Microphone", value: "✓" },
+          { label: "Speaker", value: "✓" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Ambient Operating Humidity", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Temperature", value: "20 to 90% noncondensing" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+          { label: "NDAA Compliant", value: "✓" },
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Management Application UniFi Connect Web", value: "Version 2.1.14 and later" },
+          { label: "Management Application UniFi Connect iOS™ and Android™", value: "Version 1.0.0 and later" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
   }
 ];
