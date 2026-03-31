@@ -12343,7 +12343,7 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Kesembilan dari Accessories, SF For Cameras
-   {
+  {
     id: "UACC-Bullet-AB-W",
     name: "Bullet Camera Angled Base",
     category: "Accessories",
@@ -12402,7 +12402,8 @@ export const accessoriesProducts: Product[] = [
     ],
   },
 
-   {
+  //Produk Kesepuluh dari Accessories, SF For Cameras
+  {
     id: "UACC-AI-Pro-Enhancer-B/W",
     name: "AI Enhancer",
     category: "Accessories",
@@ -12435,6 +12436,240 @@ export const accessoriesProducts: Product[] = [
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
+      "Radar Recommended Mounting Height 2-5 m (6.6-16.4 ft)",
+      "Enclosure Material Alumunium Alloy, Polycarbonate"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "130 x 155 x 126 mm (5.1 x 6.1 x 5')" },
+          { label: "Weight", value: "490 g (1.1 lb)" },
+          { label: "Enclosure Material", value: "Alumunium Alloy, Polycarbonate" },
+          { label: "Mount Material", value: "Aluminum alloy" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Radar Recommended Mounting Height", value: "2-5 m (6.6-16.4 ft)" },
+          { label: "Radar Recommended Mounting Tilt", value: "0-30°" },
+          { label: "Radar Detection Range", value: "Person: 0.-20 m (1.6-65.6 ft) Vehicle: 2-35 m (6.6-115 ft)" },
+          { label: "Radar Field of Detection", value: "H: 110°" },
+          { label: "Radar Distance Accuracy", value: "0.5 m (1.6 ft)" },
+          { label: "IR distance", value: "40 m (131 ft)" },
+          { label: "Lights", value: "5700K, 600 lm" },
+          { label: "Speaker", value: "✓" },
+          { label: "Power Method", value: "Camera AI Pro" },
+          { label: "Power Supply", value: "5V DC, 3A" },
+          { label: "Max. Power Consumption", value: "15W" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50°C (-22 to 122°F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" }
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" }
+        ]
+      },
+    ],
+  },
+
+  // Produk Kesebalas dari Accessories, SF For Cameras
+   {
+    id: "UACC-Pro-Bullet-Enhancer-B-B/W",
+    name: "Pro Bullet Enhancer",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Long-range IR LED, floodlight, and radar detection accessory for the G6 Pro Bullet and AI Pro.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Pro-Bullet-Enhancer-B",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Radar Recommended Mounting Height 2-5 m (6.6-16.4 ft)",
+      "Enclosure Material Aluminum alloy"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "130 x 155 x 126 mm (5.1 x 6.1 x 5')" },
+          { label: "Weight", value: "490 g (1.1 lb)" },
+          { label: "Enclosure Material", value: "Alumunium Alloy, Polycarbonate" },
+          { label: "Mount Material", value: "Aluminum alloy" },
+          { label: "Weatherproofing", value: "IPX5" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Radar Recommended Mounting Height", value: "2-5 m (6.6-16.4 ft)" },
+          { label: "Radar Recommended Mounting Tilt", value: "0-30°" },
+          { label: "Radar Detection Range", value: "Person: 0.5-20 m (1.6-65.6 ft) Vehicle: 2-35 m (6.6-15 ft)" },
+          { label: "Radar Field of Detection", value: "H: 110°" },
+          { label: "Radar Distance Accuracy", value: "0.5 m (1.6 ft)" },
+          { label: "IR distance", value: "UVC-G6-Pro-Bullet: 60 m (197 ft) UVC_AI-Pro: 40 m (131 ft)" },
+          { label: "Lights", value: "5700K, 600 lm" },
+          { label: "Speaker", value: "✓" },
+          { label: "Power Method", value: "Camera G6 Pro Bullet, AI Pro" },
+          { label: "Power Supply", value: "5V DC, 3A" },
+          { label: "Max. Power Consumption", value: "15W" },
+          { label: "Ambient Operating Temperature", value: "-30 to 50°C (-22 to 122°F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" }
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" }
+        ]
+      },
+    ],
+  },
+
+  // Produk Kedua Belas dari Accessories, SF For Cameras
+   {
+    id: "UACC-G5-Enhancer",
+    name: "G5 Pro Enhancer",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Long-range IR LED and floodlight accessory for the G5 Pro.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-G5-Enhancer",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "IR distance 40 m (131 ft)",
+      "Enclosure Material Polycarbonate"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "⌀118.5 x 103.3 mm (⌀4.7 x 4.1')" },
+          { label: "Weight", value: "210 g (7.4 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Aluminum alloy" },
+          { label: "Weatherproofing", value: "IPX5" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "IR distance", value: "40 m (131 ft)" },
+          { label: "Lights", value: "5700K, 600 lm" },
+          { label: "Speaker", value: "✓" },
+          { label: "Power Method", value: "Camera G5 Pro" },
+          { label: "Power Supply", value: "5V DC, 3A" },
+          { label: "Max. Power Consumption", value: "4.5W" },
+          { label: "Ambient Operating Temperature", value: "-20 to 50°C (-4 to 122°F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" }
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" }
+        ]
+      },
+    ],
+  },
+
+  // Produk Ketiga Belas dari Accessories, SF For Cameras
+  {
+    id: "UVC-G4-IRExtender",
+    name: "G4 Bullet IR Enhancer",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Long-range IR LED accessory for the G4 Bullet.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UVC-G4-IRExtender",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
       "Blends seamlessly into a variety of backgrounds",
       "Sold as a 3-pack"
     ],
@@ -12442,50 +12677,1864 @@ export const accessoriesProducts: Product[] = [
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "Device: 267 x 189 x 247 mm (10.5 x 7.4 x 9.7') Articulating mount: ⌀104 x 149.4 mm  (⌀4.1 x 5.9')" },
-          { label: "Mounting", value: "Articulating mount for wall, pole mount (Included)" },
-        ]
-      },
-      {
         title: "Mechanical",
         items: [
-          { label: "Weight", value: "Device: 1.55 kg (2.4 lb) Articulating mount: 1.3 kg (2.9 lb)" },
-          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
-          { label: "Mounting Material", value: "Stainless steel, aluminum alloy" },
-          { label: "Pole Mount Diameter", value: "1—2.5' (25—63.5 mm)" },
-          { label: "Weatherproofing", value: "IP66" }
+          { label: "Dimensions", value: "⌀ 80 x 26 mm (⌀ 3.15 x 1.02')" },
+          { label: "Weight", value: "75 g (2.7 oz)" },
+          { label: "Enclosure Material", value: "UV-stability plastic, aluminum alloy" },
+          { label: "Weatherproofing", value: "IPX4" }
         ]
       },
       {
         title: "Hardware",
         items: [
-          { label: "Power Method", value: "PoE+" },
-          { label: "Max. Power Consumption", value: "14.3W" },
-          { label: "Speaker", value: "✓" },
-          { label: "Networking Interface", value: "(1) 100/10 MbE RJ45 port" },
-          { label: "LEDs System", value: "R/G/B/W" },
-          { label: "Buttons", value: "(1) Factory reset" },
-          { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "Certifications", value: "FCC, IC, CE" },
-          { label: "NDAA Compliant", value: "✓" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management Application UniFi Protect Web", value: "✓" },
-          { label: "Management Application UniFi Protect iOS™ and Android™", value: "✓" }
+          { label: "IR distance", value: "25 m (82 ft)" },
+          { label: "Power Method", value: "Accessory connector" },
+          { label: "Power Supply", value: "UniFi Protect G4 Bullet camera" },
+          { label: "Max. Power Consumption", value: "4.5W" },
+          { label: "Compatibillity", value: "UVC-G4-Bullet" },
+          { label: "LEDs", value: "(6) Built-in high-intensity infrared" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40°C (-4 to 104°F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" }
         ]
       },
     ],
-    inTheBox: [
+  },
+
+  //Produk Keempat Belas dari Accessories, SF For Cameras
+   {
+    id: "UACC-G5-PTZ-PM-B-B/W",
+    name: "G6/G5 PTZ Pendant Mount",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Pendant mount accessory for G6/G5 PTZ.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-G5-PTZ-PM-B-B/W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Includes 3/4' conduit entrance",
+      "Weatherproof (outdoor exposed)"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀61 x 43.4 mm (⌀2.4 x 1.7')" },
+          { label: "Weight", value: "32 g (1.1 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mounting Material", value: "Polycarbonate" },
+          { label: "Threaded Outlets", value: "G3/4'" },
+          { label: "Compatibiliity", value: "UVC-G5-PTZ UVC-G6-PTZ" }
+        ]
+      },
+    ],
+       inTheBox: [
       { name: "Device", image: "/images/dcs-box.png" },
       { name: "Mounting Kit", image: "/images/dcs-box.png" },
       { name: "Power Cable", image: "/images/dcs-box.png" },
       { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  // Produk Kelima Belas dari Accessories SF For Cameras
+  {
+    id: "UACC-G5-PTZ-ICM-SB-B-B/W",
+    name: "G5 PTZ In-Ceiling Mount",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "In-ceiling mount accessory or smoked bubble cover for G5 PTZ.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-G5-PTZ-ICM-SB-B-B/W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Weatherproof (outdoor exposed)"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀109.5 x 94.7 mm (⌀4.3 x 3.7')" },
+          { label: "Weight", value: "144 g (5.1 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mounting Material", value: "Polycarbonate" },
+          { label: "Compatibiliity", value: "UVC-G5-PTZ" }
+        ]
+      },
+    ],
+       inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  // Produk Keenam Belas dari Accessories, SF For Cameras
+   {
+    id: "UACC-G6-PTZ-ICM-B-B/W",
+    name: "G6 PTZ In-Ceiling Mount",
+    category: "Accessories",
+    subfilter: "For Cameras",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "In-ceiling mount accessory for G6 PTZ.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-G6-PTZ-ICM-B-B/W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Weatherproof (outdoor exposed)"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀151 x 140.6 mm (⌀5.9 x 5.5')" },
+          { label: "Weight", value: "259 g (9.1 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mounting Material", value: "Polycarbonate" },
+          { label: "Compatibiliity", value: "UVC-G6-PTZ" }
+        ]
+      },
+    ],
+       inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  // Produk Pertama dari Accessories, SF For Door Access
+  {
+    id: "UA-Card-B-10-B/W",
+    name: "Access Card",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "A pack of highly-secure NFC cards used for access control within UniFi.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UA-Card-B-10-B/W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Multi-layer encryption to avoid malicious duplication",
+      "Assignable to users and visitors"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "85.6 x 53.98 x 0.84 mm (3.37 x 2.13 x 0.03')" },
+          { label: "Weight", value: "5 g (0.18 oz)" },
+          { label: "Format", value: "ISO 7810 ID-1" },
+          { label: "NFC Technology", value: "MIFARE DESFire EV3 UniFi Access Proprietary Security Protocol" },
+          { label: "NFC Frequency", value: "13.56 MHz" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items:[
+        { label: "NDAA Compliant", value: "✓"},
+        { label: "Certifications", value: "Anatel"}
+        ]
+      }
+    ],
+  },
+
+  // Produk Kedua dari Accessories, SF For Door Access
+  {
+    id: "UA-Card-B-100-B/W",
+    name: "Access Card",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "A pack of highly-secure NFC cards used for access control within UniFi.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UA-Card-B-100-B/W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Multi-layer encryption to avoid malicious duplication",
+      "Assignable to users and visitors"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "85.6 x 53.98 x 0.84 mm (3.37 x 2.13 x 0.03')" },
+          { label: "Weight", value: "5 g (0.18 oz)" },
+          { label: "Format", value: "ISO 7810 ID-1" },
+          { label: "NFC Technology", value: "MIFARE DESFire EV3 UniFi Access Proprietary Security Protocol" },
+          { label: "NFC Frequency", value: "13.56 MHz" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items:[
+        { label: "NDAA Compliant", value: "✓"},
+        { label: "Certifications", value: "Anatel"}
+        ]
+      }
+    ],
+  },
+
+  // Produk Ketiga dari Accessories, SF For Door Access
+    {
+    id: "UACC-Reader-Pro-AM-B-B/W",
+    name: "Reader Pro Angle Mount",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Angled mounting accessory for UniFi Professional Access Readers.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Reader-Pro-AM-B-B/W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "20° angle mount"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "160 x 40.4 x 31.1 mm (6.3 x 1.6 x 1.2')" },
+          { label: "Weight", value: "43 g (1.5 oz)" },
+          { label: "Enclosure Material", value: "ISO 7810 ID-1" },
+          { label: "Mounting", value: "Wall Compatible with UA-G2-Pro gang box mount" }
+        ]
+      },
+    ],
+  },
+
+  // Produk Keempat dari Accessories, SF For Door Access
+  {
+    id: "UA-Button",
+    name: "Access Button",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Push-to-exit button designed for UniFi Access Hubs.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UA-Button",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Includes black and white faceplates"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "137 x 88 x 38.1 mm (5.4 x 3.5 x 1.5')" },
+          { label: "Weight", value: "180 g (6.3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate, SGCC steel" },
+          { label: "Available Colors", value: "Black, White" },
+          { label: "Indoor and Outdoor Use", value: "Indoor Only" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Mechanical Life", value: "1,000,000 clicks" },
+          { label: "Power Method", value: "UniFi Access Hubs UL 294 Power-limited Class 2 PSU UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Contact Type", value: "(1) Normal open" },
+          { label: "Contact Rating", value: "30V DC, 2A" },
+          { label: "Ul 294 Level", value: "Destructive attack: Level I Line security: Level I Endurance: Level I Standby power: Level I" },
+          { label: "UL 294 Statement", value: "Compliance with IEEE 802.3 (at or af) specifications was not verified as part of UL 294. The equipment is intended to comply with the section of the National Electrical Code, ANSI/NFPA 70, Article 725.121, Power Sources for Class 2 and Class 3 Circuits." },
+          { label: "CAN/ULC-60839-11-1 Grade", value: "Grade Assignment: 1" },
+          { label: "Document number, and issue date and/or revision level", value: "UA-Button, V01" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 70° C (-40 to 158° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, UL 294, CAN/ULC-60839-11-1" },
+        ]
+      }
+    ],
+       inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+// Produk Kelima dari Accessories, SF For Door Access
+   {
+    id: "UACC-Intercom-Sunshield",
+    name: "Intercom Sunshield",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "UniFi Access Intercom sunshield accessory.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Intercom-Sunshield",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Sun-proof and UV-resistant"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "362.1 x 118.1 x 59.1 mm (14.3 x 4.6 x 2.3')" },
+          { label: "Weight", value: "560 g (1.2 lb)" },
+          { label: "Enclosure Material", value: "Powder-coated galvanized steel" },
+          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 140° F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 70° C (-40 to 158° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" }
+        ]
+      },
+    ],
+  },
+
+  // Produk Keenam dari Accessories, SF For Door Access
+   {
+    id: "UACC-Intercom-Viewer-TS",
+    name: "Intercom Viewer Table Stand",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Metal table stand for Intercom Viewer.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Intercom-Viewer-TS",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Aluminum alloy, rubber, polycarbonate"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "123.6 x 78.8 x 72 mm (4.9 x 3.1 x 2.8')" },
+          { label: "Weight", value: "186 g (6.6 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, rubber, polycarbonate" },
+        ]
+      },
+    ],
+  },
+
+  // Produk Ketujuh dari Accessories, SF For Door Access
+   {
+    id: "UACC-Junction-Utility",
+    name: "Junction Utility",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "An indoor/outdoor enclosure designed for UniFi Access Hubs, switches, and accessories.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Junction-Utility",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Galvanized steel (SGCC)"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Enclosure: 400 x 350 x 152 mm (15.7 x 13.8 x 6') Inner mounting plate: 270 x 355 mm (10.6 x 14')" },
+          { label: "Weight", value: "7 kg (15.4 lb)" },
+          { label: "Enclosure Material", value: "Galvanized steel (SGCC)" },
+          { label: "Weatherproofing", value: "IP55" },
+          { label: "Certifications", value: "UL 50E NEMA Type 3R Outdoor Enclosure certified" },
+        ]
+      },
+    ],
+        inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  // Produk Kedelapan dari Accessories, SF For Door Access
+   {
+    id: "UA-Lock-Magnetic-270kg",
+    name: "Magnetic Lock",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fail-safe magnetic lock for inswing and outswing doors that connects to a UniFi Access Hub.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UA-Lock-Magnetic-270kg",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Holds up to 270 kg or 540 kg (600-1,200 lb)",
+      "Can be installed on a wide variety of door types*",
+      "*— Access Lock Magnetic 270kg: All types including full glass*",
+      "— Access Lock Magnetic 540kg: All types excluding full glass"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "UA-Lock-Magnetic-270kg Lock body: 250 x 42.5 x 26 mm (9.8 x 1.7 x 1' ) Install plate: 250 x 25x 5 mm (9.8 x 1 x 0.2' ) Armature: 185.5 x 38.5 x 11 mm (7.3 x 1.5 x 0.4') UA-Lock-Magnetic-540kg Lock body: 266 x 67.5 x 40 mm (10.5 x 2.7 x 1.6') Install plate: 266 x 40 x 6 mm (10.5 x 1.6 x 0.2') Armature: 185 x 61 x 16 mm (7.3 x 2.4 x 0.6')" },
+          { label: "Weight", value: "UA-Lock-Magnetic-270kg Lock body: 1 kg (2.2 lb) Install plate: 70 g (0.15 lb) Armature: 600 g (1.3 lb)  UA-Lock-Magnetic-540kg Lock body: 2.9 kg (6.4 lb) Install plate: 145 g (0.3 lb) Armature: 1.4 kg (3.1 lb)" },
+          { label: "Enclosure Material", value: "Device/brackets: aluminum Armature: steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail Safe" },
+          { label: "Lock Features Support Door Type", value: "UA-Lock-Magnetic-270kg: Single door  (Wooden/metal/glass)  UA-Lock-Magnetic-540kg: Single door  (Wooden/metal)" },
+          { label: "Lock Features DPS", value: "Embedded" },
+          { label: "Lock Features Holding Force", value: "UA-Lock-Magnetic-270kg: 270 kg (600 lb) UA-Lock-Magnetic-540kg: 540 kg (1,200 lb)" },
+          { label: "Lock Features Current Power", value: "500mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NC (red) (1) Lock 12V/COM (black) (1) DPS/+ (white) (1) DPS/- (yellow)" },
+          { label: "Lock Features Mounting", value: "UA-Lock-Magnetic-270kg L bracket: for outward opening door thickness < 42 mm (< 1.7')  Z bracket: for inward opening door, used with L bracket U bracket: for glass door thickness ≤ 17 mm (≤ 0.7') and door gap ≤ 5 mm (≤ 0.2')   UA-Lock-Magnetic-540kg L bracket: for outward opening door thickness < 42 mm (< 1.7')  Z bracket: for inward opening door, used with L bracket" },
+          { label: "Lock Features LED Indicator", value: "Green: unlocked Red: locked" },
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" }
+        ]
+      },
+    ],
+    addons: [
+      {
+        id: 1,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 2,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/power-cable"
+      },
+    ]
+  },
+
+  // Produk Kesembilan dari Accessories, SF For Door Access
+  {
+    id: "UA-Lock-Magnetic-540kg",
+    name: "Magnetic Lock",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fail-safe magnetic lock for inswing and outswing doors that connects to a UniFi Access Hub.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UA-Lock-Magnetic-540kg",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Holds up to 270 kg or 540 kg (600-1,200 lb)",
+      "Can be installed on a wide variety of door types*",
+      "*— Access Lock Magnetic 270kg: All types including full glass*",
+      "— Access Lock Magnetic 540kg: All types excluding full glass"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "UA-Lock-Magnetic-270kg Lock body: 250 x 42.5 x 26 mm(9.8 x 1.7 x 1 ) Install plate: 250 x 25x 5 mm (9.8 x 1 x 0.2' ) Armature: 185.5 x 38.5 x 11 mm (7.3 x 1.5 x 0.4') UA-Lock-Magnetic-540kg Lock body: 266 x 67.5 x 40 mm (10.5 x 2.7 x 1.6') Install plate: 266 x 40 x 6 mm (10.5 x 1.6 x 0.2') Armature: 185 x 61 x 16 mm (7.3 x 2.4 x 0.6')" },
+          { label: "Weight", value: "UA-Lock-Magnetic-270kg Lock body: 1 kg (2.2 lb) Install plate: 70 g (0.15 lb) Armature: 600 g (1.3 lb) UA-Lock-Magnetic-540kg Lock body: 2.9 kg (6.4 lb) Install plate: 145 g (0.3 lb) Armature: 1.4 kg (3.1 lb)" },
+          { label: "Enclosure Material", value: "Device/brackets: aluminum Armature: steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail Safe" },
+          { label: "Lock Features Support Door Type", value: "UA-Lock-Magnetic-270kg: Single door  (Wooden/metal/glass)  UA-Lock-Magnetic-540kg: Single door  (Wooden/metal)" },
+          { label: "Lock Features DPS", value: "Embedded" },
+          { label: "Lock Features Holding Force", value: "UA-Lock-Magnetic-270kg: 270 kg (600 lb) UA-Lock-Magnetic-540kg: 540 kg (1,200 lb)" },
+          { label: "Lock Features Current Power", value: "500mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NC (red) (1) Lock 12V/COM (black) (1) DPS/+ (white) (1) DPS/- (yellow)" },
+          { label: "Lock Features Mounting", value: "UA-Lock-Magnetic-270kg L bracket: for outward opening door thickness < 42 mm (< 1.7')  Z bracket: for inward opening door, used with L bracket U bracket: for glass door thickness ≤ 17 mm (≤ 0.7') and door gap ≤ 5 mm (≤ 0.2')   UA-Lock-Magnetic-540kg L bracket: for outward opening door thickness < 42 mm (< 1.7')  Z bracket: for inward opening door, used with L bracket" },
+          { label: "Lock Features LED Indicator", value: "Green: unlocked Red: locked" },
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" }
+        ]
+      },
+    ],
+    addons: [
+      {
+        id: 1,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 2,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/power-cable"
+      },
+    ]
+  },
+
+  // Produk Kesepuluh dari Accessories, SF For Door Access
+  {
+    id: "UACC-Lock-Strike-Secure-15mm",
+    name: "Fail-Secure Strike Lock",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fail-secure electric strike lock that connects to a UniFi Access Hub.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Lock-Strike-Secure-15mm",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel",
+      "Lock Features Support Door Type Single door (Wooden/metal)"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Lock body: 80 x 40 x 35 mm (3.2 x 1.6 x 1.4') Short front plate: 124 x 32 x 3 mm (4.9 x 1.3 x 0.1') Long front plate: 202 x 36 x 3 mm (7.9 x 1.4 x 0.1')" },
+          { label: "Weight", value: "Lock body: 185 g (6.5 oz) Short front plate: 50 g (1.8 oz) Long front plate: 130 g (4.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail Secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "1,200 kg (2,645 lb)" },
+          { label: "Lock Features Current Power", value: "400mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+          { label: "Door Status Contact Type ", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" }
+        ]
+      },
+    ],
+        inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+    addons: [
+      {
+        id: 1,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 2,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/power-cable"
+      },
+    ]
+  },
+
+  // Produk Kesebelas dari Accessories, SF For Door Access
+  {
+    id: "UACC-Lock-Strike-Secure-8mm",
+    name: "Fail-Secure Strike Lock",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fail-secure electric strike lock with 8 mm lock slot depth support.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Lock-Strike-Secure-8mm",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel",
+      "Lock Features Support Door Type Single door (Wooden/metal)"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Lock body:112 x 21 x 28 mm (4.4 x 0.8 x 1.1') Short front plate:153 x 25 x 3 mm (6 x 0.9 x 0.1') Long front plate:250 x 25 x 3 mm (9.8 x 0.9 x 0.1')" },
+          { label: "Weight", value: "Lock body: 197 g (6.9 oz) Short front plate: 62 g (2.2 oz) Long front plate: 97 g (3.4 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail Secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "227 kg (500 lb)" },
+          { label: "Lock Features Current Power", value: "200mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) DPS/- (white) (1) DPS/+ (orange)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+          { label: "Door Status Contact Type ", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" }
+        ]
+      },
+    ],
+        inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+    addons: [
+      {
+        id: 1,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 2,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/power-cable"
+      },
+    ]
+  },
+
+  // Produk Kedua Belas dari Accessories, SF For Door Access
+   {
+    id: "UACC-Lock-Strike-Safe-15mm",
+    name: "Fail-Safe Strike Lock",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fail-safe electric strike lock that connects to a UniFi Access Hub.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Lock-Strike-Safe-15mm",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel",
+      "Lock Features Support Door Type Single door (Wooden/metal)"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Lock body: 80 x 40 x 35 mm (3.2 x 1.6 x 1.4') Short front plate: 124 x 32 x 3 mm (4.9 x 1.3 x 0.1') Long front plate: 202 x 36 x 3 mm (7.9 x 1.4 x 0.1')" },
+          { label: "Weight", value: "Lock body: 185 g (6.5 oz) Short front plate: 50 g (1.8 oz) Long front plate: 130 g (4.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail Secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "1,200 kg (2,645 lb)" },
+          { label: "Lock Features Current Power", value: "400mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) DPS/- (white) (1) DPS/+ (orange)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+          { label: "Door Status Contact Type ", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" }
+        ]
+      },
+    ],
+        inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+    addons: [
+      {
+        id: 1,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 2,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/power-cable"
+      },
+    ]
+  },
+
+  // Produk Ketiga Belas dari Accessories, SF For Door Access
+  {
+    id: "UACC-Lock-Strike-Safe-8mm",
+    name: "Fail-Safe Strike Lock",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fail-safe electric strike lock with 8 mm lock slot depth support.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Lock-Strike-Safe-8mm",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel",
+      "Lock Features Support Door Type Single door (Wooden/metal)" 
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Lock body:112 x 21 x 28 mm (4.4 x 0.8 x 1.1') Short front plate:153 x 25 x 3 mm (6 x 0.9 x 0.1') Long front plate:250 x 25 x 3 mm (9.8 x 0.9 x 0.1')" },
+          { label: "Weight", value: "Lock body: 200 g (7.0 oz) Short front plate: 62 g (2.2 oz) Long front plate: 97 g (3.4 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail Secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Holding Force", value: "227 kg (500 lb)" },
+          { label: "Lock Features Current Power", value: "200mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) DPS/- (white) (1) DPS/+ (orange)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+          { label: "Door Status Contact Type ", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" }
+        ]
+      },
+    ],
+        inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+    addons: [
+      {
+        id: 1,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 2,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/power-cable"
+      },
+    ]
+  },
+
+  // Produk Keempat Belas dari Accessories, SF For Door Access
+  {
+    id: "UACC-Lock-Bolt-Secure",
+    name: "Fail-Secure Bolt Lock",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Fail-safe electric strike lock with 8 mm lock slot depth support.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-Lock-Bolt-Secure",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Lock body: zinc alloy Front plate/latches: stainless steel",
+      "Lock Features Support Door Type Single door (Wooden/metal)" 
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Lock body: 132 x 30 x 42 mm (5.2 x 1.2 x 1.7') Door frame plate: 82 x 32 x 3 mm (3.2 x 1.3 x 0.1') Door plate: plate: 204 x 33 x 3 mm (8 x 1.3 x 0.1')" },
+          { label: "Weight", value: "Lock body: 350 g (12.3 oz) Door frame plate: 22 g (0.7 oz) Door plate: 46 g (1.6 oz)" },
+          { label: "Enclosure Material", value: "Lock body: zinc alloy Front plate/latches: stainless steel" },
+
+          { label: "Lock Features Lock Type", value: "Fail Secure" },
+          { label: "Lock Features Support Door Type", value: "Single door (Wooden/metal)" },
+          { label: "Lock Features Support Door DPS", value: "Embedded" },
+          { label: "Lock Features Current Power", value: "Standby: 12mA ±10% Dynamic: 600mA ±10%" },
+          { label: "Lock Features Support Voltage Range", value: "12V DC ±10%" },
+          { label: "Lock Features Wiring", value: "(1) Lock 12V/NO (red) (1) Lock 12V/COM (black) (1) DPS/- (white) (1) DPS/+ (orange)" },
+          { label: "Lock Features Mounting", value: "Door frame recess mount" },
+          { label: "Lock Features LED", value: "Red: locked Green: unlocked & power indicator" },
+          { label: "Door Status Contact Type ", value: "Dry contact" },
+          { label: "Door Status Contact Logic", value: "Door Open:  DPS/+ & DPS/- = Open Door Close:  DPS/+ & DPS/- = Short" },
+          { label: "Door Status Contact Rating", value: "Max. 30V DC, 0.1A" },
+          { label: "Ambient Storage Temperature", value: "-20 to 70° C (-4 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 60° C (14 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" }
+        ]
+      },
+    ],
+        inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+    addons: [
+      {
+        id: 1,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 2,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/power-cable"
+      },
+    ]
+  },
+
+  // Produk Kelima Belas dari Accessories, SF For Door Access
+   {
+    id: "UA-Rescue",
+    name: "Access Rescue KeySwitch",
+    category: "Accessories",
+    subfilter: "For Door Access",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Keyed emergency override for your Access Hub.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UA-Rescue",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Manual unlock port with two physical keys included",
+      "Backup entry for malfunctioning fail-safe or secure* lock systems",
+      "*Does not provide redundant power for fail-secure systems"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "⌀60 x 74 mm (⌀2.4 x 2.9')" },
+          { label: "Weight", value: "94 g (3.3 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Key Switch", value: "Brass internal wave key, 28V DC, 4A" },
+          { label: "Terminal Block", value: "COM/NO/NC 18-24 AWG" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 85° C (-40 to 185° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, IC, CE" }
+        ]
+      }
+    ],
+    addons: [
+      {
+        id: 1,
+        name: "",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "",
+        specs: [
+          "",
+          "",
+          ""
+        ],
+        detailedSpecs: [
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" },
+          { label: "", value: "" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
+    ]
+  },
+
+  // Porduk Pertama dari Accessories, SF Other
+   {
+    id: "UACC-FM-16cm",
+    name: "Floating Mount",
+    category: "Accessories",
+    subfilter: "Other",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Keyed emergency override for your Access Hub.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-FM-16cm",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Polycarbonate, silicone rubber"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "109.7 x 109.7 x 8.3 mm (4.3 x 4.3 x 0.3')" },
+          { label: "Weight", value: "107 g (3.8 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, silicone rubber" },
+          { label: "Treatment", value: "Painting" },
+          { label: "Mounting", value: "Tapping screw, anchor or magnet" },
+          { label: "Compatibility", value: "UX7" }
+        ]
+      },
+    ],
+    
+        inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+  //Produk Kedua dari accessories, SF Other
+  {
+    id: "UACC-UTS",
+    name: "Universal Table Stand",
+    category: "Accessories",
+    subfilter: "Other",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Weighted stand with adjustable clamp keeps non-rack UniFi devices upright on flat surfaces.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-UTS",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Polycarbonate"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "125.2 x 73.2 x 70.5 mm (4.9 x 2.9 x 2.8')" },
+          { label: "Weight", value: "530 g (1.2 lb)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Treatment", value: "Painting" },
+          { label: "Device-Clamping Support", value: "Max. width 42.5 mm (1.6')" },
+          { label: "Compatibility", value: "Utility Switching (Except Lite 8/16 PoE, Enterprise 8 PoE, Pro 8 PoE) Compact Cloud Gateway (UCG & UX series) Advance Hosting (UXG & UCK-G2 series) Special Device (AI-Key, UMR series, UPL-Port)" }
+        ]
+      },
+    ],
+  },
+
+  //Produk Keempat dari Accessories, SF Other
+  {
+    id: "UACC-CKG2-Plus Stand",
+    name: "CloudKey+ Stand",
+    category: "Accessories",
+    subfilter: "Other",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Sleek, metal stand for CloudKey+.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-CKG2-Plus Stand",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Aluminim Alloy"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "134.2 x 71.7 x 43.2 mm (5.3 x 2.8 x 1.7')" },
+          { label: "Weight", value: "225 g (7.9 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy" },
+        ]
+      },
+    ],
+  },
+// Produk Kelima dari Accessories, SF Other
+   {
+    id: "UACC-UMR-TS",
+    name: "Mobile Router Table Stand",
+    category: "Accessories",
+    subfilter: "Other",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Sleek, metal table stand for the Mobile Router.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-UMR-TS",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Aluminim "
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "127.5 x 89.4 x 68.8 mm (5 x 3.5 x 2.7')" },
+          { label: "Weight", value: "148 g (5.2 oz)" },
+          { label: "Enclosure Material", value: "Aluminum" },
+        ]
+      },
+    ],
+  },
+
+  // Produk keenam dari Accessories, SF Other
+  {
+    id: "UACC-SSD-Tray",
+    name: "M.2 SSD Tray",
+    category: "Accessories",
+    subfilter: "Other",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Optional storage insert for Cloud Gateways and UNAS models that supports one 2230, 2242, 2260, 2280, or 22110 sized M.2 NVMe SSD. UCG-Max/Fiber and UNAS-Pro-8/4 products operate at PCIe Gen3x2 per NVMe. UNAS-4 operates at PCIe Gen2x1 per NVMe.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-SSD-Tray",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Aluminum alloy, polycarbonate, stainless steel "
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "123.4 x 31.1 x 11.2 mm  (4.9 x 1.2 x 0.4')" },
+          { label: "Weight", value: "53 g (1.9 oz)" },
+          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate, stainless steel" },
+        ]
+      },
+    ],
+  },
+
+  // Produk Ketujuh dari Accessories, SF Other
+  {
+    id: "UACC-HDD-Tray",
+    name: "3.5' HDD Tray",
+    category: "Accessories",
+    subfilter: "Other",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "A tray that supports both 3.5' and 2.5' drives, compatible with UDM-Pro, UDM-SE, UDM-Pro-Max, UNVR, UNVR-Pro, UNAS-Pro, and ENVR.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-HDD-Tray",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "SGCC, aluminum alloy"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "105.9 x 171.7 x 28 mm (4.2 x 6.8 x 1.1')" },
+          { label: "Weight", value: "201 g (7.1 oz)" },
+          { label: "Enclosure Material", value: "SGCC, aluminum alloy" },
+        ]
+      },
+    ],
+       inTheBox: [
+      { name: "Device", image: "/images/dcs-box.png" },
+      { name: "Mounting Kit", image: "/images/dcs-box.png" },
+      { name: "Power Cable", image: "/images/dcs-box.png" },
+      { name: "Quick Start", image: "/images/dcs-box.png" }
+    ],
+  },
+
+   {
+    id: "UACC-ENVR-Bezel",
+    name: "Enterprise NVR Bezel",
+    category: "Accessories",
+    subfilter: "Other",
+    image: "/images/camera.jpg",
+    shortDescription:
+      "Faceplate that integrates with Enterprise Network Video Recorder to provide a 4.7' touch display and LED illumination.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UACC-ENVR-Bezel",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/products/Product-Gateway-Fiber.png",
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/banners/dcs-overview-1.png",
+      "/images/banners/dcs-overview-2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Disc overview and management",
+      "View livestreams directly from the rack",
+      "4.7' touchscreen",
+      "Note. Support ENVR firmware version 4.1.10 and later.",
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Dimensions", value: "441.7 x 132 x 51.9 mm (17.4 x 5.2 x 2')" },
+          { label: "Weight", value: "1.1 kg (2.3 lb)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Power Method", value: "Magnetic Type-C" },
+          { label: "Supported Voltage Range", value: "5V" },
+          { label: "Max. Power Consumption", value: "3.78W" },
+          { label: "ESD/EMP Protection", value: "Air: ± 12kV, contact: ± 8kV" },
+          { label: "LCM Display", value: "(1) 4.7' touchscreen" },
+          { label: "LEDs", value: "Boot sequence wave pattern User configurable status Locate function" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "Certifications", value: "CE, IC, FCC" }
+        ]
+      }
     ],
   },
 
