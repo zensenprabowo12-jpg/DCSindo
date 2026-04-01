@@ -12,42 +12,42 @@ const CATEGORIES = [
   {
     id: "cloud-gateways",
     name: "Cloud Gateways",
-    image: "/images/icons/icon-cloud-gateways.fd169efc.png",
+    image: "/images/3.categoryproduct/cproductcloudgateways.svg",
   },
   {
     id: "switching",
     name: "Switching",
-    image: "/images/icons/icon-switching.0fe78dd4.png",
+    image: "/images/3.categoryproduct/cproductswitching.svg",
   },
   {
     id: "wifi",
     name: "WiFi",
-    image: "/images/icons/icon-wifi.10459860.png",
+    image: "/images/3.categoryproduct/cproductwifi.svg",
   },
   {
     id: "camera-security",
     name: "Camera Security",
-    image: "/images/icons/icon-camera-security.f70cc582.png",
+    image: "/images/3.categoryproduct/cproductcamerasecurity.svg",
   },
   {
     id: "door-access",
     name: "Door Access",
-    image: "/images/icons/icon-door-access.f5ce13b9.png",
+    image: "/images/3.categoryproduct/cproductdooraccess.svg",
   },
   {
     id: "integrations",
     name: "Integrations",
-    image: "/images/icons/icon-new-integrations.e6104f51.png",
+    image: "/images/3.categoryproduct/cproductintegrations.svg",
   },
   {
     id: "advanced-hosting",
     name: "Advanced Hosting",
-    image: "/images/icons/icon-cloud-keys-gateways.c3a4111b.png",
+    image: "/images/3.categoryproduct/cproductadvancedhosting.svg",
   },
   {
     id: "accessories",
     name: "Accessories",
-    image: "/images/icons/icon-accessories.5446cef0.png",
+    image: "/images/3.categoryproduct/cproductaccessories.svg",
   },
 ];
 
