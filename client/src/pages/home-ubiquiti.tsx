@@ -33,7 +33,7 @@ export default function Home() {
           
           {/* Logo UniFi */} 
           <img
-            src="/images/1.logo/ubiquitilight.png"
+            src="/images/1.logo/UniFiLight.png"
             alt="UniFi-Light"
             className="w-48 md:w-64 lg:w-100 mb-4 animate-in fade-in slide-in-from-bottom-4 duration-1000"
           />
