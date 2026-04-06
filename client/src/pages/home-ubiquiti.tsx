@@ -33,7 +33,7 @@ export default function Home() {
           
           {/* Logo UniFi */} 
           <img
-            src="/images/logos/UniFi-Light.png"
+            src="/images/1.logo/UniFiLight.png"
             alt="UniFi-Light"
             className="w-48 md:w-64 lg:w-100 mb-4 animate-in fade-in slide-in-from-bottom-4 duration-1000"
           />
@@ -73,7 +73,7 @@ export default function Home() {
                   <p className="text-white/80 max-w-sm">Blazing fast wireless coverage for any space with WiFi 7 technology.</p>
                 </div>
                 <img
-                  src="/images/banners/Home-WiFi.png"
+                  src="/images/2.homepage/homecategorywifi.png"
                   alt="Home-WiFi" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -91,7 +91,7 @@ export default function Home() {
                   <p className="text-white/70 text-sm">Protect what matters with AI-driven surveillance.</p>
                 </div>
                 <img
-                  src="/images/banners/Home-Camera-Security.png"
+                  src="/images/2.homepage/homecategorycamerasecurity.png"
                   alt="Home-Camera-Security" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -109,7 +109,7 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-white">Door Access</h3>
                 </div>
                 <img
-                  src="/images/banners/Home-Door-Access.png"
+                  src="/images/2.homepage/homecategorydooraccess.png"
                   alt="Home-Door-Access" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -127,7 +127,7 @@ export default function Home() {
                   <p className="text-white/70 text-sm">The backbone of your network infrastructure.</p>
                 </div>
                 <img
-                  src="/images/banners/home-Cloud-Gateways.png"
+                  src="/images/2.homepage/homecategorycloudgateway.png"
                   alt="Home-Cloud-Gateways" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -145,7 +145,7 @@ export default function Home() {
                   <p className="text-white/70 text-sm">The backbone of your network infrastructure.</p>
                 </div>
                 <img
-                  src="/images/banners/Home-Switching.png"
+                  src="/images/2.homepage/homecategoryswitching.png"
                   alt="Home-Switching" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -153,7 +153,7 @@ export default function Home() {
             </Link>
 
             {/* Others - Bottom Grid */}
-            <Link href="/collections/accessories" className="md:col-span-4 md:row-span-1">
+            <Link href="/collections/cloudGateways" className="md:col-span-4 md:row-span-1">
               <motion.a 
                 whileHover={{ scale: 0.98 }}
                 className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)] flex flex-col items-center justify-center p-8 text-center"

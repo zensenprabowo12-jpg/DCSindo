@@ -59,25 +59,25 @@ export default function HomeUtama() {
             {[
               { 
                 name: "Ubiquiti", 
-                image: "/images/brands/chatgpt_ubiquiti_1770612894088.png", 
+                image: "/images/1.logo/Ubiquitichatgpt.png", 
                 path: "/home-ubiquiti",
                 bg: "bg-blue-50/50 dark:bg-blue-900/10"
               },
               { 
                 name: "MikroTik", 
-                image: "/images/brands/chatgpt_mikrotik_1770612894087.png", 
+                image: "/images/1.logo/mikrotikchatgpt.png", 
                 path: "/coming-soon",
                 bg: "bg-slate-50/50 dark:bg-slate-900/10"
               },
               { 
                 name: "ALGcom", 
-                image: "/images/brands/chatgpt_algcom_1770612894086.png", 
+                image: "/images/1.logo/algcomchatgpt.png", 
                 path: "/coming-soon",
                 bg: "bg-gray-50/50 dark:bg-gray-900/10"
               },
               { 
                 name: "V-SOL", 
-                image: "/images/brands/chatgpt_vsol_1770612894089.png", 
+                image: "/images/1.logo/vsolchatgpt.png", 
                 path: "/coming-soon",
                 bg: "bg-zinc-50/50 dark:bg-zinc-900/10"
               }
@@ -114,7 +114,8 @@ export default function HomeUtama() {
                 Performance <br /> Without <span className="text-primary">Limits</span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed font-medium transition-colors duration-500">
-                We provide the building blocks for modern connectivity. From enterprise core switches to global wireless backhaul.
+                We provide the building blocks for modern connectivity. 
+                From enterprise core switches to global wireless backhaul.
               </p>
               <div className="grid grid-cols-2 gap-8 border-l-4 border-primary pl-8">
                 <div>
