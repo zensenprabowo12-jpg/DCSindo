@@ -300,36 +300,60 @@ export default function Support() {
               </div>
 
               <div className="space-y-8">
-                <div className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-lg border">
+                <div className="bg-white dark:bg-gray-900 p-10 rounded-2xl shadow-lg border">
                   <h2 className="text-xl font-semibold mb-4">FAQ</h2>
                   <Accordion type="single" collapsible className="space-y-2">
 
-  <AccordionItem value="1">
-    <AccordionTrigger>Response time?</AccordionTrigger>
-    <AccordionContent>24 hours</AccordionContent>
-  </AccordionItem>
+                  <AccordionItem value="1">
+                    <AccordionTrigger>Apakah produk yang dijual original dan bergaransi resmi?</AccordionTrigger>
+                    <AccordionContent 
+                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    </AccordionContent>
+                  </AccordionItem>
 
-  <AccordionItem value="2">
-    <AccordionTrigger>How to track my ticket?</AccordionTrigger>
-    <AccordionContent>You will receive updates via email</AccordionContent>
-  </AccordionItem>
+                  <AccordionItem value="2">
+                    <AccordionTrigger>Apakah bisa membantu desain jaringan sebelum pembelian?</AccordionTrigger>
+                    <AccordionContent 
+                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    </AccordionContent>
+                  </AccordionItem>
 
-  <AccordionItem value="3">
-    <AccordionTrigger>Do you provide on-site support?</AccordionTrigger>
-    <AccordionContent>Yes, depends on the case</AccordionContent>
-  </AccordionItem>
+                  <AccordionItem value="3">
+                    <AccordionTrigger>Do you provide on-site support?</AccordionTrigger>
+                    <AccordionContent 
+                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    </AccordionContent>
+                  </AccordionItem>
 
-  <AccordionItem value="4">
-    <AccordionTrigger>What products are supported?</AccordionTrigger>
-    <AccordionContent>Cloud Gateways, WiFi, Switching, CCTV, Door Access</AccordionContent>
-  </AccordionItem>
+                  <AccordionItem value="4">
+                    <AccordionTrigger>Apakah ada support setelah pembelian?</AccordionTrigger>
+                    <AccordionContent 
+                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    </AccordionContent>
+                  </AccordionItem>
 
-  <AccordionItem value="5">
-    <AccordionTrigger>Is support free?</AccordionTrigger>
-    <AccordionContent>Yes for existing customers</AccordionContent>
-  </AccordionItem>
+                  <AccordionItem value="5">
+                    <AccordionTrigger>Apakah tersedia training atau workshop?</AccordionTrigger>
+                    <AccordionContent 
+                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    </AccordionContent>
+                  </AccordionItem>
 
-</Accordion>
+                  <AccordionItem value="6">
+                    <AccordionTrigger>Apakah tersedia training atau workshop?</AccordionTrigger>
+                    <AccordionContent 
+                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="7">
+                    <AccordionTrigger>Apakah tersedia training atau workshop?</AccordionTrigger>
+                    <AccordionContent 
+                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                </Accordion>
                 </div>
               </div>
 
