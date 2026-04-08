@@ -55,9 +55,9 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-[16px] md:text-[60px] font-black tracking-tight mb-2">Industry Leading Hardware</h2>
-            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Engineered with obsessive attention to detail-built to perform, built to last. 
+            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Didesain secara presisi untuk performa tinggi dan keandalan jangka panjang. 
             </p>
-            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Rapid EdgeAI advancements across networking and physical security.
+            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Didukung EdgeAI yang berkembang pesat di bidang networking dan keamanan fisik.
             </p>
           </div>
           
@@ -170,10 +170,10 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center mb-24">
           <h2 className="text-5xl md:text-7xl font-black tracking-tighter mb-6">Rethinking IT</h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-xl mb-0">
-            Professional-grade software meets enterprise-grade hardware.
+            Software kelas profesional dipadukan dengan hardware kelas enterprise.
           </p>
           <p className="text-gray-400 max-w-2xl mx-auto text-xl mb-12">
-            No subscriptions, just performance.
+            Tanpa biaya berlangganan—hanya kinerja maksimal.
           </p>
           <Link href="/support">
             <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
@@ -184,89 +184,153 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto px-4 space-y-48">
-          {/* DCS Protect */}
-          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
-            <div className="flex-1 order-2 lg:order-1">
-              <div className="relative group cursor-pointer">
-                {/* 🔹 Enhanced Blue Highlight Accent */}
-                <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
-                <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
-                <img
-                  src="/images/banners/dcs-protect.png"
-                  alt="DCS Protect"
-                  className="relative z-10 w-full aspect-square object-cover mx-auto rounded-full border-4 border-white/10 shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2"
-                />
-              </div>
-            </div>
-            <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
-              <h3 className="text-4xl md:text-5xl font-black italic uppercase">DCS Protect</h3>
-              <p className="text-gray-400 text-xl leading-relaxed">
-                A License-Free enterprise-grade security platform powered by an AI detection engine. It delivers intelligent monitoring and centralized management in a single unified system.
-              </p>
-              <Link href="/collections/camera-security">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
-                  Explore Protect
-                </Button>
-              </Link>
-            </div>
-          </div>
+                {/* DCS Protect (CLEAN VERSION) */}
+<div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
+  
+  <div className="flex-1 order-2 lg:order-1">
+    <div className="relative group cursor-pointer flex justify-center">
+
+      {/* Glow */}
+      <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
+
+      {/* Border Glow */}
+      <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
+
+      {/* Video Circle */}
+      <div className="relative z-10 w-full max-w-[420px] aspect-square rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-black">
+
+        <iframe
+          src="https://www.youtube.com/embed/XQng4qJREoQ?autoplay=1&mute=1&loop=1&playlist=XQng4qJREoQ&controls=0&rel=0&modestbranding=1&start=5"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] pointer-events-none"
+          allow="autoplay; encrypted-media"
+          title="UniFi Video"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+
+      </div>
+    </div>
+  </div>
+
+  <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
+    <h3 className="text-4xl md:text-5xl font-black italic uppercase">
+      UniFi Protect
+    </h3>
+
+    <p className="text-gray-400 text-xl leading-relaxed">
+Platform keamanan enterprise tanpa lisensi dengan dukungan teknologi AI untuk deteksi cerdas. Memberikan pemantauan yang lebih pintar serta pengelolaan terpusat dalam satu ekosistem terpadu    </p>
+    <Link href="/collections/camera-security">
+      <Button
+        variant="outline"
+        className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all"
+      >
+        Explore Protect
+      </Button>
+    </Link>
+  </div>
+
+</div>
 
           {/* DCS Network */}
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
-            <div className="flex-1 space-y-8 text-center lg:text-left">
-              <h3 className="text-4xl md:text-5xl font-black italic uppercase">DCS Network</h3>
-              <p className="text-gray-400 text-xl leading-relaxed">
-                Centralized management of WiFi and switching with local processing at each site. Gain instant visibility into traffic, topology, and performance.
-              </p>
-              <Link href="/collections/wifi">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
-                  Explore Network
-                </Button>
-              </Link>
-            </div>
-            <div className="flex-1">
-              <div className="relative group cursor-pointer">
-                {/* 🔹 Enhanced Blue Highlight Accent */}
-                <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
-                <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
-                <img
-                  src="/images/banners/dcs-network.png"
-                  alt="DCS Network"
-                  className="relative z-10 w-full aspect-square object-cover mx-auto rounded-full border-4 border-white/10 shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:-rotate-2"
-                />
-              </div>
-            </div>
-          </div>
+  
+  <div className="flex-1 order-2 lg:order-1">
+    <div className="relative group cursor-pointer flex justify-center">
+
+      {/* Glow */}
+      <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
+
+      {/* Border Glow */}
+      <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
+
+      {/* Video Circle */}
+      <div className="relative z-10 w-full max-w-[420px] aspect-square rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-black">
+
+        <iframe
+          src="https://www.youtube.com/embed/XQng4qJREoQ?autoplay=1&mute=1&loop=1&playlist=XQng4qJREoQ&controls=0&rel=0&modestbranding=1&start=5"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] pointer-events-none"
+          allow="autoplay; encrypted-media"
+          title="UniFi Video"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+
+      </div>
+    </div>
+  </div>
+
+  <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
+    <h3 className="text-4xl md:text-5xl font-black italic uppercase">
+      UniFi Ecosystem
+    </h3>
+
+    <p className="text-gray-400 text-xl leading-relaxed">
+UniFi Ecosystem menghadirkan seluruh infrastruktur IT dalam satu sistem terpadu—mulai dari networking, surveillance, hingga access control—dengan kontrol penuh, efisiensi maksimal, dan tanpa subscription    
+    </p>
+
+    <Link href="/collections/camera-security">
+      <Button
+        variant="outline"
+        className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all"
+      >
+        Explore Protect
+      </Button>
+    </Link>
+  </div>
+
+</div>
 
           {/* DCS Access */}
-          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32 pb-16">
-            <div className="flex-1 order-2 lg:order-1">
-              <div className="relative group cursor-pointer">
-                {/* 🔹 Enhanced Blue Highlight Accent */}
-                <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
-                <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
-                <img
-                  src="/images/banners/dcs-access.png"
-                  alt="DCS Access"
-                  className="relative z-10 w-full aspect-square object-cover mx-auto rounded-full border-4 border-white/10 shadow-2xl transition-transform duration-700 group-hover:scale-105 group-hover:rotate-2"
-                />
-              </div>
-            </div>
-            <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
-              <h3 className="text-4xl md:text-5xl font-black italic uppercase">DCS Access</h3>
-              <p className="text-gray-400 text-xl leading-relaxed mb-0">
-                Seamlessly connect with third-party systems through secure APIs.
-              </p>
-              <p className="text-gray-400 text-xl leading-relaxed">
-                Manage access control, video intercoms, and more from a single platform.
-              </p>
-              <Link href="/collections/door-access">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
-                  Explore Access
-                </Button>
-              </Link>
-            </div>
-          </div>
+          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
+  
+  <div className="flex-1 order-2 lg:order-1">
+    <div className="relative group cursor-pointer flex justify-center">
+
+      {/* Glow */}
+      <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
+
+      {/* Border Glow */}
+      <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
+
+      {/* Video Circle */}
+      <div className="relative z-10 w-full max-w-[420px] aspect-square rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-black">
+
+        <iframe
+          src="https://www.youtube.com/embed/XQng4qJREoQ?autoplay=1&mute=1&loop=1&playlist=XQng4qJREoQ&controls=0&rel=0&modestbranding=1&start=5"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] pointer-events-none"
+          allow="autoplay; encrypted-media"
+          title="UniFi Video"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+
+      </div>
+    </div>
+  </div>
+
+  <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
+    <h3 className="text-4xl md:text-5xl font-black italic uppercase">
+      UniFi Access
+    </h3>
+
+    <p className="text-gray-400 text-xl leading-relaxed">
+UniFi Access menghadirkan sistem kontrol akses cerdas dengan manajemen terpusat, integrasi fleksibel, dan pengalaman pengguna yang seamless—memberikan keamanan tingkat tinggi untuk berbagai kebutuhan bisnis    
+</p>
+
+    <Link href="/collections/camera-security">
+      <Button
+        variant="outline"
+        className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all"
+      >
+        Explore Protect
+      </Button>
+    </Link>
+  </div>
+
+</div>
         </div>
       </section>
       {/* New Release - Aesthetic Dark Minimalist */}
