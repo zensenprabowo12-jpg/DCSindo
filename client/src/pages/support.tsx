@@ -337,7 +337,8 @@ export default function Support() {
           </>
         )}
 
-        {/* ADMIN */}
+       {/* ADMIN */}
+       
         {view === "admin" && isLogin && (
           <div>
 
@@ -404,9 +405,8 @@ export default function Support() {
                 ))}
               </tbody>
             </table>
-
           </div>
-        )}
+        )} 
 
       </div>
     </Layout>

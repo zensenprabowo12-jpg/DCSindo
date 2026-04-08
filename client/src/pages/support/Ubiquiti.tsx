@@ -1,16 +1,19 @@
-import { ArrowRight, FileText, CheckCircle, Shield } from "lucide-react";
+import { ArrowRight, FileText, CheckCircle, Shield, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Layout from "@/components/layout";
+import { useState } from "react";
 
 export default function UbiquitiSupport() {
+  const [openGPT, setOpenGPT] = useState(false);
+
   const trendingArticles = [
     "UniFi - How to set up a Dream Machine",
     "Troubleshooting UniFi Access Point adoption",
     "Configuring VLANs on UniFi Switches",
     "UniFi Protect - Camera placement guide",
     "Updating firmware via SSH",
-    "Restoring a backup to a new Console"
+    "Restoring a backup to a new Console",
   ];
 
   const categories = [
@@ -26,8 +29,17 @@ export default function UbiquitiSupport() {
     "Mobility",
     "Play",
     "Other 1",
-    "Other 2"
+    "Other 2",
   ];
+
+  // ✅ FIX: OPEN AS NEW APP WINDOW (NO IFRAME)
+  const openGPTWindow = () => {
+    window.open(
+      "https://gpt.distributor.ui-apps.com/?distributor=PTDINAMIKACIPTASOLUSI",
+      "UniFiGPT",
+      "width=1200,height=800,left=200,top=100,resizable=yes,scrollbars=yes"
+    );
+  };
 
   return (
     <Layout>
@@ -41,14 +53,19 @@ export default function UbiquitiSupport() {
           Ubiquiti Support Center
         </motion.h1>
 
-        {/* UniFi GPT Embed (Replace Search Bar) */}
-        <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/10">
-          <iframe
-            src= "https://gpt.distributor.ui-apps.com/?distributor=PTDINAMIKACIPTASOLUSI"
-            width="100%"
-            height="560"
-            className="border-0 bg-white"
-          />
+        {/* BUTTON */}
+        <div className="mb-8">
+          <button
+            onClick={openGPTWindow}
+            className="flex items-center gap-2 mx-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg transition active:scale-95"
+          >
+            <img
+              src="https://www.dcsindo.com/admin/uploads/widget/unify.svg"
+              className="w-5 h-5"
+              alt="UniFi"
+            />
+            UniFi GPT
+          </button>
         </div>
       </section>
 
@@ -107,13 +124,16 @@ export default function UbiquitiSupport() {
       {/* RMA */}
       <section className="py-24 text-center px-4">
         <CheckCircle className="w-12 h-12 text-primary mx-auto mb-6" />
-        <h2 className="text-3xl font-bold mb-4">
-          RMA & Device Replacement
-        </h2>
+        <h2 className="text-3xl font-bold mb-4">RMA & Device Replacement</h2>
         <p className="text-muted-foreground mb-8">
           Start your automated RMA process here.
         </p>
-        <a href="https://rma.ui.com/" target="_blank" rel="noopener noreferrer">
+
+        <a
+          href="https://rma.ui.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button size="lg" className="rounded-full px-8">
             Start RMA Request
             <ArrowRight className="ml-2 w-4 h-4" />
