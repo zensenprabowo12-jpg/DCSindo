@@ -72,11 +72,237 @@ export interface Product {
 export const cameraSecurityProducts: Product[] = [
   // Produk Pertama dari Camera Security, SF NVRs and Edge Devices
   {
+    id: "ENVR-Core",
+    name: "Enterprise NVR Core",
+    category: "Camera Security",
+    subfilter: "NVRs and Edge Devices",
+    image: "/images/camerasecurity/1.envr-core/1.p-utama-envr-core.png",
+    shortDescription:
+      "3U UniFi Protect NVR with 16-bay support for 2.5'/3.5' HDDs/SSDs, up to (300) 4K or (500) Full HD cameras, hot-swappable power supplies and optional 16-bay storage expansion units.",
+    specs: [
+      { label: "Throughput", value: "3.5 Gbps IPS" },
+      { label: "PoE", value: "2x PoE+, 6x PoE" },
+      { label: "WAN", value: "2.5 GbE RJ45" },
+      { label: "Storage", value: "128GB SSD Integrated" },
+    ],
+
+
+    // SKU produk
+    sku: "ENVR-Core",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camerasecurity/1.envr-core/1.p-utama-envr-core.png",
+      "/images/camerasecurity/1.envr-core/2.p-spec-envr-core.png",
+      "/images/camerasecurity/1.envr-core/3.p-dimensi-envr-core.png",
+      "/images/camerasecurity/1.envr-core/4.p-deployment-envr-core.png",
+      "/images/camerasecurity/1.envr-core/p-itb-envr-core.avif",
+      "/images/camerasecurity/1.envr-core/p-mkt0-envr-core.png",
+      "/images/camerasecurity/1.envr-core/p-mkt1-envr-core.png",
+      "/images/camerasecurity/1.envr-core/p-mkt2-envr-core.png",
+      "/images/camerasecurity/1.envr-core/p-mkt3-envr-core.png",
+      "/images/camerasecurity/1.envr-core/p-mkt4-envr-core.png",
+      "/images/camerasecurity/1.envr-core/p-mkt5-envr-core.png",
+      "/images/camerasecurity/1.envr-core/p-mkt6-envr-core.png",
+      "/images/camerasecurity/1.envr-core/p-mkt7-envr-core.png",
+      "/images/camerasecurity/1.envr-core/p-mkt8-envr-core.png",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/camerasecurity/1.envr-core/p-mkt7-envr-core.png",
+      "/images/camerasecurity/1.envr-core/p-itb-envr-core.avif"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Power Supply Hot-swappable 550W CRPS",
+      "Enclosure Material SGCC steel",
+      "Power Method (2) AC input, 100–240V, 7A Max., 50/60Hz (Redundant, hot-swappable)",
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "481.4 x 550 x 132 mm (19 x 21.7 x 5.2')" },
+          { label: "Managed Cameras", value: "(500) HD (400) 2K (300) 4K" },
+          { label: "Managed Access Hub", value: "300+" },
+          { label: "Storage Capacity", value: "(16) 3.5' drive bays" },
+          { label: "Data Protection", value: "✓" },
+          { label: "Vantage Point", value: "✓" },
+          { label: "Networking Interface", value: "(2) 25G SFP28 ports (25G/10G/1G) (1) GbE MGMT RJ45 port (1G/100M)" },
+          { label: "Expansion Port", value: "(2) SFF-8644 ports (24G)" },
+          { label: "Power Redundancy", value: "✓" },
+          { label: "Form Factor", value: "Rack Mount (3U)" },
+          { label: "Door Access Support", value: "✓" },
+          { label: "Management Applications", value: "UniFi Protect UniFi Access" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Hard Drive Capacity", value: "(16) 2.5/3.5' HDD / SSD support (2) Expansion ports, support up to 48 total HDD/SSD" },
+          { label: "Max. Power Budget for Drives", value: "313W" },
+          { label: "Max. Power Consumption", value: "237W" },
+          { label: "Power Method", value: "(2) AC input, 100–240V, 7A Max., 50/60Hz (Redundant, hot-swappable)" },
+          { label: "Power Supply", value: "Hot-Swappable 550W CRPS" },
+          { label: "Processor", value: "128-core Arm® v8.2 at 2.6 GHz" },
+          { label: "Memory", value: "64 Gb" },
+          { label: "Management", value: "Ethernet Bluetooth" },
+          { label: "Weight", value: "Without rails: 20.5 kg (45.2 lb) With rails: 23.4 kg (51.6 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Mount Material", value: "Aluminum" },
+          { label: "Slide Rails", value: "The rails support 482.6 mm (19') four-post racks with square holes (9.5 x 9.5 mm) and posts depths ranging from 600–1066 mm (23.6–42')" },
+          { label: "Faceplate", value: "Support UACC-3U-Bezel-Lite (Included)')" },
+          { label: "LEDs SFP28", value: "✓" },
+          { label: "LEDs HDD", value: "✓" },
+          { label: "LEDs System", value: "✓" },
+          { label: "LEDs Expansion Port", value: "✓" },
+          { label: "LEDs CRPS", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "10 to 35° C (50 to 95° F)" },
+          { label: "Ambient Operating Humidity", value: "20 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Application Requirements Mobile App", value: "Application Requirements Mobile App" },
+        ]
+      }
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/camerasecurity/1.envr-core/p-itb-envr-core.avif" },
+    ],
+    addons: [
+      {
+        id: 1,
+        name: "Hot-Swappable Power Module (550W)",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Replacement hot-swappable power module for CloudKey Enterprise, Enterprise Aggregation, Enterprise NVR and UNAS Pro 8.",
+        specs: [
+          "550W (12V) AC-to-DC power supply",
+          "Included power cable",
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "185 x 73.5 x 40 mm (7.3 x 2.9 x 1.6')" },
+          { label: "Weight", value: "744 g (1.6 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel" },
+          { label: "Input Connector", value: "C14" },
+          { label: "Input Voltage Range", value: "100-240V AC" },
+          { label: "Input Frequency", value: "50/60 Hz" },
+          { label: "Output Voltage", value: "12V DC" },
+          { label: "Output Current", value: "45A" },
+          { label: "Total Output Power", value: "550W" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" }
+        ],
+        productLink: "/products/mounting-kit-uvc-g6-pro-entry"
+      },
+      {
+        id: 2,
+        name: "25G Direct Attach Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "High-quality power cable with durable construction.",
+        specs: [
+          "Supported data rates: 25 / 10 / 1 Gbps",
+          "Compatible with SFP28, SFP+, and SFP interfaces",
+          "Cable length: 0.5 to 3 m"
+
+        ],
+        detailedSpecs: [
+          { label: "Length", value: "2.0 m" },
+          { label: "Conductor", value: "Copper" },
+          { label: "Rating", value: "10A / 250V" },
+          { label: "Jacket", value: "PVC" }
+        ],
+        productLink: "/products/power-cable"
+      },
+      {
+        id: 3,
+        name: "UniFi Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
+        specs: [
+          "Bendable booted RJ45",
+          "3 mm outer diameter",
+          "Cable length: 0.1 to 8m",
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
+        ],
+        productLink: "/products/mounting-kit-u6-plus"
+      },
+      {
+        id: 4,
+        name: "UniFi Premium Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Ultra-thin braided patch cable, designed and optimized for 10 GbE networking..",
+        specs: [
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 3 mm outer diameter for 0.15-8 m lengths",
+          "— 3.3 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+    ]
+  },
+
+  // Produk Kedua dari Camera Security, SF NVRs and Edge Devices
+  {
     id: "ENVR",
     name: "Enterprise NVR",
     category: "Camera Security",
     subfilter: "NVRs and Edge Devices",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/camerasecurity/2.envr/1.p-utama-envr.png",
     shortDescription:
       "3U NVR with (16) 2.5/3.5” drive bays, supporting up to (70) 4K cameras or (210) Full HD cameras.",
     specs: [
@@ -92,15 +318,24 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/2.envr/1.p-utama-envr.png",
+      "/images/camerasecurity/2.envr/2.p-spec-envr.png",
+      "/images/camerasecurity/2.envr/3.p-dimensi-envr.png",
+      "/images/camerasecurity/2.envr/p-itb-envr.avif",
+      "/images/camerasecurity/2.envr/p-mkt0-envr.png",
+      "/images/camerasecurity/2.envr/p-mkt1-envr.png",
+      "/images/camerasecurity/2.envr/p-mkt2-envr.png",
+      "/images/camerasecurity/2.envr/p-mkt3-envr.png",
+      "/images/camerasecurity/2.envr/p-mkt4-envr.png",
+      "/images/camerasecurity/2.envr/p-mkt5-envr.png",
+      "/images/camerasecurity/2.envr/p-mkt6-envr.png",
+      "/images/camerasecurity/2.envr/p-mkt7-envr.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/2.envr/p-mkt6-envr.png",
+      "/images/camerasecurity/2.envr/p-itb-envr.avif"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -154,20 +389,17 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/2.envr/p-itb-envr.avif" },
     ],
   },
 
-  // Produk Kedua dari Camera Security, SF NVRs and Edge Devices
+  // Produk Ketiga dari Camera Security, SF NVRs and Edge Devices
   {
     id: "UNVR-Pro",
     name: "Network Video Recorder Pro",
     category: "Camera Security",
-    subfilter: "Enterprise NVR",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    subfilter: "NVRs and Edge Devices",
+    image: "/images/camerasecurity/3.unvr-pro/1.p-utama-unvr-pro.png",
     shortDescription:
       "A 2U-sized video recorder with (7) 2.5/3.5' HDD bays that can provide up to 60 days of storage for (24) 4K cameras or (70) Full HD cameras.",
     specs: [
@@ -183,15 +415,23 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/3.unvr-pro/1.p-utama-unvr-pro.png",
+      "/images/camerasecurity/3.unvr-pro/2.p-spec-unvr-pro.png",
+      "/images/camerasecurity/3.unvr-pro/3.p-dimensi-unvr-pro.png",
+      "/images/camerasecurity/3.unvr-pro/4.p-deployment-unvr-pro.png",
+      "/images/camerasecurity/3.unvr-pro/p-itb-unvr-pro.avif",
+      "/images/camerasecurity/3.unvr-pro/p-mkt0-unvr-pro.png",
+      "/images/camerasecurity/3.unvr-pro/p-mkt1-unvr-pro.png",
+      "/images/camerasecurity/3.unvr-pro/p-mkt2-unvr-pro.png",
+      "/images/camerasecurity/3.unvr-pro/p-mkt3-unvr-pro.png",
+      "/images/camerasecurity/3.unvr-pro/p-mkt4-unvr-pro.png",
+      "/images/camerasecurity/3.unvr-pro/p-mkt5-unvr-pro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/3.unvr-pro/p-mkt5-unvr-pro.png",
+      "/images/camerasecurity/3.unvr-pro/p-itb-unvr-pro.avif"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -244,20 +484,17 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/3.unvr-pro/p-itb-unvr-pro.avif" },
     ],
   },
 
-  // Produk Ketiga dari Camera Security, SF NVRs and Edge Devices
+  // Produk  Keempat dari Camera Security, SF NVRs and Edge Devices
   {
     id: "UNVR",
     name: "Network Video Recorder",
     category: "Camera Security",
     subfilter: "NVRs and Edge Devices",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/camerasecurity/4.unvr/1.p-utama-unvr.png",
     shortDescription:
       "A video recorder with (4) 2.5/3.5' HDD bays that can support up to 30 days of storage for (18) 4K cameras or (60) Full HD cameras.",
     specs: [
@@ -273,15 +510,23 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/4.unvr/1.p-utama-unvr.png",
+      "/images/camerasecurity/4.unvr/2.p-spec-unvr.png",
+      "/images/camerasecurity/4.unvr/3.p-dimensi-unvr.png",
+      "/images/camerasecurity/4.unvr/4.p-deployment-unvr.png",
+      "/images/camerasecurity/4.unvr/p-itb-unvr.avif",
+      "/images/camerasecurity/4.unvr/p-mkt0-unvr.png",
+      "/images/camerasecurity/4.unvr/p-mkt1-unvr.png",
+      "/images/camerasecurity/4.unvr/p-mkt2-unvr.png",
+      "/images/camerasecurity/4.unvr/p-mkt3-unvr.png",
+      "/images/camerasecurity/4.unvr/p-mkt4-unvr.png",
+      "/images/camerasecurity/4.unvr/p-mkt5-unvr.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/4.unvr/p-mkt4-unvr.png",
+      "/images/camerasecurity/4.unvr/p-itb-unvr.avif"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -334,20 +579,17 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/4.unvr/p-itb-unvr.avif" },
     ],
   },
 
-  // Produk Keempat dari CameraSecurity, SF NVRs and Edge Devices
+  // Produk Kelima dari CameraSecurity, SF NVRs and Edge Devices
   {
     id: "UNVR-Instant",
     name: "Network Video Recorder Instant",
     category: "Camera Security",
     subfilter: "NVRs and Edge Devices",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/5.unvr-instant/1.p-utama-unvr-instant.png",
     shortDescription:
       "Compact UniFi Protect NVR with 3.5' HDD support, featuring an integrated 6-port PoE switch, integrated HDMI View Port, and a capacity for (6) 4K cameras or (15) Full HD cameras.",
     specs: [
@@ -362,15 +604,25 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/5.unvr-instant/1.p-utama-unvr-instant.png",
+      "/images/camerasecurity/5.unvr-instant/2.p-spec-unvr-instant.png",
+      "/images/camerasecurity/5.unvr-instant/3.p-dimensi-unvr-instant.png",
+      "/images/camerasecurity/5.unvr-instant/4.p-deployment-unvr-instant.png",
+      "/images/camerasecurity/5.unvr-instant/p-itb-unvr-instant.avif",
+      "/images/camerasecurity/5.unvr-instant/p-mkt0-unvr-instant.png",
+      "/images/camerasecurity/5.unvr-instant/p-mkt1-unvr-instant.png",
+      "/images/camerasecurity/5.unvr-instant/p-mkt2-unvr-instant.png",
+      "/images/camerasecurity/5.unvr-instant/p-mkt3-unvr-instant.png",
+      "/images/camerasecurity/5.unvr-instant/p-mkt4-unvr-instant.png",
+      "/images/camerasecurity/5.unvr-instant/p-mkt5-unvr-instant.png",
+      "/images/camerasecurity/5.unvr-instant/p-mkt6-unvr-instant.png",
+      "/images/camerasecurity/5.unvr-instant/p-mkt7-unvr-instant.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/5.unvr-instant/p-mkt5-unvr-instant.png",
+      "/images/camerasecurity/5.unvr-instant/p-itb-unvr-instant.avif"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -429,10 +681,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/5.unvr-instant/p-itb-unvr-instant.avif" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -542,13 +791,13 @@ export const cameraSecurityProducts: Product[] = [
     ]
   },
 
-  //Produk Kelima dari Camera Security, SF NVRs and Edge Devices
+  //Produk Keenam dari Camera Security, SF NVRs and Edge Devices
   {
     id: "UNVR-Instant-Kit",
     name: "Network Video Recorder Instant Kit",
     category: "Camera Security",
     subfilter: "NVRs and Edge Devices",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/6.unvr-instant-kit/1.p-utama-unvr-instant-kit.png",
     shortDescription:
       "Compact UniFi Protect NVR Kit, includes (1) UniFi Protect NVR Instant with (4) G5 Turret Ultra cameras and (1) 1TB HDD, delivering an all-in-one solution for fast and effortless setup.",
     specs: [
@@ -563,15 +812,36 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/6.unvr-instant-kit/1.p-utama-unvr-instant-kit.png",
+      "/images/camerasecurity/6.unvr-instant-kit/2.p-spec-unvr-instant-kit1.png",
+      "/images/camerasecurity/6.unvr-instant-kit/3.p-dimensi-unvr-instant-kit1.png",
+      "/images/camerasecurity/6.unvr-instant-kit/4.p-dimensi-unvr-instant-kit2.png",
+      "/images/camerasecurity/6.unvr-instant-kit/5.p-spec-unvr-instant-kit2.png",
+      "/images/camerasecurity/6.unvr-instant-kit/6.p-spec-unvr-instant-kit2.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-itb-unvr-instant-kit.avif",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt0-unvr-instant-kit.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt1-unvr-instant-kit1.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt2-unvr-instant-kit1.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt3-unvr-instant-kit1.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt4-unvr-instant-kit1.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt5-unvr-instant-kit1.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt6-unvr-instant-kit1.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt7-unvr-instant-kit1.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt8-unvr-instant-kit1.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt9-unvr-instant-kit2.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt10-unvr-instant-kit2.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt11-unvr-instant-kit2.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt12-unvr-instant-kit2.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt13-unvr-instant-kit2.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt14-unvr-instant-kit2.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt15-unvr-instant-kit2.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt16-unvr-instant-kit3.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/6.unvr-instant-kit/p-mkt6-unvr-instant-kit1.png",
+      "/images/camerasecurity/6.unvr-instant-kit/p-itb-unvr-instant-kit.avif"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -683,10 +953,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/6.unvr-instant-kit/p-itb-unvr-instant-kit.avif" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -796,13 +1063,13 @@ export const cameraSecurityProducts: Product[] = [
     ]
   },
 
-  // Produk Keenam dari Camera Security, SF NVRs and Edge Devices
+  // Produk Ketujuh dari Camera Security, SF NVRs and Edge Devices
   {
     id: "AI-Key",
     name: "AI Key",
     category: "Camera Security",
     subfilter: "NVRs and Edge Devices",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/7.ai-key/1.p-utama-ai-key.png",
     shortDescription:
       "Edge AI appliance that enhances any UniFi Protect deployment with proactive, AI-driven threat detection and alerting, capable of analyzing up to 1,800 smart detection events per hour.",
     specs: [
@@ -817,15 +1084,22 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/7.ai-key/1.p-utama-ai-key.png",
+      "/images/camerasecurity/7.ai-key/2.p-spec-ai-key.png",
+      "/images/camerasecurity/7.ai-key/3.p-dimensi-ai-key.png",
+      "/images/camerasecurity/7.ai-key/4.p-deployment-ai-key.png",
+      "/images/camerasecurity/7.ai-key/p-itb-ai-key.avif",
+      "/images/camerasecurity/7.ai-key/p-mkt0-ai-key.png",
+      "/images/camerasecurity/7.ai-key/p-mkt1-ai-key.png",
+      "/images/camerasecurity/7.ai-key/p-mkt2-ai-key.png",
+      "/images/camerasecurity/7.ai-key/p-mkt3-ai-key.png",
+      "/images/camerasecurity/7.ai-key/p-mkt4-ai-key.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/7.ai-key/p-itb-ai-key.avif",
+      "/images/camerasecurity/7.ai-key/4.p-deployment-ai-key.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -870,14 +1144,11 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/7.ai-key/p-itb-ai-key.avif" },
     ],
   },
 
-  // Produk Ketujuh dari Camera Security, SF NVRs and Edge Devices 
+  // Produk Kedelapan dari Camera Security, SF NVRs and Edge Devices 
   {
     id: "UP-AI-Port",
     name: "AI Port",
@@ -958,7 +1229,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-  // Produk Kedelapan dari Camera Security, SF NVRs and Edge Devices
+  // Produk Kesembilan dari Camera Security, SF NVRs and Edge Devices
   {
     id: "UP-Viewport",
     name: "Protect Viewport",
@@ -1040,7 +1311,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-  // Produk Kesembilan dari Camera Security, SF NVRs and Edge Devices
+  // Produk Kesepuluh dari Camera Security, SF NVRs and Edge Devices
   {
     id: "UCK-G2-SSD",
     name: "CloudKey+",
@@ -6758,7 +7029,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-// Produk Kelima dari Camera Security, SF SuperLink
+  // Produk Kelima dari Camera Security, SF SuperLink
   {
     id: "USL-Siren-PoE",
     name: "Siren PoE",
@@ -6948,7 +7219,7 @@ export const cameraSecurityProducts: Product[] = [
     ]
   },
 
-// Produk Keenam dari Camera Security, SF SuperLink
+  // Produk Keenam dari Camera Security, SF SuperLink
   {
     id: "USL-Environmental",
     name: "Environmental Sensor",
@@ -6989,7 +7260,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-       {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "Device: 53 x 49 x 23.5 mm (2.1 x 1.9 x 0.9') Mount: 41.3 x 36.6 x 3.1 mm (1.6 x 1.4 x 0.1')" },
@@ -7050,7 +7321,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-// Produk Ketujuh dari Camera Security
+  // Produk Ketujuh dari Camera Security
   {
     id: "UP-Sense",
     name: "All-In-One Sensor",
@@ -7092,7 +7363,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-       {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "⌀24 x 83.5 mm (⌀0.9 x 3.3')" },
@@ -7144,7 +7415,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-// Produk Kedelapan dari Camera Security, SF SuperLink
+  // Produk Kedelapan dari Camera Security, SF SuperLink
   {
     id: "USL-GlassBreak",
     name: "Glass Break Sensor",
@@ -7243,7 +7514,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-// Produk Kesembilan dari Camera Security, SF SuperLink
+  // Produk Kesembilan dari Camera Security, SF SuperLink
   {
     id: "UACC-USL-ANT-HG",
     name: "SuperLink High-Gain Antenna",
@@ -7284,7 +7555,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-     {
+      {
         title: "Overview",
         items: [
           { label: "Dimensions", value: "Device: 468.9 x 31.8 x 44.1 mm (18.5 x 1.3 x 1.7') With cable: 1458.4 x 31.8 x 44.1 mm (57.4 x 1.3 x 1.7') Cable: ⌀5.2 x 1000 mm (⌀0.2 x 39.4')" },
@@ -7332,7 +7603,7 @@ export const cameraSecurityProducts: Product[] = [
   },
 
   // Produk Pertama dari Camera Security, SF Camera Accessories
- {
+  {
     id: "UP-AI-Horn-Speaker-B",
     name: "AI Horn Speaker",
     category: "Accessories",
@@ -7419,7 +7690,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-// Produk Kedua dari Camera Security,SF Camera Accessories 
+  // Produk Kedua dari Camera Security,SF Camera Accessories 
   {
     id: "UP-FloodLight",
     name: "Floodlight",
@@ -7498,7 +7769,7 @@ export const cameraSecurityProducts: Product[] = [
   },
 
   // Produk Ketiga dari Camera Security, SF Camera Accessories 
-   {
+  {
     id: "UACC-Adapter-PoE-USBC",
     name: "PoE to USB-C Adapter",
     category: "Accessories",
@@ -7567,7 +7838,7 @@ export const cameraSecurityProducts: Product[] = [
   },
 
   // Produk Keempat dari Camera Security, SF Camera Accessories 
-   {
+  {
     id: "UACC-Camera-CJB-B",
     name: "Camera Compact Junction Box",
     category: "Accessories",
@@ -7809,7 +8080,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-// Produk Ketujuh dari Camera Security, SF Camera Accessories
+  // Produk Ketujuh dari Camera Security, SF Camera Accessories
   {
     id: "UACC-G4-Dome-Arm Mount",
     name: "Dome Camera Arm Mount",
@@ -7869,7 +8140,7 @@ export const cameraSecurityProducts: Product[] = [
   },
 
   // Produk Kedelapan dari Camera Security, SF Camera Accessories
-   {
+  {
     id: "UACC-Camera-AM-B",
     name: "Camera Arm Mount",
     category: "Accessories",
@@ -7930,7 +8201,7 @@ export const cameraSecurityProducts: Product[] = [
   },
 
   // Produk Kesembilan dari Camera Security, SF Camera Accessories 
-   {
+  {
     id: "UACC-Bullet-AB-W",
     name: "Bullet Camera Angled Base",
     category: "Accessories",
@@ -8913,7 +9184,7 @@ export const cameraSecurityProducts: Product[] = [
   //   ]
   // },
 
-  
+
   // {
   //   id: "UACC-G6-Dome-FM-B/W",
   //   name: "G6 Dome Camera Flush Mount",
@@ -10172,7 +10443,7 @@ export const cameraSecurityProducts: Product[] = [
   //   ]
   // },
 
-  
+
   // {
   //   id: "UACC-G5-PTZ-PM-B/W",
   //   name: "G6/G5 PTZ Pendant Mount",
@@ -10311,7 +10582,7 @@ export const cameraSecurityProducts: Product[] = [
   //   ]
   // },
 
-  
+
   // {
   //   id: "UACC-G5-PTZ-SM-B/W",
   //   name: "G6/G5 PTZ Surface Mount",
