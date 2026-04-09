@@ -1,17 +1,17 @@
 // Auto-generated index file
 // This file merges all category product files
 
-import { cloudGatewaysProducts } from './cloudGateways';
-import { switchingProducts } from './switching';
-import { wifiProducts } from './wifi';
-import { cameraSecurityProducts } from './cameraSecurity';
-import { doorAccessProducts } from './doorAccess';
-import { integrationsProducts } from './integrations';
-import { advancedHostingProducts } from './advancedHosting';
-import { accessoriesProducts } from './accessories';
+import { cloudGatewaysProducts } from './productUbiquiti/cloudGateways';
+import { switchingProducts } from './productUbiquiti/switching';
+import { wifiProducts } from './productUbiquiti/wifi';
+import { cameraSecurityProducts } from './productUbiquiti/cameraSecurity';
+import { doorAccessProducts } from './productUbiquiti/doorAccess';
+import { integrationsProducts } from './productUbiquiti/integrations';
+import { advancedHostingProducts } from './productUbiquiti/advancedHosting';
+import { accessoriesProducts } from './productUbiquiti/accessories';
 
 // Export all types from cloudGateways
-export * from './cloudGateways';
+export * from './productUbiquiti/cloudGateways';
 
 // Export individual category products
 export {
