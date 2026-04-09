@@ -280,25 +280,25 @@ UniFi Ecosystem menghadirkan seluruh infrastruktur IT dalam satu sistem terpaduâ
     </Link>
   </div>
 
-</div>
+  </div>
 
           {/* DCS Access */}
-          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
+      <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
   
-  <div className="flex-1 order-2 lg:order-1">
-    <div className="relative group cursor-pointer flex justify-center">
+           <div className="flex-1 order-2 lg:order-1">
+           <div className="relative group cursor-pointer flex justify-center">
 
-      {/* Glow */}
-      <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
+           {/* Glow */}
+            <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
 
-      {/* Border Glow */}
-      <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
+            {/* Border Glow */}
+            <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
 
-      {/* Video Circle */}
-      <div className="relative z-10 w-full max-w-[420px] aspect-square rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-black">
+            {/* Video Circle */}
+            <div className="relative z-10 w-full max-w-[420px] aspect-square rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-black">
 
         <iframe
-          src="https://www.youtube.com/embed/XQng4qJREoQ?autoplay=1&mute=1&loop=1&playlist=XQng4qJREoQ&controls=0&rel=0&modestbranding=1&start=5"
+          src="https://www.youtube.com/embed/GqNZLj8cYmw?autoplay=1&mute=1&loop=1&playlist=GqNZLj8cYmw&controls=0&rel=0&modestbranding=1&start=5&si=V_wzlsrw9X4zvyoZ"
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] pointer-events-none"
           allow="autoplay; encrypted-media"
           title="UniFi Video"
