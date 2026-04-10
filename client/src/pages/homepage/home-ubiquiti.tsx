@@ -234,40 +234,15 @@ Platform keamanan enterprise tanpa lisensi dengan dukungan teknologi AI untuk de
 
           {/* DCS Network */}
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
-  
-  <div className="flex-1 order-2 lg:order-1">
-    <div className="relative group cursor-pointer flex justify-center">
 
-      {/* Glow */}
-      <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
-
-      {/* Border Glow */}
-      <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
-
-      {/* Video Circle */}
-      <div className="relative z-10 w-full max-w-[420px] aspect-square rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-black">
-
-        <iframe
-          src="https://www.youtube.com/embed/XQng4qJREoQ?autoplay=1&mute=1&loop=1&playlist=XQng4qJREoQ&controls=0&rel=0&modestbranding=1&start=5"
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] pointer-events-none"
-          allow="autoplay; encrypted-media"
-          title="UniFi Video"
-        />
-
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/20 pointer-events-none" />
-
-      </div>
-    </div>
-  </div>
-
-  <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
+  {/* TEXT (SEKARANG DI KIRI) */}
+  <div className="flex-1 space-y-8 order-1 lg:order-1 text-center lg:text-left">
     <h3 className="text-4xl md:text-5xl font-black italic uppercase">
-      UniFi Ecosystem
+      UniFi Network
     </h3>
 
     <p className="text-gray-400 text-xl leading-relaxed">
-UniFi Ecosystem menghadirkan seluruh infrastruktur IT dalam satu sistem terpadu—mulai dari networking, surveillance, hingga access control—dengan kontrol penuh, efisiensi maksimal, dan tanpa subscription    
+      UniFi Network menghadirkan seluruh infrastruktur IT dalam satu sistem terpadu—mulai dari networking, surveillance, hingga access control—dengan kontrol penuh, efisiensi maksimal, dan tanpa subscription    
     </p>
 
     <Link href="/collections/camera-security">
@@ -280,7 +255,34 @@ UniFi Ecosystem menghadirkan seluruh infrastruktur IT dalam satu sistem terpadu�
     </Link>
   </div>
 
+  {/* VIDEO (SEKARANG DI KANAN) */}
+  <div className="flex-1 order-2 lg:order-2">
+    <div className="relative group cursor-pointer flex justify-center">
+
+      {/* Glow */}
+      <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
+
+      {/* Border Glow */}
+      <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
+
+      {/* Video Circle */}
+      <div className="relative z-10 w-full max-w-[420px] aspect-square rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-black">
+
+        <iframe
+          src="https://www.youtube.com/embed/zZpzDb-MHOY?autoplay=1&mute=1&loop=1&playlist=zZpzDb-MHOY&controls=0&rel=0&modestbranding=1&start=5"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] pointer-events-none"
+          allow="autoplay; encrypted-media"
+          title="UniFi Video"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+
+      </div>
+    </div>
   </div>
+
+</div>
 
           {/* DCS Access */}
       <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
