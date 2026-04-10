@@ -126,7 +126,7 @@ const SUBFILTERS: Record<string, { name: string; count: number }[]> = {
   ],
 };
 
-import { products as staticProducts } from "@/lib/products";
+import { products as staticProducts } from "@/lib/products/productUbiquiti";
 
 export default function Collection() {
   const [match, params] = useRoute("/collections/:category");
