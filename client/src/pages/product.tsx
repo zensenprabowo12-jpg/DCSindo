@@ -1,5 +1,5 @@
 import Layout from "@/components/layout";
-import { products, type Product, type TechSpecSection, type InTheBoxItem, type ProductAddon } from "@/lib/products";
+import { products, type Product, type TechSpecSection, type InTheBoxItem, type ProductAddon, type TechSpecItem } from "@/lib/products/productUbiquiti";
 import { Button } from "@/components/ui/button";
 import { useRoute } from "wouter";
 import { ShoppingCart, Check, Shield, ChevronLeft, ChevronRight, Maximize2, X, Package, Settings, Info, ArrowRight, Instagram, Facebook, Mail } from "lucide-react";
@@ -251,7 +251,7 @@ export default function ProductDetail() {
     
     product = {
         id: params.id,
-        name: `Item (${category}) {index}`,
+        name: `Item (${category}) ${index}`,
         price: 299 + (parseInt(index) * 50),
         description: "Experience enterprise-grade performance with this cutting-edge solution.",
         shortDescription: "Experience the pinnacle of networking performance.",
@@ -290,7 +290,7 @@ export default function ProductDetail() {
 
   // ===== GUNAKAN HELPER FUNCTIONS UNTUK GENERATE DEFAULT VALUES =====
   // Ambil addons dari data produk, atau gunakan default dari helper function
-  const addOns = product.addons || [];
+  const addOns = product.addons || getDefaultAddons(product);
 
   // Ambil technical specs dari data produk, atau gunakan default dari helper function
   const technicalSpecs = product.technicalSpecs || getDefaultTechnicalSpecs(product);
@@ -299,7 +299,7 @@ export default function ProductDetail() {
   const bulletPoints = product.bulletPoints || getDefaultBulletPoints(product);
   
   // Ambil in the box items dari data produk, atau gunakan default dari helper function
-  const inTheBoxItems = product.inTheBox || [];
+  const inTheBoxItems = product.inTheBox || getDefaultInTheBox(product);
   
   // Ambil overview images dari data produk, atau gunakan default
   const overviewImages = product.overviewImages || ["/images/banners/dcs-overview-1.png", "/images/banners/dcs-overview-2.png"];
@@ -330,7 +330,7 @@ export default function ProductDetail() {
         <div className="flex flex-col lg:flex-row gap-20 mb-40">
           <div className="flex-1 flex gap-8">
             <div className="hidden md:flex flex-col gap-4">
-              {displayImages.map((img, i) => (
+              {displayImages.map((img: string, i: number) => (
                 <div 
                   key={i} 
                   className={cn(
@@ -399,7 +399,7 @@ export default function ProductDetail() {
                         </Button>
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {images.map((img, i) => (
+                        {images.map((img: string, i: number) => (
                             <div 
                                 key={i} 
                                 className="aspect-square rounded-2xl border border-border bg-secondary/10 p-4 hover:border-primary transition-colors cursor-pointer"
@@ -434,7 +434,7 @@ export default function ProductDetail() {
               
               {/* Bullet Points dari data.ts atau auto-generated dari helper function */}
               <ul className="space-y-2 mt-4 text-sm text-muted-foreground font-medium leading-relaxed">
-                {bulletPoints.map((point, i) => (
+                {bulletPoints.map((point: string, i: number) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="block w-1.5 h-1.5 rounded-full bg-primary mt-2" />
                     {point}
@@ -513,7 +513,7 @@ export default function ProductDetail() {
             {activeTab === "overview" && (
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 {/* Gambar overview dari data.ts atau auto-generated dari helper function */}
-                {overviewImages.map((img, idx) => (
+                {overviewImages.map((img: string, idx: number) => (
                   <img key={idx} src={img} className="rounded-3xl shadow-2xl w-full aspect-video object-cover" />
                 ))}
               </motion.div>
@@ -523,7 +523,7 @@ export default function ProductDetail() {
                  {/* Technical Specs dari data.ts - Sekarang berlaku untuk semua kategori */}
                  {technicalSpecs && technicalSpecs.length > 0 ? (
                     <div className="space-y-1">
-                        {technicalSpecs.map((section) => (
+                        {technicalSpecs.map((section: TechSpecSection) => (
                             <div key={section.title} className="border-b border-border">
                                 <button
                                     onClick={() => toggleTechSection(section.title)}
@@ -541,7 +541,7 @@ export default function ProductDetail() {
                                             className="overflow-hidden"
                                         >
                                             <div className="pb-8 grid grid-cols-1 gap-y-6">
-                                                {section.items.map((item: any, idx) => (
+                                                {section.items.map((item: TechSpecItem, idx: number) => (
                                                     <div key={idx} className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 border-b border-border/50 pb-4">
                                                         <span className="text-sm font-medium text-muted-foreground">{item.label}</span>
                                                         <div className="text-sm font-medium">
@@ -593,7 +593,7 @@ export default function ProductDetail() {
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl mx-auto space-y-12">
                 {/* In The Box items dari data.ts atau auto-generated dari helper function - hanya gambar tanpa text */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                  {inTheBoxItems.map((item, idx) => (
+                  {inTheBoxItems.map((item: InTheBoxItem, idx: number) => (
                     <div key={idx} className="rounded-3xl shadow-2xl bg-secondary/20 p-8 flex items-center justify-center">
                       <img src={item.image} className="w-full h-full object-contain" alt={item.name} />
                     </div>
@@ -604,7 +604,7 @@ export default function ProductDetail() {
              {activeTab === "addons" && (
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {/* Addons dengan preview lebih kecil */}
-                {addOns.map((addon) => (
+                {addOns.map((addon: ProductAddon) => (
                   <div
                     key={addon.id}
                     className="group relative rounded-2xl border border-border bg-card p-4 hover:border-primary/50 transition-all cursor-pointer"

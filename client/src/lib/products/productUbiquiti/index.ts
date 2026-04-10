@@ -11,6 +11,7 @@ import { advancedHostingProducts } from './productUbiquiti/advancedHosting';
 import { accessoriesProducts } from './productUbiquiti/accessories';
 
 // Export all types from cloudGateways
+export type { Product, TechSpecSection, InTheBoxItem, ProductAddon, TechSpecItem, AddonDetailedSpec } from './productUbiquiti/cloudGateways';
 export * from './productUbiquiti/cloudGateways';
 
 // Export individual category products
