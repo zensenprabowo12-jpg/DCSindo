@@ -14,10 +14,14 @@ import MikrotikSupport from "@/pages/support/Mikrotik";
 import AlgcomSupport from "@/pages/support/Algcom";
 import VsolSupport from "@/pages/support/Vsol";
 import Cart from "@/pages/cart";
-
 import ComingSoon from "@/pages/coming-soon";
 
-function Router() {
+// 🔥 TAMBAHAN REACT ROUTER (KHUSUS MIKROTIK DETAIL)
+import { BrowserRouter, Routes, Route as ReactRoute } from "react-router-dom";
+import MikrotikPage from "../../mikrotik/mikrotik";
+import DetailProduk from "../../mikrotik/detailproduct";
+
+function RouterWouter() {
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -39,12 +43,28 @@ function Router() {
   );
 }
 
+function MikrotikRouter() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <ReactRoute path="/mikrotik" element={<MikrotikPage />} />
+        <ReactRoute path="/mikrotik/:id" element={<DetailProduk />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <Router />
+
+        {/* Wouter routes (utama) */}
+        <RouterWouter />
+
+        {/* React Router khusus Mikrotik */}
+        <MikrotikRouter />
       </TooltipProvider>
     </QueryClientProvider>
   );
