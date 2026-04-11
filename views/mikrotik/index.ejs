@@ -1,44 +1,26 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <%- include('../partials/head') %>
-</head>
-<body>
-  <div class="wrap">
-    <div class="topbar">
-      <a class="logo" href="/">DCS — Katalog</a>
-      <div style="display:flex;gap:0.75rem;align-items:center;flex-wrap:wrap;">
-        <a href="/">Beranda React</a>
-        <a href="/admin/mikrotik" class="btn btn-ghost">Admin</a>
-      </div>
+<%- include('../../mikrotik/views/layouts/shell-start') %>
+<div class="wrap">
+  <h1>MikroTik (legacy)</h1>
+  <p class="muted" style="margin-top:0;">Katalog utama memakai <a href="/brand/mikrotik">/brand/mikrotik</a>. Halaman ini memakai data tabel lama jika masih di-render.</p>
+  <p class="muted"><a href="/admin/mikrotik" class="btn btn-ghost" style="display:inline-block;margin-top:0.5rem;">Admin legacy</a></p>
+
+  <% if (!products.length) { %>
+    <div class="card" style="margin-top:1.5rem;">
+      <p>Belum ada produk. Tambah dari <a href="/admin/mikrotik">dashboard admin</a>.</p>
     </div>
-
-    <h1>MikroTik</h1>
-    <p class="muted" style="margin-top:0;">Produk jaringan — harga dapat dikosongkan di database.</p>
-
-    <% if (!products.length) { %>
-      <div class="card" style="margin-top:1.5rem;">
-        <p>Belum ada produk. Tambah dari <a href="/admin/mikrotik">dashboard admin</a>.</p>
-      </div>
-    <% } else { %>
-      <div class="grid" style="margin-top:1.5rem;">
-        <% products.forEach(function (p) { %>
-          <a href="/mikrotik/<%= p.id %>" class="card" style="text-decoration:none;color:inherit;display:block;">
-            <% if (p.gambar) { %>
-              <img class="thumb" src="<%= p.gambar %>" alt="<%= p.nama_produk %>" />
-            <% } else { %>
-              <div class="thumb"></div>
-            <% } %>
-            <h2 style="margin-top:0.75rem;"><%= p.nama_produk %></h2>
-            <% if (p.harga) { %>
-              <p class="muted" style="margin:0;">Rp <%= Number(p.harga).toLocaleString('id-ID') %></p>
-            <% } else { %>
-              <p class="muted" style="margin:0;">Hubungi kami untuk harga</p>
-            <% } %>
-          </a>
-        <% }); %>
-      </div>
-    <% } %>
-  </div>
-</body>
-</html>
+  <% } else { %>
+    <div class="grid" style="margin-top:1.5rem;">
+      <% products.forEach(function (p) { %>
+        <a href="/brand/mikrotik/<%= p.id %>" class="card" style="text-decoration:none;color:inherit;display:block;">
+          <% if (p.gambar) { %>
+            <img class="thumb" src="<%= p.gambar %>" alt="<%= p.nama_produk %>" />
+          <% } else { %>
+            <div class="thumb"></div>
+          <% } %>
+          <h2 style="margin-top:0.75rem;"><%= p.nama_produk %></h2>
+        </a>
+      <% }); %>
+    </div>
+  <% } %>
+</div>
+<%- include('../../mikrotik/views/layouts/shell-end') %>

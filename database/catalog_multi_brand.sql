@@ -19,7 +19,6 @@ CREATE TABLE IF NOT EXISTS products (
   nama_produk VARCHAR(255) NOT NULL,
   deskripsi TEXT NOT NULL,
   spesifikasi TEXT NOT NULL,
-  harga DECIMAL(14, 2) NULL DEFAULT NULL,
   gambar VARCHAR(512) NOT NULL DEFAULT '' COMMENT 'Path web, mis. /uploads/products/xxx.jpg',
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (id),

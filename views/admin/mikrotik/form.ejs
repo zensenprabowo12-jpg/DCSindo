@@ -1,75 +1,69 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <%- include('../../partials/head') %>
-</head>
-<body>
-  <div class="wrap">
-    <div class="topbar">
-      <a class="logo" href="/admin/mikrotik">← Admin MikroTik</a>
-      <a href="/mikrotik" class="btn btn-ghost">Katalog</a>
-    </div>
-
-    <% 
-      var qerr = typeof query.error === 'string' ? query.error : (query.error && query.error[0]);
-    %>
-    <% if (qerr) { %>
-      <div class="flash flash-err"><%= qerr %></div>
-    <% } %>
-
-    <h1><%= mode === 'create' ? 'Tambah produk' : 'Edit produk' %></h1>
-
-    <% 
-      var action = mode === 'create' ? '/admin/mikrotik' : '/admin/mikrotik/' + product.id + '/update';
-      var gambarRequired = mode === 'create';
-    %>
-    <form class="card" style="margin-top:1rem;" action="<%= action %>" method="post" enctype="multipart/form-data">
-      <div class="field">
-        <label for="nama_produk">Nama produk *</label>
-        <input type="text" id="nama_produk" name="nama_produk" required maxlength="255"
-          value="<%= product ? product.nama_produk : '' %>" />
-      </div>
-      <div class="field">
-        <label for="deskripsi">Deskripsi *</label>
-        <textarea id="deskripsi" name="deskripsi" required><%= product ? product.deskripsi : '' %></textarea>
-      </div>
-      <div class="field">
-        <label for="spesifikasi">Spesifikasi *</label>
-        <textarea id="spesifikasi" name="spesifikasi" required><%= product ? product.spesifikasi : '' %></textarea>
-      </div>
-      <div class="field">
-        <label for="harga">Harga (opsional)</label>
-        <input type="text" id="harga" name="harga" inputmode="decimal" placeholder="contoh: 1250000"
-          value="<%= product && product.harga ? product.harga : '' %>" />
-      </div>
-      <div class="field">
-        <label for="gambar">Gambar produk <%= gambarRequired ? '*' : '(kosongkan jika tidak diganti)' %></label>
-        <input type="file" id="gambar" name="gambar" accept="image/jpeg,image/png,image/webp,image/gif" <%= gambarRequired ? 'required' : '' %> />
-        <img id="imgPreview" alt="Pratinjau" />
-      </div>
-      <button type="submit" class="btn"><%= mode === 'create' ? 'Simpan' : 'Perbarui' %></button>
-    </form>
-
-    <script>
-      (function () {
-        var input = document.getElementById('gambar');
-        var preview = document.getElementById('imgPreview');
-        <% if (product && product.gambar) { %>
-        preview.src = <%- JSON.stringify(product.gambar) %>;
-        preview.classList.add('visible');
-        <% } %>
-        input.addEventListener('change', function () {
-          var f = input.files && input.files[0];
-          if (!f) return;
-          var r = new FileReader();
-          r.onload = function () {
-            preview.src = r.result;
-            preview.classList.add('visible');
-          };
-          r.readAsDataURL(f);
-        });
-      })();
-    </script>
+<%- include('../../../mikrotik/views/layouts/shell-start') %>
+<div class="wrap">
+  <div class="topbar">
+    <a class="logo" href="/admin/mikrotik">← Admin MikroTik</a>
+    <a href="/brand/mikrotik" class="btn btn-ghost">Katalog</a>
   </div>
-</body>
-</html>
+
+  <% 
+    var qerr = typeof query.error === 'string' ? query.error : (query.error && query.error[0]);
+  %>
+  <% if (qerr) { %>
+    <div class="flash flash-err"><%= qerr %></div>
+  <% } %>
+
+  <h1><%= mode === 'create' ? 'Tambah produk' : 'Edit produk' %></h1>
+
+  <% 
+    var action = mode === 'create' ? '/admin/mikrotik' : '/admin/mikrotik/' + product.id + '/update';
+    var gambarRequired = mode === 'create';
+  %>
+  <form class="card" style="margin-top:1rem;" action="<%= action %>" method="post" enctype="multipart/form-data">
+    <div class="field">
+      <label for="nama_produk">Nama produk *</label>
+      <input type="text" id="nama_produk" name="nama_produk" required maxlength="255"
+        value="<%= product ? product.nama_produk : '' %>" />
+    </div>
+    <div class="field">
+      <label for="deskripsi">Deskripsi *</label>
+      <textarea id="deskripsi" name="deskripsi" required><%= product ? product.deskripsi : '' %></textarea>
+    </div>
+    <div class="field">
+      <label for="spesifikasi">Spesifikasi *</label>
+      <textarea id="spesifikasi" name="spesifikasi" required><%= product ? product.spesifikasi : '' %></textarea>
+    </div>
+    <div class="field">
+      <label for="harga">Harga (opsional)</label>
+      <input type="text" id="harga" name="harga" inputmode="decimal" placeholder="contoh: 1250000"
+        value="<%= product && product.harga ? product.harga : '' %>" />
+    </div>
+    <div class="field">
+      <label for="gambar">Gambar produk <%= gambarRequired ? '*' : '(kosongkan jika tidak diganti)' %></label>
+      <input type="file" id="gambar" name="gambar" accept="image/jpeg,image/png,image/webp,image/gif" <%= gambarRequired ? 'required' : '' %> />
+      <img id="imgPreview" alt="Pratinjau" />
+    </div>
+    <button type="submit" class="btn"><%= mode === 'create' ? 'Simpan' : 'Perbarui' %></button>
+  </form>
+
+  <script>
+    (function () {
+      var input = document.getElementById('gambar');
+      var preview = document.getElementById('imgPreview');
+      <% if (product && product.gambar) { %>
+      preview.src = <%- JSON.stringify(product.gambar) %>;
+      preview.classList.add('visible');
+      <% } %>
+      input.addEventListener('change', function () {
+        var f = input.files && input.files[0];
+        if (!f) return;
+        var r = new FileReader();
+        r.onload = function () {
+          preview.src = r.result;
+          preview.classList.add('visible');
+        };
+        r.readAsDataURL(f);
+      });
+    })();
+  </script>
+</div>
+<%- include('../../../mikrotik/views/layouts/shell-end') %>

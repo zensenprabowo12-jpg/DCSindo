@@ -15,8 +15,6 @@ import {
   pageAdminEdit,
   pageAdminList,
   pageAdminNew,
-  pageDetailMikrotik,
-  pageListMikrotik,
 } from "../controllers/mikrotikPageController";
 import { ensureMikrotikUploadDir, uploadMikrotikImage } from "../middleware/uploadMikrotik";
 
@@ -43,16 +41,19 @@ function handleUpload(
 export function registerMikrotikRoutes(app: Express): void {
   ensureMikrotikUploadDir();
 
-  app.set("views", path.join(process.cwd(), "views"));
-  app.set("view engine", "ejs");
-
   app.use(
     "/uploads",
     express.static(path.join(process.cwd(), "public", "uploads")),
   );
 
-  app.get("/mikrotik", pageListMikrotik);
-  app.get("/mikrotik/:id", pageDetailMikrotik);
+  /** Katalog publik MikroTik memakai multi-brand (tabel products), bukan produk_mikrotik. */
+  app.get("/mikrotik", (_req, res) => {
+    res.redirect(302, "/brand/mikrotik");
+  });
+  app.get("/mikrotik/:id", (req, res) => {
+    const raw = req.params.id ?? "";
+    res.redirect(302, `/brand/mikrotik/${encodeURIComponent(raw)}`);
+  });
 
   app.get("/admin/mikrotik", pageAdminList);
   app.get("/admin/mikrotik/new", pageAdminNew);

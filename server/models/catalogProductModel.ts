@@ -7,7 +7,6 @@ export type CatalogProductRow = {
   nama_produk: string;
   deskripsi: string;
   spesifikasi: string;
-  harga: string | null;
   gambar: string;
   created_at: Date;
 };
@@ -24,7 +23,6 @@ function mapProduct(r: RowDataPacket): CatalogProductWithBrandRow {
     nama_produk: r.nama_produk,
     deskripsi: r.deskripsi,
     spesifikasi: r.spesifikasi,
-    harga: r.harga === null || r.harga === undefined ? null : String(r.harga),
     gambar: r.gambar ?? "",
     created_at: r.created_at,
     nama_brand: r.nama_brand,
@@ -39,7 +37,6 @@ const selectWithJoin = `
     p.nama_produk,
     p.deskripsi,
     p.spesifikasi,
-    p.harga,
     p.gambar,
     p.created_at,
     b.nama_brand,
@@ -62,6 +59,13 @@ export async function findAllCatalogProductsWithBrand(
   return rows.map(mapProduct);
 }
 
+/** Produk untuk satu brand (slug), siap dipakai halaman SSR /brand/:slug */
+export async function getProductsByBrandSlug(
+  brandSlug: string,
+): Promise<CatalogProductWithBrandRow[]> {
+  return findAllCatalogProductsWithBrand(brandSlug);
+}
+
 export async function findCatalogProductByIdWithBrand(
   id: number,
 ): Promise<CatalogProductWithBrandRow | null> {
@@ -77,7 +81,7 @@ export async function findCatalogProductById(
   id: number,
 ): Promise<CatalogProductRow | null> {
   const [rows] = await mysqlPool.query<RowDataPacket[]>(
-    `SELECT id, brand_id, nama_produk, deskripsi, spesifikasi, harga, gambar, created_at
+    `SELECT id, brand_id, nama_produk, deskripsi, spesifikasi, gambar, created_at
      FROM products WHERE id = :id LIMIT 1`,
     { id },
   );
@@ -89,7 +93,6 @@ export async function findCatalogProductById(
     nama_produk: r.nama_produk,
     deskripsi: r.deskripsi,
     spesifikasi: r.spesifikasi,
-    harga: r.harga === null ? null : String(r.harga),
     gambar: r.gambar ?? "",
     created_at: r.created_at,
   };
@@ -100,20 +103,18 @@ export type CatalogProductInput = {
   nama_produk: string;
   deskripsi: string;
   spesifikasi: string;
-  harga: number | null;
   gambar: string;
 };
 
 export async function insertCatalogProduct(input: CatalogProductInput): Promise<number> {
   const [result] = await mysqlPool.execute<ResultSetHeader>(
-    `INSERT INTO products (brand_id, nama_produk, deskripsi, spesifikasi, harga, gambar)
-     VALUES (:brand_id, :nama_produk, :deskripsi, :spesifikasi, :harga, :gambar)`,
+    `INSERT INTO products (brand_id, nama_produk, deskripsi, spesifikasi, gambar)
+     VALUES (:brand_id, :nama_produk, :deskripsi, :spesifikasi, :gambar)`,
     {
       brand_id: input.brand_id,
       nama_produk: input.nama_produk,
       deskripsi: input.deskripsi,
       spesifikasi: input.spesifikasi,
-      harga: input.harga,
       gambar: input.gambar,
     },
   );
@@ -130,7 +131,6 @@ export async function updateCatalogProduct(
        nama_produk = :nama_produk,
        deskripsi = :deskripsi,
        spesifikasi = :spesifikasi,
-       harga = :harga,
        gambar = :gambar
      WHERE id = :id`,
     {
@@ -139,7 +139,6 @@ export async function updateCatalogProduct(
       nama_produk: input.nama_produk,
       deskripsi: input.deskripsi,
       spesifikasi: input.spesifikasi,
-      harga: input.harga,
       gambar: input.gambar,
     },
   );

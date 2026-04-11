@@ -1,8 +1,8 @@
 import type { Request, Response } from "express";
 import { findBrandBySlug } from "../models/brandModel";
 import {
-  findAllCatalogProductsWithBrand,
   findCatalogProductByIdWithBrand,
+  getProductsByBrandSlug,
 } from "../models/catalogProductModel";
 import { formatZodIssues, idParamSchema } from "../validation/catalogProductSchema";
 
@@ -24,7 +24,7 @@ export async function pageBrandCatalog(req: Request, res: Response) {
       });
       return;
     }
-    const products = await findAllCatalogProductsWithBrand(brand.slug);
+    const products = await getProductsByBrandSlug(brand.slug);
     res.render("catalog/brand-index", {
       title: `${brand.nama_brand} — Katalog`,
       brand,

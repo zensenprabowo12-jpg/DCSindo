@@ -1,0 +1,32 @@
+<script>
+(function () {
+  function syncThemeIcons() {
+    var dark = document.documentElement.classList.contains("dark");
+    var suns = document.querySelectorAll(".dcs-icon-sun");
+    var moons = document.querySelectorAll(".dcs-icon-moon");
+    for (var i = 0; i < suns.length; i++) suns[i].style.display = dark ? "none" : "inline";
+    for (var j = 0; j < moons.length; j++) moons[j].style.display = dark ? "inline" : "none";
+  }
+  document.querySelectorAll(".dcs-theme-toggle").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      document.documentElement.classList.toggle("dark");
+      try {
+        localStorage.setItem("theme", document.documentElement.classList.contains("dark") ? "dark" : "light");
+      } catch (e) {}
+      syncThemeIcons();
+    });
+  });
+  syncThemeIcons();
+
+  var openBtn = document.getElementById("dcs-mobile-open");
+  var panel = document.getElementById("dcs-mobile-panel");
+  if (openBtn && panel) {
+    openBtn.addEventListener("click", function () {
+      panel.classList.toggle("open");
+    });
+    document.addEventListener("click", function (e) {
+      if (!panel.contains(e.target) && !openBtn.contains(e.target)) panel.classList.remove("open");
+    });
+  }
+})();
+</script>

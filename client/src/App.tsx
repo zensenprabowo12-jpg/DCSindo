@@ -15,7 +15,6 @@ import AlgcomSupport from "@/pages/support/Algcom";
 import VsolSupport from "@/pages/support/Vsol";
 import Cart from "@/pages/cart";
 import ComingSoon from "@/pages/coming-soon";
-import MikrotikServerReload from "@/components/MikrotikServerReload";
 
 function RouterWouter() {
   return (
@@ -34,9 +33,6 @@ function RouterWouter() {
       <Route path="/support/vsol" component={VsolSupport} />
       <Route path="/cart" component={Cart} />
       <Route path="/coming-soon" component={ComingSoon} />
-      {/* Katalog MikroTik = HTML dari Express (EJS); reload agar request ke server */}
-      <Route path="/mikrotik/:id" component={MikrotikServerReload} />
-      <Route path="/mikrotik" component={MikrotikServerReload} />
       <Route component={NotFound} />
     </Switch>
   );

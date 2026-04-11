@@ -1,5 +1,4 @@
 import type { Express, NextFunction, Request, Response } from "express";
-import path from "path";
 import { apiListBrands } from "../controllers/catalogBrandApiController";
 import {
   formAdminV2CreateProduct,
@@ -47,12 +46,14 @@ function handleUpload(
 
 /**
  * Katalog multi-brand (tabel `brands` + `products`).
- * Dipasang terpisah dari /api/mikrotik dan halaman /mikrotik lama.
+ * Dipasang terpisah dari /api/mikrotik; GET /mikrotik dialihkan ke /brand/mikrotik di mikrotikRoutes.
  */
 export function registerCatalogMultiBrandRoutes(app: Express): void {
   ensureCatalogProductUploadDir();
-  app.set("views", path.join(process.cwd(), "views"));
-  app.set("view engine", "ejs");
+
+  /* SSR katalog brand — didaftarkan di atas agar jelas dipisah dari SPA */
+  app.get("/brand/:slug/:id", pageBrandProductDetail);
+  app.get("/brand/:slug", pageBrandCatalog);
 
   app.get("/api/brands", apiListBrands);
   app.get("/api/products", apiListProducts);
@@ -71,9 +72,6 @@ export function registerCatalogMultiBrandRoutes(app: Express): void {
     apiUpdateProduct,
   );
   app.delete("/api/products/:id", apiDeleteProduct);
-
-  app.get("/brand/:slug/:id", pageBrandProductDetail);
-  app.get("/brand/:slug", pageBrandCatalog);
 
   app.get("/admin/v2/products", pageAdminV2ProductList);
   app.get("/admin/v2/products/new", pageAdminV2ProductNew);

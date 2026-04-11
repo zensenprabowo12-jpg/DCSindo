@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <%- include('../partials/head') %>
-</head>
-<body>
-  <div class="wrap">
-    <div class="topbar">
-      <a class="logo" href="/mikrotik">Katalog MikroTik</a>
-    </div>
-    <div class="card">
-      <h1><%= title %></h1>
-      <p><%= message %></p>
-      <p style="margin-top:1rem;"><a href="/mikrotik">Kembali ke daftar</a></p>
-    </div>
+<%- include('../../mikrotik/views/layouts/shell-start') %>
+<div class="wrap">
+  <div class="card">
+    <h1><%= title %></h1>
+    <p><%= message %></p>
+    <p style="margin-top:1rem;"><a href="/brand/mikrotik">Kembali ke katalog</a> · <a href="/">Beranda</a></p>
   </div>
-</body>
-</html>
+</div>
+<%- include('../../mikrotik/views/layouts/shell-end') %>

@@ -38,7 +38,6 @@ INSERT INTO products (
   nama_produk,
   deskripsi,
   spesifikasi,
-  harga,
   gambar,
   created_at
 )
@@ -47,7 +46,6 @@ SELECT
   pm.nama_produk,
   pm.deskripsi,
   pm.spesifikasi,
-  pm.harga,
   pm.gambar,
   pm.created_at
 FROM produk_mikrotik pm
@@ -81,7 +79,6 @@ SELECT
   b.nama_brand,
   b.slug,
   p.nama_produk,
-  p.harga,
   p.gambar,
   p.created_at
 FROM products p

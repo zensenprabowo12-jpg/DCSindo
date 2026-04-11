@@ -82,7 +82,7 @@ export default function HomeUtama() {
               {
                 name: "MikroTik",
                 image: "/images/1.logo/mikrotikchatgpt.png",
-                path: "/mikrotik",
+                path: "/brand/mikrotik",
                 bg: "bg-slate-50/50 dark:bg-slate-900/10",
                 external: true,
               },
