@@ -15,11 +15,7 @@ import AlgcomSupport from "@/pages/support/Algcom";
 import VsolSupport from "@/pages/support/Vsol";
 import Cart from "@/pages/cart";
 import ComingSoon from "@/pages/coming-soon";
-
-// 🔥 TAMBAHAN REACT ROUTER (KHUSUS MIKROTIK DETAIL)
-import { BrowserRouter, Routes, Route as ReactRoute } from "react-router-dom";
-import MikrotikPage from "../../mikrotik/mikrotik";
-import DetailProduk from "../../mikrotik/detailproduct";
+import MikrotikServerReload from "@/components/MikrotikServerReload";
 
 function RouterWouter() {
   return (
@@ -38,19 +34,11 @@ function RouterWouter() {
       <Route path="/support/vsol" component={VsolSupport} />
       <Route path="/cart" component={Cart} />
       <Route path="/coming-soon" component={ComingSoon} />
+      {/* Katalog MikroTik = HTML dari Express (EJS); reload agar request ke server */}
+      <Route path="/mikrotik/:id" component={MikrotikServerReload} />
+      <Route path="/mikrotik" component={MikrotikServerReload} />
       <Route component={NotFound} />
     </Switch>
-  );
-}
-
-function MikrotikRouter() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <ReactRoute path="/mikrotik" element={<MikrotikPage />} />
-        <ReactRoute path="/mikrotik/:id" element={<DetailProduk />} />
-      </Routes>
-    </BrowserRouter>
   );
 }
 
@@ -59,12 +47,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-
-        {/* Wouter routes (utama) */}
         <RouterWouter />
-
-        {/* React Router khusus Mikrotik */}
-        <MikrotikRouter />
       </TooltipProvider>
     </QueryClientProvider>
   );

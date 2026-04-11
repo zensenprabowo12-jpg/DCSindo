@@ -58,11 +58,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const toggleTheme = () =>
     setTheme(prev => (prev === "light" ? "dark" : "light"));
 
-  const brands = [
+  const brands: {
+    name: string;
+    path: string;
+    support: string;
+    external?: boolean;
+  }[] = [
     { name: "Ubiquiti", path: "/home-ubiquiti", support: "/support/ubiquiti" },
-    { name: "Mikrotik", path: "/home-mikrotik", support: "/support/mikrotik" },
+    { name: "Mikrotik", path: "/mikrotik", support: "/support/mikrotik", external: true },
     { name: "ALGcom", path: "/home-algcom", support: "/support/algcom" },
-    { name: "V-SOL", path: "/home-vsol", support: "/support/vsol" }
+    { name: "V-SOL", path: "/home-vsol", support: "/support/vsol" },
   ];
 
   const activeBrand =
@@ -129,13 +134,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     exit={{ opacity: 0 }}
                     className="absolute top-14 left-1/2 -translate-x-1/2 w-60 bg-background border border-border rounded-2xl shadow-xl p-4"
                   >
-                    {brands.map((brand) => (
-                      <Link key={brand.path} href={brand.path}>
-                        <a className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition">
+                    {brands.map((brand) =>
+                      brand.external ? (
+                        <a
+                          key={brand.path}
+                          href={brand.path}
+                          className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition"
+                        >
                           {brand.name}
                         </a>
-                      </Link>
-                    ))}
+                      ) : (
+                        <Link key={brand.path} href={brand.path}>
+                          <a className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition">
+                            {brand.name}
+                          </a>
+                        </Link>
+                      ),
+                    )}
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -253,13 +268,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex flex-wrap justify-center md:justify-start gap-8">
-              {brands.map((brand) => (
-                <Link key={brand.path} href={brand.path}>
-                  <a className="text-sm font-black uppercase tracking-widest hover:text-primary transition-colors">
+              {brands.map((brand) =>
+                brand.external ? (
+                  <a
+                    key={brand.path}
+                    href={brand.path}
+                    className="text-sm font-black uppercase tracking-widest hover:text-primary transition-colors"
+                  >
                     {brand.name}
                   </a>
-                </Link>
-              ))}
+                ) : (
+                  <Link key={brand.path} href={brand.path}>
+                    <a className="text-sm font-black uppercase tracking-widest hover:text-primary transition-colors">
+                      {brand.name}
+                    </a>
+                  </Link>
+                ),
+              )}
             </div>
             
             <div className="text-sm text-muted-foreground/60">
