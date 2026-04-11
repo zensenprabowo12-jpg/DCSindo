@@ -1,4 +1,6 @@
+import "dotenv/config";
 import express, { type Request, Response, NextFunction } from "express";
+import { verifyMysqlOnStartup } from "./config/db";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
@@ -61,6 +63,7 @@ app.use((req, res, next) => {
 
 (async () => {
   await registerRoutes(httpServer, app);
+  await verifyMysqlOnStartup();
 
   app.use((err: any, _req: Request, res: Response, next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
@@ -90,14 +93,15 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || "5000", 10);
-  httpServer.listen(
-    {
-      port,
-      host: "0.0.0.0",
-      reusePort: true,
-    },
-    () => {
-      log(`serving on port ${port}`);
-    },
-  );
+  httpServer.on("error", (err: NodeJS.ErrnoException) => {
+    console.error("[server] Gagal bind port:", err.message);
+    if (err.code === "EADDRINUSE") {
+      console.error(`Port ${port} sudah dipakai. Hentikan proses lain atau set PORT lain di .env`);
+    }
+    process.exit(1);
+  });
+  // reusePort tidak didukung dengan baik di Windows → listen bisa gagal → ERR_CONNECTION_REFUSED
+  httpServer.listen(port, "0.0.0.0", () => {
+    log(`serving on port ${port}`);
+  });
 })();

@@ -73,41 +73,42 @@ export default function HomeUtama() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { 
-                name: "Ubiquiti", 
-                image: "/images/1.logo/Ubiquitichatgpt.png", 
+              {
+                name: "Ubiquiti",
+                image: "/images/1.logo/Ubiquitichatgpt.png",
                 path: "/home-ubiquiti",
-                bg: "bg-blue-50/50 dark:bg-blue-900/10"
+                bg: "bg-blue-50/50 dark:bg-blue-900/10",
               },
-              { 
-                name: "MikroTik", 
-                image: "/images/1.logo/mikrotikchatgpt.png", 
-                path: "/coming-soon",
-                bg: "bg-slate-50/50 dark:bg-slate-900/10"
+              {
+                name: "MikroTik",
+                image: "/images/1.logo/mikrotikchatgpt.png",
+                path: "/brand/mikrotik",
+                bg: "bg-slate-50/50 dark:bg-slate-900/10",
+                external: true,
               },
-              { 
-                name: "ALGcom", 
-                image: "/images/1.logo/algcomchatgpt.png", 
+              {
+                name: "ALGcom",
+                image: "/images/1.logo/algcomchatgpt.png",
                 path: "/coming-soon",
-                bg: "bg-gray-50/50 dark:bg-gray-900/10"
+                bg: "bg-gray-50/50 dark:bg-gray-900/10",
               },
-              { 
-                name: "V-SOL", 
-                image: "/images/1.logo/vsolchatgpt.png", 
+              {
+                name: "V-SOL",
+                image: "/images/1.logo/vsolchatgpt.png",
                 path: "/coming-soon",
-                bg: "bg-zinc-50/50 dark:bg-zinc-900/10"
-              }
-            ].map((brand, i) => (
-              <Link key={i} href={brand.path}>
-                <motion.div 
+                bg: "bg-zinc-50/50 dark:bg-zinc-900/10",
+              },
+            ].map((brand, i) => {
+              const card = (
+                <motion.div
                   whileHover={{ scale: 1.03 }}
                   className={cn(
                     "relative aspect-[4/5] border border-gray-100 dark:border-white/5 overflow-hidden group cursor-pointer transition-all duration-500 shadow-sm hover:shadow-2xl rounded-3xl",
-                    brand.bg
+                    brand.bg,
                   )}
                 >
                   <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
-                  
+
                   <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
                     <img src={brand.image} alt={brand.name} className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -119,8 +120,20 @@ export default function HomeUtama() {
                     </p>
                   </div>
                 </motion.div>
-              </Link>
-            ))}
+              );
+              if ("external" in brand && brand.external) {
+                return (
+                  <a key={i} href={brand.path} className="block">
+                    {card}
+                  </a>
+                );
+              }
+              return (
+                <Link key={i} href={brand.path}>
+                  {card}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

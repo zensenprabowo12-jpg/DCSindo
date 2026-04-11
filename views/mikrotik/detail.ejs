@@ -1,0 +1,21 @@
+<%- include('../../mikrotik/views/layouts/shell-start') %>
+<div class="wrap">
+  <p class="muted" style="margin-top:0;"><a href="/brand/mikrotik">← Katalog MikroTik</a></p>
+
+  <div class="card" style="margin-top:1rem;">
+    <div style="display:grid;grid-template-columns:1fr;gap:1.25rem;">
+      <% if (product.gambar) { %>
+        <img src="<%= product.gambar %>" alt="<%= product.nama_produk %>" style="width:100%;max-width:420px;border-radius:0.5rem;" />
+      <% } %>
+      <div>
+        <h1><%= product.nama_produk %></h1>
+        <h2 style="margin-top:0;">Deskripsi</h2>
+        <p style="white-space:pre-wrap;"><%= product.deskripsi %></p>
+        <h2>Spesifikasi</h2>
+        <p style="white-space:pre-wrap;"><%= product.spesifikasi %></p>
+        <p class="muted" style="font-size:0.8rem;margin-top:1.5rem;">Diarsipkan: <%= new Date(product.created_at).toLocaleString('id-ID') %></p>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('../../mikrotik/views/layouts/shell-end') %>

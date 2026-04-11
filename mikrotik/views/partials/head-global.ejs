@@ -1,0 +1,164 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title><%= typeof title !== 'undefined' ? title : 'DCS' %></title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --page-bg: #f8fafc;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --header-bg: rgba(255, 255, 255, 0.88);
+    --accent: #ea580c;
+    --footer-bg: #0f172a;
+    --footer-text: #f8fafc;
+    --footer-muted: #94a3b8;
+    --card: #ffffff;
+    --card-border: #e2e8f0;
+  }
+  html.dark {
+    --page-bg: #0c0f14;
+    --text: #e8edf4;
+    --muted: #8b98a8;
+    --border: #243044;
+    --header-bg: rgba(12, 15, 20, 0.92);
+    --footer-bg: #030712;
+    --footer-text: #f1f5f9;
+    --footer-muted: #94a3b8;
+    --card: #141a22;
+    --card-border: #243044;
+  }
+  * { box-sizing: border-box; }
+  body.dcs-layout {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "DM Sans", system-ui, sans-serif;
+    background: var(--page-bg);
+    color: var(--text);
+    line-height: 1.55;
+    padding-top: 4rem;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .dcs-container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+  .dcs-header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    height: 4rem; display: flex; align-items: center;
+    background: var(--header-bg); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .dcs-header-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 1rem; width: 100%;
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  }
+  .dcs-logo img { height: 2rem; width: auto; display: block; }
+  @media (min-width: 768px) { .dcs-logo img { height: 3.25rem; } }
+  html.dark .dcs-logo .logo-light { display: none !important; }
+  html:not(.dark) .dcs-logo .logo-dark { display: none !important; }
+  .dcs-nav-desktop { display: none; align-items: center; gap: 2.5rem; }
+  @media (min-width: 768px) { .dcs-nav-desktop { display: flex; } }
+  .dcs-nav-desktop a, .dcs-nav-desktop summary {
+    font-weight: 500; color: var(--text); cursor: pointer; padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem; list-style: none;
+  }
+  .dcs-nav-desktop a:hover, .dcs-nav-desktop summary:hover { color: var(--accent); }
+  .dcs-details { position: relative; }
+  .dcs-details summary::-webkit-details-marker { display: none; }
+  .dcs-details > summary::after { content: " ▾"; font-size: 0.7em; opacity: 0.6; }
+  .dcs-dd-panel {
+    position: absolute; top: calc(100% + 0.5rem); left: 50%; transform: translateX(-50%);
+    min-width: 15rem; padding: 0.5rem; border-radius: 1rem;
+    background: var(--card); border: 1px solid var(--border); box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+  }
+  html.dark .dcs-dd-panel { box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+  .dcs-dd-panel a {
+    display: block; padding: 0.5rem 1rem; border-radius: 0.75rem; color: var(--text); text-decoration: none;
+  }
+  .dcs-dd-panel a:hover { background: rgba(234, 88, 12, 0.1); color: var(--accent); text-decoration: none; }
+  .dcs-actions { display: flex; align-items: center; gap: 0.25rem; }
+  .dcs-icon-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 2.5rem; height: 2.5rem; border: none; background: transparent;
+    border-radius: 0.5rem; cursor: pointer; color: var(--text);
+  }
+  .dcs-icon-btn:hover { background: rgba(148, 163, 184, 0.15); }
+  .dcs-main { flex: 1; width: 100%; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 1.25rem; }
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid var(--border); margin-bottom: 1.5rem;
+  }
+  .logo { font-weight: 700; letter-spacing: 0.08em; font-size: 0.85rem; color: var(--text); text-decoration: none; }
+  .logo:hover { text-decoration: none; opacity: 0.85; }
+  .btn {
+    display: inline-block; padding: 0.5rem 1rem; border-radius: 0.5rem;
+    background: var(--accent); color: #fff; font-weight: 600; border: none; cursor: pointer; font-size: 0.9rem;
+  }
+  .btn:hover { filter: brightness(1.05); text-decoration: none; }
+  .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+  .btn-danger { background: #dc2626; color: #fff; }
+  .card {
+    background: var(--card); border: 1px solid var(--card-border); border-radius: 0.75rem; padding: 1rem 1.25rem;
+  }
+  .muted { color: var(--muted); font-size: 0.9rem; }
+  .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+  .thumb {
+    width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 0.5rem; background: var(--page-bg);
+  }
+  h1 { font-size: 1.75rem; margin: 0 0 0.5rem; }
+  h2 { font-size: 1.15rem; margin: 0 0 0.35rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  th, td { border-bottom: 1px solid var(--border); padding: 0.65rem 0.35rem; text-align: left; vertical-align: middle; }
+  th { color: var(--muted); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .flash { padding: 0.75rem 1rem; border-radius: 0.5rem; margin-bottom: 1rem; font-size: 0.9rem; }
+  .flash-ok { background: #14532d; color: #bbf7d0; border: 1px solid #166534; }
+  .flash-err { background: #450a0a; color: #fecaca; border: 1px solid #7f1d1d; }
+  label { display: block; font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem; }
+  input[type="text"], input[type="number"], textarea, select, select.dcs-select {
+    width: 100%; padding: 0.55rem 0.65rem; border-radius: 0.45rem; border: 1px solid var(--border);
+    background: var(--page-bg); color: var(--text); font: inherit;
+  }
+  textarea { min-height: 120px; resize: vertical; }
+  .field { margin-bottom: 1rem; }
+  #imgPreview { max-width: 280px; max-height: 200px; border-radius: 0.5rem; margin-top: 0.5rem; display: none; border: 1px solid var(--border); }
+  #imgPreview.visible { display: block; }
+  .dcs-footer { background: var(--footer-bg); color: var(--footer-text); padding: 4rem 0; margin-top: auto; }
+  .dcs-footer a { color: var(--footer-text); }
+  .dcs-footer a:hover { color: #fb923c; text-decoration: none; }
+  .dcs-footer-grid { display: flex; flex-direction: column; gap: 3rem; margin-bottom: 3rem; }
+  @media (min-width: 768px) {
+    .dcs-footer-grid { flex-direction: row; justify-content: space-between; align-items: flex-start; }
+  }
+  .dcs-footer h2 { font-size: clamp(1.75rem, 4vw, 3rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.1; margin: 0 0 1rem; }
+  .dcs-footer-lead { color: var(--footer-muted); font-size: 1.1rem; max-width: 28rem; margin: 0; }
+  .dcs-footer-row { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.5rem; }
+  .dcs-footer-row svg { flex-shrink: 0; margin-top: 0.15rem; opacity: 0.9; }
+  .dcs-footer-social { display: flex; gap: 1.25rem; padding-top: 0.5rem; }
+  .dcs-footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; align-items: center; }
+  .dcs-footer-brands { display: flex; flex-wrap: wrap; gap: 2rem; }
+  .dcs-footer-brands a { font-size: 0.75rem; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; }
+  .dcs-footer-copy { font-size: 0.875rem; color: var(--footer-muted); }
+  .dcs-mobile-nav { display: block; }
+  @media (min-width: 768px) { .dcs-mobile-nav { display: none; } }
+  .dcs-mobile-panel {
+    display: none; position: absolute; top: 4rem; left: 0; right: 0;
+    background: var(--card); border-bottom: 1px solid var(--border); padding: 1rem;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  }
+  .dcs-mobile-panel.open { display: block; }
+  .dcs-mobile-panel a { display: block; padding: 0.65rem 0.5rem; color: var(--text); font-weight: 500; }
+</style>
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "dark") document.documentElement.classList.add("dark");
+      else document.documentElement.classList.remove("dark");
+    } catch (e) {}
+  })();
+</script>

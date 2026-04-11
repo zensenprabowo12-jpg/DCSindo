@@ -1,0 +1,65 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title><%= typeof title !== 'undefined' ? title : 'DCS' %></title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0c0f14;
+    --card: #141a22;
+    --text: #e8edf4;
+    --muted: #8b98a8;
+    --accent: #f97316;
+    --border: #243044;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "DM Sans", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 1.25rem; }
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid var(--border); margin-bottom: 1.5rem;
+  }
+  .logo { font-weight: 700; letter-spacing: 0.08em; font-size: 0.85rem; color: var(--text); text-decoration: none; }
+  .logo:hover { text-decoration: none; opacity: 0.85; }
+  .btn {
+    display: inline-block; padding: 0.5rem 1rem; border-radius: 0.5rem;
+    background: var(--accent); color: #0c0f14; font-weight: 600; border: none; cursor: pointer; font-size: 0.9rem;
+  }
+  .btn:hover { filter: brightness(1.05); text-decoration: none; }
+  .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+  .btn-danger { background: #dc2626; color: #fff; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1rem 1.25rem;
+  }
+  .muted { color: var(--muted); font-size: 0.9rem; }
+  .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+  .thumb {
+    width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 0.5rem; background: #0a0d12;
+  }
+  h1 { font-size: 1.75rem; margin: 0 0 0.5rem; }
+  h2 { font-size: 1.15rem; margin: 0 0 0.35rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  th, td { border-bottom: 1px solid var(--border); padding: 0.65rem 0.35rem; text-align: left; vertical-align: middle; }
+  th { color: var(--muted); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .flash { padding: 0.75rem 1rem; border-radius: 0.5rem; margin-bottom: 1rem; font-size: 0.9rem; }
+  .flash-ok { background: #14532d; color: #bbf7d0; border: 1px solid #166534; }
+  .flash-err { background: #450a0a; color: #fecaca; border: 1px solid #7f1d1d; }
+  label { display: block; font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem; }
+  input[type="text"], input[type="number"], textarea {
+    width: 100%; padding: 0.55rem 0.65rem; border-radius: 0.45rem; border: 1px solid var(--border);
+    background: #0a0d12; color: var(--text); font: inherit;
+  }
+  textarea { min-height: 120px; resize: vertical; }
+  .field { margin-bottom: 1rem; }
+  #imgPreview { max-width: 280px; max-height: 200px; border-radius: 0.5rem; margin-top: 0.5rem; display: none; border: 1px solid var(--border); }
+  #imgPreview.visible { display: block; }
+</style>

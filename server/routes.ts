@@ -1,16 +1,17 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
-import { storage } from "./storage";
+import { registerEjsViewPaths } from "./ejsViews";
+import { registerCatalogMultiBrandRoutes } from "./routes/catalogMultiBrandRoutes";
+import { registerMikrotikRoutes } from "./routes/mikrotikRoutes";
 
 export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  // put application routes here
-  // prefix all routes with /api
-
-  // use storage to perform CRUD operations on the storage interface
-  // e.g. storage.insertUser(user) or storage.getUserByUsername(username)
+  registerEjsViewPaths(app);
+  // Katalog multi-brand didaftarkan lebih dulu agar path /brand/* konsisten
+  registerCatalogMultiBrandRoutes(app);
+  registerMikrotikRoutes(app);
 
   return httpServer;
 }

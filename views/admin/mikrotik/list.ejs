@@ -1,0 +1,63 @@
+<%- include('../../../mikrotik/views/layouts/shell-start') %>
+<div class="wrap">
+  <div class="topbar">
+    <a class="logo" href="/admin/mikrotik">Admin — MikroTik (legacy)</a>
+    <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+      <a href="/brand/mikrotik" class="btn btn-ghost">Lihat katalog</a>
+      <a href="/admin/mikrotik/new" class="btn">+ Produk</a>
+    </div>
+  </div>
+
+  <% 
+    var err = typeof query.error === 'string' ? query.error : (query.error && query.error[0]);
+    var ok = typeof query.success === 'string' ? query.success : (query.success && query.success[0]);
+  %>
+  <% if (ok) { %>
+    <div class="flash flash-ok"><%= ok %></div>
+  <% } %>
+  <% if (err) { %>
+    <div class="flash flash-err"><%= err %></div>
+  <% } %>
+
+  <h1>Daftar produk</h1>
+  <p class="muted">Kelola tabel lama <code>produk_mikrotik</code>. Katalog publik: <a href="/brand/mikrotik">multi-brand</a>.</p>
+
+  <% if (!products.length) { %>
+    <p style="margin-top:1rem;">Belum ada data.</p>
+  <% } else { %>
+    <div class="card" style="margin-top:1rem;overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Gambar</th>
+            <th>Nama</th>
+            <th>Harga</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% products.forEach(function (p) { %>
+            <tr>
+              <td><%= p.id %></td>
+              <td>
+                <% if (p.gambar) { %>
+                  <img src="<%= p.gambar %>" alt="" style="width:56px;height:42px;object-fit:cover;border-radius:4px;" />
+                <% } else { %>—<% } %>
+              </td>
+              <td><%= p.nama_produk %></td>
+              <td><%= p.harga ? 'Rp ' + Number(p.harga).toLocaleString('id-ID') : '—' %></td>
+              <td style="white-space:nowrap;">
+                <a href="/admin/mikrotik/<%= p.id %>/edit">Edit</a>
+                <form action="/admin/mikrotik/<%= p.id %>/delete" method="post" style="display:inline;margin-left:0.5rem;" onsubmit="return confirm('Hapus produk ini?');">
+                  <button type="submit" class="btn btn-danger" style="padding:0.25rem 0.5rem;font-size:0.8rem;">Hapus</button>
+                </form>
+              </td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+  <% } %>
+</div>
+<%- include('../../../mikrotik/views/layouts/shell-end') %>
