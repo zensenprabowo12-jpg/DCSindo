@@ -37,5 +37,4 @@ INSERT INTO brands (nama_brand, slug) VALUES
   ('Ubiquiti', 'ubiquiti'),
   ('MikroTik', 'mikrotik'),
   ('VSOL', 'vsol'),
-  ('ALGcom', 'algcom')
 ON DUPLICATE KEY UPDATE nama_brand = VALUES(nama_brand);
