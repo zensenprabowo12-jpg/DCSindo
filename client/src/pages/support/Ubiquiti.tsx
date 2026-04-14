@@ -1,11 +1,16 @@
-import { ArrowRight, FileText, CheckCircle, Shield, X } from "lucide-react";
+import {
+  ArrowRight,
+  FileText,
+  CheckCircle,
+  Shield,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Layout from "@/components/layout";
-import { useState } from "react";
+import { useLocation } from "wouter";
 
-export default function UbiquitiSupport() {
-  const [openGPT, setOpenGPT] = useState(false);
+export default function Ubiquiti() {
+  const [, setLocation] = useLocation();
 
   const trendingArticles = [
     "UniFi - How to set up a Dream Machine",
@@ -32,13 +37,14 @@ export default function UbiquitiSupport() {
     "Other 2",
   ];
 
-  // ✅ FIX: OPEN AS NEW APP WINDOW (NO IFRAME)
   const openGPTWindow = () => {
-    window.open(
-      "https://gpt.distributor.ui-apps.com/?distributor=PTDINAMIKACIPTASOLUSI",
-      "UniFiGPT",
-      "width=1200,height=800,left=200,top=100,resizable=yes,scrollbars=yes"
-    );
+    if (typeof window !== "undefined") {
+      window.open(
+        "https://gpt.distributor.ui-apps.com/?distributor=PTDINAMIKACIPTASOLUSI",
+        "UniFiGPT",
+        "width=1200,height=800"
+      );
+    }
   };
 
   return (
@@ -53,8 +59,8 @@ export default function UbiquitiSupport() {
           Ubiquiti Support Center
         </motion.h1>
 
-        {/* BUTTON */}
-        <div className="mb-8">
+        {/* BUTTON GPT */}
+        <div className="mb-6">
           <button
             onClick={openGPTWindow}
             className="flex items-center gap-2 mx-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg transition active:scale-95"
@@ -65,6 +71,21 @@ export default function UbiquitiSupport() {
               alt="UniFi"
             />
             UniFi GPT
+          </button>
+        </div>
+
+        {/* WARNING */}
+        <div className="bg-gray-200 text-black max-w-2xl mx-auto rounded-xl p-8 mt-6">
+          <div className="text-xl font-bold mb-3">⚠️ Warning</div>
+          <p className="mb-4">
+            Website ini berisi produk dan solusi networking profesional.
+          </p>
+
+          <button
+            onClick={() => setLocation("/firmware")}
+            className="bg-black text-white px-6 py-2 rounded-full"
+          >
+            Info Selengkapnya
           </button>
         </div>
       </section>
@@ -106,9 +127,7 @@ export default function UbiquitiSupport() {
             {categories.map((cat, i) => (
               <a
                 key={i}
-                href="https://help.ui.com/hc/en-us/categories/6583256751383"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
                 className="p-6 rounded-2xl bg-card border border-border text-center hover:shadow-md transition group hover:border-primary/50"
               >
                 <Shield className="w-8 h-8 mx-auto mb-4 text-muted-foreground group-hover:text-primary transition-colors" />
@@ -124,7 +143,9 @@ export default function UbiquitiSupport() {
       {/* RMA */}
       <section className="py-24 text-center px-4">
         <CheckCircle className="w-12 h-12 text-primary mx-auto mb-6" />
-        <h2 className="text-3xl font-bold mb-4">RMA & Device Replacement</h2>
+        <h2 className="text-3xl font-bold mb-4">
+          RMA & Device Replacement
+        </h2>
         <p className="text-muted-foreground mb-8">
           Start your automated RMA process here.
         </p>

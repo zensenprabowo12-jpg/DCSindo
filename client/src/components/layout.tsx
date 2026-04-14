@@ -66,7 +66,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   }[] = [
     { name: "Ubiquiti", path: "/home-ubiquiti", support: "/support/ubiquiti" },
     { name: "Mikrotik", path: "/brand/mikrotik", support: "/support/mikrotik", external: true },
-    { name: "ALGcom", path: "/home-algcom", support: "/support/algcom" },
     { name: "V-SOL", path: "/home-vsol", support: "/support/vsol" },
   ];
 
