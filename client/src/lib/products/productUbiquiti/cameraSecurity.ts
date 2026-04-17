@@ -1154,7 +1154,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "AI Port",
     category: "Camera Security",
     subfilter: "NVRs and Edge Devices",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/8.up-ai-port/1.p-utama-up-ai-port.png",
     shortDescription:
       "AI appliance that enhances any UniFI or third-party camera with AI detection, classification, and recognition capabilites.",
     specs: [
@@ -1169,15 +1169,24 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/8.up-ai-port/1.p-utama-up-ai-port.png",
+      "/images/camerasecurity/8.up-ai-port/2.p-dimensi-up-ai-port.png",
+      "/images/camerasecurity/8.up-ai-port/3.p-deployment-up-ai-port.png",
+      "/images/camerasecurity/8.up-ai-port/p-itb-up-ai-port.avif",
+      "/images/camerasecurity/8.up-ai-port/p-mkt0-up-ai-port.png",
+      "/images/camerasecurity/8.up-ai-port/p-mkt1-up-ai-port.png",
+      "/images/camerasecurity/8.up-ai-port/p-mkt2-up-ai-port.png",
+      "/images/camerasecurity/8.up-ai-port/p-mkt3-up-ai-port.png",
+      "/images/camerasecurity/8.up-ai-port/p-mkt4-up-ai-port.png",
+      "/images/camerasecurity/8.up-ai-port/p-mkt5-up-ai-port.png",
+      "/images/camerasecurity/8.up-ai-port/p-mkt6-up-ai-port.png",
+      "/images/camerasecurity/8.up-ai-port/p-mkt7-up-ai-port.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/8.up-ai-port/p-mkt5-up-ai-port.png",
+      "/images/camerasecurity/8.up-ai-port/p-itb-up-ai-port.avif",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1222,10 +1231,8 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/8.up-ai-port/p-itb-up-ai-port.avif",
+ }, 
     ],
   },
 
@@ -1235,7 +1242,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "Protect Viewport",
     category: "Camera Security",
     subfilter: "NVRs and Edge Devices",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/9.up-viewport/1.p-utama-up-viewport.png",
     shortDescription:
       "Easy-to-use hub for viewing Protect camera feeds on an HDMI display.",
     specs: [
@@ -1250,15 +1257,24 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/9.up-viewport/1.p-utama-up-viewport.png",
+      "/images/camerasecurity/9.up-viewport/2.p-dimensi-up-viewport.png",
+      "/images/camerasecurity/9.up-viewport/3.p-deployment-up-viewport.png",
+      "/images/camerasecurity/9.up-viewport/p-itb-up-viewport.avif",
+      "/images/camerasecurity/9.up-viewport/p-mkt0-up-viewport.png",
+      "/images/camerasecurity/9.up-viewport/p-mkt1-up-viewport.png",
+      "/images/camerasecurity/9.up-viewport/p-mkt2-up-viewport.png",
+      "/images/camerasecurity/9.up-viewport/p-mkt3-up-viewport.png",
+      "/images/camerasecurity/9.up-viewport/p-mkt4-up-viewport.png",
+      "/images/camerasecurity/9.up-viewport/p-mkt5-up-viewport.png",
+      "/images/camerasecurity/9.up-viewport/p-mkt6-up-viewport.png",
+
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/9.up-viewport/p-mkt1-up-viewport.png",
+      "/images/camerasecurity/9.up-viewport/p-itb-up-viewport.avif",
     ],
 
     // Bullet points untuk deskripsi produk
