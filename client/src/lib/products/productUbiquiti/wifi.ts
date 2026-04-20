@@ -74,7 +74,7 @@ export const wifiProducts: Product[] = [
     name: "E7",
     category: "WiFi",
     subfilter: "Enterprise",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/WiFi/1.e7/1.p-utama-e7.jpg",
     shortDescription:
       "Enterprise-grade indoor access point with 10-stream WiFi 7 performance, a 10 GbE uplink, and a redundant GbE port for high availability.",
     specs: [
@@ -90,15 +90,25 @@ export const wifiProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/1.e7/1.p-utama-e7.jpg",
+      "/images/WiFi/1.e7/2.p-dimensi-e7.jpg",
+      "/images/WiFi/1.e7/3.p-spec-e7.jpg",
+      "/images/WiFi/1.e7/4.p-deployment-e7.jpg",
+      "/images/WiFi/1.e7/p-itb-e7.jpg",
+      "/images/WiFi/1.e7/p-mkt0-e7.jpg",
+      "/images/WiFi/1.e7/p-mkt1-e7.jpg",
+      "/images/WiFi/1.e7/p-mkt2-e7.jpg",
+      "/images/WiFi/1.e7/p-mkt3-e7.jpg",
+      "/images/WiFi/1.e7/p-mkt4-e7.jpg",
+      "/images/WiFi/1.e7/p-mkt5-e7.jpg",
+      "/images/WiFi/1.e7/p-ov1-e7.png",
+      "/images/WiFi/1.e7/p-ov2-e7.png"
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/1.e7/p-ov1-e7.png",
+      "/images/WiFi/1.e7/p-ov2-e7.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -202,10 +212,9 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      {
+        name: "Device", image: "/images/WiFi/1.e7/p-itb-e7.jpg",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -346,7 +355,7 @@ export const wifiProducts: Product[] = [
     name: "E7 Campus",
     category: "WiFi",
     subfilter: "Enterprise",
-    image: "/images/wifi-ap.jpg",
+    image: "/images/WiFi/2.e7-campus/1.p-utama-e7-campus.jpg",
     shortDescription:
       "Enterprise-grade indoor/outdoor access point with 10-stream tri-band WiFi 7 performance, PRISM™ active RF filtering technology, integrated directional antennas, a 10 GbE uplink, and a redundant GbE port for high availability..",
     specs: [
@@ -361,15 +370,26 @@ export const wifiProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-E7-Campus.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/2.e7-campus/1.p-utama-e7-campus.jpg",
+      "/images/WiFi/2.e7-campus/2.p-dimensi-e7-campus.jpg",
+      "/images/WiFi/2.e7-campus/3.p-spec-e7-campus.jpg",
+      "/images/WiFi/2.e7-campus/4.p-deployment-e7-campus.jpg",
+      "/images/WiFi/2.e7-campus/p-itb-e7-campus.jpg",
+      "/images/WiFi/2.e7-campus/p-mkt0-e7-campus.jpg",
+      "/images/WiFi/2.e7-campus/p-mkt1-e7-campus.jpg",
+      "/images/WiFi/2.e7-campus/p-mkt2-e7-campus.jpg",
+      "/images/WiFi/2.e7-campus/p-mkt3-e7-campus.jpg",
+      "/images/WiFi/2.e7-campus/p-mkt4-e7-campus.jpg",
+      "/images/WiFi/2.e7-campus/p-mkt5-e7-campus.jpg",
+      "/images/WiFi/2.e7-campus/p-mkt6-e7-campus.jpg",
+      "/images/WiFi/2.e7-campus/p-ov1-e7-campus.png",
+      "/images/WiFi/2.e7-campus/p-ov2-e7-campus.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/2.e7-campus/p-ov1-e7-campus.png",
+      "/images/WiFi/2.e7-campus/p-ov2-e7-campus.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -485,10 +505,7 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/WiFi/2.e7-campus/p-itb-e7-campus.jpg", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -682,295 +699,295 @@ export const wifiProducts: Product[] = [
     ]
   },
 
-  // Produk Ketiga dari WiFi, SF Enterprise
-  {
-    id: "E7-Campus-Indoor",
-    name: "E7 Campus Indoor",
-    category: "WiFi",
-    subfilter: "Enterprise",
-    image: "/images/products/Product-UDR-5G-Max.png",
-    shortDescription:
-      "Enterprise-grade access point with 10-stream WiFi 7 performance, expanded 6 GHz indoor spectrum capability, a 10 GbE uplink, and a redundant GbE port for high availability.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" },
-    ],
+  // // Produk Ketiga dari WiFi, SF Enterprise
+  // {
+  //   id: "E7-Campus-Indoor",
+  //   name: "E7 Campus Indoor",
+  //   category: "WiFi",
+  //   subfilter: "Enterprise",
+  //   image: "/images/products/Product-UDR-5G-Max.png",
+  //   shortDescription:
+  //     "Enterprise-grade access point with 10-stream WiFi 7 performance, expanded 6 GHz indoor spectrum capability, a 10 GbE uplink, and a redundant GbE port for high availability.",
+  //   specs: [
+  //     { label: "Throughput", value: "3.5 Gbps IPS" },
+  //     { label: "PoE", value: "2x PoE+, 6x PoE" },
+  //     { label: "WAN", value: "2.5 GbE RJ45" },
+  //     { label: "Storage", value: "128GB SSD Integrated" },
+  //   ],
 
-    // SKU produk
-    sku: "E7-Campus-Indoor",
+  //   // SKU produk
+  //   sku: "E7-Campus-Indoor",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-UDR-5G-Max.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max. Client Count 1000+",
-      "Power Method PoE++",
-      "MIMO 6 GHz 4 x 4 (DL/UL MU-MIMO)",
-      "Supported Data Rates 802.11be (WiFi 7) 7.3 Mbps to 11.4 Gbps (MCS0 - MCS13 NSS1/2/3/4, EHT 20/40/80/160/240/320)"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max. Client Count 1000+",
+  //     "Power Method PoE++",
+  //     "MIMO 6 GHz 4 x 4 (DL/UL MU-MIMO)",
+  //     "Supported Data Rates 802.11be (WiFi 7) 7.3 Mbps to 11.4 Gbps (MCS0 - MCS13 NSS1/2/3/4, EHT 20/40/80/160/240/320)"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "Device: 250 x 250 x 45.5 mm (9.8 x 9.8 x 1.8') Articulating mount: ⌀104 x 149.4 (⌀4.1 x 5.9')" },
-          { label: "WiFi Standard", value: "WiFi 7" },
-          { label: "Spatial Streams", value: "10" },
-          { label: "Coverage Area", value: "465 m² (5,000 ft²)" },
-          { label: "Max. Client Count", value: "1000+" },
-          { label: "Uplink", value: "10 GbE 1 GbE" },
-          { label: "Mounting", value: "Wall, Pole (Mounts Included) VESA (Optional)" },
-          { label: "Power Method", value: "PoE++" }
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "MIMO 6 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
-          { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
-          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "Device: 250 x 250 x 45.5 mm (9.8 x 9.8 x 1.8') Articulating mount: ⌀104 x 149.4 (⌀4.1 x 5.9')" },
+  //         { label: "WiFi Standard", value: "WiFi 7" },
+  //         { label: "Spatial Streams", value: "10" },
+  //         { label: "Coverage Area", value: "465 m² (5,000 ft²)" },
+  //         { label: "Max. Client Count", value: "1000+" },
+  //         { label: "Uplink", value: "10 GbE 1 GbE" },
+  //         { label: "Mounting", value: "Wall, Pole (Mounts Included) VESA (Optional)" },
+  //         { label: "Power Method", value: "PoE++" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Performance",
+  //       items: [
+  //         { label: "MIMO 6 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
+  //         { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
+  //         { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
 
-          { label: "Max. Data Rate 6 GHz", value: "11.5 Gbps (BW320)" },
-          { label: "Max. Data Rate 5 GHz", value: "8.6 Gbps (BW240)" },
-          { label: "Max. Data Rate 2.4 GHz", value: "688 Mbps (BW40)" },
+  //         { label: "Max. Data Rate 6 GHz", value: "11.5 Gbps (BW320)" },
+  //         { label: "Max. Data Rate 5 GHz", value: "8.6 Gbps (BW240)" },
+  //         { label: "Max. Data Rate 2.4 GHz", value: "688 Mbps (BW40)" },
 
-          { label: "Antenna Gain 6 GHz", value: "Directional internal: 12 dBi, 90° x 50°" },
-          { label: "Antenna Gain 5 GHz", value: "Directional internal: 12 dBi, 100° x 55°" },
-          { label: "Antenna Gain 2.4 GHz", value: "Directional internal: 9 dBi, 90° x 80°" },
+  //         { label: "Antenna Gain 6 GHz", value: "Directional internal: 12 dBi, 90° x 50°" },
+  //         { label: "Antenna Gain 5 GHz", value: "Directional internal: 12 dBi, 100° x 55°" },
+  //         { label: "Antenna Gain 2.4 GHz", value: "Directional internal: 9 dBi, 90° x 80°" },
 
-          { label: "Max. TX Power 6 GHz", value: "30 dBm  (36 dBm EIRP)" },
-          { label: "Max. TX Power 5 GHz", value: "30 dBm" },
-          { label: "Max. TX Power 2.4 GHz GHz", value: "23 dBm" },
+  //         { label: "Max. TX Power 6 GHz", value: "30 dBm  (36 dBm EIRP)" },
+  //         { label: "Max. TX Power 5 GHz", value: "30 dBm" },
+  //         { label: "Max. TX Power 2.4 GHz GHz", value: "23 dBm" },
 
-          { label: "Max. BSSIDs", value: "8 per Radio" },
+  //         { label: "Max. BSSIDs", value: "8 per Radio" },
 
-          { label: "Supported Data Rates 802.11be (WiFi 7)", value: "7.3 Mbps to 11.4 Gbps (MCS0 - MCS13 NSS1/2/3/4, EHT 20/40/80/160/240/320)" },
-          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 4.8 Gbps (MCS0 - MCS11 NSS1/2/3/4, HE 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 3.4 Gbps (MCS0 - MCS9 NSS1/2/3/4, VHT 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 600 Mbps (MCS0 - MCS31, HT 20/40)" }
-        ]
-      },
-      {
-        title: "Features",
-        items: [
-          { label: "Wireless Meshing", value: "✓" },
-          { label: "Band Steering", value: "✓" },
-          { label: "802.11v BSS Transition Management", value: "✓" },
-          { label: "802.11r Fast Roaming", value: "✓" },
-          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
-          { label: "Zero-Wait DFS", value: "✓" },
-          { label: "Advanced Radio Management", value: "✓" },
-          { label: "Real-Time Spectral Analysis", value: "✓" },
-          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
-          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
-          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
-          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
-          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
-          { label: "WiFi Speed Limiting", value: "✓" },
-          { label: "Client Device Isolation", value: "✓" },
-          { label: "WiFi Schedules", value: "✓" },
-          { label: "RADIUS over TLS (RadSec)", value: "✓" },
-          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "44W" },
-          { label: "Supported Voltage Range", value: "42.5–57V DC" },
-          { label: "Networking Interface", value: "(1) 10 GbE RJ45 port (1) 1 GbE RJ45 port" },
-          { label: "PRISM™ RF Filtering", value: "✓" },
-          { label: "Weight", value: "Device: 2.2 kg (4.9 lb) With articulating mount: 3.1 kg (6.8 lb)" },
-          { label: "Wind Loading", value: "164.75 N at 200 km/h (37 lbf at 125 mph)" },
-          { label: "Pole Mount Diameter", value: "1–2.5' (25–63.5 mm)" },
-          { label: "Antennas", value: "(1) Internal with directional patterns" },
-          { label: "Antenna beamwidth 6 GHz", value: "90° x 50°" },
-          { label: "Antenna beamwidth 5 GHz", value: "100° x 55°" },
-          { label: "Antenna beamwidth 2.4 GHz", value: "90° x 80°" },
-          { label: "Management", value: "Ethernet" },
-          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
-          { label: "Mount Material", value: "Stainless steel, aluminum alloy" },
-          { label: "LEDs System", value: "R/G/B" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "FCC, IC" },
-          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz U-NII-5 and U-NII-7: 5925 - 6425 MHz, 6525 - 6875 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz 5925 - 7125 MHz" },
-          { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
-        ]
-      },
-      {
-        title: " Software",
-        items: [
-          { label: "Application Requirements UniFi Network", value: "Version 10.0.162 and later" },
-          { label: "Application Requirements Mobile App", value: "iOS™ version 10.30.2 and later Android™ version 10.31.4 and later" },
-        ]
-      }
-    ],
+  //         { label: "Supported Data Rates 802.11be (WiFi 7)", value: "7.3 Mbps to 11.4 Gbps (MCS0 - MCS13 NSS1/2/3/4, EHT 20/40/80/160/240/320)" },
+  //         { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 4.8 Gbps (MCS0 - MCS11 NSS1/2/3/4, HE 20/40/80/160)" },
+  //         { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 3.4 Gbps (MCS0 - MCS9 NSS1/2/3/4, VHT 20/40/80/160)" },
+  //         { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 600 Mbps (MCS0 - MCS31, HT 20/40)" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Features",
+  //       items: [
+  //         { label: "Wireless Meshing", value: "✓" },
+  //         { label: "Band Steering", value: "✓" },
+  //         { label: "802.11v BSS Transition Management", value: "✓" },
+  //         { label: "802.11r Fast Roaming", value: "✓" },
+  //         { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
+  //         { label: "Zero-Wait DFS", value: "✓" },
+  //         { label: "Advanced Radio Management", value: "✓" },
+  //         { label: "Real-Time Spectral Analysis", value: "✓" },
+  //         { label: "Passpoint (Hotspot 2.0)", value: "✓" },
+  //         { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
+  //         { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
+  //         { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
+  //         { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
+  //         { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
+  //         { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
+  //         { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
+  //         { label: "WiFi Speed Limiting", value: "✓" },
+  //         { label: "Client Device Isolation", value: "✓" },
+  //         { label: "WiFi Schedules", value: "✓" },
+  //         { label: "RADIUS over TLS (RadSec)", value: "✓" },
+  //         { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Max. Power Consumption", value: "44W" },
+  //         { label: "Supported Voltage Range", value: "42.5–57V DC" },
+  //         { label: "Networking Interface", value: "(1) 10 GbE RJ45 port (1) 1 GbE RJ45 port" },
+  //         { label: "PRISM™ RF Filtering", value: "✓" },
+  //         { label: "Weight", value: "Device: 2.2 kg (4.9 lb) With articulating mount: 3.1 kg (6.8 lb)" },
+  //         { label: "Wind Loading", value: "164.75 N at 200 km/h (37 lbf at 125 mph)" },
+  //         { label: "Pole Mount Diameter", value: "1–2.5' (25–63.5 mm)" },
+  //         { label: "Antennas", value: "(1) Internal with directional patterns" },
+  //         { label: "Antenna beamwidth 6 GHz", value: "90° x 50°" },
+  //         { label: "Antenna beamwidth 5 GHz", value: "100° x 55°" },
+  //         { label: "Antenna beamwidth 2.4 GHz", value: "90° x 80°" },
+  //         { label: "Management", value: "Ethernet" },
+  //         { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
+  //         { label: "Mount Material", value: "Stainless steel, aluminum alloy" },
+  //         { label: "LEDs System", value: "R/G/B" },
+  //         { label: "NDAA Compliant", value: "✓" },
+  //         { label: "Certifications", value: "FCC, IC" },
+  //         { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz U-NII-5 and U-NII-7: 5925 - 6425 MHz, 6525 - 6875 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz 5925 - 7125 MHz" },
+  //         { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
+  //         { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+  //       ]
+  //     },
+  //     {
+  //       title: " Software",
+  //       items: [
+  //         { label: "Application Requirements UniFi Network", value: "Version 10.0.162 and later" },
+  //         { label: "Application Requirements Mobile App", value: "iOS™ version 10.30.2 and later Android™ version 10.31.4 and later" },
+  //       ]
+  //     }
+  //   ],
 
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
 
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Pro HD 24 PoE",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Professional-grade, Layer 3 Etherlighting™ switch with (2) 10 GbE PoE++, (22) 2.5 GbE PoE++, and (4) 10G SFP+ ports.",
-        specs: [
-          "Etherlighting™ ports that illuminate to indicate port location, speed/link, and native VLAN/network*",
-          "(22) 2.5 GbE, (2) 10 GbE PoE++ ports",
-          "(4) 10G SFP+ ports",
-          "DC power backup ready**",
-          "600W total PoE availability",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442 x 400 x 44 mm (17.4 x 15.7 x 1.7')" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "22 (All PoE++) (2.5G/1G/100M/10M)" },
-          { label: "Port Layout 10 GbE RJ45", value: "2 (All PoE++) (10G/5G/2.5G/1G/100M)" },
-          { label: "Port Layou 10G SFP+t", value: "4 (10G/1G)" },
-          { label: "Switching Capacity", value: "230 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "115 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "60W (Excluding PoE Output) 660W (Including PoE Output)" },
-          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
-          { label: "Application Requirements UniFi Network", value: "Version 9.0.114 and later" },
-        ],
-        productLink: "/products/mounting-kit-e7"
-      },
-      {
-        id: 2,
-        name: "UniFi Premium Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Ultra-thin braided patch cable, designed and optimized for 10 GbE networking.",
-        specs: [
-          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
-          "— 3 mm outer diameter for 0.15-8 m lengths",
-          "— 3.3 mm outer diameter for 12-15 m lengths",
-          "Length: 0.15 to 15 m"
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
-          { label: "Available Colors", value: "White" },
-          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
-          { label: "Supported Data Rate", value: "10G" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Translucent booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
-          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
-          { label: "UV Resistance", value: "ASTM G 151/154" },
-          { label: "Flame Rating", value: "VW-1 (UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
-          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
-        ],
-        productLink: "/products/power-cable-e7"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
-          { label: "Port Layout 1 GbE RJ45", value: "16 (8 PoE+; 8 PoE++) (1G/100M/10M)" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "8 (All PoE++) (2.5G/1G/100M/10M)" },
-          { label: "Port Layou 10G SFP+", value: "2 (10G/1G" },
-          { label: "Switching Capacity", value: "112 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "56 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "50W (Excluding PoE Output) 450W (Including PoE Output)" },
-          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
-          { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 4,
-        name: "UniFi Etherlighting Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
-        specs: [
-          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
-          "— 2.5 mm outer diameter for 0.15-8 m lengths",
-          "— 2.9 mm outer diameter for 12-15 m lengths",
-          "Length: 0.15 to 15 m"
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
-          { label: "Available Colors", value: "White" },
-          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
-          { label: "Supported Data Rate", value: "10G" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Translucent booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
-          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
-          { label: "Flame Rating", value: "FT-2(UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
-          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Pro HD 24 PoE",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Professional-grade, Layer 3 Etherlighting™ switch with (2) 10 GbE PoE++, (22) 2.5 GbE PoE++, and (4) 10G SFP+ ports.",
+  //       specs: [
+  //         "Etherlighting™ ports that illuminate to indicate port location, speed/link, and native VLAN/network*",
+  //         "(22) 2.5 GbE, (2) 10 GbE PoE++ ports",
+  //         "(4) 10G SFP+ ports",
+  //         "DC power backup ready**",
+  //         "600W total PoE availability",
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442 x 400 x 44 mm (17.4 x 15.7 x 1.7')" },
+  //         { label: "Port Layout 2.5 GbE RJ45", value: "22 (All PoE++) (2.5G/1G/100M/10M)" },
+  //         { label: "Port Layout 10 GbE RJ45", value: "2 (All PoE++) (10G/5G/2.5G/1G/100M)" },
+  //         { label: "Port Layou 10G SFP+t", value: "4 (10G/1G)" },
+  //         { label: "Switching Capacity", value: "230 Gbps" },
+  //         { label: "Total Non-Blocking Throughput", value: "115 Gbps" },
+  //         { label: "DHCP Server (Local Networks)", value: "✓" },
+  //         { label: "DHCP Relay", value: "✓" },
+  //         { label: "LACP Port Aggregation", value: "✓" },
+  //         { label: "STP & RSTP", value: "✓" },
+  //         { label: "Max. Power Consumption", value: "60W (Excluding PoE Output) 660W (Including PoE Output)" },
+  //         { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
+  //         { label: "Application Requirements UniFi Network", value: "Version 9.0.114 and later" },
+  //       ],
+  //       productLink: "/products/mounting-kit-e7"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "UniFi Premium Patch Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Ultra-thin braided patch cable, designed and optimized for 10 GbE networking.",
+  //       specs: [
+  //         "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+  //         "— 3 mm outer diameter for 0.15-8 m lengths",
+  //         "— 3.3 mm outer diameter for 12-15 m lengths",
+  //         "Length: 0.15 to 15 m"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+  //         { label: "Available Colors", value: "White" },
+  //         { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+  //         { label: "Supported Data Rate", value: "10G" },
+  //         { label: "Supported PoE type", value: "Up to PoE+++" },
+  //         { label: "Connector", value: "(2) Translucent booted RJ45" },
+  //         { label: "Operating Environment", value: "Indoor" },
+  //         { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+  //         { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+  //         { label: "Cable Shielding Type", value: "UTP" },
+  //         { label: "Cable Conductor Type", value: "Stranded copper" },
+  //         { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+  //         { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+  //         { label: "UV Resistance", value: "ASTM G 151/154" },
+  //         { label: "Flame Rating", value: "VW-1 (UL1581)" },
+  //         { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+  //         { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+  //         { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+  //         { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+  //       ],
+  //       productLink: "/products/power-cable-e7"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
+  //         { label: "Port Layout 1 GbE RJ45", value: "16 (8 PoE+; 8 PoE++) (1G/100M/10M)" },
+  //         { label: "Port Layout 2.5 GbE RJ45", value: "8 (All PoE++) (2.5G/1G/100M/10M)" },
+  //         { label: "Port Layou 10G SFP+", value: "2 (10G/1G" },
+  //         { label: "Switching Capacity", value: "112 Gbps" },
+  //         { label: "Total Non-Blocking Throughput", value: "56 Gbps" },
+  //         { label: "DHCP Server (Local Networks)", value: "✓" },
+  //         { label: "DHCP Relay", value: "✓" },
+  //         { label: "LACP Port Aggregation", value: "✓" },
+  //         { label: "STP & RSTP", value: "✓" },
+  //         { label: "Max. Power Consumption", value: "50W (Excluding PoE Output) 450W (Including PoE Output)" },
+  //         { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
+  //         { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "UniFi Etherlighting Patch Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
+  //       specs: [
+  //         "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+  //         "— 2.5 mm outer diameter for 0.15-8 m lengths",
+  //         "— 2.9 mm outer diameter for 12-15 m lengths",
+  //         "Length: 0.15 to 15 m"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+  //         { label: "Available Colors", value: "White" },
+  //         { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
+  //         { label: "Supported Data Rate", value: "10G" },
+  //         { label: "Supported PoE type", value: "Up to PoE+++" },
+  //         { label: "Connector", value: "(2) Translucent booted RJ45" },
+  //         { label: "Operating Environment", value: "Indoor" },
+  //         { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
+  //         { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+  //         { label: "Cable Shielding Type", value: "UTP" },
+  //         { label: "Cable Conductor Type", value: "Stranded copper" },
+  //         { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
+  //         { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
+  //         { label: "Flame Rating", value: "FT-2(UL1581)" },
+  //         { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+  //         { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+  //         { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+  //         { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
 
   // Produk Keempat dari WiFi, SF Enterprise
   {
     id: "E7-Audience",
     name: "E7 Audience",
     category: "WiFi",
-    subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    subfilter: "Enterprise",
+    image: "/images/WiFi/3.e7-audience/1.p-utama-e7-audience.jpg",
     shortDescription:
       "Enterprise-grade, indoor/outdoor access point designed for high-density environments with 12-stream 5 GHz and 6 GHz WiFi 7 performance, a 10 GbE uplink, and a redundant GbE port for high availability.",
     specs: [
@@ -986,15 +1003,26 @@ export const wifiProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/3.e7-audience/1.p-utama-e7-audience.jpg",
+      "/images/WiFi/3.e7-audience/2.p-dimensi-e7-audience.jpg",
+      "/images/WiFi/3.e7-audience/3.p-spec-e7-audience.jpg",
+      "/images/WiFi/3.e7-audience/4.p-deployment-e7-audience.jpg",
+      "/images/WiFi/3.e7-audience/p-itb-e7-audience.jpg",
+      "/images/WiFi/3.e7-audience/p-mkt0-e7-audience.jpg",
+      "/images/WiFi/3.e7-audience/p-mkt1-e7-audience.jpg",
+      "/images/WiFi/3.e7-audience/p-mkt2-e7-audience.jpg",
+      "/images/WiFi/3.e7-audience/p-mkt3-e7-audience.jpg",
+      "/images/WiFi/3.e7-audience/p-mkt4-e7-audience.jpg",
+      "/images/WiFi/3.e7-audience/p-mkt5-e7-audience.jpg",
+      "/images/WiFi/3.e7-audience/p-mkt6-e7-audience.jpg",
+      "/images/WiFi/3.e7-audience/p-ov1-e7-audience.png",
+      "/images/WiFi/3.e7-audience/p-ov2-e7-audience.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/3.e7-audience/p-ov1-e7-audience.png",
+      "/images/WiFi/3.e7-audience/p-ov2-e7-audience.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1104,10 +1132,7 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/WiFi/3.e7-audience/p-itb-e7-audience.jpg", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1242,279 +1267,279 @@ export const wifiProducts: Product[] = [
     ]
   },
 
-  // Produk Kelima dari WiFi, SF Enterprise
-  {
-    id: "E7-Audience-Indoor",
-    name: "E7 Audience Indoor",
-    category: "WiFi",
-    subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
-    shortDescription:
-      "Enterprise-grade access point designed for high-density environments with 12-stream WiFi 7 performance, expanded 6 GHz indoor spectrum capability, a 10 GbE uplink, and a redundant GbE port for high availability.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" },
-    ],
+  // // Produk Kelima dari WiFi, SF Enterprise
+  // {
+  //   id: "E7-Audience-Indoor",
+  //   name: "E7 Audience Indoor",
+  //   category: "WiFi",
+  //   subfilter: "Flagship",
+  //   image: "/images/products/Product-UDR-5G-Max.png",
+  //   shortDescription:
+  //     "Enterprise-grade access point designed for high-density environments with 12-stream WiFi 7 performance, expanded 6 GHz indoor spectrum capability, a 10 GbE uplink, and a redundant GbE port for high availability.",
+  //   specs: [
+  //     { label: "Throughput", value: "3.5 Gbps IPS" },
+  //     { label: "PoE", value: "2x PoE+, 6x PoE" },
+  //     { label: "WAN", value: "2.5 GbE RJ45" },
+  //     { label: "Storage", value: "128GB SSD Integrated" },
+  //   ],
 
-    // SKU produk
-    sku: "E7-Audience-Indoor",
+  //   // SKU produk
+  //   sku: "E7-Audience-Indoor",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-U7-Pro-XGS.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-U7-Pro-XGS.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max. Client Count 1500+",
-      "MIMO 6 GHz Low Band: 4 x 4 (DL/UL MU-MIMO) High Band: 4 x 4 (DL/UL MU-MIMO)",
-      "Enclosure Material UV-stabilized polycarbonate, aluminum alloy",
-      "Power Method PoE++"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max. Client Count 1500+",
+  //     "MIMO 6 GHz Low Band: 4 x 4 (DL/UL MU-MIMO) High Band: 4 x 4 (DL/UL MU-MIMO)",
+  //     "Enclosure Material UV-stabilized polycarbonate, aluminum alloy",
+  //     "Power Method PoE++"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "Device: 474.1 x 239.4 x 42.2 mm (18.7 x 9.4 x 1.7') Bracket: 150.4 x 113.6 x 125 mm (5.9 x 4.5 x 4.9')" },
-          { label: "WiFi Standard", value: "WiFi 7" },
-          { label: "Spatial Streams", value: "12" },
-          { label: "Coverage Area", value: "465 m² (5,000 ft²)" },
-          { label: "Max. Client Count", value: "1500+" },
-          { label: "Uplink", value: "10 GbE 1 GbE" },
-          { label: "Mounting", value: "Wall, Pole (Mounts Included) VESA (Optional)" },
-          { label: "Power Method", value: "PoE++" }
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "MIMO 6 GHz", value: "Low Band: 4 x 4 (DL/UL MU-MIMO) High Band: 4 x 4 (DL/UL MU-MIMO)" },
-          { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "Device: 474.1 x 239.4 x 42.2 mm (18.7 x 9.4 x 1.7') Bracket: 150.4 x 113.6 x 125 mm (5.9 x 4.5 x 4.9')" },
+  //         { label: "WiFi Standard", value: "WiFi 7" },
+  //         { label: "Spatial Streams", value: "12" },
+  //         { label: "Coverage Area", value: "465 m² (5,000 ft²)" },
+  //         { label: "Max. Client Count", value: "1500+" },
+  //         { label: "Uplink", value: "10 GbE 1 GbE" },
+  //         { label: "Mounting", value: "Wall, Pole (Mounts Included) VESA (Optional)" },
+  //         { label: "Power Method", value: "PoE++" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Performance",
+  //       items: [
+  //         { label: "MIMO 6 GHz", value: "Low Band: 4 x 4 (DL/UL MU-MIMO) High Band: 4 x 4 (DL/UL MU-MIMO)" },
+  //         { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
 
-          { label: "Max. Data Rate 6 GHz", value: "Low Band: 11.5 Gbps (BW320) High Band: 11.5 Gbps (BW320)" },
-          { label: "Max. Data Rate 5 GHz", value: "8.6 Gbps (BW240)" },
+  //         { label: "Max. Data Rate 6 GHz", value: "Low Band: 11.5 Gbps (BW320) High Band: 11.5 Gbps (BW320)" },
+  //         { label: "Max. Data Rate 5 GHz", value: "8.6 Gbps (BW240)" },
 
-          { label: "Antenna Gain 6 GHz", value: "Directional internal: 15 dBi, 50° x 50° Directional internal: 11 dBi, 90° x 90°" },
-          { label: "Antenna Gain 5 GHz", value: "Directional internal: 15 dBi, 50° x 50° Directional internal: 11 dBi, 90° x 90°" },
+  //         { label: "Antenna Gain 6 GHz", value: "Directional internal: 15 dBi, 50° x 50° Directional internal: 11 dBi, 90° x 90°" },
+  //         { label: "Antenna Gain 5 GHz", value: "Directional internal: 15 dBi, 50° x 50° Directional internal: 11 dBi, 90° x 90°" },
 
-          { label: "Max. TX Power 6 GHz", value: "Low Band: 30 dBm (36 dBm EIRP) High Band: 30 dBm (36 dBm EIRP)" },
-          { label: "Max. TX Power 5 GHz", value: "30 dBm" },
+  //         { label: "Max. TX Power 6 GHz", value: "Low Band: 30 dBm (36 dBm EIRP) High Band: 30 dBm (36 dBm EIRP)" },
+  //         { label: "Max. TX Power 5 GHz", value: "30 dBm" },
 
-          { label: "Max. BSSIDs", value: "8 per Radio" },
+  //         { label: "Max. BSSIDs", value: "8 per Radio" },
 
-          { label: "Supported Data Rates 802.11be (WiFi 7)", value: "7.3 Mbps to 11.4 Gbps (MCS0 - MCS13 NSS1/2/3/4, EHT 20/40/80/160/240/320)" },
-          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 4.8 Gbps (MCS0 - MCS11 NSS1/2/3/4, HE 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 3.4 Gbps (MCS0 - MCS9 NSS1/2/3/4, VHT 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 600 Mbps (MCS0 - MCS31, HT 20/40)" }
-        ]
-      },
-      {
-        title: "Features",
-        items: [
-          { label: "Wireless Meshing", value: "✓" },
-          { label: "Band Steering", value: "✓" },
-          { label: "802.11v BSS Transition Management", value: "✓" },
-          { label: "802.11r Fast Roaming", value: "✓" },
-          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
-          { label: "Zero-Wait DFS", value: "✓" },
-          { label: "Advanced Radio Management", value: "✓" },
-          { label: "Real-Time Spectral Analysis", value: "✓" },
-          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
-          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
-          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
-          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
-          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
-          { label: "WiFi Speed Limiting", value: "✓" },
-          { label: "Client Device Isolation", value: "✓" },
-          { label: "WiFi Schedules", value: "✓" },
-          { label: "RADIUS over TLS (RadSec)", value: "✓" },
-          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "51W" },
-          { label: "Supported Voltage Range", value: "42.5–57V DC" },
-          { label: "Networking Interface", value: "(1) 10 GbE RJ45 port (1) 1 GbE RJ45 port" },
-          { label: "PRISM™ RF Filtering", value: "✓" },
-          { label: "Weight", value: "Device: 3.2 kg (7.1 lb) With mount: 4.2 kg (9.3 lb)" },
-          { label: "Pole Mount Diameter", value: "1–3' (25–76 mm)" },
-          { label: "Antennas", value: "(1) Internal with directional patterns" },
-          { label: "Management", value: "Ethernet" },
-          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
-          { label: "Mount Material", value: "Aluminum alloy" },
-          { label: "LEDs System", value: "R/G/B" },
-          { label: "Chanel Bandwidth", value: "VHT 20/40/80/160, HE 20/40/80/160, EHT 20/40/80/160/240/320 (MHz)" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "FCC, IC" },
-          { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
-        ]
-      },
-      {
-        title: " Software",
-        items: [
-          { label: "Application Requirements UniFi Network", value: "Version 10.0.162 and later" },
-          { label: "Application Requirements Mobile App", value: "iOS™ version 10.30.2 and later Android™ version 10.31.4 and later" },
-        ]
-      }
-    ],
+  //         { label: "Supported Data Rates 802.11be (WiFi 7)", value: "7.3 Mbps to 11.4 Gbps (MCS0 - MCS13 NSS1/2/3/4, EHT 20/40/80/160/240/320)" },
+  //         { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 4.8 Gbps (MCS0 - MCS11 NSS1/2/3/4, HE 20/40/80/160)" },
+  //         { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 3.4 Gbps (MCS0 - MCS9 NSS1/2/3/4, VHT 20/40/80/160)" },
+  //         { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 600 Mbps (MCS0 - MCS31, HT 20/40)" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Features",
+  //       items: [
+  //         { label: "Wireless Meshing", value: "✓" },
+  //         { label: "Band Steering", value: "✓" },
+  //         { label: "802.11v BSS Transition Management", value: "✓" },
+  //         { label: "802.11r Fast Roaming", value: "✓" },
+  //         { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
+  //         { label: "Zero-Wait DFS", value: "✓" },
+  //         { label: "Advanced Radio Management", value: "✓" },
+  //         { label: "Real-Time Spectral Analysis", value: "✓" },
+  //         { label: "Passpoint (Hotspot 2.0)", value: "✓" },
+  //         { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
+  //         { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
+  //         { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
+  //         { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
+  //         { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
+  //         { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
+  //         { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
+  //         { label: "WiFi Speed Limiting", value: "✓" },
+  //         { label: "Client Device Isolation", value: "✓" },
+  //         { label: "WiFi Schedules", value: "✓" },
+  //         { label: "RADIUS over TLS (RadSec)", value: "✓" },
+  //         { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Max. Power Consumption", value: "51W" },
+  //         { label: "Supported Voltage Range", value: "42.5–57V DC" },
+  //         { label: "Networking Interface", value: "(1) 10 GbE RJ45 port (1) 1 GbE RJ45 port" },
+  //         { label: "PRISM™ RF Filtering", value: "✓" },
+  //         { label: "Weight", value: "Device: 3.2 kg (7.1 lb) With mount: 4.2 kg (9.3 lb)" },
+  //         { label: "Pole Mount Diameter", value: "1–3' (25–76 mm)" },
+  //         { label: "Antennas", value: "(1) Internal with directional patterns" },
+  //         { label: "Management", value: "Ethernet" },
+  //         { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
+  //         { label: "Mount Material", value: "Aluminum alloy" },
+  //         { label: "LEDs System", value: "R/G/B" },
+  //         { label: "Chanel Bandwidth", value: "VHT 20/40/80/160, HE 20/40/80/160, EHT 20/40/80/160/240/320 (MHz)" },
+  //         { label: "NDAA Compliant", value: "✓" },
+  //         { label: "Certifications", value: "FCC, IC" },
+  //         { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
+  //         { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+  //       ]
+  //     },
+  //     {
+  //       title: " Software",
+  //       items: [
+  //         { label: "Application Requirements UniFi Network", value: "Version 10.0.162 and later" },
+  //         { label: "Application Requirements Mobile App", value: "iOS™ version 10.30.2 and later Android™ version 10.31.4 and later" },
+  //       ]
+  //     }
+  //   ],
 
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
 
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Pro HD 24 PoE",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Professional-grade, Layer 3 Etherlighting™ switch with (2) 10 GbE PoE++, (22) 2.5 GbE PoE++, and (4) 10G SFP+ ports.",
-        specs: [
-          "Etherlighting™ ports that illuminate to indicate port location, speed/link, and native VLAN/network*",
-          "(22) 2.5 GbE, (2) 10 GbE PoE++ ports",
-          "(4) 10G SFP+ ports",
-          "DC power backup ready**",
-          "600W total PoE availability",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442 x 400 x 44 mm (17.4 x 15.7 x 1.7')" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "22 (All PoE++) (2.5G/1G/100M/10M)" },
-          { label: "Port Layout 10 GbE RJ45", value: "2 (All PoE++) (10G/5G/2.5G/1G/100M)" },
-          { label: "Port Layou 10G SFP+t", value: "4 (10G/1G)" },
-          { label: "Switching Capacity", value: "230 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "115 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "60W (Excluding PoE Output) 660W (Including PoE Output)" },
-          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
-          { label: "Application Requirements UniFi Network", value: "Version 9.0.114 and later" },
-        ],
-        productLink: "/products/mounting-kit-e7"
-      },
-      {
-        id: 2,
-        name: "UniFi Premium Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Ultra-thin braided patch cable, designed and optimized for 10 GbE networking.",
-        specs: [
-          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
-          "— 3 mm outer diameter for 0.15-8 m lengths",
-          "— 3.3 mm outer diameter for 12-15 m lengths",
-          "Length: 0.15 to 15 m"
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
-          { label: "Available Colors", value: "White" },
-          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
-          { label: "Supported Data Rate", value: "10G" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Translucent booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
-          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
-          { label: "UV Resistance", value: "ASTM G 151/154" },
-          { label: "Flame Rating", value: "VW-1 (UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
-          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
-        ],
-        productLink: "/products/power-cable-e7"
-      },
-      {
-        id: 3,
-        name: "SFP+ Module",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
-        specs: [
-          "10Gbps support",
-          "Multi-mode fiber",
-          "Hot-swappable"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
-          { label: "Port Layout 1 GbE RJ45", value: "16 (8 PoE+; 8 PoE++) (1G/100M/10M)" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "8 (All PoE++) (2.5G/1G/100M/10M)" },
-          { label: "Port Layou 10G SFP+", value: "2 (10G/1G" },
-          { label: "Switching Capacity", value: "112 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "56 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "50W (Excluding PoE Output) 450W (Including PoE Output)" },
-          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
-          { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 4,
-        name: "UniFi Etherlighting Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
-        specs: [
-          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
-          "— 2.5 mm outer diameter for 0.15-8 m lengths",
-          "— 2.9 mm outer diameter for 12-15 m lengths",
-          "Length: 0.15 to 15 m"
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
-          { label: "Available Colors", value: "White" },
-          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
-          { label: "Supported Data Rate", value: "10G" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Translucent booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
-          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
-          { label: "Flame Rating", value: "FT-2(UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
-          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Pro HD 24 PoE",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Professional-grade, Layer 3 Etherlighting™ switch with (2) 10 GbE PoE++, (22) 2.5 GbE PoE++, and (4) 10G SFP+ ports.",
+  //       specs: [
+  //         "Etherlighting™ ports that illuminate to indicate port location, speed/link, and native VLAN/network*",
+  //         "(22) 2.5 GbE, (2) 10 GbE PoE++ ports",
+  //         "(4) 10G SFP+ ports",
+  //         "DC power backup ready**",
+  //         "600W total PoE availability",
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442 x 400 x 44 mm (17.4 x 15.7 x 1.7')" },
+  //         { label: "Port Layout 2.5 GbE RJ45", value: "22 (All PoE++) (2.5G/1G/100M/10M)" },
+  //         { label: "Port Layout 10 GbE RJ45", value: "2 (All PoE++) (10G/5G/2.5G/1G/100M)" },
+  //         { label: "Port Layou 10G SFP+t", value: "4 (10G/1G)" },
+  //         { label: "Switching Capacity", value: "230 Gbps" },
+  //         { label: "Total Non-Blocking Throughput", value: "115 Gbps" },
+  //         { label: "DHCP Server (Local Networks)", value: "✓" },
+  //         { label: "DHCP Relay", value: "✓" },
+  //         { label: "LACP Port Aggregation", value: "✓" },
+  //         { label: "STP & RSTP", value: "✓" },
+  //         { label: "Max. Power Consumption", value: "60W (Excluding PoE Output) 660W (Including PoE Output)" },
+  //         { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
+  //         { label: "Application Requirements UniFi Network", value: "Version 9.0.114 and later" },
+  //       ],
+  //       productLink: "/products/mounting-kit-e7"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "UniFi Premium Patch Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Ultra-thin braided patch cable, designed and optimized for 10 GbE networking.",
+  //       specs: [
+  //         "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+  //         "— 3 mm outer diameter for 0.15-8 m lengths",
+  //         "— 3.3 mm outer diameter for 12-15 m lengths",
+  //         "Length: 0.15 to 15 m"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+  //         { label: "Available Colors", value: "White" },
+  //         { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+  //         { label: "Supported Data Rate", value: "10G" },
+  //         { label: "Supported PoE type", value: "Up to PoE+++" },
+  //         { label: "Connector", value: "(2) Translucent booted RJ45" },
+  //         { label: "Operating Environment", value: "Indoor" },
+  //         { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+  //         { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+  //         { label: "Cable Shielding Type", value: "UTP" },
+  //         { label: "Cable Conductor Type", value: "Stranded copper" },
+  //         { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+  //         { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+  //         { label: "UV Resistance", value: "ASTM G 151/154" },
+  //         { label: "Flame Rating", value: "VW-1 (UL1581)" },
+  //         { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+  //         { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+  //         { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+  //         { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+  //       ],
+  //       productLink: "/products/power-cable-e7"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "SFP+ Module",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "High-speed 10Gbps SFP+ module for fiber connectivity.",
+  //       specs: [
+  //         "10Gbps support",
+  //         "Multi-mode fiber",
+  //         "Hot-swappable"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
+  //         { label: "Port Layout 1 GbE RJ45", value: "16 (8 PoE+; 8 PoE++) (1G/100M/10M)" },
+  //         { label: "Port Layout 2.5 GbE RJ45", value: "8 (All PoE++) (2.5G/1G/100M/10M)" },
+  //         { label: "Port Layou 10G SFP+", value: "2 (10G/1G" },
+  //         { label: "Switching Capacity", value: "112 Gbps" },
+  //         { label: "Total Non-Blocking Throughput", value: "56 Gbps" },
+  //         { label: "DHCP Server (Local Networks)", value: "✓" },
+  //         { label: "DHCP Relay", value: "✓" },
+  //         { label: "LACP Port Aggregation", value: "✓" },
+  //         { label: "STP & RSTP", value: "✓" },
+  //         { label: "Max. Power Consumption", value: "50W (Excluding PoE Output) 450W (Including PoE Output)" },
+  //         { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
+  //         { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "UniFi Etherlighting Patch Cable",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
+  //       specs: [
+  //         "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+  //         "— 2.5 mm outer diameter for 0.15-8 m lengths",
+  //         "— 2.9 mm outer diameter for 12-15 m lengths",
+  //         "Length: 0.15 to 15 m"
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+  //         { label: "Available Colors", value: "White" },
+  //         { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
+  //         { label: "Supported Data Rate", value: "10G" },
+  //         { label: "Supported PoE type", value: "Up to PoE+++" },
+  //         { label: "Connector", value: "(2) Translucent booted RJ45" },
+  //         { label: "Operating Environment", value: "Indoor" },
+  //         { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
+  //         { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+  //         { label: "Cable Shielding Type", value: "UTP" },
+  //         { label: "Cable Conductor Type", value: "Stranded copper" },
+  //         { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
+  //         { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
+  //         { label: "Flame Rating", value: "FT-2(UL1581)" },
+  //         { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+  //         { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+  //         { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+  //         { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
+  //       ],
+  //       productLink: "/products/sfp-module-10g"
+  //     }
+  //   ]
+  // },
 
   // Produk Pertama dari WiFi, SF Flagship
   {
@@ -1522,7 +1547,7 @@ export const wifiProducts: Product[] = [
     name: "U7 Pro XGS",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/WiFi/4.u7-pro-xgs-b/1.p-utama-u7-pro-xgs-b.jpg",
     shortDescription:
       "Ceiling-mounted 8-stream WiFi 7 AP with dedicated spectral scanning radio and 10/5/2.5/1 GbE support.",
     specs: [
@@ -1537,15 +1562,26 @@ export const wifiProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/4.u7-pro-xgs-b/1.p-utama-u7-pro-xgs-b.jpg",
+      "/images/WiFi/4.u7-pro-xgs-b/2.p-dimensi-u7-pro-xgs-b.jpg",
+      "/images/WiFi/4.u7-pro-xgs-b/3.p-dimensi-u7-pro-xgs-b.jpg",
+      "/images/WiFi/4.u7-pro-xgs-b/4.p-spec-u7-pro-xgs-b.jpg",
+      "/images/WiFi/4.u7-pro-xgs-b/5.p-spec-u7-pro-xgs-b.jpg",
+      "/images/WiFi/4.u7-pro-xgs-b/6.p-spec-u7-pro-xgs-b.jpg",
+      "/images/WiFi/4.u7-pro-xgs-b/p-itb-u7-pro-xgs-b.jpg",
+      "/images/WiFi/4.u7-pro-xgs-b/p-mkt0-u7-pro-xgs-b.jpg",
+      "/images/WiFi/4.u7-pro-xgs-b/p-mkt1-u7-pro-xgs-b.jpg",
+      "/images/WiFi/4.u7-pro-xgs-b/p-mkt2-u7-pro-xgs-b.jpg",
+      "/images/WiFi/4.u7-pro-xgs-b/p-mkt3-u7-pro-xgs-b.jpg",
+      "/images/WiFi/4.u7-pro-xgs-b/p-mkt4-u7-pro-xgs-b.jpg",
+      "/images/WiFi/4.u7-pro-xgs-b/p-ov1-u7-pro-xgs-b.png",
+      "/images/WiFi/4.u7-pro-xgs-b/p-ov2-u7-pro-xgs-b.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/4.u7-pro-xgs-b/p-ov1-u7-pro-xgs-b.png",
+      "/images/WiFi/4.u7-pro-xgs-b/p-ov2-u7-pro-xgs-b.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1657,20 +1693,166 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/WiFi/4.u7-pro-xgs-b/p-itb-u7-pro-xgs-b.jpg", },
     ],
   },
 
   // Produk Kedua dari WiFi, SF Flagship
   {
+    id: "U7-Pro-XG-B",
+    name: "U7 Pro XG",
+    category: "WiFi",
+    subfilter: "Flagship",
+    image: "/images/WiFi/5.u7-pro-xg/1.p-utama-u7-pro-xg.jpg",
+    shortDescription:
+      "Ceiling-mounted 6-stream WiFi 7 AP with 10/5/2.5/1 GbE support.",
+    specs: [
+      { label: "Throughput", value: "3.5 Gbps IPS" },
+      { label: "PoE", value: "2x PoE+, 6x PoE" },
+      { label: "WAN", value: "2.5 GbE RJ45" },
+      { label: "Storage", value: "128GB SSD Integrated" },
+    ],
+
+    // SKU produk
+    sku: "U7-Pro-XG-B",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/WiFi/5.u7-pro-xg/1.p-utama-u7-pro-xg.jpg",
+      "/images/WiFi/5.u7-pro-xg/2.p-dimensi-u7-pro-xg.jpg",
+      "/images/WiFi/5.u7-pro-xg/3.p-dimensi-u7-pro-xg.jpg",
+      "/images/WiFi/5.u7-pro-xg/4.p-spec-u7-pro-xg.jpg",
+      "/images/WiFi/5.u7-pro-xg/5.p-deployment-u7-pro-xg.jpg",
+      "/images/WiFi/5.u7-pro-xg/p-itb-u7-pro-xg.jpg",
+      "/images/WiFi/5.u7-pro-xg/p-mkt0-u7-pro-xg.jpg",
+      "/images/WiFi/5.u7-pro-xg/p-mkt1-u7-pro-xg.jpg",
+      "/images/WiFi/5.u7-pro-xg/p-mkt2-u7-pro-xg.jpg",
+      "/images/WiFi/5.u7-pro-xg/p-mkt3-u7-pro-xg.jpg",
+      "/images/WiFi/5.u7-pro-xg/p-mkt4-u7-pro-xg.jpg",
+      "/images/WiFi/5.u7-pro-xg/p-ov1-u7-pro-xg.png",
+      "/images/WiFi/5.u7-pro-xg/p-ov2-u7-pro-xg.png",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/WiFi/5.u7-pro-xg/p-ov1-u7-pro-xg.png",
+      "/images/WiFi/5.u7-pro-xg/p-ov2-u7-pro-xg.png",
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Note. 6 GHz operation is supported in these countries.",
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀206 x 32.5 mm (⌀8.1 x 1.3')" },
+          { label: "WiFi Standard", value: "WiFi 7" },
+          { label: "Spatial Streams", value: "6" },
+          { label: "Coverage Area", value: "140 m² (1,500 ft²)" },
+          { label: "Max. Client Count", value: "300+" },
+          { label: "Uplink", value: "10 GbE" },
+          { label: "Mounting", value: "Ceiling, Wall (Lite Mount Included)" },
+          { label: "Power Method", value: "PoE+" }
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "MIMO 6 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
+          { label: "MIMO 5 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
+          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
+
+          { label: "Max. Data Rate 6 GHz", value: "5.8 Gbps (BW320)" },
+          { label: "Max. Data Rate 5 GHz", value: "4.3 Gbps (BW240)" },
+          { label: "Max. Data Rate 2.4 GHz", value: "688 Mbps (BW40)" },
+
+          { label: "Antenna Gain 6 GHz", value: "6 dBi" },
+          { label: "Antenna Gain 5 GHz", value: "5 dBi" },
+          { label: "Antenna Gain 2.4 GHz", value: "4 dBi" },
+
+          { label: "Max. TX Power 6 GHz", value: "24 dBm" },
+          { label: "Max. TX Power 5 GHz", value: "26 dBm" },
+          { label: "Max. TX Power 2.4 GHz", value: "23 dBm" },
+
+          { label: "Max. BSSIDs", value: "8 per Radio" },
+
+          { label: "Supported Data Rates 802.11be (WiFi 7)", value: "6 GHz: 7.3 Mbps to 5.8 Gbps (MCS0 - MCS13 NSS1/2, EHT 20/40/80/160/320) 5 GHz: 7.3 Mbps to 4.3 Gbps (MCS0 - MCS13 NSS1/2/3/4, EHT 20/40/80/160/240)" },
+          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 2.4 Gbps (MCS0 - MCS11 NSS1/2, HE 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 1.7 Gbps (MCS0 - MCS9 NSS1/2, VHT 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 300 Mbps (MCS0 - MCS15, HT 20/40)" }
+        ]
+      },
+      {
+        title: "Features",
+        items: [
+          { label: "Wireless Meshing", value: "✓" },
+          { label: "Band Steering", value: "✓" },
+          { label: "802.11v BSS Transition Management", value: "✓" },
+          { label: "802.11r Fast Roaming", value: "✓" },
+          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
+          { label: "Advanced Radio Management", value: "✓" },
+          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
+
+          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
+          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
+          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
+          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
+
+          { label: "WiFi Speed Limiting", value: "✓" },
+          { label: "Client Device Isolation", value: "✓" },
+          { label: "WiFi Schedules", value: "✓" },
+          { label: "RADIUS over TLS (RadSec)", value: "✓" },
+          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Max. Power Consumption", value: "22W" },
+          { label: "Supported Voltage Range", value: "42.5–57V DC" },
+          { label: "Networking Interface", value: "(1) 1/2.5 GbE RJ45 port" },
+          { label: "Weight", value: "750 g (1.7 lb)" },
+          { label: "Management", value: "Ethernet" },
+          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
+          { label: "Mount Material", value: "Stainless steel (SUS304), galvanized steel (SGCC)" },
+          { label: "LEDs System", value: "White/Blue" },
+          { label: "Chanel Bandwidth", value: "Stainless steel (SUS304), galvanized steel (SGCC)" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 06630-25-08356" },
+          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz U-NII-5 to U-NII-8: 5925 - 7125 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz 5925 - 7125 MHz" },
+          { label: "Ambient Operating Temperature", value: "-30 to 40° C (-22 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+        ]
+      },
+      {
+        title: " Software",
+        items: [
+          { label: "Application Requirements UniFi Network", value: "Version 9.0.114 and later (U7 Pro XG - White) Version 9.1.120 and later (U7 Pro XG - Black)" },
+        ]
+      }
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/WiFi/5.u7-pro-xg/p-itb-u7-pro-xg.jpg" },
+    ],
+  },
+
+
+  // Produk Ketiga dari WiFi, SF Flagship
+  {
     id: "U7-Pro-Max",
     name: "U7 Pro Max",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/WiFi/6.u7-pro-max/1.p-utama-u7-pro-max.jpg",
     shortDescription:
       "Ceiling-mounted WiFi 7 AP with 8 spatial streams, 6 GHz support, and a dedicated spectral scanning engine for interference-free WiFi in demanding, large-scale environments.",
     specs: [
@@ -1685,15 +1867,25 @@ export const wifiProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/6.u7-pro-max/1.p-utama-u7-pro-max.jpg",
+      "/images/WiFi/6.u7-pro-max/2.p-dimensi-u7-pro-max.jpg",
+      "/images/WiFi/6.u7-pro-max/3.p-dimensi-u7-pro-max.jpg",
+      "/images/WiFi/6.u7-pro-max/4.p-spec-u7-pro-max.jpg",
+      "/images/WiFi/6.u7-pro-max/5.p-deployment-u7-pro-max.jpg",
+      "/images/WiFi/6.u7-pro-max/p-itb-u7-pro-max.jpg",
+      "/images/WiFi/6.u7-pro-max/p-mkt0-u7-pro-max.jpg",
+      "/images/WiFi/6.u7-pro-max/p-mkt1-u7-pro-max.jpg",
+      "/images/WiFi/6.u7-pro-max/p-mkt2-u7-pro-max.jpg",
+      "/images/WiFi/6.u7-pro-max/p-mkt3-u7-pro-max.jpg",
+      "/images/WiFi/6.u7-pro-max/p-mkt4-u7-pro-max.jpg",
+      "/images/WiFi/6.u7-pro-max/p-ov1-u7-pro-max.png",
+      "/images/WiFi/6.u7-pro-max/p-ov2-u7-pro-max.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/6.u7-pro-max/p-ov1-u7-pro-max.png",
+      "/images/WiFi/6.u7-pro-max/p-ov2-u7-pro-max.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1803,10 +1995,7 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Mounting Kit", image: "/images/WiFi/6.u7-pro-max/p-itb-u7-pro-max.jpg", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1875,374 +2064,6 @@ export const wifiProducts: Product[] = [
           { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
         ],
         productLink: "/products/power-cable-u7-pr0"
-      },
-      {
-        id: 3,
-        name: "Pro Max 24 PoE",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "A 24-port, Layer 3 Etherlighting™ switch capable of high-power PoE++ output.",
-        specs: [
-          "Etherlighting™ ports that illuminate to indicate port location, speed/link, and native VLAN/network*",
-          "(8) 2.5 GbE PoE++ ports",
-          "(16) GbE ports including (8) PoE+ and (8) PoE++",
-          "(2) 10G SFP+ ports",
-          "DC power backup ready",
-          "400W total PoE availabilitly",
-          "*Pair with UniFi Etherlighting Patch Cables for optimal brightness.",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
-          { label: "Port Layout 1 GbE RJ45", value: "16 (8 PoE+; 8 PoE++) (1G/100M/10M)" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "8 (All PoE++) (2.5G/1G/100M/10M)" },
-          { label: "Port Layou 10G SFP+t", value: "2 (10G/1G)" },
-          { label: "Switching Capacity", value: "112 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "56 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "50W (Excluding PoE Output) 450W (Including PoE Output)" },
-          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
-          { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 4,
-        name: "Enterprise 48 PoE (Vintage)",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "A 48-port, Layer 3 switch with 2.5 GbE PoE+ output.",
-        specs: [
-          "(48) 2.5 GbE PoE+ ports",
-          "720W total PoE availability",
-          "DC power backup-ready",
-          "Layer 3 switching",
-          "DC power backup ready",
-          "400W total PoE availabilitly",
-          "*Pair with UniFi Etherlighting Patch Cables for optimal brightness.",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "48 (All PoE+) (2.5G/1G/100M/10M)" },
-          { label: "Port Layou 10G SFP+t", value: "4 (10G/1G)" },
-          { label: "Switching Capacity", value: "160 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "160 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "150W (Excluding PoE Output) 870W (Including PoE Output)" },
-          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
-          { label: "Application Requirements UniFi Network", value: "Version 6.2.26 and later" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 5,
-        name: "Enterprise 24 PoE (Vintage)",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "A 24-port, Layer 3 switch with 2.5 GbE PoE+ output.",
-        specs: [
-          "(12) 2.5 GbE, (12) GbE; all PoE+ ports",
-          "(2) 10G SFP+ ports",
-          "400W total PoE availability",
-          "(2) 10G SFP+ ports",
-          "DC power backup-ready",
-          "Layer 3 switching"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
-          { label: "Port Layout 1 GbE RJ45", value: "12 (All PoE+) (1G/100M/10M)" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "12 (All PoE+) (2.5G/1G/100M/10M)" },
-          { label: "Port Layou 10G SFP+t", value: "2 (10G/1G)" },
-          { label: "Switching Capacity", value: "124 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "62 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "60W (Excluding PoE Output) 460W (Including PoE Output)" },
-          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
-          { label: "Application Requirements UniFi Network", value: "Version 5.14.12 and later" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 6,
-        name: "UniFi Etherlighting Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
-        specs: [
-          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
-          "— 2.5 mm outer diameter for 0.15-8 m lengths",
-          "— 2.9 mm outer diameter for 12-15 m lengths",
-          "Length: 0.15 to 15 m"
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
-          { label: "Available Colors", value: "White" },
-          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
-          { label: "Supported Data Rate", value: "10G" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Translucent booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
-          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
-          { label: "Flame Rating", value: "FT-2(UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
-          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 7,
-        name: "Enterprise 8 PoE (Vintage)",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "An 8-port, Layer 3 switch with 2.5 GbE PoE+ output.",
-        specs: [
-          "(8) 2.5 GbE PoE+ ports",
-          "(2) 10G SFP+ ports",
-          "120W total PoE availability",
-          "Note. These switches are not compatible with the PoE++ requirements of the new U7 and E7 Access Points. We recommend using Enterprise Campus switches for such deployments.",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "200 x 248 x 44 mm (7.9 x 9.8 x 1.7')" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "8 (All PoE+) (2.5G/1G/100M)" },
-          { label: "Port Layou 10G SFP+t", value: "2 (10G/1G)" },
-          { label: "Switching Capacity", value: "80 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "40 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "30W (Excluding PoE Output) 150W (Including PoE Output)" },
-          { label: "Power Method", value: "Universal input, 100–240V AC, 50/60 Hz" },
-          { label: "Application Requirements UniFi Network", value: "Version 6.3.51 and later" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-    ]
-  },
-
-  // Produk Ketiga dari WiFi, SF Flagship
-  {
-    id: "U6-Enterprise",
-    name: "U6 Enterprise",
-    category: "WiFi",
-    subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
-    shortDescription:
-      "Ceiling-mounted WiFi 6E AP with 10 spatial streams and 6 GHz support to provide seamless, multi-band coverage within high client density environments.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" },
-    ],
-
-    // SKU produk
-    sku: "U6-Enterprise",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "ceiling-mount WiFi 7 AP with 5 spatial streams and extended signal range",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀220 x 48 mm (⌀8.7 x 1.9')" },
-          { label: "WiFi Standard", value: "WiFi 6E" },
-          { label: "Spatial Streams", value: "10" },
-          { label: "Coverage Area", value: "140 m² (1,500 ft²)" },
-          { label: "Max. Client Count", value: "600+" },
-          { label: "Uplink", value: "2.5 GbE" },
-          { label: "Mounting", value: "Ceiling, Wall (Pro Mount Included)" },
-          { label: "Power Method", value: "PoE+" }
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "MIMO 6 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
-          { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
-          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
-
-          { label: "Max. Data Rate 6 GHz", value: "4.8 Gbps (BW160)" },
-          { label: "Max. Data Rate 5 GHz", value: "4.8 Gbps (BW160)" },
-          { label: "Max. Data Rate 2.4 GHz", value: "573.5 Mbps (BW40)" },
-
-          { label: "Antenna Gain 6 GHz", value: "6 dBi" },
-          { label: "Antenna Gain 5 GHz", value: "5.3 dBi" },
-          { label: "Antenna Gain 2.4 GHz", value: "3.2 dBi" },
-
-          { label: "Max. TX Power 6 GHz", value: "26 dBm" },
-          { label: "Max. TX Power 5 GHz", value: "26 dBm" },
-          { label: "Max. TX Power 2.4 GHz", value: "22 dBm" },
-
-          { label: "Max. BSSIDs", value: "8 per Radio" },
-
-          { label: "Supported Data Rates 802.11ax (WiFi 6/6E", value: "7.3 Mbps to 4.8 Gbps (MCS0 - MCS11 NSS1/2/3/4, HE 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 3.4 Gbps (MCS0 - MCS9 NSS1/2/3/4, VHT 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 600 Mbps (MCS0 - MCS31, HT 20/40)" }
-        ]
-      },
-      {
-        title: "Features",
-        items: [
-          { label: "Wireless Meshing", value: "✓" },
-          { label: "Band Steering", value: "✓" },
-          { label: "802.11v BSS Transition Management", value: "✓" },
-          { label: "802.11r Fast Roaming", value: "✓" },
-          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
-          { label: "Advanced Radio Management", value: "✓" },
-          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
-
-          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
-          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
-          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
-          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
-
-          { label: "WiFi Speed Limiting", value: "✓" },
-          { label: "Client Device Isolation", value: "✓" },
-          { label: "WiFi Schedules", value: "✓" },
-          { label: "RADIUS over TLS (RadSec)", value: "✓" },
-          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "22W" },
-          { label: "Supported Voltage Range", value: "44.5–57V DC" },
-          { label: "Networking Interface", value: "(1) 1/2.5 GbE RJ45 port" },
-          { label: "Weight", value: "Device: 960 g (2.1 lb) With mount: 1.1 kg (2.4 lb)" },
-          { label: "Management", value: "Ethernet Bluetooth" },
-          { label: "Enclosure Material", value: "Polycarbonate, aluminum" },
-          { label: "Mount Material", value: "Stainless steel (SUS304)" },
-          { label: "LEDs System", value: "White/Blue" },
-          { label: "Chanel Bandwidth", value: "HT 20/40, VHT 20/40/80/160, HE 20/40/80/160, EHT 20/40/80/160/240/320 (MHz)" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC, Anatel: 11933-22-08356" },
-          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz U-NII-5 to U-NII-8: 6100 - 7125 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz 5925 - 7125 MHz (Depends on the regulatory region)" },
-          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 140° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
-        ]
-      },
-      {
-        title: " Software",
-        items: [
-          { label: "Application Requirements UniFi Network", value: "Version 6.0.45 and later" },
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Pro Max 16 PoE",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "A 16-port, Layer 3 Etherlighting™ switch with 2.5 GbE, PoE++ output, and versatile mounting options",
-        specs: [
-          "Etherlighting™ ports that illuminate to indicate port location, speed/link, and native VLAN/network*",
-          "(4) 2.5 GbE PoE++ ports",
-          "(12) GbE PoE+ ports",
-          "(2) 10G SFP+ ports",
-          "180W total PoE availability",
-          "Versatile desktop, wall, and rack** mounting",
-          "Silent, fanless cooling system",
-          "*Pair with UniFi Etherlighting Patch Cables for optimal brightness. **Requires add-on Rack Mount accessory.",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "325.1 x 160 x 43.7 mm (12.8 x 6.3 x 1.7')" },
-          { label: "Port Layout 1 GbE RJ45", value: "12 (All PoE+) (1G/100M/10M)" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "4 (All PoE++) (2.5G/1G/100M/10M)" },
-          { label: "Port Layou 10G SFP+t", value: "2 (10G/1G)" },
-          { label: "Switching Capacity", value: "230 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "42 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "25W (Excluding PoE Output) 210W (Including PoE Output)" },
-          { label: "Power Method", value: "AC Adapter" },
-          { label: "Application Requirements UniFi Network", value: "Version 8.1.127 and later" },
-        ],
-        productLink: "/products/mounting-kit-u7-lr"
-      },
-      {
-        id: 2,
-        name: "Pro Max 48 PoE",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "A 48-port, Layer 3 Etherlighting™ switch with 2.5 GbE and PoE++ output.",
-        specs: [
-          "A 48-port, Layer 3 Etherlighting™ switch with 2.5 GbE and PoE++ output.",
-          "(16) 2.5 GbE ports including (8) PoE+ and (8) PoE++",
-          "32) GbE ports including (24) PoE+ and (8) PoE++",
-          "(4) 10G SFP+ ports",
-          "DC power backup ready",
-          "720W total PoE availabilit",
-          "*Pair with UniFi Etherlighting Patch Cables for optimal brightness."
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 400 x 44 mm (17.4 x 15.7 x 1.7')" },
-          { label: "Port Layout 1 GbE RJ45", value: "32 (24 PoE+; 8 PoE++) (1G/100M/10M)" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "16 (8 PoE+; 8 PoE++) (2.5G/1G/100M/10M)" },
-          { label: "Port Layou 10G SFP+t", value: "4 (10G/1G)" },
-          { label: "Switching Capacity", value: "224 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "112 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "100W (Excluding PoE Output) 820W (Including PoE Output)" },
-          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
-          { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
-        ],
-        productLink: "/products/power-cable-u7-lr"
       },
       {
         id: 3,
@@ -2405,152 +2226,11 @@ export const wifiProducts: Product[] = [
 
   //Produk keempat dari WiFi, SF Flagship
   {
-    id: "U7-Pro-XG-B",
-    name: "U7 Pro XG",
-    category: "WiFi",
-    subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
-    shortDescription:
-      "Ceiling-mounted 6-stream WiFi 7 AP with 10/5/2.5/1 GbE support.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" },
-    ],
-
-    // SKU produk
-    sku: "U7-Pro-XG-B",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Note. 6 GHz operation is supported in these countries.",
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀206 x 32.5 mm (⌀8.1 x 1.3')" },
-          { label: "WiFi Standard", value: "WiFi 7" },
-          { label: "Spatial Streams", value: "6" },
-          { label: "Coverage Area", value: "140 m² (1,500 ft²)" },
-          { label: "Max. Client Count", value: "300+" },
-          { label: "Uplink", value: "10 GbE" },
-          { label: "Mounting", value: "Ceiling, Wall (Lite Mount Included)" },
-          { label: "Power Method", value: "PoE+" }
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "MIMO 6 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
-          { label: "MIMO 5 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
-          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
-
-          { label: "Max. Data Rate 6 GHz", value: "5.8 Gbps (BW320)" },
-          { label: "Max. Data Rate 5 GHz", value: "4.3 Gbps (BW240)" },
-          { label: "Max. Data Rate 2.4 GHz", value: "688 Mbps (BW40)" },
-
-          { label: "Antenna Gain 6 GHz", value: "6 dBi" },
-          { label: "Antenna Gain 5 GHz", value: "5 dBi" },
-          { label: "Antenna Gain 2.4 GHz", value: "4 dBi" },
-
-          { label: "Max. TX Power 6 GHz", value: "24 dBm" },
-          { label: "Max. TX Power 5 GHz", value: "26 dBm" },
-          { label: "Max. TX Power 2.4 GHz", value: "23 dBm" },
-
-          { label: "Max. BSSIDs", value: "8 per Radio" },
-
-          { label: "Supported Data Rates 802.11be (WiFi 7)", value: "6 GHz: 7.3 Mbps to 5.8 Gbps (MCS0 - MCS13 NSS1/2, EHT 20/40/80/160/320) 5 GHz: 7.3 Mbps to 4.3 Gbps (MCS0 - MCS13 NSS1/2/3/4, EHT 20/40/80/160/240)" },
-          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 2.4 Gbps (MCS0 - MCS11 NSS1/2, HE 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 1.7 Gbps (MCS0 - MCS9 NSS1/2, VHT 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 300 Mbps (MCS0 - MCS15, HT 20/40)" }
-        ]
-      },
-      {
-        title: "Features",
-        items: [
-          { label: "Wireless Meshing", value: "✓" },
-          { label: "Band Steering", value: "✓" },
-          { label: "802.11v BSS Transition Management", value: "✓" },
-          { label: "802.11r Fast Roaming", value: "✓" },
-          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
-          { label: "Advanced Radio Management", value: "✓" },
-          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
-
-          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
-          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
-          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
-          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
-
-          { label: "WiFi Speed Limiting", value: "✓" },
-          { label: "Client Device Isolation", value: "✓" },
-          { label: "WiFi Schedules", value: "✓" },
-          { label: "RADIUS over TLS (RadSec)", value: "✓" },
-          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "22W" },
-          { label: "Supported Voltage Range", value: "42.5–57V DC" },
-          { label: "Networking Interface", value: "(1) 1/2.5 GbE RJ45 port" },
-          { label: "Weight", value: "750 g (1.7 lb)" },
-          { label: "Management", value: "Ethernet" },
-          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
-          { label: "Mount Material", value: "Stainless steel (SUS304), galvanized steel (SGCC)" },
-          { label: "LEDs System", value: "White/Blue" },
-          { label: "Chanel Bandwidth", value: "Stainless steel (SUS304), galvanized steel (SGCC)" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC, Anatel: 06630-25-08356" },
-          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz U-NII-5 to U-NII-8: 5925 - 7125 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz 5925 - 7125 MHz" },
-          { label: "Ambient Operating Temperature", value: "-30 to 40° C (-22 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
-        ]
-      },
-      {
-        title: " Software",
-        items: [
-          { label: "Application Requirements UniFi Network", value: "Version 9.0.114 and later (U7 Pro XG - White) Version 9.1.120 and later (U7 Pro XG - Black)" },
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
-  //Produk Keelima dari WiFi, SF Flagship
-  {
     id: "U7-Pro",
     name: "U7 Pro",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/WiFi/7.u7-pro/1.p-utama-u7-pro.jpg",
     shortDescription:
       "Ceiling-mounted WiFi 7 AP with 6 spatial streams and 6 GHz support for interference-free WiFi in demanding, large-scale environments.",
     specs: [
@@ -2565,15 +2245,24 @@ export const wifiProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/7.u7-pro/1.p-utama-u7-pro.jpg",
+      "/images/WiFi/7.u7-pro/2.p-dimensi-u7-pro.jpg",
+      "/images/WiFi/7.u7-pro/3.p-dimensi-u7-pro.jpg",
+      "/images/WiFi/7.u7-pro/4.p-spec-u7-pro.jpg",
+      "/images/WiFi/7.u7-pro/5.p-deployment-u7-pro.jpg",
+      "/images/WiFi/7.u7-pro/p-itb-u7-pro.jpg",
+      "/images/WiFi/7.u7-pro/p-mkt0-u7-pro.jpg",
+      "/images/WiFi/7.u7-pro/p-mkt1-u7-pro.jpg",
+      "/images/WiFi/7.u7-pro/p-mkt2-u7-pro.jpg",
+      "/images/WiFi/7.u7-pro/p-mkt3-u7-pro.jpg",
+      "/images/WiFi/7.u7-pro/p-ov1-u7-pro.png",
+      "/images/WiFi/7.u7-pro/p-ov2-u7-pro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/7.u7-pro/p-ov1-u7-pro.png",
+      "/images/WiFi/7.u7-pro/p-ov2-u7-pro.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2678,10 +2367,7 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/WiFi/7.u7-pro/p-itb-u7-pro.jpg" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2910,591 +2596,13 @@ export const wifiProducts: Product[] = [
     ]
   },
 
-  // Produk Keenam dari WiFi, SF Flagship
-  {
-    id: "U7-Pro-5",
-    name: "U7 Pro",
-    category: "WiFi",
-    subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
-    shortDescription:
-      "Ceiling-mounted WiFi 7 AP with 6 spatial streams and 6 GHz support for interference-free WiFi in demanding, large-scale environments.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" },
-    ],
-
-    // SKU produk
-    sku: "U7-Pro-5",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Note. 6 GHz operation is supported in these countries. Multi-Link Operation (MLO) capability is coming soon and will be provided via software update."
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀206 x 46 mm (⌀8.1 x 1.8')" },
-          { label: "WiFi Standard", value: "WiFi 7" },
-          { label: "Spatial Streams", value: "6" },
-          { label: "Coverage Area", value: "140 m² (1,500 ft²)" },
-          { label: "Max. Client Count", value: "300+" },
-          { label: "Uplink", value: "2.5 GbE" },
-          { label: "Mounting", value: "Ceiling, Wall (Pro Mount Included)" },
-          { label: "Power Method", value: "PoE+" }
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "MIMO 6 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
-          { label: "MIMO 5 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
-          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
-
-          { label: "Max. Data Rate 6 GHz", value: "5.8 Gbps (BW320)" },
-          { label: "Max. Data Rate 5 GHz", value: "4.3 Gbps (BW240)" },
-          { label: "Max. Data Rate 2.4 GHz", value: "688 Mbps (BW40)" },
-
-          { label: "Antenna Gain 6 GHz", value: "5.8 dBi" },
-          { label: "Antenna Gain 5 GHz", value: "6 dBi" },
-          { label: "Antenna Gain 2.4 GHz", value: "4 dBi" },
-
-          { label: "Max. TX Power 6 GHz", value: "23 dBm" },
-          { label: "Max. TX Power 5 GHz", value: "26 dBm" },
-          { label: "Max. TX Power 2.4 GHz", value: "23 dBm" },
-
-          { label: "Max. BSSIDs", value: "8 per Radio" },
-
-          { label: "Supported Data Rates 802.11be (WiFi 7)", value: "7.3 Mbps to 5.8 Gbps (MCS0 - MCS13 NSS1/2, EHT 20/40/80/160/240/320)" },
-          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 2.4 Gbps (MCS0 - MCS11 NSS1/2, HE 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 1.7 Gbps (MCS0 - MCS9 NSS1/2, VHT 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 300 Mbps (MCS0 - MCS15, HT 20/40)" }
-        ]
-      },
-      {
-        title: "Features",
-        items: [
-          { label: "Wireless Meshing", value: "✓" },
-          { label: "Band Steering", value: "✓" },
-          { label: "802.11v BSS Transition Management", value: "✓" },
-          { label: "802.11r Fast Roaming", value: "✓" },
-          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
-          { label: "Advanced Radio Management", value: "✓" },
-          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
-
-          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
-          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
-          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
-          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
-
-          { label: "WiFi Speed Limiting", value: "✓" },
-          { label: "Client Device Isolation", value: "✓" },
-          { label: "WiFi Schedules", value: "✓" },
-          { label: "RADIUS over TLS (RadSec)", value: "✓" },
-          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "21W" },
-          { label: "Supported Voltage Range", value: "44.5–57V DC" },
-          { label: "Networking Interface", value: "(1) 1/2.5 GbE RJ45 port" },
-          { label: "Weight", value: "680 g (1.5 lb)" },
-          { label: "Management", value: "Ethernet" },
-          { label: "Enclosure Material", value: "Polycarbonate, metal" },
-          { label: "Mount Material", value: "Stainless steel (SUS304), galvanized steel (SGCC)" },
-          { label: "LEDs System", value: "White/Blue" },
-          { label: "Channel Bandwitdth", value: "HT 20/40, VHT 20/40/80/160, HE 20/40/80/160, EHT 20/40/80/160/240/320 (MHz)" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC, Anatel: 06630-25-08356" },
-          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz U-NII-5 to U-NII-8: 5925 - 7125 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz 5925 - 7125 MHz" },
-          { label: "Ambient Operating Temperature", value: "-30 to 40° C (-22 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
-        ]
-      },
-      {
-        title: " Software",
-        items: [
-          { label: "Application Requirements UniFi Network", value: "Version 8.0.28 and later" },
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Pro Max 16 PoE",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "A 16-port, Layer 3 Etherlighting™ switch with 2.5 GbE, PoE++ output, and versatile mounting options",
-        specs: [
-          "Etherlighting™ ports that illuminate to indicate port location, speed/link, and native VLAN/network*",
-          "(4) 2.5 GbE PoE++ ports",
-          "(12) GbE PoE+ ports",
-          "(2) 10G SFP+ ports",
-          "180W total PoE availability",
-          "Versatile desktop, wall, and rack** mounting",
-          "Silent, fanless cooling system",
-          "*Pair with UniFi Etherlighting Patch Cables for optimal brightness. **Requires add-on Rack Mount accessory.",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "325.1 x 160 x 43.7 mm (12.8 x 6.3 x 1.7')" },
-          { label: "Port Layout 1 GbE RJ45", value: "12 (All PoE+) (1G/100M/10M)" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "4 (All PoE++) (2.5G/1G/100M/10M)" },
-          { label: "Port Layou 10G SFP+t", value: "2 (10G/1G)" },
-          { label: "Switching Capacity", value: "230 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "42 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "25W (Excluding PoE Output) 210W (Including PoE Output)" },
-          { label: "Power Method", value: "AC Adapter" },
-          { label: "Application Requirements UniFi Network", value: "Version 8.1.127 and later" },
-        ],
-        productLink: "/products/mounting-kit-u7-lr"
-      },
-      {
-        id: 2,
-        name: "Pro Max 48 PoE",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "A 48-port, Layer 3 Etherlighting™ switch with 2.5 GbE and PoE++ output.",
-        specs: [
-          "A 48-port, Layer 3 Etherlighting™ switch with 2.5 GbE and PoE++ output.",
-          "(16) 2.5 GbE ports including (8) PoE+ and (8) PoE++",
-          "32) GbE ports including (24) PoE+ and (8) PoE++",
-          "(4) 10G SFP+ ports",
-          "DC power backup ready",
-          "720W total PoE availabilit",
-          "*Pair with UniFi Etherlighting Patch Cables for optimal brightness."
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442.4 x 400 x 44 mm (17.4 x 15.7 x 1.7')" },
-          { label: "Port Layout 1 GbE RJ45", value: "32 (24 PoE+; 8 PoE++) (1G/100M/10M)" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "16 (8 PoE+; 8 PoE++) (2.5G/1G/100M/10M)" },
-          { label: "Port Layou 10G SFP+t", value: "4 (10G/1G)" },
-          { label: "Switching Capacity", value: "224 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "112 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "100W (Excluding PoE Output) 820W (Including PoE Output)" },
-          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
-          { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
-        ],
-        productLink: "/products/power-cable-u7-lr"
-      },
-      {
-        id: 3,
-        name: "Pro Max 24 PoE",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "A 24-port, Layer 3 Etherlighting™ switch capable of high-power PoE++ output.",
-        specs: [
-          "Etherlighting™ ports that illuminate to indicate port location, speed/link, and native VLAN/network*",
-          "(8) 2.5 GbE PoE++ ports",
-          "(16) GbE ports including (8) PoE+ and (8) PoE++",
-          "(2) 10G SFP+ ports",
-          "DC power backup ready",
-          "400W total PoE availabilitly",
-          "*Pair with UniFi Etherlighting Patch Cables for optimal brightness.",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
-          { label: "Port Layout 1 GbE RJ45", value: "16 (8 PoE+; 8 PoE++) (1G/100M/10M)" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "8 (All PoE++) (2.5G/1G/100M/10M)" },
-          { label: "Port Layou 10G SFP+t", value: "2 (10G/1G)" },
-          { label: "Switching Capacity", value: "112 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "56 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "50W (Excluding PoE Output) 450W (Including PoE Output)" },
-          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
-          { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 4,
-        name: "Enterprise 48 PoE (Vintage)",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "A 48-port, Layer 3 switch with 2.5 GbE PoE+ output.",
-        specs: [
-          "(48) 2.5 GbE PoE+ ports",
-          "720W total PoE availability",
-          "DC power backup-ready",
-          "Layer 3 switching",
-          "DC power backup ready",
-          "400W total PoE availabilitly",
-          "*Pair with UniFi Etherlighting Patch Cables for optimal brightness.",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "48 (All PoE+) (2.5G/1G/100M/10M)" },
-          { label: "Port Layou 10G SFP+t", value: "4 (10G/1G)" },
-          { label: "Switching Capacity", value: "160 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "160 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "150W (Excluding PoE Output) 870W (Including PoE Output)" },
-          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
-          { label: "Application Requirements UniFi Network", value: "Version 6.2.26 and later" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 5,
-        name: "Enterprise 24 PoE (Vintage)",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "A 24-port, Layer 3 switch with 2.5 GbE PoE+ output.",
-        specs: [
-          "(12) 2.5 GbE, (12) GbE; all PoE+ ports",
-          "(2) 10G SFP+ ports",
-          "400W total PoE availability",
-          "(2) 10G SFP+ ports",
-          "DC power backup-ready",
-          "Layer 3 switching"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
-          { label: "Port Layout 1 GbE RJ45", value: "12 (All PoE+) (1G/100M/10M)" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "12 (All PoE+) (2.5G/1G/100M/10M)" },
-          { label: "Port Layou 10G SFP+t", value: "2 (10G/1G)" },
-          { label: "Switching Capacity", value: "124 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "62 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "60W (Excluding PoE Output) 460W (Including PoE Output)" },
-          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
-          { label: "Application Requirements UniFi Network", value: "Version 5.14.12 and later" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 6,
-        name: "UniFi Etherlighting Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
-        specs: [
-          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
-          "— 2.5 mm outer diameter for 0.15-8 m lengths",
-          "— 2.9 mm outer diameter for 12-15 m lengths",
-          "Length: 0.15 to 15 m"
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
-          { label: "Available Colors", value: "White" },
-          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
-          { label: "Supported Data Rate", value: "10G" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Translucent booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
-          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
-          { label: "Flame Rating", value: "FT-2(UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
-          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 7,
-        name: "Enterprise 8 PoE (Vintage)",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "An 8-port, Layer 3 switch with 2.5 GbE PoE+ output.",
-        specs: [
-          "(8) 2.5 GbE PoE+ ports",
-          "(2) 10G SFP+ ports",
-          "120W total PoE availability",
-          "Note. These switches are not compatible with the PoE++ requirements of the new U7 and E7 Access Points. We recommend using Enterprise Campus switches for such deployments.",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "200 x 248 x 44 mm (7.9 x 9.8 x 1.7')" },
-          { label: "Port Layout 2.5 GbE RJ45", value: "8 (All PoE+) (2.5G/1G/100M)" },
-          { label: "Port Layou 10G SFP+t", value: "2 (10G/1G)" },
-          { label: "Switching Capacity", value: "80 Gbps" },
-          { label: "Total Non-Blocking Throughput", value: "40 Gbps" },
-          { label: "DHCP Server (Local Networks)", value: "✓" },
-          { label: "DHCP Relay", value: "✓" },
-          { label: "LACP Port Aggregation", value: "✓" },
-          { label: "STP & RSTP", value: "✓" },
-          { label: "Max. Power Consumption", value: "30W (Excluding PoE Output) 150W (Including PoE Output)" },
-          { label: "Power Method", value: "Universal input, 100–240V AC, 50/60 Hz" },
-          { label: "Application Requirements UniFi Network", value: "Version 6.3.51 and later" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-    ]
-  },
-
-  // Produk Ketujuh dari WiFi, SF Flagship
-  {
-    id: "U6-Pro",
-    name: "U6 Pro",
-    category: "WiFi",
-    subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
-    shortDescription:
-      "Ceiling-mounted WiFi 6 AP with 6 spatial streams designed for large offices.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" },
-    ],
-
-    // SKU produk
-    sku: "U6-Pro",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Enclosure Material Polycarbonate, metal",
-      "Max. Power Consumption 13W",
-      "Power Method PoE"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀197 x 35 mm (⌀7.8 x 1.4')" },
-          { label: "WiFi Standard", value: "WiFi 6" },
-          { label: "Spatial Streams", value: "6" },
-          { label: "Coverage Area", value: "140 m² (1,500 ft²)" },
-          { label: "Max. Client Count", value: "250+" },
-          { label: "Uplink", value: "GbE" },
-          { label: "Mounting", value: "Ceiling, Wall (Pro Mount Included)" },
-          { label: "Power Method", value: "PoE" }
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
-          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
-
-          { label: "Max. Data Rate 5 GHz", value: "4.8 Gbps (BW160)" },
-          { label: "Max. Data Rate 2.4 GHz", value: "573.5 Mbps (BW40)" },
-
-          { label: "Antenna Gain 5 GHz", value: "6 dBi" },
-          { label: "Antenna Gain 2.4 GHz", value: "4 dBi" },
-
-          { label: "Max. TX Power 5 GHz", value: "26 dBm" },
-          { label: "Max. TX Power 2.4 GHz", value: "22 dBm" },
-
-          { label: "Max. BSSIDs", value: "8 per Radio" },
-
-          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 2.4 Gbps (MCS0 - MCS11 NSS1/2, HE 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 1.7 Gbps (MCS0 - MCS9 NSS1/2, VHT 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 300 Mbps (MCS0 - MCS15, HT 20/40)" }
-        ]
-      },
-      {
-        title: "Features",
-        items: [
-          { label: "Wireless Meshing", value: "✓" },
-          { label: "Band Steering", value: "✓" },
-          { label: "802.11v BSS Transition Management", value: "✓" },
-          { label: "802.11r Fast Roaming", value: "✓" },
-          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
-          { label: "Advanced Radio Management", value: "✓" },
-          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
-
-          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
-          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
-          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
-          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
-
-          { label: "WiFi Speed Limiting", value: "✓" },
-          { label: "Client Device Isolation", value: "✓" },
-          { label: "WiFi Schedules", value: "✓" },
-          { label: "RADIUS over TLS (RadSec)", value: "✓" },
-          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "13W" },
-          { label: "Supported Voltage Range", value: "44.5–57V DC" },
-          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
-          { label: "Weight", value: "Device: 580 g (1.3 lb) With mount: 720 g (1.6 lb)" },
-          { label: "Management", value: "Ethernet Bluetooth" },
-          { label: "Enclosure Material", value: "Polycarbonate, metal" },
-          { label: "Mount Material", value: "Stainless steel (SUS304)" },
-          { label: "LEDs System", value: "White/Blue" },
-          { label: "Channel Bandwitdth", value: "HT 20/40, VHT 20/40/80/160, HE 20/40/80/160, EHT 20/40/80/160/240/320 (MHz)" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC, SRRC, Anatel: 00910-22-08356" },
-          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz" },
-          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 140° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
-        ]
-      },
-      {
-        title: " Software",
-        items: [
-          { label: "Application Requirements UniFi Network", value: "Version 6.0.45 and later" },
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "UniFi Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
-        specs: [
-          "Bendable booted RJ45",
-          "3 mm outer diameter",
-          "Cable length: 0.1 to 8m",
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
-          { label: "Available Colors", value: "White, Blue, Black" },
-          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
-          { label: "Supported Data Rate", value: "GbE" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Bendable booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
-          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
-          { label: "Flame Rating", value: "FT-2(UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
-          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
-        ],
-        productLink: "/products/mounting-kit-u6-plus"
-      },
-      {
-        id: 2,
-        name: "Long-Range Ethernet Repeater",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Long-range Gigabit Ethernet adapter that receives PoE/PoE+ and offers passthrough PoE output.",
-        specs: [
-          "Extend PoE connections up to 1 km",
-          "(1) GbE RJ45 port for PoE/PoE+ input",
-          "(1) GbE RJ45 port for passthrough PoE output",
-          "10kA+ surge protection",
-          "10kA+ surge protection",
-          "Works reliably in extreme temperatures (-40 to 80° C)"
-        ],
-        detailedSpecs: [
-          { label: "Power Method", value: "PoE/PoE+ 2-pairs (Pins 1, 2+; 3, 6-)" },
-          { label: "Max. Power Consumption", value: "1.5W (Excluding PoE output)" },
-          { label: "Networking Interface", value: "(2) GbE RJ45 ports" },
-          { label: "PoE Interface", value: "PoE Interface" },
-          { label: "Total Non-Blocking Line Rate", value: "2 Gbps" },
-          { label: "Switching Capacity", value: "4 Gbps" },
-          { label: "Forwarding Rate", value: "Forwarding Rate 1.488 Mpps" },
-          { label: "Total Available PoE", value: "22.5W" },
-          { label: "Voltage Range PoE Mode", value: "37—57V DC" },
-          { label: "ESD/EMP Protection", value: "Air/contact: ± 30kV" },
-          { label: "DC Sparkover Voltage", value: "90V at 100V/s" },
-          { label: "Max. Impulse Sparkover Voltage", value: "700V at 1kV/μs" },
-          { label: "Discharge Current", value: "10kA+" },
-          { label: "Max. MTU", value: "1,500 bytes" },
-          { label: "LEDs System", value: "Blue: power ON" },
-          { label: "LEDs Ethernet", value: "Green: 1 Gbps Amber: 10/100 Mbps" },
-          { label: "LEDs PoE", value: "Amber: passthrough PoE out" },
-          { label: "Ambient Operating Temperature", value: "-40 to 80° C (-40 to 176° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 95% noncondensing" }
-        ],
-        productLink: "/products/power-cable-u6-plus"
-      },
-    ]
-  },
-
-  // Produk Kedelapan dari WiFi,SF Flagship 
+  //Produk Keelima dari WiFi, SF Flagship
   {
     id: "U7-LR",
     name: "U7 Long-Range",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/WiFi/8.u7-lr/1.p-utama-u7-lr.jpg",
     shortDescription:
       "Compact, ceiling-mount WiFi 7 AP with 5 spatial streams and extended signal range",
     specs: [
@@ -3509,15 +2617,25 @@ export const wifiProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/8.u7-lr/1.p-utama-u7-lr.jpg",
+      "/images/WiFi/8.u7-lr/2.p-dimensi-u7-lr.jpg",
+      "/images/WiFi/8.u7-lr/3.p-dimensi-u7-lr.jpg",
+      "/images/WiFi/8.u7-lr/4.p-spec-u7-lr.jpg",
+      "/images/WiFi/8.u7-lr/5.p-deployment-u7-lr.jpg",
+      "/images/WiFi/8.u7-lr/p-itb-u7-lr.jpg",
+      "/images/WiFi/8.u7-lr/p-mkt0-u7-lr.jpg",
+      "/images/WiFi/8.u7-lr/p-mkt1-u7-lr.jpg",
+      "/images/WiFi/8.u7-lr/p-mkt2-u7-lr.jpg",
+      "/images/WiFi/8.u7-lr/p-mkt3-u7-lr.jpg",
+      "/images/WiFi/8.u7-lr/p-mkt4-u7-lr.jpg",
+      "/images/WiFi/8.u7-lr/p-ov1-u7-lr.png",
+      "/images/WiFi/8.u7-lr/p-ov2-u7-lr.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/8.u7-lr/p-ov1-u7-lr.png",
+      "/images/WiFi/8.u7-lr/p-ov2-u7-lr.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3623,546 +2741,17 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/WiFi/8.u7-lr/p-itb-u7-lr.jpg", },
     ],
   },
 
-  // Produk Kesembilan dari WiFi, SF Flagship
-  {
-    id: "UAP-AC-PRO-5",
-    name: "AC Pro",
-    category: "WiFi",
-    subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
-    shortDescription:
-      "Ceiling-mounted WiFi 5 AP with 6 spatial streams designed for large offices.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" },
-    ],
-
-
-    // SKU produk
-    sku: "UAP-AC-PRO-5",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Note. PoE power adapter included with single unit purchases."
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀196.7 x 35 mm (⌀7.7 x 1.4')" },
-          { label: "WiFi Standard", value: "WiFi 5" },
-          { label: "Spatial Streams", value: "6" },
-          { label: "Coverage Area", value: "160 m² (1,750 ft²)140 m² (1,500 ft²)" },
-          { label: "Max. Client Count", value: "250+" },
-          { label: "Uplink", value: "GbE" },
-          { label: "Mounting", value: "Ceiling, Wall (Pro Mount Included)" },
-          { label: "Power Method", value: "PoE" }
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "MIMO 5 GHz", value: "3 x 3 (DL/UL MU-MIMO)" },
-          { label: "MIMO 2.4 GHz", value: "3 x 3 (DL/UL MU-MIMO)" },
-
-          { label: "Max. Data Rate 5 GHz", value: "1.3 Gbps (BW80)" },
-          { label: "Max. Data Rate 2.4 GHz", value: "450 Mbps (BW40)" },
-
-          { label: "Antenna Gain 5 GHz", value: "3 dBi" },
-          { label: "Antenna Gain 2.4 GHz", value: "3 dBi" },
-
-          { label: "Max. TX Power 5 GHz", value: "22 dBm" },
-          { label: "Max. TX Power 2.4 GHz", value: "22 dBm" },
-
-          { label: "Max. BSSIDs", value: "8 per Radio" },
-
-          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 1.3 Gbps (MCS0 - MCS9 NSS1/2/3, VHT 20/40/80)" },
-          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 450 Mbps (MCS0 - MCS23, HT 20/40)" },
-        ]
-      },
-      {
-        title: "Features",
-        items: [
-          { label: "Wireless Meshing", value: "✓" },
-          { label: "Band Steering", value: "✓" },
-          { label: "802.11v BSS Transition Management", value: "✓" },
-          { label: "802.11r Fast Roaming", value: "✓" },
-          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
-          { label: "Advanced Radio Management", value: "✓" },
-          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
-
-          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
-          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
-          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
-          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
-
-          { label: "WiFi Speed Limiting", value: "✓" },
-          { label: "Client Device Isolation", value: "✓" },
-          { label: "WiFi Schedules", value: "✓" },
-          { label: "RADIUS over TLS (RadSec)", value: "✓" },
-          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "9W" },
-          { label: "Include PoE Adapter", value: "✓" },
-          { label: "Supported Voltage Range", value: "44–57V DC" },
-          { label: "Networking Interface", value: "(2) GbE RJ45 ports" },
-          { label: "Weight", value: "Device: 350 g (12.4 oz) With mount: 450 g (15.9 oz)" },
-          { label: "Management", value: "Ethernet" },
-          { label: "Enclosure Material", value: "Polycarbonate" },
-          { label: "LEDs System", value: "Status" },
-          { label: "Channel Bandwitdth", value: "HT 20/40, VHT 20/40/80 (MHz)" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC, Anatel: 01943-16-08356" },
-          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz Worldwide:2400 - 2483.5 MHz 5150 - 5850 MHz" },
-          { label: "Ambient Operating Temperature", value: "-10 to 70° C (14 to 158° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
-        ]
-      },
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "UniFi Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
-        specs: [
-          "Bendable booted RJ45",
-          "3 mm outer diameter",
-          "Cable length: 0.1 to 8m",
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
-          { label: "Available Colors", value: "White, Blue, Black" },
-          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
-          { label: "Supported Data Rate", value: "GbE" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Bendable booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
-          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
-          { label: "Flame Rating", value: "FT-2(UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
-          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
-        ],
-        productLink: "/products/mounting-kit-u7-pro-xg-wall"
-      },
-    ]
-  },
-
-  // Produk Kesepuluh dari WiFi, SF Flagship
-  {
-    id: "UAP-AC-PRO",
-    name: "AC Pro",
-    category: "WiFi",
-    subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
-    shortDescription:
-      "Ceiling-mounted WiFi 5 AP with 6 spatial streams designed for large offices.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" },
-    ],
-
-
-    // SKU produk
-    sku: "UAP-AC-PRO",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Note. PoE power adapter included with single unit purchases."
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀196.7 x 35 mm (⌀7.7 x 1.4')" },
-          { label: "WiFi Standard", value: "WiFi 5" },
-          { label: "Spatial Streams", value: "6" },
-          { label: "Coverage Area", value: "160 m² (1,750 ft²)140 m² (1,500 ft²)" },
-          { label: "Max. Client Count", value: "250+" },
-          { label: "Uplink", value: "GbE" },
-          { label: "Mounting", value: "Ceiling, Wall (Pro Mount Included)" },
-          { label: "Power Method", value: "PoE" }
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "MIMO 5 GHz", value: "3 x 3 (DL/UL MU-MIMO)" },
-          { label: "MIMO 2.4 GHz", value: "3 x 3 (DL/UL MU-MIMO)" },
-
-          { label: "Max. Data Rate 5 GHz", value: "1.3 Gbps (BW80)" },
-          { label: "Max. Data Rate 2.4 GHz", value: "450 Mbps (BW40)" },
-
-          { label: "Antenna Gain 5 GHz", value: "3 dBi" },
-          { label: "Antenna Gain 2.4 GHz", value: "3 dBi" },
-
-          { label: "Max. TX Power 5 GHz", value: "22 dBm" },
-          { label: "Max. TX Power 2.4 GHz", value: "22 dBm" },
-
-          { label: "Max. BSSIDs", value: "8 per Radio" },
-
-          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 1.3 Gbps (MCS0 - MCS9 NSS1/2/3, VHT 20/40/80)" },
-          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 450 Mbps (MCS0 - MCS23, HT 20/40)" },
-        ]
-      },
-      {
-        title: "Features",
-        items: [
-          { label: "Wireless Meshing", value: "✓" },
-          { label: "Band Steering", value: "✓" },
-          { label: "802.11v BSS Transition Management", value: "✓" },
-          { label: "802.11r Fast Roaming", value: "✓" },
-          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
-          { label: "Advanced Radio Management", value: "✓" },
-          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
-
-          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
-          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
-          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
-          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
-
-          { label: "WiFi Speed Limiting", value: "✓" },
-          { label: "Client Device Isolation", value: "✓" },
-          { label: "WiFi Schedules", value: "✓" },
-          { label: "RADIUS over TLS (RadSec)", value: "✓" },
-          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "9W" },
-          { label: "Include PoE Adapter", value: "✓" },
-          { label: "Supported Voltage Range", value: "44–57V DC" },
-          { label: "Networking Interface", value: "(2) GbE RJ45 ports" },
-          { label: "Weight", value: "Device: 350 g (12.4 oz) With mount: 450 g (15.9 oz)" },
-          { label: "Management", value: "Ethernet" },
-          { label: "Enclosure Material", value: "Polycarbonate" },
-          { label: "LEDs System", value: "Status" },
-          { label: "Channel Bandwitdth", value: "HT 20/40, VHT 20/40/80 (MHz)" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC, Anatel: 01943-16-08356" },
-          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz Worldwide:2400 - 2483.5 MHz 5150 - 5850 MHz" },
-          { label: "Ambient Operating Temperature", value: "-10 to 70° C (14 to 158° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
-        ]
-      },
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "UniFi Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
-        specs: [
-          "Bendable booted RJ45",
-          "3 mm outer diameter",
-          "Cable length: 0.1 to 8m",
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
-          { label: "Available Colors", value: "White, Blue, Black" },
-          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
-          { label: "Supported Data Rate", value: "GbE" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Bendable booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
-          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
-          { label: "Flame Rating", value: "FT-2(UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
-          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
-        ],
-        productLink: "/products/mounting-kit-u7-pro-xg-wall"
-      },
-    ]
-  },
-
-  //Produk Kesebelas dari WiFi, SF Flagship
-  {
-    id: "U6+",
-    name: "U6+",
-    category: "WiFi",
-    subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
-    shortDescription:
-      "Compact, ceiling-mounted WiFi 6 AP with 4 spatial streams that improves upon the U6 Lite with higher performance and dual-band WiFi 6 support. Ideal for small and medium-sized businesses.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" },
-    ],
-
-    // SKU produk
-    sku: "U6+",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Mount Material ABS, SGCC steel",
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀160 x 33 mm (⌀6.3 x 1.3')" },
-          { label: "WiFi Standard", value: "WiFi 6" },
-          { label: "Spatial Streams", value: "4" },
-          { label: "Coverage Area", value: "140 m² (1,500 ft²)" },
-          { label: "Max. Client Count", value: "300+" },
-          { label: "Uplink", value: "GbE" },
-          { label: "Mounting", value: "Ceiling, Wall (Pro Mount Included)" },
-          { label: "Power Method", value: "PoE" }
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "MIMO 5 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
-          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
-
-          { label: "Max. Data Rate 5 GHz", value: "2.4 Gbps (BW160)" },
-          { label: "Max. Data Rate 2.4 GHz", value: "573.5 Mbps (BW40)" },
-
-          { label: "Antenna Gain 5 GHz", value: "5.4 dBi" },
-          { label: "Antenna Gain 2.4 GHz", value: "3 dBi" },
-
-          { label: "Max. TX Power 5 GHz", value: "23 dBm" },
-          { label: "Max. TX Power 2.4 GHz", value: "23 dBm" },
-
-          { label: "Max. BSSIDs", value: "8 per Radio" },
-
-          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 2.4 Gbps (MCS0 - MCS11 NSS1/2, HE 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 1.7 Gbps (MCS0 - MCS9 NSS1/2, VHT 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 450 Mbps (MCS0 - MCS23, HT 20/40)" },
-        ]
-      },
-      {
-        title: "Features",
-        items: [
-          { label: "Wireless Meshing", value: "✓" },
-          { label: "Band Steering", value: "✓" },
-          { label: "802.11v BSS Transition Management", value: "✓" },
-          { label: "802.11r Fast Roaming", value: "✓" },
-          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
-          { label: "Advanced Radio Management", value: "✓" },
-          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
-
-          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
-          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
-          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
-          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
-
-          { label: "WiFi Speed Limiting", value: "✓" },
-          { label: "Client Device Isolation", value: "✓" },
-          { label: "WiFi Schedules", value: "✓" },
-          { label: "RADIUS over TLS (RadSec)", value: "✓" },
-          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "9W" },
-          { label: "Include PoE Adapter", value: "✓" },
-          { label: "Supported Voltage Range", value: "44–57V DC" },
-          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
-          { label: "Weight", value: "Device: 338 g (11.9 oz) With mount: 413 g (14.6 oz)" },
-          { label: "Management", value: "Ethernet" },
-          { label: "Enclosure Material", value: "Polycarbonate, aluminum" },
-          { label: "Mount Material", value: "ABS, SGCC steel" },
-          { label: "LEDs System", value: "White/Blue" },
-          { label: "Channel Bandwitdth", value: "HT 20/40, VHT 20/40/80 (MHz)" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC, SRRC, Anatel: 10539-23-08356" },
-          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz" },
-          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 140° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
-        ]
-      },
-      {
-        title: " Software",
-        items: [
-          { label: "Application Requirements UniFi Network", value: "Version 7.3.76 and later" },
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "UniFi Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
-        specs: [
-          "Bendable booted RJ45",
-          "3 mm outer diameter",
-          "Cable length: 0.1 to 8m",
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
-          { label: "Available Colors", value: "White, Blue, Black" },
-          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
-          { label: "Supported Data Rate", value: "GbE" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Bendable booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
-          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
-          { label: "Flame Rating", value: "FT-2(UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
-          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
-        ],
-        productLink: "/products/mounting-kit-u7-iw"
-      },
-      {
-        id: 2,
-        name: "Compact Flagship AP Recessed Ceiling Mount",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Recessed ceiling mount for U6 Lite, U6+, AC Lite and nanoHD.",
-        specs: [
-          "Low-profile mounting option to sit discreetly within your ceiling",
-          "Sold as a 3-pack"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "⌀210 x 20.6 mm (⌀8.3 x 0.8')" },
-          { label: "Weight", value: "310 g (10.9 oz)" },
-          { label: "Enclosure Material", value: "Polycarbonate, SGCC" }
-        ],
-        productLink: "/products/power-cable-u7-iw"
-      },
-      {
-        id: 3,
-        name: "Compact Flagship AP Retrofit Mount",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Retrofit mount for U6 Lite, U6+, and nanoHD.",
-        specs: [
-          "Allows installation over existing UniFi AP mounting brackets",
-          "Sold as a 3-pack"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "⌀187.8 x 16.7 mm (⌀7.4 x 0.7')" },
-          { label: "Weight", value: "105 g (3.7 oz)" },
-          { label: "Enclosure Material", value: "Polycarbonate" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      }
-    ]
-  },
-
-  // Produk Kedua Belas dari WiFi, SF Flagship
+  // Produk Keenam dari WiFi, SF Flagship
   {
     id: "U7-Lite",
     name: "U7 Lite",
     category: "WiFi",
     subfilter: "Flagship",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/WiFi/9.u7-lite/1.p-utama-u7-lite.jpg",
     shortDescription:
       "Compact, ceiling-mounted WiFi 7 AP with 4 spatial streams and 2.5 GbE uplink.",
     specs: [
@@ -4177,15 +2766,26 @@ export const wifiProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/9.u7-lite/1.p-utama-u7-lite.jpg",
+      "/images/WiFi/9.u7-lite/2.p-dimensi-u7-lite.jpg",
+      "/images/WiFi/9.u7-lite/3.p-dimensi-u7-lite.jpg",
+      "/images/WiFi/9.u7-lite/4.p-spec-u7-lite.jpg",
+      "/images/WiFi/9.u7-lite/5.p-deployment-u7-lite.jpg",
+      "/images/WiFi/9.u7-lite/p-itb-u7-lite.jpg",
+      "/images/WiFi/9.u7-lite/p-mkt0-u7-lite.jpg",
+      "/images/WiFi/9.u7-lite/p-mkt1-u7-lite.jpg",
+      "/images/WiFi/9.u7-lite/p-mkt2-u7-lite.jpg",
+      "/images/WiFi/9.u7-lite/p-mkt3-u7-lite.jpg",
+      "/images/WiFi/9.u7-lite/p-mkt4-u7-lite.jpg",
+      "/images/WiFi/9.u7-lite/p-mkt5-u7-lite.jpg",
+      "/images/WiFi/9.u7-lite/p-ov1-u7-lite.png",
+      "/images/WiFi/9.u7-lite/p-ov2-u7-lite.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/9.u7-lite/p-ov1-u7-lite.png",
+      "/images/WiFi/9.u7-lite/p-ov2-u7-lite.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4286,22 +2886,19 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/WiFi/9.u7-lite/p-itb-u7-lite.jpg" },
     ],
   },
 
-  // Produk Pertama dari WiFi, SF Wall
+  // Produk Ketujuh dari WiFi, SF Flagship
   {
-    id: "U6-Enterprise-IW",
-    name: "U6 Enterprise In-Wall",
+    id: "U6-Enterprise",
+    name: "U6 Enterprise",
     category: "WiFi",
-    subfilter: "Wall",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    subfilter: "Flagship",
+    image: "/images/WiFi/10.u6-enterprise/1.p-utama-u6-enterprise.jpg",
     shortDescription:
-      "Wall-mounted WiFi 6 AP with 6 spatial streams and a built-in 4‑port switch ideal for single-room coverage in hospitality environments.",
+      "Ceiling-mounted WiFi 6E AP with 10 spatial streams and 6 GHz support to provide seamless, multi-band coverage within high client density environments.",
     specs: [
       { label: "Throughput", value: "3.5 Gbps IPS" },
       { label: "PoE", value: "2x PoE+, 6x PoE" },
@@ -4310,24 +2907,35 @@ export const wifiProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "U6-Enterprise-IW",
+    sku: "U6-Enterprise",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/10.u6-enterprise/1.p-utama-u6-enterprise.jpg",
+      "/images/WiFi/10.u6-enterprise/2.p-dimensi-u6-enterprise.jpg",
+      "/images/WiFi/10.u6-enterprise/3.p-dimensi-u6-enterprise.jpg",
+      "/images/WiFi/10.u6-enterprise/4.p-spec-u6-enterprise.jpg",
+      "/images/WiFi/10.u6-enterprise/5.p-deployment-u6-enterprise.jpg",
+      "/images/WiFi/10.u6-enterprise/p-itb-u6-enterprise.jpg",
+      "/images/WiFi/10.u6-enterprise/p-mkt0-u6-enterprise.jpg",
+      "/images/WiFi/10.u6-enterprise/p-mkt1-u6-enterprise.jpg",
+      "/images/WiFi/10.u6-enterprise/p-mkt2-u6-enterprise.jpg",
+      "/images/WiFi/10.u6-enterprise/p-mkt3-u6-enterprise.jpg",
+      "/images/WiFi/10.u6-enterprise/p-ov1-u6-enterprise.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/10.u6-enterprise/p-ov2-u6-enterprise.jpg",
+      "/images/WiFi/10.u6-enterprise/p-ov1-u6-enterprise.png",
     ],
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Enclosure Material Polycarbonate, aluminum",
+      "ceiling-mount WiFi 7 AP with 5 spatial streams and extended signal range",
+      "Enterprise-grade quality",
+      "Easy to deploy and manage",
+      "Reliable performance"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
@@ -4335,14 +2943,14 @@ export const wifiProducts: Product[] = [
       {
         title: "Overview",
         items: [
-          { label: "Dimensions", value: "159.7 x 156.7 x 33.8 mm  (6.3 x 6.2 x 1.3')" },
+          { label: "Dimensions", value: "⌀220 x 48 mm (⌀8.7 x 1.9')" },
           { label: "WiFi Standard", value: "WiFi 6E" },
           { label: "Spatial Streams", value: "10" },
-          { label: "Coverage Area", value: "115 m² (1,250 ft²)" },
+          { label: "Coverage Area", value: "140 m² (1,500 ft²)" },
           { label: "Max. Client Count", value: "600+" },
           { label: "Uplink", value: "2.5 GbE" },
-          { label: "Mounting", value: "Wall (Mount Included)" },
-          { label: "Power Method", value: "PoE+ PoE++ (Required for PoE output)" }
+          { label: "Mounting", value: "Ceiling, Wall (Pro Mount Included)" },
+          { label: "Power Method", value: "PoE+" }
         ]
       },
       {
@@ -4356,9 +2964,9 @@ export const wifiProducts: Product[] = [
           { label: "Max. Data Rate 5 GHz", value: "4.8 Gbps (BW160)" },
           { label: "Max. Data Rate 2.4 GHz", value: "573.5 Mbps (BW40)" },
 
-          { label: "Antenna Gain 5 GHz", value: "5.8 dBi" },
-          { label: "Antenna Gain 5 GHz", value: "5.8 dBi" },
-          { label: "Antenna Gain 2.4 GHz", value: "4 dBi" },
+          { label: "Antenna Gain 6 GHz", value: "6 dBi" },
+          { label: "Antenna Gain 5 GHz", value: "5.3 dBi" },
+          { label: "Antenna Gain 2.4 GHz", value: "3.2 dBi" },
 
           { label: "Max. TX Power 6 GHz", value: "26 dBm" },
           { label: "Max. TX Power 5 GHz", value: "26 dBm" },
@@ -4366,9 +2974,9 @@ export const wifiProducts: Product[] = [
 
           { label: "Max. BSSIDs", value: "8 per Radio" },
 
-          { label: "Supported Data Rates 802.11ax (WiFi 6/6E)", value: "7.3 Mbps to 4.8 Gbps (MCS0 - MCS11 NSS1/2/3/4, HE 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11ax (WiFi 6/6E", value: "7.3 Mbps to 4.8 Gbps (MCS0 - MCS11 NSS1/2/3/4, HE 20/40/80/160)" },
           { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 3.4 Gbps (MCS0 - MCS9 NSS1/2/3/4, VHT 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 600 Mbps (MCS0 - MCS31 , HT 20/40)" },
+          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 600 Mbps (MCS0 - MCS31, HT 20/40)" }
         ]
       },
       {
@@ -4400,19 +3008,18 @@ export const wifiProducts: Product[] = [
       {
         title: "Hardware",
         items: [
-          { label: "Max. Power Consumption", value: "21W (Excluding PoE output)" },
-          { label: "Supported Voltage Range", value: "44–57V DC" },
-          { label: "Networking Interface", value: "(1) Data in: 1/2.5 GbE RJ45 port (4) Data out: GbE RJ45 ports" },
-          { label: "Weight", value: "884 g (1.9 lb)" },
+          { label: "Max. Power Consumption", value: "22W" },
+          { label: "Supported Voltage Range", value: "44.5–57V DC" },
+          { label: "Networking Interface", value: "(1) 1/2.5 GbE RJ45 port" },
+          { label: "Weight", value: "Device: 960 g (2.1 lb) With mount: 1.1 kg (2.4 lb)" },
           { label: "Management", value: "Ethernet Bluetooth" },
-          { label: "Built-In Switch", value: "(4) GbE ports with (1) PoE output" },
           { label: "Enclosure Material", value: "Polycarbonate, aluminum" },
-          { label: "Mount Material", value: "Aluminum" },
+          { label: "Mount Material", value: "Stainless steel (SUS304)" },
           { label: "LEDs System", value: "White/Blue" },
-          { label: "Channel Bandwitdth", value: "HT 20/40, VHT 20/40/80/160, HE 20/40/80/160, EHT 20/40/80/160/240 (MHz)" },
+          { label: "Chanel Bandwidth", value: "HT 20/40, VHT 20/40/80/160, HE 20/40/80/160, EHT 20/40/80/160/240/320 (MHz)" },
           { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC, Anatel: 04643-24-08356" },
-          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz U-NII-5 to U-NII-8: 6100 - 7125 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz 5925 - 7125 MHz" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 11933-22-08356" },
+          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz U-NII-5 to U-NII-8: 6100 - 7125 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz 5925 - 7125 MHz (Depends on the regulatory region)" },
           { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 140° F)" },
           { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
         ]
@@ -4427,10 +3034,7 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/WiFi/10.u6-enterprise/p-itb-u6-enterprise.jpg" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -4466,7 +3070,7 @@ export const wifiProducts: Product[] = [
           { label: "Power Method", value: "AC Adapter" },
           { label: "Application Requirements UniFi Network", value: "Version 8.1.127 and later" },
         ],
-        productLink: "/products/mounting-kit-u7-pr0"
+        productLink: "/products/mounting-kit-u7-lr"
       },
       {
         id: 2,
@@ -4498,7 +3102,7 @@ export const wifiProducts: Product[] = [
           { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
           { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
         ],
-        productLink: "/products/power-cable-u7-pr0"
+        productLink: "/products/power-cable-u7-lr"
       },
       {
         id: 3,
@@ -4534,38 +3138,68 @@ export const wifiProducts: Product[] = [
       },
       {
         id: 4,
-        name: "U6 Extender",
+        name: "Enterprise 48 PoE (Vintage)",
         image: "/images/dcs-box.png",
         price: 299,
-        description: "Easy-to-deploy WiFi 6 coverage extender that fits a standard wall outlet.",
+        description: "A 48-port, Layer 3 switch with 2.5 GbE PoE+ output.",
         specs: [
-          "WiFi 6",
-          "6 spatial streams",
-          "115 m² (1,250 ft²) coverage",
-          "250+ connected devices",
-          "Powered with standard AC wall outlet",
-          "Wireless uplink to UniFi WiFi",
-          "Note. Cannot be set up standalone and requires UniFi WiFi managed by a UniFi Console or self-hosted UniFi Network Server.",
+          "(48) 2.5 GbE PoE+ ports",
+          "720W total PoE availability",
+          "DC power backup-ready",
+          "Layer 3 switching",
+          "DC power backup ready",
+          "400W total PoE availabilitly",
+          "*Pair with UniFi Etherlighting Patch Cables for optimal brightness.",
         ],
         detailedSpecs: [
-          { label: "Dimensions", value: "US: 169.7 x 112.2 x 32.2 mm (6.7 x 4.4 x 1.'') EU: 169.7 x 112.2 x 77.6 mm  (6.7 x 4.4 x 3.1')" },
-          { label: "WiFi Standard", value: "WiFi 6" },
-          { label: "Spatial Streams", value: "6" },
-          { label: "Coverage Area", value: "115 m² (1,250 ft²)" },
-          { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
-          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
-          { label: "Wireless Meshing", value: "✓" },
-          { label: "Band Steering", value: "✓" },
-          { label: "802.11v BSS Transition Management", value: "✓" },
-          { label: "802.11r Fast Roaming", value: "✓" },
-          { label: "Max. Power Consumption", value: "11W  " },
-          { label: "Supported Voltage Range", value: "110—240V AC" },
-          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
+          { label: "Port Layout 2.5 GbE RJ45", value: "48 (All PoE+) (2.5G/1G/100M/10M)" },
+          { label: "Port Layou 10G SFP+t", value: "4 (10G/1G)" },
+          { label: "Switching Capacity", value: "160 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "160 Gbps" },
+          { label: "DHCP Server (Local Networks)", value: "✓" },
+          { label: "DHCP Relay", value: "✓" },
+          { label: "LACP Port Aggregation", value: "✓" },
+          { label: "STP & RSTP", value: "✓" },
+          { label: "Max. Power Consumption", value: "150W (Excluding PoE Output) 870W (Including PoE Output)" },
+          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
+          { label: "Application Requirements UniFi Network", value: "Version 6.2.26 and later" },
         ],
         productLink: "/products/sfp-module-10g"
       },
       {
         id: 5,
+        name: "Enterprise 24 PoE (Vintage)",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "A 24-port, Layer 3 switch with 2.5 GbE PoE+ output.",
+        specs: [
+          "(12) 2.5 GbE, (12) GbE; all PoE+ ports",
+          "(2) 10G SFP+ ports",
+          "400W total PoE availability",
+          "(2) 10G SFP+ ports",
+          "DC power backup-ready",
+          "Layer 3 switching"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
+          { label: "Port Layout 1 GbE RJ45", value: "12 (All PoE+) (1G/100M/10M)" },
+          { label: "Port Layout 2.5 GbE RJ45", value: "12 (All PoE+) (2.5G/1G/100M/10M)" },
+          { label: "Port Layou 10G SFP+t", value: "2 (10G/1G)" },
+          { label: "Switching Capacity", value: "124 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "62 Gbps" },
+          { label: "DHCP Server (Local Networks)", value: "✓" },
+          { label: "DHCP Relay", value: "✓" },
+          { label: "LACP Port Aggregation", value: "✓" },
+          { label: "STP & RSTP", value: "✓" },
+          { label: "Max. Power Consumption", value: "60W (Excluding PoE Output) 460W (Including PoE Output)" },
+          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
+          { label: "Application Requirements UniFi Network", value: "Version 5.14.12 and later" },
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+      {
+        id: 6,
         name: "UniFi Etherlighting Patch Cable",
         image: "/images/dcs-box.png",
         price: 299,
@@ -4599,7 +3233,7 @@ export const wifiProducts: Product[] = [
         productLink: "/products/sfp-module-10g"
       },
       {
-        id: 6,
+        id: 7,
         name: "Enterprise 8 PoE (Vintage)",
         image: "/images/dcs-box.png",
         price: 299,
@@ -4629,13 +3263,614 @@ export const wifiProducts: Product[] = [
     ]
   },
 
-  // Produk Kedua dari WiFi, SF Wall
+
+  // Produk Kedelapan dari WiFi,SF Flagship 
+  {
+    id: "U6-Pro",
+    name: "U6 Pro",
+    category: "WiFi",
+    subfilter: "Flagship",
+    image: "/images/WiFi/11.u6-pro/1.p-utama-u6-pro.jpg",
+    shortDescription:
+      "Ceiling-mounted WiFi 6 AP with 6 spatial streams designed for large offices.",
+    specs: [
+      { label: "Throughput", value: "3.5 Gbps IPS" },
+      { label: "PoE", value: "2x PoE+, 6x PoE" },
+      { label: "WAN", value: "2.5 GbE RJ45" },
+      { label: "Storage", value: "128GB SSD Integrated" },
+    ],
+
+    // SKU produk
+    sku: "U6-Pro",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/WiFi/11.u6-pro/1.p-utama-u6-pro.jpg",
+      "/images/WiFi/11.u6-pro/2.p-dimensi-u6-pro.jpg",
+      "/images/WiFi/11.u6-pro/3.p-dimensi-u6-pro.jpg",
+      "/images/WiFi/11.u6-pro/4.p-spec-u6-pro.jpg",
+      "/images/WiFi/11.u6-pro/5.p-deployment-u6-pro.jpg",
+      "/images/WiFi/11.u6-pro/p-itb-u6-pro.jpg",
+      "/images/WiFi/11.u6-pro/p-mkt0-u6-pro.jpg",
+      "/images/WiFi/11.u6-pro/p-mkt1-u6-pro.jpg",
+      "/images/WiFi/11.u6-pro/p-mkt2-u6-pro.jpg",
+      "/images/WiFi/11.u6-pro/p-mkt3-u6-pro.jpg",
+      "/images/WiFi/11.u6-pro/p-ov1-u6-pro.png",
+      "/images/WiFi/11.u6-pro/p-ov2-u6-pro.jpg",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/WiFi/11.u6-pro/p-ov2-u6-pro.jpg",
+      "/images/WiFi/11.u6-pro/p-ov1-u6-pro.png",
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Polycarbonate, metal",
+      "Max. Power Consumption 13W",
+      "Power Method PoE"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀197 x 35 mm (⌀7.8 x 1.4')" },
+          { label: "WiFi Standard", value: "WiFi 6" },
+          { label: "Spatial Streams", value: "6" },
+          { label: "Coverage Area", value: "140 m² (1,500 ft²)" },
+          { label: "Max. Client Count", value: "250+" },
+          { label: "Uplink", value: "GbE" },
+          { label: "Mounting", value: "Ceiling, Wall (Pro Mount Included)" },
+          { label: "Power Method", value: "PoE" }
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
+          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
+
+          { label: "Max. Data Rate 5 GHz", value: "4.8 Gbps (BW160)" },
+          { label: "Max. Data Rate 2.4 GHz", value: "573.5 Mbps (BW40)" },
+
+          { label: "Antenna Gain 5 GHz", value: "6 dBi" },
+          { label: "Antenna Gain 2.4 GHz", value: "4 dBi" },
+
+          { label: "Max. TX Power 5 GHz", value: "26 dBm" },
+          { label: "Max. TX Power 2.4 GHz", value: "22 dBm" },
+
+          { label: "Max. BSSIDs", value: "8 per Radio" },
+
+          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 2.4 Gbps (MCS0 - MCS11 NSS1/2, HE 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 1.7 Gbps (MCS0 - MCS9 NSS1/2, VHT 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 300 Mbps (MCS0 - MCS15, HT 20/40)" }
+        ]
+      },
+      {
+        title: "Features",
+        items: [
+          { label: "Wireless Meshing", value: "✓" },
+          { label: "Band Steering", value: "✓" },
+          { label: "802.11v BSS Transition Management", value: "✓" },
+          { label: "802.11r Fast Roaming", value: "✓" },
+          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
+          { label: "Advanced Radio Management", value: "✓" },
+          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
+
+          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
+          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
+          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
+          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
+
+          { label: "WiFi Speed Limiting", value: "✓" },
+          { label: "Client Device Isolation", value: "✓" },
+          { label: "WiFi Schedules", value: "✓" },
+          { label: "RADIUS over TLS (RadSec)", value: "✓" },
+          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Max. Power Consumption", value: "13W" },
+          { label: "Supported Voltage Range", value: "44.5–57V DC" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
+          { label: "Weight", value: "Device: 580 g (1.3 lb) With mount: 720 g (1.6 lb)" },
+          { label: "Management", value: "Ethernet Bluetooth" },
+          { label: "Enclosure Material", value: "Polycarbonate, metal" },
+          { label: "Mount Material", value: "Stainless steel (SUS304)" },
+          { label: "LEDs System", value: "White/Blue" },
+          { label: "Channel Bandwitdth", value: "HT 20/40, VHT 20/40/80/160, HE 20/40/80/160, EHT 20/40/80/160/240/320 (MHz)" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, SRRC, Anatel: 00910-22-08356" },
+          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz" },
+          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+        ]
+      },
+      {
+        title: " Software",
+        items: [
+          { label: "Application Requirements UniFi Network", value: "Version 6.0.45 and later" },
+        ]
+      }
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/WiFi/11.u6-pro/p-itb-u6-pro.jpg" },
+    ],
+
+    // Addon/aksesori yang tersedia untuk produk ini
+    addons: [
+      {
+        id: 1,
+        name: "UniFi Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
+        specs: [
+          "Bendable booted RJ45",
+          "3 mm outer diameter",
+          "Cable length: 0.1 to 8m",
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
+        ],
+        productLink: "/products/mounting-kit-u6-plus"
+      },
+      {
+        id: 2,
+        name: "Long-Range Ethernet Repeater",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Long-range Gigabit Ethernet adapter that receives PoE/PoE+ and offers passthrough PoE output.",
+        specs: [
+          "Extend PoE connections up to 1 km",
+          "(1) GbE RJ45 port for PoE/PoE+ input",
+          "(1) GbE RJ45 port for passthrough PoE output",
+          "10kA+ surge protection",
+          "10kA+ surge protection",
+          "Works reliably in extreme temperatures (-40 to 80° C)"
+        ],
+        detailedSpecs: [
+          { label: "Power Method", value: "PoE/PoE+ 2-pairs (Pins 1, 2+; 3, 6-)" },
+          { label: "Max. Power Consumption", value: "1.5W (Excluding PoE output)" },
+          { label: "Networking Interface", value: "(2) GbE RJ45 ports" },
+          { label: "PoE Interface", value: "PoE Interface" },
+          { label: "Total Non-Blocking Line Rate", value: "2 Gbps" },
+          { label: "Switching Capacity", value: "4 Gbps" },
+          { label: "Forwarding Rate", value: "Forwarding Rate 1.488 Mpps" },
+          { label: "Total Available PoE", value: "22.5W" },
+          { label: "Voltage Range PoE Mode", value: "37—57V DC" },
+          { label: "ESD/EMP Protection", value: "Air/contact: ± 30kV" },
+          { label: "DC Sparkover Voltage", value: "90V at 100V/s" },
+          { label: "Max. Impulse Sparkover Voltage", value: "700V at 1kV/μs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Max. MTU", value: "1,500 bytes" },
+          { label: "LEDs System", value: "Blue: power ON" },
+          { label: "LEDs Ethernet", value: "Green: 1 Gbps Amber: 10/100 Mbps" },
+          { label: "LEDs PoE", value: "Amber: passthrough PoE out" },
+          { label: "Ambient Operating Temperature", value: "-40 to 80° C (-40 to 176° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 95% noncondensing" }
+        ],
+        productLink: "/products/power-cable-u6-plus"
+      },
+    ]
+  },
+
+  // Produk Kesembilan dari WiFi, SF Flagship
+  {
+    id: "U6+",
+    name: "U6+",
+    category: "WiFi",
+    subfilter: "Flagship",
+    image: "/images/WiFi/12.u6+/1.p-utama-u6-plus.jpg",
+    shortDescription:
+      "Compact, ceiling-mounted WiFi 6 AP with 4 spatial streams that improves upon the U6 Lite with higher performance and dual-band WiFi 6 support. Ideal for small and medium-sized businesses.",
+    specs: [
+      { label: "Throughput", value: "3.5 Gbps IPS" },
+      { label: "PoE", value: "2x PoE+, 6x PoE" },
+      { label: "WAN", value: "2.5 GbE RJ45" },
+      { label: "Storage", value: "128GB SSD Integrated" },
+    ],
+
+    // SKU produk
+    sku: "U6+",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/WiFi/12.u6+/1.p-utama-u6-plus.jpg",
+      "/images/WiFi/12.u6+/2.p-dimensi-u6-plus.jpg",
+      "/images/WiFi/12.u6+/3.p-dimensi-u6-plus.jpg",
+      "/images/WiFi/12.u6+/4.p-spec-u6-plus.jpg",
+      "/images/WiFi/12.u6+/5.p-deployment-u6-plus.jpg",
+      "/images/WiFi/12.u6+/p-itb-u6-plus.jpg",
+      "/images/WiFi/12.u6+/p-mkt0-u6-plus.jpg",
+      "/images/WiFi/12.u6+/p-mkt1-u6-plus.jpg",
+      "/images/WiFi/12.u6+/p-mkt2-u6-plus.jpg",
+      "/images/WiFi/12.u6+/p-mkt3-u6-plus.jpg",
+      "/images/WiFi/12.u6+/p-mkt4-u6-plus.jpg",
+      "/images/WiFi/12.u6+/p-ov1-u6-plus.png",
+      "/images/WiFi/12.u6+/p-ov2-u6-plus.jpg",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/WiFi/12.u6+/p-ov2-u6-plus.jpg",
+      "/images/WiFi/12.u6+/p-ov1-u6-plus.png",
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Mount Material ABS, SGCC steel",
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀160 x 33 mm (⌀6.3 x 1.3')" },
+          { label: "WiFi Standard", value: "WiFi 6" },
+          { label: "Spatial Streams", value: "4" },
+          { label: "Coverage Area", value: "140 m² (1,500 ft²)" },
+          { label: "Max. Client Count", value: "300+" },
+          { label: "Uplink", value: "GbE" },
+          { label: "Mounting", value: "Ceiling, Wall (Pro Mount Included)" },
+          { label: "Power Method", value: "PoE" }
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "MIMO 5 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
+          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
+
+          { label: "Max. Data Rate 5 GHz", value: "2.4 Gbps (BW160)" },
+          { label: "Max. Data Rate 2.4 GHz", value: "573.5 Mbps (BW40)" },
+
+          { label: "Antenna Gain 5 GHz", value: "5.4 dBi" },
+          { label: "Antenna Gain 2.4 GHz", value: "3 dBi" },
+
+          { label: "Max. TX Power 5 GHz", value: "23 dBm" },
+          { label: "Max. TX Power 2.4 GHz", value: "23 dBm" },
+
+          { label: "Max. BSSIDs", value: "8 per Radio" },
+
+          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 2.4 Gbps (MCS0 - MCS11 NSS1/2, HE 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 1.7 Gbps (MCS0 - MCS9 NSS1/2, VHT 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 450 Mbps (MCS0 - MCS23, HT 20/40)" },
+        ]
+      },
+      {
+        title: "Features",
+        items: [
+          { label: "Wireless Meshing", value: "✓" },
+          { label: "Band Steering", value: "✓" },
+          { label: "802.11v BSS Transition Management", value: "✓" },
+          { label: "802.11r Fast Roaming", value: "✓" },
+          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
+          { label: "Advanced Radio Management", value: "✓" },
+          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
+
+          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
+          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
+          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
+          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
+
+          { label: "WiFi Speed Limiting", value: "✓" },
+          { label: "Client Device Isolation", value: "✓" },
+          { label: "WiFi Schedules", value: "✓" },
+          { label: "RADIUS over TLS (RadSec)", value: "✓" },
+          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Max. Power Consumption", value: "9W" },
+          { label: "Include PoE Adapter", value: "✓" },
+          { label: "Supported Voltage Range", value: "44–57V DC" },
+          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
+          { label: "Weight", value: "Device: 338 g (11.9 oz) With mount: 413 g (14.6 oz)" },
+          { label: "Management", value: "Ethernet" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum" },
+          { label: "Mount Material", value: "ABS, SGCC steel" },
+          { label: "LEDs System", value: "White/Blue" },
+          { label: "Channel Bandwitdth", value: "HT 20/40, VHT 20/40/80 (MHz)" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, SRRC, Anatel: 10539-23-08356" },
+          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz" },
+          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+        ]
+      },
+      {
+        title: " Software",
+        items: [
+          { label: "Application Requirements UniFi Network", value: "Version 7.3.76 and later" },
+        ]
+      }
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/WiFi/12.u6+/p-itb-u6-plus.jpg" },
+    ],
+
+    // Addon/aksesori yang tersedia untuk produk ini
+    addons: [
+      {
+        id: 1,
+        name: "UniFi Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
+        specs: [
+          "Bendable booted RJ45",
+          "3 mm outer diameter",
+          "Cable length: 0.1 to 8m",
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
+        ],
+        productLink: "/products/mounting-kit-u7-iw"
+      },
+      {
+        id: 2,
+        name: "Compact Flagship AP Recessed Ceiling Mount",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Recessed ceiling mount for U6 Lite, U6+, AC Lite and nanoHD.",
+        specs: [
+          "Low-profile mounting option to sit discreetly within your ceiling",
+          "Sold as a 3-pack"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "⌀210 x 20.6 mm (⌀8.3 x 0.8')" },
+          { label: "Weight", value: "310 g (10.9 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate, SGCC" }
+        ],
+        productLink: "/products/power-cable-u7-iw"
+      },
+      {
+        id: 3,
+        name: "Compact Flagship AP Retrofit Mount",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Retrofit mount for U6 Lite, U6+, and nanoHD.",
+        specs: [
+          "Allows installation over existing UniFi AP mounting brackets",
+          "Sold as a 3-pack"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "⌀187.8 x 16.7 mm (⌀7.4 x 0.7')" },
+          { label: "Weight", value: "105 g (3.7 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" }
+        ],
+        productLink: "/products/sfp-module-10g"
+      }
+    ]
+  },
+
+  // Produk Kesepuluh dari WiFi, SF Flagship
+  {
+    id: "UAP-AC-PRO",
+    name: "AC Pro",
+    category: "WiFi",
+    subfilter: "Flagship",
+    image: "/images/WiFi/13.uap-ac-pro/1.p-utama-uap-ac-pro.jpg",
+    shortDescription:
+      "Ceiling-mounted WiFi 5 AP with 6 spatial streams designed for large offices.",
+    specs: [
+      { label: "Throughput", value: "3.5 Gbps IPS" },
+      { label: "PoE", value: "2x PoE+, 6x PoE" },
+      { label: "WAN", value: "2.5 GbE RJ45" },
+      { label: "Storage", value: "128GB SSD Integrated" },
+    ],
+
+
+    // SKU produk
+    sku: "UAP-AC-PRO",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/WiFi/13.uap-ac-pro/1.p-utama-uap-ac-pro.jpg",
+      "/images/WiFi/13.uap-ac-pro/2.p-dimensi-uap-ac-pro.jpg",
+      "/images/WiFi/13.uap-ac-pro/3.p-dimensi-uap-ac-pro.jpg",
+      "/images/WiFi/13.uap-ac-pro/4.p-spec-uap-ac-pro.jpg",
+      "/images/WiFi/13.uap-ac-pro/5.p-deployment-uap-ac-pro.jpg",
+      "/images/WiFi/13.uap-ac-pro/p-mkt0-uap-ac-pro.jpg",
+      "/images/WiFi/13.uap-ac-pro/p-mkt1-uap-ac-pro.jpg",
+      "/images/WiFi/13.uap-ac-pro/p-mkt2-uap-ac-pro.jpg",
+      "/images/WiFi/13.uap-ac-pro/p-mkt3-uap-ac-pro.jpg",
+      "/images/WiFi/13.uap-ac-pro/p-ov1-uap-ac-pro.png",
+      "/images/WiFi/13.uap-ac-pro/p-ov2-uap-ac-pro.jpg",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/WiFi/13.uap-ac-pro/p-ov2-uap-ac-pro.jpg",
+      "/images/WiFi/13.uap-ac-pro/p-ov1-uap-ac-pro.png",
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Note. PoE power adapter included with single unit purchases."
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "⌀196.7 x 35 mm (⌀7.7 x 1.4')" },
+          { label: "WiFi Standard", value: "WiFi 5" },
+          { label: "Spatial Streams", value: "6" },
+          { label: "Coverage Area", value: "160 m² (1,750 ft²)140 m² (1,500 ft²)" },
+          { label: "Max. Client Count", value: "250+" },
+          { label: "Uplink", value: "GbE" },
+          { label: "Mounting", value: "Ceiling, Wall (Pro Mount Included)" },
+          { label: "Power Method", value: "PoE" }
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "MIMO 5 GHz", value: "3 x 3 (DL/UL MU-MIMO)" },
+          { label: "MIMO 2.4 GHz", value: "3 x 3 (DL/UL MU-MIMO)" },
+
+          { label: "Max. Data Rate 5 GHz", value: "1.3 Gbps (BW80)" },
+          { label: "Max. Data Rate 2.4 GHz", value: "450 Mbps (BW40)" },
+
+          { label: "Antenna Gain 5 GHz", value: "3 dBi" },
+          { label: "Antenna Gain 2.4 GHz", value: "3 dBi" },
+
+          { label: "Max. TX Power 5 GHz", value: "22 dBm" },
+          { label: "Max. TX Power 2.4 GHz", value: "22 dBm" },
+
+          { label: "Max. BSSIDs", value: "8 per Radio" },
+
+          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 1.3 Gbps (MCS0 - MCS9 NSS1/2/3, VHT 20/40/80)" },
+          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 450 Mbps (MCS0 - MCS23, HT 20/40)" },
+        ]
+      },
+      {
+        title: "Features",
+        items: [
+          { label: "Wireless Meshing", value: "✓" },
+          { label: "Band Steering", value: "✓" },
+          { label: "802.11v BSS Transition Management", value: "✓" },
+          { label: "802.11r Fast Roaming", value: "✓" },
+          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
+          { label: "Advanced Radio Management", value: "✓" },
+          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
+
+          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
+          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
+          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
+          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
+
+          { label: "WiFi Speed Limiting", value: "✓" },
+          { label: "Client Device Isolation", value: "✓" },
+          { label: "WiFi Schedules", value: "✓" },
+          { label: "RADIUS over TLS (RadSec)", value: "✓" },
+          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Max. Power Consumption", value: "9W" },
+          { label: "Include PoE Adapter", value: "✓" },
+          { label: "Supported Voltage Range", value: "44–57V DC" },
+          { label: "Networking Interface", value: "(2) GbE RJ45 ports" },
+          { label: "Weight", value: "Device: 350 g (12.4 oz) With mount: 450 g (15.9 oz)" },
+          { label: "Management", value: "Ethernet" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "LEDs System", value: "Status" },
+          { label: "Channel Bandwitdth", value: "HT 20/40, VHT 20/40/80 (MHz)" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 01943-16-08356" },
+          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz Worldwide:2400 - 2483.5 MHz 5150 - 5850 MHz" },
+          { label: "Ambient Operating Temperature", value: "-10 to 70° C (14 to 158° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+        ]
+      },
+    ],
+
+    // Addon/aksesori yang tersedia untuk produk ini
+    addons: [
+      {
+        id: 1,
+        name: "UniFi Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
+        specs: [
+          "Bendable booted RJ45",
+          "3 mm outer diameter",
+          "Cable length: 0.1 to 8m",
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
+        ],
+        productLink: "/products/mounting-kit-u7-pro-xg-wall"
+      },
+    ]
+  },
+
+  // Produk Pertama dari WiFi, SF Wall
   {
     id: "U7-Pro-XG-Wall",
     name: "U7 Pro XG Wall",
     category: "WiFi",
     subfilter: "Wall",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/WiFi/14.u7-pro-xg-wall/1.p-utama-u7-pro-xg-wall.jpg",
     shortDescription:
       "Easy-to-deploy WiFi 6 coverage extender that fits a standard wall outlet.",
     specs: [
@@ -4650,15 +3885,24 @@ export const wifiProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/14.u7-pro-xg-wall/1.p-utama-u7-pro-xg-wall.jpg",
+      "/images/WiFi/14.u7-pro-xg-wall/2.p-dimensi-u7-pro-xg-wall.jpg",
+      "/images/WiFi/14.u7-pro-xg-wall/3.p-spec-u7-pro-xg-wall.jpg",
+      "/images/WiFi/14.u7-pro-xg-wall/4.p-deployment-u7-pro-xg-wall.jpg",
+      "/images/WiFi/14.u7-pro-xg-wall/p-itb-u7-pro-xg-wall.jpg",
+      "/images/WiFi/14.u7-pro-xg-wall/p-mkt0-u7-pro-xg-wall.jpg",
+      "/images/WiFi/14.u7-pro-xg-wall/p-mkt1-u7-pro-xg-wall.jpg",
+      "/images/WiFi/14.u7-pro-xg-wall/p-mkt2-u7-pro-xg-wall.jpg",
+      "/images/WiFi/14.u7-pro-xg-wall/p-mkt3-u7-pro-xg-wall.jpg",
+      "/images/WiFi/14.u7-pro-xg-wall/p-mkt4-u7-pro-xg-wall.jpg",
+      "/images/WiFi/14.u7-pro-xg-wall/p-ov1-u7-pro-xg-wall.png",
+      "/images/WiFi/14.u7-pro-xg-wall/p-ov2-u7-pro-xg-wall.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/14.u7-pro-xg-wall/p-ov1-u7-pro-xg-wall.png",
+      "/images/WiFi/14.u7-pro-xg-wall/p-ov2-u7-pro-xg-wall.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4768,10 +4012,7 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/WiFi/14.u7-pro-xg-wall/p-itb-u7-pro-xg-wall.jpg" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -4988,13 +4229,14 @@ export const wifiProducts: Product[] = [
     ]
   },
 
-  // Produk Ketiga dari WiFi, SF Wall
+
+  // Produk Kedua dari WiFi, SF Wall
   {
     id: "U7-Pro-Wall",
     name: "U7 Pro Wall",
     category: "WiFi",
     subfilter: "Wall",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/WiFi/15.u7-pro-wall/1.p-utama-u7-pro-wall.jpg",
     shortDescription:
       "Wall-mounted WiFi 7 AP with 6 spatial streams and 6 GHz support tailored for home builders with seamless installation options.",
     specs: [
@@ -5010,15 +4252,24 @@ export const wifiProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/15.u7-pro-wall/1.p-utama-u7-pro-wall.jpg",
+      "/images/WiFi/15.u7-pro-wall/2.p-dimensi-u7-pro-wall.jpg",
+      "/images/WiFi/15.u7-pro-wall/3.p-spec-u7-pro-wall.jpg",
+      "/images/WiFi/15.u7-pro-wall/4.p-deployment-u7-pro-wall.jpg",
+      "/images/WiFi/15.u7-pro-wall/p-itb-u7-pro-wall.jpg",
+      "/images/WiFi/15.u7-pro-wall/p-mkt0-u7-pro-wall.jpg",
+      "/images/WiFi/15.u7-pro-wall/p-mkt1-u7-pro-wall.jpg",
+      "/images/WiFi/15.u7-pro-wall/p-mkt2-u7-pro-wall.jpg",
+      "/images/WiFi/15.u7-pro-wall/p-mkt3-u7-pro-wall.jpg",
+      "/images/WiFi/15.u7-pro-wall/p-mkt4-u7-pro-wall.jpg",
+      "/images/WiFi/15.u7-pro-wall/p-ov1-u7-pro-wall.png",
+      "/images/WiFi/15.u7-pro-wall/p-ov2-u7-pro-wall.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/15.u7-pro-wall/p-ov1-u7-pro-wall.png",
+      "/images/WiFi/15.u7-pro-wall/p-ov2-u7-pro-wall.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -5123,10 +4374,7 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/WiFi/15.u7-pro-wall/p-itb-u7-pro-wall.jpg" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -5355,204 +4603,14 @@ export const wifiProducts: Product[] = [
     ]
   },
 
-  // Produk Keempat dari WiFi, SF Wall
-  {
-    id: "U6-IW",
-    name: "U6 In-Wall",
-    category: "WiFi",
-    subfilter: "Wall",
-    image: "/images/products/Product-UDR-5G-Max.png",
-    shortDescription:
-      "Wall-mounted WiFi 6 AP with 6 spatial streams and a built-in 4‑port switch ideal for single-room coverage in hospitality environments.",
-    specs: [
-      { label: "Throughput", value: "3.5 Gbps IPS" },
-      { label: "PoE", value: "2x PoE+, 6x PoE" },
-      { label: "WAN", value: "2.5 GbE RJ45" },
-      { label: "Storage", value: "128GB SSD Integrated" },
-    ],
 
-    // SKU produk
-    sku: "U6-IW",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-U7-Outdoor.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Note. PoE+ input required for single-port PoE output."
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "139.7 x 96 x 31.2 mm (5.5 x 3.8 x 1.3')150 x 103 x 36 mm (5.9 x 4.1 x 1.4')" },
-          { label: "WiFi Standard", value: "WiFi 6" },
-          { label: "Spatial Streams", value: "6" },
-          { label: "Coverage Area", value: "115 m² (1,250 ft²)" },
-          { label: "Max. Client Count", value: "250+" },
-          { label: "Uplink", value: "GbE" },
-          { label: "Mounting", value: "Wall (Mount Included)" },
-          { label: "Power Method", value: "PoE PoE+ (Required for PoE output)" }
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
-          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
-
-          { label: "Max. Data Rate 5 GHz", value: "4.8 Gbps (BW160)" },
-          { label: "Max. Data Rate 2.4 GHz", value: "573.5 Mbps (BW40)" },
-
-          { label: "Antenna Gain 5 GHz", value: "5.9 dBi" },
-          { label: "Antenna Gain 2.4 GHz", value: "5 dBi" },
-
-          { label: "Max. TX Power 5 GHz", value: "26 dBm" },
-          { label: "Max. TX Power 2.4 GHz", value: "22 dBm" },
-
-          { label: "Max. BSSIDs", value: "8 per Radio" },
-
-          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 4.8 Gbps (MCS0 - MCS11 NSS1/2/3/4, HE 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 3.4 Gbps (MCS0 - MCS9 NSS1/2/3/4, VHT 20/40/80/160)" },
-          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 600 Mbps (MCS0 - MCS31 , HT 20/40)" },
-        ]
-      },
-      {
-        title: "Features",
-        items: [
-          { label: "Wireless Meshing", value: "✓" },
-          { label: "Band Steering", value: "✓" },
-          { label: "802.11v BSS Transition Management", value: "✓" },
-          { label: "802.11r Fast Roaming", value: "✓" },
-          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
-          { label: "Advanced Radio Management", value: "✓" },
-          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
-
-          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
-          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
-          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
-          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
-          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
-
-          { label: "WiFi Speed Limiting", value: "✓" },
-          { label: "Client Device Isolation", value: "✓" },
-          { label: "WiFi Schedules", value: "✓" },
-          { label: "RADIUS over TLS (RadSec)", value: "✓" },
-          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "13W (Excluding PoE output)" },
-          { label: "Networking Interface", value: "(1) Data-in: GbE RJ45 port (4) Data-out: GbE RJ45 ports" },
-          { label: "Weight", value: "460 g (1 lb)" },
-          { label: "Ball-In Switch", value: "(4) GbE ports with (1) PoE output" },
-          { label: "Management", value: "Ethernet Bluetooth" },
-          { label: "Enclosure Material", value: "Plastic, aluminum" },
-          { label: "Mount Material", value: "Aluminum" },
-          { label: "LEDs System", value: "White/Blue" },
-          { label: "Channel Bandwitdth", value: "HT 20/40, VHT 20/40/80/160, HE 20/40/80/160 (MHz)" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC, Anatel: 10022-24-08356" },
-          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz" },
-          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 140° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
-        ]
-      },
-      {
-        title: " Software",
-        items: [
-          { label: "Application Requirements UniFi Network", value: "Version 6.0.45 and later" },
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "U6 Extender",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Customized encasing for U6 Extender and BeaconHD.",
-        specs: [
-          "Blends seamlessly into a variety of backgrounds",
-          "Sold as a 3-pack"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "172 x 113.6 x 32.7 mm (6.8 x 4.5 x 1.3')" },
-          { label: "Weight", value: "35 g (1.2 oz)" },
-          { label: "Enclosure Material", value: "Polycarbonate" },
-          { label: "Available Colors", value: "Black Concrete Wood" }
-        ],
-        productLink: "/products/mounting-kit"
-      },
-      {
-        id: 2,
-        name: "UniFi Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
-        specs: [
-          "Bendable booted RJ45",
-          "3 mm outer diameter",
-          "Cable length: 0.1 to 8m",
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
-          { label: "Available Colors", value: "White, Blue, Black" },
-          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
-          { label: "Supported Data Rate", value: "GbE" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Bendable booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
-          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
-          { label: "Flame Rating", value: "FT-2(UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
-          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
-        ],
-        productLink: "/products/power-cable"
-      },
-    ]
-  },
-
-  // Produk Kelima dari WiFi, SF Wall
+  // Produk Ketiga dari WiFi, SF Wall
   {
     id: "U7-IW",
     name: "U7 In-Wall",
     category: "WiFi",
     subfilter: "Wall",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/WiFi/16.u7-iw/1.p-utama-u7-iw.jpg",
     shortDescription:
       "Wall-mounted WiFi 7 AP with 4 spatial streams and an integrated 2.5 GbE PoE switch designed for hospitality environments.",
     specs: [
@@ -5567,15 +4625,24 @@ export const wifiProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/16.u7-iw/1.p-utama-u7-iw.jpg",
+      "/images/WiFi/16.u7-iw/2.p-dimensi-u7-iw.jpg",
+      "/images/WiFi/16.u7-iw/3.p-spec-u7-iw.jpg",
+      "/images/WiFi/16.u7-iw/4.p-deployment-u7-iw.jpg",
+      "/images/WiFi/16.u7-iw/p-itb-u7-iw.jpg",
+      "/images/WiFi/16.u7-iw/p-mkt0-u7-iw.jpg",
+      "/images/WiFi/16.u7-iw/p-mkt1-u7-iw.jpg",
+      "/images/WiFi/16.u7-iw/p-mkt2-u7-iw.jpg",
+      "/images/WiFi/16.u7-iw/p-mkt3-u7-iw.jpg",
+      "/images/WiFi/16.u7-iw/p-mkt4-u7-iw.jpg",
+      "/images/WiFi/16.u7-iw/p-ov1-u7-iw.png",
+      "/images/WiFi/16.u7-iw/p-ov2-u7-iw.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/16.u7-iw/p-ov1-u7-iw.png",
+      "/images/WiFi/16.u7-iw/p-ov2-u7-iw.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -5677,12 +4744,549 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/WiFi/16.u7-iw/p-itb-u7-iw.jpg" },
     ],
   },
+
+
+  // Produk Keempat dari WiFi, SF Wall
+  {
+    id: "U6-Enterprise-IW",
+    name: "U6 Enterprise In-Wall",
+    category: "WiFi",
+    subfilter: "Wall",
+    image: "/images/WiFi/17.u6-enterprise-iw/1.p-utama-u6-enterprise-iw.jpg",
+    shortDescription:
+      "Wall-mounted WiFi 6 AP with 6 spatial streams and a built-in 4‑port switch ideal for single-room coverage in hospitality environments.",
+    specs: [
+      { label: "Throughput", value: "3.5 Gbps IPS" },
+      { label: "PoE", value: "2x PoE+, 6x PoE" },
+      { label: "WAN", value: "2.5 GbE RJ45" },
+      { label: "Storage", value: "128GB SSD Integrated" },
+    ],
+
+    // SKU produk
+    sku: "U6-Enterprise-IW",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/WiFi/17.u6-enterprise-iw/1.p-utama-u6-enterprise-iw.jpg",
+      "/images/WiFi/17.u6-enterprise-iw/2.p-dimensi-u6-enterprise-iw.jpg",
+      "/images/WiFi/17.u6-enterprise-iw/3.p-spec-u6-enterprise-iw.jpg",
+      "/images/WiFi/17.u6-enterprise-iw/4.p-deployment-u6-enterprise-iw.jpg",
+      "/images/WiFi/17.u6-enterprise-iw/p-itb-u6-enterprise-iw.jpg",
+      "/images/WiFi/17.u6-enterprise-iw/p-mkt0-u6-enterprise-iw.jpg",
+      "/images/WiFi/17.u6-enterprise-iw/p-mkt1-u6-enterprise-iw.jpg",
+      "/images/WiFi/17.u6-enterprise-iw/p-mkt2-u6-enterprise-iw.jpg",
+      "/images/WiFi/17.u6-enterprise-iw/p-mkt3-u6-enterprise-iw.jpg",
+      "/images/WiFi/17.u6-enterprise-iw/p-ov1-u6-enterprise-iw.png",
+      "/images/WiFi/17.u6-enterprise-iw/p-ov2-u6-enterprise-iw.png",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/WiFi/17.u6-enterprise-iw/p-ov1-u6-enterprise-iw.png",
+      "/images/WiFi/17.u6-enterprise-iw/p-ov2-u6-enterprise-iw.png",
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Enclosure Material Polycarbonate, aluminum",
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "159.7 x 156.7 x 33.8 mm  (6.3 x 6.2 x 1.3')" },
+          { label: "WiFi Standard", value: "WiFi 6E" },
+          { label: "Spatial Streams", value: "10" },
+          { label: "Coverage Area", value: "115 m² (1,250 ft²)" },
+          { label: "Max. Client Count", value: "600+" },
+          { label: "Uplink", value: "2.5 GbE" },
+          { label: "Mounting", value: "Wall (Mount Included)" },
+          { label: "Power Method", value: "PoE+ PoE++ (Required for PoE output)" }
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "MIMO 6 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
+          { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
+          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
+
+          { label: "Max. Data Rate 6 GHz", value: "4.8 Gbps (BW160)" },
+          { label: "Max. Data Rate 5 GHz", value: "4.8 Gbps (BW160)" },
+          { label: "Max. Data Rate 2.4 GHz", value: "573.5 Mbps (BW40)" },
+
+          { label: "Antenna Gain 5 GHz", value: "5.8 dBi" },
+          { label: "Antenna Gain 5 GHz", value: "5.8 dBi" },
+          { label: "Antenna Gain 2.4 GHz", value: "4 dBi" },
+
+          { label: "Max. TX Power 6 GHz", value: "26 dBm" },
+          { label: "Max. TX Power 5 GHz", value: "26 dBm" },
+          { label: "Max. TX Power 2.4 GHz", value: "22 dBm" },
+
+          { label: "Max. BSSIDs", value: "8 per Radio" },
+
+          { label: "Supported Data Rates 802.11ax (WiFi 6/6E)", value: "7.3 Mbps to 4.8 Gbps (MCS0 - MCS11 NSS1/2/3/4, HE 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 3.4 Gbps (MCS0 - MCS9 NSS1/2/3/4, VHT 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 600 Mbps (MCS0 - MCS31 , HT 20/40)" },
+        ]
+      },
+      {
+        title: "Features",
+        items: [
+          { label: "Wireless Meshing", value: "✓" },
+          { label: "Band Steering", value: "✓" },
+          { label: "802.11v BSS Transition Management", value: "✓" },
+          { label: "802.11r Fast Roaming", value: "✓" },
+          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
+          { label: "Advanced Radio Management", value: "✓" },
+          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
+
+          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
+          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
+          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
+          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
+
+          { label: "WiFi Speed Limiting", value: "✓" },
+          { label: "Client Device Isolation", value: "✓" },
+          { label: "WiFi Schedules", value: "✓" },
+          { label: "RADIUS over TLS (RadSec)", value: "✓" },
+          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Max. Power Consumption", value: "21W (Excluding PoE output)" },
+          { label: "Supported Voltage Range", value: "44–57V DC" },
+          { label: "Networking Interface", value: "(1) Data in: 1/2.5 GbE RJ45 port (4) Data out: GbE RJ45 ports" },
+          { label: "Weight", value: "884 g (1.9 lb)" },
+          { label: "Management", value: "Ethernet Bluetooth" },
+          { label: "Built-In Switch", value: "(4) GbE ports with (1) PoE output" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum" },
+          { label: "Mount Material", value: "Aluminum" },
+          { label: "LEDs System", value: "White/Blue" },
+          { label: "Channel Bandwitdth", value: "HT 20/40, VHT 20/40/80/160, HE 20/40/80/160, EHT 20/40/80/160/240 (MHz)" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 04643-24-08356" },
+          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz U-NII-5 to U-NII-8: 6100 - 7125 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz 5925 - 7125 MHz" },
+          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+        ]
+      },
+      {
+        title: " Software",
+        items: [
+          { label: "Application Requirements UniFi Network", value: "Version 6.0.45 and later" },
+        ]
+      }
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/WiFi/17.u6-enterprise-iw/p-itb-u6-enterprise-iw.jpg" },
+    ],
+
+    // Addon/aksesori yang tersedia untuk produk ini
+    addons: [
+      {
+        id: 1,
+        name: "Pro Max 16 PoE",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "A 16-port, Layer 3 Etherlighting™ switch with 2.5 GbE, PoE++ output, and versatile mounting options",
+        specs: [
+          "Etherlighting™ ports that illuminate to indicate port location, speed/link, and native VLAN/network*",
+          "(4) 2.5 GbE PoE++ ports",
+          "(12) GbE PoE+ ports",
+          "(2) 10G SFP+ ports",
+          "180W total PoE availability",
+          "Versatile desktop, wall, and rack** mounting",
+          "Silent, fanless cooling system",
+          "*Pair with UniFi Etherlighting Patch Cables for optimal brightness. **Requires add-on Rack Mount accessory.",
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "325.1 x 160 x 43.7 mm (12.8 x 6.3 x 1.7')" },
+          { label: "Port Layout 1 GbE RJ45", value: "12 (All PoE+) (1G/100M/10M)" },
+          { label: "Port Layout 2.5 GbE RJ45", value: "4 (All PoE++) (2.5G/1G/100M/10M)" },
+          { label: "Port Layou 10G SFP+t", value: "2 (10G/1G)" },
+          { label: "Switching Capacity", value: "230 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "42 Gbps" },
+          { label: "DHCP Server (Local Networks)", value: "✓" },
+          { label: "DHCP Relay", value: "✓" },
+          { label: "LACP Port Aggregation", value: "✓" },
+          { label: "STP & RSTP", value: "✓" },
+          { label: "Max. Power Consumption", value: "25W (Excluding PoE Output) 210W (Including PoE Output)" },
+          { label: "Power Method", value: "AC Adapter" },
+          { label: "Application Requirements UniFi Network", value: "Version 8.1.127 and later" },
+        ],
+        productLink: "/products/mounting-kit-u7-pr0"
+      },
+      {
+        id: 2,
+        name: "Pro Max 48 PoE",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "A 48-port, Layer 3 Etherlighting™ switch with 2.5 GbE and PoE++ output.",
+        specs: [
+          "A 48-port, Layer 3 Etherlighting™ switch with 2.5 GbE and PoE++ output.",
+          "(16) 2.5 GbE ports including (8) PoE+ and (8) PoE++",
+          "32) GbE ports including (24) PoE+ and (8) PoE++",
+          "(4) 10G SFP+ ports",
+          "DC power backup ready",
+          "720W total PoE availabilit",
+          "*Pair with UniFi Etherlighting Patch Cables for optimal brightness."
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "442.4 x 400 x 44 mm (17.4 x 15.7 x 1.7')" },
+          { label: "Port Layout 1 GbE RJ45", value: "32 (24 PoE+; 8 PoE++) (1G/100M/10M)" },
+          { label: "Port Layout 2.5 GbE RJ45", value: "16 (8 PoE+; 8 PoE++) (2.5G/1G/100M/10M)" },
+          { label: "Port Layou 10G SFP+t", value: "4 (10G/1G)" },
+          { label: "Switching Capacity", value: "224 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "112 Gbps" },
+          { label: "DHCP Server (Local Networks)", value: "✓" },
+          { label: "DHCP Relay", value: "✓" },
+          { label: "LACP Port Aggregation", value: "✓" },
+          { label: "STP & RSTP", value: "✓" },
+          { label: "Max. Power Consumption", value: "100W (Excluding PoE Output) 820W (Including PoE Output)" },
+          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
+          { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
+        ],
+        productLink: "/products/power-cable-u7-pr0"
+      },
+      {
+        id: 3,
+        name: "Pro Max 24 PoE",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "A 24-port, Layer 3 Etherlighting™ switch capable of high-power PoE++ output.",
+        specs: [
+          "Etherlighting™ ports that illuminate to indicate port location, speed/link, and native VLAN/network*",
+          "(8) 2.5 GbE PoE++ ports",
+          "(16) GbE ports including (8) PoE+ and (8) PoE++",
+          "(2) 10G SFP+ ports",
+          "DC power backup ready",
+          "400W total PoE availabilitly",
+          "*Pair with UniFi Etherlighting Patch Cables for optimal brightness.",
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "442 x 325 x 44 mm (17.4 x 12.8 x 1.7')" },
+          { label: "Port Layout 1 GbE RJ45", value: "16 (8 PoE+; 8 PoE++) (1G/100M/10M)" },
+          { label: "Port Layout 2.5 GbE RJ45", value: "8 (All PoE++) (2.5G/1G/100M/10M)" },
+          { label: "Port Layou 10G SFP+t", value: "2 (10G/1G)" },
+          { label: "Switching Capacity", value: "112 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "56 Gbps" },
+          { label: "DHCP Server (Local Networks)", value: "✓" },
+          { label: "DHCP Relay", value: "✓" },
+          { label: "LACP Port Aggregation", value: "✓" },
+          { label: "STP & RSTP", value: "✓" },
+          { label: "Max. Power Consumption", value: "50W (Excluding PoE Output) 450W (Including PoE Output)" },
+          { label: "Power Method", value: "(1) Universal input, 100–240V AC, 50/60 Hz (1) USP RPS DC input" },
+          { label: "Application Requirements UniFi Network", value: "Version 8.0.24 and later" },
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+      {
+        id: 4,
+        name: "U6 Extender",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Easy-to-deploy WiFi 6 coverage extender that fits a standard wall outlet.",
+        specs: [
+          "WiFi 6",
+          "6 spatial streams",
+          "115 m² (1,250 ft²) coverage",
+          "250+ connected devices",
+          "Powered with standard AC wall outlet",
+          "Wireless uplink to UniFi WiFi",
+          "Note. Cannot be set up standalone and requires UniFi WiFi managed by a UniFi Console or self-hosted UniFi Network Server.",
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "US: 169.7 x 112.2 x 32.2 mm (6.7 x 4.4 x 1.'') EU: 169.7 x 112.2 x 77.6 mm  (6.7 x 4.4 x 3.1')" },
+          { label: "WiFi Standard", value: "WiFi 6" },
+          { label: "Spatial Streams", value: "6" },
+          { label: "Coverage Area", value: "115 m² (1,250 ft²)" },
+          { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
+          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
+          { label: "Wireless Meshing", value: "✓" },
+          { label: "Band Steering", value: "✓" },
+          { label: "802.11v BSS Transition Management", value: "✓" },
+          { label: "802.11r Fast Roaming", value: "✓" },
+          { label: "Max. Power Consumption", value: "11W  " },
+          { label: "Supported Voltage Range", value: "110—240V AC" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+      {
+        id: 5,
+        name: "UniFi Etherlighting Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
+        specs: [
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 2.5 mm outer diameter for 0.15-8 m lengths",
+          "— 2.9 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+      {
+        id: 6,
+        name: "Enterprise 8 PoE (Vintage)",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "An 8-port, Layer 3 switch with 2.5 GbE PoE+ output.",
+        specs: [
+          "(8) 2.5 GbE PoE+ ports",
+          "(2) 10G SFP+ ports",
+          "120W total PoE availability",
+          "Note. These switches are not compatible with the PoE++ requirements of the new U7 and E7 Access Points. We recommend using Enterprise Campus switches for such deployments.",
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "200 x 248 x 44 mm (7.9 x 9.8 x 1.7')" },
+          { label: "Port Layout 2.5 GbE RJ45", value: "8 (All PoE+) (2.5G/1G/100M)" },
+          { label: "Port Layou 10G SFP+t", value: "2 (10G/1G)" },
+          { label: "Switching Capacity", value: "80 Gbps" },
+          { label: "Total Non-Blocking Throughput", value: "40 Gbps" },
+          { label: "DHCP Server (Local Networks)", value: "✓" },
+          { label: "DHCP Relay", value: "✓" },
+          { label: "LACP Port Aggregation", value: "✓" },
+          { label: "STP & RSTP", value: "✓" },
+          { label: "Max. Power Consumption", value: "30W (Excluding PoE Output) 150W (Including PoE Output)" },
+          { label: "Power Method", value: "Universal input, 100–240V AC, 50/60 Hz" },
+          { label: "Application Requirements UniFi Network", value: "Version 6.3.51 and later" },
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+    ]
+  },
+
+  // Produk Kelima dari WiFi, SF Wall
+  {
+    id: "U6-IW",
+    name: "U6 In-Wall",
+    category: "WiFi",
+    subfilter: "Wall",
+    image: "/images/WiFi/18.u6-iw/1.p-utama-u6-iw.jpg",
+    shortDescription:
+      "Wall-mounted WiFi 6 AP with 6 spatial streams and a built-in 4‑port switch ideal for single-room coverage in hospitality environments.",
+    specs: [
+      { label: "Throughput", value: "3.5 Gbps IPS" },
+      { label: "PoE", value: "2x PoE+, 6x PoE" },
+      { label: "WAN", value: "2.5 GbE RJ45" },
+      { label: "Storage", value: "128GB SSD Integrated" },
+    ],
+
+    // SKU produk
+    sku: "U6-IW",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/WiFi/18.u6-iw/1.p-utama-u6-iw.jpg",
+      "/images/WiFi/18.u6-iw/2.p-dimensi-u6-iw.jpg",
+      "/images/WiFi/18.u6-iw/3.p-spec-u6-iw.jpg",
+      "/images/WiFi/18.u6-iw/4.p-deployment-u6-iw.jpg",
+      "/images/WiFi/18.u6-iw/p-itb-u6-iw.jpg",
+      "/images/WiFi/18.u6-iw/p-mkt0-u6-iw.jpg",
+      "/images/WiFi/18.u6-iw/p-mkt1-u6-iw.jpg",
+      "/images/WiFi/18.u6-iw/p-mkt2-u6-iw.jpg",
+      "/images/WiFi/18.u6-iw/p-mkt3-u6-iw.jpg",
+      "/images/WiFi/18.u6-iw/p-mkt4-u6-iw.jpg",
+      "/images/WiFi/18.u6-iw/p-ov1-u6-iw.png",
+      "/images/WiFi/18.u6-iw/p-ov2-u6-iw.png",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/WiFi/18.u6-iw/p-ov1-u6-iw.png",
+      "/images/WiFi/18.u6-iw/p-ov2-u6-iw.png",
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Note. PoE+ input required for single-port PoE output."
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "139.7 x 96 x 31.2 mm (5.5 x 3.8 x 1.3')150 x 103 x 36 mm (5.9 x 4.1 x 1.4')" },
+          { label: "WiFi Standard", value: "WiFi 6" },
+          { label: "Spatial Streams", value: "6" },
+          { label: "Coverage Area", value: "115 m² (1,250 ft²)" },
+          { label: "Max. Client Count", value: "250+" },
+          { label: "Uplink", value: "GbE" },
+          { label: "Mounting", value: "Wall (Mount Included)" },
+          { label: "Power Method", value: "PoE PoE+ (Required for PoE output)" }
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "MIMO 5 GHz", value: "4 x 4 (DL/UL MU-MIMO)" },
+          { label: "MIMO 2.4 GHz", value: "2 x 2 (DL/UL MU-MIMO)" },
+
+          { label: "Max. Data Rate 5 GHz", value: "4.8 Gbps (BW160)" },
+          { label: "Max. Data Rate 2.4 GHz", value: "573.5 Mbps (BW40)" },
+
+          { label: "Antenna Gain 5 GHz", value: "5.9 dBi" },
+          { label: "Antenna Gain 2.4 GHz", value: "5 dBi" },
+
+          { label: "Max. TX Power 5 GHz", value: "26 dBm" },
+          { label: "Max. TX Power 2.4 GHz", value: "22 dBm" },
+
+          { label: "Max. BSSIDs", value: "8 per Radio" },
+
+          { label: "Supported Data Rates 802.11ax (WiFi 6)", value: "7.3 Mbps to 4.8 Gbps (MCS0 - MCS11 NSS1/2/3/4, HE 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11ac (WiFi 5)", value: "6.5 Mbps to 3.4 Gbps (MCS0 - MCS9 NSS1/2/3/4, VHT 20/40/80/160)" },
+          { label: "Supported Data Rates 802.11n", value: "6.5 Mbps to 600 Mbps (MCS0 - MCS31 , HT 20/40)" },
+        ]
+      },
+      {
+        title: "Features",
+        items: [
+          { label: "Wireless Meshing", value: "✓" },
+          { label: "Band Steering", value: "✓" },
+          { label: "802.11v BSS Transition Management", value: "✓" },
+          { label: "802.11r Fast Roaming", value: "✓" },
+          { label: "802.11k Radio Resource Management (RRM)", value: "✓" },
+          { label: "Advanced Radio Management", value: "✓" },
+          { label: "Passpoint (Hotspot 2.0)", value: "✓" },
+
+          { label: "Captive Hotspot Portal Custom Branding Landing Page", value: "✓" },
+          { label: "Captive Hotspot Portal Voucher Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Payment-Based Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal External Portal Server Support", value: "✓" },
+          { label: "Captive Hotspot Portal Password Authentication", value: "✓" },
+          { label: "Captive Hotspot Portal Guest Network Isolation", value: "✓" },
+          { label: "Private Pre-Shared Key (PPSK)", value: "✓" },
+
+          { label: "WiFi Speed Limiting", value: "✓" },
+          { label: "Client Device Isolation", value: "✓" },
+          { label: "WiFi Schedules", value: "✓" },
+          { label: "RADIUS over TLS (RadSec)", value: "✓" },
+          { label: "Dynamic RADIUS-assigned VLAN", value: "✓" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Max. Power Consumption", value: "13W (Excluding PoE output)" },
+          { label: "Networking Interface", value: "(1) Data-in: GbE RJ45 port (4) Data-out: GbE RJ45 ports" },
+          { label: "Weight", value: "460 g (1 lb)" },
+          { label: "Ball-In Switch", value: "(4) GbE ports with (1) PoE output" },
+          { label: "Management", value: "Ethernet Bluetooth" },
+          { label: "Enclosure Material", value: "Plastic, aluminum" },
+          { label: "Mount Material", value: "Aluminum" },
+          { label: "LEDs System", value: "White/Blue" },
+          { label: "Channel Bandwitdth", value: "HT 20/40, VHT 20/40/80/160, HE 20/40/80/160 (MHz)" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, Anatel: 10022-24-08356" },
+          { label: "Operating Frequency", value: "US/CA: 2400 - 2472 MHz U-NII-1: 5150 - 5250 MHz U-NII-2A: 5250 - 5350 MHz U-NII-2C: 5470 - 5725 MHz U-NII-3: 5725 - 5850 MHz Worldwide: 2400 - 2483.5 MHz 5150 - 5850 MHz" },
+          { label: "Ambient Operating Temperature", value: "-30 to 60° C (-22 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+        ]
+      },
+      {
+        title: " Software",
+        items: [
+          { label: "Application Requirements UniFi Network", value: "Version 6.0.45 and later" },
+        ]
+      }
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/WiFi/18.u6-iw/p-itb-u6-iw.jpg" },
+    ],
+
+    // Addon/aksesori yang tersedia untuk produk ini
+    addons: [
+      {
+        id: 1,
+        name: "U6 Extender",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Customized encasing for U6 Extender and BeaconHD.",
+        specs: [
+          "Blends seamlessly into a variety of backgrounds",
+          "Sold as a 3-pack"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "172 x 113.6 x 32.7 mm (6.8 x 4.5 x 1.3')" },
+          { label: "Weight", value: "35 g (1.2 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Available Colors", value: "Black Concrete Wood" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 2,
+        name: "UniFi Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
+        specs: [
+          "Bendable booted RJ45",
+          "3 mm outer diameter",
+          "Cable length: 0.1 to 8m",
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Blue, Black" },
+          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Bendable booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
+        ],
+        productLink: "/products/power-cable"
+      },
+    ]
+  },
+
 
   // Produk Keenam dari WiFi, SF Wall
   {
@@ -9936,7 +9540,7 @@ export const wifiProducts: Product[] = [
       { name: "Quick Start", image: "/images/dcs-box.png" }
     ],
     addons: [
-       {
+      {
         id: 1,
         name: "UniFi Patch Cable",
         image: "/images/dcs-box.png",
@@ -10042,11 +9646,11 @@ export const wifiProducts: Product[] = [
   },
 
   // Produk Pertama dari WiFi, SF Special Devices
-   {
+  {
     id: "UTR",
     name: "UniFi Travel Router",
     category: "WiFi",
-    subfilter: "Enterprise",
+    subfilter: "Special Devices",
     image: "/images/products/Product-UDR-5G-Max.png",
     shortDescription:
       "An ultra-slim travel router that instantly extends your UniFi Network wherever you are, bringing secure, familiar connectivity to remote locations.",
