@@ -1181,14 +1181,12 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/8.up-ai-port/p-mkt5-up-ai-port.png",
       "/images/camerasecurity/8.up-ai-port/p-mkt6-up-ai-port.png",
       "/images/camerasecurity/8.up-ai-port/p-mkt7-up-ai-port.png"
-      "/images/camerasecurity/8.up-ai-port/p-mkt7-up-ai-port.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/8.up-ai-port/p-mkt5-up-ai-port.png",
       "/images/camerasecurity/8.up-ai-port/p-itb-up-ai-port.avif"
-      "/images/camerasecurity/8.up-ai-port/p-itb-up-ai-port.avif",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1278,8 +1276,6 @@ export const cameraSecurityProducts: Product[] = [
     overviewImages: [
       "/images/camerasecurity/9.up-viewport/p-mkt3-up-viewport.png",
       "/images/camerasecurity/9.up-viewport/p-itb-up-viewport.avif"
-      "/images/camerasecurity/9.up-viewport/p-mkt1-up-viewport.png",
-      "/images/camerasecurity/9.up-viewport/p-itb-up-viewport.avif",
     ],
 
     // Bullet points untuk deskripsi produk
