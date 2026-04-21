@@ -5823,7 +5823,7 @@ export const doorAccessProducts: Product[] = [
     name: "Gate Starter Kit",
     category: "Door Access",
     subfilter: "Kits",
-    image: "/images/camera.jpg",
+    image: "/images/dooraccess/23.uaskgate/1.p-utama-uaskgate.png",
     shortDescription:
       "Control a vehicle gate using the connected Intercom and authorize gate access with License Plate Unlock when paired with a compatible Protect AI camera.",
     specs: [
@@ -5838,15 +5838,22 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/23.uaskgate/1.p-utama-uaskgate.png",
+      "/images/dooraccess/23.uaskgate/2.p-spec-uaskgate.png",
+      "/images/dooraccess/23.uaskgate/3.p-dimensi-uaskgate.png",
+      "/images/dooraccess/23.uaskgate/4.p-spec-uaskgate.png",
+      "/images/dooraccess/23.uaskgate/5.p-dimensi-uaskgate.png",
+      "/images/dooraccess/23.uaskgate/6.p-spec-uaskgate.png",
+      "/images/dooraccess/23.uaskgate/7.p-dimensi-uaskgate.png",
+      "/images/dooraccess/23.uaskgate/8.p-development-uaskgate.png",
+      "/images/dooraccess/23.uaskgate/p-itb-uaskgate.png",
+      "/images/dooraccess/23.uaskgate/p-mkt0-uaskgate.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/23.uaskgate/p-mkt0-uaskgate.png",
+      "/images/dooraccess/23.uaskgate/p-itb-uaskgate.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -6014,10 +6021,8 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/dooraccess/23.uaskgate/p-itb-uaskgate.png",
+ }, 
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -6177,7 +6182,7 @@ export const doorAccessProducts: Product[] = [
     name: "Elevator Starter Kit",
     category: "Door Access",
     subfilter: "Kits",
-    image: "/images/camera.jpg",
+    image: "/images/dooraccess/24.uaskelevator/1.p-utama-uaskelevator.png",
     shortDescription:
       "Connects to in-elevator readers with PoE to authorize floor selection. Supports up to 18 floors with digital inputs for elevator car status and emergency.",
     specs: [
@@ -6192,15 +6197,23 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/24.uaskelevator/1.p-utama-uaskelevator.png",
+      "/images/dooraccess/24.uaskelevator/2.p-spec-uaskelevator.png",
+      "/images/dooraccess/24.uaskelevator/3.p-dimensi-uaskelevator.png",
+      "/images/dooraccess/24.uaskelevator/4.p-spec-uaskelevator.png",
+      "/images/dooraccess/24.uaskelevator/5.p-spec-uaskelevator.png",
+      "/images/dooraccess/24.uaskelevator/6.p-development-uaskelevator.png",
+      "/images/dooraccess/24.uaskelevator/p-itb-uaskelevator.png",
+      "/images/dooraccess/24.uaskelevator/p-mkt0-uaskelevator.png",
+      "/images/dooraccess/24.uaskelevator/p-mkt1-uaskelevator.png",
+      "/images/dooraccess/24.uaskelevator/p-mkt2-uaskelevator.png",
+      "/images/dooraccess/24.uaskelevator/p-mkt3-uaskelevator.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/24.uaskelevator/6.p-development-uaskelevator.png",
+      "/images/dooraccess/24.uaskelevator/p-itb-uaskelevator.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -6416,7 +6429,7 @@ export const doorAccessProducts: Product[] = [
     name: "G3 Intercom",
     category: "Door Access",
     subfilter: "Intercoms",
-    image: "/images/camera.jpg",
+    image: "/images/dooraccess/25.uag3intercom/1.p-utama-uag3intercom.png",
     shortDescription:
       "Indoor/outdoor intercom terminal for managing residential and commercial building entry request with Touch Pass support.",
     specs: [
@@ -6431,15 +6444,21 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/25.uag3intercom/1.p-utama-uag3intercom.png",
+      "/images/dooraccess/25.uag3intercom/2.p-dimensi-uag3intercom.png",
+      "/images/dooraccess/25.uag3intercom/3.p-spec-uag3intercom.png",
+      "/images/dooraccess/25.uag3intercom/4.p-development-uag3intercom.png",
+      "/images/dooraccess/25.uag3intercom/p-itb-uag3intercom.png",
+      "/images/dooraccess/25.uag3intercom/p-mkt0-uag3intercom.png",
+      "/images/dooraccess/25.uag3intercom/p-mkt1-uag3intercom.png",
+      "/images/dooraccess/25.uag3intercom/p-mkt2-uag3intercom.png",
+      "/images/dooraccess/25.uag3intercom/p-mkt3-uag3intercom.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/25.uag3intercom/p-mkt1-uag3intercom.png",
+      "/images/dooraccess/25.uag3intercom/p-itb-uag3intercom.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -6523,10 +6542,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/dooraccess/25.uag3intercom/p-itb-uag3intercom.png",}, 
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -6671,7 +6687,7 @@ export const doorAccessProducts: Product[] = [
     name: "Intercom",
     category: "Door Access",
     subfilter: "Intercoms",
-    image: "/images/camera.jpg",
+    image: "/images/dooraccess/26.uaintercom/1.p-utama-uaintercom.png",
     shortDescription:
       "Indoor/outdoor intercom terminal for managing residential and commercial building entry request.",
     specs: [
@@ -6686,15 +6702,22 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/26.uaintercom/1.p-utama-uaintercom.png",
+      "/images/dooraccess/26.uaintercom/2.p-dimensi-uaintercom.png",
+      "/images/dooraccess/26.uaintercom/3.p-spec-uaintercom.png",
+      "/images/dooraccess/26.uaintercom/4.p-development-uaintercom.png",
+      "/images/dooraccess/26.uaintercom/p-itb-uaintercom.png",
+      "/images/dooraccess/26.uaintercom/p-mkt0-uaintercom.png",
+      "/images/dooraccess/26.uaintercom/p-mkt1-uaintercom.png",
+      "/images/dooraccess/26.uaintercom/p-mkt2-uaintercom.png",
+      "/images/dooraccess/26.uaintercom/p-mkt3-uaintercom.png",
+      "/images/dooraccess/26.uaintercom/p-mkt4-uaintercom.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/26.uaintercom/p-mkt0-uaintercom.png",
+      "/images/dooraccess/26.uaintercom/p-itb-uaintercom.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -6778,10 +6801,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/dooraccess/26.uaintercom/p-itb-uaintercom.png", }, 
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -6921,7 +6941,7 @@ export const doorAccessProducts: Product[] = [
     name: "Intercom Viewer",
     category: "Door Access",
     subfilter: "Intercoms",
-    image: "/images/camera.jpg",
+    image: "/images/dooraccess/27.uaintercomviewer/1.p-utama-uaintercomviewer.png",
     shortDescription:
       "Indoor/outdoor intercom terminal for managing residential and commercial building entry request with Touch Pass support.",
     specs: [
@@ -6936,15 +6956,21 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/27.uaintercomviewer/1.p-utama-uaintercomviewer.png",
+      "/images/dooraccess/27.uaintercomviewer/2.p-dimensi-uaintercomviewer.png",
+      "/images/dooraccess/27.uaintercomviewer/3.p-spec-uaintercomviewer.png",
+      "/images/dooraccess/27.uaintercomviewer/4.p-development-uaintercomviewer.png",
+      "/images/dooraccess/27.uaintercomviewer/p-itb-uaintercomviewer.png",
+      "/images/dooraccess/27.uaintercomviewer/p-mkt0-uaintercomviewer.png",
+      "/images/dooraccess/27.uaintercomviewer/p-mkt1-uaintercomviewer.png",
+      "/images/dooraccess/27.uaintercomviewer/p-mkt2-uaintercomviewer.png",
+      "/images/dooraccess/27.uaintercomviewer/p-mkt3-uaintercomviewer.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/27.uaintercomviewer/p-mkt0-uaintercomviewer.png",
+      "/images/dooraccess/27.uaintercomviewer/p-itb-uaintercomviewer.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7011,10 +7037,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/dooraccess/27.uaintercomviewer/p-itb-uaintercomviewer.png", }, 
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7074,7 +7097,7 @@ export const doorAccessProducts: Product[] = [
     name: "Enterprise NVR",
     category: "Door Access",
     subfilter: "NVRs",
-    image: "/images/camera.jpg",
+    image: "/images/dooraccess/29.envr/1.p-utama-envr-core.png",
     shortDescription:
       "3U NVR with (16) 2.5/3.5' drive bays, supporting up to (70) 4K cameras or (210) Full HD cameras.",
     specs: [
@@ -7089,15 +7112,25 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/29.envr/1.p-utama-envr.png",
+      "/images/dooraccess/29.envr/2.p-spec-envr.png",
+      "/images/dooraccess/29.envr/3.p-dimensi-envr.png",
+      "/images/dooraccess/29.envr/4.p-deployment-envr.png",
+      "/images/dooraccess/29.envr/p-itb-envr.png",
+      "/images/dooraccess/29.envr/p-mkt0-envr.png",
+      "/images/dooraccess/29.envr/p-mkt1-envr.png",
+      "/images/dooraccess/29.envr/p-mkt2-envr.png",
+      "/images/dooraccess/29.envr/p-mkt3-envr.png",
+      "/images/dooraccess/29.envr/p-mkt4-envr.png",
+      "/images/dooraccess/29.envr/p-mkt5-envr.png",
+      "/images/dooraccess/29.envr/p-mkt6-envr.png",
+
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/29.envr/p-mkt0-envr.png",
+      "/images/dooraccess/29.envr/p-itb-envr.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7152,10 +7185,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/dooraccess/29.envr/p-itb-envr.png", }, 
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7196,7 +7226,7 @@ export const doorAccessProducts: Product[] = [
     name: "Network Video Recorder Pro",
     category: "Door Access",
     subfilter: "NVRs",
-    image: "/images/camera.jpg",
+    image: "/images/dooraccess/30.unvrpro/1.p-utama-unvrpro.png",
     shortDescription:
       "A 2U-sized video recorder with (7) 2.5/3.5 HDD bays that can provide up to 60 days of storage for (24) 4K cameras or (70) Full HD cameras.",
     specs: [
@@ -7211,15 +7241,23 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/30.unvrpro/1.p-utama-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/2.p-spec-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/3.p-dimensi-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/4.p-development-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/p-itb-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt0-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt1-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt2-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt3-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt4-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt5-unvrpro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/30.unvrpro/p-mkt0-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/p-itb-unvrpro.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7273,10 +7311,8 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/dooraccess/30.unvrpro/p-itb-unvrpro.png",
+ }, 
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7317,7 +7353,7 @@ export const doorAccessProducts: Product[] = [
     name: "Network Video Recorder",
     category: "Door Access",
     subfilter: "NVRs",
-    image: "/images/camera.jpg",
+    image: "/images/dooraccess.31.unvr/1.p-utama-unvr.png",
     shortDescription:
       "A video recorder with (4) 2.5/3.5' HDD bays that can support up to 30 days of storage for (18) 4K cameras or (60) Full HD cameras.",
     specs: [
@@ -7332,15 +7368,24 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess.31.unvr/1.p-utama-unvr.png",
+      "/images/dooraccess.31.unvr/2.p-spec-unvr.png",
+      "/images/dooraccess.31.unvr/3.p-dimensi-unvr.png",
+      "/images/dooraccess.31.unvr/4.p-development-unvr.png",
+      "/images/dooraccess.31.unvr/p-itb-unvr.png",
+      "/images/dooraccess.31.unvr/p-mkt0-unvr.png",
+      "/images/dooraccess.31.unvr/p-mkt1-unvr.png",
+      "/images/dooraccess.31.unvr/p-mkt2-unvr.png",
+      "/images/dooraccess.31.unvr/p-mkt3-unvr.png",
+      "/images/dooraccess.31.unvr/p-mkt4-unvr.png",
+      "/images/dooraccess.31.unvr/p-mkt5-unvr.png",
+
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess.31.unvr/p-mkt0-unvr.png",
+      "/images/dooraccess.31.unvr/p-itb-unvr.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7394,10 +7439,8 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/dooraccess.31.unvr/p-itb-unvr.png",
+ }, 
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7438,7 +7481,7 @@ export const doorAccessProducts: Product[] = [
     name: "Network Video Recorder Instant",
     category: "Door Access",
     subfilter: "NVRs",
-    image: "/images/camera.jpg",
+    image: "/images/dooraccess/32.unvrinstant/1.p-utama-unvr-instant.png",
     shortDescription:
       "Compact UniFi Protect NVR with 3.5 HDD support, featuring an integrated 6-port PoE switch, integrated HDMI View Port, and a capacity for (6) 4K cameras or (15) Full HD cameras.",
     specs: [
@@ -7453,15 +7496,25 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/32.unvrinstant/1.p-utama-unvr-instant.png",
+      "/images/dooraccess/32.unvrinstant/2.p-spec-unvr-instant.png",
+      "/images/dooraccess/32.unvrinstant/3.p-dimensi-unvr-instant.png",
+      "/images/dooraccess/32.unvrinstant/4.p-development-unvr-instant.png",
+      "/images/dooraccess/32.unvrinstant/p-itb-unvrinstant.png",
+      "/images/dooraccess/32.unvrinstant/p-mkt0-unvrinstant.png",
+      "/images/dooraccess/32.unvrinstant/p-mkt1-unvrinstant.png",
+      "/images/dooraccess/32.unvrinstant/p-mkt2-unvrinstant.png",
+      "/images/dooraccess/32.unvrinstant/p-mkt3-unvrinstant.png",
+      "/images/dooraccess/32.unvrinstant/p-mkt4-unvrinstant.png",
+      "/images/dooraccess/32.unvrinstant/p-mkt5-unvrinstant.png",
+      "/images/dooraccess/32.unvrinstant/p-mkt6-unvrinstant.png",
+
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/32.unvrinstant/p-mkt0-unvrinstant.png",
+      "/images/dooraccess/32.unvrinstant/p-itb-unvrinstant.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7520,10 +7573,8 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/dooraccess/32.unvrinstant/p-itb-unvrinstant.png",
+ }, 
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7668,7 +7719,7 @@ export const doorAccessProducts: Product[] = [
     name: "Network Video Recorder Instant Kit",
     category: "Door Access",
     subfilter: "NVRs",
-    image: "/images/camera.jpg",
+    image: "/images/dooraccess/33.unvrinstantkit/1.p-utama-unvr-instant-kit.png",
     shortDescription:
       "Compact UniFi Protect NVR Kit, includes (1) UniFi Protect NVR Instant with (4) G5 Turret Ultra cameras and (1) 1TB HDD, delivering an all-in-one solution for fast and effortless setup.",
     specs: [
@@ -7683,15 +7734,36 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/33.unvrinstantkit/1.p-utama-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/2.p-spec-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/3.p-dimensi-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/4.p-dimensi-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/5.p-spec-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/6.p-spec-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-itb-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt0-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt1-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt2-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt3-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt4-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt5-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt6-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt7-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt8-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt9-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt10-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt11-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt12-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt13-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt14-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt15-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-mkt16-unvr-instant-kit.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/33.unvrinstantkit/p-mkt0-unvr-instant-kit.png",
+      "/images/dooraccess/33.unvrinstantkit/p-itb-unvr-instant-kit.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7804,10 +7876,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/dooraccess/33.unvrinstantkit/p-itb-unvr-instant-kit.png", }, 
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7952,7 +8021,7 @@ export const doorAccessProducts: Product[] = [
     name: "Enterprise NVR Core",
     category: "Door Access",
     subfilter: "NVRs",
-    image: "/images/camera.jpg",
+    image: "/images/dooraccess/28.envrcore/1.p-utama-envr-core.png",
     shortDescription:
       "3U UniFi Protect NVR with 16-bay support for 2.5'/3.5' HDDs/SSDs, up to (300) 4K or (500) Full HD cameras, hot-swappable power supplies and optional 16-bay storage expansion units.",
     specs: [
@@ -7967,15 +8036,24 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/28.envrcore/1.p-utama-envr-core.png",
+      "/images/dooraccess/28.envrcore/2.p-spec-envr-core.png",
+      "/images/dooraccess/28.envrcore/3.p-dimensi-envr-core.png",
+      "/images/dooraccess/28.envrcore/4.p-development-envr-core.png",
+      "/images/dooraccess/28.envrcore/p-itb-envr-core.png",
+      "/images/dooraccess/28.envrcore/p-mkt0-envr-core.png",
+      "/images/dooraccess/28.envrcore/p-mkt1-envr-core.png",
+      "/images/dooraccess/28.envrcore/p-mkt2-envr-core.png",
+      "/images/dooraccess/28.envrcore/p-mkt3-envr-core.png",
+      "/images/dooraccess/28.envrcore/p-mkt4-envr-core.png",
+      "/images/dooraccess/28.envrcore/p-mkt5-envr-core.png",
+      "/images/dooraccess/28.envrcore/p-mkt6-envr-core.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/dooraccess/28.envrcore/p-mkt0-envr-core.png",
+      "/images/dooraccess/28.envrcore/p-itb-envr-core.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -8042,10 +8120,8 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/dooraccess/28.envrcore/p-itb-envr-core.png",
+ }, 
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
