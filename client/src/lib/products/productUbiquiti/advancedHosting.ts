@@ -1296,8 +1296,8 @@ export const advancedHostingProducts: Product[] = [
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/8.cloudkey-enterprise/p-mkt0-ckenterprise.png",
+      "/images/advancedhosting/8.cloudkey-enterprise/4.p-development-ckenterprise.png",
     ],
 
     // Bullet points untuk deskripsi produk
