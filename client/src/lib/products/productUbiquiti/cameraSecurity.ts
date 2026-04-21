@@ -96,7 +96,7 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/1.envr-core/2.p-spec-envr-core.png",
       "/images/camerasecurity/1.envr-core/3.p-dimensi-envr-core.png",
       "/images/camerasecurity/1.envr-core/4.p-deployment-envr-core.png",
-      "/images/camerasecurity/1.envr-core/p-itb-envr-core.avif",
+      "/images/camerasecurity/1.envr-core/p-itb-envr-core.png",
       "/images/camerasecurity/1.envr-core/p-mkt0-envr-core.png",
       "/images/camerasecurity/1.envr-core/p-mkt1-envr-core.png",
       "/images/camerasecurity/1.envr-core/p-mkt2-envr-core.png",
@@ -104,14 +104,12 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/1.envr-core/p-mkt4-envr-core.png",
       "/images/camerasecurity/1.envr-core/p-mkt5-envr-core.png",
       "/images/camerasecurity/1.envr-core/p-mkt6-envr-core.png",
-      "/images/camerasecurity/1.envr-core/p-mkt7-envr-core.png",
-      "/images/camerasecurity/1.envr-core/p-mkt8-envr-core.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/camerasecurity/1.envr-core/p-mkt7-envr-core.png",
-      "/images/camerasecurity/1.envr-core/p-itb-envr-core.avif"
+      "/images/camerasecurity/1.envr-core/p-mkt0-envr-core.png",
+      "/images/camerasecurity/1.envr-core/p-itb-envr-core.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -177,7 +175,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/1.envr-core/p-itb-envr-core.avif" },
+      { name: "Device", image: "/images/camerasecurity/1.envr-core/p-itb-envr-core.png" },
     ],
     addons: [
       {
@@ -321,7 +319,7 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/2.envr/1.p-utama-envr.png",
       "/images/camerasecurity/2.envr/2.p-spec-envr.png",
       "/images/camerasecurity/2.envr/3.p-dimensi-envr.png",
-      "/images/camerasecurity/2.envr/p-itb-envr.avif",
+      "/images/camerasecurity/2.envr/p-itb-envr.png",
       "/images/camerasecurity/2.envr/p-mkt0-envr.png",
       "/images/camerasecurity/2.envr/p-mkt1-envr.png",
       "/images/camerasecurity/2.envr/p-mkt2-envr.png",
@@ -334,8 +332,8 @@ export const cameraSecurityProducts: Product[] = [
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/camerasecurity/2.envr/p-mkt6-envr.png",
-      "/images/camerasecurity/2.envr/p-itb-envr.avif"
+      "/images/camerasecurity/2.envr/p-mkt0-envr.png",
+      "/images/camerasecurity/2.envr/p-itb-envr.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -389,7 +387,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/2.envr/p-itb-envr.avif" },
+      { name: "Device", image: "/images/camerasecurity/2.envr/p-itb-envr.png" },
     ],
   },
 
@@ -419,7 +417,7 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/3.unvr-pro/2.p-spec-unvr-pro.png",
       "/images/camerasecurity/3.unvr-pro/3.p-dimensi-unvr-pro.png",
       "/images/camerasecurity/3.unvr-pro/4.p-deployment-unvr-pro.png",
-      "/images/camerasecurity/3.unvr-pro/p-itb-unvr-pro.avif",
+      "/images/camerasecurity/3.unvr-pro/p-itb-unvr-pro.png",
       "/images/camerasecurity/3.unvr-pro/p-mkt0-unvr-pro.png",
       "/images/camerasecurity/3.unvr-pro/p-mkt1-unvr-pro.png",
       "/images/camerasecurity/3.unvr-pro/p-mkt2-unvr-pro.png",
@@ -431,7 +429,7 @@ export const cameraSecurityProducts: Product[] = [
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/3.unvr-pro/p-mkt5-unvr-pro.png",
-      "/images/camerasecurity/3.unvr-pro/p-itb-unvr-pro.avif"
+      "/images/camerasecurity/3.unvr-pro/p-itb-unvr-pro.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -484,7 +482,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/3.unvr-pro/p-itb-unvr-pro.avif" },
+      { name: "Device", image: "/images/camerasecurity/3.unvr-pro/p-itb-unvr-pro.png" },
     ],
   },
 
@@ -514,19 +512,20 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/4.unvr/2.p-spec-unvr.png",
       "/images/camerasecurity/4.unvr/3.p-dimensi-unvr.png",
       "/images/camerasecurity/4.unvr/4.p-deployment-unvr.png",
-      "/images/camerasecurity/4.unvr/p-itb-unvr.avif",
+      "/images/camerasecurity/4.unvr/p-itb-unvr.png",
       "/images/camerasecurity/4.unvr/p-mkt0-unvr.png",
       "/images/camerasecurity/4.unvr/p-mkt1-unvr.png",
       "/images/camerasecurity/4.unvr/p-mkt2-unvr.png",
       "/images/camerasecurity/4.unvr/p-mkt3-unvr.png",
       "/images/camerasecurity/4.unvr/p-mkt4-unvr.png",
       "/images/camerasecurity/4.unvr/p-mkt5-unvr.png",
+      "/images/camerasecurity/4.unvr/p-mkt6-unvr.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/4.unvr/p-mkt4-unvr.png",
-      "/images/camerasecurity/4.unvr/p-itb-unvr.avif"
+      "/images/camerasecurity/4.unvr/p-itb-unvr.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -579,7 +578,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/4.unvr/p-itb-unvr.avif" },
+      { name: "Device", image: "/images/camerasecurity/4.unvr/p-itb-unvr.png" },
     ],
   },
 
@@ -608,21 +607,19 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/5.unvr-instant/2.p-spec-unvr-instant.png",
       "/images/camerasecurity/5.unvr-instant/3.p-dimensi-unvr-instant.png",
       "/images/camerasecurity/5.unvr-instant/4.p-deployment-unvr-instant.png",
-      "/images/camerasecurity/5.unvr-instant/p-itb-unvr-instant.avif",
+      "/images/camerasecurity/5.unvr-instant/p-itb-unvr-instant.png",
       "/images/camerasecurity/5.unvr-instant/p-mkt0-unvr-instant.png",
       "/images/camerasecurity/5.unvr-instant/p-mkt1-unvr-instant.png",
       "/images/camerasecurity/5.unvr-instant/p-mkt2-unvr-instant.png",
       "/images/camerasecurity/5.unvr-instant/p-mkt3-unvr-instant.png",
       "/images/camerasecurity/5.unvr-instant/p-mkt4-unvr-instant.png",
       "/images/camerasecurity/5.unvr-instant/p-mkt5-unvr-instant.png",
-      "/images/camerasecurity/5.unvr-instant/p-mkt6-unvr-instant.png",
-      "/images/camerasecurity/5.unvr-instant/p-mkt7-unvr-instant.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/5.unvr-instant/p-mkt5-unvr-instant.png",
-      "/images/camerasecurity/5.unvr-instant/p-itb-unvr-instant.avif"
+      "/images/camerasecurity/5.unvr-instant/p-itb-unvr-instant.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -681,7 +678,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/5.unvr-instant/p-itb-unvr-instant.avif" },
+      { name: "Device", image: "/images/camerasecurity/5.unvr-instant/p-itb-unvr-instant.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -818,7 +815,7 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/6.unvr-instant-kit/4.p-dimensi-unvr-instant-kit2.png",
       "/images/camerasecurity/6.unvr-instant-kit/5.p-spec-unvr-instant-kit2.png",
       "/images/camerasecurity/6.unvr-instant-kit/6.p-spec-unvr-instant-kit2.png",
-      "/images/camerasecurity/6.unvr-instant-kit/p-itb-unvr-instant-kit.avif",
+      "/images/camerasecurity/6.unvr-instant-kit/p-itb-unvr-instant-kit.png",
       "/images/camerasecurity/6.unvr-instant-kit/p-mkt0-unvr-instant-kit.png",
       "/images/camerasecurity/6.unvr-instant-kit/p-mkt1-unvr-instant-kit1.png",
       "/images/camerasecurity/6.unvr-instant-kit/p-mkt2-unvr-instant-kit1.png",
@@ -841,7 +838,7 @@ export const cameraSecurityProducts: Product[] = [
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/6.unvr-instant-kit/p-mkt6-unvr-instant-kit1.png",
-      "/images/camerasecurity/6.unvr-instant-kit/p-itb-unvr-instant-kit.avif"
+      "/images/camerasecurity/6.unvr-instant-kit/p-itb-unvr-instant-kit.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -953,7 +950,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/6.unvr-instant-kit/p-itb-unvr-instant-kit.avif" },
+      { name: "Device", image: "/images/camerasecurity/6.unvr-instant-kit/p-itb-unvr-instant-kit.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1088,17 +1085,16 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/7.ai-key/2.p-spec-ai-key.png",
       "/images/camerasecurity/7.ai-key/3.p-dimensi-ai-key.png",
       "/images/camerasecurity/7.ai-key/4.p-deployment-ai-key.png",
-      "/images/camerasecurity/7.ai-key/p-itb-ai-key.avif",
+      "/images/camerasecurity/7.ai-key/p-itb-ai-key.png",
       "/images/camerasecurity/7.ai-key/p-mkt0-ai-key.png",
       "/images/camerasecurity/7.ai-key/p-mkt1-ai-key.png",
       "/images/camerasecurity/7.ai-key/p-mkt2-ai-key.png",
       "/images/camerasecurity/7.ai-key/p-mkt3-ai-key.png",
-      "/images/camerasecurity/7.ai-key/p-mkt4-ai-key.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/camerasecurity/7.ai-key/p-itb-ai-key.avif",
+      "/images/camerasecurity/7.ai-key/p-itb-ai-key.png",
       "/images/camerasecurity/7.ai-key/4.p-deployment-ai-key.png",
     ],
 
@@ -1144,7 +1140,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/7.ai-key/p-itb-ai-key.avif" },
+      { name: "Device", image: "/images/camerasecurity/7.ai-key/p-itb-ai-key.png" },
     ],
   },
 
@@ -1172,8 +1168,7 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/8.up-ai-port/1.p-utama-up-ai-port.png",
       "/images/camerasecurity/8.up-ai-port/2.p-dimensi-up-ai-port.png",
       "/images/camerasecurity/8.up-ai-port/3.p-deployment-up-ai-port.png",
-      "/images/camerasecurity/8.up-ai-port/p-itb-up-ai-port.avif",
-      "/images/camerasecurity/8.up-ai-port/p-mkt0-up-ai-port.png",
+      "/images/camerasecurity/8.up-ai-port/p-itb-up-ai-port.png",
       "/images/camerasecurity/8.up-ai-port/p-mkt1-up-ai-port.png",
       "/images/camerasecurity/8.up-ai-port/p-mkt2-up-ai-port.png",
       "/images/camerasecurity/8.up-ai-port/p-mkt3-up-ai-port.png",
@@ -1186,7 +1181,7 @@ export const cameraSecurityProducts: Product[] = [
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/8.up-ai-port/p-mkt5-up-ai-port.png",
-      "/images/camerasecurity/8.up-ai-port/p-itb-up-ai-port.avif"
+      "/images/camerasecurity/8.up-ai-port/p-itb-up-ai-port.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1231,9 +1226,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/8.up-ai-port/p-itb-up-ai-port.avif" },
-      { name: "Device", image: "/images/camerasecurity/8.up-ai-port/p-itb-up-ai-port.avif",
- }, 
+      { name: "Device", image: "/images/camerasecurity/8.up-ai-port/p-itb-up-ai-port.png" },
     ],
   },
 
@@ -1261,7 +1254,7 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/9.up-viewport/1.p-utama-up-viewport.png",
       "/images/camerasecurity/9.up-viewport/2.p-dimensi-up-viewport.png",
       "/images/camerasecurity/9.up-viewport/3.p-deployment-up-viewport.png",
-      "/images/camerasecurity/9.up-viewport/p-itb-up-viewport.avif",
+      "/images/camerasecurity/9.up-viewport/p-itb-up-viewport.png",
       "/images/camerasecurity/9.up-viewport/p-mkt0-up-viewport.png",
       "/images/camerasecurity/9.up-viewport/p-mkt1-up-viewport.png",
       "/images/camerasecurity/9.up-viewport/p-mkt2-up-viewport.png",
@@ -1275,7 +1268,7 @@ export const cameraSecurityProducts: Product[] = [
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/9.up-viewport/p-mkt3-up-viewport.png",
-      "/images/camerasecurity/9.up-viewport/p-itb-up-viewport.avif"
+      "/images/camerasecurity/9.up-viewport/p-itb-up-viewport.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1321,7 +1314,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/9.up-viewport/p-itb-up-viewport.avif" },
+      { name: "Device", image: "/images/camerasecurity/9.up-viewport/p-itb-up-viewport.png" },
     ],
   },
 
@@ -1357,7 +1350,6 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/10.uck-g2-ssd/p-mkt4-uck-g2-ssd.png",
       "/images/camerasecurity/10.uck-g2-ssd/p-mkt5-uck-g2-ssd.png",
       "/images/camerasecurity/10.uck-g2-ssd/p-mkt6-uck-g2-ssd.png",
-      "/images/camerasecurity/10.uck-g2-ssd/p-mkt7-uck-g2-ssd.png"
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
@@ -1549,30 +1541,22 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/11.uvc-g6-pro-turret-w/6.p-spec-uvc-g6-pro-turret-w.png",
       "/images/camerasecurity/11.uvc-g6-pro-turret-w/7.p-spec-uvc-g6-pro-turret-w.png",
       "/images/camerasecurity/11.uvc-g6-pro-turret-w/8.p-deployment-uvc-g6-pro-turret-w.png",
-      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-itb-uvc-g6-pro-turret.avif",
+      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-itb-uvc-g6-pro-turret.png",
       "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt0-uvc-g6-pro-turret.png",
-      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt1-uvc-g6-pro-turret-b.png",
-      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt2-uvc-g6-pro-turret-b.png",
+      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt1-uvc-g6-pro-turret.png",
+      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt2-uvc-g6-pro-turret.png",
       "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt3-uvc-g6-pro-turret-b.png",
       "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt4-uvc-g6-pro-turret-b.png",
       "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt5-uvc-g6-pro-turret-b.png",
       "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt6-uvc-g6-pro-turret-b.png",
       "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt7-uvc-g6-pro-turret-b.png",
       "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt8-uvc-g6-pro-turret-b.png",
-      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt9-uvc-g6-pro-turret-w.png",
-      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt10-uvc-g6-pro-turret-w.png",
-      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt11-uvc-g6-pro-turret-w.png",
-      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt12-uvc-g6-pro-turret-w.png",
-      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt13-uvc-g6-pro-turret-w.png",
-      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt14-uvc-g6-pro-turret-w.png",
-      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt15-uvc-g6-pro-turret-w.png",
-      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt16-uvc-g6-pro-turret-w.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-mkt0-uvc-g6-pro-turret.png",
-      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-itb-uvc-g6-pro-turret.avif"
+      "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-itb-uvc-g6-pro-turret.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1641,7 +1625,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-itb-uvc-g6-pro-turret.avif" },
+      { name: "Device", image: "/images/camerasecurity/11.uvc-g6-pro-turret-w/p-itb-uvc-g6-pro-turret.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1797,7 +1781,7 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/12.uvc-g6-pro-dome-b/4.p-dimensi-uvc-g6-pro-dome-w.png",
       "/images/camerasecurity/12.uvc-g6-pro-dome-b/5.p-spec-uvc-g6-pro-dome-w.png",
       "/images/camerasecurity/12.uvc-g6-pro-dome-b/6.p-deployment-uvc-g6-pro-dome.png",
-      "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-itb-uvc-g6-pro-dome.avif",
+      "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-itb-uvc-g6-pro-dome.png",
       "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt0-uvc-g6-pro-dome.png",
       "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt1-uvc-g6-pro-dome-b.png",
       "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt2-uvc-g6-pro-dome-b.png",
@@ -1805,20 +1789,12 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt4-uvc-g6-pro-dome-b.png",
       "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt5-uvc-g6-pro-dome-b.png",
       "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt6-uvc-g6-pro-dome-b.png",
-      "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt7-uvc-g6-pro-dome-b.png",
-      "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt8-uvc-g6-pro-dome-w.png",
-      "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt9-uvc-g6-pro-dome-w.png",
-      "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt10-uvc-g6-pro-dome-w.png",
-      "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt11-uvc-g6-pro-dome-w.png",
-      "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt12-uvc-g6-pro-dome-w.png",
-      "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt13-uvc-g6-pro-dome-w.png",
-      "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt14-uvc-g6-pro-dome-w.png"
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-mkt0-uvc-g6-pro-dome.png",
-      "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-itb-uvc-g6-pro-dome.avif"
+      "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-itb-uvc-g6-pro-dome.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1883,7 +1859,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-itb-uvc-g6-pro-dome.avif" },
+      { name: "Device", image: "/images/camerasecurity/12.uvc-g6-pro-dome-b/p-itb-uvc-g6-pro-dome.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2015,7 +1991,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "G6 Turret",
     category: "Camera Security",
     subfilter: "Dome & Turret",
-    image: "/images/camerasecurity/13.uvc-g6-turret-b/1.p-utama-uvc-g6.png",
+    image: "/images/camerasecurity/13.uvc-g6-turret-b/1.p-utama-uvc-g6-w.png",
     shortDescription:
       "All-weather, tamper-resistant 4K PoE camera with a 1/1.8' 8MP image sensor, Multi-TOPS AI Engine, and 3-axis manual adjustment for flexible installation.",
     specs: [
@@ -2030,7 +2006,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camerasecurity/13.uvc-g6-turret-b/1.p-utama-uvc-g6.png",
+      "/images/camerasecurity/13.uvc-g6-turret-b/1.p-utama-uvc-g6-w.png",
       "/images/camerasecurity/13.uvc-g6-turret-b/2.p-dimensi-uvc-g6-w.png",
       "/images/camerasecurity/13.uvc-g6-turret-b/3.p-spec-uvc-g6-w.png",
       "/images/camerasecurity/13.uvc-g6-turret-b/4.p-spec-uvc-g6-w.png",
@@ -2038,27 +2014,17 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/13.uvc-g6-turret-b/6.p-spec-uvc-g6-b.png",
       "/images/camerasecurity/13.uvc-g6-turret-b/7.p-spec-uvc-g6-b.png",
       "/images/camerasecurity/13.uvc-g6-turret-b/8.p-deployment-uvc-g6.png",
-      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt0-uvc-g6.png",
-      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt1-uvc-g6-w.png",
       "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt2-uvc-g6-w.png",
       "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt3-uvc-g6-w.png",
       "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt4-uvc-g6-w.png",
       "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt5-uvc-g6-w.png",
       "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt6-uvc-g6-w.png",
-      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt7-uvc-g6-w.png",
-      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt8-uvc-g6-b.png",
-      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt9-uvc-g6-b.png",
-      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt10-uvc-g6-b.png",
-      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt11-uvc-g6-b.png",
-      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt12-uvc-g6-b.png",
-      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt13-uvc-g6-b.png",
-      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt14-uvc-g6-b.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt0-uvc-g6.png",
-      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt2-uvc-g6-w.png"
+      "/images/camerasecurity/13.uvc-g6-turret-b/p-mkt2-uvc-g6-w.png",
+      "/images/camerasecurity/13.uvc-g6-turret-b/8.p-deployment-uvc-g6.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2165,7 +2131,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "G6 Dome",
     category: "Camera Security",
     subfilter: "Dome & Turret",
-    image: "/images/camerasecurity/14.uvc-g6-dome-b/1.p-utama-uvc-g6-dome.png",
+    image: "/images/camerasecurity/14.uvc-g6-dome-b/1.p-utama-uvc-g6-dome-b.png",
     shortDescription:
       "All-weather, vandal-proof 4K PoE camera with a 1/1.8' 8MP image sensor, Multi-TOPS AI Engine, and long-range IR night vision ideal for discreet installations in high-traffic areas.",
     specs: [
@@ -2180,38 +2146,25 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camerasecurity/14.uvc-g6-dome-b/1.p-utama-uvc-g6-dome.png",
+      "/images/camerasecurity/14.uvc-g6-dome-b/1.p-utama-uvc-g6-dome-b.png",
       "/images/camerasecurity/14.uvc-g6-dome-b/2.p-dimensi-uvc-g6-dome-b.png",
       "/images/camerasecurity/14.uvc-g6-dome-b/3.p-spec-uvc-g6-dome-b.png",
       "/images/camerasecurity/14.uvc-g6-dome-b/4.p-dimensi-uvc-g6-dome-w.png",
       "/images/camerasecurity/14.uvc-g6-dome-b/5.p-spec-uvc-g6-dome-w.png",
       "/images/camerasecurity/14.uvc-g6-dome-b/6.p-deployment-uvc-g6-dome.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-itb-uvc-g6-dome.avif",
+      "/images/camerasecurity/14.uvc-g6-dome-b/p-itb-uvc-g6-dome.png",
       "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt0-uvc-g6-dome.png",
       "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt1-uvc-g6-dome-b.png",
       "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt2-uvc-g6-dome-b.png",
       "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt3-uvc-g6-dome-b.png",
       "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt4-uvc-g6-dome-b.png",
       "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt5-uvc-g6-dome-b.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt6-uvc-g6-dome-b.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt7-uvc-g6-dome-b.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt8-uvc-g6-dome-b.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt9-uvc-g6-dome-b.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt10-uvc-g6-dome-w.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt11-uvc-g6-dome-w.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt12-uvc-g6-dome-w.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt13-uvc-g6-dome-w.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt14-uvc-g6-dome-w.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt15-uvc-g6-dome-w.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt16-uvc-g6-dome-w.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt17-uvc-g6-dome-w.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt18-uvc-g6-dome-w.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/14.uvc-g6-dome-b/p-mkt0-uvc-g6-dome.png",
-      "/images/camerasecurity/14.uvc-g6-dome-b/p-itb-uvc-g6-dome.avif"
+      "/images/camerasecurity/14.uvc-g6-dome-b/p-itb-uvc-g6-dome.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2274,7 +2227,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/14.uvc-g6-dome-b/p-itb-uvc-g6-dome.avif" },
+      { name: "Device", image: "/images/camerasecurity/14.uvc-g6-dome-b/p-itb-uvc-g6-dome.png" },
     ],
   },
 
@@ -2284,7 +2237,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "G6 Pro 360",
     category: "Camera Security",
     subfilter: "Dome & Turret",
-    image: "/images/camerasecurity/15.uvc-g6-pro-360-b/1.p-utama-uvc-g6-pro-360.png",
+    image: "/images/camerasecurity/15.uvc-g6-pro-360-b/1.p-utama-uvc-g6-pro-360-b.png",
     shortDescription:
       "All-weather, vandal-resistant 12MP PoE camera with panoramic 360° coverage, digital pan-tilt-zoom functionality, and smart IR functionality.",
     specs: [
@@ -2299,13 +2252,11 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/1.p-utama-uvc-g6-pro-360.png",
+      "/images/camerasecurity/15.uvc-g6-pro-360-b/1.p-utama-uvc-g6-pro-360-b.png",
       "/images/camerasecurity/15.uvc-g6-pro-360-b/2.p-dimensi-uvc-g6-pro-360-b.png",
       "/images/camerasecurity/15.uvc-g6-pro-360-b/3.p-spec-uvc-g6-pro-360-b.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/4.p-dimensi-uvc-g6-pro-360-w.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/5.p-spec-uvc-g6-pro-360-w.png",
       "/images/camerasecurity/15.uvc-g6-pro-360-b/6.p-deployment-uvc-g6-pro-360.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-itb-uvc-g6-pro-360.avif",
+      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-itb-uvc-g6-pro-360.png",
       "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt0-uvc-g6-pro-360.png",
       "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt1-uvc-g6-pro-360-b.png",
       "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt2-uvc-g6-pro-360-b.png",
@@ -2313,28 +2264,14 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt4-uvc-g6-pro-360-b.png",
       "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt5-uvc-g6-pro-360-b.png",
       "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt6-uvc-g6-pro-360-b.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt7-uvc-g6-pro-360-b.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt8-uvc-g6-pro-360-b.png",
       "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt9-uvc-g6-pro-360-b.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt10-uvc-g6-pro-360-b.png",
       "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt11-uvc-g6-pro-360-b.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt12-uvc-g6-pro-360-w.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt13-uvc-g6-pro-360-w.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt14-uvc-g6-pro-360-w.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt15-uvc-g6-pro-360-w.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt16-uvc-g6-pro-360-w.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt17-uvc-g6-pro-360-w.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt18-uvc-g6-pro-360-w.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt19-uvc-g6-pro-360-w.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt20-uvc-g6-pro-360-w.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt21-uvc-g6-pro-360-w.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt22-uvc-g6-pro-360-w.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt17-uvc-g6-pro-360-w.png",
-      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-itb-uvc-g6-pro-360.avif",
+      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-mkt0-uvc-g6-pro-360.png",
+      "/images/camerasecurity/15.uvc-g6-pro-360-b/p-itb-uvc-g6-pro-360.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2397,7 +2334,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/15.uvc-g6-pro-360-b/p-itb-uvc-g6-pro-360.avif" },
+      { name: "Device", image: "/images/camerasecurity/15.uvc-g6-pro-360-b/p-itb-uvc-g6-pro-360.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2467,7 +2404,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "G6 180",
     category: "Camera Security",
     subfilter: "Dome & Turret",
-    image: "/images/camerasecurity/16.uvc-g6-180-b/1.p-utama-uvc-g6-180.png",
+    image: "/images/camerasecurity/16.uvc-g6-180-b/1.p-utama-uvc-g6-180-b.png",
     shortDescription:
       "Indoor/outdoor dual sensor 16MP 20 FPS PoE+ camera, with a Multi-TOPS AI Engine and panoramic 180° coverage.",
     specs: [
@@ -2482,44 +2419,22 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camerasecurity/16.uvc-g6-180-b/1.p-utama-uvc-g6-180.png",
+      "/images/camerasecurity/16.uvc-g6-180-b/1.p-utama-uvc-g6-180-b.png",
       "/images/camerasecurity/16.uvc-g6-180-b/2.p-spec-uvc-g6-180-b.png",
       "/images/camerasecurity/16.uvc-g6-180-b/3.p-dimensi-uvc-g6-180-b.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/4.p-spec-uvc-g6-180-w.png",
+      "/images/camerasecurity/16.uvc-g6-180-b/265.png",
       "/images/camerasecurity/16.uvc-g6-180-b/p-deployment-uvc-g6-180.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-dimensi-uvc-g6-180-w.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-itb-uvc-g6-180.avif",
+      "/images/camerasecurity/16.uvc-g6-180-b/p-itb-uvc-g6-180.png",
       "/images/camerasecurity/16.uvc-g6-180-b/p-mkt0-uvc-g6-180.png",
       "/images/camerasecurity/16.uvc-g6-180-b/p-mkt1-uvc-g6-180-b.png",
       "/images/camerasecurity/16.uvc-g6-180-b/p-mkt2-uvc-g6-180-b.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt3-uvc-g6-180-b.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt4-uvc-g6-180-b.png",
       "/images/camerasecurity/16.uvc-g6-180-b/p-mkt5-uvc-g6-180-b.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt6-uvc-g6-180-b.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt7-uvc-g6-180-b.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt8-uvc-g6-180-b.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt9-uvc-g6-180-b.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt10-uvc-g6-180-b.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt11-uvc-g6-180-b.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt12-uvc-g6-180-b.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt13-uvc-g6-180-b.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt14-uvc-g6-180-w.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt15-uvc-g6-180-w.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt16-uvc-g6-180-w.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt17-uvc-g6-180-w.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt18-uvc-g6-180-w.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt19-uvc-g6-180-w.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt20-uvc-g6-180-w.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt21-uvc-g6-180-w.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt22-uvc-g6-180-w.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt23-uvc-g6-180-w.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt24-uvc-g6-180-w.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt14-uvc-g6-180-w.png",
-      "/images/camerasecurity/16.uvc-g6-180-b/p-itb-uvc-g6-180.avif"
+      "/images/camerasecurity/16.uvc-g6-180-b/p-mkt0-uvc-g6-180.png",
+      "/images/camerasecurity/16.uvc-g6-180-b/p-itb-uvc-g6-180.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2582,7 +2497,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/16.uvc-g6-180-b/p-itb-uvc-g6-180.avif" },
+      { name: "Device", image: "/images/camerasecurity/16.uvc-g6-180-b/p-itb-uvc-g6-180.png" },
     ],
   },
 
@@ -2610,45 +2525,20 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/17.uvc-ai-ms-4-b/1.p-utama-uvc-ai-ms-4.png",
       "/images/camerasecurity/17.uvc-ai-ms-4-b/2.p-dimensi-uvc-ai-ms-4-b.png",
       "/images/camerasecurity/17.uvc-ai-ms-4-b/3.p-spec-uvc-ai-ms-4-b.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/4.p-dimensi-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/5.p-spec-uvc-ai-ms-4-w.png",
       "/images/camerasecurity/17.uvc-ai-ms-4-b/6.p-deployment-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-itb-uvc-ai-ms-4.avif",
+      "/images/camerasecurity/17.uvc-ai-ms-4-b/241.png",
+      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-itb-uvc-ai-ms-4.png",
       "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt0-uvc-ai-ms-4.png",
       "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt1-uvc-ai-ms-4-b.png",
       "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt2-uvc-ai-ms-4-b.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt3-uvc-ai-ms-4-b.png",
       "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt4-uvc-ai-ms-4-b.png",
       "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt5-uvc-ai-ms-4-b.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt6-uvc-ai-ms-4-b.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt7-uvc-ai-ms-4-b.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt8-uvc-ai-ms-4-b.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt9-uvc-ai-ms-4-b.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt10-uvc-ai-ms-4-b.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt11-uvc-ai-ms-4-b.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt12-uvc-ai-ms-4-b.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt13-uvc-ai-ms-4-b.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt14-uvc-ai-ms-4-b.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt15-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt16-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt17-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt18-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt19-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt20-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt21-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt22-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt23-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt24-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt25-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt26-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt27-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt28-uvc-ai-ms-4-w.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt20-uvc-ai-ms-4-w.png",
-      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-itb-uvc-ai-ms-4.avif"
+      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-mkt0-uvc-ai-ms-4.png",
+      "/images/camerasecurity/17.uvc-ai-ms-4-b/p-itb-uvc-ai-ms-4.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2711,7 +2601,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/17.uvc-ai-ms-4-b/p-itb-uvc-ai-ms-4.avif" },
+      { name: "Device", image: "/images/camerasecurity/17.uvc-ai-ms-4-b/p-itb-uvc-ai-ms-4.png" },
     ],
   },
 
@@ -2739,32 +2629,20 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/18.uvc-g5-turret-ultra-b/1.p-utama-uvc-g5-turret-ultra.png",
       "/images/camerasecurity/18.uvc-g5-turret-ultra-b/2.p-dimensi-uvc-g5-turret-ultra-w.png",
       "/images/camerasecurity/18.uvc-g5-turret-ultra-b/3.p-spec-uvc-g5-turret-ultra-w.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/4.p-spec-uvc-g5-turret-ultra-w.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/5.p-dimensi-uvc-g5-turret-ultra-b.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/6.p-spec-uvc-g5-turret-ultra-b.png",
       "/images/camerasecurity/18.uvc-g5-turret-ultra-b/7.p-deployment-uvc-g5-turret-ultra.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-itb-uvc-g5-turret-ultra.avif",
+      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-itb-uvc-g5-turret-ultra.png",
       "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt0-uvc-g5-turret-ultra.png",
       "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt1-uvc-g5-turret-ultra-w.png",
       "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt2-uvc-g5-turret-ultra-w.png",
       "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt3-uvc-g5-turret-ultra-w.png",
       "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt4-uvc-g5-turret-ultra-w.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt5-uvc-g5-turret-ultra-w.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt6-uvc-g5-turret-ultra-w.png",
       "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt7-uvc-g5-turret-ultra-w.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt8-uvc-g5-turret-ultra-b.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt9-uvc-g5-turret-ultra-b.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt10-uvc-g5-turret-ultra-b.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt11-uvc-g5-turret-ultra-b.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt12-uvc-g5-turret-ultra-b.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt13-uvc-g5-turret-ultra-b.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt14-uvc-g5-turret-ultra-b.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-mkt0-uvc-g5-turret-ultra.png",
-      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-itb-uvc-g5-turret-ultra.avif"
+      "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-itb-uvc-g5-turret-ultra.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2830,7 +2708,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-itb-uvc-g5-turret-ultra.avif" },
+      { name: "Device", image: "/images/camerasecurity/18.uvc-g5-turret-ultra-b/p-itb-uvc-g5-turret-ultra.png" },
     ],
   },
 
@@ -2858,37 +2736,20 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/19.uvc-ai-turret-b/1.p-utama-uvc-ai-turret.png",
       "/images/camerasecurity/19.uvc-ai-turret-b/2.p-dimensi-uvc-ai-turret-w.png",
       "/images/camerasecurity/19.uvc-ai-turret-b/3.p-spec-uvc-ai-turret-w.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/4.p-spec-uvc-ai-turret-w.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/5.p-dimensi-uvc-ai-turret-b.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/6.p-spec-uvc-ai-turret-b.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/7.p-spec-uvc-ai-turret-b.png",
       "/images/camerasecurity/19.uvc-ai-turret-b/8.p-deployment-uvc-ai-turret-b.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-itb-uvc-ai-turret.avif",
+      "/images/camerasecurity/19.uvc-ai-turret-b/270.png",
+      "/images/camerasecurity/19.uvc-ai-turret-b/p-itb-uvc-ai-turret.png",
       "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt0-uvc-ai-turret.png",
       "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt1-uvc-ai-turret-w.png",
       "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt2-uvc-ai-turret-w.png",
       "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt3-uvc-ai-turret-w.png",
       "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt4-uvc-ai-turret-w.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt5-uvc-ai-turret-w.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt6-uvc-ai-turret-w.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt7-uvc-ai-turret-w.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt8-uvc-ai-turret-w.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt9-uvc-ai-turret-w.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt10-uvc-ai-turret-b.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt11-uvc-ai-turret-b.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt12-uvc-ai-turret-b.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt13-uvc-ai-turret-b.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt14-uvc-ai-turret-b.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt15-uvc-ai-turret-b.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt16-uvc-ai-turret-b.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt17-uvc-ai-turret-b.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt18-uvc-ai-turret-b.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/19.uvc-ai-turret-b/p-mkt0-uvc-ai-turret.png",
-      "/images/camerasecurity/19.uvc-ai-turret-b/p-itb-uvc-ai-turret.avif"
+      "/images/camerasecurity/19.uvc-ai-turret-b/p-itb-uvc-ai-turret.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2956,7 +2817,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/19.uvc-ai-turret-b/p-itb-uvc-ai-turret.avif" },
+      { name: "Device", image: "/images/camerasecurity/19.uvc-ai-turret-b/p-itb-uvc-ai-turret.png" },
     ],
   },
 
@@ -2984,31 +2845,19 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/20.uvc-ai-dome-b/1.p-utama-uvc-ai-dome.png",
       "/images/camerasecurity/20.uvc-ai-dome-b/2.p-dimensi-uvc-ai-dome-w.png",
       "/images/camerasecurity/20.uvc-ai-dome-b/3.p-spec-uvc-ai-dome-w.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/4.p-dimensi-uvc-ai-dome-b.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/5.p-spec-uvc-ai-dome-b.png",
       "/images/camerasecurity/20.uvc-ai-dome-b/6.p-deployment-uvc-ai-dome.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/p-itb-uvc-ai-dome.avif",
+      "/images/camerasecurity/20.uvc-ai-dome-b/p-itb-uvc-ai-dome.png",
       "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt0-uvc-ai-dome.png",
       "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt1-uvc-ai-dome-w.png",
       "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt2-uvc-ai-dome-w.png",
       "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt3-uvc-ai-dome-w.png",
       "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt4-uvc-ai-dome-w.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt5-uvc-ai-dome-w.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt6-uvc-ai-dome-w.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt7-uvc-ai-dome-w.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt8-uvc-ai-dome-b.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt9-uvc-ai-dome-b.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt10-uvc-ai-dome-b.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt11-uvc-ai-dome-b.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt12-uvc-ai-dome-b.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt13-uvc-ai-dome-b.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt14-uvc-ai-dome-b.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/20.uvc-ai-dome-b/p-mkt0-uvc-ai-dome.png",
-      "/images/camerasecurity/20.uvc-ai-dome-b/p-itb-uvc-ai-dome.avif"
+      "/images/camerasecurity/20.uvc-ai-dome-b/p-itb-uvc-ai-dome.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3076,7 +2925,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/20.uvc-ai-dome-b/p-itb-uvc-ai-dome.avif" },
+      { name: "Device", image: "/images/camerasecurity/20.uvc-ai-dome-b/p-itb-uvc-ai-dome.png" },
     ],
   },
 
@@ -3104,33 +2953,20 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/21.uvc-ai-360/1.p-utama-uvc-ai-360.png",
       "/images/camerasecurity/21.uvc-ai-360/2.p-spec-uvc-ai-360-b.png",
       "/images/camerasecurity/21.uvc-ai-360/3.p-dimensi-uvc-ai-360-b.png",
-      "/images/camerasecurity/21.uvc-ai-360/4.p-spec-uvc-ai-360-w.png",
-      "/images/camerasecurity/21.uvc-ai-360/5.p-dimensi-uvc-ai-360-w.png",
       "/images/camerasecurity/21.uvc-ai-360/6.p-deployment-uvc-ai-360.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-itb-uvc-ai-360.avif",
+      "/images/camerasecurity/21.uvc-ai-360/p-itb-uvc-ai-360.png",
       "/images/camerasecurity/21.uvc-ai-360/p-mkt0-uvc-ai-360.png",
       "/images/camerasecurity/21.uvc-ai-360/p-mkt1-uvc-ai-360-b.png",
       "/images/camerasecurity/21.uvc-ai-360/p-mkt2-uvc-ai-360-b.png",
       "/images/camerasecurity/21.uvc-ai-360/p-mkt3-uvc-ai-360-b.png",
       "/images/camerasecurity/21.uvc-ai-360/p-mkt4-uvc-ai-360-b.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-mkt5-uvc-ai-360-b.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-mkt6-uvc-ai-360-b.png",
       "/images/camerasecurity/21.uvc-ai-360/p-mkt7-uvc-ai-360-b.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-mkt8-uvc-ai-360-b.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-mkt9-uvc-ai-360-w.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-mkt10-uvc-ai-360-w.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-mkt11-uvc-ai-360-w.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-mkt12-uvc-ai-360-w.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-mkt13-uvc-ai-360-w.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-mkt14-uvc-ai-360-w.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-mkt15-uvc-ai-360-w.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-mkt16-uvc-ai-360-w.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/camerasecurity/21.uvc-ai-360/p-mkt15-uvc-ai-360-w.png",
-      "/images/camerasecurity/21.uvc-ai-360/p-itb-uvc-ai-360.avif"
+      "/images/camerasecurity/21.uvc-ai-360/p-mkt0-uvc-ai-360.png",
+      "/images/camerasecurity/21.uvc-ai-360/p-itb-uvc-ai-360.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3189,7 +3025,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/21.uvc-ai-360/p-itb-uvc-ai-360.avif" },
+      { name: "Device", image: "/images/camerasecurity/21.uvc-ai-360/p-itb-uvc-ai-360.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3257,7 +3093,7 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/22.uvc-g5-dome/2.p-spec-uvc-g5-dome.png",
       "/images/camerasecurity/22.uvc-g5-dome/3.p-dimensi-uvc-g5-dome.png",
       "/images/camerasecurity/22.uvc-g5-dome/4.p-deployment-uvc-g5-dome.png",
-      "/images/camerasecurity/22.uvc-g5-dome/p-itb-uvc-g5-dome.avif",
+      "/images/camerasecurity/22.uvc-g5-dome/p-itb-uvc-g5-dome.png",
       "/images/camerasecurity/22.uvc-g5-dome/p-mkt0-uvc-g5-dome.png",
       "/images/camerasecurity/22.uvc-g5-dome/p-mkt1-uvc-g5-dome.png",
       "/images/camerasecurity/22.uvc-g5-dome/p-mkt2-uvc-g5-dome.png",
@@ -3270,7 +3106,7 @@ export const cameraSecurityProducts: Product[] = [
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/22.uvc-g5-dome/p-mkt0-uvc-g5-dome.png",
-      "/images/camerasecurity/22.uvc-g5-dome/p-itb-uvc-g5-dome.avif"
+      "/images/camerasecurity/22.uvc-g5-dome/p-itb-uvc-g5-dome.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3329,7 +3165,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/22.uvc-g5-dome/p-itb-uvc-g5-dome.avif" },
+      { name: "Device", image: "/images/camerasecurity/22.uvc-g5-dome/p-itb-uvc-g5-dome.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3399,30 +3235,19 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/23.uvc-g5-dome-ultra-b/4.p-dimensi-uvc-g5-dome-ultra-b.png",
       "/images/camerasecurity/23.uvc-g5-dome-ultra-b/5.p-spec-uvc-g5-dome-ultra-b.png",
       "/images/camerasecurity/23.uvc-g5-dome-ultra-b/6.p-deployment-uvc-g5-dome-ultra.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-itb-uvc-g5-dome-ultra.avif",
+      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-itb-uvc-g5-dome-ultra.png",
       "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt0-uvc-g5-dome-ultra.png",
       "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt1-uvc-g5-dome-ultra-w.png",
       "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt2-uvc-g5-dome-ultra-w.png",
       "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt3-uvc-g5-dome-ultra-w.png",
       "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt4-uvc-g5-dome-ultra-w.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt5-uvc-g5-dome-ultra-w.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt6-uvc-g5-dome-ultra-w.png",
       "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt7-uvc-g5-dome-ultra-w.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt8-uvc-g5-dome-ultra-w.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt9-uvc-g5-dome-ultra-b.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt10-uvc-g5-dome-ultra-b.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt11-uvc-g5-dome-ultra-b.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt12-uvc-g5-dome-ultra-b.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt13-uvc-g5-dome-ultra-b.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt14-uvc-g5-dome-ultra-b.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt15-uvc-g5-dome-ultra-b.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt16-uvc-g5-dome-ultra-b.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-mkt0-uvc-g5-dome-ultra.png",
-      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-itb-uvc-g5-dome-ultra.avif"
+      "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-itb-uvc-g5-dome-ultra.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3479,7 +3304,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-itb-uvc-g5-dome-ultra.avif" },
+      { name: "Device", image: "/images/camerasecurity/23.uvc-g5-dome-ultra-b/p-itb-uvc-g5-dome-ultra.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3548,14 +3373,11 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/24.uvc-g6-edge-turret/3.p-spec-uvc-g6-edge-turret.png",
       "/images/camerasecurity/24.uvc-g6-edge-turret/4.p-spec-uvc-g6-edge-turret.png",
       "/images/camerasecurity/24.uvc-g6-edge-turret/5.p-deployment-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-itb-uvc-g6-edge-turret.avif",
+      "/images/camerasecurity/24.uvc-g6-edge-turret/p-itb-uvc-g6-edge-turret.png",
       "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt0-uvc-g6-edge-turret.png",
       "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt1-uvc-g6-edge-turret.png",
       "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt2-uvc-g6-edge-turret.png",
       "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt3-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt4-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt5-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt6-uvc-g6-edge-turret.png",
       "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt7-uvc-g6-edge-turret.png",
       "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt8-uvc-g6-edge-turret.png",
     ],
@@ -3563,7 +3385,7 @@ export const cameraSecurityProducts: Product[] = [
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
       "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt0-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-itb-uvc-g6-edge-turret.avif"
+      "/images/camerasecurity/24.uvc-g6-edge-turret/p-itb-uvc-g6-edge-turret.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3631,7 +3453,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/24.uvc-g6-edge-turret/p-itb-uvc-g6-edge-turret.avif" },
+      { name: "Device", image: "/images/camerasecurity/24.uvc-g6-edge-turret/p-itb-uvc-g6-edge-turret.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3737,7 +3559,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "G6 Edge Dome",
     category: "Camera Security",
     subfilter: "Dome & Turret",
-    image: "/images/camerasecurity/24.uvc-g6-edge-turret/1.p-utama-uvc-g6-edge-turret.png",
+    image: "/images/camerasecurity/25.uvc-g6-edge-dome/1.p-utama-uvc-g6-edge-dome.png",
     shortDescription:
       "All-weather, vandal-proof 4K PoE+ camera that supports standalone operation (no NVR required), integrated AI-powered search, 2.36x optical zoom, and a large 1/1.2' CMOS sensor for exceptional low-light clarity and long-range IR night vision.",
     specs: [
@@ -3752,27 +3574,24 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camerasecurity/24.uvc-g6-edge-turret/1.p-utama-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/2.p-dimensi-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/3.p-spec-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/4.p-spec-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/5.p-deployment-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-itb-uvc-g6-edge-turret.avif",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt0-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt1-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt2-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt3-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt4-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt5-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt6-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt7-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt8-uvc-g6-edge-turret.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/1.p-utama-uvc-g6-edge-dome.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/2.p-dimensi-uvc-g6-edge-dome.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/3.p-spec-uvc-g6-edge-dome.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/4.p-deployment-uvc-g6-edge-dome.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/p-itb-uvc-g6-edge-dome.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/p-mkt0-uvc-g6-edge-dome.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/p-mkt1-uvc-g6-edge-dome.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/p-mkt2-uvc-g6-edge-dome.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/p-mkt3-uvc-g6-edge-dome.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/p-mkt4-uvc-g6-edge-dome.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/p-mkt5-uvc-g6-edge-dome.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/p-mkt6-uvc-g6-edge-dome.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-mkt0-uvc-g6-edge-turret.png",
-      "/images/camerasecurity/24.uvc-g6-edge-turret/p-itb-uvc-g6-edge-turret.avif"
+      "/images/camerasecurity/25.uvc-g6-edge-dome/p-mkt0-uvc-g6-edge-dome.png",
+      "/images/camerasecurity/25.uvc-g6-edge-dome/p-itb-uvc-g6-edge-dome.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3840,7 +3659,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/camerasecurity/24.uvc-g6-edge-turret/p-itb-uvc-g6-edge-turret.avif" },
+      { name: "Device", image: "/images/camerasecurity/25.uvc-g6-edge-dome/p-itb-uvc-g6-edge-dome.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3947,7 +3766,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "G6 Pro Bullet",
     category: "Camera Security",
     subfilter: "Bullet",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/26.uvc-g6-pro-bullet/1.p-utama-uvc-g6-pro-bullet.png",
     shortDescription:
       "All-weather 4K PoE+ camera with a Multi-TOPS AI engine, 2.36x optical zoom, and a large 1/1.2' CMOS sensor for exceptional low-light clarity and long-range IR night vision.",
     specs: [
@@ -3962,15 +3781,22 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/26.uvc-g6-pro-bullet/1.p-utama-uvc-g6-pro-bullet.png",
+      "/images/camerasecurity/26.uvc-g6-pro-bullet/2.p-dimensi-uvc-g6-pro-bullet.png",
+      "/images/camerasecurity/26.uvc-g6-pro-bullet/4.p-deployment-uvc-g6-pro-bullet.png",
+      "/images/camerasecurity/26.uvc-g6-pro-bullet/p-itb-uvc-g6-pro-bullet.png",
+      "/images/camerasecurity/26.uvc-g6-pro-bullet/p-mkt0-uvc-g6-pro-bullet.png",
+      "/images/camerasecurity/26.uvc-g6-pro-bullet/p-mkt1-uvc-g6-pro-bullet-b.png",
+      "/images/camerasecurity/26.uvc-g6-pro-bullet/p-mkt2-uvc-g6-pro-bullet-b.png",
+      "/images/camerasecurity/26.uvc-g6-pro-bullet/p-mkt5-uvc-g6-pro-bullet-b.png",
+      "/images/camerasecurity/26.uvc-g6-pro-bullet/p-mkt6-uvc-g6-pro-bullet-b.png",
+      "/images/camerasecurity/26.uvc-g6-pro-bullet/p-mkt7-uvc-g6-pro-bullet-b.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/26.uvc-g6-pro-bullet/p-mkt0-uvc-g6-pro-bullet.png",
+      "/images/camerasecurity/26.uvc-g6-pro-bullet/p-itb-uvc-g6-pro-bullet.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4036,10 +3862,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/26.uvc-g6-pro-bullet/p-itb-uvc-g6-pro-bullet.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini 
@@ -4163,11 +3986,11 @@ export const cameraSecurityProducts: Product[] = [
 
   // Produk Kedua dari Camera Security, SF Bullet
   {
-    id: "UVC-G6-Bullet-B/W",
+    id: "UVC-G6-Bullet",
     name: "G6 Bullet",
     category: "Camera Security",
     subfilter: "Bullet",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/27.uvc-g6-bullet/1.p-utama-uvc-g6-bullet.png",
     shortDescription:
       "All-weather 4K PoE camera with a 1/1.8' 8MP image sensor, Multi-TOPS AI Engine, and long-range IR night vision.",
     specs: [
@@ -4182,15 +4005,23 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/27.uvc-g6-bullet/1.p-utama-uvc-g6-bullet.png",
+      "/images/camerasecurity/27.uvc-g6-bullet/2.p-dimensi-uvc-g6-bullet.png",
+      "/images/camerasecurity/27.uvc-g6-bullet/4.p-deployment-uvc-g6-bullet.png",
+      "/images/camerasecurity/27.uvc-g6-bullet/p-itb-uvc-g6-bullet.png",
+      "/images/camerasecurity/27.uvc-g6-bullet/p-mkt0-uvc-g6-bullet.png",
+      "/images/camerasecurity/27.uvc-g6-bullet/p-mkt1-uvc-g6-bullet-w.png",
+      "/images/camerasecurity/27.uvc-g6-bullet/p-mkt2-uvc-g6-bullet-w.png",
+      "/images/camerasecurity/27.uvc-g6-bullet/p-mkt3-uvc-g6-bullet-w.png",
+      "/images/camerasecurity/27.uvc-g6-bullet/p-mkt4-uvc-g6-bullet-w.png",
+      "/images/camerasecurity/27.uvc-g6-bullet/p-mkt5-uvc-g6-bullet-w.png",
+      "/images/camerasecurity/27.uvc-g6-bullet/p-mkt6-uvc-g6-bullet-w.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/27.uvc-g6-bullet/p-mkt0-uvc-g6-bullet.png",
+      "/images/camerasecurity/27.uvc-g6-bullet/p-itb-uvc-g6-bullet.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4253,20 +4084,17 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/27.uvc-g6-bullet/p-itb-uvc-g6-bullet.png" },
     ],
   },
 
   // Produk ketiga dari Camera Security, SF Bullet
   {
-    id: "UVC-AI-LPR-B/W",
+    id: "UVC-AI-LPR",
     name: "AI LPR",
     category: "Camera Security",
     subfilter: "Bullet",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/28.uvc-ai-lpr/1.p-spec-uvc-ai-lpr.png",
     shortDescription:
       "Specialized 4K camera with 3x optical zoom and long-range IR night vision optimized for recognizing license plates on vehicles moving up to 90 km/h.",
     specs: [
@@ -4281,15 +4109,24 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/28.uvc-ai-lpr/1.p-spec-uvc-ai-lpr.png",
+      "/images/camerasecurity/28.uvc-ai-lpr/3.p-dimensi-uvc-ai-lpr.png",
+      "/images/camerasecurity/28.uvc-ai-lpr/4.p-deployment-uvc-ai-lpr.png",
+      "/images/camerasecurity/28.uvc-ai-lpr/382.png",
+      "/images/camerasecurity/28.uvc-ai-lpr/p-itb-uvc-ai-lpr.png",
+      "/images/camerasecurity/28.uvc-ai-lpr/p-mkt0-uvc-ai-lpr.png",
+      "/images/camerasecurity/28.uvc-ai-lpr/p-mkt1-uvc-ai-lpr.png",
+      "/images/camerasecurity/28.uvc-ai-lpr/p-mkt3-uvc-ai-lpr.png",
+      "/images/camerasecurity/28.uvc-ai-lpr/p-mkt4-uvc-ai-lpr.png",
+      "/images/camerasecurity/28.uvc-ai-lpr/p-mkt5-uvc-ai-lpr.png",
+      "/images/camerasecurity/28.uvc-ai-lpr/p-mkt6-uvc-ai-lpr.png",
+      "/images/camerasecurity/28.uvc-ai-lpr/p-mkt7-uvc-ai-lpr.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/28.uvc-ai-lpr/p-mkt0-uvc-ai-lpr.png",
+      "/images/camerasecurity/28.uvc-ai-lpr/p-itb-uvc-ai-lpr.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4360,20 +4197,17 @@ export const cameraSecurityProducts: Product[] = [
     ],
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/28.uvc-ai-lpr/p-itb-uvc-ai-lpr.png" },
     ],
   },
 
   // Produk Keempat dari Camera Security, SF Bullet
   {
-    id: "UVC-AI-DSLR-B/W",
+    id: "UVC-AI-DSLR",
     name: "AI DSLR",
     category: "Camera Security",
     subfilter: "Bullet",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/29.uvc-ai-dslr/1.p-utama-uvc-ai-dslr.png",
     shortDescription:
       "Indoor/outdoor 4K PoE camera with exceptional image quality and impressive low-light performance.",
     specs: [
@@ -4388,15 +4222,25 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/29.uvc-ai-dslr/1.p-utama-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/2.p-spec-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/3.p-dimensi-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/4.p-spec-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/5.p-dimensi-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/6.p-deployment-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/p-itb-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/p-mkt1-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/p-mkt3-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/p-mkt4-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/p-mkt5-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/p-mkt6-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/p-mkt7-uvc-ai-dslr.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/29.uvc-ai-dslr/p-mkt1-uvc-ai-dslr.png",
+      "/images/camerasecurity/29.uvc-ai-dslr/p-itb-uvc-ai-dslr.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4455,116 +4299,113 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/29.uvc-ai-dslr/p-itb-uvc-ai-dslr.png" },
     ],
   },
 
-  // Produk Kelima dari Camera Security, SF Bullet
-  {
-    id: "UVC-AI-DSLR-LD-B/W",
-    name: "AI DSLR",
-    category: "Camera Security",
-    subfilter: "Bullet",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Indoor/outdoor 4K PoE camera with exceptional image quality and impressive low-light performance.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // // Produk Kelima dari Camera Security, SF Bullet
+  // {
+  //   id: "UVC-AI-DSLR-LD-B/W",
+  //   name: "AI DSLR",
+  //   category: "Camera Security",
+  //   subfilter: "Bullet",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Indoor/outdoor 4K PoE camera with exceptional image quality and impressive low-light performance.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UVC-AI-DSLR-LD-B/W",
+  //   // SKU produk
+  //   sku: "UVC-AI-DSLR-LD-B/W",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Indoor/outdoor 4K PoE camera with exceptional image quality and impressive low-light performance",
-      "Enterprise-grade quality",
-      "Easy to deploy and manage",
-      "Reliable performance"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Indoor/outdoor 4K PoE camera with exceptional image quality and impressive low-light performance",
+  //     "Enterprise-grade quality",
+  //     "Easy to deploy and manage",
+  //     "Reliable performance"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "Without mount: ⌀80 x 89 mm (⌀3.1 x 3.5') With mount: ⌀80 x 153 mm (⌀3.1 x 6') M. Zuiko Digital ED 17 mm PRO: ⌀68.2 x 87 mm (⌀2.7 x 3.4') M. Zuiko Digital ED 45 mm PRO: ⌀70 x 84.9 mm (⌀2.8 x 3.3') Outdoor case: ⌀91.6 x 196.3 mm (⌀3.6 x 7.7')" },
-          { label: "Face Recognition", value: "✓" },
-          { label: "License Plate Recognition", value: "✓" },
-          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
-          { label: "Resolution", value: "4K" },
-          { label: "Field of View", value: "M. Zuiko Digital ED 17 mm PRO: H: 52°, V: 39°, D: 65° M. Zuiko Digital ED 45 mm PRO: H: 21.6°, V: 16.2°, D: 27°" },
-          { label: "Audio", value: "Two-Way Audio" },
-          { label: "Weatherproofing", value: "IPX5 (With the outdoor case)" },
-          { label: "Mounting", value: "Wall, pole mount (Included) Tripot mount (Optional)" },
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "Network Interface", value: "GbE RJ45 port" },
-          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
-          { label: "Video Max. Frame Rate", value: "30 FPS" },
-          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
-          { label: "Optics Sensor", value: "4/3' 10MP CMOS" },
-          { label: "Optics Lens", value: "M. Zuiko Digital ED 17 mm ƒ/1.2 PRO M. Zuiko Digital ED 45 mm ƒ/1.2 PRO" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "17.77W (With lens working)" },
-          { label: "Supported Voltage Range", value: "37—57V DC" },
-          { label: "Power Method", value: "PoE+" },
-          { label: "Processor", value: "Quad core Arm® Cortex®-A53 based chip" },
-          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
-          { label: "Weight", value: "Without mount: 660 g (1.5 lb) With mount: 820 g (1.8 lb) M. Zuiko Digital ED 17 mm PRO: 390 g (0.9 lb) M. Zuiko Digital ED 45 mm PRO: 410 g (0.9 lb) Outdoor case: 510 g (1.1 lb)" },
-          { label: "Enclosure Material", value: "Aluminum alloy" },
-          { label: "Mount Material", value: "Wall mount: aluminum alloy Pole mount: aluminum alloy" },
-          { label: "Button", value: "(1) Factory reset (1) Lens release rey" },
-          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC" },
-        ]
-      },
-    ],
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "Without mount: ⌀80 x 89 mm (⌀3.1 x 3.5') With mount: ⌀80 x 153 mm (⌀3.1 x 6') M. Zuiko Digital ED 17 mm PRO: ⌀68.2 x 87 mm (⌀2.7 x 3.4') M. Zuiko Digital ED 45 mm PRO: ⌀70 x 84.9 mm (⌀2.8 x 3.3') Outdoor case: ⌀91.6 x 196.3 mm (⌀3.6 x 7.7')" },
+  //         { label: "Face Recognition", value: "✓" },
+  //         { label: "License Plate Recognition", value: "✓" },
+  //         { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+  //         { label: "Resolution", value: "4K" },
+  //         { label: "Field of View", value: "M. Zuiko Digital ED 17 mm PRO: H: 52°, V: 39°, D: 65° M. Zuiko Digital ED 45 mm PRO: H: 21.6°, V: 16.2°, D: 27°" },
+  //         { label: "Audio", value: "Two-Way Audio" },
+  //         { label: "Weatherproofing", value: "IPX5 (With the outdoor case)" },
+  //         { label: "Mounting", value: "Wall, pole mount (Included) Tripot mount (Optional)" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Performance",
+  //       items: [
+  //         { label: "Network Interface", value: "GbE RJ45 port" },
+  //         { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+  //         { label: "Video Max. Frame Rate", value: "30 FPS" },
+  //         { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+  //         { label: "Optics Sensor", value: "4/3' 10MP CMOS" },
+  //         { label: "Optics Lens", value: "M. Zuiko Digital ED 17 mm ƒ/1.2 PRO M. Zuiko Digital ED 45 mm ƒ/1.2 PRO" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Max. Power Consumption", value: "17.77W (With lens working)" },
+  //         { label: "Supported Voltage Range", value: "37—57V DC" },
+  //         { label: "Power Method", value: "PoE+" },
+  //         { label: "Processor", value: "Quad core Arm® Cortex®-A53 based chip" },
+  //         { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+  //         { label: "Weight", value: "Without mount: 660 g (1.5 lb) With mount: 820 g (1.8 lb) M. Zuiko Digital ED 17 mm PRO: 390 g (0.9 lb) M. Zuiko Digital ED 45 mm PRO: 410 g (0.9 lb) Outdoor case: 510 g (1.1 lb)" },
+  //         { label: "Enclosure Material", value: "Aluminum alloy" },
+  //         { label: "Mount Material", value: "Wall mount: aluminum alloy Pole mount: aluminum alloy" },
+  //         { label: "Button", value: "(1) Factory reset (1) Lens release rey" },
+  //         { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+  //         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+  //         { label: "NDAA Compliant", value: "✓" },
+  //         { label: "Certifications", value: "CE, FCC, IC" },
+  //       ]
+  //     },
+  //   ],
 
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+  // },
 
   // Produk Keenam dari Camera Security, SF Bullet
   {
-    id: "UVC-AI-Pro-B/W",
+    id: "UVC-AI-Pro",
     name: "AI Pro",
     category: "Camera Security",
     subfilter: "Bullet",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/30.uvc-ai-pro/1.p-utama-uvc-ai-pro.png",
     shortDescription:
       "Indoor/outdoor 4K PoE camera with 3x optical zoom, long-range IR night vision, and enhanced AI detection capabilities.",
     specs: [
@@ -4579,15 +4420,21 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/30.uvc-ai-pro/1.p-utama-uvc-ai-pro.png",
+      "/images/camerasecurity/30.uvc-ai-pro/2.p-spec-uvc-ai-pro.png",
+      "/images/camerasecurity/30.uvc-ai-pro/4.p-deployment-uvc-ai-pro.png",
+      "/images/camerasecurity/30.uvc-ai-pro/p-itb-uvc-ai-pro.png",
+      "/images/camerasecurity/30.uvc-ai-pro/p-mkt1-uvc-ai-pro-b.png",
+      "/images/camerasecurity/30.uvc-ai-pro/p-mkt2-uvc-ai-pro-b.png",
+      "/images/camerasecurity/30.uvc-ai-pro/p-mkt3-uvc-ai-pro-b.png",
+      "/images/camerasecurity/30.uvc-ai-pro/p-mkt4-uvc-ai-pro-b.png",
+      "/images/camerasecurity/30.uvc-ai-pro/p-mkt5-uvc-ai-pro-b.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/30.uvc-ai-pro/p-mkt1-uvc-ai-pro-b.png",
+      "/images/camerasecurity/30.uvc-ai-pro/p-itb-uvc-ai-pro.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4650,10 +4497,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/30.uvc-ai-pro/p-itb-uvc-ai-pro.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -4694,7 +4538,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "G5 Pro",
     category: "Camera Security",
     subfilter: "Bullet",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/31.uvc-g5-pro/1.p-utama-uvc-g5-pro.png",
     shortDescription:
       "Next-gen indoor/outdoor 4K PoE camera with exceptional image performance, long-range IR night vision, and 3x optical zoom.",
     specs: [
@@ -4709,15 +4553,21 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/31.uvc-g5-pro/1.p-utama-uvc-g5-pro.png",
+      "/images/camerasecurity/31.uvc-g5-pro/2.p-spec-uvc-g5-pro.png",
+      "/images/camerasecurity/31.uvc-g5-pro/3.p-deployment-uvc-g5-pro.png",
+      "/images/camerasecurity/31.uvc-g5-pro/p-itb-uvc-g5-pro.png",
+      "/images/camerasecurity/31.uvc-g5-pro/p-mkt0-uvc-g5-pro.png",
+      "/images/camerasecurity/31.uvc-g5-pro/p-mkt1-uvc-g5-pro.png",
+      "/images/camerasecurity/31.uvc-g5-pro/p-mkt2-uvc-g5-pro.png",
+      "/images/camerasecurity/31.uvc-g5-pro/p-mkt3-uvc-g5-pro.png",
+      "/images/camerasecurity/31.uvc-g5-pro/p-mkt4-uvc-g5-pro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/31.uvc-g5-pro/p-mkt0-uvc-g5-pro.png",
+      "/images/camerasecurity/31.uvc-g5-pro/p-itb-uvc-g5-pro.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4778,10 +4628,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/31.uvc-g5-pro/p-itb-uvc-g5-pro.png" },
     ],
   },
 
@@ -4791,7 +4638,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "G5 Bullet",
     category: "Camera Security",
     subfilter: "Bullet",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/36.uvc-g5-bullet/1.p-utama-uvc-g5-bullet.png",
     shortDescription: "Next-gen indoor/outdoor 2K HD PoE Camera.",
     specs: [
       { label: "Resolution", value: "4K (8MP)" },
@@ -4805,15 +4652,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/36.uvc-g5-bullet/1.p-utama-uvc-g5-bullet.png",
+      "/images/camerasecurity/36.uvc-g5-bullet/2.p-spec-uvc-g5-bullet.png",
+      "/images/camerasecurity/36.uvc-g5-bullet/3.p-deployment-uvc-g5-bullet.png",
+      "/images/camerasecurity/36.uvc-g5-bullet/p-itb-uvc-g5-bullet.png",
+      "/images/camerasecurity/36.uvc-g5-bullet/p-mkt0-uvc-g5-bullet.png",
+      "/images/camerasecurity/36.uvc-g5-bullet/p-mkt1-uvc-g5-bullet.png",
+      "/images/camerasecurity/36.uvc-g5-bullet/p-mkt3-uvc-g5-bullet.png",
+      "/images/camerasecurity/36.uvc-g5-bullet/p-mkt4-uvc-g5-bullet.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/36.uvc-g5-bullet/p-mkt0-uvc-g5-bullet.png",
+      "/images/camerasecurity/36.uvc-g5-bullet/p-itb-uvc-g5-bullet.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4873,10 +4725,252 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/36.uvc-g5-bullet/p-itb-uvc-g5-bullet.png" },
+    ],
+  },
+  
+  //Produk Kesembilan dari Camera Security, SF Bullet
+  {
+    id: "UVC-G6-Edge-Bullet",
+    name: "G6 Edge Bullet",
+    category: "Camera Security",
+    subfilter: "Bullet",
+    image: "/images/camerasecurity/37.uvc-g6-edge-bullet/1.p-utama-g6-edge-bullet.png",
+    shortDescription: "All-weather, 4K PoE+ camera that supports standalone operation (no NVR required), integrated AI-powered search, 2.36x optical zoom, and a large 1/1.2' CMOS sensor for exceptional low-light clarity and long-range IR night vision.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UVC-G5-BULLET",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/1.p-utama-g6-edge-bullet.png",
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/2.p-spec-uvc-g6-edge-bullet.png",
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/3.p-deployment-uvc-g6-edge-bullet.png",
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/p-itb-uvc-g6-edge-bullet.png",
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/p-mkt0-uvc-g6-edge-bullet.png",
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/p-mkt1-uvc-g6-edge-bullet.png",
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/p-mkt2-uvc-g6-edge-bullet.png",
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/p-mkt3-uvc-g6-edge-bullet.png",
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/p-mkt4-uvc-g6-edge-bullet.png",
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/p-mkt5-uvc-g6-edge-bullet.png",
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/p-mkt6-uvc-g6-edge-bullet.png",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/p-mkt0-uvc-g6-edge-bullet.png",
+      "/images/camerasecurity/37.uvc-g6-edge-bullet/p-itb-uvc-g6-edge-bullet.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "IR Night Vision : 60 m (196 ft)",
+      "Zoom Mode : 2.36x Optical",
+      "Weatherproofing : IP66"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Without mount: ⌀107 x 113 mm (⌀4.2 x 4.4') With wall mount: ⌀107 x 212 mm (⌀4.2 x 8.3')" },
+          { label: "IR Night Vision", value: "60 m (196 ft)" },
+          { label: "Zoom Mode", value: "2.36x Optical" },
+          { label: "Face Recognition", value: "✓" },
+          { label: "License Plate Recognition", value: "✓" },
+          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+          { label: "Resolution", value: "4K" },
+          { label: "Field of View", value: "Wide: H: 113.8°, V: 61.9°, D: 134° Tele: H: 45.5°, V: 25.8°, D: 52°" },
+          { label: "Audio", value: "Two-way audio" },
+          { label: "Weatherproofing", value: "IP66" },
+          { label: "Tamper Resistance", value: "IK04" },
+          { label: "Mounting", value: "Wall, Ceiling, Pole mount (Included) Junction Box, Angled Base (Optional)" },
+          { label: "UniFi Application Suite", value: "Protect" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Network Interface", value: "GbE RJ45 port" },
+          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+          { label: "Video Max. Frame Rate", value: "30 FPS" },
+          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+          { label: "Optics Sensor", value: "1/1.2' 8MP" },
+          { label: "Optics Lens", value: "F 5.9-13.8 mm; ƒ/1.5-ƒ/2.9" },
+          { label: "Night Mode", value: "Built-in adaptive IR LED illumination and IR cut filter" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Max. Power Consumption", value: "25W" },
+          { label: "Supported Voltage Range", value: "42.5–57V DC" },
+          { label: "Power Method", value: "PoE+" },
+          { label: "Processor", value: "Dual-core Arm® Cortex®-A76 based chip" },
+          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+          { label: "Weight", value: "Without mount: 780 g (1.7 lb) With mount: 1.03 kg (2.3 lb)" },
+          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
+          { label: "Mount Material", value: "Wall mount: aluminum alloy, polycarbonate Pole mount: aluminum alloy" },
+          { label: "Expansion Slot", value: "MicroSD card" },
+          { label: "Button", value: "(1) Factory reset" },
+          { label: "Ambient Operating Temperature", value: "-20 to 50º C (-4 to 122º F)" },
+          { label: "Ambient Operating Humidity", value: "0 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/camerasecurity/37.uvc-g6-edge-bullet/p-itb-uvc-g6-edge-bullet.png" },
+    ],
+        addons: [
+      {
+        id: 1,
+        name: "Ethernet Surge Protection Outdoor-20kA",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "ESD protection for outdoor high-speed networks.",
+        specs: [
+          "Protects outdoor Ethernet devices, up to 20kA discharge current.",
+          "(2) Passive, surge-protected RJ45 connections",
+          "Quick and easy installation",
+          "Compatible with 10 GbE networks"
+        ],
+        detailedSpecs: [
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "700V @ 1kV/µs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 2.5 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
+        ],
+        productLink: "/products/mounting-kit"
+      },
+      {
+        id: 2,
+        name: "Ethernet Surge Protection Outdoor-10kA",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "ESD protection for outdoor high-speed networks.",
+        specs: [
+          "Protects outdoor Ethernet devices",
+          "(2) Passive, surge-protected RJ45 connections",
+          "Quick and easy installation",
+          "Compatible with 2.5 GbE networks"
+        ],
+        detailedSpecs: [
+          { label: "Networking Interface", value: "(2) RJ45 female connectors" },
+          { label: "DC Spark-Over Voltage", value: "90V @ 100V/s" },
+          { label: "Max. Impulse Spark-Over Voltage", value: "700V @ 1kV/µs" },
+          { label: "Discharge Current", value: "10kA+" },
+          { label: "Insulation", value: "Max. Resistance: 1G ohm @ 50V" },
+          { label: "Max. Capacitance", value: "1.0 pF @ 1 MHz" },
+          { label: "Data Line Protection", value: "Up to 2.5 Gbps" },
+          { label: "PoE Support", value: "✓" },
+          { label: "ESD/EMP Protection", value: "Absorbing transient current with response to surge voltage from 100V/s to 1kV/µs" },
+          { label: "Ambient Operating Temperature", value: "-30 to 65° C (-22 to 149° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Shock and Vibration Certification", value: "ETSI300-019-1.4 Standard" }
+        ],
+        productLink: "/products/power-cable"
+      },
+      {
+        id: 3,
+        name: "UniFi Premium Patch Cable Outdoor-B/W",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Ultra-thin, rugged, shielded outdoor patch cable, designed and optimized to perform in the harshest environments for 10 GbE networking.",
+        specs: [
+          "Shielded RJ45",
+          "Insulated, weatherproof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "— 3.5 mm outer diameter for 1-8 m lengths",
+          "— 3.9 mm outer diameter for 12-15 m lengths",
+          "Length: 1 to 15 m"
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m (0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-Pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 3 mm (0.11') 12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG 12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "1-8 m: Min. 21 mm (0.83'')12-15 m: Min. 24 mm (0.94'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 75°C (-4 to 167°F)" },
+          { label: "Ambient Operating Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+      {
+        id: 4,
+        name: "10G PoE++ Adapter (60W)",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "An adapter that can power UniFi PoE++ devices, reduce dependency on PoE switch power, and provide a Multi-Gigabit LAN connection.",
+        specs: [
+          "Delivers up to 60W of PoE++",
+          "Surge, peak pulse, and overcurrent protection",
+          "Contains RJ45 data input, AC cable with earth ground, and PoE++ output",
+          "LED indicator for status monitoring"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "106 x 63 x 34 mm (4.2 x 2.5 x 1.3')" },
+          { label: "Weight", value: "210 g (7.4 oz)" },
+          { label: "Output Voltage", value: "54V DC at 1.12A" },
+          { label: "Rated Voltage", value: "100-240V AC at 50/60Hz" },
+          { label: "LAN Activity Indicator", value: "—" },
+          { label: "Gigabit LAN Port", value: "✓" },
+          { label: "Remote Reset Capability", value: "—" },
+          { label: "Reset Button", value: "_" },
+          { label: "2-pair Powering", value: "Pins 1, 2, 4, 5 (+) and 3, 6, 7, 8 (-)" },
+          { label: "Clamping Protection", value: "11V Data, 60V Power" },
+          { label: "Data In / PoE", value: "RJ45 Shielded Socket" },
+          { label: "Input Current", value: "1.5A Max." },
+          { label: "Inrush Current", value: "<150A peak at 230V AC" },
+          { label: "Efficiency", value: ">88%" },
+          { label: "Switching Frequency", value: "65 kHz" },
+          { label: "Output Ripple", value: "1% Max." },
+          { label: "Line Regulation", value: "≤ 2%" },
+          { label: "Load Regulation", value: "≤ 5%" },
+          { label: "Max. PoE+ Wattage per Port by PSE", value: "60W" },
+          { label: "Max. Surge Discharge", value: "1500A (8/20 μs) power" },
+          { label: "Peak Pulse Current", value: "36A (10/1000 μs) data" },
+          { label: "Response Time", value: "<1 ns" },
+          { label: "Shunt Capacitance", value: "<5 pF data" },
+          { label: "Surge Protection", value: "Difference and common mode" },
+          { label: "Ambient Storage Temperature", value: "-30 to 70°C (-22 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, UL, UKCA, KC, CCC, RoHS" }
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
     ],
   },
 
@@ -4886,7 +4980,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "G6 Instant",
     category: "Camera Security",
     subfilter: "Compact",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/38.uvc-g6-ins/1.p-utama-uvc-g6-ins.png",
     shortDescription:
       "Plug-and-play, 4K WiFi-connected camera with a 1/1.8' 8MP image sensor, Multi-TOPS AI Engine, and two-way audio.",
     specs: [
@@ -4901,15 +4995,22 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/38.uvc-g6-ins/1.p-utama-uvc-g6-ins.png",
+      "/images/camerasecurity/38.uvc-g6-ins/2.p-spec-uvc-g6-ins.png",
+      "/images/camerasecurity/38.uvc-g6-ins/3.p-dimensi-uvc-g6-ins.png",
+      "/images/camerasecurity/38.uvc-g6-ins/4.p-deployment-uvc-g6-ins.png",
+      "/images/camerasecurity/38.uvc-g6-ins/p-itb-uvc-g6-ins.png",
+      "/images/camerasecurity/38.uvc-g6-ins/p-mkt1-uvc-g6-ins.png",
+      "/images/camerasecurity/38.uvc-g6-ins/p-mkt2-uvc-g6-ins.png",
+      "/images/camerasecurity/38.uvc-g6-ins/p-mkt3-uvc-g6-ins.png",
+      "/images/camerasecurity/38.uvc-g6-ins/p-mkt4-uvc-g6-ins.png",
+      "/images/camerasecurity/38.uvc-g6-ins/p-mkt5-uvc-g6-ins.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/38.uvc-g6-ins/p-mkt5-uvc-g6-ins.png",
+      "/images/camerasecurity/38.uvc-g6-ins/p-itb-uvc-g6-ins.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4975,10 +5076,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/38.uvc-g6-ins/p-itb-uvc-g6-ins.png" },
     ],
   },
 
@@ -4988,7 +5086,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "Camera AI Theta Pro",
     category: "Camera Security",
     subfilter: "Compact",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/39.uvc-ai-theta-pro/1.p-utama-uvc-ai-theta-pro.png",
     shortDescription:
       "A complete ceiling 360° AI Theta system designed to discreetly provide a panoramic view of large, busy spaces.",
     specs: [
@@ -5003,15 +5101,24 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/39.uvc-ai-theta-pro/1.p-utama-uvc-ai-theta-pro.png",
+      "/images/camerasecurity/39.uvc-ai-theta-pro/2.p-spec-uvc-ai-theta-pro.png",
+      "/images/camerasecurity/39.uvc-ai-theta-pro/3.p-dimensi-uvc-ai-theta-pro.png",
+      "/images/camerasecurity/39.uvc-ai-theta-pro/4.p-deployment-uvc-ai-theta-pro.png",
+      "/images/camerasecurity/39.uvc-ai-theta-pro/p-itb-uvc-ai-theta-pro.png",
+      "/images/camerasecurity/39.uvc-ai-theta-pro/p-mkt0-uvc-ai-theta-pro.png",
+      "/images/camerasecurity/39.uvc-ai-theta-pro/p-mkt1-uvc-ai-theta-pro.png",
+      "/images/camerasecurity/39.uvc-ai-theta-pro/p-mkt2-uvc-ai-theta-pro.png",
+      "/images/camerasecurity/39.uvc-ai-theta-pro/p-mkt4-uvc-ai-theta-pro.png",
+      "/images/camerasecurity/39.uvc-ai-theta-pro/p-mkt5-uvc-ai-theta-pro.png",
+      "/images/camerasecurity/39.uvc-ai-theta-pro/p-mkt7-uvc-ai-theta-pro.png",
+      "/images/camerasecurity/39.uvc-ai-theta-pro/p-mkt11-uvc-ai-theta-pro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/39.uvc-ai-theta-pro/p-mkt0-uvc-ai-theta-pro.png",
+      "/images/camerasecurity/39.uvc-ai-theta-pro/p-itb-uvc-ai-theta-pro.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -5069,10 +5176,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/39.uvc-ai-theta-pro/p-itb-uvc-ai-theta-pro.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -5096,279 +5200,279 @@ export const cameraSecurityProducts: Product[] = [
     ]
   },
 
-  // Produk Ketiga dari Camera Security, SF Compact
-  {
-    id: "UVC-AI-Theta-Hub",
-    name: "AI Theta Hub",
-    category: "Camera Security",
-    subfilter: "Compact",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Remote processing hub for any AI Theta deployment, compatible with any AI Theta Lens and AI Theta Audio.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // // Produk Ketiga dari Camera Security, SF Compact
+  // {
+  //   id: "UVC-AI-Theta-Hub",
+  //   name: "AI Theta Hub",
+  //   category: "Camera Security",
+  //   subfilter: "Compact",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Remote processing hub for any AI Theta deployment, compatible with any AI Theta Lens and AI Theta Audio.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UVC-AI-Theta-Hub",
+  //   // SKU produk
+  //   sku: "UVC-AI-Theta-Hub",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max. Power Consumption 12.5W",
-      "Power Method PoE",
-      "Resolution 4k",
-      "Note. License plate recognition supported with Long-Distance and Wide-Angle lenses."
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max. Power Consumption 12.5W",
+  //     "Power Method PoE",
+  //     "Resolution 4k",
+  //     "Note. License plate recognition supported with Long-Distance and Wide-Angle lenses."
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "140 x 70 x 38 mm (5.5 x 2.8 x 1.5”)" },
-          { label: "Mounting", value: "Wall, ceiling mount (Included)" },
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "Network Interface", value: "GbE RJ45 port Theta audio port Theta lens port" },
-          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
-          { label: "Enclosure Material", value: "Aluminum alloy" },
-          { label: "Mounting Material", value: "Aluminum alloy" },
-          { label: "Weight", value: "UVC-AI-Theta-Hub: 330 g (11.6 oz) UVC-AI-Theta-Hub Mount: 35 g (1.2 oz)" },
-          { label: "Power Method", value: "PoE" },
-          { label: "Supprorted Voltage Range", value: "37—57V DC" },
-          { label: "Max. Power Consumption", value: "12.5W" },
-          { label: "Power Output", value: "5V DC, 1A per port" },
-          { label: "LCM Display", value: "0.96' display" },
-          { label: "Button", value: "(1) Factory reset" },
-          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "FCC, IC, CE" },
-        ]
-      },
-    ],
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "140 x 70 x 38 mm (5.5 x 2.8 x 1.5”)" },
+  //         { label: "Mounting", value: "Wall, ceiling mount (Included)" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Performance",
+  //       items: [
+  //         { label: "Network Interface", value: "GbE RJ45 port Theta audio port Theta lens port" },
+  //         { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+  //         { label: "Enclosure Material", value: "Aluminum alloy" },
+  //         { label: "Mounting Material", value: "Aluminum alloy" },
+  //         { label: "Weight", value: "UVC-AI-Theta-Hub: 330 g (11.6 oz) UVC-AI-Theta-Hub Mount: 35 g (1.2 oz)" },
+  //         { label: "Power Method", value: "PoE" },
+  //         { label: "Supprorted Voltage Range", value: "37—57V DC" },
+  //         { label: "Max. Power Consumption", value: "12.5W" },
+  //         { label: "Power Output", value: "5V DC, 1A per port" },
+  //         { label: "LCM Display", value: "0.96' display" },
+  //         { label: "Button", value: "(1) Factory reset" },
+  //         { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+  //         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+  //         { label: "NDAA Compliant", value: "✓" },
+  //         { label: "Certifications", value: "FCC, IC, CE" },
+  //       ]
+  //     },
+  //   ],
 
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
 
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Flush Mount",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Enhanced flush mount for AI Theta Pro Lenses.",
-        specs: [
-          "Supports flush mounting without access to the rear of a ceiling or wall",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "⌀73.6 x 73.7 mm (⌀2.9 x 2.9')" },
-          { label: "Weight", value: "100 g (3.5)" },
-          { label: "Enclosure Material", value: "Polycarbonate, zinc alloy" }
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
-      },
-      {
-        id: 2,
-        name: "Angle Mount",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Angled ceiling mount for AI Theta Pro Lenses.",
-        specs: [
-          "Supports surface mounting with angle adjustment",
-          "Compatible with AI Theta Pro Lenses",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "64.7 x 42.4 x 100.1 mm (2.5 x 1.7 x 3.9')" },
-          { label: "Weight", value: "Mount: 113 g (4 oz) Mount plate: 7 g (0.25 oz)" },
-          { label: "Material", value: "Aluminum alloy" },
-          { label: "Enclosure Material", value: "Aluminum alloy" },
-          { label: "Mounting Material", value: "Aluminum alloy, stainless steel" }
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
-      },
-      {
-        id: 3,
-        name: "AI Theta Audio",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Two-way audio module that connects to an AI Theta Hub.",
-        specs: [
-          "Built-in microphone and speaker for two-way audio",
-          "Connects to an AI Theta Hub with the included cable",
-          "Includes flush mount for flat ceiling or wall mounting",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "⌀61.5 x 39 mm (⌀2.4 x 1.5')" },
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
-      },
-    ]
-  },
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Flush Mount",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Enhanced flush mount for AI Theta Pro Lenses.",
+  //       specs: [
+  //         "Supports flush mounting without access to the rear of a ceiling or wall",
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "⌀73.6 x 73.7 mm (⌀2.9 x 2.9')" },
+  //         { label: "Weight", value: "100 g (3.5)" },
+  //         { label: "Enclosure Material", value: "Polycarbonate, zinc alloy" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Angle Mount",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Angled ceiling mount for AI Theta Pro Lenses.",
+  //       specs: [
+  //         "Supports surface mounting with angle adjustment",
+  //         "Compatible with AI Theta Pro Lenses",
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "64.7 x 42.4 x 100.1 mm (2.5 x 1.7 x 3.9')" },
+  //         { label: "Weight", value: "Mount: 113 g (4 oz) Mount plate: 7 g (0.25 oz)" },
+  //         { label: "Material", value: "Aluminum alloy" },
+  //         { label: "Enclosure Material", value: "Aluminum alloy" },
+  //         { label: "Mounting Material", value: "Aluminum alloy, stainless steel" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "AI Theta Audio",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Two-way audio module that connects to an AI Theta Hub.",
+  //       specs: [
+  //         "Built-in microphone and speaker for two-way audio",
+  //         "Connects to an AI Theta Hub with the included cable",
+  //         "Includes flush mount for flat ceiling or wall mounting",
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "⌀61.5 x 39 mm (⌀2.4 x 1.5')" },
+  //       ],
+  //       productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
+  //     },
+  //   ]
+  // },
 
-  // Produk Keempat dari Camera Security, SF Compact
-  {
-    id: "UVC-AI-Theta",
-    name: "AI Theta",
-    category: "Camera Security",
-    subfilter: "Compact",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "A complete AI Theta system that discreetly secures any space while maintaining a warm and inviting atmosphere.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // // Produk Keempat dari Camera Security, SF Compact
+  // {
+  //   id: "UVC-AI-Theta",
+  //   name: "AI Theta",
+  //   category: "Camera Security",
+  //   subfilter: "Compact",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "A complete AI Theta system that discreetly secures any space while maintaining a warm and inviting atmosphere.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UVC-AI-Theta",
+  //   // SKU produk
+  //   sku: "UVC-AI-Theta",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max. Power Consumption 12.5W",
-      "Power Method PoE",
-      "Resolution 4k",
-      "Note. License plate recognition supported with Long-Distance and Wide-Angle lenses."
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max. Power Consumption 12.5W",
+  //     "Power Method PoE",
+  //     "Resolution 4k",
+  //     "Note. License plate recognition supported with Long-Distance and Wide-Angle lenses."
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "UVC-AI-Theta-Hub: 140 x 70 x 38 mm (5.5 x 2.8 x 1.5”) UVC-AI-Theta-Lens/360: ⌀22.8. x 43.5 mm  (⌀0.9 x 1.7”)" },
-          { label: "Face Recognition", value: "✓" },
-          { label: "License Plate Recognition", value: "✓" },
-          { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
-          { label: "Resolution", value: "4K" },
-          { label: "Field of View", value: "H: 97.5°, V: 79.4°, D: 118.2°" },
-          { label: "Audio", value: "Two-way audio with optional AI Theta Audio" },
-          { label: "Mounting", value: "Wall, ceiling, flush mount (Included) Angle mount (Optional)" },
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "Network Interface", value: "GbE RJ45 port" },
-          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
-          { label: "Video Max. Frame Rate", value: "UVC-AI-Theta-Lens: 24 FPS UVC-AI-Theta-Lens-360: 20 FPS" },
-          { label: "Resolution", value: "UVC-AI-Theta-Lens: 8MP 3264 x 2448 (4:3) UVC-AI-Theta-Lens-360: 6MP 2560 x 2560 (1:1)" },
-          { label: "Optics Sensor", value: "UVC-AI-Theta-Lens: 8MP CMOS UVC-AI-Theta-Lens-360: 12MP CMOS" },
-          { label: "Optics Lens", value: "Fixed focal length" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "12.5W" },
-          { label: "Supprorted Voltage Range", value: "37—57V DC" },
-          { label: "Power Method", value: "PoE" },
-          { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
-          { label: "Weight", value: "UVC-AI-Theta-Hub: 330 g (11.6 oz) UVC-AI-Theta-Hub mount: 35 g (1.2 oz) UVC-AI-Theta-Lens/360: 15 g (0.5 oz) UVC-AI-Theta-Lens/360 Flush mount: 12 g (0.4 oz)" },
-          { label: "Enclosure Material", value: " UVC-AI-Theta-Hub: aluminum alloy UVC-AI-Theta-Lens/360: aluminum alloy, polycarbonate UVC-AI-Theta-Lens/360 Flush mount: polycarbonate" },
-          { label: "Mount Material", value: "UVC-AI-Theta-Hub: aluminum alloy UVC-AI-Theta-Lens/360: aluminum alloy, polycarbonate UVC-AI-Theta-Lens/360 Flush mount: polycarbonate" },
-          { label: "Button", value: "(1) Factory reset" },
-          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC" },
-        ]
-      },
-    ],
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "UVC-AI-Theta-Hub: 140 x 70 x 38 mm (5.5 x 2.8 x 1.5”) UVC-AI-Theta-Lens/360: ⌀22.8. x 43.5 mm  (⌀0.9 x 1.7”)" },
+  //         { label: "Face Recognition", value: "✓" },
+  //         { label: "License Plate Recognition", value: "✓" },
+  //         { label: "Smart Detections (People, Vehicles, Animals)", value: "✓" },
+  //         { label: "Resolution", value: "4K" },
+  //         { label: "Field of View", value: "H: 97.5°, V: 79.4°, D: 118.2°" },
+  //         { label: "Audio", value: "Two-way audio with optional AI Theta Audio" },
+  //         { label: "Mounting", value: "Wall, ceiling, flush mount (Included) Angle mount (Optional)" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Performance",
+  //       items: [
+  //         { label: "Network Interface", value: "GbE RJ45 port" },
+  //         { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+  //         { label: "Video Max. Frame Rate", value: "UVC-AI-Theta-Lens: 24 FPS UVC-AI-Theta-Lens-360: 20 FPS" },
+  //         { label: "Resolution", value: "UVC-AI-Theta-Lens: 8MP 3264 x 2448 (4:3) UVC-AI-Theta-Lens-360: 6MP 2560 x 2560 (1:1)" },
+  //         { label: "Optics Sensor", value: "UVC-AI-Theta-Lens: 8MP CMOS UVC-AI-Theta-Lens-360: 12MP CMOS" },
+  //         { label: "Optics Lens", value: "Fixed focal length" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Max. Power Consumption", value: "12.5W" },
+  //         { label: "Supprorted Voltage Range", value: "37—57V DC" },
+  //         { label: "Power Method", value: "PoE" },
+  //         { label: "Processor", value: "Quad-core Arm® Cortex®-A53 based chip" },
+  //         { label: "Weight", value: "UVC-AI-Theta-Hub: 330 g (11.6 oz) UVC-AI-Theta-Hub mount: 35 g (1.2 oz) UVC-AI-Theta-Lens/360: 15 g (0.5 oz) UVC-AI-Theta-Lens/360 Flush mount: 12 g (0.4 oz)" },
+  //         { label: "Enclosure Material", value: " UVC-AI-Theta-Hub: aluminum alloy UVC-AI-Theta-Lens/360: aluminum alloy, polycarbonate UVC-AI-Theta-Lens/360 Flush mount: polycarbonate" },
+  //         { label: "Mount Material", value: "UVC-AI-Theta-Hub: aluminum alloy UVC-AI-Theta-Lens/360: aluminum alloy, polycarbonate UVC-AI-Theta-Lens/360 Flush mount: polycarbonate" },
+  //         { label: "Button", value: "(1) Factory reset" },
+  //         { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+  //         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+  //         { label: "NDAA Compliant", value: "✓" },
+  //         { label: "Certifications", value: "CE, FCC, IC" },
+  //       ]
+  //     },
+  //   ],
 
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
 
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "Angle Mount",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Angled ceiling mount for AI Theta Pro Lenses.",
-        specs: [
-          "Supports surface mounting with angle adjustment",
-          "Compatible with AI Theta Pro Lenses",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "64.7 x 42.4 x 100.1 mm (2.5 x 1.7 x 3.9')" },
-          { label: "Weight", value: "Mount: 113 g (4 oz) Mount plate: 7 g (0.25 oz)" },
-          { label: "Material", value: "Aluminum alloy" },
-          { label: "Enclosure Material", value: "Aluminum alloy" },
-          { label: "Mounting Material", value: "Aluminum alloy, stainless steel" }
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
-      },
-      {
-        id: 2,
-        name: "AI Theta Audio",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Two-way audio module that connects to an AI Theta Hub.",
-        specs: [
-          "Built-in microphone and speaker for two-way audio",
-          "Connects to an AI Theta Hub with the included cable",
-          "Includes flush mount for flat ceiling or wall mounting",
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "⌀61.5 x 39 mm (⌀2.4 x 1.5')" },
-        ],
-        productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
-      },
-    ]
-  },
+  //   // Addon/aksesori yang tersedia untuk produk ini
+  //   addons: [
+  //     {
+  //       id: 1,
+  //       name: "Angle Mount",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Angled ceiling mount for AI Theta Pro Lenses.",
+  //       specs: [
+  //         "Supports surface mounting with angle adjustment",
+  //         "Compatible with AI Theta Pro Lenses",
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "64.7 x 42.4 x 100.1 mm (2.5 x 1.7 x 3.9')" },
+  //         { label: "Weight", value: "Mount: 113 g (4 oz) Mount plate: 7 g (0.25 oz)" },
+  //         { label: "Material", value: "Aluminum alloy" },
+  //         { label: "Enclosure Material", value: "Aluminum alloy" },
+  //         { label: "Mounting Material", value: "Aluminum alloy, stainless steel" }
+  //       ],
+  //       productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "AI Theta Audio",
+  //       image: "/images/dcs-box.png",
+  //       price: 299,
+  //       description: "Two-way audio module that connects to an AI Theta Hub.",
+  //       specs: [
+  //         "Built-in microphone and speaker for two-way audio",
+  //         "Connects to an AI Theta Hub with the included cable",
+  //         "Includes flush mount for flat ceiling or wall mounting",
+  //       ],
+  //       detailedSpecs: [
+  //         { label: "Dimensions", value: "⌀61.5 x 39 mm (⌀2.4 x 1.5')" },
+  //       ],
+  //       productLink: "/products/mounting-kit-uvc-ai-theta-pro-w"
+  //     },
+  //   ]
+  // },
 
   // Produk Kelima dari Camera Security, SF Compact
   {
@@ -5376,7 +5480,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "G5 Flex",
     category: "Camera Security",
     subfilter: "Compact",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/40.uvc-g5-flex/1.p-utama-uvc-g5-flex.png",
     shortDescription:
       "Compact, easy-to-deploy 2K HD PoE camera that can be staged indoors or outside.",
     specs: [
@@ -5391,15 +5495,23 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/40.uvc-g5-flex/1.p-utama-uvc-g5-flex.png",
+      "/images/camerasecurity/40.uvc-g5-flex/2.p-dimensi-uvc-g5-flex.png",
+      "/images/camerasecurity/40.uvc-g5-flex/3.p-spec-uvc-g5-flex.png",
+      "/images/camerasecurity/40.uvc-g5-flex/4.p-deployment-uvc-g5-flex.png",
+      "/images/camerasecurity/40.uvc-g5-flex/p-itb-uvc-g5-flex.png",
+      "/images/camerasecurity/40.uvc-g5-flex/p-mkt0-uvc-g5-flex.png",
+      "/images/camerasecurity/40.uvc-g5-flex/p-mkt1-uvc-g5-flex.png",
+      "/images/camerasecurity/40.uvc-g5-flex/p-mkt2-uvc-g5-flex.png",
+      "/images/camerasecurity/40.uvc-g5-flex/p-mkt3-uvc-g5-flex.png",
+      "/images/camerasecurity/40.uvc-g5-flex/p-mkt4-uvc-g5-flex.png",
+      "/images/camerasecurity/40.uvc-g5-flex/p-mkt5-uvc-g5-flex.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/40.uvc-g5-flex/p-mkt5-uvc-g5-flex.png",
+      "/images/camerasecurity/40.uvc-g5-flex/p-itb-uvc-g5-flex.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -5459,10 +5571,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/40.uvc-g5-flex/p-itb-uvc-g5-flex.png" },
     ],
   },
 
@@ -5472,7 +5581,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "G4 Instant",
     category: "Camera Security",
     subfilter: "Compact",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/41.uvc-g4-ins/1.p-utama-uvc-g4-ins-7.png",
     shortDescription:
       "Compact, wide-angle, WiFi-connected camera with two-way audio.",
     specs: [
@@ -5487,15 +5596,23 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/41.uvc-g4-ins/1.p-utama-uvc-g4-ins-7.png",
+      "/images/camerasecurity/41.uvc-g4-ins/2.p-spec-uvc-g4-ins-7.png",
+      "/images/camerasecurity/41.uvc-g4-ins/3.p-dimensi-uvc-g4-ins-7.png",
+      "/images/camerasecurity/41.uvc-g4-ins/4.p-deployment-uvc-g4-ins-7.png",
+      "/images/camerasecurity/41.uvc-g4-ins/p-itb-uvc-g4-ins-7.png",
+      "/images/camerasecurity/41.uvc-g4-ins/p-mkt0-uvc-g4-ins-7.png",
+      "/images/camerasecurity/41.uvc-g4-ins/p-mkt1-uvc-g4-ins-7.png",
+      "/images/camerasecurity/41.uvc-g4-ins/p-mkt2-uvc-g4-ins-7.png",
+      "/images/camerasecurity/41.uvc-g4-ins/p-mkt3-uvc-g4-ins-7.png",
+      "/images/camerasecurity/41.uvc-g4-ins/p-mkt4-uvc-g4-ins-7.png",
+      "/images/camerasecurity/41.uvc-g4-ins/p-mkt5-uvc-g4-ins-7.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/41.uvc-g4-ins/p-mkt4-uvc-g4-ins-7.png",
+      "/images/camerasecurity/41.uvc-g4-ins/p-itb-uvc-g4-ins-7.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -5559,10 +5676,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/41.uvc-g4-ins/p-itb-uvc-g4-ins-7.png" },
     ],
   },
 
@@ -5572,7 +5686,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "AI Theta Audio",
     category: "Camera Security",
     subfilter: "Compact",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/42.uvc-ai-theta-audio/1.p-utama-uvc-ai-theta-audio-2.png",
     shortDescription: "Two-way audio module that connects to an AI Theta Hub.",
     specs: [
       { label: "Resolution", value: "4K (8MP)" },
@@ -5586,15 +5700,18 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/42.uvc-ai-theta-audio/1.p-utama-uvc-ai-theta-audio-2.png",
+      "/images/camerasecurity/42.uvc-ai-theta-audio/2.p-spec-uvc-ai-theta-audio-2.png",
+      "/images/camerasecurity/42.uvc-ai-theta-audio/3.p-deployment-uvc-ai-theta-audio-2.png",
+      "/images/camerasecurity/42.uvc-ai-theta-audio/p-mkt0-uvc-ai-theta-audio-2.png",
+      "/images/camerasecurity/42.uvc-ai-theta-audio/p-mkt1-uvc-ai-theta-audio-2.png",
+      "/images/camerasecurity/42.uvc-ai-theta-audio/p-mkt2-uvc-ai-theta-audio-2.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/42.uvc-ai-theta-audio/p-mkt2-uvc-ai-theta-audio-2.png",
+      "/images/camerasecurity/42.uvc-ai-theta-audio/3.p-deployment-uvc-ai-theta-audio-2.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -5657,85 +5774,89 @@ export const cameraSecurityProducts: Product[] = [
         ]
       },
     ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/camerasecurity/42.uvc-ai-theta-audio/p-mkt0-uvc-ai-theta-audio-2.png" },
+    ],
   },
 
   // Produk Kedelapan dari Camera Security, SF Compact
-  {
-    id: "UVC-AI-Theta-Lens-LD",
-    name: "AI Theta Long-Distance Lens",
-    category: "Camera Security",
-    subfilter: "Compact",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Long-distance lens that connects to an AI Theta Hub.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UVC-AI-Theta-Lens-LD",
+  //   name: "AI Theta Long-Distance Lens",
+  //   category: "Camera Security",
+  //   subfilter: "Compact",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Long-distance lens that connects to an AI Theta Hub.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UVC-AI-Theta-Lens-LD",
+  //   // SKU produk
+  //   sku: "UVC-AI-Theta-Lens-LD",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Power Method Theta proprietary",
-      "Enclosure Material Aluminum alloy, polycarbonate",
-      "Resolution 4K"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Power Method Theta proprietary",
+  //     "Enclosure Material Aluminum alloy, polycarbonate",
+  //     "Resolution 4K"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀22.8. x 43.5 mm (⌀0.9 x 1.7”)" },
-          { label: "Field of View", value: "H: 36.2°, V: 27.7°, D: 44.4°" },
-          { label: "Resolution", value: "4K" },
-          { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
-          { label: "Operating Environment", value: "Indoor Only" },
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
-          { label: "Video Max. Frame Rate", value: "24 FPS" },
-          { label: "Video Resolution", value: "8MP 3264 x 2448 (4:3)" },
-          { label: "Optics Sensor", value: "8MP CMOS" },
-          { label: "Optics Lens", value: "Fixed focal length" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
-          { label: "Mount Material", value: "Polycarbonate" },
-          { label: "Weight", value: "15 g (0.5 oz)" },
-          { label: "Power Method", value: "Theta proprietary" },
-          { label: "Power Supply", value: "5V DC, 0.5A" },
-          { label: "Max. Power Consumption", value: "2.5W" },
-          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "Certifications", value: "FCC, IC, CE" },
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "⌀22.8. x 43.5 mm (⌀0.9 x 1.7”)" },
+  //         { label: "Field of View", value: "H: 36.2°, V: 27.7°, D: 44.4°" },
+  //         { label: "Resolution", value: "4K" },
+  //         { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
+  //         { label: "Operating Environment", value: "Indoor Only" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Performance",
+  //       items: [
+  //         { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+  //         { label: "Video Max. Frame Rate", value: "24 FPS" },
+  //         { label: "Video Resolution", value: "8MP 3264 x 2448 (4:3)" },
+  //         { label: "Optics Sensor", value: "8MP CMOS" },
+  //         { label: "Optics Lens", value: "Fixed focal length" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+  //         { label: "Mount Material", value: "Polycarbonate" },
+  //         { label: "Weight", value: "15 g (0.5 oz)" },
+  //         { label: "Power Method", value: "Theta proprietary" },
+  //         { label: "Power Supply", value: "5V DC, 0.5A" },
+  //         { label: "Max. Power Consumption", value: "2.5W" },
+  //         { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+  //         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+  //         { label: "Certifications", value: "FCC, IC, CE" },
+  //       ]
+  //     },
+  //   ],
+  // },
 
   // Produk Kesembilan dari Camera Security, SF Compact
   {
@@ -5743,7 +5864,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "AI Theta Pro Long-Distance Lens",
     category: "Camera Security",
     subfilter: "Compact",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/43.uvc-ai-theta-prolens50/1.p-utama-uvc-ai-theta-prolens50.png",
     shortDescription:
       "Long-distance lens with enhanced low-light performance and dynamic range that connects to an AI Theta Hub.",
     specs: [
@@ -5758,15 +5879,17 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/43.uvc-ai-theta-prolens50/1.p-utama-uvc-ai-theta-prolens50.png",
+      "/images/camerasecurity/43.uvc-ai-theta-prolens50/2.p-spec-uvc-ai-theta-prolens50.png",
+      "/images/camerasecurity/43.uvc-ai-theta-prolens50/3.p-deployment-uvc-ai-theta-prolens50.png",
+      "/images/camerasecurity/43.uvc-ai-theta-prolens50/p-mkt0-uvc-ai-theta-prolens50.png",
+      "/images/camerasecurity/43.uvc-ai-theta-prolens50/p-mkt2-uvc-ai-theta-prolens50.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/43.uvc-ai-theta-prolens50/p-mkt0-uvc-ai-theta-prolens50.png",
+      "/images/camerasecurity/43.uvc-ai-theta-prolens50/3.p-deployment-uvc-ai-theta-prolens50.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -5813,327 +5936,331 @@ export const cameraSecurityProducts: Product[] = [
         ]
       },
     ],
+     // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/camerasecurity/43.uvc-ai-theta-prolens50/p-mkt2-uvc-ai-theta-prolens50.png" },
+    ],
   },
 
   // Produk Kesepuluh dari Camera Security, SF Compact
-  {
-    id: "UVC-AI-Theta-ProLens110",
-    name: "AI Theta Pro Wide-Angle Lens",
-    category: "Camera Security",
-    subfilter: "Compact",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Wide-angle lens with enhanced low-light performance and dynamic range that connects to an AI Theta Hub.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UVC-AI-Theta-ProLens110",
+  //   name: "AI Theta Pro Wide-Angle Lens",
+  //   category: "Camera Security",
+  //   subfilter: "Compact",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Wide-angle lens with enhanced low-light performance and dynamic range that connects to an AI Theta Hub.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UVC-AI-Theta-ProLens110",
+  //   // SKU produk
+  //   sku: "UVC-AI-Theta-ProLens110",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Power Method Theta proprietary",
-      "Enclosure Material Aluminum alloy, polycarbonate",
-      "Resolution 4K"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Power Method Theta proprietary",
+  //     "Enclosure Material Aluminum alloy, polycarbonate",
+  //     "Resolution 4K"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀36.6 x 58.9 mm (⌀1.4 x 2.3)" },
-          { label: "Field of View", value: "H: 110.4°, V: 62.1°, D: 126.6°" },
-          { label: "Resolution", value: "4K" },
-          { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
-          { label: "Operating Environment", value: "Indoor Only" },
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
-          { label: "Video Max. Frame Rate", value: "24 FPS" },
-          { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
-          { label: "Optics Sensor", value: "8MP 1/1.8'" },
-          { label: "Optics Lens", value: "Fixed focal length" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
-          { label: "Mount Material", value: "Polycarbonate" },
-          { label: "Weight", value: "50 g (1.8 oz)" },
-          { label: "Power Method", value: "Theta proprietary" },
-          { label: "Power Supply", value: "5V DC, 0.5A" },
-          { label: "Max. Power Consumption", value: "2.5W" },
-          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "Certifications", value: "FCC, IC, CE" },
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "⌀36.6 x 58.9 mm (⌀1.4 x 2.3)" },
+  //         { label: "Field of View", value: "H: 110.4°, V: 62.1°, D: 126.6°" },
+  //         { label: "Resolution", value: "4K" },
+  //         { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
+  //         { label: "Operating Environment", value: "Indoor Only" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Performance",
+  //       items: [
+  //         { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+  //         { label: "Video Max. Frame Rate", value: "24 FPS" },
+  //         { label: "Video Resolution", value: "8MP 3840 x 2160 (16:9)" },
+  //         { label: "Optics Sensor", value: "8MP 1/1.8'" },
+  //         { label: "Optics Lens", value: "Fixed focal length" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+  //         { label: "Mount Material", value: "Polycarbonate" },
+  //         { label: "Weight", value: "50 g (1.8 oz)" },
+  //         { label: "Power Method", value: "Theta proprietary" },
+  //         { label: "Power Supply", value: "5V DC, 0.5A" },
+  //         { label: "Max. Power Consumption", value: "2.5W" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+  //         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+  //         { label: "Certifications", value: "FCC, IC, CE" },
+  //       ]
+  //     },
+  //   ],
+  // },
 
   // Produk Kesebelas dari Camera Security, SF Compact
-  {
-    id: "UVC-AI-Theta-Lens",
-    name: "AI Theta Lens",
-    category: "Camera Security",
-    subfilter: "Compact",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Wide-angle lens that connects to an AI Theta Hub.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UVC-AI-Theta-Lens",
+  //   name: "AI Theta Lens",
+  //   category: "Camera Security",
+  //   subfilter: "Compact",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Wide-angle lens that connects to an AI Theta Hub.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UVC-AI-Theta-Lens",
+  //   // SKU produk
+  //   sku: "UVC-AI-Theta-Lens",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Power Method Theta proprietary",
-      "Enclosure Material Aluminum alloy, polycarbonate",
-      "Resolution 4K"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Power Method Theta proprietary",
+  //     "Enclosure Material Aluminum alloy, polycarbonate",
+  //     "Resolution 4K"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀22.8. x 43.5 mm (⌀0.9 x 1.7”)" },
-          { label: "Field of View", value: "H: 97.5°, V: 79.4°, D: 118.2°" },
-          { label: "Resolution", value: "4K" },
-          { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
-          { label: "Operating Environment", value: "Indoor Only" },
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
-          { label: "Video Max. Frame Rate", value: "24 FPS" },
-          { label: "Video Resolution", value: "8MP 3264 x 2448 (4:3)" },
-          { label: "Optics Sensor", value: "8MP CMOS" },
-          { label: "Optics Lens", value: "Fixed focal length" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
-          { label: "Mount Material", value: "Polycarbonate" },
-          { label: "Weight", value: "15 g (0.5 oz)" },
-          { label: "Power Method", value: "Theta proprietary" },
-          { label: "Power Supply", value: "5V DC, 0.5A" },
-          { label: "Max. Power Consumption", value: "2.5W" },
-          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "Certifications", value: "FCC, IC, CE" },
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "⌀22.8. x 43.5 mm (⌀0.9 x 1.7”)" },
+  //         { label: "Field of View", value: "H: 97.5°, V: 79.4°, D: 118.2°" },
+  //         { label: "Resolution", value: "4K" },
+  //         { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
+  //         { label: "Operating Environment", value: "Indoor Only" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Performance",
+  //       items: [
+  //         { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+  //         { label: "Video Max. Frame Rate", value: "24 FPS" },
+  //         { label: "Video Resolution", value: "8MP 3264 x 2448 (4:3)" },
+  //         { label: "Optics Sensor", value: "8MP CMOS" },
+  //         { label: "Optics Lens", value: "Fixed focal length" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+  //         { label: "Mount Material", value: "Polycarbonate" },
+  //         { label: "Weight", value: "15 g (0.5 oz)" },
+  //         { label: "Power Method", value: "Theta proprietary" },
+  //         { label: "Power Supply", value: "5V DC, 0.5A" },
+  //         { label: "Max. Power Consumption", value: "2.5W" },
+  //         { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+  //         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+  //         { label: "Certifications", value: "FCC, IC, CE" },
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Keduabelas dari Camera Security, SF Compact
-  {
-    id: "UVC-AI-Theta-ProLens360",
-    name: "AI Theta Pro 360 Lens",
-    category: "Camera Security",
-    subfilter: "Compact",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Ultra-wide 360° view lens with enhanced low-light performance and dynamic range that connects to an AI Theta Hub.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UVC-AI-Theta-ProLens360",
+  //   name: "AI Theta Pro 360 Lens",
+  //   category: "Camera Security",
+  //   subfilter: "Compact",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Ultra-wide 360° view lens with enhanced low-light performance and dynamic range that connects to an AI Theta Hub.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UVC-AI-Theta-ProLens360",
+  //   // SKU produk
+  //   sku: "UVC-AI-Theta-ProLens360",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Power Method Theta proprietary",
-      "Enclosure Material Aluminum alloy, polycarbonate",
-      "Resolution 4K"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Power Method Theta proprietary",
+  //     "Enclosure Material Aluminum alloy, polycarbonate",
+  //     "Resolution 4K"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀36.6 x 58.9 mm (⌀1.4 x 2.3)" },
-          { label: "Field of View", value: "H: 180°, V: 180°, D: 180°" },
-          { label: "Resolution", value: "4K" },
-          { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
-          { label: "Operating Environment", value: "Indoor Only" },
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
-          { label: "Video Max. Frame Rate", value: "24 FPS" },
-          { label: "Video Resolution", value: "4MP 2160 x 2160 (1:1)" },
-          { label: "Optics Sensor", value: "8MP 1/1.8'" },
-          { label: "Optics Lens", value: "Fixed focal length" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
-          { label: "Mount Material", value: "Polycarbonate" },
-          { label: "Weight", value: "50 g (1.8 oz)" },
-          { label: "Power Method", value: "Theta proprietary" },
-          { label: "Power Supply", value: "5V DC, 0.5A" },
-          { label: "Max. Power Consumption", value: "2.5W" },
-          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "Certifications", value: "FCC, IC, CE" },
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "⌀36.6 x 58.9 mm (⌀1.4 x 2.3)" },
+  //         { label: "Field of View", value: "H: 180°, V: 180°, D: 180°" },
+  //         { label: "Resolution", value: "4K" },
+  //         { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
+  //         { label: "Operating Environment", value: "Indoor Only" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Performance",
+  //       items: [
+  //         { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+  //         { label: "Video Max. Frame Rate", value: "24 FPS" },
+  //         { label: "Video Resolution", value: "4MP 2160 x 2160 (1:1)" },
+  //         { label: "Optics Sensor", value: "8MP 1/1.8'" },
+  //         { label: "Optics Lens", value: "Fixed focal length" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+  //         { label: "Mount Material", value: "Polycarbonate" },
+  //         { label: "Weight", value: "50 g (1.8 oz)" },
+  //         { label: "Power Method", value: "Theta proprietary" },
+  //         { label: "Power Supply", value: "5V DC, 0.5A" },
+  //         { label: "Max. Power Consumption", value: "2.5W" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+  //         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+  //         { label: "Certifications", value: "FCC, IC, CE" },
+  //       ]
+  //     },
+  //   ],
+  // },
 
   // Produk KetigaBelas dari Camera Security, SF Compact
-  {
-    id: "UVC-AI-Theta-Lens-360",
-    name: "AI Theta 360 Lens",
-    category: "Camera Security",
-    subfilter: "Compact",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Ultra-wide 360° view lens that connects to an AI Theta Hub.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UVC-AI-Theta-Lens-360",
+  //   name: "AI Theta 360 Lens",
+  //   category: "Camera Security",
+  //   subfilter: "Compact",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Ultra-wide 360° view lens that connects to an AI Theta Hub.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UVC-AI-Theta-Lens-360",
+  //   // SKU produk
+  //   sku: "UVC-AI-Theta-Lens-360",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Power Method Theta proprietary",
-      "Enclosure Material Aluminum alloy, polycarbonate",
-      "Resolution 4K"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Power Method Theta proprietary",
+  //     "Enclosure Material Aluminum alloy, polycarbonate",
+  //     "Resolution 4K"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀22.8. x 43.5 mm (⌀0.9 x 1.7”)" },
-          { label: "Field of View", value: "H: 180°, V: 180°, D: 180°" },
-          { label: "Resolution", value: "4K" },
-          { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
-          { label: "Operating Environment", value: "Indoor Only" },
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
-          { label: "Video Max. Frame Rate", value: "20 FPS" },
-          { label: "Video Resolution", value: "4MP 2560 x 2560 (1:1)" },
-          { label: "Optics Sensor", value: "12MP CMOS" },
-          { label: "Optics Lens", value: "Fixed focal length" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
-          { label: "Mount Material", value: "Polycarbonate" },
-          { label: "Weight", value: "15 g (0.5 oz)" },
-          { label: "Power Method", value: "Theta proprietary" },
-          { label: "Power Supply", value: "5V DC, 0.5A" },
-          { label: "Max. Power Consumption", value: "2.5W" },
-          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "Certifications", value: "FCC, IC, CE" },
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "⌀22.8. x 43.5 mm (⌀0.9 x 1.7”)" },
+  //         { label: "Field of View", value: "H: 180°, V: 180°, D: 180°" },
+  //         { label: "Resolution", value: "4K" },
+  //         { label: "Mounting", value: "Wall, ceiling mount (Included) Angle mount (Optional)" },
+  //         { label: "Operating Environment", value: "Indoor Only" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Performance",
+  //       items: [
+  //         { label: "Video Image Settings", value: "Color, brightness, sharpness, contrast, white balance, exposure control, 2DNR, 3DNR, NR by motion, masking, text overlay, HDR" },
+  //         { label: "Video Max. Frame Rate", value: "20 FPS" },
+  //         { label: "Video Resolution", value: "4MP 2560 x 2560 (1:1)" },
+  //         { label: "Optics Sensor", value: "12MP CMOS" },
+  //         { label: "Optics Lens", value: "Fixed focal length" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+  //         { label: "Mount Material", value: "Polycarbonate" },
+  //         { label: "Weight", value: "15 g (0.5 oz)" },
+  //         { label: "Power Method", value: "Theta proprietary" },
+  //         { label: "Power Supply", value: "5V DC, 0.5A" },
+  //         { label: "Max. Power Consumption", value: "2.5W" },
+  //         { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+  //         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+  //         { label: "Certifications", value: "FCC, IC, CE" },
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Pertama dari Camera Security, SF PTZ
   {
-    id: "UVC-G6-PTZ-B/W",
+    id: "UVC-G6-PTZ",
     name: "G6 PTZ",
     category: "Camera Security",
     subfilter: "PTZ",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/44.uvc-g6-ptz/1.p-utama-uvcg6ptz.png",
     shortDescription:
       "All-weather, 4K dual-lens camera with 10x hybrid zoom, 1/1.8' 8MP image sensor, Multi-TOPS AI Engine, and ultra-low latency pan-tilt-zoom control for motion tracking.",
     specs: [
@@ -6148,15 +6275,22 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/44.uvc-g6-ptz/1.p-utama-uvcg6ptz.png",
+      "/images/camerasecurity/44.uvc-g6-ptz/2.p-dimensi-uvcg6ptz.png",
+      "/images/camerasecurity/44.uvc-g6-ptz/3.p-spec-uvcg6ptz.png",
+      "/images/camerasecurity/44.uvc-g6-ptz/4.p-development-uvcg6ptz.png",
+      "/images/camerasecurity/44.uvc-g6-ptz/p-itb-uvcg6ptz.png",
+      "/images/camerasecurity/44.uvc-g6-ptz/p-mkt0-uvcg6ptz.png",
+      "/images/camerasecurity/44.uvc-g6-ptz/p-mkt1-uvcg6ptz.png",
+      "/images/camerasecurity/44.uvc-g6-ptz/p-mkt2-uvcg6ptz.png",
+      "/images/camerasecurity/44.uvc-g6-ptz/p-mkt3-uvcg6ptz.png",
+      "/images/camerasecurity/44.uvc-g6-ptz/p-mkt4-uvcg6ptz.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/44.uvc-g6-ptz/p-mkt0-uvcg6ptz.png",
+      "/images/camerasecurity/44.uvc-g6-ptz/p-itb-uvcg6ptz.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -6222,20 +6356,17 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/44.uvc-g6-ptz/p-itb-uvcg6ptz.png" },
     ],
   },
 
-  // Produk Kedua dari Camera Security, SF PTZ
+  //Produk Kedua dari Camera Security, SF PTZ
   {
-    id: "UVC-AI-PTZ-B/W",
+    id: "UVC-AI-PTZ",
     name: "AI PTZ Industrial",
     category: "Camera Security",
     subfilter: "PTZ",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/45.uvc-ai-ptz/1.p-utama-uvcaiptz.png",
     shortDescription:
       "Industrial-grade 4K PoE++ PTZ camera with enhanced AI capabilities, 22x optical zoom, and long-range adaptive IR LED night vision.",
     specs: [
@@ -6250,15 +6381,23 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/45.uvc-ai-ptz/1.p-utama-uvcaiptz.png",
+      "/images/camerasecurity/45.uvc-ai-ptz/2.p-dimensi-uvcaiptz.png",
+      "/images/camerasecurity/45.uvc-ai-ptz/3.p-spec-uvcaiptz.png",
+      "/images/camerasecurity/45.uvc-ai-ptz/4.p-development-uvcaiptz.png",
+      "/images/camerasecurity/45.uvc-ai-ptz/p-itb-uvcaiptz.png",
+      "/images/camerasecurity/45.uvc-ai-ptz/p-mkt0-uvcaiptz.png",
+      "/images/camerasecurity/45.uvc-ai-ptz/p-mkt1-uvcaiptz.png",
+      "/images/camerasecurity/45.uvc-ai-ptz/p-mkt2-uvcaiptz.png",
+      "/images/camerasecurity/45.uvc-ai-ptz/p-mkt3-uvcaiptz.png",
+      "/images/camerasecurity/45.uvc-ai-ptz/p-mkt4-uvcaiptz.png",
+      "/images/camerasecurity/45.uvc-ai-ptz/p-mkt5-uvcaiptz.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/45.uvc-ai-ptz/p-mkt0-uvcaiptz.png",
+      "/images/camerasecurity/45.uvc-ai-ptz/p-itb-uvcaiptz.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -6322,20 +6461,17 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/45.uvc-ai-ptz/p-itb-uvcaiptz.png" },
     ],
   },
 
   //Produk Ketiga dari Camera Security, SF PTZ
   {
-    id: "UVC-AI-PTZ-Precision-B/W",
+    id: "UVC-AI-PTZ-Precision",
     name: "AI PTZ Precision",
     category: "Camera Security",
     subfilter: "PTZ",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/46.uvc-ai-ptz-precision/1.p-utama-uvcaiptz.png",
     shortDescription:
       "Industrial-grade 4K PTZ camera with enhanced AI capabilities, 31× optical zoom, adaptive IR LED night vision, and LiDAR technology for faster autofocus.",
     specs: [
@@ -6350,15 +6486,22 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/46.uvc-ai-ptz-precision/1.p-utama-uvcaiptz.png",
+      "/images/camerasecurity/46.uvc-ai-ptz-precision/2.p-dimensi-uvcaiptz.png",
+      "/images/camerasecurity/46.uvc-ai-ptz-precision/3.p-spec-uvcaiptz.png",
+      "/images/camerasecurity/46.uvc-ai-ptz-precision/4.p-development-uvcaiptz.png",
+      "/images/camerasecurity/46.uvc-ai-ptz-precision/p-itb-uvcaiptz.png",
+      "/images/camerasecurity/46.uvc-ai-ptz-precision/p-mkt0-uvcaiptz.png",
+      "/images/camerasecurity/46.uvc-ai-ptz-precision/p-mkt1-uvcaiptz.png",
+      "/images/camerasecurity/46.uvc-ai-ptz-precision/p-mkt2-uvcaiptz.png",
+      "/images/camerasecurity/46.uvc-ai-ptz-precision/p-mkt3-uvcaiptz.png",
+      "/images/camerasecurity/46.uvc-ai-ptz-precision/p-mkt4-uvcaiptz.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/46.uvc-ai-ptz-precision/p-mkt0-uvcaiptz.png",
+      "/images/camerasecurity/46.uvc-ai-ptz-precision/p-itb-uvcaiptz.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -6424,10 +6567,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/46.uvc-ai-ptz-precision/p-itb-uvcaiptz.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -6521,11 +6661,11 @@ export const cameraSecurityProducts: Product[] = [
 
   // Produk Keempat dari Camera Security, SF PTZ
   {
-    id: "UVC-G5-PTZ-B/W",
+    id: "UVC-G5-PTZ",
     name: "G5 PTZ ",
     category: "Camera Security",
     subfilter: "PTZ",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/47.uvc-g5-ptz/1.p-utama-uvcg5ptz.png",
     shortDescription:
       "Compact, all-weather camera with ultra-low latency pan-tilt-zoom control and versatile mounting options.",
     specs: [
@@ -6540,15 +6680,22 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/47.uvc-g5-ptz/1.p-utama-uvcg5ptz.png",
+      "/images/camerasecurity/47.uvc-g5-ptz/2.p-dimensi-uvcg5ptz.png",
+      "/images/camerasecurity/47.uvc-g5-ptz/3.p-spec-uvcg5ptz.png",
+      "/images/camerasecurity/47.uvc-g5-ptz/4.p-spec-uvcg5ptz.png",
+      "/images/camerasecurity/47.uvc-g5-ptz/5.p-development-uvcg5ptz.png",
+      "/images/camerasecurity/47.uvc-g5-ptz/p-itb-uvcg5ptz.png",
+      "/images/camerasecurity/47.uvc-g5-ptz/p-mkt0-uvcg5ptz.png",
+      "/images/camerasecurity/47.uvc-g5-ptz/p-mkt1-uvcg5ptz.png",
+      "/images/camerasecurity/47.uvc-g5-ptz/p-mkt2-uvcg5ptz.png",
+      "/images/camerasecurity/47.uvc-g5-ptz/p-mkt3-uvcg5ptz.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/47.uvc-g5-ptz/p-mkt0-uvcg5ptz.png",
+      "/images/camerasecurity/47.uvc-g5-ptz/p-itb-uvcg5ptz.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -6609,20 +6756,17 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/47.uvc-g5-ptz/p-itb-uvcg5ptz.png" },
     ],
   },
 
 //Produk Pertama dari Camera Security, SF DoorBells
   {
-    id: "UVC-4-Doorbell-Pro-PoE-Kit-B/W",
+    id: "UVC-4-Doorbell-Pro-PoE-Kit",
     name: "G4 Doorbell Pro PoE Kit",
     category: "Camera Security",
     subfilter: "Doorbells",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/1.p-utama-uvcg4doorbellpropoekit.png",
     shortDescription:
       "Premium UniFi doorbell with integrated PoE and included PoE chime for plug-and-play installation.",
     specs: [
@@ -6637,15 +6781,22 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/1.p-utama-uvcg4doorbellpropoekit.png",
+      "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/2.p-dimensi-uvcg4doorbellpropoekit.png",
+      "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/3.p-spec-uvcg4doorbellpropoekit.png",
+      "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/4.p-spec-uvcg4doorbellpropoekit.png",
+      "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/5.p-development-uvcg4doorbellpropoekit.png",
+      "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/p-itb-uvcg4doorbellpropoekit.png",
+      "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/p-mkt0-uvcg4doorbellpropoekit.png",
+      "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/p-mkt1-uvcg4doorbellpropoekit.png",
+      "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/p-mkt2-uvcg4doorbellpropoekit.png",
+      "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/p-mkt3-uvcg4doorbellpropoekit.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/p-mkt3-uvcg4doorbellpropoekit.png",
+      "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/p-itb-uvcg4doorbellpropoekit.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -6732,20 +6883,17 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/48.uvc-g4-doorbell-pro-poe-kit/p-itb-uvcg4doorbellpropoekit.png" },
     ],
   },
 
   // Produk Kedua dari Camera Security, SF DoorBells
   {
-    id: "UVC-4-Doorbell-Pro-B/W",
+    id: "UVC-4-Doorbell-Pro",
     name: "G4 Doorbell Pro",
     category: "Camera Security",
     subfilter: "Doorbells",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/49.uvc-g4-doorbell-pro/1.p-utama-uvcg4doorbellpro.png",
     shortDescription:
       "Premium UniFi doorbell with an enhanced package detection camera and integrated display.",
     specs: [
@@ -6760,15 +6908,21 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/49.uvc-g4-doorbell-pro/1.p-utama-uvcg4doorbellpro.png",
+      "/images/camerasecurity/49.uvc-g4-doorbell-pro/2.p-dimensi-uvcg4doorbellpro.png",
+      "/images/camerasecurity/49.uvc-g4-doorbell-pro/3.p-spec-uvcg4doorbellpro.png",
+      "/images/camerasecurity/49.uvc-g4-doorbell-pro/p-itb-uvcg4doorbellpro.png",
+      "/images/camerasecurity/49.uvc-g4-doorbell-pro/p-mkt0-uvcg4doorbellpro.png",
+      "/images/camerasecurity/49.uvc-g4-doorbell-pro/p-mkt1-uvcg4doorbellpro.png",
+      "/images/camerasecurity/49.uvc-g4-doorbell-pro/p-mkt2-uvcg4doorbellpro.png",
+      "/images/camerasecurity/49.uvc-g4-doorbell-pro/p-mkt3-uvcg4doorbellpro.png",
+      "/images/camerasecurity/49.uvc-g4-doorbell-pro/p-mkt4-uvcg4doorbellpro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/49.uvc-g4-doorbell-pro/p-mkt4-uvcg4doorbellpro.png",
+      "/images/camerasecurity/49.uvc-g4-doorbell-pro/p-itb-uvcg4doorbellpro.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -6832,10 +6986,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/49.uvc-g4-doorbell-pro/p-itb-uvcg4doorbellpro.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -6900,11 +7051,11 @@ export const cameraSecurityProducts: Product[] = [
 
   // Produk Ketiga dari Camera Security, SF DoorBells
   {
-    id: "UVC-Doorbell-B/W",
+    id: "UVC-Doorbell",
     name: "Doorbell Lite",
     category: "Camera Security",
     subfilter: "Doorbells",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/50.uvc-doorbell-b/1.p-utama-uvcdoorbelllite.png",
     shortDescription:
       "Compact PoE video doorbell with two-way audio and versatile mounting options.",
     specs: [
@@ -6919,15 +7070,23 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/50.uvc-doorbell-b/1.p-utama-uvcdoorbelllite.png",
+      "/images/camerasecurity/50.uvc-doorbell-b/2.p-dimensi-uvcdoorbelllite.png",
+      "/images/camerasecurity/50.uvc-doorbell-b/3.p-spec-uvcdoorbelllite.png",
+      "/images/camerasecurity/50.uvc-doorbell-b/4.p-development-uvcdoorbelllite.png",
+      "/images/camerasecurity/50.uvc-doorbell-b/p-itb-uvcdoorbelllite.png",
+      "/images/camerasecurity/50.uvc-doorbell-b/p-mkt0-uvcdoorbelllite.png",
+      "/images/camerasecurity/50.uvc-doorbell-b/p-mkt1-uvcdoorbelllite.png",
+      "/images/camerasecurity/50.uvc-doorbell-b/p-mkt2-uvcdoorbelllite.png",
+      "/images/camerasecurity/50.uvc-doorbell-b/p-mkt3-uvcdoorbelllite.png",
+      "/images/camerasecurity/50.uvc-doorbell-b/p-mkt4-uvcdoorbelllite.png",
+      "/images/camerasecurity/50.uvc-doorbell-b/p-mkt5-uvcdoorbelllite.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/50.uvc-doorbell-b/p-mkt0-uvcdoorbelllite.png",
+      "/images/camerasecurity/50.uvc-doorbell-b/p-itb-uvcdoorbelllite.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -6987,10 +7146,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/50.uvc-doorbell-b/p-itb-uvcdoorbelllite.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7067,7 +7223,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "PoE Smart Chime",
     category: "Camera Security",
     subfilter: "Doorbells",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/51.uacc-chime-poe/1.p-utama-uaccchimepoe.png",
     shortDescription:
       "PoE plug-and-play notification device, designed to pair with a UniFi doorbell or door access hub.",
     specs: [
@@ -7082,15 +7238,20 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/51.uacc-chime-poe/1.p-utama-uaccchimepoe.png",
+      "/images/camerasecurity/51.uacc-chime-poe/2.p-dimensi-uaccchimepoe.png",
+      "/images/camerasecurity/51.uacc-chime-poe/p-itb-uaccchimepoe.png",
+      "/images/camerasecurity/51.uacc-chime-poe/p-mkt0-uaccchimepoe.png",
+      "/images/camerasecurity/51.uacc-chime-poe/p-mkt1-uaccchimepoe.png",
+      "/images/camerasecurity/51.uacc-chime-poe/p-mkt2-uaccchimepoe.png",
+      "/images/camerasecurity/51.uacc-chime-poe/p-mkt3-uaccchimepoe.png",
+      "/images/camerasecurity/51.uacc-chime-poe/p-mkt4-uaccchimepoe.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/51.uacc-chime-poe/p-mkt4-uaccchimepoe.png",
+      "/images/camerasecurity/51.uacc-chime-poe/p-itb-uaccchimepoe.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7141,10 +7302,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/51.uacc-chime-poe/p-itb-uaccchimepoe.png" },
     ],
   },
 
@@ -7154,7 +7312,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "WiFi Smart Chime",
     category: "Camera Security",
     subfilter: "Doorbells",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/52.up-chime/1.p-utama-upchime.png",
     shortDescription: "Plug-in chime designed to pair with a UniFi doorbell.",
     specs: [
       { label: "Resolution", value: "4K (8MP)" },
@@ -7168,15 +7326,19 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/52.up-chime/1.p-utama-upchime.png",
+      "/images/camerasecurity/52.up-chime/2.p-dimensi-upchime.png",
+      "/images/camerasecurity/52.up-chime/p-mkt0-upchime.png",
+      "/images/camerasecurity/52.up-chime/p-mkt1-upchime.png",
+      "/images/camerasecurity/52.up-chime/p-mkt2-upchime.png",
+      "/images/camerasecurity/52.up-chime/p-mkt3-upchime.png",
+      "/images/camerasecurity/52.up-chime/p-mkt4-upchime.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/52.up-chime/p-mkt4-upchime.png",
+      "/images/camerasecurity/52.up-chime/p-mkt0-upchime.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7222,6 +7384,10 @@ export const cameraSecurityProducts: Product[] = [
           { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™: Version 1.6.2 and later UniFi Protect Android™: Version 1.6.0 and later" },
         ]
       },
+    ],
+     // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/camerasecurity/52.up-chime/p-mkt3-upchime.png" },
     ],
   },
 
