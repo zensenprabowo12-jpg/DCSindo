@@ -113,7 +113,7 @@ export const advancedHostingProducts: Product[] = [
     name: "UXG-Enterprise",
     category: "Advanced Hosting",
     subfilter: "All",
-    image: "/images/camera.jpg",
+    image: "/images/advancedhosting/2.gatewayenterprise/1.p-utama-uxgenerprise.png",
     shortDescription:
       "25G independent gateway with multi-WAN load balancing, 12.5 Gbps IPS routing, and redundant hot-swap PSUs.",
     specs: [
@@ -128,15 +128,21 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UXG-Enterprise.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/2.gatewayenterprise/1.p-utama-uxgenerprise.png",
+      "/images/advancedhosting/2.gatewayenterprise/2.p-dimensi-uxgenerprise.png",
+      "/images/advancedhosting/2.gatewayenterprise/3.p-spec-uxgenerprise.png",
+      "/images/advancedhosting/2.gatewayenterprise/4.p-development-uxgenerprise.png",
+      "/images/advancedhosting/2.gatewayenterprise/p-itb-uxgenerprise.png",
+      "/images/advancedhosting/2.gatewayenterprise/p-mkt0-uxgenerprise.png",
+      "/images/advancedhosting/2.gatewayenterprise/p-mkt1-uxgenerprise.png",
+      "/images/advancedhosting/2.gatewayenterprise/p-mkt2-uxgenerprise.png",
+      "/images/advancedhosting/2.gatewayenterprise/p-mkt3-uxgenerprise.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/2.gatewayenterprise/p-mkt0-uxgenerprise.png",
+      "/images/advancedhosting/2.gatewayenterprise/p-itb-uxgenerprise.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -263,10 +269,7 @@ export const advancedHostingProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/advancedhosting/2.gatewayenterprise/p-itb-uxgenerprise.png", }, 
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -401,7 +404,7 @@ export const advancedHostingProducts: Product[] = [
     name: "Gateway Fiber",
     category: "Advanced Hosting",
     subfilter: "All",
-    image: "/images/camera.jpg",
+    image: "/images/advancedhosting/3.gatewayfiber/1.p-utama-uxgfiber.png",
     shortDescription:
       "Desktop 10G independent gateway with integrated 4-port 2.5 GbE switch.",
     specs: [
@@ -416,15 +419,21 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/3.gatewayfiber/1.p-utama-uxgfiber.png",
+      "/images/advancedhosting/3.gatewayfiber/2.p-dimensi-uxgfiber.png",
+      "/images/advancedhosting/3.gatewayfiber/3.p-spec-uxgfiber.png",
+      "/images/advancedhosting/3.gatewayfiber/4.p-development-uxgfiber.png",
+      "/images/advancedhosting/3.gatewayfiber/p-itb-uxgfiber.png",
+      "/images/advancedhosting/3.gatewayfiber/p-mkt0-uxgfiber.png",
+      "/images/advancedhosting/3.gatewayfiber/p-mkt1-uxgfiber.png",
+      "/images/advancedhosting/3.gatewayfiber/p-mkt2-uxgfiber.png",
+      "/images/advancedhosting/3.gatewayfiber/p-mkt3-uxgfiber.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/3.gatewayfiber/p-mkt0-uxgfiber.png",
+      "/images/advancedhosting/3.gatewayfiber/p-itb-uxgfiber.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -528,10 +537,7 @@ export const advancedHostingProducts: Product[] = [
       },
     ],
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/advancedhosting/3.gatewayfiber/p-itb-uxgfiber.png", }, 
     ],
     // Item yang ada dalam box produk (gambar bisa diganti)
   },
@@ -542,7 +548,7 @@ export const advancedHostingProducts: Product[] = [
     name: "Gateway Lite",
     category: "Advanced Hosting",
     subfilter: "All",
-    image: "/images/camera.jpg",
+    image: "/images/advancedhosting/4.gatewaylite/1.p-utama-uxglite.png",
     shortDescription:
       "Compact independent gateway with a full suite of advanced routing and security features.",
     specs: [
@@ -557,15 +563,21 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Gateway-Lite.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/4.gatewaylite/1.p-utama-uxglite.png",
+      "/images/advancedhosting/4.gatewaylite/2.p-dimensi-uxglite.png",
+      "/images/advancedhosting/4.gatewaylite/3.p-spec-uxglite.png",
+      "/images/advancedhosting/4.gatewaylite/4.p-development-uxglite.png",
+      "/images/advancedhosting/4.gatewaylite/p-itb-uxglite.png",
+      "/images/advancedhosting/4.gatewaylite/p-mkt0-uxglite.png",
+      "/images/advancedhosting/4.gatewaylite/p-mkt1-uxglite.png",
+      "/images/advancedhosting/4.gatewaylite/p-mkt2-uxglite.png",
+      "/images/advancedhosting/4.gatewaylite/p-mkt3-uxglite.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/4.gatewaylite/p-mkt0-uxglite.png",
+      "/images/advancedhosting/4.gatewaylite/p-itb-uxglite.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -669,10 +681,7 @@ export const advancedHostingProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/advancedhosting/4.gatewaylite/p-itb-uxglite.png", }, 
     ],
   },
 
@@ -682,7 +691,7 @@ export const advancedHostingProducts: Product[] = [
     name: "Gateway Max",
     category: "Advanced Hosting",
     subfilter: "All",
-    image: "/images/camera.jpg",
+    image: "/images/advancedhosting/5.gatewaymax/1.p-utama-uxgmax.png",
     shortDescription:
       "Compact, multi-WAN independent gateway with full 2.5G support for high-performance networking at small-to-mediaum-sites.",
     specs: [
@@ -697,15 +706,21 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Gateway-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/5.gatewaymax/1.p-utama-uxgmax.png",
+      "/images/advancedhosting/5.gatewaymax/2.p-dimensi-uxgmax.png",
+      "/images/advancedhosting/5.gatewaymax/3.p-spec-uxgmax.png",
+      "/images/advancedhosting/5.gatewaymax/4.p-development-uxgmax.png",
+      "/images/advancedhosting/5.gatewaymax/p-itb-uxgmax.png",
+      "/images/advancedhosting/5.gatewaymax/p-mkt0-uxgmax.png",
+      "/images/advancedhosting/5.gatewaymax/p-mkt1-uxgmax.png",
+      "/images/advancedhosting/5.gatewaymax/p-mkt2-uxgmax.png",
+      "/images/advancedhosting/5.gatewaymax/p-mkt3-uxgmax.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/5.gatewaymax/p-mkt0-uxgmax.png",
+      "/images/advancedhosting/5.gatewaymax/p-itb-uxgmax.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -812,10 +827,7 @@ export const advancedHostingProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/advancedhosting/5.gatewaymax/p-itb-uxgmax.png", }, 
     ],
   },
 
@@ -825,7 +837,7 @@ export const advancedHostingProducts: Product[] = [
     name: "Gateway Pro",
     category: "Advanced Hosting",
     subfilter: "All",
-    image: "/images/camera.jpg",
+    image: "/images/advancedhosting/6.gatewaypro/1.p-utama-uxgpro.png",
     shortDescription:
       "10G multi-WAN independent gateway with UniFi Power Backup support designed to protect large-scale networks.",
     specs: [
@@ -840,15 +852,20 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Gateway-Pro.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/6.gatewaypro/1.p-utama-uxgpro.png",
+      "/images/advancedhosting/6.gatewaypro/2.p-dimensi-uxgpro.png",
+      "/images/advancedhosting/6.gatewaypro/3.p-spec-uxgpro.png",
+      "/images/advancedhosting/6.gatewaypro/4.p-development-uxgpro.png",
+      "/images/advancedhosting/6.gatewaypro/p-itb-uxgpro.png",
+      "/images/advancedhosting/6.gatewaypro/p-mkt0-uxgpro.png",
+      "/images/advancedhosting/6.gatewaypro/p-mkt1-uxgpro.png",
+      "/images/advancedhosting/6.gatewaypro/p-mkt2-uxgpro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/6.gatewaypro/p-mkt0-uxgpro.png",
+      "/images/advancedhosting/6.gatewaypro/p-itb-uxgpro.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -957,10 +974,7 @@ export const advancedHostingProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image:"/images/advancedhosting/6.gatewaypro/p-itb-uxgpro.png", }, 
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1057,7 +1071,7 @@ export const advancedHostingProducts: Product[] = [
     name: "CloudKey+",
     category: "Advanced Hosting",
     subfilter: "",
-    image: "/images/camera.jpg",
+    image: "/images/advancedhosting/7.cloudkey/1.p-utama-uckg2ssd.png",
     shortDescription:
       "Compact UniFi Consoles that connect directly to the Site Manager at https://unifi.ui.com/ for powerful site management.",
     specs: [
@@ -1074,16 +1088,23 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/7.cloudkey/1.p-utama-uckg2ssd.png",
+      "/images/advancedhosting/7.cloudkey/2.p-dimensi-uckg2ssd.png",
+      "/images/advancedhosting/7.cloudkey/3.p-spec-uckg2ssd.png",
+      "/images/advancedhosting/7.cloudkey/4.p-development-uckg2ssd.png",
+      "/images/advancedhosting/7.cloudkey/p-mkt0-uckg2ssd.png",
+      "/images/advancedhosting/7.cloudkey/p-mkt1-uckg2ssd.png",
+      "/images/advancedhosting/7.cloudkey/p-mkt2-uckg2ssd.png",
+      "/images/advancedhosting/7.cloudkey/p-mkt3-uckg2ssd.png",
+      "/images/advancedhosting/7.cloudkey/p-mkt4-uckg2ssd.png",
+      "/images/advancedhosting/7.cloudkey/p-mkt5-uckg2ssd.png",
     ],
 
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/7.cloudkey/p-mkt0-uckg2ssd.png",
+      "/images/advancedhosting/7.cloudkey/4.p-development-uckg2ssd.png",
     ],
 
 
@@ -1238,203 +1259,13 @@ export const advancedHostingProducts: Product[] = [
     ]
   },
 
-  // Produk Kedelapan dari Advanced Hosting, SF All
-  {
-    id: "UCK-G2-PLUS",
-    name: "CloudKey+",
-    category: "Advanced Hosting",
-    subfilter: "",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Compact UniFi Consoles that connect directly to the Site Manager at https://unifi.ui.com/ for powerful site management.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-
-    // SKU produk
-    sku: "UCK-G2-PLUS",
-
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Includes full UniFi application suite for device management",
-      "Pre-installed 1 TB HDD",
-      "Connect and power using PoE",
-      "Optional USB-C power with Quick Charge 2.0/3.0 compliant adapter only",
-      "Bluetooth for instant setup"
-    ],
-
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "131.2 x 27.1 x 134.2 mm (5.2 x 1.1 x 5.3')" },
-          { label: "UniFi Application Suite Network", value: "✓" },
-          { label: "UniFi Application Suite Protect", value: "✓" },
-          { label: "UniFi Application Suite Access", value: "✓" },
-          { label: "UniFi Application Suite Talk", value: "✓" },
-          { label: "UniFi Application Suite Connect", value: "✓" },
-          { label: "Managed Cameras", value: "(24) HD (14) 2K (8) 4K" },
-          { label: "Managed Access Hubs", value: "50" },
-          { label: "Storage Capacity", value: "(1) 2.5' drive bay with 1 TB pre‑installed" },
-          { label: "Data Protection", value: "✓" },
-          { label: "Vantage Point", value: "✓" },
-          { label: "Networking Interface", value: "(1) GbE PoE" },
-          { label: "Form Factor", value: "Compact Desktop" },
-          { label: "Door Access Support", value: "✓" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Hard Drive Capacity", value: "1 TB 2.5' SATA HDD (User-upgradeable)" },
-          { label: "Max. Power Consumption", value: "12.95W" },
-          { label: "Power Method", value: "PoE USB-C power with Quick charge 2.0/3.0 power adapter, 9V DC, 2A (Optional)" },
-          { label: "Processor", value: "Octa-core Arm® Cortex®-A53 based chip" },
-          { label: "Memory", value: "32 GB eMMC 3 GB RAM" },
-          { label: "Management", value: "Ethernet Bluetooth" },
-          { label: "Display", value: "1.42' gray-scale OLED" },
-          { label: "Weight", value: "582 g (1.3 lb)" },
-          { label: "Enclosure Material", value: "Anodized Aluminum" },
-          { label: "Ambient Operating Temperature", value: "0 to 35° C (32 to 95° F)" },
-          { label: "Ambient Operating Humidity", value: "20 to 80% noncondensing" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC, Anatel: 07458-19-08356, SRRC" },
-        ]
-      },
-    ],
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "UniFi Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Ultra-thin patch cable with GbE support and flexible, bendable boots for enhanced installation versatility.",
-        specs: [
-          "Bendable booted RJ45",
-          "3 mm outer diameter",
-          "Cable length: 0.1 to 8m",
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "0.1, 0.3, 1, 2, 3, 5, 8 m (0.3, 1, 3.3, 6.6, 9.9, 16.4, 26.3 ft)" },
-          { label: "Available Colors", value: "White, Blue, Black" },
-          { label: "Pack Options", value: "Single Unit 50-pack (0.1 m)" },
-          { label: "Supported Data Rate", value: "GbE" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Bendable booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "3 mm (0.1')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "30 AWG" },
-          { label: "Cable Bend Radius", value: "Min. 24 mm ( (0.94'')" },
-          { label: "Flame Rating", value: "FT-2(UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
-          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
-        ],
-        productLink: "/products/mounting-kit-u6-plus"
-      },
-      {
-        id: 2,
-        name: "CloudKey+ Stand",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Sleek, metal stand for CloudKey+.",
-        specs: [
-          "Enclosure Material Aluminum alloy"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "134.2 x 71.7 x 43.2 mm (5.3 x 2.8 x 1.7')" },
-          { label: "Weight", value: "225 g (7.9 oz)" },
-          { label: "Enclosure Material", value: "Aluminum alloy" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 3,
-        name: "2.5' SSD, 1 TB",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "2.5' SATA solid-state drive designed for local storage of CloudKey+.",
-        specs: [
-          "Management Interface SATA 3, 6 Gb/s"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "100.1 x 69.9 x 7 mm (3.9 x 2.8 x 0.3')" },
-          { label: "Weight", value: "45 g (1.6 oz)" },
-          { label: "Form Factor", value: "2.5-inch SSD" },
-          { label: "Capacity", value: "1 TB" },
-          { label: "Management Interface", value: "SATA 3, 6 Gb/s" },
-          { label: "Speed Class", value: "Read: 550 MB/s Write: 515 MB/s" },
-          { label: "Mean Time Between Failure (MTBF)", value: "1,500,000 h" },
-          { label: "Endurance (TBW)", value: "640 TBW" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 149° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 85% noncondensing" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "FCC, CE, UL, RCM, KC, BSMI" }
-        ],
-        productLink: "/products/power-cable-uck-g2-ssd"
-      },
-      {
-        id: 4,
-        name: "CloudKey Rack Mount",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Mount your CloudKey or CloudKey+ into a 19' rack.",
-        specs: [
-          "Mounts into a 19' rack",
-          "Front-panel ethernet port for a clean installation"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "481.5 x 43.7 x 47 mm (19 x 1.7 x 1.9')" },
-          { label: "Weight", value: "600 g (1.3 lb)" },
-          { label: "Enclosure Material", value: "PC, aluminum alloy, SGCC steel" },
-          { label: "Networking Interface", value: "(1) GbE RJ45 port" },
-          { label: "Power Method", value: "PoE, 5V DC, 1A USB-C 5V, Min. 1A" },
-          { label: "Max. Power Consumption", value: "12.95W (PoE)" },
-          { label: "Buttons", value: "(1) Reset (1) Power" },
-          { label: "Ambient Operating Temperature", value: "0 to 35° C (32 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "20 to 80% noncondensing" },
-          { label: "Certifications", value: "CE, FCC, IC" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-    ]
-  },
-
   // Produk Kesembilan dari Advanced Hosting, SF All
   {
     id: "CK-Enterprise",
     name: "CloudKey Enterprise",
     category: "Advanced Hosting",
     subfilter: "",
-    image: "/images/camera.jpg",
+    image: "/images/advancedhosting/8.cloudkey-enterprise/1.p-utama-ckenterprise.png",
     shortDescription:
       "A UniFi Console designed for managing massive-scale UniFi Networks.",
     specs: [
@@ -1449,15 +1280,21 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-CloudKey-Enterprise.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/8.cloudkey-enterprise/1.p-utama-ckenterprise.png",
+      "/images/advancedhosting/8.cloudkey-enterprise/2.p-dimensi-ckenterprise.png",
+      "/images/advancedhosting/8.cloudkey-enterprise/3.p-spec-ckenterprise.png",
+      "/images/advancedhosting/8.cloudkey-enterprise/4.p-development-ckenterprise.png",
+      "/images/advancedhosting/8.cloudkey-enterprise/p-mkt0-ckenterprise.png",
+      "/images/advancedhosting/8.cloudkey-enterprise/p-mkt1-ckenterprise.png",
+      "/images/advancedhosting/8.cloudkey-enterprise/p-mkt2-ckenterprise.png",
+      "/images/advancedhosting/8.cloudkey-enterprise/p-mkt3-ckenterprise.png",
+      "/images/advancedhosting/8.cloudkey-enterprise/p-mkt4-ckenterprise.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/advancedhosting/8.cloudkey-enterprise/p-mkt0-ckenterprise.png",
+      "/images/advancedhosting/8.cloudkey-enterprise/4.p-development-ckenterprise.png",
     ],
 
     // Bullet points untuk deskripsi produk
