@@ -7397,7 +7397,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "SuperLink Gateway",
     category: "Camera Security",
     subfilter: "SuperLink Sensors",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/53.usl-gateway/1.p-utama-uslgateway.png",
     shortDescription:
       "Proprietary super long-range, low-latency wireless gateway for UniFi Protect Sensors.",
     specs: [
@@ -7413,15 +7413,25 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/53.usl-gateway/1.p-utama-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/2.p-dimensi-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/3.p-spec-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/4.p-spec-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/5.p-development-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/p-itb-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/p-mkt0-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/p-mkt1-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/p-mkt2-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/p-mkt3-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/p-mkt4-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/p-mkt5-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/p-mkt6-uslgateway.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/53.usl-gateway/p-mkt4-uslgateway.png",
+      "/images/camerasecurity/53.usl-gateway/p-itb-uslgateway.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7486,10 +7496,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/53.usl-gateway/p-itb-uslgateway.png" },
     ],
   },
 
@@ -7499,7 +7506,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "Entry Sensor",
     category: "Camera Security",
     subfilter: "SuperLink Sensors",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/55.usl-entry/1.p-utama-uslentry.png",
     shortDescription:
       "SuperLink sensor with up to 6-year battery life for monitoring door and window open/closed status.",
     specs: [
@@ -7514,15 +7521,23 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Entry-Sensor.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/55.usl-entry/1.p-utama-uslentry.png",
+      "/images/camerasecurity/55.usl-entry/2.p-dimensi-uslentry.png",
+      "/images/camerasecurity/55.usl-entry/3.p-spec-uslentry.png",
+      "/images/camerasecurity/55.usl-entry/4.p-development-uslentry.png",
+      "/images/camerasecurity/55.usl-entry/p-itb-uslentry.png",
+      "/images/camerasecurity/55.usl-entry/p-mkt0-uslentry.png",
+      "/images/camerasecurity/55.usl-entry/p-mkt1-uslentry.png",
+      "/images/camerasecurity/55.usl-entry/p-mkt2-uslentry.png",
+      "/images/camerasecurity/55.usl-entry/p-mkt3-uslentry.png",
+      "/images/camerasecurity/55.usl-entry/p-mkt4-uslentry.png",
+      "/images/camerasecurity/55.usl-entry/p-mkt5-uslentry.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/55.usl-entry/p-mkt1-uslentry.png",
+      "/images/camerasecurity/55.usl-entry/p-itb-uslentry.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7585,10 +7600,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/55.usl-entry/p-itb-uslentry.png" },
     ],
   },
 
@@ -7598,7 +7610,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "Motion Sensor",
     category: "Camera Security",
     subfilter: "SuperLink Sensors",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/56.usl-motion/1.p-utama-uslmotion.png",
     shortDescription:
       "SuperLink motion sensor designed for versatile installation, delivering up to 6 years of battery life.",
     specs: [
@@ -7613,15 +7625,23 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/56.usl-motion/1.p-utama-uslmotion.png",
+      "/images/camerasecurity/56.usl-motion/2.p-dimensi-uslmotion.png",
+      "/images/camerasecurity/56.usl-motion/3.p-spec-uslmotion.png",
+      "/images/camerasecurity/56.usl-motion/4.p-development-uslmotion.png",
+      "/images/camerasecurity/56.usl-motion/p-itb-uslmotion.png",
+      "/images/camerasecurity/56.usl-motion/p-mkt0-uslmotion.png",
+      "/images/camerasecurity/56.usl-motion/p-mkt1-uslmotion.png",
+      "/images/camerasecurity/56.usl-motion/p-mkt2-uslmotion.png",
+      "/images/camerasecurity/56.usl-motion/p-mkt3-uslmotion.png",
+      "/images/camerasecurity/56.usl-motion/p-mkt4-uslmotion.png",
+      "/images/camerasecurity/56.usl-motion/p-mkt5-uslmotion.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/56.usl-motion/p-mkt5-uslmotion.png",
+      "/images/camerasecurity/56.usl-motion/p-itb-uslmotion.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7683,20 +7703,227 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/56.usl-motion/p-itb-uslmotion.png" },
     ],
   },
 
   // Produk Keempat dari Camera Secruity, SF SuperLink
+   {
+    id: "USL-GlassBreak",
+    name: "Glass Break Sensor",
+    category: "Camera Security",
+    subfilter: "SuperLink Sensors",
+    image: "/images/camerasecurity/57.glassbreak/1.p-utama-uslglassbreak.png",
+    shortDescription:
+      "Battery-powered SuperLink sensor featuring advanced glass break detection and motion sensing.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "USL-GlassBreak",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camerasecurity/57.glassbreak/1.p-utama-uslglassbreak.png",
+      "/images/camerasecurity/57.glassbreak/2.p-dimensi-uslglassbreak.png",
+      "/images/camerasecurity/57.glassbreak/3.p-spec-uslglassbreak.png",
+      "/images/camerasecurity/57.glassbreak/4.p-development.png",
+      "/images/camerasecurity/57.glassbreak/p-itb-uslglassbreak.avif",
+      "/images/camerasecurity/57.glassbreak/p-mkt0-uslglassbreak.png",
+      "/images/camerasecurity/57.glassbreak/p-mkt1-uslglassbreak.png",
+      "/images/camerasecurity/57.glassbreak/p-mkt2-uslglassbreak.png",
+      "/images/camerasecurity/57.glassbreak/p-mkt3-uslglassbreak.png",
+      "/images/camerasecurity/57.glassbreak/p-mkt4-uslglassbreak.png",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/camerasecurity/57.glassbreak/p-mkt4-uslglassbreak.png",
+      "/images/camerasecurity/57.glassbreak/p-itb-uslglassbreak.avif"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Mounting : Adhesive and screw mount",
+      "Sensor Features PIR Sensor : ✓",
+      "Max. Power Consumption : 0.2W",
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Device with wall mount: 134.5 x 22.5 x 24.8 mm (5.3 x 0.9 x 1') Device with corner mount: 134.5 x 22.5 x 27.9 mm (5.3 x 0.9 x 1.1')" },
+          { label: "Microphone", value: "✓" },
+          { label: "Mountinf", value: "Adhesive and screw mount" },
+          { label: "UniFi Application Suite", value: "Protect" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Connectivity", value: "SuperLink (Proprietary)" },
+          { label: "Operating Frequency US", value: "915.6–927.6 MHz" },
+          { label: "Operating Frequency EU", value: "865.1–869.5 MHz" },
+          { label: "Antenna Gain Superlink", value: "1 dBi" },
+          { label: "Max. TX Power Superlink", value: "14 dBm" },
+          { label: "Max. Range Superlink", value: "2 km (1.2 mi)" },
+          { label: "Sensor Features PIR Sensor", value: "✓" },
+          { label: "Detected Glass Type", value: "Plate, tempered, obscured, laminated, coated, wired Size: 280 x 356 mm (11 x 14') to 1067 x 1626 mm (42 x 64') Thickness: 2.4 mm (3/32'), 4.8 mm (3/16'), 3.2 mm (1/8'), 6.4 mm (1/4')" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Max. Power Consumption", value: "0.2W" },
+          { label: "Supported Volatge Range", value: "3V" },
+          { label: "Power Method", value: "(2) Lithium battery CR123A" },
+          { label: "Battery Life", value: "Up to 3 years" },
+          { label: "Weight", value: "With mount and batteries: 70 g (2.5 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Button", value: "(1) Function button (1) Factory reset (1) Tamper switch" },
+          { label: "LEDs", value: "(1) Status: R/B/W (1) Signal: B/R" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+          { label: "NDAA Compliant", value: "✓" },
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
+        ]
+      }
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/camerasecurity/57.glassbreak/p-itb-uslglassbreak.avif" },
+    ],
+  },
+
+  // Produk Kelima dari Camera Secruity, SF SuperLink
+  {
+    id: "USL-Environmental",
+    name: "Environmental Sensor",
+    category: "Camera Security",
+    subfilter: "SuperLink Sensors",
+    image: "/images/camerasecurity/58.usl-environmental/1.p-utama-uslenvironmental.png",
+    shortDescription:
+      "Battery-powered SuperLink sensor that detects water leaks, temperature, humidity, and ambient light.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "USL-ENVIRONMENTAL",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camerasecurity/58.usl-environmental/1.p-utama-uslenvironmental.png",
+      "/images/camerasecurity/58.usl-environmental/2.p-dimensi-uslenvironmental.png",
+      "/images/camerasecurity/58.usl-environmental/3.p-spec-uslenvironmental.png",
+      "/images/camerasecurity/58.usl-environmental/4.p-development-uslenvironmental.png",
+      "/images/camerasecurity/58.usl-environmental/6.usl-environmental.png",
+      "/images/camerasecurity/58.usl-environmental/p-itb-uslenvironmental.png",
+      "/images/camerasecurity/58.usl-environmental/p-mkt0-uslenvironmental.png",
+      "/images/camerasecurity/58.usl-environmental/p-mkt1-uslenvironmental.png",
+      "/images/camerasecurity/58.usl-environmental/p-mkt2-uslenvironmental.png",
+      "/images/camerasecurity/58.usl-environmental/p-mkt3-uslenvironmental.png",
+      "/images/camerasecurity/58.usl-environmental/p-mkt4-uslenvironmental.png",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/camerasecurity/58.usl-environmental/p-mkt0-uslenvironmental.png",
+      "/images/camerasecurity/58.usl-environmental/p-itb-uslenvironmental.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Certifications FCC, IC, CE",
+      "LEDs (1) Status: R/B/W (1) Signal: B/R",
+      "Connectivity SuperLink (Proprietary)"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Device: 53 x 49 x 23.5 mm (2.1 x 1.9 x 0.9') Mount: 41.3 x 36.6 x 3.1 mm (1.6 x 1.4 x 0.1')" },
+          { label: "Weatherproofing", value: "IPX5" },
+          { label: "Mounting", value: "Adhesive, magnet and screw mount" },
+          { label: "UniFi Application Suite", value: "Protect" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Connectivity", value: "SuperLink (Proprietary)" },
+          { label: "Operating Frequency US", value: "915.6–927.6 MHz" },
+          { label: "Operating Frequency EU", value: "865.1–869.5 MHz" },
+          { label: "Antenna Gain Superlink", value: "0 dBi" },
+          { label: "Max. TX Power Superlink", value: "14 dBm" },
+          { label: "Max. Range Superlink", value: "2 km (1.2 mi)" },
+          { label: "Sensor Features Temperature Sensor", value: "✓" },
+          { label: "Sensor Features Humidity Sensor", value: "✓" },
+          { label: "Sensor Features Ambient Light Sensor", value: "✓" },
+          { label: "Sensor Features Water Sensor", value: "✓" },
+          { label: "Sensor Features Other", value: "3.5 mm AUX jack (TRS or TS) for water leak probe" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Max. Power Consumption", value: "34.9mW" },
+          { label: "Supported Volatge Range", value: "3V" },
+          { label: "Power Method", value: "Lithium battery CR123A" },
+          { label: "Battery Life", value: "Up to 6 years" },
+          { label: "Weight", value: "Device: 47.8 g (1.7 oz) With mount: 70 g (2.5 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Galvanized steel" },
+          { label: "Button", value: "(1) Factory reset (1) Function button" },
+          { label: "LEDs", value: "(1) Status: R/B/W (1) Signal: B/R" },
+          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "FCC, IC, CE" },
+          { label: "NDAA Compliant", value: "✓" },
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Application Requirements Web Application", value: "UniFi Protect" },
+          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
+        ]
+      }
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/camerasecurity/58.usl-environmental/6.usl-environmental.png" },
+    ],
+  },
+
+  // Produk Keenam dari Camera Security, SF SuperLink
   {
     id: "USL-Siren",
     name: "Siren",
     category: "Camera Security",
     subfilter: "SuperLink Sensors",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/59.usl-siren/1.p-utama-uslsiren.png",
     shortDescription:
       "All-weather SuperLink siren delivering 110 dB alarm and emergency LED lighting powered using battery or DC input.",
     specs: [
@@ -7711,15 +7938,23 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/59.usl-siren/1.p-utama-uslsiren.png",
+      "/images/camerasecurity/59.usl-siren/2.p-dimensi-uslsiren.png",
+      "/images/camerasecurity/59.usl-siren/3.p-spec-uslsiren.png",
+      "/images/camerasecurity/59.usl-siren/4.p-development-uslsiren.png",
+      "/images/camerasecurity/59.usl-siren/p-itb-uslsiren.png",
+      "/images/camerasecurity/59.usl-siren/p-mkt0-uslsiren.png",
+      "/images/camerasecurity/59.usl-siren/p-mkt1-uslsiren.png",
+      "/images/camerasecurity/59.usl-siren/p-mkt2-uslsiren.png",
+      "/images/camerasecurity/59.usl-siren/p-mkt3-uslsiren.png",
+      "/images/camerasecurity/59.usl-siren/p-mkt4-uslsiren.png",
+      "/images/camerasecurity/59.usl-siren/p-mkt5-uslsiren.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/59.usl-siren/p-mkt4-uslsiren.png",
+      "/images/camerasecurity/59.usl-siren/p-itb-uslsiren.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7781,20 +8016,17 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/59.usl-siren/p-itb-uslsiren.png" },
     ],
   },
-
-  // Produk Kelima dari Camera Security, SF SuperLink
-  {
+ 
+  // Produk Ketujuh dari Camera Security, SF SuperLink
+    {
     id: "USL-Siren-PoE",
     name: "Siren PoE",
     category: "Camera Security",
     subfilter: "SuperLink Sensors",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/60.usl-siren-poe/1.p-utama-upsirenpoe.png",
     shortDescription:
       "All-weather siren delivering 110 dB alarm and emergency LED lighting powered using PoE input.",
     specs: [
@@ -7809,15 +8041,24 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/60.usl-siren-poe/1.p-utama-upsirenpoe.png",
+      "/images/camerasecurity/60.usl-siren-poe/2.p-dimensi-upsirenpoe.png",
+      "/images/camerasecurity/60.usl-siren-poe/3.p-spec-upsirenpoe.png",
+      "/images/camerasecurity/60.usl-siren-poe/4.p-development-upsirenpoe.png",
+      "/images/camerasecurity/60.usl-siren-poe/p-itb-upsirenpoe.png",
+      "/images/camerasecurity/60.usl-siren-poe/p-mkt0-upsirenpoe.png",
+      "/images/camerasecurity/60.usl-siren-poe/p-mkt1-upsirenpoe.png",
+      "/images/camerasecurity/60.usl-siren-poe/p-mkt2-upsirenpoe.png",
+      "/images/camerasecurity/60.usl-siren-poe/p-mkt3-upsirenpoe.png",
+      "/images/camerasecurity/60.usl-siren-poe/p-mkt4-upsirenpoe.png",
+      "/images/camerasecurity/60.usl-siren-poe/p-mkt5-upsirenpoe.png",
+      
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/60.usl-siren-poe/p-mkt0-upsirenpoe.png",
+      "/images/camerasecurity/60.usl-siren-poe/p-itb-upsirenpoe.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7871,10 +8112,7 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/60.usl-siren-poe/p-itb-upsirenpoe.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7978,115 +8216,13 @@ export const cameraSecurityProducts: Product[] = [
     ]
   },
 
-  // Produk Keenam dari Camera Security, SF SuperLink
-  {
-    id: "USL-Environmental",
-    name: "Environmental Sensor",
-    category: "Camera Security",
-    subfilter: "SuperLink Sensors",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Battery-powered SuperLink sensor that detects water leaks, temperature, humidity, and ambient light.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "USL-ENVIRONMENTAL",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Certifications FCC, IC, CE",
-      "LEDs (1) Status: R/B/W (1) Signal: B/R",
-      "Connectivity SuperLink (Proprietary)"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "Device: 53 x 49 x 23.5 mm (2.1 x 1.9 x 0.9') Mount: 41.3 x 36.6 x 3.1 mm (1.6 x 1.4 x 0.1')" },
-          { label: "Weatherproofing", value: "IPX5" },
-          { label: "Mounting", value: "Adhesive, magnet and screw mount" },
-          { label: "UniFi Application Suite", value: "Protect" },
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "Connectivity", value: "SuperLink (Proprietary)" },
-          { label: "Operating Frequency US", value: "915.6–927.6 MHz" },
-          { label: "Operating Frequency EU", value: "865.1–869.5 MHz" },
-          { label: "Antenna Gain Superlink", value: "0 dBi" },
-          { label: "Max. TX Power Superlink", value: "14 dBm" },
-          { label: "Max. Range Superlink", value: "2 km (1.2 mi)" },
-          { label: "Sensor Features Temperature Sensor", value: "✓" },
-          { label: "Sensor Features Humidity Sensor", value: "✓" },
-          { label: "Sensor Features Ambient Light Sensor", value: "✓" },
-          { label: "Sensor Features Water Sensor", value: "✓" },
-          { label: "Sensor Features Other", value: "3.5 mm AUX jack (TRS or TS) for water leak probe" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "34.9mW" },
-          { label: "Supported Volatge Range", value: "3V" },
-          { label: "Power Method", value: "Lithium battery CR123A" },
-          { label: "Battery Life", value: "Up to 6 years" },
-          { label: "Weight", value: "Device: 47.8 g (1.7 oz) With mount: 70 g (2.5 oz)" },
-          { label: "Enclosure Material", value: "Polycarbonate" },
-          { label: "Mount Material", value: "Galvanized steel" },
-          { label: "Button", value: "(1) Factory reset (1) Function button" },
-          { label: "LEDs", value: "(1) Status: R/B/W (1) Signal: B/R" },
-          { label: "Ambient Operating Temperature", value: "-20 to 40° C (-4 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "Certifications", value: "FCC, IC, CE" },
-          { label: "NDAA Compliant", value: "✓" },
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Application Requirements Web Application", value: "UniFi Protect" },
-          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
-  // Produk Ketujuh dari Camera Security
+  // Produk Kedelapan dari Camera Security, SF SuperLink
   {
     id: "UP-Sense",
     name: "All-In-One Sensor",
     category: "Camera Security",
     subfilter: "SuperLink Sensors",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/61.up-sense/1.p-utama-upsense.png",
     shortDescription:
       "A battery-powered smart sensor capable of detecting motion, lighting, and environmental changes.",
     specs: [
@@ -8097,39 +8233,41 @@ export const cameraSecurityProducts: Product[] = [
     ],
 
     // SKU produk
-    sku: "UP-SENSE",
+    sku: "UP-Sense",
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/61.up-sense/1.p-utama-upsense.png",
+      "/images/camerasecurity/61.up-sense/2.p-dimensi-upsense.png",
+      "/images/camerasecurity/61.up-sense/p-itb-upsense.png",
+      "/images/camerasecurity/61.up-sense/p-mkt0-upsense.png",
+      "/images/camerasecurity/61.up-sense/p-mkt1-upsense.png",
+      "/images/camerasecurity/61.up-sense/p-mkt2-upsense.png",
+      "/images/camerasecurity/61.up-sense/p-mkt3-upsense.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/61.up-sense/p-mkt1-upsense.png",
+      "/images/camerasecurity/61.up-sense/p-itb-upsense.png"
     ],
 
     // Bullet points untuk deskripsi produk
     bulletPoints: [
-      "Networking Interface Bluetooth 5.0, BLE",
-      "Mount Material Flat wall mount: polycarbonate, adhesive Corner mount: polycarbonate, adhesive",
-      "Enclosure Material Polycarbonate",
-      "Note. Long-range BLE coverage is comparable to WiFi coverage."
+      "Note. Long-range BLE coverage is comparable to WiFi coverage.",
+      "Enclosure Material : Polycarbonate",
+      "Networking Interface : Bluetooth 5.0, BLE"
     ],
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
       {
-        title: "Overview",
+        title: "Mechanical",
         items: [
           { label: "Dimensions", value: "⌀24 x 83.5 mm (⌀0.9 x 3.3')" },
-          { label: "Weight", value: "50.2 g (1.8 oz)" },
+          { label: "Weight", value: "50.2 g (1.8 oz" },
           { label: "Enclosure Material", value: "Polycarbonate" },
           { label: "Mount Material", value: "Flat wall mount: polycarbonate, adhesive Corner mount: polycarbonate, adhesive" },
-          { label: "Mounting", value: "Adhesive, magnet and screw mount" },
           { label: "Additional Gear", value: "Magnet (1) Water sensor adapter (Only available in the 3-pack.)" },
         ]
       },
@@ -8143,133 +8281,30 @@ export const cameraSecurityProducts: Product[] = [
           { label: "Sensor Features Temperature Sensor", value: "✓" },
           { label: "Sensor Features Humidity Sensor", value: "✓" },
           { label: "Sensor Features Ambient Light Sensor", value: "✓" },
-          { label: "Sensor Features Alarm Sound Sensor", value: "✓" },
+          { label: "Sensor Features Ambient Sound Sensor", value: "✓" },
           { label: "Sensor Features Water Sensor", value: "✓" },
           { label: "Sensor Features BLE Connectivity from SuperLink or a UniFi Access Point in an Indoor Setting", value: "Must be connected to an up-to-date Bluetooth-supported UniFi access point." },
-
           { label: "Antennas", value: "(1) 2.4GHz" },
           { label: "LEDs", value: "R/B/W" },
           { label: "Buttons", value: "(1) Factory reset" },
           { label: "Ambient Operating Temperature", value: "0 to 45° C (32 to 113° F)" },
           { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "NDAA Compliant", value: "✓" },
+          { label: "NDA Compliant", value: "✓" },
           { label: "Certifications", value: "FCC, IC, CE, Anatel: 08492-22-08356" },
         ]
       },
       {
         title: "Software",
         items: [
-          { label: "Application Requirements Web Application", value: "UniFi Protect" },
-          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
+          { label: "Application RequirementsWeb Application", value: "UniFi Protect" },
+          { label: "Application RequirementsWeb Mobile App", value: "UniFi Protect iOS™ and Android™" },
         ]
-      }
+      },
     ],
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
-  // Produk Kedelapan dari Camera Security, SF SuperLink
-  {
-    id: "USL-GlassBreak",
-    name: "Glass Break Sensor",
-    category: "Camera Security",
-    subfilter: "SuperLink Sensors",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Battery-powered SuperLink sensor featuring advanced glass break detection and motion sensing.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "USL-GLASSBREAK",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Power Method (2) Lithium battery CR123A",
-      "UniFi Application Suite Protect",
-      "Mounting Adhesive and screw mount"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "Device with wall mount: 134.5 x 22.5 x 24.8 mm (5.3 x 0.9 x 1') Device with corner mount: 134.5 x 22.5 x 27.9 mm (5.3 x 0.9 x 1.1')" },
-          { label: "Microphone", value: "✓" },
-          { label: "Mounting", value: "Adhesive, magnet and screw mount" },
-          { label: "UniFi Application Suite", value: "Protect" },
-        ]
-      },
-      {
-        title: "Performance",
-        items: [
-          { label: "Connectivity", value: "SuperLink (Proprietary)" },
-          { label: "Operating Frequency US", value: "915.6–927.6 MHz" },
-          { label: "Operating Frequency EU", value: "865.1–869.5 MHz" },
-          { label: "Antenna Gain Superlink", value: "1 dBi" },
-          { label: "Max. TX Power Superlink", value: "14 dBm" },
-          { label: "Max. Range Superlink", value: "2 km (1.2 mi)" },
-          { label: "Sensor Features PIR Sensor", value: "✓" },
-          { label: "Detected Glass Type", value: "Plate, tempered, obscured, laminated, coated, wired Size: 280 x 356 mm (11 x 14') to 1067 x 1626 mm (42 x 64”) Thickness: 2.4 mm (3/32'), 4.8 mm (3/16'), 3.2 mm (1/8'), 6.4 mm (1/4')" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Max. Power Consumption", value: "0.2mW" },
-          { label: "Supported Volatge Range", value: "3V" },
-          { label: "Power Method", value: "(2) Lithium battery CR123A" },
-          { label: "Battery Life", value: "Up to 3 years" },
-          { label: "Weight", value: "With mount and batteries: 70 g (2.5 oz)" },
-          { label: "Enclosure Material", value: "Polycarbonate" },
-          { label: "Mount Material", value: "Polycarbonate" },
-          { label: "Button", value: "(1) Function button (1) Factory reset (1) Tamper switch" },
-          { label: "LEDs", value: "(1) Status: R/B/W (1) Signal: B/R" },
-          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "Certifications", value: "FCC, IC, CE" },
-          { label: "NDAA Compliant", value: "✓" },
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Application Requirements Web Application", value: "UniFi Protect" },
-          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" },
-        ]
-      }
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/61.up-sense/p-itb-upsense.png" },
     ],
   },
 
@@ -8279,7 +8314,7 @@ export const cameraSecurityProducts: Product[] = [
     name: "SuperLink High-Gain Antenna",
     category: "Camera Security",
     subfilter: "SuperLink Sensors",
-    image: "/images/camera.jpg",
+    image: "/images/camerasecurity/62.uacc-usl-ant-hg/1.p-utama-uaccuslanthg.png",
     shortDescription:
       "High-gain, omnidirectional antenna with an IP67-rated outdoor enclosure, built to extend SuperLink range in all weather conditions.",
     specs: [
@@ -8294,15 +8329,22 @@ export const cameraSecurityProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/62.uacc-usl-ant-hg/1.p-utama-uaccuslanthg.png",
+      "/images/camerasecurity/62.uacc-usl-ant-hg/p-itb-uaccuslanthg.png",
+      "/images/camerasecurity/62.uacc-usl-ant-hg/p-mkt0-uaccuslanthg.png",
+      "/images/camerasecurity/62.uacc-usl-ant-hg/p-mkt1-uaccuslanthg.png",
+      "/images/camerasecurity/62.uacc-usl-ant-hg/p-mkt2-uaccuslanthg.png",
+      "/images/camerasecurity/62.uacc-usl-ant-hg/p-mkt3-uaccuslanthg.png",
+      "/images/camerasecurity/62.uacc-usl-ant-hg/p-mkt4-uaccuslanthg.png",
+      "/images/camerasecurity/62.uacc-usl-ant-hg/p-mkt5-uaccuslanthg.png",
+      "/images/camerasecurity/62.uacc-usl-ant-hg/p-mkt6-uaccuslanthg.png",
+      "/images/camerasecurity/62.uacc-usl-ant-hg/p-mkt7-uaccuslanthg.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/camerasecurity/62.uacc-usl-ant-hg/p-mkt0-uaccuslanthg.png",
+      "/images/camerasecurity/62.uacc-usl-ant-hg/p-itb-uaccuslanthg.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -8354,10 +8396,211 @@ export const cameraSecurityProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/camerasecurity/62.uacc-usl-ant-hg/p-itb-uaccuslanthg.png" },
+    ],
+  },
+
+  // Produk Kesepuluh dari Camera Security, SF SuperLink
+  {
+    id: "USL-Relay",
+    name: "Relay",
+    category: "Camera Security",
+    subfilter: "SuperLink Sensors",
+    image: "/images/camerasecurity/63.usl-relay/1.p-utama-uslrelay.png",
+    shortDescription:
+      "Compact SuperLink relay designed with I/O interfaces for seamless integration with third-party sensors and signaling devices.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "USL-Relay",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camerasecurity/63.usl-relay/1.p-utama-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/2.p-dimensi-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/3.p-spec-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/4.p-development-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/p-itb-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/p-mkt0-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/p-mkt1-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/p-mkt2-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/p-mkt3-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/p-mkt4-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/p-mkt5-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/p-mkt6-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/p-mkt7-uslrelay.png",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/camerasecurity/63.usl-relay/p-mkt0-uslrelay.png",
+      "/images/camerasecurity/63.usl-relay/p-itb-uslrelay.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Connectivity : SuperLink (Proprietary)",
+      "Mounting : Adhesive, wall and DIN rail mount",
+      "Enclosure Material : Polycarbonate"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "50 x 47.6 x 28 mm (2 × 1.9 × 1.1')" },
+          { label: "Mounting", value: "Adhesive, wall and DIN rail mount" },
+          { label: "UniFi Application Suite", value: "Protect" },
+        ]
+      },
+      {
+        title: "Performance",
+        items: [
+          { label: "Connectivity", value: "SuperLink (Proprietary)" },
+          { label: "Operating Frequency US", value: "915.6–927.6 MHz" },
+          { label: "Operating Frequency EU", value: "865.1–869.5 MHz" },
+          { label: "Antenna Gain SuperLink", value: "1 dBi" },
+          { label: "Max. TX Power SuperLink", value: "14 dBi" },
+          { label: "Max. Range SuperLink", value: "2 km (1.2 mi)" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Power Method", value: "12V DC / 24V DC / 48V DC" },
+          { label: "Weight", value: "100 g (3.5 oz)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "Mount Material", value: "Polycarbonate" },
+          { label: "Buttons", value: "(1) Factory reset(1) Test button" },
+          { label: "Terminal Blocks Output", value: "O1/COM/O2 Dry contact only (12-48V DC, 12-240V AC) 10A/port, UL total max: 12A IEC total max: 16A" },
+          { label: "Terminal Blocks Input", value: "I1/I2 Dry contact only Open/Short (GND) Integrated 5V TVS protection" },
+          { label: "Terminal Blocks Power", value: "VDD/GND 12–48V DC, max. 48V Integrated over-temperature protection (OTP) at 85°C (185°F)" },
+          { label: "LEDs", value: "(1) LoRa, Status: RGBW (2) Signal input, Relay output: W" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+          { label: "NDA Compliant", value: "✓" },
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Application RequirementsWeb Application", value: "UniFi Protect" },
+          { label: "Application RequirementsWeb Mobile App", value: "UniFi Protect iOS™ and Android™" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/camerasecurity/63.usl-relay/p-itb-uslrelay.png" },
+    ],
+  },
+
+  // Produk Kesebelas dari Camera Security, SF SuperLink
+  {
+    id: "UP-AlarmHub",
+    name: "Alarm Hub Kit",
+    category: "Camera Security",
+    subfilter: "SuperLink Sensors",
+    image: "/images/camerasecurity/64.up-alarmhub-kit/1.p-utama-upalarmhubkit.png",
+    shortDescription:
+      "32 input zone alarm control hub for hardwire intrusion sensors powered using PoE++ input and optional battery backup.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UP-AlarmHub",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/camerasecurity/64.up-alarmhub-kit/1.p-utama-upalarmhubkit.png",
+      "/images/camerasecurity/64.up-alarmhub-kit/2.p-dimensi-upalarmhubkit.png",
+      "/images/camerasecurity/64.up-alarmhub-kit/3.p-spec-upalarmhubkit.png",
+      "/images/camerasecurity/64.up-alarmhub-kit/4.p-development-upalarmhubkit.png",
+      "/images/camerasecurity/64.up-alarmhub-kit/p-itb-upalarmhubkit.png",
+      "/images/camerasecurity/64.up-alarmhub-kit/p-mkt0-upalarmhubkit.png",
+      "/images/camerasecurity/64.up-alarmhub-kit/p-mkt1-upalarmhubkit.png",
+      "/images/camerasecurity/64.up-alarmhub-kit/p-mkt2-upalarmhubkit.png",
+      "/images/camerasecurity/64.up-alarmhub-kit/p-mkt3-upalarmhubkit.png",
+      "/images/camerasecurity/64.up-alarmhub-kit/p-mkt4-upalarmhubkit.png",
+      "/images/camerasecurity/64.up-alarmhub-kit/p-mkt5-upalarmhubkit.png",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/camerasecurity/64.up-alarmhub-kit/p-mkt0-upalarmhubkit.png",
+      "/images/camerasecurity/64.up-alarmhub-kit/p-itb-upalarmhubkit.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Mount Material : SGCC steel",
+      "Mounting : Wall",
+      "Enclosure Material : SGCC steel housing with polycarbonate cover"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "379 x 355 x 105 mm (15 x 14 x 4.1')" },
+          { label: "Input Terminals", value: "(32) Alarm sensor (1) Emergency" },
+          { label: "Power Method", value: "PoE++/PoE+++ 12V SLA battery" },
+          { label: "Power Method Availability", value: "PoE+++ input: 68W PoE++ input: 42W" },
+          { label: "NDA Compliant", value: "✓" },
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "Device: 8.3 kg (18.3 lb) Mount: 624 g (1.4 lb)" },
+          { label: "Enclosure Material", value: "SGCC steel housing with polycarbonate cover" },
+          { label: "Mount Material", value: "SGCC steel" },
+          { label: "Mounting", value: "Wall" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Digital Input", value: "(32) Inputs for alarm sensor (Compatible with EOL resistors: 1–5.6kΩ, 1kΩ included)  (1) Emergency" },
+          { label: "Output Relay", value: "(2) Wet/Dry Wet: 12V DC, 1A Dry: 30V DC, 1A" },
+          { label: "Aux Power Output", value: "For sensor: (3) 12V DC, 1A right side total, (3) 12V DC, 1A left side total" },
+          { label: "Indoor and Outdoor Use", value: "Indoor only" },
+          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+          { label: "Networking Interface", value: "(1) 10/100 MbE RJ45 port" },
+          { label: "PoE Interface", value: "(1) PoE++/PoE+++ input, 54V DC, 60W/90W (1) PoE+ output, 54V DC, 30W" },
+          { label: "Max. Power Consumption", value: "90W" },
+          { label: "Battery Charge", value: "SLA backup battery, 12V, 0.3A" },
+          { label: "LEDs", value: "W/B" },
+          { label: "Buttons", value: "(1) Factory reset (2) Dry/Wet switch" },
+          { label: "Certifications", value: "CE, FCC, IC" },
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Application RequirementsWeb Application", value: "Version 7.0.88 and later" },
+          { label: "Application RequirementsWeb Mobile App", value: "UniFi Protect iOS™ version 3.3.0 and later UniFi Protect Android™ version 3.2.0 and later" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/camerasecurity/64.up-alarmhub-kit/p-itb-upalarmhubkit.png" },
     ],
   },
 
@@ -8365,8 +8608,8 @@ export const cameraSecurityProducts: Product[] = [
   {
     id: "UP-AI-Horn-Speaker-B",
     name: "AI Horn Speaker",
-    category: "Accessories",
-    subfilter: "For Cameras",
+    category: "Camera Security",
+    subfilter: "Camera Accessories",
     image: "/images/camera.jpg",
     shortDescription:
       "All-weather PoE 120 dB horn speaker with advanced AI alert functionality and versatile wall, corner, and pole mounting options.",
@@ -8453,8 +8696,8 @@ export const cameraSecurityProducts: Product[] = [
   {
     id: "UP-FloodLight",
     name: "Floodlight",
-    category: "Accessories",
-    subfilter: "For Cameras",
+    category: "Camera Security",
+    subfilter: "Camera Accessories",
     image: "/images/camera.jpg",
     shortDescription:
       "Bright, motion-triggered light.",
@@ -8531,8 +8774,8 @@ export const cameraSecurityProducts: Product[] = [
   {
     id: "UACC-Adapter-PoE-USBC",
     name: "PoE to USB-C Adapter",
-    category: "Accessories",
-    subfilter: "PoE & Power",
+    category: "Camera Security",
+    subfilter: "Camera Accessories",
     image: "/images/camera.jpg",
     shortDescription:
       "Versatile adapter that provides power and connectivity to USB-C devices, including compatible Protect WiFi cameras.",
@@ -8600,8 +8843,8 @@ export const cameraSecurityProducts: Product[] = [
   {
     id: "UACC-Camera-CJB-B",
     name: "Camera Compact Junction Box",
-    category: "Accessories",
-    subfilter: "For Cameras",
+    category: "Camera Security",
+    subfilter: "Camera Accessories",
     image: "/images/camera.jpg",
     shortDescription:
       "Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability, aesthetics, and ease of maintenanc",
@@ -8660,8 +8903,8 @@ export const cameraSecurityProducts: Product[] = [
   {
     id: "UACC-Camera-JB-B",
     name: "Camera Junction Box",
-    category: "Accessories",
-    subfilter: "For Cameras",
+    category: "Camera Security",
+    subfilter: "Camera Accessories",
     image: "/images/camera.jpg",
     shortDescription:
       "Tamper-resistant junction box for UniFi Bullet, Dome, and Turret cameras that enhances mounting durability, aesthetics, and ease of maintenance.",
@@ -8781,8 +9024,8 @@ export const cameraSecurityProducts: Product[] = [
   {
     id: "UACC-AI-360-JB",
     name: "AI 360 Junction Box",
-    category: "Accessories",
-    subfilter: "For Cameras",
+    category: "Camera Security",
+    subfilter: "Camera Accessories",
     image: "/images/camera.jpg",
     shortDescription:
       "Tamper-resistant junction box for the AI 360 that enhances mounting durability and ease of maintenance.",
@@ -8843,8 +9086,8 @@ export const cameraSecurityProducts: Product[] = [
   {
     id: "UACC-G4-Dome-Arm Mount",
     name: "Dome Camera Arm Mount",
-    category: "Accessories",
-    subfilter: "For Cameras",
+    category: "Camera Security",
+    subfilter: "Camera Accessories",
     image: "/images/camera.jpg",
     shortDescription:
       "Arm mount accessory that attaches the G4 or G5 Dome camera to a wall.",
@@ -8902,8 +9145,8 @@ export const cameraSecurityProducts: Product[] = [
   {
     id: "UACC-Camera-AM-B",
     name: "Camera Arm Mount",
-    category: "Accessories",
-    subfilter: "For Cameras",
+    category: "Camera Security",
+    subfilter: "Camera Accessories",
     image: "/images/camera.jpg",
     shortDescription:
       "Arm mount accessory that attaches the UniFi Turret cameras to a wall, corner, or pole.",
@@ -8963,8 +9206,8 @@ export const cameraSecurityProducts: Product[] = [
   {
     id: "UACC-Bullet-AB-W",
     name: "Bullet Camera Angled Base",
-    category: "Accessories",
-    subfilter: "For Cameras",
+    category: "Camera Security",
+    subfilter: "Camera Accessories",
     image: "/images/camera.jpg",
     shortDescription:
       "Bullet camera mounting accessory that enhances tilt angle by 22° to achieve an unrestricted viewing angle.",
@@ -9023,8 +9266,8 @@ export const cameraSecurityProducts: Product[] = [
   {
     id: "UACC-AI-Pro-Enhancer-B/W",
     name: "AI Enhancer",
-    category: "Accessories",
-    subfilter: "For Cameras",
+    category: "Camera Security",
+    subfilter: "Camera Accessories",
     image: "/images/camera.jpg",
     shortDescription:
       "Long-range IR LED, floodlight, and radar detection accessory for the AI Pro.",
