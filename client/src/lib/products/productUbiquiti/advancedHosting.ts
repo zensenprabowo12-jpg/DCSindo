@@ -113,7 +113,7 @@ export const advancedHostingProducts: Product[] = [
     name: "UXG-Enterprise",
     category: "Advanced Hosting",
     subfilter: "All",
-    image: "/images/advancedhosting/2.gatewayenterprise/1.p-utama-uxgenerprise.png",
+    image: "/images/advancedhosting/2.uxgenterprise/1.p-utama-uxgenerprise.png",
     shortDescription:
       "25G independent gateway with multi-WAN load balancing, 12.5 Gbps IPS routing, and redundant hot-swap PSUs.",
     specs: [
@@ -128,21 +128,21 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/advancedhosting/2.gatewayenterprise/1.p-utama-uxgenerprise.png",
-      "/images/advancedhosting/2.gatewayenterprise/2.p-dimensi-uxgenerprise.png",
-      "/images/advancedhosting/2.gatewayenterprise/3.p-spec-uxgenerprise.png",
-      "/images/advancedhosting/2.gatewayenterprise/4.p-development-uxgenerprise.png",
-      "/images/advancedhosting/2.gatewayenterprise/p-itb-uxgenerprise.png",
-      "/images/advancedhosting/2.gatewayenterprise/p-mkt0-uxgenerprise.png",
-      "/images/advancedhosting/2.gatewayenterprise/p-mkt1-uxgenerprise.png",
-      "/images/advancedhosting/2.gatewayenterprise/p-mkt2-uxgenerprise.png",
-      "/images/advancedhosting/2.gatewayenterprise/p-mkt3-uxgenerprise.png",
+      "/images/advancedhosting/2.uxgenterprise/1.p-utama-uxgenerprise.png",
+      "/images/advancedhosting/2.uxgenterprise/2.p-dimensi-uxgenerprise.png",
+      "/images/advancedhosting/2.uxgenterprise/3.p-spec-uxgenerprise.png",
+      "/images/advancedhosting/2.uxgenterprise/4.p-development-uxgenerprise.png",
+      "/images/advancedhosting/2.uxgenterprise/p-itb-uxgenerprise.png",
+      "/images/advancedhosting/2.uxgenterprise/p-mkt0-uxgenerprise.png",
+      "/images/advancedhosting/2.uxgenterprise/p-mkt1-uxgenerprise.png",
+      "/images/advancedhosting/2.uxgenterprise/p-mkt2-uxgenerprise.png",
+      "/images/advancedhosting/2.uxgenterprise/p-mkt3-uxgenerprise.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/advancedhosting/2.gatewayenterprise/p-mkt0-uxgenerprise.png",
-      "/images/advancedhosting/2.gatewayenterprise/p-itb-uxgenerprise.png",
+      "/images/advancedhosting/2.uxgenterprise/p-mkt2-uxgenerprise.png",
+      "/images/advancedhosting/2.uxgenterprise/p-itb-uxgenerprise.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -269,7 +269,8 @@ export const advancedHostingProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/advancedhosting/2.gatewayenterprise/p-itb-uxgenerprise.png", }, 
+      { name: "Device", image:"/images/advancedhosting/2.uxgenterprise/p-itb-uxgenerprise.png"
+ },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -404,7 +405,7 @@ export const advancedHostingProducts: Product[] = [
     name: "Gateway Fiber",
     category: "Advanced Hosting",
     subfilter: "All",
-    image: "/images/advancedhosting/3.gatewayfiber/1.p-utama-uxgfiber.png",
+    image: "/images/advancedhosting/3.uxgfiber/1.p-utama-uxgfiber.png",
     shortDescription:
       "Desktop 10G independent gateway with integrated 4-port 2.5 GbE switch.",
     specs: [
@@ -419,21 +420,21 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/advancedhosting/3.gatewayfiber/1.p-utama-uxgfiber.png",
-      "/images/advancedhosting/3.gatewayfiber/2.p-dimensi-uxgfiber.png",
-      "/images/advancedhosting/3.gatewayfiber/3.p-spec-uxgfiber.png",
-      "/images/advancedhosting/3.gatewayfiber/4.p-development-uxgfiber.png",
-      "/images/advancedhosting/3.gatewayfiber/p-itb-uxgfiber.png",
-      "/images/advancedhosting/3.gatewayfiber/p-mkt0-uxgfiber.png",
-      "/images/advancedhosting/3.gatewayfiber/p-mkt1-uxgfiber.png",
-      "/images/advancedhosting/3.gatewayfiber/p-mkt2-uxgfiber.png",
-      "/images/advancedhosting/3.gatewayfiber/p-mkt3-uxgfiber.png",
+      "/images/advancedhosting/3.uxgfiber/1.p-utama-uxgfiber.png",
+      "/images/advancedhosting/3.uxgfiber/2.p-dimensi-uxgfiber.png",
+      "/images/advancedhosting/3.uxgfiber/3.p-spec-uxgfiber.png",
+      "/images/advancedhosting/3.uxgfiber/4.p-deployment-uxgfiber.png",
+      "/images/advancedhosting/3.uxgfiber/p-itb-uxgfiber.png",
+      "/images/advancedhosting/3.uxgfiber/p-mkt0-uxgfiber.png",
+      "/images/advancedhosting/3.uxgfiber/p-mkt1-uxgfiber.png",
+      "/images/advancedhosting/3.uxgfiber/p-mkt2-uxgfiber.png",
+      "/images/advancedhosting/3.uxgfiber/p-mkt3-uxgfiber.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/advancedhosting/3.gatewayfiber/p-mkt0-uxgfiber.png",
-      "/images/advancedhosting/3.gatewayfiber/p-itb-uxgfiber.png",
+      "/images/advancedhosting/3.uxgfiber/p-mkt3-uxgfiber.png",
+      "/images/advancedhosting/3.uxgfiber/p-itb-uxgfiber.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -537,7 +538,7 @@ export const advancedHostingProducts: Product[] = [
       },
     ],
     inTheBox: [
-      { name: "Device", image: "/images/advancedhosting/3.gatewayfiber/p-itb-uxgfiber.png", }, 
+      { name: "Device", image: "/images/advancedhosting/3.uxgfiber/p-itb-uxgfiber.png",}
     ],
     // Item yang ada dalam box produk (gambar bisa diganti)
   },
@@ -548,7 +549,7 @@ export const advancedHostingProducts: Product[] = [
     name: "Gateway Lite",
     category: "Advanced Hosting",
     subfilter: "All",
-    image: "/images/advancedhosting/4.gatewaylite/1.p-utama-uxglite.png",
+    image: "/images/advancedhosting/4.uxglite/1.p-utama-uxglite.png",
     shortDescription:
       "Compact independent gateway with a full suite of advanced routing and security features.",
     specs: [
@@ -563,21 +564,21 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/advancedhosting/4.gatewaylite/1.p-utama-uxglite.png",
-      "/images/advancedhosting/4.gatewaylite/2.p-dimensi-uxglite.png",
-      "/images/advancedhosting/4.gatewaylite/3.p-spec-uxglite.png",
-      "/images/advancedhosting/4.gatewaylite/4.p-development-uxglite.png",
-      "/images/advancedhosting/4.gatewaylite/p-itb-uxglite.png",
-      "/images/advancedhosting/4.gatewaylite/p-mkt0-uxglite.png",
-      "/images/advancedhosting/4.gatewaylite/p-mkt1-uxglite.png",
-      "/images/advancedhosting/4.gatewaylite/p-mkt2-uxglite.png",
-      "/images/advancedhosting/4.gatewaylite/p-mkt3-uxglite.png",
+      "/images/advancedhosting/4.uxglite/1.p-utama-uxglite.png",
+      "/images/advancedhosting/4.uxglite/2.p-dimensi-uxglite.png",
+      "/images/advancedhosting/4.uxglite/3.p-spec-uxglite.png",
+      "/images/advancedhosting/4.uxglite/4.p-deployment-uxglite.png",
+      "/images/advancedhosting/4.uxglite/p-itb-uxglite.png",
+      "/images/advancedhosting/4.uxglite/p-mkt0-uxglite.png",
+      "/images/advancedhosting/4.uxglite/p-mkt1-uxglite.png",
+      "/images/advancedhosting/4.uxglite/p-mkt2-uxglite.png",
+      "/images/advancedhosting/4.uxglite/p-mkt3-uxglite.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/advancedhosting/4.gatewaylite/p-mkt0-uxglite.png",
-      "/images/advancedhosting/4.gatewaylite/p-itb-uxglite.png",
+      "/images/advancedhosting/4.uxglite/p-mkt3-uxglite.png",
+      "/images/advancedhosting/4.uxglite/p-itb-uxglite.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -681,7 +682,7 @@ export const advancedHostingProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/advancedhosting/4.gatewaylite/p-itb-uxglite.png", }, 
+      { name: "Device", image: "/images/advancedhosting/4.uxglite/p-itb-uxglite.png", },
     ],
   },
 
@@ -691,7 +692,7 @@ export const advancedHostingProducts: Product[] = [
     name: "Gateway Max",
     category: "Advanced Hosting",
     subfilter: "All",
-    image: "/images/advancedhosting/5.gatewaymax/1.p-utama-uxgmax.png",
+    image: "/images/advancedhosting/5.uxgmax/1.p-utama-uxgmax.png",
     shortDescription:
       "Compact, multi-WAN independent gateway with full 2.5G support for high-performance networking at small-to-mediaum-sites.",
     specs: [
@@ -706,21 +707,21 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/advancedhosting/5.gatewaymax/1.p-utama-uxgmax.png",
-      "/images/advancedhosting/5.gatewaymax/2.p-dimensi-uxgmax.png",
-      "/images/advancedhosting/5.gatewaymax/3.p-spec-uxgmax.png",
-      "/images/advancedhosting/5.gatewaymax/4.p-development-uxgmax.png",
-      "/images/advancedhosting/5.gatewaymax/p-itb-uxgmax.png",
-      "/images/advancedhosting/5.gatewaymax/p-mkt0-uxgmax.png",
-      "/images/advancedhosting/5.gatewaymax/p-mkt1-uxgmax.png",
-      "/images/advancedhosting/5.gatewaymax/p-mkt2-uxgmax.png",
-      "/images/advancedhosting/5.gatewaymax/p-mkt3-uxgmax.png",
+      "/images/advancedhosting/5.uxgmax/1.p-utama-uxgmax.png",
+      "/images/advancedhosting/5.uxgmax/2.p-dimensi-uxgmax.png",
+      "/images/advancedhosting/5.uxgmax/3.p-spec-uxgmax.png",
+      "/images/advancedhosting/5.uxgmax/4.p-deployment-uxgmax.png",
+      "/images/advancedhosting/5.uxgmax/p-itb-uxgmax.png",
+      "/images/advancedhosting/5.uxgmax/p-mkt0-uxgmax.png",
+      "/images/advancedhosting/5.uxgmax/p-mkt1-uxgmax.png",
+      "/images/advancedhosting/5.uxgmax/p-mkt2-uxgmax.png",
+      "/images/advancedhosting/5.uxgmax/p-mkt3-uxgmax.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/advancedhosting/5.gatewaymax/p-mkt0-uxgmax.png",
-      "/images/advancedhosting/5.gatewaymax/p-itb-uxgmax.png",
+    "/images/advancedhosting/5.uxgmax/p-mkt3-uxgmax.png",
+    "/images/advancedhosting/5.uxgmax/p-itb-uxgmax.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -827,7 +828,7 @@ export const advancedHostingProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/advancedhosting/5.gatewaymax/p-itb-uxgmax.png", }, 
+      { name: "Device", image: "/images/advancedhosting/5.uxgmax/p-itb-uxgmax.png", }, 
     ],
   },
 
@@ -837,7 +838,7 @@ export const advancedHostingProducts: Product[] = [
     name: "Gateway Pro",
     category: "Advanced Hosting",
     subfilter: "All",
-    image: "/images/advancedhosting/6.gatewaypro/1.p-utama-uxgpro.png",
+    image: "/images/advancedhosting/6.uxgpro/1.p-utama-uxgpro.png",
     shortDescription:
       "10G multi-WAN independent gateway with UniFi Power Backup support designed to protect large-scale networks.",
     specs: [
@@ -852,20 +853,20 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/advancedhosting/6.gatewaypro/1.p-utama-uxgpro.png",
-      "/images/advancedhosting/6.gatewaypro/2.p-dimensi-uxgpro.png",
-      "/images/advancedhosting/6.gatewaypro/3.p-spec-uxgpro.png",
-      "/images/advancedhosting/6.gatewaypro/4.p-development-uxgpro.png",
-      "/images/advancedhosting/6.gatewaypro/p-itb-uxgpro.png",
-      "/images/advancedhosting/6.gatewaypro/p-mkt0-uxgpro.png",
-      "/images/advancedhosting/6.gatewaypro/p-mkt1-uxgpro.png",
-      "/images/advancedhosting/6.gatewaypro/p-mkt2-uxgpro.png",
+      "/images/advancedhosting/6.uxgpro/1.p-utama-uxgpro.png",
+      "/images/advancedhosting/6.uxgpro/2.p-dimensi-uxgpro.png",
+      "/images/advancedhosting/6.uxgpro/3.p-spec-uxgpro.png",
+      "/images/advancedhosting/6.uxgpro/4.p-development-uxgpro.png",
+      "/images/advancedhosting/6.uxgpro/p-itb-uxgpro.png",
+      "/images/advancedhosting/6.uxgpro/p-mkt0-uxgpro.png",
+      "/images/advancedhosting/6.uxgpro/p-mkt1-uxgpro.png",
+      "/images/advancedhosting/6.uxgpro/p-mkt2-uxgpro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/advancedhosting/6.gatewaypro/p-mkt0-uxgpro.png",
-      "/images/advancedhosting/6.gatewaypro/p-itb-uxgpro.png",
+      "/images/advancedhosting/6.uxgpro/p-mkt0-uxgpro.png",
+      "/images/advancedhosting/6.uxgpro/p-itb-uxgpro.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -974,7 +975,7 @@ export const advancedHostingProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image:"/images/advancedhosting/6.gatewaypro/p-itb-uxgpro.png", }, 
+      { name: "Device", image:"/images/advancedhosting/6.uxgpro/p-itb-uxgpro.png",},
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1071,7 +1072,7 @@ export const advancedHostingProducts: Product[] = [
     name: "CloudKey+",
     category: "Advanced Hosting",
     subfilter: "",
-    image: "/images/advancedhosting/7.cloudkey/1.p-utama-uckg2ssd.png",
+    image: "/images/advancedhosting/7.uckg2ssd/1.p-utama-uckg2ssd.png",
     shortDescription:
       "Compact UniFi Consoles that connect directly to the Site Manager at https://unifi.ui.com/ for powerful site management.",
     specs: [
@@ -1088,23 +1089,23 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/advancedhosting/7.cloudkey/1.p-utama-uckg2ssd.png",
-      "/images/advancedhosting/7.cloudkey/2.p-dimensi-uckg2ssd.png",
-      "/images/advancedhosting/7.cloudkey/3.p-spec-uckg2ssd.png",
-      "/images/advancedhosting/7.cloudkey/4.p-development-uckg2ssd.png",
-      "/images/advancedhosting/7.cloudkey/p-mkt0-uckg2ssd.png",
-      "/images/advancedhosting/7.cloudkey/p-mkt1-uckg2ssd.png",
-      "/images/advancedhosting/7.cloudkey/p-mkt2-uckg2ssd.png",
-      "/images/advancedhosting/7.cloudkey/p-mkt3-uckg2ssd.png",
-      "/images/advancedhosting/7.cloudkey/p-mkt4-uckg2ssd.png",
-      "/images/advancedhosting/7.cloudkey/p-mkt5-uckg2ssd.png",
+      "/images/advancedhosting/7.uckg2ssd/1.p-utama-uckg2ssd.png",
+      "/images/advancedhosting/7.uckg2ssd/2.p-dimensi-uckg2ssd.png",
+      "/images/advancedhosting/7.uckg2ssd/3.p-spec-uckg2ssd.png",
+      "/images/advancedhosting/7.uckg2ssd/4.p-deployment-uckg2ssd.png",
+      "/images/advancedhosting/7.uckg2ssd/p-mkt0-uckg2ssd.png",
+      "/images/advancedhosting/7.uckg2ssd/p-mkt1-uckg2ssd.png",
+      "/images/advancedhosting/7.uckg2ssd/p-mkt2-uckg2ssd.png",
+      "/images/advancedhosting/7.uckg2ssd/p-mkt3-uckg2ssd.png",
+      "/images/advancedhosting/7.uckg2ssd/p-mkt4-uckg2ssd.png",
+      "/images/advancedhosting/7.uckg2ssd/p-mkt5-uckg2ssd.png",
     ],
 
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/advancedhosting/7.cloudkey/p-mkt0-uckg2ssd.png",
-      "/images/advancedhosting/7.cloudkey/4.p-development-uckg2ssd.png",
+      "/images/advancedhosting/7.uckg2ssd/p-mkt1-uckg2ssd.png",
+      "/images/advancedhosting/7.uckg2ssd/p-mkt4-uckg2ssd.png",
     ],
 
 
@@ -1259,13 +1260,13 @@ export const advancedHostingProducts: Product[] = [
     ]
   },
 
-  // Produk Kesembilan dari Advanced Hosting, SF All
-  {
+  // Produk Kedelapan dari Advanced Hosting, SF All
+   {
     id: "CK-Enterprise",
     name: "CloudKey Enterprise",
     category: "Advanced Hosting",
     subfilter: "",
-    image: "/images/advancedhosting/8.cloudkey-enterprise/1.p-utama-ckenterprise.png",
+    image: "/images/advancedhosting/8.ckenterprise/1.p-utama-ckenterprise.png",
     shortDescription:
       "A UniFi Console designed for managing massive-scale UniFi Networks.",
     specs: [
@@ -1280,15 +1281,17 @@ export const advancedHostingProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/advancedhosting/8.cloudkey-enterprise/1.p-utama-ckenterprise.png",
-      "/images/advancedhosting/8.cloudkey-enterprise/2.p-dimensi-ckenterprise.png",
-      "/images/advancedhosting/8.cloudkey-enterprise/3.p-spec-ckenterprise.png",
-      "/images/advancedhosting/8.cloudkey-enterprise/4.p-development-ckenterprise.png",
-      "/images/advancedhosting/8.cloudkey-enterprise/p-mkt0-ckenterprise.png",
-      "/images/advancedhosting/8.cloudkey-enterprise/p-mkt1-ckenterprise.png",
-      "/images/advancedhosting/8.cloudkey-enterprise/p-mkt2-ckenterprise.png",
-      "/images/advancedhosting/8.cloudkey-enterprise/p-mkt3-ckenterprise.png",
-      "/images/advancedhosting/8.cloudkey-enterprise/p-mkt4-ckenterprise.png",
+      "/images/advancedhosting/8.ckenterprise/1.p-utama-ckenterprise.png",
+      "/images/advancedhosting/8.ckenterprise/2.p-dimensi-ckenterprise.png",
+      "/images/advancedhosting/8.ckenterprise/3.p-spec-ckenterprise.png",
+      "/images/advancedhosting/8.ckenterprise/4.p-deployment-ckenterprise.png",
+      "/images/advancedhosting/8.ckenterprise/p-itb-ckenterprise.png",
+      "/images/advancedhosting/8.ckenterprise/p-mkt0-ckenterprise.png",
+      "/images/advancedhosting/8.ckenterprise/p-mkt1-ckenterprise.png",
+      "/images/advancedhosting/8.ckenterprise/p-mkt2-ckenterprise.png",
+      "/images/advancedhosting/8.ckenterprise/p-mkt3-ckenterprise.png",
+      "/images/advancedhosting/8.ckenterprise/p-mkt4-ckenterprise.png",
+
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
