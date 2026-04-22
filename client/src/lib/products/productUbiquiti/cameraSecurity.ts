@@ -8604,753 +8604,755 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-  // Produk Pertama dari Camera Security, SF Camera Accessories
-  {
-    id: "UP-AI-Horn-Speaker-B",
-    name: "AI Horn Speaker",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "All-weather PoE 120 dB horn speaker with advanced AI alert functionality and versatile wall, corner, and pole mounting options.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UP-AI-Horn-Speaker-B",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Blends seamlessly into a variety of backgrounds",
-      "Sold as a 3-pack"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "Device: 267 x 189 x 247 mm (10.5 x 7.4 x 9.7') Articulating mount: ⌀104 x 149.4 mm  (⌀4.1 x 5.9')" },
-          { label: "Mounting", value: "Articulating mount for wall, pole mount (Included)" },
-        ]
-      },
-      {
-        title: "Mechanical",
-        items: [
-          { label: "Weight", value: "Device: 1.55 kg (2.4 lb) Articulating mount: 1.3 kg (2.9 lb)" },
-          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
-          { label: "Mounting Material", value: "Stainless steel, aluminum alloy" },
-          { label: "Pole Mount Diameter", value: "1—2.5' (25—63.5 mm)" },
-          { label: "Weatherproofing", value: "IP66" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Power Method", value: "PoE+" },
-          { label: "Max. Power Consumption", value: "14.3W" },
-          { label: "Speaker", value: "✓" },
-          { label: "Networking Interface", value: "(1) 100/10 MbE RJ45 port" },
-          { label: "LEDs System", value: "R/G/B/W" },
-          { label: "Buttons", value: "(1) Factory reset" },
-          { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "Certifications", value: "FCC, IC, CE" },
-          { label: "NDAA Compliant", value: "✓" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management Application UniFi Protect Web", value: "✓" },
-          { label: "Management Application UniFi Protect iOS™ and Android™", value: "✓" }
-        ]
-      },
-    ],
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
-  // Produk Kedua dari Camera Security,SF Camera Accessories 
-  {
-    id: "UP-FloodLight",
-    name: "Floodlight",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Bright, motion-triggered light.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UP-FloodLight",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Intense 550 lumens of LED light",
-      "Wall-mountable",
-      "Motion detection",
-      "Weatherproof (outdoor exposed)",
-      "Connect and power using PoE"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Mechanical",
-        items: [
-          { label: "Dimensions", value: "135 x 65 x 50 mm (5.3 x 2.6 x 2')" },
-          { label: "Weight", value: "Without mount: 216 g (7.6 oz) With flat wall mount: 236 g (8.3 oz) With angle mount: 273 g (9.6 oz)" },
-          { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
-          { label: "Mounting Material", value: "Angle Mount: Polycarbonate Flat Wall Mount: Polycarbonate" },
-          { label: "Weatherproofing", value: "IPX5" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Networking Interface", value: "10/100 MbE RJ45 port" },
-          { label: "Power Method", value: "PoE, 48V DC, 0.22A Max." },
-          { label: "Max. Power Consumption", value: "12.95W" },
-          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 8kV" },
-          { label: "Radio Frequency", value: "Bluetooth 4.0" },
-          { label: "LEDs", value: "R/B/W" },
-          { label: "Buttons", value: "(1) Factory reset" },
-          { label: "Ambient Operating Temperature", value: "-10 to 45° C (14 to 113° F)" },
-          { label: "Ambient Operating Humidity", value: "20 to 80% noncondensing" },
-          { label: "Certifications", value: "FCC, IC, CE, Anatel: 08447-22-08356" },
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Application Requirements Web Application", value: "UniFi Protect" },
-          { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" }
-        ]
-      },
-    ],
-  },
-
-  // Produk Ketiga dari Camera Security, SF Camera Accessories 
-  {
-    id: "UACC-Adapter-PoE-USBC",
-    name: "PoE to USB-C Adapter",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Versatile adapter that provides power and connectivity to USB-C devices, including compatible Protect WiFi cameras.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-Adapter-PoE-USBC",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "(1) GbE PoE input",
-      "(1) USB-C output",
-      "Transforms the G4 Doorbell Pro* and G4/G6 Instant** into a wired PoE camera",
-      "Provide GbE connectivity*** to USB-C device, such as notebook"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Mechanical",
-        items: [
-          { label: "Dimensions", value: "Without cable: ⌀30.4 x 95 mm (⌀1.2 x 3.7')" },
-          { label: "Weight", value: "85 g (3 oz)" },
-          { label: "Enclosure Material", value: "Polycarbonate" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Ports", value: "(1) Input: RJ45 (1) Output: USB Type-C" },
-          { label: "Networking Interface", value: "(1) Input: RJ45 (1) Output: USB Type-C" },
-          { label: "Power Method", value: "PoE" },
-          { label: "Input Rating", value: "48V DC, 0.25A" },
-          { label: "Output Rating", value: "5V DC, 2A" },
-          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
-          { label: "Compatibility", value: "Camera G4 Instant (UVC-G4-INS) G4 DoorBell Pro (UVC-G4-Doorbell-Pro)" },
-          { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC" },
-        ]
-      },
-    ],
-  },
-
-  // Produk Keempat dari Camera Security, SF Camera Accessories 
-  {
-    id: "UACC-Camera-CJB-B",
-    name: "Camera Compact Junction Box",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability, aesthetics, and ease of maintenanc",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-Camera-CJB-B",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Supports flat surface, pole and pendant mounting",
-      "Includes side and rear 3/4' conduit entrances"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "Longer holder: 87 x 147 x 49 mm (3.4 x 5.8 x 1.9') Shorter cap:  87 x 110 x 49 mm (3.4 x 4.3 x 1.9')" },
-          { label: "Pole Mount Diameter", value: "1.5-2' (38-50 mm)" },
-          { label: "Weight", value: "Box: 270 g (9.5 oz) Longer holder: 125 g (4.4 oz) Shorter cap: 80 g (2.8 oz)" },
-          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
-          { label: "Mounting Material", value: "Aluminum alloy" },
-          { label: "Compatibility", value: "UVC-G5-Dome-Ultra UVC-G5-Turret-Ultra UVC-G6-Bullet" }
-        ]
-      },
-    ],
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
-  // Produk Kelima dari Camera Security, SF Camera Accessories
-  {
-    id: "UACC-Camera-JB-B",
-    name: "Camera Junction Box",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Tamper-resistant junction box for UniFi Bullet, Dome, and Turret cameras that enhances mounting durability, aesthetics, and ease of maintenance.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-Camera-JB-B",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Supports flat surface, pole and pendant mounting",
-      "Includes side and rear 3/4' conduit entrances"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀140.4 x 59.7 mm (⌀5.5 x 2.4')" },
-          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
-          { label: "Weight", value: "Junction box: 470 g (16.6 oz) Mount Holder: 66 g (2.3 oz) Deco ring: 17g (0.6 oz) Pole mount: 62 g (2.2 oz)" },
-          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
-          { label: "Mounting Material", value: "G3/4''" },
-          { label: "Compatibility", value: "UVC-AI-Bullet UVC-AI-PRO UVC-AI-DSLR UVC-AI-Dome UVC-AI-Turret UVC-G6-Bullet UVC-G6-Turret UVC-G6-Pro-Turret UVC-G6-Dome UVC-G6-Pro-Dome UVC-G6-180 UVC-G5-Dome UVC-G5-Dome-Ultra UVC-G5-Turret-Ultra UVC-G5-Pro UVC-G5-Bullet UVC-G4-Pro UVC-G4-Bullet UVC-G4-Dome UVC-G3-Pro UVC-G3-Bullet" }
-        ]
-      },
-    ],
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-  // Produk Keenam dari Accessories, SF For Cameras
-  {
-    id: "UACC-AI-360-JB",
-    name: "AI 360 Junction Box",
-    category: "Accessories",
-    subfilter: "For Cameras",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Tamper-resistant junction box for the AI 360 that enhances mounting durability and ease of maintenance.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-AI-360-JB",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Supports flat surface, pole and pendant mounting",
-      "Includes side and rear 3/4' conduit entrances"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀173.2 x 76 mm (⌀6.8 x 3')" },
-          { label: "Weight", value: "720 g (1.6 lb)" },
-          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
-          { label: "Mounting Material", value: "Aluminum alloy" },
-          { label: "Weatherproofing", value: "IPX6" },
-          { label: "Resistance", value: "IK08" },
-          { label: "Threaded Outlets", value: "3/4''" },
-          { label: "Compatibility", value: "UVC-AI-360 UVC-G6-Pro-360" }
-        ]
-      },
-    ],
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
-  // Produk Keenam dari Camera Security, SF Camera Accessories 
-  {
-    id: "UACC-AI-360-JB",
-    name: "AI 360 Junction Box",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Tamper-resistant junction box for the AI 360 that enhances mounting durability and ease of maintenance.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-AI-360-JB",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Supports flat surface, pole and pendant mounting",
-      "Includes side and rear 3/4' conduit entrances"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀173.2 x 76 mm (⌀6.8 x 3')" },
-          { label: "Weight", value: "720 g (1.6 lb)" },
-          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
-          { label: "Mounting Material", value: "Aluminum alloy" },
-          { label: "Weatherproofing", value: "IPX6" },
-          { label: "Resistance", value: "IK08" },
-          { label: "Threaded Outlets", value: "3/4''" },
-          { label: "Compatibility", value: "UVC-AI-360 UVC-G6-Pro-360" }
-        ]
-      },
-    ],
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
-  // Produk Ketujuh dari Camera Security, SF Camera Accessories
-  {
-    id: "UACC-G4-Dome-Arm Mount",
-    name: "Dome Camera Arm Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Arm mount accessory that attaches the G4 or G5 Dome camera to a wall.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-G4-Dome-Arm Mount",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Allows to mount a Dome camera to the wall instead of the ceiling",
-      "Able to create focused camera sightlines",
-      "Wall mountable"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "123.8 x 114 x 31.5 mm (4.87 x 4.49 x 1.24')" },
-          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
-          { label: "Weight", value: "73 g (2.6 oz)" },
-          { label: "Enclosure Material", value: "Polycarbonate" },
-        ]
-      },
-    ],
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
-  // Produk Kedelapan dari Camera Security, SF Camera Accessories
-  {
-    id: "UACC-Camera-AM-B",
-    name: "Camera Arm Mount",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Arm mount accessory that attaches the UniFi Turret cameras to a wall, corner, or pole.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-Camera-AM-B",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Supports 3/4” conduit",
-      "Weatherproof (outdoor exposed)"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "115 x 252 x 90 mm (4.5 x 9.9 x 3.5')" },
-          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
-          { label: "Weight", value: "670 g (1.5 lb)" },
-          { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
-          { label: "Mounting Material", value: "Aluminum alloy" },
-          { label: "Weatherproofing", value: "IP66" },
-          { label: "Compatibility", value: "UVC-AI-Dome UVC-AI-Turret UVC-G6-Turret UVC-G6-Pro-Turret UVC-G6-Dome UVC-G6-Pro-Dome UVC-G6-180 UVC-G6-Pro-360 UVC-G5-Turret-Ultra" }
-        ]
-      },
-    ],
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
-  // Produk Kesembilan dari Camera Security, SF Camera Accessories 
-  {
-    id: "UACC-Bullet-AB-W",
-    name: "Bullet Camera Angled Base",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Bullet camera mounting accessory that enhances tilt angle by 22° to achieve an unrestricted viewing angle.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-Bullet-AB-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Ideal for mounting under eaves",
-      "Supports G5 Pro Enhancer and AI DSLR Outdoor Case"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "⌀62 x 55 mm (⌀2.4 x 2.2')" },
-          { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
-          { label: "Weight", value: "65 g (2.3 oz)" },
-          { label: "Available Colors", value: "Black White" },
-          { label: "Weatherproofing", value: "IPX5" },
-          { label: "Compatibility", value: "UACC-Bullet-AB-W: UVC-G4-Pro, UVC-G5-Pro, UVC-AI-Pro-W UACC-Bullet-AB-B: UVC-AI-Bullet, UVC-AI-Pro, UVC-AI-DSLR" }
-        ]
-      },
-    ],
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
-  // Produk Kesepuluh dari Camera Security, SF Camera Accessories
-  {
-    id: "UACC-AI-Pro-Enhancer-B/W",
-    name: "AI Enhancer",
-    category: "Camera Security",
-    subfilter: "Camera Accessories",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Long-range IR LED, floodlight, and radar detection accessory for the AI Pro.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UACC-AI-Pro-Enhancer",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Blends seamlessly into a variety of backgrounds",
-      "Sold as a 3-pack"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "Device: 267 x 189 x 247 mm (10.5 x 7.4 x 9.7') Articulating mount: ⌀104 x 149.4 mm  (⌀4.1 x 5.9')" },
-          { label: "Mounting", value: "Articulating mount for wall, pole mount (Included)" },
-        ]
-      },
-      {
-        title: "Mechanical",
-        items: [
-          { label: "Weight", value: "Device: 1.55 kg (2.4 lb) Articulating mount: 1.3 kg (2.9 lb)" },
-          { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
-          { label: "Mounting Material", value: "Stainless steel, aluminum alloy" },
-          { label: "Pole Mount Diameter", value: "1—2.5' (25—63.5 mm)" },
-          { label: "Weatherproofing", value: "IP66" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Power Method", value: "PoE+" },
-          { label: "Max. Power Consumption", value: "14.3W" },
-          { label: "Speaker", value: "✓" },
-          { label: "Networking Interface", value: "(1) 100/10 MbE RJ45 port" },
-          { label: "LEDs System", value: "R/G/B/W" },
-          { label: "Buttons", value: "(1) Factory reset" },
-          { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "Certifications", value: "FCC, IC, CE" },
-          { label: "NDAA Compliant", value: "✓" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management Application UniFi Protect Web", value: "✓" },
-          { label: "Management Application UniFi Protect iOS™ and Android™", value: "✓" }
-        ]
-      },
-    ],
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
+  // // Produk Pertama dari Camera Security, SF Camera Accessories
   // {
+  //   id: "UP-AI-Horn-Speaker-B",
+  //   name: "AI Horn Speaker",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "All-weather PoE 120 dB horn speaker with advanced AI alert functionality and versatile wall, corner, and pole mounting options.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UP-AI-Horn-Speaker-B",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-Gateway-Fiber.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Blends seamlessly into a variety of backgrounds",
+  //     "Sold as a 3-pack"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "Device: 267 x 189 x 247 mm (10.5 x 7.4 x 9.7') Articulating mount: ⌀104 x 149.4 mm  (⌀4.1 x 5.9')" },
+  //         { label: "Mounting", value: "Articulating mount for wall, pole mount (Included)" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Mechanical",
+  //       items: [
+  //         { label: "Weight", value: "Device: 1.55 kg (2.4 lb) Articulating mount: 1.3 kg (2.9 lb)" },
+  //         { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
+  //         { label: "Mounting Material", value: "Stainless steel, aluminum alloy" },
+  //         { label: "Pole Mount Diameter", value: "1—2.5' (25—63.5 mm)" },
+  //         { label: "Weatherproofing", value: "IP66" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Power Method", value: "PoE+" },
+  //         { label: "Max. Power Consumption", value: "14.3W" },
+  //         { label: "Speaker", value: "✓" },
+  //         { label: "Networking Interface", value: "(1) 100/10 MbE RJ45 port" },
+  //         { label: "LEDs System", value: "R/G/B/W" },
+  //         { label: "Buttons", value: "(1) Factory reset" },
+  //         { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
+  //         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+  //         { label: "Certifications", value: "FCC, IC, CE" },
+  //         { label: "NDAA Compliant", value: "✓" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management Application UniFi Protect Web", value: "✓" },
+  //         { label: "Management Application UniFi Protect iOS™ and Android™", value: "✓" }
+  //       ]
+  //     },
+  //   ],
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+  // },
+
+  // // Produk Kedua dari Camera Security,SF Camera Accessories 
+  // {
+  //   id: "UP-FloodLight",
+  //   name: "Floodlight",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Bright, motion-triggered light.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UP-FloodLight",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-Gateway-Fiber.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Intense 550 lumens of LED light",
+  //     "Wall-mountable",
+  //     "Motion detection",
+  //     "Weatherproof (outdoor exposed)",
+  //     "Connect and power using PoE"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Mechanical",
+  //       items: [
+  //         { label: "Dimensions", value: "135 x 65 x 50 mm (5.3 x 2.6 x 2')" },
+  //         { label: "Weight", value: "Without mount: 216 g (7.6 oz) With flat wall mount: 236 g (8.3 oz) With angle mount: 273 g (9.6 oz)" },
+  //         { label: "Enclosure Material", value: "Polycarbonate, aluminum alloy" },
+  //         { label: "Mounting Material", value: "Angle Mount: Polycarbonate Flat Wall Mount: Polycarbonate" },
+  //         { label: "Weatherproofing", value: "IPX5" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Networking Interface", value: "10/100 MbE RJ45 port" },
+  //         { label: "Power Method", value: "PoE, 48V DC, 0.22A Max." },
+  //         { label: "Max. Power Consumption", value: "12.95W" },
+  //         { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 8kV" },
+  //         { label: "Radio Frequency", value: "Bluetooth 4.0" },
+  //         { label: "LEDs", value: "R/B/W" },
+  //         { label: "Buttons", value: "(1) Factory reset" },
+  //         { label: "Ambient Operating Temperature", value: "-10 to 45° C (14 to 113° F)" },
+  //         { label: "Ambient Operating Humidity", value: "20 to 80% noncondensing" },
+  //         { label: "Certifications", value: "FCC, IC, CE, Anatel: 08447-22-08356" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Application Requirements Web Application", value: "UniFi Protect" },
+  //         { label: "Application Requirements Mobile App", value: "UniFi Protect iOS™ and Android™" }
+  //       ]
+  //     },
+  //   ],
+  // },
+
+  // // Produk Ketiga dari Camera Security, SF Camera Accessories 
+  // {
+  //   id: "UACC-Adapter-PoE-USBC",
+  //   name: "PoE to USB-C Adapter",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Versatile adapter that provides power and connectivity to USB-C devices, including compatible Protect WiFi cameras.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-Adapter-PoE-USBC",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-Gateway-Fiber.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "(1) GbE PoE input",
+  //     "(1) USB-C output",
+  //     "Transforms the G4 Doorbell Pro* and G4/G6 Instant** into a wired PoE camera",
+  //     "Provide GbE connectivity*** to USB-C device, such as notebook"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Mechanical",
+  //       items: [
+  //         { label: "Dimensions", value: "Without cable: ⌀30.4 x 95 mm (⌀1.2 x 3.7')" },
+  //         { label: "Weight", value: "85 g (3 oz)" },
+  //         { label: "Enclosure Material", value: "Polycarbonate" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Ports", value: "(1) Input: RJ45 (1) Output: USB Type-C" },
+  //         { label: "Networking Interface", value: "(1) Input: RJ45 (1) Output: USB Type-C" },
+  //         { label: "Power Method", value: "PoE" },
+  //         { label: "Input Rating", value: "48V DC, 0.25A" },
+  //         { label: "Output Rating", value: "5V DC, 2A" },
+  //         { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+  //         { label: "Compatibility", value: "Camera G4 Instant (UVC-G4-INS) G4 DoorBell Pro (UVC-G4-Doorbell-Pro)" },
+  //         { label: "Ambient Operating Temperature", value: "-10 to 40° C (14 to 104° F)" },
+  //         { label: "Ambient Operating Humidity", value: "5 to 95% noncondensing" },
+  //         { label: "NDAA Compliant", value: "✓" },
+  //         { label: "Certifications", value: "CE, FCC, IC" },
+  //       ]
+  //     },
+  //   ],
+  // },
+
+  // // Produk Keempat dari Camera Security, SF Camera Accessories 
+  // {
+  //   id: "UACC-Camera-CJB-B",
+  //   name: "Camera Compact Junction Box",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Tamper-resistant junction box for compact UniFi Dome and Turret cameras that enhances mounting durability, aesthetics, and ease of maintenanc",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-Camera-CJB-B",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-Gateway-Fiber.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Supports flat surface, pole and pendant mounting",
+  //     "Includes side and rear 3/4' conduit entrances"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "Longer holder: 87 x 147 x 49 mm (3.4 x 5.8 x 1.9') Shorter cap:  87 x 110 x 49 mm (3.4 x 4.3 x 1.9')" },
+  //         { label: "Pole Mount Diameter", value: "1.5-2' (38-50 mm)" },
+  //         { label: "Weight", value: "Box: 270 g (9.5 oz) Longer holder: 125 g (4.4 oz) Shorter cap: 80 g (2.8 oz)" },
+  //         { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+  //         { label: "Mounting Material", value: "Aluminum alloy" },
+  //         { label: "Compatibility", value: "UVC-G5-Dome-Ultra UVC-G5-Turret-Ultra UVC-G6-Bullet" }
+  //       ]
+  //     },
+  //   ],
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+  // },
+
+  // // Produk Kelima dari Camera Security, SF Camera Accessories
+  // {
+  //   id: "UACC-Camera-JB-B",
+  //   name: "Camera Junction Box",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Tamper-resistant junction box for UniFi Bullet, Dome, and Turret cameras that enhances mounting durability, aesthetics, and ease of maintenance.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-Camera-JB-B",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-Gateway-Fiber.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Supports flat surface, pole and pendant mounting",
+  //     "Includes side and rear 3/4' conduit entrances"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "⌀140.4 x 59.7 mm (⌀5.5 x 2.4')" },
+  //         { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+  //         { label: "Weight", value: "Junction box: 470 g (16.6 oz) Mount Holder: 66 g (2.3 oz) Deco ring: 17g (0.6 oz) Pole mount: 62 g (2.2 oz)" },
+  //         { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+  //         { label: "Mounting Material", value: "G3/4''" },
+  //         { label: "Compatibility", value: "UVC-AI-Bullet UVC-AI-PRO UVC-AI-DSLR UVC-AI-Dome UVC-AI-Turret UVC-G6-Bullet UVC-G6-Turret UVC-G6-Pro-Turret UVC-G6-Dome UVC-G6-Pro-Dome UVC-G6-180 UVC-G5-Dome UVC-G5-Dome-Ultra UVC-G5-Turret-Ultra UVC-G5-Pro UVC-G5-Bullet UVC-G4-Pro UVC-G4-Bullet UVC-G4-Dome UVC-G3-Pro UVC-G3-Bullet" }
+  //       ]
+  //     },
+  //   ],
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+  // },
+  // // Produk Keenam dari Accessories, SF For Cameras
+  // {
+  //   id: "UACC-AI-360-JB",
+  //   name: "AI 360 Junction Box",
+  //   category: "Accessories",
+  //   subfilter: "For Cameras",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Tamper-resistant junction box for the AI 360 that enhances mounting durability and ease of maintenance.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-AI-360-JB",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-Gateway-Fiber.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Supports flat surface, pole and pendant mounting",
+  //     "Includes side and rear 3/4' conduit entrances"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "⌀173.2 x 76 mm (⌀6.8 x 3')" },
+  //         { label: "Weight", value: "720 g (1.6 lb)" },
+  //         { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+  //         { label: "Mounting Material", value: "Aluminum alloy" },
+  //         { label: "Weatherproofing", value: "IPX6" },
+  //         { label: "Resistance", value: "IK08" },
+  //         { label: "Threaded Outlets", value: "3/4''" },
+  //         { label: "Compatibility", value: "UVC-AI-360 UVC-G6-Pro-360" }
+  //       ]
+  //     },
+  //   ],
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+  // },
+
+  // // Produk Keenam dari Camera Security, SF Camera Accessories 
+  // {
+  //   id: "UACC-AI-360-JB",
+  //   name: "AI 360 Junction Box",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Tamper-resistant junction box for the AI 360 that enhances mounting durability and ease of maintenance.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-AI-360-JB",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-Gateway-Fiber.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Supports flat surface, pole and pendant mounting",
+  //     "Includes side and rear 3/4' conduit entrances"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "⌀173.2 x 76 mm (⌀6.8 x 3')" },
+  //         { label: "Weight", value: "720 g (1.6 lb)" },
+  //         { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+  //         { label: "Mounting Material", value: "Aluminum alloy" },
+  //         { label: "Weatherproofing", value: "IPX6" },
+  //         { label: "Resistance", value: "IK08" },
+  //         { label: "Threaded Outlets", value: "3/4''" },
+  //         { label: "Compatibility", value: "UVC-AI-360 UVC-G6-Pro-360" }
+  //       ]
+  //     },
+  //   ],
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+  // },
+
+  // // Produk Ketujuh dari Camera Security, SF Camera Accessories
+  // {
+  //   id: "UACC-G4-Dome-Arm Mount",
+  //   name: "Dome Camera Arm Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Arm mount accessory that attaches the G4 or G5 Dome camera to a wall.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-G4-Dome-Arm Mount",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-Gateway-Fiber.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Allows to mount a Dome camera to the wall instead of the ceiling",
+  //     "Able to create focused camera sightlines",
+  //     "Wall mountable"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "123.8 x 114 x 31.5 mm (4.87 x 4.49 x 1.24')" },
+  //         { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+  //         { label: "Weight", value: "73 g (2.6 oz)" },
+  //         { label: "Enclosure Material", value: "Polycarbonate" },
+  //       ]
+  //     },
+  //   ],
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+  // },
+
+  // // Produk Kedelapan dari Camera Security, SF Camera Accessories
+  // {
+  //   id: "UACC-Camera-AM-B",
+  //   name: "Camera Arm Mount",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Arm mount accessory that attaches the UniFi Turret cameras to a wall, corner, or pole.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-Camera-AM-B",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-Gateway-Fiber.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Supports 3/4” conduit",
+  //     "Weatherproof (outdoor exposed)"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "115 x 252 x 90 mm (4.5 x 9.9 x 3.5')" },
+  //         { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+  //         { label: "Weight", value: "670 g (1.5 lb)" },
+  //         { label: "Enclosure Material", value: "Aluminum alloy, polycarbonate" },
+  //         { label: "Mounting Material", value: "Aluminum alloy" },
+  //         { label: "Weatherproofing", value: "IP66" },
+  //         { label: "Compatibility", value: "UVC-AI-Dome UVC-AI-Turret UVC-G6-Turret UVC-G6-Pro-Turret UVC-G6-Dome UVC-G6-Pro-Dome UVC-G6-180 UVC-G6-Pro-360 UVC-G5-Turret-Ultra" }
+  //       ]
+  //     },
+  //   ],
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+  // },
+
+  // // Produk Kesembilan dari Camera Security, SF Camera Accessories 
+  // {
+  //   id: "UACC-Bullet-AB-W",
+  //   name: "Bullet Camera Angled Base",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Bullet camera mounting accessory that enhances tilt angle by 22° to achieve an unrestricted viewing angle.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-Bullet-AB-W",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-Gateway-Fiber.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Ideal for mounting under eaves",
+  //     "Supports G5 Pro Enhancer and AI DSLR Outdoor Case"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "⌀62 x 55 mm (⌀2.4 x 2.2')" },
+  //         { label: "Pole Mount Diameter", value: "1.5–2' (38–50 mm)" },
+  //         { label: "Weight", value: "65 g (2.3 oz)" },
+  //         { label: "Available Colors", value: "Black White" },
+  //         { label: "Weatherproofing", value: "IPX5" },
+  //         { label: "Compatibility", value: "UACC-Bullet-AB-W: UVC-G4-Pro, UVC-G5-Pro, UVC-AI-Pro-W UACC-Bullet-AB-B: UVC-AI-Bullet, UVC-AI-Pro, UVC-AI-DSLR" }
+  //       ]
+  //     },
+  //   ],
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+  // },
+
+  // // Produk Kesepuluh dari Camera Security, SF Camera Accessories
+  // {
+  //   id: "UACC-AI-Pro-Enhancer-B/W",
+  //   name: "AI Enhancer",
+  //   category: "Camera Security",
+  //   subfilter: "Camera Accessories",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Long-range IR LED, floodlight, and radar detection accessory for the AI Pro.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
+
+  //   // SKU produk
+  //   sku: "UACC-AI-Pro-Enhancer",
+
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-Gateway-Fiber.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
+
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Blends seamlessly into a variety of backgrounds",
+  //     "Sold as a 3-pack"
+  //   ],
+
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Dimensions", value: "Device: 267 x 189 x 247 mm (10.5 x 7.4 x 9.7') Articulating mount: ⌀104 x 149.4 mm  (⌀4.1 x 5.9')" },
+  //         { label: "Mounting", value: "Articulating mount for wall, pole mount (Included)" },
+  //       ]
+  //     },
+  //     {
+  //       title: "Mechanical",
+  //       items: [
+  //         { label: "Weight", value: "Device: 1.55 kg (2.4 lb) Articulating mount: 1.3 kg (2.9 lb)" },
+  //         { label: "Enclosure Material", value: "UV-stabilized polycarbonate, aluminum alloy" },
+  //         { label: "Mounting Material", value: "Stainless steel, aluminum alloy" },
+  //         { label: "Pole Mount Diameter", value: "1—2.5' (25—63.5 mm)" },
+  //         { label: "Weatherproofing", value: "IP66" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Power Method", value: "PoE+" },
+  //         { label: "Max. Power Consumption", value: "14.3W" },
+  //         { label: "Speaker", value: "✓" },
+  //         { label: "Networking Interface", value: "(1) 100/10 MbE RJ45 port" },
+  //         { label: "LEDs System", value: "R/G/B/W" },
+  //         { label: "Buttons", value: "(1) Factory reset" },
+  //         { label: "Ambient Operating Temperature", value: "-40 to 60° C (-40 to 140° F)" },
+  //         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+  //         { label: "Certifications", value: "FCC, IC, CE" },
+  //         { label: "NDAA Compliant", value: "✓" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Management Application UniFi Protect Web", value: "✓" },
+  //         { label: "Management Application UniFi Protect iOS™ and Android™", value: "✓" }
+  //       ]
+  //     },
+  //   ],
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+  // },
+
+//Penanda Kalo Produk ini Gada di odoo dan Mas Fiqri
+  
+// {
   //   id: "UACC-G5-Enhancer",
   //   name: "G5 Pro Enhancer",
   //   category: "Camera Security",
