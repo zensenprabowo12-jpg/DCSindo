@@ -74,7 +74,7 @@ export const integrationsProducts: Product[] = [
     name: "UNAS Pro 8",
     category: "Integrations",
     subfilter: "Network Storage",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/1.unaspro8/1.p-utama-unaspro8.png",
     shortDescription:
       "2U rack-mount NAS with (8) 2.5/3.5' HDD bays and (2) M.2 NVMe SSD cache slots, delivering faster access, lower latency, and high-availability 10 Gbps networking for large-scale file storage and sharing.",
     specs: [
@@ -90,15 +90,22 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/1.unaspro8/1.p-utama-unaspro8.png",
+      "/images/integrations/1.unaspro8/2.p-dimensi-unaspro8.png",
+      "/images/integrations/1.unaspro8/3.p-spec-unaspro8.png",
+      "/images/integrations/1.unaspro8/4.p-development-unaspro8.png",
+      "/images/integrations/1.unaspro8/p-itb-unaspro8.png",
+      "/images/integrations/1.unaspro8/p-mkt0-unaspro8.png",
+      "/images/integrations/1.unaspro8/p-mkt1-unaspro8.png",
+      "/images/integrations/1.unaspro8/p-mkt2-unaspro8.png",
+      "/images/integrations/1.unaspro8/p-mkt3-unaspro8.png",
+      "/images/integrations/1.unaspro8/p-mkt4-unaspro8.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/1.unaspro8/p-mkt0-unaspro8.png",
+      "/images/integrations/1.unaspro8/p-itb-unaspro8.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -175,10 +182,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/1.unaspro8/p-itb-unaspro8.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -319,13 +323,13 @@ export const integrationsProducts: Product[] = [
     ]
   },
 
-  // Produk Kedua dari Integrations, SF Netwrok Storage
+  // Produk Kedua dari Integrations, SF Network Storage
   {
     id: "UNAS-Pro-4",
     name: "UNAS Pro 4",
     category: "Integrations",
     subfilter: "Network Storage",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/2.unaspro4/1.p-utama-unaspro4.png",
     shortDescription:
       "1U rack-mount NAS with (4) 2.5/3.5' HDD bays and (2) M.2 NVMe SSD cache slots, delivering faster access, lower latency, and high-availability 10 Gbps networking for large-scale file storage and sharing.",
     specs: [
@@ -342,16 +346,24 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/2.unaspro4/1.p-utama-unaspro4.png",
+      "/images/integrations/2.unaspro4/2.p-dimensi-unaspro4.png",
+      "/images/integrations/2.unaspro4/3.p-spec-unaspro4.png",
+      "/images/integrations/2.unaspro4/4.p-development-unaspro4.png",
+      "/images/integrations/2.unaspro4/p-itb-unaspro4.png",
+      "/images/integrations/2.unaspro4/p-mkt0-unaspro4.png",
+      "/images/integrations/2.unaspro4/p-mkt1-unaspro4.png",
+      "/images/integrations/2.unaspro4/p-mkt2-unaspro4.png",
+      "/images/integrations/2.unaspro4/p-mkt3-unaspro4.png",
+      "/images/integrations/2.unaspro4/p-mkt4-unaspro4.png",
+      "/images/integrations/2.unaspro4/p-mkt5-unaspro4.png",
     ],
 
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/2.unaspro4/p-mkt0-unaspro4.png",
+      "/images/integrations/2.unaspro4/p-itb-unaspro4.png"
     ],
 
 
@@ -428,10 +440,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/2.unaspro4/p-itb-unaspro4.png" },
     ],
 
 
@@ -579,7 +588,7 @@ export const integrationsProducts: Product[] = [
     name: "UNAS Pro",
     category: "Integrations",
     subfilter: "Network Storage",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/3.unaspro/1.p-utama-unaspro.png",
     shortDescription:
       "2U rack-mount NAS with (7) 2.5/3.5' drive bays and 10 Gbps performance designed for large-scale file storage and sharing.",
     specs: [
@@ -594,15 +603,20 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/3.unaspro/1.p-utama-unaspro.png",
+      "/images/integrations/3.unaspro/2.p-dimensi-unaspro.png",
+      "/images/integrations/3.unaspro/3.p-spec-unaspro.png",
+      "/images/integrations/3.unaspro/p-itb-unaspro.png",
+      "/images/integrations/3.unaspro/p-mkt0-unaspro.png",
+      "/images/integrations/3.unaspro/p-mkt1-unaspro.png",
+      "/images/integrations/3.unaspro/p-mkt2-unaspro.png",
+      "/images/integrations/3.unaspro/p-mkt3-unaspro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/3.unaspro/p-mkt0-unaspro.png",
+      "/images/integrations/3.unaspro/p-itb-unaspro.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -679,10 +693,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/3.unaspro/p-itb-unaspro.png" },
     ],
 
 
@@ -826,265 +837,11 @@ export const integrationsProducts: Product[] = [
 
   // Produk Keempat dari Integrations, SF Network Storage
   {
-    id: "UNAS-2-B/W",
-    name: "UNAS 2",
-    category: "Integrations",
-    subfilter: "Network Storage",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "UniFi Network Attached Storage with (2) 3.5' HDD bays, 2.5 GbE networking, USB-C connectivity, and an included PoE++ adapter, all in a compact footprint.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UNAS-2-B-W",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "UniFi Network Attached Storage with (2) 3",
-      "5' HDD bays",
-      "5 GbE networking",
-      "USB-C connectivity"
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "135 x 129 x 223.7 mm (5.3 x 5.1 x 8.8')" },
-          { label: "Storage Capacity", value: "(2) 3.5' drive bays" },
-          { label: "Network Interface", value: "(1) 2.5 GbE RJ45 (2.5G/1G/100M/10M)" },
-          { label: "Expansion Port", value: "(1) 5 Gbps USB-C" },
-          { label: "Form Factor", value: "Dekstop" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Hard Drive Capacity", value: "(2) 3.5' HDD support" },
-          { label: "USB Drive", value: "✓" },
-          { label: "Max. Power Budget for Drives", value: "52W" },
-          { label: "Max. Power Consumption", value: "60W" },
-          { label: "Power Method", value: "PoE++" },
-          { label: "Power Supply", value: "60W PoE++ adapter (Included)" },
-          { label: "Processor", value: "Quad-Core ARM® Cortex®-A57 at 1.7 GHz" },
-          { label: "Memory", value: "4 GB" },
-          { label: "Management", value: "Ethernet" },
-          { label: "RF Interface", value: "Bluetooth 4.1" },
-          { label: "Display", value: "1.47' color LCM" },
-          { label: "Weight", value: "1.3 kg (2.85 lb)" },
-          { label: "Enclosure Material", value: "Polycarbonate" },
-          { label: "LEDs System", value: "✓" },
-          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "FCC, CE, IC" },
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Application Requirements UniFi Drive", value: "Version 1.16.0 and later" },
-          { label: "Application Requirements Mobile App", value: "iOS™ version 10.28.0 and later Android™ version 10.28.3 and later" },
-          { label: "Supported File Protocols NFS", value: "✓" },
-          { label: "Supported File Protocols SMB", value: "✓" },
-          { label: "Supported features on unifi.ui.com RAID Type", value: "RAID 1" },
-          { label: "Supported features on unifi.ui.com RAID Group", value: "Single" },
-          { label: "Supported features on unifi.ui.com RAID Personal Drive & Shared Drive", value: "✓" },
-          { label: "Supported features on unifi.ui.com File Encryption", value: "✓" },
-          { label: "Supported features on unifi.ui.com Backup to Remote UNAS", value: "✓" },
-          { label: "Supported features on unifi.ui.com Backup to CIFS/SMB Server", value: "✓" },
-          { label: "Supported features on unifi.ui.com Backup to Cloud Services (Google Drive, OneDrive, Dropbox, Amazon S3, Backblaze B2, Wasabi)", value: "✓" },
-          { label: "Supported features on unifi.ui.com Snaphots", value: "✓" },
-          { label: "Supported features on unifi.ui.com Share Links", value: "✓" },
-          { label: "Supported features on unifi.ui.com Time Machine Backup", value: "✓" },
-          { label: "Supported features on unifi.ui.com Client App Support", value: "✓" },
-          { label: "Supported features on unifi.ui.com User Group", value: "✓" }
-        ]
-      },
-    ],
-
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-
-
-    // Addon/aksesori yang tersedia untuk produk ini
-    addons: [
-      {
-        id: 1,
-        name: "10G PoE++ Adapter (60W)",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "An adapter that can power UniFi PoE++ devices, reduce dependency on PoE switch power, and provide a Multi-Gigabit LAN connection.",
-        specs: [
-          "Delivers up to 60W of PoE++",
-          "Surge, peak pulse, and overcurrent protection",
-          "Contains RJ45 data input, AC cable with earth ground, and PoE++ output",
-          "LED indicator for status monitoring"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "106 x 63 x 34 mm (4.2 x 2.5 x 1.3')" },
-          { label: "Weight", value: "210 g (7.4 oz)" },
-          { label: "Output Voltage", value: "54V DC at 1.12A" },
-          { label: "Rated Voltage", value: "100-240V AC at 50/60Hz" },
-          { label: "LAN Activity Indicator", value: "—" },
-          { label: "Gigabit LAN Port", value: "✓" },
-          { label: "Remote Reset Capability", value: "—" },
-          { label: "Reset Button", value: "_" },
-          { label: "2-pair Powering", value: "Pins 1, 2, 4, 5 (+) and 3, 6, 7, 8 (-)" },
-          { label: "Clamping Protection", value: "11V Data, 60V Power" },
-          { label: "Data In / PoE", value: "RJ45 Shielded Socket" },
-          { label: "Input Current", value: "1.5A Max." },
-          { label: "Inrush Current", value: "<150A peak at 230V AC" },
-          { label: "Efficiency", value: ">88%" },
-          { label: "Switching Frequency", value: "65 kHz" },
-          { label: "Output Ripple", value: "1% Max." },
-          { label: "Line Regulation", value: "≤ 2%" },
-          { label: "Load Regulation", value: "≤ 5%" },
-          { label: "Max. PoE+ Wattage per Port by PSE", value: "60W" },
-          { label: "Max. Surge Discharge", value: "1500A (8/20 μs) power" },
-          { label: "Peak Pulse Current", value: "36A (10/1000 μs) data" },
-          { label: "Response Time", value: "<1 ns" },
-          { label: "Shunt Capacitance", value: "<5 pF data" },
-          { label: "Surge Protection", value: "Difference and common mode" },
-          { label: "Ambient Storage Temperature", value: "-30 to 70°C (-22 to 158° F)" },
-          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 95% noncondensing" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC, UL, UKCA, KC, CCC, RoHS" }
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 2,
-        name: "UniFi Patch Cable Outdoor",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Rugged, outdoor patch cable designed to function in the harshest environments.",
-        specs: [
-          "Shielded RJ45",
-          "Insulated, weatherpoof jacket",
-          "Internal foil shielding and drain wire for increased ESD damage protection",
-          "Cable Lenghth: 1 to 8 m"
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "1, 2, 3, 5, 8 m(3.3, 6.6, 9.8, 16.4, 26.3 ft)" },
-          { label: "Available Colors", value: "White, Black" },
-          { label: "Pack Options", value: "Single Unit" },
-          { label: "Supported Data Rate", value: "GbE" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Shielding RJ45" },
-          { label: "Operating Environment", value: "Outdoor" },
-          { label: "Cable Jacket Diameter", value: "6.3 mm (0.25')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "S/FTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "24 AWG" },
-          { label: "Cable Bend Radius", value: "Min. 50.4 mm ( (1.98'')" },
-          { label: "UV Resistance", value: "ASTM G 151/154" },
-          { label: "Flame Rating", value: "VW-1 (UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-40 to 80°C (-40 to 176°F)" },
-          { label: "Ambient Operating Temperature", value: "-30 to 75°C (-22 to 167°F)" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 3,
-        name: "UniFi Etherlighting Patch Cable",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
-        specs: [
-          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
-          "— 2.5 mm outer diameter for 0.15-8 m lengths",
-          "— 2.9 mm outer diameter for 12-15 m lengths",
-          "Length: 0.15 to 15 m"
-        ],
-        detailedSpecs: [
-          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
-          { label: "Available Colors", value: "White" },
-          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
-          { label: "Supported Data Rate", value: "10G" },
-          { label: "Supported PoE type", value: "Up to PoE+++" },
-          { label: "Connector", value: "(2) Translucent booted RJ45" },
-          { label: "Operating Environment", value: "Indoor" },
-          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
-          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
-          { label: "Cable Shielding Type", value: "UTP" },
-          { label: "Cable Conductor Type", value: "Stranded copper" },
-          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
-          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
-          { label: "Flame Rating", value: "FT-2(UL1581)" },
-          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
-          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
-          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
-          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
-        ],
-        productLink: "/products/sfp-module-10g"
-      },
-      {
-        id: 4,
-        name: "Enterprise 3.5' HDD, 16 TB",
-        image: "/images/dcs-box.png",
-        price: 299,
-        description: "Enterprise-grade 3.5' SATA hard drive ideal for storage-intensive UniFi camera security and NAS systems.",
-        specs: [
-          "Workload rating: 550 TB/year",
-          "Mean time between failure (MTBF): 2.5 million hours"
-        ],
-        detailedSpecs: [
-          { label: "Dimensions", value: "147 x 101.9 x 26.1 mm (5.75 x 4 x 1')" },
-          { label: "Weight", value: "720 g (1.6 lb)" },
-          { label: "Form Factor", value: "3.5-inch HDD" },
-          { label: "Capacity", value: "16 TB" },
-          { label: "Power Method", value: "5V/12V input" },
-          { label: "Management Interface", value: "SATA 6 Gb/s" },
-          { label: "Rotation Speed", value: "7200 RPM" },
-          { label: "Workload Rating", value: "550 TB/year" },
-          { label: "Mean Time Between Failure (MTBF)", value: "2,500,000 h" },
-          { label: "Ambient Operating Temperature", value: "5 to 60° C (41 to 140° F)" },
-          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "CE, FCC, IC" }
-        ],
-        productLink: "/products/mounting-kit-envr"
-      },
-    ]
-  },
-
-  // Produk Kelima dari Integrations, SF Network Storage
-  {
-    id: "UNAS-4-B/W",
+    id: "UNAS-4",
     name: "UNAS 4",
     category: "Integrations",
     subfilter: "Network Storage",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/4.unas4/1.p-utama-unas4.png",
     shortDescription:
       "UniFi Network Attached Storage with (4) 2.5/3.5' HDD bays, (2) M.2 NVMe SSD cache slots, 2.5 GbE networking, USB-C connectivity, and an included PoE+++ adapter, all in a compact footprint.",
     specs: [
@@ -1099,15 +856,24 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/4.unas4/1.p-utama-unas4.png",
+      "/images/integrations/4.unas4/2.p-dimensi-unas4.png",
+      "/images/integrations/4.unas4/3.p-spec-unas4.png",
+      "/images/integrations/4.unas4/4.p-development-unas4.png",
+      "/images/integrations/4.unas4/p-itb-unas4.png",
+      "/images/integrations/4.unas4/p-mkt0-unas4.png",
+      "/images/integrations/4.unas4/p-mkt1-unas4.png",
+      "/images/integrations/4.unas4/p-mkt2-unas4.png",
+      "/images/integrations/4.unas4/p-mkt3-unas4.png",
+      "/images/integrations/4.unas4/p-mkt4-unas4.png",
+      "/images/integrations/4.unas4/p-mkt5-unas4.png",
+      "/images/integrations/4.unas4/p-mkt6-unas4.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/4.unas4/p-mkt0-unas4.png",
+      "/images/integrations/4.unas4/p-itb-unas4.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1181,10 +947,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/4.unas4/p-itb-unas4.png" },
     ],
 
 
@@ -1335,13 +1098,272 @@ export const integrationsProducts: Product[] = [
     ]
   },
 
+  // Produk Kelima dari Integrations, SF Network Storage
+  {
+    id: "UNAS-2",
+    name: "UNAS 2",
+    category: "Integrations",
+    subfilter: "Network Storage",
+    image: "/images/integrations/5.unas2/1.p-utama-unas2.png",
+    shortDescription:
+      "UniFi Network Attached Storage with (2) 3.5' HDD bays, 2.5 GbE networking, USB-C connectivity, and an included PoE++ adapter, all in a compact footprint.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UNAS-2-B-W",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/integrations/5.unas2/1.p-utama-unas2.png",
+      "/images/integrations/5.unas2/2.p-dimensi-unas2.png",
+      "/images/integrations/5.unas2/3.p-spec-unas2.png",
+      "/images/integrations/5.unas2/p-itb-unas2.png",
+      "/images/integrations/5.unas2/p-mkt0-unas2.png",
+      "/images/integrations/5.unas2/p-mkt1-unas2.png",
+      "/images/integrations/5.unas2/p-mkt2-unas2.png",
+      "/images/integrations/5.unas2/p-mkt3-unas2.png",
+      "/images/integrations/5.unas2/p-mkt4-unas2.png",
+      "/images/integrations/5.unas2/p-mkt5-unas2.png",
+      "/images/integrations/5.unas2/p-mkt6-unas2.png",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/integrations/5.unas2/p-mkt6-unas2.png",
+      "/images/integrations/5.unas2/p-itb-unas2.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "UniFi Network Attached Storage with (2) 3",
+      "5' HDD bays",
+      "5 GbE networking",
+      "USB-C connectivity"
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "135 x 129 x 223.7 mm (5.3 x 5.1 x 8.8')" },
+          { label: "Storage Capacity", value: "(2) 3.5' drive bays" },
+          { label: "Network Interface", value: "(1) 2.5 GbE RJ45 (2.5G/1G/100M/10M)" },
+          { label: "Expansion Port", value: "(1) 5 Gbps USB-C" },
+          { label: "Form Factor", value: "Dekstop" }
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Hard Drive Capacity", value: "(2) 3.5' HDD support" },
+          { label: "USB Drive", value: "✓" },
+          { label: "Max. Power Budget for Drives", value: "52W" },
+          { label: "Max. Power Consumption", value: "60W" },
+          { label: "Power Method", value: "PoE++" },
+          { label: "Power Supply", value: "60W PoE++ adapter (Included)" },
+          { label: "Processor", value: "Quad-Core ARM® Cortex®-A57 at 1.7 GHz" },
+          { label: "Memory", value: "4 GB" },
+          { label: "Management", value: "Ethernet" },
+          { label: "RF Interface", value: "Bluetooth 4.1" },
+          { label: "Display", value: "1.47' color LCM" },
+          { label: "Weight", value: "1.3 kg (2.85 lb)" },
+          { label: "Enclosure Material", value: "Polycarbonate" },
+          { label: "LEDs System", value: "✓" },
+          { label: "Ambient Operating Temperature", value: "-5 to 40° C (23 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "FCC, CE, IC" },
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Application Requirements UniFi Drive", value: "Version 1.16.0 and later" },
+          { label: "Application Requirements Mobile App", value: "iOS™ version 10.28.0 and later Android™ version 10.28.3 and later" },
+          { label: "Supported File Protocols NFS", value: "✓" },
+          { label: "Supported File Protocols SMB", value: "✓" },
+          { label: "Supported features on unifi.ui.com RAID Type", value: "RAID 1" },
+          { label: "Supported features on unifi.ui.com RAID Group", value: "Single" },
+          { label: "Supported features on unifi.ui.com RAID Personal Drive & Shared Drive", value: "✓" },
+          { label: "Supported features on unifi.ui.com File Encryption", value: "✓" },
+          { label: "Supported features on unifi.ui.com Backup to Remote UNAS", value: "✓" },
+          { label: "Supported features on unifi.ui.com Backup to CIFS/SMB Server", value: "✓" },
+          { label: "Supported features on unifi.ui.com Backup to Cloud Services (Google Drive, OneDrive, Dropbox, Amazon S3, Backblaze B2, Wasabi)", value: "✓" },
+          { label: "Supported features on unifi.ui.com Snaphots", value: "✓" },
+          { label: "Supported features on unifi.ui.com Share Links", value: "✓" },
+          { label: "Supported features on unifi.ui.com Time Machine Backup", value: "✓" },
+          { label: "Supported features on unifi.ui.com Client App Support", value: "✓" },
+          { label: "Supported features on unifi.ui.com User Group", value: "✓" }
+        ]
+      },
+    ],
+
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/integrations/5.unas2/p-itb-unas2.png" },
+    ],
+
+
+    // Addon/aksesori yang tersedia untuk produk ini
+    addons: [
+      {
+        id: 1,
+        name: "10G PoE++ Adapter (60W)",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "An adapter that can power UniFi PoE++ devices, reduce dependency on PoE switch power, and provide a Multi-Gigabit LAN connection.",
+        specs: [
+          "Delivers up to 60W of PoE++",
+          "Surge, peak pulse, and overcurrent protection",
+          "Contains RJ45 data input, AC cable with earth ground, and PoE++ output",
+          "LED indicator for status monitoring"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "106 x 63 x 34 mm (4.2 x 2.5 x 1.3')" },
+          { label: "Weight", value: "210 g (7.4 oz)" },
+          { label: "Output Voltage", value: "54V DC at 1.12A" },
+          { label: "Rated Voltage", value: "100-240V AC at 50/60Hz" },
+          { label: "LAN Activity Indicator", value: "—" },
+          { label: "Gigabit LAN Port", value: "✓" },
+          { label: "Remote Reset Capability", value: "—" },
+          { label: "Reset Button", value: "_" },
+          { label: "2-pair Powering", value: "Pins 1, 2, 4, 5 (+) and 3, 6, 7, 8 (-)" },
+          { label: "Clamping Protection", value: "11V Data, 60V Power" },
+          { label: "Data In / PoE", value: "RJ45 Shielded Socket" },
+          { label: "Input Current", value: "1.5A Max." },
+          { label: "Inrush Current", value: "<150A peak at 230V AC" },
+          { label: "Efficiency", value: ">88%" },
+          { label: "Switching Frequency", value: "65 kHz" },
+          { label: "Output Ripple", value: "1% Max." },
+          { label: "Line Regulation", value: "≤ 2%" },
+          { label: "Load Regulation", value: "≤ 5%" },
+          { label: "Max. PoE+ Wattage per Port by PSE", value: "60W" },
+          { label: "Max. Surge Discharge", value: "1500A (8/20 μs) power" },
+          { label: "Peak Pulse Current", value: "36A (10/1000 μs) data" },
+          { label: "Response Time", value: "<1 ns" },
+          { label: "Shunt Capacitance", value: "<5 pF data" },
+          { label: "Surge Protection", value: "Difference and common mode" },
+          { label: "Ambient Storage Temperature", value: "-30 to 70°C (-22 to 158° F)" },
+          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Humidity", value: "10 to 95% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC, UL, UKCA, KC, CCC, RoHS" }
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+      {
+        id: 2,
+        name: "UniFi Patch Cable Outdoor",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Rugged, outdoor patch cable designed to function in the harshest environments.",
+        specs: [
+          "Shielded RJ45",
+          "Insulated, weatherpoof jacket",
+          "Internal foil shielding and drain wire for increased ESD damage protection",
+          "Cable Lenghth: 1 to 8 m"
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "1, 2, 3, 5, 8 m(3.3, 6.6, 9.8, 16.4, 26.3 ft)" },
+          { label: "Available Colors", value: "White, Black" },
+          { label: "Pack Options", value: "Single Unit" },
+          { label: "Supported Data Rate", value: "GbE" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Shielding RJ45" },
+          { label: "Operating Environment", value: "Outdoor" },
+          { label: "Cable Jacket Diameter", value: "6.3 mm (0.25')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "S/FTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "24 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 50.4 mm ( (1.98'')" },
+          { label: "UV Resistance", value: "ASTM G 151/154" },
+          { label: "Flame Rating", value: "VW-1 (UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "-20 to 60°C (-4 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-40 to 80°C (-40 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-30 to 75°C (-22 to 167°F)" },
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+      {
+        id: 3,
+        name: "UniFi Etherlighting Patch Cable",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Nano-thin patch cable with 10 GbE support, designed to showcase Etherlighting™ effects.",
+        specs: [
+          "Translucent booted RJ45 for optimal Etherlighting™ brightness",
+          "— 2.5 mm outer diameter for 0.15-8 m lengths",
+          "— 2.9 mm outer diameter for 12-15 m lengths",
+          "Length: 0.15 to 15 m"
+        ],
+        detailedSpecs: [
+          { label: "Available Lengths", value: "End-to-end: 0.15, 0.3, 1, 2, 3, 5, 8, 12, 15 m(0.5, 1, 3.3, 6.6, 9.8, 16.4, 26.2, 39.8, 49.2 ft)" },
+          { label: "Available Colors", value: "White" },
+          { label: "Pack Options", value: "Single Unit 24-pack (0.15 m)" },
+          { label: "Supported Data Rate", value: "10G" },
+          { label: "Supported PoE type", value: "Up to PoE+++" },
+          { label: "Connector", value: "(2) Translucent booted RJ45" },
+          { label: "Operating Environment", value: "Indoor" },
+          { label: "Cable Jacket Diameter", value: "0.15-8 m: 2.5 mm (0.1')12-15 m: 2.9 mm (0.11')" },
+          { label: "Cable Jacket Material", value: "Thermoplastic elastomer (TPE)" },
+          { label: "Cable Shielding Type", value: "UTP" },
+          { label: "Cable Conductor Type", value: "Stranded copper" },
+          { label: "Cable Conductor Wire Gage", value: "1-8 m (3-26 ft): 34 AWG12-15 m (39-49 ft): 32 AWG" },
+          { label: "Cable Bend Radius", value: "Min. 24 mm  (0.94'')" },
+          { label: "Flame Rating", value: "FT-2(UL1581)" },
+          { label: "Standars", value: "TIA/EIA-568-B.2 ISO/IEC 11801" },
+          { label: "Installion Temperature", value: "0 to 60°C (32 to 140°F)" },
+          { label: "Ambient Storage Temperature", value: "-20 to 80°C (-4 to 176°F)" },
+          { label: "Ambient Operating Temperature", value: "-10 to 75°C (14 to 167°F)" },
+        ],
+        productLink: "/products/sfp-module-10g"
+      },
+      {
+        id: 4,
+        name: "Enterprise 3.5' HDD, 16 TB",
+        image: "/images/dcs-box.png",
+        price: 299,
+        description: "Enterprise-grade 3.5' SATA hard drive ideal for storage-intensive UniFi camera security and NAS systems.",
+        specs: [
+          "Workload rating: 550 TB/year",
+          "Mean time between failure (MTBF): 2.5 million hours"
+        ],
+        detailedSpecs: [
+          { label: "Dimensions", value: "147 x 101.9 x 26.1 mm (5.75 x 4 x 1')" },
+          { label: "Weight", value: "720 g (1.6 lb)" },
+          { label: "Form Factor", value: "3.5-inch HDD" },
+          { label: "Capacity", value: "16 TB" },
+          { label: "Power Method", value: "5V/12V input" },
+          { label: "Management Interface", value: "SATA 6 Gb/s" },
+          { label: "Rotation Speed", value: "7200 RPM" },
+          { label: "Workload Rating", value: "550 TB/year" },
+          { label: "Mean Time Between Failure (MTBF)", value: "2,500,000 h" },
+          { label: "Ambient Operating Temperature", value: "5 to 60° C (41 to 140° F)" },
+          { label: "Ambient Operating Humidity", value: "5 to 90% noncondensing" },
+          { label: "NDAA Compliant", value: "✓" },
+          { label: "Certifications", value: "CE, FCC, IC" }
+        ],
+        productLink: "/products/mounting-kit-envr"
+      },
+    ]
+  },
+
   // Produk Pertama dari Integrations, SF Power Tech
   {
     id: "UPS-2U",
     name: "UniFi UPS 2U",
     category: "Integrations",
     subfilter: "Power Tech",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/5.ups2u/1.p-utama-ups2uus.png",
     shortDescription:
       "UniFi managed 1.44kVA rackmount uninterruptible power supply with 4 backup outlets, 4 surge outlets, and a field replaceable battery, 216Wh, half load (500W) runtime of 8 minutes. Supports Graceful Shutdown for UNVR and UNAS, and includes NUT compatibility for third-party devices.",
     specs: [
@@ -1357,15 +1379,22 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/5.ups2u/1.p-utama-ups2uus.png",
+      "/images/integrations/5.ups2u/2.p-dimensi-ups2uus.png",
+      "/images/integrations/5.ups2u/3.p-spec-ups2uus.png",
+      "/images/integrations/5.ups2u/4.p-development-ups2uus.png",
+      "/images/integrations/5.ups2u/p-itb-ups2uus.png",
+      "/images/integrations/5.ups2u/p-mkt0-ups2uus.png",
+      "/images/integrations/5.ups2u/p-mkt1-ups2uus.png",
+      "/images/integrations/5.ups2u/p-mkt2-ups2uus.png",
+      "/images/integrations/5.ups2u/p-mkt3-ups2uus.png",
+      "/images/integrations/5.ups2u/p-mkt4-ups2uus.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/5.ups2u/p-mkt0-ups2uus.png",
+      "/images/integrations/5.ups2u/p-itb-ups2uus.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1426,10 +1455,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/5.ups2u/p-itb-ups2uus.png" },
     ],
   },
 
@@ -1439,7 +1465,7 @@ export const integrationsProducts: Product[] = [
     name: "UniFi UPS Tower",
     category: "Integrations",
     subfilter: "Power Tech",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/6.upstower/1.p-utama-upstowerus.png",
     shortDescription:
       "UniFi managed 1kVA uninterruptible power supply with 5 backup outlets 5 surge outlets and hot swappable battery, 108Wh, half load (300W) runtime of 7 minutes. Supports Graceful Shutdown for UNVR and UNAS, and includes NUT compatibility for third-party devices.",
     specs: [
@@ -1454,15 +1480,22 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UniFi-UPS-Tower.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/6.upstower/1.p-utama-upstowerus.png",
+      "/images/integrations/6.upstower/2.p-dimensi-upstowerus.png",
+      "/images/integrations/6.upstower/3.p-spec-upstowerus.png",
+      "/images/integrations/6.upstower/4.p-development-upstowerus.png",
+      "/images/integrations/6.upstower/p-itb-upstowerus.png",
+      "/images/integrations/6.upstower/p-mkt0-upstowerus.png",
+      "/images/integrations/6.upstower/p-mkt1-upstowerus.png",
+      "/images/integrations/6.upstower/p-mkt2-upstowerus.png",
+      "/images/integrations/6.upstower/p-mkt3-upstowerus.png",
+      "/images/integrations/6.upstower/p-mkt4-upstowerus.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/6.upstower/p-itb-upstowerus.png",
+      "/images/integrations/6.upstower/4.p-development-upstowerus.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1524,10 +1557,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/6.upstower/p-itb-upstowerus.png" },
     ],
   },
 
@@ -1537,7 +1567,7 @@ export const integrationsProducts: Product[] = [
     name: "UPS PoE Switch ",
     category: "Integrations",
     subfilter: "Power Tech",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/7.uswmissioncritical/1.p-utama-uswmissioncritical.png",
     shortDescription:
       "A switch with an integrated 368Wh lithium-ion battery capable of providing uninterruptible PoE to 8 devices.",
     specs: [
@@ -1552,15 +1582,19 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/7.uswmissioncritical/1.p-utama-uswmissioncritical.png",
+      "/images/integrations/7.uswmissioncritical/2.p-dimensi-uswmissioncritical.png",
+      "/images/integrations/7.uswmissioncritical/3.p-spec-uswmissioncritical.png",
+      "/images/integrations/7.uswmissioncritical/4.p-development-uswmissioncritical.png",
+      "/images/integrations/7.uswmissioncritical/p-itb-uswmissioncritical.png",
+      "/images/integrations/7.uswmissioncritical/p-mkt0-uswmissioncritical.png",
+      "/images/integrations/7.uswmissioncritical/p-mkt1-uswmissioncritical.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/7.uswmissioncritical/p-mkt1-uswmissioncritical.png",
+      "/images/integrations/7.uswmissioncritical/p-itb-uswmissioncritical.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1661,10 +1695,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/7.uswmissioncritical/p-itb-uswmissioncritical.png" },
     ],
 
     addons: [
@@ -1862,7 +1893,7 @@ export const integrationsProducts: Product[] = [
     name: "Redundant Power",
     category: "Integrations",
     subfilter: "Power Tech",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/8.usprps/1.p-utama-usprps.png",
     shortDescription:
       "950W redundant power supply for rack-mounted UniFi devices.",
     specs: [
@@ -1877,15 +1908,22 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/8.usprps/1.p-utama-usprps.png",
+      "/images/integrations/8.usprps/2.p-dimensi-usprps.png",
+      "/images/integrations/8.usprps/3.p-spec-usprps.png",
+      "/images/integrations/8.usprps/4.p-development-usprps.png",
+      "/images/integrations/8.usprps/p-itb-usprps.png",
+      "/images/integrations/8.usprps/p-mkt0-usprps.png",
+      "/images/integrations/8.usprps/p-mkt1-usprps.png",
+      "/images/integrations/8.usprps/p-mkt2-usprps.png",
+      "/images/integrations/8.usprps/p-mkt3-usprps.png",
+      "/images/integrations/8.usprps/p-mkt4-usprps.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/8.usprps/p-mkt0-usprps.png",
+      "/images/integrations/8.usprps/p-itb-usprps.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1933,10 +1971,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/8.usprps/p-itb-usprps.png" },
     ],
   },
 
@@ -1946,7 +1981,7 @@ export const integrationsProducts: Product[] = [
     name: "Power Distribution Pro",
     category: "Integrations",
     subfilter: "Power Tech",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/9.usppdupro/1.p-utama-usppdupro.png",
     shortDescription:
       "Designed to supply power to an entire rack-mounted UniFi system and remotely manage each connection.",
     specs: [
@@ -1961,15 +1996,22 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/9.usppdupro/1.p-utama-usppdupro.png",
+      "/images/integrations/9.usppdupro/2.p-dimensi-usppdupro.png",
+      "/images/integrations/9.usppdupro/3.p-spec-usppdupro.png",
+      "/images/integrations/9.usppdupro/4.p-developent-usppdupro.png",
+      "/images/integrations/9.usppdupro/p-itb-usppdupro.png",
+      "/images/integrations/9.usppdupro/p-mkt0-usppdupro.png",
+      "/images/integrations/9.usppdupro/p-mkt1-usppdupro.png",
+      "/images/integrations/9.usppdupro/p-mkt2-usppdupro.png",
+      "/images/integrations/9.usppdupro/p-mkt3-usppdupro.png",
+      "/images/integrations/9.usppdupro/p-mkt4-usppdupro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/9.usppdupro/p-mkt0-usppdupro.png",
+      "/images/integrations/9.usppdupro/p-itb-usppdupro.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2012,97 +2054,94 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/9.usppdupro/p-itb-usppdupro.png" },
     ],
   },
 
   // Produk Keenam dari Integrations, SF Power Tech
-  {
-    id: "USP-PDU-HD",
-    name: "Power Distribution Hi-Density",
-    category: "Integrations",
-    subfilter: "Power Tech",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Power distribution unit designed to support large, rack-mounted UniFi hardware deployments.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "USP-PDU-HD",
+  //   name: "Power Distribution Hi-Density",
+  //   category: "Integrations",
+  //   subfilter: "Power Tech",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "Power distribution unit designed to support large, rack-mounted UniFi hardware deployments.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "USP-PDU-HD",
+  //   // SKU produk
+  //   sku: "USP-PDU-HD",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Gateway-Fiber.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/products/Product-Gateway-Fiber.png",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "(24) Remote-reset outlets",
-      "(4) USB-C ports",
-      "3 m power cord with NEMA L5-30 plug",
-      "1.3' auto-rotating LCM touchscreen",
-      "Compatible with 36U racks and taller"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "(24) Remote-reset outlets",
+  //     "(4) USB-C ports",
+  //     "3 m power cord with NEMA L5-30 plug",
+  //     "1.3' auto-rotating LCM touchscreen",
+  //     "Compatible with 36U racks and taller"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Mechanical",
-        items: [
-          { label: "Dimensions", value: "1485 x 55 x 56 mm (58.5 x 2.17 x 2.2')" },
-          { label: "Weight", value: "6.3 kg (13.9 lb)" },
-          { label: "Enclosure Material", value: "SGCC steel" }
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Management", value: "Ethernet" },
-          { label: "Networking Interface", value: "(1) 10/100 MbE RJ45 port (3) GbE RJ45 ports for network redundancy" },
-          { label: "Power Method", value: "100-125V AC, 30A Max. (Derated to 24A), 50/60 Hz (NEMA L5-30P)" },
-          { label: "Power Output", value: "(24) Power control outlets: Per Bank (Bank1: port 1 to 12, Bank2: port 17 to 28): Rating output current: 12A at 125V AC (1500W) Max. output current: 15A at 125V AC (1875W) Total: Rating output current: 24A at 125V AC (3000W) Max. output current: 30A at 125V AC (3750W) (4) USB type C ports:5VDC 2A per port, total 20W Max. power" },
-          { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
-          { label: "Display", value: "1.3' touchscreen" },
-          { label: "Buttons", value: "(1) Factory reset (1) Circuit breaker" },
-          { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
-          { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
-          { label: "NDAA Compliant", value: "✓" },
-          { label: "Certifications", value: "FCC, IC" }
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Application Requirements Mobile Apps", value: "UniFi iOS™ and 10.11.0 and later Android™ 10.11.0 and later" },
-          { label: "Application Requirements UniFi Netwrok", value: "Version 8.0.24 and later" }
-        ]
-      }
-    ],
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Mechanical",
+  //       items: [
+  //         { label: "Dimensions", value: "1485 x 55 x 56 mm (58.5 x 2.17 x 2.2')" },
+  //         { label: "Weight", value: "6.3 kg (13.9 lb)" },
+  //         { label: "Enclosure Material", value: "SGCC steel" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Hardware",
+  //       items: [
+  //         { label: "Management", value: "Ethernet" },
+  //         { label: "Networking Interface", value: "(1) 10/100 MbE RJ45 port (3) GbE RJ45 ports for network redundancy" },
+  //         { label: "Power Method", value: "100-125V AC, 30A Max. (Derated to 24A), 50/60 Hz (NEMA L5-30P)" },
+  //         { label: "Power Output", value: "(24) Power control outlets: Per Bank (Bank1: port 1 to 12, Bank2: port 17 to 28): Rating output current: 12A at 125V AC (1500W) Max. output current: 15A at 125V AC (1875W) Total: Rating output current: 24A at 125V AC (3000W) Max. output current: 30A at 125V AC (3750W) (4) USB type C ports:5VDC 2A per port, total 20W Max. power" },
+  //         { label: "ESD/EMP Protection", value: "Air: ± 8kV, contact: ± 4kV" },
+  //         { label: "Display", value: "1.3' touchscreen" },
+  //         { label: "Buttons", value: "(1) Factory reset (1) Circuit breaker" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 40° C (32 to 104° F)" },
+  //         { label: "Ambient Operating Humidity", value: "10 to 90% noncondensing" },
+  //         { label: "NDAA Compliant", value: "✓" },
+  //         { label: "Certifications", value: "FCC, IC" }
+  //       ]
+  //     },
+  //     {
+  //       title: "Software",
+  //       items: [
+  //         { label: "Application Requirements Mobile Apps", value: "UniFi iOS™ and 10.11.0 and later Android™ 10.11.0 and later" },
+  //         { label: "Application Requirements UniFi Netwrok", value: "Version 8.0.24 and later" }
+  //       ]
+  //     }
+  //   ],
 
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     { name: "Device", image: "/images/dcs-box.png" },
+  //     { name: "Mounting Kit", image: "/images/dcs-box.png" },
+  //     { name: "Power Cable", image: "/images/dcs-box.png" },
+  //     { name: "Quick Start", image: "/images/dcs-box.png" }
+  //   ],
+  // },
 
   // Produk Pertama dari Integrations, SF LTE/5G
   {
@@ -2110,7 +2149,7 @@ export const integrationsProducts: Product[] = [
     name: "UniFi 5G Max",
     category: "Integrations",
     subfilter: "LTE/5G",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/11.u5gmax/1.p-utama-u5gmax.png",
     shortDescription:
       "A high-performance 5G (3.4 Gbps) modem for any UniFi deployment. Instantly adopt through any UniFi PoE port, it delivers automatic setup, dual SIM/eSIM, and seamless failover. Certified with AT&T, T-Mobile*, and Verizon**.",
     specs: [
@@ -2126,15 +2165,23 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/11.u5gmax/1.p-utama-u5gmax.png",
+      "/images/integrations/11.u5gmax/2.p-dimensi-u5gmax.png",
+      "/images/integrations/11.u5gmax/3.p-spec-u5gmax.png",
+      "/images/integrations/11.u5gmax/4.p-development-u5gmax.png",
+      "/images/integrations/11.u5gmax/p-itb-u5gmax.png",
+      "/images/integrations/11.u5gmax/p-mkt0-u5gmax.png",
+      "/images/integrations/11.u5gmax/p-mkt1-u5gmax.png",
+      "/images/integrations/11.u5gmax/p-mkt2-u5gmax.png",
+      "/images/integrations/11.u5gmax/p-mkt3-u5gmax.png",
+      "/images/integrations/11.u5gmax/p-mkt4-u5gmax.png",
+      "/images/integrations/11.u5gmax/p-mkt5-u5gmax.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/11.u5gmax/p-mkt5-u5gmax.png",
+      "/images/integrations/11.u5gmax/p-itb-u5gmax.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2201,10 +2248,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/11.u5gmax/p-itb-u5gmax.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2368,7 +2412,7 @@ export const integrationsProducts: Product[] = [
     name: "UniFi 5G Max Outdoor",
     category: "Integrations",
     subfilter: "LTE/5G",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/12.u5gmaxoutdoor/1.p-utama-u5gmaxoutdoor.png",
     shortDescription:
       "A full-performance 5G (3.4 Gbps) modem for UniFi consoles and Cloud Gateways, certified with AT&T, T-Mobile*, and Verizon**, designed for outdoor use with directional antennas, remote SIM***, and dual SIM for seamless failover.",
     specs: [
@@ -2383,15 +2427,24 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UniFi-5G-Max-Outdoor.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/12.u5gmaxoutdoor/1.p-utama-u5gmaxoutdoor.png",
+      "/images/integrations/12.u5gmaxoutdoor/2.p-dimensi-u5gmaxoutdoor.png",
+      "/images/integrations/12.u5gmaxoutdoor/3.p-spec-u5gmaxoutdoor.png",
+      "/images/integrations/12.u5gmaxoutdoor/4.p-development-u5gmaxoutdoor.png",
+      "/images/integrations/12.u5gmaxoutdoor/p-itb-u5gmaxoutdoor.png",
+      "/images/integrations/12.u5gmaxoutdoor/p-mkt0-u5gmaxoutdoor.png",
+      "/images/integrations/12.u5gmaxoutdoor/p-mkt1-u5gmaxoutdoor.png",
+      "/images/integrations/12.u5gmaxoutdoor/p-mkt2-u5gmaxoutdoor.png",
+      "/images/integrations/12.u5gmaxoutdoor/p-mkt3-u5gmaxoutdoor.png",
+      "/images/integrations/12.u5gmaxoutdoor/p-mkt4-u5gmaxoutdoor.png",
+      "/images/integrations/12.u5gmaxoutdoor/p-mkt5-u5gmaxoutdoor.png",
+      "/images/integrations/12.u5gmaxoutdoor/p-mkt6-u5gmaxoutdoor.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/12.u5gmaxoutdoor/p-mkt6-u5gmaxoutdoor.png",
+      "/images/integrations/12.u5gmaxoutdoor/p-itb-u5gmaxoutdoor.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2453,10 +2506,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/12.u5gmaxoutdoor/p-itb-u5gmaxoutdoor.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2625,7 +2675,7 @@ export const integrationsProducts: Product[] = [
     name: "Mobile Router Industrial",
     category: "Integrations",
     subfilter: "LTE/5G",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/13.umrindustrial/1.p-utama-umrindustrial.png",
     shortDescription:
       "Compact, ruggedized, and carrier unlocked LTE Cat 4 mobile WiFi router designed for indoor/outdoor IoT applications.",
     specs: [
@@ -2640,15 +2690,23 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/13.umrindustrial/1.p-utama-umrindustrial.png",
+      "/images/integrations/13.umrindustrial/2.p-dimensi-umrindustrial.png",
+      "/images/integrations/13.umrindustrial/3.p-spec-umrindustrial.png",
+      "/images/integrations/13.umrindustrial/4.p-development-umrindustrial.png",
+      "/images/integrations/13.umrindustrial/p-itb-umrindustrial.png",
+      "/images/integrations/13.umrindustrial/p-mkt0-umrindustrial.png",
+      "/images/integrations/13.umrindustrial/p-mkt1-umrindustrial.png",
+      "/images/integrations/13.umrindustrial/p-mkt2-umrindustrial.png",
+      "/images/integrations/13.umrindustrial/p-mkt3-umrindustrial.png",
+      "/images/integrations/13.umrindustrial/p-mkt4-umrindustrial.png",
+      "/images/integrations/13.umrindustrial/p-mkt5-umrindustrial.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/13.umrindustrial/p-mkt5-umrindustrial.png",
+      "/images/integrations/13.umrindustrial/p-itb-umrindustrial.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2737,10 +2795,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/13.umrindustrial/p-itb-umrindustrial.png" },
     ],
   },
 
@@ -2750,7 +2805,7 @@ export const integrationsProducts: Product[] = [
     name: "Mobile Router Ultra",
     category: "Integrations",
     subfilter: "LTE/5G",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/14.umrultra/1.p-utama-umrultraus.png",
     shortDescription:
       "Ultra-compact managed LTE mobile router for IoT applications with integrated LTE, wired WAN, WiFi, automatic failover, and DC power input support.",
     specs: [
@@ -2765,15 +2820,24 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/14.umrultra/1.p-utama-umrultraus.png",
+      "/images/integrations/14.umrultra/2.p-dimensi-umrultraus.png",
+      "/images/integrations/14.umrultra/3.p-spec-umrultraus.png",
+      "/images/integrations/14.umrultra/4.p-development-umrultraus.png",
+      "/images/integrations/14.umrultra/p-itb-umrultraus.png",
+      "/images/integrations/14.umrultra/p-mkt0-umrultraus.png",
+      "/images/integrations/14.umrultra/p-mkt1-umrultraus.png",
+      "/images/integrations/14.umrultra/p-mkt2-umrultraus.png",
+      "/images/integrations/14.umrultra/p-mkt3-umrultraus.png",
+      "/images/integrations/14.umrultra/p-mkt4-umrultraus.png",
+      "/images/integrations/14.umrultra/p-mkt5-umrultraus.png",
+      "/images/integrations/14.umrultra/p-mkt6-umrultraus.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/14.umrultra/p-mkt5-umrultraus.png",
+      "/images/integrations/14.umrultra/p-itb-umrultraus.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2856,10 +2920,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/14.umrultra/p-itb-umrultraus.png" },
     ],
   },
 
@@ -2869,7 +2930,7 @@ export const integrationsProducts: Product[] = [
     name: "Mobile Router",
     category: "Integrations",
     subfilter: "LTE/5G",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/15.umr/1.p-utama-umrus.png",
     shortDescription:
       "Managed mobile WiFi router that brings plug-and-play connectivity to any environment. Use the pre-installed AT&T nano-SIM with three data plan options for LTE data, or bring your own AT&T nano-SIM.",
     specs: [
@@ -2884,15 +2945,23 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/15.umr/1.p-utama-umrus.png",
+      "/images/integrations/15.umr/2.p-dimensi-umrus.png",
+      "/images/integrations/15.umr/3.p-spec-umrus.png",
+      "/images/integrations/15.umr/4.p-developmen-umrus.png",
+      "/images/integrations/15.umr/p-itb-umrus.png",
+      "/images/integrations/15.umr/p-mkt0-umrus.png",
+      "/images/integrations/15.umr/p-mkt1-umrus.png",
+      "/images/integrations/15.umr/p-mkt2-umrus.png",
+      "/images/integrations/15.umr/p-mkt3-umrus.png",
+      "/images/integrations/15.umr/p-mkt4-umrus.png",
+      "/images/integrations/15.umr/p-mkt5-umrus.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/15.umr/p-mkt4-umrus.png",
+      "/images/integrations/15.umr/p-itb-umrus.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -2979,10 +3048,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/15.umr/p-itb-umrus.png" },
     ],
   },
 
@@ -2992,7 +3058,7 @@ export const integrationsProducts: Product[] = [
     name: "LTE Backup",
     category: "Integrations",
     subfilter: "LTE/5G",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/16.ulte/1.p-utama-ulte.png",
     shortDescription:
       "Seamless internet failover for UniFi gateways. Includes an AT&T SIM and data plan for plug-and-play deployment.",
     specs: [
@@ -3007,15 +3073,20 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/16.ulte/1.p-utama-ulte.png",
+      "/images/integrations/16.ulte/2.p-dimensi-ulte.png",
+      "/images/integrations/16.ulte/3.p-spec-ulte.png",
+      "/images/integrations/16.ulte/4.p-development-ulte.png",
+      "/images/integrations/16.ulte/p-mkt0-ulte.png",
+      "/images/integrations/16.ulte/p-mkt1-ulte.png",
+      "/images/integrations/16.ulte/p-mkt2-ulte.png",
+      "/images/integrations/16.ulte/p-mkt3-ulte.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/16.ulte/p-mkt3-ulte.png",
+      "/images/integrations/16.ulte/4.p-development-ulte.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3072,6 +3143,10 @@ export const integrationsProducts: Product[] = [
         ]
       }
     ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/integrations/16.ulte/p-mkt0-ulte.png" },
+    ],
   },
 
   // Produk Ketujuh dari Integrations, SF LTE/5G
@@ -3080,7 +3155,7 @@ export const integrationsProducts: Product[] = [
     name: "LTE Backup Pro",
     category: "Integrations",
     subfilter: "LTE/5G",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/17.ultebackuppro/1.p-utama-ultebackuppro.png",
     shortDescription:
       "Seamless internet failover for UniFi gateways. Bring your own AT&T nano-SIM for LTE data.",
     specs: [
@@ -3095,15 +3170,23 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/17.ultebackuppro/1.p-utama-ultebackuppro.png",
+      "/images/integrations/17.ultebackuppro/2.p-dimensi-ultebackuppro.png",
+      "/images/integrations/17.ultebackuppro/3.p-spec-ultebackuppro.png",
+      "/images/integrations/17.ultebackuppro/4.p-development-ultebackuppro.png",
+      "/images/integrations/17.ultebackuppro/p-mkt0-ultebackuppro.png",
+      "/images/integrations/17.ultebackuppro/p-mkt1-ultebackuppro.png",
+      "/images/integrations/17.ultebackuppro/p-mkt2-ultebackuppro.png",
+      "/images/integrations/17.ultebackuppro/p-mkt3-ultebackuppro.png",
+      "/images/integrations/17.ultebackuppro/p-mkt4-ultebackuppro.png",
+      "/images/integrations/17.ultebackuppro/p-mkt5-ultebackuppro.png",
+      "/images/integrations/17.ultebackuppro/p-mkt6-ultebackuppro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/17.ultebackuppro/p-mkt6-ultebackuppro.png",
+      "/images/integrations/17.ultebackuppro/4.p-development-ultebackuppro.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3152,6 +3235,10 @@ export const integrationsProducts: Product[] = [
         ]
       }
     ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/integrations/17.ultebackuppro/p-mkt0-ultebackuppro.png" },
+    ],
   },
 
   // Produk Pertama dari Integrations, SF Managed VolP
@@ -3160,7 +3247,7 @@ export const integrationsProducts: Product[] = [
     name: "G3 Touch Enterprise",
     category: "Integrations",
     subfilter: "Managed VoIP",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/18.utpg3touchenterprise/1.p-utama-utpg3touchenterprise.png",
     shortDescription:
       "Next-generation premium desktop smartphone for UniFi Talk, featuring a 7' touch display and seamless integration with UniFi applications.",
     specs: [
@@ -3175,15 +3262,21 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/18.utpg3touchenterprise/1.p-utama-utpg3touchenterprise.png",
+      "/images/integrations/18.utpg3touchenterprise/2.p-dimensi-utpg3touchenterprise.png",
+      "/images/integrations/18.utpg3touchenterprise/3.p-spec-utpg3touchenterprise.png",
+      "/images/integrations/18.utpg3touchenterprise/4.p-development-utpg3touchenterprise.png",
+      "/images/integrations/18.utpg3touchenterprise/p-mkt0-utpg3touchenterprise.png",
+      "/images/integrations/18.utpg3touchenterprise/p-mkt1-utpg3touchenterprise.png",
+      "/images/integrations/18.utpg3touchenterprise/p-mkt2-utpg3touchenterprise.png",
+      "/images/integrations/18.utpg3touchenterprise/p-mkt3-utpg3touchenterprise.png",
+      "/images/integrations/18.utpg3touchenterprise/p-mkt4-utpg3touchenterprise.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/18.utpg3touchenterprise/p-mkt3-utpg3touchenterprise.png",
+      "/images/integrations/18.utpg3touchenterprise/4.p-development-utpg3touchenterprise.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3244,6 +3337,10 @@ export const integrationsProducts: Product[] = [
         ]
       },
     ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/integrations/18.utpg3touchenterprise/p-mkt0-utpg3touchenterprise.png" },
+    ],
 
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
@@ -3301,7 +3398,7 @@ export const integrationsProducts: Product[] = [
     name: "G3 Touch Pro",
     category: "Integrations",
     subfilter: "Managed VoIP",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/19.utpg3touchpro/1.p-utama-utpg3touchpro.png",
     shortDescription:
       "Next-generation desktop smartphone for UniFi Talk, featuring a 5' touch display and seamless integration with UniFi applications.",
     specs: [
@@ -3316,15 +3413,21 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/19.utpg3touchpro/1.p-utama-utpg3touchpro.png",
+      "/images/integrations/19.utpg3touchpro/2.p-dimensi-utpg3touchpro.png",
+      "/images/integrations/19.utpg3touchpro/3.p-spec-utpg3touchpro.png",
+      "/images/integrations/19.utpg3touchpro/4.p-development-utpg3touchpro.png",
+      "/images/integrations/19.utpg3touchpro/p-mkt0-utpg3touchpro.png",
+      "/images/integrations/19.utpg3touchpro/p-mkt1-utpg3touchpro.png",
+      "/images/integrations/19.utpg3touchpro/p-mkt2-utpg3touchpro.png",
+      "/images/integrations/19.utpg3touchpro/p-mkt3-utpg3touchpro.png",
+      "/images/integrations/19.utpg3touchpro/p-mkt4-utpg3touchpro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/19.utpg3touchpro/p-mkt3-utpg3touchpro.png",
+      "/images/integrations/19.utpg3touchpro/4.p-development-utpg3touchpro.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3382,6 +3485,10 @@ export const integrationsProducts: Product[] = [
         ]
       },
     ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/integrations/19.utpg3touchpro/p-mkt0-utpg3touchpro.png" },
+    ],
   },
 
   // Produk Ketiga dari Integrations, SF Managed VolP
@@ -3390,7 +3497,7 @@ export const integrationsProducts: Product[] = [
     name: "G3 Touch Wall",
     category: "Integrations",
     subfilter: "Managed VoIP",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/20.utpg3touchwall/1.p-utama-utpg3touchwall.png",
     shortDescription:
       "Next-generation wall-mountable smartphone for UniFi Talk, featuring a 7' touch display and seamless integration with UniFi applications.",
     specs: [
@@ -3405,15 +3512,23 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/20.utpg3touchwall/1.p-utama-utpg3touchwall.png",
+      "/images/integrations/20.utpg3touchwall/2.p-dimensi-utpg3touchwall.png",
+      "/images/integrations/20.utpg3touchwall/3.p-spec-utpg3touchwall.png",
+      "/images/integrations/20.utpg3touchwall/4.p-development-utpg3touchwall.png",
+      "/images/integrations/20.utpg3touchwall/p-itb-utpg3touchwall.png",
+      "/images/integrations/20.utpg3touchwall/p-mkt0-utpg3touchwall.png",
+      "/images/integrations/20.utpg3touchwall/p-mkt1-utpg3touchwall.png",
+      "/images/integrations/20.utpg3touchwall/p-mkt2-utpg3touchwall.png",
+      "/images/integrations/20.utpg3touchwall/p-mkt3-utpg3touchwall.png",
+      "/images/integrations/20.utpg3touchwall/p-mkt4-utpg3touchwall.png",
+      "/images/integrations/20.utpg3touchwall/p-mkt5-utpg3touchwall.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/20.utpg3touchwall/p-mkt0-utpg3touchwall.png",
+      "/images/integrations/20.utpg3touchwall/p-itb-utpg3touchwall.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3477,20 +3592,17 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/20.utpg3touchwall/p-itb-utpg3touchwall.png" },
     ],
   },
 
   // Produk Keempat dari Integrations, SF Managed VolP
   {
-    id: "UTP-TouchMax-B/W",
+    id: "UTP-TouchMax",
     name: "G2 Touch Max",
     category: "Integrations",
-    subfilter: "",
-    image: "/images/camera.jpg",
+    subfilter: "Managed VoIP",
+    image: "/images/integrations/21.utptouchmax/1.p-utama-utptouchmaxus.png",
     shortDescription:
       "Premium desktop smartphone that delivers the ultimate user experience.",
     specs: [
@@ -3505,15 +3617,27 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-G2-Touch-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/21.utptouchmax/1.p-utama-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/2.p-dimensi-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/3.p-spec-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/4.p-development-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/p-mkt0-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/p-mkt1-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/p-mkt2-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/p-mkt3-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/p-mkt4-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/p-mkt5-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/p-mkt6-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/p-mkt7-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/p-mkt8-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/p-mkt9-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/p-mkt10-utptouchmaxus.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/21.utptouchmax/p-mkt0-utptouchmaxus.png",
+      "/images/integrations/21.utptouchmax/4.p-development-utptouchmaxus.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3574,15 +3698,19 @@ export const integrationsProducts: Product[] = [
         ]
       },
     ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/integrations/21.utptouchmax/p-mkt1-utptouchmaxus.png" },
+    ],
   },
 
   // Produk Kelima dari Integrations, SF Managed VolP
   {
-    id: "UTP-Touch-B/W",
+    id: "UTP-Touch",
     name: "G2 Touch",
     category: "Integrations",
     subfilter: "Managed VoIP",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/22.utptouch/1.p-utama-g2touch.png",
     shortDescription:
       "Versatile desktop smartphone that eliminates the learning curve.",
     specs: [
@@ -3597,15 +3725,23 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/22.utptouch/1.p-utama-g2touch.png",
+      "/images/integrations/22.utptouch/2.p-dimensi-g2touch.png",
+      "/images/integrations/22.utptouch/3.p-spec-g2touch.png",
+      "/images/integrations/22.utptouch/p-mkt0-g2touch.png",
+      "/images/integrations/22.utptouch/p-mkt1-g2touch.png",
+      "/images/integrations/22.utptouch/p-mkt2-g2touch.png",
+      "/images/integrations/22.utptouch/p-mkt3-g2touch.png",
+      "/images/integrations/22.utptouch/p-mkt4-g2touch.png",
+      "/images/integrations/22.utptouch/p-mkt5-g2touch.png",
+      "/images/integrations/22.utptouch/p-mkt6-g2touch.png",
+      "/images/integrations/22.utptouch/p-mkt8-g2touch.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/22.utptouch/p-mkt0-g2touch.png",
+      "/images/integrations/22.utptouch/p-mkt3-g2touch.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3663,6 +3799,10 @@ export const integrationsProducts: Product[] = [
         ]
       },
     ],
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/integrations/22.utptouch/p-mkt1-g2touch.png" },
+    ],
   },
 
   // Produk Keenam dari Integrations, SF Managed VolP
@@ -3671,7 +3811,7 @@ export const integrationsProducts: Product[] = [
     name: "G3 Wireless Handset",
     category: "Integrations",
     subfilter: "Managed VoIP",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/23.utg3handset/1.p-utama-utg3handset.png",
     shortDescription:
       "Wireless handset which supports clear, high-quality audio for G3 Touch Phones.",
     specs: [
@@ -3686,15 +3826,21 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/23.utg3handset/1.p-utama-utg3handset.png",
+      "/images/integrations/23.utg3handset/2.p-dimensi-utg3handset.png",
+      "/images/integrations/23.utg3handset/3.p-spec-utg3handset.png",
+      "/images/integrations/23.utg3handset/p-itb-utg3handset.png",
+      "/images/integrations/23.utg3handset/p-mkt0-utg3handset.png",
+      "/images/integrations/23.utg3handset/p-mkt1-utg3handset.png",
+      "/images/integrations/23.utg3handset/p-mkt2-utg3handset.png",
+      "/images/integrations/23.utg3handset/p-mkt3-utg3handset.png",
+      "/images/integrations/23.utg3handset/p-mkt4-utg3handset.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/23.utg3handset/p-mkt2-utg3handset.png",
+      "/images/integrations/23.utg3handset/p-itb-utg3handset.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3740,10 +3886,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/23.utg3handset/p-itb-utg3handset.png" },
     ],
   },
 
@@ -3753,7 +3896,7 @@ export const integrationsProducts: Product[] = [
     name: "Analog Telephone Adapter",
     category: "Integrations",
     subfilter: "Managed VoIP",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/24.utata/1.p-utama-utata.png",
     shortDescription:
       "Easy-to-deploy adapter for managing analog telephones and fax machines with UniFi Talk.",
     specs: [
@@ -3768,15 +3911,22 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/24.utata/1.p-utama-utata.png",
+      "/images/integrations/24.utata/2.p-dimensi-utata.png",
+      "/images/integrations/24.utata/3.p-spec-utata.png",
+      "/images/integrations/24.utata/4.p-development-utata.png",
+      "/images/integrations/24.utata/p-itb-utata.png",
+      "/images/integrations/24.utata/p-mkt0-utata.png",
+      "/images/integrations/24.utata/p-mkt1-utata.png",
+      "/images/integrations/24.utata/p-mkt2-utata.png",
+      "/images/integrations/24.utata/p-mkt3-utata.png",
+      "/images/integrations/24.utata/p-mkt4-utata.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/24.utata/p-mkt3-utata.png",
+      "/images/integrations/24.utata/p-itb-utata.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3833,10 +3983,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/24.utata/p-itb-utata.png" },
     ],
   },
 
@@ -3846,7 +3993,7 @@ export const integrationsProducts: Product[] = [
     name: "EV Station Pro",
     category: "Integrations",
     subfilter: "Premium IoT",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/25.ucevstationpro/1.p-utama-ucevstationpro.png",
     shortDescription:
       "Weatherproof, 11 kW Level 2 electric vehicle charging station with an ultra-bright 10.1' touch display, flexible access control, and payment terminal accessory support.",
     specs: [
@@ -3862,15 +4009,22 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/25.ucevstationpro/1.p-utama-ucevstationpro.png",
+      "/images/integrations/25.ucevstationpro/2.p-dimensi-ucevstationpro.png",
+      "/images/integrations/25.ucevstationpro/3.p-development-ucevstationpro.png",
+      "/images/integrations/25.ucevstationpro/p-itb-ucevstationpro.png",
+      "/images/integrations/25.ucevstationpro/p-mkt0-ucevstationpro.png",
+      "/images/integrations/25.ucevstationpro/p-mkt1-ucevstationpro.png",
+      "/images/integrations/25.ucevstationpro/p-mkt2-ucevstationpro.png",
+      "/images/integrations/25.ucevstationpro/p-mkt3-ucevstationpro.png",
+      "/images/integrations/25.ucevstationpro/p-mkt4-ucevstationpro.png",
+      "/images/integrations/25.ucevstationpro/p-mkt5-ucevstationpro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/25.ucevstationpro/p-mkt3-ucevstationpro.png",
+      "/images/integrations/25.ucevstationpro/p-itb-ucevstationpro.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -3930,10 +4084,7 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/25.ucevstationpro/p-itb-ucevstationpro.png" },
     ],
   },
 
@@ -3943,7 +4094,7 @@ export const integrationsProducts: Product[] = [
     name: "EV Station Lite",
     category: "Integrations",
     subfilter: "Premium IoT",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/26.ucevstationlite/1.p-utama-ucevstationlite.png",
     shortDescription:
       "Weatherproof, 11 kW Level 2 electric vehicle charging station with flexible access control designed for scalable deployment.",
     specs: [
@@ -3958,15 +4109,22 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-EV-Station-Lite.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/26.ucevstationlite/1.p-utama-ucevstationlite.png",
+      "/images/integrations/26.ucevstationlite/2.p-dimensi-ucevstationlite.png",
+      "/images/integrations/26.ucevstationlite/3.p-development-ucevstationlite.png",
+      "/images/integrations/26.ucevstationlite/p-itb-ucevstationlite.png",
+      "/images/integrations/26.ucevstationlite/p-mkt0-ucevstationlite.png",
+      "/images/integrations/26.ucevstationlite/p-mkt1-ucevstationlite.png",
+      "/images/integrations/26.ucevstationlite/p-mkt2-ucevstationlite.png",
+      "/images/integrations/26.ucevstationlite/p-mkt3-ucevstationlite.png",
+      "/images/integrations/26.ucevstationlite/p-mkt4-ucevstationlite.png",
+      "/images/integrations/26.ucevstationlite/p-mkt5-ucevstationlite.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/26.ucevstationlite/p-mkt0-ucevstationlite.png",
+      "/images/integrations/26.ucevstationlite/p-itb-ucevstationlite.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4023,20 +4181,17 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/26.ucevstationlite/p-itb-ucevstationlite.png" },
     ],
   },
 
   // Produk Ketiga dari Integrations, SF Premium IoT
   {
-    id: "UPL-Amp-B/W",
+    id: "UPL-Amp",
     name: "PowerAmp",
     category: "Integrations",
     subfilter: "Premium IoT",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/27.uplamp/1.p-utama-uplamp.png",
     shortDescription:
       "Premium speaker amplifier designed for high-fidelity multi-zone audio streaming and immersive spatial sound experiences.",
     specs: [
@@ -4051,15 +4206,27 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/27.uplamp/1.p-utama-uplamp.png",
+      "/images/integrations/27.uplamp/2.p-dimensi-uplamp.png",
+      "/images/integrations/27.uplamp/3.p-spec-uplamp.png",
+      "/images/integrations/27.uplamp/4.p-development-uplamp.png",
+      "/images/integrations/27.uplamp/p-itb-uplamp.png",
+      "/images/integrations/27.uplamp/p-mkt0-uplamp.png",
+      "/images/integrations/27.uplamp/p-mkt1-uplamp.png",
+      "/images/integrations/27.uplamp/p-mkt2-uplamp.png",
+      "/images/integrations/27.uplamp/p-mkt3-uplamp.png",
+      "/images/integrations/27.uplamp/p-mkt4-uplamp.png",
+      "/images/integrations/27.uplamp/p-mkt5-uplamp.png",
+      "/images/integrations/27.uplamp/p-mkt6-uplamp.png",
+      "/images/integrations/27.uplamp/p-mkt7-uplamp.png",
+      "/images/integrations/27.uplamp/p-mkt8-uplamp.png",
+      "/images/integrations/27.uplamp/p-mkt9-uplamp.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/27.uplamp/p-mkt9-uplamp.png",
+      "/images/integrations/27.uplamp/p-itb-uplamp.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4121,20 +4288,17 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/27.uplamp/p-itb-uplamp.png" },
     ],
   },
 
   // Produk Keempat dari Integrations, SF Premium IoT
   {
-    id: "UPL-Port-B/W",
+    id: "UPL-Port",
     name: "PoE Audio Port",
     category: "Integrations",
     subfilter: "Premium IoT",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/28.uplport/1.p-utama-uplport.png",
     shortDescription:
       "A digital audio streamer with an ultra-compact, versatile design and an intuitive control system, supporting multiple music streaming services and scalable multi-zone installations .",
     specs: [
@@ -4149,15 +4313,26 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/28.uplport/1.p-utama-uplport.png",
+      "/images/integrations/28.uplport/2.p-dimensi-uplport.png",
+      "/images/integrations/28.uplport/3.p-spec-uplport.png",
+      "/images/integrations/28.uplport/4.p-development-uplport.png",
+      "/images/integrations/28.uplport/p-itb-uplport.png",
+      "/images/integrations/28.uplport/p-mkt0-uplport.png",
+      "/images/integrations/28.uplport/p-mkt1-uplport.png",
+      "/images/integrations/28.uplport/p-mkt2-uplport.png",
+      "/images/integrations/28.uplport/p-mkt3-uplport.png",
+      "/images/integrations/28.uplport/p-mkt4-uplport.png",
+      "/images/integrations/28.uplport/p-mkt5-uplport.png",
+      "/images/integrations/28.uplport/p-mkt6-uplport.png",
+      "/images/integrations/28.uplport/p-mkt7-uplport.png",
+      "/images/integrations/28.uplport/p-mkt8-uplport.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/28.uplport/p-mkt7-uplport.png",
+      "/images/integrations/28.uplport/p-itb-uplport.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4216,205 +4391,17 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/28.uplport/p-itb-uplport.png" },
     ],
   },
 
   // Produk Kelima dari Integrations, SF Premium IoT
-  {
-    id: "UC-Cast-Pro",
-    name: "Display Cast Pro",
-    category: "Integrations",
-    subfilter: "Premium IoT",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Managed digital signage player for HMI display with media content playback, web mode, and USB-C peripheral support.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UC-CAST-PRO",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Weight Without mount: 240 g (5.8 oz) With mount: 260 g (9.2 oz)",
-      "WiFi Standards 802.11 a/b/g/n/ac/ax",
-      "Memory Storage: 32 GB RAM: 8 GB",
-      "Note. USB-C power adapter and HDMI cable not included. Does not support Protect camera streaming."
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "Without mount: 123 x 52 x 31 mm (3.5 x 2.1 x 1.2') With mount: 125.1 x 56.3 x 40.8 mm (3.6 x 2.1 x 1.4')" },
-          { label: "Display Output", value: "(1) HDMI port" },
-          { label: "Video Content Support", value: "480p / 720p / 1080p / 4k" },
-          { label: "UniFi Application Suite Connect", value: "✓" }
-        ]
-      },
-      {
-        title: "Mechanical",
-        items: [
-          { label: "Weight", value: "Without mount: 240 g (5.8 oz) With mount: 260 g (9.2 oz)" },
-          { label: "Pole Mount Diameter", value: "1—2' (25—50 mm)" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Processor", value: "Octa-core CPU including (2) ARM® Cortex®-A78 and (6) ARM® Cortex®-A55 Integrated Mali-G57 GPU" },
-          { label: "Memory", value: "Storage: 32 GB RAM: 8 GB" },
-          { label: "Power Method", value: "(1) GbE RJ45 PoE 48V DC, 0.35A (1) USB Type-C 5V DC, 3A UL 60950-1/62368-1 LPS/PS2 PSU" },
-          { label: "Connectivity", value: "WiFi 2.4G, BW 20/40 MHz WiFi 5G, BW 20/40/80 MHz" },
-          { label: "WiFi Standards", value: "802.11 a/b/g/n/ac/ax" },
-          { label: "LEDs", value: "White/blue" },
-          { label: "Buttons", value: "(1) Factory reset" },
-          { label: "Ambient Operating Humidity", value: "0 to 40° C (32 to 104° F)" },
-          { label: "Ambient Operating Temperature", value: "20 to 90% noncondensing" },
-          { label: "Certifications", value: "CE, FCC, IC, Wi-Fi CERTIFIED UL 62368-1, CSA C22.2 No. 62368-1, Anatel: 06981-25-08356" },
-          { label: "NDAA Compliant", value: "✓" },
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management Application UniFi Connect Web", value: "Version 3.14.6 and later" },
-          { label: "Management Application UniFi Connect iOS™ and Android™", value: "Version 3.14.6 and later" },
-        ]
-      },
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
-  // Produk Keenam dari Integrations, SF Premium IoT
-  {
-    id: "UC-Cast-Lite",
-    name: "Display Cast Lite",
-    category: "Integrations",
-    subfilter: "Premium IoT",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "Digital signage player designed for media playback on HDMI displays.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
-
-    // SKU produk
-    sku: "UC-CAST-LITE",
-
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
-
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Weight Without mount: 160 g (5.6 oz) With mount: 180 g (6.3 oz)",
-      "Memory Storage: 16 GB RAM: 2 GB",
-      "WiFi Standards 802.11 a/b/g/n/ac/ax",
-      "Note. HDMI cable not included. Protect camera streaming not supported. Use Protect Viewport to view camera feeds on an HDMI display."
-    ],
-
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Dimensions", value: "Without mount: 90 x 52 x 31 mm (3.5 x 2.1 x 1.2') With mount: 92.1 x 56.3 x 40.8 mm (3.6 x 2.1 x 1.4')" },
-          { label: "Display Output", value: "(1) HDMI port" },
-          { label: "Video Content Support", value: "480p / 720p / 1080p" },
-          { label: "UniFi Application Suite Connect", value: "✓" }
-        ]
-      },
-      {
-        title: "Mechanical",
-        items: [
-          { label: "Weight", value: "Without mount: 160 g (5.6 oz) With mount: 180 g (6.3 oz)" },
-          { label: "Pole Mount Diameter", value: "1—2' (25—50 mm)" },
-        ]
-      },
-      {
-        title: "Hardware",
-        items: [
-          { label: "Processor", value: "Quad-Core Arm® Cortex®-A55, 1.9 GHz" },
-          { label: "Memory", value: "Storage: 16 GB RAM: 2 GB" },
-          { label: "Power Method", value: "(1) USB Type-C 5V DC, 1A" },
-          { label: "Max. Power Consumption", value: "SW" },
-          { label: "Connectivity", value: "WiFi 2.4G, BW 20/40 MHz WiFi 5G, BW 20/40/80 MHz" },
-          { label: "WiFi Standards", value: "802.11 a/b/g/n/ac/ax" },
-          { label: "LEDs", value: "White/blue" },
-          { label: "Buttons", value: "(1) Factory reset" },
-          { label: "Ambient Operating Humidity", value: "0 to 40° C (32 to 104° F)" },
-          { label: "Ambient Operating Temperature", value: "20 to 90% noncondensing" },
-          { label: "Certifications", value: "CE, FCC, IC, Wi-Fi CERTIFIED UL 62368-1, CSA C22.2 No. 62368-1" },
-          { label: "NDAA Compliant", value: "✓" },
-        ]
-      },
-      {
-        title: "Software",
-        items: [
-          { label: "Management Application UniFi Connect Web", value: "Version 3.17.0 and later" },
-          { label: "Management Application UniFi Connect iOS™ and Android™", value: "Version 2.26.0 and later" },
-        ]
-      },
-    ],
-
-    // Item yang ada dalam box produk (gambar bisa diganti)
-    inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
-    ],
-  },
-
-  // Produk Ketujuh dari Integrations, SF Premium IoT
-  {
+   {
     id: "UC-Display",
     name: "Connect Display",
     category: "Integrations",
     subfilter: "Premium IoT",
-    image: "/images/camera.jpg",
+    image: "/images/integrations/29.ucdisplay/1.p-utama-ucdisplay.png",
     shortDescription:
       "21.5' Full HD PoE++ touchscreen designed for interactive digital signage applications.",
     specs: [
@@ -4429,15 +4416,20 @@ export const integrationsProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/29.ucdisplay/1.p-utama-ucdisplay.png",
+      "/images/integrations/29.ucdisplay/2.p-dimensi-ucdisplay.png",
+      "/images/integrations/29.ucdisplay/3.p-spec-ucdisplay.png",
+      "/images/integrations/29.ucdisplay/4.p-development-ucdisplay.png",
+      "/images/integrations/29.ucdisplay/p-itb-ucdisplay.png",
+      "/images/integrations/29.ucdisplay/p-mkt0-ucdisplay.png",
+      "/images/integrations/29.ucdisplay/p-mkt2-ucdisplay.png",
+      "/images/integrations/29.ucdisplay/p-mkt3-ucdisplay.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/integrations/29.ucdisplay/p-mkt2-ucdisplay.png",
+      "/images/integrations/29.ucdisplay/p-itb-ucdisplay.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -4496,10 +4488,199 @@ export const integrationsProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/integrations/29.ucdisplay/p-itb-ucdisplay.png" },
     ],
-  }
+  },
+
+  // Produk Keenam dari Integrations, SF Premium IoT
+  {
+    id: "UC-Cast-Lite",
+    name: "Display Cast Lite",
+    category: "Integrations",
+    subfilter: "Premium IoT",
+    image: "/images/integrations/30.uccastpro/1.p-utama-uccastpro.png",
+    shortDescription:
+      "Digital signage player designed for media playback on HDMI displays.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UC-CAST-LITE",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/integrations/30.uccastpro/1.p-utama-uccastpro.png",
+      "/images/integrations/30.uccastpro/2.p-dimensi-uccastpro.png",
+      "/images/integrations/30.uccastpro/3.p-development-uccastpro.png",
+      "/images/integrations/30.uccastpro/p-itb-uccastpro.png",
+      "/images/integrations/30.uccastpro/p-mkt0-uccastpro.png",
+      "/images/integrations/30.uccastpro/p-mkt1-uccastpro.png",
+      "/images/integrations/30.uccastpro/p-mkt2-uccastpro.png",
+      "/images/integrations/30.uccastpro/p-mkt3-uccastpro.png",
+      "/images/integrations/30.uccastpro/p-mkt4-uccastpro.png",
+      "/images/integrations/30.uccastpro/p-mkt5-uccastpro.png",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/integrations/30.uccastpro/p-mkt4-uccastpro.png",
+      "/images/integrations/30.uccastpro/p-itb-uccastpro.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Weight Without mount: 160 g (5.6 oz) With mount: 180 g (6.3 oz)",
+      "Memory Storage: 16 GB RAM: 2 GB",
+      "WiFi Standards 802.11 a/b/g/n/ac/ax",
+      "Note. HDMI cable not included. Protect camera streaming not supported. Use Protect Viewport to view camera feeds on an HDMI display."
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Without mount: 90 x 52 x 31 mm (3.5 x 2.1 x 1.2') With mount: 92.1 x 56.3 x 40.8 mm (3.6 x 2.1 x 1.4')" },
+          { label: "Display Output", value: "(1) HDMI port" },
+          { label: "Video Content Support", value: "480p / 720p / 1080p" },
+          { label: "UniFi Application Suite Connect", value: "✓" }
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "Without mount: 160 g (5.6 oz) With mount: 180 g (6.3 oz)" },
+          { label: "Pole Mount Diameter", value: "1—2' (25—50 mm)" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Processor", value: "Quad-Core Arm® Cortex®-A55, 1.9 GHz" },
+          { label: "Memory", value: "Storage: 16 GB RAM: 2 GB" },
+          { label: "Power Method", value: "(1) USB Type-C 5V DC, 1A" },
+          { label: "Max. Power Consumption", value: "SW" },
+          { label: "Connectivity", value: "WiFi 2.4G, BW 20/40 MHz WiFi 5G, BW 20/40/80 MHz" },
+          { label: "WiFi Standards", value: "802.11 a/b/g/n/ac/ax" },
+          { label: "LEDs", value: "White/blue" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Ambient Operating Humidity", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Temperature", value: "20 to 90% noncondensing" },
+          { label: "Certifications", value: "CE, FCC, IC, Wi-Fi CERTIFIED UL 62368-1, CSA C22.2 No. 62368-1" },
+          { label: "NDAA Compliant", value: "✓" },
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Management Application UniFi Connect Web", value: "Version 3.17.0 and later" },
+          { label: "Management Application UniFi Connect iOS™ and Android™", value: "Version 2.26.0 and later" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/integrations/30.uccastpro/p-itb-uccastpro.png" },
+    ],
+  },
+
+  // Produk Ketujuh dari Integrations, SF Premium IoT
+  {
+    id: "UC-Cast-Pro",
+    name: "Display Cast Pro",
+    category: "Integrations",
+    subfilter: "Premium IoT",
+    image: "/images/integrations/31.ucscastlite/1.p-utama-uccastlite.png",
+    shortDescription:
+      "Managed digital signage player for HMI display with media content playback, web mode, and USB-C peripheral support.",
+    specs: [
+      { label: "Resolution", value: "4K (8MP)" },
+      { label: "Night Vision", value: "25m (82ft) IR" },
+      { label: "Zoom", value: "3x Optical" },
+      { label: "Audio", value: "Two-way Audio" },
+    ],
+
+    // SKU produk
+    sku: "UC-CAST-PRO",
+
+    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+    images: [
+      "/images/integrations/31.ucscastlite/1.p-utama-uccastlite.png",
+      "/images/integrations/31.ucscastlite/2.p-dimensi-uccastlite.png",
+      "/images/integrations/31.ucscastlite/3.p-development-uccastlite.png",
+      "/images/integrations/31.ucscastlite/p-itb-uccastlite.png",
+      "/images/integrations/31.ucscastlite/p-mkt0-uccastlite.png",
+      "/images/integrations/31.ucscastlite/p-mkt1-uccastlite.png",
+      "/images/integrations/31.ucscastlite/p-mkt2-uccastlite.png",
+      "/images/integrations/31.ucscastlite/p-mkt3-uccastlite.png",
+      "/images/integrations/31.ucscastlite/p-mkt4-uccastlite.png",
+    ],
+
+    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+    overviewImages: [
+      "/images/integrations/31.ucscastlite/p-mkt4-uccastlite.png",
+      "/images/integrations/31.ucscastlite/p-itb-uccastlite.png"
+    ],
+
+    // Bullet points untuk deskripsi produk
+    bulletPoints: [
+      "Weight Without mount: 240 g (5.8 oz) With mount: 260 g (9.2 oz)",
+      "WiFi Standards 802.11 a/b/g/n/ac/ax",
+      "Memory Storage: 32 GB RAM: 8 GB",
+      "Note. USB-C power adapter and HDMI cable not included. Does not support Protect camera streaming."
+    ],
+
+    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+    technicalSpecs: [
+      {
+        title: "Overview",
+        items: [
+          { label: "Dimensions", value: "Without mount: 123 x 52 x 31 mm (3.5 x 2.1 x 1.2') With mount: 125.1 x 56.3 x 40.8 mm (3.6 x 2.1 x 1.4')" },
+          { label: "Display Output", value: "(1) HDMI port" },
+          { label: "Video Content Support", value: "480p / 720p / 1080p / 4k" },
+          { label: "UniFi Application Suite Connect", value: "✓" }
+        ]
+      },
+      {
+        title: "Mechanical",
+        items: [
+          { label: "Weight", value: "Without mount: 240 g (5.8 oz) With mount: 260 g (9.2 oz)" },
+          { label: "Pole Mount Diameter", value: "1—2' (25—50 mm)" },
+        ]
+      },
+      {
+        title: "Hardware",
+        items: [
+          { label: "Processor", value: "Octa-core CPU including (2) ARM® Cortex®-A78 and (6) ARM® Cortex®-A55 Integrated Mali-G57 GPU" },
+          { label: "Memory", value: "Storage: 32 GB RAM: 8 GB" },
+          { label: "Power Method", value: "(1) GbE RJ45 PoE 48V DC, 0.35A (1) USB Type-C 5V DC, 3A UL 60950-1/62368-1 LPS/PS2 PSU" },
+          { label: "Connectivity", value: "WiFi 2.4G, BW 20/40 MHz WiFi 5G, BW 20/40/80 MHz" },
+          { label: "WiFi Standards", value: "802.11 a/b/g/n/ac/ax" },
+          { label: "LEDs", value: "White/blue" },
+          { label: "Buttons", value: "(1) Factory reset" },
+          { label: "Ambient Operating Humidity", value: "0 to 40° C (32 to 104° F)" },
+          { label: "Ambient Operating Temperature", value: "20 to 90% noncondensing" },
+          { label: "Certifications", value: "CE, FCC, IC, Wi-Fi CERTIFIED UL 62368-1, CSA C22.2 No. 62368-1, Anatel: 06981-25-08356" },
+          { label: "NDAA Compliant", value: "✓" },
+        ]
+      },
+      {
+        title: "Software",
+        items: [
+          { label: "Management Application UniFi Connect Web", value: "Version 3.14.6 and later" },
+          { label: "Management Application UniFi Connect iOS™ and Android™", value: "Version 3.14.6 and later" },
+        ]
+      },
+    ],
+
+    // Item yang ada dalam box produk (gambar bisa diganti)
+    inTheBox: [
+      { name: "Device", image: "/images/integrations/31.ucscastlite/p-itb-uccastlite.png" },
+    ],
+  },
 ];
