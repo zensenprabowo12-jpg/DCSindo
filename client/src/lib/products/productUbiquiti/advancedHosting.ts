@@ -69,43 +69,48 @@ export interface Product {
 export const advancedHostingProducts: Product[] = [
 
   // Produk Pertama dari AdvancedHosting, SF All
-  {
-    id: "Official UniFi Hosting",
-    name: "Official UniFi Hosting",
-    category: "Advanced Hosting",
-    subfilter: "All",
-    image: "/images/camera.jpg",
-    shortDescription: "Scalably deploy and manage UniFi Network Devices.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "Official UniFi Hosting",
+  //   name: "Official UniFi Hosting",
+  //   category: "Advanced Hosting",
+  //   subfilter: "All",
+  //   image: "/images/advancedhosting/1.officialuniFihosting/1.p-utama-officialuniFihosting.png",
+  //   shortDescription: "Scalably deploy and manage UniFi Network Devices.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "OFFICIAL-UNIFI-HOSTING",
+  //   // SKU produk
+  //   sku: "OFFICIAL-UNIFI-HOSTING",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/products/Product-Official-UniFi-Hosting.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/advancedhosting/1.officialuniFihosting/1.p-utama-officialuniFihosting.png",
+  //     "/images/advancedhosting/1.officialuniFihosting/2.p-development-officialuniFihosting.png",
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/advancedhosting/1.officialuniFihosting/1.p-utama-officialuniFihosting.png",
+  //     "/images/advancedhosting/1.officialuniFihosting/2.p-development-officialuniFihosting.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Manage up to 1,000 UniFi Network devices",
-      "Centralized management with Site Manager at unifi.ui.com",
-      "Optionally pair with a UXG series gateway for full-stack UniFi networking",
-    ],
-  },
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Manage up to 1,000 UniFi Network devices",
+  //     "Centralized management with Site Manager at unifi.ui.com",
+  //     "Optionally pair with a UXG series gateway for full-stack UniFi networking",
+  //   ],
+  //   // Item yang ada dalam box produk (gambar bisa diganti)
+  //   inTheBox: [
+  //     {
+  //       name: "Device", image: "/images/advancedhosting/1.officialuniFihosting/2.p-development-officialuniFihosting.png"
+  //     },
+  //   ],
+  // },
 
   // Produk Kedua dari Advanced Hosting SF All
   {
@@ -269,8 +274,9 @@ export const advancedHostingProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image:"/images/advancedhosting/2.uxgenterprise/p-itb-uxgenerprise.png"
- },
+      {
+        name: "Device", image: "/images/advancedhosting/2.uxgenterprise/p-itb-uxgenerprise.png"
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -538,7 +544,7 @@ export const advancedHostingProducts: Product[] = [
       },
     ],
     inTheBox: [
-      { name: "Device", image: "/images/advancedhosting/3.uxgfiber/p-itb-uxgfiber.png",}
+      { name: "Device", image: "/images/advancedhosting/3.uxgfiber/p-itb-uxgfiber.png", }
     ],
     // Item yang ada dalam box produk (gambar bisa diganti)
   },
@@ -720,8 +726,8 @@ export const advancedHostingProducts: Product[] = [
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-    "/images/advancedhosting/5.uxgmax/p-mkt3-uxgmax.png",
-    "/images/advancedhosting/5.uxgmax/p-itb-uxgmax.png",
+      "/images/advancedhosting/5.uxgmax/p-mkt3-uxgmax.png",
+      "/images/advancedhosting/5.uxgmax/p-itb-uxgmax.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -828,7 +834,7 @@ export const advancedHostingProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/advancedhosting/5.uxgmax/p-itb-uxgmax.png", }, 
+      { name: "Device", image: "/images/advancedhosting/5.uxgmax/p-itb-uxgmax.png", },
     ],
   },
 
@@ -975,7 +981,7 @@ export const advancedHostingProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image:"/images/advancedhosting/6.uxgpro/p-itb-uxgpro.png",},
+      { name: "Device", image: "/images/advancedhosting/6.uxgpro/p-itb-uxgpro.png", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1261,7 +1267,7 @@ export const advancedHostingProducts: Product[] = [
   },
 
   // Produk Kedelapan dari Advanced Hosting, SF All
-   {
+  {
     id: "CK-Enterprise",
     name: "CloudKey Enterprise",
     category: "Advanced Hosting",
