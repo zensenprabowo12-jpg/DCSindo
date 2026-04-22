@@ -582,7 +582,7 @@ export const doorAccessProducts: Product[] = [
 
   // Produk Ketiga dari DoorAccess, SF Readers
   {
-    id: "UA-G3-Pro-B/W",
+    id: "UA-G3-Pro",
     name: "G3 Reader Pro",
     category: "Door Access",
     subfilter: "Readers",
@@ -828,7 +828,7 @@ export const doorAccessProducts: Product[] = [
 
   // Produk Keempat dari DoorAccess, SF Readers
   {
-    id: "UA-G2-Pro-B/W",
+    id: "UA-G2-Pro",
     name: "G2 Reader Pro",
     category: "Door Access",
     subfilter: "Readers",
@@ -1104,7 +1104,7 @@ export const doorAccessProducts: Product[] = [
 
   // Produk Kelima dari DoorAccess, SF Readers
   {
-    id: "UA-G3-Flex-B/W",
+    id: "UA-G3-Flex",
     name: "Reader Flex",
     category: "Door Access",
     subfilter: "Readers",
@@ -1372,7 +1372,7 @@ export const doorAccessProducts: Product[] = [
 
   // Produk Keenam dari DoorAcces, SF Readers
   {
-    id: "UA-G3-B/W",
+    id: "UA-G3",
     name: "G3 Reader",
     category: "Door Access",
     subfilter: "Readers",
@@ -1636,7 +1636,7 @@ export const doorAccessProducts: Product[] = [
 
   // Produk Ketujuh dari DoorAccess, SF Readers
   {
-    id: "UA-G2-B/W",
+    id: "UA-G2",
     name: "G2 Reader",
     category: "Door Access",
     subfilter: "Readers",
@@ -1898,7 +1898,7 @@ export const doorAccessProducts: Product[] = [
 
   // Produk Kedelapan dari DoorAccess, SF Readers
   {
-    id: "UA-Retrofit-Reader-B/W",
+    id: "UA-Retrofit-Reader",
     name: "Retrofit Reader",
     category: "Door Access",
     subfilter: "Readers",
@@ -7097,7 +7097,7 @@ export const doorAccessProducts: Product[] = [
     name: "Enterprise NVR",
     category: "Door Access",
     subfilter: "NVRs",
-    image: "/images/dooraccess/29.envr/1.p-utama-envr-core.png",
+    image: "/images/dooraccess/29.envr/1.p-utama-envr.png",
     shortDescription:
       "3U NVR with (16) 2.5/3.5' drive bays, supporting up to (70) 4K cameras or (210) Full HD cameras.",
     specs: [
@@ -7226,7 +7226,7 @@ export const doorAccessProducts: Product[] = [
     name: "Network Video Recorder Pro",
     category: "Door Access",
     subfilter: "NVRs",
-    image: "/images/dooraccess/30.unvrpro/1.p-utama-unvrpro.png",
+    image: "/images/dooraccess/30.unvrpro/1.p-utama-unvr-pro.png",
     shortDescription:
       "A 2U-sized video recorder with (7) 2.5/3.5 HDD bays that can provide up to 60 days of storage for (24) 4K cameras or (70) Full HD cameras.",
     specs: [
@@ -7241,23 +7241,23 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/dooraccess/30.unvrpro/1.p-utama-unvrpro.png",
-      "/images/dooraccess/30.unvrpro/2.p-spec-unvrpro.png",
-      "/images/dooraccess/30.unvrpro/3.p-dimensi-unvrpro.png",
-      "/images/dooraccess/30.unvrpro/4.p-development-unvrpro.png",
-      "/images/dooraccess/30.unvrpro/p-itb-unvrpro.png",
-      "/images/dooraccess/30.unvrpro/p-mkt0-unvrpro.png",
-      "/images/dooraccess/30.unvrpro/p-mkt1-unvrpro.png",
-      "/images/dooraccess/30.unvrpro/p-mkt2-unvrpro.png",
-      "/images/dooraccess/30.unvrpro/p-mkt3-unvrpro.png",
-      "/images/dooraccess/30.unvrpro/p-mkt4-unvrpro.png",
-      "/images/dooraccess/30.unvrpro/p-mkt5-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/1.p-utama-unvr-pro.png",
+      "/images/dooraccess/30.unvrpro/2.p-spec-unvr-pro.png",
+      "/images/dooraccess/30.unvrpro/3.p-dimensi-unvr-pro.png",
+      "/images/dooraccess/30.unvrpro/4.p-deployment-unvr-pro.png",
+      "/images/dooraccess/30.unvrpro/p-itb-unvr-pro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt0-unvr-pro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt1-unvr-pro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt2-unvr-pro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt3-unvr-pro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt4-unvr-pro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt5-unvr-pro.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/dooraccess/30.unvrpro/p-mkt0-unvrpro.png",
-      "/images/dooraccess/30.unvrpro/p-itb-unvrpro.png",
+      "/images/dooraccess/30.unvrpro/p-mkt0-unvr-pro.png",
+      "/images/dooraccess/30.unvrpro/p-itb-unvr-pro.png",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -7311,7 +7311,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/30.unvrpro/p-itb-unvrpro.png",
+      { name: "Device", image: "/images/dooraccess/30.unvrpro/p-itb-unvr-pro.png",
  }, 
     ],
 
@@ -7353,7 +7353,7 @@ export const doorAccessProducts: Product[] = [
     name: "Network Video Recorder",
     category: "Door Access",
     subfilter: "NVRs",
-    image: "/images/dooraccess.31.unvr/1.p-utama-unvr.png",
+    image: "/images/dooraccess/31.unvr/1.p-utama-unvr.png",
     shortDescription:
       "A video recorder with (4) 2.5/3.5' HDD bays that can support up to 30 days of storage for (18) 4K cameras or (60) Full HD cameras.",
     specs: [
@@ -7378,8 +7378,8 @@ export const doorAccessProducts: Product[] = [
       "/images/dooraccess.31.unvr/p-mkt2-unvr.png",
       "/images/dooraccess.31.unvr/p-mkt3-unvr.png",
       "/images/dooraccess.31.unvr/p-mkt4-unvr.png",
-      "/images/dooraccess.31.unvr/p-mkt5-unvr.png",
-
+      "/images/dooraccess/31.unvr/p-mkt5-unvr.png",
+      "/images/dooraccess/31.unvr/p-mkt5-unvr.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
