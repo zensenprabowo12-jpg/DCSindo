@@ -76,7 +76,7 @@ function getDefaultBulletPoints(product: Product): string[] {
 // Generate default technical specs berdasarkan kategori
 function getDefaultTechnicalSpecs(product: Product): TechSpecSection[] {
   const sku = product.sku || product.id.toUpperCase();
-  
+
   const categorySpecs: Record<string, TechSpecSection[]> = {
     "Cloud Gateways": [
       {
@@ -239,32 +239,32 @@ function getDefaultAddons(product: Product): ProductAddon[] {
 
 export default function ProductDetail() {
   const [match, params] = useRoute("/products/:id");
-  
+
   // Try to find static product, or generate dynamic one
   let product = products.find(p => p.id === params?.id);
-  
+
   if (!product && params?.id) {
     // Generate dummy product from ID
     const parts = params.id.split('-');
     const category = parts[0];
     const index = parts[parts.length - 1];
-    
+
     product = {
-        id: params.id,
-        name: `Item (${category}) ${index}`,
-        price: 299 + (parseInt(index) * 50),
-        description: "Experience enterprise-grade performance with this cutting-edge solution.",
-        shortDescription: "Experience the pinnacle of networking performance.",
-        image: category === "cloud" || category === "Cloud Gateways" || category === "cloud-gateways" 
-            ? "/images/Enterprise-Fortress-Gateway.png" 
-            : "/images/placeholder-product.png",
-        category: category,
-        specs: [
-            { label: "Throughput", value: "10 Gbps" },
-            { label: "Ports", value: "24x 1GbE, 2x 10G SFP+" },
-            { label: "Processor", value: "Quad-Core ARM" },
-            { label: "Memory", value: "4 GB DDR4" }
-        ]
+      id: params.id,
+      name: `Item (${category}) ${index}`,
+      price: 299 + (parseInt(index) * 50),
+      description: "Experience enterprise-grade performance with this cutting-edge solution.",
+      shortDescription: "Experience the pinnacle of networking performance.",
+      image: category === "cloud" || category === "Cloud Gateways" || category === "cloud-gateways"
+        ? "/images/Enterprise-Fortress-Gateway.png"
+        : "/images/placeholder-product.png",
+      category: category,
+      specs: [
+        { label: "Throughput", value: "10 Gbps" },
+        { label: "Ports", value: "24x 1GbE, 2x 10G SFP+" },
+        { label: "Processor", value: "Quad-Core ARM" },
+        { label: "Memory", value: "4 GB DDR4" }
+      ]
     } as any;
   }
 
@@ -275,13 +275,13 @@ export default function ProductDetail() {
   const [isAddonSpecOpen, setIsAddonSpecOpen] = useState(false);
   const [showAllImages, setShowAllImages] = useState(false);
   const [expandedTechSection, setExpandedTechSection] = useState<string | null>("Overview");
-  
+
   // Reset addon spec state when opening new addon
   const openAddon = (addon: any) => {
     setSelectedAddon(addon);
     setIsAddonSpecOpen(false);
   };
-  
+
   const toggleTechSection = (title: string) => {
     setExpandedTechSection(expandedTechSection === title ? null : title);
   };
@@ -290,24 +290,24 @@ export default function ProductDetail() {
 
   // ===== GUNAKAN HELPER FUNCTIONS UNTUK GENERATE DEFAULT VALUES =====
   // Ambil addons dari data produk, atau gunakan default dari helper function
-  const addOns = product.addons || getDefaultAddons(product);
+  const addOns = product.addons || [];
 
   // Ambil technical specs dari data produk, atau gunakan default dari helper function
-  const technicalSpecs = product.technicalSpecs || getDefaultTechnicalSpecs(product);
-  
+  const technicalSpecs = product.technicalSpecs || [];
+
   // Ambil bullet points dari data produk, atau gunakan default dari helper function
-  const bulletPoints = product.bulletPoints || getDefaultBulletPoints(product);
-  
+  const bulletPoints = product.bulletPoints || [];
+
   // Ambil in the box items dari data produk, atau gunakan default dari helper function
-  const inTheBoxItems = product.inTheBox || getDefaultInTheBox(product);
-  
+  const inTheBoxItems = product.inTheBox || [];
+
   // Ambil overview images dari data produk, atau gunakan default
   const overviewImages = product.overviewImages || ["/images/banners/dcs-overview-1.png", "/images/banners/dcs-overview-2.png"];
 
   // Color selector state - after product check
   const colorVariant = getProductColors(product.id);
   const [selectedProductImage, setSelectedProductImage] = useState<string>(product.image);
-  
+
   // Handle color change
   const handleColorChange = (color: ProductColor) => {
     setSelectedProductImage(color.image);
@@ -316,7 +316,7 @@ export default function ProductDetail() {
 
   // Use selected color image if available, otherwise use default product images
   const images = product.images || [selectedProductImage, "/images/banners/dcs-overview-1.png", "/images/banners/dcs-overview-2.png"];
-  
+
   // Display only first 4 images in the list, or more if needed
   const displayImages = images.slice(0, 4);
   const remainingImagesCount = images.length - 4;
@@ -331,8 +331,8 @@ export default function ProductDetail() {
           <div className="flex-1 flex gap-8">
             <div className="hidden md:flex flex-col gap-4">
               {displayImages.map((img: string, i: number) => (
-                <div 
-                  key={i} 
+                <div
+                  key={i}
                   className={cn(
                     "w-20 h-20 rounded-2xl border bg-secondary/30 p-2 cursor-pointer transition-all",
                     currentImg === i ? "border-primary ring-2 ring-primary/20 scale-105" : "border-border hover:border-primary/50"
@@ -342,40 +342,40 @@ export default function ProductDetail() {
                   <img src={img} className="w-full h-full object-contain" />
                 </div>
               ))}
-              
+
               {remainingImagesCount > 0 && (
-                  <button 
-                    onClick={() => setShowAllImages(true)}
-                    className="w-20 h-20 rounded-2xl border border-border bg-secondary/50 flex flex-col items-center justify-center text-xs font-bold text-muted-foreground hover:bg-secondary hover:text-foreground transition-colors"
-                  >
-                      <span className="text-lg mb-1">+{remainingImagesCount}</span>
-                      <span>more</span>
-                  </button>
+                <button
+                  onClick={() => setShowAllImages(true)}
+                  className="w-20 h-20 rounded-2xl border border-border bg-secondary/50 flex flex-col items-center justify-center text-xs font-bold text-muted-foreground hover:bg-secondary hover:text-foreground transition-colors"
+                >
+                  <span className="text-lg mb-1">+{remainingImagesCount}</span>
+                  <span>more</span>
+                </button>
               )}
             </div>
             <div className="flex-1 relative group rounded-3xl overflow-hidden border border-border bg-card shadow-2xl flex flex-col">
-              <div 
+              <div
                 className="flex-1 p-10 flex items-center justify-center cursor-zoom-in min-h-[500px]"
                 onClick={() => setIsZoomOpen(true)}
               >
-                <motion.img 
+                <motion.img
                   key={images[currentImg]}
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  src={images[currentImg]} 
+                  src={images[currentImg]}
                   className="w-full h-full max-h-[500px] rounded-2xl object-contain"
                 />
-                
+
                 <div className="absolute inset-y-0 left-0 flex items-center px-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                   <Button variant="ghost" size="icon" className="rounded-full bg-background/80 backdrop-blur-md shadow-xl" onClick={(e) => { e.stopPropagation(); prevImg(); }}>
-                      <ChevronLeft className="w-8 h-8" />
-                   </Button>
+                  <Button variant="ghost" size="icon" className="rounded-full bg-background/80 backdrop-blur-md shadow-xl" onClick={(e) => { e.stopPropagation(); prevImg(); }}>
+                    <ChevronLeft className="w-8 h-8" />
+                  </Button>
                 </div>
                 <div className="absolute inset-y-0 right-0 flex items-center px-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                   <Button variant="ghost" size="icon" className="rounded-full bg-background/80 backdrop-blur-md shadow-xl" onClick={(e) => { e.stopPropagation(); nextImg(); }}>
-                      <ChevronRight className="w-8 h-8" />
-                   </Button>
+                  <Button variant="ghost" size="icon" className="rounded-full bg-background/80 backdrop-blur-md shadow-xl" onClick={(e) => { e.stopPropagation(); nextImg(); }}>
+                    <ChevronRight className="w-8 h-8" />
+                  </Button>
                 </div>
                 <Button variant="secondary" size="icon" className="absolute top-6 right-6 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
                   <Maximize2 className="w-5 h-5" />
@@ -383,36 +383,36 @@ export default function ProductDetail() {
               </div>
             </div>
           </div>
-          
+
           <AnimatePresence>
             {showAllImages && (
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
                 className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-8"
                 onClick={() => setShowAllImages(false)}
               >
-                 <div className="bg-background rounded-3xl p-8 max-w-6xl w-full max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
-                    <div className="flex justify-between items-center mb-8">
-                        <h2 className="text-2xl font-black uppercase tracking-tighter">Product Gallery</h2>
-                        <Button variant="ghost" size="icon" onClick={() => setShowAllImages(false)}>
-                            <X className="w-6 h-6" />
-                        </Button>
-                    </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {images.map((img: string, i: number) => (
-                            <div 
-                                key={i} 
-                                className="aspect-square rounded-2xl border border-border bg-secondary/10 p-4 hover:border-primary transition-colors cursor-pointer"
-                                onClick={() => {
-                                    setCurrentImg(i);
-                                    setShowAllImages(false);
-                                }}
-                            >
-                                <img src={img} className="w-full h-full object-contain" />
-                            </div>
-                        ))}
-                    </div>
-                 </div>
+                <div className="bg-background rounded-3xl p-8 max-w-6xl w-full max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
+                  <div className="flex justify-between items-center mb-8">
+                    <h2 className="text-2xl font-black uppercase tracking-tighter">Product Gallery</h2>
+                    <Button variant="ghost" size="icon" onClick={() => setShowAllImages(false)}>
+                      <X className="w-6 h-6" />
+                    </Button>
+                  </div>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {images.map((img: string, i: number) => (
+                      <div
+                        key={i}
+                        className="aspect-square rounded-2xl border border-border bg-secondary/10 p-4 hover:border-primary transition-colors cursor-pointer"
+                        onClick={() => {
+                          setCurrentImg(i);
+                          setShowAllImages(false);
+                        }}
+                      >
+                        <img src={img} className="w-full h-full object-contain" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </motion.div>
             )}
           </AnimatePresence>
@@ -422,16 +422,16 @@ export default function ProductDetail() {
               <Link href="/" className="inline-block text-primary font-black text-xs tracking-[0.3em] uppercase mb-4 hover:underline">
                 Dinamika Cipta Solusi
               </Link>
-              
+
               {/* Metadata Fields - SKU dan Category dari data.ts */}
               <div className="grid grid-cols-2 gap-4 text-xs font-bold text-muted-foreground uppercase tracking-widest mb-6">
-                 <div><span className="text-foreground">SKU-{product.sku || Math.floor(Math.random() * 10000)}</span></div>
-                 <div><span className="text-foreground capitalize">Category: {product?.category || "Networking"}</span></div>
+                <div><span className="text-foreground">SKU-{product.sku || Math.floor(Math.random() * 10000)}</span></div>
+                <div><span className="text-foreground capitalize">Category: {product?.category || "Networking"}</span></div>
               </div>
 
               <h1 className="text-6xl font-black tracking-tighter italic uppercase leading-tight underline decoration-primary decoration-4 underline-offset-8">{product.name}</h1>
               <p className="text-2xl text-muted-foreground font-medium leading-relaxed italic">{product.shortDescription || "Experience the pinnacle of networking performance."}</p>
-              
+
               {/* Bullet Points dari data.ts atau auto-generated dari helper function */}
               <ul className="space-y-2 mt-4 text-sm text-muted-foreground font-medium leading-relaxed">
                 {bulletPoints.map((point: string, i: number) => (
@@ -452,10 +452,10 @@ export default function ProductDetail() {
                 />
               )}
             </div>
-            
+
             <div className="flex gap-6">
               <Link href="/support">
-                 <Button size="lg" className="w-full rounded-full h-14 text-lg font-black uppercase tracking-widest shadow-xl shadow-primary/20 group hover:scale-[1.02] transition-all">
+                <Button size="lg" className="w-full rounded-full h-14 text-lg font-black uppercase tracking-widest shadow-xl shadow-primary/20 group hover:scale-[1.02] transition-all">
                   Contact Us
                 </Button>
               </Link>
@@ -478,7 +478,7 @@ export default function ProductDetail() {
                 <a href="#" className="p-2 rounded-full bg-secondary hover:bg-primary hover:text-white transition-colors">
                   <Mail className="w-5 h-5" />
                 </a>
-                 <a href="#" className="p-2 rounded-full bg-secondary hover:bg-primary hover:text-white transition-colors">
+                <a href="#" className="p-2 rounded-full bg-secondary hover:bg-primary hover:text-white transition-colors">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" className="w-5 h-5 filter dark:invert" />
                 </a>
               </div>
@@ -490,11 +490,11 @@ export default function ProductDetail() {
         <div className="space-y-16">
           <div className="flex justify-center border-b border-border gap-12 sticky top-24 bg-background/80 backdrop-blur-xl z-40 py-2 overflow-x-auto">
             {[
-               "overview",
-                "technical",
-                inTheBoxItems?.length ? "box" : null,
-                addOns?.length ? "addons" : null
-              ].filter(Boolean).map((tab) => (
+              "overview",
+              "technical",
+              inTheBoxItems?.length ? "box" : null,
+              addOns?.length ? "addons" : null
+            ].filter(Boolean).map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab as string)}
@@ -520,88 +520,109 @@ export default function ProductDetail() {
             )}
             {activeTab === "technical" && (
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-4xl mx-auto">
-                 {/* Technical Specs dari data.ts - Sekarang berlaku untuk semua kategori */}
-                 {technicalSpecs && technicalSpecs.length > 0 ? (
-                    <div className="space-y-1">
-                        {technicalSpecs.map((section: TechSpecSection) => (
-                            <div key={section.title} className="border-b border-border">
-                                <button
-                                    onClick={() => toggleTechSection(section.title)}
-                                    className="w-full flex items-center justify-between py-6 group hover:text-primary transition-colors"
-                                >
-                                    <span className="text-lg font-bold uppercase tracking-wide">{section.title}</span>
-                                    <ChevronRight className={cn("w-5 h-5 transition-transform duration-300", expandedTechSection === section.title ? "rotate-90" : "")} />
-                                </button>
-                                <AnimatePresence>
-                                    {expandedTechSection === section.title && (
-                                        <motion.div
-                                            initial={{ height: 0, opacity: 0 }}
-                                            animate={{ height: "auto", opacity: 1 }}
-                                            exit={{ height: 0, opacity: 0 }}
-                                            className="overflow-hidden"
-                                        >
-                                            <div className="pb-8 grid grid-cols-1 gap-y-6">
-                                                {section.items.map((item: TechSpecItem, idx: number) => (
-                                                    <div key={idx} className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 border-b border-border/50 pb-4">
-                                                        <span className="text-sm font-medium text-muted-foreground">{item.label}</span>
-                                                        <div className="text-sm font-medium">
-                                                            {item.isCheck ? (
-                                                                <Check className="w-4 h-4 text-primary" />
-                                                            ) : (
-                                                                item.value
-                                                            )}
-                                                        </div>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </motion.div>
-                                    )}
-                                </AnimatePresence>
-                            </div>
+                {/* Technical Specs dari data.ts - Sekarang berlaku untuk semua kategori */}
+                {technicalSpecs && technicalSpecs.length > 0 ? (
+                  <div className="space-y-1">
+                    {technicalSpecs.map((section: TechSpecSection) => (
+                      <div key={section.title} className="border-b border-border">
+                        <button
+                          onClick={() => toggleTechSection(section.title)}
+                          className="w-full flex items-center justify-between py-6 group hover:text-primary transition-colors"
+                        >
+                          <span className="text-lg font-bold uppercase tracking-wide">{section.title}</span>
+                          <ChevronRight className={cn("w-5 h-5 transition-transform duration-300", expandedTechSection === section.title ? "rotate-90" : "")} />
+                        </button>
+                        <AnimatePresence>
+                          {expandedTechSection === section.title && (
+                            <motion.div
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: "auto", opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
+                              className="overflow-hidden"
+                            >
+                              <div className="pb-8 grid grid-cols-1 gap-y-6">
+                                {section.items.map((item: TechSpecItem, idx: number) => (
+                                  <div key={idx} className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 border-b border-border/50 pb-4">
+                                    <span className="text-sm font-medium text-muted-foreground">{item.label}</span>
+                                    <div className="text-sm font-medium">
+                                      {item.isCheck ? (
+                                        <Check className="w-4 h-4 text-primary" />
+                                      ) : (
+                                        item.value
+                                      )}
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  // Fallback jika tidak ada technical specs di data.ts
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
+                    <div className="space-y-8">
+                      <h4 className="text-xs font-black uppercase tracking-[0.3em] text-primary">Hardware</h4>
+                      <dl className="space-y-6">
+                        {(product.specs || [
+                          { label: "Throughput", value: "10 Gbps" },
+                          { label: "Ports", value: "24x 1GbE, 2x 10G SFP+" }
+                        ]).map((s: any, i: number) => (
+                          <div key={i} className="flex justify-between border-b border-border pb-4 group">
+                            <dt className="text-[10px] font-black uppercase tracking-widest text-muted-foreground group-hover:text-primary transition-colors">{s.label}</dt>
+                            <dd className="font-bold">{s.value}</dd>
+                          </div>
                         ))}
+                      </dl>
                     </div>
-                 ) : (
-                    // Fallback jika tidak ada technical specs di data.ts
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
-                        <div className="space-y-8">
-                        <h4 className="text-xs font-black uppercase tracking-[0.3em] text-primary">Hardware</h4>
-                        <dl className="space-y-6">
-                            {(product.specs || [
-                                { label: "Throughput", value: "10 Gbps" },
-                                { label: "Ports", value: "24x 1GbE, 2x 10G SFP+" }
-                            ]).map((s: any, i: number) => (
-                            <div key={i} className="flex justify-between border-b border-border pb-4 group">
-                                <dt className="text-[10px] font-black uppercase tracking-widest text-muted-foreground group-hover:text-primary transition-colors">{s.label}</dt>
-                                <dd className="font-bold">{s.value}</dd>
-                            </div>
-                            ))}
-                        </dl>
-                        </div>
-                        <div className="space-y-8">
-                        <h4 className="text-xs font-black uppercase tracking-[0.3em] text-primary">Capabilities</h4>
-                        <ul className="space-y-4 font-bold text-sm">
-                            {["10G SFP+ Support", "Enterprise Firewall", "AI Detection Engine", "Scalable Management"].map(t => (
-                            <li key={t} className="flex items-center gap-3"><Check className="w-5 h-5 text-green-500" /> {t}</li>
-                            ))}
-                        </ul>
-                        </div>
+                    <div className="space-y-8">
+                      <h4 className="text-xs font-black uppercase tracking-[0.3em] text-primary">Capabilities</h4>
+                      <ul className="space-y-4 font-bold text-sm">
+                        {["10G SFP+ Support", "Enterprise Firewall", "AI Detection Engine", "Scalable Management"].map(t => (
+                          <li key={t} className="flex items-center gap-3"><Check className="w-5 h-5 text-green-500" /> {t}</li>
+                        ))}
+                      </ul>
                     </div>
-                 )}
+                  </div>
+                )}
               </motion.div>
             )}
             {activeTab === "box" && (
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl mx-auto space-y-12">
-                {/* In The Box items dari data.ts atau auto-generated dari helper function - hanya gambar tanpa text */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {/* In The Box items dari semua file produk atau auto-generated dari helper function - hanya gambar tanpa text */}
+                <div className={cn(
+                  "gap-12",
+                  inTheBoxItems.length === 1
+                    ? "flex justify-center"
+                    : "grid grid-cols-2 md:grid-cols-3"
+                )}>
                   {inTheBoxItems.map((item: InTheBoxItem, idx: number) => (
-                    <div key={idx} className="rounded-3xl shadow-2xl bg-secondary/20 p-8 flex items-center justify-center">
-                      <img src={item.image} className="w-full h-full object-contain" alt={item.name} />
+                    <div
+                      key={idx}
+                      className={cn(
+                        "rounded-3xl shadow-2xl bg-secondary/20 flex items-center justify-center",
+                        inTheBoxItems.length === 1
+                          ? "p-16 max-w-3xl w-full"   // 🔥 BESAR kayak UniFi
+                          : "p-8"
+                      )}
+                    >
+                      <img
+                        src={item.image}
+                        className={cn(
+                          "object-contain",
+                          inTheBoxItems.length === 1
+                            ? "w-full max-h-[500px]" // 🔥 gedein gambar
+                            : "w-full h-full"
+                        )}
+                      />
                     </div>
                   ))}
                 </div>
               </motion.div>
             )}
-             {activeTab === "addons" && (
+            {activeTab === "addons" && (
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {/* Addons dengan preview lebih kecil */}
                 {addOns.map((addon: ProductAddon) => (
@@ -626,12 +647,12 @@ export default function ProductDetail() {
 
       <AnimatePresence>
         {selectedAddon && (
-           <motion.div 
+          <motion.div
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
             onClick={() => setSelectedAddon(null)}
           >
-            <motion.div 
+            <motion.div
               initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }}
               className="bg-background rounded-3xl p-8 max-w-5xl w-full shadow-2xl relative overflow-hidden"
               onClick={(e) => e.stopPropagation()}
@@ -639,10 +660,10 @@ export default function ProductDetail() {
               <Button variant="ghost" size="icon" className="absolute top-6 right-6 z-10" onClick={() => setSelectedAddon(null)}>
                 <X className="w-6 h-6" />
               </Button>
-              
+
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="w-full md:w-1/2 bg-secondary/20 rounded-2xl p-12 flex items-center justify-center min-h-[400px]">
-                   <img src={selectedAddon.image} className="w-full object-contain max-h-[300px]" />
+                  <img src={selectedAddon.image} className="w-full object-contain max-h-[300px]" />
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center space-y-8">
                   <div>
@@ -652,11 +673,11 @@ export default function ProductDetail() {
                       <p className="text-xl text-muted-foreground font-medium">${selectedAddon.price}.00</p>
                     )}
                   </div>
-                  
+
                   <div className="space-y-4">
                     {/* Deskripsi dari data.ts */}
                     <p className="text-muted-foreground leading-relaxed">
-                        {selectedAddon.description || "Compact, stackable, and toolless design. Perfect for your rack-mount devices."}
+                      {selectedAddon.description || "Compact, stackable, and toolless design. Perfect for your rack-mount devices."}
                     </p>
                     <ul className="space-y-3">
                       {selectedAddon.specs.map((spec: string, i: number) => (
@@ -666,46 +687,46 @@ export default function ProductDetail() {
                       ))}
                     </ul>
                   </div>
-                  
+
                   {/* Collapsible Tech Specs */}
                   <div className="border-t border-border pt-4">
-                      <button 
-                        onClick={() => setIsAddonSpecOpen(!isAddonSpecOpen)}
-                        className="flex items-center justify-between w-full py-2 hover:text-primary transition-colors"
-                      >
-                         <span className="text-sm font-black uppercase tracking-widest">Tech Specs</span>
-                         <ChevronRight className={cn("w-4 h-4 transition-transform", isAddonSpecOpen ? "rotate-90" : "")} />
-                      </button>
-                      
-                      <AnimatePresence>
-                        {isAddonSpecOpen && (
-                            <motion.div 
-                                initial={{ height: 0, opacity: 0 }}
-                                animate={{ height: "auto", opacity: 1 }}
-                                exit={{ height: 0, opacity: 0 }}
-                                className="overflow-hidden"
-                            >
-                                <dl className="space-y-3 pt-4 pb-2">
-                                    {selectedAddon.detailedSpecs?.map((spec: any, idx: number) => (
-                                        <div key={idx} className="flex justify-between text-sm">
-                                            <dt className="text-muted-foreground font-medium">{spec.label}</dt>
-                                            <dd className="font-bold">{spec.value}</dd>
-                                        </div>
-                                    ))}
-                                </dl>
-                            </motion.div>
-                        )}
-                      </AnimatePresence>
+                    <button
+                      onClick={() => setIsAddonSpecOpen(!isAddonSpecOpen)}
+                      className="flex items-center justify-between w-full py-2 hover:text-primary transition-colors"
+                    >
+                      <span className="text-sm font-black uppercase tracking-widest">Tech Specs</span>
+                      <ChevronRight className={cn("w-4 h-4 transition-transform", isAddonSpecOpen ? "rotate-90" : "")} />
+                    </button>
+
+                    <AnimatePresence>
+                      {isAddonSpecOpen && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          className="overflow-hidden"
+                        >
+                          <dl className="space-y-3 pt-4 pb-2">
+                            {selectedAddon.detailedSpecs?.map((spec: any, idx: number) => (
+                              <div key={idx} className="flex justify-between text-sm">
+                                <dt className="text-muted-foreground font-medium">{spec.label}</dt>
+                                <dd className="font-bold">{spec.value}</dd>
+                              </div>
+                            ))}
+                          </dl>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </div>
 
                   {/* Tombol Contact Us dan More */}
                   <div className="pt-4 flex gap-4">
                     <Link href="/support" className="flex-1">
-                       <Button size="lg" className="w-full rounded-full h-14 text-lg font-black uppercase tracking-widest shadow-xl shadow-primary/20 group hover:scale-[1.02] transition-all">
+                      <Button size="lg" className="w-full rounded-full h-14 text-lg font-black uppercase tracking-widest shadow-xl shadow-primary/20 group hover:scale-[1.02] transition-all">
                         Contact Us!
                       </Button>
                     </Link>
-                    
+
                     {/* Tombol More - link ke halaman produk addon jika ada */}
                     {selectedAddon.productLink && (
                       <Link href={selectedAddon.productLink} className="flex-1">
@@ -728,7 +749,7 @@ export default function ProductDetail() {
 
       <AnimatePresence>
         {isZoomOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 p-8 cursor-zoom-out"
             onClick={() => setIsZoomOpen(false)}
