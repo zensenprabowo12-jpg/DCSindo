@@ -5,6 +5,7 @@ type FirmwareItem = {
   name: string;
   version: string;
   link: string;
+  downloadName: string;
 };
 
 type FirmwareData = {
@@ -16,17 +17,29 @@ export default function FirmwarePage() {
 
   const firmwareData: FirmwareData = {
     Ubiquiti: [
-      { name: "Product A", version: "v1.2.3", link: "#" },
-      { name: "Product B", version: "v2.0.1", link: "#" },
-      { name: "Product C", version: "v3.5.0", link: "#" },
+      {
+        name: "airFiber 5XHD [AF-5XHD]",
+        version: "v1.5.6",
+        link: "/firmware/af5xhd.amesoc3.v1.5.6-lock.00005.260225.0902-squashfs.bin",
+        downloadName: "AF-5XHD v.1.5.6 Indonesia Firmware.bin",
+      },
     ],
+
     Mikrotik: [
-      { name: "RouterBoard X", version: "v7.1", link: "#" },
-      { name: "CCR Series", version: "v7.5", link: "#" },
+      { name: "RouterBoard X", 
+        version: "v7.1", 
+        link: "#",
+        downloadName: "routerboard-x.firmware.bin"
+      },
+      { name: "CCR Series", 
+        version: "v7.5", 
+        link: "#", 
+        downloadName: "ccr-series.firmware.bin" },
     ],
+
     "V-Sol": [
-      { name: "OLT V1600", version: "v1.0.0", link: "#" },
-      { name: "ONU V2801", version: "v2.3.1", link: "#" },
+      { name: "OLT V1600", version: "v1.0.0", link: "#", downloadName: "olt-v1600.firmware.bin" },
+      { name: "ONU V2801", version: "v2.3.1", link: "#", downloadName: "onu-v2801.firmware.bin" },
     ],
   };
 
@@ -54,11 +67,11 @@ export default function FirmwarePage() {
 
           {/* TEXT */}
           <h2 className="text-center text-xl font-semibold mb-4">
-            sesuai dengan uu no lalala tahun lalala produk {activeBrand} harus sesuai dengan regulasi indonesia
+            Sesuai regulasi Indonesia, beberapa produk {activeBrand} memerlukan firmware khusus.
           </h2>
 
           <p className="text-center mb-10">
-            Maka beberapa produk {activeBrand} harus menggunakan firmware yang sesuai dengan
+            Silakan download firmware resmi untuk produk {activeBrand} di bawah ini.
           </p>
 
           {/* PRODUCT */}
@@ -66,7 +79,7 @@ export default function FirmwarePage() {
             {firmwareData[activeBrand]?.map((item, i) => (
               <div
                 key={i}
-                className="flex justify-between items-center"
+                className="flex justify-between items-center border-b pb-3"
               >
                 <div>{item.name}</div>
 
@@ -77,7 +90,7 @@ export default function FirmwarePage() {
 
                   <a
                     href={item.link}
-                    target="_blank"
+                    download={item.downloadName}
                     className="bg-black text-white px-4 py-1 rounded-full text-sm"
                   >
                     Download
