@@ -26,10 +26,13 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white">
 
+
           {/* Slogan */}
           <p className="mb-6 text-sm md:text-[15px] font-black tracking-[0.35em] uppercase text-gray-300 animate-in fade-in slide-in-from-bottom-6 duration-1000">
             Building The Future of IT
           </p>
+
+          {/* Logo UniFi */}
 
           {/* Logo UniFi */}
           <img
@@ -48,6 +51,7 @@ export default function Home() {
             </Button>
           </Link>
 
+
         </div>
       </section>
       {/* 🔹 Reimagined Ecosystem Section - Aesthetic Masonry Layout */}
@@ -55,11 +59,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-[16px] md:text-[60px] font-black tracking-tight mb-2">Industry Leading Hardware</h2>
+            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Didesain secara presisi untuk performa tinggi dan keandalan jangka panjang.</p>
             <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Didesain secara presisi untuk performa tinggi dan keandalan jangka panjang.
             </p>
             <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Didukung EdgeAI yang berkembang pesat di bidang networking dan keamanan fisik.
             </p>
           </div>
+
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[900px]">
             {/* WiFi Systems - Large Main Card */}
@@ -97,6 +103,7 @@ export default function Home() {
                 />
               </motion.a>
             </Link>
+
 
 
             {/* Door Access - Side Card */}
@@ -181,161 +188,134 @@ export default function Home() {
             </Button>
           </Link>
 
+
         </div>
 
         <div className="container mx-auto px-4 space-y-48">
-          {/* DCS Protect (CLEAN VERSION) */}
+
+          {/* === ITEM 1 === */}
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
 
-            <div className="flex-1 order-2 lg:order-1">
-              <div className="relative group cursor-pointer flex justify-center">
+            {/* VIDEO */}
+            <div className="flex-1 flex justify-center order-2 lg:order-1">
+              <div className="relative group w-full max-w-[480px] aspect-square">
 
                 {/* Glow */}
-                <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
+                <div className="absolute inset-0 rounded-full bg-primary/20 blur-[70px] scale-[1.1] opacity-70 group-hover:opacity-100 transition-all duration-700" />
 
-                {/* Border Glow */}
-                <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
-
-                {/* Video Circle */}
-                <div className="relative z-10 w-full max-w-[420px] aspect-square rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-black">
-
-                  <iframe
-                    src="..."
-                    className="absolute top-1/2 left-1/2 
-                     w-full h-full 
-                    -translate-x-1/2 -translate-y-1/2 
-                     scale-[1.78] 
-                     pointer-events-none"
-                  />
-
+                {/* Border */}
+                <div className="absolute inset-0 rounded-full z-20 pointer-events-none">
+                  <div className="w-full h-full rounded-full border-[clamp(3px,0.8vw,8px)] border-primary shadow-[0_0_40px_rgba(59,130,246,0.7)] transition-transform duration-700 group-hover:scale-[1.05]" />
                 </div>
-              </div>
-            </div>
 
-            <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
-              <h3 className="text-4xl md:text-5xl font-black italic uppercase">
-                UniFi Protect
-              </h3>
-
-              <p className="text-gray-400 text-xl leading-relaxed">
-                Platform keamanan enterprise tanpa lisensi dengan dukungan teknologi AI untuk deteksi cerdas. Memberikan pemantauan yang lebih pintar serta pengelolaan terpusat dalam satu ekosistem terpadu    </p>
-              <Link href="/collections/camera-security">
-                <Button
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all"
-                >
-                  Explore Protect
-                </Button>
-              </Link>
-            </div>
-
-          </div>
-
-          {/* DCS Network */}
-          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
-
-            {/* TEXT (SEKARANG DI KIRI) */}
-            <div className="flex-1 space-y-8 order-1 lg:order-1 text-center lg:text-left">
-              <h3 className="text-4xl md:text-5xl font-black italic uppercase">
-                UniFi Network
-              </h3>
-
-              <p className="text-gray-400 text-xl leading-relaxed">
-                UniFi Network menghadirkan seluruh infrastruktur IT dalam satu sistem terpadu—mulai dari networking, surveillance, hingga access control—dengan kontrol penuh, efisiensi maksimal, dan tanpa subscription
-              </p>
-
-              <Link href="/collections/camera-security">
-                <Button
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all"
-                >
-                  Explore Protect
-                </Button>
-              </Link>
-            </div>
-
-            {/* VIDEO (SEKARANG DI KANAN) */}
-            <div className="flex-1 order-2 lg:order-2">
-              <div className="relative group cursor-pointer flex justify-center">
-
-                {/* Glow */}
-                <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
-
-                {/* Border Glow */}
-                <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
-
-                {/* Video Circle */}
-                <div className="relative z-10 w-full max-w-[420px] aspect-square rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-black">
-
+                {/* Video */}
+                <div className="absolute inset-0 rounded-full overflow-hidden border border-white/10 shadow-2xl bg-black">
                   <iframe
-                    src="https://www.youtube.com/embed/zZpzDb-MHOY?autoplay=1&mute=1&loop=1&playlist=zZpzDb-MHOY&controls=0&rel=0&modestbranding=1&start=5"
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] pointer-events-none"
+                    src="https://www.youtube.com/embed/zZpzDb-MHOY?autoplay=1&mute=1&loop=1&playlist=zZpzDb-MHOY&controls=0"
+                    className="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 scale-[1.6] md:scale-[1.8] lg:scale-[2]"
                     allow="autoplay; encrypted-media"
-                    title="UniFi Video"
                   />
-
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-black/20 pointer-events-none" />
-
+                  <div className="absolute inset-0 bg-black/20" />
                 </div>
+
               </div>
             </div>
 
-          </div>
-
-          {/* DCS Access */}
-          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
-
-            <div className="flex-1 order-2 lg:order-1">
-              <div className="relative group cursor-pointer flex justify-center">
-
-                {/* Glow */}
-                <div className="absolute -inset-4 bg-primary/20 blur-[80px] rounded-full group-hover:bg-primary/40 transition-all duration-700" />
-
-                {/* Border Glow */}
-                <div className="absolute inset-2 border-[3px] border-primary shadow-[0_0_30px_rgba(59,130,246,0.6)] rounded-full z-20 pointer-events-none group-hover:scale-[1.05] transition-transform duration-700" />
-
-                {/* Video Circle */}
-                <div className="relative z-10 w-full max-w-[420px] aspect-square rounded-full overflow-hidden border-4 border-white/10 shadow-2xl bg-black">
-
-                  <iframe
-                    src="https://www.youtube.com/embed/GqNZLj8cYmw?autoplay=1&mute=1&loop=1&playlist=GqNZLj8cYmw&controls=0&rel=0&modestbranding=1&start=5&si=V_wzlsrw9X4zvyoZ"
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] pointer-events-none"
-                    allow="autoplay; encrypted-media"
-                    title="UniFi Video"
-                  />
-
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-black/20 pointer-events-none" />
-
-                </div>
-              </div>
-            </div>
-
+            {/* TEXT */}
             <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
-              <h3 className="text-4xl md:text-5xl font-black italic uppercase">
-                UniFi Access
-              </h3>
-
+              <h3 className="text-4xl md:text-5xl font-black italic uppercase">UniFi Protect</h3>
               <p className="text-gray-400 text-xl leading-relaxed">
-                UniFi Access menghadirkan sistem kontrol akses cerdas dengan manajemen terpusat, integrasi fleksibel, dan pengalaman pengguna yang seamless—memberikan keamanan tingkat tinggi untuk berbagai kebutuhan bisnis
+                Platform keamanan enterprise tanpa lisensi dengan dukungan AI untuk deteksi cerdas.
               </p>
-
               <Link href="/collections/camera-security">
-                <Button
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all"
-                >
+                <Button className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold">
                   Explore Protect
                 </Button>
               </Link>
             </div>
 
           </div>
+
+
+          {/* === ITEM 2 === */}
+          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
+
+            {/* TEXT */}
+            <div className="flex-1 space-y-8 text-center lg:text-left">
+              <h3 className="text-4xl md:text-5xl font-black italic uppercase">UniFi Network</h3>
+              <p className="text-gray-400 text-xl leading-relaxed">
+                Infrastruktur IT terpadu dengan kontrol penuh tanpa subscription.
+              </p>
+              <Button className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold">
+                Explore Network
+              </Button>
+            </div>
+
+            {/* VIDEO */}
+            <div className="flex-1 flex justify-center">
+              <div className="relative group w-full max-w-[480px] aspect-square">
+
+                <div className="absolute inset-0 rounded-full bg-primary/20 blur-[70px] scale-[1.1] opacity-70 group-hover:opacity-100 transition-all duration-700" />
+
+                <div className="absolute inset-0 rounded-full z-20 pointer-events-none">
+                  <div className="w-full h-full rounded-full border-[clamp(3px,0.8vw,8px)] border-primary shadow-[0_0_40px_rgba(59,130,246,0.7)] transition-transform duration-700 group-hover:scale-[1.05]" />
+                </div>
+
+                <div className="absolute inset-0 rounded-full overflow-hidden border border-white/10 shadow-2xl bg-black">
+                  <iframe
+                    src="https://www.youtube.com/embed/zZpzDb-MHOY?autoplay=1&mute=1&loop=1&playlist=zZpzDb-MHOY&controls=0"
+                    className="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 scale-[1.6] md:scale-[1.8] lg:scale-[2]"
+                  />
+                  <div className="absolute inset-0 bg-black/20" />
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          {/* === ITEM 3 === */}
+          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
+
+            {/* VIDEO */}
+            <div className="flex-1 flex justify-center order-2 lg:order-1">
+              <div className="relative group w-full max-w-[480px] aspect-square">
+
+                <div className="absolute inset-0 rounded-full bg-primary/20 blur-[70px] scale-[1.1] opacity-70 group-hover:opacity-100 transition-all duration-700" />
+
+                <div className="absolute inset-0 rounded-full z-20 pointer-events-none">
+                  <div className="w-full h-full rounded-full border-[clamp(3px,0.8vw,8px)] border-primary shadow-[0_0_40px_rgba(59,130,246,0.7)] transition-transform duration-700 group-hover:scale-[1.05]" />
+                </div>
+
+                <div className="absolute inset-0 rounded-full overflow-hidden border border-white/10 shadow-2xl bg-black">
+                  <iframe
+                    src="https://www.youtube.com/embed/GqNZLj8cYmw?autoplay=1&mute=1&loop=1&playlist=GqNZLj8cYmw&controls=0"
+                    className="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 scale-[1.5] md:scale-[1.7] lg:scale-[1.9]"
+                  />
+                  <div className="absolute inset-0 bg-black/20" />
+                </div>
+
+              </div>
+            </div>
+
+            {/* TEXT */}
+            <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
+              <h3 className="text-4xl md:text-5xl font-black italic uppercase">UniFi Access</h3>
+              <p className="text-gray-400 text-xl leading-relaxed">
+                Sistem kontrol akses cerdas dengan manajemen terpusat dan keamanan tinggi.
+              </p>
+              <Button className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold">
+                Explore Access
+              </Button>
+            </div>
+
+          </div>
+
         </div>
-      </section>
+      </section >
       {/* New Release - Aesthetic Dark Minimalist */}
-      <section className="py-40 bg-white dark:bg-background relative overflow-hidden">
+      < section className="py-40 bg-white dark:bg-background relative overflow-hidden" >
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24 px-4 md:px-12">
@@ -353,6 +333,7 @@ export default function Home() {
               <p className="text-2xl text-muted-foreground max-w-lg leading-snug font-medium">
                 Unprecedented throughput. Ultra-low latency. The pinnacle of wireless performance.
               </p>
+
 
               <div className="flex gap-12 border-l-4 border-primary pl-8">
                 <div>
@@ -372,7 +353,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="flex-1 relative">
-              <img
+              <img      
                 src="/images/wifi-ap.jpg"
                 alt="U7 Pro"
                 className="relative z-10 w-full max-w-2xl mx-auto object-contain drop-shadow-[0_50px_50px_rgba(0,0,0,0.2)] hover:-translate-y-8 transition-transform duration-1000"
@@ -380,7 +361,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-    </Layout>
+      </section >
+    </Layout >
   );
 }
