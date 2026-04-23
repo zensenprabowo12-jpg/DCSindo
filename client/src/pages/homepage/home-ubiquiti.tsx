@@ -26,10 +26,13 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white">
 
+
           {/* Slogan */}
           <p className="mb-6 text-sm md:text-[15px] font-black tracking-[0.35em] uppercase text-gray-300 animate-in fade-in slide-in-from-bottom-6 duration-1000">
             Building The Future of IT
           </p>
+
+          {/* Logo UniFi */}
 
           {/* Logo UniFi */}
           <img
@@ -48,6 +51,7 @@ export default function Home() {
             </Button>
           </Link>
 
+
         </div>
       </section>
       {/* 🔹 Reimagined Ecosystem Section - Aesthetic Masonry Layout */}
@@ -55,11 +59,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-[16px] md:text-[60px] font-black tracking-tight mb-2">Industry Leading Hardware</h2>
+            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Didesain secara presisi untuk performa tinggi dan keandalan jangka panjang.</p>
             <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Didesain secara presisi untuk performa tinggi dan keandalan jangka panjang.
             </p>
             <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Didukung EdgeAI yang berkembang pesat di bidang networking dan keamanan fisik.
             </p>
           </div>
+
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[900px]">
             {/* WiFi Systems - Large Main Card */}
@@ -97,6 +103,7 @@ export default function Home() {
                 />
               </motion.a>
             </Link>
+
 
 
             {/* Door Access - Side Card */}
@@ -180,6 +187,7 @@ export default function Home() {
               Talk to an Expert
             </Button>
           </Link>
+
 
         </div>
 
@@ -326,6 +334,7 @@ export default function Home() {
                 Unprecedented throughput. Ultra-low latency. The pinnacle of wireless performance.
               </p>
 
+
               <div className="flex gap-12 border-l-4 border-primary pl-8">
                 <div>
                   <div className="text-5xl font-black mb-1">5.7</div>
@@ -344,7 +353,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="flex-1 relative">
-              <img
+              <img      
                 src="/images/wifi-ap.jpg"
                 alt="U7 Pro"
                 className="relative z-10 w-full max-w-2xl mx-auto object-contain drop-shadow-[0_50px_50px_rgba(0,0,0,0.2)] hover:-translate-y-8 transition-transform duration-1000"

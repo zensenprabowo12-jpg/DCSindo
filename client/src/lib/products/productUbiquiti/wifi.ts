@@ -9651,7 +9651,7 @@ export const wifiProducts: Product[] = [
     name: "UniFi Travel Router",
     category: "WiFi",
     subfilter: "Special Devices",
-    image: "/images/products/Product-UDR-5G-Max.png",
+    image: "/images/WiFi/19.utr/1.p-utama-utr.png",
     shortDescription:
       "An ultra-slim travel router that instantly extends your UniFi Network wherever you are, bringing secure, familiar connectivity to remote locations.",
     specs: [
@@ -9667,15 +9667,23 @@ export const wifiProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-5G-Max.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/19.utr/1.p-utama-utr.png",
+      "/images/WiFi/19.utr/2.p-dimensi-utr.png",
+      "/images/WiFi/19.utr/3.p-spec-utr.png",
+      "/images/WiFi/19.utr/4.p-development-utr.png",
+      "/images/WiFi/19.utr/p-itb-utr.png",
+      "/images/WiFi/19.utr/p-mkt0-utr.png",
+      "/images/WiFi/19.utr/p-mkt2-utr.png",
+      "/images/WiFi/19.utr/p-mkt3-utr.png",
+      "/images/WiFi/19.utr/p-mkt4-utr.png",
+      "/images/WiFi/19.utr/p-mkt5-utr.png",
+      "/images/WiFi/19.utr/p-mkt6-utr.png",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/WiFi/19.utr/p-mkt0-utr.png",
+      "/images/WiFi/19.utr/p-itb-utr.png"
     ],
 
     // Bullet points untuk deskripsi produk
@@ -9734,10 +9742,7 @@ export const wifiProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/WiFi/19.utr/p-itb-utr.png" },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini

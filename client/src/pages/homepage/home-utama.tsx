@@ -2,7 +2,7 @@ import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { ArrowRight, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -10,6 +10,7 @@ export default function HomeUtama() {
 
   // ✅ Popup selalu muncul tiap buka halaman
   const [showPopup, setShowPopup] = useState(true);
+  const brandSectionRef = useRef<HTMLDivElement | null>(null);
 
   const handleClose = () => {
     setShowPopup(false);
@@ -50,11 +51,11 @@ export default function HomeUtama() {
               {/* TEXT (EDIT BEBAS) */}
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
                 Website ini berisi produk dan solusi networking profesional.
-                Pastikan Anda memahami penggunaan produk sebelum membeli. 
+                Pastikan Anda memahami penggunaan produk sebelum membeli.
                 Dengan melanjutkan, Anda menyetujui ketentuan yang berlaku.
-                Silahkan ke halaman support kami sesuai brand yang digunakan. 
+                Silahkan ke halaman support kami sesuai brand yang digunakan.
                 <p>Terima kasih.</p>
-                <Link href="/support/ubiquiti" className="text-blue-600 hover:underline">Support Ubiquiti | </Link> 
+                <Link href="/support/ubiquiti" className="text-blue-600 hover:underline">Support Ubiquiti | </Link>
                 <Link href="/support/mikrotik" className="text-blue-600 hover:underline">Support Mikrotik | </Link>
                 <Link href="/support/Vsol" className="text-blue-600 hover:underline">Support Vsol</Link>
               </p>
@@ -73,7 +74,7 @@ export default function HomeUtama() {
 
       {/* ================= HERO ================= */}
       <section className="relative h-screen min-h-[600px] w-full overflow-hidden flex items-center justify-center bg-white dark:bg-black transition-colors duration-500">
-        
+
         {/* VIDEO */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <div className="absolute inset-0 bg-white/30 dark:bg-black/60 z-10 transition-colors duration-500" />
@@ -104,23 +105,29 @@ export default function HomeUtama() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-6 pt-10">
-              <Link href="/home-ubiquiti">
-                <Button
-                  size="lg"
-                  className="bg-black text-white dark:bg-white dark:text-black hover:bg-primary hover:text-white text-lg px-10 py-6 rounded-full font-semibold uppercase transition-all hover:scale-105 shadow-xl"
-                >
-                  Enter Ecosystem
-                </Button>
-              </Link>
+              <Button
+                onClick={() => {
+                  brandSectionRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+                size="lg"
+                className="bg-black text-white dark:bg-white dark:text-black hover:bg-primary hover:text-white text-lg px-10 py-6 rounded-full font-semibold uppercase transition-all hover:scale-105 shadow-xl"
+              >
+                Enter Ecosystem
+              </Button>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* ================= BRAND GRID ================= */}
-      <section className="py-24 bg-white dark:bg-black transition-colors duration-500">
+      <section
+        ref={brandSectionRef}
+        className="py-24 bg-white dark:bg-black transition-colors duration-500"
+      >
         <div className="container mx-auto px-4 max-w-7xl">
-          
+
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-black dark:text-white">
               Get Started Here
@@ -130,7 +137,7 @@ export default function HomeUtama() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 name: "Ubiquiti",
@@ -193,6 +200,6 @@ export default function HomeUtama() {
         </div>
       </section>
 
-    </Layout>
+    </Layout >
   );
 }
