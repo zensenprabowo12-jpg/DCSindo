@@ -67,7 +67,7 @@ export function registerMikrotikRoutes(app: Express): void {
   app.post(
     "/admin/mikrotik/:id/update",
     handleUpload(uploadMikrotikImage.single("gambar"), (req) => {
-      const id = encodeURIComponent(req.params.id ?? "");
+      const id = encodeURIComponent(String(req.params.id ?? ""));
       return `/admin/mikrotik/${id}/edit?error=Upload%20gagal`;
     }),
     formUpdateMikrotik,
