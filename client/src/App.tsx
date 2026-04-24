@@ -9,7 +9,6 @@ import Home from "@/pages/homepage/home-utama";
 import HomeUbiquiti from "@/pages/homepage/home-ubiquiti";
 import Collection from "@/pages/collection";
 import ProductDetail from "@/pages/product";
-import BrandCatalogPage from "@/pages/brand-catalog";
 import Support from "@/pages/support";
 import UbiquitiSupport from "@/pages/support/Ubiquiti";
 import MikrotikSupport from "@/pages/support/Mikrotik";
@@ -28,8 +27,6 @@ function RouterWouter() {
 
       <Route path="/collections/:category" component={Collection} />
       <Route path="/products/:id" component={ProductDetail} />
-
-      <Route path="/brand/:slug" component={BrandCatalogPage} />
 
       <Route path="/support" component={Support} />
       <Route path="/support/ubiquiti" component={UbiquitiSupport} />

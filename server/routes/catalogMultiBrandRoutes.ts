@@ -66,7 +66,7 @@ export function registerCatalogMultiBrandRoutes(app: Express): void {
   app.put(
     "/api/products/:id",
     handleUpload(uploadCatalogProductImage.single("gambar"), (req) => {
-      const id = encodeURIComponent(String(req.params.id ?? ""));
+      const id = encodeURIComponent(req.params.id ?? "");
       return `/admin/v2/products/${id}/edit?error=upload`;
     }),
     apiUpdateProduct,
@@ -84,7 +84,7 @@ export function registerCatalogMultiBrandRoutes(app: Express): void {
   app.post(
     "/admin/v2/products/:id/update",
     handleUpload(uploadCatalogProductImage.single("gambar"), (req) => {
-      const id = encodeURIComponent(String(req.params.id ?? ""));
+      const id = encodeURIComponent(req.params.id ?? "");
       return `/admin/v2/products/${id}/edit?error=upload`;
     }),
     formAdminV2UpdateProduct,
