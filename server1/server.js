@@ -1,4 +1,3 @@
-import "dotenv/config";
 import express from "express";
 import mysql from "mysql2";
 import cors from "cors";
@@ -10,30 +9,18 @@ app.use(express.json());
 console.log("Server mulai...");
 
 // ================= DB CONFIG =================
-// NOTE:
-// - File `server/` adalah backend utama (TS).
-// - `server1/` terlihat sebagai backend legacy untuk katalog lama.
-// Perbaikan di bawah ini mempertahankan default lama, tapi menghindari credential hardcoded.
-const dbHost = process.env.MYSQL_HOST ?? "localhost";
-const dbUser = process.env.MYSQL_USER ?? "root";
-const dbPassword = process.env.MYSQL_PASSWORD ?? "";
-// Legacy default: "newdcs" (jika Anda sudah migrate ke "dcsindo", set MYSQL_DATABASE di .env)
-const dbName = process.env.MYSQL_DATABASE ?? "newdcs";
-const dbPort = Number.parseInt(process.env.MYSQL_PORT ?? "3306", 10);
-
 const db = mysql.createConnection({
-  host: dbHost,
-  port: dbPort,
-  user: dbUser,
-  password: dbPassword,
-  database: dbName,
+  host: "localhost", // GANTI kalau pakai hosting
+  user: "root",
+  password: "",
+  database: "newdcs",
 });
 
 db.connect((err) => {
   if (err) {
     console.log("❌ DB Error:", err);
   } else {
-    console.log(`✅ DB Connected (${dbHost}:${dbPort}/${dbName} as ${dbUser})`);
+    console.log("✅ DB Connected");
   }
 });
 
@@ -217,7 +204,6 @@ app.put("/produk/:id", (req, res) => {
 });
 
 // ================= RUN SERVER =================
-const port = Number.parseInt(process.env.PORT ?? "5000", 10);
-app.listen(port, () => {
-  console.log(`🚀 Server jalan di http://localhost:${port}`);
+app.listen(5000, () => {
+  console.log("🚀 Server jalan di http://localhost:5000");
 });
