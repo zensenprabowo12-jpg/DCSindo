@@ -7,7 +7,7 @@ import {
 import { formatZodIssues, idParamSchema } from "../validation/catalogProductSchema";
 
 export async function pageBrandCatalog(req: Request, res: Response) {
-  const slug = (req.params.slug ?? "").trim();
+  const slug = String(req.params.slug ?? "").trim();
   if (!slug) {
     res.status(404).render("catalog/error", {
       title: "Tidak ditemukan",
@@ -40,7 +40,7 @@ export async function pageBrandCatalog(req: Request, res: Response) {
 }
 
 export async function pageBrandProductDetail(req: Request, res: Response) {
-  const slug = (req.params.slug ?? "").trim();
+  const slug = String(req.params.slug ?? "").trim();
   const parsedId = idParamSchema.safeParse(req.params.id);
   if (!parsedId.success) {
     res.status(400).render("catalog/error", {
