@@ -9,6 +9,14 @@ import Home from "@/pages/homepage/home-utama";
 import HomeUbiquiti from "@/pages/homepage/home-ubiquiti";
 import Collection from "@/pages/collection";
 import ProductDetail from "@/pages/product";
+import MikrotikLandingPage from "@mikrotik/Landing";
+import MikrotikDcsStoreCatalog from "@mikrotik/public/StoreCatalog";
+import MikrotikDcsStoreProductDetail from "@mikrotik/public/StoreProductDetail";
+import MikrotikCategoryProductPage from "@mikrotik/public/CategoryProductPage";
+import MikrotikCategoryCatalogPage from "@mikrotik/public/CategoryCatalogPage";
+import MikrotikDcsAdminLogin from "@mikrotik/admin/Login";
+import MikrotikDcsDashboard from "@mikrotik/admin/Dashboard";
+import MikrotikDcsProductForm from "@mikrotik/admin/ProductForm";
 import Support from "@/pages/support";
 import UbiquitiSupport from "@/pages/support/Ubiquiti";
 import MikrotikSupport from "@/pages/support/Mikrotik";
@@ -27,6 +35,17 @@ function RouterWouter() {
 
       <Route path="/collections/:category" component={Collection} />
       <Route path="/products/:id" component={ProductDetail} />
+
+      <Route path="/mikrotik/shop/:id" component={MikrotikDcsStoreProductDetail} />
+      <Route path="/mikrotik/shop" component={MikrotikDcsStoreCatalog} />
+      <Route path="/mikrotik/categories/:category" component={MikrotikCategoryCatalogPage} />
+      <Route path="/mikrotik/categories" component={MikrotikCategoryProductPage} />
+      <Route path="/mikrotik" component={MikrotikLandingPage} />
+
+      <Route path="/mikrotik-dcs/admin/new" component={MikrotikDcsProductForm} />
+      <Route path="/mikrotik-dcs/admin/:id/edit" component={MikrotikDcsProductForm} />
+      <Route path="/mikrotik-dcs/admin/login" component={MikrotikDcsAdminLogin} />
+      <Route path="/mikrotik-dcs/admin" component={MikrotikDcsDashboard} />
 
       <Route path="/support" component={Support} />
       <Route path="/support/ubiquiti" component={UbiquitiSupport} />
