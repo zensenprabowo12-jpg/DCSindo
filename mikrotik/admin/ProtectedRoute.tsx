@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
 import { apiMe } from "../api";
-import { consumeAdminAuthedOnce } from "./authGate";
+import { isAdminAuthedSession } from "./authGate";
 
 export default function MikrotikDcsProtectedRoute({
   children,
@@ -15,9 +15,9 @@ export default function MikrotikDcsProtectedRoute({
   useEffect(() => {
     let c = true;
     (async () => {
-      // Wajib login ulang setiap refresh / pindah halaman admin.
-      // Gate ini hanya true sekali setelah berhasil login.
-      if (!consumeAdminAuthedOnce()) {
+      // Wajib login ulang setiap refresh.
+      // (Gate ini in-memory, jadi tetap true saat pindah halaman SPA.)
+      if (!isAdminAuthedSession()) {
         setLocation("/mikrotik-dcs/admin/login");
         setReady(true);
         return;

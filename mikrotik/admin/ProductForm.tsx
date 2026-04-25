@@ -23,6 +23,10 @@ function ProductFormBody({ id }: { id?: string }) {
   const [category, setCategory] = useState<string>(MIKROTIK_DCS_CATEGORIES[0]);
   const [desk, setDesk] = useState("");
   const [bullets, setBullets] = useState<string[]>(EMPTY_BULLETS);
+  const [videoUrl, setVideoUrl] = useState("");
+  const [videoTitle, setVideoTitle] = useState("");
+  const [videoDesc, setVideoDesc] = useState("");
+  const [specsText, setSpecsText] = useState("");
   const [mainFile, setMainFile] = useState<File | null>(null);
   const [galleryFiles, setGalleryFiles] = useState<File[]>([]);
   const [mainPreview, setMainPreview] = useState<string | null>(null);
@@ -51,6 +55,11 @@ function ProductFormBody({ id }: { id?: string }) {
       setBullets(b.map((x) => (x == null ? "" : String(x))));
       setExistingMain(d.main_image);
       setKeepGallery(d.gallery.map((g) => g.image_path));
+      setVideoUrl(String((d as any).video_url ?? ""));
+      setVideoTitle(String((d as any).video_title ?? ""));
+      setVideoDesc(String((d as any).video_description ?? ""));
+      const specs = (d as any).specifications as unknown;
+      setSpecsText(specs && typeof specs === "object" ? JSON.stringify(specs, null, 2) : "");
       setLoading(false);
     })();
     return () => {
@@ -101,6 +110,25 @@ function ProductFormBody({ id }: { id?: string }) {
     form.set("category", category);
     form.set("deskripsi", desk.trim());
     form.set("bullets", JSON.stringify(bClean));
+    form.set("video_url", videoUrl.trim());
+    form.set("video_title", videoTitle.trim());
+    form.set("video_description", videoDesc.trim());
+    if (specsText.trim()) {
+      try {
+        const parsed = JSON.parse(specsText) as unknown;
+        if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+          form.set("specifications", JSON.stringify(parsed));
+        } else {
+          setErr("Specifications harus berupa JSON object (key-value)");
+          return;
+        }
+      } catch {
+        setErr("Specifications JSON tidak valid");
+        return;
+      }
+    } else {
+      form.set("specifications", "");
+    }
     if (mainFile) {
       form.append("main_image", mainFile);
     }
@@ -186,6 +214,47 @@ function ProductFormBody({ id }: { id?: string }) {
               rows={5}
               required
             />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="vurl">Video URL (YouTube)</Label>
+            <Input
+              id="vurl"
+              value={videoUrl}
+              onChange={(e) => setVideoUrl(e.target.value)}
+              placeholder="https://www.youtube.com/watch?v=..."
+            />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="vtitle">Video Title</Label>
+            <Input
+              id="vtitle"
+              value={videoTitle}
+              onChange={(e) => setVideoTitle(e.target.value)}
+              placeholder="Judul video"
+            />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="vdesc">Video Description</Label>
+            <Textarea
+              id="vdesc"
+              value={videoDesc}
+              onChange={(e) => setVideoDesc(e.target.value)}
+              rows={3}
+              placeholder="Deskripsi singkat video"
+            />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="specs">Specifications (JSON)</Label>
+            <Textarea
+              id="specs"
+              value={specsText}
+              onChange={(e) => setSpecsText(e.target.value)}
+              rows={6}
+              placeholder={`{\n  "CPU": "Dual-core",\n  "RAM": "256MB"\n}`}
+            />
+            <p className="text-xs text-muted-foreground">
+              Format harus JSON object key-value.
+            </p>
           </div>
           <div className="space-y-2">
             <Label>Bullet (maks. 9)</Label>

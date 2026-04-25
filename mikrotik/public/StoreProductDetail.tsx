@@ -1,9 +1,14 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { apiPublicProduct } from "../api";
 import type { MikrotikDcsProductDetail } from "../types";
+import { ProductGallery } from "./product-detail/ProductGallery";
+import { ProductInfo } from "./product-detail/ProductInfo";
+import { ProductVideo } from "./product-detail/ProductVideo";
+import { ProductSpecification } from "./product-detail/ProductSpecification";
+import { MIKROTIK_PRODUCT_EXTRAS } from "./productExtras";
 
 export default function MikrotikDcsStoreProductDetail() {
   const [match, params] = useRoute("/mikrotik/shop/:id");
@@ -11,11 +16,18 @@ export default function MikrotikDcsStoreProductDetail() {
   const [d, setD] = useState<MikrotikDcsProductDetail | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [activeImage, setActiveImage] = useState<string>("");
+
+  const extras = useMemo(() => {
+    return Number.isFinite(id) ? MIKROTIK_PRODUCT_EXTRAS[id] : undefined;
+  }, [id]);
+
+  const specId = "mikrotik-product-spec";
 
   useEffect(() => {
     if (!match) {
       setLoading(false);
-      setErr("URL tidak valid");
+      setErr(null);
       return;
     }
     if (Number.isNaN(id) || id < 1) {
@@ -43,10 +55,56 @@ export default function MikrotikDcsStoreProductDetail() {
     };
   }, [id, match]);
 
+  const gallery = useMemo(() => {
+    if (!d) return [];
+    return (d.gallery ?? [])
+      .slice()
+      .sort((a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0))
+      .map((g) => ({ id: g.id, src: g.image_path }));
+  }, [d]);
+
+  const bulletPoints = useMemo(
+    () => (d ? (d.bullet_points ?? []).map(String).filter(Boolean) : []),
+    [d],
+  );
+
+  const videoUrlOrId = useMemo(() => {
+    if (!d) return "";
+    return (d.video_url ?? "") || extras?.videoUrl || "";
+  }, [d, extras?.videoUrl]);
+
+  const videoTitle = useMemo(
+    () => (d ? (d.video_title ?? undefined) || extras?.videoTitle : undefined),
+    [d, extras?.videoTitle],
+  );
+  const videoDescription = useMemo(
+    () => (d ? (d.video_description ?? undefined) || extras?.videoDescription : undefined),
+    [d, extras?.videoDescription],
+  );
+
+  const specifications = useMemo(() => {
+    if (!d) return {} as Record<string, string>;
+    return d.specifications ?? extras?.specifications ?? {};
+  }, [d, extras?.specifications]);
+
+  useEffect(() => {
+    if (!d) {
+      setActiveImage("");
+      return;
+    }
+    setActiveImage(d.main_image || gallery[0]?.src || "");
+  }, [d, gallery]);
+
+  const scrollToSpecs = useCallback(() => {
+    const el = document.getElementById(specId);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [specId]);
+
   if (!match) {
     return (
       <Layout>
-        <div className="container py-20 text-center text-muted-foreground">Memuat…</div>
+        <div className="container py-20 text-center text-destructive">URL tidak valid</div>
       </Layout>
     );
   }
@@ -74,49 +132,47 @@ export default function MikrotikDcsStoreProductDetail() {
 
   return (
     <Layout>
-      <div className="container mx-auto px-4 py-12 max-w-4xl">
-        <div className="mb-6">
+      <div className="bg-background">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <div className="mb-6">
           <Button variant="ghost" asChild>
             <Link href="/mikrotik/shop">← Kembali ke katalog</Link>
           </Button>
-        </div>
-        <div className="grid md:grid-cols-2 gap-10">
-          <div>
-            <img
-              src={d.main_image}
-              alt={d.nama_produk}
-              className="w-full rounded-2xl border border-border bg-secondary/20 object-contain"
-            />
-            {d.gallery.length > 0 && (
-              <div className="mt-4 flex flex-wrap gap-2">
-                {d.gallery.map((g) => (
-                  <img
-                    key={g.id}
-                    src={g.image_path}
-                    alt=""
-                    className="h-20 w-20 object-cover rounded-lg border"
-                  />
-                ))}
-              </div>
-            )}
           </div>
-          <div>
-            <p className="text-xs text-muted-foreground font-mono mb-1">SKU: {d.sku}</p>
-            <h1 className="text-2xl font-black tracking-tight mb-2">{d.nama_produk}</h1>
-            <p className="text-sm text-primary font-medium mb-4">{d.category}</p>
-            <p className="text-muted-foreground leading-relaxed whitespace-pre-wrap">
-              {d.deskripsi}
-            </p>
-            {d.bullet_points.length > 0 && (
-              <div className="mt-6">
-                <h2 className="text-sm font-bold mb-2">Highlights</h2>
-                <ul className="list-disc pl-5 space-y-1 text-sm">
-                  {d.bullet_points.map((b, i) => (
-                    <li key={i}>{b}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
+
+          <div className="max-w-6xl mx-auto">
+            {/* A. Top section (2 columns) */}
+            <div className="grid lg:grid-cols-2 gap-10 items-start">
+              <ProductGallery
+                title={d.nama_produk}
+                mainSrc={d.main_image}
+                gallery={gallery}
+                activeSrc={activeImage || d.main_image}
+                onSelect={setActiveImage}
+              />
+
+              <ProductInfo
+                name={d.nama_produk}
+                sku={d.sku}
+                description={d.deskripsi}
+                bullets={bulletPoints}
+                onScrollToSpecs={scrollToSpecs}
+              />
+            </div>
+
+            {/* B. Video section */}
+            <ProductVideo
+              videoUrlOrId={videoUrlOrId}
+              title={videoTitle || "Judul Video Product"}
+              description={videoDescription || ""}
+            />
+
+            {/* C. Specification section */}
+            <ProductSpecification
+              id={specId}
+              title="Specification"
+              specifications={specifications}
+            />
           </div>
         </div>
       </div>

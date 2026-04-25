@@ -63,9 +63,11 @@ export const LANDING_VIDEO = {
 };
 
 export const LANDING_CATEGORIES = [
-  { title: "Ethernet Routers", href: "/mikrotik/shop?category=ethernet%20routers" },
-  { title: "Switches", href: "/mikrotik/shop?category=switches" },
-  { title: "Wireless Systems", href: "/mikrotik/shop?category=wireless%20system" },
-  { title: "Wireless Home & Office", href: "/mikrotik/shop?category=wireless%20home%20%26%20office" },
+  // Single source of truth untuk halaman category products:
+  // selalu arahkan ke `/mikrotik/categories/:category`
+  { title: "Ethernet Routers", href: "/mikrotik/categories/ethernet%20routers" },
+  { title: "Switches", href: "/mikrotik/categories/switches" },
+  { title: "Wireless Systems", href: "/mikrotik/categories/wireless%20system" },
+  { title: "Wireless Home & Office", href: "/mikrotik/categories/wireless%20home%20%26%20office" },
 ];
 

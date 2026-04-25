@@ -12,6 +12,11 @@ export type MikrotikDcsProduct = {
 
 export type MikrotikDcsProductDetail = MikrotikDcsProduct & {
   gallery: { id: number; image_path: string; sort_order: number }[];
+  // Optional extras (bisa ditambah dari DB nantinya)
+  video_url?: string | null;
+  video_title?: string | null;
+  video_description?: string | null;
+  specifications?: Record<string, string> | null;
 };
 
 export type ApiOk<T> = { ok: true; data: T };
