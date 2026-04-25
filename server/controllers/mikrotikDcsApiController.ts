@@ -151,6 +151,25 @@ function readBulletsFromBody(body: Record<string, unknown>): string[] {
   return [];
 }
 
+function readSpecsFromBody(body: Record<string, unknown>): Record<string, string> | null {
+  const raw = body.specifications;
+  if (typeof raw === "string" && raw.trim()) {
+    try {
+      const j = JSON.parse(raw) as unknown;
+      if (j && typeof j === "object" && !Array.isArray(j)) {
+        return Object.fromEntries(
+          Object.entries(j as Record<string, unknown>)
+            .map(([k, v]) => [String(k).trim(), v == null ? "" : String(v).trim()] as const)
+            .filter(([k, v]) => Boolean(k) && Boolean(v)),
+        );
+      }
+    } catch {
+      return null;
+    }
+  }
+  return null;
+}
+
 export async function apiMikrotikDcsAdminCreate(
   req: Request,
   res: Response,
@@ -170,6 +189,10 @@ export async function apiMikrotikDcsAdminCreate(
     return;
   }
   const bullets = readBulletsFromBody(body);
+  const specs = readSpecsFromBody(body);
+  const video_url = String(body.video_url ?? "").trim() || null;
+  const video_title = String(body.video_title ?? "").trim() || null;
+  const video_description = String(body.video_description ?? "").trim() || null;
   const nama = String(body.nama_produk ?? "").trim();
   const sku = String(body.sku ?? "").trim();
   const desk = String(body.deskripsi ?? "").trim();
@@ -187,6 +210,10 @@ export async function apiMikrotikDcsAdminCreate(
       deskripsi: desk,
       bullet_points: bullets,
       main_image: mainPath,
+      video_url,
+      video_title,
+      video_description,
+      specifications: specs,
       galleryPaths,
     });
     res.status(201).json({ ok: true, data: { id: newId } });
@@ -223,6 +250,10 @@ export async function apiMikrotikDcsAdminUpdate(
     return;
   }
   const bullets = readBulletsFromBody(body);
+  const specs = readSpecsFromBody(body);
+  const video_url = String(body.video_url ?? "").trim() || null;
+  const video_title = String(body.video_title ?? "").trim() || null;
+  const video_description = String(body.video_description ?? "").trim() || null;
   const nama = String(body.nama_produk ?? "").trim();
   const sku = String(body.sku ?? "").trim();
   const desk = String(body.deskripsi ?? "").trim();
@@ -268,6 +299,10 @@ export async function apiMikrotikDcsAdminUpdate(
       deskripsi: desk,
       bullet_points: bullets,
       main_image: mainPath,
+      video_url,
+      video_title,
+      video_description,
+      specifications: specs,
       galleryPaths: { keepExisting: keepGallery, newUploads },
     });
     res.json({ ok: true, data: { id } });

@@ -14,6 +14,10 @@ export type MikrotikDcsProductRow = {
   deskripsi: string;
   bullet_points: string[]; // parsed from JSON
   main_image: string;
+  video_url?: string | null;
+  video_title?: string | null;
+  video_description?: string | null;
+  specifications?: Record<string, string> | null;
   created_at: Date;
   updated_at: Date;
 };
@@ -34,6 +38,23 @@ function mapProduct(r: RowDataPacket): MikrotikDcsProductRow {
   } catch {
     bullets = [];
   }
+  let specs: Record<string, string> | null = null;
+  try {
+    const raw = r.specifications;
+    if (raw && typeof raw === "string") {
+      const j = JSON.parse(raw) as unknown;
+      if (j && typeof j === "object" && !Array.isArray(j)) {
+        specs = Object.fromEntries(
+          Object.entries(j as Record<string, unknown>).map(([k, v]) => [
+            String(k),
+            v == null ? "" : String(v),
+          ]),
+        );
+      }
+    }
+  } catch {
+    specs = null;
+  }
   return {
     id: r.id,
     nama_produk: r.nama_produk,
@@ -42,6 +63,10 @@ function mapProduct(r: RowDataPacket): MikrotikDcsProductRow {
     deskripsi: r.deskripsi,
     bullet_points: bullets,
     main_image: r.main_image ?? "",
+    video_url: r.video_url ?? null,
+    video_title: r.video_title ?? null,
+    video_description: r.video_description ?? null,
+    specifications: specs,
     created_at: r.created_at,
     updated_at: r.updated_at,
   };
@@ -63,7 +88,9 @@ export async function listMikrotikDcsProducts(
     ? "WHERE `category` = :category"
     : "";
   const [rows] = await mysqlPool.query<RowDataPacket[]>(
-    `SELECT id, nama_produk, sku, category, deskripsi, bullet_points, main_image, created_at, updated_at
+    `SELECT id, nama_produk, sku, category, deskripsi, bullet_points, main_image,
+            video_url, video_title, video_description, specifications,
+            created_at, updated_at
      FROM mikrotik_dcs_products
      ${where}
      ORDER BY created_at ${order}, id ${order}`,
@@ -76,7 +103,9 @@ export async function getMikrotikDcsProductById(
   id: number,
 ): Promise<MikrotikDcsProductWithGallery | null> {
   const [pRows] = await mysqlPool.query<RowDataPacket[]>(
-    `SELECT id, nama_produk, sku, category, deskripsi, bullet_points, main_image, created_at, updated_at
+    `SELECT id, nama_produk, sku, category, deskripsi, bullet_points, main_image,
+            video_url, video_title, video_description, specifications,
+            created_at, updated_at
      FROM mikrotik_dcs_products WHERE id = :id LIMIT 1`,
     { id },
   );
@@ -107,16 +136,23 @@ export async function createMikrotikDcsProduct(data: {
   deskripsi: string;
   bullet_points: string[];
   main_image: string;
+  video_url?: string | null;
+  video_title?: string | null;
+  video_description?: string | null;
+  specifications?: Record<string, string> | null;
   galleryPaths: string[];
 }): Promise<number> {
   const connection = await mysqlPool.getConnection();
   try {
     await connection.beginTransaction();
     const bulletJson = JSON.stringify(data.bullet_points.slice(0, 9));
+    const specsJson = data.specifications ? JSON.stringify(data.specifications) : null;
     const [res] = await connection.query<ResultSetHeader>(
       `INSERT INTO mikrotik_dcs_products
-       (nama_produk, sku, category, deskripsi, bullet_points, main_image)
-       VALUES (:nama, :sku, :cat, :des, :bullets, :main)`,
+       (nama_produk, sku, category, deskripsi, bullet_points, main_image,
+        video_url, video_title, video_description, specifications)
+       VALUES (:nama, :sku, :cat, :des, :bullets, :main,
+               :vurl, :vtitle, :vdesc, :specs)`,
       {
         nama: data.nama_produk.trim(),
         sku: data.sku.trim(),
@@ -124,6 +160,10 @@ export async function createMikrotikDcsProduct(data: {
         des: data.deskripsi.trim(),
         bullets: bulletJson,
         main: data.main_image,
+        vurl: data.video_url ?? null,
+        vtitle: data.video_title ?? null,
+        vdesc: data.video_description ?? null,
+        specs: specsJson,
       },
     );
     const id = (res as ResultSetHeader).insertId;
@@ -152,6 +192,10 @@ export async function updateMikrotikDcsProduct(
     deskripsi: string;
     bullet_points: string[];
     main_image: string;
+    video_url?: string | null;
+    video_title?: string | null;
+    video_description?: string | null;
+    specifications?: Record<string, string> | null;
     galleryPaths: { keepExisting: string[]; newUploads: string[] };
   },
 ): Promise<void> {
@@ -166,7 +210,11 @@ export async function updateMikrotikDcsProduct(
          category = :cat,
          deskripsi = :des,
          bullet_points = :bullets,
-         main_image = :main
+         main_image = :main,
+         video_url = :vurl,
+         video_title = :vtitle,
+         video_description = :vdesc,
+         specifications = :specs
        WHERE id = :id`,
       {
         nama: data.nama_produk.trim(),
@@ -175,6 +223,10 @@ export async function updateMikrotikDcsProduct(
         des: data.deskripsi.trim(),
         bullets: bulletJson,
         main: data.main_image,
+        vurl: data.video_url ?? null,
+        vtitle: data.video_title ?? null,
+        vdesc: data.video_description ?? null,
+        specs: data.specifications ? JSON.stringify(data.specifications) : null,
         id,
       },
     );

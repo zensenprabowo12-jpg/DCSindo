@@ -72,7 +72,7 @@ function DashboardInner() {
               Logout
             </Button>
             <Button asChild>
-              <a href="/mikrotik-dcs/admin/new">Tambah produk</a>
+              <Link href="/mikrotik-dcs/admin/new">Tambah produk</Link>
             </Button>
           </div>
         </div>

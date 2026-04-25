@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { apiLogin, apiLogout } from "../api";
 import { useEffect } from "react";
-import { markAdminAuthedOnce } from "./authGate";
+import { markAdminAuthedSession } from "./authGate";
 
 /**
  * Login admin sederhana (admin / admindcs) — session di server
@@ -30,7 +30,7 @@ export default function MikrotikDcsAdminLogin() {
     const r = await apiLogin(user, pass);
     setLoading(false);
     if (r.ok) {
-      markAdminAuthedOnce();
+      markAdminAuthedSession();
       setLocation("/mikrotik-dcs/admin");
     } else {
       setErr(r.message);
