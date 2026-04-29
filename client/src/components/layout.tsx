@@ -10,7 +10,8 @@ import {
   Instagram,
   Facebook,
   Linkedin,
-  Twitter
+  Twitter,
+  Shield
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
@@ -65,7 +66,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     external?: boolean;
   }[] = [
     { name: "Ubiquiti", path: "/home-ubiquiti", support: "/support/ubiquiti" },
-    { name: "Mikrotik", path: "/brand/mikrotik", support: "/support/mikrotik", external: true },
+    { name: "Mikrotik", path: "/mikrotik", support: "/support/mikrotik" },
     { name: "V-SOL", path: "/home-vsol", support: "/support/vsol" },
   ];
 
@@ -194,6 +195,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* RIGHT SIDE */}
           <div className="flex items-center gap-2">
+            <Link href="/mikrotik-dcs/admin/login" title="Admin katalog">
+              <a
+                className="inline-flex h-10 w-10 items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-colors"
+                aria-label="Admin katalog"
+              >
+                <Shield className="w-5 h-5" />
+              </a>
+            </Link>
 
             <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)}>
               <Search className="w-5 h-5" />

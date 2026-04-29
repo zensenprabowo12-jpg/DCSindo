@@ -46,13 +46,21 @@ export function registerMikrotikRoutes(app: Express): void {
     express.static(path.join(process.cwd(), "public", "uploads")),
   );
 
-  /** Katalog publik MikroTik memakai multi-brand (tabel products), bukan produk_mikrotik. */
-  app.get("/mikrotik", (_req, res) => {
-    res.redirect(302, "/brand/mikrotik");
-  });
-  app.get("/mikrotik/:id", (req, res) => {
-    const raw = req.params.id ?? "";
-    res.redirect(302, `/brand/mikrotik/${encodeURIComponent(raw)}`);
+  /**
+   * Landing page MikroTik ada di SPA `/mikrotik`.
+   * Katalog produk ada di SPA `/mikrotik/shop`.
+   *
+   * Di server Express, kita cukup biarkan Vite catch-all menangani `/mikrotik`
+   * dan hanya redirect ID numerik lama ke detail shop.
+   */
+  app.get("/mikrotik/:id", (req, res, next) => {
+    const raw = String(req.params.id ?? "");
+    if (raw === "shop") return next(); // biarkan SPA
+    if (/^\d+$/.test(raw)) {
+      res.redirect(302, `/mikrotik/shop/${encodeURIComponent(raw)}`);
+      return;
+    }
+    next();
   });
 
   app.get("/admin/mikrotik", pageAdminList);
@@ -67,7 +75,7 @@ export function registerMikrotikRoutes(app: Express): void {
   app.post(
     "/admin/mikrotik/:id/update",
     handleUpload(uploadMikrotikImage.single("gambar"), (req) => {
-      const id = encodeURIComponent(req.params.id ?? "");
+      const id = encodeURIComponent(String(req.params.id ?? ""));
       return `/admin/mikrotik/${id}/edit?error=Upload%20gagal`;
     }),
     formUpdateMikrotik,

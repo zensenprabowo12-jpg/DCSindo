@@ -1720,7 +1720,7 @@ export const cloudGatewaysProducts: Product[] = [
     name: "Cloud Gateway Industrial",
     category: "Cloud Gateways",
     subfilter: "WiFi Integrated",
-    image: "/images/products/Product-UDR-7.png",
+    image: "/images/cloudgateways/13.ucgindustrial/1.p-utama-ucg-industrial.png",
     shortDescription:
       "Ruggedized, fanless 10 GbE UniFi Cloud Gateway delivering 350W of total system power for high-density PoE deployments, with advanced routing capabilities and microSD storage for full UniFi application support.",
     specs: [
@@ -1736,15 +1736,26 @@ export const cloudGatewaysProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/products/Product-UDR-7.png",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/cloudgateways/13.ucgindustrial/1.p-utama-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/2.p-spec-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/3.p-dimensi-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/4.p-deployment-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/p-itb-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/p-mkt0-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/p-mkt1-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/p-mkt2-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/p-mkt3-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/p-mkt4-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/p-mkt5-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/p-mkt6-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/p-mkt7-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/p-mkt8-ucg-industrial.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/cloudgateways/13.ucgindustrial/p-mkt5-ucg-industrial.png",
+      "/images/cloudgateways/13.ucgindustrial/p-itb-ucg-industrial.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -1888,10 +1899,7 @@ export const cloudGatewaysProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/cloudgateways/13.ucgindustrial/p-itb-ucg-industrial.png" },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini

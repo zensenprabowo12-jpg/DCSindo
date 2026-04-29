@@ -74,7 +74,7 @@ export const switchingProducts: Product[] = [
     name: "Enterprise Campus Aggregation",
     category: "Switching",
     subfilter: "Aggregation",
-    image: "/images/switch.jpg",
+    image: "/images/switching/1.ecs-aggregation/1.p-utama-ecs-aggregation.png",
     shortDescription:
       "1.8 Tbps high-density 100G/25G Layer 3 Etherlighting™ aggregation switch with MC-LAG support for high availability system design.",
     specs: [
@@ -91,15 +91,22 @@ export const switchingProducts: Product[] = [
     
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-      "/images/switch.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/1.ecs-aggregation/1.p-utama-ecs-aggregation.png",
+      "/images/switching/1.ecs-aggregation/2.p-spec-ecs-aggregation.png",
+      "/images/switching/1.ecs-aggregation/3.p-dimensi-ecs-aggregation.png",
+      "/images/switching/1.ecs-aggregation/4.p-dimensi-ecs-aggregation.png",
+      "/images/switching/1.ecs-aggregation/5.p-deployment-ecs-aggregation.png",
+      "/images/switching/1.ecs-aggregation/p-itb-ecs-aggregation.png",
+      "/images/switching/1.ecs-aggregation/p-mkt0-ecs-aggregation.png",
+      "/images/switching/1.ecs-aggregation/p-mkt1-ecs-aggregation.png",
+      "/images/switching/1.ecs-aggregation/p-mkt2-ecs-aggregation.png",
+      "/images/switching/1.ecs-aggregation/p-mkt3-ecs-aggregation.png",
     ],
     
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
+      "/images/switching/1.ecs-aggregation/p-mkt1-ecs-aggregation.png",
+      "/images/switching/1.ecs-aggregation/p-itb-ecs-aggregation.png"
     ],
     
     // Bullet points untuk deskripsi produk
@@ -207,10 +214,7 @@ export const switchingProducts: Product[] = [
     
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dcs-box.png" },
-      { name: "Mounting Kit", image: "/images/dcs-box.png" },
-      { name: "Power Cable", image: "/images/dcs-box.png" },
-      { name: "Quick Start", image: "/images/dcs-box.png" }
+      { name: "Device", image: "/images/switching/1.ecs-aggregation/p-itb-ecs-aggregation.png" },
     ],
     
     // Addon/aksesori yang tersedia untuk produk ini

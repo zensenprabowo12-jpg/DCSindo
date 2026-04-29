@@ -2107,126 +2107,126 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Kedua Belas dari Accessories, SF SFP & Fiber
-  {
-    id: "UACC-OM-MM-1G-D-2",
-    name: "1G Multi-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP & Fiber",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP transceiver that supports 1G connections up to 550 m using multi-mode fiber with a duplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-MM-1G-D-2",
+  //   name: "1G Multi-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP & Fiber",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP transceiver that supports 1G connections up to 550 m using multi-mode fiber with a duplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-MM-1G-D-2",
+  //   // SKU produk
+  //   sku: "UACC-OM-MM-1G-D-2",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 1 Gbps",
-      "Compatible with SFP interfaces",
-      "Duplex LC UPC connector",
-      "Supports multi-mode fiber connections up to 550 m*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 1 Gbps",
+  //     "Compatible with SFP interfaces",
+  //     "Duplex LC UPC connector",
+  //     "Supports multi-mode fiber connections up to 550 m*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Duplex LC UPC" },
-          { label: "Supported Media", value: "Multi-Mode Fiber" },
-          { label: "TX Wavelength", value: "850 nm" },
-          { label: "RX Wavelength", value: "850 nm" },
-          { label: "Supported Data Rate", value: "1 Gbps" },
-          { label: "Supported Cable Distance", value: "550 m (1,804 ft)" },
-          { label: "Max. Power Consumption", value: "0.66 W" },
-          { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Duplex LC UPC" },
+  //         { label: "Supported Media", value: "Multi-Mode Fiber" },
+  //         { label: "TX Wavelength", value: "850 nm" },
+  //         { label: "RX Wavelength", value: "850 nm" },
+  //         { label: "Supported Data Rate", value: "1 Gbps" },
+  //         { label: "Supported Cable Distance", value: "550 m (1,804 ft)" },
+  //         { label: "Max. Power Consumption", value: "0.66 W" },
+  //         { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Ketiga Belas dari Accessories, SF SFP & Fiber
-  {
-    id: "UACC-OM-MM-1G-D-20",
-    name: "1G Multi-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP & Fiber",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP transceiver that supports 1G connections up to 550 m using multi-mode fiber with a duplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-MM-1G-D-20",
+  //   name: "1G Multi-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP & Fiber",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP transceiver that supports 1G connections up to 550 m using multi-mode fiber with a duplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-MM-1G-D-20",
+  //   // SKU produk
+  //   sku: "UACC-OM-MM-1G-D-20",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 1 Gbps",
-      "Compatible with SFP interfaces",
-      "Duplex LC UPC connector",
-      "Supports multi-mode fiber connections up to 550 m*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 1 Gbps",
+  //     "Compatible with SFP interfaces",
+  //     "Duplex LC UPC connector",
+  //     "Supports multi-mode fiber connections up to 550 m*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Duplex LC UPC" },
-          { label: "Supported Media", value: "Multi-Mode Fiber" },
-          { label: "TX Wavelength", value: "850 nm" },
-          { label: "RX Wavelength", value: "850 nm" },
-          { label: "Supported Data Rate", value: "1 Gbps" },
-          { label: "Supported Cable Distance", value: "550 m (1,804 ft)" },
-          { label: "Max. Power Consumption", value: "0.66 W" },
-          { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Duplex LC UPC" },
+  //         { label: "Supported Media", value: "Multi-Mode Fiber" },
+  //         { label: "TX Wavelength", value: "850 nm" },
+  //         { label: "RX Wavelength", value: "850 nm" },
+  //         { label: "Supported Data Rate", value: "1 Gbps" },
+  //         { label: "Supported Cable Distance", value: "550 m (1,804 ft)" },
+  //         { label: "Max. Power Consumption", value: "0.66 W" },
+  //         { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Keempat Belas dari Accessories, SF SFP & Fiber
   {
@@ -2290,126 +2290,126 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Kelima Belas dari Accessories, SF SFP & Fiber
-  {
-    id: "UACC-OM-MM-10G-D-2",
-    name: "10G Multi-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP & Fiber",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP+ transceiver that supports 10G connections up to 300 m using multi-mode fiber with a duplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-MM-10G-D-2",
+  //   name: "10G Multi-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP & Fiber",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP+ transceiver that supports 10G connections up to 300 m using multi-mode fiber with a duplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-MM-10G-D-2",
+  //   // SKU produk
+  //   sku: "UACC-OM-MM-10G-D-2",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 10 Gbps",
-      "Compatible with SFP+ and SFP interfaces",
-      "Duplex LC UPC connector",
-      "Supports multi-mode fiber connections up to 300 m*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 10 Gbps",
+  //     "Compatible with SFP+ and SFP interfaces",
+  //     "Duplex LC UPC connector",
+  //     "Supports multi-mode fiber connections up to 300 m*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Duplex LC UPC" },
-          { label: "Supported Media", value: "Multi-Mode Fiber" },
-          { label: "TX Wavelength", value: "850 nm" },
-          { label: "RX Wavelength", value: "850 nm" },
-          { label: "Supported Data Rate", value: "1/10 Gbps" },
-          { label: "Supported Cable Distance", value: "300 m (984 ft)" },
-          { label: "Max. Power Consumption", value: "0.8 W" },
-          { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Duplex LC UPC" },
+  //         { label: "Supported Media", value: "Multi-Mode Fiber" },
+  //         { label: "TX Wavelength", value: "850 nm" },
+  //         { label: "RX Wavelength", value: "850 nm" },
+  //         { label: "Supported Data Rate", value: "1/10 Gbps" },
+  //         { label: "Supported Cable Distance", value: "300 m (984 ft)" },
+  //         { label: "Max. Power Consumption", value: "0.8 W" },
+  //         { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Keenam Belas dari Accessories, SF SFP & Fiber
-  {
-    id: "UACC-OM-MM-10G-D-20",
-    name: "10G Multi-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP & Fiber",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP+ transceiver that supports 10G connections up to 300 m using multi-mode fiber with a duplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-MM-10G-D-20",
+  //   name: "10G Multi-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP & Fiber",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP+ transceiver that supports 10G connections up to 300 m using multi-mode fiber with a duplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-MM-10G-D-20",
+  //   // SKU produk
+  //   sku: "UACC-OM-MM-10G-D-20",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 10 Gbps",
-      "Compatible with SFP+ and SFP interfaces",
-      "Duplex LC UPC connector",
-      "Supports multi-mode fiber connections up to 300 m*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 10 Gbps",
+  //     "Compatible with SFP+ and SFP interfaces",
+  //     "Duplex LC UPC connector",
+  //     "Supports multi-mode fiber connections up to 300 m*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Duplex LC UPC" },
-          { label: "Supported Media", value: "Multi-Mode Fiber" },
-          { label: "TX Wavelength", value: "850 nm" },
-          { label: "RX Wavelength", value: "850 nm" },
-          { label: "Supported Data Rate", value: "1/10 Gbps" },
-          { label: "Supported Cable Distance", value: "300 m (984 ft)" },
-          { label: "Max. Power Consumption", value: "0.8 W" },
-          { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Duplex LC UPC" },
+  //         { label: "Supported Media", value: "Multi-Mode Fiber" },
+  //         { label: "TX Wavelength", value: "850 nm" },
+  //         { label: "RX Wavelength", value: "850 nm" },
+  //         { label: "Supported Data Rate", value: "1/10 Gbps" },
+  //         { label: "Supported Cable Distance", value: "300 m (984 ft)" },
+  //         { label: "Max. Power Consumption", value: "0.8 W" },
+  //         { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Ketujuh Belas dari Accessories, SF SFP & Fiber
   {
@@ -2598,66 +2598,66 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Kedua Puluh dari Accessories, SF SFP & Fiber
-  {
-    id: "UACC-OM-SM-1G-S-20",
-    name: "1G Bidirectional Single-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP & Fiber",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP transceiver that supports 1G connections up to 3 km using single-mode fiber with a simplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-SM-1G-S-20",
+  //   name: "1G Bidirectional Single-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP & Fiber",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP transceiver that supports 1G connections up to 3 km using single-mode fiber with a simplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-SM-1G-S-20",
+  //   // SKU produk
+  //   sku: "UACC-OM-SM-1G-S-20",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 1 Gbps",
-      "Compatible with SFP interfaces",
-      "Simplex LC UPC connector",
-      "Supports single-mode fiber connections up to 3 km*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 1 Gbps",
+  //     "Compatible with SFP interfaces",
+  //     "Simplex LC UPC connector",
+  //     "Supports single-mode fiber connections up to 3 km*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Simplex LC UPC" },
-          { label: "Supported Media", value: "Single-Mode Fiber" },
-          { label: "BiDi", value: "✓" },
-          { label: "TX Wavelength", value: "1310 / 1550 nm nm" },
-          { label: "RX Wavelength", value: "1550 / 1310 nm" },
-          { label: "Supported Data Rate", value: "1 Gbps" },
-          { label: "Supported Cable Distance", value: "3 km (1.9 mi)" },
-          { label: "Max. Power Consumption", value: "0.66 W" },
-          { label: "Pack Options", value: "2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Simplex LC UPC" },
+  //         { label: "Supported Media", value: "Single-Mode Fiber" },
+  //         { label: "BiDi", value: "✓" },
+  //         { label: "TX Wavelength", value: "1310 / 1550 nm nm" },
+  //         { label: "RX Wavelength", value: "1550 / 1310 nm" },
+  //         { label: "Supported Data Rate", value: "1 Gbps" },
+  //         { label: "Supported Cable Distance", value: "3 km (1.9 mi)" },
+  //         { label: "Max. Power Consumption", value: "0.66 W" },
+  //         { label: "Pack Options", value: "2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Kedua Puluh Satu dari Accessories, SF SFP & Fiber
   {
@@ -2723,66 +2723,66 @@ export const accessoriesProducts: Product[] = [
 
 
   //Produk Kedua Puluh Dua dari Accessories, SF SFP & Fiber
-  {
-    id: "UACC-OM-SM-10G-S-20",
-    name: "10G Bidirectional Single-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP & Fiber",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP+ transceiver that supports 10G connections up to 10 km using single-mode fiber with a simplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-SM-10G-S-20",
+  //   name: "10G Bidirectional Single-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP & Fiber",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP+ transceiver that supports 10G connections up to 10 km using single-mode fiber with a simplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-SM-10G-S-20",
+  //   // SKU produk
+  //   sku: "UACC-OM-SM-10G-S-20",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 10 Gbps",
-      "Compatible with SFP+ and SFP interfaces",
-      "Simplex LC UPC connector",
-      "Supports single-mode fiber connections up to 10 km*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 10 Gbps",
+  //     "Compatible with SFP+ and SFP interfaces",
+  //     "Simplex LC UPC connector",
+  //     "Supports single-mode fiber connections up to 10 km*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Simplex LC UPC" },
-          { label: "Supported Media", value: "Single-Mode Fiber" },
-          { label: "BiDi", value: "✓" },
-          { label: "TX Wavelength", value: "1270 / 1330 nm" },
-          { label: "RX Wavelength", value: "1330 / 1270 nm" },
-          { label: "Supported Data Rate", value: "1/10 Gbps" },
-          { label: "Supported Cable Distance", value: "10 km (6.2 mi)" },
-          { label: "Max. Power Consumption", value: "1 W" },
-          { label: "Pack Options", value: "2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Simplex LC UPC" },
+  //         { label: "Supported Media", value: "Single-Mode Fiber" },
+  //         { label: "BiDi", value: "✓" },
+  //         { label: "TX Wavelength", value: "1270 / 1330 nm" },
+  //         { label: "RX Wavelength", value: "1330 / 1270 nm" },
+  //         { label: "Supported Data Rate", value: "1/10 Gbps" },
+  //         { label: "Supported Cable Distance", value: "10 km (6.2 mi)" },
+  //         { label: "Max. Power Consumption", value: "1 W" },
+  //         { label: "Pack Options", value: "2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Kedua Puluh Tiga dari Accessories, SF SFP & Fiber
   {
@@ -2846,65 +2846,65 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Kedua Puluh Empat dari Accessories, SF SFP & Fiber
-  {
-    id: "UACC-OM-SM-10G-D-20",
-    name: "10G Single-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP & Fiber",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP+ transceiver that supports 10G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-SM-10G-D-20",
+  //   name: "10G Single-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP & Fiber",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP+ transceiver that supports 10G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-SM-10G-D-20",
+  //   // SKU produk
+  //   sku: "UACC-OM-SM-10G-D-20",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 10 Gbps",
-      "Compatible with SFP+ and SFP interfaces",
-      "Duplex LC UPC connector",
-      "Supports single-mode fiber connections up to 10 km*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 10 Gbps",
+  //     "Compatible with SFP+ and SFP interfaces",
+  //     "Duplex LC UPC connector",
+  //     "Supports single-mode fiber connections up to 10 km*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Duplex LC UPC" },
-          { label: "Supported Media", value: "Single-Mode Fiber" },
-          { label: "TX Wavelength", value: "1310 nm" },
-          { label: "RX Wavelength", value: "1310 nm" },
-          { label: "Supported Data Rate", value: "1/10 Gbps" },
-          { label: "Supported Cable Distance", value: "10 km (6.2 mi)" },
-          { label: "Max. Power Consumption", value: "1 W" },
-          { label: "Pack Options", value: "2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Duplex LC UPC" },
+  //         { label: "Supported Media", value: "Single-Mode Fiber" },
+  //         { label: "TX Wavelength", value: "1310 nm" },
+  //         { label: "RX Wavelength", value: "1310 nm" },
+  //         { label: "Supported Data Rate", value: "1/10 Gbps" },
+  //         { label: "Supported Cable Distance", value: "10 km (6.2 mi)" },
+  //         { label: "Max. Power Consumption", value: "1 W" },
+  //         { label: "Pack Options", value: "2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Kedua Puluh Lima dari Accessories, SF SFP & Fiber
   {
@@ -4183,187 +4183,187 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Ketiga dari Accessories, SF Liberation Day
-  {
-    id: "UACC-OM-MM-10G-D-2",
-    name: "10G Multi-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP Liberation Day",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP+ transceiver that supports 10G connections up to 300 m using multi-mode fiber with a duplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-MM-10G-D-2",
+  //   name: "10G Multi-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP Liberation Day",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP+ transceiver that supports 10G connections up to 300 m using multi-mode fiber with a duplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-MM-10G-D-2",
+  //   // SKU produk
+  //   sku: "UACC-OM-MM-10G-D-2",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 10 Gbps",
-      "Compatible with SFP+ and SFP interfaces",
-      "Duplex LC UPC connector",
-      "Supports multi-mode fiber connections up to 300 m*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 10 Gbps",
+  //     "Compatible with SFP+ and SFP interfaces",
+  //     "Duplex LC UPC connector",
+  //     "Supports multi-mode fiber connections up to 300 m*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Duplex LC UPC" },
-          { label: "Supported Media", value: "Multi-Mode Fiber" },
-          { label: "TX Wavelength", value: "850 nm" },
-          { label: "RX Wavelength", value: "850 nm" },
-          { label: "Supported Data Rate", value: "1/10 Gbps" },
-          { label: "Supported Cable Distance", value: "300 m (984 ft)" },
-          { label: "Max. Power Consumption", value: "0.8 W" },
-          { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Duplex LC UPC" },
+  //         { label: "Supported Media", value: "Multi-Mode Fiber" },
+  //         { label: "TX Wavelength", value: "850 nm" },
+  //         { label: "RX Wavelength", value: "850 nm" },
+  //         { label: "Supported Data Rate", value: "1/10 Gbps" },
+  //         { label: "Supported Cable Distance", value: "300 m (984 ft)" },
+  //         { label: "Max. Power Consumption", value: "0.8 W" },
+  //         { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Keempat dari Accessories, SF Liberation Day
-  {
-    id: "UACC-OM-MM-10G-D-20",
-    name: "10G Multi-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP Liberation Day",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP+ transceiver that supports 10G connections up to 300 m using multi-mode fiber with a duplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-MM-10G-D-20",
+  //   name: "10G Multi-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP Liberation Day",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP+ transceiver that supports 10G connections up to 300 m using multi-mode fiber with a duplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-MM-10G-D-20",
+  //   // SKU produk
+  //   sku: "UACC-OM-MM-10G-D-20",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 10 Gbps",
-      "Compatible with SFP+ and SFP interfaces",
-      "Duplex LC UPC connector",
-      "Supports multi-mode fiber connections up to 300 m*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 10 Gbps",
+  //     "Compatible with SFP+ and SFP interfaces",
+  //     "Duplex LC UPC connector",
+  //     "Supports multi-mode fiber connections up to 300 m*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Duplex LC UPC" },
-          { label: "Supported Media", value: "Multi-Mode Fiber" },
-          { label: "TX Wavelength", value: "850 nm" },
-          { label: "RX Wavelength", value: "850 nm" },
-          { label: "Supported Data Rate", value: "1/10 Gbps" },
-          { label: "Supported Cable Distance", value: "300 m (984 ft)" },
-          { label: "Max. Power Consumption", value: "0.8 W" },
-          { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Duplex LC UPC" },
+  //         { label: "Supported Media", value: "Multi-Mode Fiber" },
+  //         { label: "TX Wavelength", value: "850 nm" },
+  //         { label: "RX Wavelength", value: "850 nm" },
+  //         { label: "Supported Data Rate", value: "1/10 Gbps" },
+  //         { label: "Supported Cable Distance", value: "300 m (984 ft)" },
+  //         { label: "Max. Power Consumption", value: "0.8 W" },
+  //         { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Kelima dari Accessories, SF Liberation Day
-  {
-    id: "UACC-OM-MM-1G-D-20",
-    name: "1G Multi-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP Liberation Day",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP transceiver that supports 1G connections up to 550 m using multi-mode fiber with a duplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-MM-1G-D-20",
+  //   name: "1G Multi-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP Liberation Day",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP transceiver that supports 1G connections up to 550 m using multi-mode fiber with a duplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-MM-1G-D-20",
+  //   // SKU produk
+  //   sku: "UACC-OM-MM-1G-D-20",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 1 Gbps",
-      "Compatible with SFP interfaces",
-      "Duplex LC UPC connector",
-      "Supports multi-mode fiber connections up to 550 m*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 1 Gbps",
+  //     "Compatible with SFP interfaces",
+  //     "Duplex LC UPC connector",
+  //     "Supports multi-mode fiber connections up to 550 m*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Duplex LC UPC" },
-          { label: "Supported Media", value: "Multi-Mode Fiber" },
-          { label: "TX Wavelength", value: "850 nm" },
-          { label: "RX Wavelength", value: "850 nm" },
-          { label: "Supported Data Rate", value: "1 Gbps" },
-          { label: "Supported Cable Distance", value: "550 m (1,804 ft)" },
-          { label: "Max. Power Consumption", value: "0.66 W" },
-          { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Duplex LC UPC" },
+  //         { label: "Supported Media", value: "Multi-Mode Fiber" },
+  //         { label: "TX Wavelength", value: "850 nm" },
+  //         { label: "RX Wavelength", value: "850 nm" },
+  //         { label: "Supported Data Rate", value: "1 Gbps" },
+  //         { label: "Supported Cable Distance", value: "550 m (1,804 ft)" },
+  //         { label: "Max. Power Consumption", value: "0.66 W" },
+  //         { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Keenam dari Accessories, SF Liberation Day
   {
@@ -4427,65 +4427,65 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Ketujuh dari Accessories, SF Liberation Day
-  {
-    id: "UACC-OM-MM-1G-D-20",
-    name: "1G Multi-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP Liberation Day",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP transceiver that supports 1G connections up to 550 m using multi-mode fiber with a duplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-MM-1G-D-20",
+  //   name: "1G Multi-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP Liberation Day",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP transceiver that supports 1G connections up to 550 m using multi-mode fiber with a duplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-MM-1G-D-20",
+  //   // SKU produk
+  //   sku: "UACC-OM-MM-1G-D-20",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 1 Gbps",
-      "Compatible with SFP interfaces",
-      "Duplex LC UPC connector",
-      "Supports multi-mode fiber connections up to 550 m*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 1 Gbps",
+  //     "Compatible with SFP interfaces",
+  //     "Duplex LC UPC connector",
+  //     "Supports multi-mode fiber connections up to 550 m*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Duplex LC UPC" },
-          { label: "Supported Media", value: "Multi-Mode Fiber" },
-          { label: "TX Wavelength", value: "850 nm" },
-          { label: "RX Wavelength", value: "850 nm" },
-          { label: "Supported Data Rate", value: "1 Gbps" },
-          { label: "Supported Cable Distance", value: "550 m (1,804 ft)" },
-          { label: "Max. Power Consumption", value: "0.66 W" },
-          { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Duplex LC UPC" },
+  //         { label: "Supported Media", value: "Multi-Mode Fiber" },
+  //         { label: "TX Wavelength", value: "850 nm" },
+  //         { label: "RX Wavelength", value: "850 nm" },
+  //         { label: "Supported Data Rate", value: "1 Gbps" },
+  //         { label: "Supported Cable Distance", value: "550 m (1,804 ft)" },
+  //         { label: "Max. Power Consumption", value: "0.66 W" },
+  //         { label: "Pack Options", value: "Single Unit 2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Kedelapan dari Accessories, SF Liberation Day
   {
@@ -4793,65 +4793,65 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Ketiga Belas dari Accessories, SF Liberation Day
-  {
-    id: "UACC-OM-SM-10G-D-20",
-    name: "10G Single-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP Liberation Day",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP+ transceiver that supports 10G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-SM-10G-D-20",
+  //   name: "10G Single-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP Liberation Day",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP+ transceiver that supports 10G connections up to 10 km using single-mode fiber with a duplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-SM-10G-D-20",
+  //   // SKU produk
+  //   sku: "UACC-OM-SM-10G-D-20",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 10 Gbps",
-      "Compatible with SFP+ and SFP interfaces",
-      "Duplex LC UPC connector",
-      "Supports single-mode fiber connections up to 10 km*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 10 Gbps",
+  //     "Compatible with SFP+ and SFP interfaces",
+  //     "Duplex LC UPC connector",
+  //     "Supports single-mode fiber connections up to 10 km*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Duplex LC UPC" },
-          { label: "Supported Media", value: "Single-Mode Fiber" },
-          { label: "TX Wavelength", value: "1310 nm" },
-          { label: "RX Wavelength", value: "1310 nm" },
-          { label: "Supported Data Rate", value: "1/10 Gbps" },
-          { label: "Supported Cable Distance", value: "10 km (6.2 mi)" },
-          { label: "Max. Power Consumption", value: "1 W" },
-          { label: "Pack Options", value: "2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Duplex LC UPC" },
+  //         { label: "Supported Media", value: "Single-Mode Fiber" },
+  //         { label: "TX Wavelength", value: "1310 nm" },
+  //         { label: "RX Wavelength", value: "1310 nm" },
+  //         { label: "Supported Data Rate", value: "1/10 Gbps" },
+  //         { label: "Supported Cable Distance", value: "10 km (6.2 mi)" },
+  //         { label: "Max. Power Consumption", value: "1 W" },
+  //         { label: "Pack Options", value: "2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Keempat Belas dari Accessories, SF Liberation Day
   {
@@ -4916,66 +4916,66 @@ export const accessoriesProducts: Product[] = [
   },
 
   //Produk Kelima Belas dari Accessories, SF Liberation Day
-  {
-    id: "UACC-OM-SM-1G-S-20",
-    name: "1G Bidirectional Single-Mode Optical Module",
-    category: "Accessories",
-    subfilter: "SFP Liberation Day",
-    image: "/images/camera.jpg",
-    shortDescription:
-      "SFP transceiver that supports 1G connections up to 3 km using single-mode fiber with a simplex LC UPC connector.",
-    specs: [
-      { label: "Resolution", value: "4K (8MP)" },
-      { label: "Night Vision", value: "25m (82ft) IR" },
-      { label: "Zoom", value: "3x Optical" },
-      { label: "Audio", value: "Two-way Audio" },
-    ],
+  // {
+  //   id: "UACC-OM-SM-1G-S-20",
+  //   name: "1G Bidirectional Single-Mode Optical Module",
+  //   category: "Accessories",
+  //   subfilter: "SFP Liberation Day",
+  //   image: "/images/camera.jpg",
+  //   shortDescription:
+  //     "SFP transceiver that supports 1G connections up to 3 km using single-mode fiber with a simplex LC UPC connector.",
+  //   specs: [
+  //     { label: "Resolution", value: "4K (8MP)" },
+  //     { label: "Night Vision", value: "25m (82ft) IR" },
+  //     { label: "Zoom", value: "3x Optical" },
+  //     { label: "Audio", value: "Two-way Audio" },
+  //   ],
 
-    // SKU produk
-    sku: "UACC-OM-SM-1G-S-20",
+  //   // SKU produk
+  //   sku: "UACC-OM-SM-1G-S-20",
 
-    // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
-    images: [
-      "/images/camera.jpg",
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
+  //   images: [
+  //     "/images/camera.jpg",
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
-    overviewImages: [
-      "/images/banners/dcs-overview-1.png",
-      "/images/banners/dcs-overview-2.png"
-    ],
+  //   // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
+  //   overviewImages: [
+  //     "/images/banners/dcs-overview-1.png",
+  //     "/images/banners/dcs-overview-2.png"
+  //   ],
 
-    // Bullet points untuk deskripsi produk
-    bulletPoints: [
-      "Max data rate: 1 Gbps",
-      "Compatible with SFP interfaces",
-      "Simplex LC UPC connector",
-      "Supports single-mode fiber connections up to 3 km*"
-    ],
+  //   // Bullet points untuk deskripsi produk
+  //   bulletPoints: [
+  //     "Max data rate: 1 Gbps",
+  //     "Compatible with SFP interfaces",
+  //     "Simplex LC UPC connector",
+  //     "Supports single-mode fiber connections up to 3 km*"
+  //   ],
 
-    // Spesifikasi teknis dengan section yang bisa di-expand/collapse
-    technicalSpecs: [
-      {
-        title: "Overview",
-        items: [
-          { label: "Form Factor", value: "SFP" },
-          { label: "Connector", value: "Simplex LC UPC" },
-          { label: "Supported Media", value: "Single-Mode Fiber" },
-          { label: "BiDi", value: "✓" },
-          { label: "TX Wavelength", value: "1310 / 1550 nm nm" },
-          { label: "RX Wavelength", value: "1550 / 1310 nm" },
-          { label: "Supported Data Rate", value: "1 Gbps" },
-          { label: "Supported Cable Distance", value: "3 km (1.9 mi)" },
-          { label: "Max. Power Consumption", value: "0.66 W" },
-          { label: "Pack Options", value: "2-Pack 20-Pack" },
-          { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
-          { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
-        ]
-      },
-    ],
-  },
+  //   // Spesifikasi teknis dengan section yang bisa di-expand/collapse
+  //   technicalSpecs: [
+  //     {
+  //       title: "Overview",
+  //       items: [
+  //         { label: "Form Factor", value: "SFP" },
+  //         { label: "Connector", value: "Simplex LC UPC" },
+  //         { label: "Supported Media", value: "Single-Mode Fiber" },
+  //         { label: "BiDi", value: "✓" },
+  //         { label: "TX Wavelength", value: "1310 / 1550 nm nm" },
+  //         { label: "RX Wavelength", value: "1550 / 1310 nm" },
+  //         { label: "Supported Data Rate", value: "1 Gbps" },
+  //         { label: "Supported Cable Distance", value: "3 km (1.9 mi)" },
+  //         { label: "Max. Power Consumption", value: "0.66 W" },
+  //         { label: "Pack Options", value: "2-Pack 20-Pack" },
+  //         { label: "Ambient Operating Temperature", value: "0 to 70° C (32 to 158° F)" },
+  //         { label: "WARNING 'CLASS 1 LASER PRODUCT, IEC/EN 60825-1:2014 Do not look into the ends of the fiber optic cable or SFP module while converters are powered.'", value: "" }
+  //       ]
+  //     },
+  //   ],
+  // },
 
   //Produk Keenam Belas dari Accessories, SF Liberation Day
   {
