@@ -14,16 +14,13 @@ function HomepageCategoryCard({
     <a
       href={href}
       className={cn(
-        // KEEP: ukuran & spacing card harus identik
         "rounded-2xl border border-border bg-secondary/20",
-        "p-4 md:p-6 min-h-[120px]",
+        "p-4 md:p-6 min-h-0 h-full",
         "hover:bg-primary/10 transition-colors",
         "flex items-end",
-        // hanya layering (tidak mengubah dimensi)
         "relative overflow-hidden group",
       )}
     >
-      {/* Image layer (full background) */}
       <img
         src={imageSrc}
         alt={title}
@@ -32,13 +29,10 @@ function HomepageCategoryCard({
         draggable={false}
       />
 
-      {/* Optional overlay for readability */}
       <div className="pointer-events-none absolute inset-0 bg-black/20" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
 
-      {/* Content (KEEP: posisi teks sama seperti versi lama) */}
       <div className="relative z-10">
-        {/* Spacer: menggantikan oval lama agar teks tidak bergeser */}
         <div className="h-14 w-14 rounded-xl opacity-0 mb-3" />
         <p className="font-bold text-white drop-shadow-sm">{title}</p>
       </div>
@@ -55,58 +49,62 @@ export default function VideoAndCategory({
   title: string;
   description: string;
   videoId: string;
-  categories: { title: string; href: string; imageSrc: string }[];
+  categories: { title: string; href: string; imageSrc?: string }[];
 }) {
+  const fallbackImg = "/images/placeholder-product.png";
+
   return (
     <div className="bg-white dark:bg-black min-h-screen flex items-center">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          {/* LEFT */}
-          <div className="space-y-4 min-w-0">
-            <h2 className="text-2xl md:text-3xl font-black tracking-tight">
-              Tonton Video Terbaru
-            </h2>
-            <div className="rounded-2xl overflow-hidden border border-border bg-secondary/20">
-              <div className="relative w-full aspect-video bg-black">
-                <iframe
-                  className="absolute inset-0 w-full h-full"
-                  src={`https://www.youtube.com/embed/${videoId}?rel=0`}
-                  title="MikroTik Video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-            <h3 className="text-lg font-bold">{title}</h3>
-            <p className="text-muted-foreground leading-relaxed">{description}</p>
+        {/* Baris 1: judul kiri & kanan sejajar */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <h2 className="text-2xl md:text-3xl font-black tracking-tight min-w-0">
+            Tonton Video Terbaru
+          </h2>
+          <h2 className="text-2xl md:text-3xl font-black tracking-tight min-w-0">
+            Product Category
+          </h2>
+        </div>
+
+        {/* Baris 2: video (ukuran tetap aspect-video) + grid 4 kartu tinggi sama dengan video (desktop) */}
+        <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 lg:items-stretch">
+          <div className="relative w-full min-w-0 overflow-hidden rounded-2xl border border-border bg-black aspect-video">
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src={`https://www.youtube.com/embed/${videoId}?rel=0`}
+              title="MikroTik Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
 
-          {/* RIGHT */}
-          <div className="space-y-4 min-w-0">
-            <h2 className="text-2xl md:text-3xl font-black tracking-tight">
-              Product Category
-            </h2>
-
-            <div className="grid grid-cols-2 gap-4">
+          <div className="flex w-full min-h-[240px] lg:min-h-0 lg:h-full">
+            <div className="grid h-full w-full min-h-0 grid-cols-2 grid-rows-2 gap-4">
               {categories.slice(0, 4).map((c) => (
                 <HomepageCategoryCard
                   key={c.title}
                   title={c.title}
                   href={c.href}
-                  imageSrc={c.imageSrc}
+                  imageSrc={c.imageSrc?.trim() ? c.imageSrc : fallbackImg}
                 />
               ))}
             </div>
+          </div>
+        </div>
 
-            <div className="pt-2 flex justify-center">
-              <Button asChild className="rounded-full px-8">
-                <a href="/mikrotik/categories">View All Category</a>
-              </Button>
-            </div>
+        {/* Baris 3: teks di bawah video + tombol di bawah grid category */}
+        <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="space-y-2 min-w-0">
+            <h3 className="text-lg font-bold">{title}</h3>
+            <p className="text-muted-foreground leading-relaxed">{description}</p>
+          </div>
+          <div className="flex justify-center lg:justify-center items-start pt-1">
+            <Button asChild className="rounded-full px-8">
+              <a href="/mikrotik/categories">View All Category</a>
+            </Button>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
