@@ -133,9 +133,20 @@ export async function apiMikrotikDcsAdminGet(
   res.json({ ok: true, data: row });
 }
 
+/** Multer kadang mengisi field teks sebagai string[] — ambil string pertama yang valid */
+function multipartString(body: Record<string, unknown>, key: string): string | undefined {
+  const v = body[key];
+  if (typeof v === "string") return v;
+  if (Array.isArray(v)) {
+    const s = v.find((x) => typeof x === "string" && String(x).trim());
+    return typeof s === "string" ? s : undefined;
+  }
+  return undefined;
+}
+
 function readBulletsFromBody(body: Record<string, unknown>): string[] {
-  const raw = body.bullets;
-  if (typeof raw === "string" && raw.trim()) {
+  const raw = multipartString(body, "bullets");
+  if (raw?.trim()) {
     try {
       const j = JSON.parse(raw) as unknown;
       if (Array.isArray(j)) {
@@ -151,23 +162,82 @@ function readBulletsFromBody(body: Record<string, unknown>): string[] {
   return [];
 }
 
-function readSpecsFromBody(body: Record<string, unknown>): Record<string, string> | null {
-  const raw = body.specifications;
-  if (typeof raw === "string" && raw.trim()) {
+function readSpecsFromBody(
+  body: Record<string, unknown>,
+): { title: string; items: { label: string; value: string }[] }[] | null {
+  const raw =
+    multipartString(body, "specification_sections") ?? multipartString(body, "specifications");
+  if (raw?.trim()) {
     try {
       const j = JSON.parse(raw) as unknown;
-      if (j && typeof j === "object" && !Array.isArray(j)) {
-        return Object.fromEntries(
-          Object.entries(j as Record<string, unknown>)
-            .map(([k, v]) => [String(k).trim(), v == null ? "" : String(v).trim()] as const)
-            .filter(([k, v]) => Boolean(k) && Boolean(v)),
-        );
+      if (Array.isArray(j)) {
+        const sections = j
+          .map((section) => {
+            if (!section || typeof section !== "object") return null;
+            const s = section as Record<string, unknown>;
+            const title = String(s.title ?? "").trim();
+            const rawItems = Array.isArray(s.items) ? s.items : [];
+            const items = rawItems
+              .map((entry) => {
+                if (!entry || typeof entry !== "object") return null;
+                const e = entry as Record<string, unknown>;
+                const label = String(e.label ?? "").trim();
+                const value = String(e.value ?? "").trim();
+                if (!label || !value) return null;
+                return { label, value };
+              })
+              .filter((item): item is { label: string; value: string } => Boolean(item));
+            if (!title || !items.length) return null;
+            return { title, items };
+          })
+          .filter(
+            (
+              section,
+            ): section is { title: string; items: { label: string; value: string }[] } =>
+              Boolean(section),
+          );
+        return sections.length ? sections : null;
+      }
+      if (j && typeof j === "object") {
+        const legacyItems = Object.entries(j as Record<string, unknown>)
+          .map(([k, v]) => ({
+            label: String(k).trim(),
+            value: v == null ? "" : String(v).trim(),
+          }))
+          .filter((x) => x.label && x.value);
+        return legacyItems.length ? [{ title: "SPECIFICATIONS", items: legacyItems }] : null;
       }
     } catch {
       return null;
     }
   }
   return null;
+}
+
+function readTechnicalItemsFromBody(
+  body: Record<string, unknown>,
+): { title: string; content: string; sort_order: number }[] {
+  const raw = multipartString(body, "technical_items");
+  if (!raw?.trim()) return [];
+  try {
+    const j = JSON.parse(raw) as unknown;
+    if (!Array.isArray(j)) return [];
+    return j
+      .map((item, index) => {
+        if (!item || typeof item !== "object") return null;
+        const row = item as Record<string, unknown>;
+        const title = String(row.title ?? "").trim();
+        const content = String(row.content ?? "").trim();
+        const sort_order = Number.isFinite(row.sort_order)
+          ? Number(row.sort_order)
+          : index;
+        if (!title || !content) return null;
+        return { title, content, sort_order };
+      })
+      .filter((x): x is { title: string; content: string; sort_order: number } => Boolean(x));
+  } catch {
+    return [];
+  }
 }
 
 export async function apiMikrotikDcsAdminCreate(
@@ -190,6 +260,7 @@ export async function apiMikrotikDcsAdminCreate(
   }
   const bullets = readBulletsFromBody(body);
   const specs = readSpecsFromBody(body);
+  const technicalItems = readTechnicalItemsFromBody(body);
   const video_url = String(body.video_url ?? "").trim() || null;
   const video_title = String(body.video_title ?? "").trim() || null;
   const video_description = String(body.video_description ?? "").trim() || null;
@@ -215,6 +286,7 @@ export async function apiMikrotikDcsAdminCreate(
       video_description,
       specifications: specs,
       galleryPaths,
+      technicalItems,
     });
     res.status(201).json({ ok: true, data: { id: newId } });
   } catch (e: unknown) {
@@ -251,6 +323,7 @@ export async function apiMikrotikDcsAdminUpdate(
   }
   const bullets = readBulletsFromBody(body);
   const specs = readSpecsFromBody(body);
+  const technicalItems = readTechnicalItemsFromBody(body);
   const video_url = String(body.video_url ?? "").trim() || null;
   const video_title = String(body.video_title ?? "").trim() || null;
   const video_description = String(body.video_description ?? "").trim() || null;
@@ -304,6 +377,7 @@ export async function apiMikrotikDcsAdminUpdate(
       video_description,
       specifications: specs,
       galleryPaths: { keepExisting: keepGallery, newUploads },
+      technicalItems,
     });
     res.json({ ok: true, data: { id } });
   } catch (e: unknown) {

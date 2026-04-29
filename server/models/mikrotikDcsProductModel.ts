@@ -17,14 +17,76 @@ export type MikrotikDcsProductRow = {
   video_url?: string | null;
   video_title?: string | null;
   video_description?: string | null;
-  specifications?: Record<string, string> | null;
+  specifications?: { title: string; items: { label: string; value: string }[] }[] | null;
   created_at: Date;
   updated_at: Date;
 };
 
 export type MikrotikDcsProductWithGallery = MikrotikDcsProductRow & {
   gallery: { id: number; image_path: string; sort_order: number }[];
+  technical_items: { id: number; title: string; content: string; sort_order: number }[];
 };
+
+function parseSpecificationsColumn(
+  raw: unknown,
+): { title: string; items: { label: string; value: string }[] }[] | null {
+  if (raw == null) return null;
+  let j: unknown;
+  if (typeof raw === "string") {
+    const s = raw.trim();
+    if (!s) return null;
+    try {
+      j = JSON.parse(s) as unknown;
+    } catch {
+      return null;
+    }
+  } else if (Buffer.isBuffer(raw)) {
+    try {
+      j = JSON.parse(raw.toString("utf8")) as unknown;
+    } catch {
+      return null;
+    }
+  } else {
+    j = raw;
+  }
+  if (Array.isArray(j)) {
+    return j
+      .map((section) => {
+        if (!section || typeof section !== "object") return null;
+        const s = section as Record<string, unknown>;
+        const sectionTitle = String(s.title ?? "").trim();
+        const rawItems = Array.isArray(s.items) ? s.items : [];
+        const items = rawItems
+          .map((entry) => {
+            if (!entry || typeof entry !== "object") return null;
+            const e = entry as Record<string, unknown>;
+            const label = String(e.label ?? "").trim();
+            const value = String(e.value ?? "").trim();
+            if (!label || !value) return null;
+            return { label, value };
+          })
+          .filter((item): item is { label: string; value: string } => Boolean(item));
+        if (!sectionTitle || !items.length) return null;
+        return { title: sectionTitle, items };
+      })
+      .filter(
+        (
+          section,
+        ): section is { title: string; items: { label: string; value: string }[] } =>
+          Boolean(section),
+      );
+  }
+  if (j && typeof j === "object") {
+    const legacyItems = Object.entries(j as Record<string, unknown>)
+      .map(([k, v]) => ({
+        label: String(k).trim(),
+        value: v == null ? "" : String(v).trim(),
+      }))
+      .filter((entry) => entry.label && entry.value);
+    return legacyItems.length ? [{ title: "SPECIFICATIONS", items: legacyItems }] : null;
+  }
+  return null;
+}
 
 function mapProduct(r: RowDataPacket): MikrotikDcsProductRow {
   let bullets: string[] = [];
@@ -38,20 +100,9 @@ function mapProduct(r: RowDataPacket): MikrotikDcsProductRow {
   } catch {
     bullets = [];
   }
-  let specs: Record<string, string> | null = null;
+  let specs: { title: string; items: { label: string; value: string }[] }[] | null = null;
   try {
-    const raw = r.specifications;
-    if (raw && typeof raw === "string") {
-      const j = JSON.parse(raw) as unknown;
-      if (j && typeof j === "object" && !Array.isArray(j)) {
-        specs = Object.fromEntries(
-          Object.entries(j as Record<string, unknown>).map(([k, v]) => [
-            String(k),
-            v == null ? "" : String(v),
-          ]),
-        );
-      }
-    }
+    specs = parseSpecificationsColumn(r.specifications);
   } catch {
     specs = null;
   }
@@ -119,12 +170,25 @@ export async function getMikrotikDcsProductById(
      ORDER BY sort_order ASC, id ASC`,
     { id },
   );
+  const [tRows] = await mysqlPool.query<RowDataPacket[]>(
+    `SELECT id, title, content, sort_order
+     FROM mikrotik_dcs_product_technical_items
+     WHERE product_id = :id
+     ORDER BY sort_order ASC, id ASC`,
+    { id },
+  );
   return {
     ...product,
     gallery: gRows.map((g) => ({
       id: g.id,
       image_path: g.image_path,
       sort_order: g.sort_order ?? 0,
+    })),
+    technical_items: tRows.map((t) => ({
+      id: t.id,
+      title: String(t.title ?? ""),
+      content: String(t.content ?? ""),
+      sort_order: t.sort_order ?? 0,
     })),
   };
 }
@@ -139,8 +203,9 @@ export async function createMikrotikDcsProduct(data: {
   video_url?: string | null;
   video_title?: string | null;
   video_description?: string | null;
-  specifications?: Record<string, string> | null;
+  specifications?: { title: string; items: { label: string; value: string }[] }[] | null;
   galleryPaths: string[];
+  technicalItems?: { title: string; content: string; sort_order: number }[];
 }): Promise<number> {
   const connection = await mysqlPool.getConnection();
   try {
@@ -173,6 +238,25 @@ export async function createMikrotikDcsProduct(data: {
         { pid: id, path: data.galleryPaths[i], ord: i },
       );
     }
+    const technicalItems = (data.technicalItems ?? [])
+      .map((x) => ({
+        title: String(x.title ?? "").trim(),
+        content: String(x.content ?? "").trim(),
+        sort_order: Number.isFinite(x.sort_order) ? x.sort_order : 0,
+      }))
+      .filter((x) => x.title && x.content);
+    for (let i = 0; i < technicalItems.length; i++) {
+      await connection.query(
+        `INSERT INTO mikrotik_dcs_product_technical_items (product_id, title, content, sort_order)
+         VALUES (:pid, :title, :content, :ord)`,
+        {
+          pid: id,
+          title: technicalItems[i].title,
+          content: technicalItems[i].content,
+          ord: i,
+        },
+      );
+    }
     await connection.commit();
     return id;
   } catch (e) {
@@ -195,8 +279,9 @@ export async function updateMikrotikDcsProduct(
     video_url?: string | null;
     video_title?: string | null;
     video_description?: string | null;
-    specifications?: Record<string, string> | null;
+    specifications?: { title: string; items: { label: string; value: string }[] }[] | null;
     galleryPaths: { keepExisting: string[]; newUploads: string[] };
+    technicalItems?: { title: string; content: string; sort_order: number }[];
   },
 ): Promise<void> {
   const connection = await mysqlPool.getConnection();
@@ -240,6 +325,29 @@ export async function updateMikrotikDcsProduct(
       await connection.query(
         `INSERT INTO mikrotik_dcs_product_gallery_images (product_id, image_path, sort_order) VALUES (:pid, :path, :ord)`,
         { pid: id, path: ordered[i], ord: i },
+      );
+    }
+    await connection.query(
+      `DELETE FROM mikrotik_dcs_product_technical_items WHERE product_id = :id`,
+      { id },
+    );
+    const technicalItems = (data.technicalItems ?? [])
+      .map((x) => ({
+        title: String(x.title ?? "").trim(),
+        content: String(x.content ?? "").trim(),
+        sort_order: Number.isFinite(x.sort_order) ? x.sort_order : 0,
+      }))
+      .filter((x) => x.title && x.content);
+    for (let i = 0; i < technicalItems.length; i++) {
+      await connection.query(
+        `INSERT INTO mikrotik_dcs_product_technical_items (product_id, title, content, sort_order)
+         VALUES (:pid, :title, :content, :ord)`,
+        {
+          pid: id,
+          title: technicalItems[i].title,
+          content: technicalItems[i].content,
+          ord: i,
+        },
       );
     }
     await connection.commit();

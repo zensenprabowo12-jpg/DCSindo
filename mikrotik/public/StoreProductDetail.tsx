@@ -8,6 +8,7 @@ import { ProductGallery } from "./product-detail/ProductGallery";
 import { ProductInfo } from "./product-detail/ProductInfo";
 import { ProductVideo } from "./product-detail/ProductVideo";
 import { ProductSpecification } from "./product-detail/ProductSpecification";
+import { ProductTechnicalAccordion } from "./product-detail/ProductTechnicalAccordion";
 import { MIKROTIK_PRODUCT_EXTRAS } from "./productExtras";
 
 export default function MikrotikDcsStoreProductDetail() {
@@ -83,8 +84,10 @@ export default function MikrotikDcsStoreProductDetail() {
   );
 
   const specifications = useMemo(() => {
-    if (!d) return {} as Record<string, string>;
-    return d.specifications ?? extras?.specifications ?? {};
+    if (!d) return [] as { title: string; items: { label: string; value: string }[] }[];
+    if (d.specifications && d.specifications.length) return d.specifications;
+    if (extras?.specifications) return [extras.specifications];
+    return [];
   }, [d, extras?.specifications]);
 
   useEffect(() => {
@@ -167,7 +170,10 @@ export default function MikrotikDcsStoreProductDetail() {
               description={videoDescription || ""}
             />
 
-            {/* C. Specification section */}
+            {/* C. Technical accordion section */}
+            <ProductTechnicalAccordion items={d.technical_items ?? []} />
+
+            {/* D. Specification section */}
             <ProductSpecification
               id={specId}
               title="Specification"

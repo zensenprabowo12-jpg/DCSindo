@@ -11,6 +11,7 @@ import MikrotikDcsProtectedRoute from "./ProtectedRoute";
 import type { MikrotikDcsProductDetail } from "../types";
 
 const EMPTY_BULLETS = () => Array.from({ length: 9 }, () => "");
+const EMPTY_SPEC_SECTION = () => ({ title: "", items: [{ label: "", value: "" }] });
 
 function ProductFormBody({ id }: { id?: string }) {
   const [, setLocation] = useLocation();
@@ -26,7 +27,12 @@ function ProductFormBody({ id }: { id?: string }) {
   const [videoUrl, setVideoUrl] = useState("");
   const [videoTitle, setVideoTitle] = useState("");
   const [videoDesc, setVideoDesc] = useState("");
-  const [specsText, setSpecsText] = useState("");
+  const [specSections, setSpecSections] = useState<
+    { title: string; items: { label: string; value: string }[] }[]
+  >([EMPTY_SPEC_SECTION()]);
+  const [technicalItems, setTechnicalItems] = useState<
+    { title: string; content: string }[]
+  >([]);
   const [mainFile, setMainFile] = useState<File | null>(null);
   const [galleryFiles, setGalleryFiles] = useState<File[]>([]);
   const [mainPreview, setMainPreview] = useState<string | null>(null);
@@ -59,7 +65,42 @@ function ProductFormBody({ id }: { id?: string }) {
       setVideoTitle(String((d as any).video_title ?? ""));
       setVideoDesc(String((d as any).video_description ?? ""));
       const specs = (d as any).specifications as unknown;
-      setSpecsText(specs && typeof specs === "object" ? JSON.stringify(specs, null, 2) : "");
+      const loadedSections = Array.isArray(specs)
+        ? specs
+            .map((section) => {
+              if (!section || typeof section !== "object") return null;
+              const s = section as Record<string, unknown>;
+              const title = String(s.title ?? "");
+              const itemsRaw = Array.isArray(s.items) ? s.items : [];
+              const items = itemsRaw
+                .map((item) => {
+                  if (!item || typeof item !== "object") return null;
+                  const row = item as Record<string, unknown>;
+                  return {
+                    label: String(row.label ?? ""),
+                    value: String(row.value ?? ""),
+                  };
+                })
+                .filter((item): item is { label: string; value: string } => Boolean(item));
+              return { title, items: items.length ? items : [{ label: "", value: "" }] };
+            })
+            .filter(
+              (
+                section,
+              ): section is { title: string; items: { label: string; value: string }[] } =>
+                Boolean(section),
+            )
+        : [];
+      setSpecSections(loadedSections.length ? loadedSections : [EMPTY_SPEC_SECTION()]);
+      const loadedTechnical = Array.isArray((d as any).technical_items)
+        ? ((d as any).technical_items as Array<{ title?: unknown; content?: unknown }>)
+            .map((x) => ({
+              title: String(x?.title ?? ""),
+              content: String(x?.content ?? ""),
+            }))
+            .filter((x) => x.title || x.content)
+        : [];
+      setTechnicalItems(loadedTechnical);
       setLoading(false);
     })();
     return () => {
@@ -91,6 +132,78 @@ function ProductFormBody({ id }: { id?: string }) {
     setKeepGallery((k) => k.filter((p) => p !== path));
   }
 
+  function addSpecSection() {
+    setSpecSections((prev) => [...prev, EMPTY_SPEC_SECTION()]);
+  }
+
+  function removeSpecSection(sectionIndex: number) {
+    setSpecSections((prev) => prev.filter((_, i) => i !== sectionIndex));
+  }
+
+  function setSpecSectionTitle(sectionIndex: number, title: string) {
+    setSpecSections((prev) =>
+      prev.map((section, i) => (i === sectionIndex ? { ...section, title } : section)),
+    );
+  }
+
+  function addSpecItem(sectionIndex: number) {
+    setSpecSections((prev) =>
+      prev.map((section, i) =>
+        i === sectionIndex
+          ? { ...section, items: [...section.items, { label: "", value: "" }] }
+          : section,
+      ),
+    );
+  }
+
+  function removeSpecItem(sectionIndex: number, itemIndex: number) {
+    setSpecSections((prev) =>
+      prev.map((section, i) => {
+        if (i !== sectionIndex) return section;
+        const nextItems = section.items.filter((_, idx) => idx !== itemIndex);
+        return { ...section, items: nextItems.length ? nextItems : [{ label: "", value: "" }] };
+      }),
+    );
+  }
+
+  function setSpecItemAt(
+    sectionIndex: number,
+    itemIndex: number,
+    field: "label" | "value",
+    value: string,
+  ) {
+    setSpecSections((prev) =>
+      prev.map((section, i) =>
+        i === sectionIndex
+          ? {
+              ...section,
+              items: section.items.map((item, idx) =>
+                idx === itemIndex ? { ...item, [field]: value } : item,
+              ),
+            }
+          : section,
+      ),
+    );
+  }
+
+  function addTechnicalItem() {
+    setTechnicalItems((prev) => [...prev, { title: "", content: "" }]);
+  }
+
+  function removeTechnicalItem(index: number) {
+    setTechnicalItems((prev) => prev.filter((_, i) => i !== index));
+  }
+
+  function setTechnicalItemAt(
+    index: number,
+    field: "title" | "content",
+    value: string,
+  ) {
+    setTechnicalItems((prev) =>
+      prev.map((item, i) => (i === index ? { ...item, [field]: value } : item)),
+    );
+  }
+
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setErr(null);
@@ -99,9 +212,49 @@ function ProductFormBody({ id }: { id?: string }) {
       return;
     }
     const bClean = bullets.map((s) => s.trim()).filter(Boolean);
+    const specificationSections = specSections
+      .map((section) => ({
+        title: section.title.trim(),
+        items: (section.items ?? [])
+          .map((item) => ({
+            label: item.label.trim(),
+            value: item.value.trim(),
+          }))
+          .filter((item) => item.label || item.value),
+      }))
+      .filter((section) => section.title || section.items.length > 0);
+    const technicalClean = technicalItems
+      .map((item, idx) => ({
+        title: item.title.trim(),
+        content: item.content.trim(),
+        sort_order: idx,
+      }))
+      .filter((item) => item.title || item.content);
     if (bClean.length > 9) {
       setErr("Maksimal 9 bullet");
       return;
+    }
+    for (const section of specificationSections) {
+      if (!section.title) {
+        setErr("Judul section specifications wajib diisi");
+        return;
+      }
+      if (!section.items.length) {
+        setErr("Setiap section specifications minimal punya 1 item");
+        return;
+      }
+      for (const item of section.items) {
+        if (!item.label || !item.value) {
+          setErr("Kolom point dan jawaban pada specifications wajib diisi");
+          return;
+        }
+      }
+    }
+    for (const item of technicalClean) {
+      if (!item.title || !item.content) {
+        setErr("Semua technical item wajib isi title dan content");
+        return;
+      }
     }
 
     const form = new FormData();
@@ -113,22 +266,11 @@ function ProductFormBody({ id }: { id?: string }) {
     form.set("video_url", videoUrl.trim());
     form.set("video_title", videoTitle.trim());
     form.set("video_description", videoDesc.trim());
-    if (specsText.trim()) {
-      try {
-        const parsed = JSON.parse(specsText) as unknown;
-        if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
-          form.set("specifications", JSON.stringify(parsed));
-        } else {
-          setErr("Specifications harus berupa JSON object (key-value)");
-          return;
-        }
-      } catch {
-        setErr("Specifications JSON tidak valid");
-        return;
-      }
-    } else {
-      form.set("specifications", "");
-    }
+    form.set("technical_items", JSON.stringify(technicalClean));
+    const specPayload = JSON.stringify(specificationSections);
+    form.set("specification_sections", specPayload);
+    // Alias: beberapa stack multipart hanya meneruskan field tertentu
+    form.set("specifications", specPayload);
     if (mainFile) {
       form.append("main_image", mainFile);
     }
@@ -243,18 +385,99 @@ function ProductFormBody({ id }: { id?: string }) {
               placeholder="Deskripsi singkat video"
             />
           </div>
-          <div className="space-y-2">
-            <Label htmlFor="specs">Specifications (JSON)</Label>
-            <Textarea
-              id="specs"
-              value={specsText}
-              onChange={(e) => setSpecsText(e.target.value)}
-              rows={6}
-              placeholder={`{\n  "CPU": "Dual-core",\n  "RAM": "256MB"\n}`}
-            />
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <Label>Specifications</Label>
+              <Button type="button" variant="outline" onClick={addSpecSection}>
+                + Tambah section
+              </Button>
+            </div>
             <p className="text-xs text-muted-foreground">
-              Format harus JSON object key-value.
+              Kolom kiri = judul section, kolom tengah = point, kolom kanan = jawaban.
             </p>
+            <div className="space-y-3">
+              {specSections.map((section, sectionIdx) => (
+                <div key={sectionIdx} className="rounded-xl border border-border p-3 space-y-3 bg-background">
+                  <div className="flex items-center justify-between gap-3">
+                    <Input
+                      value={section.title}
+                      placeholder="Judul kiri (contoh: SPECIFICATIONS)"
+                      onChange={(e) => setSpecSectionTitle(sectionIdx, e.target.value)}
+                    />
+                    <Button type="button" variant="ghost" onClick={() => removeSpecSection(sectionIdx)}>
+                      Hapus section
+                    </Button>
+                  </div>
+                  <div className="space-y-2">
+                    {section.items.map((item, itemIdx) => (
+                      <div key={itemIdx} className="grid grid-cols-1 md:grid-cols-[1fr_1fr_auto] gap-2">
+                        <Input
+                          value={item.label}
+                          placeholder="Point (kolom tengah)"
+                          onChange={(e) => setSpecItemAt(sectionIdx, itemIdx, "label", e.target.value)}
+                        />
+                        <Input
+                          value={item.value}
+                          placeholder="Jawaban (kolom kanan)"
+                          onChange={(e) => setSpecItemAt(sectionIdx, itemIdx, "value", e.target.value)}
+                        />
+                        <Button
+                          type="button"
+                          variant="outline"
+                          onClick={() => removeSpecItem(sectionIdx, itemIdx)}
+                        >
+                          Hapus
+                        </Button>
+                      </div>
+                    ))}
+                  </div>
+                  <Button type="button" variant="secondary" onClick={() => addSpecItem(sectionIdx)}>
+                    + Tambah point
+                  </Button>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <Label>Technical Dropdown Items</Label>
+              <Button type="button" variant="outline" onClick={addTechnicalItem}>
+                + Tambah item
+              </Button>
+            </div>
+            {technicalItems.length === 0 && (
+              <p className="text-xs text-muted-foreground">
+                Belum ada item. Tambahkan item untuk section Technical accordion di halaman produk.
+              </p>
+            )}
+            <div className="space-y-3">
+              {technicalItems.map((item, idx) => (
+                <div key={idx} className="rounded-xl border border-border p-3 space-y-2 bg-background">
+                  <div className="flex items-center justify-between">
+                    <p className="text-sm font-medium">Item {idx + 1}</p>
+                    <Button
+                      type="button"
+                      variant="ghost"
+                      className="text-destructive hover:text-destructive"
+                      onClick={() => removeTechnicalItem(idx)}
+                    >
+                      Hapus
+                    </Button>
+                  </div>
+                  <Input
+                    value={item.title}
+                    placeholder="Title (contoh: Throughput)"
+                    onChange={(e) => setTechnicalItemAt(idx, "title", e.target.value)}
+                  />
+                  <Textarea
+                    value={item.content}
+                    rows={3}
+                    placeholder="Content"
+                    onChange={(e) => setTechnicalItemAt(idx, "content", e.target.value)}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
           <div className="space-y-2">
             <Label>Bullet (maks. 9)</Label>

@@ -2,7 +2,7 @@ export type MikrotikProductExtras = {
   videoUrl?: string;
   videoTitle?: string;
   videoDescription?: string;
-  specifications?: Record<string, string>;
+  specifications?: { title: string; items: { label: string; value: string }[] };
 };
 
 // Dummy extras untuk testing UI.
@@ -14,10 +14,13 @@ export const MIKROTIK_PRODUCT_EXTRAS: Record<number, MikrotikProductExtras> = {
     videoDescription:
       "Deskripsi singkat video product (dummy). Kamu bisa ganti ini di `mikrotik/public/productExtras.ts`.",
     specifications: {
-      "CPU": "Dual-core (dummy)",
-      "RAM": "256MB (dummy)",
-      "Ports": "5x Gigabit (dummy)",
-      "OS": "RouterOS (dummy)",
+      title: "SPECIFICATIONS",
+      items: [
+        { label: "CPU", value: "Dual-core (dummy)" },
+        { label: "RAM", value: "256MB (dummy)" },
+        { label: "Ports", value: "5x Gigabit (dummy)" },
+        { label: "OS", value: "RouterOS (dummy)" },
+      ],
     },
   },
 };
