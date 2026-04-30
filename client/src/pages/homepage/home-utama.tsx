@@ -109,13 +109,27 @@ export default function HomeUtama() {
             transition={{ duration: 0.8 }}
             className="space-y-7"
           >
-            <p className="text-xs md:text-sm font-black tracking-[0.35em] uppercase text-muted-foreground">
+
+            {/* text-muted-foreground */}
+            <p className="text-xs md:text-sm font-black tracking-[0.35em] uppercase ">
               Building the Future of Connectivity.
             </p>
 
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight text-black dark:text-white uppercase leading-[0.95]">
-              Dinamika Cipta Solusi.
-            </h1>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight uppercase leading-[0.95] drop-shadow-[0_4px_20px_rgba(0,0,0,0.65)]">
+
+  <span className="inline-block bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+    Dinamika
+  </span>{" "}
+
+  <span className="inline-block bg-gradient-to-r from-blue-200 to-cyan-300 bg-clip-text text-transparent">
+    Cipta
+  </span>{" "}
+
+  <span className="inline-block bg-gradient-to-r from-cyan-300 to-cyan-500 bg-clip-text text-transparent">
+    Solusi
+  </span>
+
+</h1>
 
             <p className="text-base md:text-xl text-muted-foreground font-medium max-w-3xl mx-auto leading-relaxed">
               Kumpulan solusi networking profesional untuk bisnis—mulai dari WiFi, Switching,
