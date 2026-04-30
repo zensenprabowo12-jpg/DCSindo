@@ -95,8 +95,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <img
       src={
         theme === "dark"
-          ? "/images/1.logo/logodcswhite.png"
-          : "/images/1.logo/logodcsblack.png"
+          ? "/images/1.logo/logodcsputih.png"
+          : "/images/1.logo/logodcshitam.png"
       }
       className="h-5 md:h-8 w-auto transition-all"
       alt="Logo DCS"
