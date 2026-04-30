@@ -90,11 +90,11 @@ export default function HomeUtama() {
 
         {/* VIDEO */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/20 to-white/70 dark:from-black/60 dark:via-black/40 dark:to-black/80 z-10 transition-colors duration-500" />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/15 via-white/10 to-white/55 dark:from-black/60 dark:via-black/40 dark:to-black/80 z-10 transition-colors duration-500" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vh] min-w-[177.77vh] min-h-[56.25vw]">
             <iframe
               src="https://www.youtube.com/embed/9HaU8NjH7bI?autoplay=1&mute=1&rel=0&playsinline=1"
-              className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-90 dark:opacity-70 transition-opacity duration-500"
+              className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-100 dark:opacity-70 transition-opacity duration-500"
               allow="autoplay; encrypted-media"
               title="DCS Master Hero Video"
             />
@@ -111,28 +111,23 @@ export default function HomeUtama() {
           >
 
             {/* text-muted-foreground */}
-            <p className="text-xs md:text-sm font-black tracking-[0.35em] uppercase ">
+            <p className="text-base md:text-xl font-black tracking-[0.35em] uppercase">
               Building the Future of Connectivity.
             </p>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight uppercase leading-[0.95] drop-shadow-[0_4px_20px_rgba(0,0,0,0.65)]">
+          <h1 className="drop-shadow-[0_4px_20px_rgba(0,0,0,0.65)]">
+            <span className="sr-only">DINAMIKA CIPTA SOLUSI</span>
+            <img
+              src="/images/2.homepage/Web-Head-Title-White.png"
+              alt="Dinamika Cipta Solusi"
+              className="mx-auto h-10 md:h-14 lg:h-16 w-auto"
+              loading="eager"
+              decoding="async"
+            />
+          </h1>
 
-  <span className="inline-block bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
-    Dinamika
-  </span>{" "}
-
-  <span className="inline-block bg-gradient-to-r from-blue-200 to-cyan-300 bg-clip-text text-transparent">
-    Cipta
-  </span>{" "}
-
-  <span className="inline-block bg-gradient-to-r from-cyan-300 to-cyan-500 bg-clip-text text-transparent">
-    Solusi
-  </span>
-
-</h1>
-
-            <p className="text-base md:text-xl text-muted-foreground font-medium max-w-3xl mx-auto leading-relaxed">
-              Kumpulan solusi networking profesional untuk bisnis—mulai dari WiFi, Switching,
+            <p className="text-base md:text-xl text-white font-black tracking-[0.35em] max-w-3xl mx-auto leading-relaxed">
+              Solusi networking profesional untuk bisnis anda, mulai dari WiFi, Switching,
               Security, hingga Access Control. Terintegrasi, rapi, dan mudah dikelola.
             </p>
 
