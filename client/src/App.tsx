@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, useLocation } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -24,8 +24,21 @@ import VsolSupport from "@/pages/support/Vsol";
 import Cart from "@/pages/cart";
 import ComingSoon from "@/pages/coming-soon";
 import FirmwarePage from "@/pages/firmware"; // ✅ TAMBAHAN
+import { FEATURE_FLAGS } from "@/config/featureFlags";
 
 function RouterWouter() {
+  const [location] = useLocation();
+  const isMikrotikPath =
+    location === "/mikrotik" ||
+    location.startsWith("/mikrotik/") ||
+    location === "/mikrotik-dcs" ||
+    location.startsWith("/mikrotik-dcs/") ||
+    location === "/support/mikrotik";
+
+  if (FEATURE_FLAGS.disableMikrotikRoutes && isMikrotikPath) {
+    return <ComingSoon />;
+  }
+
   return (
     <Switch>
       <Route path="/" component={Home} />
