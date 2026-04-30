@@ -110,11 +110,11 @@ export default function HomeUtama() {
             className="space-y-7"
           >
             <p className="text-xs md:text-sm font-black tracking-[0.35em] uppercase text-muted-foreground">
-              Dinamika Cipta Solusi
+              Building the Future of Connectivity.
             </p>
 
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight text-black dark:text-white uppercase leading-[0.95]">
-              Networking<br className="hidden sm:block" /> Simplified.
+              Dinamika Cipta Solusi.
             </h1>
 
             <p className="text-base md:text-xl text-muted-foreground font-medium max-w-3xl mx-auto leading-relaxed">
@@ -148,37 +148,43 @@ export default function HomeUtama() {
             </div>
 
             <div className="pt-8">
-              <div className="mx-auto max-w-4xl grid grid-cols-1 sm:grid-cols-3 gap-3">
-                {[
-                  {
-                    icon: Zap,
-                    title: "Performance",
-                    desc: "Hardware and software yang stabil untuk 24/7 operation.",
-                  },
-                  {
-                    icon: ShieldCheck,
-                    title: "Secure",
-                    desc: "Best practice untuk jaringan yang lebih aman dan terkontrol.",
-                  },
-                  {
-                    icon: Headphones,
-                    title: "Support",
-                    desc: "Panduan & support untuk membantu implementasi lebih cepat.",
-                  },
-                ].map((item) => (
-                  <div
-                    key={item.title}
-                    className="rounded-2xl border border-border bg-white/60 dark:bg-black/30 backdrop-blur-xl p-5 text-left"
-                  >
-                    <item.icon className="w-5 h-5 text-primary" />
-                    <p className="mt-2 font-black tracking-tight">{item.title}</p>
-                    <p className="mt-1 text-xs text-muted-foreground leading-relaxed">
-                      {item.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+  <div className="mx-auto max-w-4xl grid grid-cols-1 sm:grid-cols-3 gap-3">
+    {[
+      {
+        icon: Zap,
+        title: "Performance",
+        desc: "Hardware and software yang stabil untuk 24/7 operation.",
+      },
+      {
+        icon: ShieldCheck,
+        title: "Secure",
+        desc: "Best practice untuk jaringan yang lebih aman dan terkontrol.",
+      },
+      {
+        icon: Headphones,
+        title: "Support",
+        desc: "Panduan & support untuk membantu implementasi lebih cepat.",
+      },
+    ].map((item) => (
+      <div
+        key={item.title}
+        className="rounded-2xl border border-border bg-white/60 dark:bg-black/30 backdrop-blur-xl p-5 text-center"
+      >
+        <div className="flex justify-center">
+          <item.icon className="w-5 h-5 text-primary" />
+        </div>
+
+        <p className="mt-2 font-black tracking-tight">
+          {item.title}
+        </p>
+
+        <p className="mt-1 text-xs text-muted-foreground leading-relaxed">
+          {item.desc}
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
           </motion.div>
         </div>
       </section>
@@ -195,13 +201,13 @@ export default function HomeUtama() {
 
           <div className="text-center mb-16">
             <p className="text-xs font-black tracking-[0.35em] uppercase text-muted-foreground">
-              Our Brands
+              Our Product
             </p>
             <h2 className="mt-3 text-4xl md:text-5xl font-black tracking-tight text-black dark:text-white">
               Explore the Ecosystem
             </h2>
             <p className="text-muted-foreground font-medium mt-3 max-w-2xl mx-auto">
-              Pilih brand untuk melihat katalog dan solusi yang sesuai dengan kebutuhan infrastruktur jaringan Anda.
+              Pilih Product yang kami sediakan untuk melihat katalog dan solusi yang sesuai dengan kebutuhan infrastruktur jaringan Anda.
             </p>
           </div>
 
@@ -209,14 +215,14 @@ export default function HomeUtama() {
             {[
               {
                 name: "Ubiquiti",
-                image: "/images/1.logo/Ubiquitichatgpt.png",
+                image: "/images/1.logo/UbiquitiThumbnail.png",
                 path: "/home-ubiquiti",
                 bg: "bg-blue-50/50 dark:bg-blue-900/10",
                 desc: "Enterprise WiFi, Switching, Security, dan Access dalam satu ekosistem.",
               },
               {
                 name: "MikroTik",
-                image: "/images/1.logo/mikrotikchatgpt.png",
+                image: "/images/1.logo/MikrotikThumbnail.png",
                 path: "/mikrotik",
                 bg: "bg-slate-50/50 dark:bg-slate-900/10",
                 desc: "Router, switch, wireless, dan platform network yang fleksibel dan powerful.",

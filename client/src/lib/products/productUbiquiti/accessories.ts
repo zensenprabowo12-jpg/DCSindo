@@ -414,8 +414,8 @@ export const accessoriesProducts: Product[] = [
 
   //Produk Keenam dari accessories, SF RJ45 & Copper
   {
-    id: "U-Cable-C6-CMR-Indoor",
-    name: "UniFi Indoor Cable Cat6 CMR Indoor",
+    id: "U-Cable-C6-CMR",
+    name: "UniFi Indoor Cable Cat6 CMR",
     category: "Accessories",
     subfilter: "RJ45 & Copper",
     image: "/images/camera.jpg",
@@ -486,8 +486,8 @@ export const accessoriesProducts: Product[] = [
 
   //Produk Ketujuh dari accessories, SF RJ45 & Copper
   {
-    id: "U-Cable-C6-CMR-Outdoor",
-    name: "UniFi Indoor Cable Cat6 CMR Outdoor",
+    id: "UACC-Cable-C5e-Outdoor-Pro-305M",
+    name: "UniFi Outdoor Cable",
     category: "Accessories",
     subfilter: "RJ45 & Copper",
     image: "/images/camera.jpg",
@@ -732,7 +732,7 @@ export const accessoriesProducts: Product[] = [
   //Produk Kesebelas dari accessories, SF RJ45 & Copper
   { //-bulletpoint
     id: "UACC-RJ45-Coupler-C6A-Outdoor",
-    name: "RJ45 Inline Coupler Outdoor, 2-Pack",
+    name: "RJ45 Inline Coupler Outdoor, 10-Pack",
     category: "Accessories",
     subfilter: "RJ45 & Copper",
     image: "/images/camera.jpg",

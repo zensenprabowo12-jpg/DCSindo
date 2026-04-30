@@ -91,15 +91,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* LOGO */}
           <Link href="/">
-            <a>
-              <img
-                src={theme === "dark"
-                  ? "/images/1.logo/DCSlogoputih.png"
-                  : "/images/1.logo/DCSlogohitam.png"}
-                className="h-8 md:h-14 w-auto transition-all"
-              />
-            </a>
-          </Link>
+  <a>
+    <img
+      src={
+        theme === "dark"
+          ? "/images/1.logo/logodcswhite.png"
+          : "/images/1.logo/logodcsblack.png"
+      }
+      className="h-5 md:h-8 w-auto transition-all"
+      alt="Logo DCS"
+    />
+  </a>
+</Link>
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-10 relative">
