@@ -89,17 +89,18 @@ export default function HomeUtama() {
       <section className="relative h-screen min-h-[600px] w-full overflow-hidden flex items-center justify-center bg-white dark:bg-black transition-colors duration-500">
 
         {/* VIDEO */}
-        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-white/15 via-white/10 to-white/55 dark:from-black/60 dark:via-black/40 dark:to-black/80 z-10 transition-colors duration-500" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vh] min-w-[177.77vh] min-h-[56.25vw]">
-            <iframe
-              src="https://www.youtube.com/embed/9HaU8NjH7bI?autoplay=1&mute=1&rel=0&playsinline=1"
-              className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-100 dark:opacity-70 transition-opacity duration-500"
-              allow="autoplay; encrypted-media"
-              title="DCS Master Hero Video"
-            />
-          </div>
-        </div>
+<div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+  <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/30 dark:from-black/70 dark:to-black/60 z-10 transition-colors duration-500" />
+
+  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vh] min-w-[177.77vh] min-h-[56.25vw]">
+    <iframe
+      src="https://www.youtube.com/embed/9HaU8NjH7bI?autoplay=1&mute=1&rel=0&playsinline=1"
+      className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-80 dark:opacity-60 transition-opacity duration-500"
+      allow="autoplay; encrypted-media"
+      title="DCS Master Hero Video"
+    />
+  </div>
+</div>
 
         {/* CONTENT */}
         <div className="container mx-auto px-4 relative z-20 text-center">
@@ -110,54 +111,60 @@ export default function HomeUtama() {
             className="space-y-7"
           >
 
-            {/* text-muted-foreground */}
-            <p className="text-base md:text-xl font-black tracking-[0.35em] uppercase">
-              Building the Future of Connectivity.
-            </p>
-
           <h1 className="drop-shadow-[0_4px_20px_rgba(0,0,0,0.65)]">
-            <span className="sr-only">DINAMIKA CIPTA SOLUSI</span>
-            <img
-              src="/images/2.homepage/Web-Head-Title-White.png"
-              alt="Dinamika Cipta Solusi"
-              className="mx-auto h-10 md:h-14 lg:h-16 w-auto"
-              loading="eager"
-              decoding="async"
-            />
-          </h1>
+  <span className="sr-only">DINAMIKA CIPTA SOLUSI</span>
+  <img
+    src="/images/2.homepage/Web-Head-Title-White.png"
+    alt="Dinamika Cipta Solusi"
+    className="mx-auto h-10 md:h-14 lg:h-16 w-auto mb-15"
+    loading="eager"
+    decoding="async"
+  />
+</h1>
 
-            <p className="text-base md:text-xl text-white font-black tracking-[0.35em] max-w-3xl mx-auto leading-relaxed">
-              Solusi networking profesional untuk bisnis anda, mulai dari WiFi, Switching,
-              Security, hingga Access Control. Terintegrasi, rapi, dan mudah dikelola.
-            </p>
+<p
+  className="font-manrope font-extrabold uppercase tracking-[0.35em] mb-2"
+  style={{ fontSize: "20px", lineHeight: "1.6", color: "#60c3db" }}
+>
+  Building the Future of Connectivity
+</p>
 
-            <div className="flex flex-col sm:flex-row justify-center gap-3 pt-6">
-              <Button
-                onClick={() => {
-                  brandSectionRef.current?.scrollIntoView({
-                    behavior: "smooth",
-                  });
-                }}
-                size="lg"
-                className="rounded-full px-10 h-14 text-base font-bold uppercase transition-all shadow-xl"
-              >
-                Enter Ecosystem
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button
-                onClick={() => {
-                  aboutSectionRef.current?.scrollIntoView({ behavior: "smooth" });
-                }}
-                variant="outline"
-                size="lg"
-                className="rounded-full px-10 h-14 text-base font-bold uppercase"
-              >
-                Learn More
-              </Button>
-            </div>
+<p
+  className="font-manrope font-light text-white tracking-[0.08em] max-w-10xl mx-auto leading-[1.5] mb-10"
+  style={{ fontSize: "25px" }} // 20pt ≈ 26.67px
+>
+  Solusi networking profesional untuk bisnis anda, mulai dari WiFi, Switching, Security, hingga Access Control. 
+</p>
 
-            <div className="pt-8">
-  <div className="mx-auto max-w-4xl grid grid-cols-1 sm:grid-cols-3 gap-3">
+<div className="flex flex-col sm:flex-row justify-center gap-3 pt-6">
+  <Button
+    onClick={() => {
+      brandSectionRef.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }}
+    size="lg"
+    className="font-manrope font-semibold uppercase mb-2 bg-[#609cdb] hover:bg-[#1b36b3] text-black transition"
+    style={{ fontSize: "20px", lineHeight: "1.6" }}
+  >
+    Enter Ecosystem
+    <ArrowRight className="ml-2 w-5 h-5" />
+  </Button>
+
+  <Button
+    onClick={() => {
+      aboutSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    }}
+    variant="outline"
+    size="lg"
+    className="rounded-full px-10 h-14 text-base font-bold uppercase border-[#2140db] text-[#609cdb] hover:bg-[#2140db] hover:text-white transition"
+  >
+    Learn More
+  </Button>
+</div>
+
+           <div className="pt-8">
+  <div className="mx-auto max-w-8xl grid grid-cols-1 sm:grid-cols-3 gap-5">
     {[
       {
         icon: Zap,
@@ -177,17 +184,33 @@ export default function HomeUtama() {
     ].map((item) => (
       <div
         key={item.title}
-        className="rounded-2xl border border-border bg-white/60 dark:bg-black/30 backdrop-blur-xl p-5 text-center"
+        className="
+          rounded-2xl border border-border 
+          bg-white/70 dark:bg-black/30 
+          backdrop-blur-xl p-4 text-center
+        "
       >
         <div className="flex justify-center">
-          <item.icon className="w-5 h-5 text-primary" />
-        </div>
+  <item.icon className="w-7 h-7 text-[#609cdb]" />
+</div>
 
-        <p className="mt-2 font-black tracking-tight">
+        <p
+          className="
+            mt-2 font-manrope font-extrabold 
+            text-black dark:text-white
+          "
+          style={{ fontSize: "26.67px" }}
+        >
           {item.title}
         </p>
 
-        <p className="mt-1 text-xs text-muted-foreground leading-relaxed">
+        <p
+          className="
+            mt-1 font-manrope font-light leading-relaxed 
+            text-black white:text-black/60 dark:text-white/80
+          "
+          style={{ fontSize: "20px" }}
+        >
           {item.desc}
         </p>
       </div>

@@ -105,96 +105,96 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 </Link>
 
           {/* DESKTOP MENU */}
-          <div className="hidden md:flex items-center gap-10 relative">
+<div className="hidden md:flex items-center gap-10 relative font-manrope font-bold">
 
-            {/* HOME */}
-            <Link href="/">
-              <a className="relative px-3 py-1 font-medium hover:text-primary transition">
-                Home
-                {location === "/" && (
-                  <motion.div
-                    layoutId="activeTab"
-                    className="absolute inset-0 -z-10 rounded-lg bg-primary/10"
-                  />
-                )}
+  {/* HOME */}
+  <Link href="/">
+    <a className="relative px-3 py-1 hover:text-primary transition">
+      Home
+      {location === "/" && (
+        <motion.div
+          layoutId="activeTab"
+          className="absolute inset-0 -z-10 rounded-lg bg-primary/10"
+        />
+      )}
+    </a>
+  </Link>
+
+  {/* OUR BRANDS */}
+  <div className="relative" ref={brandRef}>
+    <button
+      onClick={() => setIsBrandOpen(!isBrandOpen)}
+      className="px-3 py-1 flex items-center gap-2 hover:text-primary transition"
+    >
+      {activeBrand}
+    </button>
+
+    <AnimatePresence>
+      {isBrandOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0 }}
+          className="absolute top-14 left-1/2 -translate-x-1/2 w-60 bg-background border border-border rounded-2xl shadow-xl p-4"
+        >
+          {brands.map((brand) =>
+            brand.external ? (
+              <a
+                key={brand.path}
+                href={brand.path}
+                className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition"
+              >
+                {brand.name}
+              </a>
+            ) : (
+              <Link key={brand.path} href={brand.path}>
+                <a className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition">
+                  {brand.name}
+                </a>
+              </Link>
+            ),
+          )}
+        </motion.div>
+      )}
+    </AnimatePresence>
+  </div>
+
+  {/* SUPPORT */}
+  <div className="relative" ref={supportRef}>
+    <button
+      onClick={() => setIsSupportOpen(!isSupportOpen)}
+      className="px-3 py-1 hover:text-primary transition"
+    >
+      Support
+    </button>
+
+    <AnimatePresence>
+      {isSupportOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0 }}
+          className="absolute top-14 left-1/2 -translate-x-1/2 w-60 bg-background border border-border rounded-2xl shadow-xl p-4"
+        >
+          {brands.map((brand) => (
+            <Link key={brand.support} href={brand.support}>
+              <a className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition">
+                {brand.name}
               </a>
             </Link>
+          ))}
+        </motion.div>
+      )}
+    </AnimatePresence>
+  </div>
 
-            {/* OUR BRANDS */}
-            <div className="relative" ref={brandRef}>
-              <button
-                onClick={() => setIsBrandOpen(!isBrandOpen)}
-                className="px-3 py-1 font-medium flex items-center gap-2 hover:text-primary transition"
-              >
-                {activeBrand}
-              </button>
-
-              <AnimatePresence>
-                {isBrandOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0 }}
-                    className="absolute top-14 left-1/2 -translate-x-1/2 w-60 bg-background border border-border rounded-2xl shadow-xl p-4"
-                  >
-                    {brands.map((brand) =>
-                      brand.external ? (
-                        <a
-                          key={brand.path}
-                          href={brand.path}
-                          className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition"
-                        >
-                          {brand.name}
-                        </a>
-                      ) : (
-                        <Link key={brand.path} href={brand.path}>
-                          <a className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition">
-                            {brand.name}
-                          </a>
-                        </Link>
-                      ),
-                    )}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-
-            {/* SUPPORT */}
-            <div className="relative" ref={supportRef}>
-              <button
-                onClick={() => setIsSupportOpen(!isSupportOpen)}
-                className="px-3 py-1 font-medium hover:text-primary transition"
-              >
-                Support
-              </button>
-
-              <AnimatePresence>
-                {isSupportOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0 }}
-                    className="absolute top-14 left-1/2 -translate-x-1/2 w-60 bg-background border border-border rounded-2xl shadow-xl p-4"
-                  >
-                    {brands.map((brand) => (
-                      <Link key={brand.support} href={brand.support}>
-                        <a className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition">
-                          {brand.name}
-                        </a>
-                      </Link>
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-
-            {/* CONTACT */}
-            <Link href="/support">
-              <a className="px-3 py-1 font-medium hover:text-primary transition">
-                Contact Us
-              </a>
-            </Link>
-          </div>
+  {/* CONTACT */}
+  <Link href="/support">
+    <a className="px-3 py-1 hover:text-primary transition">
+      Contact Us
+    </a>
+  </Link>
+</div>
 
           {/* RIGHT SIDE */}
           <div className="flex items-center gap-2">
