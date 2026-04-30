@@ -5,7 +5,46 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
+function getYouTubeVideoId(input: string) {
+  const raw = input.trim();
+  if (!raw) return "";
+
+  // common user mistake: "v=<id>" pasted instead of full URL
+  if (raw.startsWith("v=")) return raw.slice(2);
+
+  // already an ID
+  if (!raw.includes("/") && !raw.includes(" ") && raw.length >= 8) return raw;
+
+  try {
+    const url = new URL(raw);
+
+    // youtu.be/<id>
+    if (url.hostname.includes("youtu.be")) {
+      return url.pathname.split("/").filter(Boolean)[0] ?? "";
+    }
+
+    // youtube.com/watch?v=<id>
+    const v = url.searchParams.get("v");
+    if (v) return v;
+
+    // youtube.com/embed/<id> or /shorts/<id>
+    const parts = url.pathname.split("/").filter(Boolean);
+    const embedIdx = parts.indexOf("embed");
+    if (embedIdx >= 0 && parts[embedIdx + 1]) return parts[embedIdx + 1];
+    const shortsIdx = parts.indexOf("shorts");
+    if (shortsIdx >= 0 && parts[shortsIdx + 1]) return parts[shortsIdx + 1];
+
+    return "";
+  } catch {
+    return "";
+  }
+}
+
 export default function Home() {
+  // Paste a full YouTube URL (watch/shorts/youtu.be) or just the ID here.
+  const heroProductVideoInput = "https://youtu.be/hZb-lrs8Bv8?si=B4zu58Q-dUDKUggM";
+  const heroProductVideoId = getYouTubeVideoId(heroProductVideoInput);
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -328,16 +367,16 @@ export default function Home() {
                 State of the Art
               </div>
               <h2 className="text-5xl md:text-8xl font-black tracking-tighter leading-none uppercase italic">
-                U7 Pro <br /><span className="text-primary">WiFi 7</span>
+                U7 Pro XG<br /><span className="text-primary">WiFi 7</span>
               </h2>
               <p className="text-2xl text-muted-foreground max-w-lg leading-snug font-medium">
-                Unprecedented throughput. Ultra-low latency. The pinnacle of wireless performance.
+                Ceiling-mounted 6-stream WiFi 7 AP with 10/5/2.5/1 GbE support.
               </p>
 
 
               <div className="flex gap-12 border-l-4 border-primary pl-8">
                 <div>
-                  <div className="text-5xl font-black mb-1">5.7</div>
+                  <div className="text-5xl font-black mb-1">5-9</div>
                   <div className="text-xs text-muted-foreground uppercase tracking-widest font-black">Gbps Throughput</div>
                 </div>
                 <div>
@@ -353,11 +392,32 @@ export default function Home() {
               </Link>
             </div>
             <div className="flex-1 relative">
-              <img      
-                src="/images/wifi-ap.jpg"
-                alt="U7 Pro"
-                className="relative z-10 w-full max-w-2xl mx-auto object-contain drop-shadow-[0_50px_50px_rgba(0,0,0,0.2)] hover:-translate-y-8 transition-transform duration-1000"
-              />
+              <div className="relative z-10 w-full max-w-2xl mx-auto aspect-video overflow-hidden rounded-3xl bg-black drop-shadow-[0_50px_50px_rgba(0,0,0,0.2)] group hover:-translate-y-8 transition-transform duration-1000">
+                {heroProductVideoId ? (
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${heroProductVideoId}?autoplay=1&mute=1&loop=1&playlist=${heroProductVideoId}&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&playsinline=1`}
+                    className="absolute top-1/2 left-1/2 w-[140%] h-[140%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    title="Ubiquiti showcase video"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center text-white/80 text-sm font-semibold tracking-wide">
+                    Video link tidak valid
+                  </div>
+                )}
+                <div className="absolute inset-0 bg-black/10" />
+                <a
+                  href={
+                    heroProductVideoId
+                      ? `https://www.youtube.com/watch?v=${heroProductVideoId}`
+                      : "https://www.youtube.com"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open video on YouTube"
+                  className="absolute inset-0 z-20"
+                />
+              </div>
             </div>
           </div>
         </div>
