@@ -6,6 +6,10 @@ vite.config.ts.*
 *.tar.gz
 attached_assets/
 
+# Environment variables (never commit secrets)
+.env
+.env.*
+
 # Backup files
 *.backup
 *.backup-*
