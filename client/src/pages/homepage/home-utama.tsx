@@ -326,8 +326,8 @@ export default function HomeUtama() {
                 Building the Future of Connectivity
               </h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Kami membantu memilih solusi yang tepat untuk kebutuhan jaringan—dari planning,
-                deployment, hingga support. Fokus kami: rapi, scalable, dan mudah dikelola.
+                Kami menghadirkan solusi jaringan yang scalable dan siap untuk masa depan guna mendukung pertumbuhan bisnis, 
+                efisiensi operasional, dan konektivitas yang optimal.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button asChild className="rounded-full px-8">
@@ -342,10 +342,10 @@ export default function HomeUtama() {
             <div className="rounded-3xl border border-border bg-background p-8">
               <div className="grid sm:grid-cols-2 gap-6">
                 {[
-                  { title: "Curated Catalog", desc: "Produk dipilih untuk kebutuhan enterprise dan SMB." },
-                  { title: "Fast Delivery", desc: "Proses pengadaan lebih cepat dan transparan." },
-                  { title: "Implementation Ready", desc: "Dokumentasi dan support untuk deployment." },
-                  { title: "Long-term Partnership", desc: "Bantu maintain dan berkembang seiring waktu." },
+                  { title: "Curated Catalog", desc: "Solusi enterprise pilihan untuk kebutuhan bisnis modern." },
+                  { title: "Fast Delivery", desc: "Pengadaan cepat dengan proses yang efisien dan transparan." },
+                  { title: "Implementation Ready", desc: "Dukungan teknis untuk implementasi yang lancar." },
+                  { title: "Long-term Partnership", desc: "Kemitraan jangka panjang dengan dukungan berkelanjutan." },
                 ].map((x) => (
                   <div key={x.title} className="space-y-1">
                     <p className="font-black">{x.title}</p>

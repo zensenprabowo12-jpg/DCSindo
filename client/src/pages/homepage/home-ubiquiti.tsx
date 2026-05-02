@@ -98,10 +98,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-[16px] md:text-[60px] font-black tracking-tight mb-2">Industry Leading Hardware</h2>
-            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Didesain secara presisi untuk performa tinggi dan keandalan jangka panjang.</p>
-            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Didesain secara presisi untuk performa tinggi dan keandalan jangka panjang.
+            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">
+              Didesain secara presisi untuk performa tinggi dan keandalan jangka panjang.
             </p>
-            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">Didukung EdgeAI yang berkembang pesat di bidang networking dan keamanan fisik.
+            <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">
+              Didukung EdgeAI yang berkembang pesat di bidang networking dan keamanan fisik.
             </p>
           </div>
 
@@ -153,6 +154,8 @@ export default function Home() {
               >
                 <div className="absolute inset-0 p-8 z-20 flex flex-col justify-end bg-gradient-to-t from-black/60 to-transparent">
                   <h3 className="text-xl font-bold text-white">Door Access</h3>
+                  <p className="text-white/70 text-sm">Secure Every Entry, Seamlessly.</p>
+
                 </div>
                 <img
                   src="/images/2.homepage/homecategorydooraccess.png"
@@ -188,7 +191,7 @@ export default function Home() {
               >
                 <div className="absolute inset-0 p-8 z-20 flex flex-col justify-end bg-gradient-to-t from-black/20 to-transparent">
                   <h3 className="text-2xl font-bold text-white">Switching</h3>
-                  <p className="text-white/70 text-sm">The backbone of your network infrastructure.</p>
+                  <p className="text-white/70 text-sm">Powering Seamless Connectivity.</p>
                 </div>
                 <img
                   src="/images/2.homepage/homecategoryswitching.png"
@@ -249,8 +252,8 @@ export default function Home() {
 
                 {/* Video */}
                 <div className="absolute inset-0 rounded-full overflow-hidden border border-white/10 shadow-2xl bg-black">
-                  <iframe
-                    src="https://www.youtube.com/embed/zZpzDb-MHOY?autoplay=1&mute=1&loop=1&playlist=zZpzDb-MHOY&controls=0"
+                  <iframe 
+                    src="https://www.youtube.com/embed/DZLTGnqaIso?si=tlwamaL1SwdshRG5&autoplay=1&mute=1&loop=1&playlist=DZLTGnqaIso&controls=0"
                     className="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 scale-[1.6] md:scale-[1.8] lg:scale-[2]"
                     allow="autoplay; encrypted-media"
                   />
@@ -263,7 +266,7 @@ export default function Home() {
             {/* TEXT */}
             <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
               <h3 className="text-4xl md:text-5xl font-black italic uppercase">UniFi Protect</h3>
-              <p className="text-gray-400 text-xl leading-relaxed">
+              <p className="text-gray-400 text-2xl md:text-2xl leading-relaxed">
                 Platform keamanan enterprise tanpa lisensi dengan dukungan AI untuk deteksi cerdas.
               </p>
               <Link href="/collections/camera-security">
@@ -282,7 +285,7 @@ export default function Home() {
             {/* TEXT */}
             <div className="flex-1 space-y-8 text-center lg:text-left">
               <h3 className="text-4xl md:text-5xl font-black italic uppercase">UniFi Network</h3>
-              <p className="text-gray-400 text-xl leading-relaxed">
+              <p className="text-gray-400 text-2xl md:text-2xl leading-relaxed">
                 Infrastruktur IT terpadu dengan kontrol penuh tanpa subscription.
               </p>
               <Button className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold">
@@ -341,7 +344,7 @@ export default function Home() {
             {/* TEXT */}
             <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
               <h3 className="text-4xl md:text-5xl font-black italic uppercase">UniFi Access</h3>
-              <p className="text-gray-400 text-xl leading-relaxed">
+              <p className="text-gray-400 text-2xl md:text-2xl leading-relaxed">
                 Sistem kontrol akses cerdas dengan manajemen terpusat dan keamanan tinggi.
               </p>
               <Button className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold">
@@ -370,7 +373,7 @@ export default function Home() {
                 U7 Pro XG<br /><span className="text-primary">WiFi 7</span>
               </h2>
               <p className="text-2xl text-muted-foreground max-w-lg leading-snug font-medium">
-                Ceiling-mounted 6-stream WiFi 7 AP with 10/5/2.5/1 GbE support.
+                Access point WiFi 7 dengan desain ceiling-mounted, didukung teknologi 6-stream serta konektivitas high-speed hingga 10/5/2.5/1 GbE.
               </p>
 
 
@@ -387,7 +390,7 @@ export default function Home() {
 
               <Link href="/collections/wifi">
                 <Button size="lg" className="rounded-full px-12 h-20 text-xl font-black uppercase shadow-2xl shadow-primary/40 hover:scale-110 transition-transform bg-primary hover:bg-primary/90">
-                  Pre-Order Now
+                  Explore U7 Pro XG
                 </Button>
               </Link>
             </div>
