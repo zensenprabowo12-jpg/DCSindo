@@ -1,12 +1,12 @@
 export const FEATURE_FLAGS = {
   /**
-   * Temporarily blocks all MikroTik pages by routing them to a "Coming Soon" page.
-   * Toggle via `VITE_DISABLE_MIKROTIK_ROUTES=true` (easy to revert).
+   * Saat `true`, semua path MikroTik (landing, shop, admin DCS, support/mikrotik) diarahkan ke Coming Soon.
+   * - Default: halaman **dibuka** (false) jika env tidak di-set.
+   * - Untuk coming soon lagi: set `VITE_DISABLE_MIKROTIK_ROUTES=true` di `.env` (root proyek, sama folder `vite.config.ts`) lalu restart dev server.
    */
   disableMikrotikRoutes: (() => {
     const raw = import.meta.env.VITE_DISABLE_MIKROTIK_ROUTES;
-    // Default ON (blocked) until explicitly set to "false"
-    if (raw == null || String(raw).trim() === "") return true;
+    if (raw == null || String(raw).trim() === "") return false;
     return String(raw).toLowerCase() === "true";
   })(),
 } as const;
