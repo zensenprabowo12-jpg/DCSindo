@@ -368,7 +368,7 @@ export default function Home() {
                 </span>
                 State of the Art
               </div>
-              <h2 className="text-5xl md:text-8xl font-bold tracking-tighter leading-none uppercase italic">
+              <h2 className="text-5xl md:text-8xl font-bold ">
                 U7 Pro XG<br /><span className="text-primary">WiFi 7</span>
               </h2>
               <p className="text-2xl text-muted-foreground max-w-lg leading-snug font-medium">

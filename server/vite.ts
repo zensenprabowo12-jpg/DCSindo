@@ -34,8 +34,6 @@ export async function setupVite(server: Server, app: Express) {
   /** Jangan kirim index.html SPA untuk path yang di-handle Express (EJS/API). */
   function isServerRenderedPath(p: string): boolean {
     return (
-      p === "/mikrotik" ||
-      p.startsWith("/mikrotik/") ||
       p.startsWith("/admin/mikrotik") ||
       p.startsWith("/admin/v2") ||
       p.startsWith("/brand/") ||
