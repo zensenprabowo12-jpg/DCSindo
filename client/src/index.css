@@ -1,3 +1,4 @@
+@import "./styles/lato.css";
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -40,8 +41,8 @@
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
   
-  /* Lato Font Configuration */
-  --font-sans: 'Lato', sans-serif;
+  /* Lato (self-hosted @font-face in ./styles/lato.css) */
+  --font-sans: "Lato", sans-serif;
   
   --radius: 0rem; /* Enterprise gear often has sharp or minimal radius */
 }
