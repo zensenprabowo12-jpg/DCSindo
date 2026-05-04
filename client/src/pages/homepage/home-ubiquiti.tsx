@@ -1,9 +1,24 @@
+import { useEffect, useRef, useState } from "react";
 import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { products, CATEGORIES } from "@/lib/products/productUbiquiti";
 import { Link } from "wouter";
-import { ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { ArrowRight, Play } from "lucide-react";
+import { motion, useInView } from "framer-motion";
+
+const FADE_UP = {
+  hidden: { opacity: 0, y: 28 },
+  visible: (delay = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const, delay },
+  }),
+};
+
+const fadeUpVariants = {
+  hidden: FADE_UP.hidden,
+  visible: FADE_UP.visible,
+};
 
 function getYouTubeVideoId(input: string) {
   const raw = input.trim();
@@ -44,6 +59,15 @@ export default function Home() {
   // Paste a full YouTube URL (watch/shorts/youtu.be) or just the ID here.
   const heroProductVideoInput = "https://youtu.be/hZb-lrs8Bv8?si=B4zu58Q-dUDKUggM";
   const heroProductVideoId = getYouTubeVideoId(heroProductVideoInput);
+
+  const newReleaseRef = useRef<HTMLElement | null>(null);
+  const newReleaseInView = useInView(newReleaseRef, { once: true, amount: 0.12 });
+  const [videoStripReady, setVideoStripReady] = useState(false);
+
+  useEffect(() => {
+    const id = window.setTimeout(() => setVideoStripReady(true), 600);
+    return () => window.clearTimeout(id);
+  }, []);
 
   return (
     <Layout>
@@ -355,72 +379,185 @@ export default function Home() {
 
         </div>
       </section>
-      {/* New Release - Aesthetic Dark Minimalist */}
-      <section className="py-40 bg-white dark:bg-background relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24 px-4 md:px-12">
-            <div className="flex-1 space-y-10">
-              <div className="inline-flex items-center gap-3 px-6 py-2 bg-primary/10 text-primary rounded-full text-sm font-bold uppercase tracking-widest">
-                <span className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+      {/* New Release — centered stacked */}
+      <section
+        ref={newReleaseRef}
+        className="relative overflow-hidden bg-white pb-20 pt-20 dark:bg-background md:pb-20 md:pt-20"
+      >
+        <div
+          className="pointer-events-none absolute left-1/2 -mt-20 h-[400px] w-[700px] -translate-x-1/2 opacity-30 blur-[120px] dark:opacity-20"
+          style={{
+            background:
+              "radial-gradient(ellipse at center, #3b82f6 0%, transparent 72%)",
+          }}
+          aria-hidden
+        />
+
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.03] dark:opacity-[0.06]"
+          style={{
+            backgroundImage: `
+              linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
+              linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px)
+            `,
+            backgroundSize: "80px 80px",
+          }}
+          aria-hidden
+        />
+
+        <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-4 text-center">
+          <div className="flex w-full flex-col items-center">
+            <motion.div
+              className="flex justify-center"
+              initial="hidden"
+              animate={newReleaseInView ? "visible" : "hidden"}
+              variants={fadeUpVariants}
+              custom={0}
+            >
+              <div className="inline-flex items-center gap-3 rounded-full border border-border/60 bg-secondary/40 px-5 py-2 text-xs font-medium uppercase tracking-[0.1em] text-foreground backdrop-blur-sm dark:bg-secondary/30">
+                <span className="relative flex h-3 w-3 shrink-0">
+                  <span
+                    className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75"
+                    style={{ backgroundColor: "#1d6aeb" }}
+                  />
+                  <span
+                    className="relative inline-flex h-3 w-3 rounded-full"
+                    style={{ backgroundColor: "#1d6aeb" }}
+                  />
                 </span>
                 State of the Art
               </div>
-              <h2 className="text-5xl md:text-8xl font-bold ">
-                U7 Pro XG<br /><span className="text-primary">WiFi 7</span>
-              </h2>
-              <p className="text-2xl text-muted-foreground max-w-lg leading-snug font-medium">
-                Access point WiFi 7 dengan desain ceiling-mounted, didukung teknologi 6-stream serta konektivitas high-speed hingga 10/5/2.5/1 GbE.
-              </p>
+            </motion.div>
 
+            <motion.h2
+              className="font-sans mt-6 max-w-4xl text-5xl font-semibold leading-[1.05] tracking-[-0.02em] text-foreground antialiased sm:text-5xl md:text-6xl lg:text-[3.25rem]"
+              initial="hidden"
+              animate={newReleaseInView ? "visible" : "hidden"}
+              variants={fadeUpVariants}
+              custom={0.1}
+            >
+              <span className="tabular-nums">U7 Pro XG</span>
+              {" "}
+              <span
+                className="font-sans mt-6 max-w-4xl text-5xl font-semibold leading-[1.05] tracking-[-0.02em] text-foreground antialiased sm:text-5xl md:text-6xl lg:text-[3.25rem]"
+                style={{ color: "#1d6aeb" }}
+              >
+                Wi-Fi 7
+              </span>
+            </motion.h2>
 
-              <div className="flex gap-12 border-l-4 border-primary pl-8">
-                <div>
-                  <div className="text-5xl font-bold mb-1">5-9</div>
-                  <div className="text-xs text-muted-foreground uppercase tracking-widest font-bold">Gbps Throughput</div>
-                </div>
-                <div>
-                  <div className="text-5xl font-bold mb-1">6GHz</div>
-                  <div className="text-xs text-muted-foreground uppercase tracking-widest font-bold">Spectrum Band</div>
-                </div>
-              </div>
-
-              <Link href="/collections/wifi">
-                <Button size="lg" className="rounded-full px-12 h-20 text-xl font-bold uppercase shadow-2xl shadow-primary/40 hover:scale-110 transition-transform bg-primary hover:bg-primary/90">
-                  Explore U7 Pro XG
-                </Button>
-              </Link>
-            </div>
-            <div className="flex-1 relative">
-              <div className="relative z-10 w-full max-w-2xl mx-auto aspect-video overflow-hidden rounded-3xl bg-black drop-shadow-[0_50px_50px_rgba(0,0,0,0.2)] group hover:-translate-y-8 transition-transform duration-1000">
-                {heroProductVideoId ? (
+            <motion.div
+              className="relative mt-14 w-full max-w-4xl"
+              initial="hidden"
+              animate={newReleaseInView ? "visible" : "hidden"}
+              variants={fadeUpVariants}
+              custom={0.2}
+            >
+              <div className="relative aspect-[16/7] w-full overflow-hidden rounded-t-3xl bg-neutral-900">
+                {!videoStripReady && (
+                  <div
+                    className="absolute inset-0 z-[1] animate-pulse bg-gradient-to-br from-neutral-800 via-neutral-700 to-neutral-800"
+                    aria-hidden
+                  />
+                )}
+                {heroProductVideoId && videoStripReady ? (
                   <iframe
                     src={`https://www.youtube-nocookie.com/embed/${heroProductVideoId}?autoplay=1&mute=1&loop=1&playlist=${heroProductVideoId}&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&playsinline=1`}
-                    className="absolute top-1/2 left-1/2 w-[140%] h-[140%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                    className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-full w-full -translate-x-1/2 -translate-y-1/2 scale-[1.3]"
                     allow="autoplay; encrypted-media; picture-in-picture"
-                    title="Ubiquiti showcase video"
+                    title="U7 Pro XG showcase video"
                   />
-                ) : (
-                  <div className="absolute inset-0 flex items-center justify-center text-white/80 text-sm font-semibold tracking-wide">
+                ) : null}
+                {!heroProductVideoId && videoStripReady && (
+                  <div className="absolute inset-0 z-0 flex items-center justify-center text-sm text-neutral-400">
                     Video link tidak valid
                   </div>
                 )}
-                <div className="absolute inset-0 bg-black/10" />
-                <a
-                  href={
-                    heroProductVideoId
-                      ? `https://www.youtube.com/watch?v=${heroProductVideoId}`
-                      : "https://www.youtube.com"
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open video on YouTube"
-                  className="absolute inset-0 z-20"
+                <div
+                  className="pointer-events-none absolute inset-0 z-[2]"
+                  style={{
+                    background:
+                      "radial-gradient(ellipse at center, transparent 35%, rgba(0,0,0,0.55) 100%)",
+                  }}
+                  aria-hidden
+                />
+                <div
+                  className="pointer-events-none absolute inset-x-0 bottom-0 z-[3] h-28 bg-gradient-to-b from-transparent to-background md:h-36"
+                  aria-hidden
                 />
               </div>
-            </div>
+            </motion.div>
+
+            <motion.div
+              className="mt-10 w-full max-w-2xl border-t border-border pt-8"
+              initial="hidden"
+              animate={newReleaseInView ? "visible" : "hidden"}
+              variants={fadeUpVariants}
+              custom={0.3}
+            >
+              <div className="flex flex-wrap items-center justify-center gap-y-4 text-sm text-foreground md:text-base">
+                <div className="flex flex-col px-4 sm:px-6">
+                  <span className="font-semibold tabular-nums">5–9</span>
+                  <span className="text-xs text-muted-foreground md:text-sm">Gbps Throughput</span>
+                </div>
+                <div className="hidden h-10 w-px bg-border sm:block" aria-hidden />
+                <div className="flex flex-col px-4 sm:px-6">
+                  <span className="font-semibold">6GHz</span>
+                  <span className="text-xs text-muted-foreground md:text-sm">Spectrum Band</span>
+                </div>
+                <div className="hidden h-10 w-px bg-border sm:block" aria-hidden />
+                <div className="flex flex-col px-4 sm:px-6">
+                  <span className="font-semibold">6×</span>
+                  <span className="text-xs text-muted-foreground md:text-sm">Stream Count</span>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.p
+              className="mx-auto mt-8 max-w-lg text-balance text-base font-medium leading-snug text-muted-foreground md:text-lg"
+              initial="hidden"
+              animate={newReleaseInView ? "visible" : "hidden"}
+              variants={fadeUpVariants}
+              custom={0.4}
+            >
+              Access point WiFi 7 ceiling-mount dengan teknologi 6-stream.
+              <br />
+              Konektivitas multi-gig hingga 10/5/2.5/1 GbE.
+            </motion.p>
+
+            <motion.div
+              className="mt-8 flex flex-wrap items-center justify-center gap-3"
+              initial="hidden"
+              animate={newReleaseInView ? "visible" : "hidden"}
+              variants={fadeUpVariants}
+              custom={0.5}
+            >
+              <Link href="/collections/wifi">
+                <Button
+                  type="button"
+                  className="h-12 gap-2 rounded-full bg-foreground px-8 text-background hover:bg-foreground/90"
+                >
+                  Explore U7 Pro XG
+                  <ArrowRight className="h-4 w-4 shrink-0" />
+                </Button>
+              </Link>
+              {heroProductVideoId ? (
+                <a
+                  href={`https://www.youtube.com/watch?v=${heroProductVideoId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-border px-6 text-sm font-medium text-foreground transition-colors hover:bg-secondary/80"
+                >
+                  <Play className="h-4 w-4 shrink-0 fill-current" aria-hidden />
+                  Watch video
+                </a>
+              ) : (
+                <span className="inline-flex h-12 cursor-not-allowed items-center gap-2 rounded-full border border-dashed border-border px-6 text-sm text-muted-foreground">
+                  <Play className="h-4 w-4 fill-current opacity-50" aria-hidden />
+                  Watch video
+                </span>
+              )}
+            </motion.div>
           </div>
         </div>
       </section>

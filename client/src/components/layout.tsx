@@ -9,8 +9,6 @@ import {
   Mail,
   Instagram,
   Facebook,
-  Linkedin,
-  Twitter,
   Shield
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
@@ -65,13 +63,31 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     support: string;
     external?: boolean;
   }[] = [
-    { name: "Ubiquiti", path: "/home-ubiquiti", support: "/support/ubiquiti" },
-    { name: "Mikrotik", path: "/mikrotik", support: "/support/mikrotik" },
-    { name: "V-SOL", path: "/home-vsol", support: "/support/vsol" },
-  ];
+      { name: "Ubiquiti", path: "/home-ubiquiti", support: "/support/ubiquiti" },
+      { name: "Mikrotik", path: "/mikrotik", support: "/support/mikrotik" },
+      { name: "V-SOL", path: "/home-vsol", support: "/support/vsol" },
+    ];
+
+  function isBrandPathActive(path: string, loc: string): boolean {
+    if (loc === path) return true;
+    if (path === "/mikrotik" && loc.startsWith("/mikrotik/")) return true;
+    return false;
+  }
 
   const activeBrand =
-    brands.find(b => location === b.path)?.name || "Our Brands";
+    brands.find((b) => isBrandPathActive(b.path, location))?.name || "Our Brands";
+
+  const isHomeActive = location === "/";
+  const isBrandNavActive = brands.some((b) => isBrandPathActive(b.path, location));
+
+  const supportRouteMatch = brands.find((b) => location === b.support);
+  const isSupportSubActive = !!supportRouteMatch;
+  const supportNavLabel = supportRouteMatch
+    ? `Support ${supportRouteMatch.name}`
+    : "Support";
+
+  /* Hub kontak utama — sama dengan route `/support` */
+  const isContactActive = location === "/support";
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans flex flex-col relative pt-16">
@@ -91,110 +107,135 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* LOGO */}
           <Link href="/">
-  <a>
-    <img
-      src={
-        theme === "dark"
-          ? "/images/1.logo/logodcsputih.png"
-          : "/images/1.logo/logodcshitam.png"
-      }
-      className="h-5 md:h-8 w-auto transition-all"
-      alt="Logo DCS"
-    />
-  </a>
-</Link>
+            <a className="inline-flex rounded-md p-1 transition-colors hover:bg-primary/10">
+              <img
+                src={
+                  theme === "dark"
+                    ? "/images/1.logo/logodcsputih.png"
+                    : "/images/1.logo/logodcshitam.png"
+                }
+                className="h-5 md:h-8 w-auto transition-all"
+                alt="Logo DCS"
+              />
+            </a>
+          </Link>
 
           {/* DESKTOP MENU */}
-<div className="hidden md:flex items-center gap-10 relative font-manrope font-bold">
+          <div className="hidden md:flex items-center gap-10 relative font-manrope font-bold">
 
-  {/* HOME */}
-  <Link href="/">
-    <a className="relative px-3 py-1 hover:text-primary transition">
-      Home
-      {location === "/" && (
-        <motion.div
-          layoutId="activeTab"
-          className="absolute inset-0 -z-10 rounded-lg bg-primary/10"
-        />
-      )}
-    </a>
-  </Link>
-
-  {/* OUR BRANDS */}
-  <div className="relative" ref={brandRef}>
-    <button
-      onClick={() => setIsBrandOpen(!isBrandOpen)}
-      className="px-3 py-1 flex items-center gap-2 hover:text-primary transition"
-    >
-      {activeBrand}
-    </button>
-
-    <AnimatePresence>
-      {isBrandOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0 }}
-          className="absolute top-14 left-1/2 -translate-x-1/2 w-60 bg-background border border-border rounded-2xl shadow-xl p-4"
-        >
-          {brands.map((brand) =>
-            brand.external ? (
-              <a
-                key={brand.path}
-                href={brand.path}
-                className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition"
-              >
-                {brand.name}
-              </a>
-            ) : (
-              <Link key={brand.path} href={brand.path}>
-                <a className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition">
-                  {brand.name}
-                </a>
-              </Link>
-            ),
-          )}
-        </motion.div>
-      )}
-    </AnimatePresence>
-  </div>
-
-  {/* SUPPORT */}
-  <div className="relative" ref={supportRef}>
-    <button
-      onClick={() => setIsSupportOpen(!isSupportOpen)}
-      className="px-3 py-1 hover:text-primary transition"
-    >
-      Support
-    </button>
-
-    <AnimatePresence>
-      {isSupportOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0 }}
-          className="absolute top-14 left-1/2 -translate-x-1/2 w-60 bg-background border border-border rounded-2xl shadow-xl p-4"
-        >
-          {brands.map((brand) => (
-            <Link key={brand.support} href={brand.support}>
-              <a className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition">
-                {brand.name}
+            {/* HOME */}
+            <Link href="/">
+              <a className="relative inline-flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-primary/10 hover:text-primary">
+                Home
+                {isHomeActive && (
+                  <motion.div
+                    layoutId="navActivePill"
+                    className="absolute inset-0 -z-10 rounded-lg bg-primary/10"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
               </a>
             </Link>
-          ))}
-        </motion.div>
-      )}
-    </AnimatePresence>
-  </div>
 
-  {/* CONTACT */}
-  <Link href="/support">
-    <a className="px-3 py-1 hover:text-primary transition">
-      Contact Us
-    </a>
-  </Link>
-</div>
+            {/* OUR BRANDS */}
+            <div className="relative" ref={brandRef}>
+              <button
+                type="button"
+                onClick={() => setIsBrandOpen(!isBrandOpen)}
+                className="relative flex items-center gap-2 rounded-md px-3 py-1.5 transition-colors hover:bg-primary/10 hover:text-primary"
+              >
+                {activeBrand}
+                {isBrandNavActive && (
+                  <motion.div
+                    layoutId="navActivePill"
+                    className="absolute inset-0 -z-10 rounded-lg bg-primary/10"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
+              </button>
+
+              <AnimatePresence>
+                {isBrandOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0 }}
+                    className="absolute top-14 left-1/2 w-60 -translate-x-1/2 rounded-2xl border border-border bg-background p-4 shadow-xl"
+                  >
+                    {brands.map((brand) =>
+                      brand.external ? (
+                        <a
+                          key={brand.path}
+                          href={brand.path}
+                          className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition"
+                        >
+                          {brand.name}
+                        </a>
+                      ) : (
+                        <Link key={brand.path} href={brand.path}>
+                          <a className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition">
+                            {brand.name}
+                          </a>
+                        </Link>
+                      ),
+                    )}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {/* SUPPORT */}
+            <div className="relative" ref={supportRef}>
+              <button
+                type="button"
+                onClick={() => setIsSupportOpen(!isSupportOpen)}
+                className="relative flex max-w-[11rem] items-center justify-center truncate rounded-md px-3 py-1.5 transition-colors hover:bg-primary/10 hover:text-primary sm:max-w-none"
+                title={supportNavLabel}
+              >
+                <span className="whitespace-nowrap">{supportNavLabel}</span>
+                {isSupportSubActive && (
+                  <motion.div
+                    layoutId="navActivePill"
+                    className="absolute inset-0 -z-10 rounded-lg bg-primary/10"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
+              </button>
+
+              <AnimatePresence>
+                {isSupportOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0 }}
+                    className="absolute top-14 left-1/2 w-60 -translate-x-1/2 rounded-2xl border border-border bg-background p-4 shadow-xl"
+                  >
+                    {brands.map((brand) => (
+                      <Link key={brand.support} href={brand.support}>
+                        <a className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition">
+                          {brand.name}
+                        </a>
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {/* CONTACT */}
+            <Link href="/support">
+              <a className="relative inline-flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-primary/10 hover:text-primary">
+                Contact Us
+                {isContactActive && (
+                  <motion.div
+                    layoutId="navActivePill"
+                    className="absolute inset-0 -z-10 rounded-lg bg-primary/10"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
+              </a>
+            </Link>
+          </div>
 
           {/* RIGHT SIDE */}
           <div className="flex items-center gap-2">
@@ -207,18 +248,33 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </a>
             </Link>
 
-            <Button variant="ghost" size="icon" onClick={() => setIsSearchOpen(true)}>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-muted-foreground hover:bg-primary/10 hover:text-foreground"
+              onClick={() => setIsSearchOpen(true)}
+            >
               <Search className="w-5 h-5" />
             </Button>
 
-            <Button variant="ghost" size="icon" onClick={toggleTheme}>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-muted-foreground hover:bg-primary/10 hover:text-foreground"
+              onClick={toggleTheme}
+            >
               {theme === "light"
                 ? <Sun className="w-5 h-5" />
                 : <Moon className="w-5 h-5" />}
             </Button>
 
             <div className="md:hidden">
-              <Button variant="ghost" size="icon" onClick={() => setIsMobileOpen(true)}>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-muted-foreground hover:bg-primary/10 hover:text-foreground"
+                onClick={() => setIsMobileOpen(true)}
+              >
                 <Menu className="w-6 h-6" />
               </Button>
             </div>
@@ -245,9 +301,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="space-y-8">
               <div className="flex gap-4 items-start">
                 <MapPin className="w-6 h-6 mt-1 flex-shrink-0" />
-                <a 
-                  href="https://maps.app.goo.gl/vGyYVsLHyPvKSqqz6" 
-                  target="_blank" 
+                <a
+                  href="https://maps.app.goo.gl/vGyYVsLHyPvKSqqz6"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary/80 transition-colors text-lg"
                 >
@@ -258,7 +314,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
               <div className="flex gap-4 items-center">
                 <Mail className="w-6 h-6 flex-shrink-0" />
-                <a 
+                <a
                   href="mailto:info@dcsindo.com"
                   className="hover:text-primary/80 transition-colors text-lg"
                 >
@@ -267,10 +323,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
 
               <div className="flex gap-6 pt-2">
-                <a href="#" className="hover:text-primary/80 transition-colors"><Instagram className="w-6 h-6" /></a>
-                <a href="#" className="hover:text-primary/80 transition-colors"><Facebook className="w-6 h-6" /></a>
-                <a href="#" className="hover:text-primary/80 transition-colors"><Linkedin className="w-6 h-6" /></a>
-                <a href="#" className="hover:text-primary/80 transition-colors"><Twitter className="w-6 h-6" /></a>
+                <a href="https://www.instagram.com/dcsindo/" className="hover:text-primary/80 transition-colors"><Instagram className="w-6 h-6" /></a>
+                <a href="https://www.facebook.com/dinamikaciptasolusi/" className="hover:text-primary/80 transition-colors"><Facebook className="w-6 h-6" /></a>
               </div>
             </div>
           </div>
@@ -297,7 +351,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 ),
               )}
             </div>
-            
+
             <div className="text-sm text-muted-foreground/60">
               &copy; {new Date().getFullYear()} Dinamika Cipta Solusi. All Rights Reserved.
             </div>

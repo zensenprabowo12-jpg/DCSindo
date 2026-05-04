@@ -1,8 +1,9 @@
 import mysql from "mysql2/promise";
+import type { PoolOptions } from "mysql2";
 
-type MysqlEnv = {
-  host: string;
-  port: number;
+/** Konfigurasi pool: hanya UNIX socket — tidak ada host/port TCP. */
+export type MysqlSocketEnv = {
+  socketPath: string;
   user: string;
   password: string;
   database: string;
@@ -16,44 +17,52 @@ function requiredEnv(name: string): string {
   return v.trim();
 }
 
-function loadMysqlEnv(): MysqlEnv {
-  const host = requiredEnv("MYSQL_HOST"); // backend boleh pakai localhost jika DB ada di server yg sama
-  const portRaw = process.env.MYSQL_PORT?.trim() || "3306";
-  const port = Number.parseInt(portRaw, 10);
-  if (!Number.isFinite(port) || port <= 0) {
-    throw new Error(`[MySQL] ENV "MYSQL_PORT" tidak valid: "${portRaw}"`);
-  }
-
-  const user = requiredEnv("MYSQL_USER");
-  // password boleh kosong untuk beberapa setup, jadi tidak di-required
-  const password = process.env.MYSQL_PASSWORD ?? "";
-  const database = requiredEnv("MYSQL_DATABASE");
-
-  return { host, port, user, password, database };
+/**
+ * Wajib di `.env`:
+ * - DB_SOCKET — path socket MySQL/MariaDB (contoh Debian: /var/run/mysqld/mysqld.sock)
+ * - DB_USER
+ * - DB_NAME
+ * - DB_PASSWORD — boleh kosong
+ */
+function loadMysqlEnv(): MysqlSocketEnv {
+  return {
+    socketPath: requiredEnv("DB_SOCKET"),
+    user: requiredEnv("DB_USER"),
+    password: process.env.DB_PASSWORD ?? "",
+    database: requiredEnv("DB_NAME"),
+  };
 }
 
 const mysqlEnv = (() => {
   try {
     return loadMysqlEnv();
   } catch (e) {
-    // Jangan crash saat import; log error-nya, lalu pool tetap dibuat minimal (akan gagal saat dipakai).
     console.error((e as Error).message);
     return null;
   }
 })();
 
-export const mysqlPool = mysql.createPool({
-  host: mysqlEnv?.host,
-  port: mysqlEnv?.port,
-  user: mysqlEnv?.user,
-  password: mysqlEnv?.password,
-  database: mysqlEnv?.database,
-  waitForConnections: true,
-  connectionLimit: 10,
-  namedPlaceholders: true,
-});
+function poolOptionsFromEnv(env: MysqlSocketEnv): PoolOptions {
+  return {
+    socketPath: env.socketPath,
+    user: env.user,
+    password: env.password,
+    database: env.database,
+    waitForConnections: true,
+    connectionLimit: 10,
+    namedPlaceholders: true,
+  };
+}
 
-function mysqlErrorHint(err: { code?: string; errno?: number; message?: string }): void {
+export const mysqlPool = mysql.createPool(
+  mysqlEnv ? poolOptionsFromEnv(mysqlEnv) : {},
+);
+
+function mysqlErrorHint(err: {
+  code?: string;
+  errno?: number;
+  message?: string;
+}): void {
   const msg = err.message ?? String(err);
   console.error("[MySQL]", msg);
 
@@ -62,22 +71,22 @@ function mysqlErrorHint(err: { code?: string; errno?: number; message?: string }
     console.error(
       `[MySQL] Database "${dbName}" tidak ada. Buat dulu, contoh:\n` +
         `  CREATE DATABASE IF NOT EXISTS \`${dbName}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\n` +
-        `Atau set MYSQL_DATABASE di .env ke nama database yang sudah Anda punya.\n` +
+        `Atau set DB_NAME di .env ke nama database yang sudah Anda punya.\n` +
         `Skrip contoh: database/00_create_database.sql`,
     );
   } else if (err.code === "ECONNREFUSED") {
     console.error(
-      "[MySQL] Koneksi ditolak — pastikan layanan MySQL/MariaDB berjalan dan MYSQL_HOST/MYSQL_PORT benar.",
+      "[MySQL] Koneksi ditolak — pastikan MySQL/MariaDB berjalan dan DB_SOCKET menunjuk ke file socket yang benar.",
     );
   } else if (err.code === "ER_ACCESS_DENIED_ERROR") {
     console.error(
-      "[MySQL] Akses ditolak — periksa MYSQL_USER dan MYSQL_PASSWORD di file .env.",
+      "[MySQL] Akses ditolak — periksa DB_USER dan DB_PASSWORD di .env.",
     );
   }
 }
 
 /**
- * Ping database saat startup: log sukses atau pesan error yang jelas (termasuk DB tidak ada).
+ * Ping database saat startup.
  */
 export async function verifyMysqlOnStartup(): Promise<void> {
   try {
@@ -87,14 +96,13 @@ export async function verifyMysqlOnStartup(): Promise<void> {
     }
 
     console.log(
-      `[MySQL] Mencoba koneksi ke "${mysqlEnv.database}" di ${mysqlEnv.host}:${mysqlEnv.port} (user: "${mysqlEnv.user}")...`,
+      `[MySQL] Mencoba koneksi ke "${mysqlEnv.database}" lewat UNIX socket "${mysqlEnv.socketPath}" (user: "${mysqlEnv.user}")...`,
     );
+
     const conn = await mysqlPool.getConnection();
     try {
       await conn.ping();
-      console.log(
-        `[MySQL] Terhubung ke database "${mysqlEnv.database}" di ${mysqlEnv.host}:${mysqlEnv.port} (user: "${mysqlEnv.user}").`,
-      );
+      console.log("[MySQL] Database connected via UNIX socket");
     } finally {
       conn.release();
     }

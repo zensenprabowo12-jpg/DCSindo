@@ -31,6 +31,9 @@ export default defineConfig({
       "@assets": path.resolve(import.meta.dirname, "attached_assets"),
     },
   },
+  // Karena `root` diarahkan ke folder `client`, Vite default-nya akan cari `.env` di folder itu.
+  // Kita set `envDir` ke root repo supaya `.env` di root proyek tetap terbaca.
+  envDir: import.meta.dirname,
   css: {
     postcss: {
       plugins: [],

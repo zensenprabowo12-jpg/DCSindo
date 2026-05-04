@@ -3,6 +3,7 @@ import { Link, useRoute, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
 import { Search } from "lucide-react";
+import { FEATURE_FLAGS } from "@/config/featureFlags";
 
 /* ===============================
    CATEGORY DATA (WITH ICONS)
@@ -49,7 +50,9 @@ const CATEGORIES = [
     name: "Accessories",
     image: "/images/3.categoryproduct/cproductaccessories.svg",
   },
-];
+].filter((c) =>
+  FEATURE_FLAGS.disableUbiquitiAccessories ? c.id !== "accessories" : true
+);
 
 /* ===============================
    SUBFILTERS
@@ -138,6 +141,14 @@ export default function Collection() {
   // Reset subfilter when category changes via URL
   useEffect(() => {
     if (params?.category) {
+      if (
+        FEATURE_FLAGS.disableUbiquitiAccessories &&
+        params.category === "accessories"
+      ) {
+        setLocation("/collections/cloud-gateways");
+        return;
+      }
+
       const found = CATEGORIES.find(c => c.id === params.category);
       if (found) {
         setActiveCategory(found.id);
@@ -153,12 +164,19 @@ export default function Collection() {
   }, [activeCategory]);
 
   const handleCategoryChange = (catId: string) => {
+    if (FEATURE_FLAGS.disableUbiquitiAccessories && catId === "accessories") {
+      return;
+    }
     setActiveCategory(catId);
     setLocation(`/collections/${catId}`);
   };
 
   // Get products based on category and subfilter
   const categoryProducts = staticProducts.filter(p => {
+      if (FEATURE_FLAGS.disableUbiquitiAccessories && p.category === "Accessories") {
+        return false;
+      }
+
       // Normalize both category strings for comparison
       const normalizedProductCategory = p.category.toLowerCase().replace(/\s+/g, '-');
       const normalizedActiveCategory = activeCategory.toLowerCase().replace(/\s+/g, '-');

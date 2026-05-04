@@ -9,5 +9,16 @@ export const FEATURE_FLAGS = {
     if (raw == null || String(raw).trim() === "") return false;
     return String(raw).toLowerCase() === "true";
   })(),
+
+  /**
+   * Saat `true`, kategori "Accessories" (Ubiquiti) disembunyikan sementara.
+   * - Default: tampil (false) jika env tidak di-set.
+   * - Untuk blok: set `VITE_DISABLE_UBIQUITI_ACCESSORIES=true` di `.env` lalu restart dev server.
+   */
+  disableUbiquitiAccessories: (() => {
+    const raw = import.meta.env.VITE_DISABLE_UBIQUITI_ACCESSORIES;
+    if (raw == null || String(raw).trim() === "") return false;
+    return String(raw).toLowerCase() === "true";
+  })(),
 } as const;
 
