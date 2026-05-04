@@ -10,6 +10,7 @@ import { doorAccessProducts } from "./doorAccess";
 import { integrationsProducts } from "./integrations";
 import { advancedHostingProducts } from "./advancedHosting";
 import { accessoriesProducts } from "./accessories";
+import { FEATURE_FLAGS } from "@/config/featureFlags";
 
 export type { Product, TechSpecSection, InTheBoxItem, ProductAddon, TechSpecItem, AddonDetailedSpec } from "./cloudGateways";
 export * from "./cloudGateways";
@@ -35,7 +36,7 @@ export const products = [
   ...doorAccessProducts,
   ...integrationsProducts,
   ...advancedHostingProducts,
-  ...accessoriesProducts,
+  ...(!FEATURE_FLAGS.disableUbiquitiAccessories ? accessoriesProducts : []),
 ];
 
 // Export categories
@@ -47,5 +48,5 @@ export const CATEGORIES = [
   "Door Access",
   "Integrations",
   "Advanced Hosting",
-  "Accessories",
+  ...(!FEATURE_FLAGS.disableUbiquitiAccessories ? (["Accessories"] as const) : []),
 ] as const;

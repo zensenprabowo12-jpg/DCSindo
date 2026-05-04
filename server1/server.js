@@ -9,7 +9,7 @@ app.use(express.json());
 
 console.log("Server mulai...");
 
-// ================= DB CONFIG =================
+// ================= DB CONFIG (hanya UNIX socket — lihat DB_* di .env) =================
 function requiredEnv(name) {
   const v = process.env[name];
   if (!v || !String(v).trim()) {
@@ -18,21 +18,24 @@ function requiredEnv(name) {
   return String(v).trim();
 }
 
-const MYSQL_HOST = requiredEnv("MYSQL_HOST");
-const MYSQL_PORT = Number.parseInt(process.env.MYSQL_PORT || "3306", 10);
-const MYSQL_USER = requiredEnv("MYSQL_USER");
-const MYSQL_PASSWORD = process.env.MYSQL_PASSWORD || "";
-const MYSQL_DATABASE = requiredEnv("MYSQL_DATABASE");
-
-const db = mysql.createPool({
-  host: MYSQL_HOST,
-  port: MYSQL_PORT,
-  user: MYSQL_USER,
-  password: MYSQL_PASSWORD,
-  database: MYSQL_DATABASE,
+const commonPool = {
   waitForConnections: true,
   connectionLimit: 10,
   namedPlaceholders: true,
+};
+
+const socketPath = requiredEnv("DB_SOCKET");
+const dbUser = requiredEnv("DB_USER");
+const dbName = requiredEnv("DB_NAME");
+const dbPassword = process.env.DB_PASSWORD ?? "";
+
+/** @type {import("mysql2/promise").Pool} */
+const db = mysql.createPool({
+  ...commonPool,
+  socketPath,
+  user: dbUser,
+  password: dbPassword,
+  database: dbName,
 });
 
 (async () => {
@@ -40,9 +43,7 @@ const db = mysql.createPool({
     const conn = await db.getConnection();
     try {
       await conn.ping();
-      console.log(
-        `✅ [server1][MySQL] Connected to "${MYSQL_DATABASE}" at ${MYSQL_HOST}:${MYSQL_PORT} (user: "${MYSQL_USER}")`,
-      );
+      console.log("[server1][MySQL] Database connected via UNIX socket");
     } finally {
       conn.release();
     }

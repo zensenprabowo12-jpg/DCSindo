@@ -8,9 +8,17 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Layout from "@/components/layout";
 import { useLocation } from "wouter";
+import { useMemo, useState } from "react";
 
 export default function Ubiquiti() {
   const [, setLocation] = useLocation();
+  const [isGPTVisible, setIsGPTVisible] = useState(false);
+
+  const gptUrl = useMemo(
+    () =>
+      "https://gpt.distributor.ui-apps.com/?distributor=PTDINAMIKACIPTASOLUSI",
+    []
+  );
 
   const trendingArticles = [
     "UniFi - How to set up a Dream Machine",
@@ -37,20 +45,12 @@ export default function Ubiquiti() {
     "Other 2",
   ];
 
-  const openGPTWindow = () => {
-    if (typeof window !== "undefined") {
-      window.open(
-        "https://gpt.distributor.ui-apps.com/?distributor=PTDINAMIKACIPTASOLUSI",
-        "UniFiGPT",
-        "width=1200,height=800"
-      );
-    }
-  };
+  const openGPTWindow = () => setIsGPTVisible((v) => !v);
 
   return (
     <Layout>
       {/* HERO */}
-      <section className="bg-black text-white py-24 text-center px-4">
+      <section className="relative flex min-h-dvh flex-col items-center bg-black px-4 pb-32 pt-24 text-center text-white md:pb-36 md:pt-28">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -59,35 +59,88 @@ export default function Ubiquiti() {
           Ubiquiti Support Center
         </motion.h1>
 
-        {/* BUTTON GPT */}
-        <div className="mb-6">
-          <button
-            onClick={openGPTWindow}
-            className="flex items-center gap-2 mx-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg transition active:scale-95"
-          >
-            <img
-              src="https://www.dcsindo.com/admin/uploads/widget/unify.svg"
-              className="w-5 h-5"
-              alt="UniFi"
-            />
-            UniFi GPT
-          </button>
-        </div>
-
         {/* WARNING */}
-        <div className="bg-gray-200 text-black max-w-2xl mx-auto rounded-xl p-8 mt-6">
-          <div className="text-xl font-bold mb-3">⚠️ Warning</div>
-          <p className="mb-4">
-            Website ini berisi produk dan solusi networking profesional.
-          </p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+        >
+          <div className="bg-gray-200 text-black max-w-2xl mx-auto rounded-xl p-8 mt-6">
+            <div className="text-xl font-bold mb-3">⚠️ Warning</div>
+            <p className="mb-4">
+              Website ini berisi produk dan solusi networking profesional.
+            </p>
 
-          <button
-            onClick={() => setLocation("/firmware")}
-            className="bg-black text-white px-6 py-2 rounded-full"
-          >
-            Info Selengkapnya
-          </button>
+            <button
+              onClick={() => setLocation("/firmware")}
+              className="bg-black text-white px-6 py-2 rounded-full"
+            >
+              Info Selengkapnya
+            </button>
+          </div>
+        </motion.div>
+
+        {/* BUTTON GPT */}
+        <div className="mt-8 mb-6 w-full max-w-2xl mx-auto">
+          <div className="grid gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 text-left shadow-lg backdrop-blur-sm md:grid-cols-[1fr_auto] md:items-center md:gap-6">
+            <div>
+              <div className="text-xs font-semibold tracking-widest text-white/70">
+                UNI-FI ASSISTANT
+              </div>
+              <div className="mt-2 text-2xl md:text-3xl font-bold leading-tight">
+                Cari tahu barang UniFi sekarang
+              </div>
+              <p className="mt-2 text-sm md:text-base text-white/70">
+                Tanya rekomendasi produk, fitur, atau kebutuhan instalasi kamu.
+              </p>
+            </div>
+
+            <div className="flex md:justify-end">
+              <button
+                onClick={openGPTWindow}
+                className="flex items-center gap-2 mx-auto md:mx-0 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg transition active:scale-95"
+              >
+                <img
+                  src="https://www.dcsindo.com/admin/uploads/widget/unify.svg"
+                  className="w-5 h-5"
+                  alt="UniFi"
+                />
+                {isGPTVisible ? "Tutup UniFi GPT" : "UniFi GPT"}
+              </button>
+            </div>
+          </div>
+
+          {isGPTVisible && (
+            <div className="mt-4 overflow-hidden rounded-2xl border border-white/10 bg-black/40 shadow-2xl">
+              <div className="flex items-center justify-between gap-3 border-b border-white/10 px-4 py-3">
+                <div className="text-sm font-semibold text-white/90">
+                  UniFi GPT
+                </div>
+                <button
+                  onClick={() => setIsGPTVisible(false)}
+                  className="rounded-full bg-white/10 px-4 py-2 text-sm text-white hover:bg-white/15 transition"
+                >
+                  Tutup
+                </button>
+              </div>
+
+              <div className="h-[70vh] w-full">
+                <iframe
+                  title="UniFi GPT"
+                  src={gptUrl}
+                  className="h-full w-full"
+                  allow="clipboard-read; clipboard-write"
+                />
+              </div>
+            </div>
+          )}
         </div>
+
+        <div
+          className="pointer-events-none absolute bottom-0 left-0 right-0 h-32"
+          style={{ background: "linear-gradient(to bottom, transparent, #000)" }}
+          aria-hidden
+        />
       </section>
 
       {/* TRENDING */}
