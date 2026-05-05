@@ -25,22 +25,22 @@ export default function FirmwarePage() {
       },
     ],
 
-    Mikrotik: [
-      { name: "RouterBoard X", 
-        version: "v7.1", 
-        link: "#",
-        downloadName: "routerboard-x.firmware.bin"
-      },
-      { name: "CCR Series", 
-        version: "v7.5", 
-        link: "#", 
-        downloadName: "ccr-series.firmware.bin" },
-    ],
+    // Mikrotik: [
+    //   { name: "RouterBoard X", 
+    //     version: "v7.1", 
+    //     link: "#",
+    //     downloadName: "routerboard-x.firmware.bin"
+    //   },
+    //   { name: "CCR Series", 
+    //     version: "v7.5", 
+    //     link: "#", 
+    //     downloadName: "ccr-series.firmware.bin" },
+    // ],
 
-    "V-Sol": [
-      { name: "OLT V1600", version: "v1.0.0", link: "#", downloadName: "olt-v1600.firmware.bin" },
-      { name: "ONU V2801", version: "v2.3.1", link: "#", downloadName: "onu-v2801.firmware.bin" },
-    ],
+    // "V-Sol": [
+    //   { name: "OLT V1600", version: "v1.0.0", link: "#", downloadName: "olt-v1600.firmware.bin" },
+    //   { name: "ONU V2801", version: "v2.3.1", link: "#", downloadName: "onu-v2801.firmware.bin" },
+    // ],
   };
 
   return (
@@ -50,7 +50,7 @@ export default function FirmwarePage() {
 
           {/* BRAND */}
           <div className="flex gap-6 mb-10 text-lg font-bold">
-            {["Mikrotik", "Ubiquiti", "V-Sol"].map((brand) => (
+            {["", "Ubiquiti", ""].map((brand) => (
               <button
                 key={brand}
                 onClick={() => setActiveBrand(brand)}

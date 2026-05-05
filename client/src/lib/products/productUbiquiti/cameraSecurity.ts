@@ -1,3 +1,4 @@
+const SHOW_ADDONS = false; //untuk hide addons
 import { Item } from "@radix-ui/react-accordion";
 import { title } from "process";
 
@@ -68,8 +69,17 @@ export interface Product {
   bulletPoints?: string[]; // Bullet points untuk deskripsi produk
 }
 
+// ✅ 3. FUNGSI PROCESS (sebelum data produk)
+const processProducts = (products: Product[]): Product[] => {
+  return products.map(product => ({
+    ...product,
+    addons: SHOW_ADDONS ? product.addons : []
+  }));
+};
+
+
 // Camera Security Products
-export const cameraSecurityProducts: Product[] = [
+const CameraSecurityRaw: Product[] = [
   // Produk Pertama dari Camera Security, SF NVRs and Edge Devices
   {
     id: "ENVR-Core",
@@ -1318,7 +1328,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
- // Produk Kesepuluh dari Camera Security, SF NVRs and Edge Devices
+  // Produk Kesepuluh dari Camera Security, SF NVRs and Edge Devices
   {
     id: "UCK-G2-SSD",
     name: "CloudKey+",
@@ -4728,7 +4738,7 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Device", image: "/images/camerasecurity/36.uvc-g5-bullet/p-itb-uvc-g5-bullet.png" },
     ],
   },
-  
+
   //Produk Kesembilan dari Camera Security, SF Bullet
   {
     id: "UVC-G6-Edge-Bullet",
@@ -4832,7 +4842,7 @@ export const cameraSecurityProducts: Product[] = [
     inTheBox: [
       { name: "Device", image: "/images/camerasecurity/37.uvc-g6-edge-bullet/p-itb-uvc-g6-edge-bullet.png" },
     ],
-        addons: [
+    addons: [
       {
         id: 1,
         name: "Ethernet Surge Protection Outdoor-20kA",
@@ -5936,7 +5946,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       },
     ],
-     // Item yang ada dalam box produk (gambar bisa diganti)
+    // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/camerasecurity/43.uvc-ai-theta-prolens50/p-mkt2-uvc-ai-theta-prolens50.png" },
     ],
@@ -6760,7 +6770,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-//Produk Pertama dari Camera Security, SF DoorBells
+  //Produk Pertama dari Camera Security, SF DoorBells
   {
     id: "UVC-4-Doorbell-Pro-PoE-Kit",
     name: "G4 Doorbell Pro PoE Kit",
@@ -7385,7 +7395,7 @@ export const cameraSecurityProducts: Product[] = [
         ]
       },
     ],
-     // Item yang ada dalam box produk (gambar bisa diganti)
+    // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
       { name: "Device", image: "/images/camerasecurity/52.up-chime/p-mkt3-upchime.png" },
     ],
@@ -7708,7 +7718,7 @@ export const cameraSecurityProducts: Product[] = [
   },
 
   // Produk Keempat dari Camera Secruity, SF SuperLink
-   {
+  {
     id: "USL-GlassBreak",
     name: "Glass Break Sensor",
     category: "Camera Security",
@@ -8019,9 +8029,9 @@ export const cameraSecurityProducts: Product[] = [
       { name: "Device", image: "/images/camerasecurity/59.usl-siren/p-itb-uslsiren.png" },
     ],
   },
- 
+
   // Produk Ketujuh dari Camera Security, SF SuperLink
-    {
+  {
     id: "USL-Siren-PoE",
     name: "Siren PoE",
     category: "Camera Security",
@@ -8052,7 +8062,7 @@ export const cameraSecurityProducts: Product[] = [
       "/images/camerasecurity/60.usl-siren-poe/p-mkt3-upsirenpoe.png",
       "/images/camerasecurity/60.usl-siren-poe/p-mkt4-upsirenpoe.png",
       "/images/camerasecurity/60.usl-siren-poe/p-mkt5-upsirenpoe.png",
-      
+
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
@@ -8308,7 +8318,7 @@ export const cameraSecurityProducts: Product[] = [
     ],
   },
 
-// Produk Kesembilan dari Camera Security, SF SuperLink
+  // Produk Kesembilan dari Camera Security, SF SuperLink
   {
     id: "UACC-USL-ANT-HG",
     name: "SuperLink High-Gain Antenna",
@@ -9350,9 +9360,9 @@ export const cameraSecurityProducts: Product[] = [
   //   ],
   // },
 
-//Penanda Kalo Produk ini Gada di odoo dan Mas Fiqri
-  
-// {
+  //Penanda Kalo Produk ini Gada di odoo dan Mas Fiqri
+
+  // {
   //   id: "UACC-G5-Enhancer",
   //   name: "G5 Pro Enhancer",
   //   category: "Camera Security",
@@ -13124,3 +13134,5 @@ export const cameraSecurityProducts: Product[] = [
   //   ]
   // }
 ];
+// ✅ 5. EXPORT DI PALING BAWAH
+export const cameraSecurityProducts = processProducts(CameraSecurityRaw);

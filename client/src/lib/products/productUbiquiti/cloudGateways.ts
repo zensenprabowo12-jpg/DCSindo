@@ -1,3 +1,5 @@
+const SHOW_ADDONS = false; //untuk hide addons
+
 // Interface untuk spesifikasi teknis item
 export interface TechSpecItem {
   label: string;
@@ -66,8 +68,16 @@ export interface Product {
   bulletPoints?: string[]; // Bullet points untuk deskripsi produk
 }
 
+// ✅ 3. FUNGSI PROCESS (sebelum data produk)
+const processProducts = (products: Product[]): Product[] => {
+  return products.map(product => ({
+    ...product,
+    addons: SHOW_ADDONS ? product.addons : []
+  }));
+};
+
 // Cloud Gateways Products
-export const cloudGatewaysProducts: Product[] = [
+const cloudGatewaysRaw: Product[] = [
 {
     id: "efg",
     name: "Enterprise Fortress Gateway",
@@ -2864,6 +2874,7 @@ export const cloudGatewaysProducts: Product[] = [
     inTheBox: [
       { name: "Device", image: "/images/cloudgateways/12.udw/p-itb-udw.png"},
     ],
-    
   }
 ];
+// ✅ 5. EXPORT DI PALING BAWAH
+export const cloudGatewaysProducts = processProducts(cloudGatewaysRaw);
