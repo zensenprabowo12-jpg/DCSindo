@@ -45,22 +45,22 @@ export default function HomeUtama() {
               </button>
 
               {/* TITLE */}
-              <h2 className="text-xl font-black tracking-tight mb-1">Informasi</h2>
-              <p className="text-xs text-muted-foreground mb-4">
+              <h2 className="text-xl font-black tracking-tight mb-1 text-center">⚠️INFORMASI PENTING</h2>
+              <p className="text-xs text-muted-foreground mb-4 text-center">
                 Mohon baca sebelum melanjutkan
               </p>
 
               {/* TEXT (EDIT BEBAS) */}
-              <div className="text-muted-foreground text-sm leading-relaxed mb-6 space-y-3">
+              <div className="text-muted-foreground text-sm leading-relaxed mb-6 space-y-3 text-center">
                 <p>
-                  Website ini berisi produk dan solusi networking profesional. Pastikan Anda
-                  memahami kebutuhan implementasi sebelum memilih produk.
+                  Sesuai dengan ketentuan regulasi di Indonesia, seluruh perangkat jaringan wajib
+                  menggunakan versi firmware terbaru yang telah disesuaikan dengan standar yang berlaku.
                 </p>
                 <p>
-                  Dengan melanjutkan, Anda menyetujui ketentuan yang berlaku. Untuk bantuan,
-                  gunakan halaman support sesuai brand.
+                  Kami menghimbau Anda untuk segera melakukan pembaruan guna menjaga keamanan, stabilitas, dan kepatuhan perangkat.
+                  Dengan melanjutkan, Anda menyatakan telah memahami ketentuan ini.
                 </p>
-                <div className="flex flex-wrap gap-2 pt-1">
+                <div className="flex flex-wrap gap-2 pt-1 justify-center">
                   <Button variant="secondary" size="sm" asChild className="rounded-full">
                     <Link href="/support/ubiquiti">Support Ubiquiti</Link>
                   </Button>
@@ -89,18 +89,18 @@ export default function HomeUtama() {
       <section className="relative h-screen min-h-[600px] w-full overflow-hidden flex items-center justify-center bg-white dark:bg-black transition-colors duration-500">
 
         {/* VIDEO */}
-<div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-  <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/30 dark:from-black/70 dark:to-black/60 z-10 transition-colors duration-500" />
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/30 dark:from-black/70 dark:to-black/60 z-10 transition-colors duration-500" />
 
-  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vh] min-w-[177.77vh] min-h-[56.25vw]">
-    <iframe
-      src="https://www.youtube.com/embed/9HaU8NjH7bI?autoplay=1&mute=1&rel=0&playsinline=1"
-      className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-80 dark:opacity-60 transition-opacity duration-500"
-      allow="autoplay; encrypted-media"
-      title="DCS Master Hero Video"
-    />
-  </div>
-</div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vh] min-w-[177.77vh] min-h-[56.25vw]">
+            <iframe
+              src="https://www.youtube.com/embed/9HaU8NjH7bI?autoplay=1&mute=1&rel=0&playsinline=1"
+              className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-80 dark:opacity-60 transition-opacity duration-500"
+              allow="autoplay; encrypted-media"
+              title="DCS Master Hero Video"
+            />
+          </div>
+        </div>
 
         {/* CONTENT */}
         <div className="container mx-auto px-4 relative z-20 text-center">
@@ -111,112 +111,112 @@ export default function HomeUtama() {
             className="space-y-7"
           >
 
-          <h1 className="drop-shadow-[0_4px_20px_rgba(0,0,0,0.65)]">
-  <span className="sr-only">DINAMIKA CIPTA SOLUSI</span>
-  <img
-    src="/images/2.homepage/Web-Head-Title-White.png"
-    alt="Dinamika Cipta Solusi"
-    className="mx-auto h-10 md:h-14 lg:h-16 w-auto mb-15"
-    loading="eager"
-    decoding="async"
-  />
-</h1>
+            <h1 className="drop-shadow-[0_4px_20px_rgba(0,0,0,0.65)]">
+              <span className="sr-only">DINAMIKA CIPTA SOLUSI</span>
+              <img
+                src="/images/2.homepage/Web-Head-Title-White.png"
+                alt="Dinamika Cipta Solusi"
+                className="mx-auto h-10 md:h-14 lg:h-16 w-auto mb-15"
+                loading="eager"
+                decoding="async"
+              />
+            </h1>
 
-<p
-  className="font-manrope font-extrabold uppercase tracking-[0.35em] mb-2"
-  style={{ fontSize: "20px", lineHeight: "1.6", color: "#60c3db" }}
->
-  Building the Future of Connectivity
-</p>
+            <p
+              className="font-manrope font-extrabold uppercase tracking-[0.35em] mb-2"
+              style={{ fontSize: "20px", lineHeight: "1.6", color: "#60c3db" }}
+            >
+              Building the Future of Connectivity
+            </p>
 
-<p
-  className="font-manrope font-light text-white tracking-[0.08em] max-w-10xl mx-auto leading-[1.5] mb-10"
-  style={{ fontSize: "25px" }} // 20pt ≈ 26.67px
->
-  Solusi networking profesional untuk bisnis anda, mulai dari WiFi, Switching, Security, hingga Access Control. 
-</p>
+            <p
+              className="font-manrope font-light text-white tracking-[0.08em] max-w-10xl mx-auto leading-[1.5] mb-10"
+              style={{ fontSize: "25px" }} // 20pt ≈ 26.67px
+            >
+              Solusi networking profesional untuk bisnis anda, mulai dari WiFi, Switching, Security, hingga Access Control.
+            </p>
 
-<div className="flex flex-col sm:flex-row justify-center gap-3 pt-6">
-  <Button
-    onClick={() => {
-      brandSectionRef.current?.scrollIntoView({
-        behavior: "smooth",
-      });
-    }}
-    size="lg"
-    className="font-manrope font-semibold uppercase mb-2 bg-[#609cdb] hover:bg-[#1b36b3] text-black transition"
-    style={{ fontSize: "20px", lineHeight: "1.6" }}
-  >
-    Enter Ecosystem
-    <ArrowRight className="ml-2 w-5 h-5" />
-  </Button>
+            <div className="flex flex-col sm:flex-row justify-center gap-3 pt-6">
+              <Button
+                onClick={() => {
+                  brandSectionRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+                size="lg"
+                className="font-manrope font-semibold uppercase mb-2 bg-[#609cdb] hover:bg-[#1b36b3] text-black transition"
+                style={{ fontSize: "20px", lineHeight: "1.6" }}
+              >
+                Enter Ecosystem
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
 
-  <Button
-    onClick={() => {
-      aboutSectionRef.current?.scrollIntoView({ behavior: "smooth" });
-    }}
-    variant="outline"
-    size="lg"
-    className="rounded-full px-10 h-14 text-base font-bold uppercase border-[#2140db] text-[#609cdb] hover:bg-[#2140db] hover:text-white transition"
-  >
-    Learn More
-  </Button>
-</div>
+              <Button
+                onClick={() => {
+                  aboutSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+                }}
+                variant="outline"
+                size="lg"
+                className="rounded-full px-10 h-14 text-base font-bold uppercase border-[#2140db] text-[#609cdb] hover:bg-[#2140db] hover:text-white transition"
+              >
+                Learn More
+              </Button>
+            </div>
 
-           <div className="pt-8">
-  <div className="mx-auto max-w-8xl grid grid-cols-1 sm:grid-cols-3 gap-5">
-    {[
-      {
-        icon: Zap,
-        title: "Performance",
-        desc: "Hardware and software yang stabil untuk 24/7 operation.",
-      },
-      {
-        icon: ShieldCheck,
-        title: "Secure",
-        desc: "Best practice untuk jaringan yang lebih aman dan terkontrol.",
-      },
-      {
-        icon: Headphones,
-        title: "Support",
-        desc: "Panduan & support untuk membantu implementasi lebih cepat.",
-      },
-    ].map((item) => (
-      <div
-        key={item.title}
-        className="
+            <div className="pt-8">
+              <div className="mx-auto max-w-8xl grid grid-cols-1 sm:grid-cols-3 gap-5">
+                {[
+                  {
+                    icon: Zap,
+                    title: "Performance",
+                    desc: "Hardware and software yang stabil untuk 24/7 operation.",
+                  },
+                  {
+                    icon: ShieldCheck,
+                    title: "Secure",
+                    desc: "Best practice untuk jaringan yang lebih aman dan terkontrol.",
+                  },
+                  {
+                    icon: Headphones,
+                    title: "Support",
+                    desc: "Panduan & support untuk membantu implementasi lebih cepat.",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.title}
+                    className="
           rounded-2xl border border-border 
           bg-white/70 dark:bg-black/30 
           backdrop-blur-xl p-4 text-center
         "
-      >
-        <div className="flex justify-center">
-  <item.icon className="w-7 h-7 text-[#609cdb]" />
-</div>
+                  >
+                    <div className="flex justify-center">
+                      <item.icon className="w-7 h-7 text-[#609cdb]" />
+                    </div>
 
-        <p
-          className="
+                    <p
+                      className="
             mt-2 font-manrope font-extrabold 
             text-black dark:text-white
           "
-          style={{ fontSize: "26.67px" }}
-        >
-          {item.title}
-        </p>
+                      style={{ fontSize: "26.67px" }}
+                    >
+                      {item.title}
+                    </p>
 
-        <p
-          className="
+                    <p
+                      className="
             mt-1 font-manrope font-light leading-relaxed 
             text-black white:text-black/60 dark:text-white/80
           "
-          style={{ fontSize: "20px" }}
-        >
-          {item.desc}
-        </p>
-      </div>
-    ))}
-  </div>
-</div>
+                      style={{ fontSize: "20px" }}
+                    >
+                      {item.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -261,7 +261,7 @@ export default function HomeUtama() {
               },
               {
                 name: "V-SOL",
-                image: "/images/1.logo/vsolchatgpt.png",
+                image: "/images/1.logo/VsolThumbnail.png",
                 path: "/coming-soon",
                 bg: "bg-zinc-50/50 dark:bg-zinc-900/10",
                 desc: "Solusi access network (FTTx) untuk deployment skala besar.",
@@ -326,7 +326,7 @@ export default function HomeUtama() {
                 Building the Future of Connectivity
               </h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Kami menghadirkan solusi jaringan yang scalable dan siap untuk masa depan guna mendukung pertumbuhan bisnis, 
+                Kami menghadirkan solusi jaringan yang scalable dan siap untuk masa depan guna mendukung pertumbuhan bisnis,
                 efisiensi operasional, dan konektivitas yang optimal.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">

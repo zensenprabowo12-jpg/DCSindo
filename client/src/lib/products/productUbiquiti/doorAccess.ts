@@ -1,3 +1,4 @@
+const SHOW_ADDONS = false; //untuk hide addons
 // Interface untuk spesifikasi teknis item
 export interface TechSpecItem {
   label: string;
@@ -65,8 +66,16 @@ export interface Product {
   bulletPoints?: string[]; // Bullet points untuk deskripsi produk
 }
 
+// ✅ 3. FUNGSI PROCESS (sebelum data produk)
+const processProducts = (products: Product[]): Product[] => {
+  return products.map(product => ({
+    ...product,
+    addons: SHOW_ADDONS ? product.addons : []
+  }));
+};
+
 // Door Access Products
-export const doorAccessProducts: Product[] = [
+const DoorAccessRaw: Product[] = [
 
   // Produk Pertama dari Door Access, SF Readers
   {
@@ -185,7 +194,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/1.uvcg6proentry/p-itb-uvcg6proentry@3x.jpg",}, 
+      { name: "Device", image: "/images/dooraccess/1.uvcg6proentry/p-itb-uvcg6proentry@3x.jpg", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -439,8 +448,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/2.uvcg6entry/p-itb-uvcg6entry@3x.jpg",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/2.uvcg6entry/p-itb-uvcg6entry@3x.jpg",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -709,7 +719,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/3.uag3pro/p-itb-uag3pro@3x.jpg", }, 
+      { name: "Device", image: "/images/dooraccess/3.uag3pro/p-itb-uag3pro@3x.jpg", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -952,8 +962,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/4.uag2pro/p-itb-uag2pro@3x.jpg",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/4.uag2pro/p-itb-uag2pro@3x.jpg",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1215,8 +1226,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/5.uag3flex/p-itb-uag3flex.jpg",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/5.uag3flex/p-itb-uag3flex.jpg",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1479,8 +1491,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/6.uag3/p-itb-uag3@3x.jpg",
-}, 
+      {
+        name: "Device", image: "/images/dooraccess/6.uag3/p-itb-uag3@3x.jpg",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -1654,24 +1667,24 @@ export const doorAccessProducts: Product[] = [
 
     // Array gambar untuk gallery produk (gambar pertama adalah gambar utama)
     images: [
-    "/images/dooraccess/7.uag2/1.p-utama-uag2@3x.jpg",
-    "/images/dooraccess/7.uag2/2.p-dimensi-uag2@3x.jpg",
-    "/images/dooraccess/7.uag2/4.p-development-uag2@3x.jpg",
-    "/images/dooraccess/7.uag2/p-itb-uag2@3x.jpg",
-    "/images/dooraccess/7.uag2/p-mkt0-uag2@3x.jpg",
-    "/images/dooraccess/7.uag2/p-mkt0-uag2@3x.jpg",
-    "/images/dooraccess/7.uag2/p-mkt1-uag2@3x.jpg",
-    "/images/dooraccess/7.uag2/p-mkt2-uag2@3x.jpg",
-    "/images/dooraccess/7.uag2/p-mkt3-uag2@3x.jpg",
-    "/images/dooraccess/7.uag2/p-mkt4-uag2@3x.jpg",
-    "/images/dooraccess/7.uag2/p-mkt5-uag2@3x.jpg",
-    "/images/dooraccess/7.uag2/p-ov1-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/1.p-utama-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/2.p-dimensi-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/4.p-development-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/p-itb-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/p-mkt0-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/p-mkt0-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/p-mkt1-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/p-mkt2-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/p-mkt3-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/p-mkt4-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/p-mkt5-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/p-ov1-uag2@3x.jpg",
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
     overviewImages: [
-    "/images/dooraccess/7.uag2/p-ov1-uag2@3x.jpg",
-    "/images/dooraccess/7.uag2/p-itb-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/p-ov1-uag2@3x.jpg",
+      "/images/dooraccess/7.uag2/p-itb-uag2@3x.jpg",
     ],
 
     // Bullet points untuk deskripsi produk
@@ -1742,7 +1755,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/7.uag2/p-itb-uag2@3x.jpg",}, 
+      { name: "Device", image: "/images/dooraccess/7.uag2/p-itb-uag2@3x.jpg", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2002,7 +2015,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/8.uaretrofitreader/p-itb-uaretrofitreader@3x.jpg", }, 
+      { name: "Device", image: "/images/dooraccess/8.uaretrofitreader/p-itb-uaretrofitreader@3x.jpg", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2181,7 +2194,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image:"/images/dooraccess/9.uag3intercom/p-itb-uag3intercom@3x.jpg", }, 
+      { name: "Device", image: "/images/dooraccess/9.uag3intercom/p-itb-uag3intercom@3x.jpg", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2460,7 +2473,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/10.uaintercom/p-itb-uaintercom@3x.jpg",}, 
+      { name: "Device", image: "/images/dooraccess/10.uaintercom/p-itb-uaintercom@3x.jpg", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2717,8 +2730,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/11.uaultra/p-itb-uaultra@3x.jpg",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/11.uaultra/p-itb-uaultra@3x.jpg",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -2975,8 +2989,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/12.eah8/p-itb-eah8.png",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/12.eah8/p-itb-eah8.png",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3227,7 +3242,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/13.uaretrofithub2/p-itb-uaretrofithub2.png", }, 
+      { name: "Device", image: "/images/dooraccess/13.uaretrofithub2/p-itb-uaretrofithub2.png", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3483,8 +3498,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/14.uahubdoor/p-itb-uahubdoor.png",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/14.uahubdoor/p-itb-uahubdoor.png",
+      },
     ],
     // Addon/aksesori yang tersedia untuk produk ini
     addons: [
@@ -3734,8 +3750,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/15.uahubdoormini/p-itb-uahubdoormini.png",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/15.uahubdoormini/p-itb-uahubdoormini.png",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -3916,7 +3933,7 @@ export const doorAccessProducts: Product[] = [
       "/images/dooraccess/16.uahubgate/p-mkt3-uahubgate.png",
       "/images/dooraccess/16.uahubgate/p-mkt4-uahubgate.png",
       "/images/dooraccess/16.uahubgate/p-mkt5-uahubgate.png",
-      
+
     ],
 
     // Gambar untuk tab Overview (bisa diganti sesuai kebutuhan)
@@ -3991,8 +4008,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/16.uahubgate/p-itb-uahubgate.png",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/16.uahubgate/p-itb-uahubgate.png",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -4346,7 +4364,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/18.uag3skpro/p-itb-uag3skpro.png", }, 
+      { name: "Device", image: "/images/dooraccess/18.uag3skpro/p-itb-uag3skpro.png", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -4689,7 +4707,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image:"/images/dooraccess/19.uag2skpro/p-itb-uag2skpro.png", }, 
+      { name: "Device", image: "/images/dooraccess/19.uag2skpro/p-itb-uag2skpro.png", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -4984,7 +5002,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/20.uag3sk/p-itb-uag3sk.png", }, 
+      { name: "Device", image: "/images/dooraccess/20.uag3sk/p-itb-uag3sk.png", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -5322,7 +5340,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/21.uag2sk/p-itb-uag2sk.png", }, 
+      { name: "Device", image: "/images/dooraccess/21.uag2sk/p-itb-uag2sk.png", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -5662,8 +5680,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/22.uag3skgate/p-itb-uag3skgate.png",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/22.uag3skgate/p-itb-uag3skgate.png",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -6021,8 +6040,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/23.uaskgate/p-itb-uaskgate.png",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/23.uaskgate/p-itb-uaskgate.png",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -6542,7 +6562,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/25.uag3intercom/p-itb-uag3intercom.png",}, 
+      { name: "Device", image: "/images/dooraccess/25.uag3intercom/p-itb-uag3intercom.png", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -6801,7 +6821,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/26.uaintercom/p-itb-uaintercom.png", }, 
+      { name: "Device", image: "/images/dooraccess/26.uaintercom/p-itb-uaintercom.png", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7037,7 +7057,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/27.uaintercomviewer/p-itb-uaintercomviewer.png", }, 
+      { name: "Device", image: "/images/dooraccess/27.uaintercomviewer/p-itb-uaintercomviewer.png", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7185,7 +7205,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/29.envr/p-itb-envr.png", }, 
+      { name: "Device", image: "/images/dooraccess/29.envr/p-itb-envr.png", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7311,8 +7331,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/30.unvrpro/p-itb-unvr-pro.png",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/30.unvrpro/p-itb-unvr-pro.png",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7439,8 +7460,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess.31.unvr/p-itb-unvr.png",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess.31.unvr/p-itb-unvr.png",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7573,8 +7595,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/32.unvrinstant/p-itb-unvrinstant.png",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/32.unvrinstant/p-itb-unvrinstant.png",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -7876,7 +7899,7 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/33.unvrinstantkit/p-itb-unvr-instant-kit.png", }, 
+      { name: "Device", image: "/images/dooraccess/33.unvrinstantkit/p-itb-unvr-instant-kit.png", },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -8120,8 +8143,9 @@ export const doorAccessProducts: Product[] = [
 
     // Item yang ada dalam box produk (gambar bisa diganti)
     inTheBox: [
-      { name: "Device", image: "/images/dooraccess/28.envrcore/p-itb-envr-core.png",
- }, 
+      {
+        name: "Device", image: "/images/dooraccess/28.envrcore/p-itb-envr-core.png",
+      },
     ],
 
     // Addon/aksesori yang tersedia untuk produk ini
@@ -9040,7 +9064,7 @@ export const doorAccessProducts: Product[] = [
     ]
   },
 
-// Produk Kesebelas dari DoorAccess, SF Door Access Accessories
+  // Produk Kesebelas dari DoorAccess, SF Door Access Accessories
   {
     id: "UACC-Lock-Strike-Safe-15mm",
     name: "Fail-Safe Strike Lock",
@@ -9148,7 +9172,7 @@ export const doorAccessProducts: Product[] = [
     ]
   },
 
-// Produk Kedua Belas dari DoorAccess, SF Door Access Accessories
+  // Produk Kedua Belas dari DoorAccess, SF Door Access Accessories
   {
     id: "UA-Pocket",
     name: "Pocket Keyfob, 10-Pack",
@@ -9213,7 +9237,7 @@ export const doorAccessProducts: Product[] = [
     ],
   },
 
-// Produk Ketiga Belas dari DoorAccess, SF Door Access Accessories
+  // Produk Ketiga Belas dari DoorAccess, SF Door Access Accessories
   {
     id: "UA-Rescue",
     name: "Access Rescue KeySwitch",
@@ -9254,7 +9278,7 @@ export const doorAccessProducts: Product[] = [
 
     // Spesifikasi teknis dengan section yang bisa di-expand/collapse
     technicalSpecs: [
-       {
+      {
         title: "Mechanical",
         items: [
           { label: "Dimensions", value: "⌀60 x 74 mm (⌀2.4 x 2.9')" },
@@ -9277,3 +9301,5 @@ export const doorAccessProducts: Product[] = [
     ],
   }
 ];
+// ✅ 5. EXPORT DI PALING BAWAH
+export const doorAccessProducts = processProducts(DoorAccessRaw);
