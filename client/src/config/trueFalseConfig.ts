@@ -5,12 +5,18 @@ export type TrueFalseConfig = {
   disableMikrotikRoutes: boolean;
   /** Kalau false, addons produk dibuang saat penyusunan catalog (behavior lama SHOW_ADDONS = false). */
   showAddons: boolean;
+  /**
+   * Titik hijau + teks “In Stock” di halaman detail produk Ubiquiti (`/products/:id`).
+   * Default true — jika key tidak ada di JSON, tetap seperti sekarang (tampil).
+   */
+  showUbiquitiInStockBadge: boolean;
 };
 
 export const DEFAULT_TRUE_FALSE_CONFIG: TrueFalseConfig = {
   disableUbiquitiAccessories: false,
   disableMikrotikRoutes: false,
   showAddons: false,
+  showUbiquitiInStockBadge: true,
 };
 
 function normalize(parsed: unknown): TrueFalseConfig {
@@ -18,10 +24,15 @@ function normalize(parsed: unknown): TrueFalseConfig {
     return { ...DEFAULT_TRUE_FALSE_CONFIG };
   }
   const o = parsed as Record<string, unknown>;
+  const stock =
+    typeof o.showUbiquitiInStockBadge === "boolean"
+      ? o.showUbiquitiInStockBadge
+      : DEFAULT_TRUE_FALSE_CONFIG.showUbiquitiInStockBadge;
   return {
     disableUbiquitiAccessories: Boolean(o.disableUbiquitiAccessories),
     disableMikrotikRoutes: Boolean(o.disableMikrotikRoutes),
     showAddons: Boolean(o.showAddons),
+    showUbiquitiInStockBadge: stock,
   };
 }
 
