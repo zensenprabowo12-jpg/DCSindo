@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
-import { products, CATEGORIES } from "@/lib/products/productUbiquiti";
 import { Link } from "wouter";
 import { ArrowRight, Play } from "lucide-react";
 import { motion, useInView } from "framer-motion";

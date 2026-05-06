@@ -1,4 +1,3 @@
-const SHOW_ADDONS = false; //untuk hide addons
 import { Item } from "@radix-ui/react-accordion";
 import { title } from "process";
 
@@ -68,16 +67,6 @@ export interface Product {
   sku?: string; // SKU produk (opsional, akan di-generate random jika tidak ada)
   bulletPoints?: string[]; // Bullet points untuk deskripsi produk
 }
-
-// ✅ 3. FUNGSI PROCESS (sebelum data produk)
-const processProducts = (products: Product[]): Product[] => {
-  return products.map(product => ({
-    ...product,
-    addons: SHOW_ADDONS ? product.addons : []
-  }));
-};
-
-
 // Camera Security Products
 const CameraSecurityRaw: Product[] = [
   // Produk Pertama dari Camera Security, SF NVRs and Edge Devices
@@ -13135,4 +13124,4 @@ const CameraSecurityRaw: Product[] = [
   // }
 ];
 // ✅ 5. EXPORT DI PALING BAWAH
-export const cameraSecurityProducts = processProducts(CameraSecurityRaw);
+export const cameraSecurityProducts = CameraSecurityRaw;

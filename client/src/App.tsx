@@ -24,10 +24,11 @@ import VsolSupport from "@/pages/support/Vsol";
 import Cart from "@/pages/cart";
 import ComingSoon from "@/pages/coming-soon";
 import FirmwarePage from "@/pages/firmware"; // ✅ TAMBAHAN
-import { FEATURE_FLAGS } from "@/config/featureFlags";
+import { useTrueFalse } from "@/hooks/useTrueFalse";
 
 function RouterWouter() {
   const [location] = useLocation();
+  const { disableMikrotikRoutes } = useTrueFalse();
   const isMikrotikPath =
     location === "/mikrotik" ||
     location.startsWith("/mikrotik/") ||
@@ -35,7 +36,7 @@ function RouterWouter() {
     location.startsWith("/mikrotik-dcs/") ||
     location === "/support/mikrotik";
 
-  if (FEATURE_FLAGS.disableMikrotikRoutes && isMikrotikPath) {
+  if (disableMikrotikRoutes && isMikrotikPath) {
     return <ComingSoon />;
   }
 

@@ -1,15 +1,16 @@
 import Layout from "@/components/layout";
 import { Link, useRoute, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { useState, useEffect } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { Search } from "lucide-react";
-import { FEATURE_FLAGS } from "@/config/featureFlags";
+import { getUbiquitiProducts } from "@/lib/products/productUbiquiti";
+import { useTrueFalse } from "@/hooks/useTrueFalse";
 
 /* ===============================
    CATEGORY DATA (WITH ICONS)
 ================================ */
 
-const CATEGORIES = [
+const ALL_COLLECTION_CATEGORIES = [
   {
     id: "cloud-gateways",
     name: "Cloud Gateways",
@@ -50,9 +51,7 @@ const CATEGORIES = [
     name: "Accessories",
     image: "/images/3.categoryproduct/cproductaccessories.svg",
   },
-].filter((c) =>
-  FEATURE_FLAGS.disableUbiquitiAccessories ? c.id !== "accessories" : true
-);
+];
 
 /* ===============================
    SUBFILTERS
@@ -129,11 +128,27 @@ const SUBFILTERS: Record<string, { name: string; count: number }[]> = {
   ],
 };
 
-import { products as staticProducts } from "@/lib/products/productUbiquiti";
-
 export default function Collection() {
   const [match, params] = useRoute("/collections/:category");
   const [, setLocation] = useLocation();
+  const { disableUbiquitiAccessories, showAddons } = useTrueFalse();
+
+  const CATEGORIES = useMemo(
+    () =>
+      disableUbiquitiAccessories
+        ? ALL_COLLECTION_CATEGORIES.filter((c) => c.id !== "accessories")
+        : ALL_COLLECTION_CATEGORIES,
+    [disableUbiquitiAccessories],
+  );
+
+  const catalogProducts = useMemo(
+    () =>
+      getUbiquitiProducts({
+        disableUbiquitiAccessories,
+        showAddons,
+      }),
+    [disableUbiquitiAccessories, showAddons],
+  );
 
   const [activeCategory, setActiveCategory] = useState("cloud-gateways");
   const [activeSubfilter, setActiveSubfilter] = useState("All");
@@ -142,7 +157,7 @@ export default function Collection() {
   useEffect(() => {
     if (params?.category) {
       if (
-        FEATURE_FLAGS.disableUbiquitiAccessories &&
+        disableUbiquitiAccessories &&
         params.category === "accessories"
       ) {
         setLocation("/collections/cloud-gateways");
@@ -156,7 +171,7 @@ export default function Collection() {
         setActiveSubfilter(found.id === "accessories" ? "RJ45 & Copper" : "All");
       }
     }
-  }, [params?.category]);
+  }, [params?.category, disableUbiquitiAccessories, CATEGORIES, setLocation]);
 
   // Reset subfilter when activeCategory changes
   useEffect(() => {
@@ -164,7 +179,7 @@ export default function Collection() {
   }, [activeCategory]);
 
   const handleCategoryChange = (catId: string) => {
-    if (FEATURE_FLAGS.disableUbiquitiAccessories && catId === "accessories") {
+    if (disableUbiquitiAccessories && catId === "accessories") {
       return;
     }
     setActiveCategory(catId);
@@ -172,8 +187,8 @@ export default function Collection() {
   };
 
   // Get products based on category and subfilter
-  const categoryProducts = staticProducts.filter(p => {
-      if (FEATURE_FLAGS.disableUbiquitiAccessories && p.category === "Accessories") {
+  const categoryProducts = catalogProducts.filter(p => {
+      if (disableUbiquitiAccessories && p.category === "Accessories") {
         return false;
       }
 

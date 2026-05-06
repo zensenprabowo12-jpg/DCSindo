@@ -1,6 +1,4 @@
 // Auto-generated index file
-// This file merges all category product files
-
 // File ini berada di folder productUbiquiti/ — import relatif ke file sejajar (bukan ./productUbiquiti/…)
 import { cloudGatewaysProducts } from "./cloudGateways";
 import { switchingProducts } from "./switching";
@@ -10,12 +8,17 @@ import { doorAccessProducts } from "./doorAccess";
 import { integrationsProducts } from "./integrations";
 import { advancedHostingProducts } from "./advancedHosting";
 import { accessoriesProducts } from "./accessories";
-import { FEATURE_FLAGS } from "@/config/featureFlags";
 
-export type { Product, TechSpecSection, InTheBoxItem, ProductAddon, TechSpecItem, AddonDetailedSpec } from "./cloudGateways";
+export type {
+  Product,
+  TechSpecSection,
+  InTheBoxItem,
+  ProductAddon,
+  TechSpecItem,
+  AddonDetailedSpec,
+} from "./cloudGateways";
 export * from "./cloudGateways";
 
-// Export individual category products
 export {
   cloudGatewaysProducts,
   switchingProducts,
@@ -27,26 +30,8 @@ export {
   accessoriesProducts,
 };
 
-// Merge all products
-export const products = [
-  ...cloudGatewaysProducts,
-  ...switchingProducts,
-  ...wifiProducts,
-  ...cameraSecurityProducts,
-  ...doorAccessProducts,
-  ...integrationsProducts,
-  ...advancedHostingProducts,
-  ...(!FEATURE_FLAGS.disableUbiquitiAccessories ? accessoriesProducts : []),
-];
-
-// Export categories
-export const CATEGORIES = [
-  "Cloud Gateways",
-  "Switching",
-  "WiFi",
-  "Camera Security",
-  "Door Access",
-  "Integrations",
-  "Advanced Hosting",
-  ...(!FEATURE_FLAGS.disableUbiquitiAccessories ? (["Accessories"] as const) : []),
-] as const;
+export {
+  getUbiquitiProducts,
+  getUbiquitiCategoryLabels,
+  type UbiquitiCatalogFlags,
+} from "./catalogHelpers";

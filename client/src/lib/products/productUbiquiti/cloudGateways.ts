@@ -1,4 +1,3 @@
-const SHOW_ADDONS = false; //untuk hide addons
 
 // Interface untuk spesifikasi teknis item
 export interface TechSpecItem {
@@ -67,15 +66,6 @@ export interface Product {
   sku?: string; // SKU produk (opsional, akan di-generate random jika tidak ada)
   bulletPoints?: string[]; // Bullet points untuk deskripsi produk
 }
-
-// ✅ 3. FUNGSI PROCESS (sebelum data produk)
-const processProducts = (products: Product[]): Product[] => {
-  return products.map(product => ({
-    ...product,
-    addons: SHOW_ADDONS ? product.addons : []
-  }));
-};
-
 // Cloud Gateways Products
 const cloudGatewaysRaw: Product[] = [
 {
@@ -2877,4 +2867,4 @@ const cloudGatewaysRaw: Product[] = [
   }
 ];
 // ✅ 5. EXPORT DI PALING BAWAH
-export const cloudGatewaysProducts = processProducts(cloudGatewaysRaw);
+export const cloudGatewaysProducts = cloudGatewaysRaw;

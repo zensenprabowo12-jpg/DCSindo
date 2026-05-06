@@ -1,13 +1,23 @@
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Search, X } from "lucide-react";
-import { products } from "@/lib/products";
+import { getUbiquitiProducts } from "@/lib/products";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTrueFalse } from "@/hooks/useTrueFalse";
 
 export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const [query, setQuery] = useState("");
-  
+  const { disableUbiquitiAccessories, showAddons } = useTrueFalse();
+  const products = useMemo(
+    () =>
+      getUbiquitiProducts({
+        disableUbiquitiAccessories,
+        showAddons,
+      }),
+    [disableUbiquitiAccessories, showAddons],
+  );
+
   const filtered = products.filter(p => 
     p.name.toLowerCase().includes(query.toLowerCase()) || 
     p.category.toLowerCase().includes(query.toLowerCase())

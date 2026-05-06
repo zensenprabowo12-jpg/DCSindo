@@ -1,9 +1,17 @@
 import Layout from "@/components/layout";
-import { products, type Product, type TechSpecSection, type InTheBoxItem, type ProductAddon, type TechSpecItem } from "@/lib/products/productUbiquiti";
+import {
+  getUbiquitiProducts,
+  type Product,
+  type TechSpecSection,
+  type InTheBoxItem,
+  type ProductAddon,
+  type TechSpecItem,
+} from "@/lib/products/productUbiquiti";
+import { useTrueFalse } from "@/hooks/useTrueFalse";
 import { Button } from "@/components/ui/button";
 import { useRoute } from "wouter";
 import { ShoppingCart, Check, Shield, ChevronLeft, ChevronRight, Maximize2, X, Package, Settings, Info, ArrowRight, Instagram, Facebook, Mail } from "lucide-react";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "wouter";
 import { cn } from "@/lib/utils";
@@ -239,6 +247,15 @@ function getDefaultAddons(product: Product): ProductAddon[] {
 
 export default function ProductDetail() {
   const [match, params] = useRoute("/products/:id");
+  const { disableUbiquitiAccessories, showAddons } = useTrueFalse();
+  const products = useMemo(
+    () =>
+      getUbiquitiProducts({
+        disableUbiquitiAccessories,
+        showAddons,
+      }),
+    [disableUbiquitiAccessories, showAddons],
+  );
 
   // Try to find static product, or generate dynamic one
   let product = products.find(p => p.id === params?.id);

@@ -1,4 +1,4 @@
-const SHOW_ADDONS = false; //untuk hide addons// Interface untuk spesifikasi teknis item
+// Interface untuk spesifikasi teknis item
 export interface TechSpecItem {
   label: string;
   value: string;
@@ -64,14 +64,6 @@ export interface Product {
   sku?: string; // SKU produk (opsional, akan di-generate random jika tidak ada)
   bulletPoints?: string[]; // Bullet points untuk deskripsi produk
 }
-// ✅ 3. FUNGSI PROCESS (sebelum data produk)
-const processProducts = (products: Product[]): Product[] => {
-  return products.map(product => ({
-    ...product,
-    addons: SHOW_ADDONS ? product.addons : []
-  }));
-};
-
 // Integrations Products
 const integrationsRaw: Product[] = [
 
@@ -4692,4 +4684,4 @@ const integrationsRaw: Product[] = [
   },
 ];
 // ✅ 5. EXPORT DI PALING BAWAH
-export const integrationsProducts = processProducts(integrationsRaw);
+export const integrationsProducts = integrationsRaw;
