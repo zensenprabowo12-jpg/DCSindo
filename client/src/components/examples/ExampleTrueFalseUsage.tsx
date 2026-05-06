@@ -15,6 +15,9 @@ export default function ExampleTrueFalseUsage() {
         <li>disableUbiquitiAccessories: {String(tf.disableUbiquitiAccessories)}</li>
         <li>disableMikrotikRoutes: {String(tf.disableMikrotikRoutes)}</li>
         <li>showAddons: {String(tf.showAddons)}</li>
+        <li>
+          showUbiquitiInStockBadge: {String(tf.showUbiquitiInStockBadge)}
+        </li>
       </ul>
       {tf.isFetching ? <p className="mt-2">Memuat ulang config…</p> : null}
     </div>

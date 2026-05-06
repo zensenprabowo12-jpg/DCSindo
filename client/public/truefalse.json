@@ -1,5 +1,6 @@
 {
   "disableUbiquitiAccessories": false,
   "disableMikrotikRoutes": false,
-  "showAddons": false
+  "showAddons": false,
+  "showUbiquitiInStockBadge": false
 }

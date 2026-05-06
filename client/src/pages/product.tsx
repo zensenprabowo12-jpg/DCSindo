@@ -247,7 +247,11 @@ function getDefaultAddons(product: Product): ProductAddon[] {
 
 export default function ProductDetail() {
   const [match, params] = useRoute("/products/:id");
-  const { disableUbiquitiAccessories, showAddons } = useTrueFalse();
+  const {
+    disableUbiquitiAccessories,
+    showAddons,
+    showUbiquitiInStockBadge,
+  } = useTrueFalse();
   const products = useMemo(
     () =>
       getUbiquitiProducts({
@@ -478,9 +482,16 @@ export default function ProductDetail() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 text-xs font-black uppercase tracking-widest text-muted-foreground">
-              <div className="flex items-center gap-4"><div className="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)] animate-pulse" /> In Stock</div>
-              <div className="flex items-center gap-4"><Shield className="w-6 h-6 text-primary" /> 1 Year Warranty</div>
+            <div className="flex flex-wrap gap-8 text-xs font-black uppercase tracking-widest text-muted-foreground">
+              {showUbiquitiInStockBadge ? (
+                <div className="flex items-center gap-4">
+                  <div className="h-3 w-3 animate-pulse rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]" />
+                  In Stock
+                </div>
+              ) : null}
+              <div className="flex items-center gap-4">
+                <Shield className="h-6 w-6 text-primary" /> 1 Year Warranty
+              </div>
             </div>
 
             <div className="pt-8 border-t border-border">

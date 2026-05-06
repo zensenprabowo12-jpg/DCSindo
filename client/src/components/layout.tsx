@@ -9,7 +9,8 @@ import {
   Mail,
   Instagram,
   Facebook,
-  Shield
+  Shield,
+  ChevronLeft,
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
+  const showGlobalBackNav = location !== "/";
   const [scrolled, setScrolled] = useState(false);
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "light");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -89,6 +91,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   /* Hub kontak utama — sama dengan route `/support` */
   const isContactActive = location === "/support";
 
+  // Back button positioning (edit these to fine-tune)
+  const BACK_BUTTON_WRAPPER_CLASS =
+    "mr-2 -ml-1"; // geser horizontal relatif ke menu (desktop)
+  const BACK_BUTTON_BUTTON_CLASS =
+    "h-9 w-9 rounded-full bg-white/10 text-foreground shadow-sm shadow-black/10 backdrop-blur-xl hover:bg-white/15 border border-white/15";
+
   return (
     <div className="min-h-screen bg-background text-foreground font-sans flex flex-col relative pt-16">
 
@@ -106,22 +114,56 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
 
           {/* LOGO */}
-          <Link href="/">
-            <a className="inline-flex rounded-md p-1 transition-colors hover:bg-primary/10">
-              <img
-                src={
-                  theme === "dark"
-                    ? "/images/1.logo/logodcsputih.png"
-                    : "/images/1.logo/logodcshitam.png"
-                }
-                className="h-5 md:h-8 w-auto transition-all"
-                alt="Logo DCS"
-              />
-            </a>
-          </Link>
+          <div className="flex items-center gap-2">
+            {/* Mobile back button (icon only) */}
+            {showGlobalBackNav && (
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                onClick={() => window.history.back()}
+                className={cn("md:hidden", BACK_BUTTON_BUTTON_CLASS)}
+                aria-label="Kembali ke halaman sebelumnya"
+                title="Kembali"
+              >
+                <ChevronLeft className="h-5 w-5" aria-hidden />
+              </Button>
+            )}
+
+            <Link href="/">
+              <a className="inline-flex rounded-md p-1 transition-colors hover:bg-primary/10">
+                <img
+                  src={
+                    theme === "dark"
+                      ? "/images/1.logo/logodcsputih.png"
+                      : "/images/1.logo/logodcshitam.png"
+                  }
+                  className="h-5 md:h-8 w-auto transition-all"
+                  alt="Logo DCS"
+                />
+              </a>
+            </Link>
+          </div>
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-10 relative font-manrope font-bold">
+
+            {/* Back button (icon only) — placed left of Home */}
+            {showGlobalBackNav && (
+              <div className={cn("flex items-center", BACK_BUTTON_WRAPPER_CLASS)}>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => window.history.back()}
+                  className={cn(BACK_BUTTON_BUTTON_CLASS)}
+                  aria-label="Kembali ke halaman sebelumnya"
+                  title="Kembali"
+                >
+                  <ChevronLeft className="h-5 w-5" aria-hidden />
+                </Button>
+              </div>
+            )}
 
             {/* HOME */}
             <Link href="/">
