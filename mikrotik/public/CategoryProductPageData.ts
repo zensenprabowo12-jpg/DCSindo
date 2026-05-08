@@ -31,17 +31,17 @@ export const MIKROTIK_CATEGORY_CARDS_BOTTOM: MikrotikCategoryCard[] = [
   {
     title: "LTE / 5G",
     imageSrc: "/images/placeholder-product.png",
-    href: "/mikrotik/categories/lte",
+    href: "/mikrotik/categories/lte%20%2F%205g",
   },
   {
     title: "IoT Products",
     imageSrc: "/images/placeholder-product.png",
-    href: "/mikrotik/categories/iot",
+    href: "/mikrotik/categories/iot%20products",
   },
   {
     title: "RouterBOARD",
     imageSrc: "/images/placeholder-product.png",
-    href: "/mikrotik/categories/routerboard",
+    href: "/mikrotik/categories/routerboards",
   },
 ];
 
@@ -65,4 +65,3 @@ export const MIKROTIK_LATEST_VIDEO = {
   detailBody:
     "Tulis penjelasan detail mengenai product yang sedang dijelaskan dalam video ini. (Dummy text — silakan ganti sesuai kebutuhan.)",
 };
-
