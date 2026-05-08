@@ -193,12 +193,12 @@ export default function Support() {
       <div className="container mx-auto py-16 px-4">
 
         {/* TOGGLE */}
-        <div className="flex gap-3 mb-8 justify-center">
+        {/* <div className="flex gap-3 mb-8 justify-center">
           <Button onClick={() => setView("support")}>Support</Button>
           <Button variant="outline" onClick={() => setView("login")}>
             Admin Dashboard
           </Button>
-        </div>
+        </div> */}
 
         {/* LOGIN */}
         {view === "login" && (
