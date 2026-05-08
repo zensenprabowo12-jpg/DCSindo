@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useRef } from "react";
 import { ArrowRight, X, ShieldCheck, Zap, Headphones } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { V_SOL_BRAND } from "@/brands/v-sol";
 
 export default function HomeUtama() {
 
@@ -262,7 +263,8 @@ export default function HomeUtama() {
               {
                 name: "V-SOL",
                 image: "/images/1.logo/VsolThumbnail.png",
-                path: "/coming-soon",
+                path: V_SOL_BRAND.websiteUrl,
+                external: true,
                 bg: "bg-zinc-50/50 dark:bg-zinc-900/10",
                 desc: "Solusi access network (FTTx) untuk deployment skala besar.",
               },
@@ -302,9 +304,21 @@ export default function HomeUtama() {
               );
 
               return (
-                <Link key={i} href={brand.path}>
-                  {card}
-                </Link>
+                brand.external ? (
+                  <a
+                    key={i}
+                    href={brand.path}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block"
+                  >
+                    {card}
+                  </a>
+                ) : (
+                  <Link key={i} href={brand.path}>
+                    {card}
+                  </Link>
+                )
               );
             })}
           </div>
