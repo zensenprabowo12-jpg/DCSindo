@@ -24,7 +24,7 @@ export default function MikrotikCategoryCatalogPage() {
   const load = useCallback(async () => {
     setLoading(true);
     setErr(null);
-    const r = await apiPublicProducts({ category, sort: "latest" });
+    const r = await apiPublicProducts({ category, sort: "custom" });
     if (r.ok) setList(r.data);
     else setErr(r.message);
     setLoading(false);

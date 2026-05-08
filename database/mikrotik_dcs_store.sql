@@ -11,6 +11,8 @@ CREATE TABLE IF NOT EXISTS mikrotik_dcs_products (
   nama_produk VARCHAR(255) NOT NULL,
   sku VARCHAR(100) NOT NULL,
   category VARCHAR(64) NOT NULL,
+  -- Urutan tampil per kategori (diatur dari admin dashboard drag & drop)
+  sort_order INT NOT NULL DEFAULT 0,
   deskripsi TEXT NOT NULL,
   -- JSON string (max 9 bullet). Dipakai agar kompatibel di MariaDB lama.
   bullet_points LONGTEXT NOT NULL,
@@ -21,6 +23,7 @@ CREATE TABLE IF NOT EXISTS mikrotik_dcs_products (
   PRIMARY KEY (id),
   UNIQUE KEY uq_mikrotik_dcs_sku (sku),
   KEY idx_mikrotik_dcs_category (category),
+  KEY idx_mikrotik_dcs_sort (category, sort_order),
   KEY idx_mikrotik_dcs_created (created_at)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 

@@ -11,17 +11,20 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { MIKROTIK_DCS_CATEGORIES } from "../categories";
-import { apiAdminProducts, apiDeleteProduct, apiLogout } from "../api";
+import { apiAdminProducts, apiDeleteProduct, apiLogout, apiReorderProducts } from "../api";
 import type { MikrotikDcsProduct } from "../types";
 import MikrotikDcsProtectedRoute from "./ProtectedRoute";
-import { Shield } from "lucide-react";
+import { GripVertical, Shield } from "lucide-react";
 
 function DashboardInner() {
   const [list, setList] = useState<MikrotikDcsProduct[]>([]);
   const [cat, setCat] = useState<string>("");
-  const [sort, setSort] = useState<"latest" | "oldest">("latest");
+  const [sort, setSort] = useState<"custom" | "latest" | "oldest">("custom");
   const [loading, setLoading] = useState(true);
   const [deleting, setDeleting] = useState<number | null>(null);
+  const [dragId, setDragId] = useState<number | null>(null);
+  const [dirtyOrder, setDirtyOrder] = useState(false);
+  const [savingOrder, setSavingOrder] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -29,7 +32,10 @@ function DashboardInner() {
       category: cat || undefined,
       sort,
     });
-    if (r.ok) setList(r.data);
+    if (r.ok) {
+      setList(r.data);
+      setDirtyOrder(false);
+    }
     setLoading(false);
   }, [cat, sort]);
 
@@ -49,6 +55,35 @@ function DashboardInner() {
   async function onLogout() {
     await apiLogout();
     window.location.href = "/mikrotik-dcs/admin/login";
+  }
+
+  function moveItem(fromIndex: number, toIndex: number) {
+    setList((prev) => {
+      const next = [...prev];
+      const [item] = next.splice(fromIndex, 1);
+      if (!item) return prev;
+      next.splice(toIndex, 0, item);
+      return next;
+    });
+    setDirtyOrder(true);
+  }
+
+  async function onSaveOrder() {
+    if (!cat) {
+      alert("Pilih kategori dulu untuk mengatur urutan.");
+      return;
+    }
+    setSavingOrder(true);
+    const orderedIds = list.map((x) => x.id);
+    const r = await apiReorderProducts(cat, orderedIds);
+    setSavingOrder(false);
+    if (!r.ok) {
+      alert(r.message);
+      return;
+    }
+    setDirtyOrder(false);
+    // reload to make sure DB order matches
+    void load();
   }
 
   return (
@@ -74,6 +109,14 @@ function DashboardInner() {
             <Button asChild>
               <Link href="/mikrotik-dcs/admin/new">Tambah produk</Link>
             </Button>
+            <Button
+              variant="secondary"
+              disabled={!dirtyOrder || savingOrder}
+              onClick={() => void onSaveOrder()}
+              title={!cat ? "Pilih kategori dulu" : undefined}
+            >
+              {savingOrder ? "Menyimpan…" : "Simpan urutan"}
+            </Button>
           </div>
         </div>
 
@@ -98,13 +141,20 @@ function DashboardInner() {
             <select
               className="h-10 w-full sm:w-64 rounded-md border border-border bg-background px-3 text-sm"
               value={sort}
-              onChange={(e) => setSort(e.target.value as "latest" | "oldest")}
+              onChange={(e) => setSort(e.target.value as "custom" | "latest" | "oldest")}
             >
+              <option value="custom">Urutan Dashboard (drag)</option>
               <option value="latest">Terbaru ditambah</option>
               <option value="oldest">Terlama</option>
             </select>
           </div>
         </div>
+
+        {sort === "custom" && !cat && (
+          <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 text-amber-900 dark:bg-amber-950/30 dark:text-amber-200 dark:border-amber-900 px-4 py-3 text-sm">
+            Untuk drag &amp; drop, silakan pilih <span className="font-semibold">1 kategori</span> dulu.
+          </div>
+        )}
 
         <div className="border border-border rounded-xl overflow-hidden bg-card">
           {loading ? (
@@ -115,6 +165,7 @@ function DashboardInner() {
             <Table>
               <TableHeader>
                 <TableRow>
+                  <TableHead className="w-10"></TableHead>
                   <TableHead className="w-14">ID</TableHead>
                   <TableHead>Nama</TableHead>
                   <TableHead>SKU</TableHead>
@@ -123,8 +174,33 @@ function DashboardInner() {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {list.map((p) => (
-                  <TableRow key={p.id}>
+                {list.map((p, idx) => (
+                  <TableRow
+                    key={p.id}
+                    draggable={sort === "custom" && Boolean(cat)}
+                    onDragStart={() => setDragId(p.id)}
+                    onDragEnd={() => setDragId(null)}
+                    onDragOver={(e) => {
+                      if (sort !== "custom" || !cat) return;
+                      e.preventDefault();
+                    }}
+                    onDrop={() => {
+                      if (sort !== "custom" || !cat) return;
+                      if (dragId == null) return;
+                      const fromIndex = list.findIndex((x) => x.id === dragId);
+                      const toIndex = idx;
+                      if (fromIndex < 0 || fromIndex === toIndex) return;
+                      moveItem(fromIndex, toIndex);
+                    }}
+                    className={
+                      sort === "custom" && cat
+                        ? "cursor-move"
+                        : undefined
+                    }
+                  >
+                    <TableCell className="text-muted-foreground">
+                      <GripVertical className="w-4 h-4 opacity-60" />
+                    </TableCell>
                     <TableCell className="font-mono text-xs">{p.id}</TableCell>
                     <TableCell className="font-medium">{p.nama_produk}</TableCell>
                     <TableCell className="text-muted-foreground text-sm">{p.sku}</TableCell>

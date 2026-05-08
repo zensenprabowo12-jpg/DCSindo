@@ -5,6 +5,7 @@ import {
   apiMikrotikDcsAdminDelete,
   apiMikrotikDcsAdminGet,
   apiMikrotikDcsAdminList,
+  apiMikrotikDcsAdminReorder,
   apiMikrotikDcsAdminUpdate,
   apiMikrotikDcsLogin,
   apiMikrotikDcsLogout,
@@ -50,6 +51,7 @@ export function registerMikrotikDcsRoutes(app: Express): void {
 
   app.get(`${base}/admin/products`, apiMikrotikDcsAdminList);
   app.get(`${base}/admin/products/:id`, apiMikrotikDcsAdminGet);
+  app.post(`${base}/admin/products/reorder`, express.json(), apiMikrotikDcsAdminReorder);
   app.post(
     `${base}/admin/products`,
     withMultipart(apiMikrotikDcsAdminCreate),

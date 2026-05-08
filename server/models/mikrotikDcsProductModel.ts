@@ -11,6 +11,7 @@ export type MikrotikDcsProductRow = {
   nama_produk: string;
   sku: string;
   category: string;
+  sort_order?: number;
   deskripsi: string;
   bullet_points: string[]; // parsed from JSON
   main_image: string;
@@ -111,6 +112,7 @@ function mapProduct(r: RowDataPacket): MikrotikDcsProductRow {
     nama_produk: r.nama_produk,
     sku: r.sku,
     category: r.category,
+    sort_order: r.sort_order ?? 0,
     deskripsi: r.deskripsi,
     bullet_points: bullets,
     main_image: r.main_image ?? "",
@@ -126,7 +128,7 @@ function mapProduct(r: RowDataPacket): MikrotikDcsProductRow {
 export async function listMikrotikDcsProducts(
   options: {
     category?: string | null;
-    sort: "latest" | "oldest";
+    sort: "latest" | "oldest" | "custom";
   } = { sort: "latest" },
 ): Promise<MikrotikDcsProductRow[]> {
   const raw = options.category?.trim() || null;
@@ -138,13 +140,17 @@ export async function listMikrotikDcsProducts(
   const where = canonical
     ? "WHERE `category` = :category"
     : "";
+  const orderBy =
+    options.sort === "custom"
+      ? "ORDER BY sort_order ASC, created_at DESC, id DESC"
+      : `ORDER BY created_at ${order}, id ${order}`;
   const [rows] = await mysqlPool.query<RowDataPacket[]>(
-    `SELECT id, nama_produk, sku, category, deskripsi, bullet_points, main_image,
+    `SELECT id, nama_produk, sku, category, sort_order, deskripsi, bullet_points, main_image,
             video_url, video_title, video_description, specifications,
             created_at, updated_at
      FROM mikrotik_dcs_products
      ${where}
-     ORDER BY created_at ${order}, id ${order}`,
+     ${orderBy}`,
     canonical ? { category: canonical } : {},
   );
   return rows.map(mapProduct);
@@ -154,7 +160,7 @@ export async function getMikrotikDcsProductById(
   id: number,
 ): Promise<MikrotikDcsProductWithGallery | null> {
   const [pRows] = await mysqlPool.query<RowDataPacket[]>(
-    `SELECT id, nama_produk, sku, category, deskripsi, bullet_points, main_image,
+    `SELECT id, nama_produk, sku, category, sort_order, deskripsi, bullet_points, main_image,
             video_url, video_title, video_description, specifications,
             created_at, updated_at
      FROM mikrotik_dcs_products WHERE id = :id LIMIT 1`,
@@ -210,18 +216,26 @@ export async function createMikrotikDcsProduct(data: {
   const connection = await mysqlPool.getConnection();
   try {
     await connection.beginTransaction();
+    const [ordRows] = await connection.query<RowDataPacket[]>(
+      `SELECT COALESCE(MAX(sort_order), -1) AS max_ord
+       FROM mikrotik_dcs_products
+       WHERE category = :cat`,
+      { cat: data.category },
+    );
+    const nextOrder = Number(ordRows?.[0]?.max_ord ?? -1) + 1;
     const bulletJson = JSON.stringify(data.bullet_points.slice(0, 9));
     const specsJson = data.specifications ? JSON.stringify(data.specifications) : null;
     const [res] = await connection.query<ResultSetHeader>(
       `INSERT INTO mikrotik_dcs_products
-       (nama_produk, sku, category, deskripsi, bullet_points, main_image,
+       (nama_produk, sku, category, sort_order, deskripsi, bullet_points, main_image,
         video_url, video_title, video_description, specifications)
-       VALUES (:nama, :sku, :cat, :des, :bullets, :main,
+       VALUES (:nama, :sku, :cat, :ord, :des, :bullets, :main,
                :vurl, :vtitle, :vdesc, :specs)`,
       {
         nama: data.nama_produk.trim(),
         sku: data.sku.trim(),
         cat: data.category,
+        ord: nextOrder,
         des: data.deskripsi.trim(),
         bullets: bulletJson,
         main: data.main_image,
@@ -259,6 +273,55 @@ export async function createMikrotikDcsProduct(data: {
     }
     await connection.commit();
     return id;
+  } catch (e) {
+    await connection.rollback();
+    throw e;
+  } finally {
+    connection.release();
+  }
+}
+
+export async function reorderMikrotikDcsProducts(
+  category: MikrotikDcsCategory,
+  orderedIds: number[],
+): Promise<void> {
+  const connection = await mysqlPool.getConnection();
+  try {
+    await connection.beginTransaction();
+
+    const ids = orderedIds.filter((n) => Number.isFinite(n) && n > 0);
+    if (!ids.length) {
+      await connection.commit();
+      return;
+    }
+
+    const [rows] = await connection.query<RowDataPacket[]>(
+      `SELECT id FROM mikrotik_dcs_products
+       WHERE category = :cat AND id IN (:ids)`,
+      { cat: category, ids },
+    );
+    const allowed = new Set(rows.map((r) => Number(r.id)));
+    const filtered = ids.filter((id) => allowed.has(id));
+    if (!filtered.length) {
+      await connection.commit();
+      return;
+    }
+
+    const caseSql = filtered.map(() => "WHEN ? THEN ?").join(" ");
+    const params: unknown[] = [];
+    filtered.forEach((id, idx) => {
+      params.push(id, idx);
+    });
+    params.push(category, ...filtered);
+
+    await connection.query(
+      `UPDATE mikrotik_dcs_products
+       SET sort_order = CASE id ${caseSql} ELSE sort_order END
+       WHERE category = ? AND id IN (${filtered.map(() => "?").join(",")})`,
+      params,
+    );
+
+    await connection.commit();
   } catch (e) {
     await connection.rollback();
     throw e;
