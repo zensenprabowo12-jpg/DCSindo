@@ -10,6 +10,7 @@ import {
   deleteMikrotikDcsProductById,
   getMikrotikDcsProductById,
   listMikrotikDcsProducts,
+  reorderMikrotikDcsProducts,
   updateMikrotikDcsProduct,
 } from "../models/mikrotikDcsProductModel";
 
@@ -86,7 +87,7 @@ export async function apiMikrotikDcsPublicList(
 ): Promise<void> {
   const category = typeof req.query.category === "string" ? req.query.category : null;
   const sortQ = (req.query.sort as string) || "latest";
-  const sort = sortQ === "oldest" ? "oldest" : "latest";
+  const sort = sortQ === "custom" ? "custom" : sortQ === "oldest" ? "oldest" : "latest";
   const rows = await listMikrotikDcsProducts({ category, sort });
   res.json({ ok: true, data: rows });
 }
@@ -113,9 +114,32 @@ export async function apiMikrotikDcsAdminList(
   if (!requireMikrotikDcsSession(req, res)) return;
   const category = typeof req.query.category === "string" ? req.query.category : null;
   const sortQ = (req.query.sort as string) || "latest";
-  const sort = sortQ === "oldest" ? "oldest" : "latest";
+  const sort = sortQ === "custom" ? "custom" : sortQ === "oldest" ? "oldest" : "latest";
   const rows = await listMikrotikDcsProducts({ category, sort });
   res.json({ ok: true, data: rows });
+}
+
+export async function apiMikrotikDcsAdminReorder(
+  req: Request,
+  res: Response,
+): Promise<void> {
+  if (!requireMikrotikDcsSession(req, res)) return;
+  const body = (req.body ?? {}) as { category?: unknown; orderedIds?: unknown }
+  const rawCategory = typeof body.category === "string" ? body.category : ""
+  const category = toCanonicalMikrotikDcsCategory(rawCategory)
+  if (!category) {
+    res.status(400).json({ ok: false, message: "Kategori tidak valid" })
+    return
+  }
+  const ids = Array.isArray(body.orderedIds)
+    ? body.orderedIds.map((x) => Number(x)).filter((n) => Number.isFinite(n) && n > 0)
+    : []
+  if (!ids.length) {
+    res.status(400).json({ ok: false, message: "orderedIds wajib diisi" })
+    return
+  }
+  await reorderMikrotikDcsProducts(category, ids)
+  res.json({ ok: true })
 }
 
 export async function apiMikrotikDcsAdminGet(

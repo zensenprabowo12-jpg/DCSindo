@@ -13,6 +13,7 @@ export type MikrotikDcsProduct = {
   nama_produk: string;
   sku: string;
   category: string;
+  sort_order?: number;
   deskripsi: string;
   bullet_points: string[];
   main_image: string;

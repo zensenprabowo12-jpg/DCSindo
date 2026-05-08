@@ -60,7 +60,7 @@ export async function apiMe(): Promise<ApiOk<{ authed: boolean }> | ApiErr> {
   }) as Promise<ApiOk<{ authed: boolean }> | ApiErr>;
 }
 
-type ListParams = { category?: string; sort?: "latest" | "oldest" };
+type ListParams = { category?: string; sort?: "latest" | "oldest" | "custom" };
 
 export async function apiPublicProducts(
   p: ListParams = {},
@@ -140,6 +140,21 @@ export async function apiDeleteProduct(
     const res = await fetch(`${BASE}/admin/products/${id}`, {
       method: "DELETE",
       credentials: "include",
+    });
+    return j(res);
+  }) as Promise<ApiOk<unknown> | ApiErr>;
+}
+
+export async function apiReorderProducts(
+  category: string,
+  orderedIds: number[],
+): Promise<ApiOk<unknown> | ApiErr> {
+  return safe(async () => {
+    const res = await fetch(`${BASE}/admin/products/reorder`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+      body: JSON.stringify({ category, orderedIds }),
     });
     return j(res);
   }) as Promise<ApiOk<unknown> | ApiErr>;
