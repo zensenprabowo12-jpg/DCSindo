@@ -39,15 +39,16 @@ export const MIKROTIK_CATEGORY_CARDS_BOTTOM: MikrotikCategoryCard[] = [
     href: "/mikrotik/categories/iot%20products",
   },
   {
-    title: "RouterBOARD",
+    title: "60GHz",
     imageSrc: "/images/placeholder-product.png",
-    href: "/mikrotik/categories/routerboards",
+    href: "/mikrotik/categories/60ghz",
   },
 ];
 
 export type MikrotikMoreCategoryLink = { label: string; href: string };
 
 export const MIKROTIK_MORE_CATEGORIES: MikrotikMoreCategoryLink[] = [
+  { label: "Routerboards", href: "/mikrotik/categories/routerboards" },
   { label: "Enclosures", href: "/mikrotik/categories/enclosures" },
   { label: "Interfaces", href: "/mikrotik/categories/interfaces" },
   { label: "Accessories", href: "/mikrotik/categories/accessories" },

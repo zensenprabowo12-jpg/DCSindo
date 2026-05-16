@@ -21,26 +21,36 @@ export default function FirmwarePage() {
         name: "airFiber 5XHD [AF-5XHD]",
         version: "v1.5.6",
         link: "/firmware/af5xhd.amesoc3.v1.5.6-lock.00005.260225.0902-squashfs.bin",
-        downloadName: "AF-5XHD v.1.5.6 Indonesia Firmware.bin",
+        downloadName: "AF-5XHD v.1.5.6 Indonesia Firmware",
       },
     ],
 
-    // Mikrotik: [
-    //   { name: "RouterBoard X", 
-    //     version: "v7.1", 
-    //     link: "#",
-    //     downloadName: "routerboard-x.firmware.bin"
-    //   },
-    //   { name: "CCR Series", 
-    //     version: "v7.5", 
-    //     link: "#", 
-    //     downloadName: "ccr-series.firmware.bin" },
-    // ],
+    Mikrotik: [
+      { name: "RouterBoard X", 
+        version: "v7.1", 
+        link: "#",
+        downloadName: "routerboard-x.firmware.bin"
+      },
+      { name: "CCR Series", 
+        version: "v7.5", 
+        link: "#", 
+        downloadName: "ccr-series.firmware.bin" },
+    ],
 
-    // "V-Sol": [
-    //   { name: "OLT V1600", version: "v1.0.0", link: "#", downloadName: "olt-v1600.firmware.bin" },
-    //   { name: "ONU V2801", version: "v2.3.1", link: "#", downloadName: "onu-v2801.firmware.bin" },
-    // ],
+    "V-Sol": [
+  {
+    name: "10G-PON",
+    version: "V3600G1-C",
+    link: "https://drive.google.com/uc?export=download&id=1HDdcEwV0V7qFL0qxHzIE88uSNgMZ-zzG",
+    downloadName: "10G-PON V3600G1-C Indonesia Firmware"
+  },
+  {
+    name: "Chassis OLT",
+    version: "V5600X2-C",
+    link: "https://drive.google.com/uc?export=download&id=1fGGioLNzKXeBuK-tPgVQoyIntB-rc0AD",
+    downloadName: "Chassis OLT V5600X2 Indonesia Firmware"
+  },
+],
   };
 
   return (
