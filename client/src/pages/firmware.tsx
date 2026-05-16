@@ -60,7 +60,7 @@ export default function FirmwarePage() {
 
           {/* BRAND */}
           <div className="flex gap-6 mb-10 text-lg font-bold">
-            {["", "Ubiquiti", ""].map((brand) => (
+            {["Mikrotik", "Ubiquiti", "V-Sol"].map((brand) => (
               <button
                 key={brand}
                 onClick={() => setActiveBrand(brand)}
