@@ -1,0 +1,15 @@
+export const CATEGORY_BACKGROUNDS: Record<string, string> = {
+  "ethernet routers": "/images/batik/batik-mikrotik1.png",
+  "switches": "/images/batik/batik-mikrotik2.png",
+  "wireless system": "/images/batik/batik-mikrotik3.png",
+  "wireless home & office": "/images/batik/batik-mikrotik4.png",
+  "lte / 5g": "/images/batik/batik-mikrotik5.png",
+  "iot products": "/images/batik/batik-mikrotik6.png",
+  "60ghz": "/images/batik/batik-mikrotik7.png",
+  "routerboards": "/images/batik/batik-mikrotik8.png",
+  "enclosures": "/images/batik/batik-mikrotik9.png",
+  "interfaces": "/images/batik/batik-mikrotik10.png",
+  "accessories": "/images/category-bg/accessories.jpg",
+  "antennas": "/images/category-bg/antennas.jpg",
+  "sfp/qsfp": "/images/category-bg/sfpqsfp.jpg",
+};
