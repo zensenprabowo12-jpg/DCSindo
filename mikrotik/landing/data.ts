@@ -55,19 +55,34 @@ export const LANDING_PRODUCTS: MikrotikLandingProduct[] = [
 ];
 
 export const LANDING_VIDEO = {
-  title: "Judul YouTube Video",
+  title: "What is MikroTik?",
   description:
-    "Deskripsi singkat untuk video (dummy). Ganti link/video title/teks ini di `mikrotik/landing/data.ts`.",
+    "MikroTik showcases its European-manufactured network equipment, combining hardware with in-house developed RouterOS for enterprise features without gatekeeping. The company highlights its diverse product range, including hybrid switches/routers, IoT solutions, and cellular connectivity options designed to break boundaries and offer exceptional value.",
   // gampang diganti: cukup ubah videoId
   videoId: "9HaU8NjH7bI",
 };
 
 export const LANDING_CATEGORIES = [
-  // Single source of truth untuk halaman category products:
-  // selalu arahkan ke `/mikrotik/categories/:category`
-  { title: "Ethernet Routers", href: "/mikrotik/categories/ethernet%20routers" },
-  { title: "Switches", href: "/mikrotik/categories/switches" },
-  { title: "Wireless Systems", href: "/mikrotik/categories/wireless%20system" },
-  { title: "Wireless Home & Office", href: "/mikrotik/categories/wireless%20home%20%26%20office" },
+  {
+  title: "Ethernet Routers",
+  href: "/mikrotik/categories/ethernet%20routers",
+  videoType: "youtube",
+  videoId: "N5e-DdFEQrI",
+},
+  {
+    title: "Switches",
+    href: "/mikrotik/categories/switches",
+    video: "/videos/switches.mp4",
+  },
+  {
+    title: "Wireless Systems",
+    href: "/mikrotik/categories/wireless%20system",
+    video: "/videos/wireless-systems.mp4",
+  },
+  {
+    title: "Wireless Home & Office",
+    href: "/mikrotik/categories/wireless%20home%20%26%20office",
+    video: "/videos/wireless-home-office.mp4",
+  },
 ];
 
