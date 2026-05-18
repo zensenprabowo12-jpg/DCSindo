@@ -7,7 +7,7 @@ export type MikrotikCategoryCard = {
 export const MIKROTIK_CATEGORY_CARDS_TOP: MikrotikCategoryCard[] = [
   {
     title: "Ethernet Routers",
-    imageSrc: "/images/placeholder-product.png",
+    imageSrc: "/images/batik/batik-mikrotik1.png",
     href: "/mikrotik/categories/ethernet%20routers",
   },
   {

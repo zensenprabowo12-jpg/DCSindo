@@ -11,13 +11,10 @@ import {
 |--------------------------------------------------------------------------
 | BACKGROUND PER CATEGORY
 |--------------------------------------------------------------------------
-| Tinggal ganti path gambar sesuai kebutuhan
-| Simpan gambar di public/images/category-bg/
-|--------------------------------------------------------------------------
 */
 
 const CATEGORY_BACKGROUNDS: Record<string, string> = {
-  "Ethernet Routers": "/images/category-bg/ethernet-routers.jpg",
+  "Ethernet Routers": "/images/batik/batik-mikrotik1.png",
   "Switches": "/images/category-bg/switches.jpg",
   "Wireless Systems": "/images/category-bg/wireless-systems.jpg",
   "Wireless Home & Office": "/images/category-bg/wireless-home-office.jpg",
@@ -36,21 +33,36 @@ export default function MikrotikCategoryProductPage() {
   return (
     <Layout>
       <div className="bg-background">
-        {/* Section 1: Categories */}
-        <section className="bg-secondary/20">
-          <div className="container mx-auto px-4 py-14 md:py-20">
+        {/* SECTION CATEGORY */}
+        <section className="relative overflow-hidden bg-black">
+          {/* BACKGROUND */}
+          <div className="absolute inset-0">
+            <img
+              src="/images/batik/batik-mikrotik1.png"
+              alt="Background"
+              className="w-full h-full object-cover opacity-10"
+            />
+          </div>
+
+          {/* OVERLAY */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90" />
+
+          {/* CONTENT */}
+          <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
+            {/* TITLE */}
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-3xl md:text-4xl font-black tracking-tight">
-                Our Product
+              <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white">
+                Our Product Categories
               </h1>
 
-              <p className="mt-3 text-sm md:text-base text-muted-foreground leading-relaxed">
-                Setiap category sekarang sudah support background sendiri-sendiri.
+              <p className="mt-5 text-sm md:text-base text-white/70 leading-relaxed">
+                Explore MikroTik networking solutions for enterprise,
+                wireless, routing, switching, and infrastructure deployment.
               </p>
             </div>
 
-            {/* Row 1 */}
-            <div className="mt-10 max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6">
+            {/* ROW 1 */}
+            <div className="mt-14 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
               {MIKROTIK_CATEGORY_CARDS_TOP.map((c) => {
                 const backgroundImage =
                   CATEGORY_BACKGROUNDS[c.title] ||
@@ -59,35 +71,61 @@ export default function MikrotikCategoryProductPage() {
                 const CardInner = (
                   <div
                     className={cn(
-                      "relative overflow-hidden rounded-2xl border border-border",
-                      "hover:-translate-y-1 hover:shadow-2xl transition-all duration-300",
-                      "min-h-[280px] flex flex-col justify-end",
+                      "group relative overflow-hidden rounded-3xl",
+                      "border border-white/10",
+                      "min-h-[380px]",
+                      "hover:-translate-y-2 hover:shadow-2xl",
+                      "transition-all duration-500",
                     )}
                   >
-                    {/* BACKGROUND IMAGE */}
+                    {/* BG IMAGE */}
                     <div
-                      className="absolute inset-0 bg-cover bg-center"
+                      className="absolute inset-0 bg-cover bg-center scale-100 group-hover:scale-110 transition-transform duration-700"
                       style={{
                         backgroundImage: `url(${backgroundImage})`,
                       }}
                     />
 
                     {/* DARK OVERLAY */}
-                    <div className="absolute inset-0 bg-black/45" />
+                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/45 transition-colors duration-500" />
 
                     {/* CONTENT */}
-                    <div className="relative z-10 p-5 text-white">
-                      <div className="w-16 h-16 rounded-xl overflow-hidden bg-white/10 backdrop-blur border border-white/20">
+                    <div className="relative z-10 flex flex-col justify-end h-full p-7">
+                      {/* ICON */}
+                      <div
+                        className={cn(
+                          "w-28 h-28",
+                          "rounded-2xl overflow-hidden",
+                          "bg-white/15 backdrop-blur-md",
+                          "border border-white/20",
+                          "shadow-2xl",
+                        )}
+                      >
                         <img
                           src={c.imageSrc}
                           alt={c.title}
-                          className="w-full h-full object-contain p-2"
+                          className={cn(
+                            "w-full h-full",
+                            "object-cover",
+                            "group-hover:scale-110",
+                            "transition-transform duration-500",
+                          )}
                           draggable={false}
                           loading="lazy"
                         />
                       </div>
 
-                      <p className="mt-4 text-sm md:text-base font-bold tracking-tight">
+                      {/* TITLE */}
+                      <p
+                        className={cn(
+                          "mt-6",
+                          "text-2xl md:text-3xl",
+                          "font-black tracking-tight",
+                          "text-white",
+                          "drop-shadow-2xl",
+                          "leading-tight",
+                        )}
+                      >
                         {c.title}
                       </p>
                     </div>
@@ -104,8 +142,8 @@ export default function MikrotikCategoryProductPage() {
               })}
             </div>
 
-            {/* Row 2 */}
-            <div className="mt-5 md:mt-6 max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 items-stretch">
+            {/* ROW 2 */}
+            <div className="mt-7 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 items-stretch">
               {MIKROTIK_CATEGORY_CARDS_BOTTOM.slice(0, 3).map((c) => {
                 const backgroundImage =
                   CATEGORY_BACKGROUNDS[c.title] ||
@@ -114,35 +152,61 @@ export default function MikrotikCategoryProductPage() {
                 const CardInner = (
                   <div
                     className={cn(
-                      "relative overflow-hidden rounded-2xl border border-border",
-                      "hover:-translate-y-1 hover:shadow-2xl transition-all duration-300",
-                      "min-h-[280px] flex flex-col justify-end",
+                      "group relative overflow-hidden rounded-3xl",
+                      "border border-white/10",
+                      "min-h-[380px]",
+                      "hover:-translate-y-2 hover:shadow-2xl",
+                      "transition-all duration-500",
                     )}
                   >
-                    {/* BACKGROUND IMAGE */}
+                    {/* BG IMAGE */}
                     <div
-                      className="absolute inset-0 bg-cover bg-center"
+                      className="absolute inset-0 bg-cover bg-center scale-100 group-hover:scale-110 transition-transform duration-700"
                       style={{
                         backgroundImage: `url(${backgroundImage})`,
                       }}
                     />
 
                     {/* OVERLAY */}
-                    <div className="absolute inset-0 bg-black/45" />
+                    <div className="absolute inset-0 bg-black/55 group-hover:bg-black/45 transition-colors duration-500" />
 
                     {/* CONTENT */}
-                    <div className="relative z-10 p-5 text-white">
-                      <div className="w-16 h-16 rounded-xl overflow-hidden bg-white/10 backdrop-blur border border-white/20">
+                    <div className="relative z-10 flex flex-col justify-end h-full p-7">
+                      {/* ICON */}
+                      <div
+                        className={cn(
+                          "w-28 h-28",
+                          "rounded-2xl overflow-hidden",
+                          "bg-white/15 backdrop-blur-md",
+                          "border border-white/20",
+                          "shadow-2xl",
+                        )}
+                      >
                         <img
                           src={c.imageSrc}
                           alt={c.title}
-                          className="w-full h-full object-contain p-2"
+                          className={cn(
+                            "w-full h-full",
+                            "object-cover",
+                            "group-hover:scale-110",
+                            "transition-transform duration-500",
+                          )}
                           draggable={false}
                           loading="lazy"
                         />
                       </div>
 
-                      <p className="mt-4 text-sm md:text-base font-bold tracking-tight">
+                      {/* TITLE */}
+                      <p
+                        className={cn(
+                          "mt-6",
+                          "text-2xl md:text-3xl",
+                          "font-black tracking-tight",
+                          "text-white",
+                          "drop-shadow-2xl",
+                          "leading-tight",
+                        )}
+                      >
                         {c.title}
                       </p>
                     </div>
@@ -158,24 +222,26 @@ export default function MikrotikCategoryProductPage() {
                 );
               })}
 
-              {/* MORE */}
+              {/* MORE CARD */}
               <div
                 className={cn(
-                  "rounded-2xl bg-background border border-border",
-                  "p-6 md:p-7",
+                  "rounded-3xl",
+                  "bg-white/10 backdrop-blur-xl",
+                  "border border-white/10",
+                  "p-8",
                   "flex flex-col items-center justify-center text-center",
                 )}
               >
-                <p className="text-sm font-black tracking-[0.28em] uppercase">
+                <p className="text-sm font-black tracking-[0.35em] uppercase text-white">
                   More
                 </p>
 
-                <div className="mt-6 text-xs md:text-sm text-muted-foreground leading-6 space-y-1">
+                <div className="mt-6 space-y-3">
                   {MIKROTIK_MORE_CATEGORIES.map((x) => (
                     <a
                       key={x.label}
                       href={x.href}
-                      className="block hover:text-primary transition-colors"
+                      className="block text-sm md:text-base text-white/75 hover:text-white transition-colors"
                     >
                       {x.label}
                     </a>
@@ -186,11 +252,11 @@ export default function MikrotikCategoryProductPage() {
           </div>
         </section>
 
-        {/* Section 2: Latest YouTube */}
+        {/* SECTION YOUTUBE */}
         <section className="bg-background">
-          <div className="container mx-auto px-4 py-14 md:py-20">
+          <div className="container mx-auto px-4 py-16 md:py-24">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-xl md:text-2xl font-black tracking-tight">
+              <h2 className="text-2xl md:text-3xl font-black tracking-tight">
                 {MIKROTIK_LATEST_VIDEO.title}
               </h2>
 
@@ -199,7 +265,7 @@ export default function MikrotikCategoryProductPage() {
               </p>
             </div>
 
-            <div className="mt-10 max-w-4xl mx-auto rounded-2xl overflow-hidden border border-border bg-secondary/20">
+            <div className="mt-10 max-w-5xl mx-auto rounded-3xl overflow-hidden border border-border shadow-2xl">
               <div className="relative w-full aspect-video bg-black">
                 <iframe
                   className="absolute inset-0 w-full h-full"
@@ -211,12 +277,12 @@ export default function MikrotikCategoryProductPage() {
               </div>
             </div>
 
-            <div className="mt-10 max-w-3xl mx-auto text-center">
-              <h3 className="text-lg md:text-xl font-black tracking-tight">
+            <div className="mt-12 max-w-3xl mx-auto text-center">
+              <h3 className="text-xl md:text-2xl font-black tracking-tight">
                 {MIKROTIK_LATEST_VIDEO.detailTitle}
               </h3>
 
-              <p className="mt-4 text-muted-foreground leading-relaxed whitespace-pre-wrap">
+              <p className="mt-5 text-muted-foreground leading-relaxed whitespace-pre-wrap">
                 {MIKROTIK_LATEST_VIDEO.detailBody}
               </p>
             </div>
