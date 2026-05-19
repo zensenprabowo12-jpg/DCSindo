@@ -9,7 +9,7 @@ export const CATEGORY_BACKGROUNDS: Record<string, string> = {
   "routerboards": "/images/batik/batik-mikrotik8.png",
   "enclosures": "/images/batik/batik-mikrotik9.png",
   "interfaces": "/images/batik/batik-mikrotik10.png",
-  "accessories": "/images/category-bg/accessories.jpg",
-  "antennas": "/images/category-bg/antennas.jpg",
-  "sfp/qsfp": "/images/category-bg/sfpqsfp.jpg",
+  "accessories": "/images/batik/batik-mikrotik11.png",
+  "antennas": "/images/batik/batik-mikrotik12.png",
+  "sfp/qsfp": "/images/batik/batik-mikrotik13.png",
 };
