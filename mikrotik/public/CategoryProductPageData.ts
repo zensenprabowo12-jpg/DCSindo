@@ -7,22 +7,22 @@ export type MikrotikCategoryCard = {
 export const MIKROTIK_CATEGORY_CARDS_TOP: MikrotikCategoryCard[] = [
   {
     title: "Ethernet Routers",
-    imageSrc: "/images/batik/batik-mikrotik1.png",
+    imageSrc: "/images/mikrotik/ethernet-router.png",
     href: "/mikrotik/categories/ethernet%20routers",
   },
   {
     title: "Switches",
-    imageSrc: "/images/placeholder-product.png",
+    imageSrc: "/images/mikrotik/switching.png",
     href: "/mikrotik/categories/switches",
   },
   {
     title: "Wireless Systems",
-    imageSrc: "/images/placeholder-product.png",
+    imageSrc: "/images/mikrotik/wireless-system.png",
     href: "/mikrotik/categories/wireless%20system",
   },
   {
     title: "Wireless Home & Office",
-    imageSrc: "/images/placeholder-product.png",
+    imageSrc: "/images/mikrotik/wireless-home-and-office.png",
     href: "/mikrotik/categories/wireless%20home%20%26%20office",
   },
 ];
@@ -30,17 +30,17 @@ export const MIKROTIK_CATEGORY_CARDS_TOP: MikrotikCategoryCard[] = [
 export const MIKROTIK_CATEGORY_CARDS_BOTTOM: MikrotikCategoryCard[] = [
   {
     title: "LTE / 5G",
-    imageSrc: "/images/placeholder-product.png",
+    imageSrc: "/images/mikrotik/lte-5g.png",
     href: "/mikrotik/categories/lte%20%2F%205g",
   },
   {
     title: "IoT Products",
-    imageSrc: "/images/placeholder-product.png",
+    imageSrc: "/images/mikrotik/iot.png",
     href: "/mikrotik/categories/iot%20products",
   },
   {
     title: "60GHz",
-    imageSrc: "/images/placeholder-product.png",
+    imageSrc: "/images/mikrotik/60-ghz.png",
     href: "/mikrotik/categories/60ghz",
   },
 ];
@@ -57,12 +57,11 @@ export const MIKROTIK_MORE_CATEGORIES: MikrotikMoreCategoryLink[] = [
 ];
 
 export const MIKROTIK_LATEST_VIDEO = {
-  title: "Judul video YouTube terbaru",
-  shortDescription:
-    "Deskripsi singkat video (dummy). Kamu bisa ganti judul, deskripsi, dan videoId di file ini.",
-  // Ambil dari link YouTube: https://www.youtube.com/watch?v=VIDEO_ID
-  videoId: "9HaU8NjH7bI",
-  detailTitle: "Penjelasan detail produk pada video",
+  title: "Video YouTube MikroTik terbaru",
+  // shortDescription:
+  //   "Deskripsi singkat video (dummy). Kamu bisa ganti judul, deskripsi, dan videoId di file ini.",
+  videoId: "bgaTjTeUlho",
+  detailTitle: "Build electronics projects with MikroTik!",
   detailBody:
-    "Tulis penjelasan detail mengenai product yang sedang dijelaskan dalam video ini. (Dummy text — silakan ganti sesuai kebutuhan.)",
+    "Sometimes you don't have to buy a single-board computer or a single-board MCU... You might be able to take reading from sensors and control relays straight from RouterOS!",
 };
