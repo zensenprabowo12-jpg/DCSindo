@@ -15,12 +15,12 @@ import {
 
 const CATEGORY_BACKGROUNDS: Record<string, string> = {
   "Ethernet Routers": "/images/batik/batik-mikrotik1.png",
-  "Switches": "/images/category-bg/switches.jpg",
-  "Wireless Systems": "/images/category-bg/wireless-systems.jpg",
-  "Wireless Home & Office": "/images/category-bg/wireless-home-office.jpg",
-  "LTE / 5G": "/images/category-bg/lte-5g.jpg",
-  "IoT Products": "/images/category-bg/iot-products.jpg",
-  "60GHz": "/images/category-bg/60ghz.jpg",
+  "Switches": "/images/batik/batik-mikrotik2.png",
+  "Wireless Systems": "/images/batik/batik-mikrotik3.png",
+  "Wireless Home & Office": "/images/batik/batik-mikrotik4.png",
+  "LTE / 5G": "/images/batik/batik-mikrotik5.png",
+  "IoT Products": "/images/batik/batik-mikrotik6.png",
+  "60GHz": "/images/batik/batik-mikrotik7.png",
   "Routerboards": "/images/category-bg/routerboards.jpg",
   "Enclosures": "/images/category-bg/enclosures.jpg",
   "Interfaces": "/images/category-bg/interfaces.jpg",
@@ -259,10 +259,6 @@ export default function MikrotikCategoryProductPage() {
               <h2 className="text-2xl md:text-3xl font-black tracking-tight">
                 {MIKROTIK_LATEST_VIDEO.title}
               </h2>
-
-              <p className="mt-4 text-muted-foreground leading-relaxed">
-                {MIKROTIK_LATEST_VIDEO.shortDescription}
-              </p>
             </div>
 
             <div className="mt-10 max-w-5xl mx-auto rounded-3xl overflow-hidden border border-border shadow-2xl">
