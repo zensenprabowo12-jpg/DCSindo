@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
 
-// ─── HOOK DARK MODE ──────────────────────────────────────────
 function useDarkMode(): boolean {
   const [isDark, setIsDark] = useState<boolean>(false);
   useEffect(() => {
@@ -11,13 +10,40 @@ function useDarkMode(): boolean {
     const observer = new MutationObserver(() => {
       setIsDark(document.documentElement.classList.contains("dark"));
     });
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
     return () => observer.disconnect();
   }, []);
   return isDark;
+}
+
+// ─── ANIMATED PANEL ──────────────────────────────────────────
+function AnimatedPanel({ isOpen, children }: { isOpen: boolean; children: React.ReactNode }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState<number>(0);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (isOpen) {
+      setHeight(el.scrollHeight);
+    } else {
+      setHeight(0);
+    }
+  }, [isOpen]);
+
+  return (
+    <div
+      style={{
+        height: height,
+        overflow: "hidden",
+        transition: "height 0.35s cubic-bezier(0.4, 0, 0.2, 1)",
+      }}
+    >
+      <div ref={ref}>
+        {children}
+      </div>
+    </div>
+  );
 }
 
 // ─── KOMPONEN UTAMA ───────────────────────────────────────────
@@ -104,18 +130,12 @@ export function ProductTechnicalAccordion({
                     ? "1px solid rgba(255,107,53,0.28)"
                     : "1px solid rgba(255,107,53,0.14)",
                   background: isOpen
-                    ? isDark
-                      ? "rgba(255,107,53,0.06)"
-                      : "rgba(255,107,53,0.04)"
-                    : isDark
-                    ? "rgba(10,10,15,0.40)"
-                    : "rgba(28,20,14,0.32)",
+                    ? isDark ? "rgba(255,107,53,0.06)" : "rgba(255,107,53,0.04)"
+                    : isDark ? "rgba(10,10,15,0.40)" : "rgba(28,20,14,0.32)",
                   backdropFilter: "blur(12px)",
                   overflow: "hidden",
-                  transition: "all 0.3s ease",
-                  boxShadow: isOpen
-                    ? "0 4px 20px rgba(255,107,53,0.08)"
-                    : "none",
+                  transition: "border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease",
+                  boxShadow: isOpen ? "0 4px 20px rgba(255,107,53,0.08)" : "none",
                 }}
               >
                 {/* Trigger */}
@@ -138,13 +158,10 @@ export function ProductTechnicalAccordion({
                     gap: 12,
                   }}
                 >
-                  {/* Dot + title */}
                   <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                     <span
                       style={{
-                        width: 7,
-                        height: 7,
-                        borderRadius: "50%",
+                        width: 7, height: 7, borderRadius: "50%",
                         background: isOpen ? "#FF6B35" : "rgba(255,107,53,0.35)",
                         flexShrink: 0,
                         boxShadow: isOpen ? "0 0 8px rgba(255,107,53,0.7)" : "none",
@@ -157,9 +174,7 @@ export function ProductTechnicalAccordion({
                         fontWeight: isOpen ? 700 : 500,
                         color: isOpen
                           ? "#FF6B35"
-                          : isDark
-                          ? "rgba(232,228,220,0.85)"
-                          : "rgba(240,232,223,0.90)",
+                          : isDark ? "rgba(232,228,220,0.85)" : "rgba(240,232,223,0.90)",
                         transition: "all 0.3s ease",
                         letterSpacing: "-0.01em",
                       }}
@@ -168,27 +183,23 @@ export function ProductTechnicalAccordion({
                     </span>
                   </div>
 
-                  {/* Chevron */}
                   <ChevronDown
                     style={{
-                      width: 16,
-                      height: 16,
-                      flexShrink: 0,
+                      width: 16, height: 16, flexShrink: 0,
                       color: isOpen ? "#FF6B35" : "rgba(255,107,53,0.45)",
                       transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
-                      transition: "transform 0.3s ease, color 0.3s ease",
+                      transition: "transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease",
                     }}
                     aria-hidden
                   />
                 </button>
 
-                {/* Content */}
-                {isOpen && (
+                {/* Animated content */}
+                <AnimatedPanel isOpen={isOpen}>
                   <div
                     style={{
                       padding: "0 18px 16px 35px",
                       borderTop: "1px solid rgba(255,107,53,0.10)",
-                      marginTop: 0,
                     }}
                   >
                     <p
@@ -201,11 +212,11 @@ export function ProductTechnicalAccordion({
                         whiteSpace: "pre-line",
                         margin: "12px 0 0",
                       }}
-                    >
+                     >
                       {item.content}
-                    </p>
+                      </p>
                   </div>
-                )}
+                </AnimatedPanel>
               </div>
             );
           })}

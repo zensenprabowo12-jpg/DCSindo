@@ -40,12 +40,12 @@ export default function MikrotikCategoryProductPage() {
             <img
               src="/images/batik/batik-mikrotik1.png"
               alt="Background"
-              className="w-full h-full object-cover opacity-10"
+              className="w-full h-full object-cover opacity-20"
             />
           </div>
 
           {/* OVERLAY */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/65 to-black/85" />
 
           {/* CONTENT */}
           <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
@@ -80,14 +80,17 @@ export default function MikrotikCategoryProductPage() {
                   >
                     {/* BG IMAGE */}
                     <div
-                      className="absolute inset-0 bg-cover bg-center scale-100 group-hover:scale-110 transition-transform duration-700"
+                      className="absolute inset-0 bg-cover bg-center brightness-[0.9] contrast-125 saturate-110 scale-100 group-hover:scale-110 transition-all duration-700"
                       style={{
                         backgroundImage: `url(${backgroundImage})`,
                       }}
                     />
 
-                    {/* DARK OVERLAY */}
-                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/45 transition-colors duration-500" />
+                    {/* WHITE TINT */}
+                    <div className="absolute inset-0 bg-white/[0.03]" />
+
+                    {/* OVERLAY */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/10 group-hover:from-black/60 transition-all duration-500" />
 
                     {/* CONTENT */}
                     <div className="relative z-10 flex flex-col justify-end h-full p-7">
@@ -161,14 +164,17 @@ export default function MikrotikCategoryProductPage() {
                   >
                     {/* BG IMAGE */}
                     <div
-                      className="absolute inset-0 bg-cover bg-center scale-100 group-hover:scale-110 transition-transform duration-700"
+                      className="absolute inset-0 bg-cover bg-center brightness-[0.9] contrast-125 saturate-110 scale-100 group-hover:scale-110 transition-all duration-700"
                       style={{
                         backgroundImage: `url(${backgroundImage})`,
                       }}
                     />
 
+                    {/* WHITE TINT */}
+                    <div className="absolute inset-0 bg-white/[0.03]" />
+
                     {/* OVERLAY */}
-                    <div className="absolute inset-0 bg-black/55 group-hover:bg-black/45 transition-colors duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/10 group-hover:from-black/65 transition-all duration-500" />
 
                     {/* CONTENT */}
                     <div className="relative z-10 flex flex-col justify-end h-full p-7">

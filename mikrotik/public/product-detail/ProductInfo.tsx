@@ -270,7 +270,7 @@ export function ProductInfo({
           gap: 12,
         }}
       >
-        <SolidLinkButton href="/support/mikrotik">
+        <SolidLinkButton href="/support">
           Contact Us
         </SolidLinkButton>
         <GhostButton isDark={isDark} onClick={onScrollToSpecs}>

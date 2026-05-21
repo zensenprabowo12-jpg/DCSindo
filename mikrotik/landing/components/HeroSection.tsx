@@ -19,11 +19,31 @@ function useDarkMode(): boolean {
 }
 
 const milestones = [
-  { year: "1996", title: "Lahirnya MikroTik", desc: "Didirikan di Riga, Latvia oleh John Trully & Arnis Riekstins" },
-  { year: "1997", title: "RouterOS Pertama", desc: "Sistem operasi berbasis Linux yang merevolusi dunia networking" },
-  { year: "2002", title: "Era RouterBOARD", desc: "Hardware sendiri yang terjangkau dan bertenaga tinggi" },
-  { year: "2010", title: "Ekspansi Global", desc: "Distribusi ke 150+ negara di seluruh dunia" },
-  { year: "Kini", title: "Inovasi Tanpa Henti", desc: "CCR, CRS, dan solusi cloud networking terkini" },
+  {
+    year: "1996",
+    title: "The Birth of MikroTik",
+    desc: "Founded in Riga, Latvia by John Trully & Arnis Riekstins",
+  },
+  {
+    year: "1997",
+    title: "First RouterOS Release",
+    desc: "A Linux-based operating system that revolutionized the networking industry",
+  },
+  {
+    year: "2002",
+    title: "The RouterBOARD Era",
+    desc: "Affordable and high-performance networking hardware introduced",
+  },
+  {
+    year: "2010",
+    title: "Global Expansion",
+    desc: "Distribution reached more than 150 countries worldwide",
+  },
+  {
+    year: "Today",
+    title: "Continuous Innovation",
+    desc: "CCR, CRS, and the latest cloud networking solutions",
+  },
 ];
 
 const phrases = [
@@ -253,7 +273,7 @@ export default function HeroSection() {
             {[
               { label: "Product Highlight", id: "mikrotik-home-a" },
               { label: "Product Category",  id: "mikrotik-home-b" },
-              { label: "Why Choose Us",     id: "mikrotik-home-c" },
+              { label: "MikroTik History",     id: "mikrotik-home-c" },
             ].map((btn) => (
               <HoverButton key={btn.id} label={btn.label} isDark={isDark} onClick={() => scrollToId(btn.id)} />
             ))}

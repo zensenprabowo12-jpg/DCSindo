@@ -41,7 +41,7 @@ export const MIKROTIK_CATEGORY_CARDS_BOTTOM: MikrotikCategoryCard[] = [
   {
     title: "60GHz",
     imageSrc: "/images/mikrotik/60-ghz.png",
-    href: "/mikrotik/categories/60ghz",
+    href: "/mikrotik/categories/60%20ghz%20products",
   },
 ];
 

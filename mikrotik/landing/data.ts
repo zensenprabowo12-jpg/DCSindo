@@ -5,6 +5,7 @@ export type MikrotikLandingProduct = {
   bullets: string[];
   description: string;
   imageSrc: string;
+  videoId?: string; // ← tambah ini
   productDetailHref: string;
   contactHref: string;
 };
@@ -22,6 +23,7 @@ export const LANDING_PRODUCTS: MikrotikLandingProduct[] = [
     description:
       "Time to upgrade your RB2011 setups! L009 offers more features & better performance for the same low price! This product line is 2-4 times faster than RB2011, it has a modern dual-core ARM CPU with container support, an innovative enclosure that allows mounting up to four routers in a single 1U space, more RAM, PoE, and 2.5G SFP support.",
     imageSrc: "/images/mikrotik/3.l009uigs-rm.png",
+        videoId: "rIxkkNxsEhs",
     productDetailHref: "/mikrotik/shop/8",
     contactHref: "/support",
   },
@@ -37,7 +39,8 @@ export const LANDING_PRODUCTS: MikrotikLandingProduct[] = [
     ],
     description:
       "A compact 1U 400G switch built for AI clusters, storage fabrics, and high-speed aggregation, featuring four 400G QSFP56-DD ports, dual 10 Gigabit Ethernet, and RouterOS v7. With hot-swap power supplies, robust cooling, and low power consumption, it delivers ultra-high bandwidth, wire-speed performance, and future-proof scalability at an accessible price point.",
-    imageSrc: "/images/mikrotik/0.utama.png",
+      imageSrc: "/images/mikrotik/0.utama.png",
+      videoId: "uzRgwAdhvzE",
     productDetailHref: "/mikrotik/shop/25",
     contactHref: "/support",
   },
@@ -53,6 +56,7 @@ export const LANDING_PRODUCTS: MikrotikLandingProduct[] = [
     description:
       "The new MikroTik flagship with the power of a whole fleet. Unleash the power of 100 Gigabit networking with L3 Hardware Offloading! This router can be a handy drop-in upgrade for existing CCR1072 setups.",
     imageSrc: "/images/mikrotik/1.ccr2216-1g-12xs-2xq.png",
+    videoId: "7_uLxZYYEpQ",
     productDetailHref: "/mikrotik/shop/10",
     contactHref: "/support",
   },
