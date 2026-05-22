@@ -1,6 +1,5 @@
-// In-memory gate:
-// - Reset otomatis saat refresh (karena memory hilang)
-// - Tetap true saat pindah halaman SPA (Dashboard -> New/Edit)
+// Shared in-memory auth gate untuk semua brand admin
+// Reset otomatis saat refresh, tetap true saat pindah halaman SPA
 let authedThisSession = false;
 
 export function markAdminAuthedSession() {
@@ -14,4 +13,3 @@ export function clearAdminAuthedSession() {
 export function isAdminAuthedSession() {
   return authedThisSession;
 }
-

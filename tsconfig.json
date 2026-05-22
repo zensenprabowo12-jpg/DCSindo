@@ -1,6 +1,5 @@
 {
-  "include": ["client/src/**/*", "mikrotik/**/*", "shared/**/*", "server/**/*"],
-  "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
+  "include": ["client/src/**/*", "server/**/*"],
   "compilerOptions": {
     "incremental": true,
     "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
@@ -18,8 +17,9 @@
     "types": ["node", "vite/client"],
     "paths": {
       "@/*": ["./client/src/*"],
-      "@mikrotik/*": ["./mikrotik/*"],
-      "@shared/*": ["./shared/*"]
+      "@mikrotik/*": ["./client/src/mikrotik/*"],
+      "@ubiquiti/*": ["./client/src/ubiquiti/*"],
+      "@admin/*": ["./client/src/admin/*"]
     }
   }
 }

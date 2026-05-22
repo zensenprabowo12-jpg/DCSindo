@@ -12,9 +12,6 @@ import {
   formCreateMikrotik,
   formDeleteMikrotik,
   formUpdateMikrotik,
-  pageAdminEdit,
-  pageAdminList,
-  pageAdminNew,
 } from "../controllers/mikrotikPageController";
 import { ensureMikrotikUploadDir, uploadMikrotikImage } from "../middleware/uploadMikrotik";
 
@@ -62,10 +59,6 @@ export function registerMikrotikRoutes(app: Express): void {
     }
     next();
   });
-
-  app.get("/admin/mikrotik", pageAdminList);
-  app.get("/admin/mikrotik/new", pageAdminNew);
-  app.get("/admin/mikrotik/:id/edit", pageAdminEdit);
 
   app.post(
     "/admin/mikrotik",

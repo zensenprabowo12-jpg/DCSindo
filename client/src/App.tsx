@@ -4,6 +4,8 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
+import UbiquitiDcsDashboard from "@ubiquiti/admin/Dashboard";
+import UbiquitiDcsProductForm from "@ubiquiti/admin/ProductForm";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/homepage/home-utama";
 import HomeUbiquiti from "@/pages/homepage/home-ubiquiti";
@@ -14,12 +16,14 @@ import MikrotikDcsStoreCatalog from "@mikrotik/public/StoreCatalog";
 import MikrotikDcsStoreProductDetail from "@mikrotik/public/StoreProductDetail";
 import MikrotikCategoryProductPage from "@mikrotik/public/CategoryProductPage";
 import MikrotikCategoryCatalogPage from "@mikrotik/public/CategoryCatalogPage";
-import MikrotikDcsAdminLogin from "@mikrotik/admin/Login";
 import MikrotikDcsDashboard from "@mikrotik/admin/Dashboard";
 import MikrotikDcsProductForm from "@mikrotik/admin/ProductForm";
 import Support from "@/pages/support";
 import UbiquitiSupport from "@/pages/support/Ubiquiti";
 import MikrotikSupport from "@/pages/support/Mikrotik";
+import AdminLogin from "@admin/Login";
+import AdminDashboard from "@admin/Dashboard";
+
 import VsolSupport from "@/pages/support/Vsol";
 import Cart from "@/pages/cart";
 import ComingSoon from "@/pages/coming-soon";
@@ -56,10 +60,14 @@ function RouterWouter() {
       <Route path="/mikrotik/categories" component={MikrotikCategoryProductPage} />
       <Route path="/mikrotik" component={MikrotikLandingPage} />
 
-      <Route path="/mikrotik-dcs/admin/new" component={MikrotikDcsProductForm} />
-      <Route path="/mikrotik-dcs/admin/:id/edit" component={MikrotikDcsProductForm} />
-      <Route path="/mikrotik-dcs/admin/login" component={MikrotikDcsAdminLogin} />
-      <Route path="/mikrotik-dcs/admin" component={MikrotikDcsDashboard} />
+      <Route path="/admin/login" component={AdminLogin} />
+      <Route path="/admin" component={AdminDashboard} />
+      <Route path="/admin/mikrotik/new" component={MikrotikDcsProductForm} />
+      <Route path="/admin/mikrotik/:id/edit" component={MikrotikDcsProductForm} />
+      <Route path="/admin/mikrotik" component={MikrotikDcsDashboard} />
+      <Route path="/admin/ubiquiti/new" component={UbiquitiDcsProductForm} />
+      <Route path="/admin/ubiquiti/:id/edit" component={UbiquitiDcsProductForm} />
+      <Route path="/admin/ubiquiti" component={UbiquitiDcsDashboard} />
 
       <Route path="/support" component={Support} />
       <Route path="/support/ubiquiti" component={UbiquitiSupport} />

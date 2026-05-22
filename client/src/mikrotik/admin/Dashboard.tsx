@@ -3,18 +3,14 @@ import { Link } from "wouter";
 import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
+  Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
 } from "@/components/ui/table";
 import { MIKROTIK_DCS_CATEGORIES } from "../categories";
-import { apiAdminProducts, apiDeleteProduct, apiLogout, apiReorderProducts } from "../api";
+import { apiAdminProducts, apiDeleteProduct, apiReorderProducts } from "../api";
 import type { MikrotikDcsProduct } from "../types";
 import MikrotikDcsProtectedRoute from "./ProtectedRoute";
-import { GripVertical, Shield } from "lucide-react";
+import AdminNavBar from "../../admin/NavBar";
+import { GripVertical } from "lucide-react";
 
 function DashboardInner() {
   const [list, setList] = useState<MikrotikDcsProduct[]>([]);
@@ -28,20 +24,12 @@ function DashboardInner() {
 
   const load = useCallback(async () => {
     setLoading(true);
-    const r = await apiAdminProducts({
-      category: cat || undefined,
-      sort,
-    });
-    if (r.ok) {
-      setList(r.data);
-      setDirtyOrder(false);
-    }
+    const r = await apiAdminProducts({ category: cat || undefined, sort });
+    if (r.ok) { setList(r.data); setDirtyOrder(false); }
     setLoading(false);
   }, [cat, sort]);
 
-  useEffect(() => {
-    void load();
-  }, [load]);
+  useEffect(() => { void load(); }, [load]);
 
   async function onDelete(id: number) {
     if (!confirm("Hapus produk ini?")) return;
@@ -50,11 +38,6 @@ function DashboardInner() {
     setDeleting(null);
     if (r.ok) void load();
     else alert(r.message);
-  }
-
-  async function onLogout() {
-    await apiLogout();
-    window.location.href = "/mikrotik-dcs/admin/login";
   }
 
   function moveItem(fromIndex: number, toIndex: number) {
@@ -69,52 +52,29 @@ function DashboardInner() {
   }
 
   async function onSaveOrder() {
-    if (!cat) {
-      alert("Pilih kategori dulu untuk mengatur urutan.");
-      return;
-    }
+    if (!cat) { alert("Pilih kategori dulu untuk mengatur urutan."); return; }
     setSavingOrder(true);
-    const orderedIds = list.map((x) => x.id);
-    const r = await apiReorderProducts(cat, orderedIds);
+    const r = await apiReorderProducts(cat, list.map((x) => x.id));
     setSavingOrder(false);
-    if (!r.ok) {
-      alert(r.message);
-      return;
-    }
+    if (!r.ok) { alert(r.message); return; }
     setDirtyOrder(false);
-    // reload to make sure DB order matches
     void load();
   }
 
   return (
     <Layout>
-      <div className="container mx-auto px-4 py-10">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+      <AdminNavBar />
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           <div>
-            <h1 className="text-2xl md:text-3xl font-black tracking-tight flex items-center gap-2">
-              <Shield className="w-7 h-7" />
-              Dashboard Produk
-            </h1>
-            <p className="text-muted-foreground text-sm mt-1">
-              Kelola katalog MikroTik
-            </p>
+            <h1 className="text-xl font-black tracking-tight">Produk MikroTik</h1>
+            <p className="text-muted-foreground text-sm mt-0.5">{list.length} produk</p>
           </div>
           <div className="flex flex-wrap gap-2">
-            <Button variant="outline" asChild>
-              <a href="/">Kembali ke website</a>
-            </Button>
-            <Button variant="outline" onClick={() => void onLogout()}>
-              Logout
-            </Button>
             <Button asChild>
-              <Link href="/mikrotik-dcs/admin/new">Tambah produk</Link>
+              <Link href="/admin/mikrotik/new">+ Tambah produk</Link>
             </Button>
-            <Button
-              variant="secondary"
-              disabled={!dirtyOrder || savingOrder}
-              onClick={() => void onSaveOrder()}
-              title={!cat ? "Pilih kategori dulu" : undefined}
-            >
+            <Button variant="secondary" disabled={!dirtyOrder || savingOrder} onClick={() => void onSaveOrder()}>
               {savingOrder ? "Menyimpan…" : "Simpan urutan"}
             </Button>
           </div>
@@ -123,36 +83,24 @@ function DashboardInner() {
         <div className="flex flex-col sm:flex-row gap-4 mb-6">
           <div className="space-y-1">
             <label className="text-xs font-medium text-muted-foreground">Kategori</label>
-            <select
-              className="h-10 w-full sm:w-64 rounded-md border border-border bg-background px-3 text-sm"
-              value={cat}
-              onChange={(e) => setCat(e.target.value)}
-            >
+            <select className="h-10 w-full sm:w-56 rounded-md border border-border bg-background px-3 text-sm" value={cat} onChange={(e) => setCat(e.target.value)}>
               <option value="">Semua kategori</option>
-              {MIKROTIK_DCS_CATEGORIES.map((c) => (
-                <option key={c} value={c}>
-                  {c}
-                </option>
-              ))}
+              {MIKROTIK_DCS_CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}
             </select>
           </div>
           <div className="space-y-1">
             <label className="text-xs font-medium text-muted-foreground">Urutkan</label>
-            <select
-              className="h-10 w-full sm:w-64 rounded-md border border-border bg-background px-3 text-sm"
-              value={sort}
-              onChange={(e) => setSort(e.target.value as "custom" | "latest" | "oldest")}
-            >
-              <option value="custom">Urutan Dashboard (drag)</option>
-              <option value="latest">Terbaru ditambah</option>
+            <select className="h-10 w-full sm:w-56 rounded-md border border-border bg-background px-3 text-sm" value={sort} onChange={(e) => setSort(e.target.value as "custom" | "latest" | "oldest")}>
+              <option value="custom">Urutan custom (drag)</option>
+              <option value="latest">Terbaru</option>
               <option value="oldest">Terlama</option>
             </select>
           </div>
         </div>
 
         {sort === "custom" && !cat && (
-          <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 text-amber-900 dark:bg-amber-950/30 dark:text-amber-200 dark:border-amber-900 px-4 py-3 text-sm">
-            Untuk drag &amp; drop, silakan pilih <span className="font-semibold">1 kategori</span> dulu.
+          <div className="mb-4 rounded-xl border border-amber-200 bg-amber-50 text-amber-900 dark:bg-amber-950/30 dark:text-amber-200 dark:border-amber-900 px-4 py-3 text-sm">
+            Pilih <span className="font-semibold">1 kategori</span> dulu untuk drag & drop.
           </div>
         )}
 
@@ -180,27 +128,16 @@ function DashboardInner() {
                     draggable={sort === "custom" && Boolean(cat)}
                     onDragStart={() => setDragId(p.id)}
                     onDragEnd={() => setDragId(null)}
-                    onDragOver={(e) => {
-                      if (sort !== "custom" || !cat) return;
-                      e.preventDefault();
-                    }}
+                    onDragOver={(e) => { if (sort !== "custom" || !cat) return; e.preventDefault(); }}
                     onDrop={() => {
-                      if (sort !== "custom" || !cat) return;
-                      if (dragId == null) return;
+                      if (sort !== "custom" || !cat || dragId == null) return;
                       const fromIndex = list.findIndex((x) => x.id === dragId);
-                      const toIndex = idx;
-                      if (fromIndex < 0 || fromIndex === toIndex) return;
-                      moveItem(fromIndex, toIndex);
+                      if (fromIndex < 0 || fromIndex === idx) return;
+                      moveItem(fromIndex, idx);
                     }}
-                    className={
-                      sort === "custom" && cat
-                        ? "cursor-move"
-                        : undefined
-                    }
+                    className={sort === "custom" && cat ? "cursor-move" : undefined}
                   >
-                    <TableCell className="text-muted-foreground">
-                      <GripVertical className="w-4 h-4 opacity-60" />
-                    </TableCell>
+                    <TableCell className="text-muted-foreground"><GripVertical className="w-4 h-4 opacity-60" /></TableCell>
                     <TableCell className="font-mono text-xs">{p.id}</TableCell>
                     <TableCell className="font-medium">{p.nama_produk}</TableCell>
                     <TableCell className="text-muted-foreground text-sm">{p.sku}</TableCell>
@@ -208,14 +145,9 @@ function DashboardInner() {
                     <TableCell>
                       <div className="flex gap-2">
                         <Button size="sm" variant="secondary" asChild>
-                          <Link href={`/mikrotik-dcs/admin/${p.id}/edit`}>Edit</Link>
+                          <Link href={`/admin/mikrotik/${p.id}/edit`}>Edit</Link>
                         </Button>
-                        <Button
-                          size="sm"
-                          variant="destructive"
-                          disabled={deleting === p.id}
-                          onClick={() => void onDelete(p.id)}
-                        >
+                        <Button size="sm" variant="destructive" disabled={deleting === p.id} onClick={() => void onDelete(p.id)}>
                           {deleting === p.id ? "…" : "Hapus"}
                         </Button>
                       </div>

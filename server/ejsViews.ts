@@ -5,7 +5,7 @@ import path from "path";
 export function registerEjsViewPaths(app: Express): void {
   app.set("views", [
     path.join(process.cwd(), "views"),
-    path.join(process.cwd(), "mikrotik", "views"),
+    path.join(process.cwd(), "client", "src", "mikrotik", "views"),
   ]);
   app.set("view engine", "ejs");
 }

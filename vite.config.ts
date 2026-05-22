@@ -26,8 +26,9 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@mikrotik": path.resolve(import.meta.dirname, "mikrotik"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
+      "@mikrotik": path.resolve(import.meta.dirname, "client", "src", "mikrotik"),
+      "@ubiquiti": path.resolve(import.meta.dirname, "client", "src", "ubiquiti"),
+      "@admin": path.resolve(import.meta.dirname, "client", "src", "admin"),
       "@assets": path.resolve(import.meta.dirname, "attached_assets"),
     },
   },

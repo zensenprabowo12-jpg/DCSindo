@@ -285,14 +285,14 @@ function ProductFormBody({ id }: { id?: string }) {
       const n = Number.parseInt(id, 10);
       const r = await apiUpdateProduct(n, form);
       if (r.ok) {
-        setLocation("/mikrotik-dcs/admin");
+        setLocation("/admin/mikrotik");
         return;
       }
       setErr(r.message);
     } else {
       const r = await apiCreateProduct(form);
       if (r.ok) {
-        setLocation("/mikrotik-dcs/admin");
+        setLocation("/admin/mikrotik");
         return;
       }
       setErr(r.message);
@@ -539,7 +539,7 @@ function ProductFormBody({ id }: { id?: string }) {
           </div>
           <div className="flex gap-3">
             <Button type="submit">Simpan</Button>
-            <Button type="button" variant="outline" onClick={() => setLocation("/mikrotik-dcs/admin")}>
+            <Button type="button" variant="outline" onClick={() => setLocation("/admin/mikrotik")}>
               Batal
             </Button>
             <Button type="button" variant="ghost" asChild>
@@ -553,8 +553,8 @@ function ProductFormBody({ id }: { id?: string }) {
 }
 
 export default function ProductForm() {
-  const [matchNew] = useRoute("/mikrotik-dcs/admin/new");
-  const [matchEdit, params] = useRoute("/mikrotik-dcs/admin/:id/edit");
+  const [matchNew] = useRoute("/admin/mikrotik/new");
+  const [matchEdit, params] = useRoute("/admin/mikrotik/:id/edit");
   if (matchNew) {
     return (
       <MikrotikDcsProtectedRoute>

@@ -298,7 +298,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* RIGHT SIDE */}
           <div className="flex items-center gap-2">
-            <Link href="/mikrotik-dcs/admin/login" title="Admin katalog">
+            <Link href="/admin/login" title="Admin katalog">
               <a
                 className="inline-flex h-10 w-10 items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-colors"
                 aria-label="Admin katalog"

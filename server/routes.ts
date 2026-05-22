@@ -4,6 +4,7 @@ import { registerEjsViewPaths } from "./ejsViews";
 import { registerCatalogMultiBrandRoutes } from "./routes/catalogMultiBrandRoutes";
 import { registerMikrotikDcsRoutes } from "./routes/mikrotikDcsRoutes";
 import { registerMikrotikRoutes } from "./routes/mikrotikRoutes";
+import { registerUbiquitiDcsRoutes } from "./routes/ubiquitiDcsRoutes";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -14,6 +15,7 @@ export async function registerRoutes(
   registerCatalogMultiBrandRoutes(app);
   registerMikrotikRoutes(app);
   registerMikrotikDcsRoutes(app);
+  registerUbiquitiDcsRoutes(app);
 
   return httpServer;
 }
