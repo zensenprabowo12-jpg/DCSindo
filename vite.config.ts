@@ -29,6 +29,7 @@ export default defineConfig({
       "@mikrotik": path.resolve(import.meta.dirname, "client", "src", "mikrotik"),
       "@ubiquiti": path.resolve(import.meta.dirname, "client", "src", "ubiquiti"),
       "@admin": path.resolve(import.meta.dirname, "client", "src", "admin"),
+      "@vsol": path.resolve(import.meta.dirname, "client", "src", "vsol"),
       "@assets": path.resolve(import.meta.dirname, "attached_assets"),
     },
   },

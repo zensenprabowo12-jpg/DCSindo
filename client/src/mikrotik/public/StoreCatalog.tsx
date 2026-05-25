@@ -50,7 +50,7 @@ export default function MikrotikDcsStoreCatalog() {
                 value={cat}
                 onChange={(e) => setCat(e.target.value)}
               >
-                <option value="">Semua</option>
+                <option value="">All</option>
                 {MIKROTIK_DCS_CATEGORIES.map((c) => (
                   <option key={c} value={c}>
                     {c}
@@ -59,7 +59,7 @@ export default function MikrotikDcsStoreCatalog() {
               </select>
             </div>
             <div className="space-y-1">
-              <label className="text-xs font-medium text-muted-foreground">Urutkan</label>
+              <label className="text-xs font-medium text-muted-foreground">Sort By</label>
               <select
                 className={cn(
                   "h-10 w-full sm:w-64 rounded-full border border-border bg-background px-4 text-sm",

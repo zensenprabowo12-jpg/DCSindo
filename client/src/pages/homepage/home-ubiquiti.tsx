@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, FlaskConical, Award } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 
 const FADE_UP = {
@@ -54,6 +54,39 @@ function getYouTubeVideoId(input: string) {
   }
 }
 
+const UBIQUITI_TIMELINE = [
+  {
+    year: "2003",
+    title: "Founded in Silicon Valley",
+    desc: "Robert Pera founded Ubiquiti Networks in San Jose, California, with the goal of bringing enterprise-grade networking to underserved markets at a fraction of the cost.",
+  },
+  {
+    year: "2006",
+    title: "First AirMax Launch",
+    desc: "Ubiquiti released AirMax, a proprietary TDMA protocol built for long-distance point-to-point wireless links — revolutionizing rural internet access.",
+  },
+  {
+    year: "2011",
+    title: "IPO on NASDAQ",
+    desc: "Ubiquiti went public under the ticker UBNT, raising capital to accelerate global expansion of its UniFi and EdgeMax product lines.",
+  },
+  {
+    year: "2014",
+    title: "UniFi Becomes Dominant",
+    desc: "The UniFi ecosystem hit 1 million devices deployed, establishing Ubiquiti as the go-to choice for businesses, hotels, and ISPs worldwide.",
+  },
+  {
+    year: "2019",
+    title: "UniFi Protect & Access",
+    desc: "Ubiquiti launched security camera management (UniFi Protect) and physical access control (UniFi Access), expanding beyond traditional networking.",
+  },
+  {
+    year: "Today",
+    title: "DCS — Official Indonesia Partner",
+    desc: "DCS serves as the official Ubiquiti distributor in Indonesia, providing full product access, technical support, and certified training programs.",
+  },
+];
+
 export default function Home() {
   // Paste a full YouTube URL (watch/shorts/youtu.be) or just the ID here.
   const heroProductVideoInput = "https://youtu.be/hZb-lrs8Bv8?si=B4zu58Q-dUDKUggM";
@@ -61,6 +94,8 @@ export default function Home() {
 
   const newReleaseRef = useRef<HTMLElement | null>(null);
   const newReleaseInView = useInView(newReleaseRef, { once: true, amount: 0.12 });
+  const historyRef = useRef<HTMLElement | null>(null);
+  const historyInView = useInView(historyRef, { once: true, amount: 0.1 });
   const [videoStripReady, setVideoStripReady] = useState(false);
 
   useEffect(() => {
@@ -106,7 +141,7 @@ export default function Home() {
           <p className="max-w-2xl text-base mb-5 md:text-[20px] text-gray-200 leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
             Best-in-class IT products unified through an intuitive software interface, powered by scalable, license-free cloud management.
           </p>
-          <Link href="/collections/cloud-gateways">
+          <Link href="/ubiquiti/shop?category=Cloud+Gateways">
             <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
               Explore Products!
             </Button>
@@ -121,17 +156,17 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-[16px] md:text-[60px] font-bold tracking-tight mb-2">Industry Leading Hardware</h2>
             <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">
-              Didesain secara presisi untuk performa tinggi dan keandalan jangka panjang.
+              Precision-engineered for high performance and long-term reliability.
             </p>
             <p className="text-muted-foreground text-lg md:text-[20px] max-w-2xl mx-auto">
-              Didukung EdgeAI yang berkembang pesat di bidang networking dan keamanan fisik.
+              Powered by rapidly evolving EdgeAI in networking and physical security.
             </p>
           </div>
 
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[900px]">
             {/* WiFi Systems - Large Main Card */}
-            <Link href="/collections/wifi" className="md:col-span-8 md:row-span-2">
+            <Link href="/ubiquiti/shop?category=WiFi" className="md:col-span-8 md:row-span-2">
               <motion.a
                 whileHover={{ scale: 0.99 }}
                 className="group relative h-full min-h-[400px] overflow-hidden bg-black shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
@@ -149,7 +184,7 @@ export default function Home() {
             </Link>
 
             {/* Security - Side Card */}
-            <Link href="/collections/camera-security" className="md:col-span-4 md:row-span-1">
+            <Link href="/ubiquiti/shop?category=Camera+Security" className="md:col-span-4 md:row-span-1">
               <motion.a
                 whileHover={{ scale: 0.98 }}
                 className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
@@ -169,7 +204,7 @@ export default function Home() {
 
 
             {/* Door Access - Side Card */}
-            <Link href="/collections/door-access" className="md:col-span-4 md:row-span-1">
+            <Link href="/ubiquiti/shop?category=Door+Access" className="md:col-span-4 md:row-span-1">
               <motion.a
                 whileHover={{ scale: 0.98 }}
                 className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
@@ -188,7 +223,7 @@ export default function Home() {
             </Link>
 
             {/* Cloud Gateways - Bottom Grid */}
-            <Link href="/collections/ubiquiti" className="md:col-span-4 md:row-span-1">
+            <Link href="/ubiquiti/shop?category=Cloud+Gateways" className="md:col-span-4 md:row-span-1">
               <motion.a
                 whileHover={{ scale: 0.98 }}
                 className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
@@ -206,7 +241,7 @@ export default function Home() {
             </Link>
 
             {/* Switching - Bottom Grid */}
-            <Link href="/collections/switching" className="md:col-span-4 md:row-span-1">
+            <Link href="/ubiquiti/shop?category=Switching" className="md:col-span-4 md:row-span-1">
               <motion.a
                 whileHover={{ scale: 0.98 }}
                 className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)]"
@@ -224,7 +259,7 @@ export default function Home() {
             </Link>
 
             {/* Others - Bottom Grid */}
-            <Link href="/collections/cloudGateways" className="md:col-span-4 md:row-span-1">
+            <Link href="/ubiquiti/shop" className="md:col-span-4 md:row-span-1">
               <motion.a
                 whileHover={{ scale: 0.98 }}
                 className="group relative h-full min-h-[250px] overflow-hidden bg-white dark:bg-card shadow-sm hover:shadow-2xl transition-all duration-500 block border border-border rounded-[var(--radius)] flex flex-col items-center justify-center p-8 text-center"
@@ -241,10 +276,10 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center mb-24">
           <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6">Rethinking IT</h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-xl mb-0">
-            Software kelas profesional dipadukan dengan hardware kelas enterprise.
+            Professional-grade software paired with enterprise-class hardware.
           </p>
           <p className="text-gray-400 max-w-2xl mx-auto text-xl mb-12">
-            Tanpa biaya berlangganan—hanya kinerja maksimal.
+            No subscription fees — just maximum performance.
           </p>
           <Link href="/support">
             <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold transition-all">
@@ -289,9 +324,9 @@ export default function Home() {
             <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
               <h3 className="text-4xl md:text-5xl font-bold italic uppercase">UniFi Protect</h3>
               <p className="text-gray-400 text-2xl md:text-2xl leading-relaxed">
-                Platform keamanan enterprise tanpa lisensi dengan dukungan AI untuk deteksi cerdas.
+                License-free enterprise security platform with AI-powered intelligent detection.
               </p>
-              <Link href="/collections/camera-security">
+              <Link href="/ubiquiti/shop?category=Camera+Security">
                 <Button className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold">
                   Explore Protect
                 </Button>
@@ -308,11 +343,13 @@ export default function Home() {
             <div className="flex-1 space-y-8 text-center lg:text-left">
               <h3 className="text-4xl md:text-5xl font-bold italic uppercase">UniFi Network</h3>
               <p className="text-gray-400 text-2xl md:text-2xl leading-relaxed">
-                Infrastruktur IT terpadu dengan kontrol penuh tanpa subscription.
+                Unified IT infrastructure with full control and no subscription required.
               </p>
-              <Button className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold">
-                Explore Network
-              </Button>
+              <Link href="/ubiquiti/shop">
+                <Button className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold">
+                  Explore Network
+                </Button>
+              </Link>
             </div>
 
             {/* VIDEO */}
@@ -367,11 +404,13 @@ export default function Home() {
             <div className="flex-1 space-y-8 order-1 lg:order-2 text-center lg:text-left">
               <h3 className="text-4xl md:text-5xl font-bold italic uppercase">UniFi Access</h3>
               <p className="text-gray-400 text-2xl md:text-2xl leading-relaxed">
-                Sistem kontrol akses cerdas dengan manajemen terpusat dan keamanan tinggi.
+                Intelligent access control with centralized management and enterprise security.
               </p>
-              <Button className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold">
-                Explore Access
-              </Button>
+              <Link href="/ubiquiti/shop?category=Door+Access">
+                <Button className="border-white text-white hover:bg-white hover:text-black rounded-full px-12 h-16 text-lg font-bold">
+                  Explore Access
+                </Button>
+              </Link>
             </div>
 
           </div>
@@ -469,7 +508,7 @@ export default function Home() {
                 ) : null}
                 {!heroProductVideoId && videoStripReady && (
                   <div className="absolute inset-0 z-0 flex items-center justify-center text-sm text-neutral-400">
-                    Video link tidak valid
+                    Invalid video link
                   </div>
                 )}
                 <div
@@ -519,9 +558,9 @@ export default function Home() {
               variants={fadeUpVariants}
               custom={0.4}
             >
-              Access point WiFi 7 ceiling-mount dengan teknologi 6-stream.
+              WiFi 7 ceiling-mount access point with 6-stream technology.
               <br />
-              Konektivitas multi-gig hingga 10/5/2.5/1 GbE.
+              Multi-gig connectivity up to 10/5/2.5/1 GbE.
             </motion.p>
 
             <motion.div
@@ -531,7 +570,7 @@ export default function Home() {
               variants={fadeUpVariants}
               custom={0.5}
             >
-              <Link href="/collections/wifi">
+              <Link href="/ubiquiti/shop?category=WiFi">
                 <Button
                   type="button"
                   className="h-12 gap-2 rounded-full bg-foreground px-8 text-background hover:bg-foreground/90"
@@ -560,6 +599,197 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </div>
+
+      {/* Ubiquiti History — "Big Year" style */}
+      <section
+        ref={historyRef as React.RefObject<HTMLElement>}
+        style={{ background: "#020812", padding: "96px 24px", overflow: "hidden" }}
+      >
+        <div style={{ maxWidth: 960, margin: "0 auto" }}>
+
+          {/* ── Header ── */}
+          <motion.div
+            variants={FADE_UP}
+            initial="hidden"
+            animate={historyInView ? "visible" : "hidden"}
+            style={{ marginBottom: 56 }}
+          >
+            <div style={{
+              display: "inline-flex", alignItems: "center", gap: 8,
+              border: "1px solid rgba(0,130,255,0.35)", borderRadius: 100,
+              padding: "5px 18px", marginBottom: 20, background: "rgba(0,130,255,0.06)",
+            }}>
+              <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#0082FF", display: "inline-block" }} />
+              <span style={{ fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: "#0082FF", fontFamily: "monospace" }}>
+                About Ubiquiti
+              </span>
+            </div>
+            <h2 style={{ fontSize: "clamp(32px,5vw,56px)", fontWeight: 900, letterSpacing: "-0.03em", margin: "0 0 16px", lineHeight: 1.05 }}>
+              <span style={{ color: "#E8E4DC" }}>History of </span>
+              <span style={{ background: "linear-gradient(135deg, #0082FF 0%, #60b4ff 60%, #0082FF 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+                Ubiquiti
+              </span>
+            </h2>
+            <p style={{ fontSize: 16, color: "rgba(232,228,220,0.5)", maxWidth: 560, lineHeight: 1.75, margin: 0 }}>
+              From a Silicon Valley garage to a global networking giant powering millions of devices in 150+ countries.
+            </p>
+          </motion.div>
+
+          {/* ── Stats row ── */}
+          <motion.div
+            variants={FADE_UP}
+            custom={0.1}
+            initial="hidden"
+            animate={historyInView ? "visible" : "hidden"}
+            style={{
+              display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(120px,1fr))", gap: 1,
+              border: "1px solid rgba(0,130,255,0.15)", borderRadius: 16,
+              background: "rgba(0,130,255,0.06)", overflow: "hidden", marginBottom: 72,
+            }}
+          >
+            {[
+              { val: "2003", label: "Founded" },
+              { val: "150+", label: "Countries" },
+              { val: "1M+",  label: "Devices" },
+              { val: "#1",   label: "SMB Networking" },
+            ].map((s, i) => (
+              <div key={i} style={{ padding: "24px 20px", textAlign: "center", borderRight: i < 3 ? "1px solid rgba(0,130,255,0.12)" : "none" }}>
+                <p style={{ margin: "0 0 4px", fontSize: "clamp(22px,3vw,32px)", fontWeight: 900, color: "#0082FF", letterSpacing: "-0.03em" }}>{s.val}</p>
+                <p style={{ margin: 0, fontSize: 11, color: "rgba(232,228,220,0.45)", letterSpacing: "0.08em", textTransform: "uppercase" }}>{s.label}</p>
+              </div>
+            ))}
+          </motion.div>
+
+          {/* ── Timeline: giant year + content ── */}
+          <div style={{ position: "relative" }}>
+            {/* Vertical blue line — hidden on very small screens via media is hard inline; it stays */}
+            <div style={{
+              position: "absolute", left: 148, top: 24, bottom: 24, width: 1,
+              background: "linear-gradient(to bottom, transparent, rgba(0,130,255,0.25) 8%, rgba(0,130,255,0.25) 92%, transparent)",
+            }} />
+
+            <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
+              {UBIQUITI_TIMELINE.map((item, i) => (
+                <motion.div
+                  key={item.year}
+                  variants={FADE_UP}
+                  custom={i * 0.09}
+                  initial="hidden"
+                  animate={historyInView ? "visible" : "hidden"}
+                  style={{ display: "flex", alignItems: "flex-start", gap: 0, paddingBottom: i < UBIQUITI_TIMELINE.length - 1 ? 40 : 0 }}
+                >
+                  {/* Giant year number */}
+                  <div style={{ flexShrink: 0, width: 148, textAlign: "right", paddingRight: 24, paddingTop: 4 }}>
+                    <span style={{
+                      fontSize: "clamp(36px,5vw,56px)", fontWeight: 900, letterSpacing: "-0.05em",
+                      lineHeight: 1,
+                      background: "linear-gradient(135deg, rgba(0,130,255,0.6), rgba(0,130,255,0.15))",
+                      WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
+                      display: "block",
+                    }}>
+                      {item.year}
+                    </span>
+                  </div>
+
+                  {/* Dot on the line */}
+                  <div style={{ flexShrink: 0, width: 0, position: "relative" }}>
+                    <div style={{
+                      position: "absolute", left: -5, top: 14, width: 10, height: 10,
+                      borderRadius: "50%", background: "#0082FF",
+                      boxShadow: "0 0 14px rgba(0,130,255,0.7)",
+                    }} />
+                  </div>
+
+                  {/* Content card */}
+                  <div style={{
+                    flex: 1, marginLeft: 28, paddingBottom: 8,
+                    borderBottom: i < UBIQUITI_TIMELINE.length - 1 ? "1px solid rgba(0,130,255,0.07)" : "none",
+                  }}>
+                    <h3 style={{ margin: "0 0 8px", fontSize: 18, fontWeight: 800, color: "#E8E4DC", letterSpacing: "-0.01em" }}>
+                      {item.title}
+                    </h3>
+                    <p style={{ margin: 0, fontSize: 14, color: "rgba(232,228,220,0.52)", lineHeight: 1.8 }}>
+                      {item.desc}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* ── Decorative footer line ── */}
+          <motion.div
+            variants={FADE_UP}
+            custom={0.6}
+            initial="hidden"
+            animate={historyInView ? "visible" : "hidden"}
+            style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 64 }}
+          >
+            <div style={{ flex: 1, height: 1, background: "linear-gradient(90deg, transparent, rgba(0,130,255,0.25))" }} />
+            <span style={{ color: "#0082FF", fontSize: 18, opacity: 0.7 }}>◈</span>
+            <div style={{ flex: 1, height: 1, background: "linear-gradient(90deg, rgba(0,130,255,0.25), transparent)" }} />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Training shortcut */}
+      <div
+        style={{
+          background: "linear-gradient(135deg, rgba(0,130,255,0.08) 0%, rgba(0,130,255,0.03) 100%)",
+          borderTop: "1px solid rgba(0,130,255,0.15)",
+          borderBottom: "1px solid rgba(0,130,255,0.15)",
+          padding: "64px 24px",
+        }}
+      >
+        <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", flexWrap: "wrap", alignItems: "center", gap: 40 }}>
+          <div style={{ flex: "1 1 300px" }}>
+            <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.3em", textTransform: "uppercase", color: "#0082FF", marginBottom: 10 }}>
+              DCS Training Center
+            </p>
+            <h2 style={{ fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 900, color: "#E8E4DC", lineHeight: 1.2, marginBottom: 14 }}>
+              Ubiquiti Training &amp; Workshop
+            </h2>
+            <p style={{ fontSize: 15, color: "rgba(232,228,220,0.6)", lineHeight: 1.7, marginBottom: 24 }}>
+              Learn UniFi configuration, enterprise wireless deployment, and network management with experienced instructors. Available for all skill levels.
+            </p>
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 28 }}>
+              {[
+                { icon: <FlaskConical size={13} />, label: "Hands-On Lab" },
+                { icon: <Award size={13} />, label: "Certified" },
+              ].map((b) => (
+                <span
+                  key={b.label}
+                  style={{
+                    display: "inline-flex", alignItems: "center", gap: 6,
+                    fontSize: 12, fontWeight: 700, padding: "5px 12px",
+                    borderRadius: 100, border: "1px solid rgba(0,130,255,0.35)",
+                    color: "#0082FF", background: "rgba(0,130,255,0.08)",
+                  }}
+                >
+                  {b.icon}
+                  {b.label}
+                </span>
+              ))}
+            </div>
+            <Link href="/training?brand=Ubiquiti">
+              <a
+                style={{
+                  display: "inline-flex", alignItems: "center", gap: 8,
+                  padding: "12px 28px", borderRadius: 100,
+                  background: "#0082FF", color: "#fff",
+                  fontSize: 14, fontWeight: 800, textDecoration: "none",
+                  transition: "opacity 0.2s",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
+                onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+              >
+                View Training Schedule
+                <ArrowRight size={16} />
+              </a>
+            </Link>
+          </div>
+        </div>
       </div>
     </Layout>
   );

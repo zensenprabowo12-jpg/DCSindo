@@ -137,7 +137,7 @@ export default function ProductShowcase({ products }: { products: MikrotikLandin
             Product Highlight
           </p>
           <h2 style={{ margin: 0, fontSize: "clamp(20px, 3vw, 38px)", fontWeight: 900, letterSpacing: "-0.03em", color: isDark ? "#E8E4DC" : "#F0E8DF" }}>
-            Pilihan Produk Unggulan
+            Featured Products
           </h2>
           <div style={{ display: "flex", alignItems: "center", gap: 14, maxWidth: 340, margin: "clamp(12px, 2vh, 20px) auto 0" }}>
             <div style={{ flex: 1, height: 1, background: "linear-gradient(90deg, transparent, rgba(255,107,53,0.35))" }} />
@@ -281,7 +281,7 @@ export default function ProductShowcase({ products }: { products: MikrotikLandin
             </div>
 
             <p style={{ marginTop: "clamp(10px, 1.5vh, 16px)", fontSize: "clamp(9px, 0.9vw, 11px)", letterSpacing: "0.1em", color: "rgba(232,228,220,0.35)", fontFamily: "monospace", textAlign: "center" }}>
-              Klik selector untuk mengganti Product.
+              Click to switch product.
             </p>
           </div>
         </div>

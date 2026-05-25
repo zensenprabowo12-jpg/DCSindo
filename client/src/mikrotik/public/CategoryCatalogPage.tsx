@@ -290,7 +290,7 @@ export default function MikrotikCategoryCatalogPage() {
               ) : list.length === 0 ? (
                 <div style={{ textAlign: "center", padding: "60px 0" }}>
                   <p style={{ fontSize: 14, color: "rgba(232,228,220,0.45)", fontFamily: "monospace", letterSpacing: "0.08em" }}>
-                    Belum ada produk untuk kategori ini.
+                    No products found in this category.
                   </p>
                 </div>
               ) : (

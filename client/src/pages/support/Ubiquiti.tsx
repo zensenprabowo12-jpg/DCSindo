@@ -124,8 +124,7 @@ export default function Ubiquiti() {
             transition={{ delay: 0.08, duration: 0.5 }}
             className="mt-3 max-w-xl text-pretty text-base text-white/75 md:text-lg"
           >
-            Dokumentasi resmi, panduan produk, dan asisten UniFi untuk instalasi
-            dan jaringan profesional Anda.
+            Official documentation, product guides, and the UniFi Assistant for your professional installation and network.
           </motion.p>
 
           {/* NOTICE */}
@@ -142,13 +141,12 @@ export default function Ubiquiti() {
                     <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-amber-500/20 text-amber-300">
                       <AlertTriangle className="h-4.5 w-4.5" aria-hidden />
                     </span>
-                    Peringatan
+                    Warning
                   </h2>
                   <p className="mt-2 text-sm leading-relaxed text-white/80 md:text-base">
-                    Website ini berisi produk dan solusi networking profesional.
+                    This site contains professional networking products and solutions.
                     <br />
-                    Pastikan kepatuhan firmware dan regulasi setempat sebelum
-                    deployment.
+                    Please ensure firmware compliance with local regulations before deployment.
                   </p>
                   <div className="flex justify-center">
                     <Button
@@ -156,7 +154,7 @@ export default function Ubiquiti() {
                       className="mt-5 rounded-full px-7 font-bold text-white"
                       style={{ backgroundColor: '#0559C9' }}
                     >
-                      Info Selengkapnya
+                      Learn More
                     </Button>
                   </div>
                 </div>
@@ -177,10 +175,10 @@ export default function Ubiquiti() {
                   UNIFI ASSISTANT
                 </div>
                 <div className="mt-2 text-2xl font-bold leading-tight tracking-tight md:text-2xl">
-                  Cari solusi UniFi anda dengan UniFi GPT
+                  Find your UniFi solution with UniFi GPT
                 </div>
                 <p className="mt-2 text-sm text-white/70 md:text-base">
-                  Tanyakan kebutuhan instalasi, fitur, atau rekomendasi produk. UniFi GPT, siap membantu anda menemukan solusi yang sesuai.
+                  Ask about installation needs, features, or product recommendations. UniFi GPT is ready to help you find the right solution.
                 </p>
               </div>
 
@@ -348,11 +346,11 @@ export default function Ubiquiti() {
                         UniFi Assistant
                       </div>
                       <div className="truncate text-[11px] text-white/55">
-                        Drag untuk memindahkan • Esc untuk menutup
+                        Drag to move • Esc to close
                       </div>
                     </div>
                     <span className="sr-only">
-                      Seret bilah judul untuk memindahkan jendela
+                      Drag the title bar to move the window
                     </span>
                     <button
                       type="button"
@@ -360,7 +358,7 @@ export default function Ubiquiti() {
                       onClick={() => setIsGPTVisible(false)}
                       className="shrink-0 rounded-full bg-white/10 px-3 py-1.5 text-sm text-white/90 transition hover:bg-white/15"
                     >
-                      Tutup
+                      Close
                     </button>
                   </div>
                   <div className="min-h-0 flex-1 bg-black/80">

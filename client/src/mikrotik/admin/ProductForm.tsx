@@ -252,7 +252,7 @@ function ProductFormBody({ id }: { id?: string }) {
     }
     for (const item of technicalClean) {
       if (!item.title || !item.content) {
-        setErr("Semua technical item wajib isi title dan content");
+        setErr("All technical items must have a title and content");
         return;
       }
     }
@@ -447,7 +447,7 @@ function ProductFormBody({ id }: { id?: string }) {
             </div>
             {technicalItems.length === 0 && (
               <p className="text-xs text-muted-foreground">
-                Belum ada item. Tambahkan item untuk section Technical accordion di halaman produk.
+                No items yet. Add items for the Technical accordion section on the product page.
               </p>
             )}
             <div className="space-y-3">
@@ -480,13 +480,13 @@ function ProductFormBody({ id }: { id?: string }) {
             </div>
           </div>
           <div className="space-y-2">
-            <Label>Bullet (maks. 9)</Label>
+            <Label>Bullet Points (max. 9)</Label>
             <div className="space-y-2">
               {bullets.map((b, i) => (
                 <Input
                   key={i}
                   value={b}
-                  placeholder={`Point ${i + 1} (opsional)`}
+                  placeholder={`Point ${i + 1} (optional)`}
                   onChange={(e) => setBulletAt(i, e.target.value)}
                 />
               ))}
@@ -507,10 +507,10 @@ function ProductFormBody({ id }: { id?: string }) {
               accept="image/*"
               onChange={(e) => setMainFile(e.target.files?.[0] ?? null)}
             />
-            {isEdit && <p className="text-xs text-muted-foreground">Kosongkan jika tidak ganti gambar</p>}
+            {isEdit && <p className="text-xs text-muted-foreground">Leave blank to keep the current image</p>}
           </div>
           <div className="space-y-2">
-            <Label>Galeri (banyak file)</Label>
+            <Label>Gallery (multiple files)</Label>
             {isEdit && keepGallery.length > 0 && (
               <div className="flex flex-wrap gap-2 mb-2">
                 {keepGallery.map((src) => (

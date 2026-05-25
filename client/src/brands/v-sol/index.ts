@@ -1,5 +1,5 @@
 export const V_SOL_BRAND = {
   name: 'V-SOL',
-  websiteUrl: 'https://www.vsol.id/',
+  websiteUrl: '/vsol',
 } as const
 

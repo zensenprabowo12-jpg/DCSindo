@@ -7,14 +7,28 @@ import { ArrowRight, X, ShieldCheck, Zap, Headphones } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { V_SOL_BRAND } from "@/brands/v-sol";
 
-export default function HomeUtama() {
+const POPUP_KEY = "dcs_notice_seen";
+const POPUP_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days
 
-  // ✅ Popup selalu muncul tiap buka halaman
-  const [showPopup, setShowPopup] = useState(true);
+function shouldShowPopup(): boolean {
+  try {
+    const seen = localStorage.getItem(POPUP_KEY);
+    if (!seen) return true;
+    return Date.now() - parseInt(seen, 10) > POPUP_TTL;
+  } catch {
+    return true;
+  }
+}
+
+export default function HomeUtama() {
+  const [showPopup, setShowPopup] = useState(() => shouldShowPopup());
   const brandSectionRef = useRef<HTMLDivElement | null>(null);
   const aboutSectionRef = useRef<HTMLDivElement | null>(null);
 
   const handleClose = () => {
+    try {
+      localStorage.setItem(POPUP_KEY, String(Date.now()));
+    } catch {}
     setShowPopup(false);
   };
 
@@ -37,7 +51,6 @@ export default function HomeUtama() {
               transition={{ duration: 0.3 }}
               className="bg-white dark:bg-zinc-900 rounded-2xl shadow-2xl max-w-md w-full p-6 text-left relative border border-border"
             >
-              {/* ❌ CLOSE BUTTON */}
               <button
                 onClick={handleClose}
                 className="absolute top-3 right-3 text-muted-foreground hover:text-foreground"
@@ -45,41 +58,39 @@ export default function HomeUtama() {
                 <X size={20} />
               </button>
 
-              {/* TITLE */}
-              <h2 className="text-xl font-black tracking-tight mb-1 text-center">⚠️INFORMASI PENTING</h2>
+              <h2 className="text-xl font-black tracking-tight mb-1 text-center">⚠️ IMPORTANT NOTICE</h2>
               <p className="text-xs text-muted-foreground mb-4 text-center">
-                Mohon baca sebelum melanjutkan
+                Please read before continuing
               </p>
 
-              {/* TEXT (EDIT BEBAS) */}
               <div className="text-muted-foreground text-sm leading-relaxed mb-6 space-y-3 text-center">
                 <p>
-                  Sesuai dengan ketentuan regulasi di Indonesia, seluruh perangkat jaringan wajib
-                  menggunakan versi firmware terbaru yang telah disesuaikan dengan standar yang berlaku.
+                  In accordance with Indonesian regulations, all networking devices must use
+                  the latest firmware version that complies with applicable local standards.
                 </p>
                 <p>
-                  Kami menghimbau Anda untuk segera melakukan pembaruan guna menjaga keamanan, stabilitas, dan kepatuhan perangkat.
-                  Dengan melanjutkan, Anda menyatakan telah memahami ketentuan ini.
+                  We strongly advise you to update your firmware immediately to ensure device
+                  security, stability, and regulatory compliance. By continuing, you acknowledge
+                  that you have read and understood this notice.
                 </p>
                 <div className="flex flex-wrap gap-2 pt-1 justify-center">
                   <Button variant="secondary" size="sm" asChild className="rounded-full">
-                    <Link href="/support/ubiquiti">Support Ubiquiti</Link>
+                    <Link href="/support/ubiquiti">Ubiquiti Support</Link>
                   </Button>
                   <Button variant="secondary" size="sm" asChild className="rounded-full">
-                    <Link href="/support/mikrotik">Support MikroTik</Link>
+                    <Link href="/support/mikrotik">MikroTik Support</Link>
                   </Button>
                   <Button variant="secondary" size="sm" asChild className="rounded-full">
-                    <Link href="/support/vsol">Support V-SOL</Link>
+                    <Link href="/support/vsol">V-SOL Support</Link>
                   </Button>
                 </div>
               </div>
 
-              {/* BUTTON */}
               <Button
                 onClick={handleClose}
                 className="w-full rounded-full font-semibold"
               >
-                OK, Saya Mengerti
+                OK, I Understand
               </Button>
             </motion.div>
           </motion.div>
@@ -89,10 +100,8 @@ export default function HomeUtama() {
       {/* ================= HERO ================= */}
       <section className="relative h-screen min-h-[600px] w-full overflow-hidden flex items-center justify-center bg-white dark:bg-black transition-colors duration-500">
 
-        {/* VIDEO */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/30 dark:from-black/70 dark:to-black/60 z-10 transition-colors duration-500" />
-
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vh] min-w-[177.77vh] min-h-[56.25vw]">
             <iframe
               src="https://www.youtube.com/embed/9HaU8NjH7bI?autoplay=1&mute=1&rel=0&playsinline=1"
@@ -103,7 +112,6 @@ export default function HomeUtama() {
           </div>
         </div>
 
-        {/* CONTENT */}
         <div className="container mx-auto px-4 relative z-20 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -111,7 +119,6 @@ export default function HomeUtama() {
             transition={{ duration: 0.8 }}
             className="space-y-7"
           >
-
             <h1 className="drop-shadow-[0_4px_20px_rgba(0,0,0,0.65)]">
               <span className="sr-only">DINAMIKA CIPTA SOLUSI</span>
               <img
@@ -124,29 +131,27 @@ export default function HomeUtama() {
             </h1>
 
             <p
-              className="font-manrope font-extrabold uppercase tracking-[0.35em] mb-2"
-              style={{ fontSize: "20px", lineHeight: "1.6", color: "#60c3db" }}
+              className="font-manrope font-extrabold uppercase tracking-[0.35em] mb-2 text-white"
+              style={{ fontSize: "20px", lineHeight: "1.6" }}
             >
               Building the Future of Connectivity
             </p>
 
             <p
-              className="font-manrope font-light text-white tracking-[0.08em] max-w-10xl mx-auto leading-[1.5] mb-10"
-              style={{ fontSize: "25px" }} // 20pt ≈ 26.67px
+              className="font-manrope font-light text-white/90 tracking-[0.08em] max-w-10xl mx-auto leading-[1.5] mb-10"
+              style={{ fontSize: "22px" }}
             >
-              Solusi networking profesional untuk bisnis anda, mulai dari WiFi, Switching, Security, hingga Access Control.
+              Professional networking solutions for your business — from WiFi and Switching to Security and Access Control.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-3 pt-6">
               <Button
                 onClick={() => {
-                  brandSectionRef.current?.scrollIntoView({
-                    behavior: "smooth",
-                  });
+                  brandSectionRef.current?.scrollIntoView({ behavior: "smooth" });
                 }}
                 size="lg"
-                className="font-manrope font-semibold uppercase mb-2 bg-[#609cdb] hover:bg-[#1b36b3] text-black transition"
-                style={{ fontSize: "20px", lineHeight: "1.6" }}
+                className="font-manrope font-semibold uppercase mb-2 bg-white hover:bg-white/90 text-black transition"
+                style={{ fontSize: "18px", lineHeight: "1.6" }}
               >
                 Enter Ecosystem
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -158,7 +163,7 @@ export default function HomeUtama() {
                 }}
                 variant="outline"
                 size="lg"
-                className="rounded-full px-10 h-14 text-base font-bold uppercase border-[#2140db] text-[#609cdb] hover:bg-[#2140db] hover:text-white transition"
+                className="rounded-full px-10 h-14 text-base font-bold uppercase border-white text-white hover:bg-white hover:text-black transition"
               >
                 Learn More
               </Button>
@@ -170,47 +175,35 @@ export default function HomeUtama() {
                   {
                     icon: Zap,
                     title: "Performance",
-                    desc: "Hardware and software yang stabil untuk 24/7 operation.",
+                    desc: "Stable hardware and software for 24/7 operation.",
                   },
                   {
                     icon: ShieldCheck,
                     title: "Secure",
-                    desc: "Best practice untuk jaringan yang lebih aman dan terkontrol.",
+                    desc: "Best practices for a more secure and controlled network.",
                   },
                   {
                     icon: Headphones,
                     title: "Support",
-                    desc: "Panduan & support untuk membantu implementasi lebih cepat.",
+                    desc: "Expert guidance to accelerate your implementation.",
                   },
                 ].map((item) => (
                   <div
                     key={item.title}
-                    className="
-          rounded-2xl border border-border 
-          bg-white/70 dark:bg-black/30 
-          backdrop-blur-xl p-4 text-center
-        "
+                    className="rounded-2xl border border-white/20 bg-white/10 backdrop-blur-xl p-4 text-center"
                   >
                     <div className="flex justify-center">
-                      <item.icon className="w-7 h-7 text-[#609cdb]" />
+                      <item.icon className="w-7 h-7 text-white/90" />
                     </div>
-
                     <p
-                      className="
-            mt-2 font-manrope font-extrabold 
-            text-black dark:text-white
-          "
-                      style={{ fontSize: "26.67px" }}
+                      className="mt-2 font-manrope font-extrabold text-white"
+                      style={{ fontSize: "22px" }}
                     >
                       {item.title}
                     </p>
-
                     <p
-                      className="
-            mt-1 font-manrope font-light leading-relaxed 
-            text-black white:text-black/60 dark:text-white/80
-          "
-                      style={{ fontSize: "20px" }}
+                      className="mt-1 font-manrope font-light leading-relaxed text-white/80"
+                      style={{ fontSize: "16px" }}
                     >
                       {item.desc}
                     </p>
@@ -231,16 +224,15 @@ export default function HomeUtama() {
           <div className="absolute -top-64 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-primary/10 blur-[90px]" />
         </div>
         <div className="container mx-auto px-4 max-w-7xl">
-
           <div className="text-center mb-16">
             <p className="text-xs font-black tracking-[0.35em] uppercase text-muted-foreground">
-              Our Product
+              Our Products
             </p>
             <h2 className="mt-3 text-4xl md:text-5xl font-black tracking-tight text-black dark:text-white">
               Explore the Ecosystem
             </h2>
             <p className="text-muted-foreground font-medium mt-3 max-w-2xl mx-auto">
-              Pilih Product yang kami sediakan untuk melihat katalog dan solusi yang sesuai dengan kebutuhan infrastruktur jaringan Anda.
+              Choose a brand to browse our curated catalog and find the right solution for your network infrastructure.
             </p>
           </div>
 
@@ -249,16 +241,16 @@ export default function HomeUtama() {
               {
                 name: "Ubiquiti",
                 image: "/images/1.logo/UbiquitiThumbnail.png",
-                path: "/home-ubiquiti",
+                path: "/ubiquiti",
                 bg: "bg-blue-50/50 dark:bg-blue-900/10",
-                desc: "Enterprise WiFi, Switching, Security, dan Access dalam satu ekosistem.",
+                desc: "Enterprise WiFi, Switching, Security, and Access in one ecosystem.",
               },
               {
                 name: "MikroTik",
                 image: "/images/1.logo/MikrotikThumbnail.png",
                 path: "/mikrotik",
                 bg: "bg-slate-50/50 dark:bg-slate-900/10",
-                desc: "Router, switch, wireless, dan platform network yang fleksibel dan powerful.",
+                desc: "Flexible and powerful routing, switching, and wireless platforms.",
               },
               {
                 name: "V-SOL",
@@ -266,7 +258,7 @@ export default function HomeUtama() {
                 path: V_SOL_BRAND.websiteUrl,
                 external: true,
                 bg: "bg-zinc-50/50 dark:bg-zinc-900/10",
-                desc: "Solusi access network (FTTx) untuk deployment skala besar.",
+                desc: "FTTx access network solutions for large-scale deployment.",
               },
             ].map((brand, i) => {
               const card = (
@@ -278,7 +270,6 @@ export default function HomeUtama() {
                   )}
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
-
                   <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
                     <img
                       src={brand.image}
@@ -287,7 +278,6 @@ export default function HomeUtama() {
                     />
                     <div className="absolute inset-0 bg-black/10" />
                   </div>
-
                   <div className="absolute bottom-0 left-0 right-0 z-20 p-7 opacity-0 group-hover:opacity-100 transition-all transform translate-y-4 group-hover:translate-y-0">
                     <p className="text-white font-black tracking-tight text-2xl drop-shadow-lg">
                       {brand.name}
@@ -303,22 +293,12 @@ export default function HomeUtama() {
                 </motion.div>
               );
 
-              return (
-                brand.external ? (
-                  <a
-                    key={i}
-                    href={brand.path}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="block"
-                  >
-                    {card}
-                  </a>
-                ) : (
-                  <Link key={i} href={brand.path}>
-                    {card}
-                  </Link>
-                )
+              return brand.external ? (
+                <a key={i} href={brand.path} target="_blank" rel="noreferrer" className="block">
+                  {card}
+                </a>
+              ) : (
+                <Link key={i} href={brand.path}>{card}</Link>
               );
             })}
           </div>
@@ -340,15 +320,15 @@ export default function HomeUtama() {
                 Building the Future of Connectivity
               </h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Kami menghadirkan solusi jaringan yang scalable dan siap untuk masa depan guna mendukung pertumbuhan bisnis,
-                efisiensi operasional, dan konektivitas yang optimal.
+                We deliver scalable, future-ready networking solutions to support business growth,
+                operational efficiency, and optimal connectivity.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button asChild className="rounded-full px-8">
                   <Link href="/support">Talk to an Expert</Link>
                 </Button>
                 <Button asChild variant="outline" className="rounded-full px-8">
-                  <Link href="/collections/wifi">Browse Products</Link>
+                  <Link href="/ubiquiti/shop">Browse Products</Link>
                 </Button>
               </div>
             </div>
@@ -356,10 +336,10 @@ export default function HomeUtama() {
             <div className="rounded-3xl border border-border bg-background p-8">
               <div className="grid sm:grid-cols-2 gap-6">
                 {[
-                  { title: "Curated Catalog", desc: "Solusi enterprise pilihan untuk kebutuhan bisnis modern." },
-                  { title: "Fast Delivery", desc: "Pengadaan cepat dengan proses yang efisien dan transparan." },
-                  { title: "Implementation Ready", desc: "Dukungan teknis untuk implementasi yang lancar." },
-                  { title: "Long-term Partnership", desc: "Kemitraan jangka panjang dengan dukungan berkelanjutan." },
+                  { title: "Curated Catalog", desc: "Curated enterprise solutions for modern business needs." },
+                  { title: "Fast Delivery", desc: "Fast procurement with an efficient and transparent process." },
+                  { title: "Implementation Ready", desc: "Technical support for seamless implementation." },
+                  { title: "Long-term Partnership", desc: "Long-term partnership with ongoing support." },
                 ].map((x) => (
                   <div key={x.title} className="space-y-1">
                     <p className="font-black">{x.title}</p>
@@ -372,6 +352,6 @@ export default function HomeUtama() {
         </div>
       </section>
 
-    </Layout >
+    </Layout>
   );
 }

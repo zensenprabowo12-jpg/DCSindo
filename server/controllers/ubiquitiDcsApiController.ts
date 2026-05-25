@@ -38,14 +38,14 @@ function safeDeleteFile(publicPath: string) {
 }
 
 function requireAdminSession(req: Request, res: Response): boolean {
-  if ((req.session as any)?.mikrotikDcsAuthed) return true;
+  if (req.session.mikrotikDcsAdmin) return true;
   res.status(401).json({ ok: false, message: "Unauthorized" });
   return false;
 }
 
 // ─── AUTH ─────────────────────────────────────────────────────
 export async function apiUbiquitiDcsMe(req: Request, res: Response): Promise<void> {
-  const authed = Boolean((req.session as any)?.mikrotikDcsAuthed);
+  const authed = Boolean(req.session.mikrotikDcsAdmin);
   res.json({ ok: true, data: { authed } });
 }
 

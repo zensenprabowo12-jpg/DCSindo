@@ -82,14 +82,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     support: string;
     external?: boolean;
   }[] = [
-      { name: "Ubiquiti", path: "/home-ubiquiti", support: "/support/ubiquiti" },
+      { name: "Ubiquiti", path: "/ubiquiti", support: "/support/ubiquiti" },
       { name: "Mikrotik", path: "/mikrotik", support: "/support/mikrotik" },
-      { name: V_SOL_BRAND.name, path: V_SOL_BRAND.websiteUrl, support: "/support/vsol", external: true },
+      { name: V_SOL_BRAND.name, path: V_SOL_BRAND.websiteUrl, support: "/support/vsol" },
     ];
 
   function isBrandPathActive(path: string, loc: string): boolean {
     if (loc === path) return true;
     if (path === "/mikrotik" && loc.startsWith("/mikrotik/")) return true;
+    if (path === "/vsol" && loc.startsWith("/vsol/")) return true;
     return false;
   }
 
@@ -105,7 +106,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     ? `Support ${supportRouteMatch.name}`
     : "Support";
 
-  /* Hub kontak utama — sama dengan route `/support` */
+  const isTrainingActive = location === "/training" || location.startsWith("/training/");
+
+  /* Main contact hub — matches the `/support` route */
   const isContactActive = location === "/support";
 
   // Back button positioning (edit these to fine-tune)
@@ -174,8 +177,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   size="icon"
                   onClick={() => window.history.back()}
                   className={cn(BACK_BUTTON_BUTTON_CLASS)}
-                  aria-label="Kembali ke halaman sebelumnya"
-                  title="Kembali"
+                  aria-label="Go back"
+                  title="Go back"
                 >
                   <ChevronLeft className="h-5 w-5" aria-hidden />
                 </Button>
@@ -242,6 +245,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 )}
               </AnimatePresence>
             </div>
+
+            {/* TRAINING */}
+            <Link href="/training">
+              <a className="relative inline-flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-primary/10 hover:text-primary">
+                Training
+                {isTrainingActive && (
+                  <motion.div
+                    layoutId="navActivePill"
+                    className="absolute inset-0 -z-10 rounded-lg bg-primary/10"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
+              </a>
+            </Link>
 
             {/* SUPPORT */}
             <div className="relative" ref={supportRef}>
@@ -433,6 +450,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               )}
             </div>
 
+            <div className="flex items-center gap-6">
+              <Link href="/training">
+                <a className="text-sm font-black uppercase tracking-widest hover:text-primary transition-colors">
+                  Training
+                </a>
+              </Link>
+              <Link href="/support">
+                <a className="text-sm font-black uppercase tracking-widest hover:text-primary transition-colors">
+                  Support
+                </a>
+              </Link>
+              <Link href="/company-profile">
+                <a className="text-sm font-black uppercase tracking-widest hover:text-primary transition-colors">
+                  Company Profile
+                </a>
+              </Link>
+            </div>
             <div className="text-sm text-muted-foreground/60">
               &copy; {new Date().getFullYear()} Dinamika Cipta Solusi. All Rights Reserved.
             </div>

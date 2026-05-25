@@ -1,5 +1,5 @@
 {
-  "include": ["client/src/**/*", "server/**/*"],
+  "include": ["client/src/**/*", "server/**/*", "script/**/*"],
   "compilerOptions": {
     "incremental": true,
     "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
@@ -19,7 +19,8 @@
       "@/*": ["./client/src/*"],
       "@mikrotik/*": ["./client/src/mikrotik/*"],
       "@ubiquiti/*": ["./client/src/ubiquiti/*"],
-      "@admin/*": ["./client/src/admin/*"]
+      "@admin/*": ["./client/src/admin/*"],
+      "@vsol/*": ["./client/src/vsol/*"]
     }
   }
 }

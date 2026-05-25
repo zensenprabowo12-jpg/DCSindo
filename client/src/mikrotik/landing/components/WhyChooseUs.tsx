@@ -38,82 +38,82 @@ interface AnimatedCounterProps {
 const timelineData: TimelineItem[] = [
   {
     year: "1996",
-    title: "Lahirnya MikroTik",
+    title: "MikroTik Founded",
     description:
-      "MikroTik didirikan di Riga, Latvia oleh John Trully dan Arnis Riekstins. Visi awalnya adalah menyediakan solusi koneksi internet di wilayah yang infrastruktur internetnya masih sangat terbatas.",
+      "MikroTik was founded in Riga, Latvia by John Trully and Arnis Riekstins. The original vision was to provide internet connectivity solutions in regions with limited infrastructure.",
     icon: "🏛️",
     color: "#FF6B35",
   },
   {
     year: "1997",
-    title: "RouterOS Pertama",
+    title: "First RouterOS",
     description:
-      "MikroTik merilis RouterOS — sistem operasi berbasis Linux yang revolusioner, mampu mengubah komputer biasa menjadi router canggih dengan fitur firewall, bandwidth management, dan VPN.",
+      "MikroTik released RouterOS — a revolutionary Linux-based operating system capable of turning a standard PC into a powerful router with firewall, bandwidth management, and VPN features.",
     icon: "⚙️",
     color: "#F7C59F",
   },
   {
     year: "2002",
-    title: "Era RouterBOARD",
+    title: "RouterBOARD Era",
     description:
-      "MikroTik mulai memproduksi hardware sendiri melalui lini RouterBOARD, menjadikan solusi jaringan semakin terjangkau dan mudah dideploy di berbagai lingkungan.",
+      "MikroTik began manufacturing its own hardware through the RouterBOARD line, making networking solutions more affordable and easy to deploy across diverse environments.",
     icon: "🔧",
     color: "#EFEFD0",
   },
   {
     year: "2010",
-    title: "Ekspansi Global",
+    title: "Global Expansion",
     description:
-      "MikroTik merambah pasar global, dengan distribusi ke ratusan negara. Produknya menjadi standar de facto untuk ISP skala kecil-menengah di Asia, Amerika Latin, dan Afrika.",
+      "MikroTik expanded into global markets, distributing to hundreds of countries. Its products became the de facto standard for small and medium ISPs across Asia, Latin America, and Africa.",
     icon: "🌍",
     color: "#04A777",
   },
   {
     year: "2018",
-    title: "MikroTik di Indonesia",
+    title: "MikroTik in Indonesia",
     description:
-      "Indonesia menjadi salah satu pasar terbesar MikroTik di dunia. Ribuan ISP lokal, sekolah, dan perusahaan menggunakan RouterOS untuk kebutuhan jaringan sehari-hari.",
+      "Indonesia became one of MikroTik's largest markets worldwide. Thousands of local ISPs, schools, and enterprises rely on RouterOS for their everyday networking needs.",
     icon: "🇮🇩",
     color: "#FF6B35",
   },
   {
-    year: "Kini",
-    title: "Inovasi Tanpa Henti",
+    year: "Today",
+    title: "Continuous Innovation",
     description:
-      "MikroTik terus berinovasi dengan produk terbaru seperti series hEX, CCR (Cloud Core Router), CRS (Cloud Router Switch), dan platform manajemen berbasis cloud.",
+      "MikroTik continues to innovate with its latest products including the hEX series, CCR (Cloud Core Router), CRS (Cloud Router Switch), and cloud-based management platforms.",
     icon: "🚀",
     color: "#A23B72",
   },
 ];
 
 const stats: StatItem[] = [
-  { value: "28+", label: "Tahun Pengalaman", sublabel: "Sejak 1996" },
-  { value: "150+", label: "Negara", sublabel: "Distribusi Global" },
-  { value: "2M+", label: "Perangkat Aktif", sublabel: "Di seluruh dunia" },
-  { value: "#1", label: "ISP Choice", sublabel: "Untuk jaringan menengah" },
+  { value: "28+", label: "Years of Experience", sublabel: "Since 1996" },
+  { value: "150+", label: "Countries", sublabel: "Global Distribution" },
+  { value: "2M+", label: "Active Devices", sublabel: "Worldwide" },
+  { value: "#1", label: "ISP Choice", sublabel: "For mid-range networks" },
 ];
 
 const pillars: PillarItem[] = [
   {
     icon: "◈",
-    title: "Visi",
+    title: "Vision",
     color: "#FF6B35",
     description:
-      "Menghadirkan solusi jaringan yang efisien, terjangkau, dan mudah diakses untuk berbagai kebutuhan infrastruktur — dari jaringan rumahan hingga data center enterprise.",
+      "Delivering efficient, affordable, and accessible networking solutions for all infrastructure needs — from home networks to enterprise data centers.",
   },
   {
     icon: "◉",
-    title: "Misi",
+    title: "Mission",
     color: "#04A777",
     description:
-      "Mengembangkan teknologi routing dan wireless yang handal melalui inovasi software dan hardware yang berkelanjutan, dengan fokus pada kemudahan konfigurasi dan stabilitas.",
+      "Developing reliable routing and wireless technology through continuous software and hardware innovation, with a focus on ease of configuration and long-term stability.",
   },
   {
     icon: "◆",
-    title: "Value",
+    title: "Values",
     color: "#A23B72",
     description:
-      "Memberikan sistem jaringan yang stabil, fleksibel, dan scalable untuk berbagai lingkungan — dengan harga yang kompetitif tanpa kompromi pada performa dan fitur.",
+      "Providing stable, flexible, and scalable network systems for any environment — at a competitive price without compromising on performance or features.",
   },
 ];
 
@@ -224,7 +224,7 @@ function TimelineCard({ item, active, align }: TimelineCardProps) {
             letterSpacing: "0.1em",
           }}
         >
-          TAP UNTUK DETAIL →
+          TAP FOR DETAILS →
         </p>
       )}
     </div>
@@ -336,7 +336,7 @@ export default function WhyChooseUs() {
             transition: "opacity 0.8s ease 0.3s, transform 0.8s ease 0.3s",
           }}
         >
-          Dari garasi di Latvia menuju jaringan global — perjalanan 28 tahun perusahaan yang merevolusi industri networking dunia.
+          From a garage in Latvia to a global network — a 28-year journey of a company that revolutionized the networking industry.
         </p>
 
         <div style={{ display: "flex", alignItems: "center", gap: 16, opacity: heroInView ? 1 : 0, transition: "opacity 1s ease 0.5s" }}>
@@ -354,26 +354,26 @@ export default function WhyChooseUs() {
               🌐
             </div>
             <div>
-              <p style={{ margin: 0, fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: "#FF6B35", fontFamily: "monospace" }}>Asal Usul</p>
-              <p style={{ margin: 0, fontSize: 20, fontWeight: 700, letterSpacing: "-0.02em" }}>Tentang MikroTik</p>
+              <p style={{ margin: 0, fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: "#FF6B35", fontFamily: "monospace" }}>Origins</p>
+              <p style={{ margin: 0, fontSize: 20, fontWeight: 700, letterSpacing: "-0.02em" }}>About MikroTik</p>
             </div>
           </div>
           <div style={{ padding: "32px 40px 40px" }}>
             <p style={{ margin: "0 0 20px", lineHeight: 1.85, color: "rgba(232,228,220,0.75)", fontSize: 16 }}>
-              MikroTik didirikan pada tahun <strong style={{ color: "#FF6B35" }}>1996 di Riga, Latvia</strong> oleh{" "}
-              <strong style={{ color: "#E8E4DC" }}>John Trully</strong> dan <strong style={{ color: "#E8E4DC" }}>Arnis Riekstins</strong>.
-              Pada awalnya, perusahaan ini berfokus pada pengembangan teknologi jaringan untuk menyediakan koneksi internet
-              menggunakan sistem wireless dan routing di wilayah yang infrastruktur internetnya masih sangat terbatas.
+              MikroTik was founded in <strong style={{ color: "#FF6B35" }}>1996 in Riga, Latvia</strong> by{" "}
+              <strong style={{ color: "#E8E4DC" }}>John Trully</strong> and <strong style={{ color: "#E8E4DC" }}>Arnis Riekstins</strong>.
+              Initially, the company focused on developing networking technology to provide internet connectivity
+              using wireless and routing systems in regions with very limited infrastructure.
             </p>
             <p style={{ margin: "0 0 20px", lineHeight: 1.85, color: "rgba(232,228,220,0.75)", fontSize: 16 }}>
-              MikroTik pertama kali dikenal luas melalui <strong style={{ color: "#04A777" }}>RouterOS</strong> — sistem operasi
-              berbasis Linux yang dirancang untuk mengubah komputer standar menjadi router jaringan bertenaga penuh, lengkap
-              dengan fitur manajemen internet, firewall, bandwidth management, VPN, dan wireless access point.
+              MikroTik first gained wide recognition through <strong style={{ color: "#04A777" }}>RouterOS</strong> — a Linux-based
+              operating system designed to transform standard computers into full-featured network routers,
+              complete with internet management, firewall, bandwidth management, VPN, and wireless access point capabilities.
             </p>
             <p style={{ margin: 0, lineHeight: 1.85, color: "rgba(232,228,220,0.75)", fontSize: 16 }}>
-              Seiring meningkatnya permintaan pasar, MikroTik mengembangkan lini perangkat keras sendiri bernama{" "}
-              <strong style={{ color: "#F7C59F" }}>RouterBOARD</strong> — hardware khusus yang dioptimalkan untuk menjalankan
-              RouterOS dengan efisiensi daya tinggi dan harga yang sangat kompetitif untuk berbagai skala jaringan.
+              As market demand grew, MikroTik developed its own hardware line called{" "}
+              <strong style={{ color: "#F7C59F" }}>RouterBOARD</strong> — purpose-built hardware optimized to run
+              RouterOS with high power efficiency and highly competitive pricing for networks of any scale.
             </p>
           </div>
         </div>
@@ -414,10 +414,10 @@ export default function WhyChooseUs() {
       >
         <div style={{ textAlign: "center", marginBottom: 64 }}>
           <p style={{ margin: "0 0 12px", fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "#FF6B35", fontFamily: "monospace" }}>
-            Perjalanan Waktu
+            Journey Through Time
           </p>
           <h2 style={{ margin: 0, fontSize: "clamp(28px, 5vw, 52px)", fontWeight: 900, letterSpacing: "-0.03em" }}>
-            Timeline MikroTik
+            MikroTik Timeline
           </h2>
         </div>
 
@@ -485,8 +485,8 @@ export default function WhyChooseUs() {
           <div style={{ padding: "40px 48px 32px", borderBottom: "1px solid rgba(255,107,53,0.1)", display: "flex", alignItems: "center", gap: 16 }}>
             <span style={{ fontSize: 28 }}>🧭</span>
             <div>
-              <p style={{ margin: 0, fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: "#FF6B35", fontFamily: "monospace" }}>Fondasi Perusahaan</p>
-              <p style={{ margin: 0, fontSize: 22, fontWeight: 700, letterSpacing: "-0.02em" }}>Visi, Misi & Nilai</p>
+              <p style={{ margin: 0, fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: "#FF6B35", fontFamily: "monospace" }}>Company Foundation</p>
+              <p style={{ margin: 0, fontSize: 22, fontWeight: 700, letterSpacing: "-0.02em" }}>Vision, Mission & Values</p>
             </div>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))" }}>

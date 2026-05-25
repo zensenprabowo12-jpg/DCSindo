@@ -101,8 +101,8 @@ export default function Support() {
       setView("admin");
     } else {
       toast({
-        title: "Login gagal",
-        description: "Username / password salah",
+        title: "Login failed",
+        description: "Incorrect username or password",
         variant: "destructive"
       });
     }
@@ -305,51 +305,51 @@ export default function Support() {
                   <Accordion type="single" collapsible className="space-y-2">
 
                   <AccordionItem value="1">
-                    <AccordionTrigger>Apakah produk yang dijual original dan bergaransi resmi?</AccordionTrigger>
-                    <AccordionContent 
-                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    <AccordionTrigger>Are all products original and covered by official warranty?</AccordionTrigger>
+                    <AccordionContent className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">
+                      Yes, all products we distribute are 100% original and come with official warranty coverage, ensuring you get the best quality and peace of mind with every purchase.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="2">
-                    <AccordionTrigger>Apakah bisa membantu desain jaringan sebelum pembelian?</AccordionTrigger>
-                    <AccordionContent 
-                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    <AccordionTrigger>Can you help with network design before purchase?</AccordionTrigger>
+                    <AccordionContent className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">
+                      Yes, our technical team is ready to assist with pre-sales network design consultation to ensure you get the right solution for your infrastructure needs. Contact us via WhatsApp or submit a ticket to get started.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="3">
                     <AccordionTrigger>Do you provide on-site support?</AccordionTrigger>
-                    <AccordionContent 
-                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    <AccordionContent className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">
+                      Yes, we offer on-site technical support for installation, configuration, and troubleshooting. Service availability depends on location and the scope of your support agreement. Contact us to discuss options.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="4">
-                    <AccordionTrigger>Apakah ada support setelah pembelian?</AccordionTrigger>
-                    <AccordionContent 
-                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    <AccordionTrigger>Is there after-sales support available?</AccordionTrigger>
+                    <AccordionContent className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">
+                      Absolutely. We provide post-purchase technical support through our support channels, including troubleshooting assistance, firmware guidance, and RMA processing. Submit a ticket or reach us via WhatsApp.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="5">
-                    <AccordionTrigger>Apakah tersedia training atau workshop?</AccordionTrigger>
-                    <AccordionContent 
-                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    <AccordionTrigger>Are training or workshops available?</AccordionTrigger>
+                    <AccordionContent className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">
+                      Yes! DCS Training Center offers hands-on workshops and certification training for Ubiquiti and MikroTik products. Sessions are available online, offline, and hybrid. Visit our Training page for the latest schedule.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="6">
-                    <AccordionTrigger>Apakah tersedia training atau workshop?</AccordionTrigger>
-                    <AccordionContent 
-                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    <AccordionTrigger>What is the typical delivery timeline?</AccordionTrigger>
+                    <AccordionContent className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">
+                      Delivery timelines vary by product and stock availability. For in-stock items, we typically process and ship within 1–3 business days. Contact our sales team for specific delivery estimates for your order.
                     </AccordionContent>
                   </AccordionItem>
 
                   <AccordionItem value="7">
-                    <AccordionTrigger>Apakah tersedia training atau workshop?</AccordionTrigger>
-                    <AccordionContent 
-                      className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">Semua produk yang kami distribusikan adalah 100% original dan dilengkapi dengan garansi resmi, sehingga anda mendapatkan kualitas dan keamanan terbaik untuk setiap pembelian.
+                    <AccordionTrigger>How do I process a warranty claim (RMA)?</AccordionTrigger>
+                    <AccordionContent className="mt-0 p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border shadow-sm text-sm leading-relaxed transition-all duration-300">
+                      To initiate an RMA, please contact our support team with your purchase invoice, product serial number, and a description of the issue. Our team will verify the warranty and guide you through the replacement or repair process.
                     </AccordionContent>
                   </AccordionItem>
 

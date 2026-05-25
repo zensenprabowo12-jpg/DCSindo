@@ -302,7 +302,7 @@ export default function HeroSection() {
               ))}
             </div>
             <p style={{ marginTop: "clamp(12px, 2vh, 20px)", fontSize: 9, letterSpacing: "0.1em", color: "rgba(232,228,220,0.28)", fontFamily: "monospace", textAlign: "center" }}>
-              Scroll untuk melihat section berikutnya.
+              Scroll to see the next section.
             </p>
           </div>
         </div>

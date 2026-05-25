@@ -5,6 +5,8 @@ import { registerCatalogMultiBrandRoutes } from "./routes/catalogMultiBrandRoute
 import { registerMikrotikDcsRoutes } from "./routes/mikrotikDcsRoutes";
 import { registerMikrotikRoutes } from "./routes/mikrotikRoutes";
 import { registerUbiquitiDcsRoutes } from "./routes/ubiquitiDcsRoutes";
+import { registerVsolDcsRoutes } from "./routes/vsolDcsRoutes";
+import { registerTrainingRoutes } from "./routes/trainingRoutes";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -16,6 +18,8 @@ export async function registerRoutes(
   registerMikrotikRoutes(app);
   registerMikrotikDcsRoutes(app);
   registerUbiquitiDcsRoutes(app);
+  registerVsolDcsRoutes(app);
+  registerTrainingRoutes(app);
 
   return httpServer;
 }

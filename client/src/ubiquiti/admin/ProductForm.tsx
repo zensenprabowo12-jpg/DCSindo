@@ -236,7 +236,7 @@ function ProductFormBody({ id }: { id?: string }) {
             </select>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="sub">Subfilter (opsional)</Label>
+            <Label htmlFor="sub">Subfilter (optional)</Label>
             <Input id="sub" value={subfilter} onChange={(e) => setSubfilter(e.target.value)} placeholder="contoh: Enterprise Scale" />
           </div>
           <div className="flex items-center gap-3">
@@ -248,10 +248,10 @@ function ProductFormBody({ id }: { id?: string }) {
             <Textarea id="desk" value={desk} onChange={(e) => setDesk(e.target.value)} rows={5} required />
           </div>
           <div className="space-y-2">
-            <Label>Bullet Points (maks. 9, opsional)</Label>
+            <Label>Bullet Points (max. 9, optional)</Label>
             <div className="space-y-2">
               {bullets.map((b, i) => (
-                <Input key={i} value={b} placeholder={`Point ${i + 1} (opsional)`} onChange={(e) => setBulletAt(i, e.target.value)} />
+                <Input key={i} value={b} placeholder={`Point ${i + 1} (optional)`} onChange={(e) => setBulletAt(i, e.target.value)} />
               ))}
             </div>
           </div>
@@ -260,10 +260,10 @@ function ProductFormBody({ id }: { id?: string }) {
             {existingMain && !mainFile && <img src={existingMain} alt="" className="h-32 w-32 object-contain border rounded-md mb-2" />}
             {mainPreview && <img src={mainPreview} alt="" className="h-32 w-32 object-contain border rounded-md mb-2" />}
             <Input type="file" accept="image/*" onChange={(e) => setMainFile(e.target.files?.[0] ?? null)} />
-            {isEdit && <p className="text-xs text-muted-foreground">Kosongkan jika tidak ganti gambar</p>}
+            {isEdit && <p className="text-xs text-muted-foreground">Leave blank to keep the current image</p>}
           </div>
           <div className="space-y-2">
-            <Label>Galeri Produk (opsional)</Label>
+            <Label>Product Gallery (optional)</Label>
             {isEdit && keepGallery.length > 0 && (
               <div className="flex flex-wrap gap-2 mb-2">
                 {keepGallery.map((src) => (
@@ -277,7 +277,7 @@ function ProductFormBody({ id }: { id?: string }) {
             <Input type="file" accept="image/*" multiple onChange={(e) => setGalleryFiles(e.target.files ? Array.from(e.target.files) : [])} />
           </div>
           <div className="space-y-2">
-            <Label>Overview Images (opsional)</Label>
+            <Label>Overview Images (optional)</Label>
             {isEdit && keepOverviewImgs.length > 0 && (
               <div className="flex flex-wrap gap-2 mb-2">
                 {keepOverviewImgs.map((src) => (
@@ -291,7 +291,7 @@ function ProductFormBody({ id }: { id?: string }) {
             <Input type="file" accept="image/*" multiple onChange={(e) => setOverviewImgFiles(e.target.files ? Array.from(e.target.files) : [])} />
           </div>
           <div className="space-y-2">
-            <Label>Overview Videos (opsional)</Label>
+            <Label>Overview Videos (optional)</Label>
             {isEdit && keepOverviewVids.length > 0 && (
               <div className="flex flex-col gap-1 mb-2">
                 {keepOverviewVids.map((src) => (
@@ -307,7 +307,7 @@ function ProductFormBody({ id }: { id?: string }) {
           <div className="space-y-3">
             <div className="flex items-center justify-between">
               <div>
-                <Label>Technical Specifications (opsional)</Label>
+                <Label>Technical Specifications (optional)</Label>
                 <p className="text-xs text-muted-foreground mt-1">Centang "Check" jika value hanya tanda centang.</p>
               </div>
               <Button type="button" variant="outline" onClick={addTechSection}>+ Tambah section</Button>
@@ -339,7 +339,7 @@ function ProductFormBody({ id }: { id?: string }) {
             </div>
           </div>
           <div className="space-y-2">
-            <Label>In The Box — Foto isi paket (opsional)</Label>
+            <Label>In The Box — Package content photos (optional)</Label>
             {isEdit && keepInBox.length > 0 && (
               <div className="flex flex-wrap gap-2 mb-2">
                 {keepInBox.map((src) => (
@@ -353,10 +353,10 @@ function ProductFormBody({ id }: { id?: string }) {
             <Input type="file" accept="image/*" multiple onChange={(e) => setInBoxFiles(e.target.files ? Array.from(e.target.files) : [])} />
           </div>
           <div className="space-y-3">
-            <Label>Add Ons (opsional)</Label>
-            <p className="text-xs text-muted-foreground">Pilih produk Ubiquiti lain yang jadi add on produk ini.</p>
+            <Label>Add Ons (optional)</Label>
+            <p className="text-xs text-muted-foreground">Select other Ubiquiti products to add as add-ons for this product.</p>
             {allProducts.length === 0 ? (
-              <p className="text-xs text-muted-foreground italic">Belum ada produk lain.</p>
+              <p className="text-xs text-muted-foreground italic">No other products available.</p>
             ) : (
               <div className="max-h-48 overflow-y-auto border border-border rounded-lg p-2 space-y-1">
                 {allProducts.map((p) => (

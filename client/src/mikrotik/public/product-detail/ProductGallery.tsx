@@ -25,7 +25,7 @@ function ThumbButton({ src, isActive, onClick }: { src: string; isActive: boolea
       onClick={onClick}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      aria-label="Pilih gambar"
+      aria-label="Select image"
       style={{
         width: 64, height: 64, borderRadius: 10, flexShrink: 0,
         border: isActive ? "1px solid rgba(255,107,53,0.80)" : hovered ? "1px solid rgba(255,107,53,0.45)" : "1px solid rgba(255,107,53,0.15)",
@@ -309,7 +309,7 @@ export function ProductGallery({ title, mainSrc, gallery, activeSrc, onSelect }:
         )}
 
         <div style={{ position: "absolute", top: 12, right: 12, zIndex: 2, background: "rgba(10,10,15,0.55)", backdropFilter: "blur(8px)", border: "1px solid rgba(255,107,53,0.25)", borderRadius: 8, padding: "4px 8px", fontSize: 10, color: "rgba(232,228,220,0.50)", fontFamily: "monospace", letterSpacing: "0.08em", opacity: hoverMain ? 1 : 0, transition: "opacity 0.3s ease", pointerEvents: "none" }}>
-          klik untuk perbesar
+          click to enlarge
         </div>
 
         <div

@@ -108,7 +108,7 @@ export default function MikrotikDcsStoreProductDetail() {
     }
 
     if (Number.isNaN(id) || id < 1) {
-      setErr("Produk tidak valid");
+      setErr("Invalid product");
       setLoading(false);
       return;
     }
@@ -260,7 +260,7 @@ export default function MikrotikDcsStoreProductDetail() {
             fontSize: 14,
           }}
         >
-          URL tidak valid
+          Invalid URL
         </div>
       </Layout>
     );
@@ -333,7 +333,7 @@ export default function MikrotikDcsStoreProductDetail() {
               marginBottom: 20,
             }}
           >
-            {err ?? "Tidak ditemukan"}
+            {err ?? "Not found"}
           </p>
 
           <BackButton
