@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/layout";
 import { apiUbiquitiPublicProduct } from "../api";
@@ -13,6 +13,133 @@ function isYouTube(url: string): boolean {
 function getYouTubeId(url: string): string {
   const m = url.match(/(?:v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
   return m ? m[1] : url;
+}
+
+// ─── LIGHTBOX ─────────────────────────────────────────────────────────────────
+
+function Lightbox({ images, activeIndex, onClose, onPrev, onNext }: {
+  images: string[];
+  activeIndex: number;
+  onClose: () => void;
+  onPrev: () => void;
+  onNext: () => void;
+}) {
+  const hasPrev = activeIndex > 0;
+  const hasNext = activeIndex < images.length - 1;
+
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowLeft" && hasPrev) onPrev();
+      if (e.key === "ArrowRight" && hasNext) onNext();
+    };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [onClose, onPrev, onNext, hasPrev, hasNext]);
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = ""; };
+  }, []);
+
+  return (
+    <div
+      onClick={onClose}
+      style={{
+        position: "fixed", inset: 0, zIndex: 9999,
+        background: "rgba(5,5,8,0.92)", backdropFilter: "blur(16px)",
+        display: "flex", alignItems: "center", justifyContent: "center",
+        animation: "ubi-fadeIn 0.2s ease",
+      }}
+    >
+      <button
+        onClick={onClose}
+        style={{
+          position: "absolute", top: 20, right: 20,
+          width: 40, height: 40, borderRadius: "50%",
+          border: "1px solid rgba(0,130,255,0.35)", background: "rgba(0,130,255,0.08)",
+          color: "#fff", fontSize: 18, cursor: "pointer",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          transition: "all 0.2s ease", zIndex: 1,
+        }}
+        onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(0,130,255,0.25)"; }}
+        onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(0,130,255,0.08)"; }}
+      >
+        ✕
+      </button>
+
+      {images.length > 1 && (
+        <div style={{ position: "absolute", top: 24, left: "50%", transform: "translateX(-50%)", fontSize: 12, color: "rgba(255,255,255,0.45)", fontFamily: "monospace", letterSpacing: "0.1em" }}>
+          {activeIndex + 1} / {images.length}
+        </div>
+      )}
+
+      {hasPrev && (
+        <button
+          onClick={(e) => { e.stopPropagation(); onPrev(); }}
+          style={{
+            position: "absolute", left: 20, top: "50%", transform: "translateY(-50%)",
+            width: 44, height: 44, borderRadius: "50%",
+            border: "1px solid rgba(0,130,255,0.35)", background: "rgba(0,130,255,0.08)",
+            color: "#fff", fontSize: 18, cursor: "pointer",
+            display: "flex", alignItems: "center", justifyContent: "center",
+            transition: "all 0.2s ease",
+          }}
+          onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(0,130,255,0.25)"; }}
+          onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(0,130,255,0.08)"; }}
+        >←</button>
+      )}
+
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          maxWidth: "85vw", maxHeight: "85vh",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          animation: "ubi-scaleIn 0.2s ease",
+        }}
+      >
+        <img
+          src={images[activeIndex]}
+          alt=""
+          style={{
+            maxWidth: "85vw", maxHeight: "85vh", objectFit: "contain",
+            borderRadius: 12, boxShadow: "0 24px 80px rgba(0,0,0,0.6)",
+            filter: "drop-shadow(0 8px 32px rgba(0,130,255,0.15))", userSelect: "none",
+          }}
+          draggable={false}
+        />
+      </div>
+
+      {hasNext && (
+        <button
+          onClick={(e) => { e.stopPropagation(); onNext(); }}
+          style={{
+            position: "absolute", right: 20, top: "50%", transform: "translateY(-50%)",
+            width: 44, height: 44, borderRadius: "50%",
+            border: "1px solid rgba(0,130,255,0.35)", background: "rgba(0,130,255,0.08)",
+            color: "#fff", fontSize: 18, cursor: "pointer",
+            display: "flex", alignItems: "center", justifyContent: "center",
+            transition: "all 0.2s ease",
+          }}
+          onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(0,130,255,0.25)"; }}
+          onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(0,130,255,0.08)"; }}
+        >→</button>
+      )}
+
+      {images.length > 1 && (
+        <div style={{ position: "absolute", bottom: 20, left: "50%", transform: "translateX(-50%)", display: "flex", gap: 8 }}>
+          {images.map((_, i) => (
+            <span key={i} style={{ width: i === activeIndex ? 24 : 8, height: 8, borderRadius: 100, display: "block", transition: "all 0.3s ease", background: i === activeIndex ? "#0082FF" : "rgba(0,130,255,0.30)" }} />
+          ))}
+        </div>
+      )}
+
+      <style>{`
+        @keyframes ubi-fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes ubi-scaleIn { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: scale(1); } }
+      `}</style>
+    </div>
+  );
 }
 
 // ─── GALLERY ──────────────────────────────────────────────────────────────────
@@ -39,25 +166,99 @@ function Gallery({
   }, [mainSrc, gallery]);
 
   const [active, setActive] = useState(allImages[0] ?? "");
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [hoverMain, setHoverMain] = useState(false);
+  const dragStartX = useRef<number | null>(null);
+  const isDragging = useRef(false);
 
   useEffect(() => {
     setActive(allImages[0] ?? "");
   }, [allImages]);
 
+  const activeIndex = allImages.indexOf(active);
+  const currentIndex = activeIndex >= 0 ? activeIndex : 0;
+
+  const goPrev = useCallback(() => {
+    if (currentIndex > 0) setActive(allImages[currentIndex - 1]);
+  }, [currentIndex, allImages]);
+
+  const goNext = useCallback(() => {
+    if (currentIndex < allImages.length - 1) setActive(allImages[currentIndex + 1]);
+  }, [currentIndex, allImages]);
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    dragStartX.current = e.clientX;
+    isDragging.current = false;
+  };
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (dragStartX.current === null) return;
+    if (Math.abs(e.clientX - dragStartX.current) > 5) isDragging.current = true;
+  };
+  const handleMouseUp = (e: React.MouseEvent) => {
+    if (dragStartX.current === null) return;
+    const diff = e.clientX - dragStartX.current;
+    if (isDragging.current) {
+      if (diff < -40) goNext();
+      else if (diff > 40) goPrev();
+    } else {
+      setLightboxOpen(true);
+    }
+    dragStartX.current = null;
+    isDragging.current = false;
+  };
+
+  const touchStartX = useRef<number | null>(null);
+  const handleTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; };
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const diff = e.changedTouches[0].clientX - touchStartX.current;
+    if (diff < -40) goNext();
+    else if (diff > 40) goPrev();
+    touchStartX.current = null;
+  };
+
   return (
     <div>
       {/* Main image */}
-      <div className="rounded-2xl overflow-hidden border border-border bg-secondary/10 flex items-center justify-center aspect-[4/3]">
+      <div className="relative rounded-2xl overflow-hidden border border-border bg-secondary/10 flex items-center justify-center aspect-[4/3]">
+        {/* Navigation arrows */}
+        {currentIndex > 0 && (
+          <button
+            onClick={(e) => { e.stopPropagation(); goPrev(); }}
+            className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-black/40 backdrop-blur-sm border border-white/20 text-white flex items-center justify-center hover:bg-blue-500/40 transition-all text-sm"
+          >←</button>
+        )}
+        {currentIndex < allImages.length - 1 && (
+          <button
+            onClick={(e) => { e.stopPropagation(); goNext(); }}
+            className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-black/40 backdrop-blur-sm border border-white/20 text-white flex items-center justify-center hover:bg-blue-500/40 transition-all text-sm"
+          >→</button>
+        )}
+        {/* Zoom hint */}
+        <div className={`absolute top-3 right-3 z-10 bg-black/50 backdrop-blur-sm border border-white/20 rounded-lg px-2 py-1 text-[10px] text-white/60 font-mono tracking-wider transition-opacity duration-300 pointer-events-none ${hoverMain ? "opacity-100" : "opacity-0"}`}>
+          click to enlarge
+        </div>
         {active ? (
-          <img
-            key={active}
-            src={active}
-            alt={title}
-            className="w-full h-full object-contain p-6"
-            onError={(e) => {
-              (e.currentTarget as HTMLImageElement).src = "/images/placeholder-product.png";
-            }}
-          />
+          <div
+            className="w-full h-full cursor-zoom-in select-none"
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={() => { dragStartX.current = null; isDragging.current = false; setHoverMain(false); }}
+            onMouseEnter={() => setHoverMain(true)}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+          >
+            <img
+              key={active}
+              src={active}
+              alt={title}
+              className={`w-full h-full object-contain p-6 transition-transform duration-300 pointer-events-none ${hoverMain ? "scale-[1.03]" : "scale-100"}`}
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).src = "/images/placeholder-product.png";
+              }}
+            />
+          </div>
         ) : (
           <div className="w-16 h-16 text-muted-foreground/30">
             <svg fill="none" stroke="currentColor" strokeWidth="1" viewBox="0 0 24 24">
@@ -94,6 +295,16 @@ function Gallery({
           ))}
         </div>
       )}
+
+      {lightboxOpen && (
+        <Lightbox
+          images={allImages}
+          activeIndex={currentIndex}
+          onClose={() => setLightboxOpen(false)}
+          onPrev={goPrev}
+          onNext={goNext}
+        />
+      )}
     </div>
   );
 }
@@ -127,6 +338,11 @@ export default function UbiquitiDcsStoreProductDetail() {
     });
     return () => { alive = false; };
   }, [id, match]);
+
+  useEffect(() => {
+    if (d) document.title = `${d.nama_produk} — Ubiquiti | DCS`;
+    return () => { document.title = "DCS - Professional Network Solutions"; };
+  }, [d]);
 
   const gallery = useMemo(
     () => [...(d?.gallery ?? [])].sort((a, b) => a.sort_order - b.sort_order),
@@ -230,13 +446,28 @@ export default function UbiquitiDcsStoreProductDetail() {
     <Layout>
       <div className="container mx-auto px-4 py-10 max-w-6xl">
 
+        {/* Breadcrumb */}
+        <nav className="flex items-center gap-1.5 text-xs text-muted-foreground mb-4 flex-wrap">
+          <Link href="/"><a className="hover:text-blue-500 transition-colors">Home</a></Link>
+          <span>/</span>
+          <Link href="/ubiquiti"><a className="hover:text-blue-500 transition-colors">Ubiquiti</a></Link>
+          <span>/</span>
+          <Link href="/ubiquiti/shop"><a className="hover:text-blue-500 transition-colors">Shop</a></Link>
+          {d && (
+            <>
+              <span>/</span>
+              <span className="text-foreground font-medium truncate max-w-[200px]">{d.nama_produk}</span>
+            </>
+          )}
+        </nav>
+
         {/* Back button */}
         <Link href="/ubiquiti/shop">
           <a className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8 group">
             <svg className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            Kembali ke katalog
+            Back to catalog
           </a>
         </Link>
 

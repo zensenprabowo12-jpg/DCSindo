@@ -38,13 +38,12 @@ const BRANDS = [
   {
     key: "vsol",
     name: "V-SOL",
-    description: "Segera hadir",
+    description: "Kelola produk katalog V-SOL DCS",
     href: "/admin/vsol",
-    disabled: true,
-    accentColor: "from-zinc-700/10 to-transparent",
-    borderColor: "border-zinc-800/50",
-    dotColor: "bg-zinc-600",
-    labelColor: "text-zinc-600",
+    accentColor: "from-green-500/10 to-transparent",
+    borderColor: "border-zinc-800 hover:border-green-500/50",
+    dotColor: "bg-green-500",
+    labelColor: "text-green-400",
   },
 ];
 
@@ -65,6 +64,9 @@ export default function AdminDashboard() {
       ),
       fetchProductCount("/api/ubiquiti-dcs/admin/products").then((n) =>
         setCounts((prev) => ({ ...prev, ubiquiti: n }))
+      ),
+      fetchProductCount("/api/vsol-dcs/admin/products").then((n) =>
+        setCounts((prev) => ({ ...prev, vsol: n }))
       ),
     ]);
   }, [setLocation]);
@@ -93,11 +95,10 @@ export default function AdminDashboard() {
           {BRANDS.map((brand) => (
             <div
               key={brand.key}
-              onClick={() => !brand.disabled && setLocation(brand.href)}
+              onClick={() => setLocation(brand.href)}
               className={[
-                "group relative rounded-2xl border bg-zinc-900 p-6 transition-all duration-200",
+                "group relative rounded-2xl border bg-zinc-900 p-6 transition-all duration-200 cursor-pointer hover:bg-zinc-800/80",
                 brand.borderColor,
-                brand.disabled ? "opacity-40 cursor-not-allowed" : "cursor-pointer hover:bg-zinc-800/80",
               ].join(" ")}
             >
               {/* Gradient accent */}
@@ -113,30 +114,23 @@ export default function AdminDashboard() {
                 <h2 className="text-lg font-bold text-white mb-1">{brand.name}</h2>
                 <p className="text-sm text-zinc-500">{brand.description}</p>
 
-                {!brand.disabled && (
-                  <div className="mt-4">
-                    {counts[brand.key] == null ? (
-                      <div className="h-5 w-20 rounded bg-zinc-800 animate-pulse" />
-                    ) : (
-                      <span className="text-2xl font-bold text-white">
-                        {counts[brand.key]}
-                        <span className="text-sm font-normal text-zinc-500 ml-1.5">produk</span>
-                      </span>
-                    )}
-                  </div>
-                )}
+                <div className="mt-4">
+                  {counts[brand.key] == null ? (
+                    <div className="h-5 w-20 rounded bg-zinc-800 animate-pulse" />
+                  ) : (
+                    <span className="text-2xl font-bold text-white">
+                      {counts[brand.key]}
+                      <span className="text-sm font-normal text-zinc-500 ml-1.5">produk</span>
+                    </span>
+                  )}
+                </div>
 
-                {!brand.disabled && (
-                  <div className="mt-4 flex items-center gap-1 text-xs font-medium text-zinc-400 group-hover:text-zinc-200 transition-colors">
-                    Kelola produk
-                    <svg className="w-3.5 h-3.5 translate-x-0 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                    </svg>
-                  </div>
-                )}
-                {brand.disabled && (
-                  <div className="mt-5 text-xs text-zinc-700 font-medium">Segera hadir</div>
-                )}
+                <div className="mt-4 flex items-center gap-1 text-xs font-medium text-zinc-400 group-hover:text-zinc-200 transition-colors">
+                  Kelola produk
+                  <svg className="w-3.5 h-3.5 translate-x-0 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </div>
               </div>
             </div>
           ))}

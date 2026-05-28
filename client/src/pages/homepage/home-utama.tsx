@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useRef } from "react";
-import { ArrowRight, X, ShieldCheck, Zap, Headphones } from "lucide-react";
+import { ArrowRight, X, ShieldCheck, Zap, Headphones, Star, Building2, FileText } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { V_SOL_BRAND } from "@/brands/v-sol";
 
@@ -347,6 +347,114 @@ export default function HomeUtama() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= STATS / SOCIAL PROOF ================= */}
+      <section className="py-16 bg-white dark:bg-black border-t border-border transition-colors duration-500">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {[
+              { value: "20+", label: "Years of Experience" },
+              { value: "5,000+", label: "Products Distributed" },
+              { value: "1,000+", label: "Enterprise Clients" },
+              { value: "3", label: "Authorized Brands" },
+            ].map((stat) => (
+              <div key={stat.label} className="space-y-1">
+                <p className="text-3xl md:text-4xl font-black tracking-tight text-black dark:text-white">{stat.value}</p>
+                <p className="text-sm text-muted-foreground font-medium">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= TESTIMONIALS ================= */}
+      <section className="py-24 bg-secondary/20 dark:bg-white/5 border-t border-border">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-14">
+            <p className="text-xs font-black tracking-[0.35em] uppercase text-muted-foreground">
+              What Clients Say
+            </p>
+            <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight">
+              Trusted by Professionals
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                quote: "DCS provides top-quality MikroTik and Ubiquiti equipment. Their technical support team is exceptional — they helped us deploy a city-wide network with zero issues.",
+                name: "Ahmad Fauzi",
+                role: "IT Manager, ISP Jawa Barat",
+              },
+              {
+                quote: "We've been partnering with DCS for 5 years. Their product knowledge and after-sales service make them our go-to networking supplier for all our enterprise deployments.",
+                name: "Budi Santoso",
+                role: "Network Engineer, Jakarta Hotel Group",
+              },
+              {
+                quote: "The V-SOL OLT deployment was seamless thanks to DCS's guidance. From procurement to configuration, they supported us every step of the way.",
+                name: "Rina Kusuma",
+                role: "Technical Director, Regional ISP Surabaya",
+              },
+            ].map((t, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="rounded-2xl border border-border bg-background p-6 flex flex-col gap-4"
+              >
+                <div className="flex gap-1">
+                  {Array.from({ length: 5 }).map((_, j) => (
+                    <Star key={j} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                  "{t.quote}"
+                </p>
+                <div className="flex items-center gap-3 pt-2 border-t border-border">
+                  <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Building2 className="w-4 h-4 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-sm">{t.name}</p>
+                    <p className="text-xs text-muted-foreground">{t.role}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= COMPANY PROFILE CTA ================= */}
+      <section className="py-20 bg-white dark:bg-black border-t border-border transition-colors duration-500">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <div className="rounded-3xl border border-border bg-secondary/20 dark:bg-white/5 p-10 md:p-14">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 mb-6">
+              <FileText className="w-7 h-7 text-primary" />
+            </div>
+            <h2 className="text-3xl font-black tracking-tight mb-3">
+              Download Our Company Profile
+            </h2>
+            <p className="text-muted-foreground max-w-md mx-auto mb-8">
+              Learn more about our products, services, and company background. Download or print our official company profile.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Button asChild size="lg" className="rounded-full px-10 font-bold">
+                <Link href="/company-profile">
+                  <FileText className="w-4 h-4 mr-2" />
+                  View Company Profile
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="rounded-full px-10 font-bold">
+                <Link href="/support">Talk to Our Team</Link>
+              </Button>
             </div>
           </div>
         </div>

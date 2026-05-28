@@ -25,18 +25,18 @@ const firmwareData: FirmwareData = {
   ],
   MikroTik: [
     {
-      name: "RouterBoard X",
-      version: "v7.1",
-      link: "#",
-      downloadName: "routerboard-x.firmware.bin",
-      notes: "Stable release for RouterBoard X series",
+      name: "RouterOS (All Devices)",
+      version: "Latest Stable",
+      link: "https://mikrotik.com/download",
+      downloadName: "RouterOS Latest Stable",
+      notes: "Official firmware for all MikroTik routers and switches — download from mikrotik.com",
     },
     {
-      name: "CCR Series",
-      version: "v7.5",
-      link: "#",
-      downloadName: "ccr-series.firmware.bin",
-      notes: "Recommended for CCR1009 and CCR2004",
+      name: "Winbox GUI Tool",
+      version: "Latest",
+      link: "https://mikrotik.com/download",
+      downloadName: "Winbox Latest",
+      notes: "Windows/Mac/Linux management tool for MikroTik devices",
     },
   ],
   "V-SOL": [
@@ -115,14 +115,16 @@ export default function FirmwarePage() {
                   </span>
                   <a
                     href={item.link}
-                    download={item.downloadName}
+                    {...(item.link.startsWith("http")
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : { download: item.downloadName })}
                     className={`px-5 py-2 rounded-full text-sm font-bold transition-all ${
                       item.link === "#"
                         ? "bg-secondary text-muted-foreground cursor-not-allowed pointer-events-none"
                         : "bg-foreground text-background hover:opacity-80"
                     }`}
                   >
-                    {item.link === "#" ? "Coming Soon" : "Download"}
+                    {item.link === "#" ? "Coming Soon" : item.link.startsWith("http") && !item.link.includes("drive.google") ? "Visit" : "Download"}
                   </a>
                 </div>
               </div>

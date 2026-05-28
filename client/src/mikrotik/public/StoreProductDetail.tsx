@@ -231,6 +231,11 @@ export default function MikrotikDcsStoreProductDetail() {
     );
   }, [d, gallery]);
 
+  useEffect(() => {
+    if (d) document.title = `${d.nama_produk} — MikroTik | DCS`;
+    return () => { document.title = "DCS - Professional Network Solutions"; };
+  }, [d]);
+
   const scrollToSpecs = useCallback(() => {
     const el = document.getElementById(specId);
 
@@ -269,46 +274,33 @@ export default function MikrotikDcsStoreProductDetail() {
   if (loading) {
     return (
       <Layout>
-        <div
-          style={{
-            padding: "80px 24px",
-            textAlign: "center",
-          }}
-        >
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 10,
-              color: "rgba(232,228,220,0.50)",
-              fontSize: 13,
-              fontFamily: "monospace",
-              letterSpacing: "0.1em",
-            }}
-          >
-            <span
-              style={{
-                width: 8,
-                height: 8,
-                borderRadius: "50%",
-                background: "#FF6B35",
-                animation: "pulse 1.2s infinite",
-              }}
-            />
-
-            Memuat…
+        <div style={{ background: "#0B0B0F", minHeight: "100vh", padding: "48px 24px" }}>
+          <div style={{ maxWidth: 1152, margin: "0 auto" }}>
+            {/* Skeleton breadcrumb */}
+            <div style={{ display: "flex", gap: 8, marginBottom: 28 }}>
+              <div style={{ height: 10, width: 32, borderRadius: 6, background: "rgba(255,107,53,0.12)", animation: "mkt-pulse 1.4s ease-in-out infinite" }} />
+              <div style={{ height: 10, width: 16, borderRadius: 6, background: "rgba(255,107,53,0.08)" }} />
+              <div style={{ height: 10, width: 48, borderRadius: 6, background: "rgba(255,107,53,0.12)", animation: "mkt-pulse 1.4s ease-in-out infinite 0.1s" }} />
+            </div>
+            {/* Skeleton back button */}
+            <div style={{ height: 36, width: 180, borderRadius: 100, background: "rgba(255,107,53,0.09)", marginBottom: 36, animation: "mkt-pulse 1.4s ease-in-out infinite 0.2s" }} />
+            {/* Skeleton grid */}
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 40 }}>
+              <div style={{ aspectRatio: "4/3", borderRadius: 16, background: "rgba(255,107,53,0.07)", animation: "mkt-pulse 1.4s ease-in-out infinite 0.15s" }} />
+              <div style={{ display: "flex", flexDirection: "column", gap: 14, paddingTop: 8 }}>
+                <div style={{ height: 10, width: 80, borderRadius: 6, background: "rgba(255,107,53,0.10)", animation: "mkt-pulse 1.4s ease-in-out infinite 0.2s" }} />
+                <div style={{ height: 28, width: "70%", borderRadius: 8, background: "rgba(255,107,53,0.13)", animation: "mkt-pulse 1.4s ease-in-out infinite 0.25s" }} />
+                <div style={{ height: 10, width: "50%", borderRadius: 6, background: "rgba(255,107,53,0.09)", animation: "mkt-pulse 1.4s ease-in-out infinite 0.3s" }} />
+                {[0.9, 0.75, 0.85, 0.6].map((w, i) => (
+                  <div key={i} style={{ height: 10, width: `${w * 100}%`, borderRadius: 6, background: "rgba(255,107,53,0.08)", animation: `mkt-pulse 1.4s ease-in-out infinite ${0.3 + i * 0.05}s` }} />
+                ))}
+                <div style={{ height: 44, width: 180, borderRadius: 100, background: "rgba(255,107,53,0.10)", marginTop: 12, animation: "mkt-pulse 1.4s ease-in-out infinite 0.5s" }} />
+              </div>
+            </div>
           </div>
-
           <style>{`
-            @keyframes pulse {
-              0%,100%{
-                opacity:1;
-                transform:scale(1)
-              }
-              50%{
-                opacity:0.4;
-                transform:scale(0.8)
-              }
+            @keyframes mkt-pulse {
+              0%,100%{opacity:1} 50%{opacity:0.4}
             }
           `}</style>
         </div>
@@ -444,6 +436,17 @@ export default function MikrotikDcsStoreProductDetail() {
               padding: "48px 24px 80px",
             }}
           >
+            {/* BREADCRUMB */}
+            <nav style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11, color: "rgba(232,228,220,0.45)", marginBottom: 14, flexWrap: "wrap" }}>
+              <Link href="/"><a style={{ color: "rgba(232,228,220,0.45)", textDecoration: "none", transition: "color 0.2s" }} onMouseEnter={(e) => (e.currentTarget.style.color = "#FF6B35")} onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(232,228,220,0.45)")}>Home</a></Link>
+              <span>/</span>
+              <Link href="/mikrotik"><a style={{ color: "rgba(232,228,220,0.45)", textDecoration: "none", transition: "color 0.2s" }} onMouseEnter={(e) => (e.currentTarget.style.color = "#FF6B35")} onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(232,228,220,0.45)")}>MikroTik</a></Link>
+              <span>/</span>
+              <Link href={backHref}><a style={{ color: "rgba(232,228,220,0.45)", textDecoration: "none", textTransform: "capitalize", transition: "color 0.2s" }} onMouseEnter={(e) => (e.currentTarget.style.color = "#FF6B35")} onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(232,228,220,0.45)")}>{categoryName || "Categories"}</a></Link>
+              <span>/</span>
+              <span style={{ color: "rgba(232,228,220,0.80)", maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{d.nama_produk}</span>
+            </nav>
+
             {/* BACK BUTTON */}
             <div style={{ marginBottom: 28 }}>
               <BackButton

@@ -11,6 +11,7 @@ import {
   Facebook,
   Shield,
   ChevronLeft,
+  ChevronUp,
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
@@ -39,6 +40,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
   const showGlobalBackNav = location !== "/";
   const [scrolled, setScrolled] = useState(false);
+  const [showBackTop, setShowBackTop] = useState(false);
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "light");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isBrandOpen, setIsBrandOpen] = useState(false);
@@ -49,7 +51,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const supportRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+      setShowBackTop(window.scrollY > 400);
+    };
     window.addEventListener("scroll", handleScroll);
 
     if (theme === "dark") document.documentElement.classList.add("dark");
@@ -360,6 +365,40 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       <main className="flex-1">{children}</main>
+
+      {/* ================= FLOATING BUTTONS ================= */}
+      {/* Back to Top */}
+      <AnimatePresence>
+        {showBackTop && (
+          <motion.button
+            initial={{ opacity: 0, scale: 0.7 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.7 }}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="fixed bottom-24 right-5 z-50 w-10 h-10 rounded-full bg-foreground/80 hover:bg-foreground text-background flex items-center justify-center shadow-md transition-colors"
+            aria-label="Back to top"
+          >
+            <ChevronUp className="w-5 h-5" />
+          </motion.button>
+        )}
+      </AnimatePresence>
+
+      {/* Floating WhatsApp Button */}
+      <motion.a
+        href="https://wa.me/6281530586666?text=Halo%20DCS%2C%20saya%20ingin%20bertanya%20tentang%20produk."
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 1, type: "spring", stiffness: 260, damping: 20 }}
+        className="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] flex items-center justify-center shadow-lg shadow-green-500/30 transition-colors"
+        aria-label="Chat via WhatsApp"
+        title="Chat with us on WhatsApp"
+      >
+        <WhatsAppIcon className="w-7 h-7 text-white" />
+        {/* Pulse ring */}
+        <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-40 animate-ping pointer-events-none" />
+      </motion.a>
 
       {/* ================= FOOTER ================= */}
       <footer className="bg-foreground text-background py-16">
