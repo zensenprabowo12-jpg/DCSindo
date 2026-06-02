@@ -42,7 +42,7 @@ function HomepageCategoryCard({ title, href, imageSrc }: { title: string; href: 
       <div style={{ position: "absolute", inset: 0, background: hovered ? "linear-gradient(to top, rgba(255,107,53,0.55) 0%, rgba(10,10,15,0.30) 50%, transparent 100%)" : "linear-gradient(to top, rgba(10,10,15,0.80) 0%, rgba(10,10,15,0.20) 50%, transparent 100%)", pointerEvents: "none", transition: "all 0.4s ease" }} />
       <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, transparent, rgba(255,107,53,0.7), transparent)", opacity: hovered ? 1 : 0, transition: "opacity 0.3s ease" }} />
       <div style={{ position: "relative", zIndex: 10, padding: "clamp(10px, 1.5vw, 16px) clamp(12px, 1.8vw, 20px)" }}>
-        <p style={{ fontWeight: 700, color: "#ffffff", fontSize: "clamp(11px, 1.2vw, 15px)", margin: 0, textShadow: "0 2px 8px rgba(0,0,0,0.6)", letterSpacing: "-0.01em", textTransform: "uppercase" }}>
+        <p style={{ fontWeight: 700, color: "#ffffff", fontSize: "clamp(11px, 1.2vw, 15px)", margin: 0, textShadow: "0 2px 8px rgba(0,0,0,0.6)", letterSpacing: "-0.01em" }}>
           {title}
         </p>
       </div>

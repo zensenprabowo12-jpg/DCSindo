@@ -7,28 +7,6 @@ import {
   MIKROTIK_MORE_CATEGORIES,
 } from "./CategoryProductPageData";
 
-/*
-|--------------------------------------------------------------------------
-| BACKGROUND PER CATEGORY
-|--------------------------------------------------------------------------
-*/
-
-const CATEGORY_BACKGROUNDS: Record<string, string> = {
-  "Ethernet Routers": "/images/batik/batik-mikrotik1.png",
-  "Switches": "/images/batik/batik-mikrotik2.png",
-  "Wireless Systems": "/images/batik/batik-mikrotik3.png",
-  "Wireless Home & Office": "/images/batik/batik-mikrotik4.png",
-  "LTE / 5G": "/images/batik/batik-mikrotik5.png",
-  "IoT Products": "/images/batik/batik-mikrotik6.png",
-  "60GHz": "/images/batik/batik-mikrotik7.png",
-  "Routerboards": "/images/category-bg/routerboards.jpg",
-  "Enclosures": "/images/category-bg/enclosures.jpg",
-  "Interfaces": "/images/category-bg/interfaces.jpg",
-  "Accessories": "/images/category-bg/accessories.jpg",
-  "Antennas": "/images/category-bg/antennas.jpg",
-  "SFP/QSFP": "/images/category-bg/sfp-qsfp.jpg",
-};
-
 export default function MikrotikCategoryProductPage() {
   return (
     <Layout>
@@ -64,74 +42,37 @@ export default function MikrotikCategoryProductPage() {
             {/* ROW 1 */}
             <div className="mt-14 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
               {MIKROTIK_CATEGORY_CARDS_TOP.map((c) => {
-                const backgroundImage =
-                  CATEGORY_BACKGROUNDS[c.title] ||
-                  "/images/category-bg/default.jpg";
-
                 const CardInner = (
                   <div
                     className={cn(
-                      "group relative overflow-hidden rounded-3xl",
-                      "border border-white/10",
-                      "min-h-[380px]",
-                      "hover:-translate-y-2 hover:shadow-2xl",
-                      "transition-all duration-500",
+                      "group relative flex flex-col h-full overflow-hidden rounded-3xl",
+                      "border border-white/10 bg-zinc-900/50 backdrop-blur-sm",
+                      "hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:border-white/25",
+                      "transition-all duration-500 will-change-transform",
                     )}
                   >
-                    {/* BG IMAGE */}
-                    <div
-                      className="absolute inset-0 bg-cover bg-center brightness-[0.9] contrast-125 saturate-110 scale-100 group-hover:scale-110 transition-all duration-700"
-                      style={{
-                        backgroundImage: `url(${backgroundImage})`,
-                      }}
-                    />
-
-                    {/* WHITE TINT */}
-                    <div className="absolute inset-0 bg-white/[0.03]" />
-
-                    {/* OVERLAY */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/10 group-hover:from-black/60 transition-all duration-500" />
+                    {/* IMAGE */}
+                    <div className="relative w-full aspect-[16/10] overflow-hidden">
+                      <img
+                        src={c.imageSrc}
+                        alt={c.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        draggable={false}
+                        loading="lazy"
+                      />
+                    </div>
 
                     {/* CONTENT */}
-                    <div className="relative z-10 flex flex-col justify-end h-full p-7">
-                      {/* ICON */}
-                      <div
-                        className={cn(
-                          "w-28 h-28",
-                          "rounded-2xl overflow-hidden",
-                          "bg-white/15 backdrop-blur-md",
-                          "border border-white/20",
-                          "shadow-2xl",
-                        )}
-                      >
-                        <img
-                          src={c.imageSrc}
-                          alt={c.title}
-                          className={cn(
-                            "w-full h-full",
-                            "object-cover",
-                            "group-hover:scale-110",
-                            "transition-transform duration-500",
-                          )}
-                          draggable={false}
-                          loading="lazy"
-                        />
-                      </div>
-
-                      {/* TITLE */}
-                      <p
-                        className={cn(
-                          "mt-6",
-                          "text-2xl md:text-3xl",
-                          "font-black tracking-tight",
-                          "text-white",
-                          "drop-shadow-2xl",
-                          "leading-tight",
-                          "uppercase",
-                        )}
-                      >
+                    <div className="flex flex-col flex-1 p-6">
+                      <p className="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">
                         {c.title}
                       </p>
+                      <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-[#FF6B35]">
+                        Lihat produk
+                        <span className="transition-transform duration-300 group-hover:translate-x-1">
+                          →
+                        </span>
+                      </span>
                     </div>
                   </div>
                 );
@@ -149,74 +90,37 @@ export default function MikrotikCategoryProductPage() {
             {/* ROW 2 */}
             <div className="mt-7 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 items-stretch">
               {MIKROTIK_CATEGORY_CARDS_BOTTOM.slice(0, 3).map((c) => {
-                const backgroundImage =
-                  CATEGORY_BACKGROUNDS[c.title] ||
-                  "/images/category-bg/default.jpg";
-
                 const CardInner = (
                   <div
                     className={cn(
-                      "group relative overflow-hidden rounded-3xl",
-                      "border border-white/10",
-                      "min-h-[380px]",
-                      "hover:-translate-y-2 hover:shadow-2xl",
-                      "transition-all duration-500",
+                      "group relative flex flex-col h-full overflow-hidden rounded-3xl",
+                      "border border-white/10 bg-zinc-900/50 backdrop-blur-sm",
+                      "hover:-translate-y-2 hover:scale-[1.03] hover:shadow-2xl hover:border-white/25",
+                      "transition-all duration-500 will-change-transform",
                     )}
                   >
-                    {/* BG IMAGE */}
-                    <div
-                      className="absolute inset-0 bg-cover bg-center brightness-[0.9] contrast-125 saturate-110 scale-100 group-hover:scale-110 transition-all duration-700"
-                      style={{
-                        backgroundImage: `url(${backgroundImage})`,
-                      }}
-                    />
-
-                    {/* WHITE TINT */}
-                    <div className="absolute inset-0 bg-white/[0.03]" />
-
-                    {/* OVERLAY */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/10 group-hover:from-black/65 transition-all duration-500" />
+                    {/* IMAGE */}
+                    <div className="relative w-full aspect-[16/10] overflow-hidden">
+                      <img
+                        src={c.imageSrc}
+                        alt={c.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        draggable={false}
+                        loading="lazy"
+                      />
+                    </div>
 
                     {/* CONTENT */}
-                    <div className="relative z-10 flex flex-col justify-end h-full p-7">
-                      {/* ICON */}
-                      <div
-                        className={cn(
-                          "w-28 h-28",
-                          "rounded-2xl overflow-hidden",
-                          "bg-white/15 backdrop-blur-md",
-                          "border border-white/20",
-                          "shadow-2xl",
-                        )}
-                      >
-                        <img
-                          src={c.imageSrc}
-                          alt={c.title}
-                          className={cn(
-                            "w-full h-full",
-                            "object-cover",
-                            "group-hover:scale-110",
-                            "transition-transform duration-500",
-                          )}
-                          draggable={false}
-                          loading="lazy"
-                        />
-                      </div>
-
-                      {/* TITLE */}
-                      <p
-                        className={cn(
-                          "mt-6",
-                          "text-2xl md:text-3xl",
-                          "font-black tracking-tight",
-                          "text-white",
-                          "drop-shadow-2xl",
-                          "leading-tight",
-                          "uppercase",
-                        )}
-                      >
+                    <div className="flex flex-col flex-1 p-6">
+                      <p className="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">
                         {c.title}
                       </p>
+                      <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-[#FF6B35]">
+                        Lihat produk
+                        <span className="transition-transform duration-300 group-hover:translate-x-1">
+                          →
+                        </span>
+                      </span>
                     </div>
                   </div>
                 );
@@ -249,7 +153,7 @@ export default function MikrotikCategoryProductPage() {
                     <a
                       key={x.label}
                       href={x.href}
-                      className="block text-sm md:text-base text-white/75 hover:text-white transition-colors uppercase"
+                      className="block text-sm md:text-base text-white/75 hover:text-white transition-colors"
                     >
                       {x.label}
                     </a>

@@ -442,7 +442,7 @@ export default function MikrotikDcsStoreProductDetail() {
               <span>/</span>
               <Link href="/mikrotik"><a style={{ color: "rgba(232,228,220,0.45)", textDecoration: "none", transition: "color 0.2s" }} onMouseEnter={(e) => (e.currentTarget.style.color = "#FF6B35")} onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(232,228,220,0.45)")}>MikroTik</a></Link>
               <span>/</span>
-              <Link href={backHref}><a style={{ color: "rgba(232,228,220,0.45)", textDecoration: "none", textTransform: "uppercase", transition: "color 0.2s" }} onMouseEnter={(e) => (e.currentTarget.style.color = "#FF6B35")} onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(232,228,220,0.45)")}>{categoryName || "Categories"}</a></Link>
+              <Link href={backHref}><a style={{ color: "rgba(232,228,220,0.45)", textDecoration: "none", textTransform: "capitalize", transition: "color 0.2s" }} onMouseEnter={(e) => (e.currentTarget.style.color = "#FF6B35")} onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(232,228,220,0.45)")}>{categoryName || "Categories"}</a></Link>
               <span>/</span>
               <span style={{ color: "rgba(232,228,220,0.80)", maxWidth: 200, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{d.nama_produk}</span>
             </nav>

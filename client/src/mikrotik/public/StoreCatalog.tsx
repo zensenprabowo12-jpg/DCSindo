@@ -53,7 +53,7 @@ export default function MikrotikDcsStoreCatalog() {
                 <option value="">All</option>
                 {MIKROTIK_DCS_CATEGORIES.map((c) => (
                   <option key={c} value={c}>
-                    {c.toUpperCase()}
+                    {c}
                   </option>
                 ))}
               </select>
@@ -100,7 +100,7 @@ export default function MikrotikDcsStoreCatalog() {
                       <h2 className="font-black text-sm uppercase group-hover:text-primary transition-colors line-clamp-2">
                         {p.nama_produk}
                       </h2>
-                      <p className="text-xs text-muted-foreground mt-1 uppercase">{p.category}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{p.category}</p>
                       <p className="text-xs text-muted-foreground line-clamp-2 mt-2">{p.deskripsi}</p>
                     </div>
                   </a>

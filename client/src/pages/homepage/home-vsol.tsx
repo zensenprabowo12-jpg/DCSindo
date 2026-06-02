@@ -55,21 +55,21 @@ const CATEGORIES = [
     label: "ONU / ONT",
     desc: "Optical Network Unit for end-user fiber connections",
     // ── GANTI GAMBAR: taruh file gambar di public/images/vsol/categories/ lalu ubah nama file di bawah
-    image: "/images/vsol/categories/onu-ont.png",
+    image: "/images/vsol/ONT.jpeg",
     icon: "01",
   },
   {
     label: "OLT",
     desc: "Optical Line Terminal for GPON/EPON networks",
     // ── GANTI GAMBAR: taruh file gambar di public/images/vsol/categories/ lalu ubah nama file di bawah
-    image: "/images/vsol/categories/olt.png",
+    image: "/images/vsol/OLT.jpeg",
     icon: "02",
   },
   {
     label: "WiFi Router",
     desc: "Wireless routers for home and business use",
     // ── GANTI GAMBAR: taruh file gambar di public/images/vsol/categories/ lalu ubah nama file di bawah
-    image: "/images/vsol/categories/wifi-router.png",
+    image: "/images/vsol/homerouter.jpeg",
     icon: "03",
   },
 ];
