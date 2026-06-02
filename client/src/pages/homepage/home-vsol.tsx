@@ -81,6 +81,19 @@ const STATS = [
   { value: "24/7", label: "Tech Support", icon: Cpu },
 ];
 
+const TICKER_ITEMS = [
+  "GPON",
+  "EPON",
+  "FTTH",
+  "10G PON",
+  "XPON",
+  "OLT",
+  "ONU / ONT",
+  "WiFi Router",
+  "Fiber Optic",
+  "Carrier-Grade",
+];
+
 export default function HomeVsol() {
   const timelineRef = useRef<HTMLElement | null>(null);
   const timelineInView = useInView(timelineRef, { once: true, amount: 0.05 });
@@ -112,6 +125,29 @@ export default function HomeVsol() {
           0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
           50% { box-shadow: 0 0 0 3px rgba(34,197,94,0.18); }
         }
+        @keyframes vsol-flow-down {
+          0% { top: 0%; opacity: 0; }
+          12% { opacity: 1; }
+          88% { opacity: 1; }
+          100% { top: 100%; opacity: 0; }
+        }
+        @keyframes vsol-flow-right {
+          0% { left: -5%; opacity: 0; }
+          12% { opacity: 1; }
+          88% { opacity: 1; }
+          100% { left: 105%; opacity: 0; }
+        }
+        @keyframes vsol-aurora {
+          0% { transform: translate(-8%, -5%) scale(1); }
+          50% { transform: translate(8%, 5%) scale(1.15); }
+          100% { transform: translate(-8%, -5%) scale(1); }
+        }
+        @keyframes vsol-drift {
+          0% { transform: translateY(0) translateX(0); opacity: 0; }
+          15% { opacity: 0.5; }
+          85% { opacity: 0.5; }
+          100% { transform: translateY(-140px) translateX(24px); opacity: 0; }
+        }
         .vsol-cat-card:hover .vsol-cat-img {
           transform: scale(1.07) translateY(-4px);
         }
@@ -125,12 +161,68 @@ export default function HomeVsol() {
         }
       `}</style>
 
-      <div className="min-w-0 antialiased" style={{ background: "#060c07" }}>
+      <div className="min-w-0 antialiased" style={{ background: "#0e1a11", position: "relative" }}>
+
+        {/* ── PAGE AURORA (ambient moving background) ─────────── */}
+        <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            zIndex: 0,
+            pointerEvents: "none",
+            overflow: "hidden",
+            mixBlendMode: "screen",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: "-12%",
+              left: "-10%",
+              width: "60vw",
+              height: "60vw",
+              borderRadius: "50%",
+              background: `radial-gradient(circle, rgba(34,197,94,0.10), transparent 65%)`,
+              filter: "blur(60px)",
+              animation: "vsol-aurora 22s ease-in-out infinite",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              bottom: "-12%",
+              right: "-10%",
+              width: "55vw",
+              height: "55vw",
+              borderRadius: "50%",
+              background: `radial-gradient(circle, rgba(22,163,74,0.10), transparent 65%)`,
+              filter: "blur(70px)",
+              animation: "vsol-aurora 28s ease-in-out infinite reverse",
+            }}
+          />
+          {Array.from({ length: 12 }).map((_, i) => (
+            <div
+              key={i}
+              style={{
+                position: "absolute",
+                left: `${(i * 8 + 5) % 100}%`,
+                top: `${(i * 15 + 12) % 100}%`,
+                width: 3,
+                height: 3,
+                borderRadius: "50%",
+                background: "rgba(74,222,128,0.55)",
+                boxShadow: "0 0 6px rgba(74,222,128,0.5)",
+                animation: `vsol-drift ${8 + (i % 5) * 2}s linear infinite`,
+                animationDelay: `${i * 0.7}s`,
+              }}
+            />
+          ))}
+        </div>
 
         {/* ── HERO ───────────────────────────────────────────── */}
         <section
           className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden"
-          style={{ background: "#060c07" }}
+          style={{ background: "#0e1a11" }}
         >
           {/* Animated orb — behind everything */}
           <div
@@ -195,6 +287,37 @@ export default function HomeVsol() {
             />
           </div>
 
+          {/* Data streams (fiber flow) */}
+          <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            {[18, 38, 62, 82].map((topPct, idx) => (
+              <div
+                key={idx}
+                style={{
+                  position: "absolute",
+                  left: 0,
+                  right: 0,
+                  top: `${topPct}%`,
+                  height: 1,
+                  background: `linear-gradient(90deg, transparent, rgba(34,197,94,0.10), transparent)`,
+                }}
+              >
+                <div
+                  style={{
+                    position: "absolute",
+                    top: -2,
+                    width: 5,
+                    height: 5,
+                    borderRadius: "50%",
+                    background: GREEN_BRIGHT,
+                    boxShadow: `0 0 10px 2px ${GREEN_BRIGHT}`,
+                    animation: `vsol-flow-right ${6 + idx * 1.5}s linear infinite`,
+                    animationDelay: `${idx * 1.2}s`,
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+
           {/* Hero content */}
           <div className="relative z-10 px-4 max-w-5xl mx-auto">
             {/* Label */}
@@ -257,6 +380,7 @@ export default function HomeVsol() {
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
                   userSelect: "none",
+                  animation: "vsol-float 6s ease-in-out infinite",
                 }}
               >
                 V-SOL
@@ -375,15 +499,61 @@ export default function HomeVsol() {
             className="absolute bottom-0 left-0 right-0 pointer-events-none"
             style={{
               height: 120,
-              background: "linear-gradient(to bottom, transparent, #060c07)",
+              background: "linear-gradient(to bottom, transparent, #0e1a11)",
             }}
           />
+        </section>
+
+        {/* ── TICKER (running strip) ─────────────────────────── */}
+        <section
+          style={{
+            background: "#0e1a11",
+            borderTop: "1px solid rgba(22,163,74,0.18)",
+            borderBottom: "1px solid rgba(22,163,74,0.18)",
+            overflow: "hidden",
+            padding: "16px 0",
+            marginBottom: 80,
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              width: "max-content",
+              animation: "vsol-ticker 28s linear infinite",
+            }}
+          >
+            {[0, 1].map((dup) => (
+              <div
+                key={dup}
+                aria-hidden={dup === 1}
+                style={{ display: "flex", alignItems: "center", flexShrink: 0 }}
+              >
+                {TICKER_ITEMS.map((t, i) => (
+                  <span key={`${dup}-${i}`} style={{ display: "inline-flex", alignItems: "center" }}>
+                    <span
+                      style={{
+                        fontSize: 15,
+                        fontWeight: 800,
+                        letterSpacing: "0.08em",
+                        color: "rgba(255,255,255,0.85)",
+                        fontFamily: "monospace",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {t}
+                    </span>
+                    <span style={{ margin: "0 28px", color: GREEN_BRIGHT, fontSize: 11 }}>◆</span>
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* ── STATS BAR ──────────────────────────────────────── */}
         <section
           ref={statsRef as React.RefObject<HTMLElement>}
-          style={{ background: "#060c07", padding: "0 16px 80px" }}
+          style={{ background: "#0e1a11", padding: "0 16px 80px" }}
         >
           <div
             style={{
@@ -454,7 +624,7 @@ export default function HomeVsol() {
         {/* ── CATEGORIES ─────────────────────────────────────── */}
         <section
           ref={catsRef as React.RefObject<HTMLElement>}
-          style={{ background: "#080e09", padding: "80px 16px 96px" }}
+          style={{ background: "#12211a", padding: "80px 16px 96px" }}
         >
           <div style={{ maxWidth: 1040, margin: "0 auto" }}>
 
@@ -503,12 +673,15 @@ export default function HomeVsol() {
                   custom={i * 0.1}
                   initial="hidden"
                   animate={catsInView ? "visible" : "hidden"}
+                  style={{ height: "100%" }}
                 >
                   <Link href={`/vsol/shop?category=${encodeURIComponent(cat.label)}`}>
                     <a
                       className="vsol-cat-card"
                       style={{
-                        display: "block",
+                        display: "flex",
+                        flexDirection: "column",
+                        height: "100%",
                         borderRadius: 24,
                         border: "1px solid rgba(22,163,74,0.18)",
                         background: "rgba(10,18,11,0.7)",
@@ -549,6 +722,7 @@ export default function HomeVsol() {
                       {/* Image area */}
                       <div style={{
                         height: 200,
+                        flexShrink: 0,
                         background: "rgba(14,24,15,0.8)",
                         display: "flex",
                         alignItems: "center",
@@ -565,22 +739,34 @@ export default function HomeVsol() {
                           height: 1,
                           background: `linear-gradient(90deg, transparent, rgba(34,197,94,0.3), transparent)`,
                         }} />
-                        <img
-                          src={cat.image}
-                          alt={cat.label}
-                          className="vsol-cat-img"
+                        <div
                           style={{
-                            maxWidth: "75%",
-                            maxHeight: "80%",
-                            objectFit: "contain",
-                            transition: "transform 0.5s ease",
-                            filter: "drop-shadow(0 8px 24px rgba(22,163,74,0.2))",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            width: "100%",
+                            height: "100%",
+                            animation: "vsol-float 5s ease-in-out infinite",
+                            animationDelay: `${i * 0.8}s`,
                           }}
-                        />
+                        >
+                          <img
+                            src={cat.image}
+                            alt={cat.label}
+                            className="vsol-cat-img"
+                            style={{
+                              maxWidth: "75%",
+                              maxHeight: "80%",
+                              objectFit: "contain",
+                              transition: "transform 0.5s ease",
+                              filter: "drop-shadow(0 8px 24px rgba(22,163,74,0.2))",
+                            }}
+                          />
+                        </div>
                       </div>
 
                       {/* Text area */}
-                      <div style={{ padding: "20px 24px 24px" }}>
+                      <div style={{ padding: "20px 24px 24px", flex: 1, display: "flex", flexDirection: "column" }}>
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 8 }}>
                           <span style={{
                             fontSize: 16,
@@ -617,10 +803,12 @@ export default function HomeVsol() {
 
                         {/* Bottom green accent */}
                         <div style={{
-                          marginTop: 20,
+                          marginTop: "auto",
+                          paddingTop: 20,
                           height: 2,
                           borderRadius: 2,
                           background: `linear-gradient(90deg, ${GREEN}, transparent)`,
+                          backgroundClip: "content-box",
                           opacity: 0.5,
                         }} />
                       </div>
@@ -635,7 +823,7 @@ export default function HomeVsol() {
         {/* ── HISTORY — Timeline ─────────────────────────────── */}
         <section
           ref={timelineRef as React.RefObject<HTMLElement>}
-          style={{ background: "#060c07", padding: "80px 16px 96px" }}
+          style={{ background: "#0e1a11", padding: "80px 16px 96px" }}
         >
           <div style={{ maxWidth: 1040, margin: "0 auto" }}>
 
@@ -682,6 +870,25 @@ export default function HomeVsol() {
                 width: 1,
                 background: `linear-gradient(to bottom, transparent, rgba(22,163,74,0.35) 10%, rgba(22,163,74,0.35) 90%, transparent)`,
               }} />
+
+              {/* Flowing data packets along the line */}
+              {[0, 1, 2].map((n) => (
+                <div
+                  key={n}
+                  style={{
+                    position: "absolute",
+                    left: -3,
+                    width: 7,
+                    height: 7,
+                    borderRadius: "50%",
+                    background: GREEN_BRIGHT,
+                    boxShadow: `0 0 12px 2px ${GREEN_BRIGHT}`,
+                    animation: "vsol-flow-down 5s linear infinite",
+                    animationDelay: `${n * 1.6}s`,
+                    pointerEvents: "none",
+                  }}
+                />
+              ))}
 
               <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
                 {TIMELINE.map((item, i) => (
@@ -773,7 +980,7 @@ export default function HomeVsol() {
         </section>
 
         {/* ── TRAINING CTA ───────────────────────────────────── */}
-        <section style={{ background: "#080e09", padding: "80px 16px 96px", position: "relative", overflow: "hidden" }}>
+        <section style={{ background: "#12211a", padding: "80px 16px 96px", position: "relative", overflow: "hidden" }}>
           {/* Background glow */}
           <div style={{
             position: "absolute",
