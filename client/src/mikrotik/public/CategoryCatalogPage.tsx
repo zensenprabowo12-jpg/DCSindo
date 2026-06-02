@@ -211,6 +211,7 @@ export default function MikrotikCategoryCatalogPage() {
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
+                    textTransform: "uppercase",
                   }}
                 >
                   {category}

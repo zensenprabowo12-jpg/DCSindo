@@ -127,6 +127,7 @@ export default function MikrotikCategoryProductPage() {
                           "text-white",
                           "drop-shadow-2xl",
                           "leading-tight",
+                          "uppercase",
                         )}
                       >
                         {c.title}
@@ -211,6 +212,7 @@ export default function MikrotikCategoryProductPage() {
                           "text-white",
                           "drop-shadow-2xl",
                           "leading-tight",
+                          "uppercase",
                         )}
                       >
                         {c.title}
@@ -247,7 +249,7 @@ export default function MikrotikCategoryProductPage() {
                     <a
                       key={x.label}
                       href={x.href}
-                      className="block text-sm md:text-base text-white/75 hover:text-white transition-colors"
+                      className="block text-sm md:text-base text-white/75 hover:text-white transition-colors uppercase"
                     >
                       {x.label}
                     </a>
