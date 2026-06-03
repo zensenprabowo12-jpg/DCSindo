@@ -9,7 +9,6 @@ import {
   Mail,
   Instagram,
   Facebook,
-  Shield,
   ChevronLeft,
   ChevronUp,
 } from "lucide-react";
@@ -320,19 +319,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           {/* RIGHT SIDE */}
           <div className="flex items-center gap-2">
-            <Link href="/admin/login" title="Admin katalog">
-              <a
-                className="inline-flex h-10 w-10 items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-colors"
-                aria-label="Admin katalog"
-              >
-                <Shield className="w-5 h-5" />
-              </a>
-            </Link>
-
+            {/* Search + theme — desktop only */}
             <Button
               variant="ghost"
               size="icon"
-              className="text-muted-foreground hover:bg-primary/10 hover:text-foreground"
+              className="hidden md:inline-flex text-muted-foreground hover:bg-primary/10 hover:text-foreground"
               onClick={() => setIsSearchOpen(true)}
             >
               <Search className="w-5 h-5" />
@@ -341,7 +332,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Button
               variant="ghost"
               size="icon"
-              className="text-muted-foreground hover:bg-primary/10 hover:text-foreground"
+              className="hidden md:inline-flex text-muted-foreground hover:bg-primary/10 hover:text-foreground"
               onClick={toggleTheme}
             >
               {theme === "light"
@@ -349,12 +340,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 : <Moon className="w-5 h-5" />}
             </Button>
 
+            {/* Hamburger — mobile only */}
             <div className="md:hidden">
               <Button
                 variant="ghost"
                 size="icon"
                 className="text-muted-foreground hover:bg-primary/10 hover:text-foreground"
                 onClick={() => setIsMobileOpen(true)}
+                aria-label="Buka menu"
+                aria-expanded={isMobileOpen}
               >
                 <Menu className="w-6 h-6" />
               </Button>
@@ -363,6 +357,165 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </header>
+
+      {/* ================= MOBILE MENU ================= */}
+      <AnimatePresence>
+        {isMobileOpen && (
+          <div className="fixed inset-0 z-[60] md:hidden">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsMobileOpen(false)}
+              className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+            />
+
+            {/* Slide-in panel */}
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", stiffness: 320, damping: 34 }}
+              className="absolute top-0 right-0 h-full w-[82%] max-w-xs bg-background shadow-2xl flex flex-col"
+            >
+              {/* Panel header */}
+              <div className="flex items-center justify-between px-5 h-16 border-b border-border">
+                <img
+                  src={
+                    theme === "dark"
+                      ? "/images/1.logo/logodcsputih.png"
+                      : "/images/1.logo/logodcshitam.png"
+                  }
+                  className="h-6 w-auto"
+                  alt="Logo DCS"
+                />
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-muted-foreground hover:bg-primary/10 hover:text-foreground"
+                  onClick={() => setIsMobileOpen(false)}
+                  aria-label="Tutup menu"
+                >
+                  <X className="w-6 h-6" />
+                </Button>
+              </div>
+
+              {/* Utility row: search + theme toggle */}
+              <div className="flex items-center gap-2 px-5 py-4 border-b border-border">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsMobileOpen(false);
+                    setIsSearchOpen(true);
+                  }}
+                  className="flex flex-1 items-center gap-3 rounded-xl border border-border px-4 py-2.5 text-sm text-muted-foreground hover:bg-primary/10 hover:text-foreground transition-colors"
+                >
+                  <Search className="w-5 h-5" />
+                  Cari produk
+                </button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="rounded-xl border border-border text-muted-foreground hover:bg-primary/10 hover:text-foreground"
+                  onClick={toggleTheme}
+                  aria-label="Ganti tema"
+                >
+                  {theme === "light"
+                    ? <Sun className="w-5 h-5" />
+                    : <Moon className="w-5 h-5" />}
+                </Button>
+              </div>
+
+              {/* Navigation links */}
+              <nav className="flex-1 overflow-y-auto px-3 py-4 font-manrope font-bold">
+                <Link href="/">
+                  <a
+                    onClick={() => setIsMobileOpen(false)}
+                    className={cn(
+                      "block rounded-xl px-4 py-3 transition-colors hover:bg-primary/10 hover:text-primary",
+                      isHomeActive && "bg-primary/10 text-primary"
+                    )}
+                  >
+                    Home
+                  </a>
+                </Link>
+
+                {/* Brands group */}
+                <div className="mt-3 px-4 pb-1 text-xs font-bold uppercase tracking-widest text-muted-foreground/70">
+                  Our Brands
+                </div>
+                {brands.map((brand) =>
+                  brand.external ? (
+                    <a
+                      key={brand.path}
+                      href={brand.path}
+                      onClick={() => setIsMobileOpen(false)}
+                      className="block rounded-xl px-4 py-3 transition-colors hover:bg-primary/10 hover:text-primary"
+                    >
+                      {brand.name}
+                    </a>
+                  ) : (
+                    <Link key={brand.path} href={brand.path}>
+                      <a
+                        onClick={() => setIsMobileOpen(false)}
+                        className={cn(
+                          "block rounded-xl px-4 py-3 transition-colors hover:bg-primary/10 hover:text-primary",
+                          isBrandPathActive(brand.path, location) && "bg-primary/10 text-primary"
+                        )}
+                      >
+                        {brand.name}
+                      </a>
+                    </Link>
+                  ),
+                )}
+
+                <Link href="/training">
+                  <a
+                    onClick={() => setIsMobileOpen(false)}
+                    className={cn(
+                      "mt-3 block rounded-xl px-4 py-3 transition-colors hover:bg-primary/10 hover:text-primary",
+                      isTrainingActive && "bg-primary/10 text-primary"
+                    )}
+                  >
+                    Training
+                  </a>
+                </Link>
+
+                {/* Support group */}
+                <div className="mt-3 px-4 pb-1 text-xs font-bold uppercase tracking-widest text-muted-foreground/70">
+                  Support
+                </div>
+                {brands.map((brand) => (
+                  <Link key={brand.support} href={brand.support}>
+                    <a
+                      onClick={() => setIsMobileOpen(false)}
+                      className={cn(
+                        "block rounded-xl px-4 py-3 transition-colors hover:bg-primary/10 hover:text-primary",
+                        location === brand.support && "bg-primary/10 text-primary"
+                      )}
+                    >
+                      {brand.name}
+                    </a>
+                  </Link>
+                ))}
+
+                <Link href="/support">
+                  <a
+                    onClick={() => setIsMobileOpen(false)}
+                    className={cn(
+                      "mt-3 block rounded-xl px-4 py-3 transition-colors hover:bg-primary/10 hover:text-primary",
+                      isContactActive && "bg-primary/10 text-primary"
+                    )}
+                  >
+                    Contact Us
+                  </a>
+                </Link>
+              </nav>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
 
       <main className="flex-1">{children}</main>
 

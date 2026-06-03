@@ -28,7 +28,12 @@
       "Bash(Select-Object -First 30)",
       "Bash(Format-Table FullName)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(npm run *)",
+      "mcp__ide__getDiagnostics",
+      "PowerShell(npm run *)",
+      "PowerShell(git check-ignore *)"
     ]
   }
 }
