@@ -162,7 +162,7 @@ export default function MikrotikSupport() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/6281530586666"
+              href="https://wa.me/628153058666"
               target="_blank"
               rel="noopener noreferrer"
             >

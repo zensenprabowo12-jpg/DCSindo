@@ -538,7 +538,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Floating WhatsApp Button */}
       <motion.a
-        href="https://wa.me/6281530586666?text=Halo%20DCS%2C%20saya%20ingin%20bertanya%20tentang%20produk."
+        href="https://wa.me/628153058666?text=Halo%20DCS%2C%20saya%20ingin%20bertanya%20tentang%20produk."
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
@@ -584,7 +584,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <WhatsAppIcon className="w-6 h-6 mt-1 flex-shrink-0" />
                 <div className="flex flex-col gap-1">
                   <a
-                    href="https://wa.me/6281530586666"
+                    href="https://wa.me/628153058666"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primary/80 transition-colors text-lg"

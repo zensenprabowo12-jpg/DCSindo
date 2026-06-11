@@ -23,6 +23,7 @@ import UbiquitiSupport from "@/pages/support/Ubiquiti";
 import MikrotikSupport from "@/pages/support/Mikrotik";
 import AdminLogin from "@admin/Login";
 import AdminDashboard from "@admin/Dashboard";
+import AdminActivityLog from "@admin/ActivityLog";
 import TrainingAdminDashboard from "@admin/training/Dashboard";
 import TrainingForm from "@admin/training/TrainingForm";
 
@@ -76,6 +77,7 @@ function RouterWouter() {
       <Route path="/training" component={TrainingList} />
 
       <Route path="/admin/login" component={AdminLogin} />
+      <Route path="/admin/activity-log" component={AdminActivityLog} />
       <Route path="/admin" component={AdminDashboard} />
       <Route path="/admin/training/new" component={TrainingForm} />
       <Route path="/admin/training/:id/edit" component={TrainingForm} />

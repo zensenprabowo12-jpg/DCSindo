@@ -1,6 +1,7 @@
 import type { Express, NextFunction, Request, Response } from "express";
 import express from "express";
 import {
+  apiMikrotikDcsActivityLog,
   apiMikrotikDcsAdminCreate,
   apiMikrotikDcsAdminDelete,
   apiMikrotikDcsAdminGet,
@@ -43,6 +44,7 @@ export function registerMikrotikDcsRoutes(app: Express): void {
   app.post(`${base}/auth/login`, express.json(), apiMikrotikDcsLogin);
   app.post(`${base}/auth/logout`, apiMikrotikDcsLogout);
   app.get(`${base}/auth/me`, apiMikrotikDcsMe);
+  app.get(`${base}/admin/activity-log`, apiMikrotikDcsActivityLog);
 
   app.get(`${base}/public/products`, apiMikrotikDcsPublicList);
   app.get(`${base}/public/products/:id`, apiMikrotikDcsPublicGet);

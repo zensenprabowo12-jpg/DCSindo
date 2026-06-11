@@ -4,7 +4,7 @@ import { markAdminAuthedSession } from "./authGate";
 
 export default function AdminLogin() {
   const [, setLocation] = useLocation();
-  const [user, setUser] = useState("admin");
+  const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
   const [err, setErr] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -67,7 +67,8 @@ export default function AdminLogin() {
                 id="u"
                 value={user}
                 onChange={(e) => setUser(e.target.value)}
-                autoComplete="username"
+                autoComplete="off"
+                placeholder="Masukkan username"
                 className="w-full h-10 rounded-lg bg-zinc-800 border border-zinc-700 text-zinc-100 text-sm px-3 placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
               />
             </div>

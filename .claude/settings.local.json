@@ -33,7 +33,27 @@
       "Bash(npm run *)",
       "mcp__ide__getDiagnostics",
       "PowerShell(npm run *)",
-      "PowerShell(git check-ignore *)"
+      "PowerShell(git check-ignore *)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Read(//c/Program Files \\(x86\\)/Google/Chrome/Application/**)",
+      "Read(//c/Program Files/Microsoft/Edge/Application/**)",
+      "Bash(npm install *)",
+      "Bash(rm -f _verify_hero.cjs _verify_cards.cjs hero_full.png hero_viewport.png hero_cards.png hero_mobile_full.png)",
+      "Bash(git rm *)",
+      "PowerShell(Test-NetConnection *)",
+      "PowerShell(Get-CimInstance *)",
+      "Bash(rm -f cj.txt)",
+      "Bash(curl -s -c cj.txt -X POST http://localhost:8080/api/mikrotik-dcs/auth/login -H \"Content-Type: application/json\" -H \"User-Agent: VerifyBot/1.0\" -d '{\"username\":\"hacker\",\"password\":\"salah123\"}' -w \"\\\\nHTTP %{http_code}\\\\n\")",
+      "Bash(curl -s -c cj.txt -b cj.txt -X POST http://localhost:8080/api/mikrotik-dcs/auth/login -H \"Content-Type: application/json\" -H \"User-Agent: VerifyBot/1.0\" -d '{\"username\":\"admin\",\"password\":\"MBGratisdcsindo\"}' -w \"\\\\nHTTP %{http_code}\\\\n\")",
+      "Bash(curl -s -b cj.txt http://localhost:8080/api/mikrotik-dcs/admin/activity-log -w \"\\\\nHTTP %{http_code}\\\\n\")",
+      "Bash(curl -s http://localhost:8080/api/mikrotik-dcs/public/products -w \"\\\\nHTTP %{http_code}\\\\n\" -m 30)",
+      "Bash(curl -s -b cj.txt http://localhost:8080/api/mikrotik-dcs/admin/activity-log -w \"\\\\nHTTP %{http_code}\\\\n\" -m 30)",
+      "PowerShell(Test-Connection *)",
+      "Bash(ping -c 2 -W 3 192.168.92.27)",
+      "Bash(ip route *)",
+      "Bash(curl -s -c cj.txt -X POST http://localhost:8080/api/mikrotik-dcs/auth/login -H \"Content-Type: application/json\" -H \"User-Agent: VerifyBot-Fresh/1.0\" -d '{\"username\":\"orang_iseng\",\"password\":\"salah999\"}' -m 15 -w \"\\\\nHTTP %{http_code}\\\\n\")",
+      "Bash(curl -s -c cj.txt -b cj.txt -X POST http://localhost:8080/api/mikrotik-dcs/auth/login -H \"Content-Type: application/json\" -H \"User-Agent: VerifyBot-Fresh/1.0\" -d '{\"username\":\"admin\",\"password\":\"MBGratisdcsindo\"}' -m 15 -w \"\\\\nHTTP %{http_code}\\\\n\")",
+      "Bash(curl -s -b cj.txt http://localhost:8080/api/mikrotik-dcs/admin/activity-log -m 15 -w \"\\\\nHTTP %{http_code}\\\\n\")"
     ]
   }
 }

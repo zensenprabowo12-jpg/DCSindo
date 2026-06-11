@@ -393,7 +393,7 @@ export default function VsolDcsStoreProductDetail() {
               )}
 
               <a
-                href="https://wa.me/6281530586666?text=Halo%20DCS%2C%20saya%20tertarik%20dengan%20produk%20V-SOL%20ini."
+                href="https://wa.me/628153058666?text=Halo%20DCS%2C%20saya%20tertarik%20dengan%20produk%20V-SOL%20ini."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-600 hover:bg-green-500 text-white font-semibold text-sm transition-colors"

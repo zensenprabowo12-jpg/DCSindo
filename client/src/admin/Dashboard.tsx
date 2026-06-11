@@ -136,6 +136,27 @@ export default function AdminDashboard() {
           ))}
         </div>
 
+        {/* Activity Log entry */}
+        <button
+          onClick={() => setLocation("/admin/activity-log")}
+          className="group mt-6 w-full flex items-center justify-between rounded-2xl border border-zinc-800 bg-zinc-900 px-5 py-4 transition-all duration-200 hover:bg-zinc-800/80 hover:border-zinc-700"
+        >
+          <span className="flex items-center gap-3">
+            <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-indigo-600/15 text-indigo-400">
+              <svg className="w-4.5 h-4.5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+            <span className="text-left">
+              <span className="block text-sm font-semibold text-white">Activity Log</span>
+              <span className="block text-xs text-zinc-500">Riwayat percobaan login ke panel admin</span>
+            </span>
+          </span>
+          <svg className="w-4 h-4 text-zinc-500 group-hover:text-zinc-300 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </button>
+
         {/* Quick actions footer */}
         <div className="mt-12 flex items-center justify-between border-t border-zinc-800 pt-6">
           <span className="text-xs text-zinc-600">DCS Admin Panel</span>

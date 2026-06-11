@@ -13,9 +13,23 @@ import {
   reorderMikrotikDcsProducts,
   updateMikrotikDcsProduct,
 } from "../models/mikrotikDcsProductModel";
+import {
+  listAdminLoginAttempts,
+  recordAdminLoginAttempt,
+} from "../models/adminActivityLogModel";
 
-const ADMIN_USER = "admin";
-const ADMIN_PASS = "admindcs";
+// Kredensial admin. Bisa di-override lewat .env (ADMIN_USER / ADMIN_PASS).
+// Kalau env tidak di-set, pakai nilai default di bawah.
+const ADMIN_USER = process.env.ADMIN_USER?.trim() || "admin";
+const ADMIN_PASS = process.env.ADMIN_PASS?.trim() || "MBGratisdcsindo";
+
+/** Ambil IP asli klien (memperhatikan reverse proxy / X-Forwarded-For). */
+function getClientIp(req: Request): string | null {
+  const fwd = req.headers["x-forwarded-for"];
+  if (typeof fwd === "string" && fwd.trim()) return fwd.split(",")[0]!.trim();
+  if (Array.isArray(fwd) && fwd.length) return fwd[0]!.trim();
+  return req.socket?.remoteAddress ?? null;
+}
 
 function requireMikrotikDcsSession(req: Request, res: Response): boolean {
   if (req.session.mikrotikDcsAdmin) return true;
@@ -56,12 +70,36 @@ export async function apiMikrotikDcsLogin(
   res: Response,
 ): Promise<void> {
   const { username, password } = (req.body ?? {}) as { username?: string; password?: string };
-  if (username === ADMIN_USER && password === ADMIN_PASS) {
+  const success = username === ADMIN_USER && password === ADMIN_PASS;
+
+  // Catat percobaan login (tidak menggagalkan login walau gagal mencatat).
+  void recordAdminLoginAttempt({
+    attemptedUsername: typeof username === "string" ? username : "",
+    success,
+    ipAddress: getClientIp(req),
+    userAgent: typeof req.headers["user-agent"] === "string" ? req.headers["user-agent"] : null,
+  });
+
+  if (success) {
     req.session.mikrotikDcsAdmin = true;
     res.json({ ok: true, data: { username: ADMIN_USER } });
     return;
   }
   res.status(401).json({ ok: false, message: "Username atau password salah." });
+}
+
+/** Admin: daftar log percobaan login. */
+export async function apiMikrotikDcsActivityLog(
+  req: Request,
+  res: Response,
+): Promise<void> {
+  if (!requireMikrotikDcsSession(req, res)) return;
+  try {
+    const rows = await listAdminLoginAttempts(200);
+    res.json({ ok: true, data: rows });
+  } catch (e) {
+    res.status(500).json({ ok: false, message: (e as Error).message });
+  }
 }
 
 export function apiMikrotikDcsLogout(req: Request, res: Response) {
