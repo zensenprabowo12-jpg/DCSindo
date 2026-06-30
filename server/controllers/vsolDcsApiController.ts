@@ -17,6 +17,7 @@ import {
   toCanonicalVsolDcsCategory,
   VSOL_DCS_CATEGORIES,
 } from "../../client/src/vsol/categories";
+import { requireRole } from "../middleware/requireRole";
 
 // ─── HELPERS ─────────────────────────────────────────────────
 function getUploadedPaths(req: Request, field: string): string[] {
@@ -37,11 +38,8 @@ function safeDeleteFile(publicPath: string) {
   } catch { /* ignore */ }
 }
 
-function requireAdminSession(req: Request, res: Response): boolean {
-  if (req.session.mikrotikDcsAdmin) return true;
-  res.status(401).json({ ok: false, message: "Unauthorized" });
-  return false;
-}
+// Guard: endpoint admin V-SOL butuh role 'admin' (perilaku tidak berubah).
+const requireAdminSession = requireRole("admin");
 
 // ─── AUTH ─────────────────────────────────────────────────────
 export async function apiVsolDcsMe(req: Request, res: Response): Promise<void> {

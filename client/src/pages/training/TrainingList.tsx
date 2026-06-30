@@ -1,8 +1,8 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useMemo } from "react";
 import { Link, useSearch, useLocation } from "wouter";
 import Layout from "@/components/layout";
 import { motion } from "framer-motion";
-import { Calendar, MapPin, Clock, Users, FlaskConical, Award } from "lucide-react";
+import { Calendar, MapPin, Clock, Users, FlaskConical, Award, Images, ArrowRight } from "lucide-react";
 import {
   apiFetchTrainingSessions,
   BRAND_BG,
@@ -21,13 +21,6 @@ const BRANDS: { label: string; value: string }[] = [
   { label: "Ubiquiti", value: "Ubiquiti" },
   { label: "V-SOL", value: "V-SOL" },
   { label: "General", value: "General" },
-];
-
-const STATUSES: { label: string; value: string }[] = [
-  { label: "All Status", value: "" },
-  { label: "Upcoming", value: "Upcoming" },
-  { label: "Ongoing", value: "Ongoing" },
-  { label: "Completed", value: "Completed" },
 ];
 
 const FORMATS: { label: string; value: string }[] = [
@@ -68,50 +61,52 @@ function Pill({
 
 function TrainingCard({ t }: { t: TrainingSession }) {
   const brandColor = BRAND_COLOR[t.brand as TrainingBrand];
+  const completed = t.status === "Completed";
+  const docCount = t.doc_count ?? 0;
+  // Untuk training selesai, gunakan foto dokumentasi sebagai cover bila ada.
+  const cover = completed && t.doc_cover ? t.doc_cover : t.thumbnail;
+  const hasCover = Boolean(cover);
+
   return (
     <Link href={`/training/${t.id}`}>
       <motion.a
         whileHover={{ y: -4 }}
-        className="group block bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 hover:shadow-2xl transition-all duration-300 cursor-pointer"
+        className="group h-full flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-zinc-600 hover:shadow-2xl transition-all duration-300 cursor-pointer"
       >
-        {/* Thumbnail */}
-        <div className="relative aspect-video bg-zinc-800 overflow-hidden">
-          {t.thumbnail ? (
+        {/* Cover — HANYA dirender bila ada foto (tanpa placeholder) */}
+        {hasCover && (
+          <div className="relative aspect-video bg-zinc-800 overflow-hidden shrink-0">
             <img
-              src={t.thumbnail}
+              src={cover as string}
               alt={t.title}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
             />
-          ) : (
-            <div
-              className="w-full h-full flex items-center justify-center"
-              style={{ background: `linear-gradient(135deg, ${brandColor}22, ${brandColor}08)` }}
-            >
-              <span className="text-4xl font-black opacity-20" style={{ color: brandColor }}>
-                {t.brand.charAt(0)}
-              </span>
-            </div>
-          )}
-
-          {/* Status badge top-right */}
-          <span className={`absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border ${STATUS_BG[t.status as TrainingStatus]}`}>
-            {t.status}
-          </span>
-
-          {/* Hands-on badge top-left */}
-          {t.has_hands_on_lab && (
-            <span className="absolute top-3 left-3 flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-amber-500/15 text-amber-400 border border-amber-500/30">
-              <FlaskConical className="w-3 h-3" />
-              Hands-On
+            {/* Status badge top-right */}
+            <span className={`absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border ${STATUS_BG[t.status as TrainingStatus]}`}>
+              {t.status}
             </span>
-          )}
-        </div>
+            {/* Completed → jumlah dokumentasi; Upcoming → hands-on */}
+            {completed
+              ? docCount > 0 && (
+                  <span className="absolute bottom-3 left-3 flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-black/60 text-white border border-white/15 backdrop-blur-sm">
+                    <Images className="w-3 h-3" />
+                    {docCount} Foto
+                  </span>
+                )
+              : t.has_hands_on_lab && (
+                  <span className="absolute top-3 left-3 flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-amber-500/15 text-amber-400 border border-amber-500/30">
+                    <FlaskConical className="w-3 h-3" />
+                    Hands-On
+                  </span>
+                )}
+          </div>
+        )}
 
-        {/* Content */}
-        <div className="p-5">
-          {/* Brand + format */}
-          <div className="flex items-center gap-2 mb-3">
+        {/* Content — flex-1 agar semua kartu (ada/tanpa foto) tinggi seragam */}
+        <div className="p-5 flex flex-col flex-1">
+          {/* Brand + format + (status hanya saat tidak ada foto) */}
+          <div className="flex items-center gap-2 mb-3 flex-wrap">
             <span className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border ${BRAND_BG[t.brand as TrainingBrand]}`}>
               {t.brand}
             </span>
@@ -122,6 +117,17 @@ function TrainingCard({ t }: { t: TrainingSession }) {
               <span className="flex items-center gap-1 text-[11px] font-semibold text-yellow-500/80 border border-yellow-500/20 px-2 py-0.5 rounded-full bg-yellow-500/5">
                 <Award className="w-3 h-3" />
                 Cert
+              </span>
+            )}
+            {!hasCover && (
+              <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full border ${STATUS_BG[t.status as TrainingStatus]}`}>
+                {t.status}
+              </span>
+            )}
+            {!hasCover && !completed && t.has_hands_on_lab && (
+              <span className="flex items-center gap-1 text-[11px] font-semibold text-amber-400 border border-amber-500/30 px-2 py-0.5 rounded-full bg-amber-500/10">
+                <FlaskConical className="w-3 h-3" />
+                Hands-On
               </span>
             )}
           </div>
@@ -148,7 +154,7 @@ function TrainingCard({ t }: { t: TrainingSession }) {
                 <span>{t.duration_hours} jam</span>
               </div>
             )}
-            {t.capacity && (
+            {!completed && t.capacity && (
               <div className="flex items-center gap-2">
                 <Users className="w-3.5 h-3.5 shrink-0" />
                 <span>{t.capacity} peserta</span>
@@ -156,9 +162,14 @@ function TrainingCard({ t }: { t: TrainingSession }) {
             )}
           </div>
 
-          {/* Price */}
-          <div className="mt-4 pt-4 border-t border-zinc-800 flex items-center justify-between">
-            {t.is_free ? (
+          {/* Footer — mt-auto memin ke bawah supaya tinggi kartu konsisten */}
+          <div className="mt-auto pt-4 border-t border-zinc-800 flex items-center justify-between">
+            {completed ? (
+              <span className="text-xs font-semibold text-zinc-500 inline-flex items-center gap-1">
+                <Images className="w-3.5 h-3.5" />
+                {docCount > 0 ? `${docCount} Foto` : "Dokumentasi"}
+              </span>
+            ) : t.is_free ? (
               <span className="text-sm font-bold text-emerald-400">Free</span>
             ) : t.price ? (
               <span className="text-sm font-bold text-white">
@@ -168,15 +179,41 @@ function TrainingCard({ t }: { t: TrainingSession }) {
               <span className="text-sm text-zinc-600">Contact us</span>
             )}
             <span
-              className="text-xs font-semibold transition-colors"
+              className="text-xs font-semibold inline-flex items-center gap-1 transition-colors"
               style={{ color: brandColor }}
             >
-              View Details →
+              {completed ? "Lihat Dokumentasi" : "View Details"}
+              <ArrowRight className="w-3.5 h-3.5" />
             </span>
           </div>
         </div>
       </motion.a>
     </Link>
+  );
+}
+
+function Section({
+  title,
+  subtitle,
+  items,
+}: {
+  title: string;
+  subtitle: string;
+  items: TrainingSession[];
+}) {
+  if (items.length === 0) return null;
+  return (
+    <section className="mb-14">
+      <div className="mb-5">
+        <h2 className="text-2xl font-black text-white tracking-tight">{title}</h2>
+        <p className="text-sm text-zinc-500 mt-1">{subtitle}</p>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {items.map((t) => (
+          <TrainingCard key={t.id} t={t} />
+        ))}
+      </div>
+    </section>
   );
 }
 
@@ -190,7 +227,6 @@ export default function TrainingList() {
   )?.value ?? "";
 
   const [brand, setBrand] = useState(normalizedBrand);
-  const [status, setStatus] = useState("");
   const [format, setFormat] = useState<TrainingFormat | "">("");
   const [handsOn, setHandsOn] = useState(false);
   const [list, setList] = useState<TrainingSession[]>([]);
@@ -206,15 +242,21 @@ export default function TrainingList() {
     setLoading(true);
     const data = await apiFetchTrainingSessions({
       brand: brand || undefined,
-      status: status || undefined,
       format: format || undefined,
       hands_on: handsOn || undefined,
     });
     setList(data);
     setLoading(false);
-  }, [brand, status, format, handsOn]);
+  }, [brand, format, handsOn]);
 
   useEffect(() => { void load(); }, [load]);
+
+  // Pisahkan berdasarkan status (computeStatus dari server).
+  const upcoming = useMemo(
+    () => list.filter((t) => t.status === "Upcoming" || t.status === "Ongoing"),
+    [list],
+  );
+  const completed = useMemo(() => list.filter((t) => t.status === "Completed"), [list]);
 
   return (
     <Layout>
@@ -249,18 +291,8 @@ export default function TrainingList() {
                 </Pill>
               ))}
             </div>
-            {/* Row 2: Status + Format + Hands-on */}
+            {/* Row 2: Format + Hands-on */}
             <div className="flex flex-wrap gap-2 items-center">
-              {STATUSES.map((s) => (
-                <Pill
-                  key={s.value}
-                  active={status === s.value}
-                  onClick={() => setStatus(s.value)}
-                >
-                  {s.label}
-                </Pill>
-              ))}
-              <span className="w-px h-5 bg-zinc-700 mx-1" />
               {FORMATS.map((f) => (
                 <Pill
                   key={f.value}
@@ -286,7 +318,7 @@ export default function TrainingList() {
             </div>
           </div>
 
-          {/* Grid */}
+          {/* Content */}
           {loading ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {Array.from({ length: 6 }).map((_, i) => (
@@ -303,17 +335,24 @@ export default function TrainingList() {
           ) : list.length === 0 ? (
             <div className="py-24 text-center">
               <p className="text-zinc-500 text-lg">
-                {brand || status || format || handsOn
+                {brand || format || handsOn
                   ? "No training sessions match your filters."
                   : "No training sessions available yet. Check back soon!"}
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {list.map((t) => (
-                <TrainingCard key={t.id} t={t} />
-              ))}
-            </div>
+            <>
+              <Section
+                title="Akan Datang"
+                subtitle="Training yang sedang dibuka pendaftarannya"
+                items={upcoming}
+              />
+              <Section
+                title="Dokumentasi Training"
+                subtitle="Galeri kegiatan training yang telah selesai"
+                items={completed}
+              />
+            </>
           )}
         </div>
       </div>

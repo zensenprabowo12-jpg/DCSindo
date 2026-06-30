@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useLocation, useRoute } from "wouter";
 import AdminNavBar from "../NavBar";
-import { isAdminAuthedSession } from "../authGate";
+import RequireRole from "../RequireRole";
 import { Plus, Trash2, GripVertical, Upload, X } from "lucide-react";
 import type { TrainingSessionDetail } from "../../pages/training/types";
 
@@ -22,7 +22,7 @@ function toDatetimeLocal(iso: string | undefined): string {
 
 let localIdCounter = 0;
 
-export default function TrainingForm() {
+function TrainingFormInner() {
   const [, setLocation] = useLocation();
   const [matchNew] = useRoute("/admin/training/new");
   const [matchEdit, editParams] = useRoute("/admin/training/:id/edit");
@@ -73,7 +73,6 @@ export default function TrainingForm() {
   }, [isEdit, editId]);
 
   useEffect(() => {
-    if (!isAdminAuthedSession()) { setLocation("/admin/login"); return; }
     if (!isEdit) return;
     void (async () => {
       const [sessionRes] = await Promise.all([
@@ -500,7 +499,7 @@ export default function TrainingForm() {
           {isEdit && (
             <section className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 space-y-4">
               <div className="flex items-center justify-between">
-                <h2 className="font-bold text-white text-sm uppercase tracking-wider">Galeri Foto</h2>
+                <h2 className="font-bold text-white text-sm uppercase tracking-wider">Galeri / Dokumentasi Foto</h2>
                 <button
                   type="button"
                   onClick={() => galleryInputRef.current?.click()}
@@ -520,12 +519,17 @@ export default function TrainingForm() {
                 />
               </div>
 
+              <p className="text-zinc-500 text-xs -mt-1">
+                Foto ini tampil sebagai <span className="text-zinc-300 font-medium">dokumentasi publik</span> di halaman training.
+                Untuk training yang sudah selesai, foto ini jadi portofolio. (JPG/PNG/WebP/GIF, maks 5MB, bisa pilih banyak)
+              </p>
+
               {galleryError && (
                 <p className="text-red-400 text-xs">{galleryError}</p>
               )}
 
               {gallery.length === 0 ? (
-                <p className="text-zinc-600 text-sm">No photos yet. Click "Upload Photo" to add one.</p>
+                <p className="text-zinc-600 text-sm">Belum ada foto. Klik "Upload Foto" untuk menambah dokumentasi.</p>
               ) : (
                 <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
                   {gallery.map((img) => (
@@ -569,5 +573,13 @@ export default function TrainingForm() {
         </form>
       </div>
     </div>
+  );
+}
+
+export default function TrainingForm() {
+  return (
+    <RequireRole roles={["admin", "trainer"]}>
+      <TrainingFormInner />
+    </RequireRole>
   );
 }

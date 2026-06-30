@@ -9,9 +9,13 @@ import {
   apiTrainingAdminGet,
   apiTrainingAdminList,
   apiTrainingAdminUpdate,
+  apiTrainingAvailability,
   apiTrainingMeta,
   apiTrainingPublicGet,
   apiTrainingPublicList,
+  apiTrainingPublicRegister,
+  apiTrainingRegistrationsList,
+  apiTrainingRegistrationStatus,
 } from "../controllers/trainingApiController";
 import {
   ensureTrainingUploadDir,
@@ -56,6 +60,14 @@ export function registerTrainingRoutes(app: Express): void {
   app.get(`${base}/sessions`, apiTrainingPublicList);
   app.get(`${base}/sessions/:id`, apiTrainingPublicGet);
   app.get(`${base}/meta`, apiTrainingMeta);
+
+  // Pendaftaran publik (tanpa auth)
+  app.get(`${base}/:id/availability`, apiTrainingAvailability);
+  app.post(`${base}/:id/register`, express.json(), apiTrainingPublicRegister);
+
+  // Peserta training (read-only; admin/trainer/sales) + ubah status (admin/trainer)
+  app.get(`${base}/registrations`, apiTrainingRegistrationsList);
+  app.put(`${base}/registrations/:id/status`, express.json(), apiTrainingRegistrationStatus);
 
   // Admin sessions
   app.get(`${base}/admin/sessions`, apiTrainingAdminList);

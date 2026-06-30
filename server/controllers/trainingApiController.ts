@@ -20,13 +20,141 @@ import {
 
 type SessionFiles = Record<string, Express.Multer.File[] | undefined>;
 import { TRAINING_BRANDS, TRAINING_FORMATS } from "../training/categories";
+import { requireRole } from "../middleware/requireRole";
+import {
+  countByTraining,
+  createRegistration,
+  isValidRegistrationStatus,
+  listRegistrations,
+  updateStatus,
+} from "../models/trainingRegistrationModel";
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function parseIdParam(raw: unknown): number | null {
+  const n = Number.parseInt(String(raw ?? ""), 10);
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
 
 // ─── HELPERS ─────────────────────────────────────────────────
 
-function requireAdmin(req: Request, res: Response): boolean {
-  if (req.session.mikrotikDcsAdmin) return true;
-  res.status(401).json({ ok: false, message: "Unauthorized" });
-  return false;
+// Guard: kelola training boleh admin & trainer (Fase 1).
+const requireAdmin = requireRole("admin", "trainer");
+
+// Guard: lihat peserta boleh admin, trainer, sales (read-only).
+const requireViewPeserta = requireRole("admin", "trainer", "sales");
+// Guard: ubah status peserta hanya admin & trainer (sales read-only).
+const requireManagePeserta = requireRole("admin", "trainer");
+
+/** Admin/trainer/sales: daftar peserta (JOIN training), filter opsional per training. */
+export async function apiTrainingRegistrationsList(req: Request, res: Response): Promise<void> {
+  if (!requireViewPeserta(req, res)) return;
+  const tid = req.query.training_id != null ? parseIdParam(req.query.training_id) : null;
+  try {
+    const data = await listRegistrations({ training_id: tid ?? undefined });
+    res.json({ ok: true, data });
+  } catch (e) {
+    res.status(500).json({ ok: false, message: (e as Error).message });
+  }
+}
+
+/** Admin/trainer: ubah status satu peserta. */
+export async function apiTrainingRegistrationStatus(req: Request, res: Response): Promise<void> {
+  if (!requireManagePeserta(req, res)) return;
+  const id = parseIdParam(req.params.id);
+  if (id == null) {
+    res.status(400).json({ ok: false, message: "ID peserta tidak valid" });
+    return;
+  }
+  const status = String((req.body ?? {}).status ?? "");
+  if (!isValidRegistrationStatus(status)) {
+    res.status(400).json({ ok: false, message: "Status tidak valid" });
+    return;
+  }
+  try {
+    const ok = await updateStatus(id, status);
+    if (!ok) {
+      res.status(404).json({ ok: false, message: "Peserta tidak ditemukan" });
+      return;
+    }
+    res.json({ ok: true });
+  } catch (e) {
+    res.status(500).json({ ok: false, message: (e as Error).message });
+  }
+}
+
+/** Publik: info ketersediaan kuota + status pendaftaran. */
+export async function apiTrainingAvailability(req: Request, res: Response): Promise<void> {
+  const id = parseIdParam(req.params.id);
+  if (id == null) {
+    res.status(400).json({ ok: false, message: "ID training tidak valid" });
+    return;
+  }
+  const training = await getTrainingSessionById(id);
+  if (!training) {
+    res.status(404).json({ ok: false, message: "Training tidak ditemukan" });
+    return;
+  }
+  const registered = await countByTraining(id);
+  const capacity = training.capacity ?? null;
+  const remaining = capacity != null ? Math.max(0, capacity - registered) : null;
+  const open = training.status !== "Completed" && (remaining == null || remaining > 0);
+  res.json({
+    ok: true,
+    data: { capacity, registered, remaining, status: training.status, open },
+  });
+}
+
+/** Publik (tanpa auth): pendaftaran peserta training. */
+export async function apiTrainingPublicRegister(req: Request, res: Response): Promise<void> {
+  const id = parseIdParam(req.params.id);
+  if (id == null) {
+    res.status(400).json({ ok: false, message: "ID training tidak valid" });
+    return;
+  }
+  const body = (req.body ?? {}) as {
+    full_name?: unknown;
+    email?: unknown;
+    phone?: unknown;
+    company?: unknown;
+  };
+  const full_name = String(body.full_name ?? "").trim();
+  const email = String(body.email ?? "").trim();
+  const phone = String(body.phone ?? "").trim();
+  const company = typeof body.company === "string" ? body.company.trim() : "";
+
+  if (!full_name || !email || !phone) {
+    res.status(400).json({ ok: false, message: "Nama, email, dan nomor HP wajib diisi." });
+    return;
+  }
+  if (!EMAIL_RE.test(email)) {
+    res.status(400).json({ ok: false, message: "Format email tidak valid." });
+    return;
+  }
+
+  const training = await getTrainingSessionById(id);
+  if (!training) {
+    res.status(404).json({ ok: false, message: "Training tidak ditemukan." });
+    return;
+  }
+  if (training.status === "Completed") {
+    res.status(400).json({ ok: false, message: "Pendaftaran ditutup — training sudah selesai." });
+    return;
+  }
+  if (training.capacity != null) {
+    const count = await countByTraining(id);
+    if (count >= training.capacity) {
+      res.status(400).json({ ok: false, message: "Kuota penuh." });
+      return;
+    }
+  }
+
+  try {
+    const newId = await createRegistration({ training_id: id, full_name, email, phone, company });
+    res.status(201).json({ ok: true, data: { id: newId } });
+  } catch (e) {
+    res.status(500).json({ ok: false, message: (e as Error).message });
+  }
 }
 
 function safeDeleteFile(publicPath: string | null | undefined) {

@@ -2,14 +2,46 @@ import "dotenv/config";
 import express, { type Request, Response, NextFunction } from "express";
 import session from "express-session";
 import createMemoryStore from "memorystore";
+import expressMySQLSession from "express-mysql-session";
 import { verifyMysqlOnStartup } from "./config/db";
+import { getMysqlConnectionOptions } from "./config/mysqlPool";
+import { ensureUsersTable } from "./models/userModel";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
 
 const app = express();
-const MemoryStore = createMemoryStore(session);
 const httpServer = createServer(app);
+
+/**
+ * Session store persisten di MySQL (express-mysql-session).
+ * Tabel `sessions` dibuat otomatis (createDatabaseTable: true).
+ * Sesi tidak hilang saat pm2 restart.
+ * Fallback ke MemoryStore (RAM) hanya bila konfigurasi DB belum lengkap.
+ */
+function buildSessionStore(): session.Store {
+  const opts = getMysqlConnectionOptions();
+  if (opts) {
+    const MySQLStore = expressMySQLSession(session);
+    // Catatan: JANGAN teruskan namedPlaceholders ke store ini (library pakai `?`).
+    return new MySQLStore({
+      host: opts.host as string | undefined,
+      port: opts.port as number | undefined,
+      user: opts.user as string | undefined,
+      password: opts.password as string | undefined,
+      database: opts.database as string | undefined,
+      socketPath: opts.socketPath as string | undefined,
+      createDatabaseTable: true,
+      // bersihkan sesi kedaluwarsa tiap 15 menit
+      checkExpirationInterval: 15 * 60 * 1000,
+      // selaras dengan cookie.maxAge (7 hari, dalam ms)
+      expiration: 7 * 24 * 60 * 60 * 1000,
+    });
+  }
+  console.warn("[session] Konfigurasi MySQL belum lengkap — fallback ke MemoryStore (sesi hilang saat restart).");
+  const MemoryStore = createMemoryStore(session);
+  return new MemoryStore({ checkPeriod: 86_400_000 });
+}
 
 declare module "http" {
   interface IncomingMessage {
@@ -34,7 +66,7 @@ app.use(
     secret: process.env.SESSION_SECRET ?? "dcs-mikrotik-dcs-dev-change-in-prod",
     resave: false,
     saveUninitialized: false,
-    store: new MemoryStore({ checkPeriod: 86_400_000 }),
+    store: buildSessionStore(),
     cookie: {
       maxAge: 7 * 24 * 60 * 60 * 1000,
       httpOnly: true,
@@ -83,6 +115,12 @@ app.use((req, res, next) => {
 (async () => {
   await registerRoutes(httpServer, app);
   await verifyMysqlOnStartup();
+  // Pastikan tabel users ada + seed admin awal dari .env (sekali, idempotent).
+  try {
+    await ensureUsersTable();
+  } catch (e) {
+    console.error("[users] ensureUsersTable gagal saat startup:", (e as Error).message);
+  }
 
   app.use((err: any, _req: Request, res: Response, next: NextFunction) => {
     const status = err.status || err.statusCode || 500;

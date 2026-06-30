@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
 import AdminNavBar from "../NavBar";
-import { isAdminAuthedSession } from "../authGate";
+import RequireRole from "../RequireRole";
 import { BRAND_BG, STATUS_BG, formatDate, type TrainingBrand, type TrainingSession, type TrainingStatus } from "../../pages/training/types";
-import { FlaskConical, Plus, Pencil, Trash2, Award } from "lucide-react";
+import { FlaskConical, Plus, Pencil, Trash2, Award, Images } from "lucide-react";
 
 async function fetchSessions(): Promise<TrainingSession[]> {
   const res = await fetch("/api/training/admin/sessions", { credentials: "include" });
@@ -20,16 +20,15 @@ async function deleteSession(id: number): Promise<boolean> {
   return json.ok;
 }
 
-export default function TrainingAdminDashboard() {
+function TrainingAdminDashboardInner() {
   const [, setLocation] = useLocation();
   const [sessions, setSessions] = useState<TrainingSession[]>([]);
   const [loading, setLoading] = useState(true);
   const [deleting, setDeleting] = useState<number | null>(null);
 
   useEffect(() => {
-    if (!isAdminAuthedSession()) { setLocation("/admin/login"); return; }
     void fetchSessions().then((data) => { setSessions(data); setLoading(false); });
-  }, [setLocation]);
+  }, []);
 
   async function onDelete(id: number) {
     if (!confirm("Hapus training ini?")) return;
@@ -110,9 +109,21 @@ export default function TrainingAdminDashboard() {
                       </span>
                     </td>
                     <td className="px-4 py-3 hidden lg:table-cell">
-                      <div className="flex items-center gap-1.5">
+                      <div className="flex items-center gap-2">
                         {s.has_hands_on_lab && <FlaskConical className="w-3.5 h-3.5 text-amber-400" aria-label="Hands-On Lab" />}
                         {s.has_certificate && <Award className="w-3.5 h-3.5 text-yellow-400" aria-label="Certificate" />}
+                        {s.status === "Completed" && (
+                          (s.doc_count ?? 0) > 0 ? (
+                            <span className="flex items-center gap-1 text-[11px] text-zinc-400" title="Foto dokumentasi">
+                              <Images className="w-3.5 h-3.5" />
+                              {s.doc_count}
+                            </span>
+                          ) : (
+                            <span className="text-[10px] font-medium text-amber-500/80" title="Belum ada dokumentasi">
+                              perlu dokumentasi
+                            </span>
+                          )
+                        )}
                       </div>
                     </td>
                     <td className="px-4 py-3">
@@ -142,5 +153,13 @@ export default function TrainingAdminDashboard() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function TrainingAdminDashboard() {
+  return (
+    <RequireRole roles={["admin", "trainer"]}>
+      <TrainingAdminDashboardInner />
+    </RequireRole>
   );
 }

@@ -1,15 +1,32 @@
+import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
+import { fetchMe, logout, type Role } from "./session";
 
-const TABS: { label: string; href: string; disabled?: boolean }[] = [
-  { label: "DCS", href: "/admin" },
-  { label: "MikroTik", href: "/admin/mikrotik" },
-  { label: "Ubiquiti", href: "/admin/ubiquiti" },
-  { label: "Training", href: "/admin/training" },
-  { label: "V-SOL", href: "/admin/vsol" },
+type Tab = { label: string; href: string; roles: Role[] };
+
+const TABS: Tab[] = [
+  { label: "DCS", href: "/admin", roles: ["admin"] },
+  { label: "MikroTik", href: "/admin/mikrotik", roles: ["admin"] },
+  { label: "Ubiquiti", href: "/admin/ubiquiti", roles: ["admin"] },
+  { label: "V-SOL", href: "/admin/vsol", roles: ["admin"] },
+  { label: "Training", href: "/admin/training", roles: ["admin", "trainer"] },
+  { label: "Peserta", href: "/admin/peserta", roles: ["admin", "trainer", "sales"] },
+  { label: "Users", href: "/admin/users", roles: ["admin"] },
 ];
 
 export default function AdminNavBar() {
   const [location, setLocation] = useLocation();
+  const [role, setRole] = useState<Role | null>(null);
+
+  useEffect(() => {
+    let alive = true;
+    void fetchMe().then((me) => {
+      if (alive) setRole(me.role);
+    });
+    return () => {
+      alive = false;
+    };
+  }, []);
 
   function isActive(href: string) {
     if (href === "/admin") return location === "/admin";
@@ -17,9 +34,12 @@ export default function AdminNavBar() {
   }
 
   async function onLogout() {
-    await fetch("/api/mikrotik-dcs/auth/logout", { method: "POST", credentials: "include" });
+    await logout();
     setLocation("/admin/login");
   }
+
+  // Sebelum role diketahui, jangan tampilkan tab (hindari flash tab yang tidak berhak).
+  const visibleTabs = role ? TABS.filter((t) => t.roles.includes(role)) : [];
 
   return (
     <div className="border-b border-zinc-800 bg-zinc-950 sticky top-0 z-50">
@@ -28,26 +48,20 @@ export default function AdminNavBar() {
           {/* Tabs */}
           <div className="flex items-center gap-6">
             <nav className="flex items-center gap-0.5">
-              {TABS.map((tab) => (
+              {visibleTabs.map((tab) => (
                 <button
                   key={tab.href}
-                  disabled={tab.disabled}
-                  onClick={() => !tab.disabled && setLocation(tab.href)}
+                  onClick={() => setLocation(tab.href)}
                   className={[
                     "relative px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-150",
-                    tab.disabled
-                      ? "text-zinc-600 cursor-not-allowed"
-                      : isActive(tab.href)
+                    isActive(tab.href)
                       ? "text-white bg-zinc-800"
                       : "text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/60",
                   ].join(" ")}
                 >
                   {tab.label}
-                  {isActive(tab.href) && !tab.disabled && (
+                  {isActive(tab.href) && (
                     <span className="absolute bottom-0 left-2 right-2 h-0.5 bg-indigo-500 rounded-full" />
-                  )}
-                  {tab.disabled && (
-                    <span className="ml-1.5 text-[10px] font-normal text-zinc-600">soon</span>
                   )}
                 </button>
               ))}
@@ -56,6 +70,11 @@ export default function AdminNavBar() {
 
           {/* Right side */}
           <div className="flex items-center gap-1">
+            {role && (
+              <span className="hidden sm:inline-block text-[11px] font-semibold uppercase tracking-wider text-zinc-500 px-2 py-1 rounded-md bg-zinc-900 border border-zinc-800 mr-1">
+                {role}
+              </span>
+            )}
             <button
               onClick={() => setLocation("/")}
               className="flex items-center gap-1.5 text-xs text-zinc-500 hover:text-zinc-300 transition-colors px-3 py-1.5 rounded-md hover:bg-zinc-800/60"

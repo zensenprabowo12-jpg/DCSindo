@@ -13,29 +13,12 @@ import {
   reorderMikrotikDcsProducts,
   updateMikrotikDcsProduct,
 } from "../models/mikrotikDcsProductModel";
-import {
-  listAdminLoginAttempts,
-  recordAdminLoginAttempt,
-} from "../models/adminActivityLogModel";
+import { listAdminLoginAttempts } from "../models/adminActivityLogModel";
+import { performLogin } from "./authController";
+import { requireRole } from "../middleware/requireRole";
 
-// Kredensial admin. Bisa di-override lewat .env (ADMIN_USER / ADMIN_PASS).
-// Kalau env tidak di-set, pakai nilai default di bawah.
-const ADMIN_USER = process.env.ADMIN_USER?.trim() || "admin";
-const ADMIN_PASS = process.env.ADMIN_PASS?.trim() || "MBGratisdcsindo";
-
-/** Ambil IP asli klien (memperhatikan reverse proxy / X-Forwarded-For). */
-function getClientIp(req: Request): string | null {
-  const fwd = req.headers["x-forwarded-for"];
-  if (typeof fwd === "string" && fwd.trim()) return fwd.split(",")[0]!.trim();
-  if (Array.isArray(fwd) && fwd.length) return fwd[0]!.trim();
-  return req.socket?.remoteAddress ?? null;
-}
-
-function requireMikrotikDcsSession(req: Request, res: Response): boolean {
-  if (req.session.mikrotikDcsAdmin) return true;
-  res.status(401).json({ ok: false, message: "Perlu login admin." });
-  return false;
-}
+// Guard: semua endpoint admin MikroTik butuh role 'admin' (perilaku tidak berubah).
+const requireMikrotikDcsSession = requireRole("admin");
 
 function parseIntParam(
   id: string | string[] | undefined,
@@ -69,23 +52,15 @@ export async function apiMikrotikDcsLogin(
   req: Request,
   res: Response,
 ): Promise<void> {
+  // Alias kompatibilitas: pakai logika login terpusat (tabel users + bcrypt).
+  // Bentuk respons dipertahankan { ok, data:{ username } } agar frontend lama tidak putus.
   const { username, password } = (req.body ?? {}) as { username?: string; password?: string };
-  const success = username === ADMIN_USER && password === ADMIN_PASS;
-
-  // Catat percobaan login (tidak menggagalkan login walau gagal mencatat).
-  void recordAdminLoginAttempt({
-    attemptedUsername: typeof username === "string" ? username : "",
-    success,
-    ipAddress: getClientIp(req),
-    userAgent: typeof req.headers["user-agent"] === "string" ? req.headers["user-agent"] : null,
-  });
-
-  if (success) {
-    req.session.mikrotikDcsAdmin = true;
-    res.json({ ok: true, data: { username: ADMIN_USER } });
+  const result = await performLogin(req, username, password);
+  if (result.ok) {
+    res.json({ ok: true, data: { username: result.user.username } });
     return;
   }
-  res.status(401).json({ ok: false, message: "Username atau password salah." });
+  res.status(401).json({ ok: false, message: result.message });
 }
 
 /** Admin: daftar log percobaan login. */

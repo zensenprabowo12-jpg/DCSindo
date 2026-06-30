@@ -26,6 +26,9 @@ export type TrainingSession = {
   status: TrainingStatus;
   created_at: string;
   updated_at: string;
+  /** Ringkasan dokumentasi (foto pertama + jumlah) — diisi di daftar training. */
+  doc_cover?: string | null;
+  doc_count?: number;
 };
 
 export type TrainingGalleryItem = {
@@ -80,6 +83,47 @@ export async function apiFetchTrainingSession(id: number): Promise<TrainingSessi
   const res = await fetch(`/api/training/sessions/${id}`);
   const json = await res.json() as { ok: boolean; data?: TrainingSessionDetail };
   return json.ok && json.data ? json.data : null;
+}
+
+export type TrainingAvailability = {
+  capacity: number | null;
+  registered: number;
+  remaining: number | null;
+  status: TrainingStatus;
+  open: boolean;
+};
+
+export async function apiTrainingAvailability(id: number): Promise<TrainingAvailability | null> {
+  try {
+    const res = await fetch(`/api/training/${id}/availability`);
+    const json = (await res.json()) as { ok: boolean; data?: TrainingAvailability };
+    return json.ok && json.data ? json.data : null;
+  } catch {
+    return null;
+  }
+}
+
+export type RegisterInput = {
+  full_name: string;
+  email: string;
+  phone: string;
+  company?: string;
+};
+
+export async function apiRegisterTraining(
+  id: number,
+  input: RegisterInput,
+): Promise<{ ok: boolean; message?: string }> {
+  try {
+    const res = await fetch(`/api/training/${id}/register`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(input),
+    });
+    return (await res.json()) as { ok: boolean; message?: string };
+  } catch {
+    return { ok: false, message: "Koneksi ke server gagal" };
+  }
 }
 
 export function formatDate(iso: string): string {

@@ -1,7 +1,7 @@
 import { useLocation } from "wouter";
 import { useEffect, useState } from "react";
-import { isAdminAuthedSession } from "./authGate";
 import AdminNavBar from "./NavBar";
+import RequireRole from "./RequireRole";
 
 type ActivityLogRow = {
   id: number;
@@ -25,9 +25,8 @@ function formatDateTime(iso: string): string {
   });
 }
 
-export default function AdminActivityLog() {
+function AdminActivityLogInner() {
   const [, setLocation] = useLocation();
-  const [ready, setReady] = useState(false);
   const [rows, setRows] = useState<ActivityLogRow[] | null>(null);
   const [err, setErr] = useState<string | null>(null);
 
@@ -51,15 +50,8 @@ export default function AdminActivityLog() {
   }
 
   useEffect(() => {
-    if (!isAdminAuthedSession()) {
-      setLocation("/admin/login");
-      return;
-    }
-    setReady(true);
     void load();
-  }, [setLocation]);
-
-  if (!ready) return null;
+  }, []);
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
@@ -159,5 +151,13 @@ export default function AdminActivityLog() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function AdminActivityLog() {
+  return (
+    <RequireRole roles={["admin"]}>
+      <AdminActivityLogInner />
+    </RequireRole>
   );
 }

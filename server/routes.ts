@@ -1,6 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { registerEjsViewPaths } from "./ejsViews";
+import { registerAuthRoutes } from "./routes/authRoutes";
 import { registerCatalogMultiBrandRoutes } from "./routes/catalogMultiBrandRoutes";
 import { registerMikrotikDcsRoutes } from "./routes/mikrotikDcsRoutes";
 import { registerMikrotikRoutes } from "./routes/mikrotikRoutes";
@@ -13,6 +14,8 @@ export async function registerRoutes(
   app: Express
 ): Promise<Server> {
   registerEjsViewPaths(app);
+  // Auth netral (/api/auth/*) didaftarkan paling awal
+  registerAuthRoutes(app);
   // Katalog multi-brand didaftarkan lebih dulu agar path /brand/* konsisten
   registerCatalogMultiBrandRoutes(app);
   registerMikrotikRoutes(app);

@@ -6,20 +6,148 @@ import {
   Calendar, MapPin, Clock, Users, FlaskConical,
   Award, BookOpen, User, ArrowLeft, CheckCircle2,
   ExternalLink, QrCode, X, ChevronLeft, ChevronRight,
+  UserPlus, Loader2, Images,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DCS_WHATSAPP_PRIMARY, DCS_EMAIL } from "@/lib/contact";
 import {
   apiFetchTrainingSession,
+  apiRegisterTraining,
+  apiTrainingAvailability,
   BRAND_BG,
   BRAND_COLOR,
   formatDatetime,
   STATUS_BG,
+  type TrainingAvailability,
   type TrainingBrand,
   type TrainingGalleryItem,
   type TrainingSessionDetail,
   type TrainingStatus,
 } from "./types";
+
+function RegisterCard({ trainingId, accent }: { trainingId: number; accent: string }) {
+  const [avail, setAvail] = useState<TrainingAvailability | null>(null);
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [company, setCompany] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [done, setDone] = useState(false);
+  const [err, setErr] = useState<string | null>(null);
+
+  async function loadAvail() {
+    const a = await apiTrainingAvailability(trainingId);
+    setAvail(a);
+  }
+
+  useEffect(() => {
+    void loadAvail();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [trainingId]);
+
+  async function onSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setErr(null);
+    if (!fullName.trim() || !email.trim() || !phone.trim()) {
+      setErr("Nama, email, dan nomor HP wajib diisi.");
+      return;
+    }
+    setSubmitting(true);
+    const r = await apiRegisterTraining(trainingId, {
+      full_name: fullName.trim(),
+      email: email.trim(),
+      phone: phone.trim(),
+      company: company.trim() || undefined,
+    });
+    setSubmitting(false);
+    if (r.ok) {
+      setDone(true);
+    } else {
+      setErr(r.message ?? "Pendaftaran gagal.");
+      void loadAvail(); // refresh kuota (mis. jika baru penuh)
+    }
+  }
+
+  const closed = avail != null && !avail.open;
+
+  return (
+    <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+      <div className="flex items-center gap-2 mb-1">
+        <UserPlus className="w-5 h-5" style={{ color: accent }} />
+        <h3 className="font-black text-base">Daftar Training</h3>
+      </div>
+
+      {/* Info kuota */}
+      {avail && avail.capacity != null && (
+        <p className="text-xs text-zinc-400 mb-4">
+          {avail.remaining != null && avail.remaining > 0
+            ? <>Sisa <span className="font-bold text-white">{avail.remaining}</span> dari {avail.capacity} kursi</>
+            : <span className="text-red-400 font-semibold">Kuota penuh</span>}
+        </p>
+      )}
+      {avail && avail.capacity == null && !closed && (
+        <p className="text-xs text-zinc-500 mb-4">Isi data di bawah untuk mendaftar.</p>
+      )}
+
+      {done ? (
+        <div className="flex flex-col items-center text-center gap-2 py-6">
+          <CheckCircle2 className="w-10 h-10 text-emerald-400" />
+          <p className="text-white font-semibold">Pendaftaran berhasil!</p>
+          <p className="text-zinc-400 text-sm">Tim kami akan menghubungi Anda untuk konfirmasi.</p>
+        </div>
+      ) : closed ? (
+        <div className="rounded-xl bg-zinc-800/60 border border-zinc-700 px-4 py-3 text-sm text-zinc-400">
+          {avail?.status === "Completed"
+            ? "Pendaftaran ditutup — training sudah selesai."
+            : "Kuota penuh. Pendaftaran ditutup."}
+        </div>
+      ) : (
+        <form onSubmit={onSubmit} className="space-y-3">
+          {err && (
+            <div className="text-xs text-red-400 bg-red-500/10 border border-red-500/20 rounded-lg px-3 py-2">
+              {err}
+            </div>
+          )}
+          <input
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            placeholder="Nama lengkap *"
+            className="w-full h-10 rounded-lg bg-zinc-800 border border-zinc-700 text-sm px-3 text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-white/20"
+          />
+          <input
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            type="email"
+            placeholder="Email *"
+            className="w-full h-10 rounded-lg bg-zinc-800 border border-zinc-700 text-sm px-3 text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-white/20"
+          />
+          <input
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            inputMode="tel"
+            placeholder="No. HP / WhatsApp *"
+            className="w-full h-10 rounded-lg bg-zinc-800 border border-zinc-700 text-sm px-3 text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-white/20"
+          />
+          <input
+            value={company}
+            onChange={(e) => setCompany(e.target.value)}
+            placeholder="Perusahaan / Instansi (opsional)"
+            className="w-full h-10 rounded-lg bg-zinc-800 border border-zinc-700 text-sm px-3 text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-white/20"
+          />
+          <Button
+            type="submit"
+            disabled={submitting}
+            className="w-full rounded-full font-bold gap-2"
+            style={{ backgroundColor: accent, color: "#000" }}
+          >
+            {submitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <UserPlus className="w-4 h-4" />}
+            {submitting ? "Mengirim…" : "Daftar Sekarang"}
+          </Button>
+        </form>
+      )}
+    </div>
+  );
+}
 
 function Lightbox({
   images,
@@ -298,32 +426,41 @@ export default function TrainingDetail() {
                 </motion.div>
               )}
 
-              {/* Gallery */}
-              {gallery.length > 0 && (
+              {/* Dokumentasi / Galeri Foto */}
+              {(gallery.length > 0 || d.status === "Completed") && (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
                   className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6"
                 >
-                  <h2 className="text-lg font-black mb-4">Galeri Foto</h2>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                    {gallery.map((img, idx) => (
-                      <button
-                        key={img.id}
-                        type="button"
-                        onClick={() => setLightboxIdx(idx)}
-                        className="relative aspect-square rounded-xl overflow-hidden border border-zinc-700 hover:border-zinc-500 transition-colors group"
-                      >
-                        <img
-                          src={img.image_path}
-                          alt={img.caption ?? `Foto ${idx + 1}`}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
-                      </button>
-                    ))}
-                  </div>
+                  <h2 className="text-lg font-black mb-4">
+                    {d.status === "Completed" ? "Dokumentasi" : "Galeri Foto"}
+                  </h2>
+                  {gallery.length > 0 ? (
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                      {gallery.map((img, idx) => (
+                        <button
+                          key={img.id}
+                          type="button"
+                          onClick={() => setLightboxIdx(idx)}
+                          className="relative aspect-square rounded-xl overflow-hidden border border-zinc-700 hover:border-zinc-500 transition-colors group"
+                        >
+                          <img
+                            src={img.image_path}
+                            alt={img.caption ?? `Foto ${idx + 1}`}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
+                        </button>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="flex flex-col items-center text-center gap-2 py-10 text-zinc-500">
+                      <Images className="w-8 h-8 opacity-30" />
+                      <p className="text-sm">Dokumentasi segera hadir.</p>
+                    </div>
+                  )}
                 </motion.div>
               )}
             </div>
@@ -428,6 +565,11 @@ export default function TrainingDetail() {
                   </div>
                 )}
               </motion.div>
+
+              {/* Form pendaftaran — hanya untuk training yang belum selesai */}
+              {d.status !== "Completed" && (
+                <RegisterCard trainingId={d.id} accent={brandColor} />
+              )}
             </div>
           </div>
         </div>

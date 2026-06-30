@@ -38,6 +38,15 @@ try {
 
 export const mysqlPool = mysql.createPool(poolOptions ?? {});
 
+/**
+ * Opsi koneksi MySQL yang sudah di-resolve (host/port atau socket + kredensial).
+ * Dipakai mis. oleh express-mysql-session untuk session store.
+ * null bila konfigurasi env belum lengkap.
+ */
+export function getMysqlConnectionOptions(): PoolOptions | null {
+  return poolOptions;
+}
+
 function mysqlErrorHint(err: { code?: string; message?: string }): void {
   console.error("[MySQL]", err.message ?? String(err));
   if (err.code === "ER_BAD_DB_ERROR") {

@@ -29,6 +29,9 @@ export type TrainingSessionRow = {
   status: TrainingStatus;
   created_at: Date;
   updated_at: Date;
+  /** Ringkasan dokumentasi (hanya diisi oleh listTrainingSessions). */
+  doc_cover?: string | null;
+  doc_count?: number;
 };
 
 export type TrainingSyllabusRow = {
@@ -76,6 +79,8 @@ function mapRow(r: RowDataPacket): TrainingSessionRow {
     status: computeStatus(new Date(r.start_datetime), new Date(r.end_datetime)),
     created_at: r.created_at,
     updated_at: r.updated_at,
+    doc_cover: r.doc_cover ?? null,
+    doc_count: r.doc_count != null ? Number(r.doc_count) : 0,
   };
 }
 
@@ -105,8 +110,15 @@ export async function listTrainingSessions(opts: {
   }
 
   const where = conditions.length ? `WHERE ${conditions.join(" AND ")}` : "";
+  // Sertakan ringkasan dokumentasi (foto pertama + jumlah) dari training_gallery.
   const [rows] = await mysqlPool.query<RowDataPacket[]>(
-    `SELECT * FROM training_sessions ${where} ORDER BY start_datetime ASC, id ASC`,
+    `SELECT ts.*,
+            (SELECT g.image_path FROM training_gallery g
+              WHERE g.training_id = ts.id ORDER BY g.sort_order ASC, g.id ASC LIMIT 1) AS doc_cover,
+            (SELECT COUNT(*) FROM training_gallery g WHERE g.training_id = ts.id) AS doc_count
+       FROM training_sessions ts
+       ${where}
+      ORDER BY ts.start_datetime ASC, ts.id ASC`,
     params,
   );
 

@@ -1,7 +1,8 @@
 import { useLocation } from "wouter";
-import { isAdminAuthedSession, clearAdminAuthedSession } from "./authGate";
 import { useEffect, useState } from "react";
 import AdminNavBar from "./NavBar";
+import RequireRole from "./RequireRole";
+import { logout } from "./session";
 
 async function fetchProductCount(url: string): Promise<number | null> {
   try {
@@ -47,17 +48,11 @@ const BRANDS = [
   },
 ];
 
-export default function AdminDashboard() {
+function AdminDashboardInner() {
   const [, setLocation] = useLocation();
-  const [ready, setReady] = useState(false);
   const [counts, setCounts] = useState<Record<string, number | null>>({});
 
   useEffect(() => {
-    if (!isAdminAuthedSession()) {
-      setLocation("/admin/login");
-      return;
-    }
-    setReady(true);
     void Promise.all([
       fetchProductCount("/api/mikrotik-dcs/admin/products").then((n) =>
         setCounts((prev) => ({ ...prev, mikrotik: n }))
@@ -69,15 +64,12 @@ export default function AdminDashboard() {
         setCounts((prev) => ({ ...prev, vsol: n }))
       ),
     ]);
-  }, [setLocation]);
+  }, []);
 
   async function onLogout() {
-    await fetch("/api/mikrotik-dcs/auth/logout", { method: "POST", credentials: "include" });
-    clearAdminAuthedSession();
+    await logout();
     setLocation("/admin/login");
   }
-
-  if (!ready) return null;
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
@@ -177,5 +169,13 @@ export default function AdminDashboard() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function AdminDashboard() {
+  return (
+    <RequireRole roles={["admin"]}>
+      <AdminDashboardInner />
+    </RequireRole>
   );
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { markAdminAuthedSession } from "./authGate";
+import { roleHome, type Role } from "./session";
 
 export default function AdminLogin() {
   const [, setLocation] = useLocation();
@@ -14,16 +15,21 @@ export default function AdminLogin() {
     setErr(null);
     setLoading(true);
     try {
-      const res = await fetch("/api/mikrotik-dcs/auth/login", {
+      const res = await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
         body: JSON.stringify({ username: user, password: pass }),
       });
-      const data = await res.json() as { ok: boolean; message?: string };
+      const data = await res.json() as {
+        ok: boolean;
+        message?: string;
+        data?: { user?: { username: string; role: Role } };
+      };
       if (data.ok) {
-        markAdminAuthedSession();
-        setLocation("/admin");
+        markAdminAuthedSession(); // kompatibilitas (beberapa halaman lama masih cek ini)
+        const role = data.data?.user?.role ?? null;
+        setLocation(roleHome(role)); // arahkan sesuai role
       } else {
         setErr(data.message ?? "Login gagal");
       }
