@@ -8,6 +8,7 @@ import { registerMikrotikRoutes } from "./routes/mikrotikRoutes";
 import { registerUbiquitiDcsRoutes } from "./routes/ubiquitiDcsRoutes";
 import { registerVsolDcsRoutes } from "./routes/vsolDcsRoutes";
 import { registerTrainingRoutes } from "./routes/trainingRoutes";
+import { registerFirmwareRoutes } from "./routes/firmwareRoutes";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -23,6 +24,7 @@ export async function registerRoutes(
   registerUbiquitiDcsRoutes(app);
   registerVsolDcsRoutes(app);
   registerTrainingRoutes(app);
+  registerFirmwareRoutes(app);
 
   return httpServer;
 }

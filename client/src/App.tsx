@@ -28,6 +28,9 @@ import AdminPeserta from "@admin/Peserta";
 import AdminUsers from "@admin/Users";
 import TrainingAdminDashboard from "@admin/training/Dashboard";
 import TrainingForm from "@admin/training/TrainingForm";
+import FirmwareDashboard from "@admin/firmware/Dashboard";
+import FirmwareBrandList from "@admin/firmware/List";
+import FirmwareForm from "@admin/firmware/FirmwareForm";
 
 import VsolSupport from "@/pages/support/Vsol";
 import HomeVsol from "@/pages/homepage/home-vsol";
@@ -37,6 +40,7 @@ import VsolDcsDashboard from "@vsol/admin/Dashboard";
 import VsolProductForm from "@vsol/admin/ProductForm";
 import ComingSoon from "@/pages/coming-soon";
 import FirmwarePage from "@/pages/firmware";
+import FirmwareBrandPage from "@/pages/firmware-brand";
 import TrainingList from "@/pages/training/TrainingList";
 import TrainingDetail from "@/pages/training/TrainingDetail";
 import { useTrueFalse } from "@/hooks/useTrueFalse";
@@ -95,6 +99,10 @@ function RouterWouter() {
       <Route path="/admin/vsol/new" component={VsolProductForm} />
       <Route path="/admin/vsol/:id/edit" component={VsolProductForm} />
       <Route path="/admin/vsol" component={VsolDcsDashboard} />
+      <Route path="/admin/firmware/:brand/new" component={FirmwareForm} />
+      <Route path="/admin/firmware/:brand/:id/edit" component={FirmwareForm} />
+      <Route path="/admin/firmware/:brand" component={FirmwareBrandList} />
+      <Route path="/admin/firmware" component={FirmwareDashboard} />
 
       <Route path="/support" component={Support} />
       <Route path="/support/ubiquiti" component={UbiquitiSupport} />
@@ -104,6 +112,7 @@ function RouterWouter() {
 
       <Route path="/support/vsol" component={VsolSupport} />
 
+      <Route path="/firmware/:brand" component={FirmwareBrandPage} />
       <Route path="/firmware" component={FirmwarePage} /> {/* ✅ WAJIB */}
 
       <Route path="/company-profile" component={CompanyProfile} />

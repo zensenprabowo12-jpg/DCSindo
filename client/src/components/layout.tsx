@@ -112,6 +112,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const isTrainingActive = location === "/training" || location.startsWith("/training/");
 
+  const isFirmwareActive =
+    location === "/firmware" || location.startsWith("/firmware/");
+
   /* Main contact hub — matches the `/support` route */
   const isContactActive = location === "/support";
 
@@ -255,6 +258,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <a className="relative inline-flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-primary/10 hover:text-primary">
                 Training
                 {isTrainingActive && (
+                  <motion.div
+                    layoutId="navActivePill"
+                    className="absolute inset-0 -z-10 rounded-lg bg-primary/10"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
+              </a>
+            </Link>
+
+            {/* FIRMWARE */}
+            <Link href="/firmware">
+              <a className="relative inline-flex items-center rounded-md px-3 py-1.5 transition-colors hover:bg-primary/10 hover:text-primary">
+                Firmware
+                {isFirmwareActive && (
                   <motion.div
                     layoutId="navActivePill"
                     className="absolute inset-0 -z-10 rounded-lg bg-primary/10"
@@ -479,6 +496,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     )}
                   >
                     Training
+                  </a>
+                </Link>
+
+                <Link href="/firmware">
+                  <a
+                    onClick={() => setIsMobileOpen(false)}
+                    className={cn(
+                      "mt-3 block rounded-xl px-4 py-3 transition-colors hover:bg-primary/10 hover:text-primary",
+                      isFirmwareActive && "bg-primary/10 text-primary"
+                    )}
+                  >
+                    Firmware
                   </a>
                 </Link>
 

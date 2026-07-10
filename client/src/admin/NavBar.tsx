@@ -9,6 +9,7 @@ const TABS: Tab[] = [
   { label: "MikroTik", href: "/admin/mikrotik", roles: ["admin"] },
   { label: "Ubiquiti", href: "/admin/ubiquiti", roles: ["admin"] },
   { label: "V-SOL", href: "/admin/vsol", roles: ["admin"] },
+  { label: "Firmware", href: "/admin/firmware", roles: ["admin"] },
   { label: "Training", href: "/admin/training", roles: ["admin", "trainer"] },
   { label: "Peserta", href: "/admin/peserta", roles: ["admin", "trainer", "sales"] },
   { label: "Users", href: "/admin/users", roles: ["admin"] },

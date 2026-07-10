@@ -1,143 +1,129 @@
-import { useState } from "react";
+import { Link } from "wouter";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import Layout from "@/components/layout";
+import { cn } from "@/lib/utils";
+import { FIRMWARE_BRAND_SLUGS, FIRMWARE_BRAND_META } from "@/lib/firmwarePublic";
 
-type FirmwareItem = {
-  name: string;
-  version: string;
-  link: string;
-  downloadName: string;
-  notes?: string;
-};
-
-type FirmwareData = {
-  [key: string]: FirmwareItem[];
-};
-
-const firmwareData: FirmwareData = {
-  Ubiquiti: [
-    {
-      name: "airFiber 5XHD [AF-5XHD]",
-      version: "v1.5.6",
-      link: "/firmware/af5xhd.amesoc3.v1.5.6-lock.00005.260225.0902-squashfs.bin",
-      downloadName: "AF-5XHD v.1.5.6 Indonesia Firmware",
-      notes: "Indonesia-compliant localized firmware",
-    },
-  ],
-  MikroTik: [
-    {
-      name: "RouterOS (All Devices)",
-      version: "Latest Stable",
-      link: "https://mikrotik.com/download",
-      downloadName: "RouterOS Latest Stable",
-      notes: "Official firmware for all MikroTik routers and switches — download from mikrotik.com",
-    },
-    {
-      name: "Winbox GUI Tool",
-      version: "Latest",
-      link: "https://mikrotik.com/download",
-      downloadName: "Winbox Latest",
-      notes: "Windows/Mac/Linux management tool for MikroTik devices",
-    },
-  ],
-  "V-SOL": [
-    {
-      name: "10G-PON",
-      version: "V3600G1-C",
-      link: "https://drive.google.com/uc?export=download&id=1HDdcEwV0V7qFL0qxHzIE88uSNgMZ-zzG",
-      downloadName: "10G-PON V3600G1-C Indonesia Firmware",
-      notes: "Indonesia-compliant firmware for 10G-PON OLT",
-    },
-    {
-      name: "Chassis OLT",
-      version: "V5600X2-C",
-      link: "https://drive.google.com/uc?export=download&id=1fGGioLNzKXeBuK-tPgVQoyIntB-rc0AD",
-      downloadName: "Chassis OLT V5600X2 Indonesia Firmware",
-      notes: "Indonesia-compliant firmware for V5600 Chassis OLT",
-    },
-  ],
+/**
+ * Efek glow per brand (khusus halaman /firmware).
+ * - `glow`  : warna layer blur di belakang kartu (animasi opacity → ringan/GPU).
+ * - `shadow`: box-shadow berwarna brand saat hover (ikut transition kartu).
+ */
+const BRAND_FX: Record<string, { glow: string; shadow: string }> = {
+  mikrotik: {
+    glow: "bg-red-500/30",
+    shadow:
+      "hover:shadow-[0_0_0_1px_rgba(239,68,68,0.25),0_10px_30px_-5px_rgba(239,68,68,0.45),0_0_45px_-8px_rgba(239,68,68,0.5)]",
+  },
+  ubiquiti: {
+    glow: "bg-blue-500/30",
+    shadow:
+      "hover:shadow-[0_0_0_1px_rgba(59,130,246,0.25),0_10px_30px_-5px_rgba(59,130,246,0.45),0_0_45px_-8px_rgba(59,130,246,0.5)]",
+  },
+  vsol: {
+    glow: "bg-green-500/30",
+    shadow:
+      "hover:shadow-[0_0_0_1px_rgba(34,197,94,0.25),0_10px_30px_-5px_rgba(34,197,94,0.45),0_0_45px_-8px_rgba(34,197,94,0.5)]",
+  },
 };
 
 export default function FirmwarePage() {
-  const [activeBrand, setActiveBrand] = useState<string>("Ubiquiti");
-
   return (
     <Layout>
-      <section className="py-16 px-4 min-h-screen">
-        <div className="container mx-auto max-w-3xl">
-
-          <div className="mb-12 text-center">
-            <p className="text-xs font-black tracking-[0.35em] uppercase text-muted-foreground mb-3">
+      <section className="py-20 px-4 min-h-screen">
+        <div className="container mx-auto max-w-7xl">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <p className="text-xs font-black tracking-[0.35em] uppercase text-muted-foreground">
               Firmware Downloads
             </p>
-            <h1 className="text-4xl font-black tracking-tight mb-3">
-              Official Firmware
+            <h1 className="mt-3 text-4xl md:text-5xl font-black tracking-tight text-black dark:text-white">
+              Pusat Unduhan Firmware Resmi
             </h1>
-            <p className="text-muted-foreground max-w-xl mx-auto">
-              In accordance with Indonesian regulations, certain products require localized firmware.
-              Download the official firmware for your device below.
+            <p className="text-muted-foreground font-medium mt-3 max-w-2xl mx-auto">
+              Pilih brand untuk melihat firmware resmi yang tersedia — sebagian produk
+              memerlukan firmware terlokalisasi sesuai regulasi di Indonesia.
             </p>
           </div>
 
-          {/* Brand tabs */}
-          <div className="flex gap-2 mb-10 border-b border-border">
-            {["Ubiquiti", "MikroTik", "V-SOL"].map((brand) => (
-              <button
-                key={brand}
-                onClick={() => setActiveBrand(brand)}
-                className={`px-5 py-3 text-sm font-bold transition-all border-b-2 -mb-px ${
-                  activeBrand === brand
-                    ? "border-foreground text-foreground"
-                    : "border-transparent text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {brand}
-              </button>
-            ))}
+          {/* Brand cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {FIRMWARE_BRAND_SLUGS.map((slug) => {
+              const meta = FIRMWARE_BRAND_META[slug];
+              const fx = BRAND_FX[slug];
+              return (
+                <Link key={slug} href={`/firmware/${slug}`}>
+                  <div className="group relative">
+                    {/* Glow layer warna brand di belakang kartu — animasi opacity (ringan) */}
+                    <div
+                      aria-hidden
+                      className={cn(
+                        "pointer-events-none absolute -inset-1.5 -z-10 rounded-[1.75rem] blur-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100",
+                        fx.glow,
+                      )}
+                    />
+
+                    {/* Kartu — mekanisme hover DISAMAKAN dengan kartu brand home:
+                        framer-motion whileHover y:-6 + transition-all duration-500 + shadow. */}
+                    <motion.div
+                      whileHover={{ y: -6 }}
+                      className={cn(
+                        "relative overflow-hidden rounded-3xl border border-border bg-background cursor-pointer shadow-sm hover:shadow-2xl transition-all duration-500",
+                        meta.border,
+                        fx.shadow,
+                      )}
+                    >
+                      {/* Aksen garis atas warna brand (menguat saat hover) */}
+                      <div
+                        className={`h-1.5 w-full ${meta.dot} opacity-70 transition-opacity duration-500 group-hover:opacity-100`}
+                      />
+
+                      {/* Visual: logo/thumbnail brand (cover, tidak gepeng). Zoom seperti home. */}
+                      <div className="relative aspect-[4/3] overflow-hidden">
+                        <div
+                          className={`absolute inset-0 bg-gradient-to-br ${meta.grad} pointer-events-none z-10`}
+                        />
+                        <img
+                          src={meta.logo}
+                          alt={meta.name}
+                          decoding="async"
+                          draggable={false}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                      </div>
+
+                      {/* Footer info */}
+                      <div className="p-6">
+                        <div className="flex items-center gap-2 mb-1.5">
+                          <span className={`w-2.5 h-2.5 rounded-full ${meta.dot}`} />
+                          <span className={`text-xs font-black uppercase tracking-widest ${meta.text}`}>
+                            {slug}
+                          </span>
+                        </div>
+                        <h2 className="text-xl font-black tracking-tight">{meta.name}</h2>
+                        <p className="mt-1 text-sm text-muted-foreground line-clamp-2">
+                          {meta.tagline}
+                        </p>
+                        <div className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-foreground/80 group-hover:text-foreground transition-colors">
+                          Lihat firmware
+                          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                        </div>
+                      </div>
+                    </motion.div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
 
-          {/* Firmware list */}
-          <div className="space-y-4">
-            {(firmwareData[activeBrand] ?? []).map((item, i) => (
-              <div
-                key={i}
-                className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-5 rounded-2xl border border-border bg-background hover:bg-secondary/30 transition-colors"
-              >
-                <div className="flex-1">
-                  <p className="font-bold text-base">{item.name}</p>
-                  {item.notes && (
-                    <p className="text-sm text-muted-foreground mt-0.5">{item.notes}</p>
-                  )}
-                </div>
-
-                <div className="flex items-center gap-3 shrink-0">
-                  <span className="text-xs font-black uppercase tracking-widest bg-secondary px-3 py-1.5 rounded-full">
-                    {item.version}
-                  </span>
-                  <a
-                    href={item.link}
-                    {...(item.link.startsWith("http")
-                      ? { target: "_blank", rel: "noopener noreferrer" }
-                      : { download: item.downloadName })}
-                    className={`px-5 py-2 rounded-full text-sm font-bold transition-all ${
-                      item.link === "#"
-                        ? "bg-secondary text-muted-foreground cursor-not-allowed pointer-events-none"
-                        : "bg-foreground text-background hover:opacity-80"
-                    }`}
-                  >
-                    {item.link === "#" ? "Coming Soon" : item.link.startsWith("http") && !item.link.includes("drive.google") ? "Visit" : "Download"}
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p className="mt-10 text-xs text-center text-muted-foreground">
-            For more firmware versions or technical guidance, please{" "}
+          <p className="mt-14 text-xs text-center text-muted-foreground">
+            Butuh versi lain atau panduan teknis?{" "}
             <a href="/support" className="underline hover:text-foreground transition-colors">
-              contact our support team
-            </a>.
+              hubungi tim support kami
+            </a>
+            .
           </p>
-
         </div>
       </section>
     </Layout>
