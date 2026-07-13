@@ -5,6 +5,7 @@ import viteConfig from "../vite.config";
 import fs from "fs";
 import path from "path";
 import { nanoid } from "nanoid";
+import { isStaticAssetPath } from "./utils/staticAssetPath";
 
 const viteLogger = createLogger();
 
@@ -45,6 +46,12 @@ export async function setupVite(server: Server, app: Express) {
   app.use("/{*path}", async (req, res, next) => {
     if (isServerRenderedPath(req.path)) {
       next();
+      return;
+    }
+    // Aset yang tidak ditemukan harus 404, bukan index.html berstatus 200.
+    // req.path selalu "/" di dalam app.use() ber-pattern; pakai originalUrl.
+    if (isStaticAssetPath(req.originalUrl)) {
+      res.status(404).type("txt").send("Not found");
       return;
     }
     const url = req.originalUrl;
