@@ -15,6 +15,8 @@ type Brand = "ubiquiti" | "mikrotik" | "vsol";
 type UnifiedProduct = {
   id: number;
   name: string;
+  sku: string;
+  subfilter: string;
   category: string;
   image: string;
   path: string;
@@ -54,6 +56,8 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
             r.data.map((p: UbiquitiDcsProduct) => ({
               id: p.id,
               name: p.nama_produk,
+              sku: p.sku ?? "",
+              subfilter: p.subfilter ?? "",
               category: p.category,
               image: p.main_image,
               path: `/ubiquiti/shop/${p.id}`,
@@ -70,6 +74,8 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
             r.data.map((p: MikrotikDcsProduct) => ({
               id: p.id,
               name: p.nama_produk,
+              sku: p.sku ?? "",
+              subfilter: "",
               category: p.category,
               image: p.main_image,
               path: `/mikrotik/shop/${p.id}`,
@@ -86,6 +92,8 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
             r.data.map((p: VsolDcsProduct) => ({
               id: p.id,
               name: p.nama_produk,
+              sku: p.sku ?? "",
+              subfilter: p.subfilter ?? "",
               category: p.category,
               image: p.main_image,
               path: `/vsol/shop/${p.id}`,
@@ -98,12 +106,20 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
     }
   }, [selectedBrand, fetched]);
 
+  const normalize = (s: string) => s.toLowerCase().replace(/[\s\-_]+/g, "");
+
   const filtered = selectedBrand
-    ? products.filter(
-        (p) =>
-          p.name.toLowerCase().includes(query.toLowerCase()) ||
-          p.category.toLowerCase().includes(query.toLowerCase())
-      )
+    ? (() => {
+        const q = normalize(query);
+        if (!q) return [];
+        return products.filter(
+          (p) =>
+            normalize(p.name).includes(q) ||
+            normalize(p.sku).includes(q) ||
+            normalize(p.category).includes(q) ||
+            normalize(p.subfilter).includes(q)
+        );
+      })()
     : [];
 
   const meta = selectedBrand ? BRAND_META[selectedBrand] : null;
@@ -212,6 +228,9 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
                             <div className="min-w-0">
                               <div className="font-bold group-hover:text-primary transition-colors truncate">
                                 {p.name}
+                              </div>
+                              <div className="text-xs text-muted-foreground mt-0.5 truncate">
+                                SKU: {p.sku}
                               </div>
                               <div
                                 className="text-xs font-black uppercase tracking-widest mt-0.5"
