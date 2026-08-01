@@ -13,7 +13,7 @@ const ASSET_EXTENSIONS = new Set([
   // font
   "woff", "woff2", "ttf", "otf", "eot",
   // dokumen & biner
-  "pdf", "txt", "xml", "csv", "zip", "gz", "tar", "bin", "img", "npk", "itb",
+  "pdf", "txt", "xml", "csv", "zip", "gz", "tar", "bin", "img", "npk", "itb", "ubi",
 ]);
 
 /**

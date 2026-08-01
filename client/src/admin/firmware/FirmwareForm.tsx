@@ -272,7 +272,7 @@ function FormInner({ brand, id }: { brand: FirmwareBrand; id: number | null }) {
                 className="block w-full text-sm text-zinc-400 file:mr-3 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-zinc-800 file:text-zinc-200 hover:file:bg-zinc-700 cursor-pointer"
               />
               <p className="mt-1.5 text-xs text-zinc-600">
-                Ekstensi: .bin .img .zip .tar .gz .tar.gz .ubi .npk .itb — maks 300 MB
+                Ekstensi: .bin .img .zip .tar .gz .tar.gz .ubi .npk .itb — maks 550 MB
               </p>
             </div>
           ) : (

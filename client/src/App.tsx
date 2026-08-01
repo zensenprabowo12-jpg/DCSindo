@@ -24,6 +24,7 @@ import MikrotikSupport from "@/pages/support/Mikrotik";
 import AdminLogin from "@admin/Login";
 import AdminDashboard from "@admin/Dashboard";
 import AdminActivityLog from "@admin/ActivityLog";
+import AdminVisitorLog from "@admin/VisitorLog";
 import AdminPeserta from "@admin/Peserta";
 import AdminUsers from "@admin/Users";
 import TrainingAdminDashboard from "@admin/training/Dashboard";
@@ -31,6 +32,7 @@ import TrainingForm from "@admin/training/TrainingForm";
 import FirmwareDashboard from "@admin/firmware/Dashboard";
 import FirmwareBrandList from "@admin/firmware/List";
 import FirmwareForm from "@admin/firmware/FirmwareForm";
+import FirmwarePopupSettings from "@admin/firmware/PopupSettings";
 
 import VsolSupport from "@/pages/support/Vsol";
 import HomeVsol from "@/pages/homepage/home-vsol";
@@ -84,6 +86,7 @@ function RouterWouter() {
 
       <Route path="/admin/login" component={AdminLogin} />
       <Route path="/admin/activity-log" component={AdminActivityLog} />
+      <Route path="/admin/visitor-log" component={AdminVisitorLog} />
       <Route path="/admin/peserta" component={AdminPeserta} />
       <Route path="/admin/users" component={AdminUsers} />
       <Route path="/admin" component={AdminDashboard} />
@@ -99,6 +102,8 @@ function RouterWouter() {
       <Route path="/admin/vsol/new" component={VsolProductForm} />
       <Route path="/admin/vsol/:id/edit" component={VsolProductForm} />
       <Route path="/admin/vsol" component={VsolDcsDashboard} />
+      {/* Harus di atas `/admin/firmware/:brand` agar tidak tertangkap sebagai brand. */}
+      <Route path="/admin/firmware/settings" component={FirmwarePopupSettings} />
       <Route path="/admin/firmware/:brand/new" component={FirmwareForm} />
       <Route path="/admin/firmware/:brand/:id/edit" component={FirmwareForm} />
       <Route path="/admin/firmware/:brand" component={FirmwareBrandList} />

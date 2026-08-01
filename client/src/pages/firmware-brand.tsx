@@ -1,6 +1,17 @@
 import { useEffect, useState } from "react";
 import { useRoute, useLocation, Link } from "wouter";
 import Layout from "@/components/layout";
+import FirmwareDetailModal from "@/components/firmware/FirmwareDetailModal";
+import FirmwareDownloadButton from "@/components/firmware/FirmwareDownloadButton";
+import CategoryNav, {
+  categorySectionId,
+  SECTION_SCROLL_MARGIN,
+} from "@/components/firmware/CategoryNav";
+import CategoryIcon from "@/components/firmware/CategoryIcon";
+import {
+  apiFirmwarePopupPublic,
+  type FirmwarePopupSettings,
+} from "@admin/firmware/popupSettingsApi";
 import {
   fetchPublicFirmware,
   groupByCategory,
@@ -9,16 +20,13 @@ import {
   isFirmwareBrand,
   FIRMWARE_BRAND_META,
   type PublicFirmware,
+  type FirmwareBrandMeta,
 } from "@/lib/firmwarePublic";
 import {
-  Download,
+  Info,
   ExternalLink,
   ArrowLeft,
   Upload,
-  Network,
-  Router,
-  Wifi,
-  Package,
   PackageOpen,
   FileArchive,
   Cpu,
@@ -26,30 +34,24 @@ import {
   Calendar,
   HardDrive,
   Hash,
-  Server,
 } from "lucide-react";
 
-type BrandMeta = (typeof FIRMWARE_BRAND_META)[keyof typeof FIRMWARE_BRAND_META];
+type BrandMeta = FirmwareBrandMeta;
 
-function CategoryIcon({ category, className }: { category: string; className?: string }) {
-  const c = category.toLowerCase();
-  if (c.includes("chas") || c.includes("olt") || c.includes("server"))
-    return <Server className={className} />;
-  if (c.includes("pon") || c.includes("onu") || c.includes("switch") || c.includes("network"))
-    return <Network className={className} />;
-  if (c.includes("routeros") || c.includes("router") || c.includes("board"))
-    return <Router className={className} />;
-  if (c.includes("wireless") || c.includes("wifi") || c.includes("air") || c.includes("unifi") || c.includes("wave"))
-    return <Wifi className={className} />;
-  if (c.includes("cpu") || c.includes("soc") || c.includes("chip"))
-    return <Cpu className={className} />;
-  return <Package className={className} />;
-}
-
-function FirmwareCard({ item, meta }: { item: PublicFirmware; meta: BrandMeta }) {
-  const href = item.source_type === "upload" ? item.file_path : item.external_url;
+function FirmwareCard({
+  item,
+  meta,
+  popup,
+}: {
+  item: PublicFirmware;
+  meta: BrandMeta;
+  /** Konten popup global — diambil sekali di level halaman, bukan per kartu. */
+  popup: FirmwarePopupSettings;
+}) {
+  const [detailOpen, setDetailOpen] = useState(false);
+  // Posisi tombol "Detail" saat diklik — dipakai modal sebagai titik asal animasi.
+  const [detailOrigin, setDetailOrigin] = useState<DOMRect | null>(null);
   const isExternal = item.source_type === "external";
-  const disabled = !href;
   const ext = fileExtLabel(item);
 
   const chip =
@@ -124,36 +126,31 @@ function FirmwareCard({ item, meta }: { item: PublicFirmware; meta: BrandMeta })
         </div>
       )}
 
-      {/* Catatan */}
-      {item.notes && <p className="mt-2.5 text-sm text-muted-foreground">{item.notes}</p>}
-
       {/* Pemisah + tombol (kanan bawah, aksen brand) */}
-      <div className="mt-auto pt-5 border-t border-border flex justify-end">
-        {disabled ? (
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold bg-secondary text-muted-foreground cursor-not-allowed">
-            Tidak tersedia
-          </span>
-        ) : isExternal ? (
-          <a
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold text-white transition-colors duration-150 ${meta.btn}`}
-          >
-            <ExternalLink className="w-4 h-4" />
-            Kunjungi
-          </a>
-        ) : (
-          <a
-            href={href}
-            download
-            className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold text-white transition-colors duration-150 ${meta.btn}`}
-          >
-            <Download className="w-4 h-4" />
-            Download
-          </a>
-        )}
+      <div className="mt-auto pt-5 border-t border-border flex items-center justify-end gap-2">
+        <button
+          type="button"
+          onClick={(e) => {
+            setDetailOrigin(e.currentTarget.getBoundingClientRect());
+            setDetailOpen(true);
+          }}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold border border-border bg-background text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors duration-150"
+        >
+          <Info className="w-4 h-4" />
+          Detail
+        </button>
+        <FirmwareDownloadButton item={item} meta={meta} />
       </div>
+
+      <FirmwareDetailModal
+        item={item}
+        meta={meta}
+        open={detailOpen}
+        onOpenChange={setDetailOpen}
+        originRect={detailOrigin}
+        installGuide={popup.install_guide}
+        disclaimer={popup.disclaimer}
+      />
     </div>
   );
 }
@@ -165,12 +162,30 @@ export default function FirmwareBrandPage() {
 
   const [list, setList] = useState<PublicFirmware[]>([]);
   const [loading, setLoading] = useState(true);
+  // Konten popup bersifat global (semua brand) → cukup satu request per halaman.
+  // Nilai awal "" = modal memakai teks cadangannya sendiri.
+  const [popup, setPopup] = useState<FirmwarePopupSettings>({
+    install_guide: "",
+    disclaimer: "",
+  });
 
   useEffect(() => {
     if (!isFirmwareBrand(brand)) {
       setLocation("/firmware");
     }
   }, [brand, setLocation]);
+
+  // Tanpa dependency `brand` — kontennya sama untuk semua brand.
+  // Bila gagal, state dibiarkan kosong dan modal tetap tampil dengan teks cadangan.
+  useEffect(() => {
+    let alive = true;
+    void apiFirmwarePopupPublic().then((r) => {
+      if (alive && r.ok) setPopup(r.data);
+    });
+    return () => {
+      alive = false;
+    };
+  }, []);
 
   useEffect(() => {
     if (!isFirmwareBrand(brand)) return;
@@ -190,6 +205,8 @@ export default function FirmwareBrandPage() {
 
   const meta = FIRMWARE_BRAND_META[brand];
   const groups = groupByCategory(list);
+  // Sumber daftar nav — urutan mengikuti pengelompokan yang sudah ada.
+  const categories = groups.map((g) => g.category);
   const totalCount = list.length;
   const categoryCount = groups.length;
 
@@ -262,34 +279,45 @@ export default function FirmwareBrandPage() {
               </p>
             </div>
           ) : (
-            <div className="space-y-14">
-              {groups.map((group) => (
-                <div key={group.category}>
-                  {/* Header seksi kategori: ikon relevan + nama + jumlah */}
-                  <div className="flex items-center gap-3 mb-5">
-                    <span
-                      className={`inline-flex items-center justify-center w-10 h-10 rounded-xl bg-secondary ring-1 ring-border ${meta.text}`}
-                    >
-                      <CategoryIcon category={group.category} className="w-5 h-5" />
-                    </span>
-                    <div className="leading-tight">
-                      <h2 className="text-lg font-black tracking-tight">{group.category}</h2>
-                      <span className="text-xs text-muted-foreground/70">
-                        {group.items.length} firmware
+            <>
+              {/* Nav lompat kategori — selalu tampil selama ada kategori; blok ini
+                  hanya dirender ketika groups tidak kosong. */}
+              <CategoryNav categories={categories} meta={meta} />
+              <div className="space-y-14">
+                {groups.map((group, groupIndex) => (
+                  <section
+                    key={group.category}
+                    id={categorySectionId(group.category, groupIndex)}
+                    data-category={group.category}
+                    // Sisakan ruang untuk header + nav sticky saat di-scroll ke sini.
+                    style={{ scrollMarginTop: SECTION_SCROLL_MARGIN }}
+                  >
+                    {/* Header seksi kategori: ikon relevan + nama + jumlah */}
+                    <div className="flex items-center gap-3 mb-5">
+                      <span
+                        className={`inline-flex items-center justify-center w-10 h-10 rounded-xl bg-secondary ring-1 ring-border ${meta.text}`}
+                      >
+                        <CategoryIcon category={group.category} className="w-5 h-5" />
                       </span>
+                      <div className="leading-tight">
+                        <h2 className="text-lg font-black tracking-tight">{group.category}</h2>
+                        <span className="text-xs text-muted-foreground/70">
+                          {group.items.length} firmware
+                        </span>
+                      </div>
+                      <div className="flex-1 h-px bg-border ml-2" />
                     </div>
-                    <div className="flex-1 h-px bg-border ml-2" />
-                  </div>
 
-                  {/* Grid kartu: 2 kolom desktop / 1 kolom mobile */}
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
-                    {group.items.map((item) => (
-                      <FirmwareCard key={item.id} item={item} meta={meta} />
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
+                    {/* Grid kartu: 2 kolom desktop / 1 kolom mobile */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
+                      {group.items.map((item) => (
+                        <FirmwareCard key={item.id} item={item} meta={meta} popup={popup} />
+                      ))}
+                    </div>
+                  </section>
+                ))}
+              </div>
+            </>
           )}
 
           <p className="mt-14 text-xs text-center text-muted-foreground">

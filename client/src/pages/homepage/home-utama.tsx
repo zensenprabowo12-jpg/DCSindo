@@ -2,33 +2,30 @@ import Layout from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { ArrowRight, X, ShieldCheck, Zap, Headphones, Star, Building2, FileText } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { V_SOL_BRAND } from "@/brands/v-sol";
 
-const POPUP_KEY = "dcs_notice_seen";
-const POPUP_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days
-
-function shouldShowPopup(): boolean {
-  try {
-    const seen = localStorage.getItem(POPUP_KEY);
-    if (!seen) return true;
-    return Date.now() - parseInt(seen, 10) > POPUP_TTL;
-  } catch {
-    return true;
-  }
-}
+// Notice tampil sekali per page load. Variabel module-scope ini hidup selama
+// bundle JS-nya hidup: reload / tab baru mengosongkannya (notice muncul lagi),
+// sedangkan pindah route SPA tidak (notice tetap tertutup). Sengaja TIDAK
+// memakai sessionStorage — isinya bertahan melewati refresh, jadi notice
+// justru tidak akan pernah muncul lagi di tab yang sama.
+let noticeShownThisPageLoad = false;
 
 export default function HomeUtama() {
-  const [showPopup, setShowPopup] = useState(() => shouldShowPopup());
+  const [showPopup, setShowPopup] = useState(() => !noticeShownThisPageLoad);
   const brandSectionRef = useRef<HTMLDivElement | null>(null);
   const aboutSectionRef = useRef<HTMLDivElement | null>(null);
 
+  // Ditandai di effect, bukan di initializer useState, agar initializer tetap
+  // murni (StrictMode memanggilnya dua kali).
+  useEffect(() => {
+    noticeShownThisPageLoad = true;
+  }, []);
+
   const handleClose = () => {
-    try {
-      localStorage.setItem(POPUP_KEY, String(Date.now()));
-    } catch {}
     setShowPopup(false);
   };
 

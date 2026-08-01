@@ -9,6 +9,8 @@ import { registerUbiquitiDcsRoutes } from "./routes/ubiquitiDcsRoutes";
 import { registerVsolDcsRoutes } from "./routes/vsolDcsRoutes";
 import { registerTrainingRoutes } from "./routes/trainingRoutes";
 import { registerFirmwareRoutes } from "./routes/firmwareRoutes";
+import { registerFirmwarePopupRoutes } from "./routes/firmwarePopupRoutes";
+import { registerVisitorLogRoutes } from "./routes/visitorLogRoutes";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -25,6 +27,8 @@ export async function registerRoutes(
   registerVsolDcsRoutes(app);
   registerTrainingRoutes(app);
   registerFirmwareRoutes(app);
+  registerFirmwarePopupRoutes(app);
+  registerVisitorLogRoutes(app);
 
   return httpServer;
 }

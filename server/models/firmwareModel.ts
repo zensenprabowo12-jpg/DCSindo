@@ -32,7 +32,15 @@ export type FirmwareFileRow = {
 
 function toDateStr(v: unknown): string | null {
   if (v == null) return null;
-  if (v instanceof Date) return v.toISOString().slice(0, 10);
+  if (v instanceof Date) {
+    // Kolom DATE — ambil komponen tanggal LOKAL. toISOString() menggeser ke UTC
+    // dan memundurkan tanggal satu hari di zona UTC+7 (WIB), lalu tersimpan
+    // makin mundur setiap kali record disimpan ulang lewat form admin.
+    const y = v.getFullYear();
+    const m = String(v.getMonth() + 1).padStart(2, "0");
+    const d = String(v.getDate()).padStart(2, "0");
+    return `${y}-${m}-${d}`;
+  }
   const s = String(v).trim();
   return s ? s.slice(0, 10) : null;
 }

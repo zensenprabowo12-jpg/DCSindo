@@ -74,6 +74,30 @@ function DashboardInner() {
             );
           })}
         </div>
+
+        {/* Konten template popup — global, bukan per brand (aksen netral agar tidak terbaca sebagai brand ke-4). */}
+        <div
+          onClick={() => setLocation("/admin/firmware/settings")}
+          className="group mt-4 rounded-2xl border border-zinc-800 bg-zinc-900 p-6 transition-all duration-200 cursor-pointer hover:bg-zinc-800/80 hover:border-zinc-700"
+        >
+          <div className="flex items-center gap-2 mb-4">
+            <span className="w-2 h-2 rounded-full bg-zinc-500" />
+            <span className="text-xs font-semibold uppercase tracking-widest text-zinc-400">
+              global
+            </span>
+          </div>
+          <h2 className="text-lg font-bold text-white mb-1">Konten Popup Firmware</h2>
+          <p className="text-sm text-zinc-500">
+            Panduan instalasi &amp; disclaimer — dipakai popup semua brand
+          </p>
+
+          <div className="mt-4 flex items-center gap-1 text-xs font-medium text-zinc-400 group-hover:text-zinc-200 transition-colors">
+            Kelola konten
+            <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   );

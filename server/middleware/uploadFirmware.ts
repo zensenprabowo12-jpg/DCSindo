@@ -29,7 +29,7 @@ const allowedExt = [".bin", ".img", ".zip", ".tar", ".gz", ".tar.gz", ".ubi", ".
 
 const baseMulter = multer({
   storage,
-  limits: { fileSize: 300 * 1024 * 1024 }, // 300 MB
+  limits: { fileSize: 550 * 1024 * 1024 }, // 550 MB (headroom untuk firmware ~500 MB)
   fileFilter: (_req, file, cb) => {
     const name = file.originalname.toLowerCase();
     if (allowedExt.some((ext) => name.endsWith(ext))) {

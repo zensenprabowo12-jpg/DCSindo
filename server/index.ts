@@ -6,12 +6,25 @@ import expressMySQLSession from "express-mysql-session";
 import { verifyMysqlOnStartup } from "./config/db";
 import { getMysqlConnectionOptions } from "./config/mysqlPool";
 import { ensureUsersTable } from "./models/userModel";
+import { ensureVisitorLogTable } from "./models/visitorLogModel";
+import { startVisitorLogPruneJob } from "./jobs/visitorLogPrune";
+import { visitorTracker, preloadGeoip } from "./middleware/visitorTracker";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
 
 const app = express();
 const httpServer = createServer(app);
+
+/**
+ * Apache reverse-proxy berjalan di loopback, di depan Node.
+ * 'loopback' = hanya percaya X-Forwarded-For yang datang dari 127.0.0.1/::1.
+ * JANGAN pakai `true` — itu mempercayai semua hop, sehingga siapa pun bisa
+ * memalsukan IP-nya lewat header X-Forwarded-For.
+ *
+ * Efek samping: req.protocol/req.secure ikut menghormati X-Forwarded-Proto.
+ */
+app.set("trust proxy", "loopback");
 
 /**
  * Session store persisten di MySQL (express-mysql-session).
@@ -112,6 +125,10 @@ app.use((req, res, next) => {
   next();
 });
 
+// Pencatat pengunjung — sesudah body parser & session, sebelum registerRoutes
+// dan serveStatic/setupVite, supaya melihat setiap request halaman yang masuk.
+app.use(visitorTracker);
+
 (async () => {
   await registerRoutes(httpServer, app);
   await verifyMysqlOnStartup();
@@ -120,6 +137,15 @@ app.use((req, res, next) => {
     await ensureUsersTable();
   } catch (e) {
     console.error("[users] ensureUsersTable gagal saat startup:", (e as Error).message);
+  }
+  // Tabel visitor_log + job retensi 3 bulan (idempotent). Dibuat di startup agar
+  // tabelnya sudah ada sebelum pengunjung pertama datang, bukan saat request.
+  try {
+    await ensureVisitorLogTable();
+    startVisitorLogPruneJob();
+    preloadGeoip();
+  } catch (e) {
+    console.error("[visitorLog] setup saat startup gagal:", (e as Error).message);
   }
 
   app.use((err: any, _req: Request, res: Response, next: NextFunction) => {
@@ -157,6 +183,10 @@ app.use((req, res, next) => {
     }
     process.exit(1);
   });
+  // Upload firmware besar (~500 MB) bisa >5 menit di koneksi lambat.
+  // Default Node 20: requestTimeout 300_000 ms → socket diputus di tengah upload.
+  httpServer.requestTimeout = 30 * 60 * 1000; // 30 menit
+  httpServer.headersTimeout = 65 * 1000;
   // reusePort tidak didukung dengan baik di Windows → listen bisa gagal → ERR_CONNECTION_REFUSED
   httpServer.listen(port, "0.0.0.0", () => {
     log(`serving on port ${port}`);

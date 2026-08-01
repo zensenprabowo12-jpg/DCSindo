@@ -26,20 +26,19 @@ export function isFirmwareBrand(s: string): s is FirmwareBrandSlug {
   return s === "mikrotik" || s === "ubiquiti" || s === "vsol";
 }
 
+export type FirmwareBrandMeta = {
+  name: string;
+  tagline: string;
+  logo: string;
+  dot: string;
+  text: string;
+  grad: string;
+  border: string;
+  btn: string;
+};
+
 /** Metadata tampilan publik per brand (warna aksen memakai token Tailwind langsung). */
-export const FIRMWARE_BRAND_META: Record<
-  FirmwareBrandSlug,
-  {
-    name: string;
-    tagline: string;
-    logo: string;
-    dot: string;
-    text: string;
-    grad: string;
-    border: string;
-    btn: string;
-  }
-> = {
+export const FIRMWARE_BRAND_META: Record<FirmwareBrandSlug, FirmwareBrandMeta> = {
   mikrotik: {
     name: "MikroTik",
     tagline: "RouterOS, RouterBOARD, dan perangkat MikroTik",
