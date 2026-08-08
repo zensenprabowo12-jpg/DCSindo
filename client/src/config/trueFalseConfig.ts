@@ -3,6 +3,8 @@ export type TrueFalseConfig = {
   disableUbiquitiAccessories: boolean;
   /** Redirect path Mikrotik ke Coming Soon. */
   disableMikrotikRoutes: boolean;
+  /** Redirect path FiberHome ke Coming Soon. */
+  disableFiberHomeRoutes: boolean;
   /** Kalau false, addons produk dibuang saat penyusunan catalog (behavior lama SHOW_ADDONS = false). */
   showAddons: boolean;
   /**
@@ -15,6 +17,7 @@ export type TrueFalseConfig = {
 export const DEFAULT_TRUE_FALSE_CONFIG: TrueFalseConfig = {
   disableUbiquitiAccessories: false,
   disableMikrotikRoutes: false,
+  disableFiberHomeRoutes: false,
   showAddons: false,
   showUbiquitiInStockBadge: true,
 };
@@ -31,6 +34,7 @@ function normalize(parsed: unknown): TrueFalseConfig {
   return {
     disableUbiquitiAccessories: Boolean(o.disableUbiquitiAccessories),
     disableMikrotikRoutes: Boolean(o.disableMikrotikRoutes),
+    disableFiberHomeRoutes: Boolean(o.disableFiberHomeRoutes),
     showAddons: Boolean(o.showAddons),
     showUbiquitiInStockBadge: stock,
   };

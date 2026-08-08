@@ -7,6 +7,7 @@ import { registerMikrotikDcsRoutes } from "./routes/mikrotikDcsRoutes";
 import { registerMikrotikRoutes } from "./routes/mikrotikRoutes";
 import { registerUbiquitiDcsRoutes } from "./routes/ubiquitiDcsRoutes";
 import { registerVsolDcsRoutes } from "./routes/vsolDcsRoutes";
+import { registerFiberHomeDcsRoutes } from "./routes/fiberHomeDcsRoutes";
 import { registerTrainingRoutes } from "./routes/trainingRoutes";
 import { registerFirmwareRoutes } from "./routes/firmwareRoutes";
 import { registerFirmwarePopupRoutes } from "./routes/firmwarePopupRoutes";
@@ -25,6 +26,7 @@ export async function registerRoutes(
   registerMikrotikDcsRoutes(app);
   registerUbiquitiDcsRoutes(app);
   registerVsolDcsRoutes(app);
+  registerFiberHomeDcsRoutes(app);
   registerTrainingRoutes(app);
   registerFirmwareRoutes(app);
   registerFirmwarePopupRoutes(app);

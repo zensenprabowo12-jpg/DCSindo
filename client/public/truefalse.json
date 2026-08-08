@@ -1,6 +1,7 @@
 {
   "disableUbiquitiAccessories": false,
   "disableMikrotikRoutes": false,
+  "disableFiberHomeRoutes": false,
   "showAddons": true,
   "showUbiquitiInStockBadge": false
 }

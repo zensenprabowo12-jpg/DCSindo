@@ -40,6 +40,10 @@ import VsolDcsStoreCatalog from "@vsol/public/StoreCatalog";
 import VsolDcsStoreProductDetail from "@vsol/public/StoreProductDetail";
 import VsolDcsDashboard from "@vsol/admin/Dashboard";
 import VsolProductForm from "@vsol/admin/ProductForm";
+import FiberHomeAdmin from "@admin/fiberhome/FiberHomeAdmin";
+import FiberHomeProductForm from "@admin/fiberhome/FiberHomeProductForm";
+import FiberHomePage from "@/pages/fiberhome/FiberHomePage";
+import FiberHomeProductDetail from "@/pages/fiberhome/FiberHomeProductDetail";
 import ComingSoon from "@/pages/coming-soon";
 import FirmwarePage from "@/pages/firmware";
 import FirmwareBrandPage from "@/pages/firmware-brand";
@@ -50,7 +54,7 @@ import CompanyProfile from "@/pages/company-profile";
 
 function RouterWouter() {
   const [location] = useLocation();
-  const { disableMikrotikRoutes } = useTrueFalse();
+  const { disableMikrotikRoutes, disableFiberHomeRoutes } = useTrueFalse();
   const isMikrotikPath =
     location === "/mikrotik" ||
     location.startsWith("/mikrotik/") ||
@@ -59,6 +63,13 @@ function RouterWouter() {
     location === "/support/mikrotik";
 
   if (disableMikrotikRoutes && isMikrotikPath) {
+    return <ComingSoon />;
+  }
+
+  const isFiberHomePath =
+    location === "/fiberhome" || location.startsWith("/fiberhome/");
+
+  if (disableFiberHomeRoutes && isFiberHomePath) {
     return <ComingSoon />;
   }
 
@@ -81,6 +92,9 @@ function RouterWouter() {
       <Route path="/mikrotik/categories" component={MikrotikCategoryProductPage} />
       <Route path="/mikrotik" component={MikrotikLandingPage} />
 
+      <Route path="/fiberhome/:sku" component={FiberHomeProductDetail} />
+      <Route path="/fiberhome" component={FiberHomePage} />
+
       <Route path="/training/:id" component={TrainingDetail} />
       <Route path="/training" component={TrainingList} />
 
@@ -102,6 +116,9 @@ function RouterWouter() {
       <Route path="/admin/vsol/new" component={VsolProductForm} />
       <Route path="/admin/vsol/:id/edit" component={VsolProductForm} />
       <Route path="/admin/vsol" component={VsolDcsDashboard} />
+      <Route path="/admin/fiberhome/new" component={FiberHomeProductForm} />
+      <Route path="/admin/fiberhome/:id/edit" component={FiberHomeProductForm} />
+      <Route path="/admin/fiberhome" component={FiberHomeAdmin} />
       {/* Harus di atas `/admin/firmware/:brand` agar tidak tertangkap sebagai brand. */}
       <Route path="/admin/firmware/settings" component={FirmwarePopupSettings} />
       <Route path="/admin/firmware/:brand/new" component={FirmwareForm} />

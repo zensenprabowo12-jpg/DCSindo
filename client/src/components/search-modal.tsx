@@ -6,11 +6,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { apiUbiquitiPublicProducts } from "@ubiquiti/api";
 import { apiPublicProducts } from "@mikrotik/api";
 import { apiVsolPublicProducts } from "@vsol/api";
+import { apiFiberHomeProducts } from "@/pages/fiberhome/api";
 import type { UbiquitiDcsProduct } from "@ubiquiti/types";
 import type { MikrotikDcsProduct } from "@mikrotik/types";
 import type { VsolDcsProduct } from "@vsol/types";
+import type { FiberHomeProduct } from "@/pages/fiberhome/types";
 
-type Brand = "ubiquiti" | "mikrotik" | "vsol";
+type Brand = "ubiquiti" | "mikrotik" | "vsol" | "fiberhome";
 
 type UnifiedProduct = {
   id: number;
@@ -26,6 +28,7 @@ const BRAND_META: Record<Brand, { label: string; color: string; accent: string }
   ubiquiti: { label: "Ubiquiti", color: "#0082FF", accent: "rgba(0,130,255,0.08)" },
   mikrotik: { label: "MikroTik", color: "#FF6B35", accent: "rgba(255,107,53,0.08)" },
   vsol: { label: "V-SOL", color: "#16a34a", accent: "rgba(22,163,74,0.08)" },
+  fiberhome: { label: "FiberHome", color: "#0284c7", accent: "rgba(2,132,199,0.08)" },
 };
 
 export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
@@ -85,7 +88,7 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
         setFetched("mikrotik");
         setLoading(false);
       });
-    } else {
+    } else if (selectedBrand === "vsol") {
       void apiVsolPublicProducts().then((r) => {
         if (r.ok) {
           setProducts(
@@ -101,6 +104,25 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
           );
         }
         setFetched("vsol");
+        setLoading(false);
+      });
+    } else {
+      void apiFiberHomeProducts().then((r) => {
+        if (r.ok) {
+          setProducts(
+            // Skema FiberHome beda: `name`/`image_path`, dan detail page pakai SKU.
+            r.data.map((p: FiberHomeProduct) => ({
+              id: p.id,
+              name: p.name,
+              sku: p.sku,
+              subfilter: "",
+              category: p.category,
+              image: p.image_path,
+              path: `/fiberhome/${encodeURIComponent(p.sku)}`,
+            }))
+          );
+        }
+        setFetched("fiberhome");
         setLoading(false);
       });
     }

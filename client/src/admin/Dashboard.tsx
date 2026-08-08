@@ -46,6 +46,16 @@ const BRANDS = [
     dotColor: "bg-green-500",
     labelColor: "text-green-400",
   },
+  {
+    key: "fiberhome",
+    name: "FiberHome",
+    description: "Kelola produk katalog FiberHome",
+    href: "/admin/fiberhome",
+    accentColor: "from-sky-500/10 to-transparent",
+    borderColor: "border-zinc-800 hover:border-sky-500/50",
+    dotColor: "bg-sky-500",
+    labelColor: "text-sky-400",
+  },
 ];
 
 function AdminDashboardInner() {
@@ -62,6 +72,9 @@ function AdminDashboardInner() {
       ),
       fetchProductCount("/api/vsol-dcs/admin/products").then((n) =>
         setCounts((prev) => ({ ...prev, vsol: n }))
+      ),
+      fetchProductCount("/api/fiberhome-dcs/products").then((n) =>
+        setCounts((prev) => ({ ...prev, fiberhome: n }))
       ),
     ]);
   }, []);
@@ -83,7 +96,7 @@ function AdminDashboardInner() {
         </div>
 
         {/* Brand Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {BRANDS.map((brand) => (
             <div
               key={brand.key}

@@ -80,21 +80,30 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const toggleTheme = () =>
     setTheme(prev => (prev === "light" ? "dark" : "light"));
 
-  const brands: {
+  type BrandNavItem = {
     name: string;
     path: string;
-    support: string;
+    /** Belum semua brand punya halaman support — kalau kosong, tidak muncul di menu Support. */
+    support?: string;
     external?: boolean;
-  }[] = [
+  };
+
+  const brands: BrandNavItem[] = [
       { name: "Ubiquiti", path: "/ubiquiti", support: "/support/ubiquiti" },
       { name: "Mikrotik", path: "/mikrotik", support: "/support/mikrotik" },
       { name: V_SOL_BRAND.name, path: V_SOL_BRAND.websiteUrl, support: "/support/vsol" },
+      { name: "FiberHome", path: "/fiberhome" },
     ];
+
+  const supportBrands = brands.filter(
+    (b): b is BrandNavItem & { support: string } => Boolean(b.support),
+  );
 
   function isBrandPathActive(path: string, loc: string): boolean {
     if (loc === path) return true;
     if (path === "/mikrotik" && loc.startsWith("/mikrotik/")) return true;
     if (path === "/vsol" && loc.startsWith("/vsol/")) return true;
+    if (path === "/fiberhome" && loc.startsWith("/fiberhome/")) return true;
     return false;
   }
 
@@ -104,7 +113,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const isHomeActive = location === "/";
   const isBrandNavActive = brands.some((b) => isBrandPathActive(b.path, location));
 
-  const supportRouteMatch = brands.find((b) => location === b.support);
+  const supportRouteMatch = supportBrands.find((b) => location === b.support);
   const isSupportSubActive = !!supportRouteMatch;
   const supportNavLabel = supportRouteMatch
     ? `Support ${supportRouteMatch.name}`
@@ -307,7 +316,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     exit={{ opacity: 0 }}
                     className="absolute top-14 left-1/2 w-60 -translate-x-1/2 rounded-2xl border border-border bg-background p-4 shadow-xl"
                   >
-                    {brands.map((brand) => (
+                    {supportBrands.map((brand) => (
                       <Link key={brand.support} href={brand.support}>
                         <a className="block px-4 py-2 rounded-xl hover:bg-primary/10 transition">
                           {brand.name}
@@ -515,7 +524,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <div className="mt-3 px-4 pb-1 text-xs font-bold uppercase tracking-widest text-muted-foreground/70">
                   Support
                 </div>
-                {brands.map((brand) => (
+                {supportBrands.map((brand) => (
                   <Link key={brand.support} href={brand.support}>
                     <a
                       onClick={() => setIsMobileOpen(false)}
