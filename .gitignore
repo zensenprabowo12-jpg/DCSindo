@@ -10,6 +10,11 @@ attached_assets/
 .env
 .env.*
 
+# Config Claude Code per-mesin. Isinya teks perintah apa adanya, jadi kredensial
+# yang pernah diketik di shell ikut tersimpan (pernah terjadi — lihat C-03).
+# `settings.json` (tanpa .local) tetap boleh di-track untuk setelan tim.
+.claude/settings.local.json
+
 # Uploaded firmware binaries (large — served from server disk, not repo)
 public/uploads/firmware/
 
