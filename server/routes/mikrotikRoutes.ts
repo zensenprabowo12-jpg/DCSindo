@@ -1,6 +1,4 @@
 import type { Express, NextFunction, Request, Response } from "express";
-import express from "express";
-import path from "path";
 import {
   apiCreateMikrotik,
   apiDeleteMikrotik,
@@ -42,15 +40,11 @@ export function registerMikrotikRoutes(app: Express): void {
 
   /**
    * Guard katalog MikroTik lama (tabel `produk_mikrotik`).
-   * Pola sama dengan catalogMultiBrandRoutes: middleware, dipasang SEBELUM multer.
+   * Bentuk middleware (bukan guard boolean di dalam handler) supaya bisa
+   * dipasang SEBELUM multer — lihat requireRoleMw di middleware/requireRole.ts.
    */
   const adminApi = requireRoleMw("admin");
   const adminPage = requireRoleHtml("admin");
-
-  app.use(
-    "/uploads",
-    express.static(path.join(process.cwd(), "public", "uploads")),
-  );
 
   /**
    * Landing page MikroTik ada di SPA `/mikrotik`.

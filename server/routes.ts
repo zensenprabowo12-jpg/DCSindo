@@ -1,8 +1,8 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { registerEjsViewPaths } from "./ejsViews";
+import { registerUploadStatic } from "./middleware/staticUploads";
 import { registerAuthRoutes } from "./routes/authRoutes";
-import { registerCatalogMultiBrandRoutes } from "./routes/catalogMultiBrandRoutes";
 import { registerMikrotikDcsRoutes } from "./routes/mikrotikDcsRoutes";
 import { registerMikrotikRoutes } from "./routes/mikrotikRoutes";
 import { registerUbiquitiDcsRoutes } from "./routes/ubiquitiDcsRoutes";
@@ -18,10 +18,10 @@ export async function registerRoutes(
   app: Express
 ): Promise<Server> {
   registerEjsViewPaths(app);
+  // Static /uploads didaftarkan paling awal — dipakai semua modul brand.
+  registerUploadStatic(app);
   // Auth netral (/api/auth/*) didaftarkan paling awal
   registerAuthRoutes(app);
-  // Katalog multi-brand didaftarkan lebih dulu agar path /brand/* konsisten
-  registerCatalogMultiBrandRoutes(app);
   registerMikrotikRoutes(app);
   registerMikrotikDcsRoutes(app);
   registerUbiquitiDcsRoutes(app);

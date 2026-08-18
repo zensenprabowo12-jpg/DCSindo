@@ -36,8 +36,6 @@ export async function setupVite(server: Server, app: Express) {
   function isServerRenderedPath(p: string): boolean {
     return (
       p.startsWith("/admin/mikrotik") ||
-      p.startsWith("/admin/v2") ||
-      p.startsWith("/brand/") ||
       p.startsWith("/api/") ||
       p.startsWith("/uploads/")
     );
