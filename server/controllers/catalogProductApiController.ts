@@ -15,6 +15,11 @@ import {
   idParamSchema,
 } from "../validation/catalogProductSchema";
 import { tryUnlinkPublicImage } from "../utils/unlinkPublicImage";
+import { requireRole } from "../middleware/requireRole";
+
+// Guard: API katalog lama ditutup untuk anonim (tidak ada pemakai publik).
+// Create & update di-guard di route (requireRoleMw) agar jalan sebelum multer.
+const requireAdminSession = requireRole("admin");
 
 function queryBrandParam(req: Request): string | undefined {
   const q = req.query.brand;
@@ -36,6 +41,7 @@ function parseId(req: Request, res: Response): number | null {
 }
 
 export async function apiListProducts(req: Request, res: Response) {
+  if (!requireAdminSession(req, res)) return;
   try {
     const brand = queryBrandParam(req);
     const data = await findAllCatalogProductsWithBrand(brand ?? null);
@@ -47,6 +53,7 @@ export async function apiListProducts(req: Request, res: Response) {
 }
 
 export async function apiGetProduct(req: Request, res: Response) {
+  if (!requireAdminSession(req, res)) return;
   const id = parseId(req, res);
   if (id === null) return;
   try {
@@ -136,6 +143,7 @@ export async function apiUpdateProduct(req: Request, res: Response) {
 }
 
 export async function apiDeleteProduct(req: Request, res: Response) {
+  if (!requireAdminSession(req, res)) return;
   const id = parseId(req, res);
   if (id === null) return;
   try {

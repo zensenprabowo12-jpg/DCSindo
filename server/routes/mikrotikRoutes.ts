@@ -14,6 +14,8 @@ import {
   formUpdateMikrotik,
 } from "../controllers/mikrotikPageController";
 import { ensureMikrotikUploadDir, uploadMikrotikImage } from "../middleware/uploadMikrotik";
+import { requireRoleMw } from "../middleware/requireRole";
+import { requireRoleHtml } from "../middleware/requireRoleHtml";
 
 function handleUpload(
   single: ReturnType<typeof uploadMikrotikImage.single>,
@@ -37,6 +39,13 @@ function handleUpload(
 
 export function registerMikrotikRoutes(app: Express): void {
   ensureMikrotikUploadDir();
+
+  /**
+   * Guard katalog MikroTik lama (tabel `produk_mikrotik`).
+   * Pola sama dengan catalogMultiBrandRoutes: middleware, dipasang SEBELUM multer.
+   */
+  const adminApi = requireRoleMw("admin");
+  const adminPage = requireRoleHtml("admin");
 
   app.use(
     "/uploads",
@@ -62,28 +71,32 @@ export function registerMikrotikRoutes(app: Express): void {
 
   app.post(
     "/admin/mikrotik",
+    adminPage,
     handleUpload(uploadMikrotikImage.single("gambar"), () => "/admin/mikrotik/new?error=Upload%20gagal"),
     formCreateMikrotik,
   );
   app.post(
     "/admin/mikrotik/:id/update",
+    adminPage,
     handleUpload(uploadMikrotikImage.single("gambar"), (req) => {
       const id = encodeURIComponent(String(req.params.id ?? ""));
       return `/admin/mikrotik/${id}/edit?error=Upload%20gagal`;
     }),
     formUpdateMikrotik,
   );
-  app.post("/admin/mikrotik/:id/delete", formDeleteMikrotik);
+  app.post("/admin/mikrotik/:id/delete", adminPage, formDeleteMikrotik);
 
-  app.get("/api/mikrotik", apiListMikrotik);
-  app.get("/api/mikrotik/:id", apiGetMikrotik);
+  app.get("/api/mikrotik", adminApi, apiListMikrotik);
+  app.get("/api/mikrotik/:id", adminApi, apiGetMikrotik);
   app.post(
     "/api/mikrotik",
+    adminApi,
     handleUpload(uploadMikrotikImage.single("gambar"), () => "/admin/mikrotik?error=upload_api"),
     apiCreateMikrotik,
   );
   app.put(
     "/api/mikrotik/:id",
+    adminApi,
     handleUpload(uploadMikrotikImage.single("gambar"), () => "/admin/mikrotik?error=upload_api"),
     apiUpdateMikrotik,
   );

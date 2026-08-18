@@ -13,6 +13,11 @@ import {
   produkMikrotikBodySchema,
 } from "../validation/produkMikrotikSchema";
 import { tryUnlinkPublicImage } from "../utils/unlinkPublicImage";
+import { requireRole } from "../middleware/requireRole";
+
+// Guard: hapus produk butuh admin. List/get/create/update di-guard di route
+// (requireRoleMw) agar guard jalan sebelum multer.
+const requireAdminSession = requireRole("admin");
 
 function parseId(req: Request, res: Response): number | null {
   const parsed = idParamSchema.safeParse(req.params.id);
@@ -111,6 +116,7 @@ export async function apiUpdateMikrotik(req: Request, res: Response) {
 }
 
 export async function apiDeleteMikrotik(req: Request, res: Response) {
+  if (!requireAdminSession(req, res)) return;
   const id = parseId(req, res);
   if (id === null) return;
   try {

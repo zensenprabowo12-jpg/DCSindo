@@ -23,6 +23,8 @@ import {
   ensureCatalogProductUploadDir,
   uploadCatalogProductImage,
 } from "../middleware/uploadCatalogProduct";
+import { requireRoleMw } from "../middleware/requireRole";
+import { requireRoleHtml } from "../middleware/requireRoleHtml";
 
 function handleUpload(
   single: ReturnType<typeof uploadCatalogProductImage.single>,
@@ -51,7 +53,17 @@ function handleUpload(
 export function registerCatalogMultiBrandRoutes(app: Express): void {
   ensureCatalogProductUploadDir();
 
+  /**
+   * Guard katalog multi-brand.
+   * `adminApi`  → 401/403 JSON     (dipakai rute /api/*)
+   * `adminPage` → 302 /admin/login (dipakai rute SSR /admin/v2/*)
+   * Keduanya middleware, jadi bisa dipasang SEBELUM handleUpload (multer).
+   */
+  const adminApi = requireRoleMw("admin");
+  const adminPage = requireRoleHtml("admin");
+
   /* SSR katalog brand — didaftarkan di atas agar jelas dipisah dari SPA */
+  /* PUBLIK — halaman katalog untuk pengunjung, sengaja tidak di-guard. */
   app.get("/brand/:slug/:id", pageBrandProductDetail);
   app.get("/brand/:slug", pageBrandCatalog);
 
@@ -60,11 +72,13 @@ export function registerCatalogMultiBrandRoutes(app: Express): void {
   app.get("/api/products/:id", apiGetProduct);
   app.post(
     "/api/products",
+    adminApi,
     handleUpload(uploadCatalogProductImage.single("gambar"), () => "/admin/v2/products/new?error=upload"),
     apiCreateProduct,
   );
   app.put(
     "/api/products/:id",
+    adminApi,
     handleUpload(uploadCatalogProductImage.single("gambar"), (req) => {
       const id = encodeURIComponent(String(req.params.id ?? ""));
       return `/admin/v2/products/${id}/edit?error=upload`;
@@ -73,21 +87,23 @@ export function registerCatalogMultiBrandRoutes(app: Express): void {
   );
   app.delete("/api/products/:id", apiDeleteProduct);
 
-  app.get("/admin/v2/products", pageAdminV2ProductList);
-  app.get("/admin/v2/products/new", pageAdminV2ProductNew);
-  app.get("/admin/v2/products/:id/edit", pageAdminV2ProductEdit);
+  app.get("/admin/v2/products", adminPage, pageAdminV2ProductList);
+  app.get("/admin/v2/products/new", adminPage, pageAdminV2ProductNew);
+  app.get("/admin/v2/products/:id/edit", adminPage, pageAdminV2ProductEdit);
   app.post(
     "/admin/v2/products",
+    adminPage,
     handleUpload(uploadCatalogProductImage.single("gambar"), () => "/admin/v2/products/new?error=upload"),
     formAdminV2CreateProduct,
   );
   app.post(
     "/admin/v2/products/:id/update",
+    adminPage,
     handleUpload(uploadCatalogProductImage.single("gambar"), (req) => {
       const id = encodeURIComponent(String(req.params.id ?? ""));
       return `/admin/v2/products/${id}/edit?error=upload`;
     }),
     formAdminV2UpdateProduct,
   );
-  app.post("/admin/v2/products/:id/delete", formAdminV2DeleteProduct);
+  app.post("/admin/v2/products/:id/delete", adminPage, formAdminV2DeleteProduct);
 }

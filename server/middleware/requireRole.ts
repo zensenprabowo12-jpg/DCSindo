@@ -1,4 +1,4 @@
-import type { Request, Response } from "express";
+import type { NextFunction, Request, Response } from "express";
 import type { UserRole } from "../auth/roles";
 
 /**
@@ -38,5 +38,19 @@ export function requireRole(...roles: UserRole[]) {
       return false;
     }
     return true;
+  };
+}
+
+/**
+ * Bentuk middleware Express dari `requireRole`.
+ *
+ * Dipakai bila guard HARUS berjalan sebelum middleware lain — khususnya multer:
+ * guard boolean yang dipanggil di dalam handler baru jalan setelah file terlanjur
+ * ditulis ke disk. Respons error identik dengan `requireRole` (401 / 403 JSON).
+ */
+export function requireRoleMw(...roles: UserRole[]) {
+  const guard = requireRole(...roles);
+  return (req: Request, res: Response, next: NextFunction): void => {
+    if (guard(req, res)) next();
   };
 }
