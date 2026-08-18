@@ -176,7 +176,7 @@ Browser (fetch /api/...)
 - File: `server/controllers/mikrotikDcsApiController.ts`
   ```ts
   const ADMIN_USER = process.env.ADMIN_USER?.trim() || "admin";
-  const ADMIN_PASS = process.env.ADMIN_PASS?.trim() || "MBGratisdcsindo";
+  const ADMIN_PASS = process.env.ADMIN_PASS?.trim(); // tidak ada default — seed dilewati bila kosong
   // login = perbandingan string langsung, TANPA hashing:
   const success = username === ADMIN_USER && password === ADMIN_PASS;
   ```

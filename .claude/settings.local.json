@@ -46,7 +46,6 @@
       "Bash(curl -s -o /dev/null -w \"list  -> %{http_code}\\\\n\" \"http://127.0.0.1:8099/api/admin/visitor-log/list\")",
       "Bash(curl -s -o /dev/null -w \"stats -> %{http_code}\\\\n\" \"http://127.0.0.1:8099/api/admin/visitor-log/stats\")",
       "Bash(curl -s \"http://127.0.0.1:8099/api/admin/visitor-log/stats\")",
-      "Bash(curl -s -c __TRACKED_VAR__/cj.txt -H 'Content-Type: application/json' -d '{\"username\":\"admin\",\"password\":\"MBGratisdcsindo\"}' http://127.0.0.1:8099/api/auth/login)",
       "Bash(curl -s -b __TRACKED_VAR__/cj.txt -o /dev/null -w 'tanggal ngawur      -> %{http_code}\\\\n' http://127.0.0.1:8099/api/admin/visitor-log/stats?from=31-07-2026)",
       "Bash(curl -s -b __TRACKED_VAR__/cj.txt http://127.0.0.1:8099/api/admin/visitor-log/stats?from=31-07-2026)",
       "Bash(curl -s -b __TRACKED_VAR__/cj.txt -o /dev/null -w 'from > to           -> %{http_code}\\\\n' 'http://127.0.0.1:8099/api/admin/visitor-log/stats?from=2026-08-01&to=2026-07-01')",
@@ -208,7 +207,22 @@
       "PowerShell(cd \"C:\\\\Users\\\\zensen\\\\Desktop\\\\DCSindo\"; foreach \\($f in @\\('PROJECT_SUMMARY.md','ANALISIS_PROJEK.md','prompt_lanjutan.md'\\)\\) { \"=== $f \\($\\(\\(Get-Content $f | Measure-Object -Line\\).Lines\\) lines\\) ===\"; Get-Content $f -TotalCount 12 })",
       "PowerShell(npx tsc --noEmit; if \\($?\\) { \"TYPECHECK CLEAN\" })",
       "PowerShell(npx tsc --noEmit; if \\($?\\) { \"TYPECHECK CLEAN\" }; \\(Get-Content package.json | Select-String '\"wouter\"'\\))",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(npm audit *)",
+      "Bash(grep -E \"^[a-z@].*$|^Severity\")",
+      "Artifact",
+      "Bash(grep -rn '\"/api/mikrotik\"\\\\|/api/mikrotik/\\\\|`/api/mikrotik' .)",
+      "Bash(echo \"=== tsc exit: $? ===\")",
+      "Bash(git --no-pager diff --stat)",
+      "Bash(git --no-pager diff)",
+      "Bash(npx esbuild *)",
+      "Bash(echo \"=== esbuild exit: $? ===\")",
+      "Bash(sed -i 's|from \"esbuild\"|from \"file:///C:/Users/Hp/DCSindo/node_modules/esbuild/lib/main.js\"|' C:/Users/Hp/AppData/Local/Temp/claude/C--Users-Hp-DCSindo/f38ad17f-e4b2-4fff-86c3-12ab70169b67/scratchpad/verify-build.mjs)",
+      "Bash(VERIFY_OUT=C:/Users/Hp/AppData/Local/Temp/claude/C--Users-Hp-DCSindo/f38ad17f-e4b2-4fff-86c3-12ab70169b67/scratchpad/verify-index.cjs node C:/Users/Hp/AppData/Local/Temp/claude/C--Users-Hp-DCSindo/f38ad17f-e4b2-4fff-86c3-12ab70169b67/scratchpad/verify-build.mjs)",
+      "Bash(git checkout *)",
+      "Bash(git --no-pager diff --cached --stat)",
+      "Bash(git commit *)",
+      "Bash(git --no-pager log -1 --stat --format=\"%h %s\")"
     ]
   }
 }

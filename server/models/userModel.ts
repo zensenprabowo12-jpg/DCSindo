@@ -63,7 +63,10 @@ export async function ensureUsersTable(): Promise<void> {
 
 /**
  * Kalau tabel users kosong, buat 1 admin dari ADMIN_USER/ADMIN_PASS.
- * Ini menjaga admin lama tetap bisa login — tapi sekarang lewat tabel users + bcrypt.
+ *
+ * TIDAK ADA nilai default: bila salah satu env belum di-set, seed DILEWATI dengan
+ * peringatan. Aplikasi yang menolak membuat kredensial yang sudah diketahui publik
+ * lebih aman daripada yang diam-diam membuatnya.
  */
 async function seedAdminIfEmpty(): Promise<void> {
   try {
@@ -73,8 +76,16 @@ async function seedAdminIfEmpty(): Promise<void> {
     const count = Number(rows[0]?.cnt ?? 0);
     if (count > 0) return;
 
-    const username = process.env.ADMIN_USER?.trim() || "admin";
-    const password = process.env.ADMIN_PASS?.trim() || "MBGratisdcsindo";
+    const username = process.env.ADMIN_USER?.trim();
+    const password = process.env.ADMIN_PASS?.trim();
+    if (!username || !password) {
+      console.warn(
+        "[seed] ADMIN_USER/ADMIN_PASS tidak diset di .env — melewati seed admin. " +
+          "Buat admin manual atau set env untuk seed otomatis.",
+      );
+      return;
+    }
+
     const password_hash = await bcrypt.hash(password, BCRYPT_ROUNDS);
 
     await mysqlPool.query<ResultSetHeader>(
