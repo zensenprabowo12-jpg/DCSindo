@@ -1,6 +1,14 @@
 import fs from "fs";
 import path from "path";
-import multer from "multer";
+import type { Request } from "express";
+import {
+  commitSniffedUploads,
+  createStagingUpload,
+  IMAGE_MIMES,
+  removeUploadedFiles,
+  unionMimes,
+  VIDEO_MIMES,
+} from "../utils/safeUpload";
 
 const uploadRoot = path.join(process.cwd(), "public", "uploads", "ubiquiti-dcs");
 
@@ -8,33 +16,12 @@ export function ensureUbiquitiDcsUploadDir(): void {
   fs.mkdirSync(uploadRoot, { recursive: true });
 }
 
-const allowedImages = new Set(["image/jpeg", "image/png", "image/webp", "image/gif"]);
-const allowedVideos = new Set(["video/mp4", "video/webm", "video/ogg"]);
+const clientMimes = unionMimes(IMAGE_MIMES, VIDEO_MIMES);
 
-const storage = multer.diskStorage({
-  destination: (_req, _file, cb) => {
-    ensureUbiquitiDcsUploadDir();
-    cb(null, uploadRoot);
-  },
-  filename: (_req, file, cb) => {
-    const ext = path.extname(file.originalname) || ".jpg";
-    const base = path
-      .basename(file.originalname, ext)
-      .replace(/[^\w.-]+/g, "_");
-    cb(null, `${Date.now()}-${base.slice(0, 32)}${ext}`);
-  },
-});
-
-const baseMulter = multer({
-  storage,
-  limits: { fileSize: 50 * 1024 * 1024 }, // 50MB untuk video
-  fileFilter: (_req, file, cb) => {
-    if (allowedImages.has(file.mimetype) || allowedVideos.has(file.mimetype)) {
-      cb(null, true);
-    } else {
-      cb(new Error("Format tidak didukung. Gambar: JPG/PNG/WebP/GIF. Video: MP4/WebM/OGG"));
-    }
-  },
+const baseMulter = createStagingUpload({
+  maxFileSize: 50 * 1024 * 1024, // 50MB untuk video
+  clientMimes,
+  rejectMessage: "Format tidak didukung. Gambar: JPG/PNG/WebP/GIF. Video: MP4/WebM/OGG",
 });
 
 /** Fields: main_image, gallery, overview_images, overview_videos, in_the_box */
@@ -45,6 +32,26 @@ export const uploadUbiquitiDcsProduct = baseMulter.fields([
   { name: "overview_videos", maxCount: 10 },
   { name: "in_the_box", maxCount: 20 },
 ]);
+
+/**
+ * Wajib dipanggil setelah `uploadUbiquitiDcsProduct`: sniff isi file, lalu
+ * pindahkan dari staging ke public/uploads/ubiquiti-dcs dengan nama dari server.
+ *
+ * Video hanya diterima di field `overview_videos`; field lainnya wajib gambar,
+ * jadi MP4 tidak bisa lagi menyusup ke `main_image` dan merusak render halaman.
+ */
+export function commitUbiquitiDcsUploads(req: Request): Promise<void> {
+  return commitSniffedUploads(req, uploadRoot, {
+    allowed: IMAGE_MIMES,
+    byField: { overview_videos: VIDEO_MIMES },
+    label: "gambar PNG/JPG/WebP/GIF atau video MP4/WebM/OGG",
+  });
+}
+
+/** Buang file staging saat request gagal sebelum commit. */
+export function discardUbiquitiDcsUploads(req: Request): Promise<void> {
+  return removeUploadedFiles(req);
+}
 
 export function publicPathFromUbiquitiDcsFilename(filename: string): string {
   return `/uploads/ubiquiti-dcs/${filename}`;

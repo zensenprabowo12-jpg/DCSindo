@@ -13,6 +13,8 @@ import {
   apiUbiquitiDcsPublicList,
 } from "../controllers/ubiquitiDcsApiController";
 import {
+  commitUbiquitiDcsUploads,
+  discardUbiquitiDcsUploads,
   ensureUbiquitiDcsUploadDir,
   uploadUbiquitiDcsProduct,
 } from "../middleware/uploadUbiquitiDcs";
@@ -22,11 +24,24 @@ function withMultipart(
 ) {
   return (req: Request, res: Response, next: NextFunction) => {
     uploadUbiquitiDcsProduct(req, res, (err: unknown) => {
-      if (err) {
-        const message = err instanceof Error ? err.message : "Upload gagal";
-        return res.status(400).json({ ok: false, message });
-      }
-      void Promise.resolve(api(req, res)).catch(next);
+      void (async () => {
+        if (err) {
+          // File yang sudah tertulis sebelum multer menolak jangan ditinggal di disk.
+          await discardUbiquitiDcsUploads(req);
+          const message = err instanceof Error ? err.message : "Upload gagal";
+          res.status(400).json({ ok: false, message });
+          return;
+        }
+        try {
+          // Nama file final baru ada setelah ini — controller memakai f.filename.
+          await commitUbiquitiDcsUploads(req);
+        } catch (e) {
+          const message = e instanceof Error ? e.message : "Upload ditolak";
+          res.status(400).json({ ok: false, message });
+          return;
+        }
+        await api(req, res);
+      })().catch(next);
     });
   };
 }

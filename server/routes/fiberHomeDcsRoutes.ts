@@ -12,23 +12,43 @@ import {
   apiFiberHomeList,
 } from "../controllers/fiberHomeDcsApiController";
 import {
+  commitFiberHomeDatasheet,
+  commitFiberHomeImage,
+  discardFiberHomeUploads,
   ensureFiberHomeUploadDir,
   uploadFiberHomeDatasheet,
   uploadFiberHomeImage,
 } from "../middleware/uploadFiberHomeDcs";
 
-/** Jalankan multer dulu; error upload → 400 JSON, bukan HTML stack. */
+/**
+ * Jalankan multer dulu, lalu `commit` (sniff isi file + beri nama final);
+ * error upload → 400 JSON, bukan HTML stack.
+ */
 function withUpload(
   upload: RequestHandler,
+  commit: (req: Request) => Promise<void>,
   api: (req: Request, res: Response) => void | Promise<void>,
 ) {
   return (req: Request, res: Response, next: NextFunction) => {
     upload(req, res, (err: unknown) => {
-      if (err) {
-        const message = err instanceof Error ? err.message : "Upload failed";
-        return res.status(400).json({ ok: false, message });
-      }
-      void Promise.resolve(api(req, res)).catch(next);
+      void (async () => {
+        if (err) {
+          // File yang sudah tertulis sebelum multer menolak jangan ditinggal di disk.
+          await discardFiberHomeUploads(req);
+          const message = err instanceof Error ? err.message : "Upload failed";
+          res.status(400).json({ ok: false, message });
+          return;
+        }
+        try {
+          // Nama file final baru ada setelah ini — controller memakai f.filename.
+          await commit(req);
+        } catch (e) {
+          const message = e instanceof Error ? e.message : "Upload ditolak";
+          res.status(400).json({ ok: false, message });
+          return;
+        }
+        await api(req, res);
+      })().catch(next);
     });
   };
 }
@@ -48,18 +68,18 @@ export function registerFiberHomeDcsRoutes(app: Express): void {
 
   // Admin — guard requireRole("admin") ada di dalam tiap handler.
   app.post(`${base}/admin/products/reorder`, express.json(), apiFiberHomeAdminReorder);
-  app.post(`${base}/admin/products`, withUpload(uploadFiberHomeImage, apiFiberHomeAdminCreate));
-  app.put(`${base}/admin/products/:id`, withUpload(uploadFiberHomeImage, apiFiberHomeAdminUpdate));
+  app.post(`${base}/admin/products`, withUpload(uploadFiberHomeImage, commitFiberHomeImage, apiFiberHomeAdminCreate));
+  app.put(`${base}/admin/products/:id`, withUpload(uploadFiberHomeImage, commitFiberHomeImage, apiFiberHomeAdminUpdate));
   app.delete(`${base}/admin/products/:id`, apiFiberHomeAdminDelete);
 
   app.post(
     `${base}/admin/products/:id/gallery`,
-    withUpload(uploadFiberHomeImage, apiFiberHomeAdminAddGallery),
+    withUpload(uploadFiberHomeImage, commitFiberHomeImage, apiFiberHomeAdminAddGallery),
   );
   app.delete(`${base}/admin/gallery/:id`, apiFiberHomeAdminDeleteGallery);
 
   app.post(
     `${base}/admin/products/:id/datasheet`,
-    withUpload(uploadFiberHomeDatasheet, apiFiberHomeAdminUploadDatasheet),
+    withUpload(uploadFiberHomeDatasheet, commitFiberHomeDatasheet, apiFiberHomeAdminUploadDatasheet),
   );
 }

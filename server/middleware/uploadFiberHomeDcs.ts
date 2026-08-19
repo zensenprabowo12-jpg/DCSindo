@@ -1,6 +1,13 @@
 import fs from "fs";
 import path from "path";
-import multer from "multer";
+import type { Request } from "express";
+import {
+  commitSniffedUploads,
+  createStagingUpload,
+  IMAGE_MIMES_NO_GIF,
+  PDF_MIMES,
+  removeUploadedFiles,
+} from "../utils/safeUpload";
 
 const uploadRoot = path.join(process.cwd(), "public", "uploads", "fiberhome");
 const datasheetRoot = path.join(uploadRoot, "datasheets");
@@ -10,44 +17,46 @@ export function ensureFiberHomeUploadDir(): void {
   fs.mkdirSync(datasheetRoot, { recursive: true });
 }
 
-function makeStorage(dir: string, ensure: () => void, fallbackExt: string) {
-  return multer.diskStorage({
-    destination: (_req, _file, cb) => {
-      ensure();
-      cb(null, dir);
-    },
-    filename: (_req, file, cb) => {
-      const ext = path.extname(file.originalname) || fallbackExt;
-      const base = path.basename(file.originalname, ext).replace(/[^\w.-]+/g, "_");
-      cb(null, `${Date.now()}-${base.slice(0, 32)}${ext}`);
-    },
-  });
-}
-
-const allowedImages = new Set(["image/jpeg", "image/png", "image/webp"]);
-
 /** Field `image` — dipakai untuk foto hero maupun foto gallery. */
-export const uploadFiberHomeImage = multer({
-  storage: makeStorage(uploadRoot, ensureFiberHomeUploadDir, ".jpg"),
-  limits: { fileSize: 20 * 1024 * 1024 },
-  fileFilter: (_req, file, cb) => {
-    if (allowedImages.has(file.mimetype)) cb(null, true);
-    else cb(new Error("Format gambar: JPG/PNG/WebP"));
-  },
+export const uploadFiberHomeImage = createStagingUpload({
+  maxFileSize: 20 * 1024 * 1024,
+  clientMimes: IMAGE_MIMES_NO_GIF,
+  rejectMessage: "Format gambar: JPG/PNG/WebP",
 }).single("image");
 
 /** Field `datasheet` — PDF saja. */
-export const uploadFiberHomeDatasheet = multer({
-  storage: makeStorage(datasheetRoot, ensureFiberHomeUploadDir, ".pdf"),
-  limits: { fileSize: 50 * 1024 * 1024 },
-  fileFilter: (_req, file, cb) => {
-    const isPdf =
-      file.mimetype === "application/pdf" &&
-      file.originalname.toLowerCase().endsWith(".pdf");
-    if (isPdf) cb(null, true);
-    else cb(new Error("Datasheet harus berformat .pdf"));
-  },
+export const uploadFiberHomeDatasheet = createStagingUpload({
+  maxFileSize: 50 * 1024 * 1024,
+  clientMimes: PDF_MIMES,
+  allowedExt: [".pdf"],
+  rejectMessage: "Datasheet harus berformat .pdf",
 }).single("datasheet");
+
+/** Commit gambar produk/galeri ke public/uploads/fiberhome. */
+export function commitFiberHomeImage(req: Request): Promise<void> {
+  return commitSniffedUploads(req, uploadRoot, {
+    allowed: IMAGE_MIMES_NO_GIF,
+    label: "gambar PNG/JPG/WebP",
+  });
+}
+
+/**
+ * Commit datasheet ke public/uploads/fiberhome/datasheets.
+ * `keepReadableName` dipakai karena file ini diunduh user — nama uuid murni
+ * bikin isi folder Downloads tidak bisa dikenali.
+ */
+export function commitFiberHomeDatasheet(req: Request): Promise<void> {
+  return commitSniffedUploads(req, datasheetRoot, {
+    allowed: PDF_MIMES,
+    label: "berkas PDF",
+    keepReadableName: true,
+  });
+}
+
+/** Buang file staging saat request gagal sebelum commit. */
+export function discardFiberHomeUploads(req: Request): Promise<void> {
+  return removeUploadedFiles(req);
+}
 
 export function publicPathFromFiberHomeFilename(filename: string): string {
   return `/uploads/fiberhome/${filename}`;
