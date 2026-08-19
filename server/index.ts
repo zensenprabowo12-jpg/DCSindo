@@ -27,6 +27,46 @@ const httpServer = createServer(app);
 app.set("trust proxy", "loopback");
 
 /**
+ * Header keamanan dasar untuk SELURUH response (H-06 Tahap 1).
+ *
+ * Dipasang paling awal supaya header ikut menempel pada response yang
+ * dihasilkan express.static maupun res.sendFile di serveStatic — jadi aset SPA
+ * (bundle JS, CSS, index.html) ikut terlindungi, bukan hanya /uploads yang sudah
+ * mendapat nosniff di Step 0.
+ *
+ * CSP (Tahap 2) dan HSTS (di layer Apache) sengaja BELUM ada di sini.
+ */
+app.disable("x-powered-by");
+
+app.use((_req, res, next) => {
+  // Browser tidak boleh menebak tipe konten. Inti pertahanan untuk file
+  // upload berekstensi menyesatkan; sekarang berlaku site-wide.
+  res.setHeader("X-Content-Type-Options", "nosniff");
+
+  // DENY, bukan SAMEORIGIN: tidak ada satu pun halaman kita yang di-iframe oleh
+  // halaman kita sendiri (12 iframe di client semuanya menunjuk YouTube atau
+  // gpt.distributor.ui-apps.com), jadi DENY menutup clickjacking panel admin
+  // tanpa mematikan apa pun. Digantikan frame-ancestors saat CSP masuk.
+  res.setHeader("X-Frame-Options", "DENY");
+
+  // Kirim origin saja saat lintas situs, supaya path seperti /admin/vsol/12/edit
+  // tidak bocor ke YouTube maupun Google Fonts lewat header Referer.
+  res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
+
+  // Hanya API perangkat yang aplikasi ini tidak pernah pakai. SENGAJA tidak
+  // membatasi fullscreen, autoplay, encrypted-media, picture-in-picture,
+  // accelerometer, gyroscope, dan clipboard: ketujuhnya diminta eksplisit lewat
+  // atribut allow / allowFullScreen pada iframe YouTube dan UniFi GPT, dan
+  // Permissions-Policy adalah plafon — iframe tidak bisa meminta balik.
+  res.setHeader(
+    "Permissions-Policy",
+    "camera=(), microphone=(), geolocation=(), payment=(), usb=(), midi=(), display-capture=()",
+  );
+
+  next();
+});
+
+/**
  * Session store persisten di MySQL (express-mysql-session).
  * Tabel `sessions` dibuat otomatis (createDatabaseTable: true).
  * Sesi tidak hilang saat pm2 restart.
