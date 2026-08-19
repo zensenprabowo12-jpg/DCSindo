@@ -25,6 +25,7 @@ import {
   uploadTrainingGallery,
   uploadTrainingSessionFiles,
 } from "../middleware/uploadTraining";
+import { requireRoleMw } from "../middleware/requireRole";
 
 /**
  * Jalankan multer dulu, lalu commit (sniff isi file + beri nama final).
@@ -72,6 +73,14 @@ export function registerTrainingRoutes(app: Express): void {
 
   const base = "/api/training";
 
+  // Guard SEBELUM multer: tanpa ini request anonim sudah menulis file ke disk
+  // dulu, baru ditolak oleh guard di dalam handler. Lihat C-04 Step 8.
+  //
+  // Role-nya "admin" DAN "trainer", menyamai `requireAdmin` di
+  // trainingApiController.ts — admin-only akan mengunci trainer keluar dari
+  // pembuatan sesi dan unggah galeri.
+  const uploadGuard = requireRoleMw("admin", "trainer");
+
   // Public
   app.get(`${base}/sessions`, apiTrainingPublicList);
   app.get(`${base}/sessions/:id`, apiTrainingPublicGet);
@@ -88,12 +97,12 @@ export function registerTrainingRoutes(app: Express): void {
   // Admin sessions
   app.get(`${base}/admin/sessions`, apiTrainingAdminList);
   app.get(`${base}/admin/sessions/:id`, apiTrainingAdminGet);
-  app.post(`${base}/admin/sessions`, express.json(), withSessionFiles(apiTrainingAdminCreate));
-  app.put(`${base}/admin/sessions/:id`, express.json(), withSessionFiles(apiTrainingAdminUpdate));
+  app.post(`${base}/admin/sessions`, uploadGuard, express.json(), withSessionFiles(apiTrainingAdminCreate));
+  app.put(`${base}/admin/sessions/:id`, uploadGuard, express.json(), withSessionFiles(apiTrainingAdminUpdate));
   app.delete(`${base}/admin/sessions/:id`, apiTrainingAdminDelete);
 
   // Admin gallery
   app.get(`${base}/admin/sessions/:id/gallery`, apiTrainingAdminGalleryList);
-  app.post(`${base}/admin/sessions/:id/gallery`, withGallery(apiTrainingAdminGalleryUpload));
+  app.post(`${base}/admin/sessions/:id/gallery`, uploadGuard, withGallery(apiTrainingAdminGalleryUpload));
   app.delete(`${base}/admin/gallery/:imageId`, apiTrainingAdminGalleryDelete);
 }

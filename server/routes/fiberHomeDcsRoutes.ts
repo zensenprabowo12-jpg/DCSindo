@@ -19,6 +19,7 @@ import {
   uploadFiberHomeDatasheet,
   uploadFiberHomeImage,
 } from "../middleware/uploadFiberHomeDcs";
+import { requireRoleMw } from "../middleware/requireRole";
 
 /**
  * Jalankan multer dulu, lalu `commit` (sniff isi file + beri nama final);
@@ -62,24 +63,29 @@ export function registerFiberHomeDcsRoutes(app: Express): void {
 
   const base = "/api/fiberhome-dcs";
 
+  // Guard SEBELUM multer — lihat C-04 Step 8.
+  const uploadGuard = requireRoleMw("admin");
+
   // Public
   app.get(`${base}/products`, apiFiberHomeList);
   app.get(`${base}/products/:id`, apiFiberHomeGet); // id numerik atau SKU
 
   // Admin — guard requireRole("admin") ada di dalam tiap handler.
   app.post(`${base}/admin/products/reorder`, express.json(), apiFiberHomeAdminReorder);
-  app.post(`${base}/admin/products`, withUpload(uploadFiberHomeImage, commitFiberHomeImage, apiFiberHomeAdminCreate));
-  app.put(`${base}/admin/products/:id`, withUpload(uploadFiberHomeImage, commitFiberHomeImage, apiFiberHomeAdminUpdate));
+  app.post(`${base}/admin/products`, uploadGuard, withUpload(uploadFiberHomeImage, commitFiberHomeImage, apiFiberHomeAdminCreate));
+  app.put(`${base}/admin/products/:id`, uploadGuard, withUpload(uploadFiberHomeImage, commitFiberHomeImage, apiFiberHomeAdminUpdate));
   app.delete(`${base}/admin/products/:id`, apiFiberHomeAdminDelete);
 
   app.post(
     `${base}/admin/products/:id/gallery`,
+    uploadGuard,
     withUpload(uploadFiberHomeImage, commitFiberHomeImage, apiFiberHomeAdminAddGallery),
   );
   app.delete(`${base}/admin/gallery/:id`, apiFiberHomeAdminDeleteGallery);
 
   app.post(
     `${base}/admin/products/:id/datasheet`,
+    uploadGuard,
     withUpload(uploadFiberHomeDatasheet, commitFiberHomeDatasheet, apiFiberHomeAdminUploadDatasheet),
   );
 }

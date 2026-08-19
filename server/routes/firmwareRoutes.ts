@@ -15,6 +15,7 @@ import {
   ensureFirmwareUploadDir,
   uploadFirmwareFile,
 } from "../middleware/uploadFirmware";
+import { requireRoleMw } from "../middleware/requireRole";
 
 function withUpload(api: (req: Request, res: Response) => void | Promise<void>) {
   return (req: Request, res: Response, next: NextFunction) => {
@@ -52,6 +53,9 @@ export function registerFirmwareRoutes(app: Express): void {
 
   const base = "/api/firmware";
 
+  // Guard SEBELUM multer — lihat C-04 Step 8.
+  const uploadGuard = requireRoleMw("admin");
+
   // Public
   app.get(`${base}/public/list`, apiFirmwarePublicList);
 
@@ -59,7 +63,7 @@ export function registerFirmwareRoutes(app: Express): void {
   app.get(`${base}/admin/list`, apiFirmwareAdminList);
   app.get(`${base}/admin/:id`, apiFirmwareAdminGet);
   app.post(`${base}/admin/reorder`, express.json(), apiFirmwareAdminReorder);
-  app.post(`${base}/admin`, withUpload(apiFirmwareAdminCreate));
-  app.put(`${base}/admin/:id`, withUpload(apiFirmwareAdminUpdate));
+  app.post(`${base}/admin`, uploadGuard, withUpload(apiFirmwareAdminCreate));
+  app.put(`${base}/admin/:id`, uploadGuard, withUpload(apiFirmwareAdminUpdate));
   app.delete(`${base}/admin/:id`, apiFirmwareAdminDelete);
 }

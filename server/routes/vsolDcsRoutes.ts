@@ -18,6 +18,7 @@ import {
   ensureVsolDcsUploadDir,
   uploadVsolDcsProduct,
 } from "../middleware/uploadVsolDcs";
+import { requireRoleMw } from "../middleware/requireRole";
 
 function withMultipart(
   api: (req: Request, res: Response) => void | Promise<void>,
@@ -55,6 +56,10 @@ export function registerVsolDcsRoutes(app: Express): void {
 
   const base = "/api/vsol-dcs";
 
+  // Guard SEBELUM multer: tanpa ini request anonim sudah menulis file ke disk
+  // dulu, baru ditolak 401 oleh guard di dalam handler. Lihat C-04 Step 8.
+  const uploadGuard = requireRoleMw("admin");
+
   // Auth
   app.get(`${base}/auth/me`, apiVsolDcsMe);
 
@@ -69,7 +74,7 @@ export function registerVsolDcsRoutes(app: Express): void {
   app.get(`${base}/admin/products`, apiVsolDcsAdminList);
   app.get(`${base}/admin/products/:id`, apiVsolDcsAdminGet);
   app.post(`${base}/admin/products/reorder`, express.json(), apiVsolDcsAdminReorder);
-  app.post(`${base}/admin/products`, withMultipart(apiVsolDcsAdminCreate));
-  app.put(`${base}/admin/products/:id`, withMultipart(apiVsolDcsAdminUpdate));
+  app.post(`${base}/admin/products`, uploadGuard, withMultipart(apiVsolDcsAdminCreate));
+  app.put(`${base}/admin/products/:id`, uploadGuard, withMultipart(apiVsolDcsAdminUpdate));
   app.delete(`${base}/admin/products/:id`, apiVsolDcsAdminDelete);
 }

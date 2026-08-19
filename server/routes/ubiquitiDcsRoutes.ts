@@ -18,6 +18,7 @@ import {
   ensureUbiquitiDcsUploadDir,
   uploadUbiquitiDcsProduct,
 } from "../middleware/uploadUbiquitiDcs";
+import { requireRoleMw } from "../middleware/requireRole";
 
 function withMultipart(
   api: (req: Request, res: Response) => void | Promise<void>,
@@ -55,6 +56,9 @@ export function registerUbiquitiDcsRoutes(app: Express): void {
 
   const base = "/api/ubiquiti-dcs";
 
+  // Guard SEBELUM multer — lihat C-04 Step 8.
+  const uploadGuard = requireRoleMw("admin");
+
   // Auth
   app.get(`${base}/auth/me`, apiUbiquitiDcsMe);
 
@@ -69,7 +73,7 @@ export function registerUbiquitiDcsRoutes(app: Express): void {
   app.get(`${base}/admin/products`, apiUbiquitiDcsAdminList);
   app.get(`${base}/admin/products/:id`, apiUbiquitiDcsAdminGet);
   app.post(`${base}/admin/products/reorder`, express.json(), apiUbiquitiDcsAdminReorder);
-  app.post(`${base}/admin/products`, withMultipart(apiUbiquitiDcsAdminCreate));
-  app.put(`${base}/admin/products/:id`, withMultipart(apiUbiquitiDcsAdminUpdate));
+  app.post(`${base}/admin/products`, uploadGuard, withMultipart(apiUbiquitiDcsAdminCreate));
+  app.put(`${base}/admin/products/:id`, uploadGuard, withMultipart(apiUbiquitiDcsAdminUpdate));
   app.delete(`${base}/admin/products/:id`, apiUbiquitiDcsAdminDelete);
 }

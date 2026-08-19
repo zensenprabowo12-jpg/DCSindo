@@ -21,6 +21,7 @@ import {
   ensureMikrotikDcsUploadDir,
   uploadMikrotikDcsProduct,
 } from "../middleware/uploadMikrotikDcs";
+import { requireRoleMw } from "../middleware/requireRole";
 
 function withMultipart(
   api: (req: Request, res: Response) => void | Promise<void>,
@@ -59,6 +60,9 @@ export function registerMikrotikDcsRoutes(app: Express): void {
 
   const base = "/api/mikrotik-dcs";
 
+  // Guard SEBELUM multer — lihat C-04 Step 8.
+  const uploadGuard = requireRoleMw("admin");
+
   app.post(`${base}/auth/login`, express.json(), apiMikrotikDcsLogin);
   app.post(`${base}/auth/logout`, apiMikrotikDcsLogout);
   app.get(`${base}/auth/me`, apiMikrotikDcsMe);
@@ -74,10 +78,12 @@ export function registerMikrotikDcsRoutes(app: Express): void {
   app.post(`${base}/admin/products/reorder`, express.json(), apiMikrotikDcsAdminReorder);
   app.post(
     `${base}/admin/products`,
+    uploadGuard,
     withMultipart(apiMikrotikDcsAdminCreate),
   );
   app.put(
     `${base}/admin/products/:id`,
+    uploadGuard,
     withMultipart(apiMikrotikDcsAdminUpdate),
   );
   app.delete(`${base}/admin/products/:id`, apiMikrotikDcsAdminDelete);
