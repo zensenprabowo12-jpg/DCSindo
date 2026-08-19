@@ -31,3 +31,7 @@ public/uploads/firmware/
 split-products-*.js
 split-products-*.cjs
 split-products-*.py
+
+# Staging upload: file mentah sebelum lolos sniff magic bytes (C-04).
+# Di luar public/ supaya byte yang belum diverifikasi tak bisa diakses via URL.
+.upload-staging/

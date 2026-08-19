@@ -13,6 +13,8 @@ import {
   apiVsolDcsPublicList,
 } from "../controllers/vsolDcsApiController";
 import {
+  commitVsolDcsUploads,
+  discardVsolDcsUploads,
   ensureVsolDcsUploadDir,
   uploadVsolDcsProduct,
 } from "../middleware/uploadVsolDcs";
@@ -22,11 +24,24 @@ function withMultipart(
 ) {
   return (req: Request, res: Response, next: NextFunction) => {
     uploadVsolDcsProduct(req, res, (err: unknown) => {
-      if (err) {
-        const message = err instanceof Error ? err.message : "Upload failed";
-        return res.status(400).json({ ok: false, message });
-      }
-      void Promise.resolve(api(req, res)).catch(next);
+      void (async () => {
+        if (err) {
+          // File yang sudah tertulis sebelum multer menolak jangan ditinggal di disk.
+          await discardVsolDcsUploads(req);
+          const message = err instanceof Error ? err.message : "Upload failed";
+          res.status(400).json({ ok: false, message });
+          return;
+        }
+        try {
+          // Nama file final baru ada setelah ini — controller memakai f.filename.
+          await commitVsolDcsUploads(req);
+        } catch (e) {
+          const message = e instanceof Error ? e.message : "Upload rejected";
+          res.status(400).json({ ok: false, message });
+          return;
+        }
+        await api(req, res);
+      })().catch(next);
     });
   };
 }
