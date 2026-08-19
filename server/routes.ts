@@ -1,6 +1,5 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
-import { registerEjsViewPaths } from "./ejsViews";
 import { registerUploadStatic } from "./middleware/staticUploads";
 import { registerAuthRoutes } from "./routes/authRoutes";
 import { registerMikrotikDcsRoutes } from "./routes/mikrotikDcsRoutes";
@@ -17,7 +16,6 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  registerEjsViewPaths(app);
   // Static /uploads didaftarkan paling awal — dipakai semua modul brand.
   registerUploadStatic(app);
   // Auth netral (/api/auth/*) didaftarkan paling awal

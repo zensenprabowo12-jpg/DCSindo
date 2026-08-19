@@ -32,13 +32,9 @@ export async function setupVite(server: Server, app: Express) {
 
   app.use(vite.middlewares);
 
-  /** Jangan kirim index.html SPA untuk path yang di-handle Express (EJS/API). */
+  /** Jangan kirim index.html SPA untuk path yang di-handle Express (API/aset). */
   function isServerRenderedPath(p: string): boolean {
-    return (
-      p.startsWith("/admin/mikrotik") ||
-      p.startsWith("/api/") ||
-      p.startsWith("/uploads/")
-    );
+    return p.startsWith("/api/") || p.startsWith("/uploads/");
   }
 
   app.use("/{*path}", async (req, res, next) => {
