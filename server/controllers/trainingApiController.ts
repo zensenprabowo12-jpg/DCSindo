@@ -23,7 +23,7 @@ import { TRAINING_BRANDS, TRAINING_FORMATS } from "../training/categories";
 import { requireRole } from "../middleware/requireRole";
 import {
   countByTraining,
-  createRegistration,
+  createRegistrationAtomic,
   isValidRegistrationStatus,
   listRegistrations,
   updateStatus,
@@ -34,6 +34,21 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 function parseIdParam(raw: unknown): number | null {
   const n = Number.parseInt(String(raw ?? ""), 10);
   return Number.isFinite(n) && n > 0 ? n : null;
+}
+
+/**
+ * M-03: MariaDB melempar errno 1062 / code ER_DUP_ENTRY saat pendaftaran
+ * menabrak indeks UNIQUE uq_treg_active_email. Diterjemahkan jadi 400 yang
+ * ramah supaya pengunjung tidak melihat pesan driver mentah (yang juga
+ * membocorkan nama tabel & indeks) lewat handler 500 generik.
+ *
+ * Kembaran dari helper senama di vsolDcsApiController.ts (M-07). Sengaja
+ * disalin, bukan diangkat jadi util bersama, agar commit ini tidak menyentuh
+ * berkas di luar area training.
+ */
+function isDuplicateEntryError(e: unknown): boolean {
+  const err = e as { code?: string; errno?: number } | null;
+  return err?.code === "ER_DUP_ENTRY" || err?.errno === 1062;
 }
 
 // ─── HELPERS ─────────────────────────────────────────────────
@@ -141,18 +156,34 @@ export async function apiTrainingPublicRegister(req: Request, res: Response): Pr
     res.status(400).json({ ok: false, message: "Pendaftaran ditutup — training sudah selesai." });
     return;
   }
-  if (training.capacity != null) {
-    const count = await countByTraining(id);
-    if (count >= training.capacity) {
+  // M-03: kuota diperiksa DI DALAM transaksi yang sama dengan INSERT-nya.
+  // Pemeriksaan di sini (di luar transaksi) selalu bisa dilewati balapan,
+  // jadi sengaja tidak ada lagi cek kuota pra-insert di controller.
+  try {
+    const result = await createRegistrationAtomic({
+      training_id: id,
+      full_name,
+      email,
+      phone,
+      company,
+    });
+    if (!result.ok) {
+      if (result.reason === "not_found") {
+        res.status(404).json({ ok: false, message: "Training tidak ditemukan." });
+        return;
+      }
       res.status(400).json({ ok: false, message: "Kuota penuh." });
       return;
     }
-  }
-
-  try {
-    const newId = await createRegistration({ training_id: id, full_name, email, phone, company });
-    res.status(201).json({ ok: true, data: { id: newId } });
+    res.status(201).json({ ok: true, data: { id: result.id } });
   } catch (e) {
+    if (isDuplicateEntryError(e)) {
+      res.status(400).json({
+        ok: false,
+        message: "Email ini sudah terdaftar untuk sesi training ini",
+      });
+      return;
+    }
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
 }
