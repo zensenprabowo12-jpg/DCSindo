@@ -160,7 +160,9 @@ export async function apiUbiquitiDcsAdminUpdate(req: Request, res: Response): Pr
     const mainFiles = (req.files as any)?.main_image as Express.Multer.File[] | undefined;
     const newMainPath = mainFiles?.[0] ? publicPathFromUbiquitiDcsFilename(mainFiles[0].filename) : null;
     const mainImage = newMainPath ?? existing.main_image;
-    if (newMainPath && existing.main_image !== newMainPath) safeDeleteFile(existing.main_image);
+    // M-04: foto lama hanya dicatat di sini; dihapus setelah update DB sukses.
+    const staleMain =
+      newMainPath && existing.main_image !== newMainPath ? existing.main_image : null;
 
     const bullets = parseJsonField<string[]>(req.body.bullets, []).filter(Boolean).slice(0, 9);
     const technicalSpecs = parseJsonField<any[]>(req.body.technical_specs, []).filter(
@@ -188,6 +190,9 @@ export async function apiUbiquitiDcsAdminUpdate(req: Request, res: Response): Pr
       inTheBoxPaths: { keepExisting: existingItb, newUploads: getUploadedPaths(req, "in_the_box") },
       addonIds,
     });
+
+    // Baru aman: baris DB sudah menunjuk foto baru.
+    if (staleMain) safeDeleteFile(staleMain);
     res.json({ ok: true, data: { id } });
   } catch (e) {
     res.status(500).json({ ok: false, message: (e as Error).message });

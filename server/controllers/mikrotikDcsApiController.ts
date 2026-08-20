@@ -372,10 +372,14 @@ export async function apiMikrotikDcsAdminUpdate(
     return;
   }
 
+  // M-04: file yang tergantikan HANYA dikumpulkan di sini, tidak dihapus.
+  // Penghapusannya menunggu update DB sukses — lihat setelah blok try di bawah.
+  const staleFiles: string[] = [];
+
   let mainPath = existing.main_image;
   if (main) {
     if (existing.main_image) {
-      tryUnlinkMany([existing.main_image]);
+      staleFiles.push(existing.main_image);
     }
     mainPath = publicPathFromMikrotikDcsFilename(main.filename);
   }
@@ -399,7 +403,7 @@ export async function apiMikrotikDcsAdminUpdate(
   const removed = existing.gallery
     .map((g) => g.image_path)
     .filter((p) => !keepGallery.includes(p));
-  tryUnlinkMany(removed);
+  staleFiles.push(...removed);
 
   try {
     await updateMikrotikDcsProduct(id, {
@@ -416,6 +420,11 @@ export async function apiMikrotikDcsAdminUpdate(
       galleryPaths: { keepExisting: keepGallery, newUploads },
       technicalItems,
     });
+
+    // Baru aman: baris DB sudah tidak menunjuk file-file ini. Kalau update di
+    // atas melempar (mis. ER_DUP_ENTRY pada SKU, yang memang ditangani 400 di
+    // bawah), foto lama tetap utuh di disk dan tetap cocok dengan isi DB.
+    tryUnlinkMany(staleFiles);
     res.json({ ok: true, data: { id } });
   } catch (e: unknown) {
     const msg = e instanceof Error ? e.message : "Gagal update";
