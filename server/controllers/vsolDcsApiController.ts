@@ -38,6 +38,15 @@ function safeDeleteFile(publicPath: string) {
   } catch { /* ignore */ }
 }
 
+// M-07: MariaDB melempar errno 1062 / code ER_DUP_ENTRY saat SKU menabrak
+// indeks UNIQUE uq_vsol_dcs_sku. Diterjemahkan jadi 400 yang ramah
+// supaya admin tidak melihat pesan driver mentah (yang juga membocorkan nama
+// tabel & indeks) lewat handler 500 generik.
+function isDuplicateEntryError(e: unknown): boolean {
+  const err = e as { code?: string; errno?: number } | null;
+  return err?.code === "ER_DUP_ENTRY" || err?.errno === 1062;
+}
+
 // Guard: endpoint admin V-SOL butuh role 'admin' (perilaku tidak berubah).
 const requireAdminSession = requireRole("admin");
 
@@ -142,6 +151,10 @@ export async function apiVsolDcsAdminCreate(req: Request, res: Response): Promis
     res.status(201).json({ ok: true, data: { id } });
   } catch (e) {
     if (mainPath) safeDeleteFile(mainPath);
+    if (isDuplicateEntryError(e)) {
+      res.status(400).json({ ok: false, message: "SKU sudah dipakai produk lain" });
+      return;
+    }
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
 }
@@ -198,6 +211,10 @@ export async function apiVsolDcsAdminUpdate(req: Request, res: Response): Promis
     if (staleMain) safeDeleteFile(staleMain);
     res.json({ ok: true, data: { id } });
   } catch (e) {
+    if (isDuplicateEntryError(e)) {
+      res.status(400).json({ ok: false, message: "SKU sudah dipakai produk lain" });
+      return;
+    }
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
 }
