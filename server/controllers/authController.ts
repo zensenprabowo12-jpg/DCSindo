@@ -7,12 +7,23 @@ import {
 } from "../models/userModel";
 import { recordAdminLoginAttempt } from "../models/adminActivityLogModel";
 
-/** Ambil IP asli klien (memperhatikan reverse proxy / X-Forwarded-For). */
+/**
+ * IP asli klien untuk jejak audit.
+ *
+ * Memakai `req.ip`, BUKAN membaca X-Forwarded-For sendiri. Versi sebelumnya
+ * mengambil entri paling KIRI dari header itu, dan entri itu sepenuhnya
+ * dikendalikan klien: penyerang tinggal mengirim `X-Forwarded-For: 6.6.6.6`
+ * dan admin_activity_log mencatat IP karangan — persis saat log itu paling
+ * dibutuhkan, yaitu ketika brute force sedang berlangsung.
+ *
+ * `req.ip` diselesaikan Express lewat `trust proxy: "loopback"`: penelusuran
+ * dimulai dari kanan, alamat loopback Apache dilewati, dan berhenti di entri
+ * yang ditambahkan Apache sendiri. Entri palsu selalu berada di kiri, jadi
+ * tidak pernah terpilih. Ini juga sumber IP yang sama dengan yang dipakai
+ * rate limiter H-02, sehingga log dan pembatas tidak lagi bisa berbeda.
+ */
 function getClientIp(req: Request): string | null {
-  const fwd = req.headers["x-forwarded-for"];
-  if (typeof fwd === "string" && fwd.trim()) return fwd.split(",")[0]!.trim();
-  if (Array.isArray(fwd) && fwd.length) return fwd[0]!.trim();
-  return req.socket?.remoteAddress ?? null;
+  return req.ip ?? null;
 }
 
 /**

@@ -54,6 +54,7 @@
     "embla-carousel-react": "^8.6.0",
     "express": "^5.2.1",
     "express-mysql-session": "^3.0.3",
+    "express-rate-limit": "^8.6.2",
     "express-session": "^1.18.1",
     "framer-motion": "^12.23.24",
     "geoip-lite": "^1.4.10",

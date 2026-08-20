@@ -1,6 +1,7 @@
 import type { Express } from "express";
 import express from "express";
 import { apiAuthLogin, apiAuthLogout, apiAuthMe } from "../controllers/authController";
+import { loginIpRateLimit, loginUsernameRateLimit } from "../middleware/loginRateLimit";
 import {
   apiUsersCreate,
   apiUsersDelete,
@@ -14,7 +15,14 @@ import {
  */
 export function registerAuthRoutes(app: Express): void {
   const base = "/api/auth";
-  app.post(`${base}/login`, express.json(), apiAuthLogin);
+  // H-02: perIp dulu, lalu perUsername (butuh body sudah terurai).
+  app.post(
+    `${base}/login`,
+    loginIpRateLimit,
+    express.json(),
+    loginUsernameRateLimit,
+    apiAuthLogin,
+  );
   app.post(`${base}/logout`, apiAuthLogout);
   app.get(`${base}/me`, apiAuthMe);
 

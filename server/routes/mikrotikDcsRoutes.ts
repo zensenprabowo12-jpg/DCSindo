@@ -23,6 +23,7 @@ import {
 } from "../middleware/uploadMikrotikDcs";
 import { uploadErrorMessage } from "../utils/safeUpload";
 import { requireRoleMw } from "../middleware/requireRole";
+import { loginIpRateLimit, loginUsernameRateLimit } from "../middleware/loginRateLimit";
 
 function withMultipart(
   api: (req: Request, res: Response) => void | Promise<void>,
@@ -64,7 +65,16 @@ export function registerMikrotikDcsRoutes(app: Express): void {
   // Guard SEBELUM multer — lihat C-04 Step 8.
   const uploadGuard = requireRoleMw("admin");
 
-  app.post(`${base}/auth/login`, express.json(), apiMikrotikDcsLogin);
+  // H-02: instance limiter yang SAMA dengan /api/auth/login, supaya counter-nya
+  // satu. Limiter terpisah per endpoint berarti jatah dua kali lipat bagi
+  // penyerang yang menyelang-nyeling kedua URL.
+  app.post(
+    `${base}/auth/login`,
+    loginIpRateLimit,
+    express.json(),
+    loginUsernameRateLimit,
+    apiMikrotikDcsLogin,
+  );
   app.post(`${base}/auth/logout`, apiMikrotikDcsLogout);
   app.get(`${base}/auth/me`, apiMikrotikDcsMe);
   app.get(`${base}/admin/activity-log`, apiMikrotikDcsActivityLog);
