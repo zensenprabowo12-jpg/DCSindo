@@ -94,6 +94,17 @@ export async function apiTrainingRegistrationStatus(req: Request, res: Response)
     }
     res.json({ ok: true });
   } catch (e) {
+    // M-03 bagian 3: mengembalikan peserta dari 'cancelled' ke status aktif
+    // bisa menabrak uq_treg_active_email kalau di sesi ini sudah ada
+    // pendaftaran AKTIF lain dengan email yang sama. Tanpa cabang ini admin
+    // melihat 500 berisi pesan driver mentah MariaDB.
+    if (isDuplicateEntryError(e)) {
+      res.status(400).json({
+        ok: false,
+        message: "Peserta lain dengan email sama sudah terdaftar aktif untuk sesi ini.",
+      });
+      return;
+    }
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
 }
