@@ -125,6 +125,17 @@ app.use(
       maxAge: 7 * 24 * 60 * 60 * 1000,
       httpOnly: true,
       sameSite: "lax",
+
+      // H-03: cookie sesi hanya boleh melintas HTTPS. Digate ke production
+      // karena dev berjalan di http://localhost — tanpa gate, login lokal
+      // ikut mati.
+      //
+      // Bergantung pada "trust proxy: loopback" di atas: TLS diterminasi
+      // Apache, jadi express-session menilai keamanan koneksi dari header
+      // X-Forwarded-Proto kiriman Apache, bukan dari socket Node. Kalau
+      // header itu hilang, Set-Cookie dilewatkan TANPA error apa pun
+      // (express-session index.js:241) dan login produksi mati senyap.
+      secure: process.env.NODE_ENV === "production",
     },
   }),
 );

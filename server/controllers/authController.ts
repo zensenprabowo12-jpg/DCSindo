@@ -52,7 +52,22 @@ export async function performLogin(
     return { ok: false, message: "Username atau password salah." };
   }
 
-  // Sukses → set sesi
+  // Sukses → terbitkan session ID baru SEBELUM identitas ditulis (H-03).
+  // Tanpa ini, ID yang sudah dipegang penyerang sebelum korban login ikut
+  // naik pangkat menjadi sesi admin (session fixation).
+  //
+  // Tidak ada state pra-login yang perlu diselamatkan: SessionData hanya
+  // berisi empat field di bawah ini, dan tidak ada token CSRF maupun
+  // keranjang yang hidup sebelum autentikasi.
+  //
+  // regenerate() berbasis callback; error-nya dilempar agar Express 5
+  // meneruskannya ke error handler (→ 500 yang sudah tersanitasi H-04),
+  // bukan berpura-pura login berhasil di atas sesi lama.
+  await new Promise<void>((resolve, reject) => {
+    req.session.regenerate((err) => (err ? reject(err) : resolve()));
+  });
+
+  // Mulai baris ini req.session sudah objek baru dengan ID baru.
   req.session.userId = user.id;
   req.session.username = user.username;
   req.session.role = user.role;
