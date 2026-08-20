@@ -9,6 +9,7 @@ import { ensureUsersTable } from "./models/userModel";
 import { ensureVisitorLogTable } from "./models/visitorLogModel";
 import { startVisitorLogPruneJob } from "./jobs/visitorLogPrune";
 import { visitorTracker, preloadGeoip } from "./middleware/visitorTracker";
+import { correlationId, errorSanitizer } from "./middleware/errorSanitizer";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
@@ -169,6 +170,10 @@ app.use((req, res, next) => {
 // dan serveStatic/setupVite, supaya melihat setiap request halaman yang masuk.
 app.use(visitorTracker);
 
+// H-04: sanitasi body response 5xx sebelum sampai ke browser. Dipasang sebelum
+// registerRoutes supaya berlaku untuk SELURUH route dan error handler di bawah.
+app.use(errorSanitizer);
+
 (async () => {
   await registerRoutes(httpServer, app);
   await verifyMysqlOnStartup();
@@ -192,7 +197,11 @@ app.use(visitorTracker);
     const status = err.status || err.statusCode || 500;
     const message = err.message || "Internal Server Error";
 
-    console.error("Internal Server Error:", err);
+    // Sertakan correlation ID: user hanya melihat `ref`, admin mencocokkannya di log PM2.
+    console.error(
+      `Internal Server Error [ref ${correlationId(res)}] ${_req.method} ${_req.originalUrl}:`,
+      err,
+    );
 
     if (res.headersSent) {
       return next(err);

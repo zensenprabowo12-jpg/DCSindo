@@ -385,3 +385,35 @@ export function commitExtWhitelistedUploads(
     opts.keepReadableName ?? false,
   );
 }
+
+/**
+ * H-04 — pesan error upload yang aman dikirim ke client.
+ *
+ * `SafeUploadError` sengaja ditulis untuk dibaca user ("... bukan gambar PNG/JPG
+ * yang valid"), jadi diteruskan apa adanya. Error lain berasal dari multer atau
+ * dari `fs`, dan yang terakhir membawa path absolut server di dalam pesannya
+ * (`ENOENT: ... C:\...\.upload-staging\...`) — itu diganti pesan generik dan
+ * hanya dicetak ke log.
+ *
+ * Batas multer (ukuran/jumlah file) tetap dijelaskan, tapi memakai kalimat milik
+ * server berdasarkan `err.code`, bukan string bawaan library.
+ */
+const MULTER_MESSAGES: Readonly<Record<string, string>> = {
+  LIMIT_FILE_SIZE: "Ukuran file melebihi batas yang diizinkan",
+  LIMIT_FILE_COUNT: "Jumlah file melebihi batas yang diizinkan",
+  LIMIT_UNEXPECTED_FILE: "Ada field file yang tidak dikenali",
+};
+
+export function uploadErrorMessage(err: unknown): string {
+  if (err instanceof SafeUploadError) return err.message;
+
+  const generic = "Gagal memproses file";
+  if (err instanceof multer.MulterError) {
+    console.error(`[upload] MulterError ${err.code} (field: ${err.field ?? "-"})`, err);
+    return MULTER_MESSAGES[err.code] ?? generic;
+  }
+
+  // Stack ikut dicetak: ini satu-satunya tempat detailnya masih ada.
+  console.error("[upload] error tak terduga:", err);
+  return generic;
+}

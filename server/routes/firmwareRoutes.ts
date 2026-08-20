@@ -15,6 +15,7 @@ import {
   ensureFirmwareUploadDir,
   uploadFirmwareFile,
 } from "../middleware/uploadFirmware";
+import { uploadErrorMessage } from "../utils/safeUpload";
 import { requireRoleMw } from "../middleware/requireRole";
 
 function withUpload(api: (req: Request, res: Response) => void | Promise<void>) {
@@ -24,7 +25,7 @@ function withUpload(api: (req: Request, res: Response) => void | Promise<void>) 
         if (err) {
           // File yang sudah tertulis sebelum multer menolak jangan ditinggal di disk.
           await discardFirmwareUpload(req);
-          const message = err instanceof Error ? err.message : "Upload gagal";
+          const message = uploadErrorMessage(err);
           res.status(400).json({ ok: false, message });
           return;
         }
@@ -32,7 +33,7 @@ function withUpload(api: (req: Request, res: Response) => void | Promise<void>) 
           // Nama file final baru ada setelah ini — controller memakai f.filename.
           await commitFirmwareUpload(req);
         } catch (e) {
-          const message = e instanceof Error ? e.message : "Upload ditolak";
+          const message = uploadErrorMessage(e);
           res.status(400).json({ ok: false, message });
           return;
         }

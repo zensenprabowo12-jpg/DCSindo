@@ -19,6 +19,7 @@ import {
   uploadFiberHomeDatasheet,
   uploadFiberHomeImage,
 } from "../middleware/uploadFiberHomeDcs";
+import { uploadErrorMessage } from "../utils/safeUpload";
 import { requireRoleMw } from "../middleware/requireRole";
 
 /**
@@ -36,7 +37,7 @@ function withUpload(
         if (err) {
           // File yang sudah tertulis sebelum multer menolak jangan ditinggal di disk.
           await discardFiberHomeUploads(req);
-          const message = err instanceof Error ? err.message : "Upload failed";
+          const message = uploadErrorMessage(err);
           res.status(400).json({ ok: false, message });
           return;
         }
@@ -44,7 +45,7 @@ function withUpload(
           // Nama file final baru ada setelah ini — controller memakai f.filename.
           await commit(req);
         } catch (e) {
-          const message = e instanceof Error ? e.message : "Upload ditolak";
+          const message = uploadErrorMessage(e);
           res.status(400).json({ ok: false, message });
           return;
         }

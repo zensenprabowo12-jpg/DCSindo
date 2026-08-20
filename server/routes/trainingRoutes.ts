@@ -25,6 +25,7 @@ import {
   uploadTrainingGallery,
   uploadTrainingSessionFiles,
 } from "../middleware/uploadTraining";
+import { uploadErrorMessage } from "../utils/safeUpload";
 import { requireRoleMw } from "../middleware/requireRole";
 
 /**
@@ -42,7 +43,7 @@ function withTrainingUpload(
         if (err) {
           // File yang sudah tertulis sebelum multer menolak jangan ditinggal di disk.
           await discardTrainingUploads(req);
-          const message = err instanceof Error ? err.message : "Upload gagal";
+          const message = uploadErrorMessage(err);
           res.status(400).json({ ok: false, message });
           return;
         }
@@ -50,7 +51,7 @@ function withTrainingUpload(
           // Nama file final baru ada setelah ini — controller memakai f.filename.
           await commitTrainingUploads(req);
         } catch (e) {
-          const message = e instanceof Error ? e.message : "Upload ditolak";
+          const message = uploadErrorMessage(e);
           res.status(400).json({ ok: false, message });
           return;
         }
