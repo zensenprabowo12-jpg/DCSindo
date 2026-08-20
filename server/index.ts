@@ -163,26 +163,40 @@ export function log(message: string, source = "express") {
   console.log(`${formattedTime} [${source}] ${message}`);
 }
 
+/**
+ * Log akses /api: method, path, status, durasi. Body response TIDAK pernah
+ * ikut dicatat (M-01).
+ *
+ * Sebelumnya baris log menyertakan JSON.stringify body penuh tanpa batas
+ * ukuran. Akibatnya GET /api/training/registrations menulis nama, email, dan
+ * nomor telepon seluruh peserta ke ~/.pm2/logs/dcsindo-out.log; visitor-log
+ * menulis alamat IP pengunjung; activity-log menulis apa pun yang diketik di
+ * kolom username — termasuk password yang salah tempat. Semuanya mendarat di
+ * berkas datar yang terbaca siapa pun dengan akses shell dan ikut tersalin ke
+ * backup.
+ *
+ * Sengaja TANPA daftar putih path dan TANPA redaksi per-field: keduanya gagal
+ * ke arah terbuka — endpoint baru yang membawa PII akan tercatat diam-diam
+ * sampai ada yang ingat memperbarui daftarnya. Aturan "tidak pernah" tidak
+ * menuntut siapa pun mengingat apa pun, dan otomatis melindungi route yang
+ * ditambahkan nanti.
+ *
+ * Nilai debug yang hilang kecil: detail response 5xx sudah dicatat lengkap
+ * beserta stack trace dan correlation ID oleh errorSanitizer (H-04).
+ *
+ * Pembungkus res.json yang lama ikut dibuang, bukan sekadar dinonaktifkan —
+ * satu-satunya gunanya adalah menahan body untuk baris log ini, dan
+ * membiarkannya berarti menyimpan referensi ke setiap payload response
+ * (termasuk katalog megabyte-an) sampai event finish.
+ */
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
-  let capturedJsonResponse: Record<string, any> | undefined = undefined;
-
-  const originalResJson = res.json;
-  res.json = function (bodyJson, ...args) {
-    capturedJsonResponse = bodyJson;
-    return originalResJson.apply(res, [bodyJson, ...args]);
-  };
 
   res.on("finish", () => {
     const duration = Date.now() - start;
     if (path.startsWith("/api")) {
-      let logLine = `${req.method} ${path} ${res.statusCode} in ${duration}ms`;
-      if (capturedJsonResponse) {
-        logLine += ` :: ${JSON.stringify(capturedJsonResponse)}`;
-      }
-
-      log(logLine);
+      log(`${req.method} ${path} ${res.statusCode} in ${duration}ms`);
     }
   });
 
