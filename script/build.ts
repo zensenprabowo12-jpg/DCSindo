@@ -33,6 +33,17 @@ const allowlist = [
 async function buildAll() {
   await rm("dist", { recursive: true, force: true });
 
+  // M-06: Vite memilih varian paket lewat kondisi export "development" /
+  // "production", dan penentunya adalah process.env.NODE_ENV. Tanpa baris
+  // ini react-dom yang ikut terbundel adalah
+  // cjs/react-dom-client.development.js — 344 kB berisi pesan peringatan
+  // yang sama sekali tidak berguna di produksi.
+  //
+  // Bagian server di bawah sudah aman lewat `define`, TAPI define itu hanya
+  // mengganti teks pada hasil esbuild; ia tidak memengaruhi resolusi paket
+  // yang dilakukan Vite. Jadi keduanya memang perlu, bukan duplikasi.
+  process.env.NODE_ENV = "production";
+
   console.log("building client...");
   await viteBuild();
 
