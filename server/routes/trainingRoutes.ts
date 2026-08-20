@@ -27,6 +27,7 @@ import {
 } from "../middleware/uploadTraining";
 import { uploadErrorMessage } from "../utils/safeUpload";
 import { requireRoleMw } from "../middleware/requireRole";
+import { trainingRegisterRateLimit } from "../middleware/trainingRateLimit";
 
 /**
  * Jalankan multer dulu, lalu commit (sniff isi file + beri nama final).
@@ -89,7 +90,7 @@ export function registerTrainingRoutes(app: Express): void {
 
   // Pendaftaran publik (tanpa auth)
   app.get(`${base}/:id/availability`, apiTrainingAvailability);
-  app.post(`${base}/:id/register`, express.json(), apiTrainingPublicRegister);
+  app.post(`${base}/:id/register`, trainingRegisterRateLimit, express.json(), apiTrainingPublicRegister);
 
   // Peserta training (read-only; admin/trainer/sales) + ubah status (admin/trainer)
   app.get(`${base}/registrations`, apiTrainingRegistrationsList);
