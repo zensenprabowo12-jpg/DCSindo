@@ -10,6 +10,7 @@ import { ensureVisitorLogTable } from "./models/visitorLogModel";
 import { startVisitorLogPruneJob } from "./jobs/visitorLogPrune";
 import { visitorTracker, preloadGeoip } from "./middleware/visitorTracker";
 import { correlationId, errorSanitizer } from "./middleware/errorSanitizer";
+import { cspReportOnly } from "./middleware/csp";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
@@ -66,6 +67,17 @@ app.use((_req, res, next) => {
 
   next();
 });
+
+// H-06 Tahap 2 Fase A: Content-Security-Policy-Report-Only.
+//
+// Sengaja dipasang di sini, tepat setelah header Tahap 1 dan sebelum segala
+// hal lain, supaya header ikut menempel pada response express.static maupun
+// res.sendFile di serveStatic — index.html SPA termasuk, dan justru di situlah
+// CSP dievaluasi browser.
+//
+// Middleware-nya sendiri yang memutuskan aktif atau tidak berdasarkan
+// NODE_ENV; di mode dev ia hanya meneruskan request.
+app.use(cspReportOnly);
 
 /**
  * Session store persisten di MySQL (express-mysql-session).

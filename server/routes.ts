@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { registerUploadStatic } from "./middleware/staticUploads";
 import { registerAuthRoutes } from "./routes/authRoutes";
+import { registerCspReportRoutes } from "./routes/cspReportRoutes";
 import { registerMikrotikDcsRoutes } from "./routes/mikrotikDcsRoutes";
 import { registerMikrotikRoutes } from "./routes/mikrotikRoutes";
 import { registerUbiquitiDcsRoutes } from "./routes/ubiquitiDcsRoutes";
@@ -20,6 +21,9 @@ export async function registerRoutes(
   registerUploadStatic(app);
   // Auth netral (/api/auth/*) didaftarkan paling awal
   registerAuthRoutes(app);
+  // Penerima laporan pelanggaran CSP (H-06 Tahap 2 Fase A). Anonim & tanpa sesi:
+  // pengirimnya browser, bukan manusia.
+  registerCspReportRoutes(app);
   registerMikrotikRoutes(app);
   registerMikrotikDcsRoutes(app);
   registerUbiquitiDcsRoutes(app);
