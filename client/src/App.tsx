@@ -1,11 +1,12 @@
+import { lazy, Suspense } from "react";
+import ChunkErrorBoundary from "@/components/ChunkErrorBoundary";
+import AdminChunkFallback from "@/components/AdminChunkFallback";
 import { Switch, Route, useLocation } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
-import UbiquitiDcsDashboard from "@ubiquiti/admin/Dashboard";
-import UbiquitiDcsProductForm from "@ubiquiti/admin/ProductForm";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/homepage/home-utama";
 import HomeUbiquiti from "@/pages/homepage/home-ubiquiti";
@@ -16,32 +17,14 @@ import MikrotikDcsStoreCatalog from "@mikrotik/public/StoreCatalog";
 import MikrotikDcsStoreProductDetail from "@mikrotik/public/StoreProductDetail";
 import MikrotikCategoryProductPage from "@mikrotik/public/CategoryProductPage";
 import MikrotikCategoryCatalogPage from "@mikrotik/public/CategoryCatalogPage";
-import MikrotikDcsDashboard from "@mikrotik/admin/Dashboard";
-import MikrotikDcsProductForm from "@mikrotik/admin/ProductForm";
 import Support from "@/pages/support";
 import UbiquitiSupport from "@/pages/support/Ubiquiti";
 import MikrotikSupport from "@/pages/support/Mikrotik";
-import AdminLogin from "@admin/Login";
-import AdminDashboard from "@admin/Dashboard";
-import AdminActivityLog from "@admin/ActivityLog";
-import AdminVisitorLog from "@admin/VisitorLog";
-import AdminPeserta from "@admin/Peserta";
-import AdminUsers from "@admin/Users";
-import TrainingAdminDashboard from "@admin/training/Dashboard";
-import TrainingForm from "@admin/training/TrainingForm";
-import FirmwareDashboard from "@admin/firmware/Dashboard";
-import FirmwareBrandList from "@admin/firmware/List";
-import FirmwareForm from "@admin/firmware/FirmwareForm";
-import FirmwarePopupSettings from "@admin/firmware/PopupSettings";
 
 import VsolSupport from "@/pages/support/Vsol";
 import HomeVsol from "@/pages/homepage/home-vsol";
 import VsolDcsStoreCatalog from "@vsol/public/StoreCatalog";
 import VsolDcsStoreProductDetail from "@vsol/public/StoreProductDetail";
-import VsolDcsDashboard from "@vsol/admin/Dashboard";
-import VsolProductForm from "@vsol/admin/ProductForm";
-import FiberHomeAdmin from "@admin/fiberhome/FiberHomeAdmin";
-import FiberHomeProductForm from "@admin/fiberhome/FiberHomeProductForm";
 import FiberHomePage from "@/pages/fiberhome/FiberHomePage";
 import FiberHomeProductDetail from "@/pages/fiberhome/FiberHomeProductDetail";
 import ComingSoon from "@/pages/coming-soon";
@@ -51,6 +34,42 @@ import TrainingList from "@/pages/training/TrainingList";
 import TrainingDetail from "@/pages/training/TrainingDetail";
 import { useTrueFalse } from "@/hooks/useTrueFalse";
 import CompanyProfile from "@/pages/company-profile";
+
+// ── M-06 Tahap 2: seluruh panel admin dipisah dari bundel publik ─────────
+//
+// Pengunjung situs tidak pernah mengunduh kode admin. Yang paling mahal di
+// antaranya adalah recharts (~243 kB minified, ~114 kB gzip) yang hanya
+// dipakai VisitorLog — itu saja sudah tiga perempat dari total penghematan.
+//
+// Spesifier import HARUS literal statis. Rollup menganalisisnya saat build
+// untuk menentukan batas chunk; template string membuat chunk gagal
+// terbentuk dan diam-diam mengembalikan semuanya ke bundel utama.
+//
+// Sengaja TANPA manualChunks: karena hanya VisitorLog yang mengimpor
+// recharts, pemecahan default Rollup menaruh pustaka itu di chunk
+// VisitorLog sendiri. Menggabungkan semua admin jadi satu chunk justru
+// memaksa setiap admin yang login mengunduh recharts tanpa pernah membuka
+// halaman grafiknya.
+const UbiquitiDcsDashboard   = lazy(() => import("@ubiquiti/admin/Dashboard"));
+const UbiquitiDcsProductForm = lazy(() => import("@ubiquiti/admin/ProductForm"));
+const MikrotikDcsDashboard   = lazy(() => import("@mikrotik/admin/Dashboard"));
+const MikrotikDcsProductForm = lazy(() => import("@mikrotik/admin/ProductForm"));
+const AdminLogin             = lazy(() => import("@admin/Login"));
+const AdminDashboard         = lazy(() => import("@admin/Dashboard"));
+const AdminActivityLog       = lazy(() => import("@admin/ActivityLog"));
+const AdminVisitorLog        = lazy(() => import("@admin/VisitorLog"));
+const AdminPeserta           = lazy(() => import("@admin/Peserta"));
+const AdminUsers             = lazy(() => import("@admin/Users"));
+const TrainingAdminDashboard = lazy(() => import("@admin/training/Dashboard"));
+const TrainingForm           = lazy(() => import("@admin/training/TrainingForm"));
+const FirmwareDashboard      = lazy(() => import("@admin/firmware/Dashboard"));
+const FirmwareBrandList      = lazy(() => import("@admin/firmware/List"));
+const FirmwareForm           = lazy(() => import("@admin/firmware/FirmwareForm"));
+const FirmwarePopupSettings  = lazy(() => import("@admin/firmware/PopupSettings"));
+const VsolDcsDashboard       = lazy(() => import("@vsol/admin/Dashboard"));
+const VsolProductForm        = lazy(() => import("@vsol/admin/ProductForm"));
+const FiberHomeAdmin         = lazy(() => import("@admin/fiberhome/FiberHomeAdmin"));
+const FiberHomeProductForm   = lazy(() => import("@admin/fiberhome/FiberHomeProductForm"));
 
 function RouterWouter() {
   const [location] = useLocation();
@@ -150,7 +169,26 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <RouterWouter />
+        {/*
+          ChunkErrorBoundary + Suspense sengaja dipasang DI SINI, bukan di
+          dalam RouterWouter yang membungkus <Switch>. RouterWouter punya dua
+          early return <ComingSoon /> untuk feature flag mikrotik/fiberhome;
+          kalau boundary-nya di dalam, listener vite:preloadError-nya ikut
+          hilang persis pada path-path itu. Di posisi ini boundary terpasang
+          selama aplikasi hidup.
+
+          Membungkus SELURUH router aman: semua route publik masih import
+          statis sehingga tidak pernah suspend — fallback bertema gelap di
+          bawah ini hanya bisa muncul untuk route admin.
+
+          Toaster berada di LUAR boundary supaya notifikasi tetap tampil
+          seandainya boundary sedang menampilkan layar "aplikasi diperbarui".
+        */}
+        <ChunkErrorBoundary>
+          <Suspense fallback={<AdminChunkFallback />}>
+            <RouterWouter />
+          </Suspense>
+        </ChunkErrorBoundary>
       </TooltipProvider>
     </QueryClientProvider>
   );
