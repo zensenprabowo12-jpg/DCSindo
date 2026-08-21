@@ -329,7 +329,13 @@ export async function apiMikrotikDcsAdminCreate(
   } catch (e: unknown) {
     const msg = e instanceof Error ? e.message : "Gagal simpan";
     if ((e as { code?: string }).code === "ER_DUP_ENTRY") {
-      res.status(400).json({ ok: false, message: "SKU sudah dipakai" });
+      // Indeks uniknya komposit — uq_mikrotik_dcs_sku_category (sku, category)
+      // — jadi yang bentrok adalah PASANGAN sku+kategori, bukan sku saja.
+      // Pesan lama "SKU sudah dipakai" terbaca seolah SKU-nya terpakai secara
+      // global, padahal SKU yang sama memang boleh dipakai di kategori lain
+      // (lihat mikrotik_dcs_store.sql). Admin yang salah paham bisa mengarang
+      // SKU palsu demi lolos, dan itu justru mengotori katalog.
+      res.status(400).json({ ok: false, message: "SKU sudah dipakai di kategori ini" });
     } else {
       res.status(500).json({ ok: false, message: msg });
     }
@@ -429,7 +435,9 @@ export async function apiMikrotikDcsAdminUpdate(
   } catch (e: unknown) {
     const msg = e instanceof Error ? e.message : "Gagal update";
     if ((e as { code?: string }).code === "ER_DUP_ENTRY") {
-      res.status(400).json({ ok: false, message: "SKU sudah dipakai" });
+      // Sama persis dengan jalur create di atas: bentroknya pada pasangan
+      // sku+kategori, jadi pesannya harus menyebut kategori.
+      res.status(400).json({ ok: false, message: "SKU sudah dipakai di kategori ini" });
     } else {
       res.status(500).json({ ok: false, message: msg });
     }
