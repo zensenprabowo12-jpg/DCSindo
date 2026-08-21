@@ -38,6 +38,25 @@ function safeDeleteFile(publicPath: string) {
   } catch { /* ignore */ }
 }
 
+/**
+ * Semua file yang DITULIS oleh request ini. Dipakai HANYA di jalur gagal.
+ *
+ * Membaca req.files langsung, bukan variabel per-field. Ubiquiti punya LIMA
+ * field upload (main_image, gallery, overview_images, overview_videos,
+ * in_the_box) sampai 81 file per request; mendata ulang satu per satu di tiap
+ * catch praktis pasti ada yang terlewat.
+ *
+ * File LAMA aman: yang dipertahankan admin dikirim lewat body JSON
+ * (existing_gallery dkk.), tidak pernah lewat req.files.
+ */
+function discardRequestUploads(req: Request): void {
+  const files = req.files as Record<string, Express.Multer.File[]> | undefined;
+  if (!files) return;
+  for (const list of Object.values(files)) {
+    for (const f of list) safeDeleteFile(publicPathFromUbiquitiDcsFilename(f.filename));
+  }
+}
+
 // Guard: endpoint admin Ubiquiti butuh role 'admin' (perilaku tidak berubah).
 const requireAdminSession = requireRole("admin");
 
@@ -108,6 +127,10 @@ export async function apiUbiquitiDcsAdminCreate(req: Request, res: Response): Pr
   if (!requireAdminSession(req, res)) return;
   const mainFiles = (req.files as any)?.main_image as Express.Multer.File[] | undefined;
   const mainPath = mainFiles?.[0] ? publicPathFromUbiquitiDcsFilename(mainFiles[0].filename) : null;
+  // Penanda transaksi DB sudah commit. Tanpa ini, error apa pun SESUDAH commit
+  // (mis. res.json gagal di socket putus) akan menghapus file yang justru sudah
+  // ditunjuk baris DB — mengubah error kosmetik jadi kehilangan data.
+  let dbCommitted = false;
   try {
     if (!mainPath) { res.status(400).json({ ok: false, message: "Gambar utama wajib diupload" }); return; }
     const { nama_produk, sku, category, subfilter, deskripsi, is_new } = req.body as Record<string, string>;
@@ -137,9 +160,10 @@ export async function apiUbiquitiDcsAdminCreate(req: Request, res: Response): Pr
       inTheBoxPaths: getUploadedPaths(req, "in_the_box"),
       addonIds,
     });
+    dbCommitted = true;
     res.status(201).json({ ok: true, data: { id } });
   } catch (e) {
-    if (mainPath) safeDeleteFile(mainPath);
+    if (!dbCommitted) discardRequestUploads(req);
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
 }
@@ -147,6 +171,8 @@ export async function apiUbiquitiDcsAdminCreate(req: Request, res: Response): Pr
 // ─── ADMIN UPDATE ─────────────────────────────────────────────
 export async function apiUbiquitiDcsAdminUpdate(req: Request, res: Response): Promise<void> {
   if (!requireAdminSession(req, res)) return;
+  // Lihat catatan dbCommitted di apiUbiquitiDcsAdminCreate.
+  let dbCommitted = false;
   try {
     const id = Number.parseInt(String(req.params.id ?? ""), 10);
     if (!Number.isFinite(id) || id < 1) { res.status(400).json({ ok: false, message: "ID tidak valid" }); return; }
@@ -190,11 +216,16 @@ export async function apiUbiquitiDcsAdminUpdate(req: Request, res: Response): Pr
       inTheBoxPaths: { keepExisting: existingItb, newUploads: getUploadedPaths(req, "in_the_box") },
       addonIds,
     });
+    dbCommitted = true;
 
     // Baru aman: baris DB sudah menunjuk foto baru.
     if (staleMain) safeDeleteFile(staleMain);
     res.json({ ok: true, data: { id } });
   } catch (e) {
+    // M-04 tetap utuh: staleMain (foto LAMA, dari DB) hanya dihapus di jalur
+    // sukses. Yang dibuang di sini file BARU dari req.files — dua himpunan
+    // yang tidak pernah beririsan.
+    if (!dbCommitted) discardRequestUploads(req);
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
 }

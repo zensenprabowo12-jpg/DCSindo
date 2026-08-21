@@ -48,6 +48,25 @@ function tryUnlinkMany(paths: string[]): void {
   }
 }
 
+/**
+ * Semua file yang DITULIS oleh request ini. Dipakai HANYA di jalur gagal.
+ *
+ * Membaca req.files langsung, bukan variabel path per-field, supaya tidak ada
+ * field yang terlewat saat catch ditambah di kemudian hari.
+ *
+ * File LAMA aman: yang dipertahankan admin dikirim lewat body JSON
+ * (existing_gallery), tidak pernah lewat req.files.
+ */
+function discardRequestUploads(req: Request): void {
+  const files = (req as Request & { files?: MulterFileMap }).files;
+  if (!files) return;
+  const paths: string[] = [];
+  for (const list of Object.values(files)) {
+    for (const f of list ?? []) paths.push(publicPathFromMikrotikDcsFilename(f.filename));
+  }
+  tryUnlinkMany(paths);
+}
+
 export async function apiMikrotikDcsLogin(
   req: Request,
   res: Response,
@@ -310,6 +329,10 @@ export async function apiMikrotikDcsAdminCreate(
   }
   const mainPath = publicPathFromMikrotikDcsFilename(main.filename);
   const galleryPaths = galleryFiles.map((f) => publicPathFromMikrotikDcsFilename(f.filename));
+  // Penanda transaksi DB sudah commit. Tanpa ini, error apa pun SESUDAH commit
+  // (mis. res.json gagal di socket putus) akan menghapus file yang justru sudah
+  // ditunjuk baris DB — mengubah error kosmetik jadi kehilangan data.
+  let dbCommitted = false;
   try {
     const newId = await createMikrotikDcsProduct({
       nama_produk: nama,
@@ -325,8 +348,10 @@ export async function apiMikrotikDcsAdminCreate(
       galleryPaths,
       technicalItems,
     });
+    dbCommitted = true;
     res.status(201).json({ ok: true, data: { id: newId } });
   } catch (e: unknown) {
+    if (!dbCommitted) discardRequestUploads(req);
     const msg = e instanceof Error ? e.message : "Gagal simpan";
     if ((e as { code?: string }).code === "ER_DUP_ENTRY") {
       // Indeks uniknya komposit — uq_mikrotik_dcs_sku_category (sku, category)
@@ -411,6 +436,9 @@ export async function apiMikrotikDcsAdminUpdate(
     .filter((p) => !keepGallery.includes(p));
   staleFiles.push(...removed);
 
+  // Lihat catatan dbCommitted di apiMikrotikDcsAdminCreate.
+  let dbCommitted = false;
+
   try {
     await updateMikrotikDcsProduct(id, {
       nama_produk: nama,
@@ -426,6 +454,7 @@ export async function apiMikrotikDcsAdminUpdate(
       galleryPaths: { keepExisting: keepGallery, newUploads },
       technicalItems,
     });
+    dbCommitted = true;
 
     // Baru aman: baris DB sudah tidak menunjuk file-file ini. Kalau update di
     // atas melempar (mis. ER_DUP_ENTRY pada SKU, yang memang ditangani 400 di
@@ -433,6 +462,10 @@ export async function apiMikrotikDcsAdminUpdate(
     tryUnlinkMany(staleFiles);
     res.json({ ok: true, data: { id } });
   } catch (e: unknown) {
+    // M-04 tetap utuh: staleFiles (file LAMA, dari DB) hanya dihapus di jalur
+    // sukses. Yang dibuang di sini file BARU dari req.files — dua himpunan
+    // yang tidak pernah beririsan.
+    if (!dbCommitted) discardRequestUploads(req);
     const msg = e instanceof Error ? e.message : "Gagal update";
     if ((e as { code?: string }).code === "ER_DUP_ENTRY") {
       // Sama persis dengan jalur create di atas: bentroknya pada pasangan
