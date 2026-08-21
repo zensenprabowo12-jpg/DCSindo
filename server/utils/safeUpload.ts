@@ -269,10 +269,39 @@ function collectFiles(req: Request): Express.Multer.File[] {
 }
 
 async function unlinkAll(paths: string[]): Promise<void> {
-  await Promise.all(paths.map((p) => fsp.rm(p, { force: true }).catch(() => undefined)));
+  await Promise.all(
+    paths.map((p) =>
+      // force:true membuat file yang memang sudah tidak ada BUKAN error, jadi
+      // yang sampai ke sini hanya kegagalan sungguhan (mis. EPERM, EBUSY).
+      // Sebelumnya ditelan diam-diam; sekarang dicatat supaya file yatim yang
+      // gagal dibersihkan meninggalkan jejak, tanpa pernah melempar ke pemanggil.
+      fsp.rm(p, { force: true }).catch((err: unknown) => {
+        console.warn(
+          "[safeUpload] gagal menghapus file upload:",
+          p,
+          (err as Error)?.message ?? err,
+        );
+      }),
+    ),
+  );
 }
 
-/** Hapus semua file request. Dipakai di jalur error agar tidak ada file yatim. */
+/**
+ * Hapus SEMUA file yang ditulis request ini. Dipakai di jalur error agar tidak
+ * ada file yatim — file di disk yang tidak ditunjuk baris DB mana pun.
+ *
+ * Aman dipanggil kapan saja setelah multer:
+ * - Menangani ketiga bentuk: req.file (single), req.files array, dan req.files
+ *   objek per-field. Lihat collectFiles(). Tidak perlu tahu ada field apa saja,
+ *   jadi mustahil ada field yang terlewat.
+ * - Memakai f.path, yang di-update in-place oleh commitUploads() sehingga
+ *   selalu menunjuk lokasi terkini entah file masih di staging atau sudah
+ *   dipindah ke public/uploads/<brand>/.
+ * - TIDAK PERNAH melempar, dan tidak pernah menyentuh file lama: req.files
+ *   hanya berisi file yang baru diunggah request ini. File lama yang
+ *   dipertahankan admin dikirim lewat body JSON (existing_gallery dkk).
+ * - Idempoten: force:true membuat file yang sudah hilang bukan error.
+ */
 export async function removeUploadedFiles(req: Request): Promise<void> {
   await unlinkAll(collectFiles(req).map((f) => f.path));
 }

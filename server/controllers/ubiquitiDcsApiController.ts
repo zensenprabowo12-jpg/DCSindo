@@ -1,4 +1,5 @@
 import type { Request, Response } from "express";
+import { removeUploadedFiles } from "../utils/safeUpload";
 import fs from "fs";
 import {
   createUbiquitiDcsProduct,
@@ -36,25 +37,6 @@ function safeDeleteFile(publicPath: string) {
     const fp = filePathFromUbiquitiPublicPath(publicPath);
     if (fp && fs.existsSync(fp)) fs.unlinkSync(fp);
   } catch { /* ignore */ }
-}
-
-/**
- * Semua file yang DITULIS oleh request ini. Dipakai HANYA di jalur gagal.
- *
- * Membaca req.files langsung, bukan variabel per-field. Ubiquiti punya LIMA
- * field upload (main_image, gallery, overview_images, overview_videos,
- * in_the_box) sampai 81 file per request; mendata ulang satu per satu di tiap
- * catch praktis pasti ada yang terlewat.
- *
- * File LAMA aman: yang dipertahankan admin dikirim lewat body JSON
- * (existing_gallery dkk.), tidak pernah lewat req.files.
- */
-function discardRequestUploads(req: Request): void {
-  const files = req.files as Record<string, Express.Multer.File[]> | undefined;
-  if (!files) return;
-  for (const list of Object.values(files)) {
-    for (const f of list) safeDeleteFile(publicPathFromUbiquitiDcsFilename(f.filename));
-  }
 }
 
 // Guard: endpoint admin Ubiquiti butuh role 'admin' (perilaku tidak berubah).
@@ -132,11 +114,11 @@ export async function apiUbiquitiDcsAdminCreate(req: Request, res: Response): Pr
   // ditunjuk baris DB — mengubah error kosmetik jadi kehilangan data.
   let dbCommitted = false;
   try {
-    if (!mainPath) { res.status(400).json({ ok: false, message: "Gambar utama wajib diupload" }); return; }
+    if (!mainPath) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Gambar utama wajib diupload" }); return; }
     const { nama_produk, sku, category, subfilter, deskripsi, is_new } = req.body as Record<string, string>;
-    if (!nama_produk?.trim()) { res.status(400).json({ ok: false, message: "nama_produk wajib" }); return; }
-    if (!sku?.trim()) { res.status(400).json({ ok: false, message: "sku wajib" }); return; }
-    if (!isValidUbiquitiDcsCategory(category ?? "")) { res.status(400).json({ ok: false, message: "Kategori tidak valid" }); return; }
+    if (!nama_produk?.trim()) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "nama_produk wajib" }); return; }
+    if (!sku?.trim()) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "sku wajib" }); return; }
+    if (!isValidUbiquitiDcsCategory(category ?? "")) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Kategori tidak valid" }); return; }
     const canonical = toCanonicalUbiquitiDcsCategory(category)!;
     const bullets = parseJsonField<string[]>(req.body.bullets, []).filter(Boolean).slice(0, 9);
     const technicalSpecs = parseJsonField<any[]>(req.body.technical_specs, []).filter(
@@ -163,7 +145,7 @@ export async function apiUbiquitiDcsAdminCreate(req: Request, res: Response): Pr
     dbCommitted = true;
     res.status(201).json({ ok: true, data: { id } });
   } catch (e) {
-    if (!dbCommitted) discardRequestUploads(req);
+    if (!dbCommitted) await removeUploadedFiles(req);
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
 }
@@ -175,12 +157,12 @@ export async function apiUbiquitiDcsAdminUpdate(req: Request, res: Response): Pr
   let dbCommitted = false;
   try {
     const id = Number.parseInt(String(req.params.id ?? ""), 10);
-    if (!Number.isFinite(id) || id < 1) { res.status(400).json({ ok: false, message: "ID tidak valid" }); return; }
+    if (!Number.isFinite(id) || id < 1) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "ID tidak valid" }); return; }
     const existing = await getUbiquitiDcsProductById(id);
-    if (!existing) { res.status(404).json({ ok: false, message: "Produk tidak ditemukan" }); return; }
+    if (!existing) { await removeUploadedFiles(req); res.status(404).json({ ok: false, message: "Produk tidak ditemukan" }); return; }
 
     const { nama_produk, sku, category, subfilter, deskripsi, is_new } = req.body as Record<string, string>;
-    if (!isValidUbiquitiDcsCategory(category ?? "")) { res.status(400).json({ ok: false, message: "Kategori tidak valid" }); return; }
+    if (!isValidUbiquitiDcsCategory(category ?? "")) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Kategori tidak valid" }); return; }
     const canonical = toCanonicalUbiquitiDcsCategory(category)!;
 
     const mainFiles = (req.files as any)?.main_image as Express.Multer.File[] | undefined;
@@ -225,7 +207,7 @@ export async function apiUbiquitiDcsAdminUpdate(req: Request, res: Response): Pr
     // M-04 tetap utuh: staleMain (foto LAMA, dari DB) hanya dihapus di jalur
     // sukses. Yang dibuang di sini file BARU dari req.files — dua himpunan
     // yang tidak pernah beririsan.
-    if (!dbCommitted) discardRequestUploads(req);
+    if (!dbCommitted) await removeUploadedFiles(req);
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
 }

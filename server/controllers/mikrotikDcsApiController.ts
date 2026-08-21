@@ -1,4 +1,5 @@
 import type { Request, Response } from "express";
+import { removeUploadedFiles } from "../utils/safeUpload";
 import fs from "fs";
 
 type MulterFile = Express.Multer.File;
@@ -46,25 +47,6 @@ function tryUnlinkMany(paths: string[]): void {
       }
     }
   }
-}
-
-/**
- * Semua file yang DITULIS oleh request ini. Dipakai HANYA di jalur gagal.
- *
- * Membaca req.files langsung, bukan variabel path per-field, supaya tidak ada
- * field yang terlewat saat catch ditambah di kemudian hari.
- *
- * File LAMA aman: yang dipertahankan admin dikirim lewat body JSON
- * (existing_gallery), tidak pernah lewat req.files.
- */
-function discardRequestUploads(req: Request): void {
-  const files = (req as Request & { files?: MulterFileMap }).files;
-  if (!files) return;
-  const paths: string[] = [];
-  for (const list of Object.values(files)) {
-    for (const f of list ?? []) paths.push(publicPathFromMikrotikDcsFilename(f.filename));
-  }
-  tryUnlinkMany(paths);
 }
 
 export async function apiMikrotikDcsLogin(
@@ -305,12 +287,14 @@ export async function apiMikrotikDcsAdminCreate(
   const files = (req as Request & { files?: MulterFileMap }).files;
   const main = files?.main_image?.[0];
   if (!main) {
+    await removeUploadedFiles(req);
     res.status(400).json({ ok: false, message: "Gambar utama wajib diupload" });
     return;
   }
   const galleryFiles = files?.gallery ?? [];
   const category = toCanonicalMikrotikDcsCategory(String(body.category ?? ""));
   if (!category) {
+    await removeUploadedFiles(req);
     res.status(400).json({ ok: false, message: "Kategori tidak valid" });
     return;
   }
@@ -324,6 +308,7 @@ export async function apiMikrotikDcsAdminCreate(
   const sku = String(body.sku ?? "").trim();
   const desk = String(body.deskripsi ?? "").trim();
   if (!nama || !sku || !desk) {
+    await removeUploadedFiles(req);
     res.status(400).json({ ok: false, message: "Nama, SKU, dan deskripsi wajib diisi" });
     return;
   }
@@ -351,7 +336,7 @@ export async function apiMikrotikDcsAdminCreate(
     dbCommitted = true;
     res.status(201).json({ ok: true, data: { id: newId } });
   } catch (e: unknown) {
-    if (!dbCommitted) discardRequestUploads(req);
+    if (!dbCommitted) await removeUploadedFiles(req);
     const msg = e instanceof Error ? e.message : "Gagal simpan";
     if ((e as { code?: string }).code === "ER_DUP_ENTRY") {
       // Indeks uniknya komposit — uq_mikrotik_dcs_sku_category (sku, category)
@@ -373,9 +358,13 @@ export async function apiMikrotikDcsAdminUpdate(
 ): Promise<void> {
   if (!requireMikrotikDcsSession(req, res)) return;
   const id = parseIntParam(req.params.id, res);
-  if (id == null) return;
+  if (id == null) {
+    await removeUploadedFiles(req);
+    return;
+  }
   const existing = await getMikrotikDcsProductById(id);
   if (!existing) {
+    await removeUploadedFiles(req);
     res.status(404).json({ ok: false, message: "Produk tidak ditemukan" });
     return;
   }
@@ -386,6 +375,7 @@ export async function apiMikrotikDcsAdminUpdate(
   const galleryFiles = files?.gallery ?? [];
   const category = toCanonicalMikrotikDcsCategory(String(body.category ?? ""));
   if (!category) {
+    await removeUploadedFiles(req);
     res.status(400).json({ ok: false, message: "Kategori tidak valid" });
     return;
   }
@@ -399,6 +389,7 @@ export async function apiMikrotikDcsAdminUpdate(
   const sku = String(body.sku ?? "").trim();
   const desk = String(body.deskripsi ?? "").trim();
   if (!nama || !sku || !desk) {
+    await removeUploadedFiles(req);
     res.status(400).json({ ok: false, message: "Nama, SKU, dan deskripsi wajib diisi" });
     return;
   }
@@ -465,7 +456,7 @@ export async function apiMikrotikDcsAdminUpdate(
     // M-04 tetap utuh: staleFiles (file LAMA, dari DB) hanya dihapus di jalur
     // sukses. Yang dibuang di sini file BARU dari req.files — dua himpunan
     // yang tidak pernah beririsan.
-    if (!dbCommitted) discardRequestUploads(req);
+    if (!dbCommitted) await removeUploadedFiles(req);
     const msg = e instanceof Error ? e.message : "Gagal update";
     if ((e as { code?: string }).code === "ER_DUP_ENTRY") {
       // Sama persis dengan jalur create di atas: bentroknya pada pasangan

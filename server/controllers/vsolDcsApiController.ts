@@ -1,4 +1,5 @@
 import type { Request, Response } from "express";
+import { removeUploadedFiles } from "../utils/safeUpload";
 import fs from "fs";
 import {
   createVsolDcsProduct,
@@ -36,25 +37,6 @@ function safeDeleteFile(publicPath: string) {
     const fp = filePathFromVsolPublicPath(publicPath);
     if (fp && fs.existsSync(fp)) fs.unlinkSync(fp);
   } catch { /* ignore */ }
-}
-
-/**
- * Semua file yang DITULIS oleh request ini. Dipakai HANYA di jalur gagal.
- *
- * Membaca req.files langsung, bukan variabel per-field, karena dua alasan:
- * variabel path baru dideklarasikan di dalam blok try sehingga tidak terlihat
- * dari catch, dan pendataan manual per-field mudah ketinggalan satu (V-SOL
- * punya tiga, Ubiquiti lima) sehingga kebocorannya kembali tanpa terlihat.
- *
- * File LAMA aman: yang dipertahankan admin dikirim lewat body JSON
- * (existing_gallery, existing_in_the_box), tidak pernah lewat req.files.
- */
-function discardRequestUploads(req: Request): void {
-  const files = req.files as Record<string, Express.Multer.File[]> | undefined;
-  if (!files) return;
-  for (const list of Object.values(files)) {
-    for (const f of list) safeDeleteFile(publicPathFromVsolDcsFilename(f.filename));
-  }
 }
 
 // M-07: MariaDB melempar errno 1062 / code ER_DUP_ENTRY saat SKU menabrak
@@ -141,11 +123,11 @@ export async function apiVsolDcsAdminCreate(req: Request, res: Response): Promis
   // ditunjuk baris DB — mengubah error kosmetik jadi kehilangan data.
   let dbCommitted = false;
   try {
-    if (!mainPath) { res.status(400).json({ ok: false, message: "Main image is required" }); return; }
+    if (!mainPath) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Main image is required" }); return; }
     const { nama_produk, sku, category, subfilter, deskripsi, is_new } = req.body as Record<string, string>;
-    if (!nama_produk?.trim()) { res.status(400).json({ ok: false, message: "nama_produk is required" }); return; }
-    if (!sku?.trim()) { res.status(400).json({ ok: false, message: "sku is required" }); return; }
-    if (!isValidVsolDcsCategory(category ?? "")) { res.status(400).json({ ok: false, message: "Invalid category" }); return; }
+    if (!nama_produk?.trim()) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "nama_produk is required" }); return; }
+    if (!sku?.trim()) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "sku is required" }); return; }
+    if (!isValidVsolDcsCategory(category ?? "")) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Invalid category" }); return; }
     const canonical = toCanonicalVsolDcsCategory(category)!;
     const bullets = parseJsonField<string[]>(req.body.bullets, []).filter(Boolean).slice(0, 9);
 
@@ -174,7 +156,7 @@ export async function apiVsolDcsAdminCreate(req: Request, res: Response): Promis
     dbCommitted = true;
     res.status(201).json({ ok: true, data: { id } });
   } catch (e) {
-    if (!dbCommitted) discardRequestUploads(req);
+    if (!dbCommitted) await removeUploadedFiles(req);
     if (isDuplicateEntryError(e)) {
       res.status(400).json({ ok: false, message: "SKU sudah dipakai produk lain" });
       return;
@@ -190,12 +172,12 @@ export async function apiVsolDcsAdminUpdate(req: Request, res: Response): Promis
   let dbCommitted = false;
   try {
     const id = Number.parseInt(String(req.params.id ?? ""), 10);
-    if (!Number.isFinite(id) || id < 1) { res.status(400).json({ ok: false, message: "Invalid ID" }); return; }
+    if (!Number.isFinite(id) || id < 1) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Invalid ID" }); return; }
     const existing = await getVsolDcsProductById(id);
-    if (!existing) { res.status(404).json({ ok: false, message: "Product not found" }); return; }
+    if (!existing) { await removeUploadedFiles(req); res.status(404).json({ ok: false, message: "Product not found" }); return; }
 
     const { nama_produk, sku, category, subfilter, deskripsi, is_new } = req.body as Record<string, string>;
-    if (!isValidVsolDcsCategory(category ?? "")) { res.status(400).json({ ok: false, message: "Invalid category" }); return; }
+    if (!isValidVsolDcsCategory(category ?? "")) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Invalid category" }); return; }
     const canonical = toCanonicalVsolDcsCategory(category)!;
 
     const mainFiles = (req.files as any)?.main_image as Express.Multer.File[] | undefined;
@@ -241,7 +223,7 @@ export async function apiVsolDcsAdminUpdate(req: Request, res: Response): Promis
     // M-04 tetap utuh: staleMain (foto LAMA, dari DB) hanya dihapus di jalur
     // sukses. Yang dibuang di sini file BARU dari req.files — dua himpunan
     // yang tidak pernah beririsan.
-    if (!dbCommitted) discardRequestUploads(req);
+    if (!dbCommitted) await removeUploadedFiles(req);
     if (isDuplicateEntryError(e)) {
       res.status(400).json({ ok: false, message: "SKU sudah dipakai produk lain" });
       return;
