@@ -2,7 +2,7 @@
 
 ### Konfigurasi Environment
 
-Salin `env.example` menjadi `.env`, lalu sesuaikan nilai-nilainya (terutama MySQL dan `SESSION_SECRET`).
+Salin `env.example` menjadi `.env`, lalu sesuaikan nilai-nilainya (terutama koneksi database dan `SESSION_SECRET`).
 
 ```bash
 copy env.example .env
@@ -44,6 +44,6 @@ pm2 logs dcsindo
 ### Catatan koneksi database
 
 - **Client (React)** tidak perlu akses langsung ke MySQL.
-- **Backend (Express)** yang melakukan koneksi ke MySQL menggunakan env `MYSQL_HOST/MYSQL_PORT/...`.
-- Jika MySQL berada di mesin/server yang sama dengan backend, `MYSQL_HOST=localhost` adalah pilihan yang benar.
+- **Backend (Express)** yang melakukan koneksi ke database menggunakan env `DB_HOST/DB_PORT/DB_USER/DB_PASSWORD/DB_NAME` (atau `DB_SOCKET` bila memakai UNIX socket).
+- Jika database berada di mesin/server yang sama dengan backend, `DB_HOST=localhost` adalah pilihan yang benar.
 

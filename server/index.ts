@@ -230,6 +230,25 @@ app.use(errorSanitizer);
     console.error("[visitorLog] setup saat startup gagal:", (e as Error).message);
   }
 
+  // importantly only setup vite in development and after
+  // setting up all the other routes so the catch-all route
+  // doesn't interfere with the other routes
+  if (process.env.NODE_ENV === "production") {
+    serveStatic(app);
+  } else {
+    const { setupVite } = await import("./vite");
+    await setupVite(httpServer, app);
+  }
+
+  // L-04: error handler HARUS terdaftar paling akhir.
+  //
+  // Express hanya meneruskan error ke middleware error yang didaftarkan SESUDAH
+  // layer yang melempar. Sebelumnya blok ini ada di ATAS serveStatic/setupVite,
+  // sehingga error yang lahir di dalam catch-all SPA — index.html hilang,
+  // sendFile gagal izin — melewati handler ini dan jatuh ke handler bawaan
+  // Express: balasannya halaman HTML berisi stack trace dengan path absolut
+  // server, dan console.error di bawah tidak pernah jalan sehingga tidak ada
+  // jejaknya di log PM2. Logikanya sendiri tidak diubah sama sekali.
   app.use((err: any, _req: Request, res: Response, next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
     const message = err.message || "Internal Server Error";
@@ -246,16 +265,6 @@ app.use(errorSanitizer);
 
     return res.status(status).json({ message });
   });
-
-  // importantly only setup vite in development and after
-  // setting up all the other routes so the catch-all route
-  // doesn't interfere with the other routes
-  if (process.env.NODE_ENV === "production") {
-    serveStatic(app);
-  } else {
-    const { setupVite } = await import("./vite");
-    await setupVite(httpServer, app);
-  }
 
   // ALWAYS serve the app on the port specified in the environment variable PORT
   // Other ports are firewalled. Default to 5000 if not specified.
