@@ -1,11 +1,16 @@
 import type { RequestHandler } from "express";
 
 /**
- * H-06 Tahap 2 Fase A — Content Security Policy, MODE LAPORAN SAJA.
+ * H-06 Tahap 2 Fase B — Content Security Policy, MODE ENFORCE.
  *
- * Header yang dikirim adalah `Content-Security-Policy-Report-Only`: browser
- * mengevaluasi seluruh policy tetapi TIDAK memblokir apa pun, hanya melapor ke
- * `report-uri`. Fase B (mode enforce) menyusul setelah laporannya bersih.
+ * Header yang dikirim adalah `Content-Security-Policy`: browser sekarang
+ * BENAR-BENAR MEMBLOKIR apa pun yang melanggar policy di bawah, bukan lagi
+ * sekadar melapor. Fase A (Report-Only) sudah lewat: laporannya bersih setelah
+ * whitelist frame-src ditambal di 337fc88.
+ *
+ * `report-uri` sengaja DIPERTAHANKAN. Dalam mode enforce ia tetap mengirim
+ * laporan untuk setiap request yang diblokir — jadi kalau ada sumber yang
+ * terlewat, kita melihatnya di log alih-alih menebak dari keluhan pengguna.
  *
  * Setiap sumber di bawah sudah diverifikasi terhadap `dist/` hasil build, bukan
  * dikira-kira dari kode sumber.
@@ -84,10 +89,13 @@ const DIRECTIVES: Record<string, string> = {
 export const CSP_REPORT_PATH = "/api/csp-report";
 
 /**
- * `upgrade-insecure-requests` SENGAJA belum ada di sini: direktif itu diabaikan
- * browser dalam mode Report-Only. Tempatnya di Fase B.
+ * `upgrade-insecure-requests` masih SENGAJA belum ada. Alasannya berubah: dulu
+ * karena Report-Only mengabaikannya, sekarang karena menambahkannya adalah
+ * perubahan direktif tersendiri — ia menulis ulang setiap URL http:// menjadi
+ * https://, termasuk milik pihak ketiga, dan itu perlu audit mixed-content
+ * sendiri. Flip ini sengaja hanya mengganti nama header, tidak lebih.
  */
-export const CSP_REPORT_ONLY_POLICY = [
+export const CSP_POLICY = [
   ...Object.entries(DIRECTIVES).map(([name, value]) => `${name} ${value}`),
   `report-uri ${CSP_REPORT_PATH}`,
 ].join("; ");
@@ -95,13 +103,15 @@ export const CSP_REPORT_ONLY_POLICY = [
 const IS_PROD = process.env.NODE_ENV === "production";
 
 /**
- * Digate ke production. Vite dev butuh script inline dan WebSocket HMR; policy
- * ini akan membuat layar putih di komputer developer. Keputusannya diambil
- * sekali saat modul dimuat, jadi mode dev tidak menanggung biaya per-request.
+ * Digate ke production, dan sekarang gate itu jauh lebih penting: dalam mode
+ * enforce, policy ini akan benar-benar membuat layar putih di komputer
+ * developer karena Vite dev butuh script inline dan WebSocket HMR. Keputusannya
+ * diambil sekali saat modul dimuat, jadi mode dev tidak menanggung biaya
+ * per-request.
  */
-export const cspReportOnly: RequestHandler = IS_PROD
+export const csp: RequestHandler = IS_PROD
   ? (_req, res, next) => {
-      res.setHeader("Content-Security-Policy-Report-Only", CSP_REPORT_ONLY_POLICY);
+      res.setHeader("Content-Security-Policy", CSP_POLICY);
       next();
     }
   : (_req, _res, next) => next();

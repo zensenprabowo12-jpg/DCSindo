@@ -10,7 +10,7 @@ import { ensureVisitorLogTable } from "./models/visitorLogModel";
 import { startVisitorLogPruneJob } from "./jobs/visitorLogPrune";
 import { visitorTracker, preloadGeoip } from "./middleware/visitorTracker";
 import { correlationId, errorSanitizer } from "./middleware/errorSanitizer";
-import { cspReportOnly } from "./middleware/csp";
+import { csp } from "./middleware/csp";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
@@ -77,7 +77,7 @@ app.use((_req, res, next) => {
 //
 // Middleware-nya sendiri yang memutuskan aktif atau tidak berdasarkan
 // NODE_ENV; di mode dev ia hanya meneruskan request.
-app.use(cspReportOnly);
+app.use(csp);
 
 /**
  * Session store persisten di MySQL (express-mysql-session).
