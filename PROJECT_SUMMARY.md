@@ -181,8 +181,13 @@ Browser (fetch /api/...)
   const success = username === ADMIN_USER && password === ADMIN_PASS;
   ```
 - `.env`: `ADMIN_USER`, `ADMIN_PASS` (fallback hard-coded di kode bila tak diset).
-- Endpoint auth **hanya** ada di modul MikroTik (dipakai bersama semua brand):
-  `POST /api/mikrotik-dcs/auth/login`, `POST .../auth/logout`, `GET .../auth/me`.
+- Endpoint auth standar ada di modul **netral** `/api/auth` (dipakai semua brand):
+  `POST /api/auth/login`, `POST /api/auth/logout`, `GET /api/auth/me`.
+- Warisan: `POST /api/mikrotik-dcs/auth/login` dan `.../auth/logout` masih
+  terdaftar sebagai **alias lama**. Keduanya memakai `performLogin()` dan
+  instance rate limit H-02 yang sama dengan endpoint standar, dan tidak
+  dipanggil klien mana pun. `GET .../auth/me` per-brand **sudah dihapus** (L-01),
+  begitu pula milik Ubiquiti dan V-SOL.
 
 ### Sesi: express-session + memorystore (RAM)
 - Konfigurasi di `server/index.ts`:
@@ -215,7 +220,7 @@ function requireAdminSession(req, res): boolean {
 
 ### Frontend: dua mekanisme (tidak konsisten)
 1. **`authGate.ts`** — variabel boolean `authedThisSession` di RAM browser. **Reset tiap refresh**. Dipakai `Dashboard.tsx` (`/admin`).
-2. **`ProtectedRoute.tsx`** (versi mikrotik/ubiquiti/vsol) — memanggil `GET /api/mikrotik-dcs/auth/me`; kalau `authed=false` → redirect `/admin/login`. Ini sumber kebenaran sebenarnya (cek cookie server).
+2. **`ProtectedRoute.tsx`** (versi mikrotik/ubiquiti/vsol/firmware) — sekarang pembungkus tipis `admin/RequireRole.tsx`, yang lewat `admin/session.ts` memanggil `GET /api/auth/me`; kalau `authed=false` → redirect `/admin/login`. Ini sumber kebenaran sebenarnya (cek cookie server).
 
 > ⚠️ Karena `authGate` reset saat refresh, refresh halaman di `/admin` bisa melempar user ke login walau cookie session masih valid.
 
@@ -262,13 +267,13 @@ Semua route didefinisikan di `client/src/App.tsx` dalam `<Switch>`. **Urutan pen
 ### Komponen kunci
 | Komponen | Fungsi |
 |---|---|
-| `admin/Login.tsx` | Form login bersama → `POST /api/mikrotik-dcs/auth/login` → `markAdminAuthedSession()` → `/admin` |
+| `admin/Login.tsx` | Form login bersama → `POST /api/auth/login` → `markAdminAuthedSession()` → `roleHome(role)` |
 | `admin/Dashboard.tsx` | Landing admin; cek `isAdminAuthedSession()`, kartu brand + jumlah produk, tombol logout |
 | `admin/NavBar.tsx` | Tab navigasi admin lintas brand + tombol Logout/Website |
 | `admin/authGate.ts` | Gate auth in-memory (`mark/clear/isAdminAuthedSession`) |
 | `<brand>/admin/Dashboard.tsx` | List produk brand + aksi CRUD + reorder |
 | `<brand>/admin/ProductForm.tsx` | Form tambah/edit produk (kirim `FormData` multipart) |
-| `<brand>/admin/ProtectedRoute.tsx` | Pembungkus halaman; cek `/auth/me`, redirect bila belum login |
+| `<brand>/admin/ProtectedRoute.tsx` | Pembungkus halaman; delegasi ke `RequireRole` → cek `GET /api/auth/me`, redirect bila belum login |
 | `<brand>/api.ts` | Wrapper `fetch` semua endpoint brand (`credentials:"include"`, helper `j()` deteksi HTML, `safe()` bungkus error) |
 | `admin/training/TrainingForm.tsx` | Form training (field kompleks + upload thumbnail/QR/galeri) |
 | `lib/queryClient.ts` | Konfigurasi react-query |
@@ -294,7 +299,6 @@ export async function apiXxx(req, res) {
 
 ### Pola endpoint (per modul, mis. `/api/mikrotik-dcs`)
 ```
-POST   /auth/login            POST   /auth/logout         GET /auth/me
 GET    /admin/activity-log
 GET    /public/products       GET    /public/products/:id
 GET    /meta/categories
@@ -303,6 +307,8 @@ POST   /admin/products        PUT    /admin/products/:id   DELETE /admin/product
 POST   /admin/products/reorder
 ```
 - `/public/*` & `/meta/*` = tanpa auth; `/admin/*` = wajib guard.
+- Auth **tidak lagi** bagian dari pola per-modul: pakai `/api/auth/*` yang netral.
+  Hanya MikroTik yang masih menyisakan alias lama `/auth/login` + `/auth/logout`.
 - Method: GET (baca), POST (create/login/reorder), PUT (update), DELETE (hapus).
 
 ### Cara CRUD — multipart + JSON string
@@ -339,8 +345,8 @@ POST   /admin/products/reorder
 1. **Sesi di RAM (memorystore)** → tiap restart/deploy = **semua user ter-logout**, tidak persist, tidak share antar instance. Untuk multi-role produksi sebaiknya pindah ke session store persisten (MySQL).
 2. **Password plaintext** di `.env`, dibandingkan string langsung — **belum ada hashing**. Tambah **bcrypt** saat membuat tabel `users`.
 3. **Satu flag sesi (`mikrotikDcsAdmin`) untuk semua brand & training** → tidak ada pemisahan hak akses. Ganti dengan `req.session.role` + guard berbasis role.
-4. **Auth frontend dobel & tidak konsisten** (`authGate` in-memory vs `/auth/me`) → refresh bisa melempar ke login.
-5. **Penamaan menyesatkan**: endpoint auth global hidup di modul **MikroTik** (`/api/mikrotik-dcs/auth/*`, flag `mikrotikDcsAdmin`) walau dipakai semua brand. Saat menambah auth role, pertimbangkan endpoint `/api/auth/*` yang netral.
+4. **Auth frontend dobel & tidak konsisten** (`authGate` in-memory vs `GET /api/auth/me`) → refresh bisa melempar ke login. `authGate` masih dipanggil `Login.tsx` demi kompatibilitas halaman lama.
+5. ~~**Penamaan menyesatkan**: endpoint auth global hidup di modul MikroTik~~ — **sudah dibereskan**. Auth pindah ke `/api/auth/*` yang netral; `/auth/me` per-brand dihapus di L-01. Sisa: alias lama `/api/mikrotik-dcs/auth/login` + `/auth/logout` masih terdaftar (tanpa pemanggil), menunggu keputusan hapus. Flag sesi `mikrotikDcsAdmin` sengaja dipertahankan agar sesi lama tetap valid.
 6. **DDL `training_sessions` & `training_syllabus` tidak ada di folder `database/`** → setup environment baru bisa gagal sebelum tabel dibuat manual.
 7. **Dependency warisan belum dipakai** (`drizzle`, `pg`, `passport`, `connect-pg-simple`) — jangan diasumsikan aktif.
 

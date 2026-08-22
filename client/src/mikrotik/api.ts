@@ -28,31 +28,6 @@ async function safe<T>(fn: () => Promise<T>): Promise<T | ApiErr> {
   }
 }
 
-export async function apiLogin(
-  username: string,
-  password: string,
-): Promise<ApiOk<{ username: string }> | ApiErr> {
-  return safe(async () => {
-    const res = await fetch(`${BASE}/auth/login`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      credentials: "include",
-      body: JSON.stringify({ username, password }),
-    });
-    return j(res);
-  }) as Promise<ApiOk<{ username: string }> | ApiErr>;
-}
-
-export async function apiLogout(): Promise<ApiOk<unknown> | ApiErr> {
-  return safe(async () => {
-    const res = await fetch(`${BASE}/auth/logout`, {
-      method: "POST",
-      credentials: "include",
-    });
-    return j(res);
-  }) as Promise<ApiOk<unknown> | ApiErr>;
-}
-
 type ListParams = { category?: string; sort?: "latest" | "oldest" | "custom" };
 
 export async function apiPublicProducts(
