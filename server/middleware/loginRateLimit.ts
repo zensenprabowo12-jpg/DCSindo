@@ -12,10 +12,12 @@ import type { Request } from "express";
  *                              banyak IP; lapis per-IP sama sekali tidak
  *                              melindungi dari pola itu.
  *
- * Keduanya diekspor sebagai instance TUNGGAL dan dipasang di kedua endpoint
- * login (/api/auth/login dan alias lama /api/mikrotik-dcs/auth/login). Ini
- * disengaja: kalau tiap endpoint punya limiter sendiri, penyerang cukup
- * menyelang-nyeling kedua URL untuk mendapat jatah dua kali lipat.
+ * Keduanya diekspor sebagai instance TUNGGAL. Sekarang hanya ada satu pintu
+ * login (/api/auth/login) — alias lama /api/mikrotik-dcs/auth/login sudah
+ * dihapus — tapi bentuk singleton ini sengaja dipertahankan: kalau suatu saat
+ * ada endpoint login kedua, ia HARUS memakai instance yang sama. Limiter
+ * terpisah per endpoint berarti penyerang cukup menyelang-nyeling kedua URL
+ * untuk mendapat jatah dua kali lipat.
  *
  * Store memakai memori proses. Itu benar SELAMA PM2 berjalan fork mode satu
  * instance (`pm2 start dist/index.cjs --name dcsindo`, tanpa flag -i). Kalau

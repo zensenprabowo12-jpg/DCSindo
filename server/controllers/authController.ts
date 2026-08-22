@@ -27,8 +27,10 @@ function getClientIp(req: Request): string | null {
 }
 
 /**
- * Logika login inti (dipakai endpoint baru /api/auth/login DAN endpoint lama
- * /api/mikrotik-dcs/auth/login agar tidak ada duplikasi).
+ * Logika login inti. Dulu dipakai berdua dengan alias lama
+ * /api/mikrotik-dcs/auth/login; alias itu sudah dihapus, jadi sekarang
+ * /api/auth/login satu-satunya pemanggil. Tetap dipisah dari handler-nya
+ * supaya penambahan pintu login berikutnya tidak menyalin logikanya lagi.
  *
  * - Verifikasi username+password ke tabel `users` (bcrypt).
  * - Kalau sukses: set sesi (userId, username, role) + `mikrotikDcsAdmin=true`

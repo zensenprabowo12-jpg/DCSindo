@@ -8,8 +8,6 @@ import {
   apiMikrotikDcsAdminList,
   apiMikrotikDcsAdminReorder,
   apiMikrotikDcsAdminUpdate,
-  apiMikrotikDcsLogin,
-  apiMikrotikDcsLogout,
   apiMikrotikDcsMetaCategories,
   apiMikrotikDcsPublicGet,
   apiMikrotikDcsPublicList,
@@ -22,7 +20,6 @@ import {
 } from "../middleware/uploadMikrotikDcs";
 import { uploadErrorMessage } from "../utils/safeUpload";
 import { requireRoleMw } from "../middleware/requireRole";
-import { loginIpRateLimit, loginUsernameRateLimit } from "../middleware/loginRateLimit";
 
 function withMultipart(
   api: (req: Request, res: Response) => void | Promise<void>,
@@ -64,17 +61,9 @@ export function registerMikrotikDcsRoutes(app: Express): void {
   // Guard SEBELUM multer — lihat C-04 Step 8.
   const uploadGuard = requireRoleMw("admin");
 
-  // H-02: instance limiter yang SAMA dengan /api/auth/login, supaya counter-nya
-  // satu. Limiter terpisah per endpoint berarti jatah dua kali lipat bagi
-  // penyerang yang menyelang-nyeling kedua URL.
-  app.post(
-    `${base}/auth/login`,
-    loginIpRateLimit,
-    express.json(),
-    loginUsernameRateLimit,
-    apiMikrotikDcsLogin,
-  );
-  app.post(`${base}/auth/logout`, apiMikrotikDcsLogout);
+  // Auth tidak lagi ada di modul ini: alias lama `/auth/login` + `/auth/logout`
+  // dihapus setelah access log 30 hari menunjukkan nol permintaan. Satu-satunya
+  // pintu login sekarang /api/auth/login, lengkap dengan rate limit H-02.
   app.get(`${base}/admin/activity-log`, apiMikrotikDcsActivityLog);
 
   app.get(`${base}/public/products`, apiMikrotikDcsPublicList);

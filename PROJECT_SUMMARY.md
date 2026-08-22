@@ -183,11 +183,10 @@ Browser (fetch /api/...)
 - `.env`: `ADMIN_USER`, `ADMIN_PASS` (fallback hard-coded di kode bila tak diset).
 - Endpoint auth standar ada di modul **netral** `/api/auth` (dipakai semua brand):
   `POST /api/auth/login`, `POST /api/auth/logout`, `GET /api/auth/me`.
-- Warisan: `POST /api/mikrotik-dcs/auth/login` dan `.../auth/logout` masih
-  terdaftar sebagai **alias lama**. Keduanya memakai `performLogin()` dan
-  instance rate limit H-02 yang sama dengan endpoint standar, dan tidak
-  dipanggil klien mana pun. `GET .../auth/me` per-brand **sudah dihapus** (L-01),
-  begitu pula milik Ubiquiti dan V-SOL.
+- Tidak ada lagi endpoint auth per-brand. `GET .../auth/me` milik MikroTik,
+  Ubiquiti, dan V-SOL dihapus di L-01; alias `POST /api/mikrotik-dcs/auth/login`
+  dan `.../auth/logout` dihapus di Step B setelah access log 30 hari menunjukkan
+  nol permintaan. `/api/auth/login` kini satu-satunya pintu login.
 
 ### Sesi: express-session + memorystore (RAM)
 - Konfigurasi di `server/index.ts`:
@@ -307,8 +306,8 @@ POST   /admin/products        PUT    /admin/products/:id   DELETE /admin/product
 POST   /admin/products/reorder
 ```
 - `/public/*` & `/meta/*` = tanpa auth; `/admin/*` = wajib guard.
-- Auth **tidak lagi** bagian dari pola per-modul: pakai `/api/auth/*` yang netral.
-  Hanya MikroTik yang masih menyisakan alias lama `/auth/login` + `/auth/logout`.
+- Auth **tidak lagi** bagian dari pola per-modul: seluruhnya di `/api/auth/*`
+  yang netral. Tidak ada sisa alias auth di modul brand mana pun.
 - Method: GET (baca), POST (create/login/reorder), PUT (update), DELETE (hapus).
 
 ### Cara CRUD — multipart + JSON string
@@ -346,7 +345,7 @@ POST   /admin/products/reorder
 2. **Password plaintext** di `.env`, dibandingkan string langsung — **belum ada hashing**. Tambah **bcrypt** saat membuat tabel `users`.
 3. **Satu flag sesi (`mikrotikDcsAdmin`) untuk semua brand & training** → tidak ada pemisahan hak akses. Ganti dengan `req.session.role` + guard berbasis role.
 4. **Auth frontend dobel & tidak konsisten** (`authGate` in-memory vs `GET /api/auth/me`) → refresh bisa melempar ke login. `authGate` masih dipanggil `Login.tsx` demi kompatibilitas halaman lama.
-5. ~~**Penamaan menyesatkan**: endpoint auth global hidup di modul MikroTik~~ — **sudah dibereskan**. Auth pindah ke `/api/auth/*` yang netral; `/auth/me` per-brand dihapus di L-01. Sisa: alias lama `/api/mikrotik-dcs/auth/login` + `/auth/logout` masih terdaftar (tanpa pemanggil), menunggu keputusan hapus. Flag sesi `mikrotikDcsAdmin` sengaja dipertahankan agar sesi lama tetap valid.
+5. ~~**Penamaan menyesatkan**: endpoint auth global hidup di modul MikroTik~~ — **selesai**. Seluruh auth pindah ke `/api/auth/*` yang netral: `/auth/me` per-brand dihapus di L-01, alias login/logout MikroTik dihapus di Step B. Flag sesi `mikrotikDcsAdmin` sengaja **dipertahankan** — masih dibaca `requireRole.ts` dan `/api/auth/me`, jadi sesi lama tetap valid.
 6. **DDL `training_sessions` & `training_syllabus` tidak ada di folder `database/`** → setup environment baru bisa gagal sebelum tabel dibuat manual.
 7. **Dependency warisan belum dipakai** (`drizzle`, `pg`, `passport`, `connect-pg-simple`) — jangan diasumsikan aktif.
 

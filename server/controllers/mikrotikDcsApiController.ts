@@ -15,7 +15,6 @@ import {
   updateMikrotikDcsProduct,
 } from "../models/mikrotikDcsProductModel";
 import { listAdminLoginAttempts } from "../models/adminActivityLogModel";
-import { performLogin } from "./authController";
 import { requireRole } from "../middleware/requireRole";
 
 // Guard: semua endpoint admin MikroTik butuh role 'admin' (perilaku tidak berubah).
@@ -49,21 +48,6 @@ function tryUnlinkMany(paths: string[]): void {
   }
 }
 
-export async function apiMikrotikDcsLogin(
-  req: Request,
-  res: Response,
-): Promise<void> {
-  // Alias kompatibilitas: pakai logika login terpusat (tabel users + bcrypt).
-  // Bentuk respons dipertahankan { ok, data:{ username } } agar frontend lama tidak putus.
-  const { username, password } = (req.body ?? {}) as { username?: string; password?: string };
-  const result = await performLogin(req, username, password);
-  if (result.ok) {
-    res.json({ ok: true, data: { username: result.user.username } });
-    return;
-  }
-  res.status(401).json({ ok: false, message: result.message });
-}
-
 /** Admin: daftar log percobaan login. */
 export async function apiMikrotikDcsActivityLog(
   req: Request,
@@ -76,15 +60,6 @@ export async function apiMikrotikDcsActivityLog(
   } catch (e) {
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
-}
-
-export function apiMikrotikDcsLogout(req: Request, res: Response) {
-  req.session.destroy((err) => {
-    if (err) {
-      return res.status(500).json({ ok: false, message: "Gagal logout" });
-    }
-    res.json({ ok: true });
-  });
 }
 
 /** Publik: daftar (filter + sort) */
