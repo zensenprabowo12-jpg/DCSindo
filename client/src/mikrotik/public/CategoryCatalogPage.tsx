@@ -99,7 +99,7 @@ export default function MikrotikCategoryCatalogPage() {
     return (
       <Layout>
         <div style={{ padding: "80px 24px", textAlign: "center", color: "rgba(232,228,220,0.5)" }}>
-          Memuat…
+          Loading…
         </div>
       </Layout>
     );
@@ -285,13 +285,13 @@ export default function MikrotikCategoryCatalogPage() {
                         animation: "pulse 1.2s infinite",
                       }}
                     />
-                    Memuat produk…
+                    Loading products…
                   </div>
                 </div>
               ) : list.length === 0 ? (
                 <div style={{ textAlign: "center", padding: "60px 0" }}>
                   <p style={{ fontSize: 14, color: "rgba(232,228,220,0.45)", fontFamily: "monospace", letterSpacing: "0.08em" }}>
-                    No products found in this category.
+                    No products to display.
                   </p>
                 </div>
               ) : (

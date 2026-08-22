@@ -8,6 +8,9 @@ import { apiFiberHomeProducts } from "./api";
 import { categorySlug, groupByCategory } from "./category";
 import HeroFiberOptik from "./hero-variants/HeroFiberOptik";
 import type { FiberHomeProduct } from "./types";
+import CatalogSkeleton from "@/components/catalog/CatalogSkeleton";
+import CatalogEmpty from "@/components/catalog/CatalogEmpty";
+import CatalogError from "@/components/catalog/CatalogError";
 
 /** Di atas jumlah ini, chip kategori discroll horizontal (Miller's Law). */
 const MAX_VISIBLE_CHIPS = 5;
@@ -16,20 +19,6 @@ const ALL = "";
 
 function readCategoryParam(): string {
   return new URLSearchParams(window.location.search).get("category")?.trim().toLowerCase() ?? ALL;
-}
-
-/** Skeleton mengikuti struktur ProductCard; pola sama dengan katalog Ubiquiti. */
-function ProductCardSkeleton() {
-  return (
-    <div className="rounded-2xl border border-border bg-card overflow-hidden animate-pulse">
-      <div className="aspect-square bg-secondary/30" />
-      <div className="p-5 space-y-2">
-        <div className="h-4 bg-secondary/40 rounded w-3/4" />
-        <div className="h-3 bg-secondary/30 rounded w-1/2" />
-        <div className="h-3 bg-secondary/30 rounded w-full !mt-4" />
-      </div>
-    </div>
-  );
 }
 
 function ProductCard({ p }: { p: FiberHomeProduct }) {
@@ -211,13 +200,9 @@ export default function FiberHomePage() {
       {/* Product list */}
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl font-black tracking-tight mb-8">Produk</h2>
+          <h2 className="text-2xl font-black tracking-tight mb-8">Products</h2>
 
-          {err && (
-            <div className="mb-6 rounded-xl border border-red-200 bg-red-50 text-red-800 dark:bg-red-950/30 dark:text-red-200 dark:border-red-900 px-4 py-3 text-sm">
-              {err}
-            </div>
-          )}
+          {err && <CatalogError />}
 
           {/* Skeleton chip saat loading; chip disembunyikan kalau kategorinya cuma satu. */}
           {loading ? (
@@ -236,7 +221,7 @@ export default function FiberHomePage() {
                     : "flex-wrap",
                 )}
               >
-                {[[ALL, "Semua"] as const, ...groups.map(([c]) => [categorySlug(c), c] as const)].map(
+                {[[ALL, "All"] as const, ...groups.map(([c]) => [categorySlug(c), c] as const)].map(
                   ([slug, label]) => (
                     <button
                       key={slug || "all"}
@@ -258,13 +243,9 @@ export default function FiberHomePage() {
           )}
 
           {loading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[0, 1, 2].map((i) => (
-                <ProductCardSkeleton key={i} />
-              ))}
-            </div>
+            <CatalogSkeleton />
           ) : list.length === 0 ? (
-            <p className="text-muted-foreground">Belum ada produk.</p>
+            <CatalogEmpty />
           ) : (
             <div className="space-y-12">
               {shown.map(([category, products]) => (

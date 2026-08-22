@@ -5,6 +5,9 @@ import { VSOL_DCS_CATEGORIES } from "../categories";
 import { apiVsolPublicProducts } from "../api";
 import type { VsolDcsProduct } from "../types";
 import { cn } from "@/lib/utils";
+import CatalogSkeleton from "@/components/catalog/CatalogSkeleton";
+import CatalogEmpty from "@/components/catalog/CatalogEmpty";
+import CatalogError from "@/components/catalog/CatalogError";
 
 export default function VsolDcsStoreCatalog() {
   const [list, setList] = useState<VsolDcsProduct[]>([]);
@@ -73,16 +76,12 @@ export default function VsolDcsStoreCatalog() {
             </div>
           </div>
 
-          {err && (
-            <div className="mb-6 rounded-xl border border-red-200 bg-red-50 text-red-800 dark:bg-red-950/30 dark:text-red-200 dark:border-red-900 px-4 py-3 text-sm">
-              {err}
-            </div>
-          )}
+          {err && <CatalogError />}
 
           {loading ? (
-            <p className="text-muted-foreground">Loading catalog…</p>
+            <CatalogSkeleton />
           ) : list.length === 0 ? (
-            <p className="text-muted-foreground">No products found.</p>
+            <CatalogEmpty />
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {list.map((p) => (

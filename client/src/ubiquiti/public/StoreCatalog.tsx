@@ -4,6 +4,9 @@ import Layout from "@/components/layout";
 import { UBIQUITI_DCS_CATEGORIES } from "../categories";
 import { apiUbiquitiPublicProducts } from "../api";
 import type { UbiquitiDcsProduct } from "../types";
+import CatalogSkeleton from "@/components/catalog/CatalogSkeleton";
+import CatalogEmpty from "@/components/catalog/CatalogEmpty";
+import CatalogError from "@/components/catalog/CatalogError";
 
 export default function UbiquitiDcsStoreCatalog() {
   const search = useSearch();
@@ -37,7 +40,7 @@ export default function UbiquitiDcsStoreCatalog() {
     <Layout>
       <div className="container mx-auto px-4 py-12 max-w-7xl">
         <h1 className="text-3xl md:text-4xl font-black tracking-tight mb-2">Ubiquiti</h1>
-        <p className="text-muted-foreground mb-8">Produk networking enterprise</p>
+        <p className="text-muted-foreground mb-8">Enterprise networking products</p>
 
         {/* Category filter pills */}
         <div className="flex flex-wrap gap-2 mb-8">
@@ -68,28 +71,12 @@ export default function UbiquitiDcsStoreCatalog() {
           ))}
         </div>
 
-        {err && (
-          <div className="mb-6 rounded-xl border border-red-500/30 bg-red-500/10 text-red-400 px-4 py-3 text-sm">
-            {err}
-          </div>
-        )}
+        {err && <CatalogError />}
 
         {loading ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {Array.from({ length: 8 }).map((_, i) => (
-              <div key={i} className="rounded-2xl border border-border bg-card overflow-hidden animate-pulse">
-                <div className="aspect-square bg-secondary/30" />
-                <div className="p-5 space-y-2">
-                  <div className="h-4 bg-secondary/40 rounded w-3/4" />
-                  <div className="h-3 bg-secondary/30 rounded w-1/2" />
-                </div>
-              </div>
-            ))}
-          </div>
+          <CatalogSkeleton className="lg:grid-cols-3 xl:grid-cols-4 gap-6" />
         ) : list.length === 0 ? (
-          <p className="text-muted-foreground text-sm py-12 text-center">
-            No products found{cat ? ` in the "${cat}" category` : ""}.
-          </p>
+          <CatalogEmpty />
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {list.map((p) => (
