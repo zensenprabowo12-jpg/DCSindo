@@ -284,6 +284,7 @@ function Gallery({
               ].join(" ")}
             >
               <img
+                loading="lazy"
                 src={src}
                 alt=""
                 className="w-full h-full object-contain p-1.5"
@@ -585,6 +586,7 @@ export default function UbiquitiDcsStoreProductDetail() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                       {overviewImages.map((img) => (
                         <img
+                          loading="lazy"
                           key={img.id}
                           src={img.image_path}
                           alt={d.nama_produk}
@@ -693,6 +695,7 @@ export default function UbiquitiDcsStoreProductDetail() {
                         ].join(" ")}
                       >
                         <img
+                          loading="lazy"
                           src={item.image_path}
                           alt="In the box"
                           className="w-full h-full object-contain"
@@ -719,6 +722,7 @@ export default function UbiquitiDcsStoreProductDetail() {
                       <a className="group block rounded-2xl border border-border bg-card hover:border-blue-500/30 hover:-translate-y-1 hover:shadow-xl transition-all overflow-hidden cursor-pointer">
                         <div className="aspect-square bg-secondary/20 p-6 flex items-center justify-center">
                           <img
+                            loading="lazy"
                             src={addon.addon_product.main_image}
                             alt={addon.addon_product.nama_produk}
                             className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"

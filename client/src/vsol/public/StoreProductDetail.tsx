@@ -359,7 +359,7 @@ export default function VsolDcsStoreProductDetail() {
                         activeImage === src ? "border-green-500 shadow-[0_0_0_2px_rgba(22,163,74,0.2)]" : "border-border hover:border-green-400",
                       ].join(" ")}
                     >
-                      <img src={src} alt="" className="w-full h-full object-contain p-1" />
+                      <img loading="lazy" src={src} alt="" className="w-full h-full object-contain p-1" />
                     </button>
                   ))}
                 </div>
@@ -471,7 +471,7 @@ export default function VsolDcsStoreProductDetail() {
               <div className="flex flex-wrap gap-4">
                 {d.in_the_box.map((item, i) => (
                   <div key={i} className="w-28 h-28 rounded-xl border border-border bg-secondary/10 flex items-center justify-center p-3">
-                    <img src={item.image_path} alt="" className="w-full h-full object-contain" />
+                    <img loading="lazy" src={item.image_path} alt="" className="w-full h-full object-contain" />
                   </div>
                 ))}
               </div>

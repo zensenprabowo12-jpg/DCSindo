@@ -38,6 +38,7 @@ function ProductCard({ p }: { p: FiberHomeProduct }) {
       <a className="group block bg-card border border-border rounded-2xl overflow-hidden hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
         <div className="aspect-square bg-secondary/20 flex items-center justify-center p-6">
           <img
+            loading="lazy"
             src={p.image_path || "/images/placeholder-product.png"}
             alt={p.name}
             className="w-full h-full object-contain group-hover:scale-105 transition-transform"

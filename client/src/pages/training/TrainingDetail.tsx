@@ -447,6 +447,7 @@ export default function TrainingDetail() {
                           className="relative aspect-square rounded-xl overflow-hidden border border-zinc-700 hover:border-zinc-500 transition-colors group"
                         >
                           <img
+                            loading="lazy"
                             src={img.image_path}
                             alt={img.caption ?? `Foto ${idx + 1}`}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -558,6 +559,7 @@ export default function TrainingDetail() {
                       <span>Scan for more info</span>
                     </div>
                     <img
+                      loading="lazy"
                       src={d.qr_image}
                       alt="QR Code"
                       className="w-32 h-32 rounded-xl border border-zinc-700 bg-white object-contain p-1"

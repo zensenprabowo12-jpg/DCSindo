@@ -77,6 +77,7 @@ function TrainingCard({ t }: { t: TrainingSession }) {
         {hasCover && (
           <div className="relative aspect-video bg-zinc-800 overflow-hidden shrink-0">
             <img
+              loading="lazy"
               src={cover as string}
               alt={t.title}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

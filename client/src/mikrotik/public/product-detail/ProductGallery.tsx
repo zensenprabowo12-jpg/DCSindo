@@ -36,7 +36,7 @@ function ThumbButton({ src, isActive, onClick }: { src: string; isActive: boolea
       }}
     >
       <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, transparent, rgba(255,107,53,0.8), transparent)", opacity: isActive ? 1 : 0, transition: "opacity 0.25s ease" }} />
-      <img src={src} alt="" style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.3s ease", transform: hovered ? "scale(1.08)" : "scale(1)" }} draggable={false} />
+      <img loading="lazy" src={src} alt="" style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.3s ease", transform: hovered ? "scale(1.08)" : "scale(1)" }} draggable={false} />
     </button>
   );
 }

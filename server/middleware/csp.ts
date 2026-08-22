@@ -64,7 +64,7 @@ const DIRECTIVES: Record<string, string> = {
   // halamannya sendiri. Isi di DALAM iframe tunduk pada CSP milik YouTube/UI,
   // bukan milik kita — jadi googlevideo/ytimg tidak perlu didaftarkan.
   "frame-src":
-    "https://www.youtube.com https://www.youtube-nocookie.com https://gpt.distributor.ui-apps.com",
+    "https://www.youtube.com https://youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://gpt.distributor.ui-apps.com",
 
   // Tidak ada Worker sama sekali; 'self' dipilih agar tidak meledak bila suatu
   // library menambahkannya diam-diam.

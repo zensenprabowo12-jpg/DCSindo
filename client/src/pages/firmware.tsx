@@ -85,6 +85,7 @@ export default function FirmwarePage() {
                           className={`absolute inset-0 bg-gradient-to-br ${meta.grad} pointer-events-none z-10`}
                         />
                         <img
+                          loading="lazy"
                           src={meta.logo}
                           alt={meta.name}
                           decoding="async"

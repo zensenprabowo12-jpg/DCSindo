@@ -171,7 +171,7 @@ export default function FiberHomeProductDetail() {
                           : "border-border hover:border-sky-500/50",
                       )}
                     >
-                      <img src={src} alt="" className="w-full h-full object-contain" />
+                      <img loading="lazy" src={src} alt="" className="w-full h-full object-contain" />
                     </button>
                   ))}
                 </div>
