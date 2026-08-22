@@ -1,7 +1,11 @@
 import type { FiberHomeProduct } from "./types";
 
-/** Produk tanpa `category` dikumpulkan di sini. */
-export const UNCATEGORIZED = "Lainnya";
+/**
+ * Produk tanpa `category` dikumpulkan di sini. Label ini tampil ke pengunjung
+ * (chip filter + judul grup), jadi ikut diinggriskan. Konsekuensinya slug URL
+ * berubah: `?category=lainnya` menjadi `?category=other`.
+ */
+export const UNCATEGORIZED = "Other";
 
 /** "Drop Cable" → "drop-cable". Dipakai di query param `?category=`. */
 export function categorySlug(category: string): string {

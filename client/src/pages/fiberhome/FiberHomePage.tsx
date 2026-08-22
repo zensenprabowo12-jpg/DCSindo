@@ -48,16 +48,16 @@ function ProductCard({ p }: { p: FiberHomeProduct }) {
 }
 
 const STATS = [
-  { value: "50+", label: "Negara Sales" },
-  { value: "11", label: "Pusat Distribusi Global" },
-  { value: "90+", label: "Negara & Wilayah Terjangkau" },
+  { value: "50+", label: "Sales Countries" },
+  { value: "11", label: "Global Distribution Centers" },
+  { value: "90+", label: "Countries & Regions Served" },
 ];
 
 export default function FiberHomePage() {
   const [list, setList] = useState<FiberHomeProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState<string | null>(null);
-  // Slug kategori aktif; "" = Semua. Diisi dari `?category=` (link breadcrumb detail).
+  // Slug kategori aktif; "" = "All". Diisi dari `?category=` (link breadcrumb detail).
   const [activeSlug, setActiveSlug] = useState(readCategoryParam);
 
   // Sinkron kalau user menekan back/forward browser.
@@ -86,7 +86,7 @@ export default function FiberHomePage() {
   }
 
   const groups = groupByCategory(list);
-  // Slug dari URL bisa saja tidak cocok dengan kategori mana pun → jatuh ke "Semua".
+  // Slug dari URL bisa saja tidak cocok dengan kategori mana pun → jatuh ke "All".
   const activeGroup = groups.find(([c]) => categorySlug(c) === activeSlug);
   const shown = activeGroup ? [activeGroup] : groups;
 
@@ -104,11 +104,11 @@ export default function FiberHomePage() {
               </span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-3">
-              Kabel &amp; Perangkat FTTH
+              FTTH Cables &amp; Equipment
             </h1>
             <p className="text-muted-foreground max-w-2xl">
-              Solusi fiber optik FiberHome untuk jaringan akses last-mile — drop cable,
-              perangkat, dan aksesori pendukung instalasi FTTH.
+              FiberHome fiber optic solutions for last-mile access networks — drop cable,
+              equipment, and accessories that support FTTH installation.
             </p>
 
             {/* Statistik: hook pertama, card floating di dalam hero */}
@@ -130,25 +130,26 @@ export default function FiberHomePage() {
       <section className="container mx-auto px-4 py-12">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl font-black tracking-tight mb-4">
-            Tentang FiberHome &amp; DCS Sebagai Authorized Distributor
+            About FiberHome &amp; DCS as Authorized Distributor
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-3xl">
-            Wuhan FiberHome International Technologies Co., Ltd. adalah perusahaan di bawah China
-            Information Technology Group. FiberHome merupakan penyedia produk dan solusi jaringan
-            informasi dan komunikasi berskala internasional, serta diakui oleh Kementerian Sains dan
-            Teknologi Tiongkok sebagai basis industrialisasi dan perusahaan inovatif dari pencapaian
-            rencana &ldquo;863&rdquo; di bidang komunikasi optik dalam negeri.
+            Wuhan FiberHome International Technologies Co., Ltd. is a company under China
+            Information Technology Group. FiberHome is an international provider of information
+            and communication network products and solutions, recognized by China&rsquo;s Ministry
+            of Science and Technology as an industrialization base and an innovative enterprise
+            arising from the achievements of the &ldquo;863&rdquo; program in domestic optical
+            communications.
           </p>
 
           <hr className="border-border my-8" />
 
           <p className="text-sm text-muted-foreground mb-4">
-            Arah yang mereka pegang:
+            The principles they stand by:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-border bg-card p-6">
               <p className="text-xs font-semibold uppercase tracking-widest text-sky-600 dark:text-sky-400 mb-2">
-                Misi
+                Mission
               </p>
               <p className="text-sm">
                 Maximizing the value of digital connection and benefiting human society
@@ -156,7 +157,7 @@ export default function FiberHomePage() {
             </div>
             <div className="rounded-2xl border border-border bg-card p-6">
               <p className="text-xs font-semibold uppercase tracking-widest text-sky-600 dark:text-sky-400 mb-2">
-                Nilai
+                Values
               </p>
               <p className="text-sm">
                 Customer-oriented, honest and dedicated, continuous innovation and incremental
@@ -176,15 +177,15 @@ export default function FiberHomePage() {
                 PT Dinamika Cipta Solusi — Authorized Distributor FiberHome Indonesia
               </h3>
               <p className="text-muted-foreground max-w-3xl">
-                Sebagai distributor resmi FiberHome di Indonesia, DCS menjamin keaslian produk,
-                ketersediaan stok, dan dukungan teknis untuk seluruh jajaran produk fiber optik
-                FiberHome.
+                As FiberHome&rsquo;s authorized distributor in Indonesia, DCS guarantees product
+                authenticity, stock availability, and technical support across the entire
+                FiberHome fiber optic range.
               </p>
             </div>
           </div>
 
           <p className="text-xs text-muted-foreground mt-6">
-            Sumber statistik &amp; profil:{" "}
+            Statistics &amp; profile source:{" "}
             <a
               href="https://en.fiberhome.com/aboutfiberHome.html"
               target="_blank"
@@ -273,21 +274,22 @@ export default function FiberHomePage() {
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-black tracking-tight mb-3">
-              Butuh penawaran atau konsultasi teknis?
+              Need a quote or technical consultation?
             </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Tim sales DCS siap bantu pilih produk FiberHome yang sesuai kebutuhan jaringan Anda.
+              The DCS sales team is ready to help you pick the FiberHome products that fit your
+              network requirements.
             </p>
             <a
               href={`${DCS_WHATSAPP_PRIMARY}?text=${encodeURIComponent(
-                "Halo DCS, saya ingin bertanya tentang produk FiberHome.",
+                "Hello DCS, I would like to ask about FiberHome products.",
               )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 rounded-2xl bg-sky-600 hover:bg-sky-700 text-white font-bold px-10 py-5 text-base md:text-lg transition-colors shadow-lg"
             >
               <MessageCircle className="w-6 h-6" />
-              Hubungi Sales via WhatsApp
+              Contact Sales via WhatsApp
             </a>
           </div>
         </div>

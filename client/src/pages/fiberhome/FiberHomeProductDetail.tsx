@@ -73,7 +73,7 @@ export default function FiberHomeProductDetail() {
     return (
       <Layout>
         <div className="container mx-auto px-4 py-20 text-center text-muted-foreground">
-          Memuat produk…
+          Loading product…
         </div>
       </Layout>
     );
@@ -83,9 +83,9 @@ export default function FiberHomeProductDetail() {
     return (
       <Layout>
         <div className="container mx-auto px-4 py-20 text-center">
-          <p className="text-red-500 mb-6">{err ?? "Produk tidak ditemukan"}</p>
+          <p className="text-red-500 mb-6">{err ?? "Product not found"}</p>
           <Link href="/fiberhome">
-            <a className="text-sky-600 dark:text-sky-400 underline">← Kembali ke katalog</a>
+            <a className="text-sky-600 dark:text-sky-400 underline">← Back to catalog</a>
           </Link>
         </div>
       </Layout>
@@ -198,7 +198,7 @@ export default function FiberHomeProductDetail() {
                 <button
                   type="button"
                   onClick={() => void copySku()}
-                  title={copied ? "Copied!" : "Klik untuk menyalin SKU"}
+                  title={copied ? "Copied!" : "Click to copy SKU"}
                   className="group relative inline-flex items-center gap-2 font-mono text-sm font-semibold rounded-lg border border-border bg-slate-100 dark:bg-slate-800 px-3 py-1 hover:border-sky-500 transition-colors"
                 >
                   SKU: {d.sku}
@@ -220,7 +220,7 @@ export default function FiberHomeProductDetail() {
 
               {d.features.length > 0 && (
                 <div className="mb-8">
-                  <h2 className="text-sm font-black uppercase tracking-wider mb-4">Fitur Utama</h2>
+                  <h2 className="text-sm font-black uppercase tracking-wider mb-4">Key Features</h2>
                   <ul className="space-y-3">
                     {d.features.slice(0, MAX_FEATURES).map((f) => (
                       <li key={f.id} className="flex items-start gap-3 text-sm">
@@ -246,14 +246,14 @@ export default function FiberHomeProductDetail() {
                 )}
                 <a
                   href={`${DCS_WHATSAPP_PRIMARY}?text=${encodeURIComponent(
-                    `Halo, saya tertarik dengan produk FiberHome ${d.name} (SKU: ${d.sku}). Bisa info lebih lanjut?`,
+                    `Hello, I am interested in the FiberHome ${d.name} (SKU: ${d.sku}). Could you share more information?`,
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-sky-600 text-sky-700 dark:text-sky-400 hover:bg-sky-600 hover:text-white px-7 py-4 text-sm font-bold transition-colors"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  Tanya Sales via WA
+                  Ask Sales via WhatsApp
                 </a>
               </div>
             </div>
@@ -262,7 +262,7 @@ export default function FiberHomeProductDetail() {
           {/* Aplikasi & use case */}
           {d.applications.length > 0 && (
             <div className="mt-16">
-              <h2 className="text-xl font-black tracking-tight mb-6">Aplikasi &amp; Use Case</h2>
+              <h2 className="text-xl font-black tracking-tight mb-6">Applications &amp; Use Cases</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {d.applications.slice(0, MAX_APPLICATIONS).map((a, i) => {
                   const Icon = APP_ICONS[i % APP_ICONS.length];
@@ -285,7 +285,7 @@ export default function FiberHomeProductDetail() {
           {/* Spesifikasi teknis — satu accordion per group, group pertama terbuka */}
           {specGroups.length > 0 && (
             <div className="mt-16">
-              <h2 className="text-xl font-black tracking-tight mb-6">Spesifikasi Teknis</h2>
+              <h2 className="text-xl font-black tracking-tight mb-6">Technical Specifications</h2>
               <Accordion
                 type="multiple"
                 defaultValue={[specGroups[0][0]]}
