@@ -10,7 +10,6 @@ import {
   apiMikrotikDcsAdminUpdate,
   apiMikrotikDcsLogin,
   apiMikrotikDcsLogout,
-  apiMikrotikDcsMe,
   apiMikrotikDcsMetaCategories,
   apiMikrotikDcsPublicGet,
   apiMikrotikDcsPublicList,
@@ -76,7 +75,6 @@ export function registerMikrotikDcsRoutes(app: Express): void {
     apiMikrotikDcsLogin,
   );
   app.post(`${base}/auth/logout`, apiMikrotikDcsLogout);
-  app.get(`${base}/auth/me`, apiMikrotikDcsMe);
   app.get(`${base}/admin/activity-log`, apiMikrotikDcsActivityLog);
 
   app.get(`${base}/public/products`, apiMikrotikDcsPublicList);

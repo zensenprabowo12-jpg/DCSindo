@@ -87,13 +87,6 @@ export function apiMikrotikDcsLogout(req: Request, res: Response) {
   });
 }
 
-export function apiMikrotikDcsMe(req: Request, res: Response): void {
-  res.json({
-    ok: true,
-    data: { authed: Boolean(req.session.mikrotikDcsAdmin) },
-  });
-}
-
 /** Publik: daftar (filter + sort) */
 export async function apiMikrotikDcsPublicList(
   req: Request,

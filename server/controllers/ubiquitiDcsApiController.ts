@@ -42,12 +42,6 @@ function safeDeleteFile(publicPath: string) {
 // Guard: endpoint admin Ubiquiti butuh role 'admin' (perilaku tidak berubah).
 const requireAdminSession = requireRole("admin");
 
-// ─── AUTH ─────────────────────────────────────────────────────
-export async function apiUbiquitiDcsMe(req: Request, res: Response): Promise<void> {
-  const authed = Boolean(req.session.mikrotikDcsAdmin);
-  res.json({ ok: true, data: { authed } });
-}
-
 // ─── PUBLIC ───────────────────────────────────────────────────
 export async function apiUbiquitiDcsPublicList(req: Request, res: Response): Promise<void> {
   try {

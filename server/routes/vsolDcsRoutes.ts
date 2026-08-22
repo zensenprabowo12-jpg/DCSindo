@@ -7,7 +7,6 @@ import {
   apiVsolDcsAdminList,
   apiVsolDcsAdminReorder,
   apiVsolDcsAdminUpdate,
-  apiVsolDcsMe,
   apiVsolDcsMetaCategories,
   apiVsolDcsPublicGet,
   apiVsolDcsPublicList,
@@ -60,9 +59,6 @@ export function registerVsolDcsRoutes(app: Express): void {
   // Guard SEBELUM multer: tanpa ini request anonim sudah menulis file ke disk
   // dulu, baru ditolak 401 oleh guard di dalam handler. Lihat C-04 Step 8.
   const uploadGuard = requireRoleMw("admin");
-
-  // Auth
-  app.get(`${base}/auth/me`, apiVsolDcsMe);
 
   // Public
   app.get(`${base}/public/products`, apiVsolDcsPublicList);

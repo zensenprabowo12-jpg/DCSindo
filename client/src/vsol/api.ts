@@ -121,24 +121,3 @@ export async function apiVsolReorderProducts(
     return j(res);
   }) as Promise<ApiOk<unknown> | ApiErr>;
 }
-
-/**
- * Session check. Points at the neutral auth module `/api/auth/me` instead of
- * the per-brand `${BASE}/auth/me` (prereq for L-01: the legacy route is next
- * to go).
- *
- * The two endpoints answer with different shapes, normalised here on purpose:
- * the standard one returns `{ ok, authed, user }` (authed at the top level),
- * the legacy one `{ ok, data: { authed } }`. Without this mapping `data` would
- * be undefined and callers would read "logged out" on a perfectly valid session.
- */
-export async function apiVsolMe(): Promise<ApiOk<{ authed: boolean }> | ApiErr> {
-  return safe(async () => {
-    const res = await fetch("/api/auth/me", { credentials: "include" });
-    const raw = await j<{ ok: boolean; authed?: boolean; message?: string }>(res);
-    if (!raw.ok) {
-      return { ok: false, message: raw.message ?? "Request failed" } as ApiErr;
-    }
-    return { ok: true, data: { authed: Boolean(raw.authed) } } as ApiOk<{ authed: boolean }>;
-  }) as Promise<ApiOk<{ authed: boolean }> | ApiErr>;
-}

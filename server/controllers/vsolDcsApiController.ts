@@ -51,12 +51,6 @@ function isDuplicateEntryError(e: unknown): boolean {
 // Guard: endpoint admin V-SOL butuh role 'admin' (perilaku tidak berubah).
 const requireAdminSession = requireRole("admin");
 
-// ─── AUTH ─────────────────────────────────────────────────────
-export async function apiVsolDcsMe(req: Request, res: Response): Promise<void> {
-  const authed = Boolean(req.session.mikrotikDcsAdmin);
-  res.json({ ok: true, data: { authed } });
-}
-
 // ─── PUBLIC ───────────────────────────────────────────────────
 export async function apiVsolDcsPublicList(req: Request, res: Response): Promise<void> {
   try {

@@ -7,7 +7,6 @@ import {
   apiUbiquitiDcsAdminList,
   apiUbiquitiDcsAdminReorder,
   apiUbiquitiDcsAdminUpdate,
-  apiUbiquitiDcsMe,
   apiUbiquitiDcsMetaCategories,
   apiUbiquitiDcsPublicGet,
   apiUbiquitiDcsPublicList,
@@ -59,9 +58,6 @@ export function registerUbiquitiDcsRoutes(app: Express): void {
 
   // Guard SEBELUM multer — lihat C-04 Step 8.
   const uploadGuard = requireRoleMw("admin");
-
-  // Auth
-  app.get(`${base}/auth/me`, apiUbiquitiDcsMe);
 
   // Public
   app.get(`${base}/public/products`, apiUbiquitiDcsPublicList);
