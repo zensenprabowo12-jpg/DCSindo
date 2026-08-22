@@ -53,10 +53,23 @@ export async function apiLogout(): Promise<ApiOk<unknown> | ApiErr> {
   }) as Promise<ApiOk<unknown> | ApiErr>;
 }
 
+/**
+ * Cek sesi. Menunjuk ke modul auth netral `/api/auth/me`, bukan lagi
+ * `${BASE}/auth/me` per-brand (prasyarat L-01: rute lama menyusul dihapus).
+ *
+ * Bentuk balasan KEDUA endpoint berbeda dan itu disengaja dinormalkan di sini:
+ * yang standar membalas `{ ok, authed, user }` (authed di level atas), yang
+ * lama `{ ok, data: { authed } }`. Tanpa pemetaan ini `data` jadi undefined
+ * dan pemanggil akan membaca "belum login" padahal sesi valid.
+ */
 export async function apiMe(): Promise<ApiOk<{ authed: boolean }> | ApiErr> {
   return safe(async () => {
-    const res = await fetch(`${BASE}/auth/me`, { credentials: "include" });
-    return j(res);
+    const res = await fetch("/api/auth/me", { credentials: "include" });
+    const raw = await j<{ ok: boolean; authed?: boolean; message?: string }>(res);
+    if (!raw.ok) {
+      return { ok: false, message: raw.message ?? "Request gagal" } as ApiErr;
+    }
+    return { ok: true, data: { authed: Boolean(raw.authed) } } as ApiOk<{ authed: boolean }>;
   }) as Promise<ApiOk<{ authed: boolean }> | ApiErr>;
 }
 
