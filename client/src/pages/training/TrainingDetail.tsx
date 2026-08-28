@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DCS_WHATSAPP_PRIMARY, DCS_EMAIL } from "@/lib/contact";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import {
   apiFetchTrainingSession,
   apiRegisterTraining,
@@ -223,14 +224,6 @@ function Lightbox({
         </motion.div>
       </motion.div>
     </AnimatePresence>
-  );
-}
-
-function WhatsAppIcon() {
-  return (
-    <svg viewBox="0 0 32 32" className="w-4 h-4" aria-hidden fill="currentColor">
-      <path d="M19.11 17.27c-.28-.14-1.64-.8-1.9-.9s-.44-.14-.62.14-.72.9-.88 1.08-.32.21-.6.07a7.83 7.83 0 0 1-2.3-1.41 8.59 8.59 0 0 1-1.6-1.99c-.17-.28 0-.43.13-.57.13-.13.28-.32.42-.48.14-.16.18-.28.28-.46s.05-.35-.02-.5c-.07-.14-.62-1.5-.85-2.06-.22-.53-.44-.46-.62-.47h-.53c-.18 0-.46.07-.7.35s-.92.9-.92 2.19.95 2.54 1.08 2.72c.14.18 1.86 2.84 4.52 3.98.63.27 1.13.44 1.52.56.64.2 1.22.17 1.68.1.51-.08 1.64-.66 1.87-1.3.23-.64.23-1.18.16-1.3-.07-.12-.25-.2-.53-.35zM16.02 3C8.84 3 3 8.8 3 15.94c0 2.28.61 4.5 1.77 6.44L3 29l6.83-1.78a13.08 13.08 0 0 0 6.19 1.56C23.2 28.78 29 22.99 29 15.94 29 8.8 23.2 3 16.02 3zm0 23.52c-2.02 0-3.99-.55-5.7-1.6l-.4-.24-4.05 1.06 1.08-3.95-.26-.4a10.55 10.55 0 0 1-1.64-5.45c0-5.86 4.8-10.63 10.97-10.63 6.06 0 10.98 4.77 10.98 10.63 0 5.86-4.92 10.58-10.98 10.58z" />
-    </svg>
   );
 }
 
@@ -527,7 +520,10 @@ export default function TrainingDetail() {
                       className="w-full rounded-full font-bold gap-2"
                       style={{ backgroundColor: brandColor, color: "#000" }}
                     >
-                      <WhatsAppIcon />
+                      {/* w-3.5 (14px), bukan w-4: glyph bersama mengisi penuh
+                          kanvasnya, sedangkan yang lama cuma 81%. 14 x 0.995 =
+                          13.9px, setara render lama (16 x 0.8125 = 13.0px). */}
+                      <WhatsAppIcon className="w-3.5 h-3.5" />
                       Hubungi via WhatsApp
                     </Button>
                   </a>

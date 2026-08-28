@@ -12,28 +12,16 @@ import {
   ChevronLeft,
   ChevronUp,
 } from "lucide-react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import SearchModal from "./search-modal";
 import { motion, AnimatePresence } from "framer-motion";
 import { V_SOL_BRAND } from "@/brands/v-sol";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
+import { buildWhatsAppUrl } from "@/lib/contact";
 
-function WhatsAppIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 32 32"
-      className={className}
-      aria-hidden="true"
-      focusable="false"
-    >
-      <path
-        fill="currentColor"
-        d="M19.11 17.27c-.28-.14-1.64-.8-1.9-.9s-.44-.14-.62.14-.72.9-.88 1.08-.32.21-.6.07a7.83 7.83 0 0 1-2.3-1.41 8.59 8.59 0 0 1-1.6-1.99c-.17-.28 0-.43.13-.57.13-.13.28-.32.42-.48.14-.16.18-.28.28-.46s.05-.35-.02-.5c-.07-.14-.62-1.5-.85-2.06-.22-.53-.44-.46-.62-.47h-.53c-.18 0-.46.07-.7.35s-.92.9-.92 2.19.95 2.54 1.08 2.72c.14.18 1.86 2.84 4.52 3.98.63.27 1.13.44 1.52.56.64.2 1.22.17 1.68.1.51-.08 1.64-.66 1.87-1.3.23-.64.23-1.18.16-1.3-.07-.12-.25-.2-.53-.35zM16.02 3C8.84 3 3 8.8 3 15.94c0 2.28.61 4.5 1.77 6.44L3 29l6.83-1.78a13.08 13.08 0 0 0 6.19 1.56C23.2 28.78 29 22.99 29 15.94 29 8.8 23.2 3 16.02 3zm0 23.52c-2.02 0-3.99-.55-5.7-1.6l-.4-.24-4.05 1.06 1.08-3.95-.26-.4a10.55 10.55 0 0 1-1.64-5.45c0-5.86 4.8-10.63 10.97-10.63 6.06 0 10.98 4.77 10.98 10.63 0 5.86-4.92 10.58-10.98 10.58z"
-      />
-    </svg>
-  );
-}
+const WA_DEFAULT_MESSAGE = "Halo DCS, saya ingin bertanya tentang produk.";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
@@ -48,6 +36,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   const brandRef = useRef<HTMLDivElement>(null);
   const supportRef = useRef<HTMLDivElement>(null);
+
+  // href dasar dipilih sekali saat mount. Wajib di-memo: showBackTop/scrolled
+  // berubah tiap scroll, jadi tanpa ini nomornya ikut berganti sepanjang scroll.
+  const whatsappHref = useMemo(() => buildWhatsAppUrl(WA_DEFAULT_MESSAGE), []);
+
+  // Random murni tiap klik: nomor dipilih ulang tepat sebelum navigasi default
+  // berjalan, jadi href statis di atas hanya berlaku sebagai fallback (crawler,
+  // klik tengah, "salin alamat tautan").
+  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.currentTarget.href = buildWhatsAppUrl(WA_DEFAULT_MESSAGE);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -566,7 +565,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.7 }}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="fixed bottom-24 right-5 z-50 w-10 h-10 rounded-full bg-foreground/80 hover:bg-foreground text-background flex items-center justify-center shadow-md transition-colors"
+            className="fixed bottom-24 right-7 z-50 w-10 h-10 rounded-full bg-foreground/80 hover:bg-foreground text-background flex items-center justify-center shadow-md transition-colors"
             aria-label="Back to top"
           >
             <ChevronUp className="w-5 h-5" />
@@ -576,7 +575,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Floating WhatsApp Button */}
       <motion.a
-        href="https://wa.me/628153058666?text=Halo%20DCS%2C%20saya%20ingin%20bertanya%20tentang%20produk."
+        href={whatsappHref}
+        onClick={handleWhatsAppClick}
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
@@ -586,9 +586,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         aria-label="Chat via WhatsApp"
         title="Chat with us on WhatsApp"
       >
-        <WhatsAppIcon className="w-7 h-7 text-white" />
-        {/* Pulse ring */}
-        <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-40 animate-ping pointer-events-none" />
+        {/* Pulse ring. inset-2 mengecilkan basisnya jadi 40px, sehingga pada
+            animate-ping (scale 2) puncaknya berhenti di ~88px dari bawah — tetap
+            di bawah tombol Back to Top yang mulai di 96px (bottom-24). Ditaruh
+            sebelum ikon supaya tidak menimpa glyph putihnya. */}
+        <span className="absolute inset-2 rounded-full bg-[#25D366] opacity-40 animate-ping pointer-events-none" />
+        {/* 32px di lingkaran 56px = 57% diameter. Bbox glyph simetris, jadi
+            items-center/justify-center sudah center tepat. */}
+        <WhatsAppIcon className="relative w-8 h-8 text-white" />
       </motion.a>
 
       {/* ================= FOOTER ================= */}
@@ -604,7 +609,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </p>
             </div>
 
-            <div className="space-y-8">
+            {/* space-y-6: blok WA kini 1 baris (28px), bukan 60px, jadi jarak
+                32px terasa renggang dan memutus ketiga baris kontak. */}
+            <div className="space-y-6">
               <div className="flex gap-4 items-start">
                 <MapPin className="w-6 h-6 mt-1 flex-shrink-0" />
                 <a
@@ -618,26 +625,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </a>
               </div>
 
-              <div className="flex gap-4 items-start">
-                <WhatsAppIcon className="w-6 h-6 mt-1 flex-shrink-0" />
-                <div className="flex flex-col gap-1">
-                  <a
-                    href="https://wa.me/628153058666"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-primary/80 transition-colors text-lg"
-                  >
-                    +62 815-3058-666
-                  </a>
-                  <a
-                    href="https://wa.me/6281287801925"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-primary/80 transition-colors text-lg"
-                  >
-                    +62 812-8780-1925
-                  </a>
-                </div>
+              <div className="flex gap-4 items-center">
+                {/* Slot 24px menyamakan gutter dengan MapPin/Mail. Glyph WA
+                    mengisi penuh kanvas 24-nya, sedangkan lucide (stroke 2)
+                    hanya membentang ~18-22 dari 24 — jadi kotak 20px membuat
+                    ketiga ikon terbaca sama besar. */}
+                <span className="w-6 h-6 flex items-center justify-center flex-shrink-0">
+                  <WhatsAppIcon className="w-5 h-5" />
+                </span>
+                <a
+                  href={whatsappHref}
+                  onClick={handleWhatsAppClick}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary/80 transition-colors text-lg"
+                >
+                  Chat on WhatsApp
+                </a>
               </div>
 
               <div className="flex gap-4 items-center">
