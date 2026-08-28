@@ -14,6 +14,24 @@ import { V_SOL_BRAND } from "@/brands/v-sol";
 // justru tidak akan pernah muncul lagi di tab yang sama.
 let noticeShownThisPageLoad = false;
 
+/**
+ * Klip hero. Video dan poster dipasangkan dalam satu objek supaya tidak bisa
+ * ketukar — poster yang tidak cocok akan terlihat sebagai lompatan visual saat
+ * video mulai jalan.
+ *
+ * Video TIDAK ada di repo: file-nya di `public/uploads/hero/` pada server, di
+ * luar folder yang ditimpa deploy (lihat PROJECT_SUMMARY "JANGAN ditimpa saat
+ * upload"). Poster tetap di repo supaya hero tetap tampil benar di mesin
+ * developer yang tidak punya videonya.
+ */
+type HeroClip = { video: string; poster: string };
+
+const HERO_CLIPS: readonly HeroClip[] = [
+  { video: "/uploads/hero/hero-1.mp4", poster: "/images/hero/hero-1.webp" },
+  { video: "/uploads/hero/hero-2.mp4", poster: "/images/hero/hero-2.webp" },
+  { video: "/uploads/hero/hero-3.mp4", poster: "/images/hero/hero-3.webp" },
+];
+
 export default function HomeUtama() {
   const [showPopup, setShowPopup] = useState(() => !noticeShownThisPageLoad);
   const brandSectionRef = useRef<HTMLDivElement | null>(null);
@@ -28,6 +46,34 @@ export default function HomeUtama() {
   const handleClose = () => {
     setShowPopup(false);
   };
+
+  // Lazy initializer, BUKAN useMemo: useMemo cuma petunjuk performa dan boleh
+  // dibuang React kapan saja. Kalau itu terjadi, `src` video berubah di tengah
+  // jalan dan browser membatalkan unduhan yang sudah berjalan. useState dijamin
+  // hanya dievaluasi sekali seumur komponen.
+  //
+  // Random di initializer aman — murni menghitung nilai, tanpa efek samping.
+  // Bedanya dengan `noticeShownThisPageLoad` di atas: yang itu MENULIS variabel
+  // module-scope, jadi harus di effect karena StrictMode memanggil initializer
+  // dua kali.
+  const [heroIndex, setHeroIndex] = useState(
+    () => Math.floor(Math.random() * HERO_CLIPS.length),
+  );
+
+  // Indeks yang sudah terbukti gagal. useRef, bukan state: hanya dibaca di dalam
+  // handler dan tidak boleh memicu render sendiri.
+  const heroFailed = useRef<Set<number>>(new Set());
+  const [heroExhausted, setHeroExhausted] = useState(false);
+
+  // Fallback berjenjang: video lain dulu, poster sebagai jaring terakhir.
+  const handleHeroError = () => {
+    heroFailed.current.add(heroIndex);
+    const next = HERO_CLIPS.findIndex((_, i) => !heroFailed.current.has(i));
+    if (next === -1) setHeroExhausted(true);
+    else setHeroIndex(next);
+  };
+
+  const heroClip = HERO_CLIPS[heroIndex];
 
   return (
     <Layout>
@@ -100,12 +146,36 @@ export default function HomeUtama() {
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/30 dark:from-black/70 dark:to-black/60 z-10 transition-colors duration-500" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-full min-h-[100vh] min-w-[177.77vh]">
-            <iframe
-              src="https://www.youtube.com/embed/9HaU8NjH7bI?autoplay=1&mute=1&rel=0&playsinline=1"
-              className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-80 dark:opacity-60 transition-opacity duration-500"
-              allow="autoplay; encrypted-media"
-              title="DCS Master Hero Video"
-            />
+            {heroExhausted ? (
+              // Ketiga video gagal dimuat. Tampilkan poster sebagai latar diam
+              // supaya hero tetap utuh, bukan kotak kosong.
+              <div
+                aria-hidden="true"
+                className="absolute top-0 left-0 w-full h-full bg-cover bg-center pointer-events-none opacity-80 dark:opacity-60 transition-opacity duration-500"
+                style={{ backgroundImage: `url("${heroClip.poster}")` }}
+              />
+            ) : (
+              // `key` memaksa React membuat elemen <video> BARU saat klip
+              // berganti. Tanpa itu React memakai ulang elemen yang sama dan
+              // hanya menukar src — poster tidak ikut diperbarui dan event
+              // error tidak selalu terpicu lagi untuk sumber berikutnya.
+              //
+              // `object-cover` WAJIB: default <video> adalah `contain`, jadi
+              // tanpa ini videonya letterbox di dalam kotak 16:9 pembungkusnya.
+              <video
+                key={heroClip.video}
+                src={heroClip.video}
+                poster={heroClip.poster}
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                onError={handleHeroError}
+                aria-hidden="true"
+                className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none opacity-80 dark:opacity-60 transition-opacity duration-500"
+              />
+            )}
           </div>
         </div>
 

@@ -561,7 +561,7 @@ Warna, posisi, dan layout sekitarnya tidak disentuh di kedua file.
 
 ---
 
-## RANGKUMAN
+## RANGKUMAN TAHAP 4
 
 - Dua salinan SVG WhatsApp terakhir dihapus; kini hanya ada **satu** definisi `WhatsAppIcon` di seluruh codebase.
 - `TrainingDetail.tsx:229-235` — definisi lokal dengan path buatan tangan yang meleset dihapus, diganti import komponen bersama.
@@ -573,3 +573,352 @@ Warna, posisi, dan layout sekitarnya tidak disentuh di kedua file.
 - Bundle produksi: path lama **hilang total**, path resmi muncul tepat **1×** — dedupe benar-benar terjadi, bukan cuma di level sumber.
 - Warna, posisi, dan layout di sekitar kedua ikon tidak disentuh sama sekali.
 - `npm run check` exit 0, `npm run build` sukses, di-amend ke commit yang sama, tidak di-deploy. Sisa: 3 nomor hardcode, 4 halaman `MessageCircle`, dan penyeragaman bahasa prefill.
+
+---
+
+# TOPIK BARU — Analisa Video Hero Homepage
+
+> **Analisa saja. Tidak ada kode yang diubah.** Hanya file ini yang ditulis.
+
+## ⚠️ Koreksi premis: hero sekarang BUKAN video self-hosted
+
+Pertanyaannya mengasumsikan ada elemen `<video>` dengan file di suatu path. Kenyataannya berbeda, dan ini mengubah jawaban untuk bagian 1, 2, dan 4.
+
+**`client/src/pages/homepage/home-utama.tsx:103-108`** — hero memakai **iframe YouTube**:
+
+```
+<iframe
+  src="https://www.youtube.com/embed/9HaU8NjH7bI?autoplay=1&mute=1&rel=0&playsinline=1"
+  className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-80 dark:opacity-60 ..."
+  allow="autoplay; encrypted-media"
+  title="DCS Master Hero Video"
+/>
+```
+
+Konsekuensinya: **tidak ada** `<video>`, **tidak ada** `<source>`, **tidak ada** `poster`, **tidak ada** atribut `autoplay/loop/muted/playsInline/preload` versi HTML5, dan **tidak ada** fallback error.
+
+| Yang ditanyakan | Kondisi sebenarnya |
+|---|---|
+| File & baris hero | `home-utama.tsx:98-110` (section), iframe di `:103-108` |
+| Path video | Tidak ada file lokal — di-stream YouTube, ID `9HaU8NjH7bI` |
+| Ukuran file | Di luar kendali kita (YouTube adaptif) |
+| Format, jumlah `<source>` | Tidak berlaku — bukan elemen `<video>` |
+| Poster | Tidak ada. YouTube memakai thumbnail-nya sendiri |
+| `autoplay/loop/muted/playsInline/preload` | Lewat parameter URL: `autoplay=1`, `mute=1`, `playsinline=1`. **`loop` TIDAK ADA** |
+| Fallback error | Tidak ada. Kalau YouTube diblokir/gagal, hero jadi gradien kosong |
+
+### 🐛 Bug yang ketahuan saat menelusuri
+
+**Hero video hanya jalan sekali, tidak berulang.** Loop di embed YouTube butuh `loop=1&playlist=9HaU8NjH7bI` (parameter `playlist` wajib, walau videonya sendiri). URL sekarang tidak punya keduanya, jadi setelah ~durasi video, latar hero berhenti dan memunculkan overlay akhir YouTube. Ini terpisah dari rencana 3 video — perbaikannya satu baris kalau mau ditambal duluan.
+
+### File video yatim
+
+**`client/public/video/VP-efg-1.mp4`** — 1,91 MB, **ter-track di git**, tapi **nol referensi** di seluruh `client/src/`. Sisa pendekatan lama sebelum pindah ke YouTube. Tetap ikut tersalin ke `dist/public/video/` dan ikut ter-upload tiap deploy.
+
+Ada juga 3 referensi rusak di `client/src/mikrotik/landing/data.ts:84,90,96` — `/videos/switches.mp4`, `/videos/wireless-systems.mp4`, `/videos/wireless-home-office.mp4`. **Ketiganya tidak ada** di `client/public/`, dan field `video` itu tampaknya tidak pernah dirender.
+
+---
+
+## 2. Lokasi penyimpanan & alur deploy
+
+**Ya, premis Anda benar — dan terkonfirmasi dari konfigurasi, bukan asumsi.**
+
+`vite.config.ts:44` menetapkan `root: client`, jadi `publicDir` default Vite adalah `client/public/`. Seluruh isinya disalin apa adanya ke `dist/public/` (`vite.config.ts:46`). Terbukti: `dist/public/video/VP-efg-1.mp4` memang ada setelah build.
+
+`PROJECT_SUMMARY.md:330-338` mendokumentasikan prosedur deploy:
+
+> 2. Upload **replace folder `dist/`** via WinSCP.
+>
+> **JANGAN ditimpa saat upload:**
+> - `public/uploads/` (di ROOT server, bukan di `dist/`) — semua foto produk hasil upload admin.
+
+Jadi: `client/public/` → ikut repo, ikut bundle, **ikut ter-upload ulang tiap deploy**. Sedangkan `public/uploads/` ada di root server, dilayani `server/middleware/staticUploads.ts` dari `process.cwd()/public/uploads`, dan **eksplisit dikecualikan dari deploy**.
+
+### Angka yang menentukan
+
+| Metrik | Nilai |
+|---|---|
+| `client/public/` | **412 MB** |
+| `dist/public/` (payload tiap deploy WinSCP) | **414 MB**, 3.336 file |
+| `.git/` | **3,7 GB** |
+
+Folder deploy sudah 414 MB. Menambah 3 video ke `client/public/` menambah beban itu **dan** menambah `.git` yang sudah 3,7 GB — dan aset biner di git tidak pernah bisa dikecilkan lagi tanpa menulis ulang history.
+
+### .gitignore
+
+Tidak ada aturan apa pun untuk `*.mp4`/`*.webm`. Yang ada hanya `public/uploads/firmware/`. Artinya **video di `client/public/` otomatis ter-track git** — persis yang terjadi pada `VP-efg-1.mp4`.
+
+---
+
+## 3. Usulan lokasi — Opsi A vs Opsi B
+
+| | **A: `client/public/video/`** | **B: `public/uploads/hero/` di server** |
+|---|---|---|
+| Masuk repo | Ya | Tidak |
+| Ukuran `.git` | +3 video, permanen di history | Tidak berubah |
+| Payload deploy | +3 video tiap upload | Tidak berubah |
+| Upload video | Otomatis ikut deploy | Manual sekali via WinSCP |
+| Ganti video | Perlu commit + full deploy | Cukup ganti file di server |
+| Developer baru | Dapat videonya | **Tidak dapat** — hero kosong saat dev |
+| Risiko tertimpa deploy | Tidak | Tidak (eksplisit dikecualikan) |
+| Rollback via git | Bisa | Tidak |
+
+### ✅ Rekomendasi: **Opsi B** (`public/uploads/hero/`)
+
+Alasannya, berdasar angka di atas:
+
+1. **Payload deploy sudah 414 MB.** Setiap deploy sudah mengirim ulang 3.336 file lewat WinSCP. Menambah 3 video ke situ menambah waktu deploy untuk file yang praktis tidak pernah berubah.
+2. **`.git` sudah 3,7 GB.** Aset biner di git bersifat permanen. Menambah video ke repo memperparah masalah yang sudah ada.
+3. **Video hero itu konten, bukan kode.** Polanya persis seperti foto produk yang sudah dipakai — diunggah admin, disimpan di `public/uploads/`, dikecualikan dari deploy. Menaruh video hero di sana **konsisten dengan arsitektur yang sudah berjalan**, bukan pengecualian baru.
+4. **Ganti video tanpa deploy.** Marketing bisa tukar video hero dengan mengganti file, tanpa perlu build + upload 414 MB.
+
+**Kelemahan Opsi B dan cara menutupinya:** developer baru tidak punya videonya. Ini nyata, tapi bisa ditutup dengan fallback poster (lihat bagian 5) — kalau video 404, hero menampilkan poster statis dan tetap terlihat benar saat development. Poster-nya kecil, jadi **poster boleh ikut repo di `client/public/`** meski videonya tidak. Kombinasi ini memberi keduanya: repo tetap ramping, dev tetap dapat hero yang tampil benar.
+
+Ada satu hal yang perlu Anda putuskan: apakah video hero perlu ikut ter-rollback saat `git revert`. Kalau ya, Opsi A lebih tepat meski lebih mahal. Kalau tidak (dan untuk aset marketing biasanya tidak), Opsi B jelas lebih baik.
+
+---
+
+## 4. Dampak CSP
+
+**Self-hosted: AMAN — dikonfirmasi.**
+
+`server/middleware/csp.ts:59` sudah menetapkan `"media-src": "'self'"`, dengan komentar yang menyebut kasus ini persis: *"Video produk yang diunggah, dilayani dari /uploads."* Video hero dari `/uploads/hero/` maupun `/video/` sama-sama origin sendiri, jadi lolos tanpa perubahan apa pun.
+
+Malah, pindah dari iframe YouTube ke `<video>` self-hosted **mengurangi** ketergantungan eksternal. `frame-src` (`csp.ts:71-72`) tetap perlu YouTube karena masih ada iframe lain di situs, jadi tidak bisa dicabut — tapi homepage berhenti memuat pihak ketiga.
+
+### Kalau nanti pakai CDN eksternal
+
+| Direktif | Kapan perlu ditambah |
+|---|---|
+| `media-src` | **Wajib.** Host file video, mis. `media-src 'self' https://cdn.example.com` |
+| `img-src` | Kalau **poster** juga dari CDN (sekarang `'self' data: blob:`) |
+| `connect-src` | Kalau streaming adaptif (HLS/DASH) — segmennya diambil lewat `fetch`/XHR, bukan `media-src` |
+| `script-src` | Kalau pakai library player dari CDN (mis. hls.js, video.js) |
+
+⚠️ **Jebakan redirect.** File CSP Anda sendiri sudah mendokumentasikan pelajaran ini di `csp.ts:61-65`: browser mengevaluasi **setiap URL dalam rantai redirect**, dan laporan pelanggarannya menyebut URL **sebelum** redirect — yaitu host yang justru sudah diizinkan. Kalau CDN video Anda membalas 302 ke host lain (umum pada CDN dengan edge node), **host tujuan juga harus didaftarkan**, bukan cuma host awal. Gejalanya: video diam-diam gagal load sementara laporan CSP terlihat menunjuk host yang sudah di-whitelist.
+
+---
+
+## 5. Implementasi random (usulan, belum diterapkan)
+
+### Supaya browser hanya mengunduh 1 video
+
+Kuncinya: render **satu** elemen `<video>` dengan **satu** `src`, ditentukan sebelum render pertama.
+
+⚠️ **Jangan pakai beberapa `<source>` untuk pengacakan.** `<source>` itu untuk fallback *format* — browser memilih yang pertama bisa diputar, bukan acak. Tiga `<source>` mp4 = browser selalu ambil yang pertama, dan pengacakan tidak terjadi sama sekali.
+
+### `useState` lazy initializer, bukan `useMemo`
+
+Ini beda dari yang saya pakai untuk WhatsApp, dan alasannya penting:
+
+```
+const [hero] = useState(() => HERO_VIDEOS[Math.floor(Math.random() * HERO_VIDEOS.length)]);
+```
+
+`useMemo` secara dokumentasi React adalah **petunjuk performa** — React boleh membuang cache-nya dan menghitung ulang. Untuk WhatsApp itu tidak masalah (href berubah pun tidak terlihat). Untuk video, recompute berarti `src` berubah → **browser membatalkan unduhan dan mulai unduh video lain**, membuang bandwidth yang sudah terpakai. `useState` dengan lazy initializer dijamin hanya dievaluasi sekali seumur hidup komponen.
+
+Jadi: **`useState(() => ...)`**, bukan `useMemo(..., [])`.
+
+### Kalau video terpilih gagal load
+
+Rekomendasi: **fallback berjenjang**, jangan langsung menyerah ke poster.
+
+1. `onError` pada `<video>` → coba video berikutnya yang belum dicoba (simpan indeks yang sudah gagal di `useRef`)
+2. Kalau ketiganya gagal → sembunyikan `<video>`, tampilkan poster sebagai `<img>` atau `background-image`
+3. Hero tetap terbaca karena teksnya sudah punya gradien gelap sendiri (`home-utama.tsx:101`) dan `drop-shadow` di `:119`
+
+Ini penting untuk Opsi B: developer baru yang tidak punya file videonya akan otomatis jatuh ke poster, bukan melihat hero rusak.
+
+### Poster: 3 atau 1?
+
+**Rekomendasi: 3 poster, satu per video.**
+
+Poster tampil selama video belum bisa diputar. Kalau posternya cuma 1 sementara videonya 3, dua dari tiga kali pemuatan akan menampilkan gambar yang **tidak cocok** dengan video yang menyusul — terlihat sebagai lompatan visual saat video mulai jalan.
+
+Poster idealnya frame pertama dari videonya sendiri, jadi transisinya tidak terlihat. Biayanya kecil: ~50-150 KB per poster sebagai WebP/JPEG. Pasangkan dalam satu struktur data supaya tidak bisa ketukar:
+
+```
+{ src: "/uploads/hero/hero-1.mp4", poster: "/images/hero/hero-1.webp" }
+```
+
+Poster boleh tetap di `client/public/` (ikut repo) meski videonya di server — ini yang menutup kelemahan Opsi B.
+
+---
+
+## 6. Rekomendasi spesifikasi video
+
+### Patokan: video yang ada sekarang
+
+Diukur langsung dari atom MP4 `client/public/video/VP-efg-1.mp4` (`ffprobe` tidak tersedia, jadi header-nya diparse manual):
+
+| | Nilai |
+|---|---|
+| Ukuran | 2.000.672 byte (**1,91 MB**) |
+| Durasi | **15,04 detik** |
+| Resolusi | **1280×720** |
+| Codec | **avc1** (H.264) + **mp4a** (AAC) |
+| Bitrate total | **1.064 kbps** (1,06 Mbps) |
+| Beban | 0,127 MB per detik |
+
+Catatan: file ini punya **track audio** (`mp4a`). Untuk hero yang selalu di-mute, itu murni beban — bisa dibuang.
+
+### Rekomendasi
+
+| Parameter | Rekomendasi | Alasan |
+|---|---|---|
+| **Resolusi** | **1280×720** (pertahankan) | Hero tertutup gradien gelap dan `opacity-80`/`60` (`home-utama.tsx:101,105`). 1080p menggandakan byte untuk detail yang memang disembunyikan |
+| **Durasi** | **8-12 detik**, loop mulus | Cukup untuk terasa hidup, cukup pendek untuk ringan. Usahakan frame pertama ≈ frame terakhir agar sambungan loop tak terlihat |
+| **Ukuran maks** | **≤1,5 MB per video** | Di bawah patokan 1,91 MB. Dengan audio dibuang + durasi 10 detik, ini longgar |
+| **Bitrate video** | **900-1.200 kbps** | Sekitar patokan (1.064 kbps termasuk audio; videonya sendiri ~930 kbps) |
+| **Container/codec** | **MP4 + H.264 High profile**, `yuv420p` | Sama dengan yang sudah ada; dukungan browser praktis universal |
+| **Audio** | **Dibuang total** (`-an`) | Hero selalu mute. Menghemat ~10-15% |
+| **faststart** | **Wajib** | Memindahkan atom `moov` ke depan supaya pemutaran mulai sebelum unduhan selesai. Tanpa ini video baru jalan setelah 100% terunduh |
+
+### Perlu versi WebM juga?
+
+**Tidak — lewati saja.** H.264/MP4 didukung praktis semua browser yang relevan, jadi WebM tidak menambah jangkauan apa pun. Yang ditawarkannya cuma penghematan ukuran ~20-30% (VP9), dengan biaya: dua kali jumlah file, dua kali proses encode, dan dua kali kerja saat mengganti video.
+
+Untuk 3 video @1,5 MB yang **hanya 1 yang diunduh per kunjungan**, penghematan itu tidak sepadan dengan kerumitannya. Kalau nanti berubah pikiran, WebM ditaruh sebagai `<source>` **pertama** (browser ambil yang pertama cocok), MP4 sebagai cadangan — dan itu tetap kompatibel dengan pengacakan, selama pasangan webm+mp4-nya untuk video yang **sama**.
+
+### Perintah encode siap pakai
+
+```
+ffmpeg -i input.mp4 -t 10 -an \
+  -vf "scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720" \
+  -c:v libx264 -profile:v high -pix_fmt yuv420p \
+  -b:v 1000k -maxrate 1200k -bufsize 2000k \
+  -movflags +faststart hero-1.mp4
+
+ffmpeg -i hero-1.mp4 -vframes 1 -q:v 80 hero-1.webp
+```
+
+Baris kedua mengambil frame pertama sebagai poster, jadi poster dan video otomatis cocok.
+
+---
+
+## RANGKUMAN ANALISA VIDEO HERO
+
+- ⚠️ **Premisnya perlu dikoreksi**: hero sekarang **bukan `<video>` self-hosted**, melainkan **iframe YouTube** di `home-utama.tsx:103-108` (ID `9HaU8NjH7bI`).
+- Karena iframe, **tidak ada** `<source>`, poster, `preload`, maupun fallback error — dan atribut video diatur lewat parameter URL.
+- 🐛 **Bug ketahuan**: URL embed tidak punya `loop=1&playlist=...`, jadi video hero **cuma jalan sekali** lalu berhenti dengan overlay YouTube.
+- **`client/public/video/VP-efg-1.mp4`** (1,91 MB, ter-track git) **yatim** — nol referensi, tapi tetap ikut ter-bundle dan ter-upload tiap deploy.
+- Benar bahwa `client/public/` ikut ke `dist/` (`vite.config.ts:44,46`) dan ikut ter-upload; `public/uploads/` di root server **eksplisit dikecualikan** dari deploy (`PROJECT_SUMMARY.md:334`).
+- Tidak ada aturan `.gitignore` untuk video sama sekali — file video di `client/public/` otomatis masuk git.
+- **Rekomendasi Opsi B** (`public/uploads/hero/`): payload deploy sudah **414 MB** dan `.git` sudah **3,7 GB**; video hero itu konten, dan polanya sama dengan foto produk yang sudah berjalan.
+- Kelemahan Opsi B (developer baru tak punya video) ditutup dengan **poster tetap di repo** + fallback berjenjang, jadi hero tetap tampil benar saat dev.
+- **CSP aman** — `media-src 'self'` (`csp.ts:59`) sudah mencakup video self-hosted. Kalau pakai CDN: tambah `media-src`, plus `img-src`/`connect-src`/`script-src` sesuai pemakaian, dan **daftarkan juga host tujuan redirect** (jebakan yang sudah didokumentasikan di `csp.ts:61-65`).
+- Pakai **`useState(() => ...)`, bukan `useMemo`** — React boleh membuang cache `useMemo`, dan itu akan membatalkan unduhan video di tengah jalan.
+- Patokan video sekarang: **1280×720, 15,04 detik, H.264+AAC, 1.064 kbps, 1,91 MB**. Rekomendasi: 720p, 8-12 detik, **≤1,5 MB**, audio dibuang, `+faststart`, **tanpa WebM**, dan **3 poster** (satu per video).
+
+---
+
+# Implementasi — Hero Video Self-Hosted 3 Video Acak
+
+Commit baru: `feat: hero video self-hosted dengan 3 video acak` (bukan amend).
+
+## Yang diubah
+
+**`client/src/pages/homepage/home-utama.tsx`** — iframe YouTube di `:103-108` diganti elemen `<video>`.
+
+### Struktur data (`:17-32`)
+
+Video dan poster dipasangkan dalam satu objek supaya tidak bisa ketukar:
+
+```
+type HeroClip = { video: string; poster: string };
+
+const HERO_CLIPS: readonly HeroClip[] = [
+  { video: "/uploads/hero/hero-1.mp4", poster: "/images/hero/hero-1.webp" },
+  { video: "/uploads/hero/hero-2.mp4", poster: "/images/hero/hero-2.webp" },
+  { video: "/uploads/hero/hero-3.mp4", poster: "/images/hero/hero-3.webp" },
+];
+```
+
+### Pemilihan acak (`:52-62`)
+
+`useState` dengan lazy initializer, **bukan** `useMemo` — sesuai analisa: `useMemo` hanya petunjuk performa dan boleh dibuang React, dan kalau itu terjadi `src` berubah di tengah jalan sehingga browser membatalkan unduhan yang sudah berjalan.
+
+Satu elemen `<video>` dengan satu `src`. **Tidak** memakai beberapa `<source>` — itu mekanisme fallback format, browser selalu ambil yang pertama cocok, jadi tidak akan mengacak.
+
+Random di initializer aman karena murni menghitung nilai tanpa efek samping. Ini berbeda dari `noticeShownThisPageLoad` di file yang sama, yang **menulis** variabel module-scope sehingga harus di effect (StrictMode memanggil initializer dua kali).
+
+### Fallback berjenjang (`:64-76`, `:149-178`)
+
+1. `onError` → catat indeks gagal di `useRef<Set<number>>`, lompat ke video berikutnya yang belum dicoba
+2. Ketiganya gagal → `heroExhausted`, `<video>` diganti `<div>` dengan poster sebagai `background-image`
+3. Teks hero tetap terbaca karena gradien `:101` dan `drop-shadow` `:119` tidak diubah
+
+`useRef` dipilih untuk daftar gagal karena hanya dibaca di dalam handler dan tidak boleh memicu render sendiri.
+
+### Dua detail yang menentukan benar-tidaknya
+
+| Detail | Kenapa wajib |
+|---|---|
+| `key={heroClip.video}` | Tanpa ini React memakai ulang elemen `<video>` yang sama dan hanya menukar `src` — poster tidak ikut diperbarui dan event `error` tidak selalu terpicu lagi untuk sumber berikutnya, sehingga rantai fallback macet di video kedua |
+| `object-cover` | Default `<video>` adalah `object-fit: contain`. Tanpa ini video letterbox di dalam kotak 16:9 pembungkusnya — muncul bilah hitam yang tidak ada pada iframe |
+
+### Yang dipertahankan
+
+`opacity-80 dark:opacity-60`, `transition-opacity duration-500`, `pointer-events-none`, gradien overlay `:101`, `drop-shadow` teks `:119`, dan pembungkus 16:9 `min-w-[177.77vh]` — semuanya tidak diubah.
+
+`aria-hidden="true"` ditambahkan pada video dan poster: keduanya murni dekoratif, dan iframe lama sebelumnya punya `title` yang membuatnya terbaca screen reader tanpa alasan.
+
+## File yatim dihapus
+
+`client/public/video/VP-efg-1.mp4` (1,91 MB) dihapus via `git rm` setelah dikonfirmasi **0 referensi** di seluruh `client/`, `server/`, `script/`, `scripts/`. Folder `client/public/video/` jadi kosong dan ikut hilang.
+
+### Payload deploy turun
+
+| | Byte | MB |
+|---|---|---|
+| Sebelum | 424.878.639 | 405,20 MB |
+| Sesudah | 422.878.666 | 403,29 MB |
+| **Turun** | **1.999.973** | **1,91 MB** |
+
+Diukur dari clean rebuild (`rm -rf dist/public` lalu `npm run build`), bukan dari selisih perkiraan.
+
+## Verifikasi
+
+| Cek | Hasil |
+|---|---|
+| `iframe` di `home-utama.tsx` | **0** |
+| Embed YouTube hero di bundle | **hilang** |
+| Path `/uploads/hero/hero-{1,2,3}.mp4` di bundle | ketiganya ada |
+| Folder `dist/public/video/` | tidak ada |
+| `npm run check` | exit 0 |
+| `npm run build` | sukses |
+
+Catatan: string `9HaU8NjH7bI` masih muncul **1×** di bundle, tapi itu **bukan sisa hero**. Sumbernya `client/src/mikrotik/public/productExtras.ts:12`, yang kebetulan memakai video YouTube yang sama sebagai video produk MikroTik. Di luar lingkup, tidak disentuh.
+
+## Laporan referensi rusak mikrotik (tidak dihapus, sesuai instruksi)
+
+**Field `video` di `client/src/mikrotik/landing/data.ts:84,90,96` benar-benar TIDAK PERNAH dirender.** Buktinya bukan dugaan:
+
+- `LANDING_CATEGORIES` hanya dipakai di `client/src/mikrotik/Landing.tsx:92`, diteruskan sebagai prop `categories` ke `VideoAndCategory`
+- `VideoAndCategory.tsx:83` mengetik prop itu sebagai `{ title: string; href: string; imageSrc?: string }[]` — **field `video` tidak ada dalam tipe prop sama sekali**
+- `VideoAndCategory.tsx:124` mem-`map` categories dan hanya membaca ketiga field tersebut
+
+Jadi ketiga path `/videos/switches.mp4`, `/videos/wireless-systems.mp4`, `/videos/wireless-home-office.mp4` adalah **data mati** — filenya memang tidak ada, tapi tidak pernah diminta browser, jadi tidak ada request 404. Field `videoType: "youtube"` pada item pertama (`:77`) juga sama-sama tidak terbaca.
+
+Aman dihapus kapan pun sebagai pembersihan, tapi **tidak mendesak** karena tidak menimbulkan error runtime.
+
+## Langkah yang masih perlu Anda lakukan
+
+1. Siapkan 3 video sesuai spesifikasi di bagian sebelumnya, upload ke **`public/uploads/hero/`** di server (`hero-1.mp4`, `hero-2.mp4`, `hero-3.mp4`)
+2. Siapkan 3 poster, taruh di **`client/public/images/hero/`** (`hero-1.webp`, dst) — folder ini belum ada, perlu dibuat
+3. Sampai keduanya ada, hero akan jatuh ke fallback: video 404 → poster 404 → gradien polos. Teks hero tetap terbaca
+
+---
+
+## RANGKUMAN
+
+- Iframe YouTube di `home-utama.tsx:103-108` diganti **satu elemen `<video>`** dengan satu `src`, lengkap dengan `autoPlay loop muted playsInline preload="auto"`.
+- Acak pakai **`useState(() => ...)`**, bukan `useMemo` — supaya React tidak pernah menghitung ulang dan membatalkan unduhan video di tengah jalan.
+- Video dan poster dipasangkan dalam satu objek `HeroClip`, jadi **tidak bisa ketukar**.
+- Fallback berjenjang: `onError` → video berikutnya yang belum dicoba (indeks gagal disimpan di `useRef`) → kalau ketiganya gagal, poster jadi `background-image`.
+- **`key={heroClip.video}` wajib** — tanpa itu React memakai ulang elemen lama, poster tidak ikut berubah dan rantai fallback macet di video kedua.
+- **`object-cover` wajib** — default `<video>` adalah `contain`, tanpa itu videonya letterbox di dalam pembungkus 16:9.
+- File yatim `client/public/video/VP-efg-1.mp4` dihapus setelah dikonfirmasi 0 referensi; folder `video/` ikut hilang.
+- **Payload deploy turun 1.999.973 byte (1,91 MB)** — dari 405,20 MB jadi 403,29 MB, diukur dari clean rebuild.
+- Referensi rusak mikrotik **dikonfirmasi data mati**: `VideoAndCategory.tsx:83` bahkan tidak punya field `video` di tipe prop-nya, jadi tidak ada request 404. Tidak dihapus, sesuai instruksi.
+- `npm run check` exit 0, `npm run build` sukses, commit baru (bukan amend), tidak di-deploy. Video & poster masih perlu Anda siapkan sendiri.
