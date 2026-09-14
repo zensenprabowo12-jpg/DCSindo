@@ -1,14 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
-import { Building2, Check, Copy, Download, Home, MessageCircle, Radio } from "lucide-react";
+import { Building2, Check, Copy, Download, Home, Radio } from "lucide-react";
 import Layout from "@/components/layout";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { DCS_WHATSAPP_PRIMARY } from "@/lib/contact";
+import { buildWhatsAppUrl } from "@/lib/contact";
 import { cn } from "@/lib/utils";
 import { apiFiberHomeProduct } from "./api";
 import { categorySlug } from "./category";
@@ -58,6 +59,20 @@ export default function FiberHomeProductDetail() {
       setLoading(false);
     })();
   }, [sku]);
+
+  // Pola sama dengan layout.tsx: href di-memo sebagai fallback (crawler, klik
+  // tengah, salin alamat tautan), nomornya diacak ulang lagi tiap klik. Wajib
+  // di atas early return di bawah ini supaya hook tidak dipanggil bersyarat.
+  const whatsappMessage = d
+    ? `Hello DCS, I am interested in the FiberHome ${d.name} (SKU: ${d.sku}). Could you share more information?`
+    : "Hello DCS, I am interested in your FiberHome products. Could you share more information?";
+  const whatsappHref = useMemo(
+    () => buildWhatsAppUrl(whatsappMessage),
+    [whatsappMessage],
+  );
+  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.currentTarget.href = buildWhatsAppUrl(whatsappMessage);
+  };
 
   if (!match) {
     return (
@@ -245,14 +260,16 @@ export default function FiberHomeProductDetail() {
                   </a>
                 )}
                 <a
-                  href={`${DCS_WHATSAPP_PRIMARY}?text=${encodeURIComponent(
-                    `Hello, I am interested in the FiberHome ${d.name} (SKU: ${d.sku}). Could you share more information?`,
-                  )}`}
+                  href={whatsappHref}
+                  onClick={handleWhatsAppClick}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-sky-600 text-sky-700 dark:text-sky-400 hover:bg-sky-600 hover:text-white px-7 py-4 text-sm font-bold transition-colors"
                 >
-                  <MessageCircle className="w-5 h-5" />
+                  {/* w-4.5 (18px), bukan w-5: glyph bersama mengisi 99.5% kanvas,
+                      MessageCircle cuma 91.7% (bbox 22/24 setelah stroke). 18 x
+                      0.995 = 17.9px, setara render lama (20 x 0.917 = 18.3px). */}
+                  <WhatsAppIcon className="w-4.5 h-4.5" />
                   Ask Sales via WhatsApp
                 </a>
               </div>

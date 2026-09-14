@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/layout";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,7 +9,7 @@ import {
   UserPlus, Loader2, Images,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { DCS_WHATSAPP_PRIMARY, DCS_EMAIL } from "@/lib/contact";
+import { buildWhatsAppUrl, DCS_EMAIL } from "@/lib/contact";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import {
   apiFetchTrainingSession,
@@ -259,6 +259,20 @@ export default function TrainingDetail() {
     })();
   }, [id, match]);
 
+  // Pola sama dengan layout.tsx: href di-memo sebagai fallback (crawler, klik
+  // tengah, salin alamat tautan), nomornya diacak ulang lagi tiap klik. Wajib
+  // di atas early return di bawah ini supaya hook tidak dipanggil bersyarat.
+  const whatsappMessage = d
+    ? `Hello DCS, I would like to know more about the "${d.title}" training. Could you share the details?`
+    : "Hello DCS, I would like to know more about your training programmes. Could you share the details?";
+  const whatsappHref = useMemo(
+    () => buildWhatsAppUrl(whatsappMessage),
+    [whatsappMessage],
+  );
+  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.currentTarget.href = buildWhatsAppUrl(whatsappMessage);
+  };
+
   if (!match) return null;
 
   if (loading) {
@@ -285,10 +299,6 @@ export default function TrainingDetail() {
   }
 
   const brandColor = BRAND_COLOR[d.brand as TrainingBrand];
-
-  // Build WhatsApp message
-  const waMsg = encodeURIComponent(`Halo DCS, saya ingin mengetahui lebih lanjut tentang training "${d.title}". Mohon informasinya.`);
-  const waUrl = `${DCS_WHATSAPP_PRIMARY}?text=${waMsg}`;
 
   const gallery = d.gallery ?? [];
 
@@ -515,16 +525,25 @@ export default function TrainingDetail() {
 
                 {/* CTA buttons */}
                 <div className="mt-6 space-y-3">
-                  <a href={waUrl} target="_blank" rel="noreferrer" className="block">
+                  <a
+                    href={whatsappHref}
+                    onClick={handleWhatsAppClick}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block"
+                  >
                     <Button
                       className="w-full rounded-full font-bold gap-2"
                       style={{ backgroundColor: brandColor, color: "#000" }}
                     >
                       {/* w-3.5 (14px), bukan w-4: glyph bersama mengisi penuh
                           kanvasnya, sedangkan yang lama cuma 81%. 14 x 0.995 =
-                          13.9px, setara render lama (16 x 0.8125 = 13.0px). */}
-                      <WhatsAppIcon className="w-3.5 h-3.5" />
-                      Hubungi via WhatsApp
+                          13.9px, setara render lama (16 x 0.8125 = 13.0px).
+                          Butuh "!": base class Button punya [&_svg]:size-4
+                          dengan spesifisitas (0,1,1), w-3.5 polos (0,1,0)
+                          kalah, jadi tanpa ini ikonnya tetap ter-render 16px. */}
+                      <WhatsAppIcon className="w-3.5! h-3.5!" />
+                      Contact via WhatsApp
                     </Button>
                   </a>
                   <a href={DCS_EMAIL} className="block">

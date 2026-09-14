@@ -21,7 +21,7 @@ import { V_SOL_BRAND } from "@/brands/v-sol";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { buildWhatsAppUrl } from "@/lib/contact";
 
-const WA_DEFAULT_MESSAGE = "Halo DCS, saya ingin bertanya tentang produk.";
+const WA_DEFAULT_MESSAGE = "Hello DCS, I would like to ask about your products.";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();

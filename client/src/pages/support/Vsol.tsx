@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
-import { ExternalLink, MessageCircle, Mail, BookOpen, Server, Globe, ChevronDown } from "lucide-react";
+import { ExternalLink, Mail, BookOpen, Server, Globe, ChevronDown } from "lucide-react";
 import Layout from "@/components/layout";
+import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { buildWhatsAppUrl } from "@/lib/contact";
+import { useMemo, useState } from "react";
 import { Link } from "wouter";
 
 const VSOL_GREEN = "#16a34a";
+
+const WA_SUPPORT_MESSAGE =
+  "Hello DCS, I need technical support for a V-SOL OLT/ONU. Could you help me?";
 
 const faq = [
   {
@@ -57,6 +62,14 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 }
 
 export default function VsolSupport() {
+  // Pola sama dengan layout.tsx: href di-memo sekali saat mount sebagai
+  // fallback (crawler, klik tengah, salin alamat tautan), lalu nomornya diacak
+  // ulang tepat sebelum navigasi default berjalan pada tiap klik.
+  const whatsappHref = useMemo(() => buildWhatsAppUrl(WA_SUPPORT_MESSAGE), []);
+  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.currentTarget.href = buildWhatsAppUrl(WA_SUPPORT_MESSAGE);
+  };
+
   return (
     <Layout>
       {/* Hero */}
@@ -163,7 +176,8 @@ export default function VsolSupport() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://wa.me/628153058666"
+              href={whatsappHref}
+              onClick={handleWhatsAppClick}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -171,7 +185,12 @@ export default function VsolSupport() {
                 className="rounded-full px-8 h-12 font-bold gap-2"
                 style={{ background: VSOL_GREEN }}
               >
-                <MessageCircle className="w-4 h-4" />
+                {/* w-3.5 (14px), bukan w-4: glyph bersama mengisi 99.5% kanvas,
+                    MessageCircle cuma 91.7% (bbox 22/24 setelah stroke). 14 x
+                    0.995 = 13.9px, setara render lama (16 x 0.917 = 14.7px).
+                    Butuh "!": base class Button punya [&_svg]:size-4 dengan
+                    spesifisitas (0,1,1), jadi w-3.5 polos (0,1,0) kalah. */}
+                <WhatsAppIcon className="w-3.5! h-3.5!" />
                 WhatsApp Support
               </Button>
             </a>
