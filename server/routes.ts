@@ -21,7 +21,7 @@ export async function registerRoutes(
   registerUploadStatic(app);
   // Auth netral (/api/auth/*) didaftarkan paling awal
   registerAuthRoutes(app);
-  // Penerima laporan pelanggaran CSP (H-06 Tahap 2 Fase A). Anonim & tanpa sesi:
+  // Penerima laporan pelanggaran CSP (H-06 Tahap 2). Anonim & tanpa sesi:
   // pengirimnya browser, bukan manusia.
   registerCspReportRoutes(app);
   registerMikrotikRoutes(app);

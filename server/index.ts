@@ -36,7 +36,13 @@ app.set("trust proxy", "loopback");
  * (bundle JS, CSS, index.html) ikut terlindungi, bukan hanya /uploads yang sudah
  * mendapat nosniff di Step 0.
  *
- * CSP (Tahap 2) dan HSTS (di layer Apache) sengaja BELUM ada di sini.
+ * CSP (Tahap 2) sekarang ADA, dipasang terpisah lewat `csp.ts` tepat di bawah
+ * blok ini — Fase B, mode enforce.
+ *
+ * HSTS tetap TIDAK dipasang di sini, dan itu disengaja: header itu dikirim
+ * Apache, satu-satunya lapis yang benar-benar bicara TLS. Node di belakang
+ * proxy loopback tidak pernah melihat koneksi aslinya. Per sekarang HSTS aktif
+ * dengan max-age pendek (300 detik) dan masih dinaikkan bertahap.
  */
 app.disable("x-powered-by");
 
@@ -68,7 +74,8 @@ app.use((_req, res, next) => {
   next();
 });
 
-// H-06 Tahap 2 Fase A: Content-Security-Policy-Report-Only.
+// H-06 Tahap 2 Fase B: Content-Security-Policy, MODE ENFORCE (sejak 7b574d3).
+// Fase A (Report-Only) sudah lewat; alasan tiap direktif ada di csp.ts.
 //
 // Sengaja dipasang di sini, tepat setelah header Tahap 1 dan sebelum segala
 // hal lain, supaya header ikut menempel pada response express.static maupun

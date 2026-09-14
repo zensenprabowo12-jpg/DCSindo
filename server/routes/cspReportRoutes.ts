@@ -4,7 +4,11 @@ import rateLimit from "express-rate-limit";
 import { CSP_REPORT_PATH } from "../middleware/csp";
 
 /**
- * H-06 Tahap 2 Fase A — penerima laporan pelanggaran CSP.
+ * H-06 Tahap 2 — penerima laporan pelanggaran CSP.
+ *
+ * Dipasang untuk Fase A (Report-Only) dan sengaja TETAP dipakai di Fase B:
+ * `report-uri` dipertahankan dalam mode enforce, jadi setiap request yang
+ * diblokir tetap terlihat di log alih-alih ditebak dari keluhan pengguna.
  *
  * Dipanggil browser, bukan manusia: anonim, tanpa sesi, dan balasannya selalu
  * 204 tanpa body karena browser mengabaikan isi respons.
@@ -49,9 +53,9 @@ type Violation = {
 const str = (v: unknown): string => (typeof v === "string" && v ? v : typeof v === "number" ? String(v) : "");
 
 /**
- * Terima kedua bentuk laporan. Saat ini hanya `report-uri` yang aktif, tapi
- * menangani bentuk modern sejak awal berarti Fase B bisa menyalakan `report-to`
- * tanpa menyentuh file ini.
+ * Terima kedua bentuk laporan. Sampai sekarang hanya `report-uri` yang aktif,
+ * tapi menangani bentuk modern sejak awal berarti `report-to` bisa dinyalakan
+ * nanti tanpa menyentuh file ini.
  */
 function normalize(body: unknown): Violation[] {
   const out: Violation[] = [];

@@ -52,7 +52,7 @@ const DIRECTIVES: Record<string, string> = {
   // gambar sebelum upload (ProductForm mikrotik/ubiquiti/vsol, TrainingForm
   // thumbnail + QR). Tanpa ini pratinjau mati tanpa pesan error apa pun.
   // data: disertakan sebagai bantalan; aset build sekarang tidak memakainya,
-  // jadi boleh dicabut di Fase B kalau laporan bersih.
+  // jadi boleh dicabut kalau laporan mode enforce tetap bersih.
   "img-src": "'self' data: blob:",
 
   // Video produk yang diunggah, dilayani dari /uploads.
@@ -84,7 +84,7 @@ const DIRECTIVES: Record<string, string> = {
  * didukung hari ini (Chrome, Firefox, Safari), sementara `report-to` menuntut
  * header Reporting-Endpoints berisi URL absolut — dan menyusunnya dari
  * `req.get("host")` membuat tujuan laporan bisa dibelokkan lewat Host header.
- * Pertimbangkan lagi di Fase B dengan origin yang dipatok di konfigurasi.
+ * Pertimbangkan lagi nanti dengan origin yang dipatok di konfigurasi.
  */
 export const CSP_REPORT_PATH = "/api/csp-report";
 
