@@ -1,5 +1,6 @@
 import type { ResultSetHeader, RowDataPacket } from "mysql2";
 import { mysqlPool } from "../config/mysqlPool";
+import { LIST_ROW_CAP } from "./listLimit";
 
 /** Brand resmi untuk firmware (sesuai ENUM di DB). */
 export const FIRMWARE_BRANDS = ["mikrotik", "ubiquiti", "vsol"] as const;
@@ -101,7 +102,8 @@ export async function listFirmwareFiles(
         : "ORDER BY created_at DESC, id DESC";
 
   const [rows] = await mysqlPool.query<RowDataPacket[]>(
-    `SELECT ${SELECT_COLUMNS} FROM firmware_files ${where} ${orderBy}`,
+    `SELECT ${SELECT_COLUMNS} FROM firmware_files ${where} ${orderBy}
+     LIMIT ${LIST_ROW_CAP}`,
     params,
   );
   return rows.map(mapRow);

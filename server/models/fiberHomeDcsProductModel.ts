@@ -1,5 +1,6 @@
 import type { ResultSetHeader, RowDataPacket } from "mysql2";
 import { mysqlPool } from "../config/mysqlPool";
+import { LIST_ROW_CAP } from "./listLimit";
 
 // ─── TYPES ───────────────────────────────────────────────────
 export type FiberHomeProductRow = {
@@ -97,25 +98,40 @@ function mapApplication(r: RowDataPacket): FiberHomeApplicationRow {
 export async function getAllProducts(): Promise<FiberHomeProductWithRelations[]> {
   const [pRows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT ${PRODUCT_COLUMNS} FROM fiberhome_products
-     ORDER BY sort_order ASC, id ASC`,
+     ORDER BY sort_order ASC, id ASC
+     LIMIT ${LIST_ROW_CAP}`,
   );
   if (!pRows.length) return [];
 
+  // Query anak dibatasi ke produk yang benar-benar terambil di atas. LIMIT datar
+  // di sini justru SALAH: ia bisa memotong spec/galeri milik produk yang masih
+  // ada dalam rentang. Membatasi lewat product_id membuat hasilnya tetap utuh
+  // sekaligus ikut terbatas oleh cap induknya.
+  const ids = pRows.map((p) => Number(p.id));
+
   const [gRows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT id, product_id, image_path, sort_order FROM fiberhome_gallery
+     WHERE product_id IN (:ids)
      ORDER BY sort_order ASC, id ASC`,
+    { ids },
   );
   const [sRows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT id, product_id, label, value, spec_group, sort_order FROM fiberhome_technical_specs
+     WHERE product_id IN (:ids)
      ORDER BY sort_order ASC, id ASC`,
+    { ids },
   );
   const [fRows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT id, product_id, feature, sort_order FROM fiberhome_key_features
+     WHERE product_id IN (:ids)
      ORDER BY sort_order ASC, id ASC`,
+    { ids },
   );
   const [aRows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT id, product_id, title, description, sort_order FROM fiberhome_applications
+     WHERE product_id IN (:ids)
      ORDER BY sort_order ASC, id ASC`,
+    { ids },
   );
 
   const ofProduct = (rows: RowDataPacket[], pid: unknown) =>

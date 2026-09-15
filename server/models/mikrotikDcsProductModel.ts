@@ -1,5 +1,6 @@
 import type { ResultSetHeader, RowDataPacket } from "mysql2";
 import { mysqlPool } from "../config/mysqlPool";
+import { LIST_ROW_CAP } from "./listLimit";
 import {
   isValidMikrotikDcsCategory,
   toCanonicalMikrotikDcsCategory,
@@ -150,7 +151,8 @@ export async function listMikrotikDcsProducts(
             created_at, updated_at
      FROM mikrotik_dcs_products
      ${where}
-     ${orderBy}`,
+     ${orderBy}
+     LIMIT ${LIST_ROW_CAP}`,
     canonical ? { category: canonical } : {},
   );
   return rows.map(mapProduct);

@@ -1,5 +1,6 @@
 import type { ResultSetHeader, RowDataPacket } from "mysql2";
 import { mysqlPool } from "../config/mysqlPool";
+import { LIST_ROW_CAP } from "./listLimit";
 import {
   isValidUbiquitiDcsCategory,
   toCanonicalUbiquitiDcsCategory,
@@ -74,7 +75,8 @@ export async function listUbiquitiDcsProducts(
   const [rows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT id, nama_produk, sku, category, subfilter, deskripsi, bullet_points,
             main_image, is_new, sort_order, created_at, updated_at
-     FROM ubiquiti_dcs_products ${where} ${orderBy}`,
+     FROM ubiquiti_dcs_products ${where} ${orderBy}
+     LIMIT ${LIST_ROW_CAP}`,
     canonical ? { category: canonical } : {},
   );
   return rows.map(mapProduct);

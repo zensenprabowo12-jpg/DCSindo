@@ -31,7 +31,7 @@
 ```
 
 ### Sumber nomor: **HARDCODE di komponen**
-
+rf
 Ditulis langsung sebagai string literal di JSX. **Tidak** dari config, **tidak** dari env, **tidak** dari DB.
 
 Ini ironis karena file helper-nya **sudah ada**: `client/src/lib/contact.ts` mengekspor `DCS_WHATSAPP_PRIMARY` dan `DCS_WHATSAPP_SECONDARY` dengan nomor yang persis sama — tapi `layout.tsx` sama sekali tidak meng-import-nya (lihat blok import `layout.tsx:1-20`).
@@ -922,3 +922,543 @@ Aman dihapus kapan pun sebagai pembersihan, tapi **tidak mendesak** karena tidak
 - **Payload deploy turun 1.999.973 byte (1,91 MB)** — dari 405,20 MB jadi 403,29 MB, diukur dari clean rebuild.
 - Referensi rusak mikrotik **dikonfirmasi data mati**: `VideoAndCategory.tsx:83` bahkan tidak punya field `video` di tipe prop-nya, jadi tidak ada request 404. Tidak dihapus, sesuai instruksi.
 - `npm run check` exit 0, `npm run build` sukses, commit baru (bukan amend), tidak di-deploy. Video & poster masih perlu Anda siapkan sendiri.
+
+---
+
+# Audit Jangkauan Route Publik (analisis saja, 2026-09-10)
+
+Lanjutan dari perbaikan `AllowEncodedSlashes NoDecode` di vhost `dcsindo.com:443`
+(bug: `/mikrotik/categories/lte%20%2F%205g` dibalas "Not Found" oleh Apache).
+Tujuan: mencari apa lagi yang bisa rusak karena sebab sejenis.
+
+**Read-only sepenuhnya** — hanya SELECT, tidak ada perubahan kode, config, atau reload Apache.
+
+## Catatan metode (penting — beda dari rencana awal)
+
+Dua penyesuaian teknis, hasil ujinya setara:
+
+1. **Uji dijalankan dari mesin dev (192.168.92.27 diakses via LAN), bukan dari dalam server.**
+   Akses SSH ke server diblokir oleh permission classifier di sesi ini. Karena mesin dev
+   berada di LAN yang sama dan port 5000/443 terbuka, `127.0.0.1` cukup diganti IP LAN:
+   - Layer A: `http://192.168.92.27:5000/<path>` (Node langsung)
+   - Layer B: `https://192.168.92.27/<path>` dengan vhost dcsindo (Apache)
+
+2. **`--header="Host: ..."` tidak bisa dipakai — Apache membalas `421 Misdirected Request`.**
+   Server menolak request yang Host-nya beda dari SNI TLS. Yang benar adalah
+   `curl --resolve dcsindo.com:443:192.168.92.27`, supaya SNI dan Host sama-sama benar.
+   `wget --header="Host: ..."` akan kena 421 yang sama.
+
+## PART 1 — Data yang menghasilkan URL berisiko
+
+Hanya tiga jenis nilai DB yang benar-benar masuk **path** URL. Sisanya masuk query string
+atau tidak pernah jadi URL sama sekali.
+
+| Brand / tabel | Nilai mentah | URL hasil encode | Karakter berisiko | Status |
+|---|---|---|---|---|
+| mikrotik / `mikrotik_dcs_products.category` | `lte / 5g` | `/mikrotik/categories/lte%20%2F%205g` | `/` jadi `%2F`, spasi | **kontrol — sudah diperbaiki** |
+| mikrotik / `mikrotik_dcs_products.category` | `sfp/qsfp` | `/mikrotik/categories/sfp%2Fqsfp` | `/` jadi `%2F` | **kembar dari bug itu — ikut sembuh** |
+| mikrotik / `mikrotik_dcs_products.category` | `wireless home & office` | `/mikrotik/categories/wireless%20home%20%26%20office` | `&` jadi `%26`, spasi | aman |
+| mikrotik / `mikrotik_dcs_products.category` | `60 ghz products`, `ethernet routers`, `iot products`, `wireless system` | pakai `%20` | spasi | aman |
+| mikrotik / `mikrotik_dcs_products.category` | `accessories`, `antennas`, `enclosures`, `interfaces`, `routerboards`, `switches` | apa adanya | — | aman |
+| fiberhome / `fiberhome_products.sku` | `GJYCH-1` | `/fiberhome/GJYCH-1` | — | aman |
+| training / `training_sessions.id` | `3` | `/training/3` | — | aman (numerik) |
+| firmware / slug statis di kode | `mikrotik`, `ubiquiti`, `vsol` | `/firmware/<slug>` | — | aman (bukan dari DB) |
+
+**Tidak masuk path URL** (jadi tidak terdampak `AllowEncodedSlashes`):
+
+- **Kategori ubiquiti** (`Accessories`, `WiFi`, `Cloud Gateways`, dll) — tidak ada route
+  `/ubiquiti/categories/:x`. Hanya filter sisi klien.
+- **Kategori vsol** — `ONU / ONT` mengandung `/`, **tapi tidak ada route
+  `/vsol/categories/:x`**. Kalau route seperti itu ditambahkan nanti, nilai ini langsung
+  jadi bug yang sama persis. Titik risiko masa depan.
+- **Kategori firmware** (`10G-PON`, `CHASIS OLT`, dll) — hanya filter, bukan segmen path.
+- **SKU mikrotik/ubiquiti/vsol** — route `/shop/:id` memakai **id numerik**, bukan SKU
+  (`ProductCard.tsx:21`, `StoreCatalog.tsx:83/88/89`). Ini yang membuat ratusan produk
+  otomatis aman.
+- Kategori yang dikirim ke API lewat **query string** (`?category=lte+%2F+5g`,
+  `mikrotik/api.ts:38-40`). `AllowEncodedSlashes` hanya mengatur path, bukan query string.
+
+## PART 2 — Seluruh route publik (`client/src/App.tsx`)
+
+Statis (21): `/`, `/ubiquiti`, `/home-ubiquiti`, `/home-Mikrotik`, `/home-V-SOL`,
+`/home-vsol`, `/vsol`, `/ubiquiti/shop`, `/mikrotik/shop`, `/mikrotik/categories`,
+`/mikrotik`, `/fiberhome`, `/training`, `/support`, `/support/ubiquiti`,
+`/support/mikrotik`, `/support/vsol`, `/vsol/shop`, `/firmware`, `/company-profile`,
+`/coming-soon`.
+
+Dinamis (7):
+
+| Route | Sumber segmen | Dari DB? | Risiko encoding |
+|---|---|---|---|
+| `/mikrotik/categories/:category` | `mikrotik_dcs_products.category` | ya | **tinggi** — satu-satunya yang bisa berisi `/` |
+| `/fiberhome/:sku` | `fiberhome_products.sku` | ya | rendah (SKU alfanumerik) |
+| `/training/:id` | `training_sessions.id` | ya | nihil (numerik) |
+| `/mikrotik/shop/:id` | id numerik | ya | nihil |
+| `/ubiquiti/shop/:id` | id numerik | ya | nihil |
+| `/vsol/shop/:id` | id numerik | ya | nihil |
+| `/firmware/:brand` | slug statis di kode | tidak | nihil |
+
+## PART 3 — Uji jangkauan
+
+46 URL diuji di dua layer (seluruh route statis + seluruh 13 kategori mikrotik +
+batas atas/bawah id produk tiap brand + SKU fiberhome + training + firmware).
+**Semua 200/200.** Kategori `lte%20%2F%205g` sebagai kontrol: **200 — perbaikan terbukti jalan.**
+
+Sampling: id produk diambil ujung-ujungnya saja (min dan max) per brand, bukan seluruh
+704 produk — segmennya numerik, jadi tidak ada variasi encoding yang perlu diuji.
+Seluruh 13 nilai kategori diuji tanpa sampling karena di situlah risikonya.
+
+**Perbaikan Apache ternyata sekaligus menyembuhkan `sfp/qsfp`** — kembarannya yang belum
+sempat dilaporkan. Satu directive menutup dua bug.
+
+### Dua kontrol supaya hasil "semua 200" tidak menyesatkan
+
+**Kontrol A — 200 tidak membuktikan route-nya ada.** Aplikasi ini SPA: path ngawur pun
+dilayani 200 berisi cangkang `index.html`, 404-nya baru muncul di sisi klien.
+
+| URL | Layer A | Layer B |
+|---|---|---|
+| `/this-route-does-not-exist-xyz` | 200 | 200 |
+| `/mikrotik/categories/totally%20fake%20cat` | 200 | 200 |
+
+Karena itu diuji juga **lapisan datanya**, dan jumlah item cocok persis dengan DB —
+bukti halaman benar-benar terisi, bukan cangkang kosong:
+
+| Kategori (query string) | Layer A | Layer B | Jumlah di DB |
+|---|---|---|---|
+| `lte+%2F+5g` | 200 / 32 item | 200 / 32 item | 32 |
+| `sfp%2Fqsfp` | 200 / 22 item | 200 / 22 item | 22 |
+| `wireless+home+%26+office` | 200 / 29 item | 200 / 29 item | 29 |
+| `60+ghz+products` | 200 / 9 item | 200 / 9 item | 9 |
+
+**Kontrol B — metode ini memang bisa mendeteksi bug-nya.** Path `%2F` yang sama diuji ke
+vhost yang belum dapat directive:
+
+| Vhost | `/` | `/a%2Fb` | Arti |
+|---|---|---|---|
+| `www.dcsindo.com` | 200 | **200** | sudah diperbaiki |
+| `dev:8080` | 200 | **200** | sudah punya sejak awal |
+| `afcwave.co.id` | 200 | **404** | **masih bug** |
+| `hr.dcsindo.com` | 307 | **404** | **masih bug** |
+
+## PART 4 — Perbandingan vhost
+
+**Belum lengkap.** Isi `/etc/apache2/sites-enabled/dev8080.dcsindo.com.conf` belum
+terbaca karena akses SSH diblokir permission classifier, dan tidak ada salinannya di repo.
+Perbandingan directive baris-per-baris masih perlu dijalankan. Yang di bawah ini adalah
+**diff perilaku** hasil probe dari luar — nyata dan terukur, tapi bukan pengganti isi file.
+
+| Perilaku | dev:8080 | dcsindo:443 | afcwave:443 | hr:443 | Penilaian |
+|---|---|---|---|---|---|
+| `AllowEncodedSlashes NoDecode` | ada | ada (baru) | **tidak ada** | **tidak ada** | **bug laten** — lihat di bawah |
+| Redirect HTTP :80 ke HTTPS | — | **tidak ada** | **tidak ada** | **tidak ada** | **bug** — semua melayani 200 polos di port 80 |
+| HSTS (`Strict-Transport-Security`) | tidak | **tidak** | **tidak** | **tidak** | **bug** — konsisten hilang di semua vhost |
+| HTTP/2 (`Protocols h2`) | tidak | tidak | tidak | tidak | konsisten; disengaja |
+| Kompresi gzip | ya | ya (806/2330 B) | ya (619/1311 B) | ya (3089/8890 B) | konsisten |
+| CSP + `Permissions-Policy` | ada | ada | **tidak ada** | tidak ada | header datang dari Node, bukan Apache |
+| Backend | Node | Node :5000 | SPA statis/Node | Next.js (`hrdcsindo`) | wajar berbeda |
+
+**Soal `AllowEncodedSlashes` di AFCWAVE dan HR — bug sungguhan atau laten:**
+
+- **`afcwave.co.id` — laten, perlu diwaspadai.** Path ngawur dibalas 200, jadi ini SPA
+  dengan routing sisi klien seperti dcsindo. Sekarang belum ada URL ber-`%2F`, tapi begitu
+  ada satu kategori bernama `a/b`, bug-nya muncul persis sama.
+- **`hr.dcsindo.com` — laten, risiko rendah.** Next.js dengan routing sisi server (path
+  ngawur jadi 404 asli). Next.js praktis tidak pernah memakai `%2F` di segmen path.
+- Yang lebih mendesak justru **tidak ada redirect :80 ke HTTPS dan tidak ada HSTS** di
+  keempat vhost. Ini bukan bug jangkauan, tapi ditemukan saat membandingkan.
+
+## RANGKUMAN
+
+- **Tidak ada satu pun route publik yang rusak sekarang** — 46 URL diuji dua layer (Node
+  langsung dan lewat Apache), semuanya 200/200, termasuk kontrol `lte%20%2F%205g`.
+- **Perbaikan kemarin sekaligus menyembuhkan bug kembar `sfp/qsfp`** —
+  `/mikrotik/categories/sfp%2Fqsfp` juga mengandung `/` dan pasti 404 sebelum perbaikan.
+- **Hanya kategori mikrotik yang benar-benar berisiko.** Route `/shop/:id` memakai id
+  numerik, bukan SKU — itu sebabnya 704 produk otomatis aman.
+- **`ONU / ONT` (vsol) adalah bom waktu**: mengandung `/`, tapi aman *hanya karena* belum
+  ada route `/vsol/categories/:x`. Kalau route itu dibuat, bug-nya langsung kambuh.
+- **AFCWAVE dan HR masih 404 untuk semua path `%2F`** — sudah dibuktikan, bukan dugaan.
+  Laten (belum ada URL begitu), tapi AFCWAVE adalah SPA jadi paling rawan kena nanti.
+- **Temuan sampingan, lebih mendesak: tidak ada redirect :80 ke HTTPS dan tidak ada HSTS**
+  di keempat vhost — semua melayani HTTP polos dengan 200.
+- **Uji dijalankan dari mesin dev lewat LAN**, bukan dari dalam server (SSH diblokir di
+  sesi ini). Hasilnya setara karena kedua layer diakses langsung.
+- **`--header="Host: ..."` tidak jalan — Apache membalas 421** karena Host beda dari SNI.
+  Untuk uji berikutnya pakai `curl --resolve host:443:IP`, jangan header Host.
+- **Hati-hati: aplikasi ini SPA, jadi 200 tidak membuktikan route-nya ada.** Path ngawur
+  pun dibalas 200. Karena itu lapisan API ikut diuji dan jumlah itemnya cocok dengan DB.
+- **PART 4 belum tuntas** — perbandingan directive baris-per-baris butuh isi
+  `dev8080.dcsindo.com.conf`, yang belum bisa dibaca. Yang ada sekarang diff perilaku.
+
+---
+
+## RANGKUMAN
+
+Konsolidasi WhatsApp (lanjutan commit 2dd2235) — 7 file, `npm run check` & `npm run build` lolos.
+
+- **3 nomor hardcode dihapus** (Mikrotik, Vsol, StoreProductDetail) → pindah ke `buildWhatsAppUrl()`. Sekarang 0 nomor hardcode di luar `contact.ts`.
+- **Pola acak disamakan dengan layout.tsx**: href di-`useMemo` sebagai fallback (crawler, klik tengah, salin tautan), nomor diacak ulang tiap klik lewat `onClick`.
+- **4 `MessageCircle` diganti logo WhatsApp bersama**. Ukuran diukur, bukan ditebak: bbox MessageCircle = 22/24 (91,7%) setelah stroke 2, glyph bersama 99,5% → w-6→w-5.5, w-5→w-4.5, w-4→w-3.5.
+- **Bug lama ketemu**: base class `Button` punya `[&_svg]:size-4` (spesifisitas 0,1,1) yang mengalahkan `w-3.5` polos (0,1,0). Artinya perbaikan ukuran ikon di TrainingDetail (commit lama) **tidak pernah benar-benar jalan** — ikon tetap 16px.
+- **Diperbaiki dengan modifier `!`** (`w-3.5! h-3.5!`, konvensi Tailwind v4 yang sudah dipakai `sidebar.tsx`) di 3 ikon yang ada di dalam `<Button>`: Mikrotik, Vsol, dan TrainingDetail. Sudah diverifikasi muncul di CSS hasil build sebagai `!important`.
+- **Semua prefill jadi bahasa Inggris & lewat `encodeURIComponent`**; 2 halaman support yang tadinya tanpa prefill sekarang punya pesan, isinya tetap kontekstual (nama produk, SKU, judul training).
+- **Koreksi atas analisis awal**: hanya **1** prefill yang pakai `%20` manual (StoreProductDetail), bukan 2 — hit `%20` lainnya adalah href route MikroTik, bukan URL WhatsApp.
+- **Sisa yang sengaja tidak disentuh**: FiberHomePage, FiberHomeProductDetail, dan TrainingDetail masih pakai `DCS_WHATSAPP_PRIMARY` (selalu nomor #1, tanpa acak) — di luar lingkup yang diminta, tapi layak jadi langkah berikutnya kalau mau acak merata di seluruh situs.
+- **Label tombol TrainingDetail masih "Hubungi via WhatsApp"** (bahasa Indonesia). Itu copy halaman, bukan prefill, jadi dibiarkan.
+- Tidak ada deploy (mode batch). Admin panel, kode server, dan kerja hero video tidak disentuh.
+
+---
+
+## RANGKUMAN
+
+Lanjutan konsolidasi WhatsApp — 3 file diubah, di-amend ke commit `80e27c7`. `npm run check` & `npm run build` lolos.
+
+- **3 pemakai `DCS_WHATSAPP_PRIMARY` terakhir dimigrasi** (FiberHomePage, FiberHomeProductDetail, TrainingDetail) ke `buildWhatsAppUrl()`. Seluruh 6 titik WhatsApp situs kini ikut acak 50:50 yang sama.
+- **Rules of Hooks**: di FiberHomeProductDetail dan TrainingDetail, link WA ada *di bawah* early return. `useMemo` di posisi lama akan dipanggil bersyarat, jadi hook dinaikkan ke atas semua early return dengan fallback pesan saat data masih `null`.
+- FiberHomePage tidak punya early return, jadi hook-nya cukup ditaruh sebelum `return` dengan pesan statis (`useMemo` dependensi kosong).
+- Semua prefill kontekstual + interpolasi dinamis (nama produk, SKU, judul training) **tetap utuh**, tidak ada yang digeneralisasi.
+- **`DCS_WHATSAPP_PRIMARY` / `SECONDARY` sekarang 0 pemakai.** Sesuai instruksi, export-nya **tidak dihapus**.
+- ⚠️ Komentar di `contact.ts:32-33` sekarang **usang** — masih menyebut "dipertahankan untuk pemakai lama (FiberHomePage, FiberHomeProductDetail, TrainingDetail)", padahal ketiganya sudah tidak memakainya. Sengaja tidak disentuh karena di luar lingkup.
+- Label tombol TrainingDetail: **"Hubungi via WhatsApp" → "Contact via WhatsApp"**.
+- **Audit copy Indonesia (laporan saja, tidak diubah)**: masih banyak di luar lingkup ini. Titik terbesar: **TrainingDetail** (form pendaftaran: "Nama lengkap", "Daftar Sekarang", "Tim kami akan menghubungi Anda", "Kembali ke Training", "Kirim Email"), **TrainingList** ("Lihat Dokumentasi", "Galeri kegiatan training…"), **modul Firmware** (`DownloadConfirmDialog`, `FirmwareDetailModal`, `firmware.tsx`, `firmware-brand.tsx` — termasuk disclaimer risiko flashing yang panjang), **katalog MikroTik** ("← Kembali ke Categories", "Lihat produk"), `ChunkErrorBoundary`, dan `layout.tsx` ("Cari produk", aria-label "Kembali…").
+- Catatan: **TrainingList:186 campur dua bahasa dalam satu ekspresi** — `completed ? "Lihat Dokumentasi" : "View Details"`.
+- Commit di-amend, **belum di-push** (`origin` masih di `56c862c`). Tidak ada deploy — mode batch.
+
+---
+
+## RANGKUMAN
+
+Sinkronisasi `PROJECT_SUMMARY.md` dengan keadaan kode sekarang — commit `01c3503`, +261/−137. Dokumentasi saja, `npm run check` lolos, 0 file kode disentuh.
+
+- **Kestalean jauh lebih luas dari 3 klaim yang disebut.** Selain auth, bagian struktur folder, stack, database, fitur, dan pola semuanya masih menggambarkan keadaan pra-audit.
+- **Auth diperbaiki total**: plaintext → bcrypt + tabel `users`; sesi RAM → `express-mysql-session` (persisten); satu flag boolean → role `admin`/`trainer`/`sales` lewat `requireRole`; ditambah H-02 (rate limit 2 lapis) & H-03 (cookie `Secure` + `session.regenerate`).
+- **Temuan baru — SKU MikroTik salah didokumentasikan**: doc menulis `sku` UNIQUE, padahal kunci sebenarnya **komposit `(sku, category)`**. Mengubahnya jadi `UNIQUE(sku)` menghapus 16 baris produksi — sekarang ditulis eksplisit beserta alasannya.
+- **Temuan baru — seluruh katalog SSR/EJS lama sudah dihapus** (`ejsViews`, `catalogMultiBrandRoutes`, `brandModel`, `catalogProductModel`), begitu juga `server/validation/`. Doc masih mencantumkannya sebagai bagian arsitektur aktif.
+- **Temuan baru — `/cart` tidak dirouting** dan `pages/cart.tsx` tidak diimpor dari mana pun, tapi masih terdaftar sebagai fitur publik.
+- **Temuan baru — dependency menganggur berganti**: `drizzle`/`pg`/`passport` sudah dihapus (commit `e898d4c`), tapi kini `ejs` dan `react-router-dom` yang terpasang tanpa dipakai.
+- **Modul yang hilang dari doc kini ditambahkan**: brand **FiberHome**, modul **Firmware**, **Visitor Log**, **Peserta**, **Users**, plus `safeUpload`, `errorSanitizer`, CSP enforce, dan komponen katalog bersama (L-06).
+- **Prosedur deploy diperinci**: daftar "JANGAN ditimpa" kini menyebut isi `public/uploads/` satu per satu — termasuk **`hero/`** (video hero sengaja tidak ada di repo, hanya posternya) dan `firmware/`. Ditambah bagian baru untuk konfigurasi sisi server (Apache, HSTS, pm2-logrotate).
+- **Utang teknis direkonsiliasi**: 4 dari 7 item lama sudah selesai dan dihapus; daftar terbuka sekarang berisi 10 item nyata (copy Indonesia, M-05, komentar usang `contact.ts`, `technical_items` kosong, field video mati, `cart.tsx` yatim, dll).
+- **Lampiran A & B jadi tabel berstatus** — sistem 3 role dan pendaftaran training ternyata sudah sebagian besar jadi, bukan rencana lagi.
+- ⚠️ Ditemukan tapi **tidak diubah** (di luar lingkup dokumentasi): komentar di `server/index.ts` masih menyebut CSP "Report-Only" dan "HSTS belum ada", padahal CSP sudah mode enforce sejak `7b574d3`.
+- Belum di-push (`origin` masih di `56c862c`). Tidak ada deploy — mode batch.
+
+---
+
+## RANGKUMAN
+
+Komentar status keamanan di `server/` disegarkan — 4 file, di-amend ke commit `eab1aa7`. Komentar saja.
+
+- **`server/index.ts`**: "CSP (Tahap 2) dan HSTS sengaja BELUM ada di sini" → CSP sudah mode **enforce** lewat `csp.ts` sejak `7b574d3`.
+- **HSTS**: ditulis apa adanya — memang tetap **tidak** di Node, karena Apache satu-satunya lapis yang bicara TLS; aktif dengan **max-age=300** dan masih dinaikkan bertahap.
+- **`server/index.ts`**: label blok `app.use(csp)` diubah dari "Fase A: Report-Only" → "Fase B: MODE ENFORCE".
+- **Hasil sapuan**: ditemukan **7** komentar usang di 4 file, bukan hanya 2 yang disebut.
+- `cspReportRoutes.ts` + `routes.ts` masih melabeli endpoint laporan sebagai "khusus Fase A", padahal `report-uri` **sengaja dipertahankan** dalam mode enforce agar request yang diblokir tetap terlihat di log.
+- `csp.ts` punya dua catatan "pertimbangkan lagi di Fase B" — padahal Fase B sudah berjalan sekarang; ditulis ulang jadi "nanti".
+- **Sengaja TIDAK diubah** karena memang akurat: label "H-06 Tahap 1" (asal-usul header dasar), `csp.ts:4-8` (sudah menyebut enforce), dan `auth/roles.ts` ("fase berikutnya" — pemisahan role memang belum selesai).
+- **Bukti nol perubahan perilaku**: tiap baris diff ada di dalam blok komentar, dan **sha256 `dist/index.cjs` identik** sebelum & sesudah (`a76dde59…`). `npm run check` lolos.
+- Belum di-push (`origin` masih di `56c862c`, lokal 2 commit di depan). Tidak ada deploy — mode batch.
+
+---
+
+# M-05 — Rencana Paginasi Endpoint Listing (analisis saja, 2026-09-15)
+
+Read-only. Hanya `SELECT` ke DB produksi (`dcsindo`, MariaDB 11.8.6), tanpa perubahan skema
+maupun kode. Skrip hitung dijalankan dari file sementara di root lalu dihapus.
+
+## PART 1 — Inventaris endpoint listing
+
+### Katalog publik
+
+| Endpoint | Tabel | Baris (COUNT) | Payload JSON | Pertumbuhan |
+|---|---|---|---|---|
+| `GET /api/mikrotik-dcs/public/products` | `mikrotik_dcs_products` | **283** | 125,2 KB (semua) / 22,5 KB (kategori terbesar) | 282 di Mei 2026 (impor massal), **+1 sejak itu** |
+| `GET /api/ubiquiti-dcs/public/products` | `ubiquiti_dcs_products` | **395** | 226,9 KB (semua) / 92,4 KB (Accessories) | 395 di Mei 2026, **0 sejak itu (4 bulan)** |
+| `GET /api/vsol-dcs/public/products` | `vsol_dcs_products` | **27** | 25,6 KB | 27 di Mei 2026, 0 sejak itu |
+| `GET /api/fiberhome-dcs/products` | `fiberhome_products` | **1** | <1 KB | praktis nol |
+| `GET /api/firmware/public/list` | `firmware_files` | **20** | 13,7 KB | 20 di Jul 2026, 0 sejak itu |
+| `GET /api/training/sessions` | `training_sessions` | **1** | <1 KB | fitur belum dipakai |
+
+Sebaran per kategori (menentukan payload nyata, karena filter kategori dikerjakan di server):
+
+- MikroTik: accessories 64, switches 40, lte/5g 33, wireless home & office 29, ethernet routers 24, sfp/qsfp 22, wireless system 20, iot 18, sisanya ≤9.
+- Ubiquiti: **Accessories 165**, Camera Security 58, Switching 51, Door Access 37, WiFi 35, Integration 31, Cloud Gateways 12, Advanced Hosting 6.
+- V-SOL: OLT 19, ONU/ONT 7, WiFi Router 1.
+
+### Daftar panel admin
+
+| Endpoint | Tabel | Baris | Status |
+|---|---|---|---|
+| `GET /api/ubiquiti-dcs/admin/products` | `ubiquiti_dcs_products` | **395** | tanpa LIMIT |
+| `GET /api/mikrotik-dcs/admin/products` | `mikrotik_dcs_products` | **283** | tanpa LIMIT |
+| `GET /api/vsol-dcs/admin/products` | `vsol_dcs_products` | **27** | tanpa LIMIT |
+| `GET /api/firmware/admin/list` | `firmware_files` | **20** | tanpa LIMIT |
+| `GET /api/training/admin/sessions` | `training_sessions` | **1** | tanpa LIMIT |
+| `GET /api/training/registrations` | `training_registrations` | **0** | tanpa LIMIT |
+| `GET /api/auth/users` | `users` | **5** | tanpa LIMIT |
+| `GET /api/mikrotik-dcs/admin/activity-log` | `admin_activity_log` | **74** | **sudah** `LIMIT 200` |
+| `GET /api/admin/visitor-log/list` | `visitor_log` | **11.952** | **sudah berpaginasi penuh** |
+
+`visitor_log` satu-satunya tabel >500 baris, dan sudah aman: `limit` di-clamp 1–500 (default 100),
+`offset` di-clamp ≥0, ditambah `SELECT COUNT(*)` untuk `total`, dan UI `VisitorLog.tsx` sudah punya
+nomor halaman (`PAGE_SIZE = 20`). Pertumbuhannya ~280 baris/hari (Agu 8.714, Sep 2.942 setengah
+bulan) tapi **dibatasi job prune 3 bulan** (`server/jobs/visitorLogPrune.ts`, harian jam 03:00),
+jadi kondisi tunaknya sekitar ±25k baris — bukan pertumbuhan tak terbatas.
+
+## PART 2 — Prioritas
+
+Memakai ambang yang diminta (>500 mendesak, <100 dilewati):
+
+- **Mendesak (>500 baris): tidak ada.** Satu-satunya tabel >500 (`visitor_log`) sudah berpaginasi.
+- **Dilewati (<100 baris): 7 endpoint** — V-SOL (27), firmware publik & admin (20), training sessions (1),
+  registrations (0), users (5), FiberHome (1), activity-log (74, sudah `LIMIT 200`).
+- **Zona abu-abu (100–500): 2 endpoint** — Ubiquiti admin (395) dan MikroTik admin (283).
+
+Kesimpulan jujur: **M-05 bukan isu performa, melainkan isu batas (unbounded).** Tidak ada satu pun
+endpoint yang hari ini melampaui ambang mendesak, dan tiga dari empat katalog produk **tidak tumbuh
+sama sekali sejak Mei 2026**. Yang benar-benar layak dikerjakan sekarang adalah **hard cap di
+server** (mis. `LIMIT 500` di setiap query listing) — itu menutup temuan audit "tanpa LIMIT" tanpa
+mengubah kontrak API dan tanpa menyentuh UI sama sekali. Paginasi UX menyusul hanya untuk dua daftar
+admin di zona abu-abu.
+
+## PART 3 — Strategi per jenis
+
+**Katalog publik — jangan dipaginasi.** Alasannya bukan malas, tapi struktur: ketiga katalog publik
+selalu difilter kategori di sisi server (`?category=`), dan halaman kategori MikroTik
+(`CategoryCatalogPage.tsx`) bahkan tidak punya opsi "semua". Halaman terbesar yang mungkin dilihat
+pengunjung adalah **Ubiquiti → Accessories = 165 produk / 92 KB**. Biaya nyatanya ada di render 165
+kartu + gambar, bukan di transfer. Obat yang tepat: **render cap "show more" di klien** (tampilkan
+60, tombol tambah 60) — nol perubahan API, nol risiko, dan filter/sort tetap utuh. Infinite scroll
+ditolak: merusak posisi scroll saat balik dari halaman detail produk, yang di sini sering terjadi.
+
+**Admin — nomor halaman klasik.** Sudah ada implementasinya yang matang di `VisitorLog.tsx`
+(`pageNumbers()` di `:144`, tombol Prev/Next di `:660`). Tinggal diekstrak jadi komponen bersama.
+Kerja admin butuh "lompat ke halaman 5" dan "ada berapa total", yang tidak diberikan load-more.
+
+**Pengecualian penting:** mode `sort=custom` di dashboard admin adalah mode drag & drop reorder.
+Halaman **harus dinonaktifkan** (atau `perPage` dinaikkan ke 500) saat mode itu aktif — lihat Bagian 8.
+
+## PART 4 — Kontrak API
+
+Bentuk sekarang, seragam di semua endpoint listing kecuali visitor-log:
+
+```json
+{ "ok": true, "data": [ ... ] }
+```
+
+Visitor-log menyimpang (sudah terlanjur):
+
+```json
+{ "ok": true, "data": { "rows": [ ... ], "total": 11952 } }
+```
+
+Usulan — **aditif, bukan mengganti**:
+
+```json
+{ "ok": true, "data": [ ... ], "meta": { "total": 395, "page": 1, "perPage": 100, "hasMore": true } }
+```
+
+**Breaking change? Tidak,** asalkan memakai bentuk aditif di atas. Semua pembungkus klien
+(`client/src/{mikrotik,ubiquiti,vsol}/api.ts`, `admin/firmware/api.ts`, `pages/fiberhome/api.ts`)
+membaca `r.ok` lalu `r.data` sebagai array; menambah `meta` tidak menyentuh jalur itu. Sebaliknya,
+memindahkan array ke `data.rows` (menyeragamkan dengan visitor-log) **akan** memecah 12 pemanggil
+sekaligus. Rekomendasi: pakai `meta`, dan biarkan visitor-log apa adanya — konsistensi tidak sepadan
+dengan risikonya.
+
+Yang mengasumsikan array polos dan **ikut jebol kalau daftar dipotong** (bukan soal bentuk, tapi soal
+kelengkapan): `components/search-modal.tsx`, `ubiquiti/admin/ProductForm.tsx:103`,
+`admin/firmware/Dashboard.tsx:13` (menghitung `r.data.length` sebagai badge jumlah), dan
+`admin/Peserta.tsx` (ekspor CSV dari `rows` di klien).
+
+## PART 5 — Query DB
+
+**LIMIT/OFFSET untuk semua. Cursor tidak dibutuhkan di mana pun.** Offset terdalam yang mungkin
+terjadi adalah 395 (Ubiquiti) — biaya `OFFSET` baru terasa di puluhan ribu baris. Lagi pula
+pengurutan default `ORDER BY sort_order ASC, created_at DESC, id DESC` memakai `sort_order` yang
+**tidak unik**, jadi cursor harus komposit 3 kolom: rumit, tanpa imbalan. Bahkan `visitor_log`
+(11.952 baris, `ORDER BY visited_at DESC, id DESC` — sebenarnya kandidat cursor yang rapi) tetap
+tidak perlu: offset terdalam 11.900 terukur beberapa milidetik.
+
+**Biaya COUNT (terukur):** `visitor_log` 17 ms, `ubiquiti_dcs_products` 3 ms, `mikrotik_dcs_products`
+3 ms. Tidak ada alasan menghindari `COUNT(*)` per request di skala ini.
+
+**Indeks — satu celah nyata:**
+
+- `mikrotik_dcs_products`: `idx_category`, `idx_sort`, `idx_created` → **cukup**.
+- `vsol_dcs_products`: `idx_category`, `idx_sort` → **cukup**.
+- `fiberhome_products`: `idx_category`, `idx_sort` → **cukup**.
+- `firmware_files`: `idx_firmware_sort(brand, category, sort_order)` → **cukup, paling rapi**.
+- ⚠️ **`ubiquiti_dcs_products`: hanya `PRIMARY(id)` dan `sku(sku)`.** Tidak ada indeks `category`
+  maupun `sort_order` — padahal ini tabel produk **terbesar** (395) dan satu-satunya yang endpoint-nya
+  selalu memfilter `category`. Di 395 baris full scan tidak terasa, tapi ini satu-satunya kekurangan
+  skema yang relevan dengan M-05. *Di luar lingkup (tanpa perubahan skema) — dicatat saja.*
+- ⚠️ `visitor_log` punya `idx_date_bot(visit_date, is_bot)` yang cocok dengan filternya, tapi
+  `ORDER BY visited_at DESC` memakai kolom **berbeda** (`visited_at`, bukan `visit_date`) → filesort
+  pada tiap halaman. Belum jadi masalah di 12k baris; catatan untuk nanti.
+
+## PART 6 — Frontend
+
+Komponen yang butuh state halaman + loading state:
+
+| Komponen | Perlu? | Catatan |
+|---|---|---|
+| `ubiquiti/admin/Dashboard.tsx` | ✅ ya | 395 baris; **matikan paging saat `sort === "custom"`** |
+| `mikrotik/admin/Dashboard.tsx` | ✅ ya | 283 baris; syarat sama |
+| `vsol/admin/Dashboard.tsx` | ❌ tidak | 27 baris |
+| `admin/firmware/List.tsx` | ❌ tidak | 20 baris |
+| `admin/Users.tsx`, `Peserta.tsx`, `training/Dashboard.tsx` | ❌ tidak | 5 / 0 / 1 baris |
+| `{mikrotik,ubiquiti,vsol}/public/StoreCatalog.tsx` | ⚠️ render cap saja | bukan paginasi API |
+| `mikrotik/public/CategoryCatalogPage.tsx` | ❌ tidak | maks 64 per kategori |
+
+**Sinkronisasi URL (`?page=2`)** — layak hanya di dua tempat, dan dengan alasan berbeda:
+
+- `ubiquiti/public/StoreCatalog.tsx` **sudah** menaruh kategori di URL (`setLocation("/ubiquiti/shop?category=…")`),
+  jadi `?page=` menyatu alami. Tapi karena katalog publik tidak dipaginasi, ini jadi moot — lewati.
+- Dashboard admin: berguna untuk "kirim link ke halaman 3" dan supaya tombol Back browser tidak
+  melompat balik ke halaman 1 setelah edit produk. **Ini yang paling terasa manfaatnya.**
+- `mikrotik/public/StoreCatalog.tsx` bahkan **belum** menyinkronkan kategori ke URL (murni state lokal).
+  Menambah `?page` di sana tanpa `?category` justru tidak konsisten — kalau mau diperbaiki, `?category` dulu.
+
+**Posisi scroll:** dengan nomor halaman, pola yang benar adalah `scrollTo(0,0)` saat halaman berubah.
+Ini justru salah satu alasan menolak infinite scroll di katalog publik.
+
+## PART 7 — Estimasi & pemecahan commit
+
+Diurutkan supaya tiap commit berdiri sendiri, bisa di-deploy, dan bisa di-revert terpisah.
+
+| # | Commit | Lingkup | Ukuran |
+|---|---|---|---|
+| 1 | `fix(api): hard cap 500 baris di semua query listing` | 6 model, tanpa perubahan kontrak/UI. **Ini yang menutup temuan audit.** | **kecil** |
+| 2 | `refactor(client): ekstrak <Pagination> dari VisitorLog` | komponen bersama + `pageNumbers()`, VisitorLog dipakai sebagai pemakai pertama (uji regresi gratis) | **sedang** |
+| 3 | `feat(api): endpoint /public/search ringan per brand` | proyeksi `id, nama_produk, sku, category, main_image` saja — **prasyarat**, harus sebelum #8 | **sedang** |
+| 4 | `refactor(client): search-modal pakai endpoint search baru` | memutus ketergantungan search ke list penuh | **kecil** |
+| 5 | `feat(api): meta{total,page,perPage,hasMore} di 2 list admin` | aditif, ubiquiti + mikrotik admin | **kecil** |
+| 6 | `feat(admin): paginasi dashboard Ubiquiti` | termasuk guard `sort==="custom"` + sync `?page=` | **sedang** |
+| 7 | `feat(admin): paginasi dashboard MikroTik` | mengikuti pola #6 | **kecil** |
+| 8 | `feat(catalog): tombol "Tampilkan lebih banyak" di katalog publik` | render cap klien, tanpa perubahan API | **sedang** |
+
+Commit #1 saja sudah menutup M-05 sebagai temuan keamanan. #2–#8 murni peningkatan UX dan boleh
+ditunda tanpa utang keamanan tersisa. Kalau waktu terbatas: kerjakan **#1, lalu berhenti**.
+
+## PART 8 — Risiko
+
+**Tinggi — akan rusak diam-diam kalau list publik dipaginasi tanpa persiapan:**
+
+1. **`components/search-modal.tsx`** — memuat **seluruh** produk per brand tanpa `category`
+   (`:56`, `:74`, `:92`) lalu memfilter di klien. Ini pemakai terbesar endpoint publik (227 KB untuk
+   Ubiquiti). Begitu list dipotong, pencarian global jadi **salah tanpa error** — produk yang ada
+   dilaporkan tidak ada. Mitigasi: commit #3 dan #4 **wajib** mendahului paginasi publik apa pun.
+2. **`ubiquiti/admin/ProductForm.tsx:103`** — `apiUbiquitiAdminProducts()` tanpa argumen untuk
+   mengisi pemilih add-on. Dipotong 100 → 295 produk hilang dari dropdown, tanpa pesan apa pun.
+
+**Sedang:**
+
+3. **Drag & drop reorder** (`{mikrotik,ubiquiti,vsol}/admin/Dashboard.tsx`) mengirim **seluruh daftar
+   id kategori** ke `/admin/products/reorder`. Model `reorderXxxProducts()` menomori ulang
+   `sort_order` dari indeks 0 untuk id yang dikirim saja — jadi kalau hanya satu halaman yang terkirim,
+   urutan produk di halaman lain **ikut bergeser**. Diredam oleh fakta bahwa drag hanya aktif jika
+   satu kategori dipilih (maks 165 item), tapi guard eksplisit tetap wajib.
+4. **`admin/Peserta.tsx`** — ekspor CSV dibangun dari `rows` di klien (`:43`). Kalau dipaginasi, tombol
+   "Export" diam-diam hanya mengekspor halaman aktif. (Tabelnya 0 baris sekarang, jadi ini catatan
+   untuk nanti — dan alasan lain untuk melewati endpoint ini.)
+5. **`admin/firmware/Dashboard.tsx:13`** — badge jumlah per brand dihitung dari `r.data.length`.
+   Dengan cap 500 pun aman hari ini (20 baris), tapi polanya rapuh; `meta.total` adalah jawabannya.
+
+**Interaksi filter/search/sort:** filter kategori dikerjakan di server (refetch, bukan filter klien),
+jadi paginasi + filter tidak bentrok **asal `page` di-reset ke 1 setiap `category` atau `sort` berubah** —
+lupa ini menghasilkan "halaman 5 dari 2 halaman" yang tampil kosong. Tidak ada kotak pencarian di
+dashboard admin mana pun, jadi tidak ada interaksi search yang perlu dijaga di sisi admin.
+
+**Di mana paginasi justru memperburuk UX:** katalog publik. Pengunjung menelusuri lewat pill kategori,
+dan kategori terbesar pun hanya 165 item; memaksa "halaman 2 dari WiFi (35 item)" menambah klik tanpa
+menghemat apa pun. Dan `CategoryCatalogPage.tsx` MikroTik (maks 64 item) jelas tidak perlu disentuh.
+
+## RANGKUMAN
+
+- **Analisis saja — nol perubahan kode, nol perubahan skema.** Hanya `SELECT` ke DB produksi `dcsindo`; skrip hitung sementara sudah dihapus.
+- **Tidak ada endpoint yang melewati ambang mendesak.** Tabel listing terbesar adalah `ubiquiti_dcs_products` = **395** baris (227 KB). Satu-satunya tabel >500 (`visitor_log`, **11.952**) **sudah berpaginasi penuh** dan dibatasi job prune 3 bulan.
+- **Tiga dari empat katalog tidak tumbuh sejak Mei 2026** — Ubiquiti 395, V-SOL 27, MikroTik +1 produk dalam 4 bulan. M-05 adalah masalah *batas*, bukan masalah *volume*.
+- **Rekomendasi inti: commit #1 saja sudah menutup temuan audit** — hard cap `LIMIT 500` di 6 model listing, tanpa perubahan kontrak API dan tanpa menyentuh UI. Sisanya (7 commit) murni UX dan boleh ditunda.
+- **Paginasi UX hanya untuk 2 daftar admin** (Ubiquiti 395, MikroTik 283) pakai nomor halaman klasik — `<Pagination>` tinggal diekstrak dari `VisitorLog.tsx` yang sudah matang. **7 endpoint lain dilewati** (semua <100 baris).
+- **Katalog publik jangan dipaginasi**; pakai render cap "Tampilkan lebih banyak" di klien. Kategori terbesar hanya 165 item, dan biayanya di render kartu, bukan transfer. Infinite scroll ditolak (merusak posisi scroll saat kembali dari halaman detail).
+- **Kontrak API aditif — bukan breaking:** tambah `meta{total,page,perPage,hasMore}` di samping `data`. Memindahkan array ke `data.rows` (menyeragamkan dengan visitor-log) akan memecah 12 pemanggil — jangan.
+- **LIMIT/OFFSET untuk semua, cursor tidak perlu di mana pun.** Offset terdalam 395; `COUNT(*)` terukur 3–17 ms. Pengurutan pakai `sort_order` yang tidak unik, jadi cursor harus komposit 3 kolom — rumit tanpa imbalan.
+- **Risiko terbesar: `search-modal.tsx` memuat seluruh produk per brand untuk pencarian global.** Memotong list publik akan membuat pencarian **salah tanpa error**. Endpoint `/public/search` ringan wajib dibuat lebih dulu. Risiko serupa: pemilih add-on di `ubiquiti/admin/ProductForm.tsx:103`, dan drag-reorder yang mengirim seluruh id kategori.
+- ⚠️ **Temuan sampingan (tidak diubah, di luar lingkup):** `ubiquiti_dcs_products` — tabel produk terbesar — **hanya punya `PRIMARY(id)` dan `sku(sku)`**, tanpa indeks `category` maupun `sort_order`, padahal endpoint-nya selalu memfilter kategori. Juga `visitor_log` memfilter `visit_date` tapi mengurutkan `visited_at` → filesort tiap halaman.
+
+---
+
+# Implementasi M-05 commit #1 — Hard cap 500 baris di query listing (2026-09-15)
+
+Menjalankan persis commit #1 dari rencana M-05: membatasi jumlah baris di semua query
+listing. **Tanpa perubahan kontrak API, tanpa perubahan UI, tanpa parameter baru.**
+`visitor_log` dan `admin_activity_log` sengaja tidak disentuh — keduanya sudah berbatas.
+
+## Koreksi terhadap rencana: 8 model, bukan 6
+
+Rencana M-05 menulis "6 models". Saat dikerjakan ternyata ada **8** model yang punya query
+listing tanpa batas. Yang terlewat dihitung di rencana adalah `trainingRegistrationModel` dan
+`userModel` — keduanya memang ada di tabel inventaris PART 1, hanya salah dijumlahkan.
+Semuanya dicakup di commit ini.
+
+## Yang diubah
+
+File baru `server/models/listLimit.ts` — satu konstanta `LIST_ROW_CAP = 500`, dengan komentar
+peringatan yang diminta: menaikkan angka ini (atau data tumbuh melewati 500) **wajib**
+menangani `search-modal.tsx` dan `ubiquiti/admin/ProductForm.tsx` lebih dulu, karena keduanya
+gagal diam-diam kalau daftarnya terpotong. Komentar menunjuk balik ke analisis M-05 di
+`laporan.md`.
+
+| Model | Fungsi | Perubahan |
+|---|---|---|
+| `mikrotikDcsProductModel.ts` | `listMikrotikDcsProducts` | `LIMIT ${LIST_ROW_CAP}` |
+| `ubiquitiDcsProductModel.ts` | `listUbiquitiDcsProducts` | `LIMIT ${LIST_ROW_CAP}` |
+| `vsolDcsProductModel.ts` | `listVsolDcsProducts` | `LIMIT ${LIST_ROW_CAP}` |
+| `firmwareModel.ts` | `listFirmwareFiles` | `LIMIT ${LIST_ROW_CAP}` |
+| `trainingModel.ts` | `listTrainingSessions` | `LIMIT ${LIST_ROW_CAP}` |
+| `trainingRegistrationModel.ts` | `listRegistrations` | `LIMIT ${LIST_ROW_CAP}` |
+| `userModel.ts` | `listUsers` | `LIMIT ${LIST_ROW_CAP}` |
+| `fiberHomeDcsProductModel.ts` | `getAllProducts` | `LIMIT` di query induk + 4 query anak di-scope `WHERE product_id IN (:ids)` |
+
+Pola `LIMIT ${konstanta}` disisipkan langsung ke string SQL — sama persis dengan pola yang
+sudah dipakai `listAdminLoginAttempts` dan `listVisits`. Nilainya konstanta literal, bukan
+input pengguna, jadi tidak ada permukaan injeksi baru.
+
+## Satu keputusan yang perlu Anda tahu (di luar "sekadar tambah LIMIT")
+
+Di `fiberHomeDcsProductModel.getAllProducts()`, **`LIMIT` datar di 4 query anak justru salah.**
+Fungsi itu menarik seluruh isi `fiberhome_gallery`, `_technical_specs`, `_key_features`, dan
+`_applications` lalu menggabungkannya di JS. Memotong query anak di 500 bisa membuang spec
+milik produk yang **masih ada** di daftar — output rusak diam-diam, persis jenis bug yang
+ingin dihindari M-05. Jadi query anak dibatasi lewat `WHERE product_id IN (:ids)` memakai id
+produk yang benar-benar terambil. Hasilnya tetap utuh, ikut terbatas oleh cap induk, dan
+kebetulan juga lebih hemat. Kalau Anda ingin commit ini murni "hanya LIMIT", bagian inilah
+yang dicabut — tapi konsekuensinya endpoint FiberHome tetap tidak berbatas.
+
+## Verifikasi
+
+- `npm run check` (tsc) — **exit 0**.
+- `npm run build` — **sukses**, `dist/index.cjs` 1,2 MB.
+- **Pengukuran ke DB produksi: 0 dari 8 endpoint terpotong hari ini.** MikroTik 283, Ubiquiti
+  395, V-SOL 27, FiberHome 1, firmware 20, training 1, registrations 0, users 5 — semua di
+  bawah 500.
+- **Risiko dikonfirmasi tidak menggigit hari ini**, sesuai permintaan: `search-modal.tsx`
+  memuat list brand terbesar = Ubiquiti **395 < 500** → pencarian global tetap lengkap; pemilih
+  add-on di `ProductForm.tsx` memakai list yang sama, **395 < 500** → dropdown tetap lengkap.
+  Sisa ruang sebelum cap benar-benar menggigit: **105 produk Ubiquiti lagi**.
+- Scoping anak FiberHome tidak menghilangkan satu baris pun: gallery 5/5, specs 14/14,
+  features 5/5, applications 3/3 — **0 baris yatim**.
+
+## RANGKUMAN
+
+- **Commit #1 M-05 selesai** — cap 500 baris di semua query listing, satu commit
+  `fix(api): hard cap 500 rows on listing queries (M-05)`. Kontrak API, UI, dan parameter tidak berubah sama sekali.
+- **Koreksi: 8 model, bukan 6 seperti di rencana.** `trainingRegistrationModel` dan `userModel` salah dijumlahkan di rencana awal; keduanya ikut ditangani di sini.
+- **Konstanta tunggal `LIST_ROW_CAP = 500`** di file baru `server/models/listLimit.ts`, lengkap dengan peringatan bahwa menaikkannya wajib menangani `search-modal.tsx` + `ProductForm.tsx` lebih dulu, menunjuk balik ke analisis M-05.
+- **`visitor_log` dan `admin_activity_log` tidak disentuh** — keduanya sudah berbatas di angka 500 yang sama.
+- **0 dari 8 endpoint terpotong hari ini.** Yang terbesar (Ubiquiti, 395) masih 105 baris di bawah cap, jadi perilaku produksi tidak berubah sedikit pun.
+- **Dua risiko yang Anda minta dikonfirmasi: aman.** Pencarian global (`search-modal`) dan pemilih add-on (`ProductForm`) sama-sama memakai list Ubiquiti 395 baris — di bawah cap, jadi keduanya tetap lengkap hari ini.
+- ⚠️ **Satu langkah melebihi "sekadar tambah LIMIT":** di FiberHome, 4 query anak di-scope `WHERE product_id IN (:ids)`, bukan diberi `LIMIT` datar — karena `LIMIT` datar di sana bisa membuang spec milik produk yang masih dalam rentang. Terverifikasi 0 baris hilang. Mudah dicabut kalau Anda mau commit ini betul-betul minimal.
+- **Verifikasi: `npm run check` exit 0, `npm run build` sukses.** Tidak ada deploy — mode batch, sesuai instruksi.
+- **Sisa rencana M-05 (commit #2–#8) belum dikerjakan** dan tidak meninggalkan utang keamanan — semuanya murni UX.

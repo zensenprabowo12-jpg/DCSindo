@@ -1,6 +1,7 @@
 import type { ResultSetHeader, RowDataPacket } from "mysql2";
 import bcrypt from "bcryptjs";
 import { mysqlPool } from "../config/mysqlPool";
+import { LIST_ROW_CAP } from "./listLimit";
 import { isValidRole, type UserRole } from "../auth/roles";
 
 const BCRYPT_ROUNDS = 10;
@@ -132,7 +133,7 @@ export async function verifyPassword(plain: string, hash: string): Promise<boole
 export async function listUsers(): Promise<PublicUser[]> {
   await ensureUsersTable();
   const [rows] = await mysqlPool.query<(UserRow & RowDataPacket)[]>(
-    "SELECT * FROM users ORDER BY id ASC",
+    `SELECT * FROM users ORDER BY id ASC LIMIT ${LIST_ROW_CAP}`,
   );
   return rows.map(toPublicUser);
 }

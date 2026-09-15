@@ -1,5 +1,6 @@
 import type { ResultSetHeader, RowDataPacket } from "mysql2";
 import { mysqlPool } from "../config/mysqlPool";
+import { LIST_ROW_CAP } from "./listLimit";
 import { computeStatus, type TrainingBrand, type TrainingFormat, type TrainingStatus } from "../training/categories";
 import { listGallery, type TrainingGalleryRow } from "./trainingGalleryModel";
 
@@ -118,7 +119,8 @@ export async function listTrainingSessions(opts: {
             (SELECT COUNT(*) FROM training_gallery g WHERE g.training_id = ts.id) AS doc_count
        FROM training_sessions ts
        ${where}
-      ORDER BY ts.start_datetime ASC, ts.id ASC`,
+      ORDER BY ts.start_datetime ASC, ts.id ASC
+      LIMIT ${LIST_ROW_CAP}`,
     params,
   );
 

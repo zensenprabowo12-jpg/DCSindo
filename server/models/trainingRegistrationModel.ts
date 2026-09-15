@@ -1,5 +1,6 @@
 import type { ResultSetHeader, RowDataPacket } from "mysql2";
 import { mysqlPool } from "../config/mysqlPool";
+import { LIST_ROW_CAP } from "./listLimit";
 
 export const REGISTRATION_STATUSES = ["registered", "confirmed", "attended", "cancelled"] as const;
 export type RegistrationStatus = (typeof REGISTRATION_STATUSES)[number];
@@ -168,7 +169,8 @@ export async function listRegistrations(opts: { training_id?: number } = {}): Pr
        FROM training_registrations r
        LEFT JOIN training_sessions t ON t.id = r.training_id
        ${where}
-      ORDER BY r.created_at DESC, r.id DESC`,
+      ORDER BY r.created_at DESC, r.id DESC
+      LIMIT ${LIST_ROW_CAP}`,
     opts.training_id ? { training_id: opts.training_id } : {},
   );
   return rows;
