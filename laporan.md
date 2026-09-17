@@ -1462,3 +1462,262 @@ yang dicabut — tapi konsekuensinya endpoint FiberHome tetap tidak berbatas.
 - ⚠️ **Satu langkah melebihi "sekadar tambah LIMIT":** di FiberHome, 4 query anak di-scope `WHERE product_id IN (:ids)`, bukan diberi `LIMIT` datar — karena `LIMIT` datar di sana bisa membuang spec milik produk yang masih dalam rentang. Terverifikasi 0 baris hilang. Mudah dicabut kalau Anda mau commit ini betul-betul minimal.
 - **Verifikasi: `npm run check` exit 0, `npm run build` sukses.** Tidak ada deploy — mode batch, sesuai instruksi.
 - **Sisa rencana M-05 (commit #2–#8) belum dikerjakan** dan tidak meninggalkan utang keamanan — semuanya murni UX.
+
+---
+
+# Analisa Akses Firmware untuk Role `trainer` (analisis saja, 2026-09-17)
+
+> Status: **analisis saja, tidak ada kode yang diubah.**
+> Branch: `security/c01-c03-hardening`
+> Tujuan yang diminta: role `trainer` dapat akses **penuh** modul Firmware (upload, edit, hapus) untuk **semua brand** (MikroTik, Ubiquiti, V-SOL).
+
+## 1. INVENTARIS GUARD FIRMWARE SEKARANG
+
+Modul firmware punya **dua base path** dan **tiga lapis guard** (route-level multer guard, in-handler guard, dan guard halaman di frontend).
+
+### 1a. `/api/firmware` — `server/routes/firmwareRoutes.ts`
+
+| Endpoint | Route | Guard route-level | Guard in-handler | Role yang lolos |
+|---|---|---|---|---|
+| List admin | `firmwareRoutes.ts:64` `GET /api/firmware/admin/list` | — | `firmwareApiController.ts:70` | `admin` |
+| Detail admin | `firmwareRoutes.ts:65` `GET /api/firmware/admin/:id` | — | `firmwareApiController.ts:84` | `admin` |
+| Reorder | `firmwareRoutes.ts:66` `POST /api/firmware/admin/reorder` | — | `firmwareApiController.ts:293` | `admin` |
+| **Upload / create** | `firmwareRoutes.ts:67` `POST /api/firmware/admin` | **`firmwareRoutes.ts:58`** `requireRoleMw("admin")` | `firmwareApiController.ts:104` | `admin` |
+| **Edit / update** | `firmwareRoutes.ts:68` `PUT /api/firmware/admin/:id` | **`firmwareRoutes.ts:58`** `requireRoleMw("admin")` | `firmwareApiController.ts:173` | `admin` |
+| **Delete** | `firmwareRoutes.ts:69` `DELETE /api/firmware/admin/:id` | — | `firmwareApiController.ts:269` | `admin` |
+| List publik | `firmwareRoutes.ts:61` `GET /api/firmware/public/list` | — | — | **siapa pun (tanpa auth)** |
+
+### 1b. `/api/firmware-popup` — `server/routes/firmwarePopupRoutes.ts`
+
+| Endpoint | Route | Guard route-level | Guard in-handler | Role yang lolos |
+|---|---|---|---|---|
+| Baca setting popup | `firmwarePopupRoutes.ts:21` `GET /api/firmware-popup/admin` | — | `firmwarePopupApiController.ts:38` | `admin` |
+| Ubah setting popup | `firmwarePopupRoutes.ts:22` `PUT /api/firmware-popup/admin/:key` | — | `firmwarePopupApiController.ts:49` | `admin` |
+| Baca publik | `firmwarePopupRoutes.ts:18` `GET /api/firmware-popup/public` | — | — | **siapa pun (tanpa auth)** |
+
+### 1c. Jawaban tegas: middleware mana yang dipakai
+
+**Tidak ada** yang memakai cek session polos (`req.session.mikrotikDcsAdmin`) secara langsung. Semuanya lewat `requireRole`:
+
+- `firmwareApiController.ts:52` → `const requireAdminSession = requireRole("admin")` — dipanggil 6 kali (baris 70, 84, 104, 173, 269, 293). Namanya `requireAdminSession`, tapi isinya `requireRole("admin")`, bukan guard lama terpisah.
+- `firmwarePopupApiController.ts:12` → `const requireAdminSession = requireRole("admin")` — dipanggil 2 kali (baris 38, 49).
+- `firmwareRoutes.ts:58` → `const uploadGuard = requireRoleMw("admin")` — versi middleware Express, **wajib** karena harus jalan sebelum multer (komentar `firmwareRoutes.ts:57` menyebut C-04 Step 8: guard boolean di dalam handler baru jalan setelah file terlanjur ditulis ke disk).
+
+Kompatibilitas sesi lama: `requireRole.ts:9-13` (`currentRole`) memetakan sesi tanpa field `role` tapi punya `mikrotikDcsAdmin=true` menjadi `"admin"` — jadi sesi lama tetap admin, tidak akan pernah jadi trainer.
+
+**Jadi hari ini: 0 endpoint admin firmware yang bisa diakses trainer. Semua 8 endpoint admin = `admin` saja.**
+
+## 2. KONDISI SISTEM ROLE
+
+### 2a. Definisi
+
+- `server/auth/roles.ts:6` — `USER_ROLES = ["admin", "trainer", "sales"]` + `isValidRole()` di `:9-11`.
+- Komentar `roles.ts:3-4` ("Fase 0: hanya 'admin' yang aktif penuh; 'trainer' & 'sales' disiapkan untuk fase berikutnya") **masih akurat sebagian, tapi sudah usang sebagian**. Yang sudah benar-benar ditegakkan:
+  - Mekanismenya **selesai**: `requireRole` + `requireRoleMw` (`middleware/requireRole.ts:29-56`), session field (`types/express-session.d.ts:16`), login mengisi role (`authController.ts:86`), `/api/auth/me` mengirim role (`authController.ts:115-121`), frontend `RequireRole.tsx` + `session.ts`.
+  - Yang **belum disebar**: 1 dari 9 modul backend yang benar-benar memakai role non-admin. Semua controller lain masih `requireRole("admin")` — `firmwareApiController`, `firmwarePopupApiController`, `mikrotikDcsApiController:21`, `ubiquitiDcsApiController:43`, `vsolDcsApiController:52`, `fiberHomeDcsApiController:28`, `visitorLogApiController:6`, `usersController:13`.
+  - Sejalan dengan `PROJECT_SUMMARY.md:462` ("sebagian besar guard masih `requireRole("admin")`") dan `PROJECT_SUMMARY.md:487` (sisa pekerjaan: sebar guard non-admin, status terbuka).
+
+### 2b. Yang bisa diakses `trainer` sekarang (daftar lengkap)
+
+Hanya modul **training** dan **peserta**:
+
+| Akses | Lokasi guard |
+|---|---|
+| CRUD sesi training (list, get, create, update, delete) | `trainingApiController.ts:57` `requireRole("admin","trainer")` → dipanggil di `:273, :283, :299, :339, :392` |
+| Galeri training (list, upload, delete) | sama, `trainingApiController.ts:418, :433, :454` |
+| Upload file training (multer) | `trainingRoutes.ts:84` `requireRoleMw("admin","trainer")` |
+| Lihat daftar peserta | `trainingApiController.ts:60` `requireRole("admin","trainer","sales")` → `:66` |
+| Ubah status peserta | `trainingApiController.ts:62` `requireRole("admin","trainer")` → `:78` |
+
+Selain itu: **tidak ada**. Trainer tidak bisa akses katalog brand, firmware, visitor log, activity log, maupun users.
+
+### 2c. Cara user mendapat role `trainer`
+
+**Kolom DB**, bukan field session yang di-set manual:
+
+- Kolom `role VARCHAR(20) NOT NULL DEFAULT 'admin'` di tabel `users` — `server/models/userModel.ts:53` (tabel auto-create).
+- Diisi saat create/update user lewat panel `/admin/users` → `usersController.ts` (guard `requireRole("admin")` di `:13`), validasi `isValidRole()` di `userModel.ts:154` dan `:194-197`.
+- Saat login, role dibaca dari baris DB dan disalin ke session: `authController.ts:86` (`req.session.role = user.role`), setelah `session.regenerate()` di `:79-81` (H-03).
+- Session field `role?: UserRole` dideklarasikan di `server/types/express-session.d.ts:16`.
+
+Konsekuensi: mengubah role user **butuh login ulang** agar session membawa role baru (tidak ada refresh role per-request).
+
+## 3. FRONTEND
+
+### 3a. Menu admin
+
+`client/src/admin/NavBar.tsx:7-17` — daftar `TABS` statis, tiap tab punya array `roles`. Filter di `:44`: `TABS.filter((t) => t.roles.includes(role))`.
+
+- `NavBar.tsx:13` → `{ label: "Firmware", href: "/admin/firmware", roles: ["admin"] }`.
+- **Jawaban: TIDAK. Tab "Firmware" tidak muncul untuk trainer hari ini.** Trainer hanya melihat 2 tab: "Training" (`:14`) dan "Peserta" (`:15`).
+
+### 3b. Guard halaman client-side
+
+`client/src/admin/firmware/ProtectedRoute.tsx:5` — `<RequireRole roles={["admin"]}>`.
+
+Dipakai oleh **keempat** halaman firmware:
+- `admin/firmware/Dashboard.tsx:108`
+- `admin/firmware/List.tsx:357`
+- `admin/firmware/FirmwareForm.tsx:349`
+- `admin/firmware/PopupSettings.tsx:180`
+
+Cara kerjanya (`RequireRole.tsx:25-43`): panggil `/api/auth/me`; belum login → `/admin/login`; role salah → **redirect ke `roleHome(role)`**. Untuk trainer, `session.ts:35-36` mengembalikan `/admin/training`.
+
+**Jadi ya — walaupun API dibuka, trainer yang mengetik `/admin/firmware` langsung akan dilempar ke `/admin/training`** selama `ProtectedRoute.tsx:5` belum diubah.
+
+Selain dua titik itu (`NavBar.tsx:13` dan `ProtectedRoute.tsx:5`), **tidak ada cek role lain** di seluruh `client/src/admin/firmware/` — tidak ada tombol hapus/edit yang disembunyikan per role, tidak ada pemakaian `fetchMe()` di dalam halaman firmware. Rute di `App.tsx:142-146` juga tidak punya guard sendiri (guard-nya di dalam komponen).
+
+## 4. YANG PERLU DIUBAH
+
+Total **5 titik**, 4 file. Semua berupa penambahan `"trainer"` ke daftar role, tidak ada perubahan logika.
+
+### Backend (3 titik)
+
+| # | File:baris | Sekarang | Menjadi | Menutup |
+|---|---|---|---|---|
+| 1 | `server/routes/firmwareRoutes.ts:58` | `requireRoleMw("admin")` | `requireRoleMw("admin", "trainer")` | Upload + edit (guard pra-multer) |
+| 2 | `server/controllers/firmwareApiController.ts:52` | `requireRole("admin")` | `requireRole("admin", "trainer")` | List, get, create, update, **delete**, reorder — 6 handler sekaligus |
+| 3 | `server/controllers/firmwarePopupApiController.ts:12` | `requireRole("admin")` | `requireRole("admin", "trainer")` | Setting popup (opsional — lihat 4c) |
+
+Titik #1 **dan** #2 keduanya wajib untuk upload/edit: kalau hanya #2, request POST/PUT ditolak 403 oleh `requireRoleMw` sebelum multer jalan. Kalau hanya #1, file terunggah lalu ditolak handler (dan file sudah terlanjur di disk).
+
+Brand tidak perlu disentuh sama sekali: tabel `firmware_files` punya kolom `brand` yang divalidasi `isValidFirmwareBrand()` (`firmwareModel.ts:6-11`, nilai `mikrotik|ubiquiti|vsol`), **bukan** guard terpisah per brand. Satu guard = ketiga brand langsung ikut.
+
+### Frontend (2 titik)
+
+| # | File:baris | Sekarang | Menjadi |
+|---|---|---|---|
+| 4 | `client/src/admin/NavBar.tsx:13` | `roles: ["admin"]` | `roles: ["admin", "trainer"]` |
+| 5 | `client/src/admin/firmware/ProtectedRoute.tsx:5` | `roles={["admin"]}` | `roles={["admin", "trainer"]}` |
+
+Titik #5 menutup keempat halaman firmware sekaligus (Dashboard, List, Form, PopupSettings) karena semuanya memakai wrapper yang sama.
+
+### 4c. Keputusan yang perlu Anda ambil: PopupSettings
+
+`/admin/firmware/settings` **bukan** data firmware — isinya konten "Panduan Instalasi" & "Disclaimer" yang **global untuk semua brand** dan tampil di **modal download publik** (`firmwarePopupSettingsModel`, komentar `firmwarePopupRoutes.ts:12`). Memberi trainer akses ke sini = memberi trainer kemampuan **mengubah teks yang dilihat pengunjung publik**, termasuk disclaimer risiko flashing.
+
+"Akses penuh firmware" bisa dibaca dua cara. Kalau maksud Anda hanya CRUD file firmware, **lewati titik #3**, dan tambahkan kondisi di `Dashboard.tsx` firmware agar kartu "Kelola konten" tidak ditampilkan untuk trainer (kalau tidak, trainer melihat kartunya, mengklik, lalu dapat 403 — jelek, tapi tidak bocor).
+
+## 5. RISIKO — apakah ada yang ikut bocor lewat middleware bersama?
+
+Diperiksa satu per satu. **Tidak ada kebocoran lintas modul**, dengan tiga catatan:
+
+1. **Konstanta guard bersifat lokal per-file.** `requireAdminSession` di `firmwareApiController.ts:52` dan di `firmwarePopupApiController.ts:12` adalah dua konstanta terpisah yang kebetulan bernama sama; keduanya **tidak** dipakai controller lain. `requireRole()` mengembalikan closure baru tiap panggilan (`requireRole.ts:29-42`), jadi mengubah salah satunya tidak menyentuh `mikrotikDcsApiController:21`, `ubiquitiDcsApiController:43`, `vsolDcsApiController:52`, `fiberHomeDcsApiController:28`, `visitorLogApiController:6`, atau `usersController:13`. Dikonfirmasi: 6 controller lain tetap admin-only.
+2. **`ProtectedRoute` firmware terpisah dari ProtectedRoute brand.** `client/src/admin/firmware/ProtectedRoute.tsx` adalah file tersendiri; `mikrotik/admin/ProtectedRoute.tsx:9`, `ubiquiti/admin/ProtectedRoute.tsx:9`, `vsol/admin/ProtectedRoute.tsx:5` punya file masing-masing dan tetap `["admin"]`. Membuka firmware **tidak** membuka panel katalog produk MikroTik/Ubiquiti/V-SOL.
+3. **Yang memang melebar (dan tidak bisa dihindari dengan perubahan minimal ini):**
+   - **Delete permanen + hapus file di disk.** `apiFirmwareAdminDelete` (`firmwareApiController.ts:269`) memanggil `safeDeleteFile()` — file fisik hilang, tidak ada soft-delete, tidak ada trash, dan **tidak ada audit log**: `admin_activity_log` hanya mencatat percobaan login (`authController.ts:48-54`), bukan aksi CRUD. Setelah perubahan ini, tidak akan ada catatan siapa menghapus firmware apa.
+   - **Update lintas-brand.** Guard tidak mengikat trainer ke satu brand; `apiFirmwareAdminUpdate` (`:173`) menerima `brand` dari body, jadi trainer bisa memindahkan entri antar brand. Ini memang sesuai permintaan ("semua brand"), dicatat agar eksplisit.
+   - **Kapasitas disk.** Upload firmware bisa ~500 MB (`server/index.ts:288-290`, `requestTimeout` dinaikkan ke 30 menit untuk ini). Menambah satu role penulis = menambah sumber pengisian disk tanpa kuota.
+   - Tidak melebar: file firmware yang sudah diunggah memang **sudah publik** tanpa auth (`/uploads` static, `middleware/staticUploads.ts:26-39`, dan `GET /api/firmware/public/list` di `firmwareRoutes.ts:61`). Jadi perubahan ini menambah hak **tulis**, bukan hak **baca** — tidak ada data yang tadinya rahasia jadi terbuka.
+
+## 6. KONTEKS AUDIT — soal "L-07"
+
+**Koreksi premis, dan ini penting sebelum Anda memutuskan:** **identifier `L-07` tidak ada di repo ini.** Diperiksa: seluruh file `.md`, seluruh source, dan pickaxe ke seluruh riwayat git (`git log --all -S"L-07"`) — nol hasil di file teks (satu-satunya "match" adalah kebetulan byte di file firmware biner `.tar`). Item audit yang benar-benar terekam di repo adalah C-04, H-02, H-03, H-04, H-06, I-01, I-04, L-01, L-03, L-04, L-05, L-06, M-03, M-05, M-06, M-08. **L-07 bukan salah satunya.** Kesimpulan "trainer tetap status quo" jelas ada, tapi asal-usulnya di luar repo (kemungkinan percakapan audit yang tidak ikut tersimpan) — jadi saya tidak bisa mengutip alasan asli keputusan itu.
+
+Yang **bisa** dikutip dari repo, dan semuanya searah "jangan buru-buru melebarkan akses non-admin":
+
+| Sumber | Isinya |
+|---|---|
+| `server/auth/roles.ts:3-4` | "Fase 0: hanya 'admin' yang aktif penuh; 'trainer' & 'sales' disiapkan untuk **fase berikutnya**". Dikonfirmasi sengaja dipertahankan pada audit dokumen — `laporan.md:1159` menulis label ini **"Sengaja TIDAK diubah" karena "pemisahan role memang belum selesai"**. |
+| `PROJECT_SUMMARY.md:281` | "pemisahan hak akses per modul **belum** disebar penuh ke semua controller". |
+| `PROJECT_SUMMARY.md:462` (utang teknis #2) | "Pemisahan role belum disebar penuh… sebagian besar guard masih `requireRole("admin")`. Modul per-role belum benar-benar terpisah." |
+| `PROJECT_SUMMARY.md:487` | Sisa pekerjaan tertulis eksplisit: "**trainer → training saja**, sales → katalog/peserta saja" — status terbuka. |
+| `PROJECT_SUMMARY.md:500` | "`requireRole` agar **trainer hanya akses modul training**, sales akses katalog/peserta, admin akses semua". |
+
+**Yang Anda override, secara eksplisit:** dua baris dokumen (`PROJECT_SUMMARY.md:487` dan `:500`) menetapkan desain "trainer → training **saja**". Permintaan ini menambahkan modul kedua untuk trainer, jadi arah pemisahan role bergerak berlawanan dengan rencana yang tertulis. Itu keputusan yang sah — tapi kalau dijalankan, **`PROJECT_SUMMARY.md:487` dan `:500` ikut harus diperbarui**, kalau tidak dokumen langsung berbohong tentang sistem sendiri.
+
+Satu catatan audit yang relevan dan **tidak** boleh dilewatkan: guard pra-multer di `firmwareRoutes.ts:57-58` adalah hasil **C-04 Step 8**. Kalau titik #1 diubah dengan cara yang salah (mis. guard dipindah ke dalam handler agar "lebih rapi"), temuan C-04 terbuka kembali — file terlanjur ditulis ke disk sebelum ditolak. Guard itu harus tetap `requireRoleMw` dan tetap di posisi yang sama, hanya daftar role-nya yang bertambah.
+
+## RANGKUMAN
+
+- **Hari ini trainer tidak punya akses firmware sama sekali — 0 dari 8 endpoint admin.** Semua dijaga `requireRole("admin")`: `firmwareApiController.ts:52` (6 handler: list, get, create, update, delete, reorder), `firmwarePopupApiController.ts:12` (2 handler), plus guard pra-multer `requireRoleMw("admin")` di `firmwareRoutes.ts:58`. Tidak ada satu pun yang memakai cek session polos — semua sudah lewat `requireRole`.
+- **Perubahan yang dibutuhkan kecil dan terukur: 5 titik di 4 file**, semuanya hanya menambah `"trainer"` ke daftar role. Backend: `firmwareRoutes.ts:58`, `firmwareApiController.ts:52`, `firmwarePopupApiController.ts:12`. Frontend: `NavBar.tsx:13` (tab "Firmware") dan `firmware/ProtectedRoute.tsx:5` (menutup keempat halaman firmware sekaligus).
+- **"Semua brand" tidak butuh pekerjaan tambahan.** Brand di modul firmware cuma kolom `brand` yang divalidasi `isValidFirmwareBrand()` (`firmwareModel.ts:6-11`), bukan guard per-brand. Satu perubahan guard = MikroTik, Ubiquiti, dan V-SOL langsung ikut terbuka.
+- **Frontend wajib ikut diubah, bukan opsional.** Tab "Firmware" tidak muncul untuk trainer (`NavBar.tsx:13`), dan kalau trainer mengetik `/admin/firmware` langsung, `RequireRole` melemparnya ke `/admin/training` (`session.ts:35-36`). API yang dibuka tanpa frontend diubah = fitur tetap tidak bisa dipakai.
+- **Titik #1 dan #2 harus dikerjakan berpasangan.** Upload/edit dijaga dua lapis; mengubah salah satu saja berarti tertolak 403 sebelum multer, atau file terlanjur mendarat di disk lalu ditolak handler.
+- **Tidak ada kebocoran lintas modul.** Konstanta guard bersifat lokal per file (`requireRole()` mengembalikan closure baru), dan `ProtectedRoute` firmware terpisah dari milik brand. Katalog MikroTik/Ubiquiti/V-SOL, FiberHome, Visitor Log, Activity Log, dan Users **tetap admin-only** — dikonfirmasi satu per satu di 6 controller.
+- **Risiko nyata #1 — hapus permanen tanpa jejak.** `apiFirmwareAdminDelete` menghapus baris DB **dan** file fisik (`safeDeleteFile`), tanpa soft-delete dan **tanpa audit log**: `admin_activity_log` hanya mencatat percobaan login, bukan aksi CRUD. Setelah ini, tidak akan ada catatan siapa menghapus firmware apa.
+- **Risiko nyata #2 — PopupSettings itu konten publik, bukan data firmware.** `/admin/firmware/settings` mengubah "Panduan Instalasi" & "Disclaimer" yang tampil di modal download **pengunjung publik**, global untuk semua brand. Kalau maksud Anda hanya CRUD file firmware, **lewati titik #3** — ini keputusan terpisah yang perlu Anda putuskan sadar.
+- **Koreksi premis: "L-07" tidak ada di repo ini.** Dicari di seluruh file `.md`, seluruh source, dan pickaxe ke seluruh riwayat git — nol hasil. Item audit yang benar-benar terekam: C-04, H-02/03/04/06, I-01/04, L-01/03/04/05/06, M-03/05/06/08. Jadi alasan asli keputusan "trainer status quo" ada di luar repo dan tidak bisa saya kutip.
+- **Tapi arah dokumennya jelas, dan inilah yang Anda override:** `PROJECT_SUMMARY.md:487` dan `:500` menetapkan desain "**trainer → training saja**", `roles.ts:3-4` masih "fase berikutnya", dan `laporan.md:1159` mencatat label itu **sengaja dipertahankan** pada audit dokumen karena pemisahan role belum selesai. Melebarkan trainer ke firmware bergerak berlawanan dengan rencana tertulis — sah kalau memang Anda mau, tapi `PROJECT_SUMMARY.md:487` dan `:500` harus ikut diperbarui, kalau tidak dokumen langsung berbohong tentang sistemnya sendiri.
+- **Satu pagar yang tidak boleh runtuh:** guard di `firmwareRoutes.ts:57-58` adalah hasil **C-04 Step 8** (guard harus jalan **sebelum** multer). Ubah daftar role-nya saja — jangan pindahkan guard itu ke dalam handler "biar rapi", karena itu membuka kembali temuan C-04.
+
+---
+
+# Implementasi — Trainer diberi akses penuh Firmware (2026-09-17)
+
+Menjalankan persis 5 titik dari analisis di atas, plus sinkronisasi dokumen. Keputusan user
+yang dikonfirmasi: CRUD penuh semua brand, **PopupSettings ikut dibuka**, dan **delete tetap
+tanpa audit log — diterima sadar**.
+
+## Yang diubah (6 file, 8 suntingan)
+
+| # | File:baris | Perubahan |
+|---|---|---|
+| 1 | `server/routes/firmwareRoutes.ts:62` | `requireRoleMw("admin")` → `requireRoleMw("admin", "trainer")` (guard pra-multer) |
+| 2 | `server/controllers/firmwareApiController.ts:54` | `requireRole("admin")` → `requireRole("admin", "trainer")` — menutup 6 handler |
+| 3 | `server/controllers/firmwarePopupApiController.ts:13` | `requireRole("admin")` → `requireRole("admin", "trainer")` |
+| 4 | `client/src/admin/NavBar.tsx:13` | tab Firmware `roles: ["admin", "trainer"]` |
+| 5 | `client/src/admin/firmware/ProtectedRoute.tsx:5` | `roles={["admin", "trainer"]}` — menutup 4 halaman |
+| 6 | `PROJECT_SUMMARY.md:487-490, :503` | baris "trainer → training saja" diganti; ditambah catatan delete permanen |
+
+Tiga komentar yang menempel di baris yang diubah ikut diperbarui karena isinya menjadi salah
+begitu guard-nya berubah (`firmwareApiController.ts:51`, `firmwarePopupApiController.ts:11`,
+`ProtectedRoute.tsx:3` yang tadinya berbunyi "Panel firmware hanya untuk admin"). Komentar
+C-04 Step 8 di `firmwareRoutes.ts:57` **dipertahankan apa adanya** dan hanya ditambahi
+alasan role, meniru pola `trainingRoutes.ts:80-84`.
+
+## Catatan pelaksanaan: satu suntingan sempat gagal dan harus diperbaiki
+
+Suntingan #1 gagal pada percobaan pertama sementara 7 lainnya berhasil — `firmwareRoutes.ts`
+ternyata memakai **CRLF**, sedangkan `firmwareApiController.ts` memakai LF, jadi pola
+pencocokan multi-baris ber-`\n` tidak ketemu. Akibatnya sesaat repo berada persis di kondisi
+yang diperingatkan di analisis: **#2 mendarat tanpa #1**, yang artinya upload/edit akan
+tertolak 403 oleh guard pra-multer. Langsung diperbaiki di langkah berikutnya dengan
+penulisan ber-CRLF. Kondisi campuran LF/CRLF di `firmwareRoutes.ts` sudah ada sebelumnya
+(69 CRLF, 1 LF) — bukan akibat perubahan ini.
+
+## Hasil: role yang lolos di 8 endpoint firmware
+
+| Endpoint | Guard | Sebelum | Sesudah |
+|---|---|---|---|
+| `GET /api/firmware/admin/list` | `firmwareApiController.ts:72` | admin | **admin + trainer** |
+| `GET /api/firmware/admin/:id` | `firmwareApiController.ts:86` | admin | **admin + trainer** |
+| `POST /api/firmware/admin/reorder` | `firmwareApiController.ts:295` | admin | **admin + trainer** |
+| `POST /api/firmware/admin` (upload) | `firmwareRoutes.ts:62` + `:106` | admin | **admin + trainer** |
+| `PUT /api/firmware/admin/:id` (edit) | `firmwareRoutes.ts:62` + `:175` | admin | **admin + trainer** |
+| `DELETE /api/firmware/admin/:id` | `firmwareApiController.ts:271` | admin | **admin + trainer** |
+| `GET /api/firmware-popup/admin` | `firmwarePopupApiController.ts:39` | admin | **admin + trainer** |
+| `PUT /api/firmware-popup/admin/:key` | `firmwarePopupApiController.ts:50` | admin | **admin + trainer** |
+
+Ketiga brand (MikroTik, Ubiquiti, V-SOL) ikut terbuka otomatis — brand hanya kolom tervalidasi
+`isValidFirmwareBrand()`, bukan guard terpisah. Endpoint publik (`/api/firmware/public/list`,
+`/api/firmware-popup/public`) tidak disentuh dan tetap tanpa auth seperti semula.
+
+## Yang TIDAK disentuh (dikonfirmasi ulang setelah perubahan)
+
+`mikrotikDcsApiController.ts:21`, `ubiquitiDcsApiController.ts:43`, `vsolDcsApiController.ts:52`,
+`fiberHomeDcsApiController.ts:28`, `visitorLogApiController.ts:6`, `usersController.ts:13`, plus
+`uploadGuard` di keempat route brand — **semuanya masih `requireRole("admin")`**.
+
+## Verifikasi
+
+- `npm run check` (tsc) — **exit 0**.
+- `npm run build` — **sukses**, `dist/index.cjs` 1,2 MB. Peringatan chunk >500 kB sudah ada
+  sebelumnya (bukan akibat perubahan ini).
+- `git diff --stat` — hanya 6 file yang dimaksud + `laporan.md`. Tidak ada file di luar lingkup.
+- **Tidak ada deploy** — mode batch, sesuai instruksi.
+
+## RANGKUMAN
+
+- **Kelima suntingan mendarat, plus sinkronisasi dokumen — total 8 suntingan di 6 file.** Trainer sekarang lolos di **8 dari 8** endpoint admin firmware, naik dari 0 sebelumnya.
+- **Ketiga brand terbuka otomatis tanpa pekerjaan tambahan.** MikroTik, Ubiquiti, dan V-SOL memakai guard yang sama karena brand hanya kolom tervalidasi `isValidFirmwareBrand()`, bukan guard per-brand — persis seperti diperkirakan di analisis.
+- **⚠️ Suntingan #1 sempat gagal sendirian dan repo sesaat berada di kondisi rusak yang saya peringatkan sendiri** — `firmwareRoutes.ts` ternyata CRLF sementara file lain LF, jadi pencocokan multi-baris meleset dan #2 mendarat tanpa #1 (upload akan tertolak 403). Sudah diperbaiki, dan diff akhir sudah diverifikasi utuh.
+- **PopupSettings ikut dibuka sesuai keputusan Anda** — trainer kini bisa mengubah teks "Panduan Instalasi" & "Disclaimer" yang tampil di **modal download publik**, global untuk semua brand. Komentar guard-nya diberi penanda eksplisit bahwa konten ini publik.
+- **Delete tetap permanen dan tanpa jejak, diterima sadar.** Dicatat permanen di `PROJECT_SUMMARY.md` sebagai peringatan yang berlaku untuk **admin maupun trainer**, supaya keputusan ini tidak hilang dari ingatan tim.
+- **Dokumen tidak lagi berbohong.** `PROJECT_SUMMARY.md:487` ("trainer → training saja") dan `:503` diperbarui menjadi "training + firmware (termasuk popup settings)"; sisa pekerjaan sekarang tinggal penyebaran guard untuk `sales`.
+- **Tiga komentar kode ikut diperbarui** karena isinya jadi salah begitu guard berubah — terutama `ProtectedRoute.tsx:3` yang tadinya berbunyi "Panel firmware hanya untuk admin".
+- **Pagar C-04 Step 8 tetap berdiri.** Guard pra-multer tetap `requireRoleMw` dan tetap di posisi semula; hanya daftar role-nya bertambah, jadi tidak ada file yang mendarat di disk sebelum otorisasi.
+- **Modul di luar lingkup dikonfirmasi ulang masih admin-only** — katalog MikroTik/Ubiquiti/V-SOL, FiberHome, Visitor Log, Activity Log, dan Users, termasuk keempat `uploadGuard` brand.
+- **`npm run check` exit 0 dan `npm run build` sukses.** Satu commit, **tanpa deploy** sesuai mode batch.
+- **Catatan operasional: trainer yang sedang login harus logout–login ulang** agar sesinya membawa role terbaru — role disalin ke session hanya saat login (`authController.ts:86`), tidak di-refresh per request.

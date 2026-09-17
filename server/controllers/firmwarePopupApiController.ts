@@ -8,8 +8,9 @@ import {
 } from "../models/firmwarePopupSettingsModel";
 import { requireRole } from "../middleware/requireRole";
 
-// Guard: endpoint admin konten popup butuh role 'admin'.
-const requireAdminSession = requireRole("admin");
+// Guard: endpoint admin konten popup butuh role 'admin' atau 'trainer'.
+// Catatan: konten ini GLOBAL & tampil di modal download PUBLIK.
+const requireAdminSession = requireRole("admin", "trainer");
 
 // ─── PUBLIC ───────────────────────────────────────────────────
 /**

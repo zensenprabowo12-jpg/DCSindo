@@ -48,8 +48,10 @@ function normalizeSourceType(v: unknown): FirmwareSourceType | null {
   return null;
 }
 
-// Guard: endpoint admin firmware butuh role 'admin'.
-const requireAdminSession = requireRole("admin");
+// Guard: endpoint admin firmware butuh role 'admin' atau 'trainer'.
+// Menyamai `uploadGuard` di routes/firmwareRoutes.ts — keduanya HARUS sejalan,
+// kalau tidak upload/edit tertolak 403 atau file terlanjur mendarat di disk.
+const requireAdminSession = requireRole("admin", "trainer");
 
 // ─── PUBLIC ───────────────────────────────────────────────────
 export async function apiFirmwarePublicList(req: Request, res: Response): Promise<void> {

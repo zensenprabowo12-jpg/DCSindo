@@ -484,7 +484,10 @@ Tidak ikut ter-deploy oleh langkah di atas — dikelola langsung di server:
 | `/auth/me` kirim `role`; frontend pakai `RequireRole` + `roleHome()` | ✅ selesai | `authController.ts`, `admin/session.ts`, `admin/RequireRole.tsx` |
 | Session store persisten | ✅ selesai | `server/index.ts` (express-mysql-session) |
 | CRUD user + role dari panel | ✅ selesai | `server/controllers/usersController.ts`, `admin/Users.tsx` |
-| **Sisa pekerjaan**: sebar guard non-admin ke modul (trainer → training saja, sales → katalog/peserta saja) | 🔶 terbuka | controllers + `NavBar.tsx` |
+| Guard non-admin tersebar: **trainer → training + firmware** (termasuk popup settings) | ✅ selesai | `trainingApiController.ts`, `firmwareApiController.ts:52`, `firmwarePopupApiController.ts:12`, `firmwareRoutes.ts:58`, `NavBar.tsx:13`, `firmware/ProtectedRoute.tsx:5` |
+| **Sisa pekerjaan**: sebar guard non-admin ke sales (→ katalog/peserta saja) | 🔶 terbuka | controllers + `NavBar.tsx` |
+
+> ⚠️ **Hapus firmware permanen & tidak tercatat, untuk `admin` MAUPUN `trainer`.** `apiFirmwareAdminDelete` (`firmwareApiController.ts:269`) menghapus baris DB **dan** file fisik di disk tanpa soft-delete; `admin_activity_log` hanya mencatat percobaan login, bukan aksi CRUD — jadi tidak ada jejak siapa menghapus firmware apa. Diterima sadar saat trainer diberi akses firmware.
 
 ### B. Sistem training lengkap (pendaftaran publik + laporan + dokumentasi) — **sebagian besar sudah jadi**
 | Bagian | Status | Lokasi |
@@ -497,4 +500,4 @@ Tidak ikut ter-deploy oleh langkah di atas — dikelola langsung di server:
 | Galeri dokumentasi | ✅ selesai | `training_gallery` + `TrainingForm.tsx` |
 | **Sisa pekerjaan**: ekspor laporan (CSV/Excel) & pembatasan akses per role | 🔶 terbuka | controller + `Peserta.tsx` |
 
-> Memanfaatkan yang sudah ada: `computeStatus()` (Upcoming/Ongoing/Completed), `training_gallery` (dokumentasi foto), pola transaksi di `trainingModel.ts`, dan `requireRole` agar trainer hanya akses modul training, sales akses katalog/peserta, admin akses semua — **tanpa merombak UI yang sudah berjalan**.
+> Memanfaatkan yang sudah ada: `computeStatus()` (Upcoming/Ongoing/Completed), `training_gallery` (dokumentasi foto), pola transaksi di `trainingModel.ts`, dan `requireRole` agar trainer akses modul training + firmware (termasuk popup settings), sales akses katalog/peserta, admin akses semua — **tanpa merombak UI yang sudah berjalan**.

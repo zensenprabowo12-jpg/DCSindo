@@ -55,7 +55,11 @@ export function registerFirmwareRoutes(app: Express): void {
   const base = "/api/firmware";
 
   // Guard SEBELUM multer — lihat C-04 Step 8.
-  const uploadGuard = requireRoleMw("admin");
+  //
+  // Role-nya "admin" DAN "trainer", menyamai `requireAdminSession` di
+  // firmwareApiController.ts — admin-only akan mengunci trainer keluar dari
+  // unggah & edit firmware.
+  const uploadGuard = requireRoleMw("admin", "trainer");
 
   // Public
   app.get(`${base}/public/list`, apiFirmwarePublicList);
