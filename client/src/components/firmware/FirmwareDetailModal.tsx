@@ -19,9 +19,10 @@ import {
 } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
-/* Teks cadangan (fallback). DUMMY_INSTALL_STEPS & DUMMY_DISCLAIMER     */
-/* dipakai HANYA bila konten dari admin kosong/belum termuat/gagal      */
-/* diambil — lihat prop `installGuide` & `disclaimer`.                  */
+/* Teks cadangan (fallback). DUMMY_INSTALL_STEPS dipakai HANYA bila     */
+/* firmware ini tidak punya panduan sendiri DAN panduan global juga     */
+/* kosong/gagal dimuat. DUMMY_DISCLAIMER dipakai bila disclaimer global */
+/* kosong — lihat prop `installGuide` & `disclaimer`.                   */
 /* DUMMY_NOTES masih murni placeholder (belum ada sumber datanya).      */
 /* ------------------------------------------------------------------ */
 
@@ -47,7 +48,10 @@ type Props = {
   onOpenChange: (open: boolean) => void;
   /** Posisi tombol "Detail" saat diklik — dipakai sebagai titik asal animasi. */
   originRect?: DOMRect | null;
-  /** Konten global dari admin (GET /api/firmware-popup/public). Kosong → pakai teks cadangan. */
+  /**
+   * Panduan instalasi GLOBAL dari admin (GET /api/firmware-popup/public).
+   * Dipakai hanya bila firmware ini tidak punya `item.install_guide` sendiri.
+   */
   installGuide?: string;
   disclaimer?: string;
 };
@@ -101,15 +105,22 @@ export default function FirmwareDetailModal({
 
   const reduceMotion = useReducedMotion();
 
+  // Urutan sumber panduan instalasi:
+  //   1. milik firmware ini sendiri (kolom firmware_files.install_guide)
+  //   2. panduan GLOBAL dari firmware_popup_settings.install_guide
+  //   3. teks cadangan hardcode
   // Satu langkah per baris; baris kosong dibuang agar tidak jadi nomor kosong.
-  // Nol langkah (belum termuat / gagal / dikosongkan admin) → teks cadangan.
   const steps = useMemo(() => {
-    const parsed = installGuide
-      .split(/\r?\n/)
-      .map((s) => s.trim())
-      .filter(Boolean);
-    return parsed.length ? parsed : DUMMY_INSTALL_STEPS;
-  }, [installGuide]);
+    const parse = (raw: string | null | undefined) =>
+      (raw ?? "")
+        .split(/\r?\n/)
+        .map((s) => s.trim())
+        .filter(Boolean);
+    const perItem = parse(item.install_guide);
+    if (perItem.length) return perItem;
+    const global = parse(installGuide);
+    return global.length ? global : DUMMY_INSTALL_STEPS;
+  }, [item.install_guide, installGuide]);
 
   // Paragraf dipisah baris kosong.
   const disclaimerParagraphs = useMemo(() => {

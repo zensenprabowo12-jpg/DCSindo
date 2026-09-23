@@ -105,7 +105,9 @@ function PopupSettingsInner() {
 
         <h1 className="text-xl font-bold text-white mb-1">Konten Popup Firmware</h1>
         <p className="text-sm text-zinc-500 mb-6">
-          Konten global — dipakai pada popup detail SEMUA firmware di semua brand.
+          Konten global untuk popup detail firmware di semua brand. Disclaimer berlaku untuk
+          SEMUA firmware; panduan instalasi di sini hanya default — firmware yang punya panduan
+          sendiri memakai panduannya sendiri.
         </p>
 
         {error && (
@@ -123,7 +125,7 @@ function PopupSettingsInner() {
         <div className="space-y-6">
           <div>
             <label className={labelCls} htmlFor="install_guide">
-              Panduan Instalasi
+              Panduan Instalasi (default)
             </label>
             <textarea
               id="install_guide"
@@ -135,6 +137,8 @@ function PopupSettingsInner() {
             />
             <p className="mt-1.5 text-xs text-zinc-600">
               Satu langkah per baris. Penomoran 1, 2, 3… dibuat otomatis — jangan ditulis manual.
+              Dipakai HANYA untuk firmware yang belum punya panduannya sendiri; panduan per
+              firmware diisi di form Edit Firmware dan selalu menang atas teks ini.
             </p>
           </div>
 

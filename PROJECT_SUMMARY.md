@@ -116,6 +116,7 @@ DCSindo/
 │   ├── migrate_training_registrations_m03.sql
 │   ├── migrate_vsol_dcs_sku_unique.sql  # M-07
 │   ├── migrate_mikrotik_dcs_add_*.sql, migrate_vsol_specs_ordering.sql
+│   ├── migrate_firmware_install_guide.sql  # panduan instalasi per-item
 │   └── firmware_store.sql, firmware_popup_settings.sql, backup_*.sql
 │
 ├── public/uploads/              # (Di server produksi) foto produk, firmware, & video hero
@@ -199,7 +200,14 @@ Browser (fetch /api/...)
 
 **Produk FiberHome** — `fiberhome_*` (`fiberhome_schema.sql`; `sku` VARCHAR(100) NOT NULL **UNIQUE**) + tabel spesifikasi/grouping turunannya.
 
-**Firmware** — `firmware_store.sql` (daftar firmware per brand + file) & `firmware_popup_settings.sql` (pengaturan popup peringatan).
+**Firmware** — `firmware_store.sql` (tabel `firmware_files`: daftar firmware per brand + file) & `firmware_popup_settings.sql` (konten popup: `install_guide`, `disclaimer`).
+
+- `migrate_firmware_install_guide.sql` menambah kolom **`firmware_files.install_guide` TEXT NULL** — panduan instalasi milik firmware itu sendiri, satu langkah per baris, dijalankan manual di phpMyAdmin (idempotent, `ADD COLUMN IF NOT EXISTS` khas MariaDB).
+- **Rantai fallback panduan instalasi di popup publik** (`FirmwareDetailModal.tsx`):
+  `firmware_files.install_guide` (per item) → `firmware_popup_settings.install_guide` (global/default) → `DUMMY_INSTALL_STEPS` (hardcode).
+  Jadi firmware lama yang kolomnya kosong tetap memakai panduan global, dan halaman PopupSettings tetap berguna sebagai default.
+- **Disclaimer tetap global** — tidak ada versi per item.
+- Kode **tidak mati** bila kolom `install_guide` belum ada: `firmwareModel.ts` mendeteksi kolomnya sekali lewat `information_schema` lalu men-cache hasilnya, dan menyusun SELECT/INSERT/UPDATE sesuai keadaan. Karena di-cache, **server harus di-restart** setelah migrasi dijalankan.
 
 **Training** — `training_sessions` (DDL di `database/training_schema.sql`)
 `id`, `title`, `description`, `brand` (MikroTik/Ubiquiti/V-SOL/General), `format` (Online/Offline/Hybrid), `location`, `start_datetime`, `end_datetime`, `duration_hours`, `capacity`, `price`, `is_free`, `has_certificate`, `has_hands_on_lab`, `instructor_name`, `instructor_contact`, `thumbnail`, `qr_image`, `custom_link_url`, `custom_link_label`, timestamps.
@@ -297,7 +305,7 @@ if (!ok) return;
   - Ubiquiti: `/ubiquiti/shop`, detail `/ubiquiti/shop/:id`.
   - V-SOL: `/vsol/shop`, detail `/vsol/shop/:id`.
   - FiberHome: `/fiberhome`, detail `/fiberhome/:sku`.
-- **Firmware publik**: `/firmware`, `/firmware/:brand` — dengan dialog konfirmasi unduh & modal detail (catatan rilis, checksum, peringatan risiko flashing).
+- **Firmware publik**: `/firmware`, `/firmware/:brand` — dengan dialog konfirmasi unduh & modal detail (catatan rilis, checksum, panduan instalasi per-item dengan fallback ke panduan global, peringatan risiko flashing).
 - **Training (publik)**: `/training` (list), `/training/:id` (detail — syllabus, info instruktur, QR, custom link, galeri dokumentasi, **form pendaftaran**).
 - **Support**: `/support`, `/support/mikrotik`, `/support/ubiquiti`, `/support/vsol`.
 - **Lainnya**: `/company-profile`, `/coming-soon`.
@@ -309,7 +317,7 @@ if (!ok) return;
 ### Admin (di balik login bersama)
 - **Dashboard `/admin`**: pilih brand (MikroTik/Ubiquiti/V-SOL/FiberHome) + jumlah produk + entry log.
 - **CRUD produk per brand** (`/admin/mikrotik`, `/admin/ubiquiti`, `/admin/vsol`, `/admin/fiberhome`): tambah, edit, hapus, **drag & drop reorder** urutan tampil per kategori, upload gambar utama + galeri.
-- **CRUD Firmware** (`/admin/firmware`, `/admin/firmware/:brand`, `/admin/firmware/settings`).
+- **CRUD Firmware** (`/admin/firmware`, `/admin/firmware/:brand`, `/admin/firmware/settings`). Form tambah/edit firmware punya field **Panduan Instalasi** per item (kosongkan → pakai panduan global di `/admin/firmware/settings`). Admin & trainer sama-sama bisa mengisi.
 - **CRUD Training** (`/admin/training`): tambah/edit sesi training (semua field di §3), syllabus, upload thumbnail/QR/galeri dokumentasi.
 - **Peserta training** (`/admin/peserta`): daftar pendaftar + ubah status.
 - **Manajemen user** (`/admin/users`): CRUD user panel + role (admin only).

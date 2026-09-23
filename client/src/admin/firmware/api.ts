@@ -18,6 +18,11 @@ export type FirmwareFile = {
   file_size: number | null;
   checksum: string | null;
   notes: string | null;
+  /**
+   * Panduan instalasi khusus item ini. Kosong → popup publik memakai panduan global.
+   * Opsional: `undefined` selama kolom DB-nya belum ada (migrasi belum dijalankan).
+   */
+  install_guide?: string | null;
   sort_order: number;
   created_at: string;
   updated_at: string;

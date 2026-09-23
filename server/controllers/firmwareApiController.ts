@@ -162,6 +162,7 @@ export async function apiFirmwareAdminCreate(req: Request, res: Response): Promi
       file_size,
       checksum: nullableStr(req.body.checksum),
       notes: nullableStr(req.body.notes),
+      install_guide: nullableStr(req.body.install_guide),
     });
     res.status(201).json({ ok: true, data: { id } });
   } catch (e) {
@@ -258,6 +259,7 @@ export async function apiFirmwareAdminUpdate(req: Request, res: Response): Promi
       file_size,
       checksum: nullableStr(req.body.checksum),
       notes: nullableStr(req.body.notes),
+      install_guide: nullableStr(req.body.install_guide),
     });
     res.json({ ok: true, data: { id } });
   } catch (e) {

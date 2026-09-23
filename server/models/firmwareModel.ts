@@ -26,6 +26,12 @@ export type FirmwareFileRow = {
   file_size: number | null;
   checksum: string | null;
   notes: string | null;
+  /**
+   * Panduan instalasi khusus firmware ini — satu langkah per baris.
+   * `null`/"" = tidak punya panduan sendiri → popup publik jatuh ke panduan
+   * GLOBAL di `firmware_popup_settings.install_guide`.
+   */
+  install_guide: string | null;
   sort_order: number;
   created_at: Date;
   updated_at: Date;
@@ -61,15 +67,60 @@ function mapRow(r: RowDataPacket): FirmwareFileRow {
     file_size: r.file_size == null ? null : Number(r.file_size),
     checksum: r.checksum ?? null,
     notes: r.notes ?? null,
+    // `undefined` saat kolomnya belum ada di DB (lihat hasInstallGuideColumn).
+    install_guide: r.install_guide ?? null,
     sort_order: r.sort_order ?? 0,
     created_at: r.created_at,
     updated_at: r.updated_at,
   };
 }
 
-const SELECT_COLUMNS = `id, brand, category, product_name, model_sku, version, release_date,
+/**
+ * Kolom `install_guide` ditambahkan lewat database/migrate_firmware_install_guide.sql
+ * yang dijalankan MANUAL di phpMyAdmin. Selama kolomnya belum ada, query yang
+ * menyebut nama kolom itu gagal dengan ER_BAD_FIELD_ERROR — dan karena listing
+ * publik memakai query yang sama, SELURUH halaman firmware publik ikut mati.
+ * Karena itu keberadaan kolom dideteksi sekali lalu di-cache.
+ *
+ * Konsekuensi cache: bila migrasi dijalankan saat server sedang hidup, server
+ * HARUS di-restart sebelum kolomnya mulai dipakai.
+ */
+let installGuideColumnExists: boolean | null = null;
+
+async function hasInstallGuideColumn(): Promise<boolean> {
+  if (installGuideColumnExists !== null) return installGuideColumnExists;
+  try {
+    const [rows] = await mysqlPool.query<RowDataPacket[]>(
+      `SELECT 1 FROM information_schema.COLUMNS
+       WHERE TABLE_SCHEMA = DATABASE()
+         AND TABLE_NAME = 'firmware_files'
+         AND COLUMN_NAME = 'install_guide'
+       LIMIT 1`,
+    );
+    installGuideColumnExists = rows.length > 0;
+    if (!installGuideColumnExists) {
+      console.warn(
+        "[firmware] Kolom `install_guide` belum ada — panduan per-item dilewati. " +
+          "Jalankan database/migrate_firmware_install_guide.sql lalu restart server.",
+      );
+    }
+  } catch {
+    // Gagal mendeteksi (mis. DB sedang bermasalah) sengaja TIDAK di-cache,
+    // supaya percobaan berikutnya masih bisa mendapat jawaban yang benar.
+    return false;
+  }
+  return installGuideColumnExists;
+}
+
+const BASE_SELECT_COLUMNS = `id, brand, category, product_name, model_sku, version, release_date,
   source_type, file_path, external_url, file_size, checksum, notes, sort_order,
   created_at, updated_at`;
+
+async function selectColumns(): Promise<string> {
+  return (await hasInstallGuideColumn())
+    ? `${BASE_SELECT_COLUMNS}, install_guide`
+    : BASE_SELECT_COLUMNS;
+}
 
 export async function listFirmwareFiles(
   options: {
@@ -102,7 +153,7 @@ export async function listFirmwareFiles(
         : "ORDER BY created_at DESC, id DESC";
 
   const [rows] = await mysqlPool.query<RowDataPacket[]>(
-    `SELECT ${SELECT_COLUMNS} FROM firmware_files ${where} ${orderBy}
+    `SELECT ${await selectColumns()} FROM firmware_files ${where} ${orderBy}
      LIMIT ${LIST_ROW_CAP}`,
     params,
   );
@@ -111,7 +162,7 @@ export async function listFirmwareFiles(
 
 export async function getFirmwareFileById(id: number): Promise<FirmwareFileRow | null> {
   const [rows] = await mysqlPool.query<RowDataPacket[]>(
-    `SELECT ${SELECT_COLUMNS} FROM firmware_files WHERE id = :id LIMIT 1`,
+    `SELECT ${await selectColumns()} FROM firmware_files WHERE id = :id LIMIT 1`,
     { id },
   );
   if (!rows.length) return null;
@@ -131,6 +182,7 @@ export type FirmwareFileInput = {
   file_size?: number | null;
   checksum?: string | null;
   notes?: string | null;
+  install_guide?: string | null;
 };
 
 export async function createFirmwareFile(data: FirmwareFileInput): Promise<number> {
@@ -142,13 +194,20 @@ export async function createFirmwareFile(data: FirmwareFileInput): Promise<numbe
   );
   const nextOrder = Number(ordRows?.[0]?.max_ord ?? -1) + 1;
 
+  // Kolom `install_guide` hanya disebut bila memang sudah ada di DB — lihat
+  // hasInstallGuideColumn(). Tanpa kolomnya, isian panduan per-item diabaikan
+  // diam-diam, bukan menggagalkan seluruh penyimpanan firmware.
+  const withGuide = await hasInstallGuideColumn();
+
   const [res] = await mysqlPool.query<ResultSetHeader>(
     `INSERT INTO firmware_files
        (brand, category, product_name, model_sku, version, release_date,
-        source_type, file_path, external_url, file_size, checksum, notes, sort_order)
+        source_type, file_path, external_url, file_size, checksum, notes,
+        ${withGuide ? "install_guide," : ""} sort_order)
      VALUES
        (:brand, :category, :product_name, :model_sku, :version, :release_date,
-        :source_type, :file_path, :external_url, :file_size, :checksum, :notes, :sort_order)`,
+        :source_type, :file_path, :external_url, :file_size, :checksum, :notes,
+        ${withGuide ? ":install_guide," : ""} :sort_order)`,
     {
       brand: data.brand,
       category: data.category,
@@ -162,6 +221,7 @@ export async function createFirmwareFile(data: FirmwareFileInput): Promise<numbe
       file_size: data.file_size ?? null,
       checksum: data.checksum ?? null,
       notes: data.notes ?? null,
+      install_guide: data.install_guide ?? null,
       sort_order: nextOrder,
     },
   );
@@ -169,6 +229,8 @@ export async function createFirmwareFile(data: FirmwareFileInput): Promise<numbe
 }
 
 export async function updateFirmwareFile(id: number, data: FirmwareFileInput): Promise<void> {
+  const withGuide = await hasInstallGuideColumn();
+
   await mysqlPool.query(
     `UPDATE firmware_files SET
        brand = :brand,
@@ -182,7 +244,7 @@ export async function updateFirmwareFile(id: number, data: FirmwareFileInput): P
        external_url = :external_url,
        file_size = :file_size,
        checksum = :checksum,
-       notes = :notes
+       notes = :notes${withGuide ? ",\n       install_guide = :install_guide" : ""}
      WHERE id = :id`,
     {
       brand: data.brand,
@@ -197,6 +259,7 @@ export async function updateFirmwareFile(id: number, data: FirmwareFileInput): P
       file_size: data.file_size ?? null,
       checksum: data.checksum ?? null,
       notes: data.notes ?? null,
+      install_guide: data.install_guide ?? null,
       id,
     },
   );

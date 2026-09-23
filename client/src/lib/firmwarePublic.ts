@@ -17,6 +17,12 @@ export type PublicFirmware = {
   file_size: number | null;
   checksum: string | null;
   notes: string | null;
+  /**
+   * Panduan instalasi khusus firmware ini. Kosong/null → modal memakai panduan
+   * GLOBAL dari firmware_popup_settings. Bisa juga `undefined` bila kolomnya
+   * belum ada di DB (migrasi belum dijalankan).
+   */
+  install_guide?: string | null;
   sort_order: number;
 };
 

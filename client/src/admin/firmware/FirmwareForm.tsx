@@ -31,6 +31,7 @@ function FormInner({ brand, id }: { brand: FirmwareBrand; id: number | null }) {
   const [externalUrl, setExternalUrl] = useState("");
   const [checksum, setChecksum] = useState("");
   const [notes, setNotes] = useState("");
+  const [installGuide, setInstallGuide] = useState("");
   const [file, setFile] = useState<File | null>(null);
   const [existingFilePath, setExistingFilePath] = useState<string | null>(null);
 
@@ -55,6 +56,7 @@ function FormInner({ brand, id }: { brand: FirmwareBrand; id: number | null }) {
       setExternalUrl(d.external_url ?? "");
       setChecksum(d.checksum ?? "");
       setNotes(d.notes ?? "");
+      setInstallGuide(d.install_guide ?? "");
       setExistingFilePath(d.file_path);
       setLoading(false);
     })();
@@ -94,6 +96,9 @@ function FormInner({ brand, id }: { brand: FirmwareBrand; id: number | null }) {
     fd.set("source_type", sourceType);
     fd.set("checksum", checksum.trim());
     fd.set("notes", notes.trim());
+    // .trim() hanya membuang spasi/baris kosong di ujung — newline antar langkah
+    // (yang jadi pemisah nomor di popup publik) tetap utuh.
+    fd.set("install_guide", installGuide.trim());
     if (sourceType === "upload") {
       if (file) fd.set("firmware_file", file);
     } else {
@@ -305,6 +310,20 @@ function FormInner({ brand, id }: { brand: FirmwareBrand; id: number | null }) {
               onChange={(e) => setNotes(e.target.value)}
               placeholder="Catatan tambahan (opsional)"
             />
+          </div>
+
+          <div>
+            <label className={labelCls}>Panduan Instalasi</label>
+            <textarea
+              className={`w-full rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-200 px-3 py-2 text-sm font-mono leading-relaxed focus:outline-none focus:ring-2 ${meta.ring} focus:border-transparent transition placeholder:text-zinc-600 min-h-[80px]`}
+              value={installGuide}
+              onChange={(e) => setInstallGuide(e.target.value)}
+              placeholder="Satu langkah per baris…"
+            />
+            <p className="mt-1.5 text-xs text-zinc-600">
+              Satu langkah per baris. Penomoran 1, 2, 3… dibuat otomatis — jangan ditulis manual.
+              Kosongkan untuk memakai panduan global.
+            </p>
           </div>
 
           <div className="flex items-center gap-3 pt-2">
