@@ -5,6 +5,7 @@ import ProductShowcase from "./landing/components/ProductShowcase";
 import VideoAndCategory from "./landing/components/VideoAndCategory";
 import WhyChooseUs from "./landing/components/WhyChooseUs";
 import LandingBackground from "./landing/components/LandingBackground";
+import LatestVideos from "./landing/components/LatestVideos";
 import { LANDING_CATEGORIES, LANDING_PRODUCTS, LANDING_VIDEO } from "./landing/data";
 import { Link } from "wouter";
 import { ArrowRight, FlaskConical, Award } from "lucide-react";
@@ -83,6 +84,9 @@ export default function MikrotikLandingPage() {
         <SectionShell id="mikrotik-home-a" className="min-h-screen">
           <ProductShowcase products={LANDING_PRODUCTS} />
         </SectionShell>
+
+        {/* Latest from MikroTik — membungkus SectionShell sendiri, hilang total bila feed kosong */}
+        <LatestVideos />
 
         <SectionShell id="mikrotik-home-b" className="min-h-screen">
           <VideoAndCategory

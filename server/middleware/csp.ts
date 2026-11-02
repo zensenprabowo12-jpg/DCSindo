@@ -53,7 +53,10 @@ const DIRECTIVES: Record<string, string> = {
   // thumbnail + QR). Tanpa ini pratinjau mati tanpa pesan error apa pun.
   // data: disertakan sebagai bantalan; aset build sekarang tidak memakainya,
   // jadi boleh dicabut kalau laporan mode enforce tetap bersih.
-  "img-src": "'self' data: blob:",
+  // i.ytimg.com & tiktube.com: thumbnail section "Latest from MikroTik" di
+  // /mikrotik (feed /api/mikrotik-videos/public). Server sengaja menyusun URL
+  // thumbnail YouTube di host i.ytimg.com saja, bukan i1/i2/… dari RSS.
+  "img-src": "'self' data: blob: https://i.ytimg.com https://tiktube.com",
 
   // Video produk yang diunggah, dilayani dari /uploads.
   "media-src": "'self'",
@@ -68,8 +71,10 @@ const DIRECTIVES: Record<string, string> = {
   // Tiga iframe. Sengaja tanpa 'self': aplikasi tidak pernah meng-iframe
   // halamannya sendiri. Isi di DALAM iframe tunduk pada CSP milik YouTube/UI,
   // bukan milik kita — jadi googlevideo/ytimg tidak perlu didaftarkan.
+  // tiktube.com: embed PeerTube resmi MikroTik di "Latest from MikroTik".
+  // youtube-nocookie.com sudah ada sebelumnya dan dipakai juga oleh section itu.
   "frame-src":
-    "https://www.youtube.com https://youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://gpt.distributor.ui-apps.com",
+    "https://www.youtube.com https://youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://gpt.distributor.ui-apps.com https://tiktube.com",
 
   // Tidak ada Worker sama sekali; 'self' dipilih agar tidak meledak bila suatu
   // library menambahkannya diam-diam.

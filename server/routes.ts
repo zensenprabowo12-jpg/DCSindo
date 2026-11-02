@@ -12,6 +12,7 @@ import { registerTrainingRoutes } from "./routes/trainingRoutes";
 import { registerFirmwareRoutes } from "./routes/firmwareRoutes";
 import { registerFirmwarePopupRoutes } from "./routes/firmwarePopupRoutes";
 import { registerVisitorLogRoutes } from "./routes/visitorLogRoutes";
+import { registerMikrotikVideosRoutes } from "./routes/mikrotikVideosRoutes";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -33,6 +34,7 @@ export async function registerRoutes(
   registerFirmwareRoutes(app);
   registerFirmwarePopupRoutes(app);
   registerVisitorLogRoutes(app);
+  registerMikrotikVideosRoutes(app);
 
   return httpServer;
 }

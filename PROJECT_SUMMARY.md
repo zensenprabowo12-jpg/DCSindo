@@ -71,6 +71,7 @@ DCSindo/
 │   │   ├── firmwareRoutes.ts, firmwarePopupRoutes.ts
 │   │   ├── visitorLogRoutes.ts  #   /api/visitor-log/*
 │   │   ├── cspReportRoutes.ts   #   Penerima laporan pelanggaran CSP
+│   │   ├── mikrotikVideosRoutes.ts # /api/mikrotik-videos/public (feed video, lihat §5)
 │   │   └── mikrotikRoutes.ts    #   Redirect /mikrotik
 │   ├── controllers/             # Logika request → panggil model
 │   │   ├── authController.ts    #   ⭐ LOGIN/LOGOUT/ME (bcrypt + role)
@@ -78,7 +79,10 @@ DCSindo/
 │   │   ├── mikrotikDcsApiController.ts, ubiquitiDcsApiController.ts,
 │   │   ├── vsolDcsApiController.ts, fiberHomeDcsApiController.ts,
 │   │   ├── trainingApiController.ts, firmwareApiController.ts,
-│   │   └── firmwarePopupApiController.ts, visitorLogApiController.ts
+│   │   ├── firmwarePopupApiController.ts, visitorLogApiController.ts
+│   │   └── mikrotikVideosApiController.ts # feed video publik (tidak pernah 500)
+│   ├── services/                # Logika tanpa DB
+│   │   └── mikrotikVideosService.ts # ⭐ ambil YouTube RSS + TikTube API, gabung, cache memori
 │   ├── models/                  # Query MySQL (mysql2)
 │   │   ├── userModel.ts         #   ⭐ users + bcrypt + ensureUsersTable + seed dari .env
 │   │   ├── trainingModel.ts     #   ⭐ training_sessions + training_syllabus (transaksi)
@@ -300,6 +304,14 @@ if (!ok) return;
 
 ### Publik
 - **Homepage** per brand: `/` (utama, dengan **hero video self-hosted** 3 klip acak), `/ubiquiti`, `/vsol`, landing `/mikrotik`.
+- **"Latest from MikroTik"** di `/mikrotik`, tepat di bawah *Featured Products* (`client/src/mikrotik/landing/components/LatestVideos.tsx`, section `#mikrotik-home-videos`). Slider 10 video resmi terbaru, terisi sendiri tanpa input admin & tanpa tabel DB:
+  - **Endpoint**: `GET /api/mikrotik-videos/public` → `{ ok:true, data:[{ id, source:"youtube"|"tiktube", title, description, thumbnailUrl, embedUrl, watchUrl, publishedAt }] }`. Tidak pernah 500; gagal/kosong = `data: []` dan section disembunyikan.
+  - **Sumber**: YouTube @mikrotik lewat RSS `feeds/videos.xml?channel_id=UCwFW0ZgZNcmZgAYN_zVxQ-Q` (konstanta `MIKROTIK_YOUTUBE_CHANNEL_ID`), **Shorts dibuang** (link RSS `/shorts/` atau `GET /shorts/<id>` tanpa follow redirect: 200 = Short, 3xx ke `/watch` = biasa; tidak pasti = dibuang; hasil di-cache per ID). TikTube (PeerTube resmi MikroTik) kanal **`mikrotik_news` saja** lewat `/api/v1/video-channels/mikrotik_news/videos?sort=-publishedAt&count=15`, video vertikal (`aspectRatio < 1`) dibuang.
+  - **Gabung**: urut `publishedAt` terbaru, ambil 10; judul sama (lowercase, tanpa tanda baca, spasi dirapikan) di kedua platform → satu entri, diputar dari YouTube. Judul/deskripsi apa adanya dari sumber, hanya markup HTML/markdown yang dibuang (teks polos). Deskripsi TikTube dari endpoint daftar memang sudah dipotong ±250 karakter oleh PeerTube.
+  - **Cache** (`server/services/mikrotikVideosService.ts`): memori proses, TTL **6 jam**, timeout **8 detik** per sumber, satu refresh berjalan sekaligus (anti-stampede). Data basi dilayani langsung sambil refresh di belakang. **Stale-on-error per sumber**: sumber yang gagal memakai hasil sukses terakhirnya, dan refresh dicoba lagi tiap **10 menit** sampai semua sumber sehat. Restart PM2 = cache kosong, request pertama menunggu fetch (±1–2 detik).
+  - ⚠️ **RSS YouTube kadang membalas 404 berentetan** untuk channel yang sah (teramati saat dibangun: 6× 404 beruntun, beberapa menit kemudian 200 terus). Service mencoba hingga 6× dengan jeda bertambah (300 ms, 600 ms, …) di dalam jendela 8 detik; bila tetap gagal, YouTube memakai data terakhir (atau kosong sampai pertama kali berhasil) dan section tetap jalan dengan TikTube.
+  - **Frontend**: click-to-play (thumbnail + tombol play, iframe baru dipasang setelah klik; YouTube via `youtube-nocookie.com`), satu slide dirender sekaligus sehingga pindah slide meng-unmount iframe. Navigasi manual saja: panah 44×44 px, titik, ←/→ keyboard, swipe. Tanpa auto-advance.
+  - **Uji kegagalan di dev**: `MIKROTIK_VIDEOS_TEST_YOUTUBE_URL` / `MIKROTIK_VIDEOS_TEST_TIKTUBE_URL` mengganti URL sumber — **diabaikan saat `NODE_ENV=production`**, jadi tidak perlu ditambahkan ke `.env` server.
 - **Katalog produk per brand**: list + filter kategori + sort + halaman detail produk (galeri, spesifikasi, video, technical accordion).
   - MikroTik: `/mikrotik/shop`, `/mikrotik/categories/:category`, detail `/mikrotik/shop/:id`.
   - Ubiquiti: `/ubiquiti/shop`, detail `/ubiquiti/shop/:id`.
@@ -435,7 +447,7 @@ POST   /admin/products/reorder
 | H-03 | Cookie `Secure` di produksi + `session.regenerate()` saat login |
 | H-04 | Sanitasi body 5xx + correlation ID (`errorSanitizer.ts`) |
 | H-05 | `npm audit fix` + hapus paket drizzle |
-| H-06 | Header keamanan dasar → CSP Report-Only → **CSP enforce** |
+| H-06 | Header keamanan dasar → CSP Report-Only → **CSP enforce**. Tambahan untuk "Latest from MikroTik": `img-src` + `https://i.ytimg.com https://tiktube.com`, `frame-src` + `https://tiktube.com` (`youtube-nocookie.com` sudah ada). CSP hanya dikirim di production — cek header di server setelah deploy. |
 | M-01 | Berhenti mencatat body response (kebocoran PII ke log PM2) |
 | M-03 | Pengerasan pendaftaran training (rate limit, anti-duplikat, race kuota) |
 | M-04/M-07 | Gambar yatim saat DB gagal; UNIQUE SKU V-SOL |
