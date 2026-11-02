@@ -37,7 +37,12 @@ const DIRECTIVES: Record<string, string> = {
   // seluruh kode di /assets/*.js sebagai modul eksternal. Bundle juga bebas
   // eval/new Function/WebAssembly, jadi 'unsafe-eval' tidak diperlukan.
   // Inilah direktif yang membuat CSP di sini benar-benar bernilai.
-  "script-src": "'self'",
+  // www.youtube.com: YouTube IFrame Player API untuk "Latest from MikroTik" —
+  // /iframe_api memuat /s/player/<ver>/www-widgetapi.vflset/www-widgetapi.js,
+  // keduanya dari host ini saja (diperiksa: widget API tidak memuat apa pun
+  // dari host lain, tanpa XHR/beacon). Player-nya di youtube-nocookie.com,
+  // sudah ada di frame-src.
+  "script-src": "'self' https://www.youtube.com",
 
   // 'unsafe-inline' terpaksa: 9 komponen memakai <style>{...}</style> dan
   // Google Fonts mengirim stylesheet dari fonts.googleapis.com. Jauh kurang

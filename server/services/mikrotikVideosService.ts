@@ -6,11 +6,11 @@
  * minimal yang hanya membaca elemen yang dipakai di bawah.
  *
  * Aturan:
- *  - Cache TTL 6 jam. Refresh yang gagal TIDAK menghapus data: tiap sumber
+ *  - Cache TTL 7 hari. Refresh yang gagal TIDAK menghapus data: tiap sumber
  *    menyimpan hasil terakhirnya yang berhasil (stale-on-error), jadi satu
  *    sumber mati tidak menghapus sumber lain.
  *  - Bila ada sumber yang gagal, refresh berikutnya dijadwalkan lebih cepat
- *    (RETRY_MS), bukan menunggu 6 jam.
+ *    (RETRY_MS), bukan menunggu 7 hari.
  *  - Hanya satu refresh berjalan pada satu waktu (anti-stampede). Request
  *    yang datang saat cache basi langsung dilayani data lama; hanya request
  *    pertama tanpa data sama sekali yang menunggu.
@@ -38,7 +38,7 @@ const IS_PROD = process.env.NODE_ENV === "production";
 const YOUTUBE_FEED_URL = (!IS_PROD && process.env.MIKROTIK_VIDEOS_TEST_YOUTUBE_URL) || PROD_YOUTUBE_FEED_URL;
 const TIKTUBE_API_URL = (!IS_PROD && process.env.MIKROTIK_VIDEOS_TEST_TIKTUBE_URL) || PROD_TIKTUBE_API_URL;
 
-const TTL_MS = 6 * 60 * 60 * 1000;
+const TTL_MS = 7 * 24 * 60 * 60 * 1000;
 const RETRY_MS = 10 * 60 * 1000;
 const SOURCE_TIMEOUT_MS = 8000;
 const SHORTS_CHECK_TIMEOUT_MS = 5000;
