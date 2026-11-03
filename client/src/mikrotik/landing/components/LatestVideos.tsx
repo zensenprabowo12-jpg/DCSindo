@@ -409,7 +409,7 @@ export default function LatestVideos() {
               Official Videos
             </p>
             <h2 style={{ margin: 0, fontSize: "clamp(20px, 3vw, 38px)", fontWeight: 900, letterSpacing: "-0.03em", color: textMain }}>
-              Latest from MikroTik
+              Latest video from MikroTik
             </h2>
             <div style={{ display: "flex", alignItems: "center", gap: 14, maxWidth: 340, margin: "clamp(12px, 2vh, 20px) auto 0" }}>
               <div style={{ flex: 1, height: 1, background: "linear-gradient(90deg, transparent, rgba(255,107,53,0.35))" }} />
