@@ -45,6 +45,8 @@ const MATRIX: [string, string | null][] = [
   ["eUXfWTEWQjQGcWQb7tAsuS", null], // shortUUID polos — dulu iframe YouTube rusak
   ["", null],
   ["   ", null],
+  ["-", null], // placeholder video_url di ~200 produk
+  [" - ", null],
   ["https://example.com/watch?v=abc", null],
   ["not a url at all", null],
   ["https://tiktube.com/", null],

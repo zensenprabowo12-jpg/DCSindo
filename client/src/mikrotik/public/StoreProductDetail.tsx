@@ -10,7 +10,6 @@ import { ProductInfo } from "./product-detail/ProductInfo";
 import { ProductVideo } from "./product-detail/ProductVideo";
 import { ProductSpecification } from "./product-detail/ProductSpecification";
 import { ProductTechnicalAccordion } from "./product-detail/ProductTechnicalAccordion";
-import { MIKROTIK_PRODUCT_EXTRAS } from "./productExtras";
 import { CATEGORY_BACKGROUNDS } from "./CategoryBackground";
 
 function useDarkMode(): boolean {
@@ -92,12 +91,6 @@ export default function MikrotikDcsStoreProductDetail() {
   const [loading, setLoading] = useState(true);
   const [activeImage, setActiveImage] = useState<string>("");
 
-  const extras = useMemo(() => {
-    return Number.isFinite(id)
-      ? MIKROTIK_PRODUCT_EXTRAS[id]
-      : undefined;
-  }, [id]);
-
   const specId = "mikrotik-product-spec";
 
   useEffect(() => {
@@ -177,31 +170,18 @@ export default function MikrotikDcsStoreProductDetail() {
   );
 
   const videoUrlOrId = useMemo(
-    () =>
-      d
-        ? (d.video_url ?? "") ||
-          extras?.videoUrl ||
-          ""
-        : "",
-    [d, extras?.videoUrl],
+    () => (d ? d.video_url ?? "" : ""),
+    [d],
   );
 
   const videoTitle = useMemo(
-    () =>
-      d
-        ? (d.video_title ?? undefined) ||
-          extras?.videoTitle
-        : undefined,
-    [d, extras?.videoTitle],
+    () => (d ? d.video_title ?? undefined : undefined),
+    [d],
   );
 
   const videoDescription = useMemo(
-    () =>
-      d
-        ? (d.video_description ?? undefined) ||
-          extras?.videoDescription
-        : undefined,
-    [d, extras?.videoDescription],
+    () => (d ? d.video_description ?? undefined : undefined),
+    [d],
   );
 
   const specifications = useMemo(() => {
@@ -214,11 +194,8 @@ export default function MikrotikDcsStoreProductDetail() {
     if (d.specifications && d.specifications.length)
       return d.specifications;
 
-    if (extras?.specifications)
-      return [extras.specifications];
-
     return [];
-  }, [d, extras?.specifications]);
+  }, [d]);
 
   useEffect(() => {
     if (!d) {
