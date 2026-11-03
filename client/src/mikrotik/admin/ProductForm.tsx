@@ -358,12 +358,12 @@ function ProductFormBody({ id }: { id?: string }) {
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="vurl">Video URL (YouTube)</Label>
+            <Label htmlFor="vurl">Video URL (YouTube / TikTube)</Label>
             <Input
               id="vurl"
               value={videoUrl}
               onChange={(e) => setVideoUrl(e.target.value)}
-              placeholder="https://www.youtube.com/watch?v=..."
+              placeholder="https://youtu.be/... atau https://tiktube.com/w/..."
             />
           </div>
           <div className="space-y-2">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { resolveEmbed } from "./videoEmbed";
 
 // ─── HOOK DARK MODE ──────────────────────────────────────────
 function useDarkMode(): boolean {
@@ -19,25 +20,6 @@ function useDarkMode(): boolean {
   return isDark;
 }
 
-// ─── HELPER ──────────────────────────────────────────────────
-function getYoutubeId(urlOrId: string) {
-  const raw = urlOrId.trim();
-  if (!raw) return "";
-  if (/^[\w-]{6,}$/.test(raw) && !raw.includes("http")) return raw;
-  try {
-    const u = new URL(raw);
-    if (u.hostname.includes("youtu.be")) {
-      return u.pathname.replace("/", "");
-    }
-    if (u.hostname.includes("youtube.com")) {
-      return u.searchParams.get("v") ?? "";
-    }
-  } catch {
-    // ignore
-  }
-  return "";
-}
-
 // ─── KOMPONEN UTAMA ──────────────────────────────────────────
 export function ProductVideo({
   videoUrlOrId,
@@ -49,8 +31,8 @@ export function ProductVideo({
   description?: string;
 }) {
   const isDark = useDarkMode();
-  const id = getYoutubeId(videoUrlOrId);
-  if (!id) return null;
+  const embed = resolveEmbed(videoUrlOrId);
+  if (!embed) return null;
 
   return (
     <section style={{ marginTop: 64 }}>
@@ -99,7 +81,7 @@ export function ProductVideo({
                 height: "100%",
                 border: "none",
               }}
-              src={`https://www.youtube.com/embed/${id}?rel=0`}
+              src={embed.src}
               title={title || "Product Video"}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
