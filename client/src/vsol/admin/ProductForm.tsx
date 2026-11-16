@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { PublishedFormCard } from "../../admin/PublishedToggle";
 import { VSOL_DCS_CATEGORIES } from "../categories";
 import {
   apiVsolAdminProduct,
@@ -76,6 +77,8 @@ function ProductFormBody({ id }: { id?: string }) {
   // Basic fields
   const [nama, setNama] = useState("");
   const [sku, setSku] = useState("");
+  // Produk baru default tampil di situs publik.
+  const [isPublished, setIsPublished] = useState(true);
   const [category, setCategory] = useState<string>(VSOL_DCS_CATEGORIES[0]);
   const [subfilter, setSubfilter] = useState("");
   const [desk, setDesk] = useState("");
@@ -110,6 +113,7 @@ function ProductFormBody({ id }: { id?: string }) {
       const d: VsolDcsProductDetail = r.data;
       setNama(d.nama_produk);
       setSku(d.sku);
+      setIsPublished(d.is_published);
       setCategory(d.category);
       setSubfilter(d.subfilter ?? "");
       setDesk(d.deskripsi);
@@ -205,6 +209,7 @@ function ProductFormBody({ id }: { id?: string }) {
     const form = new FormData();
     form.set("nama_produk", nama.trim());
     form.set("sku", sku.trim());
+    form.set("is_published", isPublished ? "1" : "0");
     form.set("category", category);
     form.set("subfilter", subfilter.trim());
     form.set("deskripsi", desk.trim());
@@ -253,6 +258,7 @@ function ProductFormBody({ id }: { id?: string }) {
         )}
 
         <form onSubmit={onSubmit} className="space-y-8">
+          <PublishedFormCard checked={isPublished} onCheckedChange={setIsPublished} />
 
           {/* ── Basic info ─────────────────────────────────── */}
           <section className="border border-border rounded-2xl p-6 bg-card space-y-5">

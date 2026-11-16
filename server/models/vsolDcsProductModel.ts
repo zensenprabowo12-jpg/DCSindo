@@ -1,6 +1,7 @@
 import type { ResultSetHeader, RowDataPacket } from "mysql2";
 import { mysqlPool } from "../config/mysqlPool";
 import { LIST_ROW_CAP } from "./listLimit";
+import { ALL_PRODUCTS, type VisibilityOpts } from "../utils/published";
 import {
   isValidVsolDcsCategory,
   toCanonicalVsolDcsCategory,
@@ -19,6 +20,8 @@ export type VsolDcsProductRow = {
   main_image: string;
   is_new: boolean;
   sort_order: number;
+  /** false = disembunyikan dari situs publik (tetap ada & bisa diedit di admin). */
+  is_published: boolean;
   created_at: Date;
   updated_at: Date;
 };
@@ -52,6 +55,7 @@ function mapProduct(r: RowDataPacket): VsolDcsProductRow {
     main_image: r.main_image ?? "",
     is_new: Boolean(r.is_new),
     sort_order: r.sort_order ?? 0,
+    is_published: Number(r.is_published) === 1,
     created_at: r.created_at,
     updated_at: r.updated_at,
   };
@@ -59,12 +63,16 @@ function mapProduct(r: RowDataPacket): VsolDcsProductRow {
 
 // ─── LIST ─────────────────────────────────────────────────────
 export async function listVsolDcsProducts(
-  options: { category?: string | null; sort: "latest" | "oldest" | "custom" } = { sort: "latest" },
+  /** `publishedOnly` wajib: publik `true`, admin `false`. Filter dipasang SEBELUM LIMIT. */
+  options: { category?: string | null; sort: "latest" | "oldest" | "custom"; publishedOnly: boolean },
 ): Promise<VsolDcsProductRow[]> {
   const raw = options.category?.trim() || null;
   if (raw && !isValidVsolDcsCategory(raw)) return [];
   const canonical = raw ? toCanonicalVsolDcsCategory(raw) : null;
-  const where = canonical ? "WHERE `category` = :category" : "";
+  const conds: string[] = [];
+  if (canonical) conds.push("`category` = :category");
+  if (options.publishedOnly) conds.push("is_published = 1");
+  const where = conds.length ? `WHERE ${conds.join(" AND ")}` : "";
   const orderBy = options.sort === "custom"
     ? "ORDER BY sort_order ASC, created_at DESC, id DESC"
     : options.sort === "oldest"
@@ -72,7 +80,7 @@ export async function listVsolDcsProducts(
     : "ORDER BY created_at DESC, id DESC";
   const [rows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT id, nama_produk, sku, category, subfilter, deskripsi, bullet_points,
-            main_image, is_new, sort_order, created_at, updated_at
+            main_image, is_new, sort_order, is_published, created_at, updated_at
      FROM vsol_dcs_products ${where} ${orderBy}
      LIMIT ${LIST_ROW_CAP}`,
     canonical ? { category: canonical } : {},
@@ -81,13 +89,15 @@ export async function listVsolDcsProducts(
 }
 
 // ─── GET BY ID ────────────────────────────────────────────────
+/** Default: termasuk produk tersembunyi (admin/internal). Publik wajib `PUBLISHED_ONLY`. */
 export async function getVsolDcsProductById(
   id: number,
+  opts: VisibilityOpts = ALL_PRODUCTS,
 ): Promise<VsolDcsProductWithRelations | null> {
   const [pRows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT id, nama_produk, sku, category, subfilter, deskripsi, bullet_points,
-            main_image, is_new, sort_order, created_at, updated_at
-     FROM vsol_dcs_products WHERE id = :id LIMIT 1`,
+            main_image, is_new, sort_order, is_published, created_at, updated_at
+     FROM vsol_dcs_products WHERE id = :id${opts.publishedOnly ? " AND is_published = 1" : ""} LIMIT 1`,
     { id },
   );
   if (!pRows.length) return null;
@@ -146,6 +156,8 @@ type CreateVsolData = {
   bullet_points: string[];
   main_image: string;
   is_new: boolean;
+  /** Create: default true. Update: undefined = status tidak diubah. */
+  is_published?: boolean;
   galleryPaths: string[];
   technicalSpecs: TechSpecInput[];
   orderingInfo: OrderingInfoInput[];
@@ -164,12 +176,13 @@ export async function createVsolDcsProduct(data: CreateVsolData): Promise<number
     const bulletJson = JSON.stringify(data.bullet_points.slice(0, 9));
     const [res] = await connection.query<ResultSetHeader>(
       `INSERT INTO vsol_dcs_products
-       (nama_produk, sku, category, subfilter, deskripsi, bullet_points, main_image, is_new, sort_order)
-       VALUES (:nama, :sku, :cat, :sub, :des, :bullets, :main, :isnew, :ord)`,
+       (nama_produk, sku, category, subfilter, deskripsi, bullet_points, main_image, is_new, sort_order, is_published)
+       VALUES (:nama, :sku, :cat, :sub, :des, :bullets, :main, :isnew, :ord, :pub)`,
       {
         nama: data.nama_produk.trim(), sku: data.sku.trim(), cat: data.category,
         sub: data.subfilter?.trim() || null, des: data.deskripsi.trim(),
         bullets: bulletJson, main: data.main_image, isnew: data.is_new ? 1 : 0, ord: nextOrder,
+        pub: data.is_published === false ? 0 : 1,
       },
     );
     const id = (res as ResultSetHeader).insertId;
@@ -217,12 +230,14 @@ export async function updateVsolDcsProduct(id: number, data: UpdateVsolData): Pr
     await connection.query(
       `UPDATE vsol_dcs_products SET
          nama_produk = :nama, sku = :sku, category = :cat, subfilter = :sub,
-         deskripsi = :des, bullet_points = :bullets, main_image = :main, is_new = :isnew
+         deskripsi = :des, bullet_points = :bullets, main_image = :main, is_new = :isnew,
+         is_published = COALESCE(:pub, is_published)
        WHERE id = :id`,
       {
         nama: data.nama_produk.trim(), sku: data.sku.trim(), cat: data.category,
         sub: data.subfilter?.trim() || null, des: data.deskripsi.trim(),
         bullets: bulletJson, main: data.main_image, isnew: data.is_new ? 1 : 0, id,
+        pub: data.is_published === undefined ? null : data.is_published ? 1 : 0,
       },
     );
 
@@ -259,6 +274,15 @@ export async function updateVsolDcsProduct(id: number, data: UpdateVsolData): Pr
     await connection.commit();
   } catch (e) { await connection.rollback(); throw e; }
   finally { connection.release(); }
+}
+
+/** Mengembalikan false bila produk tidak ada. */
+export async function setVsolDcsProductPublished(id: number, published: boolean): Promise<boolean> {
+  const [r] = await mysqlPool.query<ResultSetHeader>(
+    `UPDATE vsol_dcs_products SET is_published = :pub WHERE id = :id`,
+    { id, pub: published ? 1 : 0 },
+  );
+  return r.affectedRows > 0;
 }
 
 export async function deleteVsolDcsProductById(id: number): Promise<boolean> {

@@ -7,6 +7,7 @@ import {
   getVsolDcsProductById,
   listVsolDcsProducts,
   reorderVsolDcsProducts,
+  setVsolDcsProductPublished,
   updateVsolDcsProduct,
 } from "../models/vsolDcsProductModel";
 import {
@@ -19,6 +20,13 @@ import {
   VSOL_DCS_CATEGORIES,
 } from "../../client/src/vsol/categories";
 import { requireRole } from "../middleware/requireRole";
+import {
+  ALL_PRODUCTS,
+  INVALID_PUBLISHED_MESSAGE,
+  makeSetPublishedHandler,
+  parsePublished,
+  PUBLISHED_ONLY,
+} from "../utils/published";
 
 // ─── HELPERS ─────────────────────────────────────────────────
 function getUploadedPaths(req: Request, field: string): string[] {
@@ -57,7 +65,8 @@ export async function apiVsolDcsPublicList(req: Request, res: Response): Promise
     const category = typeof req.query.category === "string" ? req.query.category : undefined;
     const sort = (req.query.sort as string) === "oldest" ? "oldest"
       : (req.query.sort as string) === "custom" ? "custom" : "latest";
-    const data = await listVsolDcsProducts({ category, sort });
+    // Publik: hanya is_published = 1 (katalog & search modal).
+    const data = await listVsolDcsProducts({ category, sort, publishedOnly: true });
     res.json({ ok: true, data });
   } catch (e) {
     res.status(500).json({ ok: false, message: (e as Error).message });
@@ -68,7 +77,8 @@ export async function apiVsolDcsPublicGet(req: Request, res: Response): Promise<
   try {
     const id = Number.parseInt(String(req.params.id ?? ""), 10);
     if (!Number.isFinite(id) || id < 1) { res.status(400).json({ ok: false, message: "Invalid ID" }); return; }
-    const data = await getVsolDcsProductById(id);
+    // Produk tersembunyi → 404 identik dengan ID yang tidak ada.
+    const data = await getVsolDcsProductById(id, PUBLISHED_ONLY);
     if (!data) { res.status(404).json({ ok: false, message: "Product not found" }); return; }
     res.json({ ok: true, data });
   } catch (e) {
@@ -87,7 +97,7 @@ export async function apiVsolDcsAdminList(req: Request, res: Response): Promise<
     const category = typeof req.query.category === "string" ? req.query.category : undefined;
     const sort = (req.query.sort as string) === "oldest" ? "oldest"
       : (req.query.sort as string) === "custom" ? "custom" : "latest";
-    const data = await listVsolDcsProducts({ category, sort });
+    const data = await listVsolDcsProducts({ category, sort, publishedOnly: false });
     res.json({ ok: true, data });
   } catch (e) {
     res.status(500).json({ ok: false, message: (e as Error).message });
@@ -99,13 +109,20 @@ export async function apiVsolDcsAdminGet(req: Request, res: Response): Promise<v
   try {
     const id = Number.parseInt(String(req.params.id ?? ""), 10);
     if (!Number.isFinite(id) || id < 1) { res.status(400).json({ ok: false, message: "Invalid ID" }); return; }
-    const data = await getVsolDcsProductById(id);
+    const data = await getVsolDcsProductById(id, ALL_PRODUCTS);
     if (!data) { res.status(404).json({ ok: false, message: "Product not found" }); return; }
     res.json({ ok: true, data });
   } catch (e) {
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
 }
+
+// ─── ADMIN PUBLISHED ON/OFF ───────────────────────────────────
+/** POST JSON `{ is_published: boolean }`. */
+export const apiVsolDcsAdminSetPublished = makeSetPublishedHandler(
+  setVsolDcsProductPublished,
+  { invalidId: "Invalid ID", notFound: "Product not found" },
+);
 
 // ─── ADMIN CREATE ─────────────────────────────────────────────
 export async function apiVsolDcsAdminCreate(req: Request, res: Response): Promise<void> {
@@ -119,6 +136,9 @@ export async function apiVsolDcsAdminCreate(req: Request, res: Response): Promis
   try {
     if (!mainPath) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Main image is required" }); return; }
     const { nama_produk, sku, category, subfilter, deskripsi, is_new } = req.body as Record<string, string>;
+    // Opsional: tidak dikirim → create = published, update = status tidak berubah.
+    const published = parsePublished(req.body.is_published);
+    if (published === null) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: INVALID_PUBLISHED_MESSAGE }); return; }
     if (!nama_produk?.trim()) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "nama_produk is required" }); return; }
     if (!sku?.trim()) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "sku is required" }); return; }
     if (!isValidVsolDcsCategory(category ?? "")) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Invalid category" }); return; }
@@ -142,6 +162,7 @@ export async function apiVsolDcsAdminCreate(req: Request, res: Response): Promis
       bullet_points: bullets,
       main_image: mainPath,
       is_new: is_new === "1" || is_new === "true",
+      is_published: published,
       galleryPaths: getUploadedPaths(req, "gallery"),
       technicalSpecs,
       orderingInfo,
@@ -171,6 +192,9 @@ export async function apiVsolDcsAdminUpdate(req: Request, res: Response): Promis
     if (!existing) { await removeUploadedFiles(req); res.status(404).json({ ok: false, message: "Product not found" }); return; }
 
     const { nama_produk, sku, category, subfilter, deskripsi, is_new } = req.body as Record<string, string>;
+    // Opsional: tidak dikirim → create = published, update = status tidak berubah.
+    const published = parsePublished(req.body.is_published);
+    if (published === null) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: INVALID_PUBLISHED_MESSAGE }); return; }
     if (!isValidVsolDcsCategory(category ?? "")) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Invalid category" }); return; }
     const canonical = toCanonicalVsolDcsCategory(category)!;
 
@@ -203,6 +227,7 @@ export async function apiVsolDcsAdminUpdate(req: Request, res: Response): Promis
       bullet_points: bullets,
       main_image: mainImage,
       is_new: is_new === "1" || is_new === "true",
+      is_published: published,
       galleryPaths: { keepExisting: existingGallery, newUploads: getUploadedPaths(req, "gallery") },
       technicalSpecs,
       orderingInfo,

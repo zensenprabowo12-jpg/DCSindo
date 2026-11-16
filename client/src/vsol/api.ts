@@ -121,3 +121,19 @@ export async function apiVsolReorderProducts(
     return j(res);
   }) as Promise<ApiOk<unknown> | ApiErr>;
 }
+
+/** Admin: saklar Published per produk (POST JSON `{ is_published }`). */
+export async function apiVsolSetPublished(
+  id: number,
+  isPublished: boolean,
+): Promise<ApiOk<{ id: number; is_published: boolean }> | ApiErr> {
+  return safe(async () => {
+    const res = await fetch(`${BASE}/admin/products/${id}/published`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+      body: JSON.stringify({ is_published: isPublished }),
+    });
+    return j(res);
+  }) as Promise<ApiOk<{ id: number; is_published: boolean }> | ApiErr>;
+}

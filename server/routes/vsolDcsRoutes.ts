@@ -6,6 +6,7 @@ import {
   apiVsolDcsAdminGet,
   apiVsolDcsAdminList,
   apiVsolDcsAdminReorder,
+  apiVsolDcsAdminSetPublished,
   apiVsolDcsAdminUpdate,
   apiVsolDcsMetaCategories,
   apiVsolDcsPublicGet,
@@ -70,6 +71,8 @@ export function registerVsolDcsRoutes(app: Express): void {
   // Admin
   app.get(`${base}/admin/products`, apiVsolDcsAdminList);
   app.get(`${base}/admin/products/:id`, apiVsolDcsAdminGet);
+  // Saklar Published (POST, bukan PATCH — sama dengan FiberHome).
+  app.post(`${base}/admin/products/:id/published`, express.json(), apiVsolDcsAdminSetPublished);
   app.post(`${base}/admin/products/reorder`, express.json(), apiVsolDcsAdminReorder);
   app.post(`${base}/admin/products`, uploadGuard, withMultipart(apiVsolDcsAdminCreate));
   app.put(`${base}/admin/products/:id`, uploadGuard, withMultipart(apiVsolDcsAdminUpdate));
