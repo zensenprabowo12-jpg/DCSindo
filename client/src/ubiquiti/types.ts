@@ -19,6 +19,8 @@ export interface UbiquitiDcsProduct {
   main_image: string;
   is_new: boolean;
   sort_order: number;
+  /** false = disembunyikan dari situs publik (hanya terlihat di admin). */
+  is_published: boolean;
   created_at: string;
   updated_at: string;
 }

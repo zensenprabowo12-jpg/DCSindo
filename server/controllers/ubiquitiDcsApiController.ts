@@ -7,6 +7,7 @@ import {
   getUbiquitiDcsProductById,
   listUbiquitiDcsProducts,
   reorderUbiquitiDcsProducts,
+  setUbiquitiDcsProductPublished,
   updateUbiquitiDcsProduct,
 } from "../models/ubiquitiDcsProductModel";
 import {
@@ -19,6 +20,13 @@ import {
   UBIQUITI_DCS_CATEGORIES,
 } from "../../client/src/ubiquiti/categories";
 import { requireRole } from "../middleware/requireRole";
+import {
+  ALL_PRODUCTS,
+  INVALID_PUBLISHED_MESSAGE,
+  makeSetPublishedHandler,
+  parsePublished,
+  PUBLISHED_ONLY,
+} from "../utils/published";
 
 // ─── HELPERS ─────────────────────────────────────────────────
 function getUploadedPaths(req: Request, field: string): string[] {
@@ -48,7 +56,8 @@ export async function apiUbiquitiDcsPublicList(req: Request, res: Response): Pro
     const category = typeof req.query.category === "string" ? req.query.category : undefined;
     const sort = (req.query.sort as string) === "oldest" ? "oldest"
       : (req.query.sort as string) === "custom" ? "custom" : "latest";
-    const data = await listUbiquitiDcsProducts({ category, sort });
+    // Publik: hanya is_published = 1 (katalog & search modal).
+    const data = await listUbiquitiDcsProducts({ category, sort, publishedOnly: true });
     res.json({ ok: true, data });
   } catch (e) {
     res.status(500).json({ ok: false, message: (e as Error).message });
@@ -59,7 +68,8 @@ export async function apiUbiquitiDcsPublicGet(req: Request, res: Response): Prom
   try {
     const id = Number.parseInt(String(req.params.id ?? ""), 10);
     if (!Number.isFinite(id) || id < 1) { res.status(400).json({ ok: false, message: "ID tidak valid" }); return; }
-    const data = await getUbiquitiDcsProductById(id);
+    // Produk tersembunyi → 404 identik dengan ID yang tidak ada.
+    const data = await getUbiquitiDcsProductById(id, PUBLISHED_ONLY);
     if (!data) { res.status(404).json({ ok: false, message: "Produk tidak ditemukan" }); return; }
     res.json({ ok: true, data });
   } catch (e) {
@@ -78,7 +88,7 @@ export async function apiUbiquitiDcsAdminList(req: Request, res: Response): Prom
     const category = typeof req.query.category === "string" ? req.query.category : undefined;
     const sort = (req.query.sort as string) === "oldest" ? "oldest"
       : (req.query.sort as string) === "custom" ? "custom" : "latest";
-    const data = await listUbiquitiDcsProducts({ category, sort });
+    const data = await listUbiquitiDcsProducts({ category, sort, publishedOnly: false });
     res.json({ ok: true, data });
   } catch (e) {
     res.status(500).json({ ok: false, message: (e as Error).message });
@@ -90,13 +100,20 @@ export async function apiUbiquitiDcsAdminGet(req: Request, res: Response): Promi
   try {
     const id = Number.parseInt(String(req.params.id ?? ""), 10);
     if (!Number.isFinite(id) || id < 1) { res.status(400).json({ ok: false, message: "ID tidak valid" }); return; }
-    const data = await getUbiquitiDcsProductById(id);
+    const data = await getUbiquitiDcsProductById(id, ALL_PRODUCTS);
     if (!data) { res.status(404).json({ ok: false, message: "Produk tidak ditemukan" }); return; }
     res.json({ ok: true, data });
   } catch (e) {
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
 }
+
+// ─── ADMIN PUBLISHED ON/OFF ───────────────────────────────────
+/** POST JSON `{ is_published: boolean }`. */
+export const apiUbiquitiDcsAdminSetPublished = makeSetPublishedHandler(
+  setUbiquitiDcsProductPublished,
+  { invalidId: "ID tidak valid", notFound: "Produk tidak ditemukan" },
+);
 
 // ─── ADMIN CREATE ─────────────────────────────────────────────
 export async function apiUbiquitiDcsAdminCreate(req: Request, res: Response): Promise<void> {
@@ -110,6 +127,9 @@ export async function apiUbiquitiDcsAdminCreate(req: Request, res: Response): Pr
   try {
     if (!mainPath) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Gambar utama wajib diupload" }); return; }
     const { nama_produk, sku, category, subfilter, deskripsi, is_new } = req.body as Record<string, string>;
+    // Opsional: tidak dikirim → create = published, update = status tidak berubah.
+    const published = parsePublished(req.body.is_published);
+    if (published === null) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: INVALID_PUBLISHED_MESSAGE }); return; }
     if (!nama_produk?.trim()) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "nama_produk wajib" }); return; }
     if (!sku?.trim()) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "sku wajib" }); return; }
     if (!isValidUbiquitiDcsCategory(category ?? "")) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Kategori tidak valid" }); return; }
@@ -129,6 +149,7 @@ export async function apiUbiquitiDcsAdminCreate(req: Request, res: Response): Pr
       bullet_points: bullets,
       main_image: mainPath,
       is_new: is_new === "1" || is_new === "true",
+      is_published: published,
       galleryPaths: getUploadedPaths(req, "gallery"),
       overviewImagePaths: getUploadedPaths(req, "overview_images"),
       overviewVideoPaths: getUploadedPaths(req, "overview_videos"),
@@ -156,6 +177,9 @@ export async function apiUbiquitiDcsAdminUpdate(req: Request, res: Response): Pr
     if (!existing) { await removeUploadedFiles(req); res.status(404).json({ ok: false, message: "Produk tidak ditemukan" }); return; }
 
     const { nama_produk, sku, category, subfilter, deskripsi, is_new } = req.body as Record<string, string>;
+    // Opsional: tidak dikirim → create = published, update = status tidak berubah.
+    const published = parsePublished(req.body.is_published);
+    if (published === null) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: INVALID_PUBLISHED_MESSAGE }); return; }
     if (!isValidUbiquitiDcsCategory(category ?? "")) { await removeUploadedFiles(req); res.status(400).json({ ok: false, message: "Kategori tidak valid" }); return; }
     const canonical = toCanonicalUbiquitiDcsCategory(category)!;
 
@@ -185,6 +209,7 @@ export async function apiUbiquitiDcsAdminUpdate(req: Request, res: Response): Pr
       bullet_points: bullets,
       main_image: mainImage,
       is_new: is_new === "1" || is_new === "true",
+      is_published: published,
       galleryPaths: { keepExisting: existingGallery, newUploads: getUploadedPaths(req, "gallery") },
       overviewImagePaths: { keepExisting: existingOvImg, newUploads: getUploadedPaths(req, "overview_images") },
       overviewVideoPaths: { keepExisting: existingOvVid, newUploads: getUploadedPaths(req, "overview_videos") },

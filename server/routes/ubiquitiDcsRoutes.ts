@@ -6,6 +6,7 @@ import {
   apiUbiquitiDcsAdminGet,
   apiUbiquitiDcsAdminList,
   apiUbiquitiDcsAdminReorder,
+  apiUbiquitiDcsAdminSetPublished,
   apiUbiquitiDcsAdminUpdate,
   apiUbiquitiDcsMetaCategories,
   apiUbiquitiDcsPublicGet,
@@ -69,6 +70,8 @@ export function registerUbiquitiDcsRoutes(app: Express): void {
   // Admin
   app.get(`${base}/admin/products`, apiUbiquitiDcsAdminList);
   app.get(`${base}/admin/products/:id`, apiUbiquitiDcsAdminGet);
+  // Saklar Published (POST, bukan PATCH — sama dengan FiberHome).
+  app.post(`${base}/admin/products/:id/published`, express.json(), apiUbiquitiDcsAdminSetPublished);
   app.post(`${base}/admin/products/reorder`, express.json(), apiUbiquitiDcsAdminReorder);
   app.post(`${base}/admin/products`, uploadGuard, withMultipart(apiUbiquitiDcsAdminCreate));
   app.put(`${base}/admin/products/:id`, uploadGuard, withMultipart(apiUbiquitiDcsAdminUpdate));

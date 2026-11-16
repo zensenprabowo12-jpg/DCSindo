@@ -1,6 +1,7 @@
 import type { ResultSetHeader, RowDataPacket } from "mysql2";
 import { mysqlPool } from "../config/mysqlPool";
 import { LIST_ROW_CAP } from "./listLimit";
+import { ALL_PRODUCTS, type VisibilityOpts } from "../utils/published";
 import {
   isValidUbiquitiDcsCategory,
   toCanonicalUbiquitiDcsCategory,
@@ -19,6 +20,8 @@ export type UbiquitiDcsProductRow = {
   main_image: string;
   is_new: boolean;
   sort_order: number;
+  /** false = disembunyikan dari situs publik (tetap ada & bisa diedit di admin). */
+  is_published: boolean;
   created_at: Date;
   updated_at: Date;
 };
@@ -54,6 +57,7 @@ function mapProduct(r: RowDataPacket): UbiquitiDcsProductRow {
     main_image: r.main_image ?? "",
     is_new: Boolean(r.is_new),
     sort_order: r.sort_order ?? 0,
+    is_published: Number(r.is_published) === 1,
     created_at: r.created_at,
     updated_at: r.updated_at,
   };
@@ -61,12 +65,16 @@ function mapProduct(r: RowDataPacket): UbiquitiDcsProductRow {
 
 // ─── LIST ─────────────────────────────────────────────────────
 export async function listUbiquitiDcsProducts(
-  options: { category?: string | null; sort: "latest" | "oldest" | "custom" } = { sort: "latest" },
+  /** `publishedOnly` wajib: publik `true`, admin `false`. Filter dipasang SEBELUM LIMIT. */
+  options: { category?: string | null; sort: "latest" | "oldest" | "custom"; publishedOnly: boolean },
 ): Promise<UbiquitiDcsProductRow[]> {
   const raw = options.category?.trim() || null;
   if (raw && !isValidUbiquitiDcsCategory(raw)) return [];
   const canonical = raw ? toCanonicalUbiquitiDcsCategory(raw) : null;
-  const where = canonical ? "WHERE `category` = :category" : "";
+  const conds: string[] = [];
+  if (canonical) conds.push("`category` = :category");
+  if (options.publishedOnly) conds.push("is_published = 1");
+  const where = conds.length ? `WHERE ${conds.join(" AND ")}` : "";
   const orderBy = options.sort === "custom"
     ? "ORDER BY sort_order ASC, created_at DESC, id DESC"
     : options.sort === "oldest"
@@ -74,7 +82,7 @@ export async function listUbiquitiDcsProducts(
     : "ORDER BY created_at DESC, id DESC";
   const [rows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT id, nama_produk, sku, category, subfilter, deskripsi, bullet_points,
-            main_image, is_new, sort_order, created_at, updated_at
+            main_image, is_new, sort_order, is_published, created_at, updated_at
      FROM ubiquiti_dcs_products ${where} ${orderBy}
      LIMIT ${LIST_ROW_CAP}`,
     canonical ? { category: canonical } : {},
@@ -83,13 +91,15 @@ export async function listUbiquitiDcsProducts(
 }
 
 // ─── GET BY ID ────────────────────────────────────────────────
+/** Default: termasuk produk tersembunyi (admin/internal). Publik wajib `PUBLISHED_ONLY`. */
 export async function getUbiquitiDcsProductById(
   id: number,
+  opts: VisibilityOpts = ALL_PRODUCTS,
 ): Promise<UbiquitiDcsProductWithRelations | null> {
   const [pRows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT id, nama_produk, sku, category, subfilter, deskripsi, bullet_points,
-            main_image, is_new, sort_order, created_at, updated_at
-     FROM ubiquiti_dcs_products WHERE id = :id LIMIT 1`,
+            main_image, is_new, sort_order, is_published, created_at, updated_at
+     FROM ubiquiti_dcs_products WHERE id = :id${opts.publishedOnly ? " AND is_published = 1" : ""} LIMIT 1`,
     { id },
   );
   if (!pRows.length) return null;
@@ -120,10 +130,17 @@ export async function getUbiquitiDcsProductById(
     `SELECT a.id, a.addon_product_id, a.sort_order,
             p.id as p_id, p.nama_produk, p.sku, p.category, p.subfilter,
             p.deskripsi, p.bullet_points, p.main_image, p.is_new, p.sort_order as p_sort,
-            p.created_at, p.updated_at
+            p.is_published as p_pub, p.created_at, p.updated_at
      FROM ubiquiti_dcs_addons a
      LEFT JOIN ubiquiti_dcs_products p ON p.id = a.addon_product_id
-     WHERE a.product_id = :id ORDER BY a.sort_order ASC, a.id ASC`, { id },
+     WHERE a.product_id = :id${
+       // Publik: add-on yang disembunyikan tidak boleh tampil di produk yang
+       // published. Admin TIDAK difilter — form edit menulis ulang seluruh
+       // daftar add-on, jadi add-on tersembunyi harus tetap terbawa.
+       // `p.id IS NULL` mempertahankan perilaku lama untuk baris yatim.
+       opts.publishedOnly ? " AND (p.id IS NULL OR p.is_published = 1)" : ""
+     }
+     ORDER BY a.sort_order ASC, a.id ASC`, { id },
   );
 
   return {
@@ -155,6 +172,7 @@ export async function getUbiquitiDcsProductById(
         main_image: r.main_image ?? "",
         is_new: Boolean(r.is_new),
         sort_order: r.p_sort ?? 0,
+        is_published: Number(r.p_pub) === 1,
         created_at: r.created_at,
         updated_at: r.updated_at,
       },
@@ -170,6 +188,8 @@ type CreateUbiquitiData = {
   bullet_points: string[];
   main_image: string;
   is_new: boolean;
+  /** Create: default true. Update: undefined = status tidak diubah. */
+  is_published?: boolean;
   galleryPaths: string[];
   overviewImagePaths: string[];
   overviewVideoPaths: string[];
@@ -190,12 +210,13 @@ export async function createUbiquitiDcsProduct(data: CreateUbiquitiData): Promis
     const bulletJson = JSON.stringify(data.bullet_points.slice(0, 9));
     const [res] = await connection.query<ResultSetHeader>(
       `INSERT INTO ubiquiti_dcs_products
-       (nama_produk, sku, category, subfilter, deskripsi, bullet_points, main_image, is_new, sort_order)
-       VALUES (:nama, :sku, :cat, :sub, :des, :bullets, :main, :isnew, :ord)`,
+       (nama_produk, sku, category, subfilter, deskripsi, bullet_points, main_image, is_new, sort_order, is_published)
+       VALUES (:nama, :sku, :cat, :sub, :des, :bullets, :main, :isnew, :ord, :pub)`,
       {
         nama: data.nama_produk.trim(), sku: data.sku.trim(), cat: data.category,
         sub: data.subfilter?.trim() || null, des: data.deskripsi.trim(),
         bullets: bulletJson, main: data.main_image, isnew: data.is_new ? 1 : 0, ord: nextOrder,
+        pub: data.is_published === false ? 0 : 1,
       },
     );
     const id = (res as ResultSetHeader).insertId;
@@ -242,12 +263,14 @@ export async function updateUbiquitiDcsProduct(id: number, data: UpdateUbiquitiD
     await connection.query(
       `UPDATE ubiquiti_dcs_products SET
          nama_produk = :nama, sku = :sku, category = :cat, subfilter = :sub,
-         deskripsi = :des, bullet_points = :bullets, main_image = :main, is_new = :isnew
+         deskripsi = :des, bullet_points = :bullets, main_image = :main, is_new = :isnew,
+         is_published = COALESCE(:pub, is_published)
        WHERE id = :id`,
       {
         nama: data.nama_produk.trim(), sku: data.sku.trim(), cat: data.category,
         sub: data.subfilter?.trim() || null, des: data.deskripsi.trim(),
         bullets: bulletJson, main: data.main_image, isnew: data.is_new ? 1 : 0, id,
+        pub: data.is_published === undefined ? null : data.is_published ? 1 : 0,
       },
     );
 
@@ -291,6 +314,15 @@ export async function updateUbiquitiDcsProduct(id: number, data: UpdateUbiquitiD
     await connection.commit();
   } catch (e) { await connection.rollback(); throw e; }
   finally { connection.release(); }
+}
+
+/** Mengembalikan false bila produk tidak ada. */
+export async function setUbiquitiDcsProductPublished(id: number, published: boolean): Promise<boolean> {
+  const [r] = await mysqlPool.query<ResultSetHeader>(
+    `UPDATE ubiquiti_dcs_products SET is_published = :pub WHERE id = :id`,
+    { id, pub: published ? 1 : 0 },
+  );
+  return r.affectedRows > 0;
 }
 
 export async function deleteUbiquitiDcsProductById(id: number): Promise<boolean> {

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { HiddenBadge, PublishedFormCard } from "../../admin/PublishedToggle";
 import { UBIQUITI_DCS_CATEGORIES } from "../categories";
 import {
   apiUbiquitiAdminProduct,
@@ -33,6 +34,8 @@ function ProductFormBody({ id }: { id?: string }) {
 
   const [nama, setNama] = useState("");
   const [sku, setSku] = useState("");
+  // Produk baru default tampil di situs publik.
+  const [isPublished, setIsPublished] = useState(true);
   const [category, setCategory] = useState<string>(UBIQUITI_DCS_CATEGORIES[0]);
   const [subfilter, setSubfilter] = useState("");
   const [desk, setDesk] = useState("");
@@ -72,6 +75,7 @@ function ProductFormBody({ id }: { id?: string }) {
       const d: UbiquitiDcsProductDetail = r.data;
       setNama(d.nama_produk);
       setSku(d.sku);
+      setIsPublished(d.is_published);
       setCategory(d.category);
       setSubfilter(d.subfilter ?? "");
       setDesk(d.deskripsi);
@@ -167,6 +171,7 @@ function ProductFormBody({ id }: { id?: string }) {
     const form = new FormData();
     form.set("nama_produk", nama.trim());
     form.set("sku", sku.trim());
+    form.set("is_published", isPublished ? "1" : "0");
     form.set("category", category);
     form.set("subfilter", subfilter.trim());
     form.set("deskripsi", desk.trim());
@@ -215,6 +220,7 @@ function ProductFormBody({ id }: { id?: string }) {
           <div className="mb-4 text-sm text-red-600 border border-red-200 rounded-lg p-3">{err}</div>
         )}
         <form onSubmit={onSubmit} className="space-y-6 border border-border rounded-2xl p-6 bg-card">
+          <PublishedFormCard checked={isPublished} onCheckedChange={setIsPublished} />
           {isEdit && id && (
             <div className="space-y-2">
               <Label>ID</Label>
@@ -354,7 +360,7 @@ function ProductFormBody({ id }: { id?: string }) {
           </div>
           <div className="space-y-3">
             <Label>Add Ons (optional)</Label>
-            <p className="text-xs text-muted-foreground">Select other Ubiquiti products to add as add-ons for this product.</p>
+            <p className="text-xs text-muted-foreground">Select other Ubiquiti products to add as add-ons for this product. Add-ons marked HIDDEN can be selected but are not shown on the public site until published.</p>
             {allProducts.length === 0 ? (
               <p className="text-xs text-muted-foreground italic">No other products available.</p>
             ) : (
@@ -366,6 +372,10 @@ function ProductFormBody({ id }: { id?: string }) {
                       <img src={p.main_image} alt="" className="h-8 w-8 object-contain rounded border flex-shrink-0" />
                       <span className="text-sm truncate">{p.nama_produk}</span>
                       <span className="text-xs text-muted-foreground flex-shrink-0">{p.sku}</span>
+                      {!p.is_published && (
+                        // Tetap bisa dipilih; di situs publik add-on tersembunyi tidak ditampilkan.
+                        <HiddenBadge className="flex-shrink-0 text-amber-700 dark:text-amber-400" />
+                      )}
                     </div>
                   </label>
                 ))}
