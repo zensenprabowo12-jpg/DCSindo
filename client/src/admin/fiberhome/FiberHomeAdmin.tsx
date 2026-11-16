@@ -3,10 +3,13 @@ import { Link } from "wouter";
 import { GripVertical, Pencil, Plus, Save, Trash2 } from "lucide-react";
 import AdminNavBar from "../NavBar";
 import RequireRole from "../RequireRole";
+import { HiddenBadge, PublishedSwitch } from "../PublishedToggle";
+import { useToast } from "@/hooks/use-toast";
 import {
+  apiFiberHomeAdminProducts,
   apiFiberHomeDelete,
-  apiFiberHomeProducts,
   apiFiberHomeReorder,
+  apiFiberHomeSetPublished,
 } from "@/pages/fiberhome/api";
 import type { FiberHomeProduct } from "@/pages/fiberhome/types";
 
@@ -18,10 +21,13 @@ function FiberHomeAdminInner() {
   const [dragId, setDragId] = useState<number | null>(null);
   const [dirtyOrder, setDirtyOrder] = useState(false);
   const [savingOrder, setSavingOrder] = useState(false);
+  const [togglingIds, setTogglingIds] = useState<Set<number>>(() => new Set());
+  const { toast } = useToast();
 
   const load = useCallback(async () => {
     setLoading(true);
-    const r = await apiFiberHomeProducts();
+    // Versi admin: produk tersembunyi ikut tampil (dengan badge "Hidden").
+    const r = await apiFiberHomeAdminProducts();
     if (r.ok) {
       setList(r.data);
       setDirtyOrder(false);
@@ -43,6 +49,36 @@ function FiberHomeAdminInner() {
     setDeleting(null);
     if (r.ok) void load();
     else alert(r.message);
+  }
+
+  /** Optimistic: UI berubah dulu, dikembalikan bila server menolak. */
+  async function onTogglePublished(p: FiberHomeProduct, next: boolean) {
+    if (togglingIds.has(p.id)) return;
+    setTogglingIds((prev) => new Set(prev).add(p.id));
+    setList((prev) => prev.map((x) => (x.id === p.id ? { ...x, is_published: next } : x)));
+
+    const r = await apiFiberHomeSetPublished(p.id, next);
+
+    setTogglingIds((prev) => {
+      const s = new Set(prev);
+      s.delete(p.id);
+      return s;
+    });
+    if (r.ok) {
+      toast({
+        title: next ? "Product published" : "Product hidden",
+        description: next
+          ? `"${p.name}" is now visible on the public site.`
+          : `"${p.name}" is hidden from the public site. It is not deleted.`,
+      });
+    } else {
+      setList((prev) => prev.map((x) => (x.id === p.id ? { ...x, is_published: !next } : x)));
+      toast({
+        variant: "destructive",
+        title: "Could not update visibility",
+        description: r.message,
+      });
+    }
   }
 
   function moveItem(fromIndex: number, toIndex: number) {
@@ -83,7 +119,12 @@ function FiberHomeAdminInner() {
             </div>
             <h1 className="text-xl font-bold text-white">Product Management</h1>
             <p className="text-sm text-zinc-500 mt-0.5">
-              {loading ? "Memuat…" : `${list.length} produk`}
+              {loading
+                ? "Memuat…"
+                : `${list.length} produk` +
+                  (list.some((x) => !x.is_published)
+                    ? ` · ${list.filter((x) => !x.is_published).length} hidden`
+                    : "")}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -144,6 +185,9 @@ function FiberHomeAdminInner() {
                   <th className="w-24 px-4 py-3 text-left text-xs font-semibold text-zinc-500 uppercase tracking-wider hidden lg:table-cell">
                     Datasheet
                   </th>
+                  <th className="w-24 px-2 py-3 text-center text-xs font-semibold text-zinc-500 uppercase tracking-wider">
+                    Published
+                  </th>
                   <th className="w-36 px-4 py-3 text-right text-xs font-semibold text-zinc-500 uppercase tracking-wider">
                     Aksi
                   </th>
@@ -186,7 +230,16 @@ function FiberHomeAdminInner() {
                       </div>
                     </td>
                     <td className="px-4 py-3">
-                      <div className="font-medium text-zinc-100">{p.name}</div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span
+                          className={
+                            p.is_published ? "font-medium text-zinc-100" : "font-medium text-zinc-400"
+                          }
+                        >
+                          {p.name}
+                        </span>
+                        {!p.is_published && <HiddenBadge />}
+                      </div>
                       <div className="text-xs text-zinc-600 mt-0.5 md:hidden">{p.sku}</div>
                     </td>
                     <td className="px-4 py-3 hidden md:table-cell">
@@ -212,6 +265,14 @@ function FiberHomeAdminInner() {
                       ) : (
                         <span className="text-zinc-700">—</span>
                       )}
+                    </td>
+                    <td className="px-2 py-3 text-center">
+                      <PublishedSwitch
+                        checked={p.is_published}
+                        disabled={togglingIds.has(p.id)}
+                        onCheckedChange={(next) => void onTogglePublished(p, next)}
+                        label={`Published: ${p.name}`}
+                      />
                     </td>
                     <td className="px-4 py-3">
                       <div className="flex items-center justify-end gap-1.5">

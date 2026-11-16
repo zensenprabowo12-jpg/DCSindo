@@ -46,6 +46,8 @@ export interface FiberHomeProduct {
   image_path: string;
   datasheet_path: string | null;
   sort_order: number;
+  /** false = disembunyikan dari situs publik (hanya terlihat di admin). */
+  is_published: boolean;
   created_at: string;
   updated_at: string;
   gallery: FiberHomeGalleryImage[];

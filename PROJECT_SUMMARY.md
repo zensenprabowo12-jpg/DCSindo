@@ -204,6 +204,8 @@ Browser (fetch /api/...)
 
 **Produk FiberHome** — `fiberhome_*` (`fiberhome_schema.sql`; `sku` VARCHAR(100) NOT NULL **UNIQUE**) + tabel spesifikasi/grouping turunannya.
 
+- 🔑 Kolom **`is_published` TINYINT(1) NOT NULL DEFAULT 1** (`database/migrate_fiberhome_is_published.sql`) — saklar tampil/sembunyi per produk. Lihat §7 "Pola Published per produk".
+
 **Firmware** — `firmware_store.sql` (tabel `firmware_files`: daftar firmware per brand + file) & `firmware_popup_settings.sql` (konten popup: `install_guide`, `disclaimer`).
 
 - `migrate_firmware_install_guide.sql` menambah kolom **`firmware_files.install_guide` TEXT NULL** — panduan instalasi milik firmware itu sendiri, satu langkah per baris, dijalankan manual di phpMyAdmin (idempotent, `ADD COLUMN IF NOT EXISTS` khas MariaDB).
@@ -426,6 +428,23 @@ POST   /admin/products/reorder
 - Field teks kompleks (bullets, specifications, technical_items, existing_gallery) dikirim sebagai **string JSON** di dalam FormData, lalu di-`JSON.parse` & divalidasi di controller (multer kadang membungkus field teks jadi `string[]` → ada helper `multipartString()`).
 - Login/logout/reorder pakai `express.json()` biasa.
 - Operasi multi-tabel (training + syllabus) memakai **transaksi** (`beginTransaction`/`commit`/`rollback`); update syllabus = hapus semua lalu insert ulang.
+
+### Pola "Published" per produk (sembunyikan tanpa menghapus)
+Stage 1 = **FiberHome** (acuan). Stage 2 = salin persis ke MikroTik, Ubiquiti, V-SOL.
+
+| Lapisan | FiberHome (acuan) | Yang disalin per brand |
+|---|---|---|
+| DB | `database/migrate_fiberhome_is_published.sql` → `is_published TINYINT(1) NOT NULL DEFAULT 1 AFTER sort_order`, `ADD COLUMN IF NOT EXISTS` (idempoten) | Satu file migrasi per tabel produk; DEFAULT 1 supaya data lama tetap tampil. **Jalankan SQL sebelum deploy kode.** |
+| Model | `fiberHomeDcsProductModel.ts`: kolom masuk `PRODUCT_COLUMNS`, `mapProduct` → `is_published: boolean`; `getAllProducts({ publishedOnly })` **wajib** diisi; `getProductById/BySku(…, opts)` default `publishedOnly:false`; `setPublished(id, bool)`; `createProduct` menerima `is_published` | Parameter `publishedOnly` **wajib** di fungsi list, supaya setiap pemanggil memutuskan secara sadar. Pemakaian internal (update/delete/gallery) memakai default = termasuk tersembunyi. |
+| API publik | `GET /products`, `GET /products/:id` → `publishedOnly: true`. Produk tersembunyi = **404 identik** dengan SKU yang tidak ada | Semua endpoint tanpa auth (termasuk yang dipakai `search-modal.tsx`) wajib memfilter. |
+| API admin | `GET /admin/products`, `GET /admin/products/:id` (semua produk), `POST /admin/products/:id/published` body JSON `{ is_published: boolean }` (400 bila bukan boolean, 404 bila id tak ada). Create/Update multipart menerima field opsional `is_published` (`"1"`/`"0"`); tidak dikirim = status tidak berubah. Guard `requireRole("admin")` (401/403) | POST, **bukan PATCH** — repo hanya memakai GET/POST/PUT/DELETE di belakang Apache. Halaman admin & form edit **harus** membaca dari endpoint admin, bukan publik, supaya produk tersembunyi tetap terlihat & bisa diedit. |
+| UI admin | `client/src/admin/PublishedToggle.tsx`: `PublishedSwitch` (Radix Switch 44×24, area klik ≥44×44 lewat `before:`) + `HiddenBadge` (amber). Daftar: kolom "Published", optimistic + rollback + toast (`useToast`). Form: kartu "Published" di atas form, ikut terkirim saat Save | Pakai ulang komponen bersama; jangan membuat saklar baru per brand. |
+| Dashboard | Hitungan produk di `/admin` memakai endpoint admin (termasuk tersembunyi) | Sama. |
+
+Catatan:
+- Flag tingkat brand (`disableFiberHomeRoutes` di `truefalse.json`) **terpisah** dan tetap berlaku: flag menyembunyikan seluruh brand, `is_published` menyembunyikan satu produk.
+- Tanpa kolom (kode ter-deploy sebelum SQL): semua SELECT FiberHome gagal → **500** "Unknown column 'is_published'" di publik **dan** admin. Urutan wajib: SQL → deploy.
+- Tidak ada log tambahan: `admin_activity_log` tetap hanya mencatat login.
 
 ### Konvensi penamaan
 - Tabel produk DCS: prefix `mikrotik_dcs_`, `ubiquiti_dcs_`, `vsol_dcs_`, `fiberhome_`.

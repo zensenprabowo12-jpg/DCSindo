@@ -3,11 +3,12 @@ import { Link, useLocation, useRoute } from "wouter";
 import { Plus, Trash2 } from "lucide-react";
 import AdminNavBar from "../NavBar";
 import RequireRole from "../RequireRole";
+import { HiddenBadge, PublishedSwitch } from "../PublishedToggle";
 import {
   apiFiberHomeAddGallery,
   apiFiberHomeCreate,
+  apiFiberHomeAdminProduct,
   apiFiberHomeDeleteGallery,
-  apiFiberHomeProduct,
   apiFiberHomeUpdate,
   apiFiberHomeUploadDatasheet,
 } from "@/pages/fiberhome/api";
@@ -42,6 +43,8 @@ function FiberHomeProductFormInner() {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
   const [description, setDescription] = useState("");
+  // Produk baru default tampil di situs publik.
+  const [isPublished, setIsPublished] = useState(true);
   const [specs, setSpecs] = useState<FiberHomeSpecInput[]>([
     { label: "", value: "", spec_group: "" },
   ]);
@@ -66,9 +69,11 @@ function FiberHomeProductFormInner() {
   useEffect(() => {
     if (!editId) return;
     void (async () => {
-      const r = await apiFiberHomeProduct(editId);
+      // Versi admin — produk yang disembunyikan juga harus bisa diedit.
+      const r = await apiFiberHomeAdminProduct(editId);
       if (r.ok) {
         setSku(r.data.sku);
+        setIsPublished(r.data.is_published);
         setName(r.data.name);
         setCategory(r.data.category);
         setDescription(r.data.description);
@@ -131,6 +136,7 @@ function FiberHomeProductFormInner() {
     form.append("name", name.trim());
     form.append("category", category.trim());
     form.append("description", description.trim());
+    form.append("is_published", isPublished ? "1" : "0");
     form.append(
       "specs",
       JSON.stringify(specs.filter((s) => s.label.trim()).map((s) => ({
@@ -225,6 +231,25 @@ function FiberHomeProductFormInner() {
         )}
 
         <form onSubmit={(e) => void onSubmit(e)} className="space-y-6">
+          <div className="flex items-center justify-between gap-4 rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3">
+            <div className="min-w-0">
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-medium text-zinc-200">Published</span>
+                {!isPublished && <HiddenBadge />}
+              </div>
+              <p className="mt-0.5 text-xs text-zinc-500">
+                {isPublished
+                  ? "Visible on the public site (catalog, search, product page). Applied when you save."
+                  : "Hidden from the public site once you save. Not deleted; still editable here."}
+              </p>
+            </div>
+            <PublishedSwitch
+              checked={isPublished}
+              onCheckedChange={setIsPublished}
+              label="Published"
+            />
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-1.5">
               <label className="text-xs font-medium text-zinc-500 uppercase tracking-wider">

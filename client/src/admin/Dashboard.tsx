@@ -73,7 +73,7 @@ function AdminDashboardInner() {
       fetchProductCount("/api/vsol-dcs/admin/products").then((n) =>
         setCounts((prev) => ({ ...prev, vsol: n }))
       ),
-      fetchProductCount("/api/fiberhome-dcs/products").then((n) =>
+      fetchProductCount("/api/fiberhome-dcs/admin/products").then((n) =>
         setCounts((prev) => ({ ...prev, fiberhome: n }))
       ),
     ]);

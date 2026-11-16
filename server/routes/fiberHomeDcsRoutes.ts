@@ -5,7 +5,10 @@ import {
   apiFiberHomeAdminCreate,
   apiFiberHomeAdminDelete,
   apiFiberHomeAdminDeleteGallery,
+  apiFiberHomeAdminGet,
+  apiFiberHomeAdminList,
   apiFiberHomeAdminReorder,
+  apiFiberHomeAdminSetPublished,
   apiFiberHomeAdminUpdate,
   apiFiberHomeAdminUploadDatasheet,
   apiFiberHomeGet,
@@ -67,11 +70,16 @@ export function registerFiberHomeDcsRoutes(app: Express): void {
   // Guard SEBELUM multer — lihat C-04 Step 8.
   const uploadGuard = requireRoleMw("admin");
 
-  // Public
+  // Public — hanya produk is_published = 1.
   app.get(`${base}/products`, apiFiberHomeList);
   app.get(`${base}/products/:id`, apiFiberHomeGet); // id numerik atau SKU
 
   // Admin — guard requireRole("admin") ada di dalam tiap handler.
+  // Baca versi admin: termasuk produk tersembunyi.
+  app.get(`${base}/admin/products`, apiFiberHomeAdminList);
+  app.get(`${base}/admin/products/:id`, apiFiberHomeAdminGet);
+  // POST (bukan PATCH): pola repo hanya memakai GET/POST/PUT/DELETE di belakang Apache.
+  app.post(`${base}/admin/products/:id/published`, express.json(), apiFiberHomeAdminSetPublished);
   app.post(`${base}/admin/products/reorder`, express.json(), apiFiberHomeAdminReorder);
   app.post(`${base}/admin/products`, uploadGuard, withUpload(uploadFiberHomeImage, commitFiberHomeImage, apiFiberHomeAdminCreate));
   app.put(`${base}/admin/products/:id`, uploadGuard, withUpload(uploadFiberHomeImage, commitFiberHomeImage, apiFiberHomeAdminUpdate));

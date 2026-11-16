@@ -10,6 +10,7 @@ import {
   getProductBySku,
   reorderProducts,
   setDatasheetPath,
+  setPublished,
   updateProduct,
   upsertApplications,
   upsertFeatures,
@@ -69,6 +70,17 @@ function parseApplications(raw: unknown): FiberHomeApplicationInput[] {
     .map((a) => ({ title: String(a.title).trim(), description: String(a.description ?? "").trim() }));
 }
 
+/**
+ * Nilai boolean dari body JSON atau multipart (selalu string di multipart).
+ * `undefined` = field tidak dikirim; `null` = dikirim tapi tidak valid.
+ */
+function parsePublished(raw: unknown): boolean | undefined | null {
+  if (raw === undefined) return undefined;
+  if (raw === true || raw === 1 || raw === "1" || raw === "true") return true;
+  if (raw === false || raw === 0 || raw === "0" || raw === "false") return false;
+  return null;
+}
+
 function safeDeleteFile(publicPath: string | null | undefined) {
   if (!publicPath) return;
   try {
@@ -84,9 +96,11 @@ function uploadedImagePath(req: Request): string | null {
 }
 
 // ─── PUBLIC ───────────────────────────────────────────────────
+// Endpoint publik HANYA melihat produk `is_published = 1`. Produk tersembunyi
+// diperlakukan persis seperti SKU yang tidak ada (404 di detail).
 export async function apiFiberHomeList(_req: Request, res: Response): Promise<void> {
   try {
-    res.json({ ok: true, data: await getAllProducts() });
+    res.json({ ok: true, data: await getAllProducts({ publishedOnly: true }) });
   } catch (e) {
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
@@ -101,14 +115,63 @@ export async function apiFiberHomeGet(req: Request, res: Response): Promise<void
       return;
     }
     const asId = Number.parseInt(raw, 10);
+    const opts = { publishedOnly: true };
     const data = /^\d+$/.test(raw) && Number.isFinite(asId)
-      ? await getProductById(asId)
-      : await getProductBySku(raw);
+      ? await getProductById(asId, opts)
+      : await getProductBySku(raw, opts);
     if (!data) {
       res.status(404).json({ ok: false, message: "Product not found" });
       return;
     }
     res.json({ ok: true, data });
+  } catch (e) {
+    res.status(500).json({ ok: false, message: (e as Error).message });
+  }
+}
+
+// ─── ADMIN: READ (termasuk produk tersembunyi) ────────────────
+export async function apiFiberHomeAdminList(req: Request, res: Response): Promise<void> {
+  if (!requireAdminSession(req, res)) return;
+  try {
+    res.json({ ok: true, data: await getAllProducts({ publishedOnly: false }) });
+  } catch (e) {
+    res.status(500).json({ ok: false, message: (e as Error).message });
+  }
+}
+
+export async function apiFiberHomeAdminGet(req: Request, res: Response): Promise<void> {
+  if (!requireAdminSession(req, res)) return;
+  try {
+    const id = parseId(req, res);
+    if (id === null) return;
+    const data = await getProductById(id, { publishedOnly: false });
+    if (!data) {
+      res.status(404).json({ ok: false, message: "Product not found" });
+      return;
+    }
+    res.json({ ok: true, data });
+  } catch (e) {
+    res.status(500).json({ ok: false, message: (e as Error).message });
+  }
+}
+
+// ─── ADMIN: PUBLISHED ON/OFF ──────────────────────────────────
+/** Body JSON `{ is_published: boolean }`. */
+export async function apiFiberHomeAdminSetPublished(req: Request, res: Response): Promise<void> {
+  if (!requireAdminSession(req, res)) return;
+  try {
+    const id = parseId(req, res);
+    if (id === null) return;
+    const published = parsePublished((req.body as Record<string, unknown> | undefined)?.is_published);
+    if (published === undefined || published === null) {
+      res.status(400).json({ ok: false, message: "is_published must be true or false" });
+      return;
+    }
+    if (!(await setPublished(id, published))) {
+      res.status(404).json({ ok: false, message: "Product not found" });
+      return;
+    }
+    res.json({ ok: true, data: { id, is_published: published } });
   } catch (e) {
     res.status(500).json({ ok: false, message: (e as Error).message });
   }
@@ -128,7 +191,14 @@ export async function apiFiberHomeAdminCreate(req: Request, res: Response): Prom
       res.status(400).json({ ok: false, message: "name is required" });
       return;
     }
+    const published = parsePublished(req.body.is_published);
+    if (published === null) {
+      safeDeleteFile(imagePath);
+      res.status(400).json({ ok: false, message: "is_published must be true or false" });
+      return;
+    }
     const id = await createProduct({
+      is_published: published ?? true,
       sku,
       name,
       category: category ?? "",
@@ -173,6 +243,12 @@ export async function apiFiberHomeAdminUpdate(req: Request, res: Response): Prom
       res.status(400).json({ ok: false, message: "name is required" });
       return;
     }
+    // Opsional: field tidak dikirim → status published tidak berubah.
+    const published = parsePublished(req.body.is_published);
+    if (published === null) {
+      res.status(400).json({ ok: false, message: "is_published must be true or false" });
+      return;
+    }
 
     await updateProduct(id, {
       sku,
@@ -181,6 +257,7 @@ export async function apiFiberHomeAdminUpdate(req: Request, res: Response): Prom
       description: description ?? "",
       image_path: newImagePath ?? existing.image_path,
     });
+    if (published !== undefined) await setPublished(id, published);
     if (req.body.specs !== undefined) await upsertSpecs(id, parseSpecs(req.body.specs));
     if (req.body.features !== undefined) await upsertFeatures(id, parseFeatures(req.body.features));
     if (req.body.applications !== undefined)

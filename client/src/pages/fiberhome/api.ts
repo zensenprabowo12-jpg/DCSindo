@@ -41,6 +41,38 @@ export async function apiFiberHomeProduct(
 }
 
 // ─── ADMIN ────────────────────────────────────────────────────
+/** Versi admin: termasuk produk yang disembunyikan (`is_published = false`). */
+export async function apiFiberHomeAdminProducts(): Promise<ApiOk<FiberHomeProduct[]> | ApiErr> {
+  return safe(async () => {
+    const res = await fetch(`${BASE}/admin/products`, { credentials: "include" });
+    return j(res);
+  }) as Promise<ApiOk<FiberHomeProduct[]> | ApiErr>;
+}
+
+export async function apiFiberHomeAdminProduct(
+  id: number,
+): Promise<ApiOk<FiberHomeProduct> | ApiErr> {
+  return safe(async () => {
+    const res = await fetch(`${BASE}/admin/products/${id}`, { credentials: "include" });
+    return j(res);
+  }) as Promise<ApiOk<FiberHomeProduct> | ApiErr>;
+}
+
+export async function apiFiberHomeSetPublished(
+  id: number,
+  isPublished: boolean,
+): Promise<ApiOk<{ id: number; is_published: boolean }> | ApiErr> {
+  return safe(async () => {
+    const res = await fetch(`${BASE}/admin/products/${id}/published`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+      body: JSON.stringify({ is_published: isPublished }),
+    });
+    return j(res);
+  }) as Promise<ApiOk<{ id: number; is_published: boolean }> | ApiErr>;
+}
+
 export async function apiFiberHomeCreate(
   form: FormData,
 ): Promise<ApiOk<{ id: number }> | ApiErr> {

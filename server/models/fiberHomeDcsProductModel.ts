@@ -12,6 +12,8 @@ export type FiberHomeProductRow = {
   image_path: string;
   datasheet_path: string | null;
   sort_order: number;
+  /** 1 = tampil di situs publik, 0 = disembunyikan (tetap ada & bisa diedit di admin). */
+  is_published: boolean;
   created_at: Date;
   updated_at: Date;
 };
@@ -53,7 +55,17 @@ export type FiberHomeProductInput = {
 };
 
 const PRODUCT_COLUMNS = `id, sku, name, category, description, image_path,
-                         datasheet_path, sort_order, created_at, updated_at`;
+                         datasheet_path, sort_order, is_published, created_at, updated_at`;
+
+/**
+ * Pola "published" (template untuk brand lain, lihat PROJECT_SUMMARY.md):
+ * - Endpoint PUBLIK selalu memanggil dengan `{ publishedOnly: true }`.
+ * - Endpoint ADMIN & semua pemakaian internal (update/delete/gallery/datasheet)
+ *   memakai `{ publishedOnly: false }` / default, supaya produk tersembunyi
+ *   tetap bisa dikelola.
+ */
+export type VisibilityOpts = { publishedOnly: boolean };
+const PUBLISHED_ONLY_SQL = "is_published = 1";
 
 function mapProduct(r: RowDataPacket): FiberHomeProductRow {
   return {
@@ -65,6 +77,7 @@ function mapProduct(r: RowDataPacket): FiberHomeProductRow {
     image_path: String(r.image_path ?? ""),
     datasheet_path: r.datasheet_path ? String(r.datasheet_path) : null,
     sort_order: Number(r.sort_order ?? 0),
+    is_published: Number(r.is_published) === 1,
     created_at: r.created_at,
     updated_at: r.updated_at,
   };
@@ -95,9 +108,13 @@ function mapApplication(r: RowDataPacket): FiberHomeApplicationRow {
 
 // ─── LIST ─────────────────────────────────────────────────────
 /** Semua produk + relasinya. 1 query per tabel, digabung di JS (bukan N+1). */
-export async function getAllProducts(): Promise<FiberHomeProductWithRelations[]> {
+export async function getAllProducts(
+  opts: VisibilityOpts,
+): Promise<FiberHomeProductWithRelations[]> {
+  const where = opts.publishedOnly ? `WHERE ${PUBLISHED_ONLY_SQL}` : "";
   const [pRows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT ${PRODUCT_COLUMNS} FROM fiberhome_products
+     ${where}
      ORDER BY sort_order ASC, id ASC
      LIMIT ${LIST_ROW_CAP}`,
   );
@@ -151,9 +168,11 @@ export async function getAllProducts(): Promise<FiberHomeProductWithRelations[]>
 async function getProductByWhere(
   where: string,
   params: Record<string, string | number>,
+  opts: VisibilityOpts,
 ): Promise<FiberHomeProductWithRelations | null> {
+  const fullWhere = opts.publishedOnly ? `(${where}) AND ${PUBLISHED_ONLY_SQL}` : where;
   const [pRows] = await mysqlPool.query<RowDataPacket[]>(
-    `SELECT ${PRODUCT_COLUMNS} FROM fiberhome_products WHERE ${where} LIMIT 1`,
+    `SELECT ${PRODUCT_COLUMNS} FROM fiberhome_products WHERE ${fullWhere} LIMIT 1`,
     params,
   );
   if (!pRows.length) return null;
@@ -179,17 +198,33 @@ async function getProductByWhere(
   };
 }
 
-export function getProductById(id: number): Promise<FiberHomeProductWithRelations | null> {
-  return getProductByWhere("id = :id", { id });
+/** Default: termasuk produk tersembunyi (pemakaian admin/internal). Publik wajib `{ publishedOnly: true }`. */
+export function getProductById(
+  id: number,
+  opts: VisibilityOpts = { publishedOnly: false },
+): Promise<FiberHomeProductWithRelations | null> {
+  return getProductByWhere("id = :id", { id }, opts);
 }
 
-export function getProductBySku(sku: string): Promise<FiberHomeProductWithRelations | null> {
-  return getProductByWhere("sku = :sku", { sku: sku.trim() });
+export function getProductBySku(
+  sku: string,
+  opts: VisibilityOpts = { publishedOnly: false },
+): Promise<FiberHomeProductWithRelations | null> {
+  return getProductByWhere("sku = :sku", { sku: sku.trim() }, opts);
+}
+
+/** Mengembalikan false bila produk tidak ada. */
+export async function setPublished(id: number, published: boolean): Promise<boolean> {
+  const [r] = await mysqlPool.query<ResultSetHeader>(
+    `UPDATE fiberhome_products SET is_published = :pub WHERE id = :id`,
+    { id, pub: published ? 1 : 0 },
+  );
+  return r.affectedRows > 0;
 }
 
 // ─── CREATE ───────────────────────────────────────────────────
 export async function createProduct(
-  data: FiberHomeProductInput & { specs?: FiberHomeSpecInput[] },
+  data: FiberHomeProductInput & { specs?: FiberHomeSpecInput[]; is_published?: boolean },
 ): Promise<number> {
   const connection = await mysqlPool.getConnection();
   try {
@@ -200,8 +235,8 @@ export async function createProduct(
     const nextOrder = Number(ordRows?.[0]?.max_ord ?? -1) + 1;
 
     const [res] = await connection.query<ResultSetHeader>(
-      `INSERT INTO fiberhome_products (sku, name, category, description, image_path, sort_order)
-       VALUES (:sku, :name, :cat, :desc, :img, :ord)`,
+      `INSERT INTO fiberhome_products (sku, name, category, description, image_path, sort_order, is_published)
+       VALUES (:sku, :name, :cat, :desc, :img, :ord, :pub)`,
       {
         sku: data.sku.trim(),
         name: data.name.trim(),
@@ -209,6 +244,7 @@ export async function createProduct(
         desc: data.description.trim(),
         img: data.image_path,
         ord: nextOrder,
+        pub: data.is_published === false ? 0 : 1,
       },
     );
     const id = res.insertId;
