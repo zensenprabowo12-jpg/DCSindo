@@ -18,6 +18,7 @@ import { cn } from "@/lib/utils";
 import SearchModal from "./search-modal";
 import { motion, AnimatePresence } from "framer-motion";
 import { V_SOL_BRAND } from "@/brands/v-sol";
+import { useTrueFalse } from "@/hooks/useTrueFalse";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { buildWhatsAppUrl } from "@/lib/contact";
 
@@ -25,6 +26,7 @@ const WA_DEFAULT_MESSAGE = "Hello DCS, I would like to ask about your products."
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
+  const { disableFiberHomeRoutes, isResolved: trueFalseResolved } = useTrueFalse();
   const showGlobalBackNav = location !== "/";
   const [scrolled, setScrolled] = useState(false);
   const [showBackTop, setShowBackTop] = useState(false);
@@ -87,12 +89,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     external?: boolean;
   };
 
+  // FiberHome disembunyikan saat flag aktif, dan juga selama truefalse.json
+  // belum termuat — supaya tidak sempat muncul lalu hilang.
+  const hideFiberHome = disableFiberHomeRoutes || !trueFalseResolved;
+
   const brands: BrandNavItem[] = [
       { name: "Ubiquiti", path: "/ubiquiti", support: "/support/ubiquiti" },
       { name: "Mikrotik", path: "/mikrotik", support: "/support/mikrotik" },
       { name: V_SOL_BRAND.name, path: V_SOL_BRAND.websiteUrl, support: "/support/vsol" },
       { name: "FiberHome", path: "/fiberhome" },
-    ];
+    ].filter((b) => !(hideFiberHome && b.path === "/fiberhome"));
 
   const supportBrands = brands.filter(
     (b): b is BrandNavItem & { support: string } => Boolean(b.support),

@@ -33,6 +33,7 @@ import FirmwareBrandPage from "@/pages/firmware-brand";
 import TrainingList from "@/pages/training/TrainingList";
 import TrainingDetail from "@/pages/training/TrainingDetail";
 import { useTrueFalse } from "@/hooks/useTrueFalse";
+import Layout from "@/components/layout";
 import CompanyProfile from "@/pages/company-profile";
 
 // ── M-06 Tahap 2: seluruh panel admin dipisah dari bundel publik ─────────
@@ -73,7 +74,7 @@ const FiberHomeProductForm   = lazy(() => import("@admin/fiberhome/FiberHomeProd
 
 function RouterWouter() {
   const [location] = useLocation();
-  const { disableMikrotikRoutes, disableFiberHomeRoutes } = useTrueFalse();
+  const { disableMikrotikRoutes, disableFiberHomeRoutes, isResolved } = useTrueFalse();
   const isMikrotikPath =
     location === "/mikrotik" ||
     location.startsWith("/mikrotik/") ||
@@ -87,6 +88,16 @@ function RouterWouter() {
 
   const isFiberHomePath =
     location === "/fiberhome" || location.startsWith("/fiberhome/");
+
+  // Selama truefalse.json belum termuat, jangan render halaman FiberHome asli
+  // (dan jangan memicu fetch produknya) — cukup kerangka Layout kosong.
+  if (isFiberHomePath && !isResolved) {
+    return (
+      <Layout>
+        <div className="min-h-[80vh]" aria-busy="true" />
+      </Layout>
+    );
+  }
 
   if (disableFiberHomeRoutes && isFiberHomePath) {
     return <ComingSoon />;

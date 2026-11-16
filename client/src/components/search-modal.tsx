@@ -7,6 +7,7 @@ import { apiUbiquitiPublicProducts } from "@ubiquiti/api";
 import { apiPublicProducts } from "@mikrotik/api";
 import { apiVsolPublicProducts } from "@vsol/api";
 import { apiFiberHomeProducts } from "@/pages/fiberhome/api";
+import { useTrueFalse } from "@/hooks/useTrueFalse";
 import type { UbiquitiDcsProduct } from "@ubiquiti/types";
 import type { MikrotikDcsProduct } from "@mikrotik/types";
 import type { VsolDcsProduct } from "@vsol/types";
@@ -37,6 +38,19 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
   const [products, setProducts] = useState<UnifiedProduct[]>([]);
   const [loading, setLoading] = useState(false);
   const [fetched, setFetched] = useState<Brand | null>(null);
+  const { disableFiberHomeRoutes, isResolved: trueFalseResolved } = useTrueFalse();
+  // Sembunyikan juga selama truefalse.json belum termuat (tidak sempat muncul).
+  const hideFiberHome = disableFiberHomeRoutes || !trueFalseResolved;
+
+  // Kalau FiberHome sedang terpilih lalu disembunyikan, kembali ke pemilih brand.
+  useEffect(() => {
+    if (hideFiberHome && selectedBrand === "fiberhome") {
+      setSelectedBrand(null);
+      setQuery("");
+      setProducts([]);
+      setFetched(null);
+    }
+  }, [hideFiberHome, selectedBrand]);
 
   useEffect(() => {
     if (!isOpen) {
@@ -49,6 +63,8 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
 
   useEffect(() => {
     if (!selectedBrand || fetched === selectedBrand) return;
+    // Jangan pernah fetch produk FiberHome saat disembunyikan.
+    if (selectedBrand === "fiberhome" && hideFiberHome) return;
     setLoading(true);
     setProducts([]);
 
@@ -126,7 +142,7 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
         setLoading(false);
       });
     }
-  }, [selectedBrand, fetched]);
+  }, [selectedBrand, fetched, hideFiberHome]);
 
   const normalize = (s: string) => s.toLowerCase().replace(/[\s\-_]+/g, "");
 
@@ -199,7 +215,9 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
               {/* Brand picker */}
               {!selectedBrand && (
                 <div className="p-5 grid grid-cols-2 gap-4">
-                  {(Object.entries(BRAND_META) as [Brand, typeof BRAND_META[Brand]][]).map(([brand, m]) => (
+                  {(Object.entries(BRAND_META) as [Brand, typeof BRAND_META[Brand]][])
+                    .filter(([brand]) => !(hideFiberHome && brand === "fiberhome"))
+                    .map(([brand, m]) => (
                     <button
                       key={brand}
                       onClick={() => setSelectedBrand(brand)}

@@ -21,6 +21,12 @@ const TRUE_FALSE_QUERY_KEY = ["trueFalseConfig"] as const;
  */
 export function useTrueFalse(): TrueFalseConfig & {
   isLoading: boolean;
+  /**
+   * false selama nilai masih placeholder (JSON belum termuat). `isLoading`
+   * TIDAK bisa dipakai untuk ini: dengan `placeholderData`, TanStack v5
+   * langsung melaporkan isLoading=false walau data asli belum datang.
+   */
+  isResolved: boolean;
   isFetching: boolean;
   isError: boolean;
   error: Error | null;
@@ -39,6 +45,7 @@ export function useTrueFalse(): TrueFalseConfig & {
   return {
     ...data,
     isLoading: q.isLoading,
+    isResolved: !q.isPlaceholderData,
     isFetching: q.isFetching,
     isError: q.isError,
     error: (q.error as Error | null) ?? null,
