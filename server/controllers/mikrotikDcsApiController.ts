@@ -11,11 +11,19 @@ import {
   deleteMikrotikDcsProductById,
   getMikrotikDcsProductById,
   listMikrotikDcsProducts,
+  setMikrotikDcsProductPublished,
   reorderMikrotikDcsProducts,
   updateMikrotikDcsProduct,
 } from "../models/mikrotikDcsProductModel";
 import { listAdminLoginAttempts } from "../models/adminActivityLogModel";
 import { requireRole } from "../middleware/requireRole";
+import {
+  ALL_PRODUCTS,
+  INVALID_PUBLISHED_MESSAGE,
+  makeSetPublishedHandler,
+  parsePublished,
+  PUBLISHED_ONLY,
+} from "../utils/published";
 
 // Guard: semua endpoint admin MikroTik butuh role 'admin' (perilaku tidak berubah).
 const requireMikrotikDcsSession = requireRole("admin");
@@ -70,7 +78,8 @@ export async function apiMikrotikDcsPublicList(
   const category = typeof req.query.category === "string" ? req.query.category : null;
   const sortQ = (req.query.sort as string) || "latest";
   const sort = sortQ === "custom" ? "custom" : sortQ === "oldest" ? "oldest" : "latest";
-  const rows = await listMikrotikDcsProducts({ category, sort });
+  // Publik: hanya is_published = 1 (katalog, kategori, search modal).
+  const rows = await listMikrotikDcsProducts({ category, sort, publishedOnly: true });
   res.json({ ok: true, data: rows });
 }
 
@@ -80,7 +89,8 @@ export async function apiMikrotikDcsPublicGet(
 ): Promise<void> {
   const id = parseIntParam(req.params.id, res);
   if (id == null) return;
-  const row = await getMikrotikDcsProductById(id);
+  // Produk tersembunyi → 404 identik dengan ID yang tidak ada.
+  const row = await getMikrotikDcsProductById(id, PUBLISHED_ONLY);
   if (!row) {
     res.status(404).json({ ok: false, message: "Produk tidak ditemukan" });
     return;
@@ -88,7 +98,7 @@ export async function apiMikrotikDcsPublicGet(
   res.json({ ok: true, data: row });
 }
 
-/** Admin: daftar (sama seperti publik) */
+/** Admin: daftar — termasuk produk tersembunyi */
 export async function apiMikrotikDcsAdminList(
   req: Request,
   res: Response,
@@ -97,7 +107,7 @@ export async function apiMikrotikDcsAdminList(
   const category = typeof req.query.category === "string" ? req.query.category : null;
   const sortQ = (req.query.sort as string) || "latest";
   const sort = sortQ === "custom" ? "custom" : sortQ === "oldest" ? "oldest" : "latest";
-  const rows = await listMikrotikDcsProducts({ category, sort });
+  const rows = await listMikrotikDcsProducts({ category, sort, publishedOnly: false });
   res.json({ ok: true, data: rows });
 }
 
@@ -131,13 +141,19 @@ export async function apiMikrotikDcsAdminGet(
   if (!requireMikrotikDcsSession(req, res)) return;
   const id = parseIntParam(req.params.id, res);
   if (id == null) return;
-  const row = await getMikrotikDcsProductById(id);
+  const row = await getMikrotikDcsProductById(id, ALL_PRODUCTS);
   if (!row) {
     res.status(404).json({ ok: false, message: "Produk tidak ditemukan" });
     return;
   }
   res.json({ ok: true, data: row });
 }
+
+/** Admin: saklar Published — POST JSON `{ is_published: boolean }`. */
+export const apiMikrotikDcsAdminSetPublished = makeSetPublishedHandler(
+  setMikrotikDcsProductPublished,
+  { invalidId: "ID tidak valid", notFound: "Produk tidak ditemukan" },
+);
 
 /** Multer kadang mengisi field teks sebagai string[] — ambil string pertama yang valid */
 function multipartString(body: Record<string, unknown>, key: string): string | undefined {
@@ -280,6 +296,13 @@ export async function apiMikrotikDcsAdminCreate(
     res.status(400).json({ ok: false, message: "Nama, SKU, dan deskripsi wajib diisi" });
     return;
   }
+  // Opsional: tidak dikirim → create = published, update = status tidak berubah.
+  const published = parsePublished(body.is_published);
+  if (published === null) {
+    await removeUploadedFiles(req);
+    res.status(400).json({ ok: false, message: INVALID_PUBLISHED_MESSAGE });
+    return;
+  }
   const mainPath = publicPathFromMikrotikDcsFilename(main.filename);
   const galleryPaths = galleryFiles.map((f) => publicPathFromMikrotikDcsFilename(f.filename));
   // Penanda transaksi DB sudah commit. Tanpa ini, error apa pun SESUDAH commit
@@ -300,6 +323,7 @@ export async function apiMikrotikDcsAdminCreate(
       specifications: specs,
       galleryPaths,
       technicalItems,
+      is_published: published,
     });
     dbCommitted = true;
     res.status(201).json({ ok: true, data: { id: newId } });
@@ -361,6 +385,13 @@ export async function apiMikrotikDcsAdminUpdate(
     res.status(400).json({ ok: false, message: "Nama, SKU, dan deskripsi wajib diisi" });
     return;
   }
+  // Opsional: tidak dikirim → create = published, update = status tidak berubah.
+  const published = parsePublished(body.is_published);
+  if (published === null) {
+    await removeUploadedFiles(req);
+    res.status(400).json({ ok: false, message: INVALID_PUBLISHED_MESSAGE });
+    return;
+  }
 
   // M-04: file yang tergantikan HANYA dikumpulkan di sini, tidak dihapus.
   // Penghapusannya menunggu update DB sukses — lihat setelah blok try di bawah.
@@ -412,6 +443,7 @@ export async function apiMikrotikDcsAdminUpdate(
       specifications: specs,
       galleryPaths: { keepExisting: keepGallery, newUploads },
       technicalItems,
+      is_published: published,
     });
     dbCommitted = true;
 

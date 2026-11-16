@@ -5,6 +5,9 @@ import { apiAdminProducts, apiDeleteProduct, apiReorderProducts } from "../api";
 import type { MikrotikDcsProduct } from "../types";
 import MikrotikDcsProtectedRoute from "./ProtectedRoute";
 import AdminNavBar from "../../admin/NavBar";
+import { HiddenBadge, PublishedSwitch } from "../../admin/PublishedToggle";
+import { usePublishedToggle } from "../../admin/usePublishedToggle";
+import { apiSetProductPublished } from "../api";
 import { GripVertical, Plus, Save, Pencil, Trash2, AlertCircle } from "lucide-react";
 
 function DashboardInner() {
@@ -16,6 +19,8 @@ function DashboardInner() {
   const [dragId, setDragId] = useState<number | null>(null);
   const [dirtyOrder, setDirtyOrder] = useState(false);
   const [savingOrder, setSavingOrder] = useState(false);
+  // Saklar Published: optimistic + rollback + toast (lihat usePublishedToggle).
+  const published = usePublishedToggle(setList, apiSetProductPublished, (p) => p.nama_produk);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -70,7 +75,12 @@ function DashboardInner() {
             </div>
             <h1 className="text-xl font-bold text-white">Manajemen Produk</h1>
             <p className="text-sm text-zinc-500 mt-0.5">
-              {loading ? "Memuat…" : `${list.length} produk`}
+              {loading
+                ? "Memuat…"
+                : `${list.length} produk` +
+                  (list.some((x) => !x.is_published)
+                    ? ` · ${list.filter((x) => !x.is_published).length} hidden`
+                    : "")}
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -155,6 +165,7 @@ function DashboardInner() {
                   <th className="px-4 py-3 text-left text-xs font-semibold text-zinc-500 uppercase tracking-wider">Nama Produk</th>
                   <th className="px-4 py-3 text-left text-xs font-semibold text-zinc-500 uppercase tracking-wider hidden md:table-cell">SKU</th>
                   <th className="px-4 py-3 text-left text-xs font-semibold text-zinc-500 uppercase tracking-wider hidden lg:table-cell">Kategori</th>
+                  <th className="w-24 px-2 py-3 text-center text-xs font-semibold text-zinc-500 uppercase tracking-wider">Published</th>
                   <th className="w-36 px-4 py-3 text-right text-xs font-semibold text-zinc-500 uppercase tracking-wider">Aksi</th>
                 </tr>
               </thead>
@@ -210,7 +221,12 @@ function DashboardInner() {
 
                     {/* Name */}
                     <td className="px-4 py-3">
-                      <div className="font-medium text-zinc-100">{p.nama_produk}</div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className={p.is_published ? "font-medium text-zinc-100" : "font-medium text-zinc-400"}>
+                          {p.nama_produk}
+                        </span>
+                        {!p.is_published && <HiddenBadge />}
+                      </div>
                       <div className="text-xs text-zinc-600 mt-0.5 md:hidden">{p.sku}</div>
                     </td>
 
@@ -225,6 +241,14 @@ function DashboardInner() {
                     </td>
 
                     {/* Actions */}
+                    <td className="px-2 py-3 text-center">
+                      <PublishedSwitch
+                        checked={p.is_published}
+                        disabled={published.isPending(p.id)}
+                        onCheckedChange={(next) => void published.toggle(p, next)}
+                        label={`Published: ${p.nama_produk}`}
+                      />
+                    </td>
                     <td className="px-4 py-3">
                       <div className="flex items-center justify-end gap-1.5">
                         <Link href={`/admin/mikrotik/${p.id}/edit`}>

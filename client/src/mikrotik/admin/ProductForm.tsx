@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { PublishedFormCard } from "../../admin/PublishedToggle";
 import { MIKROTIK_DCS_CATEGORIES } from "../categories";
 import { apiAdminProduct, apiCreateProduct, apiUpdateProduct } from "../api";
 import MikrotikDcsProtectedRoute from "./ProtectedRoute";
@@ -21,6 +22,8 @@ function ProductFormBody({ id }: { id?: string }) {
 
   const [nama, setNama] = useState("");
   const [sku, setSku] = useState("");
+  // Produk baru default tampil di situs publik.
+  const [isPublished, setIsPublished] = useState(true);
   const [category, setCategory] = useState<string>(MIKROTIK_DCS_CATEGORIES[0]);
   const [desk, setDesk] = useState("");
   const [bullets, setBullets] = useState<string[]>(EMPTY_BULLETS);
@@ -55,6 +58,7 @@ function ProductFormBody({ id }: { id?: string }) {
       const d: MikrotikDcsProductDetail = r.data;
       setNama(d.nama_produk);
       setSku(d.sku);
+      setIsPublished(d.is_published);
       if (d.category) setCategory(d.category);
       setDesk(d.deskripsi);
       const b = [...d.bullet_points, ...Array(9).fill("")].slice(0, 9) as string[];
@@ -260,6 +264,7 @@ function ProductFormBody({ id }: { id?: string }) {
     const form = new FormData();
     form.set("nama_produk", nama.trim());
     form.set("sku", sku.trim());
+    form.set("is_published", isPublished ? "1" : "0");
     form.set("category", category);
     form.set("deskripsi", desk.trim());
     form.set("bullets", JSON.stringify(bClean));
@@ -319,6 +324,7 @@ function ProductFormBody({ id }: { id?: string }) {
           </div>
         )}
         <form onSubmit={onSubmit} className="space-y-6 border border-border rounded-2xl p-6 bg-card">
+          <PublishedFormCard checked={isPublished} onCheckedChange={setIsPublished} />
           {isEdit && id && (
             <div className="space-y-2">
               <Label>ID</Label>

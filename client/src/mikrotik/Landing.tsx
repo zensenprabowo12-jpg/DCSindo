@@ -7,6 +7,7 @@ import WhyChooseUs from "./landing/components/WhyChooseUs";
 import LandingBackground from "./landing/components/LandingBackground";
 import LatestVideos from "./landing/components/LatestVideos";
 import { LANDING_CATEGORIES, LANDING_PRODUCTS, LANDING_VIDEO } from "./landing/data";
+import { useVisibleFeatured } from "./landing/useVisibleFeatured";
 import { Link } from "wouter";
 import { ArrowRight, FlaskConical, Award } from "lucide-react";
 
@@ -73,6 +74,8 @@ function TrainingShortcut() {
 }
 
 export default function MikrotikLandingPage() {
+  // Produk unggulan yang disembunyikan admin (is_published = 0) ikut hilang.
+  const featured = useVisibleFeatured(LANDING_PRODUCTS);
   return (
     <Layout>
       {/* Tiga section pertama share satu background batik */}
@@ -81,9 +84,11 @@ export default function MikrotikLandingPage() {
           <HeroSection />
         </SectionShell>
 
-        <SectionShell id="mikrotik-home-a" className="min-h-screen">
-          <ProductShowcase products={LANDING_PRODUCTS} />
-        </SectionShell>
+        {featured.length > 0 && (
+          <SectionShell id="mikrotik-home-a" className="min-h-screen">
+            <ProductShowcase products={featured} />
+          </SectionShell>
+        )}
 
         {/* Latest from MikroTik — membungkus SectionShell sendiri, hilang total bila feed kosong */}
         <LatestVideos />

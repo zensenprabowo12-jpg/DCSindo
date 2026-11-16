@@ -123,6 +123,14 @@ export default function ProductShowcase({ products }: { products: MikrotikLandin
   );
   const isDark = useDarkMode();
 
+  // Produk unggulan bisa disembunyikan admin (lihat useVisibleFeatured);
+  // kalau yang aktif hilang, pindah ke produk pertama yang masih ada.
+  useEffect(() => {
+    if (products.length && !products.some((p) => p.key === activeKey)) {
+      setActiveKey(products[0].key);
+    }
+  }, [products, activeKey]);
+
   useEffect(() => {
     setShowVideo(false);
   }, [activeKey]);

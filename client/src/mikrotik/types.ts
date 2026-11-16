@@ -17,6 +17,8 @@ export type MikrotikDcsProduct = {
   deskripsi: string;
   bullet_points: string[];
   main_image: string;
+  /** false = disembunyikan dari situs publik (hanya terlihat di admin). */
+  is_published: boolean;
   created_at: string;
   updated_at: string;
 };

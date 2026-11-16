@@ -7,6 +7,7 @@ import {
   apiMikrotikDcsAdminGet,
   apiMikrotikDcsAdminList,
   apiMikrotikDcsAdminReorder,
+  apiMikrotikDcsAdminSetPublished,
   apiMikrotikDcsAdminUpdate,
   apiMikrotikDcsMetaCategories,
   apiMikrotikDcsPublicGet,
@@ -73,6 +74,8 @@ export function registerMikrotikDcsRoutes(app: Express): void {
 
   app.get(`${base}/admin/products`, apiMikrotikDcsAdminList);
   app.get(`${base}/admin/products/:id`, apiMikrotikDcsAdminGet);
+  // Saklar Published (POST, bukan PATCH — sama dengan FiberHome).
+  app.post(`${base}/admin/products/:id/published`, express.json(), apiMikrotikDcsAdminSetPublished);
   app.post(`${base}/admin/products/reorder`, express.json(), apiMikrotikDcsAdminReorder);
   app.post(
     `${base}/admin/products`,

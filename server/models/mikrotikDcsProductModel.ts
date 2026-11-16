@@ -1,6 +1,7 @@
 import type { ResultSetHeader, RowDataPacket } from "mysql2";
 import { mysqlPool } from "../config/mysqlPool";
 import { LIST_ROW_CAP } from "./listLimit";
+import { ALL_PRODUCTS, type VisibilityOpts } from "../utils/published";
 import {
   isValidMikrotikDcsCategory,
   toCanonicalMikrotikDcsCategory,
@@ -20,6 +21,8 @@ export type MikrotikDcsProductRow = {
   video_title?: string | null;
   video_description?: string | null;
   specifications?: { title: string; items: { label: string; value: string }[] }[] | null;
+  /** false = disembunyikan dari situs publik (tetap ada & bisa diedit di admin). */
+  is_published: boolean;
   created_at: Date;
   updated_at: Date;
 };
@@ -121,6 +124,7 @@ function mapProduct(r: RowDataPacket): MikrotikDcsProductRow {
     video_title: r.video_title ?? null,
     video_description: r.video_description ?? null,
     specifications: specs,
+    is_published: Number(r.is_published) === 1,
     created_at: r.created_at,
     updated_at: r.updated_at,
   };
@@ -130,7 +134,9 @@ export async function listMikrotikDcsProducts(
   options: {
     category?: string | null;
     sort: "latest" | "oldest" | "custom";
-  } = { sort: "latest" },
+    /** Wajib: publik `true`, admin `false`. Filter dipasang SEBELUM LIMIT. */
+    publishedOnly: boolean;
+  },
 ): Promise<MikrotikDcsProductRow[]> {
   const raw = options.category?.trim() || null;
   const order = options.sort === "oldest" ? "ASC" : "DESC";
@@ -138,9 +144,10 @@ export async function listMikrotikDcsProducts(
     return [];
   }
   const canonical = raw ? toCanonicalMikrotikDcsCategory(raw) : null;
-  const where = canonical
-    ? "WHERE `category` = :category"
-    : "";
+  const conds: string[] = [];
+  if (canonical) conds.push("`category` = :category");
+  if (options.publishedOnly) conds.push("is_published = 1");
+  const where = conds.length ? `WHERE ${conds.join(" AND ")}` : "";
   const orderBy =
     options.sort === "custom"
       ? "ORDER BY sort_order ASC, created_at DESC, id DESC"
@@ -148,7 +155,7 @@ export async function listMikrotikDcsProducts(
   const [rows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT id, nama_produk, sku, category, sort_order, deskripsi, bullet_points, main_image,
             video_url, video_title, video_description, specifications,
-            created_at, updated_at
+            is_published, created_at, updated_at
      FROM mikrotik_dcs_products
      ${where}
      ${orderBy}
@@ -158,14 +165,17 @@ export async function listMikrotikDcsProducts(
   return rows.map(mapProduct);
 }
 
+/** Default: termasuk produk tersembunyi (admin/internal). Publik wajib `PUBLISHED_ONLY`. */
 export async function getMikrotikDcsProductById(
   id: number,
+  opts: VisibilityOpts = ALL_PRODUCTS,
 ): Promise<MikrotikDcsProductWithGallery | null> {
   const [pRows] = await mysqlPool.query<RowDataPacket[]>(
     `SELECT id, nama_produk, sku, category, sort_order, deskripsi, bullet_points, main_image,
             video_url, video_title, video_description, specifications,
-            created_at, updated_at
-     FROM mikrotik_dcs_products WHERE id = :id LIMIT 1`,
+            is_published, created_at, updated_at
+     FROM mikrotik_dcs_products
+     WHERE id = :id${opts.publishedOnly ? " AND is_published = 1" : ""} LIMIT 1`,
     { id },
   );
   if (!pRows.length) return null;
@@ -214,6 +224,8 @@ export async function createMikrotikDcsProduct(data: {
   specifications?: { title: string; items: { label: string; value: string }[] }[] | null;
   galleryPaths: string[];
   technicalItems?: { title: string; content: string; sort_order: number }[];
+  /** Default true (tampil). */
+  is_published?: boolean;
 }): Promise<number> {
   const connection = await mysqlPool.getConnection();
   try {
@@ -230,9 +242,9 @@ export async function createMikrotikDcsProduct(data: {
     const [res] = await connection.query<ResultSetHeader>(
       `INSERT INTO mikrotik_dcs_products
        (nama_produk, sku, category, sort_order, deskripsi, bullet_points, main_image,
-        video_url, video_title, video_description, specifications)
+        video_url, video_title, video_description, specifications, is_published)
        VALUES (:nama, :sku, :cat, :ord, :des, :bullets, :main,
-               :vurl, :vtitle, :vdesc, :specs)`,
+               :vurl, :vtitle, :vdesc, :specs, :pub)`,
       {
         nama: data.nama_produk.trim(),
         sku: data.sku.trim(),
@@ -245,6 +257,7 @@ export async function createMikrotikDcsProduct(data: {
         vtitle: data.video_title ?? null,
         vdesc: data.video_description ?? null,
         specs: specsJson,
+        pub: data.is_published === false ? 0 : 1,
       },
     );
     const id = (res as ResultSetHeader).insertId;
@@ -347,6 +360,8 @@ export async function updateMikrotikDcsProduct(
     specifications?: { title: string; items: { label: string; value: string }[] }[] | null;
     galleryPaths: { keepExisting: string[]; newUploads: string[] };
     technicalItems?: { title: string; content: string; sort_order: number }[];
+    /** undefined = status published tidak diubah. */
+    is_published?: boolean;
   },
 ): Promise<void> {
   const connection = await mysqlPool.getConnection();
@@ -364,7 +379,8 @@ export async function updateMikrotikDcsProduct(
          video_url = :vurl,
          video_title = :vtitle,
          video_description = :vdesc,
-         specifications = :specs
+         specifications = :specs,
+         is_published = COALESCE(:pub, is_published)
        WHERE id = :id`,
       {
         nama: data.nama_produk.trim(),
@@ -377,6 +393,7 @@ export async function updateMikrotikDcsProduct(
         vtitle: data.video_title ?? null,
         vdesc: data.video_description ?? null,
         specs: data.specifications ? JSON.stringify(data.specifications) : null,
+        pub: data.is_published === undefined ? null : data.is_published ? 1 : 0,
         id,
       },
     );
@@ -422,6 +439,15 @@ export async function updateMikrotikDcsProduct(
   } finally {
     connection.release();
   }
+}
+
+/** Mengembalikan false bila produk tidak ada. */
+export async function setMikrotikDcsProductPublished(id: number, published: boolean): Promise<boolean> {
+  const [r] = await mysqlPool.query<ResultSetHeader>(
+    `UPDATE mikrotik_dcs_products SET is_published = :pub WHERE id = :id`,
+    { id, pub: published ? 1 : 0 },
+  );
+  return r.affectedRows > 0;
 }
 
 export async function deleteMikrotikDcsProductById(id: number): Promise<boolean> {
