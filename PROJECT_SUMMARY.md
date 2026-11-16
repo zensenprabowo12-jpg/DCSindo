@@ -206,6 +206,8 @@ Browser (fetch /api/...)
 
 - 🔑 Kolom **`is_published` TINYINT(1) NOT NULL DEFAULT 1** (`database/migrate_fiberhome_is_published.sql`) — saklar tampil/sembunyi per produk. Lihat §7 "Pola Published per produk".
 
+> **`is_published` ada di keempat tabel produk**: `fiberhome_products` (Stage 1) serta `mikrotik_dcs_products`, `ubiquiti_dcs_products`, `vsol_dcs_products` (Stage 2, `database/migrate_is_published_mikrotik_ubiquiti_vsol.sql`). Semuanya `TINYINT(1) NOT NULL DEFAULT 1 AFTER sort_order`.
+
 **Firmware** — `firmware_store.sql` (tabel `firmware_files`: daftar firmware per brand + file) & `firmware_popup_settings.sql` (konten popup: `install_guide`, `disclaimer`).
 
 - `migrate_firmware_install_guide.sql` menambah kolom **`firmware_files.install_guide` TEXT NULL** — panduan instalasi milik firmware itu sendiri, satu langkah per baris, dijalankan manual di phpMyAdmin (idempotent, `ADD COLUMN IF NOT EXISTS` khas MariaDB).
@@ -430,7 +432,16 @@ POST   /admin/products/reorder
 - Operasi multi-tabel (training + syllabus) memakai **transaksi** (`beginTransaction`/`commit`/`rollback`); update syllabus = hapus semua lalu insert ulang.
 
 ### Pola "Published" per produk (sembunyikan tanpa menghapus)
-Stage 1 = **FiberHome** (acuan). Stage 2 = salin persis ke MikroTik, Ubiquiti, V-SOL.
+Berlaku untuk **keempat brand**. Stage 1 = **FiberHome** (acuan, commit `307163e`). Stage 2 = **MikroTik, Ubiquiti, V-SOL** dengan perilaku & UI identik, memakai helper bersama:
+- Server: `server/utils/published.ts` — `VisibilityOpts`, `PUBLISHED_ONLY` / `ALL_PRODUCTS`, `parsePublished()`, `makeSetPublishedHandler()` (handler toggle 401/403/400/404/200). FiberHome punya salinan sendiri di controllernya (sengaja tidak diubah).
+- Model per brand: `list…({ category, sort, publishedOnly })` (**wajib**), `get…ById(id, opts = ALL_PRODUCTS)`, `set…Published(id, bool)`; create menerima `is_published` (default 1); update memakai `is_published = COALESCE(:pub, is_published)` di UPDATE yang sama (atomik, `undefined` = tidak berubah).
+- Client: `client/src/admin/PublishedToggle.tsx` (`PublishedSwitch`, `HiddenBadge`, `PublishedFormCard` untuk form bertema situs) + `client/src/admin/usePublishedToggle.ts` (optimistic + rollback + toast). API client: `apiSetProductPublished` (MikroTik), `apiUbiquitiSetPublished`, `apiVsolSetPublished`.
+- **LIST_ROW_CAP**: filter `is_published = 1` publik dipasang di `WHERE` **sebelum** `LIMIT 500`; endpoint admin tidak memakai filter, jadi cap admin tidak berubah.
+
+Tempat khusus selain list/detail:
+- **MikroTik "Featured Products"** (`/mikrotik`) ditulis tangan di `client/src/mikrotik/landing/data.ts` (ID 8/25/10). `client/src/mikrotik/landing/useVisibleFeatured.ts` mengecek tiap ID ke endpoint detail publik dan membuang yang 404; gagal jaringan/5xx = tetap tampil (fail-open). Semua tersembunyi → section hilang. Produk unggulan baru = tambah entri di `data.ts` (otomatis ikut dicek).
+- **Ubiquiti add-on**: detail **publik** memfilter `(p.id IS NULL OR p.is_published = 1)` di JOIN add-on, jadi add-on tersembunyi tidak tampil di produk published (tab "Add Ons" hilang bila kosong). Detail **admin** TIDAK memfilter — form edit menulis ulang seluruh daftar add-on, jadi add-on tersembunyi harus ikut terbawa; `addon_product.is_published` ikut dikirim. Picker add-on di form: produk tersembunyi tetap bisa dipilih, diberi badge HIDDEN.
+- **Search modal** & **halaman kategori MikroTik** memakai endpoint list publik → otomatis terfilter.
 
 | Lapisan | FiberHome (acuan) | Yang disalin per brand |
 |---|---|---|
@@ -443,7 +454,7 @@ Stage 1 = **FiberHome** (acuan). Stage 2 = salin persis ke MikroTik, Ubiquiti, V
 
 Catatan:
 - Flag tingkat brand (`disableFiberHomeRoutes` di `truefalse.json`) **terpisah** dan tetap berlaku: flag menyembunyikan seluruh brand, `is_published` menyembunyikan satu produk.
-- Tanpa kolom (kode ter-deploy sebelum SQL): semua SELECT FiberHome gagal → **500** "Unknown column 'is_published'" di publik **dan** admin. Urutan wajib: SQL → deploy.
+- Tanpa kolom (kode ter-deploy sebelum SQL): semua SELECT produk brand itu gagal → **500** "Unknown column 'is_published'" di publik **dan** admin. Urutan wajib: SQL → deploy. (Berlaku untuk keempat brand.)
 - Tidak ada log tambahan: `admin_activity_log` tetap hanya mencatat login.
 
 ### Konvensi penamaan

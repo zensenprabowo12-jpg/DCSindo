@@ -56,3 +56,38 @@ export function HiddenBadge({ className }: { className?: string }) {
     </span>
   );
 }
+
+/**
+ * Kartu "Published" untuk form tambah/edit produk yang memakai tema situs
+ * (MikroTik, Ubiquiti, V-SOL — `bg-card`/`border-border`, terang & gelap).
+ * Perubahan baru berlaku saat form disimpan.
+ */
+export function PublishedFormCard({
+  checked,
+  onCheckedChange,
+}: {
+  checked: boolean;
+  onCheckedChange: (next: boolean) => void;
+}) {
+  return (
+    <div className="flex items-center justify-between gap-4 rounded-xl border border-border bg-muted/40 px-4 py-3">
+      <div className="min-w-0">
+        <div className="flex items-center gap-2">
+          <span className="text-sm font-semibold">Published</span>
+          {!checked && <HiddenBadge className="text-amber-700 dark:text-amber-400" />}
+        </div>
+        <p className="mt-0.5 text-xs text-muted-foreground">
+          {checked
+            ? "Visible on the public site (catalog, search, product page). Applied when you save."
+            : "Hidden from the public site once you save. Not deleted; still editable here."}
+        </p>
+      </div>
+      <PublishedSwitch
+        checked={checked}
+        onCheckedChange={onCheckedChange}
+        label="Published"
+        className="data-[state=unchecked]:bg-zinc-400 dark:data-[state=unchecked]:bg-zinc-700 focus-visible:ring-offset-background"
+      />
+    </div>
+  );
+}
