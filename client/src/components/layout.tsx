@@ -20,7 +20,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { V_SOL_BRAND } from "@/brands/v-sol";
 import { useTrueFalse } from "@/hooks/useTrueFalse";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
-import { buildWhatsAppUrl } from "@/lib/contact";
+import { buildWhatsAppUrl, whatsAppRerollProps } from "@/lib/contact";
 
 const WA_DEFAULT_MESSAGE = "Hello DCS, I would like to ask about your products.";
 
@@ -43,12 +43,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   // berubah tiap scroll, jadi tanpa ini nomornya ikut berganti sepanjang scroll.
   const whatsappHref = useMemo(() => buildWhatsAppUrl(WA_DEFAULT_MESSAGE), []);
 
-  // Random murni tiap klik: nomor dipilih ulang tepat sebelum navigasi default
-  // berjalan, jadi href statis di atas hanya berlaku sebagai fallback (crawler,
-  // klik tengah, "salin alamat tautan").
-  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.currentTarget.href = buildWhatsAppUrl(WA_DEFAULT_MESSAGE);
-  };
+  // Random murni tiap klik: nomor diundi ulang saat mousedown/click/auxclick/
+  // contextmenu/Enter (klik tengah, buka tab baru, salin tautan ikut acak), jadi
+  // href statis di atas hanya fallback untuk crawler / tanpa JS.
+  const whatsappReroll = whatsAppRerollProps(WA_DEFAULT_MESSAGE);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -582,7 +580,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Floating WhatsApp Button */}
       <motion.a
         href={whatsappHref}
-        onClick={handleWhatsAppClick}
+        {...whatsappReroll}
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
@@ -641,7 +639,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </span>
                 <a
                   href={whatsappHref}
-                  onClick={handleWhatsAppClick}
+                  {...whatsappReroll}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary/80 transition-colors text-lg"

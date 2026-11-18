@@ -9,7 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { buildWhatsAppUrl } from "@/lib/contact";
+import { buildWhatsAppUrl, whatsAppRerollProps } from "@/lib/contact";
 import { cn } from "@/lib/utils";
 import { apiFiberHomeProduct } from "./api";
 import { categorySlug } from "./category";
@@ -60,8 +60,8 @@ export default function FiberHomeProductDetail() {
     })();
   }, [sku]);
 
-  // Pola sama dengan layout.tsx: href di-memo sebagai fallback (crawler, klik
-  // tengah, salin alamat tautan), nomornya diacak ulang lagi tiap klik. Wajib
+  // Pola sama dengan layout.tsx: href di-memo sebagai fallback (crawler / tanpa
+  // JS), nomornya diacak ulang tiap klik/klik tengah/klik kanan. Wajib
   // di atas early return di bawah ini supaya hook tidak dipanggil bersyarat.
   const whatsappMessage = d
     ? `Hello DCS, I am interested in the FiberHome ${d.name} (SKU: ${d.sku}). Could you share more information?`
@@ -70,9 +70,7 @@ export default function FiberHomeProductDetail() {
     () => buildWhatsAppUrl(whatsappMessage),
     [whatsappMessage],
   );
-  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.currentTarget.href = buildWhatsAppUrl(whatsappMessage);
-  };
+  const whatsappReroll = whatsAppRerollProps(whatsappMessage);
 
   if (!match) {
     return (
@@ -261,7 +259,7 @@ export default function FiberHomeProductDetail() {
                 )}
                 <a
                   href={whatsappHref}
-                  onClick={handleWhatsAppClick}
+                  {...whatsappReroll}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-sky-600 text-sky-700 dark:text-sky-400 hover:bg-sky-600 hover:text-white px-7 py-4 text-sm font-bold transition-colors"

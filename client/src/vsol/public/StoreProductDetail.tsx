@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/layout";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
-import { buildWhatsAppUrl } from "@/lib/contact";
+import { buildWhatsAppUrl, whatsAppRerollProps } from "@/lib/contact";
 import { apiVsolPublicProduct } from "../api";
 import type { VsolDcsProductDetail } from "../types";
 
@@ -261,8 +261,8 @@ export default function VsolDcsStoreProductDetail() {
     touchStartX.current = null;
   };
 
-  // Pola sama dengan layout.tsx: href di-memo sebagai fallback (crawler, klik
-  // tengah, salin alamat tautan), nomornya diacak ulang lagi tiap klik.
+  // Pola sama dengan layout.tsx: href di-memo sebagai fallback (crawler / tanpa
+  // JS), nomornya diacak ulang tiap klik/klik tengah/klik kanan.
   // Bergantung pada d karena pesannya menyebut nama produk + SKU.
   const whatsappMessage = d
     ? `Hello DCS, I am interested in the V-SOL ${d.nama_produk} (SKU: ${d.sku}). Could you share the price and availability?`
@@ -271,9 +271,7 @@ export default function VsolDcsStoreProductDetail() {
     () => buildWhatsAppUrl(whatsappMessage),
     [whatsappMessage],
   );
-  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.currentTarget.href = buildWhatsAppUrl(whatsappMessage);
-  };
+  const whatsappReroll = whatsAppRerollProps(whatsappMessage);
 
   const techGroups = useMemo(() => {
     if (!d?.technical_specs?.length) return [];
@@ -410,7 +408,7 @@ export default function VsolDcsStoreProductDetail() {
 
               <a
                 href={whatsappHref}
-                onClick={handleWhatsAppClick}
+                {...whatsappReroll}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-600 hover:bg-green-500 text-white font-semibold text-sm transition-colors"

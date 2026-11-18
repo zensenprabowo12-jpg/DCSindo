@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { ShieldCheck } from "lucide-react";
 import Layout from "@/components/layout";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
-import { buildWhatsAppUrl } from "@/lib/contact";
+import { buildWhatsAppUrl, whatsAppRerollProps } from "@/lib/contact";
 import { cn } from "@/lib/utils";
 import { apiFiberHomeProducts } from "./api";
 import { categorySlug, groupByCategory } from "./category";
@@ -89,12 +89,10 @@ export default function FiberHomePage() {
   }
 
   // Pola sama dengan layout.tsx: href di-memo sekali saat mount sebagai
-  // fallback (crawler, klik tengah, salin alamat tautan), lalu nomornya diacak
-  // ulang tepat sebelum navigasi default berjalan pada tiap klik.
+  // fallback (crawler / tanpa JS), lalu nomornya diacak
+  // ulang tiap klik, klik tengah, dan klik kanan (lihat whatsAppRerollProps).
   const whatsappHref = useMemo(() => buildWhatsAppUrl(WA_MESSAGE), []);
-  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.currentTarget.href = buildWhatsAppUrl(WA_MESSAGE);
-  };
+  const whatsappReroll = whatsAppRerollProps(WA_MESSAGE);
 
   const groups = groupByCategory(list);
   // Slug dari URL bisa saja tidak cocok dengan kategori mana pun → jatuh ke "All".
@@ -293,7 +291,7 @@ export default function FiberHomePage() {
             </p>
             <a
               href={whatsappHref}
-              onClick={handleWhatsAppClick}
+              {...whatsappReroll}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 rounded-2xl bg-sky-600 hover:bg-sky-700 text-white font-bold px-10 py-5 text-base md:text-lg transition-colors shadow-lg"

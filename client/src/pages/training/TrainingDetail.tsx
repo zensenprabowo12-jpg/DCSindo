@@ -9,7 +9,7 @@ import {
   UserPlus, Loader2, Images,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { buildWhatsAppUrl, DCS_EMAIL } from "@/lib/contact";
+import { buildWhatsAppUrl, whatsAppRerollProps, DCS_EMAIL } from "@/lib/contact";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import {
   apiFetchTrainingSession,
@@ -259,8 +259,8 @@ export default function TrainingDetail() {
     })();
   }, [id, match]);
 
-  // Pola sama dengan layout.tsx: href di-memo sebagai fallback (crawler, klik
-  // tengah, salin alamat tautan), nomornya diacak ulang lagi tiap klik. Wajib
+  // Pola sama dengan layout.tsx: href di-memo sebagai fallback (crawler / tanpa
+  // JS), nomornya diacak ulang tiap klik/klik tengah/klik kanan. Wajib
   // di atas early return di bawah ini supaya hook tidak dipanggil bersyarat.
   const whatsappMessage = d
     ? `Hello DCS, I would like to know more about the "${d.title}" training. Could you share the details?`
@@ -269,9 +269,7 @@ export default function TrainingDetail() {
     () => buildWhatsAppUrl(whatsappMessage),
     [whatsappMessage],
   );
-  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.currentTarget.href = buildWhatsAppUrl(whatsappMessage);
-  };
+  const whatsappReroll = whatsAppRerollProps(whatsappMessage);
 
   if (!match) return null;
 
@@ -527,7 +525,7 @@ export default function TrainingDetail() {
                 <div className="mt-6 space-y-3">
                   <a
                     href={whatsappHref}
-                    onClick={handleWhatsAppClick}
+                    {...whatsappReroll}
                     target="_blank"
                     rel="noreferrer"
                     className="block"

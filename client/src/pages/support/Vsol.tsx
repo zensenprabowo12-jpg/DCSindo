@@ -3,7 +3,7 @@ import { ExternalLink, Mail, BookOpen, Server, Globe, ChevronDown } from "lucide
 import Layout from "@/components/layout";
 import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { Button } from "@/components/ui/button";
-import { buildWhatsAppUrl } from "@/lib/contact";
+import { buildWhatsAppUrl, whatsAppRerollProps } from "@/lib/contact";
 import { useMemo, useState } from "react";
 import { Link } from "wouter";
 
@@ -63,12 +63,10 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 
 export default function VsolSupport() {
   // Pola sama dengan layout.tsx: href di-memo sekali saat mount sebagai
-  // fallback (crawler, klik tengah, salin alamat tautan), lalu nomornya diacak
-  // ulang tepat sebelum navigasi default berjalan pada tiap klik.
+  // fallback (crawler / tanpa JS), lalu nomornya diacak
+  // ulang tiap klik, klik tengah, dan klik kanan (lihat whatsAppRerollProps).
   const whatsappHref = useMemo(() => buildWhatsAppUrl(WA_SUPPORT_MESSAGE), []);
-  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.currentTarget.href = buildWhatsAppUrl(WA_SUPPORT_MESSAGE);
-  };
+  const whatsappReroll = whatsAppRerollProps(WA_SUPPORT_MESSAGE);
 
   return (
     <Layout>
@@ -177,7 +175,7 @@ export default function VsolSupport() {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href={whatsappHref}
-              onClick={handleWhatsAppClick}
+              {...whatsappReroll}
               target="_blank"
               rel="noopener noreferrer"
             >
